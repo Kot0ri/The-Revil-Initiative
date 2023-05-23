@@ -1,5 +1,11 @@
 capital = 934
-oob = ""
+oob = "ZEO_UC0075"
+
+75.1.1 = {
+	set_global_flag = start_is_uc0075
+	set_variable = { var = how_many_drop_earth value = 1 }
+	set_variable = { var = how_many_exercise value = 0 }
+}
 
 # Starting tech
 set_technology = {

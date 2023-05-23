@@ -1,0 +1,135 @@
+capital = 687
+oob = ""
+set_research_slots = 3
+
+set_stability = 0.70
+set_war_support = 0.15
+
+# Starting tech
+set_technology = {
+	basic_train = 1
+	acclimatization_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	paratroopers = 1
+	marines = 1
+	tech_mountaineers = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	motorised_infantry = 1
+	EFS_mbt1_tech = 1
+	EFS_ac1_tech = 1
+	vulcan_ac_tech = 1
+	misile_ac1_tech = 1
+	EFS_attack_helicopter_tech = 1
+	EFS_scout_plane1_tech = 1
+	EFS_fighter1_tech = 1
+	EFS_attacker_tech = 1
+	EFS_tactical_bomber1_tech = 1
+	EFS_naval_bomber_tech = 1
+	EFS_transporter1_tech = 1
+	EFS_destroyer1_tech = 1
+	EFS_smoke_generator = 1
+	EFS_cruiser1_tech = 1
+	EFS_improved_airplane_launcher = 1
+	EFS_carrier1_tech = 1
+	EFS_submarine1_tech = 1
+	EFS_submarine_carrier1_tech = 1
+	EFS_transport = 1
+	EFS_basic_naval_mines = 1
+	EFS_submarine_mine_laying = 1
+	EFS_basic_battery = 1
+	EFS_basic_secondary_battery = 1
+	EFS_damage_control_1 = 1
+	EFS_basic_torpedo = 1
+	EFS_basic_light_battery = 1
+	EFS_basic_light_shell = 1
+	EFS_basic_medium_battery = 1
+	EFS_basic_medium_shell = 1
+	EFS_basic_heavy_battery = 1
+	EFS_basic_heavy_shell = 1
+	EFS_improved_secondary_battery = 1
+	EFS_damage_control_2 = 1
+	EFS_improved_ship_torpedo_launcher = 1
+	EFS_improved_submarine_mine_laying = 1
+	EFS_improved_naval_mines = 1
+	EFS_magnetic_detonator = 1
+	EFS_space_battleship1_tech = 1
+	EFS_space_cruiser1_tech = 1
+	minovsky_particle = 1
+	i_field = 1
+	mega_particle1 = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	superior_firepower = 1
+	sup_delay = 1
+	mobile_defence = 1
+	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+
+add_ideas = {
+	hollowing_out_industry
+	civilian_economy
+	disarmed_nation
+	export_focus
+	customs_duty_3
+	oversea_army_3
+	newtype_division_1
+}
+
+set_convoys = 3500
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+
+# DIPLOMACY
+
+set_popularities = {
+	democratic = 64
+	earthsupremacy = 17
+	zeonism = 14
+	spacesupremacy = 5
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "74.12.1"
+	election_frequency = 48
+	elections_allowed = yes ##suspended through duration of war, which is handled via event
+}
+
+set_variable = { newtype_accepted_status = 0 }
+
+create_equipment_variant = {
+	name = "Salamis Class"
+	type = efsf_space_cruiser1_equipment
+	name_group = EFS_SC_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = space_battery_1
+		fixed_ship_secondaries_slot = space_secondaries_1
+		fixed_ship_engine_slot = light_space_engine_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Magellan Class"
+	type = efsf_space_battleship1_equipment
+	name_group = EFS_SB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = space_battery_1
+		fixed_ship_secondaries_slot = space_secondaries_1
+		fixed_ship_engine_slot = space_engine_1
+    front_1_custom_slot = space_battery_1
+    mid_1_custom_slot = ship_anti_air_1
+    mid_2_custom_slot = space_secondaries_1
+	}
+	obsolete = no
+}

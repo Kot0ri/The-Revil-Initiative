@@ -1,0 +1,26 @@
+scripted_gui = {
+
+	BR_Super_Event_Window = {
+		context_type = player_context
+		window_name = "Super_Event_Window"
+
+		visible = {
+			is_ai = no								#AI cannot get superevents
+			has_variable = BR_Super_Event_Var		#so long as voodoo variable exists, the window is visible. Gonna probably setup a timer for this thing so it goes away.
+		}
+
+		properties = {								#dynamically looks for the event picture from Super_Event_Scripted_Loc.txt
+			Super_Event_Image = {
+				image = "[get_superevent_texture]"
+			}
+		}
+
+		effects = {									#clears country flags and the variable on window close so things don't get confused
+			Super_Event_Close_click = {
+				clr_country_flag = "[?BR_Super_Event_Var.GetTokenKey]"
+				clr_country_flag = "[?BR_Super_Event_Var.GetTokenKey]_TEXT"
+				clear_variable = BR_Super_Event_Var
+			}
+		}
+	}
+}

@@ -1,0 +1,59 @@
+spriteTypes = {	
+	#spriteType = {
+	#	name = "GFX_Super_Event_Window"
+	#	texturefile = "gfx/Super_Event_Window.dds"
+	#	legacy_lazy_load = no
+	#}
+
+	#spriteType = {
+	#	name = "GFX_Super_Event_Quote_Background"
+	#	texturefile = "gfx/Super_Event_Quote_Background.dds"
+	#	legacy_lazy_load = no
+	#}
+
+	#spriteType = {
+	#	name = "GFX_Super_Event_Image_Test"
+	#	texturefile = "gfx/super_events/Super_Event_Image_Test.dds"
+	#	legacy_lazy_load = no
+	#}
+
+	spriteType = {
+		name = "GFX_Super_Background"
+		texturefile = "gfx/super_events/Super_background.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_Super_Button"
+		texturefile = "gfx/super_events/super_button.dds"
+		legacy_lazy_load = no
+	}
+
+	#corneredTileSpriteType = {
+	#	name = "GFX_tiled_window_thin_border"
+	#	size= { x=192 y=192 }
+	#	textureFile = "gfx//interface//tiles//tiled_window_thin_border.dds"
+	#	borderSize = { x=64 y=64 }
+	#	tilingCenter = yes
+	#	effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	#	}
+
+	spriteType = {														#GFX FOR SUPEREVENTS START HERE
+		name = "GFX_SUPER_JAP_invasion"									#FORMAT FOR NAMING THESE SHOULD ALWAYS BE "GFX_SUPER_COUNTRYFLAG"
+		texturefile = "gfx/super_events/JAP_invasion.dds"				#473 X 242 .dds
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SUPER_RCW_start"
+		texturefile = "gfx/super_events/RCW_start.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_SUPER_RCW_end"
+		texturefile = "gfx/super_events/RCW_end.dds"
+		legacy_lazy_load = no
+	}
+
+}

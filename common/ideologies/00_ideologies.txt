@@ -7,6 +7,16 @@ ideologies = {
 			}
 			progressivism = {
 			}
+			republicinism = {
+			}
+			social_democracy = {
+			}
+			absolute_democracy = {
+			}
+			confederatism = {
+			}
+			represenitive_democracy = {
+			}
 		}
 
 		dynamic_faction_names = {
@@ -55,14 +65,14 @@ ideologies = {
 		ai_democratic = yes # uses the democratic AI behaviour
 	}
 
-	zeonism = {
+	contolism = {
 
 		types = {
-			antiefsfism = {
+			zeonism = {
 			}
-			newtypism = {
+			mariaism = {
 			}
-			elenism = {
+			harmonism = {
 			}
 			contlism = {
 			}
@@ -119,9 +129,11 @@ ideologies = {
 		ai_neutral = yes
 	}
 
-	spacesupremacy = {
+	supremacist = {
 		types = {
-			space_elitism = {
+			spacenoid_supremacist = {
+			}
+			earthnoid_supremacist = {
 			}
 		}
 
@@ -164,10 +176,18 @@ ideologies = {
 		ai_fascist = yes # uses the fascist AI behaviour
 	}
 
-	earthsupremacy = {
+	aristocracy = {
 
 		types = {
-			earth_elitism = {
+			constitutional_monarchy= {
+			}
+			absolute_monarchy= {
+			}
+			parlimentary_monarchy= {
+			}
+			feudal_monarchy= {
+			}
+			noble_rule= {
 			}
 		}
 
@@ -212,4 +232,177 @@ ideologies = {
 
 		ai_fascist = yes
 	}
+	corporatism = {
+
+		types = {
+			anarcho_capitalism= {
+			}
+			pezun_corporatism= {
+			}
+			authoritarian_coporatism= {
+			}
+			humanitarian_coporatism= {
+			}
+			corporate_state= {
+			}
+		}
+
+		dynamic_faction_names = {
+			"FACTION_NAME_ES_1"
+			"FACTION_NAME_ES_2"
+			"FACTION_NAME_ES_3"
+			"FACTION_NAME_ES_4"
+		}
+
+		color = { 144 144 144 }
+
+
+		war_impact_on_world_tension = 1.0
+		faction_impact_on_world_tension = 1.0
+
+		rules = {
+			can_force_government = no
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_declare_war_on_same_ideology = yes
+			can_lower_tension = no
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+			can_generate_female_aces = yes
+		}
+
+		modifiers = {
+			justify_war_goal_when_in_major_war_time = -0.80
+			civilian_intel_to_others = 15.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 10.0
+      female_random_army_leader_chance = 0.65
+      female_random_admiral_chance = 0.65
+      female_random_operative_chance = 0.65
+      female_random_country_leader_chance = 0.65
+		}
+
+		faction_modifiers = {
+		}
+
+		ai_fascist = yes
+
+		oligarchy = {
+
+			types = {
+				authoritarian_oligarchy= {
+				}
+				despotism= {
+				}
+				pliberal_oligarchy= {
+				}
+				illiberal_democracy= {
+				}
+			}
+	
+			dynamic_faction_names = {
+				"FACTION_NAME_ES_1"
+				"FACTION_NAME_ES_2"
+				"FACTION_NAME_ES_3"
+				"FACTION_NAME_ES_4"
+			}
+	
+			color = { 144 144 144 }
+	
+	
+			war_impact_on_world_tension = 1.0
+			faction_impact_on_world_tension = 1.0
+	
+			rules = {
+				can_force_government = no
+				can_send_volunteers = yes
+				can_puppet = yes
+				can_declare_war_on_same_ideology = yes
+				can_lower_tension = no
+				can_only_justify_war_on_threat_country = no
+				can_guarantee_other_ideologies = yes
+				can_generate_female_aces = yes
+			}
+	
+			modifiers = {
+				justify_war_goal_when_in_major_war_time = -0.80
+				civilian_intel_to_others = 15.0
+				army_intel_to_others = 10.0
+				navy_intel_to_others = 10.0
+				airforce_intel_to_others = 10.0
+		  female_random_army_leader_chance = 0.65
+		  female_random_admiral_chance = 0.65
+		  female_random_operative_chance = 0.65
+		  female_random_country_leader_chance = 0.65
+			}
+	
+			faction_modifiers = {
+			}
+	
+			ai_fascist = yes
+}
+
+military government = {
+
+	types = {
+		military_junta = {
+		}
+		military_dictatorship = {
+		}
+		milittaristic_democracy = {
+		}
+		military_administration = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_ZEONISM_1"
+		"FACTION_NAME_ZEONISM_2"
+		"FACTION_NAME_ZEONISM_3"
+		"FACTION_NAME_ZEONISM_4"
+		"FACTION_NAME_ZEONISM_5"
+	}
+
+	color = { 71 214 56 }
+
+	war_impact_on_world_tension = 1
+	faction_impact_on_world_tension = 0.5
+
+	rules = {
+		can_declare_war_on_same_ideology = no
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = no
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+		can_generate_female_aces = yes
+	}
+
+	modifiers = {
+		generate_wargoal_tension = 0.5
+		join_faction_tension = 0.2
+		lend_lease_tension = 0.4
+		send_volunteers_tension = 0.4
+		guarantee_tension = 0.4
+		drift_defence_factor = -0.3
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 10.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 10.0
+  female_random_army_leader_chance = 0.65
+  female_random_admiral_chance = 0.65
+  female_random_operative_chance = 0.65
+  female_random_country_leader_chance = 0.65
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	}
+
+	can_be_boosted = no
+	can_collaborate = yes
+
+	ai_neutral = yes
 }

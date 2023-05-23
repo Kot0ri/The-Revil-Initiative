@@ -1,0 +1,1040 @@
+# Political
+ss_like_ZEO = {
+	enable = {
+		ZEO = {
+			has_government = spacesupremacy
+		}
+		has_government = spacesupremacy
+	}
+	abort = {
+		NOT = {
+			OR = {
+				has_government = spacesupremacy
+				ZEO = {
+					has_government = spacesupremacy
+				}
+			}
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "EFS"
+		value = 200
+	}
+}
+zeonism_like_ZEO = {
+	enable = {
+		ZEO = {
+			has_government = zeonism
+		}
+		has_government = zeonism
+	}
+	abort = {
+		NOT = {
+			OR = {
+				has_government = zeonism
+				ZEO = {
+					has_government = zeonism
+				}
+			}
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "EFS"
+		value = 200
+	}
+}
+side6_neutrality = {
+	enable = {
+		original_tag = SI6
+		has_global_flag = zeon_side6_non_aggression
+	}
+	abort = {
+		NOT = {
+			country_exists = SI6
+		}
+	}
+	ai_strategy = {
+		type = befriend
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = "EFS"
+		value = 200
+	}
+}
+side6_neutrality_ZEO = {
+	enable = {
+		original_tag = ZEO
+		has_global_flag = zeon_side6_non_aggression
+	}
+	ai_strategy = {
+		type = protect
+		id = "SI6"
+		value = 200
+	}
+}
+side6_neutrality_EFS = {
+	enable = {
+		original_tag = EFS
+		has_global_flag = zeon_side6_non_aggression
+	}
+	ai_strategy = {
+		type = protect
+		id = "SI6"
+		value = 200
+	}
+}
+granada_always_like_ZEO = {
+	enable = {
+		original_tag = GRA
+	}
+	ai_strategy = {
+		type = befriend
+		id = "ZEO"
+		value = 30
+	}
+}
+granada_like_ZEO = {
+	enable = {
+		original_tag = GRA
+		has_global_flag = zeon_granada_military_access
+	}
+	ai_strategy = {
+		type = befriend
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ZEO"
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = "ZEO"
+		value = 200
+	}
+}
+granada_always_ignore_EFS = {
+	enable = {
+		original_tag = GRA
+    NOT = {
+      has_war_with = EFS
+    }
+	}
+	ai_strategy = {
+		type = ignore
+		id = "EFS"
+		value = 50
+	}
+}
+side7_like_EFS = {
+	enable = {
+		original_tag = SI7
+	}
+	ai_strategy = {
+		type = befriend
+		id = "EFS"
+		value = 200
+	}
+	ai_strategy = {
+		type = support
+		id = "EFS"
+		value = 200
+	}
+}
+default_pp_spend_amount = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+	      original_tag = EFS
+			}
+    }
+	}
+
+	ai_strategy = {
+		type = pp_spend_amount
+		id = idea
+		value = 100
+	}
+
+	ai_strategy = {
+		type = pp_spend_amount
+		id = decision
+		value = 100
+	}
+}
+save_admiral_pp_for_later = {
+	enable = {
+		has_war = no
+		threat < 0.3
+		has_political_power < 200
+	}
+	abort = {
+		OR = {
+			has_war = yes
+			threat > 0.3
+			has_political_power > 200
+		}
+	}
+
+	ai_strategy = { # dont burn PP on admirals (can still get free ones)
+		type = pp_spend_priority
+		id = admiral
+		value = -100
+	}
+}
+do_not_waste_pp_if_saving_for_manpower_laws = {
+
+	enable = {
+		manpower_per_military_factory < 500
+		has_war = yes
+	}
+	abort = {
+		OR = {
+			manpower_per_military_factory > 500
+			has_war = no
+		}
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -9999
+	}
+}
+
+# Production
+default_sides_unit_production = {
+	enable = {
+		OR = {
+			original_tag = SI1
+			original_tag = SI2
+			original_tag = SI4
+			original_tag = SI5
+			original_tag = SI6
+			original_tag = SI7
+		}
+	}
+	abort = {
+		OR = {
+			has_war = yes
+			num_divisions > 3
+		}
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 20
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mobilesuit
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 25
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 30
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 10
+	}
+}
+always_stop_making_horsies = {
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -100 # -100% cav
+	}
+}
+default_war_unit_production = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+				original_tag = EFS
+			}
+		}
+		has_war = yes
+	}
+	abort = {
+		has_war = no
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 30
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mechanized
+		value = 10
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = motorized
+		value = 15
+	}
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = 5
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = 0
+	}
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 0
+	}
+}
+ai_naval_unit_production = {
+	enable = {
+		NOT = { original_tag = EFS }
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = -100
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = -100
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = -100
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = -100
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 100
+	}
+}
+default_equipment = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = EFS
+				original_tag = ZEO
+			}
+		}
+	}
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 500
+	}
+	ai_strategy = {
+		type = save_equipment
+		id = infantry_equipment
+		value = 3000
+	}
+	ai_strategy = {
+		type = save_equipment
+		id = support_equipment
+		value = 1500
+	}
+	ai_strategy = {
+		type = save_equipment
+		id = archetype_ac
+		value = 500
+	}
+	ai_strategy = {
+		type = save_equipment
+		id = archetype_mbt
+		value = 500
+	}
+	ai_strategy = {
+		type = save_equipment
+		id = motorized_equipment
+		value = 1000
+	}
+	ai_strategy = {
+		type = save_equipment
+		id = mechanized_equipment
+		value = 1000
+	}
+}
+default_paratroopers_production = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+	      original_tag = EFS
+			}
+    }
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+}
+default_garrison_production = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+	      original_tag = EFS
+			}
+    }
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = suppression
+		value = 2
+	}
+}
+default_mountaineers_production = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+	      original_tag = EFS
+			}
+    }
+		ai_wants_divisions > 11 #Decreasing the amount of mountaineers the AI wants
+	}
+	abort = {
+		ai_wants_divisions < 12 #Decreasing the amount of mountaineers the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 3
+	}
+}
+default_marines_production = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+	      original_tag = EFS
+			}
+    }
+		ai_wants_divisions > 49
+	}
+	abort = {
+		ai_wants_divisions < 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+}
+default_mobile_production = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+	      original_tag = EFS
+			}
+    }
+		ai_wants_divisions > 11
+	}
+	abort = {
+		ai_wants_divisions < 12
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mobile
+		value = 2
+	}
+}
+default_armored_production = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+	      original_tag = EFS
+			}
+    }
+		ai_wants_divisions > 49
+	}
+	abort = {
+		ai_wants_divisions < 50
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 0
+	}
+}
+highered_armored_production = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+	      original_tag = EFS
+			}
+    }
+		num_of_military_factories > 69
+	}
+	abort = {
+		num_of_military_factories < 70
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 5
+	}
+}
+DEFAULT_template_design = {
+	enable = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+	      original_tag = EFS
+			}
+    }
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 10
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = cavalry
+		value = -100
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = mbt
+		value = 50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = paratroopers
+		value = -50
+	}
+
+	ai_strategy = {
+		type = template_prio
+		id = infantry
+		value = 60
+	}
+}
+
+# War
+GRA_space_supremacy_war_prepare = {
+	enable = {
+		original_tag = GRA
+		has_war_with = EFS
+		ZEO = {
+			has_completed_focus = zeon_repression_of_deikun
+			has_completed_focus = zeon_national_mobilization_act
+		}
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "EFS"
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "EFS"
+		value = 1000
+	}
+	ai_strategy = {
+		type = befriend
+		id = "EFS"
+		value = -1000
+	}
+	ai_strategy = {
+		type = support
+		id = "EFS"
+		value = -1000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EFS"
+		value = -1000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "EFS"
+		value = -1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SI1"
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SI2"
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SI4"
+		value = 1000
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SI5"
+		value = 1000
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SI1"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SI2"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SI4"
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SI5"
+		value = 100
+	}
+	ai_strategy = {
+		type = invade
+		id = "SI1"
+		value = 1000
+	}
+	ai_strategy = {
+		type = invade
+		id = "SI2"
+		value = 1000
+	}
+	ai_strategy = {
+		type = invade
+		id = "SI4"
+		value = 1000
+	}
+	ai_strategy = {
+		type = invade
+		id = "SI5"
+		value = 1000
+	}
+}
+GRA_space_supremacy_op_british = {
+	enable = {
+		original_tag = GRA
+		ZEO = {
+			has_completed_focus = zeon_repression_of_deikun
+		}
+		has_war_with = EFS
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SI1
+		priority = 100
+		ordertype = invasion
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SI2
+		priority = 100
+		ordertype = invasion
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SI4
+		priority = 100
+		ordertype = invasion
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		tag = SI5
+		priority = 100
+		ordertype = invasion
+		execution_type = rush
+		execute_order = yes
+	}
+}
+
+ignore_sea_region_near_space = {
+	enable = {
+		always = yes
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 63
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 108
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 86
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 178
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 172
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 175
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 110
+		value = 100
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 97
+		value = 100
+	}
+}
+ask_foreign_manpower_as_major = {
+	enable = {
+		is_major = yes
+		garrison_manpower_need > 200000
+	}
+	abort = {
+		garrison_manpower_need < 100000
+	}
+	ai_strategy = {
+		type = asking_foreign_garrison
+		value = 100
+	}
+}
+put_garrisons_on_high_prio = {
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 100 # positive is high prio, negative is low prio
+	}
+}
+
+# Operation
+build_intelligence_agency_as_major = {
+	enable = {
+		is_major = yes
+		OR = {
+			has_war = yes
+			has_completed_focus = zeon_box_of_laplace
+			date > 77.1.1
+		}
+	}
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+}
+build_intelligence_agency = {
+	enable = {
+		date > 79.1.1
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories < 15
+		}
+	}
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+}
+upgrade_intelligence_agency = {
+	enable = {
+		date > 79.1.1
+		num_of_civilian_factories > 50
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories < 40
+		}
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 5
+	}
+}
+upgrade_intelligence_agency_as_spy_master = {
+	enable = {
+		is_spymaster = yes
+		OR = {
+			has_war = no
+			num_of_civilian_factories > 50
+		}
+	}
+	abort = {
+		is_spymaster = no
+		num_of_civilian_factories < 40
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = 10
+	}
+}
+addintelligence_agency_normal_upgrade_prio = {
+	enable = {
+		always = yes
+	}
+
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_intelligence
+		value = 1000
+	}
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_defense
+		value = 1000
+	}
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_operation
+		value = 500
+	}
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_operative
+		value = 100
+	}
+	ai_strategy = {
+		type = intelligence_agency_branch_desire_factor
+		id = branch_crypto
+		value = 2000
+	}
+}
+more_upgrades_as_spymaster = {
+
+	enable = {
+		is_spymaster = yes
+	}
+
+	abort = {
+		is_spymaster = no
+	}
+
+	ai_strategy = {
+		type = agency_ai_base_num_factories_factor
+		value = -50    # -50% on the define
+	}
+
+	ai_strategy = {
+		type = agency_ai_per_upgrade_factories_factor
+		value = -25    # -25% on the define
+	}
+}

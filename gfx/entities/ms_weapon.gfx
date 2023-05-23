@@ -1,0 +1,671 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ZEO_ms_weapon_beamgun_1_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_beamgun_01.mesh"
+		scale = 4.8
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ZEO_ms_weapon_beamsniperrifle_1_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_beamsniperrifle_01.mesh"
+		scale = 2.8
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ZEO_ms_weapon_beamsniperrifle_backpack_1_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_beamsniperrifle_backpack_01.mesh"
+		scale = 2.2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ZEO_ms_weapon_machinegun_1_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_machinegun_01.mesh"
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_machinegun_2_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_machingun_02.mesh"
+		scale = 1.2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_machinegun_2_EFS_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_machingun_02.mesh"
+		scale = 1
+    meshsettings = {
+      texture_diffuse = "ZEO_machingun_02_EFF_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_machinegun_3_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_machingun_03.mesh"
+		scale = 1.5
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ZEO_ms_weapon_bazooka_1_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_bazooka_01.mesh"
+		scale = 2.5
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_bazooka_2_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_bazooka_02.mesh"
+		scale = 3.0
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_heatmelee_1_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_heatmelee_01.mesh"
+		scale = 1.65
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_heatmelee_2_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_heatmelee_02.mesh"
+		scale = 1.8
+    animation = { id = "idle_stand_2" type = "ZEO_heatmelee_02_idle_animation" }
+    animation = { id = "attack_sword" type = "ZEO_heatmelee_02_attack_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ms07_rod_mesh"
+		file = "gfx/models/units/mobilesuits/ms07_rod.mesh"
+		scale = 1.65
+    animation = { id = "rod_idle" type = "ms07rod_idle_animation" }
+    animation = { id = "rod_attack_1" type = "ms07rod_attack_1_animation" }
+    animation = { id = "rod_attack_2" type = "ms07rod_attack_2_animation" }
+    animation = { id = "rod_defend" type = "ms07rod_defend_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_heatmelee_3_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_heatmelee_03.mesh"
+		scale = 2.2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_beamsord_1_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_beamsord_01.mesh"
+		scale = 7
+    animation = { id = "idle" type = "ZEO_beamsord_01_idle_animation" }
+    animation = { id = "idle_saber" type = "ZEO_beamsord_01_idle_saber_animation" }
+    animation = { id = "attack_saber" type = "ZEO_beamsord_01_attack_saber_animation" }
+    animation = { id = "attack_saber_2" type = "ZEO_beamsord_01_attack_saber_2_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_strumfaust_mesh"
+		file = "gfx/models/units/mobilesuits/ems10_strumfaust.mesh"
+		scale = 0.85
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "ZEO_ms_shield_zudah_mesh"
+		file = "gfx/models/units/mobilesuits/ems10_shield.mesh"
+		scale = 2
+    animation = { id = "idle" type = "ems10_shield_idle_animation" }
+    animation = { id = "assault_attack" type = "ems10_shield_assault_attack_animation" }
+    animation = { id = "heathawk_attack" type = "ems10_shield_heathawk_attack_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "ZEO_ms_shield_zudah_4_mesh"
+		file = "gfx/models/units/mobilesuits/ems10_shield.mesh"
+		scale = 2
+    animation = { id = "idle" type = "ems10_shield_idle_animation" }
+    animation = { id = "assault_attack" type = "ems10_shield_assault_attack_animation" }
+    animation = { id = "heathawk_attack" type = "ems10_shield_heathawk_attack_animation" }
+    meshsettings = {
+      texture_diffuse = "ems10_shield_4_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "ZEO_ms_shield_zudah_G_mesh"
+		file = "gfx/models/units/mobilesuits/ems10_shield.mesh"
+		scale = 2
+    animation = { id = "idle" type = "ems10_shield_idle_animation" }
+    animation = { id = "assault_attack" type = "ems10_shield_assault_attack_animation" }
+    animation = { id = "heathawk_attack" type = "ems10_shield_heathawk_attack_animation" }
+    meshsettings = {
+      texture_diffuse = "ems10_shield_G_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "ZEO_ms_shield_zudah_igloo_mesh"
+		file = "gfx/models/units/mobilesuits/ems10_shield.mesh"
+		scale = 2
+    animation = { id = "idle" type = "ems10_shield_idle_animation" }
+    animation = { id = "assault_attack" type = "ems10_shield_assault_attack_animation" }
+    animation = { id = "heathawk_attack" type = "ems10_shield_heathawk_attack_animation" }
+    meshsettings = {
+      texture_diffuse = "ems10_shield_igloo_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "ZEO_ms_shield_2_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_02.mesh"
+		scale = 2.2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_2_M_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_02.mesh"
+		scale = 2.2
+    meshsettings = {
+      texture_diffuse = "ZEO_shield_02_M_AM.dds"
+      texture_normal = "ZEO_shield_02_M_NM.dds"
+      texture_specular = "ZEO_shield_02_M_SP.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_2_K_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_02.mesh"
+		scale = 2.2
+    meshsettings = {
+      texture_diffuse = "ZEO_shield_02_K_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_2_D_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_02.mesh"
+		scale = 2.2
+    meshsettings = {
+      texture_diffuse = "ZEO_shield_02_D_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_2_EFF_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_02.mesh"
+		scale = 2.2
+    meshsettings = {
+      texture_diffuse = "ZEO_shield_02_EFF_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_3_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_03.mesh"
+		scale = 6.5
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_3_char_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_03.mesh"
+		scale = 6.5
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ZEO_shield_03_Char_AM.dds"
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_3_herbert_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_03.mesh"
+		scale = 6.5
+    meshsettings = {
+      texture_diffuse = "ZEO_shield_03_Herbert_AM.dds"
+      texture_specular = "ZEO_shield_03_Herbert_SP.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+    name = "ZEO_ms06_antena_mesh"
+    file = "gfx/models/units/mobilesuits/ms06_antena.mesh"
+    scale = 2.0
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "ZEO_ms06_antenaC_mesh"
+    file = "gfx/models/units/mobilesuits/ms06_antena.mesh"
+    scale = 2.0
+    meshsettings = {
+      texture_diffuse = "antennaC_Am.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms06_antena_mesh"
+    file = "gfx/models/units/mobilesuits/ms06_antena.mesh"
+    scale = 2.0
+    meshsettings = {
+      texture_diffuse = "antennaEFF_Am.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+	pdxmesh = {
+		name = "EFS_ms_shield_1_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_01.mesh"
+		scale = 2.5
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_shield_2_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_02.mesh"
+		scale = 2.1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "EFS_ms_shield_2_79_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_02.mesh"
+		scale = 2.1
+    meshsettings = {
+      texture_diffuse = "EFS_shield_02_rx79_diffuse.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "EFS_ms_shield_2_79Z_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_02.mesh"
+		scale = 2.1
+    meshsettings = {
+      texture_diffuse = "EFS_shield_02_Z_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "EFS_ms_shield_1_781_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_01.mesh"
+		scale = 2.5
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01781_diffuse.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_shield_1_782_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_01.mesh"
+		scale = 2.5
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01782_diffuse.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_shield_1_782Char_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_01.mesh"
+		scale = 2.5
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01782Char_diffuse.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_shield_1_782FATB_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_01.mesh"
+		scale = 2.5
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01782FATB_diffuse.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_shield_1_782TAM_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_01.mesh"
+		scale = 2.5
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01782TAM_diffuse.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_shield_1_783_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_01.mesh"
+		scale = 2.5
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01783_diffuse.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_shield_3_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_03.mesh"
+		scale = 2.3
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "EFS_ms_shield_3_aeug_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_03.mesh"
+		scale = 2.3
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01_Kai_AEUG_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "EFS_ms_shield_3_space_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_03.mesh"
+		scale = 2.3
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01_Kai_SPACE_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "EFS_ms_shield_3_tit_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_03.mesh"
+		scale = 2.3
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01_Kai_TTT_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "EFS_ms_shield_3_zeon_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_shield_03.mesh"
+		scale = 2.3
+    meshsettings = {
+      texture_diffuse = "EFS_shield_01_Kai_ZEON_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+	pdxmesh = {
+		name = "EFS_ms_weapon_beamspray_1_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_beamspray_01.mesh"
+		scale = 1.0
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "EFS_ms_weapon_beamspray_2_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_beamspray_02.mesh"
+		scale = 1.0
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_weapon_beamgun_1_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_beamgun_01.mesh"
+		scale = 1.4
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_weapon_beamgun_1_gundam_Char_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_beamgun_01.mesh"
+		scale = 1.4
+    meshsettings = {
+      texture_diffuse = "BeamRifle_Char_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_weapon_beamgun_2_mesh"
+		file = "gfx/models/units/mobilesuits/EFS_beamgun_02.mesh"
+		scale = 1.2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+    name = "EFS_ms_weapon_machinegun_1_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_machinegun_01.mesh"
+    scale = 2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_machinegun_2_short_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_ms_weapon_machinegun_02_short.mesh"
+    scale = 1.8
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_machinegun_2_long_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_ms_weapon_machinegun_02_long.mesh"
+    scale = 1.8
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_machinegun_2_med_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_ms_weapon_machinegun_02_med.mesh"
+    scale = 1.8
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsord_1_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsord_01.mesh"
+    scale = 1.2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsord_1_Z_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsord_01.mesh"
+    scale = 1.2
+    meshsettings = {
+      texture_diffuse = "EFS_beamsord_01_Z_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsord_1_T_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsord_01.mesh"
+    scale = 1.2
+    meshsettings = {
+      texture_diffuse = "EFS_beamsord_01_T_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsord_1_Char_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsord_01.mesh"
+    scale = 1.2
+    meshsettings = {
+      texture_diffuse = "EFS_beamsord_01_char_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsord_2_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsord_02.mesh"
+    scale = 1.5
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsord_2_aeug_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsord_02.mesh"
+    scale = 1.5
+    meshsettings = {
+      texture_diffuse = "EFS_Saber_01_AEUG_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsord_2_space_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsord_02.mesh"
+    scale = 1.5
+    meshsettings = {
+      texture_diffuse = "EFS_Saber_01_SPACE_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsord_2_tit_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsord_02.mesh"
+    scale = 1.5
+    meshsettings = {
+      texture_diffuse = "EFS_Saber_01_TTT_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsord_2_zeon_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsord_02.mesh"
+    scale = 1.5
+    meshsettings = {
+      texture_diffuse = "EFS_Saber_01_ZEON_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_bazooka_1_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_bazooka_01.mesh"
+    scale = 2.5
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_bazooka_1_dom_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_bazooka_01.mesh"
+    scale = 3.5
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_bazooka_1_gundam_T_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_bazooka_01.mesh"
+    scale = 2.5
+    meshsettings = {
+      texture_diffuse = "efs_bazooka_01_Titans_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_bazooka_1_gundam_783_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_bazooka_01.mesh"
+    scale = 2.5
+    meshsettings = {
+      texture_diffuse = "efs_bazooka_01_783_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_bazooka_1_gundam_Char_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_bazooka_01.mesh"
+    scale = 2.5
+    meshsettings = {
+      texture_diffuse = "efs_bazooka_01_Char_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_bazooka_180_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_bazooka_180.mesh"
+    scale = 3.2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_ms_weapon_missile_launcher_1_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_missile_launcher_1.mesh"
+    scale = 1.0
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "EFS_ms_shield_rx78nt1_mesh"
+		file = "gfx/models/units/mobilesuits/rx78nt1_shield.mesh"
+		scale = 2.0
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_shield_rx78nt1_amuro_mesh"
+		file = "gfx/models/units/mobilesuits/rx78nt1_shield.mesh"
+		scale = 2.0
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "NT1_SHIELD_Amuro_AM.dds"
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_weapon_beamgun_rx78nt1_mesh"
+		file = "gfx/models/units/mobilesuits/rx78nt1_gun.mesh"
+		scale = 1.4
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_ms_weapon_gatling_rx78nt1_mesh"
+		file = "gfx/models/units/mobilesuits/rx78nt1_gatling.mesh"
+		scale = 1.0
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+    name = "EFS_ms_weapon_beamsniperrifle_1_mesh"
+    file = "gfx/models/units/mobilesuits/EFS_beamsniperrifle_01.mesh"
+    scale = 1.9
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_rx79_backpack_mesh"
+    file = "gfx/models/units/mobilesuits/rx79_bp.mesh"
+    scale = 3.4
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+}

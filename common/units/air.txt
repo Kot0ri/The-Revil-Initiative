@@ -1,0 +1,184 @@
+sub_units = {
+  attack_helicopter = {
+    sprite = medium_plane
+    priority = 1
+    active = yes
+    type = { cas }
+    need = { archetype_attack_helicopter = 1 }
+    categories = { category_air_helicopter }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+  }
+  scout_plane = {
+    sprite = light_plane
+    priority = 1
+    active = yes
+    type = { scout_plane }
+    need = { archetype_scout_plane = 1 }
+    categories = { category_scout_plane }
+		land_air_wing_size = 10
+		carrier_air_wing_size = 10
+  }
+  core_fighter = {
+    sprite = core_fighter
+    priority = 1
+    active = yes
+    type = { fighter cas }
+    need = { archetype_core_fighter = 1 }
+    categories = {
+      category_fighter
+      category_core_fighter
+    }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+  }
+  multirolle = {
+    sprite = light_plane
+    priority = 25
+    ai_priority = 25
+    active = yes
+    type = { cas fighter }
+    need = { archetype_multirolle = 1 }
+    categories = {
+      category_fighter
+      category_multirolle
+    }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+  }
+  fighter = {
+    sprite = light_plane
+    priority = 21
+    ai_priority = 21
+    active = yes
+    type = { fighter }
+    need = { archetype_fighter = 1 }
+    categories = { category_fighter }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+  }
+  attacker = {
+    sprite = medium_plane
+    priority = 1
+    active = yes
+    type = { cas }
+    need = { archetype_attacker = 1 }
+    categories = { category_cas }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+  }
+  naval_bomber = {
+    sprite = medium_plane
+    priority = 1
+    active = yes
+    type = { naval_bomber }
+    need = { archetype_naval_bomber = 1 }
+    categories = {
+      category_cas
+      category_nav_bomber
+    }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+  }
+  tactical_bomber = {
+    sprite = medium_plane
+    priority = 1
+    active = yes
+    type = { tactical_bomber }
+    need = { archetype_tactical_bomber = 1 }
+    categories = {
+      category_tac_bomber
+    }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+  }
+  strategic_bomber = {
+    sprite = heavy_plane
+    priority = 15
+    ai_priority = 15
+    active = yes
+    type = {
+      strategic_bomber
+      tactical_bomber
+      air_transport
+    }
+    need = { archetype_strategic_bomber = 1 }
+    categories = { category_air_carrier }
+		land_air_wing_size = 100
+  }
+  assault_ship = {
+    sprite = assault_ship
+    priority = 10
+    ai_priority = 10
+    active = yes
+    type = {
+      strategic_bomber
+      air_transport
+      tactical_bomber
+    }
+    need = { archetype_assault_ship = 1 }
+    categories = { category_air_assaultship }
+		land_air_wing_size = 10
+  }
+  transport_plane = {
+    sprite = heavy_plane
+    priority = 1
+    active = yes
+    type = { air_transport }
+    need = { transport_plane_equipment = 1 }
+		land_air_wing_size = 100
+  }
+  ms07_h_8 = {
+    sprite = light_plane
+    priority = 1
+    active = yes
+    type = {
+      cas
+      fighter
+    }
+    need = { archetype_ms07_h_8 = 1 }
+    categories = {
+      category_all_mobilesuit
+      category_air_mobilesuit
+      category_all_mobilesuit_mobilearmor
+      category_air_mobilesuit_mobilearmor
+    }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+  }
+  msm07_di = {
+    sprite = heavy_plane
+    priority = 1
+    active = yes
+    type = {
+      strategic_bomber
+      fighter
+    }
+    need = { archetype_msm07_di = 1 }
+    categories = {
+      category_all_mobilearmor
+      category_all_mobilesuit_mobilearmor
+      category_air_mobilearmor
+      category_air_mobilesuit_mobilearmor
+    }
+		land_air_wing_size = 10
+  }
+  apsalus = {
+    sprite = heavy_plane
+    priority = 1
+    active = yes
+    type = {
+      strategic_bomber
+      tactical_bomber
+    }
+    need = { archetype_apsalus = 1 }
+    categories = {
+      category_all_mobilesuit_mobilearmor
+      category_all_mobilearmor
+      category_air_mobilearmor
+      category_air_mobilesuit_mobilearmor
+    }
+		land_air_wing_size = 10
+  }
+
+}

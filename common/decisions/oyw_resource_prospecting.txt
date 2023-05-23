@@ -1,0 +1,735 @@
+prospect_for_resources = {
+	develop_solomon_1 = {
+
+		icon = steel
+
+		allowed = {
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 932
+				state = 933
+			}
+		}
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 932
+			controls_state = 932
+			owns_state = 933
+			controls_state = 933
+		}
+
+		visible = {
+			owns_state = 932
+			controls_state = 932
+			owns_state = 933
+			controls_state = 933
+			932 = {
+				NOT = {
+					has_state_flag = solomon_developed_1
+				}
+			}
+			933 = {
+				NOT = {
+					has_state_flag = solomon_developed_1
+				}
+			}
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			has_tech = excavation1
+		}
+
+		fire_only_once = yes
+
+		cost = 35
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			932 = { set_state_flag = solomon_developed_1 }
+			932 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+			933 = { set_state_flag = solomon_developed_1 }
+			933 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	develop_solomon_2 = {
+
+		icon = tungsten
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 932
+				state = 933
+			}
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 932
+			controls_state = 932
+			owns_state = 933
+			controls_state = 933
+		}
+
+		visible = {
+			owns_state = 932
+			controls_state = 932
+			owns_state = 933
+			controls_state = 933
+			932 = {
+				has_state_flag = solomon_developed_1
+				NOT = {
+					has_state_flag = solomon_developed_2
+				}
+			}
+			933 = {
+				has_state_flag = solomon_developed_1
+				NOT = {
+					has_state_flag = solomon_developed_2
+				}
+			}
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 40
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			932 = { set_state_flag = solomon_developed_2 }
+			932 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+			933 = { set_state_flag = solomon_developed_2 }
+			933 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+		}
+	}
+	develop_solomon_3 = {
+
+		icon = chromium
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 932
+				state = 933
+			}
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 932
+			controls_state = 932
+			owns_state = 933
+			controls_state = 933
+		}
+
+		visible = {
+			owns_state = 932
+			controls_state = 932
+			owns_state = 933
+			controls_state = 933
+			932 = {
+				has_state_flag = solomon_developed_2
+				NOT = {
+					has_state_flag = solomon_developed_3
+				}
+			}
+			933 = {
+				has_state_flag = solomon_developed_2
+				NOT = {
+					has_state_flag = solomon_developed_3
+				}
+			}
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 45
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			932 = { set_state_flag = solomon_developed_3 }
+			932 = {
+				add_resource = {
+					type = titanium
+					amount = 12
+				}
+			}
+			933 = { set_state_flag = solomon_developed_3 }
+			933 = {
+				add_resource = {
+					type = titanium
+					amount = 12
+				}
+			}
+		}
+	}
+	develop_abaoaqu_1 = {
+
+		icon = steel
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 934
+				state = 935
+			}
+		}
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 934
+			controls_state = 934
+			owns_state = 935
+			controls_state = 935
+		}
+
+		visible = {
+			owns_state = 934
+			controls_state = 934
+			owns_state = 935
+			controls_state = 935
+			934 = {
+				NOT = {
+					has_state_flag = abaoaqu_developed_1
+				}
+			}
+			935 = {
+				NOT = {
+					has_state_flag = abaoaqu_developed_1
+				}
+			}
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			has_tech = excavation1
+		}
+
+		fire_only_once = yes
+
+		cost = 35
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			934 = { set_state_flag = abaoaqu_developed_1 }
+			934 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+			935 = { set_state_flag = abaoaqu_developed_1 }
+			935 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	develop_abaoaqu_2 = {
+
+		icon = tungsten
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 934
+				state = 935
+			}
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 934
+			controls_state = 934
+			owns_state = 935
+			controls_state = 935
+		}
+
+		visible = {
+			owns_state = 934
+			controls_state = 934
+			owns_state = 935
+			controls_state = 935
+			934 = {
+				has_state_flag = abaoaqu_developed_1
+				NOT = {
+					has_state_flag = abaoaqu_developed_2
+				}
+			}
+			935 = {
+				has_state_flag = abaoaqu_developed_1
+				NOT = {
+					has_state_flag = abaoaqu_developed_2
+				}
+			}
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 40
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			934 = { set_state_flag = abaoaqu_developed_2 }
+			934 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+			935 = { set_state_flag = abaoaqu_developed_2 }
+			935 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+		}
+	}
+	develop_abaoaqu_3 = {
+
+		icon = chromium
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 934
+				state = 935
+			}
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 934
+			controls_state = 934
+			owns_state = 935
+			controls_state = 935
+		}
+
+		visible = {
+			owns_state = 934
+			controls_state = 934
+			owns_state = 935
+			controls_state = 935
+			934 = {
+				has_state_flag = abaoaqu_developed_2
+				NOT = {
+					has_state_flag = abaoaqu_developed_3
+				}
+			}
+			935 = {
+				has_state_flag = abaoaqu_developed_2
+				NOT = {
+					has_state_flag = abaoaqu_developed_3
+				}
+			}
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 45
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			934 = { set_state_flag = abaoaqu_developed_3 }
+			934 = {
+				add_resource = {
+					type = titanium
+					amount = 12
+				}
+			}
+			935 = { set_state_flag = abaoaqu_developed_3 }
+			935 = {
+				add_resource = {
+					type = titanium
+					amount = 12
+				}
+			}
+		}
+	}
+	develop_luna2_1 = {
+
+		icon = steel
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 930
+				state = 931
+			}
+		}
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 930
+			controls_state = 930
+			owns_state = 931
+			controls_state = 931
+		}
+
+		visible = {
+			owns_state = 930
+			controls_state = 930
+			owns_state = 931
+			controls_state = 931
+			930 = {
+				NOT = {
+					has_state_flag = luna2_developed_1
+				}
+			}
+			931 = {
+				NOT = {
+					has_state_flag = luna2_developed_1
+				}
+			}
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			has_tech = excavation1
+		}
+
+		fire_only_once = yes
+
+		cost = 35
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			930 = { set_state_flag = luna2_developed_1 }
+			930 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+			931 = { set_state_flag = luna2_developed_1 }
+			931 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+		}
+	}
+	develop_luna2_2 = {
+
+		icon = tungsten
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 930
+				state = 931
+			}
+		}
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 930
+			controls_state = 930
+			owns_state = 931
+			controls_state = 931
+		}
+
+		visible = {
+			owns_state = 930
+			controls_state = 930
+			owns_state = 931
+			controls_state = 931
+			930 = {
+				has_state_flag = luna2_developed_1
+				NOT = {
+					has_state_flag = luna2_developed_2
+				}
+			}
+			931 = {
+				has_state_flag = luna2_developed_1
+				NOT = {
+					has_state_flag = luna2_developed_2
+				}
+			}
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 40
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			930 = { set_state_flag = luna2_developed_2 }
+			930 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+			931 = { set_state_flag = luna2_developed_2 }
+			931 = {
+				add_resource = {
+					type = tungsten
+					amount = 12
+				}
+			}
+		}
+	}
+	develop_luna2_3 = {
+
+		icon = chromium
+
+		allowed = {
+
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 930
+				state = 931
+			}
+		}
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 930
+			controls_state = 930
+			owns_state = 931
+			controls_state = 931
+		}
+
+		visible = {
+			owns_state = 930
+			controls_state = 930
+			owns_state = 931
+			controls_state = 931
+			930 = {
+				has_state_flag = luna2_developed_2
+				NOT = {
+					has_state_flag = luna2_developed_3
+				}
+			}
+			931 = {
+				has_state_flag = luna2_developed_2
+				NOT = {
+					has_state_flag = luna2_developed_3
+				}
+			}
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 45
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			930 = { set_state_flag = luna2_developed_3 }
+			930 = {
+				add_resource = {
+					type = titanium
+					amount = 12
+				}
+			}
+			931 = { set_state_flag = luna2_developed_3 }
+			931 = {
+				add_resource = {
+					type = titanium
+					amount = 12
+				}
+			}
+		}
+	}
+	jupiter_fleet = {
+
+		icon = oil
+		allowed = {
+		}
+		available = {
+			NOT = {
+				has_country_flag = jupiter_fleet_on
+			}
+      has_equipment = {
+        convoy_1 > 99
+      }
+		}
+		visible = {
+			NOT = {
+				has_country_flag = jupiter_fleet_on
+			}
+		}
+		cost = 150
+		days_remove = 120
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.1
+				has_war = no
+			}
+		}
+		complete_effect = {
+      add_equipment_to_stockpile = {
+        type = convoy_1
+        amount = -100
+      }
+		}
+		remove_effect = {
+			country_event = { id = oyw.4 hours = 3 }
+			add_ideas = {
+				jupiter_fleet_get_resource
+			}
+			set_country_flag = jupiter_fleet_on
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = jupiter_fleet_is_back
+					}
+				}
+				set_country_flag = jupiter_fleet_is_back
+			}
+		}
+	}
+	jupiter_fleet_stop = {
+
+		icon = oil
+		allowed = {
+		}
+		available = {
+			has_country_flag = jupiter_fleet_on
+		}
+		visible = {
+			has_country_flag = jupiter_fleet_on
+		}
+		cost = 0
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = { id = oyw.5 hours = 3 }
+			remove_ideas = {
+				jupiter_fleet_get_resource
+			}
+      add_equipment_to_stockpile = {
+        type = convoy_1
+        amount = 100
+      }
+			clr_country_flag = jupiter_fleet_on
+		}
+	}
+}

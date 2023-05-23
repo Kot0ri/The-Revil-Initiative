@@ -1,0 +1,252 @@
+spriteTypes = {
+  spriteType = {
+    name = "GFX_story_mission"
+    textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission.dds"
+		noOfFrames = 2
+  }
+  spriteType = {
+    name = "GFX_storymission_mission_frame"
+    textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_mission_frame.dds"
+    noOfFrames = 2
+  }
+  spriteType = {
+    name = "GFX_storymission_mission_vertical_bar"
+    textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_mission_vertical_bar.dds"
+    alwaystransparent = yes
+    noOfFrames = 3
+  }
+  spriteType = {
+    name = "GFX_storymission_mission_horizon_bar"
+    textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_mission_horizon_bar.dds"
+    alwaystransparent = yes
+    noOfFrames = 3
+  }
+  spriteType = {
+    name = "GFX_storymission_mission_right_bottom_corner_bar"
+    textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_mission_right_bottom_corner_bar.dds"
+    alwaystransparent = yes
+    noOfFrames = 3
+  }
+  spriteType = {
+    name = "GFX_storymission_mission_left_bottom_corner_bar"
+    textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_mission_left_bottom_corner_bar.dds"
+    alwaystransparent = yes
+    noOfFrames = 3
+  }
+  spriteType = {
+    name = "GFX_storymission_mission_right_corner_bar"
+    textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_mission_right_corner_bar.dds"
+    alwaystransparent = yes
+    noOfFrames = 3
+  }
+  spriteType = {
+    name = "GFX_storymission_mission_left_corner_bar"
+    textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_mission_left_corner_bar.dds"
+    alwaystransparent = yes
+    noOfFrames = 3
+  }
+	# ストーリータイトル
+	spriteType = {
+		name = "GFX_storymission_gundam_stories"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_gundam_stories.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_igloo_stories"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_igloo_stories.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_stories"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_0080_stories.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_stardustmemories_stories"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_0083_stories.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_ms08team_stories"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_08_stories.dds"
+	}
+
+	# ミッション　タイトルと背景
+  spriteType = {
+		name = "GFX_storymission_mission_gundam_title"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_gundam_title.dds"
+    alwaystransparent = yes
+	}
+  spriteType = {
+		name = "GFX_storymission_mission_gundam_bg"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_0080_bg.dds"
+    alwaystransparent = yes
+	}
+  spriteType = {
+		name = "GFX_storymission_mission_igloo_title"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_igloo_title.dds"
+    alwaystransparent = yes
+	}
+  spriteType = {
+		name = "GFX_storymission_mission_igloo_bg"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_0080_bg.dds"
+    alwaystransparent = yes
+	}
+  spriteType = {
+		name = "GFX_storymission_mission_ms08team_title"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_08_title.dds"
+    alwaystransparent = yes
+	}
+  spriteType = {
+		name = "GFX_storymission_mission_ms08team_bg"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_0080_bg.dds"
+    alwaystransparent = yes
+	}
+  spriteType = {
+		name = "GFX_storymission_mission_warinthepocket_title"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_0080_title.dds"
+    alwaystransparent = yes
+	}
+  spriteType = {
+		name = "GFX_storymission_mission_warinthepocket_bg"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_0080_bg.dds"
+    alwaystransparent = yes
+	}
+  spriteType = {
+		name = "GFX_storymission_mission_stardustmemories_title"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_0083_title.dds"
+    alwaystransparent = yes
+	}
+  spriteType = {
+		name = "GFX_storymission_mission_stardustmemories_bg"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_0080_bg.dds"
+    alwaystransparent = yes
+	}
+	# ポケットの中の戦争　ミッション
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_01a"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_01a.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_01b"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_01b.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_02"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_02.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_03a"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_03a.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_03b"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_03b.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_04a"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_04a.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_04b"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_04b.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_05"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_05.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_06"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_06.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_07"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_07.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_08a"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_08a.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_08b"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_08b.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_09a"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_09a.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_09b"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_09b.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_10a"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_10a.dds"
+	}
+  spriteType = {
+		name = "GFX_storymission_warinthepocket_10b"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_warinthepocket_10b.dds"
+	}
+	spriteType = {
+		name = "GFX_storymission_horizontal_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_horizontal_bar.dds"
+		noOfFrames = 2
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_vertical_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_vertical_bar.dds"
+		noOfFrames = 2
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_01_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_01_bar.dds"
+		noOfFrames = 2
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_02_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_02_bar.dds"
+		noOfFrames = 3
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_03_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_03_bar.dds"
+		noOfFrames = 2
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_04_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_04_bar.dds"
+		noOfFrames = 4
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_05_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_05_bar.dds"
+		noOfFrames = 3
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_06_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_06_bar.dds"
+		noOfFrames = 4
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_07_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_07_bar.dds"
+		noOfFrames = 4
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_08_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_08_bar.dds"
+		noOfFrames = 6
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_storymission_09_bar"
+		textureFile = "gfx/interface/custom_guis/story_missions/oyw_story_mission_09_bar.dds"
+		noOfFrames = 2
+		alwaystransparent = yes
+	}
+}

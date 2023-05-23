@@ -1,0 +1,18 @@
+units = {
+	fleet = {
+		name = "Space battleship"
+		naval_base = 13352
+		task_force = {
+			location = 13352
+			ship = {
+				definition = efsf_space_battleship
+			}
+			ship = {
+				definition = efsf_space_battleship
+			}
+			ship = {
+				definition = efsf_space_battleship
+			}
+		}
+	}
+}

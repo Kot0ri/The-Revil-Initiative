@@ -1,0 +1,281 @@
+equipments = {
+  archetype_mbt = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_modern_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+tank_reliability_upgrade
+tank_engine_upgrade
+tank_armor_upgrade
+tank_gun_upgrade
+}
+    lend_lease_cost = 12
+    resources = {
+    }
+  }
+  mbt1_equipment = {
+    archetype = archetype_mbt
+    is_convertable = yes
+    priority = 10
+    maximum_speed = 30
+    reliability = 0.8
+    soft_attack = 21.200000000000003
+    hard_attack = 16.400000000000002
+    air_attack = 3.7
+    ap_attack = 135
+    defense = 3.8000000000000003
+    breakthrough = 25.200000000000003
+    armor_value = 30.900000000000002
+    hardness = 1
+    build_cost_ic = 2.3
+    fuel_consumption = 2
+    resources = {
+      steel = 2
+    }
+  }
+  mbt2_equipment = {
+    archetype = archetype_mbt
+    is_convertable = yes
+    can_convert_from = {
+mbt1_equipment
+}
+    parent = mbt1_equipment
+    priority = 20
+    visual_level = 1
+    maximum_speed = 35
+    reliability = 0.8
+    soft_attack = 25
+    hard_attack = 19.3
+    air_attack = 4.4
+    ap_attack = 150
+    defense = 4.5
+    breakthrough = 29.700000000000003
+    armor_value = 36.4
+    hardness = 1
+    build_cost_ic = 3.2199999999999998
+    fuel_consumption = 2
+    resources = {
+      steel = 2
+      chromium = 1
+    }
+  }
+  archetype_para_tank = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_modern_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+tank_reliability_upgrade
+tank_engine_upgrade
+tank_armor_upgrade
+tank_gun_upgrade
+}
+    lend_lease_cost = 12
+    resources = {
+    }
+  }
+  para_tank_equipment = {
+    archetype = archetype_para_tank
+    is_convertable = yes
+    priority = 10
+    maximum_speed = 40
+    reliability = 0.85
+    soft_attack = 23.700000000000003
+    hard_attack = 18.3
+    air_attack = 4.1000000000000005
+    ap_attack = 142.5
+    defense = 4.2
+    breakthrough = 28.200000000000003
+    armor_value = 34.5
+    hardness = 1
+    build_cost_ic = 3.2199999999999998
+    fuel_consumption = 2
+    resources = {
+      steel = 2
+      chromium = 1
+      aluminium = 1
+    }
+  }
+  archetype_mobiletank = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_super_heavy_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+tank_reliability_upgrade
+tank_engine_upgrade
+tank_armor_upgrade
+tank_gun_upgrade
+}
+    lend_lease_cost = 14
+    resources = {
+    }
+  }
+  mobiletank_equipment = {
+    archetype = archetype_mobiletank
+    is_convertable = yes
+    can_convert_from = {
+mbt3_equipment
+rx75_equipment
+}
+    priority = 10
+    maximum_speed = 50
+    reliability = 0.9
+    soft_attack = 46.6
+    hard_attack = 50.400000000000006
+    air_attack = 11.5
+    ap_attack = 180
+    defense = 5.7
+    breakthrough = 40.900000000000006
+    armor_value = 132
+    hardness = 1
+    build_cost_ic = 13.799999999999999
+    fuel_consumption = 6
+    resources = {
+      steel = 6
+      chromium = 1
+    }
+  }
+  archetype_lbs = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_amphibious_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+tank_reliability_upgrade
+tank_engine_upgrade
+tank_armor_upgrade
+tank_gun_upgrade
+}
+    lend_lease_cost = 20
+    resources = {
+    }
+  }
+  lbs1_equipment = {
+    archetype = archetype_lbs
+    is_convertable = yes
+    priority = 10
+    maximum_speed = 40
+    reliability = 0.9
+    soft_attack = 34.7
+    hard_attack = 33.300000000000004
+    air_attack = 7.6000000000000005
+    ap_attack = 200
+    defense = 5.1000000000000005
+    breakthrough = 35.7
+    armor_value = 163.5
+    hardness = 1
+    build_cost_ic = 21.849999999999998
+    fuel_consumption = 3
+    resources = {
+      steel = 11
+      chromium = 2
+    }
+  }
+  lbs2_equipment = {
+    archetype = archetype_lbs
+    is_convertable = yes
+    parent = lbs1_equipment
+    priority = 20
+    visual_level = 1
+    maximum_speed = 40
+    reliability = 0.95
+    soft_attack = 42.5
+    hard_attack = 44.400000000000006
+    air_attack = 10.200000000000001
+    ap_attack = 220
+    defense = 4.5
+    breakthrough = 29.700000000000003
+    armor_value = 179.5
+    hardness = 1
+    build_cost_ic = 31.74
+    fuel_consumption = 3
+    resources = {
+      steel = 14
+      chromium = 3
+    }
+  }
+  archetype_ac = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_armored_car_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+tank_reliability_upgrade
+ac_engine_upgrade
+tank_armor_upgrade
+tank_gun_upgrade
+}
+    lend_lease_cost = 5
+    resources = {
+    }
+  }
+  ac1_equipment = {
+    archetype = archetype_ac
+    is_convertable = yes
+    priority = 10
+    maximum_speed = 45
+    reliability = 0.85
+    soft_attack = 8.9
+    hard_attack = 8
+    air_attack = 1.84
+    ap_attack = 20
+    defense = 8
+    breakthrough = 9.600000000000001
+    armor_value = 12
+    hardness = 0.6
+    build_cost_ic = 0.69
+    resources = {
+      steel = 2
+      rubber = 1
+    }
+  }
+  ac2_equipment = {
+    archetype = archetype_ac
+    is_convertable = yes
+    parent = ac1_equipment
+    priority = 20
+    visual_level = 1
+    maximum_speed = 50
+    reliability = 0.9
+    soft_attack = 15.600000000000001
+    hard_attack = 14
+    air_attack = 3.22
+    ap_attack = 20
+    defense = 14
+    breakthrough = 16.8
+    armor_value = 18
+    hardness = 0.7
+    build_cost_ic = 1.035
+    resources = {
+      steel = 2
+      rubber = 1
+    }
+  }
+}

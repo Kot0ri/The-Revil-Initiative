@@ -1,0 +1,13 @@
+﻿division_template = {
+	name = "MS Artillery Division (Zaku)"
+	regiments = {
+    ms05 = { x = 0 y = 0 }
+    ms05 = { x = 0 y = 1 }
+		ms06_k = { x = 1 y = 0 }
+    ms06_k = { x = 1 y = 1 }
+	}
+  support = {
+		engineer = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+	}
+}

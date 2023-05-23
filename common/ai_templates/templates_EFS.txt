@@ -1,0 +1,808 @@
+mobilesuit_EFS = {
+	available_for = {
+		EFS
+	}
+	roles = {
+		mobilesuit
+	}
+	match_to_count = 0.80
+	upgrade_prio = {
+		base = 100
+		}
+	mobilesuit_rgm79 = {
+		upgrade_prio = {
+			factor = 20
+			modifier = {
+				factor = 10
+				has_tech = rgm79_tech
+			}
+		}
+		production_prio = {
+			factor = 10
+		}
+
+		target_width = 6.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 5000.0
+
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				ac = 1
+			}
+
+			regiments = {
+				rgm79 = 3
+			}
+		}
+
+		allowed_types = {
+			motorized
+			mechanized
+			engineer
+			recon
+			signal_company
+			maintenance_company
+			ac
+			rgm79
+			rgm79_d
+			rgc80_support
+			rgm79_sc_support
+			rgm79_sp_support
+		}
+	}
+}
+early_mobilesuit_EFS = {
+	available_for = {
+		EFS
+	}
+	roles = {
+		early_mobilesuit
+	}
+	match_to_count = 0.80
+	upgrade_prio = {
+		base = 50
+	}
+	mobilesuit_rx79 = {
+		upgrade_prio = {
+			factor = 2
+			modifier = {
+				factor = 10
+			}
+		}
+		production_prio = {
+			factor = 10
+      modifier = {
+        factor = 0
+        check_variable = { EFS.num_battalions_with_type@rx79 > 10 }
+      }
+		}
+
+		target_width = 6.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 5000.0
+
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				ac = 1
+			}
+
+			regiments = {
+				rx79 = 1
+				rgm79g = 2
+			}
+		}
+
+		allowed_types = {
+			motorized
+			mechanized
+			engineer
+			recon
+			signal_company
+			maintenance_company
+			ac
+			rx79
+			rx79_brf
+			rx79_rpt
+			rgm79g
+			rgm79g_brf
+			rgm79g_rpg
+		}
+
+		target_min_match = 0.5
+	}
+}
+sniper_mobilesuit_EFS = {
+	available_for = {
+		EFS
+	}
+	roles = {
+		sniper_mobilesuit
+	}
+	match_to_count = 0.80
+	upgrade_prio = {
+		base = 20
+	}
+	sniper_mobilesuit_rgm79_sc = {
+		upgrade_prio = {
+			factor = 2
+		}
+		production_prio = {
+			factor = 5
+		}
+
+		target_width = 8.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 5000.0
+
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				ac = 1
+			}
+
+			regiments = {
+				rgm79_sc = 2
+        motorized = 2
+			}
+		}
+
+		allowed_types = {
+			motorized
+			mechanized
+			engineer
+			recon
+			signal_company
+			maintenance_company
+			ac
+			rgm79_sp
+		}
+
+    replace_at_match = 0.4
+		replace_with = sniper_mobilesuit_rgm79sp
+		target_min_match = 0.5
+	}
+sniper_mobilesuit_rgm79_sp = {
+		upgrade_prio = {
+			factor = 2
+		}
+		production_prio = {
+			factor = 5
+		}
+
+		target_width = 8.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 6000.0
+
+			support = {
+				engineer = 1
+				maintenance_company = 1
+				ac = 1
+			}
+
+			regiments = {
+				rgm79_sp = 2
+        motorized = 2
+			}
+		}
+
+		allowed_types = {
+			motorized
+			mechanized
+			engineer
+			recon
+			signal_company
+			maintenance_company
+			ac
+      rgm79_sp
+		}
+
+		target_min_match = 0.5
+	}
+}
+custom_mobilesuit_EFS = {
+	available_for = {
+		EFS
+	}
+	roles = {
+		custom_mobilesuit
+	}
+	match_to_count = 0.80
+	upgrade_prio = {
+		base = 30
+	}
+	mobilesuit_plan_v_EFS = {
+		upgrade_prio = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_tech = rgm79_tech
+			}
+		}
+		production_prio = {
+			factor = 10
+      modifier = {
+        factor = 0
+        check_variable = { EFS.num_battalions_with_type@rx78 > 3 }
+      }
+		}
+
+		target_width = 5.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 5000.0
+
+			support = {
+				engineer = 1
+				maintenance_company = 1
+			}
+
+			regiments = {
+				rx78 = 1
+				rx77 = 1
+				rx75 = 1
+			}
+		}
+
+		allowed_types = {
+			engineer
+			recon
+			rx75
+			rx77
+			rx78
+			fa78
+			rx78_xx
+			rx78nt
+			rx78gp1
+			rx78gp2
+			rx78gp4
+			rx121
+		}
+	}
+}
+captured_mobilesuit_EFS = {
+	available_for = {
+		EFS
+	}
+	roles = {
+		captured_mobilesuit
+	}
+	match_to_count = 0.8
+	upgrade_prio = {
+		base = 5
+	}
+	captured_mobilesuit_ms06_EFS = {
+
+		upgrade_prio = {
+			factor = 2
+		}
+    production_prio = {
+      factor = 1
+      modifier = {
+        factor = 10
+        check_variable = { EFS.num_equipment@archetype_ms05 > 100 }
+      }
+    }
+    can_upgrade_in_field = {
+      check_variable = { num_target_equipment_in_armies@archetype_ms05 < 100 }
+		}
+
+		target_width = 6.0
+		width_weight = 0.1
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 5000.0
+
+			support = {
+				engineer = 1
+				maintenance_company = 1
+			}
+
+			regiments = {
+				ms05 = 1
+        mbt = 2
+			}
+		}
+
+		allowed_types = {
+			engineer
+			ms05
+			ms05_rpg
+			ms06_d
+			ms06_k
+			ms06_k_support
+			ms06_e
+			ms06_s
+      ms07
+      ms09
+      ms09_mg
+      ms14
+      ms14_mg
+		}
+
+		target_min_match = 0.5
+	}
+}
+
+garrison_EFS = {
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		garrison
+	}
+
+	upgrade_prio = {
+		factor = 1
+
+		}
+	}
+
+	match_to_count = 0.8
+
+
+	garrison_EFS = {
+
+		reinforce_prio = 0
+		custom_icon = 7
+
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+			}
+		}
+
+		target_width = 8.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+
+			support = {
+				military_police = 1
+			}
+
+			regiments = {
+				infantry = 4
+			}
+		}
+
+		allowed_types = {
+			infantry
+			military_police
+		}
+	}
+}
+infantry_EFS = {
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		infantry
+	}
+
+	upgrade_prio = {
+		factor = 2
+
+	}
+
+	match_to_count = 0.8
+
+
+	infantry_default_EFS = {
+
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+			}
+		}
+
+		target_width = 18.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+
+			support = {
+				engineer = 1
+			}
+
+			regiments = {
+				infantry = 9
+			}
+		}
+
+		allowed_types = {
+			infantry
+			engineer
+			recon
+			field_hospital
+			ac
+			vulcan_ac_support
+			misile_ac_support
+			mobile_ac_support
+		}
+	}
+}
+mountaineers_EFS = {
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		mountaineers
+	}
+
+	upgrade_prio = {
+		factor = 0
+	}
+
+	match_to_count = 0.8
+
+	mountaineers_default_EFS = {
+
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_width = 16.0
+		width_weight = 3
+		column_swap_factor = 0.2
+
+		target_template = {
+			weight = 0.5
+			match_value = 3000.0
+
+			support = {
+				engineer = 1
+				logistics_company = 1
+				recon = 1
+				ac = 1
+			}
+
+			regiments = {
+				mountaineers = 8
+			}
+		}
+
+		allowed_types = {
+			mountaineers
+			recon
+			signal_company
+			field_hospital
+			logistics_company
+			ac
+			vulcan_ac_support
+			misile_ac_support
+			mobile_ac_support
+		}
+	}
+}
+marines_EFS = {
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		marines
+	}
+
+	upgrade_prio = {
+		factor = 0
+  }
+
+	match_to_count = 0.8
+
+	marine_default_EFS = {
+
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_width = 18.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 2000.0
+
+			support = {
+				engineer = 1
+				logistics_company = 1
+				recon = 1
+				ac = 1
+			}
+
+			regiments = {
+				marine = 9
+			}
+		}
+
+
+		allowed_types = {
+			marine
+			engineer
+			logistics_company
+			ac
+			vulcan_ac_support
+			misile_ac_support
+			mobile_ac_support
+		}
+	}
+}
+paratroopers_EFS = {
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		paratrooper
+	}
+
+	upgrade_prio = {
+		factor = 0
+	}
+
+	match_to_count = 0.8
+
+	paratrooper_default_EFS = {
+
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+
+		target_width = 10
+		width_weight = 3.0
+		column_swap_factor = 0.1
+
+		target_template = {
+			weight = 0.9
+			match_value = 2000.0
+
+			support = {
+				engineer = 1
+				ac = 1
+			}
+
+			regiments = {
+				paratrooper= 5
+			}
+		}
+
+		allowed_types = {
+			paratrooper
+			engineer
+			recon
+			signal_company
+			field_hospital
+			logistics_company
+			military_police
+			ac
+			vulcan_ac_support
+			misile_ac_support
+			mobile_ac_support
+		}
+	}
+}
+armored_EFS = {
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		armor
+	}
+
+	match_to_count = 0.8
+
+	upgrade_prio = {
+		base = 10
+	}
+
+	mbt_default = {
+
+		upgrade_prio = {
+			factor = 0
+		}
+		production_prio = {
+			factor = 3
+		}
+
+		target_width = 12.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 3000.0
+
+			support = {
+				engineer = 1
+				ac = 1
+				maintenance_company = 1
+			}
+
+			regiments = {
+				mbt = 4
+				motorized = 2
+			}
+		}
+
+		allowed_types = {
+			motorized
+			mechanized
+			engineer
+			recon
+			maintenance_company
+			ac
+			mbt
+		}
+	}
+}
+mobiletank_EFS = {
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		mobiletank
+	}
+
+	match_to_count = 0.8
+
+	upgrade_prio = {
+		base = 10
+	}
+
+	mobiletank_default = {
+		upgrade_prio = {
+			factor = 0
+		}
+		production_prio = {
+			factor = 2
+			modifier = {
+				has_equipment = { archetype_mobiletank > 100 }
+			}
+		}
+
+		target_width = 22.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 4000.0
+
+			support = {
+				engineer = 1
+				ac = 1
+				maintenance_company = 1
+			}
+
+			regiments = {
+				mobiletank = 2
+				motorized = 2
+			}
+		}
+
+		allowed_types = {
+			motorized
+			mechanized
+			engineer
+			maintenance_company
+			ac
+			mobiletank
+		}
+	}
+}
+lbs_EFS = {
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		lbs
+	}
+
+	match_to_count = 0.8
+
+	upgrade_prio = {
+		base = 10
+	}
+
+	lbs_default = {
+		upgrade_prio = {
+			factor = 0
+		}
+		production_prio = {
+			factor = 2
+			modifier = {
+				has_equipment = { archetype_lbs > 10 }
+			}
+		}
+
+		target_width = 24.0
+		width_weight = 1.0
+		column_swap_factor = 0.5
+
+		target_template = {
+			weight = 0.9
+			match_value = 2500.0
+
+			support = {
+				engineer = 1
+				ac = 1
+				maintenance_company = 1
+			}
+
+			regiments = {
+				lbs = 1
+				mbt = 2
+				motorized = 3
+			}
+		}
+
+		allowed_types = {
+			motorized
+			mechanized
+			engineer
+			maintenance_company
+			ac
+			lbs
+			mbt
+		}
+	}
+}

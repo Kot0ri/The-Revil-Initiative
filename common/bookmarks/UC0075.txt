@@ -1,0 +1,116 @@
+bookmarks = {
+	bookmark = {
+		name = "UC0075_NAME"
+		desc = "UC0075_DESC"
+		date = 75.1.1.1
+		picture = "GFX_select_date_UC0075"
+		default = yes
+		default_country = "ZEO"
+
+		ZEO = {
+			history = ZEO_UC0075_DESC
+			ideology = spacesupremacy
+			ideas = {
+				brothers_quarrel
+				zeon_dominance_of_human_survival_theory
+				zeon_mainstay_MS_development_competition
+			}
+			focuses = {
+				zeon_organization_of_mobilized_mobile_battalion
+				zeon_political_intervention_on_side6
+				zeon_megiddo_fire
+			}
+		}
+
+		EFS = {
+		  history = EFS_UC0075_DESC
+		  ideology = democratic
+			ideas = {
+				bigship_principle
+				mole_of_jablo
+				hollowing_out_industry
+			}
+			focuses = {
+				efsf_strength_improvement_plan
+				efsf_plan_rx
+				efsf_watching_expressions
+			}
+		}
+
+		"---"={
+			history = "OTHER_UC0075_DESC"
+		}
+
+		"SI1" = {
+		  minor = yes
+		  history = OTHER_UC0075_DESC
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI2" = {
+		  minor = yes
+		  history = OTHER_UC0075_DESC
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI4" = {
+		  minor = yes
+		  history = OTHER_UC0075_DESC
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI5" = {
+		  minor = yes
+      history = OTHER_UC0075_DESC
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI6" = {
+		  minor = yes
+      history = OTHER_UC0075_DESC
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"VBC" = {
+		  minor = yes
+      history = OTHER_UC0075_DESC
+		  ideology = zeonism
+			ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {}
+		}
+		"GRA" = {
+		  minor = yes
+      history = OTHER_UC0075_DESC
+		  ideology = zeonism
+			ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+  }
+}

@@ -1,0 +1,28 @@
+state={
+	id=734
+	name="STATE_734"
+	manpower = 5167
+	state_category = tiny_island
+
+	history={
+		owner = EFS
+		add_core_of = EFS
+		buildings = {
+			infrastructure = 2
+			7390 = {
+				naval_base = 1
+			}
+		}
+		79.3.18 = {
+			controller = ZEO
+		}
+	}
+
+	buildings_max_level_factor=1.000
+
+	provinces={
+		7390
+	}
+
+	local_supplies=0.0 
+}

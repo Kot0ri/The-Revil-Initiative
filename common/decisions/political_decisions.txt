@@ -1,0 +1,471 @@
+political_actions = {
+  anti_ss_raids = {
+
+  	icon = generic_civil_support
+
+  	visible = {
+			NOT = { has_government = spacesupremacy }
+		}
+
+		available = {
+			spacesupremacy > 0.1
+    }
+
+		modifier = {
+			spacesupremacy_drift = -0.05
+			stability_weekly = 0.007
+		}
+
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+  }
+	anti_es_raids = {
+
+  	icon = generic_civil_support
+
+  	visible = {
+			NOT = { has_government = earthsupremacy }
+		}
+
+		available = {
+			earthsupremacy > 0.1
+    }
+
+		modifier = {
+			earthsupremacy_drift = -0.05
+			stability_weekly = 0.007
+		}
+
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+		}
+
+		ai_will_do = {
+			base = 0
+      modifier = {
+        add = 10
+        earthsupremacy > 0.3
+        is_historical_focus_on = yes
+        OR = {
+          has_government = spacesupremacy
+          has_government = democratic
+        }
+      }
+		}
+  }
+
+  anti_democratic_raids = {
+
+  	icon = generic_civil_support
+
+  	visible = {
+			NOT = { has_government = democratic }
+		}
+
+		available = {
+      democratic > 0.1
+    }
+
+		modifier = {
+			democratic_drift = -0.05
+			stability_weekly = 0.007
+		}
+
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+  }
+
+  anti_zeonism_raids = {
+
+  	icon = generic_civil_support
+
+  	visible = {
+			NOT = { has_government = zeonism }
+		}
+
+		available = {
+      zeonism > 0.1
+    }
+
+		modifier = {
+			zeonism_drift = -0.05
+			stability_weekly = 0.007
+		}
+
+		days_remove = 120
+		cost = 50
+
+		complete_effect = {
+			add_stability = -0.1
+		}
+
+		remove_effect = {
+		}
+
+		ai_will_do = {
+      base = 0
+      modifier = {
+        add = 10
+        zeonism > 0.3
+        is_historical_focus_on = yes
+        OR = {
+          has_government = spacesupremacy
+          has_government = democratic
+        }
+      }
+		}
+  }
+
+	ban_ss_party = {
+
+		icon = generic_civil_support
+
+		available = {
+			spacesupremacy < 0.2
+		}
+
+		visible = {
+			NOT = { has_government = spacesupremacy }
+			spacesupremacy > 0
+		}
+
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = spacesupremacy
+			}
+		}
+
+		modifier = {
+			spacesupremacy_drift = -0.02
+		}
+
+		days_remove = -1
+		cost = 100
+
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@spacesupremacy
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_ss_party_tt
+			add_stability = ban_ideology_var
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	ban_es_party = {
+
+		icon = generic_civil_support
+
+		available = {
+			earthsupremacy < 0.2
+		}
+
+		visible = {
+			NOT = { has_government = earthsupremacy }
+			earthsupremacy > 0
+		}
+
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = earthsupremacy
+			}
+		}
+
+		modifier = {
+			earthsupremacy_drift = -0.02
+		}
+
+		days_remove = -1
+		cost = 100
+
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@earthsupremacy
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = earthsupremacy
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_es_party_tt
+			add_stability = ban_ideology_var
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ban_democratic_party = {
+
+		icon = generic_civil_support
+
+		available = {
+			democratic < 0.2
+		}
+
+		visible = {
+			NOT = { has_government = democratic }
+			democratic > 0
+		}
+
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = democratic
+			}
+		}
+
+		modifier = {
+			democratic_drift = -0.02
+		}
+
+		days_remove = -1
+		cost = 100
+
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@democratic
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_democratic_party_tt
+			add_stability = ban_ideology_var
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	ban_zeonism_party = {
+
+		icon = generic_civil_support
+
+		available = {
+			zeonism < 0.2
+		}
+
+		visible = {
+			NOT = { has_government = zeonism }
+			zeonism > 0
+		}
+
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = zeonism
+			}
+		}
+
+		modifier = {
+			zeonism_drift = -0.02
+		}
+
+		days_remove = -1
+		cost = 100
+
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@zeonism
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+				}
+				add_popularity = {
+					ideology = zeonism
+					popularity = ban_ideology_var
+				}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+				}
+			}
+			custom_effect_tooltip = ban_zeonism_party_tt
+			add_stability = ban_ideology_var
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	institute_press_censorship_ss_state = {
+
+		icon = generic_political_discourse
+
+		available = {
+		}
+
+		visible = {
+			has_government = spacesupremacy
+		}
+
+		modifier = {
+			zeonism_drift = -0.01
+			spacesupremacy_drift = 0.03
+			democratic_drift = -0.01
+			earthsupremacy_drift = -0.01
+		}
+
+		days_remove = 360
+		cost = 100
+
+		ai_will_do = {
+			base = 0
+      modifier = {
+        add = 5
+        original_tag = ZEO
+        spacesupremacy < 0.5
+        has_government = spacesupremacy
+      }
+		}
+	}
+
+	institute_press_censorship_democratic_state = {
+
+		icon = generic_political_discourse
+
+		available = {
+		}
+
+		visible = {
+			has_government = democratic
+		}
+
+		modifier = {
+			zeonism_drift = -0.01
+			spacesupremacy_drift = -0.01
+			democratic_drift = 0.03
+			earthsupremacy_drift = -0.01
+		}
+
+		days_remove = 360
+		cost = 150
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	institute_press_censorship_zeonism_state = {
+
+		icon = generic_political_discourse
+
+		available = {
+		}
+
+		visible = {
+			has_government = zeonism
+		}
+
+		modifier = {
+			zeonism_drift = 0.03
+			spacesupremacy_drift = -0.01
+			democratic_drift = -0.01
+			earthsupremacy_drift = -0.01
+		}
+
+		days_remove = 360
+		cost = 150
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	institute_press_censorship_es_state = {
+
+		icon = generic_political_discourse
+
+		available = {
+		}
+
+		visible = {
+			has_government = earthsupremacy
+		}
+
+		modifier = {
+			zeonism_drift = -0.01
+			spacesupremacy_drift = -0.01
+			democratic_drift = -0.01
+			earthsupremacy_drift = 0.03
+		}
+
+		days_remove = 360
+		cost = 150
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

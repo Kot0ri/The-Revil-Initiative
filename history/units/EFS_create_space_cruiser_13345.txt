@@ -1,0 +1,18 @@
+units = {
+	fleet = {
+		name = "Space Crusers"
+		naval_base = 13345
+		task_force = {
+			location = 13345
+			ship = {
+				definition = efsf_space_cruiser
+			}
+			ship = {
+				definition = efsf_space_cruiser
+			}
+			ship = {
+				definition = efsf_space_cruiser
+			}
+		}
+	}
+}

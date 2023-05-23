@@ -1,0 +1,3772 @@
+focus_tree = {
+	id = EFS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = EFS
+		}
+	}
+
+	default = no
+	initial_show_position = {
+		focus = efsf_show_to_colony
+	}
+
+	focus = {
+		id = efsf_new_relationship_with_colony
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		x = 7
+		y = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		mutually_exclusive = {
+		  focus = efsf_show_to_colony
+		}
+		completion_reward = {
+			news_event = { id = news.62 hours = 6 }
+			add_popularity = {
+				ideology = zeonism
+				popularity = 0.05
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = VBC
+						tag = GRA
+					}
+				}
+				add_autonomy_ratio = {
+					value = 0.05
+					localization = efsf_new_relationship_with_colony
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = new_relationship_with_colony
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_reduction_of_stationed_troops
+		icon = GFX_goal_continuous_boost_freedom
+		cost = 10.00
+		relative_position_id = efsf_new_relationship_with_colony
+		x = 1
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_new_relationship_with_colony
+		}
+		completion_reward = {
+			news_event = { id = news.38 hours = 6 }
+			add_named_threat = {
+				threat = -3
+				name = efsf_new_relationship_with_colony
+			}
+			show_ideas_tooltip = oversea_army_2
+			custom_effect_tooltip = oversea_army_2_tt
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = VBC
+						tag = GRA
+					}
+				}
+				add_autonomy_ratio = {
+					value = 0.05
+					localization = efsf_new_relationship_with_colony
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = efsf_reduction_of_stationed_troops
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_relaxation_of_tariffs
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		relative_position_id = efsf_new_relationship_with_colony
+		x = -1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_new_relationship_with_colony
+		}
+		completion_reward = {
+			news_event = { id = news.39 hours = 6 }
+			show_ideas_tooltip = customs_duty_2
+			swap_ideas = {
+				remove_idea = hollowing_out_industry
+				add_idea = hollowing_out_industry2
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = VBC
+						tag = GRA
+					}
+				}
+				add_autonomy_ratio = {
+					value = 0.05
+					localization = efsf_new_relationship_with_colony
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = efsf_relaxation_of_tariffs
+				}
+
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_economic_revival_plan
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		relative_position_id = efsf_new_relationship_with_colony
+		x = -5
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_relaxation_of_tariffs
+		}
+		prerequisite = {
+			focus = efsf_reduction_of_stationed_troops
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_tech_bonus = {
+				name = efsf_economic_revival_plan
+				category = industry
+				uses = 3
+				bonus = 0.3
+			}
+			add_popularity = {
+				ideology = zeonism
+				popularity = -0.08
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_military-industrial_complex
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		relative_position_id = efsf_economic_revival_plan
+		x = -2
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_economic_revival_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_relaxation_of_hollowing_out_of_industry
+			focus = efsf_focus_on_agriculture
+		}
+		completion_reward = {
+			unlock_decision_tooltip = dip_lending_to_von_brown
+			VBC = {
+				country_event = { id = oyw.2 }
+			}
+      add_tech_bonus = {
+        category = minovsky
+        category = mobilesuit_electronics
+        category = ambac
+        uses = 3
+        bonus = 0.3
+      }
+		}
+	}
+
+	focus = {
+		id = efsf_expansion_of_lunar_factory
+		icon = GFX_goal_tyrant_of_moon
+		cost = 10.00
+		relative_position_id = efsf_economic_revival_plan
+		x = -2
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_military-industrial_complex
+		}
+		completion_reward = {
+			add_ideas = anaheim_electronics
+			show_ideas_tooltip = customs_duty_3
+			VBC = {
+				country_event = { id = oyw.3 }
+        add_popularity = {
+          ideology = democratic
+          popularity = 0.05
+        }
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = efsf_lending_to_von_brown
+				}
+        add_opinion_modifier = {
+          target = ZEO
+          modifier = efsf_lending_to_von_brown_ZEO
+        }
+			}
+      ZEO = {
+        add_opinion_modifier = {
+          target = VBC
+          modifier = efsf_lending_to_von_brown_ZEO_hate
+        }
+      }
+		}
+	}
+
+	focus = {
+		id = efsf_relaxation_of_hollowing_out_of_industry
+		icon = GFX_goal_continuous_repairments
+		cost = 10.00
+		relative_position_id = efsf_economic_revival_plan
+		x = 0
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_economic_revival_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_focus_on_agriculture
+			focus = efsf_military-industrial_complex
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = hollowing_out_industry2
+				add_idea = hollowing_out_industry3
+			}
+		  add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = efsf_special_economic_zone
+		icon = GFX_focus_smiling_buddha
+		cost = 10.00
+		relative_position_id = efsf_economic_revival_plan
+		x = 0
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_relaxation_of_hollowing_out_of_industry
+		}
+		completion_reward = {
+			show_ideas_tooltip = customs_duty_3
+			EFS = {
+				if = {
+					limit = {
+						has_full_control_of_state = 326
+					}
+					326 = {
+						add_extra_state_shared_building_slots = 3
+						add_building_construction = {
+							type = industrial_complex
+							level = 3
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 592
+					}
+					592 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_full_control_of_state = 729
+					}
+					729 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_agriculture
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		relative_position_id = efsf_economic_revival_plan
+		x = 2
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT focus }
+		prerequisite = {
+			focus = efsf_economic_revival_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_military-industrial_complex
+			focus = efsf_relaxation_of_hollowing_out_of_industry
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.03
+			swap_ideas = {
+				add_idea = hollowing_out_industry4
+				remove_idea = hollowing_out_industry2
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_new_industry
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10.00
+		relative_position_id = efsf_economic_revival_plan
+		x = 2
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+		prerequisite = {
+			focus = efsf_focus_on_agriculture
+		}
+		completion_reward = {
+		  add_political_power = 100
+			add_war_support = 0.05
+			swap_ideas = {
+				add_idea = hollowing_out_industry5
+				remove_idea = hollowing_out_industry4
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_high_tech_leader
+		icon = GFX_focus_generic_aluminum
+		cost = 10.00
+		relative_position_id = efsf_economic_revival_plan
+		x = -1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_expansion_of_lunar_factory
+			focus = efsf_special_economic_zone
+		}
+		completion_reward = {
+			add_ideas = high_tech_industry
+		}
+	}
+
+	focus = {
+		id = efsf_mass_driver
+		icon = GFX_goal_mass_driver
+		cost = 10.00
+		relative_position_id = efsf_economic_revival_plan
+		x = 1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_new_industry
+			focus = efsf_special_economic_zone
+		}
+		completion_reward = {
+			show_ideas_tooltip = customs_duty_4
+			if = {
+				limit = {
+					has_idea = hollowing_out_industry3
+				}
+				swap_ideas = {
+					add_idea = hollowing_out_industry6
+					remove_idea = hollowing_out_industry3
+				}
+			}
+			if = {
+				limit = {
+					has_idea = hollowing_out_industry5
+				}
+				swap_ideas = {
+					add_idea = hollowing_out_industry7
+					remove_idea = hollowing_out_industry5
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_parents_of_earth_sphere
+		icon = GFX_goal_parents_of_earth_sphere
+		cost = 10.00
+		relative_position_id = efsf_economic_revival_plan
+		x = 0
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		will_lead_to_war_with = ZEO
+		prerequisite = {
+			focus = efsf_high_tech_leader
+			focus = efsf_mass_driver
+		}
+		prerequisite = {
+			focus = efsf_military_expansion
+		}
+		completion_reward = {
+			news_event = { id = news.65 hours = 6 }
+			show_ideas_tooltip = oversea_army_3
+			custom_effect_tooltip = oversea_army_3_tt
+		  add_political_power = 100
+			add_popularity = { ideology = democratic popularity = 0.1 }
+		}
+	}
+
+	focus = {
+		id = efsf_earth_revitalization_plan
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		relative_position_id = efsf_new_relationship_with_colony
+		x = 5
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_relaxation_of_tariffs
+		}
+		prerequisite = {
+			focus = efsf_reduction_of_stationed_troops
+		}
+		completion_reward = {
+		  add_political_power = -50
+			add_popularity = {
+				ideology = zeonism
+				popularity = 0.08
+			}
+		}
+	}
+	focus = {
+		id = efsf_promotion_of_side7_construction_project
+		icon = GFX_goal_moon_aliance
+		cost = 10.00
+		relative_position_id = efsf_earth_revitalization_plan
+		x = -2
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = efsf_earth_revitalization_plan
+		}
+		completion_reward = {
+			add_political_power = 100
+			unlock_decision_tooltip = sp_establish_side7
+		}
+	}
+	focus = {
+		id = efsf_resumption_of_immigration_plan
+		icon = GFX_goal_resumption_of_immigration_plan
+		cost = 10.00
+		relative_position_id = efsf_earth_revitalization_plan
+		x = -2
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_promotion_of_side7_construction_project
+		}
+		completion_reward = {
+			add_political_power = 100
+			unlock_decision_tooltip = sp_immigration_side7
+		}
+	}
+	focus = {
+		id = efsf_transfer_of_government_function
+		icon = GFX_goal_transfer_of_government_function
+		cost = 10.00
+		relative_position_id = efsf_earth_revitalization_plan
+		x = 0
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_colony_autonomy_law
+			focus = efsf_dont_admit_zeons_independence
+		}
+		completion_reward = {
+			news_event = { id = news.68 hours = 6 }
+			add_stability = -0.08
+			add_popularity = {
+				ideology = zeonism
+				popularity = 0.12
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = VBC
+						tag = GRA
+					}
+				}
+				add_autonomy_ratio = {
+					value = 0.20
+					localization = efsf_transfer_of_government_function
+				}
+			}
+			every_other_country = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = efsf_transfer_of_government_function
+				}
+			}
+			unlock_decision_tooltip = pa_joint_military_exercises
+		}
+	}
+	focus = {
+		id = efsf_new_earth_federation
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		relative_position_id = efsf_earth_revitalization_plan
+		x = 0
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_transfer_of_government_function
+		}
+		prerequisite = {
+			focus = efsf_resumption_of_immigration_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_zeon_surrounding_net
+		}
+		completion_reward = {
+			news_event = { id = news.70 hours = 6 }
+		  add_political_power = 100
+			ZEO = {
+				remove_opinion_modifier = {
+					target = EFS
+					modifier = efsf_zeon_rival
+				}
+			}
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	focus = {
+		id = efsf_elenism
+		icon = GFX_goal_elenism
+		cost = 10.00
+		relative_position_id = efsf_earth_revitalization_plan
+		x = 0
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		will_lead_to_war_with = ZEO
+		prerequisite = {
+			focus = efsf_new_earth_federation
+		}
+		prerequisite = {
+			focus = efsf_disarmament
+		}
+		completion_reward = {
+			news_event = { id = news.71 hours = 6 }
+			add_to_variable = { newtype_accepted_status = 1 }
+			custom_effect_tooltip = newtype_accepted_status_add
+			set_politics = {
+				ruling_party = zeonism
+				elections_allowed = yes
+			}
+			set_cosmetic_tag = EFS_AEU
+		}
+	}
+	focus = {
+		id = efsf_colony_autonomy_law
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		relative_position_id = efsf_earth_revitalization_plan
+		x = 0
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_earth_revitalization_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_dont_admit_zeons_independence
+		}
+		completion_reward = {
+			news_event = { id = news.72 hours = 6 }
+			remove_opinion_modifier = {
+				target = ZEO
+				modifier = efsf_zeon_rival
+			}
+		}
+	}
+	focus = {
+		id = efsf_technology_sharing
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10.00
+		relative_position_id = efsf_earth_revitalization_plan
+		x = 2
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_new_earth_federation
+			focus = efsf_zeon_surrounding_net
+		}
+		completion_reward = {
+			add_to_tech_sharing_group = efsf_tech_share
+		}
+	}
+
+	focus = {
+		id = efsf_dont_admit_zeons_independence
+		icon = GFX_focus_CZE_german_puppet
+		cost = 10.00
+		relative_position_id = efsf_earth_revitalization_plan
+		x = 2
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = efsf_earth_revitalization_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_colony_autonomy_law
+		}
+		completion_reward = {
+			news_event = { id = news.74 hours = 6 }
+			add_named_threat = {
+				name = efsf_dont_admit_zeons_independence
+				threat = 10
+			}
+			ZEO = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = efsf_dont_admit_zeons_independence_ZEO
+				}
+				add_autonomy_ratio = {
+					value = -0.15
+					localization = efsf_dont_admit_zeons_independence
+				}
+			}
+			unlock_decision_tooltip = pe_federation_post
+		}
+	}
+
+	focus = {
+		id = efsf_general_meeting
+		icon = GFX_goal_general_meeting
+		cost = 10.00
+		relative_position_id = efsf_dont_admit_zeons_independence
+		x = 0
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			has_war = no
+		}
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = efsf_dont_admit_zeons_independence
+			focus = efsf_colony_autonomy_law
+		}
+		completion_reward = {
+			country_event = { id = efsf.53 days = 1 }
+		}
+	}
+
+	focus = {
+		id = efsf_zeon_surrounding_net
+		icon = GFX_goal_continuous_restrict_freedom
+		cost = 10.00
+		relative_position_id = efsf_dont_admit_zeons_independence
+		x = 0
+		y = 2
+		ai_will_do = {
+		  factor = 5moni
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			has_war = no
+			has_global_flag = meeting_sub_is_1_right
+		}
+		cancel_if_invalid = yes
+		will_lead_to_war_with = ZEO
+		prerequisite = {
+			focus = efsf_general_meeting
+		}
+		mutually_exclusive = {
+			focus = efsf_new_earth_federation
+		}
+		completion_reward = {
+			news_event = { id = news.77 hours = 6 }
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_army_reform
+		icon = GFX_focus_generic_military_academy
+		cost = 10.00
+		relative_position_id = efsf_relaxation_of_tariffs
+		x = 1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_relaxation_of_tariffs
+		}
+		prerequisite = {
+			focus = efsf_reduction_of_stationed_troops
+		}
+		completion_reward = {
+		  add_command_power = -25
+			add_ideas = army_reform
+		}
+	}
+
+	focus = {
+		id = efsf_review_of_personnel_system
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		relative_position_id = efsf_army_reform
+		x = -1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_army_reform
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = army_reform
+				add_idea = army_reform2
+			}
+		}
+	}
+	focus = {
+		id = efsf_eradication_of_corruption
+		icon = GFX_focus_rom_parties_end
+		cost = 10.00
+		relative_position_id = efsf_army_reform
+		x = 1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_army_reform
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			}
+			custom_effect_tooltip = disable_political_advisor
+			show_ideas_tooltip = gopp
+			add_ideas = eradication_of_corruption
+		}
+	}
+	focus = {
+		id = efsf_restructuring_of_staff_headquarters
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		relative_position_id = efsf_army_reform
+		x = 0
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_eradication_of_corruption
+		}
+		prerequisite = {
+			focus = efsf_review_of_personnel_system
+		}
+		completion_reward = {
+			add_command_power = -50
+			army_experience = -20
+			navy_experience = -20
+			air_experience = -20
+			if = {
+				limit = {
+					has_idea = mole_of_jablo
+				}
+				remove_ideas = mole_of_jablo
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo2
+				}
+				remove_ideas = mole_of_jablo2
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo3
+				}
+				remove_ideas = mole_of_jablo3
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo4
+				}
+				remove_ideas = mole_of_jablo4
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo5
+				}
+				remove_ideas = mole_of_jablo5
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo6
+				}
+				remove_ideas = mole_of_jablo6
+			}
+			unlock_decision_tooltip = pa_eliminate_radical_right
+		}
+	}
+	focus = {
+		id = efsf_military_expansion
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		relative_position_id = efsf_army_reform
+		x = -1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		mutually_exclusive = {
+			focus = efsf_disarmament
+		}
+		prerequisite = {
+			focus = efsf_restructuring_of_staff_headquarters
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = army_reform3
+				remove_idea = army_reform2
+			}
+		}
+	}
+	focus = {
+		id = efsf_disarmament
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10.00
+		relative_position_id = efsf_army_reform
+		x = 1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		prerequisite = {
+			focus = efsf_restructuring_of_staff_headquarters
+		}
+		mutually_exclusive = {
+			focus = efsf_military_expansion
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = army_reform4
+				remove_idea = army_reform2
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_show_to_colony
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		x = 25
+		y = 0
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		mutually_exclusive = {
+			focus = efsf_new_relationship_with_colony
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				news_event = { id = news.63 hours = 6 }
+			}
+			add_named_threat = {
+				threat = 3
+				name = efsf_show_to_colony
+			}
+			add_popularity = {
+				ideology = earthsupremacy
+				popularity = 0.05
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = VBC
+						tag = GRA
+						tag = ZEO
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = efsf_show_to_colony
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = show_to_colony
+				}
+			}
+			ZEO = {
+				add_autonomy_ratio = {
+					value = -0.1
+					localization = efsf_show_to_colony
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = show_to_colony_ZEO
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_enhancement_of_stationed_units
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		relative_position_id = efsf_show_to_colony
+		x = -1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_show_to_colony
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				news_event = { id = news.40 hours = 6 }
+			}
+			show_ideas_tooltip = oversea_army_4
+			custom_effect_tooltip = oversea_army_4_tt
+			army_experience = 15
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = VBC
+						tag = GRA
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = efsf_enhancement_of_stationed_units
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = efsf_enhancement_of_stationed_units
+				}
+			}
+			add_named_threat = {
+				threat = 3
+				name = efsf_enhancement_of_stationed_units
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_tariff_enhancement
+		icon = GFX_goal_generic_trade
+		cost = 10.00
+		relative_position_id = efsf_show_to_colony
+		x = 1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_show_to_colony
+		}
+		completion_reward = {
+			show_ideas_tooltip = customs_duty_4
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				news_event = { id = news.41 hours = 6 }
+			}
+			swap_ideas = {
+				remove_idea = hollowing_out_industry
+				add_idea = hollowing_out_industry8
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = VBC
+						tag = GRA
+					}
+				}
+				add_autonomy_ratio = {
+					value = -0.05
+					localization = efsf_tariff_enhancement
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = efsf_tariff_enhancement
+				}
+			}
+			add_named_threat = {
+				threat = 2
+				name = efsf_tariff_enhancement
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_scenario_for_collapse_of_zeon
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		relative_position_id = efsf_show_to_colony
+		x = -4
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_enhancement_of_stationed_units
+		}
+		prerequisite = {
+			focus = efsf_tariff_enhancement
+		}
+		mutually_exclusive = {
+			focus = efsf_appeasement_policy_for_zeon
+			focus = efsf_oppression_of_anti-earth_federation
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				add_named_threat = {
+					name = efsf_scenario_for_collapse_of_zeon
+					threat = 3
+				}
+				news_event = { id = news.160 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_enhance_monitoring_network
+		icon = GFX_goal_continuous_def_against_influence
+		cost = 10.00
+		relative_position_id = efsf_scenario_for_collapse_of_zeon
+		x = 0
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_scenario_for_collapse_of_zeon
+		}
+		completion_reward = {
+			unlock_decision_tooltip = pa_colony_exclusion_exercise
+			if = {
+				limit = {
+					NOT = {
+						ZEO = {
+							has_full_control_of_state = 912
+						}
+					}
+					SI1 = {
+						is_subject_of = EFS
+					}
+				}
+				912 = {
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						ZEO = {
+							has_full_control_of_state = 915
+						}
+					}
+					SI2 = {
+						is_subject_of = EFS
+					}
+				}
+				915 = {
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						ZEO = {
+							has_full_control_of_state = 918
+						}
+					}
+					SI4 = {
+						is_subject_of = EFS
+					}
+				}
+				918 = {
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						ZEO = {
+							has_full_control_of_state = 921
+						}
+					}
+					SI5 = {
+						is_subject_of = EFS
+					}
+				}
+				921 = {
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+      if = {
+				limit = {
+					NOT = {
+						ZEO = {
+							has_full_control_of_state = 924
+						}
+					}
+					SI6 = {
+						is_subject_of = EFS
+					}
+				}
+				924 = {
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 930
+				}
+				930 = {
+					add_building_construction = {
+						type = radar_station
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_enhanced_economic_sanction
+		icon = GFX_goal_generic_trade
+		cost = 10.00
+		relative_position_id = efsf_scenario_for_collapse_of_zeon
+		x = -4
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_enhance_monitoring_network
+			focus = efsf_dont_admit_zeons_independence
+		}
+		completion_reward = {
+			add_named_threat = {
+				name = efsf_enhanced_economic_sanction
+				threat = 5
+			}
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				news_event = { id = news.84 hours = 3 }
+			}
+			if = {
+				limit = {
+					ZEO = {
+						has_idea = economic_sanctions
+					}
+					has_global_flag = start_is_uc0075
+				}
+				ZEO = {
+					swap_ideas = {
+						add_idea = economic_sanctions2
+						remove_idea = economic_sanctions
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_reciving_asteroid
+		icon = GFX_focus_RAJ_british_investors
+		cost = 10.00
+		relative_position_id = efsf_enhanced_economic_sanction
+		x = 1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = efsf_enhanced_economic_sanction
+		}
+		mutually_exclusive = {
+			focus = efsf_maharaja_khan
+		}
+		available = {
+			NOT = {
+				has_war_with = ZEO
+			}
+		}
+    cancel_if_invalid = yes
+		completion_reward = {
+			news_event = { id = news.111 }
+			every_other_country = {
+				add_opinion_modifier ={
+					target = ROOT
+					modifier = efsf_reciving_asteroid
+				}
+			}
+			unlock_decision_tooltip = pa_reciving_solomon
+			unlock_decision_tooltip = pa_reciving_abaoaqu
+		}
+	}
+
+	focus = {
+		id = efsf_warning_to_granada
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		relative_position_id = efsf_enhanced_economic_sanction
+		x = -1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_enhanced_economic_sanction
+		}
+		available = {
+			country_exists = GRA
+		}
+		bypass = {
+			NOT = {
+				country_exists = GRA
+			}
+		}
+		completion_reward = {
+			add_named_threat = {
+				name = efsf_warning_to_granada
+				threat = 4
+			}
+			GRA = {
+				country_event = { id = zeon.19 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_watching_expressions
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		relative_position_id = efsf_enhanced_economic_sanction
+		x = 0
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		will_lead_to_war_with = ZEO
+		prerequisite = {
+			focus = efsf_warning_to_granada
+			focus = efsf_reciving_asteroid
+		}
+		completion_reward = {
+			add_political_power = 200
+			add_command_power = 30
+			add_war_support = 0.1
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				news_event = { id = news.116 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_support_anti_zabi_faction
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		cost = 10.00
+		relative_position_id = efsf_scenario_for_collapse_of_zeon
+		x = -1
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_enhance_monitoring_network
+		}
+		bypass = {
+			NOT = {
+				ZEO = {
+					has_country_leader = {
+						character = ZEO_gihren_zabi
+						ruling_only = yes
+					}
+					}
+			}
+		}
+		completion_reward = {
+			ZEO = {
+				country_event = { id = zeon.50 days = 30 }
+				add_timed_idea = {
+					idea = efsf_support_anti_zabi_faction
+					days = 180
+				}
+			}
+			unlock_decision_tooltip = pe_federation_post
+		}
+	}
+
+	focus = {
+		id = efsf_maharaja_khan
+		icon = GFX_goal_maharaja_khan
+		cost = 10.00
+		relative_position_id = efsf_scenario_for_collapse_of_zeon
+		x = -1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		mutually_exclusive = {
+			focus = efsf_reciving_asteroid
+		}
+		prerequisite = {
+			focus = efsf_support_anti_zabi_faction
+		}
+    cancel_if_invalid = yes
+		available = {
+			ZEO = {
+				NOT = {
+					has_country_flag = maharaja_is_not_accept
+				}
+			}
+      NOT = {
+				has_war_with = ZEO
+			}
+		}
+		bypass = {
+			ZEO = {
+				has_country_flag = maharaja_is_not_accept
+			}
+		}
+		completion_reward = {
+			country_event = { id = efsf.98 days = 7 random = 100 }
+		}
+	}
+
+	focus = {
+		id = efsf_building_competition
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		relative_position_id = efsf_scenario_for_collapse_of_zeon
+		x = 1
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_enhance_monitoring_network
+		}
+		available = {
+			has_completed_focus = efsf_strength_improvement_plan
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				add_named_threat = {
+					name = efsf_building_competition
+					threat = 3
+				}
+				add_timed_idea = {
+					idea = efsf_building_competition
+					days = 365
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_leak_plan_rx
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		relative_position_id = efsf_scenario_for_collapse_of_zeon
+		x = 1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			has_completed_focus = efsf_plan_rx
+			NOT = {
+				has_global_flag = v_op_1
+			}
+		}
+		prerequisite = {
+			focus = efsf_building_competition
+		}
+		bypass = {
+			has_global_flag = v_op_1
+		}
+		completion_reward = {
+			ZEO = {
+				country_event = { id = zeon.51 days = 10 }
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_regime_change
+		icon = GFX_goal_regime_change
+		cost = 10.00
+		relative_position_id = efsf_scenario_for_collapse_of_zeon
+		x = 0
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			NOT = {
+				has_war_with = ZEO
+			}
+		}
+		cancel_if_invalid = yes
+		will_lead_to_war_with = ZEO
+		prerequisite = {
+			focus = efsf_maharaja_khan
+			focus = efsf_leak_plan_rx
+		}
+		completion_reward = {
+			unlock_decision_tooltip = pa_giren_assassination_plan
+			unlock_decision_tooltip = pa_registance_zeon
+		}
+	}
+
+	focus = {
+		id = efsf_appeasement_policy_for_zeon
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		relative_position_id = efsf_show_to_colony
+		x = 0
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_tariff_enhancement
+		}
+		prerequisite = {
+			focus = efsf_enhancement_of_stationed_units
+		}
+		mutually_exclusive = {
+			focus = efsf_scenario_for_collapse_of_zeon
+			focus = efsf_oppression_of_anti-earth_federation
+		}
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				ZEO = {
+					has_opinion = {
+						target = EFS
+						value > 29
+					}
+				}
+			}
+		}
+		cancel_if_invalid = no
+		completion_reward = {
+		  add_political_power = 50
+			remove_opinion_modifier = {
+				target = ZEO
+				modifier = efsf_zeon_rival
+			}
+			unlock_decision_tooltip = pa_sale_of_luna2
+			news_event = { id = news.161 days = 3 }
+		}
+	}
+
+	focus = {
+		id = efsf_rescission_of_economic_sanctions
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		relative_position_id = efsf_appeasement_policy_for_zeon
+		x = -1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_appeasement_policy_for_zeon
+		}
+		available = {
+			ZEO = {
+				has_idea = economic_sanctions
+			}
+			if = {
+				limit = {
+					is_ai = no
+				}
+				ZEO = {
+					has_opinion = {
+						target = EFS
+						value > 49
+					}
+				}
+			}
+		}
+		cancel_if_invalid = no
+		bypass = {
+			ZEO = {
+				OR = {
+					NOT = {
+						has_idea = economic_sanctions
+					}
+					has_country_flag = deliver_roselcia
+				}
+			}
+		}
+		completion_reward = {
+			ZEO = {
+				country_event = { id = zeon.53 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_approved_dictatorship
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		relative_position_id = efsf_appeasement_policy_for_zeon
+		x = -1
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_rescission_of_economic_sanctions
+		}
+
+		bypass = {
+			NOT = {
+				ZEO = {
+					has_country_leader = {
+						character = ZEO_gihren_zabi
+						ruling_only = yes
+					}
+					}
+			}
+		}
+		completion_reward = {
+			news_event = { id = news.85 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = efsf_contact_with_moderate_people
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		relative_position_id = efsf_appeasement_policy_for_zeon
+		x = 1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_appeasement_policy_for_zeon
+		}
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				ZEO = {
+					has_opinion = {
+						target = EFS
+						value > 39
+					}
+				}
+			}
+		}
+		cancel_if_invalid = no
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = minovsky
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = mobilesuit_electronics
+			}
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = ambac
+			}
+			ZEO = {
+				country_event = { id = zeon.47 days = 10 }
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_meeting_with_king
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10.00
+		relative_position_id = efsf_appeasement_policy_for_zeon
+		x = 1
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_contact_with_moderate_people
+		}
+		bypass = {
+			ZEO = {
+				OR = {
+					has_country_flag = sweep_away_zabi_3
+					has_completed_focus = zeon_approval_of_gradual_autonomy
+				}
+			}
+		}
+		completion_reward = {
+		  add_political_power = 100
+			ZEO = {
+				country_event = { id = zeon.49 days = 10 }
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_secretary_of_granada
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		relative_position_id = efsf_appeasement_policy_for_zeon
+		x = 0
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_meeting_with_king
+			focus = efsf_approved_dictatorship
+		}
+		bypass = {
+			OR = {
+				ZEO = {
+					has_completed_focus = zeon_resident_forces_in_granada
+					has_completed_focus = zeon_protect_granada
+					has_completed_focus = zeon_approval_of_gradual_autonomy
+				}
+				NOT = {
+					country_exists = GRA
+				}
+			}
+		}
+		completion_reward = {
+			ZEO = {
+				country_event = { id = zeon.120 days = 3 }
+				remove_opinion_modifier = {
+					target = EFS
+					modifier = efsf_zeon_rival
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_political_settlement
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		relative_position_id = efsf_appeasement_policy_for_zeon
+		x = 0
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		will_lead_to_war_with = ZEO
+		prerequisite = {
+			focus = efsf_secretary_of_granada
+		}
+		bypass = {
+			ZEO = {
+				has_completed_focus = zeon_approval_of_gradual_autonomy
+			}
+		}
+		completion_reward = {
+		  add_political_power = 150
+			ZEO = {
+				country_event = { id = zeon.5 days = 7 }
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_oppression_of_anti-earth_federation
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		relative_position_id = efsf_show_to_colony
+		x = 4
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_tariff_enhancement
+		}
+		prerequisite = {
+			focus = efsf_enhancement_of_stationed_units
+		}
+		mutually_exclusive = {
+			focus = efsf_appeasement_policy_for_zeon
+			focus = efsf_scenario_for_collapse_of_zeon
+		}
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				earthsupremacy > 0.35
+			}
+		}
+		cancel_if_invalid = no
+		completion_reward = {
+		  add_political_power = -50
+			add_popularity = {
+				ideology = earthsupremacy
+				popularity = 0.03
+			}
+			add_named_threat = {
+				name = efsf_oppression_of_anti-earth_federation
+				threat = 3
+			}
+			every_other_country = {
+				add_opinion_modifier ={
+					target = ROOT
+					modifier = efsf_oppression_of_anti-earth_federation
+				}
+				country_event = { id = oyw.6 hours = 6 }
+			}
+			unlock_decision_tooltip = pe_public_opinion_operation
+		}
+	}
+
+	focus = {
+		id = efsf_elite_security_maintenance_force
+		icon = GFX_goal_elite_security_maintenance_force
+		cost = 10.00
+		relative_position_id = efsf_oppression_of_anti-earth_federation
+		x = -1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_oppression_of_anti-earth_federation
+		}
+		available = {
+			OR = {
+				has_completed_focus = efsf_strength_improvement_plan
+				has_completed_focus = efsf_zeons_new_weapon
+			}
+		}
+		completion_reward = {
+			add_named_threat = {
+				name = efsf_elite_security_maintenance_force
+				threat = 2
+			}
+			news_event = { id = news.80 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = efsf_international_JGB_management_corporation
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		relative_position_id = efsf_oppression_of_anti-earth_federation
+		x = 1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = efsf_oppression_of_anti-earth_federation
+		}
+		completion_reward = {
+			show_ideas_tooltip = customs_duty_5
+			add_ideas = efsf_international_JGB_management_corporation
+		}
+	}
+
+	focus = {
+		id = efsf_30bunch_case
+		icon = GFX_goal_30bunch_case
+		cost = 10.00
+		relative_position_id = efsf_oppression_of_anti-earth_federation
+		x = 0
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+		prerequisite = {
+			focus = efsf_elite_security_maintenance_force
+		}
+		prerequisite = {
+			focus = efsf_international_JGB_management_corporation
+		}
+		available = {
+			earthsupremacy > 0.45
+			has_global_flag = s1_30bunch_accept
+		}
+		bypass = {
+			has_global_flag = s1_30bunch_not_accept
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = earthsupremacy
+				popularity = -0.15
+			}
+			add_named_threat = {
+				name = efsf_30bunch_case
+				threat = 15
+			}
+			show_ideas_tooltip = oversea_army_5
+			custom_effect_tooltip = oversea_army_5_tt
+			news_event = { id = news.81 hours = 6 }
+		}
+	}
+
+	focus = {
+		id = efsf_enemy_is_zeon
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		relative_position_id = efsf_oppression_of_anti-earth_federation
+		x = -1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		available = {
+			ZEO = {
+				NOT = {
+					has_completed_focus = zeon_incredible_alliance
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		prerequisite = {
+			focus = efsf_30bunch_case
+		}
+		mutually_exclusive = {
+			focus = efsf_enemy_is_efsf
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_named_threat = {
+				name = efsf_enemy_is_zeon
+				threat = 8
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_enemy_is_efsf
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		relative_position_id = efsf_oppression_of_anti-earth_federation
+		x = 1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+		prerequisite = {
+			focus = efsf_30bunch_case
+		}
+		mutually_exclusive = {
+			focus = efsf_enemy_is_zeon
+		}
+		completion_reward = {
+			unlock_decision_tooltip = pa_purge_reformers
+			add_stability = -0.05
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.05
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_enemy_of_enemy
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10.00
+		relative_position_id = efsf_oppression_of_anti-earth_federation
+		x = 1
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		bypass = {
+			ZEO = {
+				has_completed_focus = zeon_incredible_alliance
+			}
+		}
+		prerequisite = {
+			focus = efsf_enemy_is_efsf
+		}
+		completion_reward = {
+			add_named_threat = {
+				name = efsf_enemy_of_enemy
+				threat = 5
+			}
+			add_war_support = 0.05
+			ZEO = {
+				country_event = { id = zeon.79 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_control_of_congress
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		relative_position_id = efsf_oppression_of_anti-earth_federation
+		x = -1
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+
+		prerequisite = {
+			focus = efsf_enemy_is_zeon
+		}
+		completion_reward = {
+			news_event = { id = news.82 hours = 6 }
+			add_stability = 0.05
+			add_popularity = {
+				ideology = earthsupremacy
+				popularity = 0.05
+			}
+			unlock_decision_tooltip = pa_purge_reformers
+		}
+	}
+
+	focus = {
+		id = efsf_earths_supremacy
+		icon = GFX_goal_earths_supremacy
+		cost = 10.00
+		relative_position_id = efsf_oppression_of_anti-earth_federation
+		x = 0
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		will_lead_to_war_with = ZEO
+		prerequisite = {
+			focus = efsf_control_of_congress
+			focus = efsf_enemy_of_enemy
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = mole_of_jablo
+				}
+				remove_ideas = mole_of_jablo
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo2
+				}
+				remove_ideas = mole_of_jablo2
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo3
+				}
+				remove_ideas = mole_of_jablo3
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo4
+				}
+				remove_ideas = mole_of_jablo4
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo5
+				}
+				remove_ideas = mole_of_jablo5
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo6
+				}
+				remove_ideas = mole_of_jablo6
+			}
+			news_event = { id = news.83 }
+			set_politics = {
+				ruling_party = earthsupremacy
+				elections_allowed = no
+			}
+			set_cosmetic_tag = EFS_TIT
+			set_rule = {
+				can_create_factions = yes
+			}
+			set_capital = { state = 378 }
+		}
+	}
+
+	focus = {
+		id = efsf_military_use_of_minovsky_particles
+		icon = GFX_goal_generic_radar
+		cost = 10.00
+		x = 37
+		y = 0
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available = {
+			NOT = {
+				has_completed_focus = efsf_plan_rx
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = mole_of_jablo
+				}
+				swap_ideas = {
+					add_idea = mole_of_jablo2
+					remove_idea = mole_of_jablo
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = minovsky
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_zeons_new_weapon
+		icon = GFX_goal_zeon_new_weapon
+		cost = 10.00
+		relative_position_id = efsf_military_use_of_minovsky_particles
+		x = 0
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				has_global_flag = ms_is_out
+			}
+			NOT = {
+				has_completed_focus = efsf_plan_rx
+			}
+		}
+		prerequisite = {
+			focus = efsf_military_use_of_minovsky_particles
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = mole_of_jablo2
+				}
+				swap_ideas = {
+					add_idea = mole_of_jablo3
+					remove_idea = mole_of_jablo2
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 2
+					category = visible_light_communication
+					category = ambac
+					category = mobilesuit_electronics
+					category = mobilesuit
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_plan_rx
+		icon = GFX_goal_plan_rx
+		cost = 10.00
+		relative_position_id = efsf_military_use_of_minovsky_particles
+		x = 0
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				OR = {
+					has_global_flag = ms_is_out
+					AND = {
+						has_tech = transfer_of_command
+						has_tech = EFS_mbt3_tech
+						has_tech = nuclear_reactor1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_rx_plan
+						option = AT_LEAST_78
+					}
+				}
+				date > 78.1.1
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_rx_plan
+						option = AT_LEAST_79
+					}
+				}
+				date > 79.1.1
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_rx_plan
+						option = AT_LEAST_WAR
+					}
+				}
+				has_war = yes
+			}
+		}
+		prerequisite = {
+			focus = efsf_zeons_new_weapon
+			focus = efsf_scvx_plan
+		}
+		completion_reward = {
+			add_research_slot = 1
+			if = {
+				limit = {
+					has_idea = mole_of_jablo
+				}
+				swap_ideas = {
+					add_idea = mole_of_jablo4
+					remove_idea = mole_of_jablo
+				}
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo2
+				}
+				swap_ideas = {
+					add_idea = mole_of_jablo5
+					remove_idea = mole_of_jablo2
+				}
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo3
+				}
+				swap_ideas = {
+					add_idea = mole_of_jablo6
+					remove_idea = mole_of_jablo3
+				}
+			}
+			set_technology = {
+				plan_rx_tech = 1
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = option_project_v
+						option = BOOST
+					}
+				}
+				set_technology = {
+					nuclear_reactor1 = 1
+					nuclear_reactor2 = 1
+					mega_particle2 = 1
+					minovsky_craft = 1
+					amc1 = 1
+					amc2 = 1
+					ambac1 = 1
+					ambac2 = 1
+					ambac3 = 1
+					EFS_multirolle1_tech = 1
+					EFS_assault_ship1_tech = 1
+					EFS_transporter2_tech = 1
+					rx75_tech = 1
+					rx77_tech = 1
+					rx78_tech = 1
+					EFS_ms_weapon_bazooka_01_tech = 1
+					EFS_ms_weapon_beamsord_01_tech = 1
+					EFS_ms_weapon_beamgun_01_tech = 1
+					EFS_ms_weapon_beamrifle_01_tech = 1
+					EFS_ms_shield_01_tech = 1
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_prioritize_pilot_life_support
+		icon = GFX_goal_prioritize_pilot_life_support
+		cost = 10.00
+		relative_position_id = efsf_military_use_of_minovsky_particles
+		x = -1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_plan_rx
+		}
+		mutually_exclusive = {
+			focus = efsf_prioritize_battle_data
+		}
+		completion_reward = {
+			add_ideas = prioritize_pilot_life_support
+		}
+	}
+
+	focus = {
+		id = efsf_prioritize_battle_data
+		icon = GFX_goal_prioritize_battle_data
+		cost = 10.00
+		relative_position_id = efsf_military_use_of_minovsky_particles
+		x = 1
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_plan_rx
+		}
+		mutually_exclusive = {
+			focus = efsf_prioritize_pilot_life_support
+		}
+		completion_reward = {
+			add_ideas = prioritize_battle_data
+		}
+	}
+
+	focus = {
+		id = efsf_plan_v
+		icon = GFX_goal_generic_special_forces
+		cost = 5.00
+		relative_position_id = efsf_military_use_of_minovsky_particles
+		x = 0
+		y = 4
+		ai_will_do = {
+		  factor = 2000
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_prioritize_battle_data
+			focus = efsf_prioritize_pilot_life_support
+		}
+		available = {
+			has_war_with = ZEO
+		}
+		completion_reward = {
+			add_political_power = 150
+			add_war_support = -0.05
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = start_is_uc0079
+					}
+				}
+				country_event = { id = achievement.19 }
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo
+				}
+				remove_ideas = mole_of_jablo
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo2
+				}
+				remove_ideas = mole_of_jablo2
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo3
+				}
+				remove_ideas = mole_of_jablo3
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo4
+				}
+				remove_ideas = mole_of_jablo4
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo5
+				}
+				remove_ideas = mole_of_jablo5
+			}
+			if = {
+				limit = {
+					has_idea = mole_of_jablo6
+				}
+				remove_ideas = mole_of_jablo6
+			}
+			add_timed_idea = {
+				idea = efsf_plan_v
+				days = 240
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = option_project_v
+						option = BOOST
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = rx75_equipment
+					amount = 20
+					producer = EFS
+				}
+				add_equipment_to_stockpile = {
+					type = rx77_equipment
+					amount = 20
+					producer = EFS
+				}
+				add_equipment_to_stockpile = {
+					type = rx78_equipment
+					amount = 20
+					producer = EFS
+				}
+				add_equipment_to_stockpile = {
+					type = ms_weapon_bazooka_03_equipment
+					amount = 100
+					producer = EFS
+				}
+				add_equipment_to_stockpile = {
+					type = ms_shield_02_equipment
+					amount = 100
+					producer = EFS
+				}
+				add_equipment_to_stockpile = {
+					type = ms_weapon_beamgun_01_equipment
+					amount = 100
+					producer = EFS
+				}
+				add_equipment_to_stockpile = {
+					type = ms_weapon_beamsord_01_equipment
+					amount = 100
+					producer = EFS
+				}
+				add_equipment_to_stockpile = {
+					type = ms_weapon_beamrifle_01_equipment
+					amount = 100
+					producer = EFS
+				}
+				add_equipment_to_stockpile = {
+					type = assault_ship1_equipment
+					amount = 10
+					producer = EFS
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_innovation_of_war
+		icon = GFX_goal_innovation_of_war
+		cost = 5.00
+		relative_position_id = efsf_military_use_of_minovsky_particles
+		x = 6
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		mutually_exclusive = {
+			focus = efsf_war_is_never_change
+		}
+		prerequisite = {
+			focus = efsf_plan_v
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = newtype_accepted_status_idea
+				OR = {
+					has_idea = newtype_division_2
+					has_idea = newtype_division_3
+					has_idea = newtype_division_4
+					has_idea = newtype_division_5
+				}
+			}
+			OR = {
+				has_idea = newtype_division_2
+				has_idea = newtype_division_3
+				has_idea = newtype_division_4
+				has_idea = newtype_division_5
+			}
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = cat_mobilesuit_warfare
+				uses = 3
+				cost_reduction = 0.3
+			}
+			add_to_variable = { newtype_accepted_status = 1 }
+	    custom_effect_tooltip = newtype_accepted_status_add
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_beam_equipment
+		icon = GFX_goal_focus_on_beam_equipment
+		cost = 5.00
+		relative_position_id = efsf_plan_v
+		x = -1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		mutually_exclusive = {
+			focus = efsf_focus_on_amu_equipment
+		}
+		prerequisite = {
+			focus = efsf_plan_v
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = mobilesuit_weapon_beam
+				uses = 3
+				bonus = 0.3
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_sniper_ms
+		icon = GFX_goal_focus_on_sniper_ms
+		cost = 5.00
+		relative_position_id = efsf_plan_v
+		x = -1
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_beam_equipment
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = sniper_mobilesuit
+				uses = 1
+				bonus = 0.3
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_amu_equipment
+		icon = GFX_goal_focus_on_amu_equipment
+		cost = 5.00
+		relative_position_id = efsf_plan_v
+		x = 1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		mutually_exclusive = {
+			focus = efsf_focus_on_beam_equipment
+		}
+		prerequisite = {
+			focus = efsf_plan_v
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = mobilesuit_weapon_bullet
+				uses = 3
+				bonus = 0.3
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_artilery_ms
+		icon = GFX_goal_focus_on_artilery_ms
+		cost = 5.00
+		relative_position_id = efsf_plan_v
+		x = 1
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_amu_equipment
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = artillery_mobilesuit
+				uses = 1
+				bonus = 0.3
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_gundam
+		icon = GFX_goal_focus_on_gundam
+		cost = 5.00
+		relative_position_id = efsf_zeons_new_weapon
+		x = -4
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_plan_v
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_focus_on_gundam
+				bonus = 0.3
+				uses = 2
+				category = mobilesuit_rx78
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_augusta_lab
+		icon = GFX_focus_research
+		cost = 5.00
+		relative_position_id = efsf_focus_on_gundam
+		x = 0
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_gundam
+		}
+		completion_reward = {
+			unlock_decision_tooltip = rd_establishment_of_newtype_institution
+		}
+	}
+
+	focus = {
+		id = efsf_high_mobility
+		icon = GFX_goal_high_mobility
+		cost = 5.00
+		relative_position_id = efsf_focus_on_gundam
+		x = -1
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_augusta_lab
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_focus_on_gundam
+				bonus = 0.5
+				uses = 1
+				category = exam_mobilesuit
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_versatility
+		icon = GFX_goal_versatility
+		cost = 5.00
+		relative_position_id = efsf_focus_on_gundam
+		x = 1
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_augusta_lab
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_newtype_MS
+				bonus = 0.5
+				uses = 1
+				technology = rx78_nt_tech
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_white_devil
+		icon = GFX_goal_white_devil
+		cost = 10.00
+		relative_position_id = efsf_focus_on_gundam
+		x = 0
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			has_country_flag = white_devil
+		}
+		prerequisite = {
+			focus = efsf_versatility
+		}
+		prerequisite = {
+			focus = efsf_high_mobility
+		}
+		completion_reward = {
+			country_event = { id = efsf.67 days = 5 random = 120 }
+			add_ideas = white_devil
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_mass_production_machines
+		icon = GFX_goal_focus_on_mass_production_machines
+		cost = 5.00
+		relative_position_id = efsf_zeons_new_weapon
+		x = 4
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_plan_v
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_focus_on_mass_production_machines
+				bonus = 0.3
+				uses = 3
+				category = rgm_series
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_augusta_factory
+		icon = GFX_goal_augusta_factory
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mass_production_machines
+		x = -1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_mass_production_machines
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_augusta_factory
+				bonus = 0.3
+				uses = 2
+				category = augusta_mobilesuit
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_development_of_MS_for_local_warfare
+		icon = GFX_goal_development_of_MS_for_local_warfare
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mass_production_machines
+		x = -1
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_augusta_factory
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_development_of_MS_for_local_warfare
+				bonus = 0.3
+				uses = 2
+				category = local_mobilesuit
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_development_of_MS_for_custom
+		icon = GFX_goal_development_of_MS_for_custom
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mass_production_machines
+		x = 0
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_augusta_factory
+		}
+		prerequisite = {
+			focus = efsf_jablo_factory
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = rgm79_n_tech
+				technology = rgm79_fp_tech
+				technology = rgm79_sc_tech
+				technology = rgm79_sp_tech
+				bonus = 0.3
+				uses = 2
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_jablo_factory
+		icon = GFX_goal_jablo_factory
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mass_production_machines
+		x = 1
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_mass_production_machines
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_jablo_factory
+				bonus = 0.3
+				uses = 2
+				category = jabulo_mobilesuit
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_next_generation_ms
+		icon = GFX_goal_next_generation_ms
+		cost = 10.00
+		relative_position_id = efsf_plan_v
+		x = 0
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_white_devil
+		}
+		prerequisite = {
+			focus = efsf_development_of_MS_for_custom
+		}
+		available = {
+			has_tech = rgm79_q_tech
+			has_tech = rx78_gp1_tech
+		}
+		completion_reward = {
+			country_event = { id = efsf.68 }
+		}
+	}
+
+	focus = {
+		id = efsf_strength_improvement_plan
+		icon = GFX_goal_generic_more_territorial_claims
+		cost = 10.00
+		x = 55
+		y = 0
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available = {
+			threat > 0.15
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		completion_reward = {
+			news_event = { id = news.51 hours = 6 }
+			swap_ideas = {
+				add_idea = bigship_principle2
+				remove_idea = bigship_principle
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_scvx_plan
+		icon = GFX_goal_scvx_plan
+		cost = 10.00
+		relative_position_id = efsf_strength_improvement_plan
+		x = -10
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_strength_improvement_plan
+		}
+		completion_reward = {
+			set_technology = {
+				plan_scvx_tech = 1
+			}
+			swap_ideas = {
+				add_idea = bigship_principle3
+				remove_idea = bigship_principle2
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_vinson_plan
+		icon = GFX_goal_vinson_plan
+		cost = 5.00
+		relative_position_id = efsf_scvx_plan
+		x = 0
+		y = 3
+		ai_will_do = {
+		  factor = 500
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		available = {
+			has_war_with = ZEO
+		}
+		prerequisite = {
+			focus = efsf_scvx_plan
+		}
+		completion_reward = {
+		  add_political_power = 150
+			add_stability = 0.1
+			add_war_support = 0.1
+			remove_ideas = bigship_principle3
+			set_technology = {
+				vinson_plan_tech = 1
+			}
+			add_timed_idea = {
+				idea = bigship_principle4
+				days = 240
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_war_is_never_change
+		icon = GFX_goal_war_is_never_change
+		cost = 5.00
+		relative_position_id = efsf_scvx_plan
+		x = 0
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_vinson_plan
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = newtype_accepted_status_idea
+				OR = {
+					has_idea = newtype_division_1
+					has_idea = newtype_division_2
+				}
+			}
+			OR = {
+				has_idea = newtype_division_1
+				has_idea = newtype_division_2
+			}
+		}
+		mutually_exclusive = {
+			focus = efsf_innovation_of_war
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = cat_superior_firepower
+				category = cat_grand_battle_plan
+				category = cat_mass_assault
+				uses = 3
+				cost_reduction = 0.5
+			}
+			add_to_variable = { newtype_accepted_status = -1 }
+	    custom_effect_tooltip = newtype_accepted_status_minus
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_mainstay_fighter
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		relative_position_id = efsf_strength_improvement_plan
+		x = -6
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_strength_improvement_plan
+		}
+		completion_reward = {
+			air_experience = 50
+			add_tech_bonus = {
+				name = efsf_focus_on_mainstay_fighter
+				uses = 2
+				bonus = 0.5
+				category = light_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_air_superiority
+		icon = GFX_goal_generic_build_airforce
+		cost = 10.00
+		relative_position_id = efsf_focus_on_mainstay_fighter
+		x = 0
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_mainstay_fighter
+		}
+		available = {
+			has_war_with = ZEO
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_doctrine_cost_reduction = {
+				name = efsf_air_superiority
+				uses = 1
+				cost_reduction = 0.5
+				category = air_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_amphibious_assault_ship
+		icon = GFX_goal_focus_on_amphibious_assault_ship
+		cost = 10.00
+		relative_position_id = efsf_focus_on_mainstay_fighter
+		x = -2
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_air_superiority
+			focus = efsf_scvx_plan
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_focus_on_amphibious_assault_ship
+				uses = 1
+				bonus = 0.3
+				category = assault_ship
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_bomber
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mainstay_fighter
+		x = 0
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_air_superiority
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_focus_on_bomber
+				uses = 2
+				bonus = 0.5
+				category = tactical_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_multipurpose_fighter
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mainstay_fighter
+		x = 0
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_bomber
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_focus_on_multipurpose_fighter
+				uses = 2
+				bonus = 0.5
+				category = multirolle
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_empty_supply_path
+		icon = GFX_focus_generic_paratrooper
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mainstay_fighter
+		x = 2
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_air_superiority
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_empty_supply_path
+				uses = 1
+				bonus = 0.5
+				category = transporter
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_mbt
+		icon = GFX_focus_generic_army_tanks2
+		cost = 10.00
+		relative_position_id = efsf_strength_improvement_plan
+		x = 0
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_strength_improvement_plan
+		}
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = efsf_focus_on_mbt
+				uses = 2
+				bonus = 0.5
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_quantity_battle
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 10.00
+		relative_position_id = efsf_focus_on_mbt
+		x = 0
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_mbt
+		}
+		available = {
+			has_war_with = ZEO
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_doctrine_cost_reduction = {
+				name = efsf_quantity_battle
+				uses = 2
+				cost_reduction = 0.5
+				category = land_doctrine
+			}
+			if = {
+				limit = {
+					has_idea = hollowing_out_industry
+				}
+				remove_ideas = hollowing_out_industry
+			}
+			else_if = {
+				limit = {
+					has_idea = hollowing_out_industry2
+				}
+				remove_ideas = hollowing_out_industry2
+			}
+			else_if = {
+				limit = {
+					has_idea = hollowing_out_industry3
+				}
+				remove_ideas = hollowing_out_industry3
+			}
+			else_if = {
+				limit = {
+					has_idea = hollowing_out_industry4
+				}
+				remove_ideas = hollowing_out_industry4
+			}
+			else_if = {
+				limit = {
+					has_idea = hollowing_out_industry5
+				}
+				remove_ideas = hollowing_out_industry5
+			}
+			else_if = {
+				limit = {
+					has_idea = hollowing_out_industry6
+				}
+				remove_ideas = hollowing_out_industry6
+			}
+			else_if = {
+				limit = {
+					has_idea = hollowing_out_industry7
+				}
+				remove_ideas = hollowing_out_industry7
+			}
+			else_if = {
+				limit = {
+					has_idea = hollowing_out_industry8
+				}
+				remove_ideas = hollowing_out_industry8
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_diversion_of_MS_technology
+		icon = GFX_goal_diversion_of_MS_technology
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mbt
+		x = -2
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_quantity_battle
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_diversion_of_MS_technology
+				uses = 1
+				bonus = 0.5
+				category = mobiletank
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_mobile_headquarters
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mbt
+		x = -1
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_diversion_of_MS_technology
+			focus = efsf_champion_of_land
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_mobile_headquarters
+				uses = 1
+				bonus = 0.5
+				category = landbattleship
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_champion_of_land
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mbt
+		x = 0
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = efsf_quantity_battle
+		}
+		completion_reward = {
+			add_ideas = champion_of_land
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = efsf_special_force
+		icon = GFX_focus_prc_infiltration
+		cost = 5.00
+		relative_position_id = efsf_focus_on_mbt
+		x = 2
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_quantity_battle
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 3
+				category = mountaineers_tech
+				category = marine_tech
+				category = para_tech
+				name = efsf_special_force
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_coop_with_ms
+		icon = GFX_goal_coop_with_ms
+		cost = 10.00
+		relative_position_id = efsf_focus_on_mbt
+		x = 2
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_special_force
+		}
+		completion_reward = {
+			add_ideas = coop_with_ms
+			add_doctrine_cost_reduction = {
+				name = zeon_MS_and_ground_forces_collaboration
+				uses = 1
+				category = cat_mobilesuit_warfare
+				cost_reduction = 0.2
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_earth_counter_strategy
+		icon = GFX_goal_earth_counter_strategy
+		cost = 10.00
+		relative_position_id = efsf_focus_on_mbt
+		x = 0
+		y = 6
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = efsf_coop_with_ms
+			focus = efsf_mobile_headquarters
+		}
+		completion_reward = {
+			add_command_power = 50
+			unlock_decision_tooltip = op_odessa
+			unlock_decision_tooltip = op_hawaii
+			unlock_decision_tooltip = op_belbet
+			unlock_decision_tooltip = op_suez
+			unlock_decision_tooltip = op_portmoresby
+			unlock_decision_tooltip = op_rainbow
+			unlock_decision_tooltip = op_simpsons
+		}
+	}
+
+	focus = {
+		id = efsf_federal_navy_tradition
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		relative_position_id = efsf_strength_improvement_plan
+		x = 7
+		y = 1
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_strength_improvement_plan
+		}
+		completion_reward = {
+			navy_experience = 50
+			add_tech_bonus = {
+				name = efsf_federal_navy_tradition
+				uses = 2
+				bonus = 0.5
+				category = naval_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_navy_reconstruction_plan
+		icon = GFX_goal_generic_build_navy
+		cost = 10.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = 0
+		y = 3
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_federal_navy_tradition
+		}
+		available = {
+			has_war_with = ZEO
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_doctrine_cost_reduction = {
+				name = efsf_navy_reconstruction_plan
+				uses = 1
+				cost_reduction = 0.5
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_diversion_of_mobile_pod_for_space
+		icon = GFX_goal_diversion_of_mobile_pod_for_space
+		cost = 5.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = -2
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_navy_reconstruction_plan
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = rb79_n_tech
+				uses = 1
+				bonus = 0.5
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_submarine_corps
+		icon = GFX_goal_generic_navy_submarine
+		cost = 10.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = -2
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_diversion_of_mobile_pod_for_space
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_focus_on_submarine_corps
+				uses = 2
+				bonus = 0.5
+				category = ss_tech
+			}
+			add_doctrine_cost_reduction = {
+				name = efsf_focus_on_submarine_corps
+				uses = 1
+				cost_reduction = 0.7
+				category = trade_interdiction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_navy_raider
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = -1
+		y = 6
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_submarine_corps
+		}
+		mutually_exclusive = {
+			focus = efsf_fleet_escort
+		}
+		completion_reward = {
+			add_ideas =  navy_raider
+			add_doctrine_cost_reduction = {
+				name = efsf_navy_raider
+				uses = 1
+				cost_reduction = 0.7
+				category = trade_interdiction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_navy_MS_troops
+		icon = GFX_goal_navy_MS_troops
+		cost = 10.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = -3
+		y = 6
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_submarine_corps
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				category = naval_mobilesuit
+				bonus = 0.3
+				uses = 1
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_aircraft_carrier_fleet
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = 0
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_navy_reconstruction_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_sea_lane_defeat
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_aircraft_carrier_fleet
+				uses = 2
+				bonus = 0.5
+				category = cv_tech
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_mare_nostrum
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = 0
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_aircraft_carrier_fleet
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = efsf_mare_nostrum
+				uses = 3
+				cost_reduction = 0.5
+				category = fleet_in_being_tree
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_sea_lane_defeat
+		icon = GFX_focus_generic_coastal_fort
+		cost = 5.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = 2
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_navy_reconstruction_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_aircraft_carrier_fleet
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = efsf_sea_lane_defeat
+				uses = 2
+				bonus = 0.5
+				category = dd_tech
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_screen_ship
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 5.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = 2
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_sea_lane_defeat
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = efsf_focus_on_submarine_corps
+				uses = 1
+				cost_reduction = 0.7
+				category = naval_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = efsf_fleet_escort
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		relative_position_id = efsf_federal_navy_tradition
+		x = 2
+		y = 6
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = efsf_focus_on_screen_ship
+		}
+		mutually_exclusive = {
+			focus = efsf_navy_raider
+		}
+		completion_reward = {
+			add_ideas = fleet_escort
+			add_doctrine_cost_reduction = {
+				name = efsf_fleet_escort
+				uses = 1
+				cost_reduction= 0.7
+				category = naval_doctrine
+			}
+		}
+	}
+
+}

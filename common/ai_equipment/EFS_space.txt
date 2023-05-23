@@ -1,0 +1,338 @@
+EFS_space_cruiser = {
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		space_cruiser
+	}
+
+	priority = {
+		factor = 50
+	}
+
+	space_cruiser_default = {
+
+		priority = {
+			factor = 1
+		}
+		enable = { NOT = { has_tech = EFS_space_cruiser2_tech } }
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = efsf_space_cruiser1_equipment
+			modules = {
+				fixed_ship_battery_slot = space_battery
+				fixed_ship_engine_slot = space_engine
+				fixed_ship_secondaries_slot = space_secondaries_1
+				fixed_ship_radar_slot = ship_radar
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_fire_control_system
+			ship_radar
+			space_battery
+			space_secondaries
+			space_engine
+			ship_cruiser_armor
+		}
+	}
+	destroyer_1_upgrade = {
+
+		priority = {
+			factor = 50
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 2000.0
+
+			type = destroyer1_equipment
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = ship_sonar
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo
+				mid_1_custom_slot = ship_depth_charge
+				rear_1_custom_slot = ship_depth_charge
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_depth_charge
+			ship_light_battery
+			ship_torpedo
+			light_ship_engine
+			ship_sonar
+			ship_fire_control_system
+			ship_radar
+		}
+	}
+
+	destroyer_2 = {
+
+		priority = {
+			factor = 70
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 2500.0
+
+			type = destroyer2_equipment
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = ship_sonar
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo
+				mid_1_custom_slot = ship_torpedo
+				rear_1_custom_slot = ship_depth_charge
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_depth_charge
+			ship_light_battery
+			ship_torpedo
+			light_ship_engine
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+		}
+	}
+
+	destroyer_2_upgrade = {
+
+		priority = {
+			factor = 70
+			modifier = {
+				factor = 20
+				has_war = yes
+			}
+		}
+		enable = { not = { has_tech = EFS_destroyer3_tech } }
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 2750.0
+
+			type = destroyer2_equipment
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_fire_control_system_slot > empty
+				fixed_ship_radar_slot = ship_sonar
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo
+				mid_1_custom_slot = ship_depth_charge
+				rear_1_custom_slot = ship_depth_charge
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_depth_charge
+			ship_light_battery
+			ship_torpedo
+			light_ship_engine
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+		}
+	}
+
+	destroyer_3 = {
+
+		priority = {
+			factor = 100
+			modifier = {
+				factor = 20
+				has_war = yes
+			}
+		}
+
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 3500.0
+
+			type = destroyer3_equipment
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = ship_sonar
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo
+				mid_1_custom_slot = ship_anti_air
+				rear_1_custom_slot = ship_depth_charge
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_depth_charge
+			ship_light_battery
+			ship_torpedo
+			light_ship_engine
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+		}
+	}
+	destroyer_3_upgrade = {
+
+		priority = {
+			factor = 100
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+
+		role_icon_index = 2
+		enable = {
+			has_tech = EFS_dp_secondary_battery
+		}
+		target_variant = {
+			match_value = 3750.0
+
+			type = destroyer3_equipment
+			modules = {
+				fixed_ship_battery_slot = dp_light_battery
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_fire_control_system_slot = ship_radar
+				fixed_ship_radar_slot = ship_sonar
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo
+				mid_1_custom_slot = ship_anti_air
+				rear_1_custom_slot = ship_depth_charge
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_depth_charge
+			ship_light_battery
+			ship_torpedo
+			light_ship_engine
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+		}
+	}
+	destroyer_4 = {
+
+		priority = {
+			factor = 150
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+		enable = {
+			has_tech = EFS_dp_secondary_battery
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 4500.0
+
+			type = destroyer3_equipment
+			modules = {
+				fixed_ship_battery_slot = dp_light_battery
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = ship_sonar_2
+				fixed_ship_engine_slot > light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo
+				mid_1_custom_slot = ship_depth_charge
+				rear_1_custom_slot = ship_depth_charge
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_depth_charge
+			ship_light_battery
+			ship_torpedo
+			light_ship_engine
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+		}
+	}
+}
+EFS_space_battleship = {
+
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		EFS
+	}
+
+	roles = {
+		space_battleship
+	}
+
+	priority = {
+		factor = 20
+	}
+	space_battleship_default = {
+
+		priority = {
+			factor = 20
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = efsf_space_battleship1_equipment
+			modules = {
+				fixed_ship_radar_slot = ship_radar
+				fixed_ship_engine_slot = space_engine
+				fixed_ship_battery_slot = space_battery
+				fixed_ship_secondaries_slot = space_secondaries
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_fire_control_system
+			ship_radar
+			space_battery
+			space_secondaries
+			space_engine
+			ship_heavy_armor
+		}
+	}
+}

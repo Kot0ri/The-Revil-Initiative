@@ -1,0 +1,21 @@
+scripted_gui = {
+  # ロジック（IGLOO）
+  oyw_storymission_mission_igloo = {
+    window_name = "storymission_mission_igloo_window"
+    context_type = player_context
+    parent_window_token = top_bar
+    visible = {
+      has_country_flag = storymission_mission_igloo_window_visible
+      has_country_flag = storymission_window_visible
+    }
+    triggers = {
+    }
+    effects = {
+      storymission_close_button_click = {
+        clr_country_flag = storymission_window_visible
+        clr_country_flag = storymission_mission_igloo_window_visible
+        set_variable = { storymission_button_frame_var = 1 }
+      }
+    }
+  }
+}

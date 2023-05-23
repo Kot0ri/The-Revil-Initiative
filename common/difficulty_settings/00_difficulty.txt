@@ -1,0 +1,14 @@
+difficulty_settings = {
+	difficulty_setting = {
+		key = "custom_diff_strong_zeo"
+		modifier = diff_strong_ai_generic
+		countries = { ZEO }
+		multiplier = 2.0
+	}
+	difficulty_setting = {
+		key = "custom_diff_strong_efs"
+		modifier = diff_strong_ai_generic
+		countries = { EFS }
+		multiplier = 2.0
+	}
+}

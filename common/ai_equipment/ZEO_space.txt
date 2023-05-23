@@ -1,0 +1,217 @@
+ZEO_space_cruiser = {
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		space_cruiser
+	}
+
+	priority = {
+		factor = 50
+	}
+
+	space_cruiser_default = {
+
+		priority = {
+			factor = 2
+		}
+		role_icon_index = 2
+		enable = { NOT = { has_tech = ZEO_space_cruiser2_tech } }
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = zeon_space_cruiser1_equipment
+			modules = {
+				fixed_ship_radar_slot = ship_radar
+				fixed_ship_minovsky_slot = space_minovsky
+				fixed_ship_engine_slot = space_engine
+				fixed_ship_battery_slot = space_battery
+				fixed_ship_secondaries_slot = space_secondaries
+				mid_1_custom_slot = space_hanger
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_radar
+			ship_fire_control_system
+			space_battery
+			space_secondaries
+			space_minovsky
+			space_hanger
+			space_engine
+			ship_cruiser_armor
+		}
+	}
+}
+
+ZEO_space_fv_cruiser = {
+
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		space_fv_cruiser
+	}
+
+	priority = {
+		factor = 20
+	}
+	space_fv_cruiser_default = {
+
+		priority = {
+			factor = 20
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = zeon_space_fv_cruiser1_equipment
+			modules = {
+				fixed_ship_radar_slot = ship_radar
+				fixed_ship_minovsky_slot = space_minovsky
+				fixed_ship_engine_slot = space_engine
+				fixed_ship_battery_slot = space_battery
+				fixed_ship_secondaries_slot = space_secondaries
+				mid_1_custom_slot = space_hanger
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_fire_control_system
+			ship_radar
+			space_minovsky
+			space_battery
+			space_secondaries
+			space_hanger
+			space_engine
+			ship_heavy_armor
+		}
+	}
+}
+
+ZEO_space_battleship = {
+
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		space_battleship
+	}
+
+	priority = {
+		factor = 20
+	}
+	space_battleship_default = {
+
+		priority = {
+			factor = 20
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = zeon_space_hv_battleship1_equipment
+			modules = {
+				fixed_ship_radar_slot = ship_radar
+				fixed_ship_minovsky_slot = space_minovsky
+				fixed_ship_engine_slot = space_engine
+				fixed_ship_battery_slot = space_battery
+				fixed_ship_secondaries_slot = space_secondaries
+				mid_1_custom_slot = space_hanger
+				mid_2_custom_slot = space_hanger
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_fire_control_system
+			ship_radar
+			space_battery
+			space_secondaries
+			space_minovsky
+			space_hanger
+			space_engine
+			ship_heavy_armor
+		}
+	}
+}
+
+ZEO_space_carrier = {
+
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		space_carrier
+	}
+
+	priority = {
+		factor = 20
+	}
+	space_carrier_default = {
+
+		priority = {
+			factor = 20
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = zeon_space_carrier1_equipment
+			modules = {
+				fixed_ship_minovsky_slot = space_minovsky
+				fixed_ship_engine_slot = space_engine
+				fixed_ship_battery_slot = space_battery
+				fixed_ship_secondaries_slot = space_secondaries
+				front_1_custom_slot = space_hanger
+				front_2_custom_slot = space_hanger
+				mid_1_custom_slot = space_hanger
+				mid_2_custom_slot = space_hanger
+				mid_3_custom_slot = space_hanger
+				rear_1_custom_slot = space_hanger
+				rear_2_custom_slot = space_hanger
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_fire_control_system
+			space_minovsky
+			space_battery
+			space_secondaries
+			space_hanger
+			space_engine
+			ship_heavy_armor
+		}
+	}
+}

@@ -1,0 +1,782 @@
+leader_traits = {
+	garma_zabi_trait_fm = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			army_morale_factor = 0.05
+		}
+	}
+	mquve_trait_fm = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			planning_speed = 0.05
+			recon_factor = 0.05
+		}
+	}
+	garcia_romeo_trait_fm = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			army_speed_factor = 0.05
+		}
+	}
+	yuri_kellerne_trait_fm = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			org_loss_when_moving = -0.1
+		}
+	}
+	neuen_bitter_trait_fm = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			dig_in_speed_factor = 0.1
+		}
+	}
+	antonio_callas_trait_fm = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			army_core_defence_factor = 0.05
+		}
+	}
+	elran_gfc_trait_fm = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			recon_factor = 0.05
+		}
+	}
+	hawkins_marnery_trait_fm = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			experience_gain_factor = 0.05
+		}
+	}
+	ethan_liar_trait_fm = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			army_speed_factor = 0.05
+			army_attack_factor = 0.05
+		}
+	}
+	akai_suisei = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill_factor = 1
+		planning_skill_factor = 1
+		modifier = {
+			recon_factor = 0.4
+			modifier_army_sub_unit_category_all_mobilesuit_mobilearmor_speed_factor = 0.5
+			modifier_army_sub_unit_category_all_mobilesuit_mobilearmor_attack_factor = 0.3
+		}
+		enable_ability = five_ship_jump
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	aoi_kyosei = {
+		type = corps_commander
+		trait_type = personality_trait
+		planning_skill_factor = 1
+		modifier = {
+			army_infantry_attack_factor = 0.3
+			army_morale_factor = 0.3
+			out_of_supply_factor = -0.3
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	iq240 = {
+		type = navy
+		trait_type = personality_trait
+		modifier = {
+			navy_org_factor = 0.2
+			naval_critical_effect_factor = -0.3
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	pirates = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill_factor = 1
+		planning_skill_factor = 1
+		modifier = {
+			invasion_preparation = -0.3
+			amphibious_invasion = 0.3
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	hakuro = {
+		type = corps_commander
+		trait_type = personality_trait
+		defense_skill_factor = 1
+		modifier = {
+			recon_factor = 0.25
+			modifier_army_sub_unit_category_all_mobilesuit_speed_factor = 0.3
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	solomons_nightmare = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill_factor = 1
+		defense_skill_factor = 1
+		modifier = {
+			modifier_army_sub_unit_category_all_mobilesuit_mobilearmor_attack_factor = 0.4
+			modifier_army_sub_unit_category_all_mobilesuit_mobilearmor_defence_factor = 0.5
+			army_org_factor = 0.35
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	solomons_ghost = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill_factor = 1
+		modifier = {
+			recon_factor = 0.8
+			modifier_army_sub_unit_category_all_mobilearmor_speed_factor = 0.15
+			modifier_army_sub_unit_category_all_mobilearmor_attack_factor = 0.1
+			modifier_army_sub_unit_category_newtype_mobilesuit_speed_factor = 0.5
+			modifier_army_sub_unit_category_newtype_mobilesuit_attack_factor = 0.5
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	kuroi_sanrensei = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill_factor = 1
+		modifier = {
+			modifier_army_sub_unit_category_all_mobilesuit_speed_factor = 0.3
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	red_rightning = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill_factor = 1
+		modifier = {
+			modifier_army_sub_unit_category_all_mobilesuit_speed_factor = 0.3
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	kouya_jinrai = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill_factor = 1
+		planning_skill_factor = 1
+		modifier = {
+			recon_factor = 0.25
+			modifier_army_sub_unit_category_all_mobilesuit_speed_factor = 0.3
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	ghost_fighter = {
+		type = corps_commander
+		trait_type = personality_trait
+		modifier = {
+			army_morale_factor = 0.25
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	trait_lucky = {
+		type = corps_commander
+		trait_type = personality_trait
+		modifier = {
+			wounded_chance_factor = -0.4
+			experience_gain_factor = 0.3
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	reaper_vampire = {
+		type = corps_commander
+		trait_type = personality_trait
+		modifier = {
+			planning_speed = 0.15
+			wounded_chance_factor = -1
+			attrition = 0.05
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	disabled_veteran = {
+		type = all
+		trait_type = status_trait
+		modifier = {
+			army_speed_factor = -0.15
+			wounded_chance_factor = 0.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	supply_division = {
+		type = corps_commander
+    gain_xp = {
+			always = no # not gainable
+		}
+		cost = 750
+		modifier = {
+			supply_consumption_factor = -0.2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	fort_commander = {
+		type = corps_commander
+    gain_xp = {
+			always = no # not gainable
+		}
+    cost = 1000
+		defense_skill_factor = 1
+		modifier = {
+			fort = {
+				defence = 0.2
+			}
+		}
+    show_in_combat = yes
+	}
+	pilot = {
+		type = corps_commander
+		trait_type = assignable_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+    cost = 1000
+		corps_commander_modifier = {
+			max_commander_army_size = -18
+			wounded_chance_factor = 0.2
+			modifier_army_sub_unit_category_all_mobilesuit_mobilearmor_attack_factor = 0.3
+			modifier_army_sub_unit_category_all_mobilesuit_mobilearmor_defence_factor = 0.3
+			modifier_army_sub_unit_category_custom_mobilesuit_attack_factor = 0.5
+			modifier_army_sub_unit_category_custom_mobilesuit_defence_factor = 0.5
+		}
+		allowed = {
+			is_field_marshal = no
+			FROM = {
+				is_ai = no
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+    show_in_combat = yes
+	}
+	remove_pilot = {
+		type = corps_commander
+		trait_type = assignable_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		cost = 1000
+		ai_will_do = {
+			base = 0
+		}
+		allowed = {
+			has_trait = pilot
+			FROM = {
+				is_ai = no
+			}
+		}
+		on_add = {
+			remove_unit_leader_trait = pilot
+			remove_unit_leader_trait = remove_pilot
+			if = {
+				limit = {
+					has_trait = akai_suisei
+				}
+				remove_unit_leader_trait = akai_suisei
+			}
+			if = {
+				limit = {
+					has_trait = aoi_kyosei
+				}
+				remove_unit_leader_trait = aoi_kyosei
+			}
+			if = {
+				limit = {
+					has_trait = hakuro
+				}
+				remove_unit_leader_trait = hakuro
+			}
+			if = {
+				limit = {
+					has_trait = solomons_nightmare
+				}
+				remove_unit_leader_trait = solomons_nightmare
+			}
+			if = {
+				limit = {
+					has_trait = solomons_ghost
+				}
+				remove_unit_leader_trait = solomons_ghost
+			}
+			if = {
+				limit = {
+					has_trait = kuroi_sanrensei
+				}
+				remove_unit_leader_trait = kuroi_sanrensei
+			}
+			if = {
+				limit = {
+					has_trait = red_rightning
+				}
+				remove_unit_leader_trait = red_rightning
+			}
+			if = {
+				limit = {
+					has_trait = kouya_jinrai
+				}
+				remove_unit_leader_trait = kouya_jinrai
+			}
+			if = {
+				limit = {
+					has_trait = ghost_fighter
+				}
+				remove_unit_leader_trait = ghost_fighter
+			}
+			if = {
+				limit = {
+					has_trait = disabled_veteran
+				}
+				remove_unit_leader_trait = disabled_veteran
+			}
+		}
+	}
+	naval_pilot = {
+		type = navy
+		trait_type = basic_trait
+		corps_commander_modifier = {
+			wounded_chance_factor = 0.2
+			modifier_navy_sub_unit_category_naval_mobilesuit_mobilearmor_attack_factor = 0.3
+			modifier_navy_sub_unit_category_naval_mobilesuit_mobilearmor_defence_factor = 0.3
+			modifier_navy_sub_unit_category_naval_mobilesuit_mobilearmor_detection_factor = 0.3
+		}
+		new_commander_weight = {
+			factor = 0.2
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	newtype1 = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill = 1
+		defense_skill = 1
+		corps_commander_modifier = {
+			recon_factor = 0.3
+			experience_gain_factor = 0.2
+			modifier_army_sub_unit_category_newtype_mobilesuit_attack_factor = 0.3
+		  modifier_army_sub_unit_category_newtype_mobilesuit_defence_factor = 0.3
+		  modifier_army_sub_unit_category_newtype_mobilesuit_speed_factor = 0.3
+		}
+    new_commander_weight = {
+			factor = 0.1
+      modifier = {
+        OR = {
+          has_trait = newtype2
+          has_trait = newtype3
+        }
+        factor = 0
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_1
+        }
+        factor = 0
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_2
+        }
+        factor = 5
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_3
+        }
+        factor = 10
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_4
+        }
+        factor = 20
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_5
+        }
+        factor = 30
+      }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	newtype2 = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill = 3
+		defense_skill = 3
+		corps_commander_modifier = {
+			recon_factor = 0.5
+			experience_gain_factor = 0.4
+			modifier_army_sub_unit_category_newtype_mobilesuit_attack_factor = 0.5
+		  modifier_army_sub_unit_category_newtype_mobilesuit_defence_factor = 0.5
+		  modifier_army_sub_unit_category_newtype_mobilesuit_speed_factor = 0.5
+		}
+    new_commander_weight = {
+			factor = 0.1
+      modifier = {
+        has_trait = newtype3
+        factor = 0
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_1
+        }
+        factor = 0
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_2
+        }
+        factor = 2
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_3
+        }
+        factor = 5
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_4
+        }
+        factor = 10
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_5
+        }
+        factor = 15
+      }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	newtype3 = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill = 5
+		defense_skill = 5
+		corps_commander_modifier = {
+			recon_factor = 0.8
+			experience_gain_factor = 0.6
+			modifier_army_sub_unit_category_newtype_mobilesuit_attack_factor = 1
+		  modifier_army_sub_unit_category_newtype_mobilesuit_defence_factor = 1
+		  modifier_army_sub_unit_category_newtype_mobilesuit_speed_factor = 1
+		}
+    new_commander_weight = {
+			factor = 0.1
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_1
+        }
+        factor = 0
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_2
+        }
+        factor = 1
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_3
+        }
+        factor = 3
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_4
+        }
+        factor = 8
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_5
+        }
+        factor = 10
+      }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
+	powered_human = {
+		type = corps_commander
+		trait_type = assignable_trait
+		attack_skill = 4
+		defense_skill = -2
+		corps_commander_modifier = {
+			experience_gain_factor = 0.5
+			wounded_chance_factor = 0.3
+		}
+		allowed = {
+			FROM = {
+				has_tech = strengthening_human
+			}
+      NOT = {
+        OR = {
+				  has_trait = newtype1
+				  has_trait = newtype2
+          has_trait = newtype3
+        }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+		gui_row = 17
+	}
+	mia = {
+		type = all
+		trait_type = status_trait
+		non_shared_modifier = {
+			skill_bonus_factor = -1
+			cannot_use_abilities = 1
+		}
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	assigned_mission = {
+		type = all
+		trait_type = status_trait
+		non_shared_modifier = {
+			skill_bonus_factor = -1
+			cannot_use_abilities = 1
+		}
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	detention = {
+		type = all
+		trait_type = status_trait
+		non_shared_modifier = {
+			skill_bonus_factor = -1
+			cannot_use_abilities = 1
+		}
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	power_of_love = {
+		type = all
+		trait_type = personality_trait
+		modifier = {
+			army_morale_factor = 0.15
+		}
+		new_commander_weight = {
+			factor = 0  # Scripted starting leaders only
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		show_in_combat = yes
+	}
+
+	operative_zeonnamari = {
+		type = operative
+		trait_type = basic_trait
+
+		new_commander_weight = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_nationality = ZEO
+				}
+			}
+			modifier = {
+				factor = 2
+				FROM = {
+					NOT = { has_done_agency_upgrade = upgrade_training_centers }
+				}
+			}
+		}
+
+		cost = 600
+		gain_xp_leader = {
+		}
+
+		modifier = {
+			operation_infiltrate_outcome = -0.25
+			operation_infiltrate_risk = 0.25
+		}
+	}
+
+	space_expert = {
+		type = navy
+		gain_xp = {
+			is_fighting_in_terrain = space
+		}
+
+		cost = 1000
+		modifier = {
+			space = {
+				attack = 0.1
+				movement = 0.1
+				defence = 0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		trait_type = basic_terrain_trait
+		gui_row = 5
+	}
+
+	anti_zabi_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
+	zabi_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
+	aeug_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
+	titans_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
+	conservatism_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
+	democratic_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
+	earthsupremacy_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
+	spacesupremacy_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
+}

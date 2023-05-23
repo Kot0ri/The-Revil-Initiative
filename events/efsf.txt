@@ -1,0 +1,1314 @@
+﻿add_namespace = efsf
+
+country_event = {
+  id = efsf.9999
+  title = efsf.9999.t
+  desc = efsf.9999.d
+  picture = GFX_report_event_german_parade_paris
+
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.9999.a
+    set_technology = {
+      EFS_assault_ship2_tech = 1
+      EFS_assault_ship3_tech = 1
+      fa78_tech = 1
+      rx78_xx_tech = 1
+      rx78_nt_tech = 1
+      rgm79_tech = 1
+      rgm79_d_tech = 1
+      rgm79_sc_tech = 1
+      EFS_ms_weapon_machinegun_01_tech = 1
+      EFS_ms_weapon_beamsplay_01_tech = 1
+    }
+    load_oob = "EFS_test"
+  }
+}
+
+#1 !! モビルスーツの存在が明らかに
+country_event = {
+  id = efsf.1
+  title = efsf.1.t
+  desc = {
+    trigger = {
+      NOT = {
+        has_global_flag = minovsky_exile_start
+      }
+    }
+    text = efsf.1.d1
+  }
+  desc = {
+    text = efsf.1.d2
+    trigger = {
+      has_global_flag = minovsky_exile_start
+    }
+  }
+  picture = GFX_country_efsf001
+
+  trigger = {
+    original_tag = EFS
+    ZEO = {
+      NOT = {
+        has_tech = recruiment_zudah
+      }
+    }
+    check_variable = { ZEO.how_many_exercise > 0 }
+    date > 77.1.1
+    NOT = {
+      OR = {
+        has_global_flag = start_is_uc0079
+        has_global_flag = ms_is_out
+      }
+    }
+  }
+  fire_only_once = yes
+  mean_time_to_happen = {
+    months = 12
+    modifier = {
+      factor = 0.8
+      check_variable = { ZEO.how_many_exercise > 1 }
+    }
+    modifier = {
+      factor = 0.8
+      check_variable = { ZEO.how_many_exercise > 2 }
+    }
+    modifier = {
+      factor = 0.8
+      check_variable = { ZEO.how_many_exercise > 3 }
+    }
+    modifier = {
+      factor = 0.6
+      EFS = {
+        has_completed_focus = efsf_enhance_monitoring_network
+      }
+    }
+  }
+
+  immediate = {
+    set_global_flag = ms_is_out
+  }
+  option = {
+    name = efsf.1.a
+    ZEO = {
+      add_named_threat = {
+        name = ms_is_out
+        threat = 3
+      }
+    }
+  }
+}
+#3 !! ミノフスキー博士の亡命
+country_event = {
+  id = efsf.3
+  title = efsf.3.t
+  desc = efsf.3.d
+  picture = GFX_country_efsf003
+
+  trigger = {
+    original_tag = EFS
+    OR = {
+      ZEO = {
+        has_added_tension_amount > 15
+      }
+      has_global_flag = ms_is_out
+    }
+    has_global_flag = start_is_uc0075
+  }
+  fire_only_once = yes
+  mean_time_to_happen = {
+    months = 10
+    modifier = {
+      factor = 0.1
+      ZEO = {
+        has_tech = recruiment_zudah
+      }
+    }
+    modifier = {
+      factor = 0.2
+      has_added_tension_amount > 20
+    }
+    modifier = {
+      factor = 0.1
+      has_added_tension_amount > 30
+    }
+    modifier = {
+      factor = 0.1
+      has_global_flag = ms_is_out
+    }
+  }
+  immediate = {
+    set_global_flag = minovsky_exile_start
+  }
+
+  option = {
+    name = efsf.3.a
+    custom_effect_tooltip = efsf.3.a_desc
+  }
+}
+#4 !! 暁の蜂起 治安維持部隊の出動
+country_event = {
+  id = efsf.4
+  title = efsf.4.t
+  desc = efsf.4.d
+  picture = GFX_country_efsf004
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.4.a
+    ai_chance = {
+      factor = 80
+    }
+    set_global_flag = sunrise_uprising_2_a
+  }
+  option = {
+    name = efsf.4.b
+    ai_chance = {
+      factor = 20
+    }
+    set_global_flag = sunrise_uprising_2_b
+  }
+}
+#5 !! 関税の撤廃要求
+country_event = {
+  id = efsf.5
+  title = efsf.5.t
+  desc = efsf.5.d
+  picture = GFX_country_efsf005
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.5.a
+    ai_chance = {
+      factor = 80
+    }
+    news_event = { id = news.21 days = 4 }
+  }
+  option = {
+    name = efsf.5.b
+    ai_chance = {
+      factor = 20
+    }
+    news_event = { id = news.22 days = 4 }
+  }
+}
+#6 !! 駐留軍の撤兵要求
+country_event = {
+  id = efsf.6
+  title = efsf.6.t
+  desc = efsf.6.d
+  picture = GFX_country_efsf006
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.6.a
+    ai_chance = {
+      factor = 80
+    }
+    news_event = { id = news.23 days = 4 }
+  }
+  option = {
+    name = efsf.6.b
+    ai_chance = {
+      factor = 20
+    }
+    news_event = { id = news.24 days = 4 }
+  }
+}
+#7 !! 連邦高官との接触
+country_event = {
+  id = efsf.7
+  title = efsf.7.t
+  desc = efsf.7.d
+  picture = GFX_country_efsf007
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.7.a
+    ai_chance = {
+      factor = 80
+    }
+    ZEO = {
+      country_event = { id = zeon.5 days = 7 }
+    }
+  }
+  option = {
+    name = efsf.7.b
+    ai_chance = {
+      factor = 20
+    }
+    ZEO = {
+      country_event = { id = zeon.6 days = 7 }
+    }
+  }
+}
+#8 !! 連邦高官との接触 決断
+country_event = {
+  id = efsf.8
+  title = efsf.8.t
+  desc = efsf.8.d
+  picture = GFX_country_efsf008
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.8.a
+    ai_chance = {
+      factor = 80
+    }
+    news_event = { id = news.25 days = 3 }
+  }
+  option = {
+    name = efsf.8.b
+    ai_chance = {
+      factor = 20
+    }
+    news_event = { id = news.26 days = 3 }
+  }
+}
+#9 !! ブリティッシュ作戦 コロニー降下を察知
+country_event = {
+  id = efsf.9
+  title = efsf.9.t
+  desc = efsf.9.d
+  picture = GFX_country_efsf009
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.9.a
+  }
+}
+#10 !! 第二次ブリティッシュ作戦を察知
+country_event = {
+  id = efsf.10
+  title = efsf.10.t
+  desc = efsf.10.d
+  picture = GFX_country_efsf010
+
+  is_triggered_only = yes
+
+  immediate = {
+  }
+
+  option = {
+    name = efsf.10.a
+    news_event = { id = news.31 days = 1 }
+  }
+}
+#11 !! 南極条約 徹底抗戦
+country_event = {
+  id = efsf.11
+  title = efsf.11.t
+  desc = efsf.11.d
+  picture = GFX_country_efsf011
+
+  is_triggered_only = yes
+
+  immediate = {
+  }
+
+  option = {
+    name = efsf.11.a
+    news_event = { id = news.36 hours = 3 }
+  }
+}
+#12 !! サイド２攻撃をリーク
+country_event = {
+  id = efsf.12
+  title = efsf.12.t
+  desc = efsf.12.d
+  picture = GFX_country_efsf012
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.12.a
+    ai_chance = {
+      factor = 80
+    }
+    ZEO = {
+      country_event = { id = zeon.17 days = 7 }
+    }
+  }
+  option = {
+    name = efsf.12.b
+    ai_chance = {
+      factor = 20
+    }
+    news_event = { id = news.129 days = 7 }
+  }
+}
+#13 !! クルスト・モーゼスの亡命
+country_event = {
+  id = efsf.13
+  title = efsf.13.t
+  desc = efsf.13.d
+  picture = GFX_country_efsf013
+
+  trigger = {
+    original_tag = EFS
+    ZEO = {
+      has_tech = ms08_tx_ex_tech
+    }
+    EFS = {
+      has_tech = rx78_tech
+    }
+  }
+  mean_time_to_happen = { days = 90 }
+  fire_only_once = yes
+
+  option = {
+    name = efsf.13.a
+    ai_chance = {
+      factor = 80
+    }
+    news_event = { id = news.52 days = 7 }
+  }
+  option = {
+    name = efsf.13.b
+    ai_chance = {
+      factor = 20
+    }
+  }
+}
+#30 !! RGM量産型 配備開始
+country_event = {
+  id = efsf.30
+  title = efsf.30.t
+  desc = efsf.30.d
+  picture = GFX_country_efsf030
+
+  trigger = {
+    original_tag = EFS
+    has_equipment = {
+      archetype_rgm79 > 1
+    }
+  }
+  mean_time_to_happen = { days = 1 }
+  fire_only_once = yes
+
+  option = {
+    name = efsf.30.a
+  }
+}
+#43 !! 最高幕僚会議
+country_event = {
+  id = efsf.43
+  title = efsf.43.t
+  desc = efsf.43.d
+  picture = GFX_country_efsf043
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = efsf.43.a
+  }
+}
+#50 0! アムロ・レイの覚醒
+country_event = {
+  id = efsf.50
+  title = efsf.50.t
+  desc = efsf.50.d
+  picture = GFX_country_efsf050
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.50.a
+    country_event = { id = achievement.23 }
+    country_event = { id = efsf.66 days = 3 }
+  }
+}
+#52 クワトロ・バジーナ
+country_event = {
+  id = efsf.52
+  title = efsf.52.t
+  desc = efsf.52.d
+  picture = GFX_country_efsf052
+
+  is_triggered_only = yes
+
+  immediate = {
+  }
+
+  option = {
+    name = efsf.52.a
+    EFS_quattro_vageena = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+}
+#53 ! 地球連邦総会 議題決定
+country_event = {
+  id = efsf.53
+  title = efsf.53.t
+  desc = efsf.53.d
+  picture = GFX_country_efsf053
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.53.a
+    ai_chance = {
+      factor = 70
+    }
+    set_global_flag = meeting_sub_is_1
+    news_event = { id = news.75 hours = 6 }
+  }
+  option = {
+    name = efsf.53.b
+    ai_chance = {
+      factor = 30
+    }
+    set_global_flag = meeting_sub_is_2
+    news_event = { id = news.75 hours = 6 }
+  }
+}
+#54 地球連邦総会 投票
+country_event = {
+  id = efsf.54
+  title = efsf.54.t
+  desc = efsf.54.d
+  picture = GFX_country_efsf054
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.54.a
+    trigger = {
+      NOT = {
+        tag = EFS
+      }
+    }
+    ai_chance = {
+      factor = 50
+      modifier = {
+        factor = 1.5
+        has_opinion = {
+          target = EFS
+          value > 49
+        }
+      }
+    }
+    add_to_variable = {
+      var = global.vote_is_yes
+      value = 1
+    }
+  }
+  option = {
+    name = efsf.54.b
+    trigger = {
+      NOT = {
+        tag = EFS
+      }
+    }
+    ai_chance = {
+      factor = 50
+      modifier = {
+        factor = 0.5
+        has_opinion = {
+          target = EFS
+          value < 50
+        }
+      }
+      modifier = {
+        factor = 1.2
+        OR = {
+          original_tag = GRA
+          original_tag = SI6
+        }
+      }
+      modifier = {
+        factor = 1.2
+        NOT = {
+          is_subject_of = EFS
+        }
+      }
+      modifier = {
+        factor = 1.5
+        original_tag = GRA
+        has_global_flag = zeon_granada_military_access
+      }
+      modifier = {
+        factor = 1.5
+        original_tag = SI6
+        has_global_flag = zeon_side6_alliance
+      }
+      modifier = {
+        factor = 1.5
+        original_tag = SI6
+        has_global_flag = zeon_side6_non_aggression
+      }
+    }
+    add_to_variable = {
+      var = global.vote_is_no
+      value = 1
+    }
+  }
+  option = {
+    name = efsf.54.c
+    trigger = {
+      tag = EFS
+    }
+    add_to_variable = {
+      var = global.vote_is_yes
+      value = 1
+    }
+    news_event = { id = news.76 days = 1 }
+  }
+}
+#64 地球寒冷化作戦 降下を察知
+country_event = {
+  id = efsf.64
+  title = efsf.64.t
+  desc = efsf.64.d
+  picture = GFX_country_efsf064
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.64.a
+  }
+}
+#66 0! 白い悪魔
+country_event = {
+  id = efsf.66
+  title = efsf.66.t
+  desc = efsf.66.d
+  picture = GFX_country_efsf066
+
+  is_triggered_only = yes
+
+  immediate = {
+    set_country_flag = white_devil
+  }
+
+  option = {
+    name = efsf.66.a
+  }
+}
+#67 !! ガンダムが戦場に与える心理的影響の研究
+country_event = {
+  id = efsf.67
+  title = efsf.67.t
+  desc = efsf.67.d
+  picture = GFX_country_efsf067
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = efsf.67.a
+    ZEO = {
+      country_event = { id = zeon.70 days = 15 }
+    }
+  }
+}
+#68 ヘイズル
+country_event = {
+  id = efsf.68
+  title = efsf.68.t
+  desc = efsf.68.d
+  picture = GFX_country_efsf068
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.68.a
+    set_technology = { rx121_tech = 1 }
+  }
+}
+#81
+#82
+#83
+
+# 81.10.20 GP計画
+# 83.10.13 アルビオン、トリントンに入港
+# 83.10.13 トリントンのGP02奪取される
+# 83.10.23 キンバライド基地降伏、GP02宇宙へ
+
+#84 オデッサ作戦成功
+country_event = {
+  id = efsf.84
+  title = efsf.84.t
+  desc = efsf.84.d
+  picture = GFX_country_efsf084
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.84.a
+  }
+}
+#85 ハワイ本島奪回作戦成功
+country_event = {
+  id = efsf.85
+  title = efsf.85.t
+  desc = efsf.85.d
+  picture = GFX_country_efsf085
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.85.a
+  }
+}
+#86 レインボゥ・ヴァレー攻略作戦成功
+country_event = {
+  id = efsf.86
+  title = efsf.86.t
+  desc = efsf.86.d
+  picture = GFX_country_efsf086
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.86.a
+  }
+}
+#87 シンプソンズ・ギャップ作戦成功
+country_event = {
+  id = efsf.87
+  title = efsf.87.t
+  desc = efsf.87.d
+  picture = GFX_country_efsf087
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.87.a
+  }
+}
+#88 スエズ運河奪回作戦成功
+country_event = {
+  id = efsf.88
+  title = efsf.88.t
+  desc = efsf.88.d
+  picture = GFX_country_efsf088
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.88.a
+  }
+}
+#89 ベルベット作戦成功
+country_event = {
+  id = efsf.89
+  title = efsf.89.t
+  desc = efsf.89.d
+  picture = GFX_country_efsf089
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.89.a
+  }
+}
+#90 ポートモレスビー奪還作戦成功
+country_event = {
+  id = efsf.90
+  title = efsf.90.t
+  desc = efsf.90.d
+  picture = GFX_country_efsf090
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.90.a
+  }
+}
+#91 0! 敵の敵（ジオンが許諾）
+country_event = {
+  id = efsf.91
+  title = efsf.91.t
+  desc = efsf.91.d
+  picture = GFX_country_efsf091
+
+  is_triggered_only = yes
+  immediate = {
+    ZEO = {
+      set_country_flag = zeon_accept_titans
+    }
+  }
+
+  option = {
+    name = efsf.91.a
+  }
+}
+#92 0! 敵の敵（ジオンが拒否）
+country_event = {
+  id = efsf.92
+  title = efsf.92.t
+  desc = efsf.92.d
+  picture = GFX_country_efsf092
+
+  is_triggered_only = yes
+  immediate = {
+    ZEO = {
+      set_country_flag = zeon_not_accept_titans
+    }
+  }
+
+  option = {
+    name = efsf.92.a
+  }
+}
+#93 !! ア・バオア・クーの接収（ジオンが許諾）
+country_event = {
+  id = efsf.93
+  title = efsf.93.t
+  desc = efsf.93.d
+  picture = GFX_country_efsf093
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.93.a
+    add_political_power = 100
+    EFS = {
+      transfer_state = 934
+      transfer_state = 935
+    }
+    934 = {
+      set_state_name = "Gate of Zedan(E)"
+      add_core_of = EFS
+    }
+    935 = {
+      set_state_name = "Gate of Zedan(W)"
+      add_core_of = EFS
+    }
+  }
+}
+#94 !! ア・バオア・クーの接収（ジオンが拒否）
+country_event = {
+  id = efsf.94
+  title = efsf.94.t
+  desc = efsf.94.d
+  picture = GFX_country_efsf094
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.94.a
+    add_named_threat = {
+      name = threat_name_efsf94
+      threat = 5
+    }
+  }
+}
+#95 !! ソロモンの接収（ジオンが許諾）
+country_event = {
+  id = efsf.95
+  title = efsf.95.t
+  desc = efsf.95.d
+  picture = GFX_country_efsf095
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.95.a
+    add_political_power = 100
+    EFS = {
+      transfer_state = 932
+      transfer_state = 933
+    }
+    932 = {
+      set_state_name = "Konpei Island(W)"
+      add_core_of = EFS
+    }
+    933 = {
+      set_state_name = "Konpei Island(E)"
+      add_core_of = EFS
+    }
+  }
+}
+#96 !! ソロモンの接収（ジオンが拒否）
+country_event = {
+  id = efsf.96
+  title = efsf.96.t
+  desc = efsf.96.d
+  picture = GFX_country_efsf096
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.96.a
+    add_named_threat = {
+      name = threat_name_efsf96
+      threat = 5
+    }
+  }
+}
+#97 !0 サイド6から休戦協定の打診
+country_event = {
+  id = efsf.97
+  title = efsf.97.t
+  desc = efsf.97.d
+  picture = GFX_country_efsf097
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      news_event = { id = news.34 days = 3 }
+    }
+  }
+
+  option = {
+    name = efsf.97.a
+  }
+}
+#98 マハラジャ・カーンとの接触
+country_event = {
+  id = efsf.98
+  title = efsf.98.t
+  desc = efsf.98.d
+  picture = GFX_country_efsf098
+
+  is_triggered_only = yes
+  immediate = {
+    set_global_flag = maharaja_support
+  }
+
+  option = {
+    name = efsf.98.a
+  }
+}
+#99 ブレックス・フォーラ暗殺（未実装）
+country_event = {
+  id = efsf.99
+  title = efsf.99.t
+  desc = efsf.99.d
+  picture = GFX_country_efsf099
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.99.a
+  }
+}
+#100 ギレン・ザビ暗殺（未実装）
+country_event = {
+  id = efsf.100
+  title = efsf.100.t
+  desc = efsf.100.d
+  picture = GFX_country_efsf100
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.100.a
+  }
+}
+#101 地球至上主義者の台頭
+country_event = {
+  id = efsf.101
+  title = efsf.101.t
+  desc = efsf.101.d
+  picture = GFX_country_efsf101
+
+  trigger = {
+    original_tag = EFS
+    EFS = {
+      earthsupremacy > 0.40
+      NOT = {
+        has_government = earthsupremacy
+      }
+    }
+  }
+  mean_time_to_happen = {
+    days = 90
+  }
+  fire_only_once = yes
+
+  option = {
+    name = efsf.101.a
+  }
+}
+#102 ミノフスキー博士とテム・レイの邂逅
+country_event = {
+  id = efsf.102
+  title = efsf.102.t
+  desc = efsf.102.d
+  picture = GFX_country_efsf102
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+  }
+
+  option = {
+    name = efsf.102.a
+    add_ideas = two_genius
+  }
+}
+#107 グラナダ密約（ジオンが拒否）
+country_event = {
+  id = efsf.107
+  title = efsf.107.t
+  desc = efsf.107.d
+  picture = GFX_country_efsf107
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.107.a
+  }
+}
+#108 公王との会談
+country_event = {
+  id = efsf.108
+  title = efsf.108.t
+  desc = efsf.108.d
+  picture = GFX_country_efsf108
+
+  is_triggered_only = yes
+
+  immediate = {
+  }
+
+  option = {
+    name = efsf.108.a
+    if = {
+      limit = {
+        ZEO = {
+          has_government = spacesupremacy
+        }
+      }
+      news_event = { id = news.163 days = 10 }
+    }
+    if = {
+      limit = {
+        ZEO = {
+          has_government = zeonism
+        }
+      }
+      add_tech_bonus = {
+        category = mobilesuit
+        uses = 1
+        bonus = 0.5
+      }
+      add_tech_bonus = {
+        category = mobilesuit_weapon
+        uses = 3
+        bonus = 0.3
+      }
+    }
+  }
+}
+#109 サイド1でのテロを察知
+country_event = {
+  id = efsf.109
+  title = efsf.109.t
+  desc = efsf.109.d
+  picture = GFX_country_efsf109
+
+  is_triggered_only = yes
+
+  immediate = {
+  }
+
+  option = {
+    name = efsf.109.a
+    set_global_flag = s1_30bunch_accept
+    ai_chance = {
+      factor = 80
+    }
+  }
+  option = {
+    name = efsf.109.b
+    set_global_flag = s1_30bunch_not_accept
+    ai_chance = {
+      factor = 20
+    }
+  }
+}
+#110 ラサの秘密基地攻略失敗（MS08連鎖イベント）
+#111 ルナツーへの強襲（V作戦連鎖イベント）
+#112 ラスト・リゾート（MS08連鎖イベント）
+#113 ランバ・ラル戦死（V作戦連鎖イベント）
+#114 WB隊ランバ・ラルにやられる（V作戦連鎖イベント）
+#115 黒い三連星の派遣を察知（V作戦連鎖イベント））
+#116 マチルダ死亡（V作戦連鎖イベント）
+#117 マチルダ生存（V作戦連鎖イベント）
+#118 黒い三連星戦死（V作戦連鎖イベント）
+#119 WB隊黒い三連星にやられる（V作戦連鎖イベント）
+#120 ミハル死亡（V作戦連鎖イベント）
+#121 ミハル生存（V作戦連鎖イベント）
+#122 13独立部隊編成（V作戦連鎖イベント）
+#123 アムロ実験体（V作戦連鎖イベント）
+#124 シャア、アルテイシアと遭遇（説得）（V作戦連鎖イベント）
+#125 アフリカ戦線（V作戦連鎖イベント）
+#126 ジャブロー破壊工作（V作戦連鎖イベント）
+#127 テム・レイがエゥーゴに参加
+country_event = {
+  id = efsf.127
+  title = efsf.127.t
+  desc = efsf.127.d
+  picture = GFX_country_efsf127
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    show_ideas_tooltip = tem_ray
+    EFS = {
+      clr_country_flag = tem_is_mia
+      clr_country_flag = tem_is_ours
+    }
+    set_country_flag = tem_is_ours
+    country_event = { id = achievement.28 }
+  }
+
+  option = {
+    name = efsf.127.a
+  }
+}
+
+#128 実績36判定
+country_event = {
+  id = efsf.128
+  title = efsf.128.t
+  hidden = yes
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        has_tech = rgc80_tech
+        has_tech = rgc83_tech
+        has_tech = rgm79g_tech
+        has_tech = rgm79_tech
+        has_tech = rgm79_c_tech
+        has_tech = rgm79_p_tech
+        has_tech = rgm79_n_tech
+        has_tech = rgm79_q_tech
+        has_tech = rgm79_r_tech
+        has_tech = rgm79_f_tech
+        has_tech = rgm79_fp_tech
+        has_tech = rgm79_sc_tech
+        has_tech = rgm79_d_tech
+        has_tech = rgm79_g_tech
+        has_tech = rgm79_gs_tech
+        has_tech = rgm79_sp_tech
+      }
+      country_event = { id = achievement.36 }
+    }
+  }
+
+  option = {
+    name = efsf.128.a
+  }
+}
+#129 メリーさんの羊（IGLOO連鎖イベント）
+
+# v.1.12から動かなくなったっぽい
+#130 コロニー国家の装艦隊数
+# country_event = {
+#   id = efsf.130
+#   title = efsf.130.t
+#   hidden = yes
+#   is_triggered_only = yes
+#   immediate = {
+#     set_temp_variable = { sub_total_ships_temp = 0 }
+# 		add_to_temp_variable = { sub_total_ships_temp = ZEO.num_ships }
+# 		add_to_temp_variable = { sub_total_ships_temp = SI1.num_ships }
+# 		add_to_temp_variable = { sub_total_ships_temp = SI2.num_ships }
+# 		add_to_temp_variable = { sub_total_ships_temp = SI4.num_ships }
+# 		add_to_temp_variable = { sub_total_ships_temp = SI5.num_ships }
+# 		add_to_temp_variable = { sub_total_ships_temp = SI6.num_ships }
+# 		add_to_temp_variable = { sub_total_ships_temp = SI7.num_ships }
+#     if = {
+#       limit = {
+#         check_variable = { sub_total_ships_temp < 70 }
+#       }
+#       set_temp_variable = { sub_total_ships_temp = 70 }
+#     }
+#     clear_variable = EFS.sub_total_ships_1
+#     set_variable = { EFS.sub_total_ships_1 = sub_total_ships_temp }
+#     set_variable = { EFS.sub_total_ships_2 = sub_total_ships_temp }
+#     set_variable = { EFS.sub_total_ships_3 = sub_total_ships_temp }
+#     set_variable = { EFS.sub_total_ships_4 = sub_total_ships_temp }
+# 		multiply_variable = { EFS.sub_total_ships_1 = 1 }
+# 		multiply_variable = { EFS.sub_total_ships_2 = 1.2 }
+# 		multiply_variable = { EFS.sub_total_ships_3 = 1.5 }
+# 		multiply_variable = { EFS.sub_total_ships_4 = 2.0 }
+#     round_variable = EFS.sub_total_ships_1
+#     round_variable = EFS.sub_total_ships_2
+#     round_variable = EFS.sub_total_ships_3
+#     round_variable = EFS.sub_total_ships_4
+#     set_variable = { EFS.sub_create_ships_1 = EFS.sub_total_ships_1 }
+#     set_variable = { EFS.sub_create_ships_2 = EFS.sub_total_ships_2 }
+#     set_variable = { EFS.sub_create_ships_3 = EFS.sub_total_ships_3 }
+#     set_variable = { EFS.sub_create_ships_4 = EFS.sub_total_ships_4 }
+#     subtract_from_variable = { EFS.sub_create_ships_1 = 20 }
+#     subtract_from_variable = { EFS.sub_create_ships_2 = 20 }
+#     subtract_from_variable = { EFS.sub_create_ships_3 = 20 }
+#     subtract_from_variable = { EFS.sub_create_ships_4 = 20 }
+#   }
+#   option = {
+#     name = efsf.130.a
+#   }
+# }
+#131 モビルスーツの存在が明らかに（ヅダ）
+country_event = {
+  id = efsf.131
+  title = efsf.131.t
+  desc = {
+    trigger = {
+      NOT = {
+        has_global_flag = minovsky_exile_start
+      }
+    }
+    text = efsf.131.d1
+  }
+  desc = {
+    text = efsf.131.d2
+    trigger = {
+      has_global_flag = minovsky_exile_start
+    }
+  }
+  picture = GFX_country_efsf131
+
+  trigger = {
+    original_tag = EFS
+    ZEO = {
+      has_tech = recruiment_zudah
+    }
+    check_variable = { ZEO.how_many_exercise > 0 }
+    date > 76.1.1
+    NOT = {
+      OR = {
+        has_global_flag = start_is_uc0079
+        has_global_flag = ms_is_out
+      }
+    }
+  }
+  fire_only_once = yes
+  mean_time_to_happen = {
+    months = 12
+    modifier = {
+      factor = 0.8
+      check_variable = { ZEO.how_many_exercise > 1 }
+    }
+    modifier = {
+      factor = 0.8
+      check_variable = { ZEO.how_many_exercise > 2 }
+    }
+    modifier = {
+      factor = 0.8
+      check_variable = { ZEO.how_many_exercise > 3 }
+    }
+    modifier = {
+      factor = 0.6
+      EFS = {
+        has_completed_focus = efsf_enhance_monitoring_network
+      }
+    }
+  }
+
+  immediate = {
+    set_global_flag = ms_is_out
+  }
+  option = {
+    name = efsf.131.a
+    ZEO = {
+      add_named_threat = {
+        name = ms_is_out
+        threat = 3
+      }
+    }
+  }
+}
+
+
+# 地上軍総司令
+#2000 アントニオ・カラス
+country_event = {
+  id = efsf.2000
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    every_army_leader = {
+      limit = {
+        is_field_marshal = yes
+      }
+      add_unit_leader_trait = antonio_callas_trait_fm
+      remove_unit_leader_trait = elran_gfc_trait_fm
+      remove_unit_leader_trait = hawkins_marnery_trait_fm
+      remove_unit_leader_trait = ethan_liar_trait_fm
+    }
+  }
+  option = {
+    name = efsf.2000.a
+  }
+}
+#2001 エルラン
+country_event = {
+  id = efsf.2001
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    every_army_leader = {
+      limit = {
+        is_field_marshal = yes
+      }
+      remove_unit_leader_trait = antonio_callas_trait_fm
+      add_unit_leader_trait = elran_gfc_trait_fm
+      remove_unit_leader_trait = hawkins_marnery_trait_fm
+      remove_unit_leader_trait = ethan_liar_trait_fm
+    }
+  }
+  option = {
+    name = efsf.2001.a
+  }
+}
+#2002 ホーキンズ・マーネリー
+country_event = {
+  id = efsf.2002
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    every_army_leader = {
+      limit = {
+        is_field_marshal = yes
+      }
+      remove_unit_leader_trait = antonio_callas_trait_fm
+      remove_unit_leader_trait = elran_gfc_trait_fm
+      add_unit_leader_trait = hawkins_marnery_trait_fm
+      remove_unit_leader_trait = ethan_liar_trait_fm
+    }
+  }
+  option = {
+    name = efsf.2002.a
+  }
+}
+#2003 イーサン・ライヤー
+country_event = {
+  id = efsf.2003
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    every_army_leader = {
+      limit = {
+        is_field_marshal = yes
+      }
+      remove_unit_leader_trait = antonio_callas_trait_fm
+      remove_unit_leader_trait = elran_gfc_trait_fm
+      remove_unit_leader_trait = hawkins_marnery_trait_fm
+      add_unit_leader_trait = ethan_liar_trait_fm
+    }
+  }
+  option = {
+    name = efsf.2003.a
+  }
+}

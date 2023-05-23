@@ -1,0 +1,690 @@
+﻿capital = 909
+oob = "ZEO_UC0075"
+
+75.1.1 = {
+	set_global_flag = start_is_uc0075
+	set_variable = { var = how_many_drop_earth value = 1 }
+	set_variable = { var = how_many_exercise value = 0 }
+}
+
+# Starting tech
+set_technology = {
+	basic_train = 1
+	acclimatization_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	paratroopers = 1
+	marines = 1
+	tech_mountaineers = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	motorised_infantry = 1
+	ZEO_mbt1_tech = 1
+	ZEO_ac1_tech = 1
+	ZEO_attack_helicopter_tech = 1
+	ZEO_transporter1_tech = 1
+	ZEO_basic_battery = 1
+	ZEO_transport = 1
+	ZEO_basic_secondary_battery = 1
+	ZEO_damage_control_1 = 1
+	ZEO_basic_torpedo = 1
+	ZEO_basic_naval_mines = 1
+	ZEO_submarine_mine_laying = 1
+	ms05_tech = 1
+	ZEO_ms_weapon_machinegun_01_tech = 1
+	ZEO_ms_weapon_heathawk_01_tech = 1
+	ZEO_ms_shield_01_tech = 1
+	visible_light_communication1 = 1
+	minovsky_particle = 1
+	minovsky_dissemination1 = 1
+	nuclear_reactor1 = 1
+	i_field = 1
+	mega_particle1 = 1
+	ambac1 = 1
+  ambac2 = 1
+	amc1 = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	oil_processing = 1
+	rubber_processing = 1
+	fuel_refining2 = 1
+}
+
+set_research_slots = 3
+set_convoys = 300
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+set_stability = 0.7
+set_war_support = 0.55
+
+set_cosmetic_tag = ZEO_EFS
+add_named_threat = {
+	name = zeon_0075_threat
+	threat = 5
+}
+
+set_country_flag = minovsky_is_ours
+set_country_flag = nakamoto_is_ours
+set_country_flag = chlust_is_ours
+set_variable = { newtype_accepted_status = 2 }
+set_variable = {
+	var = ms_flight_test
+	value = 1
+}
+
+set_popularities = {
+	democratic = 11
+	spacesupremacy = 53
+	zeonism = 32
+	earthsupremacy = 4
+}
+set_politics = {
+	ruling_party = spacesupremacy
+	last_election = "68.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	brothers_quarrel
+	economic_sanctions
+	colony_country
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+	customs_duty_6
+	oversea_army_6
+	newtype_division_2
+}
+
+add_opinion_modifier = {
+	target = EFS
+	modifier = efsf_zeon_rival
+}
+
+78.1.1 = {
+	add_named_threat = {
+		name = zeon_0078_threat
+		threat = 15
+	}
+	clr_global_flag = start_is_uc0075
+	set_global_flag = start_is_uc0078
+	set_global_flag = zeon_granada_mayer_death
+	set_global_flag = zeon_side6_non_aggression
+	set_global_flag = dozle_marriage
+	set_global_flag = zeon_discuss
+	set_global_flag = minovsky_discuss
+	set_global_flag = ms_discuss
+	set_global_flag = ms_discuss2
+	set_global_flag = computing_discuss
+	set_country_flag = operation_drop_earth_is_yes
+	set_country_flag = operation_british_is_yes
+	set_country_flag = jupiter_fleet_on
+  set_country_flag = jupiter_fleet_is_back
+	set_variable = { var = how_many_drop_earth value = 1 }
+	set_variable = { var = how_many_exercise value = 2 }
+	oob = "ZEO_UC0078"
+	set_stability = 0.8
+	set_war_support = 0.9
+	set_research_slots = 4
+	set_convoys = 300
+
+	set_technology = {
+		infantry_weapons2 = 1
+		support_weapons1 = 1
+		infantry_at = 1
+		ZEO_mbt2_tech = 1
+		ymt05_tech = 1
+		ZEO_fighter_tech = 1
+		ZEO_assault_ship1_tech = 1
+		ZEO_space_hv_battleship1_tech = 1
+		ZEO_space_cruiser1_tech = 1
+		ZEO_space_cruiser2_tech = 1
+		ZEO_space_fv_cruiser1_tech = 1
+		ZEO_space_fv_cruiser2_tech = 1
+		ZEO_ms_weapon_machinegun_02_tech = 1
+		ZEO_ms_weapon_bazooka_01_tech = 1
+		ms06_tech = 1
+		ms06_f_tech = 1
+		ms06_s_tech = 1
+		ms06_e_tech = 1
+		ms06_j_tech = 1
+		ms06_d_tech = 1
+		bounded_battle = 1
+		transfer_of_command = 1
+		ms_intensive_operation = 1
+		ms06_m_tech = 1
+		msm03_tech = 1
+		ZEO_mobilesuit_torpedo_1 = 1
+		visible_light_communication2 = 1
+		minovsky_dissemination2 = 1
+		mpiws1 = 1
+		nuclear_reactor2 = 1
+		ambac2 = 1
+		simulator1 = 1
+		improved_machine_tools = 1
+		improved_equipment_conversion = 1
+		advanced_machine_tools = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		excavation1 = 1
+		excavation2 = 1
+	}
+	remove_ideas = {
+		economic_sanctions
+		colony_country
+	}
+	add_ideas = {
+		brothers_quarrel
+		economic_sanctions2
+		colony_country4
+		zeon_medal_of_cross
+		defense_military_academy2
+		zeon_puneemunde_institution
+		closed_economy
+		extensive_conscription
+		war_economy
+		cecilia_irene
+		kycilia_zabi
+		albert_schacht
+		zeonic
+		mmp
+		kia
+		jupiter_fleet_get_resource
+	}
+	clr_country_flag = minovsky_is_ours
+	set_country_flag = establish_research_institution
+	set_country_flag = establish_603_technical_test_team
+
+	complete_national_focus = zeon_repression_of_deikun
+	complete_national_focus = zeon_dominance_of_human_survival_theory
+	complete_national_focus = zeon_defense_military_academy
+	complete_national_focus = zeon_hold_parliament
+	complete_national_focus = zeon_medal_of_cross
+	complete_national_focus = zeon_enhancement_of_defense_army
+	complete_national_focus = zeon_political_intervention_on_side6
+	complete_national_focus = zeon_organization_of_mobilized_mobile_battalion
+	complete_national_focus = zeon_puneemunde_institution
+	complete_national_focus = zeon_total_force_warfare_study
+	unlock_national_focus = zeon_improvement_of_MS_weapons
+	unlock_national_focus = zeon_munzo_univercity
+	unlock_national_focus = zeon_enhancement_of_general_purpose_MS
+	unlock_national_focus = zeon_focus_on_MS_for_local_battle
+	unlock_national_focus = zeon_focus_on_mobiletank
+  unlock_national_focus = zeon_high_mobility_of_general_purpose_MS
+  unlock_national_focus = zeon_miniaturization_of_mega_particle_cannon
+
+	activate_decision = ap_char_aznable
+	activate_decision = ap_miguel_gaia
+	activate_decision = ap_ramba_ral
+
+	ZEO_denim = {
+		set_character_flag = enable_corps_commander
+	}
+	ZEO_gene = {
+		set_character_flag = enable_corps_commander
+	}
+	ZEO_slender = {
+		set_character_flag = enable_corps_commander
+	}
+	ZEO_dimitri = {
+		set_character_flag = enable_corps_commander
+	}
+	ZEO_tokwan = {
+		set_character_flag = enable_corps_commander
+	}
+	ZEO_andy = {
+		set_character_flag = enable_corps_commander
+	}
+	ZEO_ricardo_vega = {
+		set_character_flag = enable_corps_commander
+	}
+	ZEO_cucuruz_doan = {
+		set_character_flag = enable_corps_commander
+	}
+	ZEO_adamski = {
+		set_character_flag = enable_corps_commander
+	}
+	ZEO_gaily = {
+		set_character_flag = enable_corps_commander
+	}
+}
+
+79.4.1 = {
+	set_global_flag = start_is_uc0079
+	clr_global_flag = start_is_uc0075
+	clr_global_flag = start_is_uc0078
+	set_global_flag = zeon_granada_mayer_death
+	set_global_flag = zeon_side6_non_aggression
+	set_global_flag = zeon_discuss
+	set_global_flag = minovsky_discuss
+	set_global_flag = ms_discuss
+	set_global_flag = ms_discuss2
+	set_global_flag = computing_discuss
+	set_country_flag = operation_drop_earth_is_yes
+	set_country_flag = operation_british_is_yes
+	set_country_flag = operation_british_is_start
+	set_country_flag = force_is_divided
+	set_country_flag = droped_point_1
+	set_country_flag = droped_point_6
+	set_country_flag = droped_point_7
+	set_variable = { var = how_many_drop_earth value = 4 }
+	set_variable = { var = how_many_exercise value = 3 }
+	capital = 358
+	oob = "ZEO_UC0079"
+	set_war_support = 1.0
+	set_research_slots = 4
+	set_convoys = 600
+
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		set_autonomy = {
+			target = GRA
+			autonomous_state = autonomy_colony
+		}
+	}
+
+	diplomatic_relation = {	country = GRA relation = military_access }
+	diplomatic_relation = { country = GRA relation = non_aggression_pact }
+	diplomatic_relation = { country = SI6 relation = non_aggression_pact }
+	diplomatic_relation = { country = VBC relation = non_aggression_pact }
+
+	declare_war_on = {
+		target = EFS
+		type = puppet_wargoal_focus
+	}
+	every_other_country = {
+		limit = {
+			is_puppet_of = EFS
+		}
+		THIS = {
+			add_to_war = {
+				targeted_alliance = EFS
+				enemy = ZEO
+				hostility_reason = puppet
+			}
+		}
+	}
+
+	set_technology = {
+		improved_infantry_weapons = 1
+		support_weapons1 = 1
+		ZEO_para_tank_tech = 1
+		ZEO_ac2_tech = 2
+		ZEO_lbs1_tech = 1
+		ZEO_scout_plane1_tech = 1
+		ZEO_attacker_tech = 1
+		ZEO_strategic_bomber_tech = 1
+		ZEO_ms_weapon_bazooka_02_tech = 1
+		ZEO_ms_weapon_heathawk_02_tech = 1
+		ZEO_ms_shield_02_tech = 1
+		ms06_k_tech = 1
+		ms07_tech = 1
+		ZEO_submarine1_tech = 1
+		ZEO_submarine_carrier1_tech = 1
+		ZEO_transport = 1
+		ZEO_landing_craft = 1
+		ZEO_basic_light_battery = 1
+		ZEO_basic_light_shell = 1
+		ZEO_basic_medium_shell = 1
+		ZEO_basic_medium_battery = 1
+		ZEO_improved_secondary_battery = 1
+		ZEO_damage_control_2 = 1
+		ZEO_improved_ship_torpedo_launcher = 1
+		ZEO_magnetic_detonator = 1
+		ZEO_cruiser1_tech = 1
+		ZEO_destroyer1_tech = 1
+		ZEO_improved_naval_mines = 1
+		ZEO_improved_submarine_mine_laying = 1
+		trade_interdiction = 1
+		convoy_interdiction_ti = 1
+		unrestricted_submarine_warfare = 1
+		visible_light_communication2 = 1
+		minovsky_dissemination2 = 1
+		mpiws1 = 1
+		minovsky_craft = 1
+		ZEO_space_carrier1_tech = 1
+		integrated_maintenance_plan = 1
+	}
+	remove_ideas = {
+		brothers_quarrel
+		colony_country4
+	}
+	add_ideas = {
+		brothers_quarrel2
+		economic_sanctions
+		closed_economy
+		service_by_requirement
+		tot_economic_mobilisation
+		newtype_division_3
+		cecilia_irene
+		kycilia_zabi
+		albert_schacht
+		chlust_morses
+		oliver_may
+		zeonic
+		mmp
+		kia
+		garma_zabi
+		dozle_zabi
+		gadem
+		monique_cadillac
+		integrated_maintenance_plan_idea
+	}
+	clr_country_flag = minovsky_is_ours
+	set_country_flag = establish_research_institution
+	set_country_flag = establish_603_technical_test_team
+	set_country_flag = establishment_of_army_of_earth
+	set_country_flag = strategic_maritime_intelligence_unit_is_yes
+	set_country_flag = establishment_cyclops
+
+	complete_national_focus = zeon_resident_forces_in_granada
+	complete_national_focus = zeon_leak_side2_attack
+	complete_national_focus = zeon_megiddo_fire
+	complete_national_focus = zeon_national_mobilization_act
+	unlock_national_focus = zeon_focus_on_MA
+
+	activate_decision = mb_foreign_force
+	activate_decision = ap_anabel_gato
+	activate_decision = ap_johnny_riden
+	activate_decision = ap_shin_matsunaga
+	activate_decision = ap_cima_garahau
+	activate_decision = ap_top
+	activate_decision = ap_herbert_von_kuspen
+	activate_decision = ap_jean_luc_duvall
+	activate_decision = ap_desert_ronmel
+	activate_decision = ap_hardie_steiner
+	activate_decision = wm_support_space_assault_force
+	remove_decision = wm_commercial_ship_recruitment
+
+	set_variable = { newtype_accepted_status = 4 }
+}
+
+recruit_character = ZEO_gihren_zabi
+recruit_character = ZEO_darcia_bakharo
+recruit_character = ZEO_munzos_earth_supremacist_senator
+recruit_character = ZEO_munzos_democrats_senator
+recruit_character = ZEO_degwin_sodo_zabi
+recruit_character = ZEO_cecilia_irene
+recruit_character = ZEO_maharaja_karn
+recruit_character = ZEO_haman_karn
+recruit_character = ZEO_albert_schacht
+recruit_character = ZEO_altesia_som_deikun
+recruit_character = ZEO_flanagan_rom
+recruit_character = ZEO_asakura
+recruit_character = ZEO_simus_al_bakharov
+recruit_character = ZEO_ginius_sahalim
+recruit_character = ZEO_oliver_may
+recruit_character = ZEO_karla_mitchum
+recruit_character = ZEO_yuri_kellerne
+recruit_character = ZEO_aiguille_delaz
+recruit_character = ZEO_garma_zabi
+recruit_character = ZEO_kycilia_zabi
+recruit_character = ZEO_mquve
+recruit_character = ZEO_neuen_bitter
+recruit_character = ZEO_romeo_garcia
+recruit_character = ZEO_gadem
+recruit_character = ZEO_barom
+recruit_character = ZEO_wolfgang_wall
+recruit_character = ZEO_twanning
+recruit_character = ZEO_rugens
+recruit_character = ZEO_killing
+recruit_character = ZEO_mulligan
+recruit_character = ZEO_darota
+recruit_character = ZEO_dozle_zabi
+recruit_character = ZEO_dren
+recruit_character = ZEO_bily_glardle
+recruit_character = ZEO_von_helsing
+recruit_character = ZEO_yuri_hasler
+recruit_character = ZEO_conscon
+recruit_character = ZEO_draize
+recruit_character = ZEO_deatroaf_kocsel
+recruit_character = ZEO_flanagan_boone
+recruit_character = ZEO_char_aznable
+recruit_character = ZEO_miguel_gaia
+recruit_character = ZEO_mash
+recruit_character = ZEO_ortega
+recruit_character = ZEO_ramba_ral
+recruit_character = ZEO_denim
+recruit_character = ZEO_gene
+recruit_character = ZEO_slender
+recruit_character = ZEO_dimitri
+recruit_character = ZEO_tokwan
+recruit_character = ZEO_andy
+recruit_character = ZEO_ricardo_vega
+recruit_character = ZEO_cucuruz_doan
+recruit_character = ZEO_adamski
+recruit_character = ZEO_gaily
+recruit_character = ZEO_anavel_gato
+recruit_character = ZEO_karius
+recruit_character = ZEO_kelley_layzner
+recruit_character = ZEO_johnny_ridden
+recruit_character = ZEO_shin_matsunaga
+recruit_character = ZEO_cima_garahau
+recruit_character = ZEO_topp
+recruit_character = ZEO_dell
+recruit_character = ZEO_arth
+recruit_character = ZEO_herbert_von_kuspen
+recruit_character = ZEO_jeanluc_duvall
+recruit_character = ZEO_desert_rommel
+recruit_character = ZEO_steiner_hardy
+recruit_character = ZEO_chaelie
+recruit_character = ZEO_miharu_ratokie
+recruit_character = ZEO_monique_cadillac
+recruit_character = ZEO_may_kauwin
+recruit_character = ZEO_demeziere_sonnen
+recruit_character = ZEO_martin_prochnow
+recruit_character = ZEO_aina_sahalin
+recruit_character = ZEO_lalah_sune
+recruit_character = ZEO_qusco_ale
+recruit_character = ZEO_challia_bull
+recruit_character = ZEO_marion_whelch
+recruit_character = ZEO_werner_holbein
+recruit_character = ZEO_visch_donahue
+recruit_character = ZEO_hideto_washiya
+recruit_character = ZEO_cozun_graham
+recruit_character = ZEO_tachi_ohara
+recruit_character = ZEO_acous
+recruit_character = ZEO_clamp
+recruit_character = ZEO_crowley_hamon
+recruit_character = ZEO_erik_blanke
+recruit_character = ZEO_norris_packard
+recruit_character = ZEO_nimbus_schterzen
+recruit_character = ZEO_daryl_lorenz
+recruit_character = ZEO_andy_strauss
+recruit_character = ZEO_gabriel_ramirez_garcia
+recruit_character = ZEO_mikhail_kaminsky
+recruit_character = ZEO_loni_garvey
+recruit_character = ZEO_yonem_kirks
+recruit_character = ZEO_bernard_wiseman
+recruit_character = ZEO_burroughs
+recruit_character = ZEO_suberoa_zinnerman
+recruit_character = ZEO_casval_rem_deikun
+
+recruit_character = ZEO_torenov_y_minovsky
+recruit_character = ZEO_chlust_morses
+recruit_character = ZEO_nakamoto
+recruit_character = ZEO_josef_eschonbach
+recruit_character = ZEO_stephanie_luio
+recruit_character = ZEO_kiki_rosita
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Judock"
+		GFX = GFX_portrait_judock
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { EFS }
+	}
+	create_operative_leader = {
+		name = "Miharu Ratokie"
+		GFX = GFX_portrait_miharu_ratokie
+		traits = { operative_seducer }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { EFS }
+	}
+	create_operative_leader = {
+		name = "Connolly"
+		GFX = GFX_portrait_connolly
+		traits = { }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { EFS }
+	}
+	create_operative_leader = {
+		name = "Carioca"
+		GFX = GFX_portrait_carioca
+		traits = { operative_zeonnamari }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { ZEO }
+	}
+  create_operative_leader = {
+		name = "Akahana"
+		GFX = GFX_portrait_akahana
+		traits = { operative_demolition_expert }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { ZEO }
+	}
+	create_operative_leader = {
+		name = "Charlie"
+		GFX = GFX_portrait_charlie
+		traits = { operative_infiltrator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { ZEO }
+	}
+	create_operative_leader = {
+		name = "Nick Aubil"
+		GFX = GFX_portrait_nick_aubil
+		traits = { operative_safe_cracker }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { ZEO }
+	}
+}
+
+78.1.1 = {
+	create_equipment_variant = {
+		name = "Musai Class"
+		type = zeon_space_cruiser1_equipment
+		name_group = ZEO_SC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = space_battery_1
+			fixed_ship_secondaries_slot = space_secondaries_1
+			fixed_ship_engine_slot = light_space_engine_1
+			fixed_ship_minovsky_slot = space_minovsky_1
+			mid_1_custom_slot = space_hanger_ms06
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Musai Late Production Class"
+		type = zeon_space_cruiser2_equipment
+		name_group = ZEO_SC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = space_battery_2
+			fixed_ship_secondaries_slot = space_secondaries_2
+			fixed_ship_engine_slot = light_space_engine_1
+			fixed_ship_minovsky_slot = space_minovsky_1
+			mid_1_custom_slot = space_hanger_ms06
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		name = "Chivvay Class"
+		type = zeon_space_fv_cruiser1_equipment
+		name_group = ZEO_FVSC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = space_battery_2
+			fixed_ship_secondaries_slot = space_secondaries_2
+			fixed_ship_engine_slot = light_space_engine_1
+			fixed_ship_minovsky_slot = space_minovsky_1
+			front_1_custom_slot = space_battery_2
+			mid_1_custom_slot = space_hanger_ms06
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Tivvay Class"
+		type = zeon_space_fv_cruiser2_equipment
+		name_group = ZEO_FVSC_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = space_battery_2
+			fixed_ship_secondaries_slot = space_secondaries_2
+			fixed_ship_engine_slot = light_space_engine_1
+			fixed_ship_minovsky_slot = space_minovsky_1
+			front_1_custom_slot = space_battery_2
+			mid_1_custom_slot = space_hanger_ms06
+			mid_2_custom_slot = space_hanger_ms06
+		}
+		obsolete = no
+	}
+	create_equipment_variant = {
+		name = "Gwazine Class"
+		type = zeon_space_hv_battleship1_equipment
+		name_group = ZEO_SB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = space_battery_3
+			fixed_ship_secondaries_slot = space_secondaries_3
+			fixed_ship_engine_slot = space_engine_1
+			fixed_ship_minovsky_slot = space_minovsky_1
+			front_1_custom_slot = space_battery_3
+			front_2_custom_slot = space_secondaries_3
+			mid_1_custom_slot = space_hanger_ms06
+			mid_2_custom_slot = space_hanger_ms06
+			mid_3_custom_slot = space_hanger_ms06
+			rear_1_custom_slot = space_battery_3
+			rear_2_custom_slot = space_secondaries_3
+		}
+		obsolete = no
+	}
+}
+79.4.1 = {
+	create_equipment_variant = {
+		name = "Dolos Class"
+		type = zeon_space_carrier1_equipment
+		name_group = ZEO_SCa_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = space_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_secondaries_slot = space_secondaries_1
+			fixed_ship_engine_slot = space_engine_1
+			fixed_ship_minovsky_slot = space_minovsky_1
+			front_1_custom_slot = space_hanger_ms05
+			front_2_custom_slot = space_hanger_ms05
+			mid_1_custom_slot = space_hanger_ms06
+			mid_2_custom_slot = space_hanger_ms06
+			mid_3_custom_slot = space_hanger_ms06
+			rear_1_custom_slot = space_hanger_ms06
+			rear_2_custom_slot = space_hanger_ms06
+		}
+		obsolete = no
+	}
+}

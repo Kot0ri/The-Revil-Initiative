@@ -1,0 +1,124 @@
+bookmarks = {
+	bookmark = {
+		name = "UC0079_NAME"
+		desc = "UC0079_DESC"
+		date = 79.4.1.1
+		picture = "GFX_select_date_UC0079"
+		default_country = "EFS"
+
+		ZEO = {
+			history = ZEO_UC0079_DESC
+			ideology = spacesupremacy
+			ideas = {
+				gravity_front_line
+				operation_drop_earth
+				zeon_mainstay_MS_development_competition
+			}
+			focuses = {
+				zeon_occupation_policy
+				zeon_zeon_navy
+				zeon_miniaturization_of_mega_particle_cannon
+			}
+		}
+
+		EFS = {
+		  history = EFS_UC0079_DESC
+		  ideology = democratic
+			ideas = {
+				after_colony2
+				efsf_plan_v
+				white_devil
+			}
+			focuses = {
+				efsf_focus_on_mass_production_machines
+				efsf_augusta_lab
+				efsf_earth_counter_strategy
+			}
+		}
+
+		"---"={
+			history = "OTHER_UC0079_DESC"
+		}
+
+		"SI1" = {
+		  minor = yes
+		  history = OTHER_UC0079_DESC
+		  ideology = zeonism
+		  ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI2" = {
+		  minor = yes
+		  history = OTHER_UC0079_DESC
+		  ideology = zeonism
+		  ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI4" = {
+		  minor = yes
+		  history = OTHER_UC0079_DESC
+		  ideology = zeonism
+		  ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI5" = {
+		  minor = yes
+		  history = OTHER_UC0079_DESC
+		  ideology = zeonism
+		  ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI6" = {
+		  minor = yes
+		  history = OTHER_UC0079_DESC
+		  ideology = zeonism
+		  ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI7" = {
+		  minor = yes
+		  history = OTHER_UC0079_DESC
+		  ideology = zeonism
+		  ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"VBC" = {
+		  minor = yes
+		  history = OTHER_UC0079_DESC
+		  ideology = zeonism
+		  ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {}
+		}
+		"GRA" = {
+		  minor = yes
+		  history = OTHER_UC0079_DESC
+		  ideology = zeonism
+		  ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {}
+		}
+
+		effect = {
+			randomize_weather = 32345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+  }
+}

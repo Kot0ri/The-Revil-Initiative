@@ -1,0 +1,178 @@
+ai_historical_focus_list_EFS = {
+  ai_national_focuses = {
+    efsf_show_to_colony #70 75.3.10 サイドへの見せしめ
+    efsf_enhancement_of_stationed_units #70 75.5.20 駐留部隊の増強
+    efsf_tariff_enhancement #70 75.7.30 関税強化
+    efsf_scenario_for_collapse_of_zeon #70 75.10.10 ジオン崩壊へのシナリオ
+    efsf_enhance_monitoring_network #70 75.12.20 監視網の強化
+    efsf_enhanced_economic_sanction #70 76.2.30 経済制裁強化
+    efsf_support_anti_zabi_faction #70 76.5.10 ザビ家の独裁を排除
+    efsf_strength_improvement_plan #70 76.7.20 戦力整備計画
+    efsf_building_competition #70 76.9.30 建艦競争
+    efsf_scvx_plan #70 76.12.10 SCV-X計画
+    efsf_focus_on_mbt #70 77.2.20 主力戦車に注力
+    efsf_military_use_of_minovsky_particles #70 77.4.30 ミノフスキー粒子の軍事活用
+    efsf_zeons_new_weapon #70 77.7.10 ジオンの新兵器
+    efsf_plan_rx #70 77.9.20 RX計画
+    efsf_federal_navy_tradition #70 77.11.30 連邦海軍の伝統
+    efsf_focus_on_mainstay_fighter #70 78.2.10 主力戦闘機に注力
+    efsf_prioritize_battle_data #70 78.4.20 戦闘データの回収を優先
+    efsf_warning_to_granada #70 78.6.30 グラナダへの警告
+    efsf_watching_expressions #70 78.9.10 観艦式
+    efsf_leak_plan_rx #70 78.11.20 RX計画をリーク
+    efsf_regime_change #70 79.1.30 ギレン暗殺計画 #開戦したらキャンセル
+    efsf_plan_v #35 78.12.25 V作戦
+    efsf_vinson_plan #35 79.1.30 ビンソン計画
+
+    efsf_focus_on_gundam #35 79.3.5 ガンダムに注力
+    efsf_innovation_of_war #35 79.4.10 戦争は変わった
+    efsf_quantity_battle #70 79.6.20 物量戦
+    efsf_champion_of_land #35 79.7.25 陸の王者
+    efsf_mobile_headquarters #35 79.8.30 移動式司令部
+    efsf_earth_counter_strategy #70 79.11.10 地球反攻作戦
+    efsf_augusta_lab #35 79.12.15 オーガスタ研究所
+    efsf_focus_on_mass_production_machines #35 80.1.20 量産化に注力
+
+    efsf_jablo_factory #35 80.2.25 ジャブロー工廠
+    efsf_augusta_factory #35 80.3.30 オーガスタ工廠
+    efsf_development_of_MS_for_custom #35 80.5.5 カスタム機の開発
+
+    efsf_versatility #35 汎用性を重視
+    efsf_white_devil #70 白い悪魔
+    efsf_next_generation_ms #70 次世代MS
+
+  }
+}
+
+#ai_focusのresearchは0~10で指定　※floatの桁あふれ防止
+
+ai_focus_defense_EFS = {
+	research = {
+		defensive = 5.0
+		radar_tech = 1.0
+		construction_tech = 2.0
+    mobilesuit = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+	}
+}
+
+ai_focus_aggressive_EFS = {
+	research = {
+		offensive = 5.0
+    mobilesuit = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+	}
+}
+
+ai_focus_war_production_EFS = {
+	research = {
+		industry = 10.0
+		construction_tech = 2.0
+		electronics = 2.0
+		computing_tech = 2.0
+    infantry_tech = 10
+    support_tech = 10
+    armor = 10
+    mobilesuit = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 8
+    minovsky = 8
+    space_equipment = 10
+	}
+}
+
+ai_focus_military_equipment_EFS = {
+	research = {
+		infantry_weapons = 10.0
+		infantry_tech = 10.0
+		support_tech = 6.5
+    infantry_tech = 10
+    support_tech = 10
+    armor = 10
+    mobilesuit = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+	}
+}
+
+ai_focus_military_advancements_EFS = {
+	research = {
+		land_doctrine = 10.0
+		radar_tech = 3.0
+		encryption_tech = 7.5
+		decryption_tech = 7.5
+    infantry_tech = 10
+    support_tech = 10
+    armor = 10
+    mobilesuit = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+	}
+}
+
+ai_focus_peaceful_EFS = {
+	research = {
+		industry = 10.0
+		construction_tech = 5.0
+		electronics = 10.0
+		computing_tech = 10.0
+    infantry_tech = 10
+    support_tech = 10
+    armor = 10
+    mobilesuit = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+    space_ship = 5
+	}
+}
+
+ai_focus_naval_EFS = {
+  research = {
+    naval_equipment = 10.0
+    naval_doctrine = 10.0
+    marine_tech = 2.0
+    dd_tech = 8.0
+    cl_tech = 8.0
+    ca_tech = 3.0
+    tp_tech = 10.0
+    cv_tech = 5.0
+    ss_tech = 8.0
+    naval_mobilesuit = 10
+  }
+}
+
+ai_focus_naval_air_EFS = {
+	research = {
+		naval_air = 4.0
+		naval_bomber = 3.0
+    naval_mobilesuit = 10
+	}
+}
+
+ai_focus_aviation_EFS = {
+	research = {
+		air_doctrine = 10.0
+		light_air = 5.0
+		light_fighter = 10.0
+		cas_bomber = 2.0
+		medium_air = 4.0
+		tactical_bomber = 5.0
+		heavy_air = 1.5
+		air_equipment = 5.0
+		para_tech = 10
+    space_ship = 5
+	}
+}

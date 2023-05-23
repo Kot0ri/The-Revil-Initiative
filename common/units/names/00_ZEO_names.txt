@@ -1,0 +1,52 @@
+﻿ZEO = {
+  fleet_names_template = FLEET_NAME
+  archetype_submarine = {
+    prefix = "PZS"
+    generic = { "Submarine" }
+    unique = {
+
+    }
+  }
+  archetype_submarine_carrier = {
+    prefix = "PZS"
+    generic = { "Submarine Carrier" }
+    unique = {
+      "Sea Serpent" "Green Siren" "Naga III" "Red Dolphin" "Zuai" "Bwo-Kuto"
+    }
+  }
+  archetype_carrier = {
+    prefix = "PZS"
+    generic = { "Aircraft Carrier" }
+    unique = {
+      "CV-65 Dolos" "Dolwa" "Midolo" "Papua" "Dried Fish" "Pazock"
+    }
+  }
+  archetype_destroyer = {
+    prefix = "PZS"
+    generic = { "Destroyer" }
+    unique = {
+      "Falmel" "Camel" "Tokmel" "Swamel" "Kuwamel" "Baromel" "Siegfried" "Valkyrie" "Nibelung" "Peer Gynt" "Schleswig" "Kempten" "Nordhausen" "Retvizan" "Kiel" "Zatopek" "Wimmel" "Umel" "Kelmel" "Kimmel" "Havoc" "Hokum" "Wormel" "Snail" "Hell-Hawk" "Brummel" "Brave" "Ahamel" "Meirmel" "Bifrost" "Gulltoppr" "Dromi" "Iwo Jima" "Konig" "Lorelei" "Medgar Evers" "Primus" "Remul" "Vamel" "Melmel" "Mailmer" "Tokmel" "Wismar" "Fuhlt" "Trenet" "Butai" "Endra" "Endra II" "Mindra" "Sandra" "Landra" "Indra"
+    }
+  }
+  archetype_cruiser = {
+    prefix = "PZS"
+    generic = { "Cruiser" }
+    unique = {
+      "Gwazine" "Gwaran" "Gwalib" "Gwaden" "Gandowa" "Gidol" "Zwamel" "Gwamel" "Asarum" "Gwaban" "Gwadan" "Gwazan" "Gwashu" "Gwalay" "In Excess" "Gwanban" "Gwanzan" "Sadaran" "Sasadaan" "Rewloola" "Great Degwin" "Gidoru" "Graf Zeppelin" "Chekhov" "Tikal" "Chivvay"
+    }
+  }
+  archetype_survey = {
+    prefix = "PZS"
+    generic = { "Surveillance Ship" }
+    unique = {
+    }
+  }
+  air_wing_names_template = AIR_WING_NAME
+  archetype_assault_ship = {
+    prefix = ""
+    generic = { "" }
+    unique = {
+      "Chimera" "Kergeren" "Lily Marlene" "Ragnarok" "Sangre Azul" "Tempest" "Vampire" "Cerberus" "Keraunos" "Ingolstadt" "Zanzibar" "Madagascar" "Kerberos" "Kerberos II"
+    }
+  }
+}

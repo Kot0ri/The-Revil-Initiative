@@ -1,0 +1,59 @@
+
+state={
+	id=915
+	name="STATE_915"
+
+	history={
+		owner = SI2
+		buildings = {
+			infrastructure = 3
+			arms_factory = 7
+			industrial_complex = 15
+			synthetic_refinery = 1
+			fuel_silo = 1
+			13282 = {
+				naval_base = 2
+			}
+
+		}
+		victory_points = {
+			13282 25
+		}
+		victory_points = {
+			13279 5
+		}
+		victory_points = {
+			13290 5
+		}
+		add_core_of = SI2
+		78.1.1 = {
+			buildings = {
+				arms_factory = 9
+				fuel_silo = 1
+
+			}
+
+		}
+		79.1.1 = {
+			buildings = {
+				arms_factory = 11
+				fuel_silo = 2
+
+			}
+
+		}
+		79.1.3 = {
+			controller = ZEO
+
+		}
+
+	}
+
+	provinces={
+		13282 13279 13290
+	}
+	manpower=100000000
+	buildings_max_level_factor=1.000
+	state_category=colony
+	local_supplies=5.0
+}

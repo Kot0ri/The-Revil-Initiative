@@ -1,0 +1,759 @@
+technologies = {
+  EFS_attack_helicopter_tech = {
+
+    enable_equipments = {
+      attack_helicopter_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 70
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 0 }
+    }
+
+    categories = {
+      light_air
+      light_fighter
+      air_equipment
+      helicopter
+    }
+
+    ai_will_do = {
+      base = 10
+    }
+  }
+  EFS_scout_plane1_tech = {
+
+    enable_equipments = {
+      scout_plane1_equipment
+    }
+
+    path = {
+			leads_to_tech = EFS_scout_plane2_tech
+			research_cost_coeff = 1
+		}
+
+    research_cost = 0.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 0 }
+    }
+
+    categories = {
+      light_air
+      air_equipment
+      cat_scout_plane
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_scout_plane2_tech = {
+
+    enable_equipments = {
+      scout_plane2_equipment
+    }
+
+    research_cost = 0.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 2 }
+    }
+
+    categories = {
+      light_air
+      air_equipment
+      cat_scout_plane
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_fighter1_tech = {
+
+    enable_equipments = {
+      fighter1_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 70
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 0 }
+    }
+
+    path = {
+			leads_to_tech = EFS_fighter2_tech
+			research_cost_coeff = 1
+		}
+
+    path = {
+			leads_to_tech = EFS_multirolle1_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      light_air
+      light_fighter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_fighter2_tech = {
+
+    enable_equipments = {
+      fighter2_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 2 }
+    }
+
+    categories = {
+      light_air
+      light_fighter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_fighter3_tech = {
+
+    enable_equipments = {
+      fighter3_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 6 }
+    }
+
+    path = {
+			leads_to_tech = EFS_fighter4_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      light_air
+      light_fighter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_fighter4_tech = {
+
+    enable_equipments = {
+      core_fighter2_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 82
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 8 }
+    }
+
+    categories = {
+      light_air
+      light_fighter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 81.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 82.1.1
+      }
+    }
+  }
+  EFS_multirolle1_tech = {
+
+    enable_equipments = {
+      core_fighter1_equipment
+    }
+    dependencies = {
+      nuclear_reactor1 = 1
+      amc2 = 1
+      plan_rx_tech = 1
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = -4 y = 2 }
+    }
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 0 }
+    }
+
+    path = {
+			leads_to_tech = EFS_multirolle2_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      light_air
+      cas_bomber
+      multirolle
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 100
+        has_tech = plan_rx_tech
+      }
+      modifier = {
+        factor = 10
+        OR = {
+          has_completed_focus = efsf_prioritize_battle_data
+          has_completed_focus = efsf_prioritize_pilot_life_support
+        }
+      }
+    }
+  }
+  EFS_multirolle2_tech = {
+
+    enable_equipments = {
+      multirolle1_equipment
+    }
+    dependencies = {
+      mega_particle1 = 1
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = -4 y = 4 }
+    }
+
+    path = {
+			leads_to_tech = EFS_multirolle3_tech
+			research_cost_coeff = 1
+		}
+
+    path = {
+			leads_to_tech = EFS_fighter3_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      light_air
+      cas_bomber
+      multirolle
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_multirolle3_tech = {
+
+    enable_equipments = {
+      multirolle2_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = -4 y = 6 }
+    }
+
+    categories = {
+      light_air
+      cas_bomber
+      multirolle
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_attacker_tech = {
+
+    enable_equipments = {
+      attacker_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 0 }
+    }
+
+    categories = {
+      light_air
+      cas_bomber
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_tactical_bomber1_tech = {
+
+    enable_equipments = {
+      tactical_bomber1_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 0 }
+    }
+
+    path = {
+			leads_to_tech = EFS_tactical_bomber2_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      medium_air
+      tactical_bomber
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_tactical_bomber2_tech = {
+
+    enable_equipments = {
+      tactical_bomber2_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 2 }
+    }
+
+    categories = {
+      medium_air
+      tactical_bomber
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_naval_bomber_tech = {
+
+    enable_equipments = {
+      naval_bomber_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 0 }
+    }
+
+    categories = {
+      medium_air
+      naval_bomber
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+    }
+  }
+  EFS_assault_ship1_tech = {
+
+    enable_equipments = {
+      assault_ship1_equipment
+    }
+    dependencies = {
+      mega_particle1 = 1
+      minovsky_craft = 1
+      plan_scvx_tech = 1
+    }
+
+    research_cost = 2
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 2 }
+    }
+
+    path = {
+			leads_to_tech = EFS_assault_ship2_tech
+			research_cost_coeff = 1
+		}
+    categories = {
+      heavy_air
+      tactical_bomber
+      assault_ship
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        has_tech = minovsky_craft
+      }
+      modifier = {
+        factor = 10
+        has_tech = plan_scvx_tech
+      }
+      modifier = {
+        factor = 20
+        has_tech = plan_rx_tech
+      }
+    }
+  }
+  EFS_assault_ship2_tech = {
+
+    enable_equipments = {
+      assault_ship2_equipment
+    }
+
+    research_cost = 1.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 4 }
+    }
+
+    path = {
+			leads_to_tech = EFS_assault_ship3_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      heavy_air
+      tactical_bomber
+      assault_ship
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 80.1.1
+      }
+    }
+  }
+  EFS_assault_ship3_tech = {
+
+    enable_equipments = {
+      assault_ship3_equipment
+    }
+
+    research_cost = 1.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 81
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 8 }
+    }
+
+    categories = {
+      heavy_air
+      tactical_bomber
+      assault_ship
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 80.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 81.1.1
+      }
+    }
+  }
+  EFS_transporter1_tech = {
+
+    enable_equipments = {
+      transport_plane_equipment_1
+    }
+
+    research_cost = 0.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 0 }
+    }
+
+    path = {
+			leads_to_tech = EFS_transporter2_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      medium_air
+      transporter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_transporter2_tech = {
+
+    enable_equipments = {
+      transport_plane_equipment_2
+    }
+
+    research_cost = 0.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 2 }
+    }
+
+    path = {
+			leads_to_tech = EFS_transporter3_tech
+			research_cost_coeff = 1
+		}
+    dependencies = {
+      plan_rx_tech = 1
+    }
+
+    categories = {
+      medium_air
+      transporter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        has_tech = plan_rx_tech
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+    }
+  }
+  EFS_transporter3_tech = {
+
+    enable_equipments = {
+      transport_plane_equipment_3
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_air_techs_folder
+      position = { x = 0 y = 4 }
+    }
+
+    categories = {
+      medium_air
+      transporter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+}

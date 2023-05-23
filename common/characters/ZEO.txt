@@ -1,0 +1,3324 @@
+characters={
+	ZEO_gihren_zabi={
+		name=ZEO_gihren_zabi
+		portraits={
+			civilian={
+				large="gfx/leaders/ZEO/Portrait_Zeon_Giren_Zabi.dds"
+			}
+		}
+		navy_leader={
+			traits={ iq240 zabi_party superior_tactician }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=1
+			visible = {
+				OR = {
+					has_character_flag = enable_navy_leader
+					NOT = {
+						has_character_flag = disable_navy_leader
+					}
+				}
+			}
+		}
+		country_leader={
+			ideology=space_elitism
+			traits={ dictator iq240 }
+			expire="100.1.1.1"
+			id=-1
+		}
+	}
+	ZEO_darcia_bakharo={
+		name=ZEO_darcia_bakharo
+		portraits={
+			civilian={
+				large="gfx/leaders/ZEO/Portrait_Zeon_darcia_bakharo.dds"
+			}
+			army = {
+				small=GFX_idea_darcia_bakharo
+			}
+		}
+		country_leader={
+			ideology=contlism
+			expire="100.1.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = darcia_bakharo
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				bakharo_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			modifier = {
+			}
+			do_effect = {
+				NOT = {
+					has_government = zeonism
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+				modifier = {
+					factor = 8
+					has_completed_focus = zeon_harmony_with_deikun
+				}
+				modifier = {
+					factor = 0.2
+					has_completed_focus = zeon_comrades_of_deikun
+				}
+				modifier = {
+					factor = 0.5
+					has_war = yes
+				}
+			}
+		}
+	}
+	ZEO_munzos_earth_supremacist_senator={
+		name=ZEO_munzos_earth_supremacist_senator
+		portraits={
+			civilian={
+				large="gfx/leaders/Portrait_mob_leader_8.dds"
+			}
+		}
+		country_leader={
+			ideology=earth_elitism
+			expire="100.1.1.1"
+			id=-1
+		}
+	}
+	ZEO_munzos_democrats_senator={
+		name=ZEO_munzos_democrats_senator
+		portraits={
+			civilian={
+				large="gfx/leaders/Portrait_mob_leader_9.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="100.1.1.1"
+			id=-1
+		}
+	}
+	ZEO_casval_rem_deikun = {
+		name = ZEO_casval_rem_deikun
+		portraits={
+			civilian={
+				large = "gfx/leaders/ZEO/Portrait_Zeon_casval_rem_deikun.dds"
+			}
+			army={
+				large = "gfx/leaders/ZEO/Portrait_Zeon_casval_rem_deikun.dds"
+				small=GFX_idea_casval_rem_deikun
+			}
+		}
+		field_marshal = {
+			legacy_id = 144
+			traits = {
+				akai_suisei
+				war_hero
+				trickster
+				naval_invader
+				pilot
+				newtype1
+			}
+			skill = 6
+			attack_skill = 8
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 5
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_degwin_sodo_zabi = {
+		name=ZEO_degwin_sodo_zabi
+		portraits={
+			civilian={
+				large="gfx/leaders/ZEO/Portrait_Zeon_degin_sodo_zabi.dds"
+			}
+			army = {
+				small=GFX_idea_degwin_sodo_zabi
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = degwin_sodo_zabi
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				degwin_trait
+			}
+			available = {
+				NOT = {
+					has_country_flag = sweep_away_zabi_3
+				}
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = degwin_is_dead
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+				modifier = {
+					factor = 25
+					has_completed_focus = zeon_harmony_with_deikun
+				}
+				modifier = {
+					factor = 0.5
+					has_completed_focus = zeon_resistance_to_dictatorship
+				}
+				modifier = {
+					factor = 0.5
+					has_war = yes
+				}
+			}
+		}
+	}
+	ZEO_cecilia_irene = {
+		name=ZEO_cecilia_irene
+		portraits={
+			army = {
+				small=GFX_idea_cecilia_irene
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = cecilia_irene
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				cecilia_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = sweep_away_zabi_2
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 2
+					has_completed_focus = zeon_repression_of_deikun
+				}
+			}
+		}
+	}
+	ZEO_maharaja_karn = {
+		name=ZEO_maharaja_karn
+		portraits={
+			army = {
+				small=GFX_idea_maharaja_karn
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = maharaja_karn
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				maharaja_trait
+			}
+			available = {
+				NOT = {
+					has_country_flag = maharaja_is_not_accept
+				}
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0.5
+					is_historical_focus_on = yes
+				}
+			}
+		}
+	}
+	ZEO_haman_karn = {
+		name=ZEO_haman_karn
+		portraits={
+			army = {
+				small=GFX_idea_haman_karn
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = haman_karn
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = special_political_adviser
+					has_country_flag = casval_haman_marriage
+				}
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = zeon_great_purge
+						has_country_flag = maharaja_is_not_accept
+					}
+				}
+			}
+			modifier = {
+			}
+			research_bonus = {
+				newtype = 0.15
+			}
+			traits = {
+				haman_karn_trait
+			}
+			ai_will_do = {
+				factor = 4
+			}
+		}
+	}
+	ZEO_albert_schacht = {
+		name=ZEO_albert_schacht
+		portraits={
+			army = {
+				small=GFX_idea_albert_schacht
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = albert_schacht
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_country_flag = establish_research_institution
+			}
+			modifier = {
+			}
+			traits = {
+				schacht_trait
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	ZEO_altesia_som_deikun = {
+		name=ZEO_altesia_som_deikun
+		portraits={
+			army = {
+				small=GFX_idea_altesia_som_deikun
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = altesia_som_deikun
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = special_political_adviser
+					has_country_flag = casval_and_aletesia_1
+				}
+			}
+			modifier = {
+			}
+			traits = {
+				altesia_trait
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	ZEO_josef_eschonbach = {
+		name=josef_eschonbach
+		portraits={
+			army={
+				small=GFX_idea_josef_eschonbach
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = josef_eschonbach
+			traits = {
+				eschonbach_trait
+			}
+			modifier = {
+			}
+			available = {
+				hidden_trigger = {
+					if = {
+						limit = {
+							original_tag = ZEO
+						}
+						NOT = {
+							has_country_flag = eschonbach_is_out_zeon
+						}
+					}
+					if = {
+						limit = {
+							original_tag = EFS
+						}
+						NOT = {
+							has_country_flag = eschonbach_is_out_efsf
+						}
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 6
+				modifier = {
+					factor = 0
+					has_war = no
+				}
+			}
+		}
+	}
+	ZEO_stephanie_luio = {
+		name=stephanie_luio
+		portraits={
+			army={
+				small=GFX_idea_stephanie_luio
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = stephanie_luio
+			traits = {
+				stephanie_luio_trait
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	ZEO_kiki_rosita = {
+		name=kiki_rosita
+		portraits={
+			army={
+				small=GFX_idea_kiki_rosita
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = kiki_rosita
+			traits = {
+				hc_guerrilla_2
+			}
+			allowed = {
+				OR = {
+					original_tag = EFS
+					original_tag = ZEO
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	ZEO_torenov_y_minovsky = {
+		name = torenov_y_minovsky
+		portraits={
+			army={
+				small=GFX_idea_torenov_y_minovsky
+			}
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = torenov_y_minovsky
+			cost = 100
+			available = {
+				has_country_flag = minovsky_is_ours
+			}
+			allowed = {
+				OR = {
+					original_tag = EFS
+					original_tag = ZEO
+				}
+			}
+			research_bonus = {
+				minovsky = 0.2
+			}
+			traits = {
+				minovsky_specialist
+			}
+			on_add = {
+				ZEO = {
+					if = {
+						limit = {
+							has_idea = tem_ray
+						}
+						country_event = { id = efsf.102 }
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 500
+			}
+			}
+	}
+	ZEO_chlust_morses = {
+		name = chlust_morses
+		portraits={
+			army={
+				small=GFX_idea_chlust_morses
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = chlust_morses
+			available = {
+				has_country_flag = chlust_is_ours
+			}
+			allowed = {
+				OR = {
+					original_tag = EFS
+					original_tag = ZEO
+				}
+			}
+			traits = {
+				exam_specialist
+			}
+			research_bonus = {
+				exam = 0.3
+				exam_mobilesuit = 0.3
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 10
+					has_tech = newtype_tech2
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							has_tech = newtype_tech2
+						}
+						has_tech = ms08_tx_ex_tech
+						has_tech = rx79_d3_tech
+					}
+				}
+			}
+		}
+	}
+	ZEO_nakamoto = {
+		name = nakamoto
+		portraits={
+			army={
+				small=GFX_idea_nakamoto
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = nakamoto
+			available = {
+				has_country_flag = nakamoto_is_ours
+			}
+			allowed = {
+				OR = {
+					original_tag = EFS
+					original_tag = ZEO
+				}
+			}
+			modifier = {
+			}
+			traits = {
+				efficient_scientist
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	ZEO_flanagan_rom = {
+		name=ZEO_flanagan_rom
+		portraits={
+			army = {
+				small=GFX_idea_flanagan_rom
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = flanagan_rom
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_tech = newtype_institution
+			}
+			research_bonus = {
+				newtype = 0.3
+			}
+			traits = {
+				psyco_com_specialist
+			}
+			ai_will_do = {
+				factor = 400
+				modifier = {
+					factor = 0
+					has_tech = psyco_com
+				}
+			}
+		}
+	}
+	ZEO_asakura = {
+		name=ZEO_asakura
+		portraits={
+			army = {
+				small=GFX_idea_asakura
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = asakura
+			allowed = {
+				original_tag = ZEO
+			}
+			research_bonus = {
+			}
+			traits = {
+				solor_ray_specialist
+			}
+		}
+	}
+	ZEO_simus_al_bakharov = {
+		name=ZEO_simus_al_bakharov
+		portraits={
+			army = {
+				small=GFX_idea_simus_al_bakharov
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = simus_al_bakharov
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				mobilearmor_specialist
+			}
+			research_bonus = {
+				mobilearmor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 2
+					has_tech = minovsky_craft
+				}
+			}
+		}
+	}
+	ZEO_ginius_sahalim = {
+		name=ZEO_ginius_sahalim
+		portraits={
+			army = {
+				small=GFX_idea_ginius_sahalim
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = ginius_sahalim
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_tech = plan_apsalus_tech
+				NOT = {
+					has_country_flag = apsalus_plan_freezed
+				}
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = sahalin_is_dead
+					}
+				}
+			}
+			traits = {
+				apsalus_specialist
+			}
+			research_bonus = {
+				apsalus = 0.3
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	ZEO_oliver_may = {
+		name=ZEO_oliver_may
+		portraits={
+			army = {
+				small=GFX_idea_oliver_may
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			idea_token = oliver_may
+			cost = 100
+			allowed = {
+				original_tag = ZEO
+			}
+			modifier = {
+				land_doctrine_cost_factor = -0.2
+				naval_doctrine_cost_factor = -0.1
+				air_doctrine_cost_factor = -0.1
+			}
+			available = {
+				has_country_flag = establish_603_technical_test_team
+			}
+			traits = {
+				engineer_tester
+			}
+			on_add = {
+				ZEO = {
+					if = {
+						limit = {
+							has_idea = monique_cadillac
+							has_unit_leader = 25
+						}
+						country_event = { id = achievement.18 }
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 2
+					has_war = yes
+				}
+			}
+		}
+	}
+	ZEO_karla_mitchum = {
+		name=ZEO_karla_mitchum
+		portraits={
+			army = {
+				small=GFX_idea_karla_mitchum
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = karla_mitchum
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_completed_focus = zeon_medal_of_cross
+				has_tech = ms06_p_tech
+			}
+			traits = {
+				rpb_engineer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	ZEO_yuri_kellerne={
+		name=ZEO_yuri_kellerne
+		portraits={
+			army={
+				small="GFX_idea_yuri_kellerne"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_yuri_kellerne.dds"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected inspirational_leader }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=8
+		}
+		advisor = {
+			slot = ground_forces_chief
+			idea_token = yuri_kellerne
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				yuri_kellerne_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = kellerne_is_dead
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			on_add = {
+				ZEO = {
+					country_event = { id = zeon.2003 }
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	ZEO_aiguille_delaz={
+		name=ZEO_aiguille_delaz
+		portraits={
+			army={
+				small=GFX_idea_aiguile_delaz
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_aiguile_delaz.dds"
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist zabi_party organizer aggressive_assaulter }
+			skill=6
+			attack_skill=4
+			defense_skill=4
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=7
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = aiguile_delaz
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				NOT = {
+					OR = {
+						has_country_flag = eliminate_extremist
+						has_country_flag = sweep_away_zabi_3
+					}
+				}
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = delaz_is_dead
+					}
+				}
+			}
+			traits = {
+				aiguile_trait
+			}
+			do_effect = {
+				NOT = {
+					has_government = spacesupremacy
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_completed_focus = zeon_harmony_with_deikun
+				}
+				modifier = {
+					factor = 2
+					has_completed_focus = zeon_dominance_of_human_survival_theory2
+				}
+			}
+		}
+	}
+	ZEO_garma_zabi={
+		name=ZEO_garma_zabi
+		portraits={
+			army={
+				small=GFX_idea_garma_zabi_pa
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_garma_zabi.dds"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected zabi_party }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=5
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = garma_zabi_pa
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_completed_focus = zeon_capitalizing_on_the_fame_of_parent
+				NOT = {
+					has_country_flag = sweep_away_zabi_3
+					has_country_flag = eschonbach_is_out_zeon
+				}
+			}
+			modifier = {
+			}
+			traits = {
+				garma_pa_trait
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		advisor={
+			slot = ground_forces_chief
+			idea_token = garma_zabi
+			allowed = {
+				original_tag = ZEO
+			}
+			cost = 100
+			traits = {
+				garma_trait
+			}
+			modifier = {
+			}
+			on_add = {
+				ZEO = {
+					country_event = { id = zeon.2000 }
+				}
+			}
+			available = {
+				NOT = {
+					OR = {
+						has_completed_focus = zeon_restructuring_of_military
+						has_completed_focus = zeon_capitalizing_on_the_fame_of_parent
+						has_country_flag = eschonbach_is_out_zeon
+					}
+				}
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = garma_is_dead
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	ZEO_kycilia_zabi={
+		name=ZEO_kycilia_zabi
+		portraits={
+			army={
+				small=GFX_idea_kycilia_zabi
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_kycilia_zabi.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kycilia_zabi
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				kycilia_trait
+			}
+			available = {
+				NOT = {
+					has_country_flag = sweep_away_zabi_3
+				}
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = kycilia_is_dead
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		field_marshal={
+			traits={ zabi_party }
+			skill=6
+			attack_skill=3
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=3
+			legacy_id=3
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+	}
+	ZEO_mquve={
+		name=ZEO_mquve
+		portraits={
+			army={
+				small=GFX_idea_mquve
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_M_Qube.dds"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected zabi_party fort_commander }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=2
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		advisor	= {
+			slot = ground_forces_chief
+			idea_token = mquve
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				NOT = {
+					has_completed_focus = zeon_restructuring_of_military
+				}
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = mquve_is_dead
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			traits = {
+				mquve_trait
+			}
+			on_add = {
+				ZEO = {
+					country_event = { id = zeon.2001 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	ZEO_neuen_bitter={
+		name=ZEO_neuen_bitter
+		portraits={
+			army={
+				small=GFX_idea_neuen_bitter
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_neunem_bitter.dds"
+			}
+		}
+		corps_commander={
+			traits={ fort_commander }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=9
+		}
+		advisor = {
+			slot = ground_forces_chief
+			idea_token = neuen_bitter
+			allowed = {
+				original_tag = ZEO
+			}
+			cost = 200
+			traits = {
+				neuen_bitter_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			modifier = {
+			}
+			on_add = {
+				ZEO = {
+					country_event = { id = zeon.2004 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	ZEO_romeo_garcia={
+		name=ZEO_romeo_garcia
+		portraits={
+			army={
+				small="GFX_idea_garcia_romeo"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_garcia_romeo.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=18
+		}
+		advisor = {
+			slot = ground_forces_chief
+			idea_token = garcia_romeo
+			allowed = {
+				original_tag = ZEO
+			}
+			cost = 50
+			traits = {
+				garcia_romeo_trait
+			}
+			modifier = {
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = garcia_is_dead
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			on_add = {
+				ZEO = {
+					country_event = { id = zeon.2002 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	ZEO_gadem={
+		name=ZEO_gadem
+		portraits={
+			army={
+				small=GFX_idea_gadem
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_gadem.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard supply_division }
+			skill=4
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=13
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = gadem
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = gadem_is_dead
+					}
+				}
+			}
+			traits = {
+				hc_logistics_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	ZEO_barom={
+		name=ZEO_barom
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_balom.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=17
+		}
+	}
+	ZEO_wolfgang_wall={
+		name=ZEO_wolfgang_wall
+		portraits={
+			army={
+				small="GFX_idea_wolfgang_wall"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_vale.dds"
+			}
+		}
+		corps_commander={
+			traits={ fort_commander }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=23
+		}
+	}
+	ZEO_twanning={
+		name=ZEO_twanning
+		portraits={
+			army={
+				small=GFX_idea_twaning
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_twaning.dds"
+			}
+		}
+		corps_commander={
+			traits={ politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=28
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			cost = 100
+			idea_token = twaning
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				hc_army_leader_1
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						OR = {
+							has_global_flag = zeon_great_purge
+							has_country_flag = twaning_is_dead
+						}
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	ZEO_rugens={
+		name=ZEO_rugens
+		portraits={
+			army={
+				small="GFX_idea_lugenth"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_lugenth.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard fort_commander }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=31
+		}
+		advisor = {
+			slot = space_forces_chief
+			idea_token = lugenth
+			allowed = {
+				original_tag = ZEO
+			}
+			cost = 50
+			traits = {
+				lugenth_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = lugenth_is_dead
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			modifier = {
+				navy_org_factor = 0.05
+				naval_defense_factor = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					has_war = yes
+				}
+			}
+		}
+	}
+	ZEO_killing={
+		name=ZEO_killing
+		portraits={
+			army={
+				small=GFX_idea_killing
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_killing.dds"
+			}
+		}
+		corps_commander={
+			traits={ zabi_party }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=14
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = air
+			cost = 100
+			idea_token = killing
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				NOT = {
+					OR = {
+						has_country_flag = eliminate_extremist
+						has_country_flag = kiling_is_arrest
+					}
+				}
+			}
+			traits = {
+				hc_air_bomb_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	ZEO_mulligan={
+		name=ZEO_mulligan
+		portraits={
+			army={
+				small="GFX_idea_mulligan"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Mulligan.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=183
+		}
+	}
+	ZEO_darota={
+		name=ZEO_darota
+		portraits={
+			army={
+				small="GFX_idea_darota"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Darota.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=193
+		}
+	}
+	ZEO_dozle_zabi={
+		name=ZEO_dozle_zabi
+		portraits={
+			army={
+				small="GFX_idea_dozle_zabi"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_dozle_zabi.dds"
+			}
+		}
+		navy_leader={
+			traits={ zabi_party ironside }
+			skill=5
+			attack_skill=3
+			defense_skill=4
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=4
+			visible = {
+				OR = {
+					has_character_flag = enable_navy_leader
+					NOT = {
+						has_character_flag = disable_navy_leader
+					}
+				}
+			}
+		}
+		advisor = {
+			slot = space_forces_chief
+			idea_token = dozle_zabi
+			allowed = {
+				original_tag = ZEO
+			}
+			cost = 150
+			traits = {
+				dozle_zabi_trait
+			}
+			modifier = {
+				strike_force_movement_org_loss = -0.2
+			}
+			research_bonus = {
+				ma08_tech = 0.2
+			}
+			available = {
+				NOT = {
+					has_completed_focus = zeon_restructuring_of_military
+				}
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = dozle_is_dead
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 15
+					has_war = yes
+				}
+			}
+		}
+	}
+	ZEO_dren={
+		name=ZEO_dren
+		portraits={
+			army={
+				small=GFX_idea_dren
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_dren.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=21
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			cost = 100
+			idea_token = dren
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				hc_ship_commander_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	ZEO_bily_glardle={
+		name=ZEO_bily_glardle
+		portraits={
+			army={
+				small="GFX_idea_bily_glardle"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_gladle.dds"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=22
+		}
+	}
+	ZEO_von_helsing={
+		name=ZEO_von_helsing
+		portraits={
+			army={
+				small="GFX_idea_von_helsing"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_von_helsing.dds"
+			}
+		}
+		navy_leader={
+			traits={ space_expert }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=29
+		}
+	}
+	ZEO_yuri_hasler={
+		name=ZEO_yuri_hasler
+		portraits={
+			army={
+				small="GFX_idea_urey_husrer"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_urey_husrer.dds"
+			}
+		}
+		navy_leader={
+			traits={ space_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=32
+		}
+		advisor = {
+			slot = space_forces_chief
+			idea_token = urey_husrer
+			allowed = {
+				original_tag = ZEO
+			}
+			cost = 80
+			traits = {
+				urey_husrer_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			modifier = {
+				navy_intel_factor = 0.1
+				navy_max_range_factor	= 0.1
+				navy_casualty_on_sink	= -0.1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					has_war = yes
+				}
+			}
+		}
+	}
+	ZEO_conscon={
+		name=ZEO_conscon
+		portraits={
+			army={
+				small="GFX_idea_conscon"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_conscon.dds"
+			}
+		}
+		navy_leader={
+			traits={ space_expert }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=6
+		}
+		advisor = {
+			slot = space_forces_chief
+			idea_token = conscon
+			allowed = {
+				original_tag = ZEO
+			}
+			cost = 80
+			traits = {
+				conscon_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = conscon_is_dead
+					}
+				}
+			}
+			modifier = {
+				naval_speed_factor = 0.1
+				naval_retreat_chance = -0.1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					has_war = yes
+				}
+			}
+		}
+	}
+	ZEO_draize={
+		name=ZEO_draize
+		portraits={
+			army={
+				small="GFX_idea_draize"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_dorize.dds"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=137
+		}
+	}
+	ZEO_deatroaf_kocsel={
+		name=ZEO_deatroaf_kocsel
+		portraits={
+			army={
+				small="GFX_idea_deatroaf_kocsel"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Deatroaf_Kocsel.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=172
+		}
+	}
+	ZEO_flanagan_boone={
+		name=ZEO_flanagan_boone
+		portraits={
+			army={
+				small="GFX_idea_flanagan_boone"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_flannagan_boon.dds"
+			}
+		}
+		navy_leader={
+			traits={ naval_pilot }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=138
+		}
+	}
+	ZEO_char_aznable={
+		name=ZEO_char_aznable
+		portraits={
+			army={
+				small="GFX_idea_char_aznable"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_char_aznable.dds"
+			}
+		}
+		corps_commander={
+			traits={ akai_suisei newtype1 war_hero anti_zabi_party trickster naval_invader pilot }
+			skill=6
+			attack_skill=8
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=11
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_miguel_gaia={
+		name=ZEO_miguel_gaia
+		portraits={
+			army={
+				small="GFX_idea_miguel_gaia"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_miguel_gaia.dds"
+			}
+		}
+		corps_commander={
+			traits={ kuroi_sanrensei war_hero pilot }
+			skill=5
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=15
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_mash={
+		name=ZEO_mash
+		portraits={
+			army={
+				small="GFX_idea_mash"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Mash.dds"
+			}
+		}
+		corps_commander={
+			traits={ kuroi_sanrensei war_hero pilot }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=182
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_ortega={
+		name=ZEO_ortega
+		portraits={
+			army={
+				small="GFX_idea_ortega"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_ortega.dds"
+			}
+		}
+		corps_commander={
+			traits={ kuroi_sanrensei war_hero pilot }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=4
+			legacy_id=156
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_ramba_ral={
+		name=ZEO_ramba_ral
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_ramba_ral.dds"
+			}
+		}
+		corps_commander={
+			traits={ aoi_kyosei anti_zabi_party trickster guerilla_fighter pilot }
+			skill=6
+			attack_skill=5
+			defense_skill=5
+			planning_skill=6
+			logistics_skill=6
+			legacy_id=12
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ramba_ral_pa
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = ramba_is_dead
+						has_global_flag = zeon_great_purge
+					}
+				}
+				has_completed_focus = zeon_revival_of_ral_family
+			}
+			modifier = {
+			}
+			traits = {
+				ramba_ral_pa_trait
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 3
+					has_war = yes
+				}
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_character_flag = enable_corps_commander
+				hidden_trigger = {
+					NOT = {
+						OR = {
+							has_country_flag = ramba_is_dead
+							has_global_flag = zeon_great_purge
+						}
+					}
+				}
+			}
+			traits = {
+				hc_guerrilla_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	ZEO_denim={
+		name=ZEO_denim
+		portraits={
+			army={
+				small="GFX_idea_denim"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Denim.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=173
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_gene={
+		name=ZEO_gene
+		portraits={
+			army={
+				small="GFX_idea_gene"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Gene.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=166
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_slender={
+		name=ZEO_slender
+		portraits={
+			army={
+				small="GFX_idea_slender"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Slender.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=168
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_dimitri={
+		name=ZEO_dimitri
+		portraits={
+			army={
+				small="GFX_idea_dimitri"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Dimitri.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=174
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_tokwan={
+		name=ZEO_tokwan
+		portraits={
+			army={
+				small="GFX_idea_tokwan"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Tokwan.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=177
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_andy={
+		name=ZEO_andy
+		portraits={
+			army={
+				small="GFX_idea_andy"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_apolly.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=151
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_ricardo_vega={
+		name=ZEO_ricardo_vega
+		portraits={
+			army={
+				small="GFX_idea_ricardo_vega"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Ricardo_Vega.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=186
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_cucuruz_doan={
+		name=ZEO_cucuruz_doan
+		portraits={
+			army={
+				small="GFX_idea_cucuruz_doan"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Cucuruz_Doan.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=161
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_adamski={
+		name=ZEO_adamski
+		portraits={
+			army={
+				small="GFX_idea_adamski"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_adamski.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=150
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_gaily={
+		name=ZEO_gaily
+		portraits={
+			army={
+				small="GFX_idea_gaily"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Gaily.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=163
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_anavel_gato={
+		name=ZEO_anavel_gato
+		portraits={
+			army={
+				small="GFX_idea_anavel_gato"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_anabel_gato.dds"
+			}
+		}
+		corps_commander={
+			traits={ solomons_nightmare war_hero zabi_party pilot }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=40
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_karius={
+		name=ZEO_karius
+		portraits={
+			army={
+				small="GFX_idea_karius"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_karius.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=159
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_kelley_layzner={
+		name=ZEO_kelley_layzner
+		portraits={
+			army={
+				small="GFX_idea_kelley_layzner"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Kelley_Layzner.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=164
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_johnny_ridden={
+		name=ZEO_johnny_ridden
+		portraits={
+			army={
+				small="GFX_idea_johnny_ridden"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_johnny_riden.dds"
+			}
+		}
+		corps_commander={
+			traits={ red_rightning war_hero pilot }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=41
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_shin_matsunaga={
+		name=ZEO_shin_matsunaga
+		portraits={
+			army={
+				small="GFX_idea_shin_matsunaga"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_shin_matsunaga.dds"
+			}
+		}
+		corps_commander={
+			traits={ hakuro war_hero pilot }
+			skill=4
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=30
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_cima_garahau={
+		name=ZEO_cima_garahau
+		portraits={
+			army={
+				small=GFX_idea_cima_garahau
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_cima_garahau.dds"
+			}
+		}
+		corps_commander={
+			traits={ pirates anti_zabi_party }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=20
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = cima_garahau
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_character_flag = enable_corps_commander
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = cima_is_dead
+					}
+				}
+			}
+			traits = {
+				hc_pirates_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	ZEO_topp={
+		name=ZEO_topp
+		portraits={
+			army={
+				small="GFX_idea_topp"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_top.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=26
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_dell={
+		name=ZEO_dell
+		portraits={
+			army={
+				small="GFX_idea_dell"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_Dell.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=176
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_arth={
+		name=ZEO_arth
+		portraits={
+			army={
+				small="GFX_idea_arth"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_zeon_arth.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=149
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_herbert_von_kuspen={
+		name=ZEO_herbert_von_kuspen
+		portraits={
+			army={
+				small="GFX_idea_herbert_von_kuspen"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_herbert_von_kuspen.dds"
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=25
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_jeanluc_duvall={
+		name=ZEO_jeanluc_duvall
+		portraits={
+			army={
+				small="GFX_idea_jean_luc_duvall"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_jean_luc_duvall.dds"
+			}
+		}
+		corps_commander={
+			traits={ ghost_fighter media_personality pilot }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=38
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_desert_rommel={
+		name=ZEO_desert_rommel
+		portraits={
+			army={
+				small="GFX_idea_desert_rommel"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_desert_ronmel.dds"
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=6
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=6
+			legacy_id=16
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_steiner_hardy={
+		name=ZEO_steiner_hardy
+		portraits={
+			army={
+				small="GFX_idea_hardie_steiner"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_hardie_steiner.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando pilot }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=24
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = hardie_steiner
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_character_flag = enable_corps_commander
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = steiner_is_dead
+					}
+				}
+			}
+			traits = {
+				hc_special_force_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	ZEO_chaelie = {
+		name=ZEO_chaelie
+		portraits={
+			army={
+				small=GFX_idea_chaelie
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = chaelie
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				hc_spy_2
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = side6_is_destroy
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+			}
+	}
+	ZEO_miharu_ratokie = {
+		name=ZEO_miharu_ratokie
+		portraits={
+			army={
+				small=GFX_idea_miharu_ratokie
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = miharu_ratokie
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				hc_spy_1
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = miharu_is_dead
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+			}
+	}
+	ZEO_monique_cadillac = {
+		name=ZEO_monique_cadillac
+		portraits={
+			army={
+				small=GFX_idea_monique_cadillac
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = monique_cadillac
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_completed_focus = zeon_puneemunde_institution
+			}
+			traits = {
+				hc_general_staff_1
+			}
+			on_add = {
+				ZEO = {
+					if = {
+						limit = {
+							has_idea = oliver_may
+							has_unit_leader = 25
+						}
+						country_event = { id = achievement.18 }
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+			}
+	}
+	ZEO_may_kauwin = {
+		name=ZEO_may_kauwin
+		portraits={
+			army={
+				small=GFX_idea_may_kauwin
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = may_kauwin
+			allowed = {
+				original_tag = ZEO
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+			traits = {
+				hc_mechanic_specialist_1
+			}
+		}
+	}
+	ZEO_demeziere_sonnen = {
+		name = ZEO_demeziere_sonnen
+		portraits = {
+			army = {
+				large = "gfx/leaders/ZEO/Portrait_Zeon_demeziere_sonnen.dds"
+				small = GFX_idea_demeziere_sonnen
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = demeziere_sonnen
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				hc_tank_specialist_1
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = sonnen_is_dead
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+		corps_commander={
+			legacy_id = 43
+			traits = {
+				armor_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_visch_donahue = {
+		name = ZEO_visch_donahue
+		portraits={
+			army = {
+				small=GFX_idea_visch_donahue
+				large = "gfx/leaders/ZEO/Portrait_Zeon_visch_donahue.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				pilot
+				kouya_jinrai
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 142
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_werner_holbein = {
+		name = ZEO_werner_holbein
+		portraits={
+			army = {
+				small=GFX_idea_werner_holbein
+				large = "gfx/leaders/ZEO/Portrait_Zeon_verner_holbein.dds"
+			}
+		}
+		corps_commander = {
+				traits = {
+				pilot
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_marion_whelch = {
+		name = ZEO_marion_whelch
+		portraits={
+			army = {
+				small=GFX_idea_marion_whelch
+				large = "gfx/leaders/ZEO/Portrait_Zeon_marion_whelch.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				pilot
+				newtype1
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = 139
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_challia_bull = {
+		name = ZEO_challia_bull
+		portraits={
+			army = {
+				small=GFX_idea_challia_bull
+				large = "gfx/leaders/ZEO/Portrait_Zeon_challia_bull.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				newtype1
+				pilot
+				zabi_party
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = 136
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_qusco_ale = {
+		name = ZEO_qusco_ale
+		portraits={
+			army = {
+				small=GFX_idea_qusco_ale
+				large = "gfx/leaders/ZEO/Portrait_Zeon_qusco_ale.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				newtype2
+				pilot
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 135
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_lalah_sune = {
+		name = ZEO_lalah_sune
+		portraits={
+			army = {
+				small=GFX_idea_lalah_sune
+				large = "gfx/leaders/ZEO/Portrait_Zeon_lalah_sune.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				newtype2
+				pilot
+				solomons_ghost
+				anti_zabi_party
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 140
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_aina_sahalin = {
+		name = ZEO_aina_sahalin
+		portraits={
+			army = {
+				small=GFX_idea_aina_sahalim
+				large = "gfx/leaders/ZEO/Portrait_Zeon_aina_sahalim.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				pilot
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 39
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_martin_prochnow = {
+		name = ZEO_martin_prochnow
+		portraits={
+			army = {
+				small=GFX_idea_martin_prochnow
+				large = "gfx/leaders/ZEO/Portrait_Zeon_martin_prochnow.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				space_expert
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			maneuvering_skill = 1
+			coordination_skill = 3
+			legacy_id = 147
+			visible = {
+				has_character_flag = enable_navy_leader
+			}
+		}
+	}
+	ZEO_bernard_wiseman = {
+		name = ZEO_bernard_wiseman
+		portraits={
+			army={
+				small=GFX_idea_bernard_wiseman
+				large = "gfx/leaders/ZEO/Portrait_Zeon_bernerd_wiseman.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 44
+			traits = {
+				pilot
+				trait_lucky
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_yonem_kirks = {
+		name = ZEO_yonem_kirks
+		portraits={
+			army={
+				small=GFX_idea_yonem_kirks
+				large = "gfx/leaders/ZEO/Portrait_Zeon_yonem_kirks.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 210
+			traits = {
+				pilot
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_loni_garvey = {
+		name = ZEO_loni_garvey
+		portraits={
+			army={
+				small=GFX_idea_loni_garvey
+				large = "gfx/leaders/ZEO/Portrait_Zeon_loni_garvey.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 211
+			traits = {
+				pilot
+				newtype1
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_mikhail_kaminsky = {
+		name = ZEO_mikhail_kaminsky
+		portraits={
+			army={
+				small=GFX_idea_mikhail_kaminsky
+				large = "gfx/leaders/ZEO/Portrait_zeon_Mikhail_Kaminsky.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 184
+			traits = {
+				pilot
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_gabriel_ramirez_garcia = {
+		name = ZEO_gabriel_ramirez_garcia
+		portraits={
+			army={
+				small=GFX_idea_gabriel_ramirez_garcia
+				large = "gfx/leaders/ZEO/Portrait_zeon_garcia.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 158
+			traits = {
+				pilot
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_andy_strauss = {
+		name = ZEO_andy_strauss
+		portraits={
+			army={
+				small=GFX_idea_andy_strauss
+				large = "gfx/leaders/ZEO/Portrait_zeon_andy_strauss.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 153
+			traits = {
+				pilot
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_daryl_lorenz = {
+		name = ZEO_daryl_lorenz
+		portraits={
+			army={
+				small=GFX_idea_daryl_lorenz
+				large = "gfx/leaders/ZEO/Portrait_Zeon_daryl_lorenz.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 42
+			traits = {
+				disabled_veteran
+				pilot
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_nimbus_schterzen = {
+		name = ZEO_nimbus_schterzen
+		portraits={
+			army={
+				small=GFX_idea_nimbus_schterzen
+				large = "gfx/leaders/ZEO/Portrait_Zeon_nimbus_schterzen.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 37
+			traits = {
+				pilot
+				trait_reckless
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_norris_packard = {
+		name = ZEO_norris_packard
+		portraits={
+			army={
+				small=GFX_idea_norris_packard
+				large = "gfx/leaders/ZEO/Portrait_Zeon_norris_packard.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 19
+			traits = {
+				pilot
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_erik_blanke = {
+		name = ZEO_erik_blanke
+		portraits={
+			army={
+				small=GFX_idea_erik_blanke
+				large = "gfx/leaders/ZEO/Portrait_Zeon_erik_blanke.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 27
+			traits = {
+				commando
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_crowley_hamon = {
+		name = ZEO_crowley_hamon
+		portraits={
+			army={
+				small=GFX_idea_crowley_hamon
+				large = "gfx/leaders/ZEO/Portrait_zeon_Crowley_Hamon.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 188
+			traits = {
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_clamp = {
+		name = ZEO_clamp
+		portraits={
+			army={
+				small=GFX_idea_clamp
+				large = "gfx/leaders/ZEO/Portrait_zeon_Clamp.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 162
+			traits = {
+				infantry_officer
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 5
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_acous = {
+		name = ZEO_acous
+		portraits={
+			army={
+				small=GFX_idea_acous
+				large = "gfx/leaders/ZEO/Portrait_zeon_acous.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 148
+			traits = {
+				pilot
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_tachi_ohara = {
+		name = ZEO_tachi_ohara
+		portraits={
+			army={
+				small=GFX_idea_tachi_ohara
+				large = "gfx/leaders/ZEO/Portrait_zeon_Tachi_OHara.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 187
+			traits = {
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_cozun_graham = {
+		name = ZEO_cozun_graham
+		portraits={
+			army={
+				small=GFX_idea_cozun_graham
+				large = "gfx/leaders/ZEO/Portrait_zeon_Cozun_Graham.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 165
+			traits = {
+				pilot
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_hideto_washiya = {
+		name = ZEO_hideto_washiya
+		portraits={
+			army={
+				small=GFX_idea_hideto_washiya
+				large = "gfx/leaders/ZEO/Portrait_zeon_Hideto_Washiya.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 189
+			traits = {
+				pilot
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ZEO_burroughs = {
+		name = ZEO_burroughs
+		portraits={
+			army={
+				small=GFX_idea_burroughs
+				large = "gfx/leaders/ZEO/Portrait_Zeon_burroughs.dds"
+			}
+		}
+		navy_leader = {
+			legacy_id = 146
+			traits = {
+				space_expert
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 2
+			visible = {
+				has_character_flag = enable_navy_leader
+			}
+		}
+	}
+	ZEO_suberoa_zinnerman = {
+		name = ZEO_suberoa_zinnerman
+		portraits={
+			army={
+				small=GFX_idea_suberoa_zinnerman
+				large = "gfx/leaders/ZEO/Portrait_Zeon_suberoa_zinnerman.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				power_of_love
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+}

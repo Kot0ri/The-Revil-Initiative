@@ -1,0 +1,1866 @@
+technologies = {
+	ms06_p_tech = {
+		enable_equipments = {
+			ms06_p_equipment
+		}
+		allow = {
+			always = no
+		}
+		categories = {
+			mobilesuit
+			zeonic_mobilesuit
+			custom_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms06_p }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_ms06p"
+        }
+      }
+    }
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+	}
+	agx04_tech = {
+		enable_equipments = {
+			agx04_equipment
+		}
+		allow = {
+			always = no
+		}
+		categories = {
+			mobilesuit
+			custom_mobilesuit
+		}
+	}
+	pezn_tech = {
+		allow = {
+			always = no
+		}
+	}
+	integrated_maintenance_plan = {
+		allow = {
+			always = no
+		}
+		line_change_production_efficiency_factor = 0.2
+		production_factory_efficiency_gain_factor = 0.2
+		equipment_conversion_speed = 0.2
+		production_factory_start_efficiency_factor = 0.1
+	}
+	bishop_plan = {
+		allow = {
+			always = no
+		}
+	}
+	jaburo_assault_mobilesuit = {
+		allow = {
+			always = no
+		}
+	}
+  recruiment_zudah = {
+    allow = {
+      always = no
+    }
+  }
+  ems04_tech = {
+		enable_equipments = {
+			ems04_equipment
+		}
+    enable_equipment_modules = {
+			space_hanger_ems04
+		}
+		dependencies = {
+      ambac2 = 1
+			amc1 = 1
+			nuclear_reactor3 = 1
+      recruiment_zudah = 1
+    }
+		path = {
+			leads_to_tech = ems10_tech
+			research_cost_coeff = 1
+		}
+    research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 74
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = -4 y = 0 }
+		}
+    categories = {
+			mobilesuit
+			zimmad_mobilesuit
+      mass_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ems10 }
+          }
+          load_oob = "unlock_zeon_ems10"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+	}
+  ems10_tech = {
+		enable_equipments = {
+			ems10_equipment
+		}
+    enable_equipment_modules = {
+			space_hanger_ems10
+		}
+		dependencies = {
+      nuclear_reactor4 = 1
+    }
+    sub_technologies = {
+      ems10_s_tech
+    }
+    research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 76
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = -4 y = 2 }
+		}
+    categories = {
+			mobilesuit
+			zimmad_mobilesuit
+      mass_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ems10 }
+          }
+          load_oob = "unlock_zeon_ems10"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+	}
+  ems10_s_tech = {
+		enable_equipments = {
+		  ems10_s_equipment
+		}
+		research_cost = 0.2
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		categories = {
+      zimmad_mobilesuit
+			mobilesuit
+			custom_mobilesuit
+		}
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	ms05_tech = {
+		enable_equipments = {
+		  ms05_equipment
+		}
+		enable_equipment_modules = {
+			space_hanger_ms05
+		}
+		dependencies = {
+      ambac2 = 1
+			amc1 = 1
+      nuclear_reactor1 = 1
+    }
+		path = {
+			leads_to_tech = ms06_tech
+			research_cost_coeff = 1
+		}
+		path = {
+		  leads_to_tech = ms05_l_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 74
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 0 y = 0 }
+		}
+		folder = {
+			name = ZEO_space_folder
+			position = { x = 0 y = 0 }
+		}
+		categories = {
+			mobilesuit
+			zeonic_mobilesuit
+			mass_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	ms05_l_tech = {
+		enable_subunits = {
+		  ms05_l
+			ms05_l_support
+		}
+		dependencies = {
+      ZEO_ms_weapon_beamrifle_01_tech = 1
+    }
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 20 y = 0 }
+		}
+		categories = {
+			mobilesuit
+			zeonic_mobilesuit
+			mass_mobilesuit
+			sniper_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+				country_event = { id = zeon.1012 }
+			}
+			custom_effect_tooltip = yonem_kirks_enabled
+    }
+		ai_will_do = {
+			base = 10
+		}
+	}
+	ms06_tech = {
+		enable_equipments = {
+		  ms06_equipment
+		}
+		enable_equipment_modules = {
+			space_hanger_ms06
+		}
+		path = {
+			leads_to_tech = ms06_f_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms06_e_tech
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 77
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 0 y = 2 }
+		}
+		folder = {
+			name = ZEO_space_folder
+			position = { x = 0 y = 2 }
+		}
+		categories = {
+			mobilesuit
+			zeonic_mobilesuit
+			mass_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				date > 76.1.1
+			}
+			modifier = {
+				factor = 100
+				has_completed_focus = zeon_enhancement_of_general_purpose_MS
+			}
+		}
+	}
+	ms06_e_tech = {
+		enable_subunits = {
+		  ms06_e
+		}
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 20 y = 2 }
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 77
+		categories = {
+			mobilesuit
+			zeonic_mobilesuit
+			special_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	ms06_f_tech = {
+		enable_equipments = {
+		  ms06_f_equipment
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 0 y = 4 }
+		}
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 2 }
+		}
+		path = {
+			leads_to_tech = ms06_j_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms06_r_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms06_z_tech
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			ms06_s_tech
+		}
+		categories = {
+			mobilesuit
+			zeonic_mobilesuit
+			mass_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 10
+				date > 77.1.1
+			}
+			modifier = {
+				factor = 100
+				date > 78.1.1
+			}
+		}
+	}
+	ms06_s_tech = {
+		enable_equipments = {
+		  ms06_s_equipment
+		}
+		research_cost = 0.2
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			custom_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms06_s }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_ms06s"
+        }
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 1000
+		}
+	}
+	ms06_j_tech = {
+		enable_equipments = {
+		  ms06_j_equipment
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 4 y = 4 }
+		}
+		path = {
+			leads_to_tech = ms07_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms06_k_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms06_d_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			local_mobilesuit
+			mass_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 500
+				date > 78.1.1
+			}
+		}
+	}
+	ms06_d_tech = {
+		enable_subunits = {
+			ms06_d
+			ms06_d_rpg
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms06_d }
+          }
+          load_oob = "unlock_zeon_desert_ms"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		research_cost = 0.3
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 12 y = 4 }
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			local_mobilesuit
+			mass_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 100
+				has_completed_focus = zeon_focus_on_MS_for_local_battle
+			}
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+	}
+	ms06_k_tech = {
+		enable_equipments = {
+			ms06_k_equipment
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 16 y = 4 }
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			mass_mobilesuit
+			artillery_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {
+              OR = {
+                has_template = "MS Artillery Division (Dom)"
+                has_template = "MS Artillery Division (Gelgoog)"
+              }
+            }
+          }
+          load_oob = "unlock_zeon_artillery_ms06"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 20
+				has_war = yes
+			}
+		}
+	}
+	ms07_tech = {
+		enable_equipments = {
+			ms07_equipment
+		}
+		research_cost = 1
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 4 y = 6 }
+		}
+		path = {
+			leads_to_tech = ms07_c_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms07_b_3_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms08_tx_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			local_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms07 }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_ms07"
+        }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				date > 78.1.1
+			}
+			modifier = {
+				factor = 10
+				has_completed_focus = zeon_focus_on_MS_for_local_battle
+			}
+		}
+	}
+	ms08_tx_tech = {
+		enable_equipments = {
+			ms08_tx_equipment
+		}
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 8 y = 8 }
+		}
+		path = {
+			leads_to_tech = ms09_tech
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			ms08_tx_ex_tech
+			ms08_tx_n_tech
+		}
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			local_mobilesuit
+			custom_mobilesuit
+			special_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms08 }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_ms08"
+        }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				date > 78.1.1
+			}
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+	}
+	ms08_tx_ex_tech = {
+		enable_equipments = {
+			ms08_tx_ex_equipment
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		dependencies = {
+			exam = 1
+		}
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			exam_mobilesuit
+			local_mobilesuit
+			custom_mobilesuit
+			special_mobilesuit
+		}
+		ai_will_do = {
+			base = 150
+		}
+	}
+	ms08_tx_n_tech = {
+		enable_equipments = {
+			ms08_tx_n_equipment
+		}
+		research_cost = 0.3
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			local_mobilesuit
+			custom_mobilesuit
+			special_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			factor = 20
+		}
+	}
+	ms07_b_3_tech = {
+		enable_equipments = {
+			ms07_b_3_equipment
+		}
+		research_cost = 0.3
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 20 y = 8 }
+		}
+		path = {
+			leads_to_tech = ms07_h_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			local_mobilesuit
+			custom_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms07_b_3 }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_ms07b"
+        }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				date > 79.1.1
+			}
+		}
+	}
+	ms07_h_tech = {
+		enable_equipments = {
+			ms07_h_equipment
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 20 y = 10 }
+		}
+		folder = {
+			name = ZEO_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			local_mobilesuit
+			air_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				date > 79.1.1
+			}
+		}
+	}
+	ms07_c_tech = {
+		enable_equipments = {
+			ms07_c_equipment
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 4 y = 8 }
+		}
+		path = {
+			leads_to_tech = ms09_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			local_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 50
+				date > 79.1.1
+			}
+		}
+	}
+	ms09_tech = {
+		enable_equipments = {
+			ms09_equipment
+		}
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = ms09 }
+    }
+		on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_zeon_ms09"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 4 y = 12 }
+		}
+		path = {
+			leads_to_tech = ms09_f_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms09_k_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms09_g_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			local_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 50
+				date > 79.1.1
+			}
+		}
+	}
+	ms09_r_tech = {
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		enable_equipment_modules = {
+			space_hanger_ms09_r
+		}
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			local_mobilesuit
+			space_mobilesuit
+		}
+		dependencies = {
+			ms09_tech = 1
+		}
+		folder = {
+			name = ZEO_space_folder
+			position = { x = 0 y = 6 }
+		}
+		ai_will_do = {
+			factor = 500
+		}
+	}
+	ms09_f_tech = {
+		enable_subunits = {
+			ms09_f
+			ms09_f_mg
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 12 y = 12 }
+		}
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			local_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 20
+				date > 79.1.1
+			}
+		}
+	}
+	ms09_k_tech = {
+		enable_equipments = {
+			ms09_k_equipment
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 16 y = 12 }
+		}
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			local_mobilesuit
+			artillery_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {
+              OR = {
+                has_template = "MS Artillery Division (Zaku)"
+                has_template = "MS Artillery Division (Gelgoog)"
+              }
+            }
+          }
+          load_oob = "unlock_zeon_artillery_ms09"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				date > 79.1.1
+			}
+		}
+	}
+	ms09_g_tech = {
+		enable_equipments = {
+			ms09_g_equipment
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 4 y = 14 }
+		}
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			local_mobilesuit
+		}
+		sub_technologies = {
+			ms09_h_tech
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				date > 79.1.1
+			}
+		}
+	}
+	ms09_h_tech = {
+		enable_equipments = {
+			ms09_h_equipment
+		}
+		research_cost = 0.3
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			local_mobilesuit
+			custom_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				date > 79.1.1
+			}
+		}
+	}
+	ms06_r_tech = {
+		research_cost = 1.5
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 0.3
+		start_year = 79
+		enable_equipment_modules = {
+			space_hanger_ms06_r
+		}
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 0 y = 14 }
+		}
+		folder = {
+			name = ZEO_space_folder
+			position = { x = 0 y = 4 }
+		}
+		path = {
+			leads_to_tech = ms14_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = yms15_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+		  zeonic_mobilesuit
+			mobilesuit
+			space_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 100
+				has_completed_focus = zeon_high_mobility_of_general_purpose_MS
+			}
+			modifier = {
+				factor = 10
+				date > 79.1.1
+			}
+			modifier = {
+				factor = 5
+				has_tech = nuclear_reactor2
+			}
+		}
+	}
+	ms14_tech = {
+		enable_equipments = {
+		  ms14_equipment
+		}
+		enable_equipment_modules = {
+			space_hanger_ms14
+		}
+		research_cost = 2.0
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 1.0
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 2 y = 16 }
+		}
+    on_research_complete_limit = {
+      NOT = {
+        has_template_containing_unit = ms14
+      }
+    }
+		on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_zeon_ms14"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+		path = {
+			leads_to_tech = ms14_d_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms14_c_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms14_f_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms14_jg_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ms18_tech
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = ZEO_space_folder
+			position = { x = 0 y = 8 }
+		}
+		categories = {
+		  zeonic_mobilesuit
+			mobilesuit
+			mass_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				date > 79.1.1
+			}
+			modifier = {
+				factor = 100
+				has_tech = mega_particle2
+			}
+		}
+	}
+	yms15_tech = {
+		enable_equipments = {
+			yms15_equipment
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 1.0
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = -2 y = 16 }
+		}
+		path = {
+			leads_to_tech = ms18_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+			custom_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = yms15 }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_yms15"
+        }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 100
+				date > 79.1.1
+			}
+      modifier = {
+        factor = 0.1
+        is_historical_focus_on = yes
+        NOT = {
+          has_tech = ms14_tech
+        }
+      }
+			modifier = {
+				factor = 10
+				NOT = { has_tech = mega_particle2 }
+			}
+		}
+	}
+	ms14_d_tech = {
+		enable_subunits = {
+			ms14_d
+			ms14_d_mg
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 12 y = 16 }
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			mass_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+	}
+	ms14_c_tech = {
+		enable_equipments = {
+			ms14_c_equipment
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 16 y = 16 }
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			mass_mobilesuit
+			artillery_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {
+              OR = {
+                has_template = "MS Artillery Division (Dom)"
+                has_template = "MS Artillery Division (Zaku)"
+              }
+            }
+          }
+          load_oob = "unlock_zeon_artillery_ms14"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+	}
+	ms14_f_tech = {
+		enable_equipments = {
+			ms14_f_equipment
+		}
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 2 y = 18 }
+		}
+		sub_technologies = {
+			ms14_fs_tech
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			mass_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+	}
+	ms14_fs_tech = {
+		enable_equipments = {
+			ms14_fs_equipment
+		}
+		research_cost = 0.3
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			custom_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms14_fs }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_ms14fs"
+        }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+	}
+	ms14_jg_tech = {
+		enable_subunits = {
+			ms14_jg
+			ms14_jg_support
+		}
+		dependencies = {
+      ZEO_ms_weapon_beamrifle_01_tech = 1
+			integrated_maintenance_plan = 1
+    }
+		research_cost = 0.5
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 20 y = 16 }
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+			mass_mobilesuit
+			sniper_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+	}
+	ms10_tech = {
+		enable_equipments = {
+			ms10_equipment
+		}
+		dependencies = {
+			ms09_g_tech = 1
+			pezn_tech = 1
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 8 y = 18 }
+		}
+		categories = {
+			zimmad_mobilesuit
+			mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+	ms11_tech = {
+		enable_equipments = {
+			ms11_equipment
+		}
+		dependencies = {
+			ms06_r_tech = 1
+			ZEO_ms_weapon_beamgun_01_tech = 1
+			pezn_tech = 1
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 12 y = 18 }
+		}
+		categories = {
+			zeonic_mobilesuit
+			mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+	ms12_tech = {
+		enable_equipments = {
+			ms12_equipment
+		}
+		dependencies = {
+			pezn_tech = 1
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 16 y = 18 }
+		}
+		categories = {
+			zwinemn_mobilesuit
+			mobilesuit
+			artillery_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+	ms13_tech = {
+		enable_equipments = {
+			ms13_equipment
+		}
+		dependencies = {
+			pezn_tech = 1
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 20 y = 18 }
+		}
+		categories = {
+			zwinemn_mobilesuit
+			mobilesuit
+			artillery_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+	ms17_tech = {
+		enable_equipments = {
+			ms17_equipment
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 24 y = 18 }
+		}
+		dependencies = {
+			ms14_tech = 1
+			yms15_tech = 1
+			pezn_tech = 1
+		}
+		categories = {
+			mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+	msm04_n_tech = {
+		enable_equipments = {
+			msm04_n_equipment
+		}
+		dependencies = {
+			msm04_tech = 1
+			jaburo_assault_mobilesuit = 1
+    }
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 8 y = 20 }
+		}
+		categories = {
+			zwinemn_mobilesuit
+			mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+	msm04_g_tech = {
+		enable_equipments = {
+			msm04_g_equipment
+		}
+		dependencies = {
+			msm04_tech = 1
+			jaburo_assault_mobilesuit = 1
+    }
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 12 y = 20 }
+		}
+		categories = {
+			zwinemn_mobilesuit
+			mobilesuit
+			artillery_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+	ems05_tech = {
+		enable_equipments = {
+			ems05_equipment
+		}
+		dependencies = {
+			jaburo_assault_mobilesuit = 1
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 16 y = 20 }
+		}
+		categories = {
+			zwinemn_mobilesuit
+			mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+	msm08_tech = {
+		enable_equipments = {
+			msm08_equipment
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 20 y = 20 }
+		}
+		categories = {
+			mip_mobilesuit
+			mobilesuit
+		}
+		dependencies = {
+			msm07_tech = 1
+			jaburo_assault_mobilesuit = 1
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+			modifier = {
+				factor = 10
+				is_historical_focus_on = no
+			}
+		}
+	}
+	ms18_tech = {
+		enable_equipments = {
+			ms18_equipment
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 0 y = 20 }
+		}
+		sub_technologies = {
+			ms18_f_tech
+		}
+		dependencies = {
+			integrated_maintenance_plan = 1
+		}
+		categories = {
+			mobilesuit
+			special_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms18 }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_ms18"
+        }
+      }
+    }
+		ai_will_do = {
+			base = 10
+		}
+	}
+	ms18_f_tech = {
+		enable_subunits = {
+		  ms18_f
+		}
+		dependencies = {
+      ZEO_ms_weapon_beamgun_01_tech = 1
+			ZEO_ms_weapon_beamsord_01_tech = 1
+    }
+		research_cost = 0.3
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		categories = {
+			mobilesuit
+			special_mobilesuit
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	ms06_z_tech = {
+		research_cost = 2.0
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = -4 y = 14 }
+		}
+		dependencies = {
+			psyco_com = 1
+			bishop_plan = 1
+    }
+		path = {
+			leads_to_tech = msn02_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+			zeonic_mobilesuit
+			nt_mobilesuit
+			mobilesuit
+			custom_mobilesuit
+			space_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				date > 79.1.1
+			}
+		}
+	}
+	msn02_tech = {
+		research_cost = 2.0
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = -4 y = 20 }
+		}
+		categories = {
+			nt_mobilesuit
+			mobilesuit
+			custom_mobilesuit
+			space_mobilesuit
+		}
+		sub_technologies = {
+			msn02_p_tech
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	msn02_p_tech = {
+		enable_equipments = {
+			msn02_equipment
+		}
+		research_cost = 1.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		categories = {
+			nt_mobilesuit
+			mobilesuit
+			custom_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = msn02 }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_msn02"
+        }
+      }
+    }
+		ai_will_do = {
+			base = 10
+		}
+	}
+	max03_tech = {
+		enable_equipments = {
+		  max03_equipment
+		}
+    dependencies = {
+      minovsky_craft = 1
+      mega_particle1 = 1
+    }
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = max03 }
+    }
+		on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_zeon_ma"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+		research_cost = 2.0
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = 0 y = 4 }
+		}
+    folder = {
+			name = ZEO_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+    path = {
+      leads_to_tech = ma08_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+      mip_mobilesuit
+      mobilearmor
+		}
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 10
+				has_completed_focus = zeon_focus_on_MA
+			}
+			modifier = {
+				factor = 10
+				date > 79.1.1
+			}
+		}
+	}
+  ma08_tech = {
+    enable_equipments = {
+      ma08_equipment
+    }
+		dependencies = {
+			ifield_barrier = 1
+		}
+    research_cost = 2.5
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_mobilesuit_folder
+      position = { x = 0 y = 12 }
+    }
+    categories = {
+      mobilearmor
+    }
+    ai_will_do = {
+      base = 10
+			modifier = {
+				factor = 10
+				date > 79.1.1
+			}
+    }
+  }
+}

@@ -1,0 +1,3930 @@
+﻿###############################################
+# ラプラスの箱
+###############################################
+#zeon1 !! ラプラスの箱
+country_event = {
+  id = zeon.1
+  title = zeon.1.t
+  desc = zeon.1.d
+  picture = GFX_country_zeon001
+
+  is_triggered_only = yes
+  immediate = {
+    set_country_flag = laprace_op_enable
+  }
+
+  option = {
+    name = zeon.1.a
+    custom_effect_tooltip = zeon.1.a_desc
+  }
+}
+#efsf60 !! ラプラスの箱 取引を察知
+country_event = {
+  id = efsf.60
+  title = efsf.60.t
+  desc = efsf.60.d
+  picture = GFX_country_efsf060
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      ZEO = {
+        country_event = { id = efsf.61 days = 10 }
+      }
+    }
+  }
+
+  option = {
+    name = efsf.60.a
+  }
+}
+#efsf61 !! ラプラスの箱 取引（ジオン）
+country_event = {
+  id = efsf.61
+  title = efsf.61.t
+  desc = efsf.61.d
+  picture = GFX_country_efsf061
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.61.a
+  }
+}
+#efsf59 !! ラプラスの箱 判定
+country_event = {
+  id = efsf.59
+  hidden = yes
+  is_triggered_only = yes
+
+  immediate = {
+    news_event = { id = news.96 }
+    if = {
+      limit = {
+        has_country_flag = laprace_op_good_end
+      }
+      EFS = {
+        country_event = { id = efsf.63 days = 1 }
+      }
+      ZEO = {
+        country_event = { id = efsf.58 days = 1 }
+      }
+      else = {
+        random_list = {
+          40 = {
+            EFS = {
+              country_event = { id = efsf.62 days = 1 }
+            }
+            ZEO = {
+              country_event = { id = efsf.57 days = 1 }
+            }
+          }
+          60 = {
+            EFS = {
+              country_event = { id = efsf.63 days = 1 }
+            }
+            ZEO = {
+              country_event = { id = efsf.58 days = 1 }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  option = {
+    name = efsf.59.a
+  }
+}
+#news96 !! ラプラスの箱 インダストリアル7で爆発事故
+news_event = {
+  id = news.96
+  title = news.96.t
+  desc = news.96.d
+  picture = GFX_news096
+  major = yes
+
+  is_triggered_only = yes
+
+  immediate = {
+    EFS = {
+      add_named_threat = {
+        name = threat_name_news96
+        threat = 5
+      }
+    }
+  }
+  option = {
+    name = news.96.a
+    trigger = {
+      NOT = {
+        tag = ZEO
+      }
+    }
+  }
+  option = {
+    name = news.96.b
+    trigger = {
+      tag = ZEO
+    }
+  }
+}
+#efsf62 !! ラプラスの箱 回収成功
+country_event = {
+  id = efsf.62
+  title = efsf.62.t
+  desc = efsf.62.d
+  picture = GFX_country_efsf062
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.62.a
+  }
+}
+#efsf57 !! ラプラスの箱 連邦に奪われる（ジオン）
+country_event = {
+  id = efsf.57
+  title = efsf.57.t
+  desc = efsf.57.d
+  picture = GFX_country_efsf057
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.57.a
+  }
+}
+#efsf63 !! ラプラスの箱 回収失敗
+country_event = {
+  id = efsf.63
+  title = efsf.63.t
+  desc = efsf.63.d
+  picture = GFX_country_efsf063
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.63.a
+  }
+}
+#efsf58 !! ラプラスの箱 回収成功（ジオン）
+country_event = {
+  id = efsf.58
+  title = efsf.58.t
+  desc = efsf.58.d
+  picture = GFX_country_efsf058
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.58.a
+    ai_chance = {
+      factor = 60
+    }
+    news_event = { id = news.12 days = 6 }
+  }
+  option = {
+    name = efsf.58.b
+    ai_chance = {
+      factor = 40
+    }
+    EFS = {
+      country_event = { id = efsf.2 days = 3 }
+    }
+  }
+}
+#news12 !! ラプラスの箱 公表する
+news_event = {
+  id = news.12
+  title = news.12.t
+
+  desc = news.12.d
+  picture = GFX_news012
+
+  major = yes
+  is_triggered_only = yes
+  immediate = {
+    set_global_flag = laprace_is_out
+  }
+
+  option = {
+    name = news.12.a
+    trigger = {
+      tag = EFS
+    }
+  }
+  option = {
+    name = news.12.b
+    trigger = {
+      tag = ZEO
+    }
+    add_popularity = {
+      ideology = zeonism
+      popularity = 0.1
+    }
+    add_political_power = 100
+    add_named_threat = {
+      name = laplas_is_out
+      threat = 10
+    }
+    every_country = {
+      limit = {
+        OR = {
+          tag = SI1
+          tag = SI2
+          tag = ZEO
+          tag = SI4
+          tag = SI5
+          tag = SI6
+          tag = SI7
+        }
+      }
+      add_autonomy_ratio = {
+        value = 0.2
+        localization = laplas_is_out
+      }
+    }
+    every_country = {
+      limit = {
+        OR = {
+          tag = SI1
+          tag = SI2
+          tag = ZEO
+          tag = SI4
+          tag = SI5
+          tag = SI6
+          tag = SI7
+          tag = GRA
+          tag = VBC
+        }
+      }
+      add_opinion_modifier = {
+        target = EFS
+        modifier = laplas_is_out
+      }
+    }
+    EFS = {
+      add_opinion_modifier = {
+        target = ZEO
+        modifier = laplas_is_out_EFS
+      }
+    }
+  }
+  option = {
+    name = news.12.c
+    trigger = {
+      NOT = {
+        tag = EFS
+        tag = ZEO
+      }
+    }
+  }
+}
+#efsf2 !! ラプラスの箱 ジオンからの取引
+country_event = {
+  id = efsf.2
+  title = efsf.2.t
+  desc = efsf.2.d
+  picture = GFX_country_efsf002
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.2.a
+    ai_chance = {
+      base = 80
+    }
+    news_event = { id = news.13 days = 3 }
+  }
+  option = {
+    name = efsf.2.b
+    ai_chance = {
+      base = 20
+    }
+    ZEO = {
+      country_event = { id = zeon.10 days = 3 }
+    }
+  }
+}
+#news13 !! ラプラスの箱 取引成立
+news_event = {
+  id = news.13
+  title = news.13.t
+  desc = news.13.d
+  picture = GFX_news013
+
+  major = yes
+  is_triggered_only = yes
+
+  option = {
+    name = news.13.a
+    trigger = {
+      tag = EFS
+    }
+    add_political_power = -250
+  }
+  option = {
+    name = news.13.b
+    trigger = {
+      tag = ZEO
+    }
+    add_political_power = 250
+    add_autonomy_ratio = {
+      value = 0.3
+      localization = laplas_is_secret
+    }
+    if = {
+      limit = {
+        has_idea = economic_sanctions
+      }
+      remove_ideas = economic_sanctions
+      else_if = {
+        limit = {
+          has_idea = economic_sanctions2
+        }
+        remove_ideas = economic_sanctions2
+      }
+    }
+  }
+  option = {
+    name = news.13.c
+    trigger = {
+      NOT = {
+        tag = ZEO
+        tag = EFS
+      }
+    }
+  }
+}
+#zeon10 !! ラプラスの箱 拒否
+country_event = {
+  id = zeon.10
+  title = zeon.10.t
+  desc = zeon.10.d
+  picture = GFX_country_zeon010
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.10.a
+    news_event = { id = news.12 days = 2 }
+  }
+}
+
+###############################################
+# MS第08小隊
+###############################################
+#zeon7 !! アプサラス計画 アプサラスI開発
+country_event = {
+  id = zeon.7
+  title = zeon.7.t
+  desc = zeon.7.d
+  picture = GFX_country_zeon007
+
+  trigger = {
+    has_tech = apsalus01_tech
+  }
+  mean_time_to_happen = {
+    days = 180
+    modifier = {
+      factor = 0.1
+      has_equipment = {
+        apsalus01_equipment > 0
+      }
+    }
+  }
+  fire_only_once = yes
+
+  immediate = {
+  }
+  option = {
+    name = zeon.7.a
+    set_country_flag = ap_norris_packard_enable
+    set_country_flag = ap_aina_sahalin_enable
+    EFS = {
+      country_event = { id = efsf.1005 days = 1 }
+      country_event = { id = efsf.44 days = 12 }
+    }
+    country_event = { id = zeon.64 days = 12 }
+  }
+}
+#efsf44 !! アプサラス計画 遭遇
+country_event = {
+  id = efsf.44
+  title = efsf.44.t
+  desc = efsf.44.d
+  picture = GFX_country_efsf044
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_global_flag = apsalus_revealed
+  }
+
+  option = {
+    name = efsf.44.a
+  }
+}
+#zeon64 !! アプサラス計画 遭遇
+country_event = {
+  id = zeon.64
+  title = zeon.64.t
+  desc = zeon.64.d
+  picture = GFX_country_zeon064
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+
+  }
+
+  option = {
+    name = zeon.64.a
+  }
+}
+#efsf45 !! アプサラス計画 待ち伏せ作戦
+country_event = {
+  id = efsf.45
+  title = efsf.45.t
+  desc = efsf.45.d
+  picture = GFX_country_efsf045
+
+  trigger = {
+    original_tag = EFS
+    has_global_flag = apsalus_revealed
+    ZEO = {
+      has_tech = apsalus02_tech
+    }
+  }
+  mean_time_to_happen = {
+    days = 30
+    modifier = {
+      factor = 0.1
+      ZEO = {
+        has_equipment = {
+          apsalus02_equipment > 0
+        }
+      }
+    }
+  }
+  fire_only_once = yes
+
+  option = {
+    name = efsf.45.a
+    ai_chance = {
+      base = 100
+    }
+    country_event = { id = efsf.46 days = 6 }
+    ZEO = {
+      country_event = { id = zeon.65 days = 6 }
+    }
+  }
+  option = {
+    name = efsf.45.b
+    ai_chance = {
+      base = 0
+    }
+  }
+}
+#efsf46 !! アプサラス計画 交戦
+country_event = {
+  id = efsf.46
+  title = efsf.46.t
+  desc = efsf.46.d
+  picture = GFX_country_efsf046
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    if = {
+      limit = {
+        has_character = EFS_shiro_amada
+      }
+      EFS_shiro_amada = {
+        clr_character_flag = enable_corps_commander
+      }
+    }
+    hidden_effect = {
+      country_event = { id = efsf.55 days = 1 }
+    }
+  }
+
+  option = {
+    name = efsf.46.a
+  }
+}
+#zeon65 !! アプサラス計画 交戦
+country_event = {
+  id = zeon.65
+  title = zeon.65.t
+  desc = zeon.65.d
+  picture = GFX_country_zeon065
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    hidden_effect = {
+      if = {
+        limit = {
+          has_character = ZEO_aina_sahalin
+        }
+        ZEO_aina_sahalin = {
+          clr_character_flag = enable_corps_commander
+        }
+      }
+      country_event = { id = zeon.4 days = 1 }
+    }
+  }
+
+  option = {
+    name = zeon.65.a
+  }
+}
+#zeon4 !! アプサラス計画 救出
+country_event = {
+  id = zeon.4
+  title = zeon.4.t
+  desc = zeon.4.d
+  picture = GFX_country_zeon004
+
+  is_triggered_only = yes
+  immediate = {
+    if = {
+      limit = {
+        has_character = ZEO_aina_sahalin
+      }
+      ZEO_aina_sahalin = {
+        set_character_flag = enable_corps_commander
+      }
+    }
+    every_unit_leader = {
+      limit = {
+        has_id = 39
+      }
+      add_skill_level = 1
+      add_unit_leader_trait = winter_specialist
+    }
+  }
+
+  option = {
+    name = zeon.4.a
+  }
+}
+#efsf55 !! アプサラス計画 救出
+country_event = {
+  id = efsf.55
+  title = efsf.55.t
+  desc = efsf.55.d
+  picture = GFX_country_efsf055
+
+  is_triggered_only = yes
+  immediate = {
+    if = {
+      limit = {
+        has_character = EFS_shiro_amada
+      }
+      EFS_shiro_amada = {
+        set_character_flag = enable_corps_commander
+      }
+    }
+    every_unit_leader = {
+      limit = {
+        has_id = 112
+      }
+      add_unit_leader_trait = detention
+      add_skill_level = 1
+      add_unit_leader_trait = winter_specialist
+    }
+    set_country_flag = millars_report_start
+  }
+
+  option = {
+    name = efsf.55.a
+    custom_effect_tooltip = efsf.55.a_desc
+  }
+}
+#efsf47 !! アプサラス計画 ミラーズ・レポート
+country_event = {
+  id = efsf.47
+  title = efsf.47.t
+  desc = efsf.47.d
+  picture = GFX_country_efsf047
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    hidden_effect = {
+      country_event = { id = efsf.48 days = 1 }
+      set_country_flag = millars_report_end
+    }
+  }
+
+  option = {
+    name = efsf.47.a
+    country_event = { id = achievement.30 }
+  }
+}
+#efsf48 !! アプサラス計画 シロー・アマダ審問会
+country_event = {
+  id = efsf.48
+  title = efsf.48.t
+  desc = efsf.48.d
+  picture = GFX_country_efsf048
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    every_unit_leader = {
+      limit = {
+        has_id = 112
+      }
+      remove_unit_leader_trait = detention
+    }
+  }
+
+  option = {
+    name = efsf.48.a
+    ai_chance = {
+      factor = 100
+    }
+    unlock_decision_tooltip = op_attack_secret_labo
+    activate_mission = op_attack_secret_labo
+    if = {
+      limit = {
+        ZEO = {
+          has_idea = yuri_kellerne
+        }
+      }
+      ZEO = {
+        country_event = { id = zeon.119 days = 10 }
+      }
+      else = {
+        random_list = {
+          70 = {
+            ZEO = {
+              country_event = { id = zeon.119 days = 10 }
+            }
+          }
+          30 = {
+
+          }
+        }
+      }
+    }
+  }
+  option = {
+    name = efsf.48.b
+  }
+  option = {
+    name = efsf.48.c
+    if = {
+      limit = {
+        has_unit_leader = 112
+      }
+      remove_unit_leader = 112
+    }
+  }
+}
+#zeon119 ユーリの具申
+country_event = {
+  id = zeon.119
+  title = zeon.119.t
+  desc = zeon.119.d
+  picture = GFX_country_zeon119
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.119.a
+    set_country_flag = apsalus_plan_freezed
+    ai_chance = {
+      base = 30
+    }
+  }
+  option = {
+    name = zeon.119.b
+    ai_chance = {
+      base = 70
+    }
+  }
+}
+#efsf56 !! アプサラス計画 基地攻略戦 ノリス
+country_event = {
+  id = efsf.56
+  title = efsf.56.t
+  desc = efsf.56.d
+  picture = GFX_country_efsf056
+  immediate = {
+    hidden_effect = {
+      if = {
+        limit = {
+          OR = {
+            has_tech = rx79_ez8_tech
+            ZEO = {
+              NOT = {
+                has_tech = ms07_b_3_tech
+              }
+            }
+          }
+        }
+        ZEO = {
+          country_event = { id = zeon.95 }
+        }
+        else = {
+          ZEO = {
+            country_event = { id = zeon.96 }
+          }
+        }
+      }
+    }
+  }
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.56.a
+  }
+}
+#zeon95 !! アプサラス計画 基地防衛戦 ノリス死亡
+country_event = {
+  id = zeon.95
+  title = zeon.95.t
+  desc = zeon.95.d
+  picture = GFX_country_zeon095
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      set_country_flag = kellerne_is_dead
+      clr_country_flag = ap_norris_packard_enable
+      if = {
+        limit = {
+          has_unit_leader = 8
+        }
+        remove_unit_leader = 8
+      }
+      if = {
+        limit = {
+          has_unit_leader = 19
+        }
+        remove_unit_leader = 19
+      }
+      every_unit_leader = {
+        limit = {
+          has_id = 112
+        }
+        add_skill_level = 1
+        add_unit_leader_trait = urban_assault_specialist
+      }
+      EFS = {
+        country_event = { id = efsf.75 hours = 1 }
+        set_country_flag = norris_is_dead
+        country_event = { id = achievement.34 }
+      }
+    }
+  }
+  option = {
+    name = zeon.95.a
+  }
+}
+#zeon96 !! アプサラス計画 基地防衛戦 ノリス生存
+country_event = {
+  id = zeon.96
+  title = zeon.96.t
+  desc = zeon.96.d
+  picture = GFX_country_zeon096
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      set_country_flag = kellerne_is_dead
+      if = {
+        limit = {
+          has_unit_leader = 8
+        }
+        remove_unit_leader = 8
+      }
+      every_unit_leader = {
+        limit = {
+          has_id = 19
+        }
+        add_skill_level = 1
+        add_unit_leader_trait = urban_assault_specialist
+      }
+      EFS = {
+        country_event = { id = efsf.75 hours = 1 }
+      }
+    }
+  }
+  option = {
+    name = zeon.96.a
+  }
+}
+#efsf75 !! アプサラス計画 基地攻略戦 停戦の申し出
+country_event = {
+  id = efsf.75
+  title = efsf.75.t
+  desc = efsf.75.d
+  picture = GFX_country_efsf075
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.75.a
+    ai_chance = {
+      factor = 15
+    }
+    country_event = { id = efsf.76 hours = 3 }
+    ZEO = {
+      country_event = { id = zeon.97 hours = 3 }
+    }
+  }
+  option = {
+    name = efsf.75.b
+    ai_chance = {
+      factor = 85
+    }
+    country_event = { id = efsf.77 hours = 3 }
+    ZEO = {
+      country_event = { id = zeon.98 hours = 3 }
+    }
+  }
+}
+#zeon97 !! アプサラス計画 停戦受け入れ
+country_event = {
+  id = zeon.97
+  title = zeon.97.t
+  desc = zeon.97.d
+  picture = GFX_country_zeon097
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      country_event = { id = zeon.127 days = 30 random = 240 }
+    }
+  }
+  option = {
+    name = zeon.97.a
+    if = {
+      limit = {
+        has_character = ZEO_aina_sahalin
+      }
+      ZEO_aina_sahalin = {
+        clr_character_flag = enable_corps_commander
+      }
+    }
+  }
+}
+#efsf76 !! アプサラス計画 停戦受け入れ
+country_event = {
+  id = efsf.76
+  title = efsf.76.t
+  desc = efsf.76.d
+  picture = GFX_country_efsf076
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      country_event = { id = efsf.112 days = 30 }
+      set_country_flag = accept_rasa_retreat
+    }
+  }
+
+  option = {
+    name = efsf.76.a
+    country_event = { id = achievement.33 }
+    if = {
+      limit = {
+        has_character = EFS_shiro_amada
+      }
+      EFS_shiro_amada = {
+        clr_character_flag = enable_corps_commander
+      }
+    }
+  }
+}
+#zeon98 !! アプサラス計画 停戦拒否
+country_event = {
+  id = zeon.98
+  title = zeon.98.t
+  desc = zeon.98.d
+  picture = GFX_country_zeon098
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      set_country_flag  = sahalin_is_dead
+      country_event = { id = zeon.127 days = 30 random = 240 }
+    }
+  }
+  option = {
+    name = zeon.98.a
+    if = {
+      limit = {
+        has_character = ZEO_aina_sahalin
+      }
+      ZEO_aina_sahalin = {
+        clr_character_flag = enable_corps_commander
+      }
+    }
+  }
+}
+#efsf77 !! アプサラス計画 停戦拒否
+country_event = {
+  id = efsf.77
+  title = efsf.77.t
+  desc = efsf.77.d
+  picture = GFX_country_efsf077
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      country_event = { id = efsf.112 days = 30 }
+      country_event = { id = achievement.31 }
+    }
+  }
+
+  option = {
+    name = efsf.77.a
+    if = {
+      limit = {
+        has_character = EFS_shiro_amada
+      }
+      EFS_shiro_amada = {
+        clr_character_flag = enable_corps_commander
+      }
+    }
+    if = {
+      limit = {
+        ZEO = {
+          has_tech = apsalus03_tech
+        }
+      }
+      set_country_flag = eathan_is_dead
+      if = {
+        limit = {
+          has_unit_leader = 109
+        }
+        remove_unit_leader = 109
+      }
+    }
+  }
+}
+#efsf110 ラサの秘密基地攻略失敗（MS08連鎖イベント）
+country_event = {
+  id = efsf.110
+  title = efsf.110.t
+  desc = efsf.110.d
+  picture = GFX_country_efsf110
+
+  is_triggered_only = yes
+  immediate = {
+    set_country_flag = eathan_is_dead
+  }
+
+  option = {
+    name = efsf.110.a
+    if = {
+      limit = {
+        has_unit_leader = 109
+      }
+      remove_unit_leader = 109
+    }
+  }
+}
+#zeon126 ラサの秘密基地防衛成功（MS08連鎖イベント）
+country_event = {
+  id = zeon.126
+  title = zeon.126.t
+  desc = zeon.126.d
+  picture = GFX_country_zeon126
+
+  is_triggered_only = yes
+  immediate = {
+  }
+  option = {
+    name = zeon.126.a
+    every_unit_leader = {
+      limit = {
+        has_id = 8
+      }
+      add_unit_leader_trait = fort_commander
+      add_skill_level = 1
+      add_attack = 1
+      add_defense = 1
+      add_planning = 1
+      add_logistics = 1
+    }
+    EFS = {
+      if = {
+        limit = {
+          has_tech = EFS_lbs1_tech
+        }
+        ZEO = {
+          add_equipment_to_stockpile = {
+            type = archetype_lbs
+            amount = 10
+            producer = EFS
+          }
+        }
+      }
+    }
+    ZEO = {
+      add_equipment_to_stockpile = {
+        type = archetype_mbt
+        amount = 500
+        producer = EFS
+      }
+      add_equipment_to_stockpile = {
+        type = infantry_equipment
+        amount = 3000
+        producer = EFS
+      }
+    }
+  }
+}
+#efsf112 ラストリゾート
+country_event = {
+  id = efsf.112
+  title = efsf.112.t
+  desc = efsf.112.d
+  picture = GFX_country_efsf112
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = efsf.112.a
+    ai_chance = {
+      base = 100
+    }
+    country_event = { id = achievement.29 }
+    if = {
+      limit = {
+        has_unit_leader = 112
+      }
+      remove_unit_leader = 112
+    }
+  }
+  option = {
+    name = efsf.112.b
+    ai_chance = {
+      base = 0
+    }
+    if = {
+      limit = {
+        has_character = EFS_shiro_amada
+      }
+      EFS_shiro_amada = {
+        set_character_flag = enable_corps_commander
+      }
+    }
+    every_unit_leader = {
+      limit = {
+        has_id = 112
+      }
+      add_unit_leader_trait = power_of_love
+    }
+    generate_character = {
+      token_base = EFS_aina_sahalin
+      name = ZEO_aina_sahalin
+      portraits={
+        army = {
+          small=GFX_idea_aina_sahalim
+          large = "gfx/leaders/ZEO/Portrait_Zeon_aina_sahalim.dds"
+        }
+      }
+      corps_commander = {
+        traits = {
+          pilot
+          winter_specialist
+          power_of_love
+        }
+        skill = 3
+        attack_skill = 3
+        defense_skill = 3
+        planning_skill = 4
+        logistics_skill = 3
+        visible = {
+          has_character_flag = enable_corps_commander
+        }
+      }
+    }
+    ZEO = {
+      if = {
+        limit = {
+          has_character = ZEO_aina_sahalin
+        }
+        retire_character = ZEO_aina_sahalin
+      }
+    }
+    country_event = { id = achievement.29 }
+  }
+}
+#zeon127 ラストリゾート
+country_event = {
+  id = zeon.127
+  title = zeon.127.t
+  desc = zeon.127.d
+  picture = GFX_country_zeon127
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.127.a
+    ai_chance = {
+      base = 100
+    }
+    if = {
+      limit = {
+        has_unit_leader = 39
+      }
+      remove_unit_leader = 39
+    }
+  }
+  option = {
+    name = zeon.127.b
+    ai_chance = {
+      base = 0
+    }
+    if = {
+      limit = {
+        has_character = ZEO_aina_sahalin
+      }
+      ZEO_aina_sahalin = {
+        set_character_flag = enable_corps_commander
+      }
+    }
+    every_unit_leader = {
+      limit = {
+        has_id = 39
+      }
+      add_unit_leader_trait = power_of_love
+    }
+    generate_character = {
+      token_base = ZEO_shiro_amada
+      name = EFS_shiro_amada
+      portraits={
+        army={
+          small="GFX_idea_shiroh_amada"
+        }
+        army={
+          large = "gfx/leaders/EFS/Portrait_Efsf_shiroh_amada.dds"
+        }
+      }
+      corps_commander = {
+        traits = {
+          jungle_rat
+          pilot
+          winter_specialist
+          adaptable
+          trait_lucky
+          power_of_love
+        }
+        skill = 4
+        attack_skill = 3
+        defense_skill = 3
+        planning_skill = 4
+        logistics_skill = 5
+        visible = {
+          has_character_flag = enable_corps_commander
+        }
+      }
+    }
+    ZEO_shiro_amada = {
+      set_character_flag = ZEO_shiro_amada
+    }
+    EFS = {
+      if = {
+        limit = {
+          has_character = EFS_shiro_amada
+        }
+        retire_character = EFS_shiro_amada
+      }
+    }
+  }
+}
+###########################################
+# IGLOO
+###########################################
+#zeon15 !! 603技術試験隊 大蛇はルウムに消えた
+country_event = {
+  id = zeon.15
+  title = zeon.15.t
+  desc = zeon.15.d
+  picture = GFX_country_zeon015
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = zeon.15.a
+    set_country_flag = igloo0_end
+    army_experience = 50
+    country_event = { id = achievement.17 }
+  }
+}
+#zeon22 !! U.C.0079 5.9 603技術試験隊 ヒルドルブ
+country_event = {
+  id = zeon.22
+  title = zeon.22.t
+  desc = zeon.22.d
+  picture = GFX_country_zeon022
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.22.a
+    random_list = {
+      50 = {
+        country_event = { id = zeon.23 days = 10 }
+        EFS = {
+          country_event = { id = efsf.14 days = 10 }
+        }
+      }
+      50 = {
+        country_event = { id = zeon.24 days = 10 }
+        EFS = {
+          country_event = { id = efsf.15 days = 10 }
+        }
+      }
+    }
+    trigger = {
+      ZEO = {
+        has_idea = demeziere_sonnen
+      }
+    }
+  }
+  option = {
+    name = zeon.22.b
+    random_list = {
+      35 = {
+        country_event = { id = zeon.23 days = 3 }
+        EFS = {
+          country_event = { id = efsf.14 days = 3 }
+        }
+      }
+      65 = {
+        country_event = { id = zeon.24 days = 3 }
+        EFS = {
+          country_event = { id = efsf.15 days = 3 }
+        }
+      }
+    }
+    trigger = {
+      NOT = {
+        ZEO = {
+          has_idea = demeziere_sonnen
+        }
+      }
+    }
+  }
+}
+#zeon23 !! U.C.0079 5.9 603技術試験隊 ヒルドルブ 成功
+country_event = {
+  id = zeon.23
+  title = zeon.23.t
+  desc = zeon.23.d
+  picture = GFX_country_zeon023
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = zeon.23.a
+    army_experience = 150
+    country_event = { id = zeon.1011 days = 5 }
+    set_country_flag = igloo1_end
+    country_event = { id = achievement.14 }
+  }
+}
+#efsf14 !! 603技術試験隊 ヒルドルブ 成功
+country_event = {
+  id = efsf.14
+  title = efsf.14.t
+  desc = efsf.14.d
+  picture = GFX_country_efsf014
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.14.a
+    army_experience = 50
+  }
+}
+#zeon24 !! U.C.0079 5.9 603技術試験隊 ヒルドルブ 失敗
+country_event = {
+  id = zeon.24
+  title = zeon.24.t
+  desc = zeon.24.d
+  picture = GFX_country_zeon024
+
+  is_triggered_only = yes
+  immediate = {
+  }
+  option = {
+    name = zeon.24.a
+    army_experience = 50
+    set_country_flag = igloo1_end
+    country_event = { id = achievement.14 }
+  }
+}
+#efsf15 !! 603技術試験隊 ヒルドルブ 失敗
+country_event = {
+  id = efsf.15
+  title = efsf.15.t
+  desc = efsf.15.d
+  picture = GFX_country_efsf015
+
+  is_triggered_only = yes
+  immediate = {
+    country_event = { id = efsf.1006 days = 5 }
+  }
+
+  option = {
+    name = efsf.15.a
+    army_experience = 150
+  }
+}
+#zeon25 !! U.C.0079 12.2 603技術試験隊 モビルダイバー 試験開始
+country_event = {
+  id = zeon.25
+  title = zeon.25.t
+  desc = zeon.25.d
+  picture = GFX_country_zeon025
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.25.a
+  }
+}
+#zeon26 !! U.C.0079 12.2 603技術試験隊 モビルダイバー1
+country_event = {
+  id = zeon.26
+  title = zeon.26.t
+  desc = zeon.26.d
+  picture = GFX_country_zeon026
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.26.a
+    air_experience = 20
+    ai_chance = {
+      base = 90
+      modifier = {
+        add = 10
+        is_historical_focus_on = yes
+      }
+    }
+    country_event = { id = zeon.27 days = 10 }
+    EFS = {
+      country_event = { id = efsf.17 days = 10 }
+    }
+  }
+  option = {
+    name = zeon.26.b
+    air_experience = 20
+    ai_chance = {
+      base = 10
+      modifier = {
+        add = -10
+        is_historical_focus_on = yes
+      }
+    }
+  }
+}
+#efsf16 !! 603技術試験隊 モビルダイバー1
+country_event = {
+  id = efsf.16
+  title = efsf.16.t
+  desc = efsf.16.d
+  picture = GFX_country_efsf016
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.16.a
+    army_experience = 10
+  }
+}
+#zeon27 !! U.C.0079 12.2 603技術試験隊 モビルダイバー2
+country_event = {
+  id = zeon.27
+  title = zeon.27.t
+  desc = zeon.27.d
+  picture = GFX_country_zeon027
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+  }
+
+  option = {
+    name = zeon.27.a
+    air_experience = 20
+    ai_chance = {
+      base = 90
+      modifier = {
+        add = 10
+        is_historical_focus_on = yes
+      }
+    }
+    country_event = { id = zeon.30 days = 10 }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = msm07_di2_tech
+        }
+      }
+      set_technology = {
+        msm07_di2_tech = 1
+      }
+    }
+  }
+  option = {
+    name = zeon.27.b
+    air_experience = 20
+    ai_chance = {
+      base = 10
+      modifier = {
+        add = -10
+        is_historical_focus_on = yes
+      }
+    }
+  }
+}
+#efsf17 !! 603技術試験隊 モビルダイバー2
+country_event = {
+  id = efsf.17
+  title = efsf.17.t
+  desc = efsf.17.d
+  picture = GFX_country_efsf017
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.17.a
+    army_experience = 10
+  }
+}
+#zeon30 !! U.C.0079 12.2 603技術試験隊 モビルダイバー3 判定
+country_event = {
+  id = zeon.30
+
+  hidden = yes
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    random_list = {
+      20 = {
+        ZEO = {
+          country_event = { id = zeon.28 }
+        }
+        EFS = {
+          country_event = { id = efsf.18 }
+        }
+      }
+      80 = {
+        ZEO = {
+          country_event = { id = zeon.29 }
+        }
+        EFS = {
+          country_event = { id = efsf.19 }
+        }
+      }
+    }
+  }
+
+  option = {
+    name = zeon.30.a
+  }
+}
+#zeon28 !! U.C.0079 12.2 603技術試験隊 モビルダイバー3 成功
+country_event = {
+  id = zeon.28
+  title = zeon.28.t
+  desc = zeon.28.d
+  picture = GFX_country_zeon028
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+  }
+  option = {
+    name = zeon.28.a
+    air_experience = 150
+    set_technology = {
+      msm07_di3_tech = 1
+    }
+    country_event = { id = zeon.1010 days = 5 }
+    country_event = { id = achievement.15 }
+    set_country_flag = igloo2_end
+  }
+}
+#efsf18 !! 603技術試験隊 モビルダイバー3 成功
+country_event = {
+  id = efsf.18
+  title = efsf.18.t
+  desc = efsf.18.d
+  picture = GFX_country_efsf018
+
+  is_triggered_only = yes
+  option = {
+    name = efsf.18.a
+    air_experience = -50
+  }
+}
+#zeon29 !! U.C.0079 12.2 603技術試験隊 モビルダイバー3 失敗
+country_event = {
+  id = zeon.29
+  title = zeon.29.t
+  desc = zeon.29.d
+  picture = GFX_country_zeon029
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+  }
+
+  option = {
+    name = zeon.29.a
+    air_experience = 50
+    set_technology = {
+      msm07_di3_tech = 1
+    }
+    set_country_flag = igloo2_end
+    country_event = { id = achievement.15 }
+  }
+}
+#efsf19 !! 603技術試験隊 モビルダイバー3 失敗
+country_event = {
+  id = efsf.19
+  title = efsf.19.t
+  desc = efsf.19.d
+  picture = GFX_country_efsf019
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.19.a
+    air_experience = 50
+  }
+}
+#news55 !! 603技術試験隊 ゴーストファイター（ジオンのプロパガンダ）
+news_event = {
+  id = news.55
+  title = news.55.t
+  desc = news.55.d
+  picture = GFX_news055
+  major = yes
+
+  is_triggered_only = yes
+  immediate = {
+    ZEO = {
+      add_timed_idea = {
+        idea = ghost_fighter_idea
+        days = 180
+      }
+      set_technology = {
+        ems04_tech = 1
+        ems10_tech = 1
+        ems10_s_tech = 1
+      }
+      country_event = { id = achievement.16 }
+    }
+  }
+
+  option = {
+    name = news.55.a
+    trigger = {
+      NOT = {
+        OR = {
+          tag = ZEO
+          tag = EFS
+        }
+      }
+    }
+  }
+  option = {
+    name = news.55.b
+    trigger = {
+      tag = ZEO
+    }
+  }
+  option = {
+    name = news.55.c
+    custom_effect_tooltip = news.55.c_desc
+    trigger = {
+      tag = EFS
+    }
+  }
+}
+#efsf.129 news.66を実行する（作戦から）
+country_event = {
+  id = efsf.129
+
+  hidden = yes
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    news_event = { id = news.66 }
+  }
+
+  option = {
+    name = efsf.129.a
+  }
+}
+#news66 !! 603技術試験隊 ゴーストファイター（メリーさん）
+news_event = {
+  id = news.66
+  title = news.66.t
+  desc = news.66.d
+  picture = GFX_news066
+  major = yes
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = news.66.a
+    trigger = {
+      NOT = {
+        OR = {
+          tag = ZEO
+          tag = EFS
+        }
+      }
+    }
+  }
+  option = {
+    name = news.66.b
+    trigger = {
+      tag = ZEO
+    }
+    remove_ideas = ghost_fighter_idea
+    country_event = { id = zeon.107 days = 14 }
+  }
+  option = {
+    name = news.66.c
+    trigger = {
+      tag = EFS
+    }
+  }
+}
+#zeon107 !! 603技術試験隊 ゴーストファイター（衛星軌道上の戦闘）
+country_event = {
+  id = zeon.107
+  title = zeon.107.t
+  desc = zeon.107.d
+  picture = GFX_country_zeon107
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.107.a
+    ai_chance = {
+      base = 60
+      modifier = {
+        add = 25
+        is_historical_focus_on = yes
+      }
+    }
+    news_event = { id = news.67 days = 1 }
+  }
+  option = {
+    name = zeon.107.b
+    ai_chance = {
+      base = 40
+      modifier = {
+        add = -25
+        is_historical_focus_on = yes
+      }
+    }
+    news_event = { id = news.69 days = 1 }
+  }
+}
+#news67 !! 603技術試験隊 ゴーストファイター（衛星軌道での戦闘）爆発
+news_event = {
+  id = news.67
+  title = news.67.t
+  desc = news.67.d
+  picture = GFX_news067
+  major = yes
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = news.67.a
+    trigger = {
+      NOT = {
+        tag = ZEO
+      }
+    }
+  }
+  option = {
+    name = news.67.b
+    trigger = {
+      tag = ZEO
+    }
+    clr_country_flag = ap_jean_luc_duvall_enable
+    if = {
+      limit = {
+        has_unit_leader = 38 #ジャン・リュック・デュバル
+      }
+      remove_unit_leader = 38
+    }
+    add_ideas = ghost_fighter_2_idea
+  }
+}
+#news69 !! 603技術試験隊 ゴーストファイター（衛星軌道での戦闘）回避
+news_event = {
+  id = news.69
+  title = news.69.t
+  desc = news.69.d
+  picture = GFX_news069
+  major = yes
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = news.69.a
+    trigger = {
+      NOT = {
+        tag = ZEO
+      }
+    }
+  }
+  option = {
+    name = news.69.b
+    if = {
+      limit = {
+        has_idea = ghost_fighter_idea
+      }
+      remove_ideas = ghost_fighter_idea
+    }
+    trigger = {
+      tag = ZEO
+    }
+  }
+}
+
+#############################################
+# V作戦
+#############################################
+#zeon51 !! RX計画をリーク
+country_event = {
+  id = zeon.51
+  title = zeon.51.t
+  desc = zeon.51.d
+  picture = GFX_country_zeon051
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.51.a
+  }
+}
+#efsf32 !! V作戦 ペガサス級1番艦完成
+country_event = {
+  id = efsf.32
+  title = efsf.32.t
+  desc = efsf.32.d
+  picture = GFX_country_efsf032
+
+  trigger = {
+    original_tag = EFS
+    has_equipment = {
+      assault_ship1_equipment > 0
+    }
+  }
+  fire_only_once = yes
+  option = {
+    name = efsf.32.a
+  }
+}
+#efsf34 ! V作戦 ガンダムロールアウト
+country_event = {
+  id = efsf.34
+  title = efsf.34.t
+  desc = efsf.34.d
+  picture = GFX_country_efsf034
+
+  trigger = {
+    original_tag = EFS
+    has_equipment = {
+      rx78_equipment > 0
+    }
+  }
+  fire_only_once = yes
+
+  option = {
+    name = efsf.34.a
+  }
+}
+#efsf31 ! V作戦 サイド7で最終試験
+country_event = {
+  id = efsf.31
+  title = efsf.31.t
+  desc = efsf.31.d
+  picture = GFX_country_efsf031
+
+  trigger = {
+    original_tag = EFS
+    has_completed_focus = efsf_plan_v
+    has_tech = rx75_tech
+    has_tech = rx77_tech
+    has_tech = rx78_tech
+    has_tech = EFS_assault_ship1_tech
+    country_exists = SI7
+  }
+  mean_time_to_happen = { days = 30 }
+  fire_only_once = yes
+
+  immediate = {
+    set_global_flag = v_op_1
+    set_global_flag = v_op_1_si7
+    if = {
+      limit = {
+        ZEO = {
+          NOT = {
+            has_unit_leader = 11
+          }
+        }
+      }
+      country_event = { id = efsf.36 days = 10 }
+    }
+  }
+  option = {
+    name = efsf.31.a
+  }
+}
+#zeon54 ! V作戦をキャッチ
+country_event = {
+  id = zeon.54
+  title = zeon.54.t
+  desc = zeon.54.d
+  picture = GFX_country_zeon054
+
+  trigger = {
+    original_tag = ZEO
+    has_global_flag = v_op_1
+    country_exists = SI7
+    has_unit_leader = 11
+  }
+  mean_time_to_happen = {
+    days = 60
+  }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.54.a
+    custom_effect_tooltip = zeon.54.a_desc
+    set_country_flag = searching_v_op_enable
+    ai_chance = {
+      base = 100
+    }
+  }
+  option = {
+    name = zeon.54.b
+    EFS = {
+      country_event = { id = efsf.36 days = 10 }
+    }
+    ai_chance = {
+      base = 0
+    }
+  }
+}
+#zeon57 ! V作戦 強行偵察
+country_event = {
+  id = zeon.57
+  title = zeon.57.t
+  desc = zeon.57.d
+  picture = GFX_country_zeon057
+
+  is_triggered_only = yes
+  immediate = {
+    set_global_flag = plan_v_is_revealed
+  }
+
+  option = {
+    name = zeon.57.a
+    country_event = { id = zeon.55 days = 8 }
+    EFS = {
+      country_event = { id = efsf.37 days = 5 }
+      country_event = { id = efsf.111 days = 8 }
+    }
+    ai_chance = {
+      factor = 60
+    }
+  }
+  option = {
+    name = zeon.57.b
+    EFS = {
+      country_event = { id = efsf.37 days = 5 }
+    }
+    ai_chance = {
+      base = 40
+      modifier = {
+        factor = 0
+        is_historical_focus_on = yes
+      }
+    }
+  }
+}
+#efsf35 ! V作戦 強行偵察
+country_event = {
+  id = efsf.35
+  title = efsf.35.t
+  desc = efsf.35.d
+  picture = GFX_country_efsf035
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = efsf.35.a
+    country_event = { id = efsf.103 days = 2 }
+    country_event = { id = efsf.33 days = 1 }
+    every_unit_leader = {
+      limit = {
+        has_id = 108
+      }
+      add_timed_unit_leader_trait = {
+        trait = wounded
+        days = 150
+      }
+    }
+  }
+}
+#efsf36 ! V作戦 試験終了
+country_event = {
+  id = efsf.36
+  title = efsf.36.t
+  desc = efsf.36.d
+  picture = GFX_country_efsf036
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.36.a
+  }
+}
+#efsf33 V作戦 アムロ・レイ
+country_event = {
+  id = efsf.33
+  title = efsf.33.t
+  desc = efsf.33.d
+  picture = GFX_country_efsf033
+
+  is_triggered_only = yes
+  option = {
+    name = efsf.33.a
+  }
+}
+#efsf103 テム・レイが行方不明
+country_event = {
+  id = efsf.103
+  title = efsf.103.t
+  desc = efsf.103.d
+  picture = GFX_country_efsf103
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    set_country_flag = tem_is_mia
+  }
+
+  option = {
+    name = efsf.103.a
+    country_event = { id = efsf.104 days = 30 random = 240 }
+  }
+}
+#efsf104 テム・レイをサイド6で発見・監視する
+country_event = {
+  id = efsf.104
+  title = efsf.104.t
+  desc = efsf.104.d
+  picture = GFX_country_efsf104
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    hidden_effect = {
+      country_event = { id = efsf.105 days = 90 }
+    }
+  }
+
+  option = {
+    name = efsf.104.a
+  }
+}
+#efsf37 ! V作戦 ルナツー寄港
+country_event = {
+  id = efsf.37
+  title = efsf.37.t
+  desc = efsf.37.d
+  picture = GFX_country_efsf037
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.37.a
+    ai_chance = {
+      base = 95
+    }
+    trigger = {
+      has_war_with = ZEO
+    }
+    country_event = { id = efsf.1000 }
+    set_global_flag = wb_is_yes
+    country_event = { id = efsf.38 days = 1 }
+  }
+  option = {
+    name = efsf.37.b
+    ai_chance = {
+      base = 5
+    }
+    country_event = { id = efsf.38 days = 1 }
+  }
+}
+#efsf38 ! V作戦 パオロ・カシアスの死
+country_event = {
+  id = efsf.38
+  title = efsf.38.t
+  desc = efsf.38.d
+  picture = GFX_country_efsf038
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = efsf.38.a
+    country_event = { id = efsf.39 days = 5 }
+    if = {
+      limit = {
+        has_unit_leader = 108
+      }
+      remove_unit_leader = 108
+    }
+    ZEO = {
+      country_event = { id = zeon.56 days = 5 }
+    }
+  }
+}
+#zeon55 ! V作戦 ルナツー強襲
+country_event = {
+  id = zeon.55
+  title = zeon.55.t
+  desc = zeon.55.d
+  picture = GFX_country_zeon055
+
+  is_triggered_only = yes
+  immediate = {
+    if = {
+      limit = {
+        has_unit_leader = 13 #ガデム
+      }
+      remove_unit_leader = 13
+    }
+    set_country_flag = gadem_is_dead
+  }
+
+  option = {
+    name = zeon.55.a
+  }
+}
+#efsf111 ! V作戦 ルナツー強襲
+country_event = {
+  id = efsf.111
+  title = efsf.111.t
+  desc = efsf.111.d
+  picture = GFX_country_zeon055
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = efsf.111.a
+  }
+}
+#zeon56 ! V作戦 大気圏突入時に戦闘
+country_event = {
+  id = zeon.56
+  title = zeon.56.t
+  desc = zeon.56.d
+  picture = GFX_country_zeon056
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.56.a
+    trigger = {
+      ZEO = {
+        NOT = {
+          OR = {
+            has_completed_focus = zeon_restructuring_of_military
+            has_completed_focus = zeon_capitalizing_on_the_fame_of_parent
+            has_country_flag = eschonbach_is_out_zeon
+          }
+        }
+      }
+    }
+    EFS = {
+      country_event = { id = efsf.40 days = 3 }
+    }
+    ai_chance = {
+      factor = 80
+    }
+  }
+  option = {
+    name = zeon.56.b
+    EFS = {
+      country_event = { id = efsf.41 days = 3 }
+    }
+    ai_chance = {
+      factor = 20
+      modifier = {
+        factor = 0
+        is_historical_focus_on = yes
+      }
+    }
+  }
+}
+#efsf39 ! V作戦 大気圏突入
+country_event = {
+  id = efsf.39
+  title = efsf.39.t
+  desc = efsf.39.d
+  picture = GFX_country_efsf039
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.39.a
+  }
+}
+#efsf40 V作戦 北米に降下
+country_event = {
+  id = efsf.40
+  title = efsf.40.t
+  desc = efsf.40.d
+  picture = GFX_country_efsf040
+
+  is_triggered_only = yes
+  immediate = {
+    set_global_flag = wb_is_north_america
+  }
+
+  option = {
+    name = efsf.40.a
+    ZEO = {
+      country_event = { id = zeon.59 days = 10 }
+    }
+  }
+}
+#efsf41 V作戦 ジャブローに降下
+country_event = {
+  id = efsf.41
+  title = efsf.41.t
+  desc = efsf.41.d
+  picture = GFX_country_efsf041
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.41.a
+  }
+}
+#zeon59 0! V作戦 ガルマからの報告
+country_event = {
+  id = zeon.59
+  title = zeon.59.t
+  desc = zeon.59.d
+  picture = GFX_country_zeon059
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = zeon.59.a
+    country_event = { id = zeon.60 days = 30 }
+    add_tech_bonus = {
+      category = cat_mobilesuit_warfare
+      uses = 1
+      bonus = 1
+    }
+    EFS = {
+      country_event = { id = efsf.42 days = 30 }
+    }
+  }
+}
+#efsf42 V作戦 ガルマ・ザビ死亡
+country_event = {
+  id = efsf.42
+  title = efsf.42.t
+  desc = efsf.42.d
+  picture = GFX_country_efsf042
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = efsf.42.a
+    add_command_power = 50
+    every_unit_leader = {
+      limit = {
+        has_id = 124
+      }
+      add_skill_level = 1
+    }
+  }
+}
+#zeon60 0! V作戦 ガルマの死亡（シャア行方不明）
+country_event = {
+  id = zeon.60
+  title = zeon.60.t
+  desc = zeon.60.d
+  picture = GFX_country_zeon060
+
+  is_triggered_only = yes
+  immediate = {
+    set_country_flag = garma_is_dead
+    if = {
+      limit = {
+        has_unit_leader = 5
+      }
+      remove_unit_leader = 5
+    }
+    if = {
+      limit = {
+        has_character = ZEO_char_aznable
+      }
+      ZEO_char_aznable = {
+        clr_character_flag = enable_corps_commander
+      }
+    }
+  }
+
+  option = {
+    name = zeon.60.a
+    country_event = { id = zeon.61 days = 2 }
+    if = {
+      limit = {
+        has_unit_leader = 12
+      }
+      country_event = { id = zeon.62 days = 3 }
+    }
+    country_event = { id = zeon.63 days = 7 }
+  }
+}
+#zeon61 0! V作戦 ガルマ国葬
+country_event = {
+  id = zeon.61
+  title = zeon.61.t
+  desc = zeon.61.d
+  picture = GFX_country_zeon061
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.61.a
+    news_event = { id = news.103 days = 5 }
+    ai_chance = {
+      base = 100
+      modifier = {
+        add = -10
+        is_historical_focus_on = no
+      }
+    }
+  }
+  option = {
+    name = zeon.61.b
+    ai_chance = {
+      base = 0
+      modifier = {
+        add = 10
+        is_historical_focus_on = no
+      }
+    }
+  }
+}
+#news103 0! V作戦 ガルマ国葬
+news_event = {
+  id = news.103
+  title = news.103.t
+  desc = news.103.d
+  picture = GFX_news103
+  major = yes
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = news.103.a
+    trigger = {
+      NOT = {
+        tag = ZEO
+      }
+    }
+  }
+  option = {
+    name = news.103.b
+    trigger = {
+      tag = ZEO
+    }
+    add_timed_idea = {
+      idea = stand_up_people
+      days = 60
+    }
+    add_war_support = 0.05
+  }
+}
+#zeon63 0! V作戦 シャアをキシリア機関が補足
+country_event = {
+  id = zeon.63
+  title = zeon.63.t
+  desc = zeon.63.d
+  picture = GFX_country_zeon063
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = zeon.63.a
+    if = {
+      limit = {
+        has_unit_leader = 11
+      }
+      remove_unit_leader = 11
+    }
+    EFS = {
+      country_event = { id = efsf.52 days = 10 random = 480 }
+    }
+    ai_chance = {
+      factor = 25
+      modifier = {
+        factor = 0
+        is_historical_focus_on = yes
+      }
+    }
+  }
+  option = {
+    name = zeon.63.b
+    country_event = { id = zeon.136 days = 10 random = 120 }
+    if = {
+      limit = {
+        has_character = ZEO_char_aznable
+      }
+      ZEO_char_aznable = {
+        set_character_flag = enable_corps_commander
+      }
+    }
+    every_unit_leader = {
+      limit = {
+        has_id = 11
+      }
+      add_unit_leader_trait = detention
+    }
+    ai_chance = {
+      factor = 75
+    }
+  }
+}
+#zeon136 マッドアングラー隊設立
+country_event = {
+  id = zeon.136
+  title = zeon.136.t
+  desc = zeon.136.d
+  picture = GFX_country_zeon136
+
+  is_triggered_only = yes
+  immediate = {
+    set_country_flag = establishment_madangler
+  }
+
+  option = {
+    name = zeon.136.a
+    every_unit_leader = {
+      limit = {
+        has_id = 11
+      }
+      remove_unit_leader_trait = detention
+    }
+  }
+}
+#zeon62 0! V作戦 ガルマ仇討ち部隊の派遣
+country_event = {
+  id = zeon.62
+  title = zeon.62.t
+  desc = zeon.62.d
+  picture = GFX_country_zeon062
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.62.a
+    ai_chance = {
+      base = 100
+    }
+    country_event = { id = zeon.137 days = 30 random = 120 }
+  }
+  option = {
+    name = zeon.62.b
+    ai_chance = {
+      base = 0
+    }
+  }
+}
+#zeon137 ランバ・ラル隊補給要請
+country_event = {
+  id = zeon.137
+  title = zeon.137.t
+  desc = zeon.137.d
+  picture = GFX_country_zeon137
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.137.a
+    trigger = {
+      has_equipment = {
+        ms09_equipment > 2
+      }
+    }
+    ai_chance = {
+      base = 20
+    }
+    country_event = { id = zeon.139 days = 3 }
+    country_event = { id = achievement.4 }
+    add_equipment_to_stockpile = {
+      type = ms09_equipment
+      amount = -3
+      producer = ZEO
+    }
+    EFS = {
+      country_event = { id = efsf.114 days = 3 }
+    }
+  }
+  option = {
+    name = zeon.137.b
+    ai_chance = {
+      base = 80
+    }
+    country_event = { id = zeon.138 days = 3 }
+    EFS = {
+      country_event = { id = efsf.113 days = 3 }
+    }
+  }
+}
+#zeon138 79.11.5 V作戦 ランバ・ラル戦死
+country_event = {
+  id = zeon.138
+  title = zeon.138.t
+  desc = zeon.138.d
+  picture = GFX_country_zeon138
+
+  is_triggered_only = yes
+  immediate = {
+    set_country_flag = ramba_is_dead
+  }
+
+  option = {
+    name = zeon.138.a
+    if = {
+      limit = {
+        has_unit_leader = 12
+      }
+      remove_unit_leader = 12
+    }
+    add_war_support = -0.03
+    trigger = {
+      has_unit_leader = 15
+    }
+    country_event = { id = zeon.140 days = 3 }
+    ai_chance = {
+      base = 99
+    }
+  }
+  option = {
+    name = zeon.138.b
+    ai_chance = {
+      base = 1
+    }
+    if = {
+      limit = {
+        has_unit_leader = 12
+      }
+      remove_unit_leader = 12
+    }
+    add_war_support = -0.03
+  }
+}
+#efsf113 ランバラル戦死
+country_event = {
+  id = efsf.113
+  title = efsf.113.t
+  desc = efsf.113.d
+  picture = GFX_country_efsf113
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = efsf.113.a
+    every_unit_leader = {
+      limit = {
+        OR = {
+          has_id = 113
+          has_id = 124
+        }
+      }
+      add_skill_level = 1
+    }
+    add_war_support = 0.03
+  }
+}
+#zeon139 WB隊ランバ・ラルにやられる
+country_event = {
+  id = zeon.139
+  title = zeon.139.t
+  desc = zeon.139.d
+  picture = GFX_country_zeon139
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = zeon.139.a
+    every_unit_leader = {
+      limit = {
+        has_id = 12
+      }
+      add_skill_level = 1
+    }
+    add_war_support = 0.05
+    add_equipment_to_stockpile = {
+      type = rx75_equipment
+      amount = 6
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = rx77_equipment
+      amount = 6
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = rx78_equipment
+      amount = 6
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_weapon_beamgun_01_equipment
+      amount = 10
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_weapon_beamrifle_01_equipment
+      amount = 10
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_weapon_beamsord_01_equipment
+      amount = 12
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_shield_02_equipment
+      amount = 10
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_weapon_bazooka_03_equipment
+      amount = 10
+      producer = EFS
+    }
+    country_event = { id = achievement.2 }
+  }
+}
+#efsf114 ランバラルにやられる
+country_event = {
+  id = efsf.114
+  title = efsf.114.t
+  desc = efsf.114.d
+  picture = GFX_country_efsf114
+
+  is_triggered_only = yes
+  immediate = {
+    set_country_flag = bright_is_dead
+  }
+
+  option = {
+    name = efsf.114.a
+    if = {
+      limit = {
+        has_unit_leader = 124
+      }
+      remove_unit_leader = 124
+    }
+    if = {
+      limit = {
+        has_unit_leader = 113
+      }
+      remove_unit_leader = 113
+    }
+    add_war_support = -0.05
+  }
+}
+#zeon140 黒い三連星の派遣
+country_event = {
+  id = zeon.140
+  title = zeon.140.t
+  desc = zeon.140.d
+  picture = GFX_country_zeon140
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.140.a
+    EFS = {
+      country_event = { id = efsf.115 days = 1 }
+    }
+    ai_chance = {
+      base = 80
+    }
+  }
+  option = {
+    name = zeon.140.b
+    ai_chance = {
+      base = 20
+      modifier = {
+        factor = 0
+        is_historical_focus_on = yes
+      }
+    }
+    EFS = {
+      country_event = { id = efsf.69 days = 30 random = 240 }
+    }
+  }
+}
+#efsf115 黒い三連星の派遣を察知
+country_event = {
+  id = efsf.115
+  title = efsf.115.t
+  desc = efsf.115.d
+  picture = GFX_country_efsf115
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.115.a
+    ai_chance = {
+      base = 90
+    }
+    random_list = {
+      85 = {
+        country_event = { id = efsf.116 days = 3 }
+        ZEO = {
+          country_event = { id = zeon.141 days = 3 }
+        }
+      }
+      15 = {
+        country_event = { id = efsf.117 days = 3 }
+        ZEO = {
+          country_event = { id = zeon.142 days = 3 }
+        }
+      }
+    }
+  }
+  option = {
+    name = efsf.115.b
+    ai_chance = {
+      base = 10
+    }
+    country_event = { id = efsf.117 days = 3 }
+    ZEO = {
+      country_event = { id = zeon.142 days = 3 }
+    }
+  }
+}
+#zeon.141 黒い三連星　マチルダ死亡
+country_event = {
+  id = zeon.141
+  title = zeon.141.t
+  desc = zeon.141.d
+  picture = GFX_country_zeon141
+
+  is_triggered_only = yes
+  immediate = {
+    every_unit_leader = {
+      limit = {
+        has_id = 15
+      }
+      add_skill_level = 1
+    }
+  }
+
+  option = {
+    name = zeon.141.a
+    trigger = {
+      OR = {
+        has_equipment = {
+          ms09_h_equipment > 1
+        }
+        has_equipment = {
+          ms14_equipment > 1
+        }
+      }
+    }
+    ai_chance = {
+      base = 80
+    }
+    if = {
+      limit = {
+        has_equipment = {
+          ms14_equipment > 1
+        }
+      }
+      add_equipment_to_stockpile = {
+        type = ms14_equipment
+        amount = -2
+      }
+      else = {
+        add_equipment_to_stockpile = {
+          type = ms09_h_equipment
+          amount = -2
+        }
+      }
+    }
+    random_list = {
+      60 = {
+        country_event = { id = zeon.143 days = 3 }
+        EFS = {
+          country_event = { id = efsf.118 days = 3 }
+        }
+      }
+      40 = {
+        country_event = { id = zeon.144 days = 3 }
+        EFS = {
+          country_event = { id = efsf.119 days = 3 }
+        }
+      }
+    }
+  }
+  option = {
+    name = zeon.141.b
+    ai_chance = {
+      base = 20
+    }
+    random_list = {
+      80 = {
+        country_event = { id = zeon.143 days = 3 }
+        EFS = {
+          country_event = { id = efsf.118 days = 3 }
+        }
+      }
+      20 = {
+        country_event = { id = zeon.144 days = 3 }
+        EFS = {
+          country_event = { id = efsf.119 days = 3 }
+        }
+      }
+    }
+  }
+}
+#efsfs116 マチルダ死亡
+country_event = {
+  id = efsf.116
+  title = efsf.116.t
+  desc = efsf.116.d
+  picture = GFX_country_efsf116
+
+  is_triggered_only = yes
+  immediate = {
+    set_country_flag = matild_is_dead
+  }
+
+  option = {
+    name = efsf.116.a
+    every_unit_leader = {
+      limit = {
+        has_id = 113
+      }
+      add_skill_level = 1
+    }
+  }
+}
+#zeon142 黒い三連星　マチルダ生存
+country_event = {
+  id = zeon.142
+  title = zeon.142.t
+  desc = zeon.142.d
+  picture = GFX_country_zeon142
+
+  is_triggered_only = yes
+  immediate = {
+    every_unit_leader = {
+      limit = {
+        has_id = 15
+      }
+      add_skill_level = 1
+    }
+  }
+
+  option = {
+    name = zeon.142.a
+    trigger = {
+      OR = {
+        has_equipment = {
+          ms09_h_equipment > 1
+        }
+        has_equipment = {
+          ms14_equipment > 1
+        }
+      }
+    }
+    ai_chance = {
+      base = 80
+    }
+    if = {
+      limit = {
+        has_equipment = {
+          ms14_equipment > 1
+        }
+      }
+      add_equipment_to_stockpile = {
+        type = ms14_equipment
+        amount = -2
+      }
+      else = {
+        add_equipment_to_stockpile = {
+          type = ms09_h_equipment
+          amount = -2
+        }
+      }
+    }
+    random_list = {
+      30 = {
+        country_event = { id = zeon.143 days = 3 }
+        EFS = {
+          country_event = { id = efsf.118 days = 3 }
+        }
+      }
+      70 = {
+        country_event = { id = zeon.144 days = 3 }
+        EFS = {
+          country_event = { id = efsf.119 days = 3 }
+        }
+      }
+    }
+  }
+  option = {
+    name = zeon.142.b
+    ai_chance = {
+      base = 20
+    }
+    random_list = {
+      50 = {
+        country_event = { id = zeon.143 days = 3 }
+        EFS = {
+          country_event = { id = efsf.118 days = 3 }
+        }
+      }
+      50 = {
+        country_event = { id = zeon.144 days = 3 }
+        EFS = {
+          country_event = { id = efsf.119 days = 3 }
+        }
+      }
+    }
+  }
+}
+#efsf117 マチルダ生存
+country_event = {
+  id = efsf.117
+  title = efsf.117.t
+  desc = efsf.117.d
+  picture = GFX_country_efsf117
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      EFS = {
+        country_event = { id = efsf.65 days = 90 }
+      }
+    }
+  }
+
+  option = {
+    name = efsf.117.a
+    every_unit_leader = {
+      limit = {
+        has_id = 113
+      }
+      add_skill_level = 1
+      add_timed_unit_leader_trait = {
+        trait = wounded
+        days = 30
+      }
+    }
+  }
+}
+#efsf65 V作戦 マチルダとウッディの結婚
+country_event = {
+  id = efsf.65
+  title = efsf.65.t
+  desc = efsf.65.d
+  picture = GFX_country_efsf065
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.65.a
+  }
+}
+#zeon143 79.11.7 V作戦 黒い三連星戦死
+country_event = {
+  id = zeon.143
+  title = zeon.143.t
+  desc = zeon.143.d
+  picture = GFX_country_zeon143
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      EFS = {
+        country_event = { id = efsf.69 days = 30 random = 240 }
+      }
+    }
+  }
+
+  option = {
+    name = zeon.143.a
+    add_war_support = -0.03
+    if = {
+      limit = {
+        has_unit_leader = 15
+      }
+      remove_unit_leader = 15
+    }
+  }
+}
+#efsf118
+country_event = {
+  id = efsf.118
+  title = efsf.118.t
+  desc = efsf.118.d
+  picture = GFX_country_efsf118
+
+  is_triggered_only = yes
+  immediate = {
+    add_war_support = 0.03
+    every_unit_leader = {
+      limit = {
+        OR = {
+          has_id = 113
+          has_id = 124
+        }
+      }
+      add_skill_level = 1
+    }
+  }
+
+  option = {
+    name = efsf.118.a
+  }
+}
+#zeon144 黒い三連星にWB隊がやられる
+country_event = {
+  id = zeon.144
+  title = zeon.144.t
+  desc = zeon.144.d
+  picture = GFX_country_zeon144
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = zeon.144.a
+    add_war_support = 0.05
+    add_equipment_to_stockpile = {
+      type = rx75_equipment
+      amount = 6
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = rx77_equipment
+      amount = 6
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = rx78_equipment
+      amount = 6
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_weapon_beamgun_01_equipment
+      amount = 10
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_weapon_beamrifle_01_equipment
+      amount = 10
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_weapon_beamsord_01_equipment
+      amount = 12
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_shield_02_equipment
+      amount = 10
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = ms_weapon_bazooka_03_equipment
+      amount = 10
+      producer = EFS
+    }
+    every_unit_leader = {
+      limit = {
+        has_id = 15
+      }
+      add_skill_level = 1
+    }
+  }
+}
+#efsf119
+country_event = {
+  id = efsf.119
+  title = efsf.119.t
+  desc = efsf.119.d
+  picture = GFX_country_efsf119
+
+  is_triggered_only = yes
+  immediate = {
+    if = {
+      limit = {
+        has_unit_leader = 124
+        has_country_flag = matild_is_dead
+      }
+      remove_unit_leader = 124
+      set_country_flag = bright_is_dead
+    }
+    if = {
+      limit = {
+        has_unit_leader = 113
+        has_country_flag = matild_is_dead
+      }
+      remove_unit_leader = 113
+    }
+    add_war_support = -0.05
+  }
+
+  option = {
+    name = efsf.119.a
+  }
+}
+
+#efsf69 79.11.18 V作戦 ベルファスト寄港
+country_event = {
+  id = efsf.69
+  title = efsf.69.t
+  desc = efsf.69.d
+  picture = GFX_country_efsf069
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      ZEO = {
+        country_event = { id = zeon.145 days = 1 }
+      }
+      EFS = {
+        country_event = { id = efsf.71 days = 15 }
+      }
+    }
+  }
+
+  option = {
+    name = efsf.69.a
+  }
+}
+#zeon145 79.11.18 V作戦 ベルファストでWB発見
+country_event = {
+  id = zeon.145
+  title = zeon.145.t
+  desc = zeon.145.d
+  picture = GFX_country_zeon145
+
+  is_triggered_only = yes
+  immediate = {
+    set_country_flag = madangler_spy107_is_yes
+  }
+
+  option = {
+    name = zeon.145.a
+    custom_effect_tooltip = zeon.145.a_desc
+  }
+}
+#zeon146 79.11.21 V作戦 スパイ107号WB潜入
+country_event = {
+  id = zeon.146
+  title = zeon.146.t
+  desc = zeon.146.d
+  picture = GFX_country_zeon146
+
+  is_triggered_only = yes
+  immediate = {
+    set_global_flag = spy107_in_wb
+  }
+
+  option = {
+    name = zeon.146.a
+  }
+}
+#efsf71 79.11.21 V作戦 ベルファスト出発 目的地選択
+country_event = {
+  id = efsf.71
+  title = efsf.71.t
+  desc = efsf.71.d
+  picture = GFX_country_efsf071
+
+  is_triggered_only = yes
+  immediate = {
+    ZEO = {
+      set_country_flag = madangler_spy107_is_end
+    }
+  }
+
+  option = {
+    name = efsf.71.a
+    ai_chance = {
+      base = 85
+    }
+    trigger = {
+      EFS = {
+        has_full_control_of_state = 687
+      }
+    }
+    set_global_flag = wb_goto_jablo
+    ZEO = {
+      country_event = { id = zeon.150 days = 3 }
+    }
+  }
+  option = {
+    name = efsf.71.b
+    ai_chance = {
+      base = 15
+    }
+    set_global_flag = wb_goto_africa
+    ZEO = {
+      country_event = { id = zeon.150 days = 3 }
+    }
+  }
+}
+#zeon150 79 11.24 V作戦 大西洋上でWB隊を攻撃
+country_event = {
+  id = zeon.150
+  title = zeon.150.t
+  desc = zeon.150.d
+  picture = GFX_country_zeon150
+
+  is_triggered_only = yes
+  immediate = {
+    every_unit_leader = {
+      limit = {
+        has_id = 138
+      }
+      add_timed_unit_leader_trait = {
+        trait = wounded
+        days = 30
+      }
+    }
+    hidden_effect = {
+      EFS = {
+        country_event = { id = efsf.72 }
+      }
+    }
+  }
+
+  option = { #ミハル潜入済み
+    name = zeon.150.a
+    trigger = {
+      has_global_flag = spy107_in_wb
+    }
+    set_global_flag = wb_is_detected
+    if = {
+      limit = {
+        has_global_flag = wb_goto_jablo
+      }
+      EFS = {
+        country_event = { id = efsf.73 days = 3 }
+      }
+      else = {
+        EFS = {
+          country_event = { id = efsf.74 days = 3 }
+        }
+      }
+    }
+  }
+  option = { #ミハル未潜入　ジャブロールート
+    name = zeon.150.b
+    trigger = {
+      NOT = {
+        has_global_flag = spy107_in_wb
+      }
+      has_global_flag = wb_goto_jablo
+    }
+    EFS = {
+      country_event = { id = efsf.73 days = 3 }
+    }
+  }
+  option = { #ミハル未潜入　アフリカルート
+    name = zeon.150.c
+    trigger = {
+      NOT = {
+        has_global_flag = spy107_in_wb
+      }
+      has_global_flag = wb_goto_africa
+    }
+    EFS = {
+      country_event = { id = efsf.74 days = 3 }
+    }
+  }
+}
+#efsf72 79.11.24 V作戦 大西洋上でWB攻撃される
+country_event = {
+  id = efsf.72
+  title = efsf.72.t
+  desc = efsf.72.d
+  picture = GFX_country_efsf072
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.72.a
+    trigger = {
+      has_global_flag = spy107_in_wb
+    }
+    random_list = {
+      75 = {
+        country_event = { id = efsf.120 }
+      }
+      25 = {
+        country_event = { id = efsf.121 }
+      }
+    }
+  }
+  option = {
+    name = efsf.72.b
+    trigger = {
+      NOT = {
+        has_global_flag = spy107_in_wb
+      }
+    }
+    country_event = { id = achievement.24 }
+  }
+}
+#efsf120 79.11.24 V作戦 ミハル戦死
+country_event = {
+  id = efsf.120
+  title = efsf.120.t
+  desc = efsf.120.d
+  picture = GFX_country_efsf120
+
+  is_triggered_only = yes
+  immediate = {
+    ZEO = {
+      set_country_flag = miharu_is_dead
+    }
+  }
+  option = {
+    name = efsf.120.a
+  }
+}
+#efsf121 ミハル生存
+country_event = {
+  id = efsf.121
+  title = efsf.121.t
+  desc = efsf.121.d
+  picture = GFX_country_efsf121
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.121.a
+    country_event = { id = achievement.24 }
+  }
+}
+
+#efsf73 79.11.27 V作戦 ジャブロー到着
+country_event = {
+  id = efsf.73
+  title = efsf.73.t
+  desc = efsf.73.d
+  picture = GFX_country_efsf073
+
+  is_triggered_only = yes
+  immediate = {
+    if = {
+      limit = {
+        has_global_flag = wb_is_detected
+      }
+      ZEO = {
+        set_country_flag = madangler_searcing_jablo_is_yes
+      }
+      clr_global_flag = wb_is_detected
+    }
+    hidden_effect = {
+      country_event = { id = efsf.49 days = 1 }
+    }
+  }
+
+  option = {
+    name = efsf.73.a
+    add_command_power = 30
+    every_unit_leader = {
+      limit = {
+        OR = {
+          has_id = 113
+          has_id = 124
+        }
+      }
+      add_skill_level = 1
+    }
+    add_doctrine_cost_reduction = {
+      category = land_doctrine
+      uses = 3
+      cost_reduction = 0.5
+    }
+  }
+}
+#efsf49 0! ホワイトベース隊のニュータイプ検査
+country_event = {
+  id = efsf.49
+  title = efsf.49.t
+  desc = efsf.49.d
+  picture = GFX_country_efsf049
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.49.a
+    country_event = { id = efsf.51 days = 5 }
+  }
+}
+#efsf51 0! ニュータイプ プロパガンダ/危険視/実験体
+country_event = {
+  id = efsf.51
+  title = efsf.51.t
+  desc = {
+    text = efsf.51.d_1
+    trigger = {
+      NOT = {
+        has_tech = newtype_tech1
+      }
+    }
+  }
+  desc = {
+    text = efsf.51.d_2
+    trigger = {
+      has_tech = newtype_tech1
+      NOT = {
+        has_tech = newtype_tech2
+      }
+    }
+  }
+  desc = {
+    text = efsf.51.d_3
+    trigger = {
+      has_tech = newtype_tech2
+    }
+  }
+  picture = GFX_country_efsf051
+
+  is_triggered_only = yes
+
+  option = { #何もしない
+    name = efsf.51.a
+    custom_effect_tooltip = efsf.51.a_desc
+    ai_chance = {
+      base = 60
+    }
+    country_event = { id = efsf.122 days = 3}
+  }
+  option = { #プロパガンダ
+    name = efsf.51.b
+    custom_effect_tooltip = efsf.51.b_desc
+    ai_chance = {
+      base = 30
+    }
+    country_event = { id = efsf.122 days = 3}
+    trigger = {
+      any_unit_leader = {
+        has_id = 113
+        has_trait = newtype2
+      }
+      custom_trigger_tooltip = {
+        tooltip = newtype_accepted_status_idea
+        OR = {
+          has_idea = newtype_division_3
+          has_idea = newtype_division_4
+          has_idea = newtype_division_5
+        }
+      }
+    }
+    set_global_flag = missing_amuro_is_yes
+    add_timed_idea = {
+      idea = amuro_propaganda
+      days = 120
+    }
+  }
+  option = { #危険視
+    name = efsf.51.c
+    custom_effect_tooltip = efsf.51.c_desc
+    ai_chance = {
+      base = 30
+    }
+    trigger = {
+      any_unit_leader = {
+        has_id = 113
+        has_trait = newtype2
+      }
+      custom_trigger_tooltip = {
+        tooltip = newtype_accepted_status_idea
+        OR = {
+          has_idea = newtype_division_1
+          has_idea = newtype_division_2
+          has_idea = newtype_division_3
+        }
+      }
+    }
+    remove_unit_leader = 113
+    country_event = { id = efsf.123 days = 60 random = 720 }
+  }
+  option = { #WB隊を解体する
+    name = efsf.51.d
+    custom_effect_tooltip = efsf.51.d_desc
+    ai_chance = {
+      base = 10
+    }
+    if = {
+      limit = {
+        has_unit_leader = 113
+      }
+      remove_unit_leader = 113
+    }
+    if = {
+      limit = {
+        has_unit_leader = 124
+      }
+      remove_unit_leader = 124
+    }
+  }
+}
+#efsf122 13独立部隊編成
+country_event = {
+  id = efsf.122
+  title = efsf.122.t
+  desc = efsf.122.d
+  picture = GFX_country_efsf122
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.122.a
+  }
+}
+#zeon147 ジャブロー基地を発見する
+country_event = {
+  id = zeon.147
+  title = zeon.147.t
+  desc = zeon.147.d
+  picture = GFX_country_zeon147
+
+  is_triggered_only = yes
+  immediate = {
+    ZEO = {
+      set_country_flag = madangler_sabotage_jablo_is_yes
+    }
+  }
+
+  option = {
+    name = zeon.147.a
+    unlock_decision_tooltip = ep_madangler_sabotage_jablo
+  }
+}
+#zeon148 ジャブロー基地破壊工作
+country_event = {
+  id = zeon.148
+  title = zeon.148.t
+  desc = zeon.148.d
+  picture = GFX_country_zeon148
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      EFS = {
+        country_event = { id = efsf.126 }
+      }
+    }
+  }
+
+  option = {
+    name = zeon.148.a
+    687 = {
+      damage_building = {
+        type = arms_factory
+        damage = 2
+      }
+      damage_building = {
+        type = infrastructure
+        damage = 2
+      }
+    }
+  }
+}
+#efsf126
+country_event = {
+  id = efsf.126
+  title = efsf.126.t
+  desc = efsf.126.d
+  picture = GFX_country_efsf126
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    hidden_effect = {
+      country_event = { id = efsf.124 hours = 3 }
+    }
+  }
+
+  option = {
+    name = efsf.126.a
+  }
+}
+#efsf124 シャア、アルテイシアと遭遇（説得）
+country_event = {
+  id = efsf.124
+  title = efsf.124.t
+  desc = efsf.124.d
+  picture = GFX_country_efsf124
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = efsf.124.a
+    ai_chance = {
+      base = 100
+    }
+    ZEO = {
+      country_event = { id = zeon.151 }
+    }
+  }
+  option = {
+    name = efsf.124.b
+    ai_chance = {
+      base = 0
+    }
+  }
+}
+#zeon151
+country_event = {
+  id = zeon.151
+  title = zeon.151.t
+  desc = zeon.151.d
+  picture = GFX_country_zeon151
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.151.a
+    ai_chance = {
+      base = 30
+      modifier = {
+        add = 40
+        is_historical_focus_on = no
+      }
+    }
+    country_event = { id = zeon.66 days = 3 random = 48 }
+    hidden_effect = {
+      EFS = {
+        country_event = { id = achievement.26 }
+      }
+    }
+  }
+  option = {
+    name = zeon.151.b
+    ai_chance = {
+      base = 70
+      modifier = {
+        add = -40
+        is_historical_focus_on = no
+      }
+    }
+  }
+}
+
+#efsf74 V作戦 WBアフリカ戦線に到着
+country_event = {
+  id = efsf.74
+  title = efsf.74.t
+  desc = efsf.74.d
+  picture = GFX_country_efsf074
+
+  is_triggered_only = yes
+  immediate = {
+    if = {
+      limit = {
+        has_global_flag = wb_is_detected
+      }
+      ZEO = {
+        set_country_flag = madangler_battle_of_africa_is_yes
+      }
+      clr_global_flag = wb_is_detected
+    }
+  }
+
+  option = {
+    name = efsf.74.a
+    country_event = { id = achievement.27 }
+  }
+}
+#zeon149 ジンネマンと共闘してWB隊と戦闘
+country_event = {
+  id = zeon.149
+  title = zeon.149.t
+  desc = zeon.149.d
+  picture = GFX_country_zeon149
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    hidden_effect = {
+      EFS = {
+        country_event = { id = efsf.125 }
+      }
+    }
+  }
+
+  option = {
+    name = zeon.149.a
+    ai_chance = {
+      base = 100
+    }
+    ZEO_suberoa_zinnerman = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+}
+#efsf125
+country_event = {
+  id = efsf.125
+  title = efsf.125.t
+  desc = efsf.125.d
+  picture = GFX_country_efsf125
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = efsf.125.a
+  }
+}
+
+#efsf123 アムロ実験体
+country_event = {
+  id = efsf.123
+  title = efsf.123.t
+  desc = efsf.123.d
+  picture = GFX_country_efsf123
+
+  is_triggered_only = yes
+  immediate = {
+    set_global_flag = missing_amuro_is_yes
+    add_tech_bonus = {
+      category = newtype
+      category = exam_mobilesuit
+      bonus = 1
+      uses = 3
+    }
+  }
+
+  option = {
+    name = efsf.123.a
+  }
+}
+#efsf106 アムロ・レイの失踪（プロパガンダになっていてシャアがクワトロとして連邦に参加）
+country_event = {
+  id = efsf.106
+  title = efsf.106.t
+  desc = efsf.106.d
+  picture = GFX_country_efsf106
+
+  trigger = {
+    tag = EFS
+    has_global_flag = missing_amuro_is_yes
+    has_unit_leader = 143
+  }
+  mean_time_to_happen = {
+    days = 300
+  }
+  fire_only_once = yes
+  immediate = {
+    hidden_effect = {
+      news_event = { id = news.156 days = 180 random = 720 }
+    }
+    remove_unit_leader = 113
+  }
+
+  option = {
+    name = efsf.106.a
+  }
+}
+
+
+#105 テム・レイの死亡を確認
+country_event = {
+  id = efsf.105
+  title = efsf.105.t
+  desc = efsf.105.d
+  picture = GFX_country_efsf105
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_country_flag = tem_is_dead
+    clr_country_flag = tem_is_mia
+  }
+
+  option = {
+    name = efsf.105.a
+  }
+}
+
+#シャア復讐ルート
+
+
+#############################################
+# 作戦
+#############################################
+
+# 地上 id:5000
+
+#efsf5000 79.11.7 連邦　オデッサ作戦 作戦延期判断
+country_event = {
+  id = efsf.5000
+  title = efsf.5000.t
+  desc = efsf.5000.d
+  picture = GFX_country_efsf106
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = efsf.5000.a
+    ai_chance = {
+      base = 80
+    }
+    activate_decision = op_odessa_reschedule
+  }
+  option = {
+    name = efsf.5000.b
+    ai_chance= {
+      base = 20
+    }
+    activate_mission = op_odessa_2
+  }
+}
+
+# エルランの裏切り
+# エルランを逮捕
+
+# 核攻撃
+
+
+# 宇宙 id:6000
+
+#efsf6600 連邦　チェンバロ作戦
+country_event = {
+  id = efsf.6600
+  title = efsf.6600.t
+  desc = efsf.6600.d
+  picture = GFX_country_efsf6600
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.6600.a
+  }
+}
+# 79.12.2 ジャブローよりWBなどの囮部隊発進
+# 79.12.5 連邦艦隊ルナツーへ集結
+#zeon6601 79.12.5 チェンバロ作戦を察知
+# 79.12.20 ワッケイン艦隊ルナツー出発
+# 79.12.22 ティアンム艦隊ルナツー出発
+#efsf6602 79.12.24 ソーラシステム準備完了
+# ティアンム艦隊を探す
+#zeon6603 ソロモン蜂起
+#zeon6604 ビグザムの驚異
+#efsf6605
+#efsf6606 ティアンム、ドズル、スレッガー戦死
+#zeon6607
+#news6608 作戦成功
+#news6609 作戦失敗
+#news6610 79.12.25 ソロモンの亡霊
+
+#efsf6700 連邦　星一号作戦（作戦目標決定）
+country_event = {
+  id = efsf.6700
+  title = efsf.6700.t
+  desc = efsf.6700.d
+  picture = GFX_country_efsf6700
+
+  is_triggered_only = yes
+
+  option = {
+    name = efsf.6700.a
+  }
+}
+#zeon6701 作戦目標を察知（ランダム）
+#efsf6702 デギンより会談要請
+#zeon6703 デギンの行動を察知（連邦が受け入れた場合）
+#zeon6704 ソーラレイの目標決定
+#news6705 デギン、レビル、ソーラレイにより戦死
+#news6706 連邦にソーラレイ発射（デギン、レビルは無事）
+#efsf6707 シャアとアムロ
+#zeon6708
+#efsf6710 ホワイトベース轟沈
+#zeon6711 シャア敗れる
+#efsf6712 シャアとアムロの決闘
+#zeon6713
+#zeon6714 キシリアがギレンを殺害（判定）
+#zeon6715 シャアがキシリアを殺害
+#efsf6716 アムロ脱出
+#news6717 作戦成功
+#news6718 作戦失敗
+
+# 6800 ジオン　アポロ作戦（フォン・ブラウン制圧）
+country_event = {
+  id = zeon.6800
+  title = zeon.6800.t
+  desc = zeon.6800.d
+  picture = GFX_country_zeon6800
+
+  is_triggered_only = yes
+
+  immediate = {
+
+  }
+
+  option = {
+    name = zeon.6800.a
+  }
+  option = {
+    name = zeon.6800.b
+  }
+}
+
+# 6900 81 ジオン　水天の涙作戦
+# Xday入手
+# 防衛成功
+# 防衛失敗
+
+# 6010 83 ジオン　星の屑作戦

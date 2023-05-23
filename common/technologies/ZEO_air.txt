@@ -1,0 +1,763 @@
+technologies = {
+  plan_apsalus_tech = {
+    allow = {
+      always = no
+    }
+  }
+  ZEO_attack_helicopter_tech = {
+
+    enable_equipments = {
+      attack_helicopter_equipment
+    }
+	
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 70
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 0 }
+    }
+
+    categories = {
+      light_air
+      light_fighter
+      air_equipment
+      helicopter
+    }
+
+    ai_will_do = {
+      base = 10
+    }
+  }
+  ZEO_scout_plane1_tech = {
+
+    enable_equipments = {
+      scout_plane1_equipment
+    }
+
+    path = {
+			leads_to_tech = ZEO_scout_plane2_tech
+			research_cost_coeff = 1
+		}
+
+    research_cost = 0.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 4 }
+    }
+
+    categories = {
+      light_air
+      air_equipment
+      cat_scout_plane
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 100
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_scout_plane2_tech = {
+
+    enable_equipments = {
+      scout_plane2_equipment
+    }
+
+    research_cost = 0.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 8 }
+    }
+
+    categories = {
+      light_air
+      air_equipment
+      cat_scout_plane
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 50
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_fighter_tech = {
+
+    enable_equipments = {
+      core_fighter1_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 4 }
+    }
+
+    categories = {
+      light_air
+      light_fighter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 50
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_attacker_tech = {
+
+    enable_equipments = {
+      attacker_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 4 }
+    }
+
+    categories = {
+      light_air
+      cas_bomber
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_tactical_bomber1_tech = {
+
+    enable_equipments = {
+      tactical_bomber1_equipment
+    }
+    sub_technologies = {
+      ZEO_sfs1_tech
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 4 }
+    }
+
+    path = {
+			leads_to_tech = ZEO_tactical_bomber2_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      medium_air
+      tactical_bomber
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_sfs1_tech = {
+    enable_equipments = {
+      sfs_equipment
+    }
+
+    research_cost = 0.5
+    xp_research_type = air
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    categories = {
+      medium_air
+      tactical_bomber
+      air_equipment
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_tactical_bomber2_tech = {
+
+    enable_equipments = {
+      tactical_bomber2_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 8 }
+    }
+
+    categories = {
+      medium_air
+      tactical_bomber
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_strategic_bomber_tech = {
+
+    enable_equipments = {
+      strategic_bomber_equipment
+    }
+    dependencies = {
+      mega_particle1 = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 8 }
+    }
+
+    categories = {
+      medium_air
+      tactical_bomber
+      air_equipment
+      attack_transporter
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_assault_ship1_tech = {
+
+    enable_equipments = {
+      assault_ship1_equipment
+    }
+    dependencies = {
+      mega_particle1 = 1
+    }
+
+    research_cost = 2
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 76
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 2 }
+    }
+
+    path = {
+			leads_to_tech = ZEO_assault_ship2_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      heavy_air
+      tactical_bomber
+      assault_ship
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 10
+        date > 76.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 78.1.1
+      }
+    }
+  }
+  ZEO_assault_ship2_tech = {
+
+    enable_equipments = {
+      assault_ship2_equipment
+    }
+
+    research_cost = 1.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 6 }
+    }
+
+    categories = {
+      heavy_air
+      tactical_bomber
+      assault_ship
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 50
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_transporter1_tech = {
+
+    enable_equipments = {
+      transport_plane_equipment_1
+    }
+
+    research_cost = 0.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 4 }
+    }
+
+    path = {
+			leads_to_tech = ZEO_transporter2_tech
+			research_cost_coeff = 1
+		}
+
+    categories = {
+      medium_air
+      transporter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+    }
+  }
+  ZEO_transporter2_tech = {
+
+    enable_equipments = {
+      transport_plane_equipment_2
+    }
+
+    research_cost = 0.5
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 8 }
+    }
+
+    categories = {
+      medium_air
+      transporter
+      air_equipment
+    }
+
+    ai_will_do = {
+      factor = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 100
+        date > 79.1.1
+      }
+    }
+  }
+  ms07_h_8_tech = {
+    enable_equipments = {
+      ms07_h_8_equipment
+    }
+    allow = {
+      always = no
+    }
+    research_cost = 1.0
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 8 }
+    }
+    dependencies = {
+      ms07_h_tech = 1
+    }
+    categories = {
+      air_mobilesuit
+      mobilesuit
+      zeonic_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  msm07_di_tech = {
+    enable_equipments = {
+      msm07_di1_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 8 }
+    }
+    dependencies = {
+      msm07_tech = 1
+    }
+    sub_technologies = {
+			msm07_di2_tech
+			msm07_di3_tech
+		}
+    categories = {
+      air_mobilearmor
+      mobilearmor
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  msm07_di2_tech = {
+    enable_equipments = {
+			msm07_di2_equipment
+		}
+		research_cost = 0.1
+    xp_research_type = air
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		categories = {
+      air_mobilearmor
+      mobilearmor
+		}
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+	}
+  msm07_di3_tech = {
+    enable_equipments = {
+			msm07_di3_equipment
+		}
+		research_cost = 0.1
+    xp_research_type = air
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		categories = {
+      air_mobilearmor
+      mobilearmor
+		}
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+	}
+  apsalus01_tech = {
+    enable_equipments = {
+		  apsalus01_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+    dependencies = {
+      max03_tech = 1
+      plan_apsalus_tech = 1
+    }
+    path = {
+      leads_to_tech = apsalus02_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+      air_mobilearmor
+      mobilearmor
+      apsalus
+		}
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+	}
+  apsalus02_tech = {
+    enable_equipments = {
+      apsalus02_equipment
+    }
+    research_cost = 0.2
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 10 }
+    }
+    path = {
+      leads_to_tech = apsalus03_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      air_mobilearmor
+      mobilearmor
+      apsalus
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  apsalus03_tech = {
+    enable_equipments = {
+      apsalus03_equipment
+    }
+    research_cost = 0.2
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 12 }
+    }
+    path = {
+      leads_to_tech = ma08_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      air_mobilearmor
+      mobilearmor
+      apsalus
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+        has_idea = colony_country
+      }
+      modifier = {
+        factor = 5
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+}

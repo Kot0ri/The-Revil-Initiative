@@ -1,0 +1,264 @@
+#	Example:
+#
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+#
+
+can_ROOT_get_wargoal_on_THIS = {
+	exists = yes
+	NOT = { is_in_faction_with = ROOT }
+	NOT = { is_subject_of = ROOT }
+}
+
+is_border_conflict_defender_vs_FROM = {
+	has_variable = ROOT.defender_state_vs_@FROM
+}
+
+has_not_initiated_border_incident_with_FROM = {
+	custom_trigger_tooltip = {
+		tooltip = not_initiated_border_incident_with_FROM
+		NOT = {
+			any_state = {
+				check_variable = { FROM.defender_state_vs_@PREV = id }
+			}
+		}
+	}
+}
+
+has_not_initiated_border_incident_with_ROOT = {
+	custom_trigger_tooltip = {
+		tooltip = not_initiated_border_incident_with_ROOT
+		NOT = {
+			any_state = {
+				check_variable = { ROOT.defender_state_vs_@PREV = id }
+			}
+		}
+	}
+}
+
+#State scope
+has_ROOT_at_least_1_div_in_current_state_scope = {
+	custom_trigger_tooltip = {
+		tooltip = at_least_one_division_in_state
+		ROOT = { divisions_in_state = { state = PREV size > 0 } }
+	}
+}
+
+#State scope
+is_controlled_by_ROOT_or_subject = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_subject
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+			}
+		}
+	}
+}
+
+#Country scope
+is_free_or_subject_of_root = {
+	OR = {
+		is_subject = no
+		is_subject_of = ROOT
+	}
+}
+
+#State scope
+is_controlled_by_ROOT_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			OR = {
+				tag = ROOT
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+}
+
+is_csa_state = {
+	OR = {
+		state = 366
+		state = 365
+		state = 367
+		state = 370
+		state = 362
+		state = 363
+		state = 364
+		state = 371
+		state = 375
+		state = 368
+		state = 372
+	}
+}
+
+has_naval_treaty_trigger = {
+}
+
+ai_air_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = naval_strike_tactics
+		has_tech = direct_ground_support
+		has_tech = low_echelon_support
+	}
+}
+
+ai_air_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = multialtitude_flying
+		has_tech = hunt_and_destroy
+		has_tech = operational_destruction
+	}
+}
+ai_air_doctrine_tier_3_trigger = {
+	OR = {
+		has_tech = flying_fortress
+		has_tech = naval_strike_torpedo_tactics
+		has_tech = infiltration_bombing
+	}
+}
+
+ai_land_doctrine_tier_1_trigger = {
+	OR = {
+		has_tech = transfer_of_command
+		has_tech = mobile_defence
+		has_tech = grand_assault
+		has_tech = defence_in_depth
+	}
+}
+
+ai_land_doctrine_tier_2_trigger = {
+	OR = {
+		has_tech = ms_battle
+		has_tech = sup_mechanized_offensive
+		has_tech = branch_interoperation
+		has_tech = infiltration_assault
+		has_tech = vast_offensives
+		has_tech = large_front_offensive
+	}
+}
+
+anti_submarine_strategy_required_trigger = {
+	OR = {
+		has_war = yes
+		any_enemy_country = {
+			has_navy_size = {
+				type = submarine
+				size > 30
+			}
+		}
+		convoy_threat > 0.3
+	}
+}
+
+enemy_has_equal_or_better_radar_tech_trigger = {
+	custom_trigger_tooltip = {
+		tooltip = enemy_has_equal_or_better_radar_tech_trigger_tt
+		if = {
+			limit = {
+				ROOT = {
+					has_tech = mpiws1
+					NOT = {
+						has_tech = mpiws2
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = mpiws1
+					has_tech = mpiws2
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_tech = mpiws2
+					NOT = {
+						has_tech = mpiws3
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = mpiws2
+					has_tech = mpiws3
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				ROOT = {
+					has_tech = mpiws3
+					NOT = {
+						has_tech = mpiws4
+					}
+				}
+			}
+			FROM = {
+				OR = {
+					has_tech = mpiws3
+					has_tech = mpiws4
+				}
+			}
+		}
+		#no more steps needed because end of research tree is reached
+	}
+}
+
+is_available_to_collaboration_government = { # occupied_countries.1 should be updated along with this
+	NOT = {
+		any_country_with_original_tag = {
+			original_tag_to_check = FROM
+			is_puppet_of = PREV # if already created one do not create another
+			has_autonomy_state = autonomy_collaboration_government
+		}
+	}
+}
+
+has_same_ideology = {
+	custom_trigger_tooltip = {
+		tooltip = has_same_ideology_tt
+		OR = {
+			AND = {
+				has_government = democratic
+				ROOT = { has_government = democratic }
+			}
+			AND = {
+				has_government = spacesupremacy
+				ROOT = { has_government = spacesupremacy }
+			}
+			AND = {
+				has_government = earthsupremacy
+				ROOT = { has_government = earthsupremacy }
+			}
+			AND = {
+				has_government = zeonism
+				ROOT = { has_government = zeonism }
+			}
+		}
+	}
+}
+
+has_war_with_non_exiled_country = {
+	custom_trigger_tooltip = {
+		tooltip = has_war_with_non_exiled_country_tt
+		has_war = yes
+		any_enemy_country = {
+			is_government_in_exile = no
+		}
+	}
+
+}

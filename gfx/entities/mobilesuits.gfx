@@ -1,0 +1,1357 @@
+objectTypes = {
+  # MS-14
+	pdxmesh = {
+		name = "ms14_mesh"
+		file = "gfx/models/units/mobilesuits/ms14.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms14_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms14_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms14_idle_sit_animation" }
+    animation = { id = "idle_saber" type = "ms14_idle_saber_animation" }
+		animation = { id = "move"	type = "ms14_walk_animation" }
+    animation = { id = "attack_brf" type = "ms14_attack_brf_animation" }
+    animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
+    animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
+    animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
+    animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
+    animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
+    animation = { id = "retreat" type = "ms14_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # MS-14 Char
+	pdxmesh = {
+		name = "ms14_char_mesh"
+		file = "gfx/models/units/mobilesuits/ms14.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms14_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms14_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms14_idle_sit_animation" }
+    animation = { id = "idle_saber" type = "ms14_idle_saber_animation" }
+		animation = { id = "move"	type = "ms14_walk_animation" }
+    animation = { id = "attack_brf" type = "ms14_attack_brf_animation" }
+    animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
+    animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
+    animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
+    animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
+    animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
+    animation = { id = "retreat" type = "ms14_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "MS_14_S_AM.dds"
+      texture_normal = "MS_14_S_NM.dds"
+      texture_specular = "MS_14_S_SP.dds"
+    }
+	}
+  # MS-14 Gato
+	pdxmesh = {
+		name = "ms14_gato_mesh"
+		file = "gfx/models/units/mobilesuits/ms14.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms14_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms14_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms14_idle_sit_animation" }
+    animation = { id = "idle_saber" type = "ms14_idle_saber_animation" }
+		animation = { id = "move"	type = "ms14_walk_animation" }
+    animation = { id = "attack_brf" type = "ms14_attack_brf_animation" }
+    animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
+    animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
+    animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
+    animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
+    animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
+    animation = { id = "retreat" type = "ms14_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "MS_14_GATO_AM.dds"
+      texture_normal = "MS_14_GATO_NM.dds"
+      texture_specular = "MS_14_GATO_SP.dds"
+    }
+	}
+  # MS-14 Herbert
+	pdxmesh = {
+		name = "ms14_herbert_mesh"
+		file = "gfx/models/units/mobilesuits/ms14.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms14_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms14_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms14_idle_sit_animation" }
+    animation = { id = "idle_saber" type = "ms14_idle_saber_animation" }
+		animation = { id = "move"	type = "ms14_walk_animation" }
+    animation = { id = "attack_brf" type = "ms14_attack_brf_animation" }
+    animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
+    animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
+    animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
+    animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
+    animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
+    animation = { id = "retreat" type = "ms14_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "MS_14_IGLOOHerbert_AM.dds"
+      texture_normal = "MS_14_IGLOOHerbert_NM.dds"
+      texture_specular = "MS_14_IGLOOHerbert_SP.dds"
+    }
+	}
+  # MS-14 EFF
+	pdxmesh = {
+		name = "ms14_eff_mesh"
+		file = "gfx/models/units/mobilesuits/ms14.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms14_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms14_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms14_idle_sit_animation" }
+    animation = { id = "idle_saber" type = "ms14_idle_saber_animation" }
+		animation = { id = "move"	type = "ms14_walk_animation" }
+    animation = { id = "attack_brf" type = "ms14_attack_brf_animation" }
+    animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
+    animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
+    animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
+    animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
+    animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
+    animation = { id = "retreat" type = "ms14_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "MS_14_EFF_AM.dds"
+      texture_normal = "MS_14_EFF_NM.dds"
+      texture_specular = "MS_14_EFF_SP.dds"
+    }
+	}
+  # MS-14 AEUG
+	pdxmesh = {
+		name = "ms14_aeug_mesh"
+		file = "gfx/models/units/mobilesuits/ms14.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms14_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms14_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms14_idle_sit_animation" }
+    animation = { id = "idle_saber" type = "ms14_idle_saber_animation" }
+		animation = { id = "move"	type = "ms14_walk_animation" }
+    animation = { id = "attack_brf" type = "ms14_attack_brf_animation" }
+    animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
+    animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
+    animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
+    animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
+    animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
+    animation = { id = "retreat" type = "ms14_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "MS_14_AEUG_AM.dds"
+      texture_normal = "MS_14_AEUG_NM.dds"
+      texture_specular = "MS_14_AEUG_SP.dds"
+    }
+	}
+  # MS-14 F
+	pdxmesh = {
+		name = "ms14_f_mesh"
+		file = "gfx/models/units/mobilesuits/ms14.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms14_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms14_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms14_idle_sit_animation" }
+    animation = { id = "idle_saber" type = "ms14_idle_saber_animation" }
+		animation = { id = "move"	type = "ms14_walk_animation" }
+    animation = { id = "attack_brf" type = "ms14_attack_brf_animation" }
+    animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
+    animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
+    animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
+    animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
+    animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
+    animation = { id = "retreat" type = "ms14_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "MS_14_F_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # MS-05 L Zaku Sniper
+	pdxmesh = {
+		name = "ms05_l_mesh"
+		file = "gfx/models/units/mobilesuits/ms05.mesh"
+		scale = 2
+		animation = { id = "idle_stand_sr" type = "ms05_idle_stand_sr_animation" }
+    animation = { id = "idle_stand_2_sr" type = "ms05_idle_stand_2_sr_animation" }
+    animation = { id = "idle_sit_sr" type = "ms05_idle_sit_sr_animation" }
+		animation = { id = "move_sr"	type = "ms05_walk_sr_animation" }
+    animation = { id = "attack_stand_sr" type = "ms05_attack_stand_sr_animation" }
+    animation = { id = "attack_stand_sr_2" type = "ms05_attack_stand_sr_2_animation" }
+    animation = { id = "attack_sit_sr" type = "ms05_attack_sit_sr_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_sr_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "Zaku_SNIPER_AM.dds"
+      texture_specular = "Zaku_SNIPER_SP.dds"
+    }
+	}
+  # EMS-10
+  pdxmesh = {
+    name = "ems10_mesh"
+    file = "gfx/models/units/mobilesuits/ems10.mesh"
+    scale = 2
+    animation = { id = "idle_stand_mg" type = "ems10_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ems10_idle_stand_2_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ems10_idle_stand_rpg_animation" }
+    animation = { id = "idle_sit_mg" type = "ems10_idle_sit_mg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ems10_idle_sit_rpg_animation" }
+    animation = { id = "move_mg"	type = "ems10_move_mg_animation" }
+    animation = { id = "move_rpg" type = "ems10_move_rpg_animation" }
+    animation = { id = "attack_heathawk" type = "ems10_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ems10_attack_mg_animation" }
+    animation = { id = "attack_rpg" type = "ems10_attack_rpg_animation" }
+    animation = { id = "attack_assault_mg" type = "ems10_attack_assault_mg_animation" }
+    animation = { id = "attack_assault_rpg" type = "ems10_attack_assault_rpg_animation" }
+    animation = { id = "defend_mg" type = "ems10_defend_mg_animation" }
+    animation = { id = "defend_rpg" type = "ems10_defend_rpg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # EMS-10 G
+  pdxmesh = {
+    name = "ems10_G_mesh"
+    file = "gfx/models/units/mobilesuits/ems10.mesh"
+    scale = 2
+    animation = { id = "idle_stand_mg" type = "ems10_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ems10_idle_stand_2_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ems10_idle_stand_rpg_animation" }
+    animation = { id = "idle_sit_mg" type = "ems10_idle_sit_mg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ems10_idle_sit_rpg_animation" }
+    animation = { id = "move_mg"	type = "ems10_move_mg_animation" }
+    animation = { id = "move_rpg" type = "ems10_move_rpg_animation" }
+    animation = { id = "attack_heathawk" type = "ems10_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ems10_attack_mg_animation" }
+    animation = { id = "attack_rpg" type = "ems10_attack_rpg_animation" }
+    animation = { id = "attack_assault_mg" type = "ems10_attack_assault_mg_animation" }
+    animation = { id = "attack_assault_rpg" type = "ems10_attack_assault_rpg_animation" }
+    animation = { id = "defend_mg" type = "ems10_defend_mg_animation" }
+    animation = { id = "defend_rpg" type = "ems10_defend_rpg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "EMS10_G_AM.dds"
+      texture_specular = "EMS10_G_SP.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # EMS-10 Igloo
+  pdxmesh = {
+    name = "ems10_igloo_mesh"
+    file = "gfx/models/units/mobilesuits/ems10.mesh"
+    scale = 2
+    animation = { id = "idle_stand_mg" type = "ems10_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ems10_idle_stand_2_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ems10_idle_stand_rpg_animation" }
+    animation = { id = "idle_sit_mg" type = "ems10_idle_sit_mg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ems10_idle_sit_rpg_animation" }
+    animation = { id = "move_mg"	type = "ems10_move_mg_animation" }
+    animation = { id = "move_rpg" type = "ems10_move_rpg_animation" }
+    animation = { id = "attack_heathawk" type = "ems10_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ems10_attack_mg_animation" }
+    animation = { id = "attack_rpg" type = "ems10_attack_rpg_animation" }
+    animation = { id = "attack_assault_mg" type = "ems10_attack_assault_mg_animation" }
+    animation = { id = "attack_assault_rpg" type = "ems10_attack_assault_rpg_animation" }
+    animation = { id = "defend_mg" type = "ems10_defend_mg_animation" }
+    animation = { id = "defend_rpg" type = "ems10_defend_rpg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "EMS10_igloo_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # EMS-04
+  pdxmesh = {
+    name = "ems10_4_mesh"
+    file = "gfx/models/units/mobilesuits/ems10.mesh"
+    scale = 2
+    animation = { id = "idle_stand_mg" type = "ems10_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ems10_idle_stand_2_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ems10_idle_stand_rpg_animation" }
+    animation = { id = "idle_sit_mg" type = "ems10_idle_sit_mg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ems10_idle_sit_rpg_animation" }
+    animation = { id = "move_mg"	type = "ems10_move_mg_animation" }
+    animation = { id = "move_rpg" type = "ems10_move_rpg_animation" }
+    animation = { id = "attack_heathawk" type = "ems10_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ems10_attack_mg_animation" }
+    animation = { id = "attack_rpg" type = "ems10_attack_rpg_animation" }
+    animation = { id = "attack_assault_mg" type = "ems10_attack_assault_mg_animation" }
+    animation = { id = "attack_assault_rpg" type = "ems10_attack_assault_rpg_animation" }
+    animation = { id = "defend_mg" type = "ems10_defend_mg_animation" }
+    animation = { id = "defend_rpg" type = "ems10_defend_rpg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "EMS10_4_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MA-08
+  pdxmesh = {
+    name = "ma08_0_mesh"
+    file = "gfx/models/units/mobilesuits/ma08.mesh"
+    scale = 1.5
+    animation = { id = "idle_stand" type = "ma08_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "ma08_idle_sit_animation" }
+    animation = { id = "move" type = "ma08_move_animation" }
+    animation = { id = "jump" type = "ma08_jump_animation" }
+    animation = { id = "beast_idle_stand" type = "ma08_beast_idle_stand_animation" }
+    animation = { id = "beast_idle_sit" type = "ma08_beast_idle_sit_animation" }
+    animation = { id = "beast_move" type = "ma08_beast_move_animation" }
+    animation = { id = "beast_attack_1" type = "ma08_beast_attack_1_animation" }
+    animation = { id = "attack_1" type = "ma08_attack_1_animation" }
+    animation = { id = "attack_jump" type = "ma08_attack_jump_animation" }
+    animation = { id = "defend" type = "ma08_defend_animation" }
+    animation = { id = "retreat" type = "ma08_retreat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MA-08 Haman
+  pdxmesh = {
+    name = "ma08_H_mesh"
+    file = "gfx/models/units/mobilesuits/ma08.mesh"
+    scale = 1.5
+    animation = { id = "idle_stand" type = "ma08_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "ma08_idle_sit_animation" }
+    animation = { id = "move" type = "ma08_move_animation" }
+    animation = { id = "jump" type = "ma08_jump_animation" }
+    animation = { id = "beast_idle_stand" type = "ma08_beast_idle_stand_animation" }
+    animation = { id = "beast_idle_sit" type = "ma08_beast_idle_sit_animation" }
+    animation = { id = "beast_move" type = "ma08_beast_move_animation" }
+    animation = { id = "beast_attack_1" type = "ma08_beast_attack_1_animation" }
+    animation = { id = "attack_1" type = "ma08_attack_1_animation" }
+    animation = { id = "attack_jump" type = "ma08_attack_jump_animation" }
+    animation = { id = "defend" type = "ma08_defend_animation" }
+    animation = { id = "retreat" type = "ma08_retreat_animation" }
+    meshsettings = {
+      texture_diffuse = "MA-08_H_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MA-08 Dozle
+  pdxmesh = {
+    name = "ma08_mesh"
+    file = "gfx/models/units/mobilesuits/ma08.mesh"
+    scale = 1.5
+    animation = { id = "idle_stand" type = "ma08_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "ma08_idle_sit_animation" }
+    animation = { id = "move" type = "ma08_move_animation" }
+    animation = { id = "jump" type = "ma08_jump_animation" }
+    animation = { id = "beast_idle_stand" type = "ma08_beast_idle_stand_animation" }
+    animation = { id = "beast_idle_sit" type = "ma08_beast_idle_sit_animation" }
+    animation = { id = "beast_move" type = "ma08_beast_move_animation" }
+    animation = { id = "beast_attack_1" type = "ma08_beast_attack_1_animation" }
+    animation = { id = "attack_1" type = "ma08_attack_1_animation" }
+    animation = { id = "attack_jump" type = "ma08_attack_jump_animation" }
+    animation = { id = "defend" type = "ma08_defend_animation" }
+    animation = { id = "retreat" type = "ma08_retreat_animation" }
+    meshsettings = {
+      texture_diffuse = "MA-08_D_AM.dds"
+      texture_normal = "MA-08_D_NM.dds"
+      texture_specular = "MA-08_D_SP.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MA-08 EFSF
+  pdxmesh = {
+    name = "ma08_efsf_mesh"
+    file = "gfx/models/units/mobilesuits/ma08.mesh"
+    scale = 1.5
+    animation = { id = "idle_stand" type = "ma08_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "ma08_idle_sit_animation" }
+    animation = { id = "move" type = "ma08_move_animation" }
+    animation = { id = "jump" type = "ma08_jump_animation" }
+    animation = { id = "beast_idle_stand" type = "ma08_beast_idle_stand_animation" }
+    animation = { id = "beast_idle_sit" type = "ma08_beast_idle_sit_animation" }
+    animation = { id = "beast_move" type = "ma08_beast_move_animation" }
+    animation = { id = "beast_attack_1" type = "ma08_beast_attack_1_animation" }
+    animation = { id = "attack_1" type = "ma08_attack_1_animation" }
+    animation = { id = "attack_jump" type = "ma08_attack_jump_animation" }
+    animation = { id = "defend" type = "ma08_defend_animation" }
+    animation = { id = "retreat" type = "ma08_retreat_animation" }
+    meshsettings = {
+      texture_diffuse = "MA-08_EFF_AM.dds"
+      texture_normal = "MA-08_EFF_NM.dds"
+      texture_specular = "MA-08_EFF_SP.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MA-08 EFSF2
+  pdxmesh = {
+    name = "ma08_efsf2_mesh"
+    file = "gfx/models/units/mobilesuits/ma08.mesh"
+    scale = 1.5
+    animation = { id = "idle_stand" type = "ma08_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "ma08_idle_sit_animation" }
+    animation = { id = "move" type = "ma08_move_animation" }
+    animation = { id = "jump" type = "ma08_jump_animation" }
+    animation = { id = "beast_idle_stand" type = "ma08_beast_idle_stand_animation" }
+    animation = { id = "beast_idle_sit" type = "ma08_beast_idle_sit_animation" }
+    animation = { id = "beast_move" type = "ma08_beast_move_animation" }
+    animation = { id = "beast_attack_1" type = "ma08_beast_attack_1_animation" }
+    animation = { id = "attack_1" type = "ma08_attack_1_animation" }
+    animation = { id = "attack_jump" type = "ma08_attack_jump_animation" }
+    animation = { id = "defend" type = "ma08_defend_animation" }
+    animation = { id = "retreat" type = "ma08_retreat_animation" }
+    meshsettings = {
+      texture_diffuse = "MA-08_EFF2_AM.dds"
+      texture_normal = "MA-08_EFF_NM.dds"
+      texture_specular = "MA-08_EFF_SP.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MS-05
+	pdxmesh = {
+		name = "ms05_mesh"
+		file = "gfx/models/units/mobilesuits/ms05.mesh"
+		scale = 2
+		animation = { id = "idle_stand_mg" type = "ms05_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ms05_idle_stand_2_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ms05_idle_stand_rpg_animation" }
+    animation = { id = "idle_sit_mg" type = "ms05_idle_sit_mg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ms05_idle_sit_rpg_animation" }
+		animation = { id = "move_mg"	type = "ms05_move_mg_animation" }
+    animation = { id = "move_rpg" type = "ms05_move_rpg_animation" }
+		animation = { id = "attack_heathawk" type = "ms05_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms05_attack_mg_animation" }
+    animation = { id = "attack_rpg" type = "ms05_attack_rpg_animation" }
+    animation = { id = "defend_mg" type = "ms05_defend_mg_animation" }
+    animation = { id = "defend_rpg" type = "ms05_defend_rpg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # EFS MS-05
+  pdxmesh = {
+		name = "EFS_ms05_mesh"
+		file = "gfx/models/units/mobilesuits/ms05.mesh"
+		scale = 2
+		animation = { id = "idle_stand_mg" type = "ms05_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ms05_idle_stand_2_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ms05_idle_stand_rpg_animation" }
+    animation = { id = "idle_sit_mg" type = "ms05_idle_sit_mg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ms05_idle_sit_rpg_animation" }
+		animation = { id = "move_mg"	type = "ms05_move_mg_animation" }
+    animation = { id = "move_rpg" type = "ms05_move_rpg_animation" }
+		animation = { id = "attack_heathawk" type = "ms05_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms05_attack_mg_animation" }
+    animation = { id = "attack_rpg" type = "ms05_attack_rpg_animation" }
+    animation = { id = "defend_mg" type = "ms05_defend_mg_animation" }
+    animation = { id = "defend_rpg" type = "ms05_defend_rpg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "ms05EFF_AM.dds"
+      texture_specular = "ms05EFF_Spec.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # MS-06
+  pdxmesh = {
+		name = "ms06_mesh"
+		file = "gfx/models/units/mobilesuits/ms06.mesh"
+		scale = 2
+		animation = { id = "idle_stand_mg" type = "ms05_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ms05_idle_stand_2_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ms05_idle_stand_rpg_animation" }
+    animation = { id = "idle_sit_mg" type = "ms05_idle_sit_mg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ms05_idle_sit_rpg_animation" }
+		animation = { id = "move_mg"	type = "ms05_move_mg_animation" }
+    animation = { id = "move_rpg" type = "ms05_move_rpg_animation" }
+		animation = { id = "attack_heathawk" type = "ms05_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms05_attack_mg_animation" }
+    animation = { id = "attack_rpg" type = "ms05_attack_rpg_animation" }
+    animation = { id = "attack_assault" type = "ms06_attack_assault_animation" }
+    animation = { id = "defend_mg" type = "ms06_defend_mg_animation" }
+    animation = { id = "defend_rpg" type = "ms06_defend_rpg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # EFS MS-06
+  pdxmesh = {
+		name = "EFS_ms06_mesh"
+		file = "gfx/models/units/mobilesuits/ms06.mesh"
+		scale = 2
+		animation = { id = "idle_stand_mg" type = "ms05_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ms05_idle_stand_2_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ms05_idle_stand_rpg_animation" }
+    animation = { id = "idle_sit_mg" type = "ms05_idle_sit_mg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ms05_idle_sit_rpg_animation" }
+		animation = { id = "move_mg"	type = "ms05_move_mg_animation" }
+    animation = { id = "move_rpg" type = "ms05_move_rpg_animation" }
+		animation = { id = "attack_heathawk" type = "ms05_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms05_attack_mg_animation" }
+    animation = { id = "attack_rpg" type = "ms05_attack_rpg_animation" }
+    animation = { id = "attack_assault" type = "ms06_attack_assault_animation" }
+    animation = { id = "defend_mg" type = "ms06_defend_mg_animation" }
+    animation = { id = "defend_rpg" type = "ms06_defend_rpg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "ms06_EFF_AM.dds"
+      texture_specular = "ms06_EFF_Spec.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # MS-06 S
+  pdxmesh = {
+		name = "ms06_s_mesh"
+		file = "gfx/models/units/mobilesuits/ms06.mesh"
+		scale = 2
+    animation = { id = "idle_stand_mg" type = "ms05_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ms05_idle_stand_2_mg_animation" }
+    animation = { id = "idle_sit_mg" type = "ms05_idle_sit_mg_animation" }
+		animation = { id = "move_mg"	type = "ms05_move_mg_animation" }
+		animation = { id = "attack_heathawk" type = "ms05_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms05_attack_mg_animation" }
+    animation = { id = "attack_bazooka" type = "ms06_attack_bazooka_animation" }
+    animation = { id = "attack_assault" type = "ms06_attack_assault_animation" }
+    animation = { id = "attack_jump" type = "ms06_attack_jump_animation" }
+    animation = { id = "defend_mg" type = "ms06_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # ZEO MS-06 S Char
+  pdxmesh = {
+		name = "ms06_s_char_mesh"
+		file = "gfx/models/units/mobilesuits/ms06.mesh"
+		scale = 2
+    animation = { id = "idle_stand_mg" type = "ms05_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ms05_idle_stand_2_mg_animation" }
+    animation = { id = "idle_sit_mg" type = "ms05_idle_sit_mg_animation" }
+		animation = { id = "move_mg"	type = "ms05_move_mg_animation" }
+		animation = { id = "attack_heathawk" type = "ms05_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms05_attack_mg_animation" }
+    animation = { id = "attack_bazooka" type = "ms06_attack_bazooka_animation" }
+    animation = { id = "attack_assault" type = "ms06_attack_assault_animation" }
+    animation = { id = "attack_jump" type = "ms06_attack_jump_animation" }
+    animation = { id = "defend_mg" type = "ms06_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "ms06_Char_AM_.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # EFS MS-06 S
+  pdxmesh = {
+		name = "EFS_ms06_s_mesh"
+		file = "gfx/models/units/mobilesuits/ms06.mesh"
+		scale = 2
+    animation = { id = "idle_stand_mg" type = "ms05_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ms05_idle_stand_2_mg_animation" }
+    animation = { id = "idle_sit_mg" type = "ms05_idle_sit_mg_animation" }
+		animation = { id = "move_mg"	type = "ms05_move_mg_animation" }
+		animation = { id = "attack_heathawk" type = "ms05_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms05_attack_mg_animation" }
+    animation = { id = "attack_bazooka" type = "ms06_attack_bazooka_animation" }
+    animation = { id = "attack_assault" type = "ms06_attack_assault_animation" }
+    animation = { id = "attack_jump" type = "ms06_attack_jump_animation" }
+    animation = { id = "defend_mg" type = "ms06_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "ms06_EFF_AM.dds"
+      texture_specular = "ms06_EFF_Spec.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # MS-07
+  pdxmesh = {
+		name = "ms07_mesh"
+		file = "gfx/models/units/mobilesuits/ms07.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms07_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms07_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms07_idle_sit_animation" }
+		animation = { id = "move"	type = "ms07_move_animation" }
+		animation = { id = "attack_sword" type = "ms07_attack_sword_animation" }
+    animation = { id = "attack_rod" type = "ms07_attack_rod_animation" }
+    animation = { id = "attack_rod_2" type = "ms07_attack_rod_2_animation" }
+    animation = { id = "attack_assult" type = "ms07_attack_assult_animation" }
+    animation = { id = "defend" type = "ms07_defend_animation" }
+    animation = { id = "retreat" type = "ms07_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MS-07 D
+  pdxmesh = {
+		name = "ms07_d_mesh"
+		file = "gfx/models/units/mobilesuits/ms07.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms07_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms07_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms07_idle_sit_animation" }
+		animation = { id = "move"	type = "ms07_move_animation" }
+		animation = { id = "attack_sword" type = "ms07_attack_sword_animation" }
+    animation = { id = "attack_rod" type = "ms07_attack_rod_animation" }
+    animation = { id = "attack_rod_2" type = "ms07_attack_rod_2_animation" }
+    animation = { id = "attack_assult" type = "ms07_attack_assult_animation" }
+    animation = { id = "defend" type = "ms07_defend_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "MS07_D_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MS-07 K
+  pdxmesh = {
+		name = "ms07_k_mesh"
+		file = "gfx/models/units/mobilesuits/ms07.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms07_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms07_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms07_idle_sit_animation" }
+		animation = { id = "move"	type = "ms07_move_animation" }
+		animation = { id = "attack_sword" type = "ms07_attack_sword_animation" }
+    animation = { id = "attack_rod" type = "ms07_attack_rod_animation" }
+    animation = { id = "attack_rod_2" type = "ms07_attack_rod_2_animation" }
+    animation = { id = "attack_assult" type = "ms07_attack_assult_animation" }
+    animation = { id = "defend" type = "ms07_defend_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "MS07_K_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MS-07 M
+  pdxmesh = {
+		name = "ms07_m_mesh"
+		file = "gfx/models/units/mobilesuits/ms07.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms07_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms07_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms07_idle_sit_animation" }
+		animation = { id = "move"	type = "ms07_move_animation" }
+		animation = { id = "attack_sword" type = "ms07_attack_sword_animation" }
+    animation = { id = "attack_rod" type = "ms07_attack_rod_animation" }
+    animation = { id = "attack_rod_2" type = "ms07_attack_rod_2_animation" }
+    animation = { id = "attack_assult" type = "ms07_attack_assult_animation" }
+    animation = { id = "defend" type = "ms07_defend_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "MS07_M_AM.dds"
+      texture_normal = "MS07_M_NM.dds"
+      texture_specular = "MS07_M_SP.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MS-07 EFSF
+  pdxmesh = {
+		name = "ms07_eff_mesh"
+		file = "gfx/models/units/mobilesuits/ms07.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms07_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "ms07_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "ms07_idle_sit_animation" }
+		animation = { id = "move"	type = "ms07_move_animation" }
+		animation = { id = "attack_sword" type = "ms07_attack_sword_animation" }
+    animation = { id = "attack_rod" type = "ms07_attack_rod_animation" }
+    animation = { id = "attack_rod_2" type = "ms07_attack_rod_2_animation" }
+    animation = { id = "attack_assult" type = "ms07_attack_assult_animation" }
+    animation = { id = "defend" type = "ms07_defend_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "MS07_EFF_AM.dds"
+      texture_normal = "MS07_EFF_NM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # MS-09
+  pdxmesh = {
+		name = "ms09_mesh"
+		file = "gfx/models/units/mobilesuits/ms09.mesh"
+		scale = 2
+    animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
+    animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
+    animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
+    animation = { id = "attack_heatsarver_rpg" type = "ms09_attack_heatsarver_rpg_animation" }
+    animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
+    animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
+    animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
+    animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms09_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # MS-09 Char
+  pdxmesh = {
+		name = "ms09_char_mesh"
+		file = "gfx/models/units/mobilesuits/ms09.mesh"
+		scale = 2
+    animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
+    animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
+    animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
+    animation = { id = "attack_heatsarver_rpg" type = "ms09_attack_heatsarver_rpg_animation" }
+    animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
+    animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
+    animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
+    animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms09_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms09_Char_diffuse_.dds"
+    }
+	}
+  # MS-09 Gato
+  pdxmesh = {
+		name = "ms09_gato_mesh"
+		file = "gfx/models/units/mobilesuits/ms09.mesh"
+		scale = 2
+    animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
+    animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
+    animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
+    animation = { id = "attack_heatsarver_rpg" type = "ms09_attack_heatsarver_rpg_animation" }
+    animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
+    animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
+    animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
+    animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms09_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms09_Gato_diffuse_.dds"
+    }
+	}
+  # MS-09 Ramba
+  pdxmesh = {
+		name = "ms09_ramba_mesh"
+		file = "gfx/models/units/mobilesuits/ms09.mesh"
+		scale = 2
+    animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
+    animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
+    animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
+    animation = { id = "attack_heatsarver_rpg" type = "ms09_attack_heatsarver_rpg_animation" }
+    animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
+    animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
+    animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
+    animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms09_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms09_Ram_diffuse.dds"
+    }
+	}
+  # EFS MS-09
+  pdxmesh = {
+		name = "efs_ms09_mesh"
+		file = "gfx/models/units/mobilesuits/ms09.mesh"
+		scale = 2
+    animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
+    animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
+    animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
+    animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
+    animation = { id = "attack_heatsarver_rpg" type = "ms09_attack_heatsarver_rpg_animation" }
+    animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
+    animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
+    animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
+    animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms09_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms09_AEUG_diffuse.dds"
+    }
+	}
+  # RGM-79G
+  pdxmesh = {
+    name = "rgm79g_mesh"
+    file = "gfx/models/units/mobilesuits/rgm79g.mesh"
+    scale = 2
+    animation = { id = "idle_stand" type = "rgm79g_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rgm79g_idle_stand_2_animation" }
+    animation = { id = "idle_stand_rpg" type = "rgm79g_idle_stand_rpg_animation" }
+    animation = { id = "idle_sit" type = "rgm79g_idle_sit_animation" }
+    animation = { id = "idle_sit_rpg" type = "rgm79g_idle_sit_rpg_animation" }
+    animation = { id = "move"	type = "rgm79g_move_animation" }
+    animation = { id = "move_rpg"	type = "rgm79g_move_rpg_animation" }
+    animation = { id = "attack_beamsord" type = "rgm79g_attack_beamsord_animation" }
+    animation = { id = "attack_beamsord_rpg" type = "rgm79g_attack_beamsord_rpg_animation" }
+    animation = { id = "attack_mg" type = "rgm79g_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rgm79g_attack_brf_animation" }
+    animation = { id = "attack_rpg" type = "rgm79g_attack_rpg_animation" }
+    animation = { id = "defend_mg" type = "rgm79g_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rgm79g_defend_brf_animation" }
+    animation = { id = "defend_rpg" type = "rgm79g_defend_rpg_animation" }
+    animation = { id = "retreat" type = "rgm79g_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # RGM-79 SC
+  pdxmesh = {
+    name = "rgm79_sc_mesh"
+    file = "gfx/models/units/mobilesuits/rgm79_sc.mesh"
+    scale = 2
+    animation = { id = "idle_stand" type = "rgm79g_idle_stand_sr_animation" }
+    animation = { id = "idle_sit" type = "rgm79g_idle_sit_sr_animation" }
+    animation = { id = "move"	type = "rgm79g_move_sr_animation" }
+    animation = { id = "attack" type = "rgm79g_attack_sr_animation" }
+    animation = { id = "attack_2" type = "rgm79g_attack_sr_2_animation" }
+    animation = { id = "defend" type = "rgm79g_attack_sr_animation" }
+    animation = { id = "retreat" type = "rgm79g_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # RX-79
+  pdxmesh = {
+    name = "rx79_mesh"
+    file = "gfx/models/units/mobilesuits/rx79.mesh"
+    scale = 2
+    animation = { id = "idle_stand" type = "rx79_idle_stand_animation" }
+    animation = { id = "idle_stand_rpg" type = "rx79_idle_stand_rpg_animation" }
+    animation = { id = "idle_stand_2" type = "rx79_idle_stand_2_animation" }
+    animation = { id = "idle_stand_2_rpg" type = "rx79_idle_stand_2_rpg_animation" }
+    animation = { id = "idle_sit" type = "rx79_idle_sit_animation" }
+    animation = { id = "idle_sit_rpg" type = "rx79_idle_sit_rpg_animation" }
+    animation = { id = "move"	type = "rx79_move_animation" }
+    animation = { id = "move_rpg"	type = "rx79_move_rpg_animation" }
+    animation = { id = "attack_beamsord" type = "rx79_attack_beamsord_animation" }
+    animation = { id = "attack_beamsord_rpg" type = "rx79_attack_beamsord_rpg_animation" }
+    animation = { id = "attack_mg" type = "rx79_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rx79_attack_brf_animation" }
+    animation = { id = "attack_rpg" type = "rx79_attack_rpg_animation" }
+    animation = { id = "attack_vulcan" type = "rx79_attack_vulcan_animation" }
+    animation = { id = "attack_vulcan_rpg" type = "rx79_attack_vulcan_rpg_animation" }
+    animation = { id = "defend_mg" type = "rx79_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rx79_defend_brf_animation" }
+    animation = { id = "defend_rpg" type = "rx79_defend_rpg_animation" }
+    animation = { id = "retreat" type = "rx79_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # ZEO RX-79
+  pdxmesh = {
+    name = "zeo_rx79_mesh"
+    file = "gfx/models/units/mobilesuits/rx79.mesh"
+    scale = 2
+    animation = { id = "idle_stand" type = "rx79_idle_stand_animation" }
+    animation = { id = "idle_stand_rpg" type = "rx79_idle_stand_rpg_animation" }
+    animation = { id = "idle_stand_2" type = "rx79_idle_stand_2_animation" }
+    animation = { id = "idle_stand_2_rpg" type = "rx79_idle_stand_2_rpg_animation" }
+    animation = { id = "idle_sit" type = "rx79_idle_sit_animation" }
+    animation = { id = "idle_sit_rpg" type = "rx79_idle_sit_rpg_animation" }
+    animation = { id = "move"	type = "rx79_move_animation" }
+    animation = { id = "move_rpg"	type = "rx79_move_rpg_animation" }
+    animation = { id = "attack_beamsord" type = "rx79_attack_beamsord_animation" }
+    animation = { id = "attack_beamsord_rpg" type = "rx79_attack_beamsord_rpg_animation" }
+    animation = { id = "attack_mg" type = "rx79_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rx79_attack_brf_animation" }
+    animation = { id = "attack_rpg" type = "rx79_attack_rpg_animation" }
+    animation = { id = "attack_vulcan" type = "rx79_attack_vulcan_animation" }
+    animation = { id = "attack_vulcan_rpg" type = "rx79_attack_vulcan_rpg_animation" }
+    animation = { id = "defend_mg" type = "rx79_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rx79_defend_brf_animation" }
+    animation = { id = "defend_rpg" type = "rx79_defend_rpg_animation" }
+    animation = { id = "retreat" type = "rx79_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RX-79_Z_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # RX-79 GM Head
+  pdxmesh = {
+    name = "rx79_gmhead_mesh"
+    file = "gfx/models/units/mobilesuits/rx79_gmhead.mesh"
+    scale = 2
+    animation = { id = "idle_stand" type = "rx79_idle_stand_animation" }
+    animation = { id = "idle_stand_rpg" type = "rx79_idle_stand_rpg_animation" }
+    animation = { id = "idle_stand_2" type = "rx79_idle_stand_2_animation" }
+    animation = { id = "idle_stand_2_rpg" type = "rx79_idle_stand_2_rpg_animation" }
+    animation = { id = "idle_sit" type = "rx79_idle_sit_animation" }
+    animation = { id = "idle_sit_rpg" type = "rx79_idle_sit_rpg_animation" }
+    animation = { id = "move"	type = "rx79_move_animation" }
+    animation = { id = "move_rpg"	type = "rx79_move_rpg_animation" }
+    animation = { id = "attack_beamsord" type = "rx79_attack_beamsord_animation" }
+    animation = { id = "attack_beamsord_rpg" type = "rx79_attack_beamsord_rpg_animation" }
+    animation = { id = "attack_mg" type = "rx79_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rx79_attack_brf_animation" }
+    animation = { id = "attack_rpg" type = "rx79_attack_rpg_animation" }
+    animation = { id = "attack_vulcan" type = "rx79_attack_vulcan_animation" }
+    animation = { id = "attack_vulcan_rpg" type = "rx79_attack_vulcan_rpg_animation" }
+    animation = { id = "defend_mg" type = "rx79_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rx79_defend_brf_animation" }
+    animation = { id = "defend_rpg" type = "rx79_defend_rpg_animation" }
+    animation = { id = "retreat" type = "rx79_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # RGM-79
+	pdxmesh = {
+		name = "rgm79_mesh"
+		file = "gfx/models/units/mobilesuits/rgm79.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgm79_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rgm79_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rgm79_idle_sit_animation" }
+		animation = { id = "move"	type = "rgm79_move_animation" }
+    animation = { id = "attack_beamsord" type = "rgm79_attack_beamsord_animation" }
+		animation = { id = "attack_mg" type = "rgm79_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rgm79_attack_brf_animation" }
+    animation = { id = "attack_vulcan" type = "rgm79_attack_vulcan_animation" }
+    animation = { id = "defend_mg" type = "rgm79_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rgm79_defend_brf_animation" }
+    animation = { id = "retreat" type = "rgm79_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RGM-79 C
+	pdxmesh = {
+		name = "rgm79_c_mesh"
+		file = "gfx/models/units/mobilesuits/rgm79c.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgm79c_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rgm79c_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rgm79c_idle_sit_animation" }
+		animation = { id = "move"	type = "rgm79c_move_animation" }
+    animation = { id = "attack_assault_mg" type = "rgm79c_attack_assault_mg_animation" }
+    animation = { id = "attack_assault_brf" type = "rgm79c_attack_assault_brf_animation" }
+    animation = { id = "attack_beamsord" type = "rgm79c_attack_beamsord_animation" }
+		animation = { id = "attack_mg" type = "rgm79c_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rgm79c_attack_brf_animation" }
+    animation = { id = "attack_vulcan" type = "rgm79c_attack_vulcan_animation" }
+    animation = { id = "defend_mg" type = "rgm79c_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rgm79c_defend_brf_animation" }
+    animation = { id = "retreat" type = "rgm79c_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RGM-79 C AEUG
+	pdxmesh = {
+		name = "rgm79_c_aeug_mesh"
+		file = "gfx/models/units/mobilesuits/rgm79c.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgm79c_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rgm79c_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rgm79c_idle_sit_animation" }
+		animation = { id = "move"	type = "rgm79c_move_animation" }
+    animation = { id = "attack_assault_mg" type = "rgm79c_attack_assault_mg_animation" }
+    animation = { id = "attack_assault_brf" type = "rgm79c_attack_assault_brf_animation" }
+    animation = { id = "attack_beamsord" type = "rgm79c_attack_beamsord_animation" }
+		animation = { id = "attack_mg" type = "rgm79c_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rgm79c_attack_brf_animation" }
+    animation = { id = "attack_vulcan" type = "rgm79c_attack_vulcan_animation" }
+    animation = { id = "defend_mg" type = "rgm79c_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rgm79c_defend_brf_animation" }
+    animation = { id = "retreat" type = "rgm79c_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RGM79C_AEUG_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RGM-79 C Titans
+	pdxmesh = {
+		name = "rgm79_c_tit_mesh"
+		file = "gfx/models/units/mobilesuits/rgm79c.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgm79c_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rgm79c_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rgm79c_idle_sit_animation" }
+		animation = { id = "move"	type = "rgm79c_move_animation" }
+    animation = { id = "attack_assault_mg" type = "rgm79c_attack_assault_mg_animation" }
+    animation = { id = "attack_assault_brf" type = "rgm79c_attack_assault_brf_animation" }
+    animation = { id = "attack_beamsord" type = "rgm79c_attack_beamsord_animation" }
+		animation = { id = "attack_mg" type = "rgm79c_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rgm79c_attack_brf_animation" }
+    animation = { id = "attack_vulcan" type = "rgm79c_attack_vulcan_animation" }
+    animation = { id = "defend_mg" type = "rgm79c_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rgm79c_defend_brf_animation" }
+    animation = { id = "retreat" type = "rgm79c_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RGM79C_TTT_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RGM-79 C Space
+	pdxmesh = {
+		name = "rgm79_c_space_mesh"
+		file = "gfx/models/units/mobilesuits/rgm79c.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgm79c_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rgm79c_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rgm79c_idle_sit_animation" }
+		animation = { id = "move"	type = "rgm79c_move_animation" }
+    animation = { id = "attack_assault_mg" type = "rgm79c_attack_assault_mg_animation" }
+    animation = { id = "attack_assault_brf" type = "rgm79c_attack_assault_brf_animation" }
+    animation = { id = "attack_beamsord" type = "rgm79c_attack_beamsord_animation" }
+		animation = { id = "attack_mg" type = "rgm79c_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rgm79c_attack_brf_animation" }
+    animation = { id = "attack_vulcan" type = "rgm79c_attack_vulcan_animation" }
+    animation = { id = "defend_mg" type = "rgm79c_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rgm79c_defend_brf_animation" }
+    animation = { id = "retreat" type = "rgm79c_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RGM79C_SPACE_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RGM-79 C ZEON
+	pdxmesh = {
+		name = "rgm79_c_zeon_mesh"
+		file = "gfx/models/units/mobilesuits/rgm79c.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgm79c_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rgm79c_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rgm79c_idle_sit_animation" }
+		animation = { id = "move"	type = "rgm79c_move_animation" }
+    animation = { id = "attack_assault_mg" type = "rgm79c_attack_assault_mg_animation" }
+    animation = { id = "attack_assault_brf" type = "rgm79c_attack_assault_brf_animation" }
+    animation = { id = "attack_beamsord" type = "rgm79c_attack_beamsord_animation" }
+		animation = { id = "attack_mg" type = "rgm79c_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rgm79c_attack_brf_animation" }
+    animation = { id = "attack_vulcan" type = "rgm79c_attack_vulcan_animation" }
+    animation = { id = "defend_mg" type = "rgm79c_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rgm79c_defend_brf_animation" }
+    animation = { id = "retreat" type = "rgm79c_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RGM79C_ZEON_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RGM-79 R
+  pdxmesh = {
+		name = "rgm79_r_mesh"
+		file = "gfx/models/units/mobilesuits/rgm79_r.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgm79_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rgm79_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rgm79_idle_sit_animation" }
+		animation = { id = "move"	type = "rgm79_move_animation" }
+    animation = { id = "attack_beamsord" type = "rgm79_attack_beamsord_animation" }
+		animation = { id = "attack_mg" type = "rgm79_attack_mg_animation" }
+    animation = { id = "attack_brf" type = "rgm79_attack_brf_animation" }
+    animation = { id = "attack_vulcan" type = "rgm79_attack_vulcan_animation" }
+    animation = { id = "defend_mg" type = "rgm79_defend_mg_animation" }
+    animation = { id = "defend_brf" type = "rgm79_defend_brf_animation" }
+    animation = { id = "retreat" type = "rgm79_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RGC-80
+  pdxmesh = {
+		name = "rgc80_mesh"
+		file = "gfx/models/units/mobilesuits/rgc80.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgc80_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "rgc80_idle_sit_animation" }
+		animation = { id = "move"	type = "rgc80_move_animation" }
+		animation = { id = "attack_cannon" type = "rgc80_attack_cannon_animation" }
+    animation = { id = "attack_vulcan" type = "rgc80_attack_vulcan_animation" }
+    animation = { id = "defend" type = "rgc80_defend_animation" }
+    animation = { id = "retreat" type = "rgc80_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RGC-80 WD
+  pdxmesh = {
+		name = "rgc80_wd_mesh"
+		file = "gfx/models/units/mobilesuits/rgc80_wd.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgc80_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "rgc80_idle_sit_animation" }
+		animation = { id = "move"	type = "rgc80_move_animation" }
+		animation = { id = "attack_cannon" type = "rgc80_attack_cannon_animation" }
+    animation = { id = "attack_vulcan" type = "rgc80_attack_vulcan_animation" }
+    animation = { id = "defend" type = "rgc80_defend_animation" }
+    animation = { id = "retreat" type = "rgc80_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RGC-80 Origin
+  pdxmesh = {
+		name = "rgc80_ori_mesh"
+		file = "gfx/models/units/mobilesuits/rgc80_ori.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rgc80_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "rgc80_idle_sit_animation" }
+		animation = { id = "move"	type = "rgc80_move_animation" }
+		animation = { id = "attack_cannon" type = "rgc80_attack_cannon_animation" }
+    animation = { id = "attack_vulcan" type = "rgc80_attack_vulcan_animation" }
+    animation = { id = "defend" type = "rgc80_defend_animation" }
+    animation = { id = "retreat" type = "rgc80_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RX-75
+  pdxmesh = {
+		name = "rx75_mesh"
+		file = "gfx/models/units/mobilesuits/rx75.mesh"
+		scale = 2.0
+    animation = { id = "idle" type = "rx75_idle_animation" }
+    animation = { id = "idle-2" type = "rx75_idle-2_animation" }
+    animation = { id = "move" type = "rx75_move_animation" }
+    animation = { id = "retreat" type = "rx75_retreat_animation" }
+    animation = { id = "attack" type = "rx75_attack_animation" }
+    animation = { id = "attack-2" type = "rx75_attack-2_animation" }
+    animation = { id = "defend" type = "rx75_defend_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RX-75 Real
+  pdxmesh = {
+		name = "rx75_0_mesh"
+		file = "gfx/models/units/mobilesuits/rx75.mesh"
+		scale = 2.0
+    animation = { id = "idle" type = "rx75_idle_animation" }
+    animation = { id = "idle-2" type = "rx75_idle-2_animation" }
+    animation = { id = "move" type = "rx75_move_animation" }
+    animation = { id = "retreat" type = "rx75_retreat_animation" }
+    animation = { id = "attack" type = "rx75_attack_animation" }
+    animation = { id = "attack-2" type = "rx75_attack-2_animation" }
+    animation = { id = "defend" type = "rx75_defend_animation" }
+    meshsettings = {
+      texture_diffuse = "RX-75_RC_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RX-75 Zeon
+  pdxmesh = {
+		name = "ZEO_rx75_mesh"
+		file = "gfx/models/units/mobilesuits/rx75.mesh"
+		scale = 2.0
+    animation = { id = "idle" type = "rx75_idle_animation" }
+    animation = { id = "idle-2" type = "rx75_idle-2_animation" }
+    animation = { id = "move" type = "rx75_move_animation" }
+    animation = { id = "retreat" type = "rx75_retreat_animation" }
+    animation = { id = "attack" type = "rx75_attack_animation" }
+    animation = { id = "attack-2" type = "rx75_attack-2_animation" }
+    animation = { id = "defend" type = "rx75_defend_animation" }
+    meshsettings = {
+      texture_diffuse = "RX-75_Z_AM.dds"
+      texture_normal = "RX-75_Z_NM.dds"
+      texture_specular = "RX-75_Z_SP.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RX-78-2
+  pdxmesh = {
+		name = "EFS_rx78_0_mesh"
+		file = "gfx/models/units/mobilesuits/rx78.mesh"
+		scale = 2
+    animation = { id = "idle_stand" type = "rx78_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rx78_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rx78_idle_sit_animation" }
+		animation = { id = "move"	type = "rx78_move_animation" }
+    animation = { id = "attack_brf" type = "rx78_attack_brf_animation" }
+    animation = { id = "attack_assault" type = "rx78_attack_assault_animation" }
+    animation = { id = "attack_bazooka" type = "rx78_attack_bazooka_animation" }
+    animation = { id = "attack_beamsword" type = "rx78_attack_beamsword_2_animation" }
+    animation = { id = "attack_vulcan" type = "rx78_attack_vulcan_animation" }
+    animation = { id = "attack_jump" type = "rx78_attack_jump_animation" }
+    animation = { id = "defend" type = "rx78_defend_animation" }
+    animation = { id = "retreat" type = "rx78_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RX-78-3
+  pdxmesh = {
+		name = "rx78_0_mesh"
+		file = "gfx/models/units/mobilesuits/rx78.mesh"
+		scale = 2
+    animation = { id = "idle_stand" type = "rx78_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rx78_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rx78_idle_sit_animation" }
+		animation = { id = "move"	type = "rx78_move_animation" }
+    animation = { id = "attack_brf" type = "rx78_attack_brf_animation" }
+    animation = { id = "attack_assault" type = "rx78_attack_assault_animation" }
+    animation = { id = "attack_bazooka" type = "rx78_attack_bazooka_animation" }
+    animation = { id = "attack_beamsword" type = "rx78_attack_beamsword_2_animation" }
+    animation = { id = "attack_vulcan" type = "rx78_attack_vulcan_animation" }
+    animation = { id = "attack_jump" type = "rx78_attack_jump_animation" }
+    animation = { id = "defend" type = "rx78_defend_animation" }
+    animation = { id = "retreat" type = "rx78_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RX783AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RX-78-1
+  pdxmesh = {
+		name = "rx78_mesh"
+		file = "gfx/models/units/mobilesuits/rx78.mesh"
+		scale = 2
+    animation = { id = "idle_stand" type = "rx78_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rx78_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rx78_idle_sit_animation" }
+		animation = { id = "move"	type = "rx78_move_animation" }
+    animation = { id = "attack_brf" type = "rx78_attack_brf_animation" }
+    animation = { id = "attack_assault" type = "rx78_attack_assault_animation" }
+    animation = { id = "attack_bazooka" type = "rx78_attack_bazooka_animation" }
+    animation = { id = "attack_beamsword" type = "rx78_attack_beamsword_2_animation" }
+    animation = { id = "attack_vulcan" type = "rx78_attack_vulcan_animation" }
+    animation = { id = "attack_jump" type = "rx78_attack_jump_animation" }
+    animation = { id = "defend" type = "rx78_defend_animation" }
+    animation = { id = "retreat" type = "rx78_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RX781AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # TIT RX-78
+  pdxmesh = {
+		name = "TIT_rx78_mesh"
+		file = "gfx/models/units/mobilesuits/rx78.mesh"
+		scale = 2
+    animation = { id = "idle_stand" type = "rx78_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rx78_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rx78_idle_sit_animation" }
+		animation = { id = "move"	type = "rx78_move_animation" }
+    animation = { id = "attack_brf" type = "rx78_attack_brf_animation" }
+    animation = { id = "attack_assault" type = "rx78_attack_assault_animation" }
+    animation = { id = "attack_bazooka" type = "rx78_attack_bazooka_animation" }
+    animation = { id = "attack_beamsword" type = "rx78_attack_beamsword_2_animation" }
+    animation = { id = "attack_vulcan" type = "rx78_attack_vulcan_animation" }
+    animation = { id = "attack_jump" type = "rx78_attack_jump_animation" }
+    animation = { id = "defend" type = "rx78_defend_animation" }
+    animation = { id = "retreat" type = "rx78_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RX782TAM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # ZEO RX-78
+  pdxmesh = {
+		name = "ZEO_rx78_mesh"
+		file = "gfx/models/units/mobilesuits/rx78.mesh"
+		scale = 2
+    animation = { id = "idle_stand" type = "rx78_idle_stand_zeo_animation" }
+    animation = { id = "idle_stand_2" type = "rx78_idle_stand_2_zeo_animation" }
+    animation = { id = "idle_sit" type = "rx78_idle_sit_zeo_animation" }
+		animation = { id = "move"	type = "rx78_move_zeo_animation" }
+    animation = { id = "attack_brf" type = "rx78_attack_brf_zeo_animation" }
+    animation = { id = "attack_assault" type = "rx78_attack_assault_zeo_animation" }
+    animation = { id = "attack_bazooka" type = "rx78_attack_bazooka_animation" }
+    animation = { id = "attack_beamsword" type = "rx78_attack_beamsword_2_zeo_animation" }
+    animation = { id = "attack_vulcan" type = "rx78_attack_vulcan_zeo_animation" }
+    animation = { id = "attack_jump" type = "rx78_attack_jump_zeo_animation" }
+    animation = { id = "defend" type = "rx78_defend_zeo_animation" }
+    animation = { id = "retreat" type = "rx78_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RX782Z_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # ZEO RX-78 Char
+  pdxmesh = {
+		name = "ZEO_rx78_0_mesh"
+		file = "gfx/models/units/mobilesuits/rx78.mesh"
+		scale = 2
+    animation = { id = "idle_stand" type = "rx78_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rx78_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rx78_idle_sit_animation" }
+		animation = { id = "move"	type = "rx78_move_animation" }
+    animation = { id = "attack_brf" type = "rx78_attack_brf_animation" }
+    animation = { id = "attack_assault" type = "rx78_attack_assault_animation" }
+    animation = { id = "attack_bazooka" type = "rx78_attack_bazooka_animation" }
+    animation = { id = "attack_beamsword" type = "rx78_attack_beamsword_2_animation" }
+    animation = { id = "attack_vulcan" type = "rx78_attack_vulcan_animation" }
+    animation = { id = "attack_jump" type = "rx78_attack_jump_animation" }
+    animation = { id = "defend" type = "rx78_defend_animation" }
+    animation = { id = "retreat" type = "rx78_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RX782CharAM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # FA-78
+  pdxmesh = {
+		name = "fa78_mesh"
+		file = "gfx/models/units/mobilesuits/rx78.mesh"
+		scale = 2
+    animation = { id = "idle_stand" type = "rx78_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rx78_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rx78_idle_sit_animation" }
+		animation = { id = "move"	type = "rx78_move_animation" }
+    animation = { id = "attack_brf" type = "rx78_attack_brf_animation" }
+    animation = { id = "attack_assault" type = "rx78_attack_assault_animation" }
+    animation = { id = "attack_bazooka" type = "rx78_attack_bazooka_animation" }
+    animation = { id = "attack_beamsword" type = "rx78_attack_beamsword_2_animation" }
+    animation = { id = "attack_vulcan" type = "rx78_attack_vulcan_animation" }
+    animation = { id = "attack_jump" type = "rx78_attack_jump_animation" }
+    animation = { id = "defend" type = "rx78_defend_animation" }
+    animation = { id = "retreat" type = "rx78_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "RX782FATB.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RX-78 NT-1
+  pdxmesh = {
+		name = "rx78nt1_mesh"
+		file = "gfx/models/units/mobilesuits/rx78nt1.mesh"
+		scale = 2
+    animation = { id = "idle_stand" type = "rx78_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rx78_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rx78_idle_sit_animation" }
+		animation = { id = "move"	type = "rx78_move_animation" }
+    animation = { id = "attack_brf" type = "rx78_attack_brf_animation" }
+    animation = { id = "attack_assault" type = "rx78_attack_assault_animation" }
+    animation = { id = "attack_beamsword" type = "rx78_attack_beamsword_2_animation" }
+    animation = { id = "attack_jump" type = "rx78_attack_jump_animation" }
+    animation = { id = "attack_gatling" type = "rx78nt1_attack_gatling_animation" }
+    animation = { id = "attack_vulcan" type = "rx78_attack_vulcan_animation" }
+    animation = { id = "defend" type = "rx78_defend_animation" }
+    animation = { id = "retreat" type = "rx78_defeat_2_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # RX-78 NT-1 Amuro
+  pdxmesh = {
+		name = "rx78nt1_amuro_mesh"
+		file = "gfx/models/units/mobilesuits/rx78nt1.mesh"
+		scale = 2
+    animation = { id = "idle_stand" type = "rx78_idle_stand_animation" }
+    animation = { id = "idle_stand_2" type = "rx78_idle_stand_2_animation" }
+    animation = { id = "idle_sit" type = "rx78_idle_sit_animation" }
+		animation = { id = "move"	type = "rx78_move_animation" }
+    animation = { id = "attack_brf" type = "rx78_attack_brf_animation" }
+    animation = { id = "attack_assault" type = "rx78_attack_assault_animation" }
+    animation = { id = "attack_beamsword" type = "rx78_attack_beamsword_2_animation" }
+    animation = { id = "attack_jump" type = "rx78_attack_jump_animation" }
+    animation = { id = "attack_gatling" type = "rx78nt1_attack_gatling_animation" }
+    animation = { id = "attack_vulcan" type = "rx78_attack_vulcan_animation" }
+    animation = { id = "defend" type = "rx78_defend_animation" }
+    animation = { id = "retreat" type = "rx78_defeat_2_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "NT1_Amuro_AM.dds"
+    }
+	}
+}

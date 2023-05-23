@@ -1,0 +1,33 @@
+
+state={
+	id=928
+	name="STATE_928"
+
+	history={
+		owner = EFS
+		add_core_of = EFS
+		add_core_of = SI7
+		78.5.1 = {
+			owner = SI7
+			buildings = {
+				infrastructure = 1
+				arms_factory = 7
+				industrial_complex = 3
+				dockyard = 1
+        13370 = {
+					naval_base = 2
+				}
+			}
+
+		}
+
+	}
+
+	provinces={
+		13370 13369 13371
+	}
+	manpower=100
+	buildings_max_level_factor=1.000
+	state_category=colony
+	local_supplies=0.0
+}

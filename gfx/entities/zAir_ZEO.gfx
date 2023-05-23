@@ -1,0 +1,22 @@
+### Gundam One Year War MOD	###
+objectTypes = {
+###	ZEO Aircraft	###
+### Fighter	1 ###
+
+	pdxmesh = {
+		name = "ZEO_fighter_1_mesh"
+		file = "gfx/models/units/planes/ZEO/ZEO_fighter_1.mesh"
+		animation = { id = "AIR_idle1"			type = "fighter_idle_1_animation" }
+		animation = { id = "AIR_idle2"			type = "fighter_idle_2_animation" }
+		animation = { id = "Crash"			type = "fighter_crash_1_animation" }
+		scale = 2.0
+		meshsettings = {
+			texture_diffuse = "ZEO_fighter_1_Diffuse.dds"
+      texture_normal = "ZEO_fighter_1_N.dds"
+      texture_specular = "ZEO_fighter_1_spec.dds"
+			shader = PdxMeshAdvanced
+		 }
+	}
+
+###	END	###
+}

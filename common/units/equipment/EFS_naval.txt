@@ -1,0 +1,341 @@
+equipments = {
+  archetype_rag79 = {
+    is_archetype = yes
+    is_buildable = no
+    type = {
+submarine
+}
+    group_by = archetype
+    module_slots = {
+fixed_ship_fire_control_system_slot = {
+  required = no
+  allowed_module_categories = { ship_fire_control_system }
+}
+fixed_ship_radar_slot = {
+  required = no
+  allowed_module_categories = {
+    ship_radar
+  }
+}
+fixed_ship_sonar_slot = {
+  required = no
+  allowed_module_categories = {
+    ship_sonar
+  }
+}
+fixed_ship_engine_slot = {
+	required = yes
+	allowed_module_categories = { sub_mobilesuit_engine }
+}
+fixed_ship_armor_slot = {
+  required = no
+  allowed_module_categories = { ship_mobilesuit_armor }
+}
+head_1_custom_slot = {
+  required = no
+  allowed_module_categories = {
+    vulcan_weapon_mobilesuit
+  }
+}
+body_1_custom_slot = {
+	required = no
+	allowed_module_categories = {
+		ship_mine_layer_sub
+    ship_mine_warfare
+    ship_sub_snorkel
+    ship_torpedo_sub
+    torpedo_weapon_mobilesuit
+    ship_extra_fuel_tank
+	}
+}
+right_hand_1_custom_slot = {
+	required = no
+	allowed_module_categories = {
+		hand_gun_weapon_mobilesuit
+    hand_sord_weapon_mobilesuit
+	}
+}
+left_hand_1_custom_slot = {
+	required = no
+	allowed_module_categories = {
+		hand_gun_weapon_mobilesuit
+    hand_sord_weapon_mobilesuit
+	}
+}
+
+}
+    module_count_limit = {
+	category = ship_radar
+	count < 2
+}
+module_count_limit = {
+	category = ship_sonar
+	count < 2
+}
+module_count_limit = {
+	category = hand_gun_weapon_mobilesuit
+	count < 2
+}
+
+    default_modules = {
+fixed_ship_engine_slot = nuclear_reactor_module_1
+fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+fixed_ship_armor_slot = ship_armor_mobilesuit_2
+head_1_custom_slot = vulcan_module_1
+body_1_custom_slot = misile_module_1
+right_hand_1_custom_slot = beam_rifle_module_1
+left_hand_1_custom_slot = beam_sord_module_1
+}
+      interface_category = interface_category_other_ships
+      upgrades = {
+sub_stealth_upgrade
+naval_mobilesuit_sensor_upgrade
+naval_mobilesuit_thruster_upgrade
+naval_mobilesuit_generator_upgrade
+}
+    resources = {
+    }
+  }
+  rag79_equipment = {
+    archetype = archetype_rag79
+    priority = 20
+    module_slots = inherit
+    naval_speed = 60
+    reliability = 0.9
+    max_strength = 85
+    manpower = 20
+    surface_detection = 55
+    sub_detection = 115
+    sub_visibility = 8
+    anti_air_attack = 4
+    naval_range = 3000
+      build_cost_ic = 63
+    resources = {
+      titanium = 1
+      steel = 2
+      chromium = 1
+    }
+  }
+  archetype_rag79_g = {
+    is_archetype = yes
+    is_buildable = no
+    type = {
+submarine
+}
+    group_by = archetype
+    module_slots = {
+fixed_ship_fire_control_system_slot = {
+  required = no
+  allowed_module_categories = { ship_fire_control_system }
+}
+fixed_ship_radar_slot = {
+  required = no
+  allowed_module_categories = {
+    ship_radar
+  }
+}
+fixed_ship_sonar_slot = {
+  required = no
+  allowed_module_categories = {
+    ship_sonar
+  }
+}
+fixed_ship_engine_slot = {
+	required = yes
+	allowed_module_categories = { sub_mobilesuit_engine }
+}
+fixed_ship_armor_slot = {
+  required = no
+  allowed_module_categories = { ship_mobilesuit_armor }
+}
+head_1_custom_slot = {
+  required = no
+  allowed_module_categories = {
+    vulcan_weapon_mobilesuit
+  }
+}
+body_1_custom_slot = {
+	required = no
+	allowed_module_categories = {
+		ship_mine_layer_sub
+    ship_mine_warfare
+    ship_sub_snorkel
+    ship_torpedo_sub
+    torpedo_weapon_mobilesuit
+    ship_extra_fuel_tank
+	}
+}
+right_hand_1_custom_slot = {
+	required = no
+	allowed_module_categories = {
+		hand_gun_weapon_mobilesuit
+    hand_sord_weapon_mobilesuit
+	}
+}
+left_hand_1_custom_slot = {
+	required = no
+	allowed_module_categories = {
+		hand_gun_weapon_mobilesuit
+    hand_sord_weapon_mobilesuit
+	}
+}
+}
+    module_count_limit = {
+	category = ship_radar
+	count < 2
+}
+module_count_limit = {
+	category = ship_sonar
+	count < 2
+}
+module_count_limit = {
+	category = hand_gun_weapon_mobilesuit
+	count < 2
+}
+
+    default_modules = {
+fixed_ship_engine_slot = nuclear_reactor_module_1
+fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+fixed_ship_armor_slot = ship_armor_mobilesuit_3
+head_1_custom_slot = vulcan_module_1
+body_1_custom_slot = misile_module_1
+right_hand_1_custom_slot = beam_rifle_module_1
+left_hand_1_custom_slot = beam_sord_module_1
+}
+      interface_category = interface_category_other_ships
+      upgrades = {
+sub_stealth_upgrade
+naval_mobilesuit_sensor_upgrade
+naval_mobilesuit_thruster_upgrade
+naval_mobilesuit_generator_upgrade
+}
+    resources = {
+    }
+  }
+  rag79_g_equipment = {
+    archetype = archetype_rag79_g
+    priority = 20
+    module_slots = inherit
+    naval_speed = 75
+    reliability = 0.98
+    max_strength = 230
+    manpower = 20
+    surface_detection = 130
+    sub_detection = 200
+    sub_visibility = 10
+    anti_air_attack = 50
+    naval_range = 4500
+      build_cost_ic = 630
+    resources = {
+      titanium = 2
+      steel = 3
+      chromium = 2
+    }
+  }
+  archetype_rb79_n = {
+    is_archetype = yes
+    is_buildable = no
+    type = {
+submarine
+}
+    group_by = archetype
+    module_slots = {
+fixed_ship_fire_control_system_slot = {
+  required = no
+  allowed_module_categories = { ship_fire_control_system }
+}
+fixed_ship_radar_slot = {
+  required = no
+  allowed_module_categories = {
+    ship_radar
+  }
+}
+fixed_ship_sonar_slot = {
+  required = no
+  allowed_module_categories = {
+    ship_sonar
+  }
+}
+fixed_ship_engine_slot = {
+	required = yes
+	allowed_module_categories = { sub_mobilesuit_engine }
+}
+fixed_ship_armor_slot = {
+  required = no
+  allowed_module_categories = { ship_mobilesuit_armor }
+}
+head_1_custom_slot = {
+  required = no
+  allowed_module_categories = {
+    vulcan_weapon_mobilesuit
+  }
+}
+body_1_custom_slot = {
+	required = no
+	allowed_module_categories = {
+		ship_mine_layer_sub
+    ship_mine_warfare
+    ship_sub_snorkel
+    ship_torpedo_sub
+    torpedo_weapon_mobilesuit
+    ship_extra_fuel_tank
+	}
+}
+right_hand_1_custom_slot = {
+	required = no
+	allowed_module_categories = {
+		hand_weapon_mobilesuit
+	}
+}
+left_hand_1_custom_slot = {
+	required = no
+	allowed_module_categories = {
+		hand_weapon_mobilesuit
+	}
+}
+}
+    module_count_limit = {
+	category = ship_radar
+	count < 2
+}
+module_count_limit = {
+	category = ship_sonar
+	count < 2
+}
+
+    default_modules = {
+fixed_ship_engine_slot = nuclear_reactor_module_1
+fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+fixed_ship_armor_slot = ship_armor_mobilesuit_1
+head_1_custom_slot = long_spear_module_1
+right_hand_1_custom_slot = arm_clow_module_1
+left_hand_1_custom_slot = arm_clow_module_1
+}
+      interface_category = interface_category_other_ships
+      upgrades = {
+sub_stealth_upgrade
+naval_mobilesuit_sensor_upgrade
+naval_mobilesuit_thruster_upgrade
+naval_mobilesuit_generator_upgrade
+}
+    resources = {
+    }
+  }
+  rb79_n_equipment = {
+    archetype = archetype_rb79_n
+    priority = 60
+    module_slots = inherit
+    naval_speed = 65
+    reliability = 0.85
+    max_strength = 50
+    manpower = 20
+    surface_detection = 65
+    sub_detection = 130
+    sub_visibility = 5
+    naval_range = 2000
+      build_cost_ic = 21
+    resources = {
+      steel = 1
+    }
+  }
+}

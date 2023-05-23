@@ -1,0 +1,3148 @@
+research_and_development = {
+
+  @removedays = 60
+  @needequipment = 9
+  @removequipment = -10
+  @needequipmentcustom = 2
+  @removequipmentcustom = -3
+  @researchbuff = -0.1
+
+  # ZEO
+  research_captured_ms05 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms05_tech
+        has_tech = ms06_tech
+        has_tech = ms06_f_tech
+        has_tech = ms06_j_tech
+      }
+      ZEO = {
+        has_tech = ms05_tech
+      }
+      has_equipment = {
+        archetype_ms05 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms05 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms05
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms05_tech = 1
+      }
+    }
+  }
+  research_captured_ms06 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms06_tech
+        has_tech = ms06_f_tech
+        has_tech = ms06_j_tech
+      }
+      ZEO = {
+        has_tech = ms06_tech
+      }
+      has_equipment = {
+        archetype_ms05 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms05 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 2
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms05
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms06_tech = 1
+      }
+    }
+  }
+  research_captured_ms06_f = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms06_f_tech
+        has_tech = ms06_j_tech
+      }
+      ZEO = {
+        has_tech = ms06_f_tech
+      }
+      has_equipment = {
+        archetype_ms05 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms05 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 3
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms05
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms06_f_tech = 1
+      }
+    }
+  }
+  research_captured_ms06_j = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms06_j_tech
+      }
+      ZEO = {
+        has_tech = ms06_j_tech
+      }
+      has_equipment = {
+        archetype_ms05 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms05 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 4
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms05
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms06_j_tech = 1
+      }
+    }
+  }
+  research_captured_ms06_s = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms06_s_tech
+      }
+      ZEO = {
+        has_tech = ms06_s_tech
+      }
+      has_equipment = {
+        archetype_ms06_s > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms06_s > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms06_s
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms06_s_tech = 1
+      }
+    }
+  }
+  research_captured_ms06_k = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms06_k_tech
+      }
+      ZEO = {
+        has_tech = ms06_k_tech
+      }
+      has_equipment = {
+        ms06_k_equipment > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        ms06_k_equipment > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = ms06_k_equipment
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms06_k_tech = 1
+      }
+    }
+  }
+  research_captured_ms07 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms07_tech
+        has_tech = ms07_c_tech
+      }
+      ZEO = {
+        has_tech = ms07_tech
+      }
+      has_equipment = {
+        archetype_ms07 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms07 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms07
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms07_tech = 1
+      }
+    }
+  }
+  research_captured_ms07_c = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms07_c_tech
+      }
+      ZEO = {
+        has_tech = ms07_c_tech
+      }
+      has_equipment = {
+        archetype_ms07 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms07 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 2
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms07
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms07_c_tech = 1
+      }
+    }
+  }
+  research_captured_ms07_b_3 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms07_b_3_tech
+      }
+      ZEO = {
+        has_tech = ms07_b_3_tech
+      }
+      has_equipment = {
+        archetype_ms07_b_3 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms07_b_3 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms07_b_3
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms07_b_3_tech = 1
+      }
+    }
+  }
+  research_captured_ms07_h = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms07_h_tech
+      }
+      ZEO = {
+        has_tech = ms07_h_tech
+      }
+      has_equipment = {
+        archetype_ms07_h > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms07_h > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms07_h
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms07_h_tech = 1
+      }
+    }
+  }
+  research_captured_ms08_tx = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms08_tx_tech
+      }
+      ZEO = {
+        has_tech = ms08_tx_tech
+      }
+      has_equipment = {
+        archetype_ms08 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms08 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms08
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms08_tx_tech = 1
+      }
+    }
+  }
+  research_captured_ms09 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms09_tech
+        has_tech = ms09_g_tech
+      }
+      ZEO = {
+        has_tech = ms09_tech
+      }
+      has_equipment = {
+        archetype_ms09 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms09 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms09
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms09_tech = 1
+      }
+    }
+  }
+  research_captured_ms09_g = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms09_g_tech
+      }
+      ZEO = {
+        has_tech = ms09_g_tech
+      }
+      has_equipment = {
+        archetype_ms09 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms09 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 2
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms09
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms09_g_tech = 1
+      }
+    }
+  }
+  research_captured_ms09_k = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms09_k_tech
+      }
+      ZEO = {
+        has_tech = ms09_k_tech
+      }
+      has_equipment = {
+        archetype_ms09_k > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms09_k > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms09_k
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms09_k_tech = 1
+      }
+    }
+  }
+  research_captured_ms09_h = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms09_h_tech
+      }
+      ZEO = {
+        has_tech = ms09_h_tech
+      }
+      has_equipment = {
+        archetype_ms09_h > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms09_h > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms09_h
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms09_h_tech = 1
+      }
+    }
+  }
+  research_captured_ms14 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms14_tech
+        has_tech = ms14_f_tech
+      }
+      ZEO = {
+        has_tech = ms14_tech
+      }
+      has_equipment = {
+        archetype_ms14 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms14 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms14
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms14_tech = 1
+      }
+    }
+  }
+  research_captured_ms14_f = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms14_f_tech
+      }
+      ZEO = {
+        has_tech = ms14_f_tech
+      }
+      has_equipment = {
+        archetype_ms14 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms14 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 2
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms14
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms14_f_tech = 1
+      }
+    }
+  }
+  research_captured_ms14_c = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms14_c_tech
+      }
+      ZEO = {
+        has_tech = ms14_c_tech
+      }
+      has_equipment = {
+        archetype_ms14_c > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms14_c > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms14_c
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms14_c_tech = 1
+      }
+    }
+  }
+  research_captured_ms14_fs = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms14_fs_tech
+      }
+      ZEO = {
+        has_tech = ms14_fs_tech
+      }
+      has_equipment = {
+        archetype_ms14_fs > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms14_fs > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms14_fs
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms14_fs_tech = 1
+      }
+    }
+  }
+  research_captured_yms15 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = yms15_tech
+      }
+      ZEO = {
+        has_tech = yms15_tech
+      }
+      has_equipment = {
+        archetype_yms15 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_yms15 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_yms15
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        yms15_tech = 1
+      }
+    }
+  }
+  research_captured_ems04 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ems04_tech
+      }
+      ZEO = {
+        NOT = {
+          has_tech = ems10_tech
+        }
+        has_tech = ems04_tech
+      }
+      has_equipment = {
+        archetype_ems10 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ems10 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ems10
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ems04_tech = 1
+      }
+    }
+  }
+  research_captured_ems10 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ems10_tech
+      }
+      ZEO = {
+        has_tech = ems10_tech
+      }
+      has_equipment = {
+        archetype_ems10 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ems10 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ems10
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ems10_tech = 1
+      }
+    }
+  }
+  research_captured_agx04 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = agx04_tech
+      }
+      ZEO = {
+        has_tech = agx04_tech
+      }
+      has_equipment = {
+        archetype_agx04 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_agx04 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_agx04
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx78_gp4_tech = 1
+      }
+    }
+  }
+  research_captured_ms06_p = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms06_p_tech
+      }
+      ZEO = {
+        has_tech = ms06_p_tech
+      }
+      has_equipment = {
+        archetype_ms06_p > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms06_p > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms06_p
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms06_p_tech = 1
+      }
+    }
+  }
+  research_captured_ms10 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms10_tech
+      }
+      ZEO = {
+        has_tech = ms10_tech
+      }
+      has_equipment = {
+        archetype_ms10 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms10 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms10
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms10_tech = 1
+      }
+    }
+  }
+  research_captured_ms11 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms11_tech
+      }
+      ZEO = {
+        has_tech = ms11_tech
+      }
+      has_equipment = {
+        archetype_ms11 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms11 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms11
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms11_tech = 1
+      }
+    }
+  }
+  research_captured_ms17 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ms17_tech
+      }
+      ZEO = {
+        has_tech = ms17_tech
+      }
+      has_equipment = {
+        archetype_ms17 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms17 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms17
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ms17_tech = 1
+      }
+    }
+  }
+  research_captured_max03 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = max03_tech
+      }
+      ZEO = {
+        has_tech = max03_tech
+      }
+      has_equipment = {
+        archetype_max03 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_max03 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_max03
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        max03_tech = 1
+      }
+    }
+  }
+  research_captured_ma08 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ma08_tech
+      }
+      ZEO = {
+        has_tech = ma08_tech
+      }
+      has_equipment = {
+        archetype_ma08 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ma08 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ma08
+        amount = @removequipmentcustom
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ma08_tech = 1
+      }
+    }
+  }
+
+
+  # EFS
+  research_captured_rx75 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx75_tech
+      }
+      EFS = {
+        has_tech = rx75_tech
+      }
+      has_equipment = {
+        archetype_rx75 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx75 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx75
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx75_tech = 1
+      }
+    }
+  }
+  research_captured_rx75_2 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx75_2_tech
+      }
+      EFS = {
+        has_tech = rx75_2_tech
+      }
+      has_equipment = {
+        archetype_rx75_2 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx75_2 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx75_2
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx75_2_tech = 1
+      }
+    }
+  }
+  research_captured_rx77 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx77_tech
+      }
+      EFS = {
+        has_tech = rx77_tech
+      }
+      has_equipment = {
+        archetype_rx77 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx77 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx77
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx77_tech = 1
+      }
+    }
+  }
+  research_captured_rx77_2 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx77_2_tech
+      }
+      EFS = {
+        has_tech = rx77_2_tech
+      }
+      has_equipment = {
+        archetype_rx77_2 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx77_2 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx77_2
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx77_2_tech = 1
+      }
+    }
+  }
+  research_captured_rx78 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx78_tech
+      }
+      EFS = {
+        has_tech = rx78_tech
+      }
+      has_equipment = {
+        archetype_rx78 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx78 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx78
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx78_tech = 1
+      }
+    }
+  }
+  research_captured_fa78 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = fa78_tech
+      }
+      EFS = {
+        has_tech = fa78_tech
+      }
+      has_equipment = {
+        archetype_fsws > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_fsws > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_fsws
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        fa78_tech = 1
+      }
+    }
+  }
+  research_captured_rx78_xx = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx78_xx_tech
+      }
+      EFS = {
+        has_tech = rx78_xx_tech
+      }
+      has_equipment = {
+        archetype_rx78_xx > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx78_xx > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx78_xx
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx78_xx_tech = 1
+      }
+    }
+  }
+  research_captured_rx78_nt = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx78_nt_tech
+      }
+      EFS = {
+        has_tech = rx78_nt_tech
+      }
+      has_equipment = {
+        archetype_rx78_nt > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx78_nt > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx78_nt
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx78_nt_tech = 1
+      }
+    }
+  }
+  research_captured_rx78_gp1 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx78_gp1_tech
+      }
+      EFS = {
+        has_tech = rx78_gp1_tech
+      }
+      has_equipment = {
+        archetype_rx78_gp1 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx78_gp1 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx78_gp1
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx78_gp1_tech = 1
+      }
+    }
+  }
+  research_captured_rx78_gp2 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx78_gp2_tech
+      }
+      EFS = {
+        has_tech = rx78_gp2_tech
+      }
+      has_equipment = {
+        archetype_rx78_gp2 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx78_gp2 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx78_gp2
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx78_gp2_tech = 1
+      }
+    }
+  }
+  research_captured_rx78_gp4 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx78_gp4_tech
+      }
+      EFS = {
+        has_tech = rx78_gp4_tech
+      }
+      has_equipment = {
+        archetype_rx78_gp4 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx78_gp4 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx78_gp4
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        agx04_tech = 1
+      }
+    }
+  }
+  research_captured_rx79 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx79_tech
+        has_tech = rx79_ez8_tech
+      }
+      EFS = {
+        has_tech = rx79_tech
+      }
+      has_equipment = {
+        archetype_rx79 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx79 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx79
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx79_tech = 1
+      }
+    }
+  }
+  research_captured_rx79_ez8 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx79_ez8_tech
+      }
+      EFS = {
+        has_tech = rx79_ez8_tech
+      }
+      has_equipment = {
+        archetype_rx79 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx79 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 2
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx79
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx79_ez8_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79g = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79g_tech
+      }
+      EFS = {
+        has_tech = rgm79g_tech
+      }
+      has_equipment = {
+        archetype_rgm79g > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79g > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79g
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79g_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79_tech
+        has_tech = rgm79_c_tech
+        has_tech = rgm79_p_tech
+        has_tech = rgm79_n_tech
+        has_tech = rgm79_q_tech
+        has_tech = rgm79_r_tech
+      }
+      EFS = {
+        has_tech = rgm79_tech
+      }
+      has_equipment = {
+        archetype_rgm79 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79_c = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79_c_tech
+        has_tech = rgm79_p_tech
+        has_tech = rgm79_n_tech
+        has_tech = rgm79_q_tech
+        has_tech = rgm79_r_tech
+      }
+      EFS = {
+        has_tech = rgm79_c_tech
+      }
+      has_equipment = {
+        archetype_rgm79 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 2
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79_c_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79_p = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79_p_tech
+        has_tech = rgm79_n_tech
+        has_tech = rgm79_q_tech
+        has_tech = rgm79_r_tech
+      }
+      EFS = {
+        has_tech = rgm79_p_tech
+      }
+      has_equipment = {
+        archetype_rgm79 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 3
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79_p_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79_n = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79_n_tech
+        has_tech = rgm79_q_tech
+        has_tech = rgm79_r_tech
+      }
+      EFS = {
+        has_tech = rgm79_n_tech
+      }
+      has_equipment = {
+        archetype_rgm79 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 4
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79_n_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79_q = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79_q_tech
+        has_tech = rgm79_r_tech
+      }
+      EFS = {
+        has_tech = rgm79_q_tech
+      }
+      has_equipment = {
+        archetype_rgm79 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 5
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79_q_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79_r = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79_r_tech
+      }
+      EFS = {
+        has_tech = rgm79_r_tech
+      }
+      has_equipment = {
+        archetype_rgm79 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79 > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 6
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79_r_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79_fp = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79_fp_tech
+      }
+      EFS = {
+        has_tech = rgm79_fp_tech
+      }
+      has_equipment = {
+        archetype_rgm79_fp > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79_fp > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79_fp
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79_fp_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79_d = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79_d_tech
+        has_tech = rgm79_g_tech
+      }
+      EFS = {
+        has_tech = rgm79_d_tech
+      }
+      has_equipment = {
+        archetype_rgm79_d > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79_d > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79_d
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79_d_tech = 1
+      }
+    }
+  }
+  research_captured_rgm79_g = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rgm79_g_tech
+      }
+      EFS = {
+        has_tech = rgm79_g_tech
+      }
+      has_equipment = {
+        archetype_rgm79_d > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rgm79_d > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 2
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rgm79_d
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rgm79_g_tech = 1
+      }
+    }
+  }
+  research_captured_rx121 = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = rx121_tech
+      }
+      EFS = {
+        has_tech = rx121_tech
+      }
+      has_equipment = {
+        archetype_rx121 > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_rx121 > @needequipmentcustom
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_rx121
+        amount = @removequipmentcustom
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        rx121_tech = 1
+      }
+    }
+  }
+
+  # WEAPON
+  research_captured_machinegun = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        original_tag = ZEO
+        original_tag = EFS
+      }
+      NOT = {
+        has_tech = ZEO_ms_weapon_machinegun_01_tech
+        has_tech = EFS_ms_weapon_machinegun_01_tech
+      }
+      has_equipment = {
+        archetype_ms_weapon_machinegun > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms_weapon_machinegun > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms_weapon_machinegun
+        amount = @removequipment
+        producer = EFS
+      }
+      add_equipment_to_stockpile = {
+        type = archetype_ms_weapon_machinegun
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        EFS_ms_weapon_machinegun_01_tech = 1
+      }
+    }
+  }
+  research_captured_bazooka = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        original_tag = ZEO
+        original_tag = EFS
+      }
+      NOT = {
+        has_tech = ZEO_ms_weapon_bazooka_01_tech
+        has_tech = EFS_ms_weapon_bazooka_01_tech
+      }
+      has_equipment = {
+        archetype_ms_weapon_bazooka > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms_weapon_bazooka > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms_weapon_bazooka
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms_weapon_bazooka
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        EFS_ms_weapon_bazooka_01_tech = 1
+      }
+    }
+  }
+  research_captured_shield = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        original_tag = ZEO
+        original_tag = EFS
+      }
+      NOT = {
+        has_tech = ZEO_ms_shield_01_tech
+        has_tech = EFS_ms_shield_01_tech
+      }
+      has_equipment = {
+        archetype_ms_shield > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        archetype_ms_shield > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms_shield
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = archetype_ms_shield
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        EFS_ms_shield_01_tech = 1
+      }
+    }
+  }
+  research_captured_efs_beamgun = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      original_tag = ZEO
+      NOT = {
+        has_tech = ZEO_ms_weapon_beamgun_01_tech
+        has_tech = EFS_ms_weapon_beamgun_01_tech
+      }
+      has_equipment = {
+        ms_weapon_beamgun_01_equipment > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        ms_weapon_beamgun_01_equipment > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = ms_weapon_beamgun_01_equipment
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ZEO_ms_weapon_beamgun_01_tech = 1
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_tech = mega_particle2
+          }
+        }
+        set_technology = {
+          mega_particle2 = 1
+        }
+      }
+    }
+  }
+  research_captured_zeo_beamgun = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      original_tag = EFS
+      NOT = {
+        has_tech = ZEO_ms_weapon_beamgun_01_tech
+        has_tech = EFS_ms_weapon_beamgun_01_tech
+      }
+      has_equipment = {
+        ms_weapon_beamgun_01_equipment > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        ms_weapon_beamgun_01_equipment > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = ms_weapon_beamgun_01_equipment
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        EFS_ms_weapon_beamgun_01_tech = 1
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_tech = mega_particle2
+          }
+        }
+        set_technology = {
+          mega_particle2 = 1
+        }
+      }
+    }
+  }
+  research_captured_efs_beamsord = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      original_tag = ZEO
+      NOT = {
+        has_tech = ZEO_ms_weapon_beamsord_01_tech
+        has_tech = EFS_ms_weapon_beamsord_01_tech
+      }
+      has_equipment = {
+        ms_weapon_beamsord_01_equipment > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        ms_weapon_beamsord_01_equipment > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = ms_weapon_beamsord_01_equipment
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ZEO_ms_weapon_beamsord_01_tech = 1
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_tech = mega_particle2
+          }
+        }
+        set_technology = {
+          mega_particle2 = 1
+        }
+      }
+    }
+  }
+  research_captured_zeo_beamsord = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      original_tag = EFS
+      NOT = {
+        has_tech = ZEO_ms_weapon_beamsord_01_tech
+        has_tech = EFS_ms_weapon_beamsord_01_tech
+      }
+      has_equipment = {
+        ms_weapon_beamsord_01_equipment > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        ms_weapon_beamsord_01_equipment > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = ms_weapon_beamsord_01_equipment
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        EFS_ms_weapon_beamsord_01_tech = 1
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_tech = mega_particle2
+          }
+        }
+        set_technology = {
+          mega_particle2 = 1
+        }
+      }
+    }
+  }
+  research_captured_efs_beamsplay = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = EFS_ms_weapon_beamsplay_01_tech
+      }
+      has_equipment = {
+        ms_weapon_beamsplay_01_equipment > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        ms_weapon_beamsplay_01_equipment > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = ms_weapon_beamsplay_01_equipment
+        amount = @removequipment
+        producer = EFS
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        EFS_ms_weapon_beamsplay_01_tech = 1
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_tech = mega_particle2
+          }
+        }
+        set_technology = {
+          mega_particle2 = 1
+        }
+      }
+    }
+  }
+  research_captured_zeo_heathawk = {
+    icon = generic_research
+    allowed = {
+      always = yes
+    }
+    visible = {
+      NOT = {
+        has_tech = ZEO_ms_weapon_heathawk_01_tech
+      }
+      has_equipment = {
+        ms_weapon_heathawk_01_equipment > 0
+      }
+    }
+    available = {
+      has_equipment = {
+        ms_weapon_heathawk_01_equipment > @needequipment
+      }
+      has_game_rule = {
+        rule = unlock_ms_by_capture
+        option = ALLOWED
+      }
+    }
+    ai_will_do = {
+      factor = 1
+    }
+    fire_only_once = yes
+    modifier = {
+      research_speed_factor = @researchbuff
+    }
+
+    cost = 0
+    days_remove = @removedays
+
+    complete_effect = {
+      add_equipment_to_stockpile = {
+        type = ms_weapon_heathawk_01_equipment
+        amount = @removequipment
+        producer = ZEO
+      }
+    }
+    remove_effect = {
+      set_technology = {
+        ZEO_ms_weapon_heathawk_01_tech = 1
+      }
+    }
+  }
+}

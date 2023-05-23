@@ -1,0 +1,115 @@
+bookmarks = {
+	bookmark = {
+		name = "UC0078_NAME"
+		desc = "UC0078_DESC"
+		date = 78.1.1.1
+		picture = "GFX_select_date_UC0078"
+		default_country = "ZEO"
+
+		ZEO = {
+			history = ZEO_UC0078_DESC
+			ideology = spacesupremacy
+			ideas = {
+				zeon_medal_of_cross
+				defense_military_academy
+				zeon_mainstay_MS_development_competition
+			}
+			focuses = {
+				zeon_leak_side2_attack
+				zeon_national_mobilization_act
+				zeon_gravity_front_line
+			}
+		}
+
+		EFS = {
+		  history = EFS_UC0078_DESC
+		  ideology = democratic
+			ideas = {
+				bigship_principle
+				mole_of_jablo
+				efsf_support_anti_zabi_faction
+			}
+			focuses = {
+				efsf_reciving_asteroid
+				efsf_leak_plan_rx
+				efsf_prioritize_battle_data
+			}
+		}
+
+		"---"={
+			history = "OTHER_UC0078_DESC"
+		}
+
+		"SI1" = {
+		  minor = yes
+      history = "OTHER_UC0078_DESC"
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI2" = {
+		  minor = yes
+      history = "OTHER_UC0078_DESC"
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI4" = {
+		  minor = yes
+      history = "OTHER_UC0078_DESC"
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI5" = {
+		  minor = yes
+      history = "OTHER_UC0078_DESC"
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI6" = {
+		  minor = yes
+      history = "OTHER_UC0078_DESC"
+		  ideology = zeonism
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"VBC" = {
+		  minor = yes
+      history = "OTHER_UC0078_DESC"
+		  ideology = zeonism
+			ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {}
+		}
+		"GRA" = {
+		  minor = yes
+      history = "OTHER_UC0078_DESC"
+		  ideology = zeonism
+		  ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+  }
+}

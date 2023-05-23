@@ -1,0 +1,56 @@
+units = {
+	navy = {
+		name = "Captured Submarine Fleet"
+		base = 9498
+		location = 9498
+		ship = {
+			name = "Rhine"
+			definition = submarine
+			equipment = {
+				submarine1_equipment = { amount = 1 owner = EFS }
+			}
+		}
+		ship = {
+			name = "Mogami"
+			definition = submarine
+			equipment = {
+				submarine1_equipment = { amount = 1 owner = EFS }
+			}
+		}
+		ship = {
+			name = "Danube"
+			definition = submarine
+			equipment = {
+				submarine1_equipment = { amount = 1 owner = EFS }
+			}
+		}
+		ship = {
+			name = "Mississippi"
+			definition = submarine
+			equipment = {
+				submarine1_equipment = { amount = 1 owner = EFS }
+			}
+		}
+		ship = {
+			name = "Amur"
+			definition = submarine
+			equipment = {
+				submarine1_equipment = { amount = 1 owner = EFS }
+			}
+		}
+		ship = {
+			name = "Yangtze"
+			definition = submarine
+			equipment = {
+				submarine1_equipment = { amount = 1 owner = EFS }
+			}
+		}
+		ship = {
+			name = "Andes"
+			definition = submarine
+			equipment = {
+				submarine_carrier1_equipment = { amount = 1 owner = EFS }
+			}
+		}
+	}
+}

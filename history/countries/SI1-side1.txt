@@ -1,0 +1,135 @@
+﻿capital = 912
+oob = "SI1"
+
+set_research_slots = 3
+set_convoys = 150
+starting_train_buffer = 2
+set_fuel_ratio = 0.5
+set_stability = 0.7
+set_war_support = 0.3
+
+set_variable = { newtype_accepted_status = 1 }
+
+set_technology = {
+	basic_train = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	minovsky_particle = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	EFS_ac1_tech = 1
+	fuel_refining = 1
+	EFS_transport = 1
+	oil_processing = 1
+	rubber_processing = 1
+	fuel_refining2 = 1
+	i_field = 1
+	mega_particle1 = 1
+	EFS_space_cruiser1_tech = 1
+	EFS_basic_battery = 1
+	EFS_basic_secondary_battery = 1
+	EFS_damage_control_1 = 1
+	EFS_basic_torpedo = 1
+	EFS_basic_naval_mines = 1
+}
+
+set_popularities = {
+	democratic = 36
+	zeonism = 52
+	spacesupremacy = 7
+	earthsupremacy = 5
+}
+set_politics = {
+	ruling_party = zeonism
+	last_election = "74.12.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+add_ideas = {
+	colony_country
+	free_trade
+	civilian_economy
+	volunteer_only
+	customs_duty_6
+	oversea_army_6
+	newtype_division_2
+}
+
+78.1.1 = {
+	set_technology = {
+		visible_light_communication1 = 1
+		nuclear_reactor1 = 1
+		minovsky_dissemination1 = 1
+		minovsky_dissemination2 = 1
+		ambac1 = 1
+		amc1 = 1
+		simulator1 = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		infantry_at = 1
+		support_weapons = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		concentrated_industry = 1
+		concentrated_industry2 = 1
+		concentrated_industry3 = 1
+		construction1 = 1
+		construction2 = 1
+		excavation1 = 1
+		excavation2 = 1
+		improved_oil_processing = 1
+		advanced_oil_processing = 1
+	}
+	add_ideas = {
+		jupiter_fleet_get_resource
+		pc_colony
+	}
+	set_convoys = 100
+	set_country_flag = jupiter_fleet_on
+  set_country_flag = jupiter_fleet_is_back
+}
+
+79.4.1 = {
+	oob = "generic"
+	set_technology = {
+		improved_rubber_processing = 1
+		concentrated_industry4 = 1
+		nuclear_reactor2 = 1
+		minovsky_dissemination2 = 1
+		ambac2 = 1
+		amc2 = 1
+		simulator2 = 1
+		mechanised_infantry = 1
+		support_weapons1 = 1
+		improved_infantry_weapons = 1
+	}
+	set_convoys = 50
+	set_variable = { newtype_accepted_status = 3 }
+}
+
+recruit_character = SI1_zahns_zeonist_senator
+recruit_character = SI1_zahns_spacenoid_supremacist_senator
+recruit_character = SI1_zahns_earth_supremacist_senator
+recruit_character = SI1_zahns_democrats_senator
+
+create_equipment_variant = {
+	name = "Salamis Class"
+	type = efsf_space_cruiser1_equipment
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = space_battery_1
+		fixed_ship_secondaries_slot = space_secondaries_1
+		fixed_ship_engine_slot = light_space_engine_1
+	}
+	obsolete = no
+}

@@ -1,0 +1,3303 @@
+focus_tree = {
+	id = ZEO
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ZEO
+		}
+	}
+
+	default = no
+	initial_show_position = {
+		focus = zeon_repression_of_deikun
+	}
+
+	focus = {
+		id = zeon_harmony_with_deikun
+		icon = GFX_goal_harmony_with_deikun
+		cost = 10.00
+		x = 6
+		y = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 150
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		mutually_exclusive = {
+		  focus = zeon_repression_of_deikun
+		}
+		completion_reward = {
+			add_political_power = 80
+			add_stability = 0.05
+			add_war_support = -0.03
+			add_popularity = { ideology = zeonism popularity = 0.05 }
+		}
+	}
+
+	focus = {
+		id = zeon_spokesman_for_contlism
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = 0
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_harmony_with_deikun
+		}
+		available = {
+
+		}
+		continue_if_invalid = no
+		completion_reward = {
+			news_event = { id = news.88 hours = 6 }
+			add_popularity = { ideology = zeonism popularity = 0.08 }
+			add_named_threat = {
+				threat = 3
+				name = zeon_spokesman_for_contlism
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = EFS
+							tag = GRA
+							tag = VBC
+						}
+					}
+				}
+				add_timed_idea = {
+					idea = zeon_spokesman_for_contlism
+					days = 365
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_resistance_to_dictatorship
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = -4
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		prerequisite = {
+			focus = zeon_spokesman_for_contlism
+		}
+		mutually_exclusive = {
+		  focus = zeon_comrades_of_deikun
+		}
+		bypass = {
+			ZEO = {
+				NOT = {
+					OR = {
+						has_country_leader = {
+							character = ZEO_gihren_zabi
+							ruling_only = yes
+						}
+						has_country_leader = {
+							character = ZEO_degwin_sodo_zabi
+							ruling_only = yes }
+					}
+				}
+			}
+		}
+		available = {
+			ZEO = {
+        if = {
+          limit = {
+            is_ai = no
+          }
+				  zeonism > 0.60
+        }
+				OR = {
+					has_country_leader = {
+						character = ZEO_gihren_zabi
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = ZEO_degwin_sodo_zabi
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		completion_reward = {
+			add_war_support = -0.03
+			add_stability = -0.05
+			news_event = { id = news.1 }
+		}
+	}
+
+	focus = {
+		id = zeon_revival_of_ral_family
+		icon = GFX_goal_revival_of_ral_family
+		cost = 10.00
+		relative_position_id = zeon_resistance_to_dictatorship
+		x = -1
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_resistance_to_dictatorship
+		}
+		completion_reward = {
+			add_political_power = 50
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = ramba_ral_pa
+			country_event = { id = achievement.5 }
+		}
+	}
+
+	focus = {
+		id = zeon_restructuring_of_military
+		icon = GFX_focus_generic_military_mission
+		cost = 10.00
+		relative_position_id = zeon_resistance_to_dictatorship
+		x = 1
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_resistance_to_dictatorship
+		}
+		completion_reward = {
+			add_command_power = -25
+			army_experience = -10
+			custom_effect_tooltip = zeon_restructuring_of_military_tooltip
+			ZEO_gihren_zabi = {
+				set_character_flag = disable_navy_leader
+			}
+			ZEO_mquve = {
+				set_character_flag = disable_corps_commander
+			}
+			ZEO_kycilia_zabi = {
+				set_character_flag = disable_corps_commander
+			}
+			ZEO_dozle_zabi = {
+				set_character_flag = disable_navy_leader
+			}
+			ZEO_garma_zabi = {
+				set_character_flag = disable_corps_commander
+			}
+			ZEO_aiguille_delaz = {
+				set_character_flag = disable_corps_commander
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_casval_and_altesia
+		icon = GFX_goal_casval_and_altesia
+		cost = 10.00
+		relative_position_id = zeon_resistance_to_dictatorship
+		x = 0
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_revival_of_ral_family
+		}
+		prerequisite = {
+			focus = zeon_restructuring_of_military
+		}
+		completion_reward = {
+			news_event = { id = news.6 days = 14 }
+		}
+	}
+
+	focus = {
+		id = zeon_sweep_away_zabi
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		relative_position_id = zeon_resistance_to_dictatorship
+		x = -2
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_casval_and_altesia
+		}
+		completion_reward = {
+			news_event = { id = news.9 days = 14 }
+		}
+	}
+
+	focus = {
+		id = zeon_kings_return
+		icon = GFX_goal_kings_return
+		cost = 10.00
+		relative_position_id = zeon_resistance_to_dictatorship
+		x = -2
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+		prerequisite = {
+			focus = zeon_sweep_away_zabi
+		}
+		available = {
+			ZEO = {
+				has_country_leader = {
+					character = ZEO_casval_rem_deikun
+					ruling_only = yes
+				}
+				if = {
+					limit = {
+						is_subject = yes
+					}
+					has_autonomy_state = autonomy_dominion
+					compare_autonomy_progress_ratio > 0.5
+				}
+			}
+		}
+		completion_reward = {
+			add_country_leader_trait = kings_return
+			add_political_power = 100
+			add_popularity = {
+				ideology = zeonism
+				popularity = 0.1
+			}
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				add_autonomy_ratio = {
+					value = 0.2
+					localization = zeon_kings_return
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_human_innovation
+		icon = GFX_goal_zeon_human_innovation
+		cost = 10.00
+		relative_position_id = zeon_resistance_to_dictatorship
+		x = 0
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_casval_and_altesia
+		}
+		available = {
+			has_country_leader = {
+				character = ZEO_casval_rem_deikun
+				ruling_only = yes
+			}
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = zeonism
+				popularity = 0.1
+			}
+			add_to_variable = { newtype_accepted_status = 1 }
+			set_rule = {
+				can_create_factions = yes
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+	          tag = EFS
+		      }
+				}
+				add_ideas = spacenoid_rising
+	      add_opinion_modifier = {
+					target = ROOT
+					modifier = human_innovation
+				}
+	    }
+			add_named_threat = {
+				threat = 6
+				name = zeon_human_innovation
+			}
+			add_tech_bonus = {
+				name = zeon_human_innovation
+				category = newtype
+				uses = 1
+				bonus = 0.8
+				ahead_reduction = 1
+			}
+			news_event = { id = news.106 days = 3 }
+			news_event = { id = news.152 days = 120 }
+		}
+	}
+
+	focus = {
+		id = zeon_box_of_laplace
+		icon = GFX_goal_box_of_laplace
+		cost = 10.00
+		relative_position_id = zeon_resistance_to_dictatorship
+		x = 0
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		available = {
+			has_country_leader = {
+				character = ZEO_casval_rem_deikun
+				ruling_only = yes
+			}
+			has_war = no
+		}
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		mutually_exclusive = {
+			focus = zeon_colony_alliance
+			focus = zeon_phantom_speech
+			focus = zeon_approval_of_gradual_autonomy
+		}
+		prerequisite = {
+			focus = zeon_human_innovation
+		}
+		completion_reward = {
+			country_event = { id = zeon.1 days = 30 }
+		}
+	}
+
+	focus = {
+		id = zeon_for_star_of_water_with_love
+		icon = GFX_goal_for_star_of_water_with_love
+		cost = 10.00
+		relative_position_id = zeon_resistance_to_dictatorship
+		x = 0
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 10
+			modifier = {
+				NOT = {
+					has_completed_focus = zeon_national_mobilization_act
+				}
+				factor = 0
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = zeon_box_of_laplace
+		}
+		available = {
+			threat > 0.2
+			NOT = {
+				has_war_with = EFS
+			}
+			has_completed_focus = zeon_total_force_warfare_study
+		}
+		will_lead_to_war_with = EFS
+		completion_reward = {
+			news_event = {
+				id = news.107
+				hours = 3
+			}
+			create_wargoal = {
+				type = topple_government
+				target = EFS
+			}
+			if = {
+				limit = {
+					is_in_faction_with = EFS
+				}
+				leave_faction = yes
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_solidarity_among_colonies
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = 0
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_spokesman_for_contlism
+		}
+		completion_reward = {
+			news_event = { id = news.90 hours = 6 }
+			add_autonomy_ratio = {
+				value = 0.05
+				localization = zeon_solidarity_among_colonies
+			}
+			unlock_decision_tooltip = pa_change_to_zeonism
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = EFS
+							tag = GRA
+							tag = VBC
+							tag = SI7
+						}
+					}
+				}
+				add_autonomy_ratio = {
+					value = 0.05
+					localization = zeon_solidarity_among_colonies
+				}
+				add_opinion_modifier = {
+					target = ZEO
+					modifier = zeon_solidarity_among_colonies
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_moon_aliance
+		icon = GFX_goal_moon_aliance
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = 1
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = zeon_solidarity_among_colonies
+		}
+		mutually_exclusive = {
+			focus = zeon_tyrant_of_moon
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = zeon_moon_aliance_ZEO
+				days = 180
+			}
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = VBC
+						tag = GRA
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = zeon_moon_aliance
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_colony_council
+		icon = GFX_goal_colony_council
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = -1
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_solidarity_among_colonies
+		}
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				SI1 = {
+					has_opinion = {
+						target = ZEO
+						value > 29
+					}
+				}
+				SI2 = {
+					has_opinion = {
+						target = ZEO
+						value > 29
+					}
+				}
+				SI4 = {
+					has_opinion = {
+						target = ZEO
+						value > 29
+					}
+				}
+				SI5 = {
+					has_opinion = {
+						target = ZEO
+						value > 29
+					}
+				}
+				SI6 = {
+					has_opinion = {
+						target = ZEO
+						value > 29
+					}
+				}
+			}
+		}
+		completion_reward = {
+			news_event = { id = news.114 hours = 9 }
+			every_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = EFS
+							tag = GRA
+							tag = VBC
+							tag = SI7
+						}
+					}
+				}
+				add_autonomy_ratio = {
+					value = 0.1
+					localization = zeon_colony_council
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_space_security
+		icon = GFX_goal_space_security
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = -2
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		prerequisite = {
+			focus = zeon_casval_and_altesia
+			focus = zeon_colony_council
+		}
+		available = {
+			has_war = no
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 50
+			add_ideas = space_security
+			every_other_country = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = EFS
+							tag = VBC
+							tag = GRA
+							tag = SI7
+						}
+					}
+				}
+				diplomatic_relation = {
+					country = ROOT
+					relation = non_aggression_pact
+				}
+				add_ideas = space_security
+			}
+			news_event = { id = news.115 hours = 9 }
+		}
+	}
+
+	focus = {
+		id = zeon_space_block_economy
+		icon = GFX_goal_generic_trade
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = 0
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = zeon_moon_aliance
+		}
+		prerequisite = {
+			focus = zeon_colony_council
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = economic_sanctions
+				}
+				remove_ideas = economic_sanctions
+			}
+			if = {
+				limit = {
+					has_idea = economic_sanctions2
+				}
+				remove_ideas = economic_sanctions2
+			}
+			news_event = { id = news.91 hours = 6 }
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = SI1
+						tag = SI2
+						tag = SI4
+						tag = SI5
+						tag = SI6
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = zeon_space_block_economy
+				}
+				add_opinion_modifier = {
+					target = EFS
+					modifier = zeon_space_block_economy_EFS
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_colony_alliance
+		icon = GFX_goal_colony_alliance
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = 0
+		y = 6
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		available = {
+			has_war = no
+		}
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_space_block_economy
+		}
+		prerequisite = {
+			focus = zeon_space_security
+		}
+		mutually_exclusive = {
+			focus = zeon_box_of_laplace
+			focus = zeon_phantom_speech
+			focus = zeon_approval_of_gradual_autonomy
+		}
+		completion_reward = {
+			news_event = { id = news.92 hours = 6 }
+			EFS = {
+				if = {
+					limit = {
+						ZEO = {
+							is_subject_of = EFS
+							NOT = {
+								has_autonomy_state = autonomy_dominion
+							}
+						}
+					}
+					set_autonomy = {
+						target = ZEO
+						autonomy_state = autonomy_dominion
+					}
+					ZEO = {
+						add_popularity = { ideology = zeonism popularity = 0.4 }
+						set_politics = {
+							ruling_party = zeonism
+							elections_allowed = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						SI1 = {
+							is_subject_of = EFS
+							NOT = {
+								has_autonomy_state = autonomy_dominion
+							}
+						}
+					}
+					set_autonomy = {
+						target = SI1
+						autonomy_state = autonomy_dominion
+					}
+					SI1 = {
+						set_politics = {
+							ruling_party = zeonism
+							elections_allowed = yes
+						}
+						add_popularity = { ideology = zeonism popularity = 0.2 }
+					}
+				}
+				if = {
+					limit = {
+						SI2 = {
+							is_subject_of = EFS
+							NOT = {
+								has_autonomy_state = autonomy_dominion
+							}
+						}
+					}
+					set_autonomy = {
+						target = SI2
+						autonomy_state = autonomy_dominion
+					}
+					SI2 = {
+						add_popularity = { ideology = zeonism popularity = 0.2 }
+						set_politics = {
+							ruling_party = zeonism
+							elections_allowed = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						SI4 = {
+							is_subject_of = EFS
+							NOT = {
+								has_autonomy_state = autonomy_dominion
+							}
+						}
+					}
+					set_autonomy = {
+						target = SI4
+						autonomy_state = autonomy_dominion
+					}
+					SI4 = {
+					add_popularity = { ideology = zeonism popularity = 0.2 }
+						set_politics = {
+							ruling_party = zeonism
+							elections_allowed = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						SI5 = {
+							is_subject_of = EFS
+							NOT = {
+								has_autonomy_state = autonomy_dominion
+							}
+						}
+					}
+					set_autonomy = {
+						target = SI5
+						autonomy_state = autonomy_dominion
+					}
+					SI5 = {
+						add_popularity = { ideology = zeonism popularity = 0.2 }
+						set_politics = {
+							ruling_party = zeonism
+							elections_allowed = yes
+						}
+					}
+				}
+				if = {
+					limit = {
+						SI6 = {
+							is_subject_of = EFS
+							NOT = {
+								has_autonomy_state = autonomy_dominion
+							}
+						}
+					}
+					set_autonomy = {
+						target = SI6
+						autonomy_state = autonomy_dominion
+					}
+					SI6 = {
+						add_popularity = { ideology = zeonism popularity = 0.2 }
+						set_politics = {
+							ruling_party = zeonism
+							elections_allowed = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_joint_research
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = -2
+		y = 7
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_colony_alliance
+		}
+		completion_reward = {
+			add_to_tech_sharing_group = zeon_tech_share
+		}
+	}
+
+	focus = {
+		id = zeon_spacenoid_declaration_of_independence
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = 0
+		y = 7
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 10
+			modifier = {
+				NOT = {
+					has_completed_focus = zeon_national_mobilization_act
+				}
+				factor = 0
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = zeon_colony_alliance
+			focus = zeon_phantom_speech
+		}
+		will_lead_to_war_with = EFS
+		continue_if_invalid = no
+		available = {
+			threat > 0.1
+			NOT = {
+				has_war_with = EFS
+			}
+			has_completed_focus = zeon_total_force_warfare_study
+		}
+		completion_reward = {
+			EFS = {
+				if = {
+					limit = {
+						ZEO = {
+							is_subject_of = EFS
+						}
+					}
+					set_autonomy = {
+						target = ZEO
+						autonomy_state = autonomy_free
+					}
+				}
+				if = {
+					limit = {
+						SI1 = {
+							is_subject_of = EFS
+						}
+					}
+					set_autonomy = {
+						target = SI1
+						autonomy_state = autonomy_free
+					}
+				}
+				if = {
+					limit = {
+						SI2 = {
+							is_subject_of = EFS
+						}
+					}
+					set_autonomy = {
+						target = SI2
+						autonomy_state = autonomy_free
+					}
+				}
+				if = {
+					limit = {
+						SI4 = {
+							is_subject_of = EFS
+						}
+					}
+					set_autonomy = {
+						target = SI4
+						autonomy_state = autonomy_free
+					}
+				}
+				if = {
+					limit = {
+						SI5 = {
+							is_subject_of = EFS
+						}
+					}
+					set_autonomy = {
+						target = SI5
+						autonomy_state = autonomy_free
+					}
+				}
+				if = {
+					limit = {
+						SI6 = {
+							is_subject_of = EFS
+						}
+					}
+					set_autonomy = {
+						target = SI6
+						autonomy_state = autonomy_free
+					}
+				}
+				create_wargoal = {
+					target = ZEO
+					type = annex_everything
+				}
+			}
+			every_country = {
+				limit = {
+					is_in_faction_with = EFS
+					NOT = {
+						original_tag = EFS
+					}
+				}
+				leave_faction = yes
+			}
+			create_faction = ZEO_faction_colony_alliance
+			create_wargoal = {
+				target = EFS
+				type = topple_government
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_comrades_of_deikun
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		relative_position_id = zeon_harmony_with_deikun
+		x = 4
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_spokesman_for_contlism
+		}
+		mutually_exclusive = {
+		  focus = zeon_resistance_to_dictatorship
+		}
+		bypass = {
+			has_country_leader = {
+				character = ZEO_degwin_sodo_zabi
+				ruling_only = yes
+			}
+		}
+		available = {
+      if = {
+        limit = {
+          is_ai = no
+        }
+  			zeonism > 0.5
+      }
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = zeonism
+				elections_allowed = yes
+			}
+			add_country_leader_role = {
+				character = ZEO_degwin_sodo_zabi
+				promote_leader = yes
+				country_leader={
+					expire = "100.1.1"
+					ideology = contlism
+					traits = {
+						bloody_revolutionary
+					}
+				}
+			}
+			news_event = { id = news.2 }
+		}
+	}
+
+	focus = {
+		id = zeon_eliminate_extremist
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = -2
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		prerequisite = {
+			focus = zeon_comrades_of_deikun
+		}
+		bypass = {
+			has_government = spacesupremacy
+		}
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				spacesupremacy < 0.25
+			}
+		}
+		completion_reward = {
+			add_political_power = -50
+			add_stability = 0.1
+			add_popularity = {
+				ideology = zeonism
+				popularity = 0.05
+			}
+			custom_effect_tooltip = zeon_eliminate_extremist_tooltip
+			ZEO_aiguille_delaz = {
+				set_character_flag = disable_corps_commander
+			}
+			ZEO_killing = {
+				set_character_flag = disable_corps_commander
+			}
+			custom_effect_tooltip = disable_political_advisor
+			show_ideas_tooltip = aiguile_delaz
+			show_ideas_tooltip = killing
+			set_country_flag = eliminate_extremist
+		}
+	}
+
+	focus = {
+		id = zeon_efforts_to_avoid_war
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = 0
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		available = {
+			has_war = no
+		}
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = zeon_comrades_of_deikun
+		}
+		completion_reward = {
+		  add_political_power = 150
+			add_war_support = -0.05
+			add_stability = 0.03
+			add_named_threat = {
+				threat = -3
+				name = zeon_efforts_to_avoid_war
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 932
+				}
+				932 = {
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 933
+				}
+				933 = {
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 934
+				}
+				934 = {
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 935
+				}
+				935 = {
+					remove_building = {
+						type = arms_factory
+						level = 3
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_tyrant_of_moon
+		icon = GFX_goal_tyrant_of_moon
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = -1
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		bypass = {
+			NOT = {
+				OR = {
+					country_exists = VBC
+					country_exists = GRA
+				}
+			}
+		}
+		prerequisite = {
+			focus = zeon_efforts_to_avoid_war
+		}
+		prerequisite = {
+			focus = zeon_eliminate_extremist
+		}
+		mutually_exclusive = {
+			focus = zeon_moon_aliance
+		}
+		completion_reward = {
+			GRA = {
+				add_opinion_modifier = {
+					target = ZEO
+					modifier = tyrant_of_moon
+				}
+				country_event = {
+					id = zeon.69
+					days = 3
+				}
+			}
+			VBC = {
+				add_opinion_modifier = {
+					target = ZEO
+					modifier = tyrant_of_moon
+				}
+				country_event = {
+					id = zeon.112
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_influential_people_of_earth
+		icon = GFX_goal_influential_people_of_earth
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = 1
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_efforts_to_avoid_war
+		}
+		prerequisite = {
+			focus = zeon_capitalizing_on_the_fame_of_parent
+		}
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.05 }
+			add_stability = 0.05
+			EFS = {
+				add_opinion_modifier = {
+					target = ZEO
+					modifier = influential_people_of_earth
+				}
+				country_event = {
+					id = zeon.86
+					days = 3
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_concession_to_efsf
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = 0
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
+		prerequisite = {
+			focus = zeon_influential_people_of_earth
+		}
+		prerequisite = {
+			focus = zeon_tyrant_of_moon
+		}
+		bypass = {
+			NOT = {
+				OR = {
+					has_idea = economic_sanctions
+					has_idea = economic_sanctions2
+				}
+			}
+		}
+		available = {
+			OR = {
+				has_idea = economic_sanctions
+				has_idea = economic_sanctions2
+			}
+		}
+		completion_reward = {
+			add_named_threat = {
+				threat = -3
+				name = zeon_concession_to_efsf
+			}
+			set_country_flag = concessionto_efsf_start
+			EFS = {
+				country_event = { id = zeon.93 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_phantom_speech
+		icon = GFX_goal_phantom_speech
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = -1
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			has_war = no
+			ZEO = {
+				NOT = {
+					has_country_flag = concessionto_efsf_start
+					has_country_flag = deliver_roselcia
+				}
+			}
+		}
+		prerequisite = {
+			focus = zeon_concession_to_efsf
+		}
+		mutually_exclusive = {
+			focus = zeon_colony_alliance
+			focus = zeon_approval_of_gradual_autonomy
+			focus = zeon_box_of_laplace
+		}
+		completion_reward = {
+			news_event = {
+				id = news.108
+				hours = 3
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_approval_of_gradual_autonomy
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = 1
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_concession_to_efsf
+		}
+		available = {
+			has_war = no
+			has_country_flag = deliver_roselcia
+			NOT= {
+				has_country_flag = concessionto_efsf_start
+			}
+		}
+		bypass = {
+			EFS = {
+				has_completed_focus = efsf_political_settlement
+			}
+		}
+		mutually_exclusive = {
+			focus = zeon_phantom_speech
+			focus = zeon_colony_alliance
+			focus = zeon_box_of_laplace
+		}
+		completion_reward = {
+			add_political_power = 100
+			add_autonomy_ratio = {
+				value = 0.15
+				localization = zeon_approval_of_gradual_autonomy
+			}
+			EFS = {
+				country_event = { id = efsf.7 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_declaration_of_war_is_hatred_deeply
+		icon = GFX_focus_rom_parties_end
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = 1
+		y = 5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		will_lead_to_war_with = EFS
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 10
+			modifier = {
+				NOT = {
+					has_completed_focus = zeon_national_mobilization_act
+				}
+				factor = 0
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = zeon_approval_of_gradual_autonomy
+		}
+		available = {
+			OR = {
+				has_country_flag = meeting_with_king_end
+				has_government = spacesupremacy
+			}
+			threat > 0.1
+			NOT = {
+				has_war_with = EFS
+			}
+			has_completed_focus = zeon_total_force_warfare_study
+		}
+		completion_reward = {
+			news_event = { id = news.123 hours = 3 }
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = EFS
+			}
+			if = {
+				limit = {
+					is_in_faction_with = EFS
+				}
+				leave_faction = yes
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_capitalizing_on_the_fame_of_parent
+		icon = GFX_goal_capitalizing_on_the_fame_of_parent
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = 2
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		available = {
+			has_country_leader = {
+				character = ZEO_degwin_sodo_zabi
+				ruling_only = yes
+			}
+		}
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_comrades_of_deikun
+		}
+		completion_reward = {
+			custom_effect_tooltip = zeon_capitalizing_on_the_fame_of_parent_tooltip
+			ZEO_garma_zabi = {
+				set_character_flag = disable_corps_commander
+			}
+			custom_effect_tooltip = disable_ground_chief
+			show_ideas_tooltip = garma_zabi
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = garma_zabi_pa
+		}
+	}
+
+	focus = {
+		id = zeon_end_of_brotherhood_fighting
+		icon = GFX_goal_end_of_brotherhood_fighting
+		cost = 10.00
+		relative_position_id = zeon_comrades_of_deikun
+		x = 2
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		available = {
+			has_country_leader = {
+				character = ZEO_degwin_sodo_zabi
+				ruling_only = yes
+			}
+		}
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_capitalizing_on_the_fame_of_parent
+		}
+		prerequisite = {
+			focus = zeon_influential_people_of_earth
+		}
+		completion_reward = {
+		  add_political_power = 50
+			add_stability = 0.03
+			if = {
+				limit = {
+					has_idea = brothers_quarrel
+				}
+				remove_ideas = brothers_quarrel
+			}
+			if = {
+				limit = {
+					has_idea = brothers_quarrel2
+				}
+				remove_ideas = brothers_quarrel2
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_repression_of_deikun
+		icon = GFX_goal_repression_of_deikun
+		cost = 10.00
+		x = 17
+		y = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 150
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		mutually_exclusive = {
+		  focus = zeon_harmony_with_deikun
+		}
+		completion_reward = {
+		  add_political_power = 50
+			add_stability = -0.03
+			add_war_support = 0.05
+			add_popularity = { ideology = spacesupremacy popularity = 0.05 }
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = EFS
+					}
+				}
+				add_opinion_modifier = {
+					target = ZEO
+					modifier = zeon_repression_of_deikun
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				country_event = { id = zeon.125 days = 10 random = 100 }
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_dominance_of_human_survival_theory
+		icon = GFX_goal_dominance_of_human_survival_theory
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = 0
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			NOT = {
+				has_country_flag = sweep_away_zabi_3
+				has_global_flag = giren_is_dead
+			}
+		}
+		prerequisite = {
+			focus = zeon_repression_of_deikun
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				news_event = { id = news.89 hours = 6 }
+				unlock_decision_tooltip = pe_invited_francis_orbit
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_munzo_univercity
+		icon = GFX_goal_munzo_univercity
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = -3
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
+		prerequisite = {
+			focus = zeon_spokesman_for_contlism
+			focus = zeon_dominance_of_human_survival_theory
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_government = zeonism
+				}
+				add_war_support = 0.03
+				add_timed_idea = {
+					idea = zeon_munzo_univercity_zeonism
+					days = 120
+				}
+			}
+			else = {
+				add_war_support = -0.05
+				add_ideas = zeon_munzo_univercity
+				unlock_decision_tooltip = pa_catch_the_spirit_prisoner
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_medal_of_cross
+		icon = GFX_goal_medal_of_cross
+		cost = 10.00
+		relative_position_id = zeon_munzo_univercity
+		x = 0
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_munzo_univercity
+		}
+		completion_reward = {
+		  add_political_power = 50
+			country_event = { id = zeon.108 }
+			add_ideas = zeon_medal_of_cross
+		}
+	}
+
+	focus = {
+		id = zeon_dominance_of_human_survival_theory2
+		icon = GFX_goal_dominance_of_human_survival_theory2
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = -1
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+			modifier = {
+				factor = 0
+				has_war_with = EFS
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_dominance_of_human_survival_theory
+		}
+		available = {
+			NOT = {
+				has_country_flag = sweep_away_zabi_3
+				has_global_flag = giren_is_dead
+			}
+		}
+		completion_reward = {
+			news_event = {
+				id = news.109
+				hours = 6
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = EFS
+					}
+				}
+				add_ideas = spacenoid_rising
+				remove_opinion_modifier = {
+					target = ZEO
+					modifier = zeon_repression_of_deikun
+				}
+			}
+			unlock_decision_tooltip = pe_true_friend_of_general_manager
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_hold_parliament
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = 1
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT }
+		prerequisite = {
+			focus = zeon_dominance_of_human_survival_theory
+		}
+		completion_reward = {
+		  add_political_power = 150
+			add_stability = 0.05
+			add_war_support = 0.03
+			add_popularity = { ideology = spacesupremacy popularity = 0.05 }
+			unlock_decision_tooltip = pe_true_friend_of_general_manager
+		}
+	}
+
+	focus = {
+		id = zeon_request_of_suffrage
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = -1
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		bypass = {
+			EFS = {
+				has_completed_focus = efsf_colony_autonomy_law
+			}
+		}
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			NOT = {
+				has_war_with = EFS
+			}
+		}
+		prerequisite = {
+			focus = zeon_hold_parliament
+		}
+		prerequisite = {
+			focus = zeon_dominance_of_human_survival_theory2
+		}
+		completion_reward = {
+			news_event = { id = news.122 days = 3 }
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = EFS
+					}
+				}
+				add_opinion_modifier = {
+					target = ZEO
+					modifier = request_of_suffrage
+				}
+				add_opinion_modifier = {
+					target = EFS
+					modifier = request_of_suffrage_EFS
+				}
+			}
+			every_country = {
+				limit = {
+					NOT = {
+						tag = EFS
+					}
+				}
+				reverse_add_opinion_modifier = {
+					target = EFS
+					modifier = request_of_suffrage_EFS
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_enhancement_of_defense_army
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = 1
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		available = {
+			has_idea = defense_military_academy
+		}
+		prerequisite = {
+			focus = zeon_hold_parliament
+		}
+		completion_reward = {
+			add_war_support = 0.03
+			unlock_decision_tooltip = mb_home_country_air_defense_corps
+			swap_ideas = {
+				remove_idea = defense_military_academy
+				add_idea = defense_military_academy2
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_political_intervention_on_side6
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = 1
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_enhancement_of_defense_army
+		}
+		mutually_exclusive = {
+			focus = zeon_support_side6_revolution
+		}
+		available = {
+			country_exists = SI6
+			if = {
+				limit = {
+					is_ai = no
+				}
+				SI6 = {
+					spacesupremacy > 0.25
+				}
+			}
+			has_completed_focus = zeon_puneemunde_institution
+			NOT= {
+				has_war_with = EFS
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				news_event = { id = news.37 days = 10 }
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_support_side6_revolution
+		icon = GFX_goal_tfv_saf_support_ossebrandwag
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = -1
+		y = 4
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_request_of_suffrage
+		}
+		mutually_exclusive = {
+			focus = zeon_political_intervention_on_side6
+		}
+		available = {
+			country_exists = SI6
+			threat > 0.2
+			if = {
+				limit = {
+					is_ai = no
+				}
+				SI6 = {
+					spacesupremacy > 0.4
+				}
+			}
+			has_completed_focus = zeon_puneemunde_institution
+			NOT= {
+				has_war_with = EFS
+			}
+		}
+		completion_reward = {
+			news_event = { id = news.110 days = 30 }
+		}
+	}
+
+	focus = {
+		id = zeon_fullmoon
+		icon = GFX_goal_fullmoon
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = -2
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_support_side6_revolution
+			focus = zeon_dominance_of_human_survival_theory2
+		}
+		mutually_exclusive = {
+			focus = zeon_protect_granada
+			focus = zeon_resident_forces_in_granada
+		}
+		available = {
+			country_exists = GRA
+			country_exists = VBC
+			threat > 0.15
+			has_idea = zeonic
+			GRA = {
+				has_opinion = {
+					target = ZEO
+					value > 49
+				}
+				has_opinion_modifier = zeon_power_supply_to_moon
+			}
+			has_completed_focus = zeon_puneemunde_institution
+			NOT= {
+				has_war_with = EFS
+			}
+		}
+		continue_if_invalid = no
+		completion_reward = {
+			news_event = { id = news.165 days = 20 }
+		}
+	}
+
+	focus = {
+		id = zeon_resident_forces_in_granada
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = 2
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_political_intervention_on_side6
+		}
+		mutually_exclusive = {
+			focus = zeon_protect_granada
+			focus = zeon_fullmoon
+		}
+		available = {
+			country_exists = GRA
+			if = {
+				limit = {
+					is_ai = no
+				}
+				GRA = {
+					has_opinion = {
+						target = ZEO
+						value > 19
+					}
+				}
+			}
+			NOT= {
+				has_war_with = EFS
+			}
+		}
+		bypass = {
+			EFS = {
+				has_completed_focus = efsf_secretary_of_granada
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				GRA = {
+					country_event = { id = zeon.18 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_protect_granada
+		icon = GFX_goal_continuous_restrict_freedom
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = 0
+		y = 5
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = zeon_political_intervention_on_side6
+			focus = zeon_support_side6_revolution
+		}
+		mutually_exclusive = {
+			focus = zeon_fullmoon
+			focus = zeon_resident_forces_in_granada
+		}
+		available = {
+			country_exists = GRA
+			NOT= {
+				has_war_with = EFS
+			}
+		}
+		bypass = {
+			EFS = {
+				has_completed_focus = efsf_secretary_of_granada
+			}
+		}
+		completion_reward = {
+			news_event = { id = news.128 days = 6 }
+		}
+	}
+
+	focus = {
+		id = zeon_two_dictator
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = -3
+		y = 6
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_fullmoon
+		}
+		cancel_if_invalid = yes
+		available = {
+			EFS = {
+				NOT = {
+					has_government = earthsupremacy
+				}
+			}
+			has_global_flag = full_moon_war_is_end
+			VBC = {
+				is_subject_of = GRA
+			}
+			has_global_flag = ae_is_not_yes
+		}
+		completion_reward = {
+			country_event = { id = zeon.113 days = 3 }
+			unlock_decision_tooltip = dip_support_titans
+		}
+	}
+
+	focus = {
+		id = zeon_zeon_or_efsf
+		icon = GFX_goal_generic_neutrality_focus
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = -1
+		y = 6
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = zeon_fullmoon
+			focus = zeon_protect_granada
+		}
+		mutually_exclusive = {
+			focus = zeon_leak_side2_attack
+		}
+		available = {
+			country_exists = SI2
+			NOT = {
+				ZEO = {
+					has_full_control_of_state = 915
+					has_full_control_of_state = 916
+					has_full_control_of_state = 917
+				}
+			}
+			has_global_flag = full_moon_war_is_end
+		}
+		completion_reward = {
+			SI2 = {
+				country_event = { id = zeon.89 days = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_leak_side2_attack
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = 1
+		y = 6
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_resident_forces_in_granada
+			focus = zeon_protect_granada
+		}
+		mutually_exclusive = {
+			focus = zeon_zeon_or_efsf
+		}
+		available = {
+			country_exists = SI2
+			NOT= {
+				has_war_with = EFS
+			}
+		}
+		completion_reward = {
+		  add_political_power = 50
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = start_is_uc0079
+					}
+				}
+				EFS = {
+					country_event = { id = efsf.12 days = 3 }
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_incredible_alliance
+		icon = GFX_goal_support_fascism
+		cost = 5.00
+		relative_position_id = zeon_repression_of_deikun
+		x = -3
+		y = 7
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		will_lead_to_war_with = EFS
+		prerequisite = {
+			focus = zeon_two_dictator
+		}
+		available = {
+			EFS = {
+				NOT = {
+					has_completed_focus = efsf_enemy_is_zeon
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		bypass = {
+			EFS = {
+				OR = {
+					has_civil_war = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = zeon_support_titans_inf_tt
+				check_variable = { var = ZEO.zeon_support_titans_inf value = 9000  compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = zeon_support_titans_mbt_tt
+				check_variable = { var = ZEO.zeon_support_titans_mbt value = 1500  compare = greater_than_or_equals }
+			}
+			custom_trigger_tooltip = {
+				tooltip = zeon_support_titans_mor_tt
+				check_variable = { var = ZEO.zeon_support_titans_mor value = 1500  compare = greater_than_or_equals }
+			}
+			EFS = {
+				NOT = {
+					has_government = earthsupremacy
+				}
+			}
+		}
+		completion_reward = {
+			news_event = news.155
+		}
+	}
+
+	focus = {
+		id = zeon_megiddo_fire
+		icon = GFX_goal_megiddo_fire
+		cost = 10.00
+		relative_position_id = zeon_repression_of_deikun
+		x = 0
+		y = 7
+		ai_will_do = {
+		  factor = 10
+			modifier = {
+				NOT = {
+					has_completed_focus = zeon_national_mobilization_act
+				}
+				factor = 0
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = zeon_leak_side2_attack
+			focus = zeon_zeon_or_efsf
+		}
+		will_lead_to_war_with = EFS
+		available = {
+			has_completed_focus = zeon_total_force_warfare_study
+			ZEO = {
+				NOT = {
+					has_war_with = EFS
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = start_is_uc0079
+					}
+				}
+				create_wargoal = {
+					target = EFS
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = {
+					is_in_faction_with = EFS
+				}
+				leave_faction = yes
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_war_of_regain_all
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 5.00
+		relative_position_id = zeon_repression_of_deikun
+		x = -3
+		y = 8
+		ai_will_do = {
+		  factor = 10
+			modifier = {
+				NOT = {
+					has_completed_focus = zeon_national_mobilization_act
+				}
+				factor = 0
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = {
+			focus = zeon_incredible_alliance
+		}
+		bypass = {
+			has_war_with = EFS
+		}
+		cancel_if_invalid = yes
+		available = {
+			country_exists = EFS
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = EFS
+				type = puppet_wargoal_focus
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_defense_military_academy
+		icon = GFX_goal_generic_military_sphere
+		cost = 10.00
+		x = 28
+		y = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 100
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				category = land_doctrine
+				uses = 2
+				cost_reduction = 0.5
+			}
+			add_command_power = 25
+			add_ideas = defense_military_academy
+		}
+	}
+
+	focus = {
+		id = zeon_organization_of_mobilized_mobile_battalion
+		icon = GFX_goal_organization_of_mobilized_mobile_battalion
+		cost = 10.00
+		relative_position_id = zeon_defense_military_academy
+		x = 0
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_defense_military_academy
+		}
+		available = {
+			if = {
+				limit = {
+					has_tech = recruiment_zudah
+				}
+				has_equipment = {
+					archetype_ems10 > 11
+				}
+				else = {
+					has_equipment = {
+						archetype_ms05 > 11
+					}
+				}	
+			}
+		}
+		completion_reward = {
+			add_command_power = 25
+			add_tech_bonus = {
+				name = zeon_organization_of_mobilized_mobile_battalion
+				bonus = 0.3
+				uses = 1
+				category = mobilesuit
+			}
+			unlock_decision_tooltip = mb_mentoring_mobile_battalion_exercise
+		}
+	}
+
+	focus = {
+		id = zeon_enhancement_of_general_purpose_MS
+		icon = GFX_goal_enhancement_of_general_purpose_MS
+		cost = 10.00
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = -3
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_organization_of_mobilized_mobile_battalion
+		}
+		completion_reward = {
+			unlock_decision_tooltip = mb_oem_production
+			add_tech_bonus = {
+				name = zeon_enhancement_of_general_purpose_MS
+				uses = 2
+				bonus = 0.3
+				ahead_reduction = 1
+				category = mass_mobilesuit
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_improvement_of_MS_weapons
+		icon = GFX_goal_improvement_of_MS_weapons
+		cost = 5.00
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = -4
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_enhancement_of_general_purpose_MS
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_improvement_of_MS_weapons
+				uses = 3
+				bonus = 0.3
+				ahead_reduction = 1
+				category = mobilesuit_weapon
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_high_mobility_of_general_purpose_MS
+		icon = GFX_goal_high_mobility_of_general_purpose_MS
+		cost = 10.00
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = -2
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_enhancement_of_general_purpose_MS
+		}
+		bypass = {
+			has_tech = ms06_r_tech
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_high_mobility_of_general_purpose_MS
+				uses = 1
+				bonus = 0.5
+				ahead_reduction = 1
+				technology = ms06_r_tech
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_miniaturization_of_mega_particle_cannon
+		icon = GFX_goal_miniaturization_of_mega_particle_cannon
+		cost = 10.00
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = -4
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_improvement_of_MS_weapons
+		}
+		bypass = {
+			has_tech = mega_particle2
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_miniaturization_of_mega_particle_cannon
+				bonus = 0.5
+				ahead_reduction = 1
+				uses = 1
+				technology = mega_particle2
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_improvement_of_bullet-proof_weapons
+		icon = GFX_goal_improvement_of_bullet-proof_weapons
+		cost = 5.00
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = -2
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_improvement_of_MS_weapons
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_improvement_of_bullet-proof_weapons
+				bonus = 0.5
+				uses = 2
+				category = mobilesuit_weapon_bullet
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_focus_on_mobiletank
+		icon = GFX_goal_focus_on_mobiletank
+		cost = 10.00
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = 2
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_organization_of_mobilized_mobile_battalion
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_focus_on_mobiletank
+				uses = 1
+				bonus = 0.5
+				category = mobiletank
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_focus_on_MS_for_local_battle
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5.00
+		relative_position_id = zeon_focus_on_mobiletank
+		x = 0
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_focus_on_mobiletank
+		}
+		completion_reward = {
+			unlock_decision_tooltip = mb_oem_production
+			add_tech_bonus = {
+				name = zeon_focus_on_MS_for_local_battle
+				uses = 3
+				bonus = 0.3
+				category = local_mobilesuit
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_focus_on_MA
+		icon = GFX_goal_focus_on_MA
+		cost = 10.00
+		relative_position_id = zeon_focus_on_mobiletank
+		x = 0
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_focus_on_MS_for_local_battle
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_focus_on_MA
+				uses = 3
+				bonus = 0.3
+				category = mobilearmor
+				technology = minovsky_craft
+				technology = ifield_barrier
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_puneemunde_institution
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10.00
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = 0
+		y = 1
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		available = {
+			command_power > 50
+		}
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_organization_of_mobilized_mobile_battalion
+		}
+		completion_reward = {
+			add_command_power = -50
+			add_ideas = zeon_puneemunde_institution
+			unlock_decision_tooltip = rd_research_institution
+		}
+	}
+
+	focus = {
+		id = zeon_total_force_warfare_study
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = 0
+		y = 2
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_puneemunde_institution
+		}
+		available = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				threat > 0.2
+			}
+			OR = {
+				has_completed_focus = zeon_harmony_with_deikun
+				has_completed_focus = zeon_repression_of_deikun
+			}
+		}
+		completion_reward = {
+			add_command_power = 30
+			army_experience = 50
+			air_experience = 25
+			navy_experience = 25
+			if = {
+				limit = {
+					has_global_flag = start_is_uc0075
+				}
+				country_event = { id = zeon.3 days = 3 }
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_national_mobilization_act
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = 0
+		y = 3
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		will_lead_to_war_with = EFS
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		prerequisite = {
+			focus = zeon_total_force_warfare_study
+		}
+		completion_reward = {
+			add_ideas = zeon_national_mobilization_act
+			add_named_threat = {
+				name = zeon_national_mobilization_act
+				threat = 5
+			}
+			if = {
+				limit = {
+					has_idea = brothers_quarrel
+				}
+				unlock_decision_tooltip = mb_division_of_forces
+			}
+			unlock_decision_tooltip = mb_foreign_force
+			unlock_decision_tooltip = wm_establishment_of_army_of_earth
+		}
+	}
+
+	focus = {
+		id = zeon_gravity_front_line
+		icon = GFX_goal_gravity_front_line
+		cost = 10
+		relative_position_id = zeon_organization_of_mobilized_mobile_battalion
+		x = 0
+		y = 4
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 20
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_national_mobilization_act
+		}
+		available = {
+			has_country_flag = establishment_of_army_of_earth
+		}
+		completion_reward = {
+			add_command_power = 25
+			army_experience = 25
+			add_timed_idea = {
+				idea = gravity_front_line
+				days = 365
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						character = ZEO_gihren_zabi
+						ruling_only = yes
+					}
+				}
+				country_event = { id = zeon.40 }
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_aircraft_research
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		relative_position_id = zeon_national_mobilization_act
+		x = -5
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_national_mobilization_act
+		}
+		available = {
+			has_country_flag = establishment_of_army_of_earth
+		}
+		completion_reward = {
+			air_experience = 25
+			add_tech_bonus = {
+				name = zeon_aircraft_research
+				category = air_equipment
+				uses = 3
+				bonus = 0.5
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_attacking_carrier_aircraft
+		icon = GFX_goal_attacking_carrier_aircraft
+		cost = 5.00
+		relative_position_id = zeon_aircraft_research
+		x = -1
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_aircraft_research
+		}
+		bypass = {
+			has_tech = ZEO_strategic_bomber_tech
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				technology = ZEO_strategic_bomber_tech
+				bonus = 0.3
+				uses = 2
+				name = zeon_attacking_carrier_aircraft
+			}
+			add_doctrine_cost_reduction = {
+				category = cat_operational_integrity
+				cost_reduction = 0.5
+				uses = 1
+				name = zeon_attacking_carrier_aircraft
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_MS_airborne_division
+		icon = GFX_focus_generic_paratrooper
+		cost = 5.00
+		relative_position_id = zeon_aircraft_research
+		x = -1
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_attacking_carrier_aircraft
+		}
+		completion_reward = {
+			army_experience = 40
+			air_experience = 15
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				technology = large_scale_airborne_operation
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_focus_on_bombers
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		relative_position_id = zeon_aircraft_research
+		x = 1
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_aircraft_research
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_focus_on_bombers
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+			}
+			add_doctrine_cost_reduction = {
+				name = zeon_focus_on_bombers
+				cost_reduction = 0.5
+				uses = 1
+				category = strategic_destruction_tree
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_focus_on_sfs
+		icon = GFX_goal_focus_on_sfs
+		cost = 5.00
+		relative_position_id = zeon_aircraft_research
+		x = 1
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_focus_on_bombers
+		}
+		completion_reward = {
+			army_experience = 15
+			air_experience = 40
+			add_tech_bonus = {
+				bonus = 0.3
+				uses = 1
+				technology = sfs
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_logistics
+		icon = GFX_focus_generic_provoke_border_clashes
+		cost = 5.00
+		relative_position_id = zeon_gravity_front_line
+		x = -2
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_gravity_front_line
+		}
+		available = {
+			has_idea = gravity_front_line
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = gravity_front_line2
+				remove_idea = gravity_front_line
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_local_recruitment
+		icon = GFX_focus_generic_military_academy
+		cost = 5.00
+		relative_position_id = zeon_gravity_front_line
+		x = -2
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		prerequisite = {
+			focus = zeon_logistics
+		}
+		available = {
+			has_idea = gravity_front_line2
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = gravity_front_line3
+				remove_idea = gravity_front_line2
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_MS_and_ground_forces_collaboration
+		icon = GFX_goal_MS_and_ground_forces_collaboration
+		cost = 5.00
+		relative_position_id = zeon_gravity_front_line
+		x = 2
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_gravity_front_line
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = zeon_MS_and_ground_forces_collaboration
+				uses = 1
+				category = cat_mobilesuit_warfare
+				cost_reduction = 0.4
+			}
+			add_ideas = coop_with_ms
+		}
+	}
+
+	focus = {
+		id = zeon_mobile_headquarters
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 5.00
+		relative_position_id = zeon_gravity_front_line
+		x = 0
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_MS_and_ground_forces_collaboration
+		}
+		prerequisite = {
+			focus = zeon_occupation_policy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_mobile_headquarters
+				bonus = 0.7
+				uses = 1
+				category = landbattleship
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_occupation_policy
+		icon = GFX_goal_occupation_policy
+		cost = 5.00
+		relative_position_id = zeon_gravity_front_line
+		x = 0
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = {
+			focus = zeon_gravity_front_line
+		}
+		completion_reward = {
+			add_ideas = occupation_policy
+		}
+	}
+
+	focus = {
+		id = zeon_MS_special_forces
+		icon = GFX_goal_MS_special_forces
+		cost = 5.00
+		relative_position_id = zeon_gravity_front_line
+		x = 2
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_MS_and_ground_forces_collaboration
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_MS_special_forces
+				bonus = 0.3
+				uses = 3
+				category = special_mobilesuit
+				category = custom_mobilesuit
+				category = mountaineers_tech
+				category = para_tech
+				category = marine_tech
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_zeon_navy
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 5.00
+		relative_position_id = zeon_national_mobilization_act
+		x = 6
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_national_mobilization_act
+		}
+		available = {
+			has_country_flag = strategic_maritime_intelligence_unit_is_yes
+		}
+		completion_reward = {
+			navy_experience = 25
+			add_tech_bonus = {
+				name = zeon_zeon_navy
+				category = naval_equipment
+				uses = 3
+				bonus = 0.5
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_submarine_force
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5.00
+		relative_position_id = zeon_zeon_navy
+		x = -2
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		mutually_exclusive = {
+		  focus = zeon_marine_forces
+		}
+		prerequisite = {
+			focus = zeon_zeon_navy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_submarine_force
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_trade_destruction
+		icon = GFX_goal_generic_wolf_pack
+		cost = 5.00
+		relative_position_id = zeon_zeon_navy
+		x = -2
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_submarine_force
+		}
+		completion_reward = {
+			add_ideas = navy_raider
+			add_doctrine_cost_reduction = {
+				uses = 3
+				cost_reduction = 0.5
+				category = cat_trade_interdiction
+				name = zeon_trade_destruction
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_marine_forces
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5.00
+		relative_position_id = zeon_zeon_navy
+		x = 0
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		mutually_exclusive = {
+		  focus = zeon_submarine_force
+		}
+		prerequisite = {
+			focus = zeon_zeon_navy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_marine_forces
+				uses = 3
+				bonus = 0.3
+				category = cv_tech
+				category = dd_tech
+				category = cl_tech
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_destruction_of_port_facility
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 5.00
+		relative_position_id = zeon_zeon_navy
+		x = 0
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_marine_forces
+		}
+		completion_reward = {
+			add_ideas = destruction_of_port_facility
+			add_doctrine_cost_reduction = {
+				category = cat_base_strike
+				cost_reduction = 1
+				uses = 3
+				name = zeon_destruction_of_port_facility
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_development_of_amphibious_MS
+		icon = GFX_goal_development_of_amphibious_MS
+		cost = 5.00
+		relative_position_id = zeon_zeon_navy
+		x = 2
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_zeon_navy
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_development_of_amphibious_MS
+				bonus = 0.5
+				uses = 3
+				category = naval_mobilesuit
+			}
+		}
+	}
+
+	focus = {
+		id = zeon_development_of_underwater_MA
+		icon = GFX_goal_development_of_underwater_MA
+		cost = 5.00
+		relative_position_id = zeon_zeon_navy
+		x = 2
+		y = 2
+		ai_will_do = {
+		  factor = 5
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		prerequisite = {
+			focus = zeon_development_of_amphibious_MS
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = zeon_development_of_underwater_MA
+				bonus = 0.5
+				uses = 1
+				category = naval_mobilearmor
+			}
+		}
+	}
+}

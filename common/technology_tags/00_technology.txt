@@ -1,0 +1,301 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+technology_categories = {
+	light_air
+	medium_air
+	heavy_air
+	armor
+	cat_light_armor
+	cat_medium_armor
+	cat_heavy_armor
+	artillery
+	cat_anti_tank
+	cat_anti_air
+	naval_air
+	infantry_weapons
+	motorized_equipment
+	cat_mechanized_equipment
+	naval_equipment
+	rocketry
+	nuclear
+	industry
+	electronics
+	land_doctrine
+	air_doctrine
+	naval_doctrine
+	strategic_destruction_tree
+	battlefield_support_tree
+	operational_integrity_tree
+	jet_technology
+	trade_interdiction_tree
+	convoy_defense_tree
+	light_fighter
+	cat_heavy_fighter
+	tactical_bomber
+	cat_strategic_bomber
+	naval_bomber
+	cas_bomber
+	ship_modules_tech
+	dd_tech
+	cl_tech
+	ca_tech
+	cv_tech
+	bc_tech
+	bb_tech
+	shbb_tech
+	ss_tech
+	tp_tech
+	synth_resources
+	fleet_in_being_tree
+	encryption_tech
+	decryption_tech
+	computing_tech
+	radar_tech
+	infantry_tech
+	marine_tech
+	construction_tech
+	excavation_tech
+	submarine_doctrine
+	air_equipment
+	cat_mobile_warfare
+	cat_superior_firepower
+	cat_grand_battle_plan
+	cat_mass_assault
+	cat_base_strike
+	cat_trade_interdiction
+	cat_fleet_in_being
+	cat_strategic_destruction
+	cat_battlefield_support
+	cat_operational_integrity
+	night_vision
+	base_strike_main
+	mot_rockets
+	support_tech
+	para_tech
+	engineers_tech
+	recon_tech
+	mountaineers_tech
+	military_police_tech
+	hospital_tech
+	logistics_tech
+	signal_company_tech
+	maintenance_company_tech
+	naval_mines
+	concentrated_industry_category
+	dispersed_industry_category
+	asw_tech
+	naval_minesweeping
+	naval_minelaying
+	cat_scout_plane
+	train_tech
+	cat_production
+	cat_synth_rubber
+	cat_synth_oil
+	cat_armored_cars
+	cat_special_forces_generic
+	cat_torpedoes
+	cat_ship_light_battery
+	cat_ship_medium_battery
+	cat_ship_heavy_battery
+	air_equipment
+	plane_modules_tech
+	cat_air_guns
+	cat_air_engine
+	cat_air_bombs
+	operation_v
+	plan_rx
+	plan_gundam
+	rx78nt
+	early_mp_mobilesuit
+	exam_mobilesuit
+
+  minovsky
+	visible_light_communication
+	nuclear_reactor
+	i_field
+	mega_particle
+	energy_cap
+	minovsky_craft
+	i_field_barrier
+	engineering
+	ambac
+	newtype
+	exam
+	mobilesuit_electronics
+
+	mobilepod
+	mobilearmor
+	apsalus
+  mobilearmor_weapon
+	mobilesuit_rx78
+
+  mobilesuit
+	nt_mobilesuit
+	zeonic_mobilesuit
+	zimmad_mobilesuit
+	zwinemn_mobilesuit
+	mip_mobilesuit
+	local_mobilesuit
+	mass_mobilesuit
+	jaburo_assault_mobilesuit
+	rgm_series
+	custom_mobilesuit
+	special_mobilesuit
+	sniper_mobilesuit
+	artillery_mobilesuit
+
+	anaheim_electronics_mobilesuit
+	augusta_mobilesuit
+	jabulo_mobilesuit
+
+  mobilesuit_weapon
+	mobilesuit_weapon_bullet
+	mobilesuit_weapon_beam
+	mobilesuit_weapon_machinegun
+	mobilesuit_weapon_yashima_hi_machinegun
+	mobilesuit_weapon_holyfield_fw_machinegun
+	mobilesuit_weapon_bazooka
+	mobilesuit_weapon_brash_bazooka
+	mobilesuit_weapon_heathawk
+	mobilesuit_weapon_brash_beam
+	mobilesuit_weapon_bowa_beam
+	mobilesuit_weapon_beamsord
+	mobilesuit_weapon_beamgun
+	mobilesuit_weapon_beamsplay
+	mobilesuit_weapon_beamrifle
+	mobilesuit_weapon_brash_beam
+	mobilesuit_weapon_bowa_beam
+	mobilesuit_shield
+	mobilesuit_yashima_hi_shiled
+	mobilesuit_norfolk_shield
+	mmp_weapon
+	handl_weapon
+	val_weapon
+	kia_weapon
+	albert_weapon
+	coda_weapon
+	holyfield_fw_weapon
+	yashima_hi_weapon
+	norfolk_weapon
+	brash_weapon
+	takim_hi_weapon
+	bowa_weapon
+	abine_weapon
+
+	khanom_parts
+	zas_parts
+	gramonica_parts
+	felipe_parts
+	suze_parts
+	samsony_cim_parts
+	mathum_sonic_parts
+  migren_parts
+
+	assault_ship
+	surveilance_air
+	naval_survey_tech
+  naval_mobilesuit
+  naval_mobilesuit_weapon
+	naval_mobilearmor
+	naval_mobilearmor_weapon
+  air_mobilesuit
+	air_mobilearmor
+	air_mobilearmor_weapon
+	attack_transporter
+	transporter
+	multirolle
+	space_mobilesuit
+
+	space_ship
+	space_battleship
+	space_cruiser
+	space_fv_cruiser
+	space_carrier
+	space_equipment
+
+  landbattleship
+	armored_car
+  helicopter
+	mobiletank
+
+	cat_mobilesuit_warfare
+}
+
+technology_folders = {
+	infantry_folder = {
+		ledger = army
+	}
+	support_folder = {
+		ledger = army
+	}
+	artillery_folder = {
+		ledger = army
+	}
+	industry_folder = {
+		ledger = civilian
+	}
+	land_doctrine_folder = {
+		ledger = army
+		doctrine = yes
+	}
+	naval_doctrine_folder = {
+		ledger = navy
+		doctrine = yes
+	}
+	air_doctrine_folder = {
+		ledger = air
+		doctrine = yes
+	}
+	electronics_folder = {
+		ledger = civilian
+	}
+  ZEO_mobilesuit_folder = {
+		available = { original_tag = ZEO }
+		ledger = army
+ 	}
+	ZEO_ms_weapon_folder = {
+		available = { original_tag = ZEO }
+		ledger = army
+	}
+  ZEO_armour_folder = {
+		available = { original_tag = ZEO }
+		ledger = army
+	}
+  ZEO_naval_folder = {
+		available = { original_tag = ZEO }
+		ledger = navy
+	}
+  ZEO_air_techs_folder = {
+		available = { original_tag = ZEO }
+		ledger = air
+	}
+	ZEO_space_folder = {
+		available = { original_tag = ZEO }
+		ledger = navy
+	}
+  EFS_mobilesuit_folder = {
+		available = { original_tag = EFS }
+		ledger = army
+	}
+	EFS_ms_weapon_folder = {
+		available = { original_tag = EFS }
+		ledger = army
+	}
+  EFS_armour_folder = {
+		available = { NOT = { original_tag = ZEO } }
+		ledger = army
+	}
+  EFS_naval_folder = {
+		available = { NOT = { original_tag = ZEO } }
+		ledger = navy
+	}
+  EFS_air_techs_folder = {
+		available = { NOT = { original_tag = ZEO } }
+		ledger = air
+	}
+	EFS_space_folder = {
+		available = { NOT = { original_tag = ZEO } }
+		ledger = navy
+	}
+}

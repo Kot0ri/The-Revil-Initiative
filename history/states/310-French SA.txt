@@ -1,0 +1,31 @@
+# ジャブロー周辺
+state={
+	id=310
+	name="STATE_310"
+	manpower = 47341
+
+	state_category = pastoral
+
+	history={
+		owner = EFS
+		add_core_of = EFS
+		buildings = {
+			infrastructure = 1
+			12885 = {
+				naval_base = 1
+
+			}
+
+		}
+		victory_points = {
+			12885 1 
+		}
+
+	}
+
+	provinces={
+		4934 12885 13451 13464 13467 13478 13491 13492 13495 13500 13506 13518 13520 13523 13524 13532 13536 13548 13550 13553 13560 13565 13566 13576 
+	}
+
+	local_supplies=0.0 
+}

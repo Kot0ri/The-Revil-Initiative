@@ -1,0 +1,11 @@
+﻿division_template = {
+	name = "Mobile Tank Division"
+  regiments = {
+		mobiletank = { x = 0 y = 0 }
+    mobiletank = { x = 0 y = 1 }
+		mbt = { x = 1 y = 0 }
+		mbt = { x = 1 y = 1 }
+    motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+}

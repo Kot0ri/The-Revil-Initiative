@@ -1,0 +1,2804 @@
+crisis = {
+}
+political_actions = {
+	pa_eliminate_radical_right = {
+
+		icon = eng_blackshirt_speech
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_restructuring_of_staff_headquarters
+		}
+
+		visible = {
+			has_completed_focus = efsf_army_reform
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 30
+
+		modifier = {
+			political_power_gain = -0.3
+			earthsupremacy_drift = -0.2
+			democratic_drift = 0.2
+			stability_weekly = -0.005
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			news_event = { id = news.42 hours = 6 }
+			set_country_flag = eliminate_radical_right
+		}
+	}
+	pa_purge_reformers = {
+
+		icon = eng_blackshirt_speech
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			OR = {
+				has_completed_focus = efsf_enemy_is_efsf
+				has_completed_focus = efsf_control_of_congress
+			}
+		}
+		visible = {
+			has_completed_focus = efsf_30bunch_case
+		}
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 30
+
+		modifier = {
+			political_power_gain = -0.3
+			earthsupremacy_drift = 0.2
+			democratic_drift = -0.2
+			stability_weekly = -0.005
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			news_event = { id = news.43 hours = 6 }
+			set_country_flag = purge_reformers
+		}
+	}
+	pa_joint_military_exercises = {
+
+		icon = eng_blackshirt_speech
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_transfer_of_government_function
+		}
+
+		visible = {
+			has_completed_focus = efsf_transfer_of_government_function
+			has_war = no
+		}
+
+		fire_only_once = yes
+		cost = 25
+		days_remove = 30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			every_country = {
+				limit = {
+					NOT = {
+						tag = VBC
+						tag = GRA
+					}
+				}
+				army_experience = 50
+				add_timed_idea = {
+					idea = joint_military_exercises
+					days = 180
+				}
+			}
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = VBC
+						tag = GRA
+					}
+				}
+				add_opinion_modifier = {
+					target = EFS
+					modifier = joint_military_exercises
+				}
+			}
+		}
+	}
+	pa_colony_exclusion_exercise = {
+
+		icon = eng_blackshirt_speech
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_enhance_monitoring_network
+		}
+
+		visible = {
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			has_war = no
+			has_completed_focus = efsf_scenario_for_collapse_of_zeon
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 30
+		days_re_enable = 240
+
+		modifier = {
+			experience_gain_army = 0.3
+		}
+		remove_effect = {
+			news_event = { id = news.86 }
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	fire_revil = {
+
+		icon = eng_blackshirt_speech
+
+		activation = {
+			has_global_flag = revil_return_is_yes
+		}
+		allowed = {
+			original_tag = EFS
+		}
+		visible = {
+		}
+
+		days_mission_timeout = 30
+		selectable_mission = yes
+		is_good = yes
+		fire_only_once = yes
+
+		cost = 30
+
+		complete_effect = {
+			add_country_leader_role = {
+				character = EFS_gopp
+				promote_leader = yes
+				country_leader = {
+					expire = "100.1.1"
+					ideology = conservatism
+					traits = {
+						conservative_grandee
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_character = EFS_johann_a_revil
+				}
+				retire_character = EFS_johann_a_revil
+			}
+			news_event = { id = news.151 days = 3 }
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+propaganda_efforts = {
+	pe_federation_post = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			ZEO = {
+				OR = {
+					has_country_leader = {
+						character = ZEO_gihren_zabi
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = ZEO_degwin_sodo_zabi
+						ruling_only = yes
+					}
+				}
+			}
+			OR = {
+				has_completed_focus = efsf_dont_admit_zeons_independence
+				has_completed_focus = efsf_support_anti_zabi_faction
+			}
+		}
+
+		visible = {
+			NOT = {
+				OR = {
+					has_global_flag = start_is_uc0079
+					has_war_with = ZEO
+				}
+			}
+			ZEO = {
+				OR = {
+					has_country_leader = {
+						character = ZEO_gihren_zabi
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = ZEO_degwin_sodo_zabi
+						ruling_only = yes
+					}
+				}
+			}
+			OR = {
+				has_completed_focus = efsf_dont_admit_zeons_independence
+				has_completed_focus = efsf_support_anti_zabi_faction
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 60
+		cancel_if_not_visible = yes
+
+		modifier = {
+			political_power_gain = -0.1
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		remove_effect = {
+			news_event = { id = news.87 }
+			ZEO = {
+				add_timed_idea = {
+					idea = federation_post
+					days = 180
+				}
+			}
+		}
+	}
+	pe_public_opinion_operation = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_oppression_of_anti-earth_federation
+		}
+
+		visible = {
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			has_completed_focus = efsf_oppression_of_anti-earth_federation
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 60
+		days_re_enable = 30
+
+		modifier = {
+			political_power_gain = -0.3
+			earthsupremacy_drift = 0.05
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			news_event = { id = news.79 hours = 6 }
+			add_named_threat = {
+				name = pe_public_opinion_operation
+				threat = 3
+			}
+		}
+	}
+}
+war_measures = {
+	wm_volunteer_division = {
+
+		target_trigger = {
+			FROM = {
+				has_war_together_with = ROOT
+				has_capitulated = yes
+				has_war_with = ZEO
+			}
+		}
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SI1
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1. Zahn Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"2. Zahn Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"3. Zahn Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SI2
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1. Hatte Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2. Hatte Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"3. Hatte Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SI4
+					}
+				}
+				country_event = { id = efsf.1003 days = 7 }
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1. Moore Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2. Moore Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"3. Moore Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SI5
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1. Loum Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2. Loum Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"3. Loum Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SI6
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1. Riah Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2. Riah Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"3. Riah Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SI7
+					}
+				}
+				capital_scope = {
+					create_unit = {
+						division = "name = \"1. Noa Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2. Noa Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"3. Noa Brotherhood\" division_template = \"Infantry Division\" start_experience_factor = 0"
+						owner = ROOT
+					}
+				}
+			}
+		}
+	}
+}
+research_and_development = {
+	wm_plan_rx79 = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_tech = rx78_tech
+			NOT = {
+				OR = {
+					has_tech = rx79_tech
+					has_tech = rgm79g_tech
+				}
+			}
+		}
+		visible = {
+			has_tech = rx78_tech
+			NOT = {
+				has_tech = rx79_tech
+				has_tech = rgm79g_tech
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+			set_country_flag = plan_rx79_is_yes
+			add_tech_bonus = {
+				name = efsf_plan_rx79
+				bonus = 0.5
+				uses = 2
+				technology = rx79_tech
+				technology = rgm79g_tech
+			}
+		}
+	}
+	wm_gundam_development_plan = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_tech = rx78_nt_tech
+		}
+
+		visible = {
+			has_tech = rx78_nt_tech
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 10
+				NOT = {
+					has_country_flag = purge_reformers
+				}
+			}
+		}
+		remove_effect = {
+			set_technology = {
+				plan_gundam_tech = 1
+			}
+		}
+	}
+}
+diplomacy = {
+	dip_lending_to_von_brown = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_military-industrial_complex
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		visible = {
+			has_completed_focus = efsf_economic_revival_plan
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+    complete_effect = {
+      VBC = {
+        country_event = { id = oyw.1 }
+        add_opinion_modifier = {
+          target = ROOT
+          modifier = efsf_lending_to_von_brown
+        }
+        add_popularity = {
+          ideology = democratic
+          popularity = 0.05
+        }
+      }
+    }
+		remove_effect = {
+			VBC = {
+				if = {
+					limit = {
+						has_full_control_of_state = 940
+					}
+					940 = {
+						add_building_construction = {
+							type = infrastructure
+							level = 3
+							instant_build = yes
+						}
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	dip_license_agreement_efsf = {
+
+		icon = eng_trade_unions_support
+
+		target_trigger = {
+			FROM = {
+				has_war_together_with = ROOT
+			}
+		}
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			FROM = {
+				num_of_available_military_factories > 0
+			}
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			news_event = { id = news.64 hours = 6 }
+			create_production_license = {
+				target = FROM
+				cost_factor = 1
+				equipment = {
+					type = mbt1_equipment
+					version = 0
+				}
+			}
+			create_production_license = {
+				target = FROM
+				cost_factor = 1
+				equipment = {
+					type = ac1_equipment
+					version = 0
+				}
+			}
+			create_production_license = {
+				target = FROM
+				cost_factor = 1
+				equipment = {
+					type = lbs1_equipment
+					version = 0
+				}
+			}
+			create_production_license = {
+				target = FROM
+				cost_factor = 1
+				equipment = {
+					type = vulcan_ac_equipment
+					version = 0
+				}
+			}
+			create_production_license = {
+				target = FROM
+				cost_factor = 1
+				equipment = {
+					type = misile_ac1_equipment
+					version = 0
+				}
+			}
+			create_production_license = {
+				target = FROM
+				cost_factor = 1
+				equipment = {
+					type = motorized_equipment_1
+					version = 0
+				}
+			}
+		}
+	}
+	pa_reciving_abaoaqu = {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_reciving_asteroid
+		}
+
+		visible = {
+			has_completed_focus = efsf_enhanced_economic_sanction
+			NOT = {
+				has_global_flag = start_is_uc0079
+				has_war_with = ZEO
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			ZEO = {
+				country_event = { id = zeon.80 days = 3 }
+			}
+		}
+	}
+	pa_reciving_solomon = {
+
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_reciving_asteroid
+		}
+
+		visible = {
+			has_completed_focus = efsf_enhanced_economic_sanction
+			NOT = {
+				has_global_flag = start_is_uc0079
+				has_war_with = ZEO
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			ZEO = {
+				country_event = { id = zeon.81 days = 3 }
+			}
+		}
+	}
+	pa_sale_of_luna2 = {
+
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_appeasement_policy_for_zeon
+			ZEO = {
+				has_opinion = {
+					target = EFS
+					value > 30
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = efsf_appeasement_policy_for_zeon
+			NOT = {
+				has_war_with = ZEO
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			ZEO = {
+				country_event = { id = zeon.48 days = 10 }
+			}
+		}
+	}
+}
+ace_pilots = {
+	ap_amuro_ray = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_amuro_ray_enable
+		}
+		visible = {
+			has_country_flag = ap_amuro_ray_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_amuro_ray = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_kou_uraki = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_kou_uraki_enable
+		}
+		visible = {
+			has_country_flag = ap_kou_uraki_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_kou_uraki = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_yazan_gable = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_yazan_gable_enable
+		}
+		visible = {
+			has_country_flag = ap_yazan_gable_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_yazan_gable = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_laila_milla_rira = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_laila_milla_rira_enable
+		}
+		visible = {
+			has_country_flag = ap_laila_milla_rira_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_lila_milla_rira = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_you_kajima = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_you_kajima_enable
+		}
+		visible = {
+			has_country_flag = ap_you_kajima_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_you_kajima = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_io_fleming = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_io_fleming_enable
+		}
+		visible = {
+			has_country_flag = ap_io_fleming_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_io_fleming = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_claudia_peer = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_claudia_peer_enable
+		}
+		visible = {
+			has_country_flag = ap_claudia_peer_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_claudia_peer = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_master_p_rayer = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_master_p_rayer_enable
+		}
+		visible = {
+			has_country_flag = ap_master_p_rayer_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_master_p_rayer = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_hugues_courand = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_hugues_courand_enable
+		}
+		visible = {
+			has_country_flag = ap_hugues_courand_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_hugues_courand = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_federico_czariano = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_federico_czariano_enable
+		}
+		visible = {
+			has_country_flag = ap_federico_czariano_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_federico_czariano = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_shiroh_amada = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_shiroh_amada_enable
+		}
+		visible = {
+			has_country_flag = ap_shiroh_amada_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_shiro_amada = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_bright_noah = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_bright_noah_enable
+		}
+		visible = {
+			has_country_flag = ap_bright_noah_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_bright_noah = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_henken_bekkener = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_henken_bekkener_enable
+		}
+		visible = {
+			has_country_flag = ap_henken_bekkener_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_henken_bekkener = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_south_burning = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_south_burning_enable
+		}
+		visible = {
+			has_country_flag = ap_south_burning_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			EFS_south_burning = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+}
+operations = {
+	# 79.5 ポートモレスビー奪還作戦
+	op_portmoresby = {
+		icon = generic_operation
+		highlight_states = {
+			highlight_state_targets = {
+				state = 523
+			}
+		}
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+		}
+		visible = {
+			has_war_with = ZEO
+			NOT = {
+				OR = {
+					controls_state = 523
+					has_active_mission = op_portmoresby_2
+				}
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_portmoresby_2
+		}
+	}
+	op_portmoresby_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 523
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = efsf.90 days = 3 }
+		}
+	}
+	# 79.8 ハワイ本島奪還作戦
+	op_hawaii = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+		}
+		visible = {
+			has_war_with = ZEO
+			NOT = {
+				OR = {
+					controls_state = 629
+					has_active_mission = op_hawaii_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 629
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_hawaii_2
+		}
+	}
+	op_hawaii_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 629
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 629
+			}
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = efsf.85 days = 3 }
+		}
+	}
+	# 79.11.7 オデッサ作戦
+	op_odessa = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+		}
+		visible = {
+			has_war_with = ZEO
+			NOT = {
+				OR = {
+					controls_state = 192
+					has_active_mission = op_odessa_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 192
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			country_event = { id = efsf.5000 days = 1 }
+		}
+	}
+	# 79.11 オデッサ作戦延期
+	op_odessa_reschedule = {
+		icon = generic_operation
+		available = {
+		}
+		visible = {
+			has_decision = op_odessa_reschedule
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { has_war_with = ZEO }
+				controls_state = 192
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 192
+			}
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = yes
+		allowed = {
+			original_tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 10
+		days_re_enable = 0
+		remove_effect = {
+			activate_mission = op_odessa_2
+		}
+	}
+	op_odessa_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 192
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 192
+			}
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = efsf.84 days = 3 }
+		}
+	}
+	# 79.11.18 ベルベット作戦
+	op_belbet = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+		}
+		visible = {
+			has_war_with = ZEO
+			NOT = {
+				OR = {
+					controls_state = 677
+					controls_state = 454
+					controls_state = 553
+					has_active_mission = op_belbet_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 677
+				state = 454
+				state = 553
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_belbet_2
+		}
+	}
+	op_belbet_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 677
+			controls_state = 454
+			controls_state = 553
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = efsf.89 days = 3 }
+		}
+	}
+	# 79.11.21 レインボゥ・ヴァレー攻略作戦
+	op_rainbow = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+		}
+		visible = {
+			has_war_with = ZEO
+			NOT = {
+				OR = {
+					controls_state = 517
+					controls_state = 519
+					controls_state = 674
+					controls_state = 285
+					has_active_mission = op_rainbow_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 517
+				state = 519
+				state = 674
+				state = 285
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_rainbow_2
+		}
+	}
+	op_rainbow_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 517
+			controls_state = 519
+			controls_state = 674
+			controls_state = 285
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = efsf.86 days = 3 }
+		}
+	}
+	# 79.11 スエズ運河奪回作戦
+	op_suez = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+		}
+		visible = {
+			has_war_with = ZEO
+			NOT = {
+				OR = {
+					controls_state = 453
+					controls_state = 446
+					has_active_mission = op_suez_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 453
+				state = 446
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_suez_2
+		}
+	}
+	op_suez_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 453
+			controls_state = 446
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = efsf.88 days = 3 }
+		}
+	}
+	# 79.12.1 シンプソンズ・ギャップ作戦
+	op_simpsons = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+		}
+		visible = {
+			has_war_with = ZEO
+			NOT = {
+				OR = {
+					controls_state = 520
+					controls_state = 521
+					has_active_mission = op_simpsons_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 520
+				state = 521
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_simpsons_2
+		}
+	}
+	op_simpsons_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 520
+			controls_state = 521
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = efsf.87 days = 3 }
+		}
+	}
+	# ラサ秘密基地攻略作戦
+	op_attack_secret_labo = {
+		icon = generic_operation
+		available = {
+		}
+		visible = {
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = EFS
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		selectable_mission = yes
+		days_mission_timeout = 30
+		days_remove = 30
+		days_re_enable = 0
+		timeout_effect = {
+
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					ZEO = {
+						has_country_flag = apsalus_plan_freezed
+					}
+				}
+				country_event = { id = efsf.110 }
+				ZEO = {
+					country_event = { id = zeon.126 }
+				}
+				else = {
+					country_event = { id = efsf.56 }
+				}
+			}
+			country_event = { id = achievement.32 }
+		}
+		complete_effect = {
+		}
+	}
+
+	# 79.5.22 ヘリオン作戦（未使用）
+	op_helion = {
+		icon = generic_operation
+		available = {
+			num_of_civilian_factories_available_for_projects > 14
+		}
+		visible = {
+			has_war_with = ZEO
+			always = no
+		}
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			civilian_factory_use = 15
+		}
+		days_remove = 60
+		days_re_enable = 180
+
+		remove_effect = {
+			random_list = {
+				50 = { #成功
+					news_event = { id = news.2000 }
+					add_timed_idea = {
+						idea = op_helion_success
+						days = 180
+					}
+					army_experience = 50
+					navy_experience = 50
+					air_experience = 50
+				}
+				50 = { #失敗
+					news_event = { id = news.2001 }
+					add_timed_idea = {
+						idea = op_helion_fail
+						days = 180
+					}
+					army_experience = -30
+					navy_experience = -30
+					air_experience = -30
+				}
+			}
+		}
+	}
+	# 79.6.12 カナヴェル海戦（未使用）
+	op_canavel = {
+		icon = generic_operation
+		available = {
+			num_of_civilian_factories_available_for_projects > 14
+		}
+		visible = {
+			has_war_with = ZEO
+			always = no
+		}
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			civilian_factory_use = 15
+		}
+		days_remove = 60
+		days_re_enable = 180
+
+		remove_effect = {
+			random_list = {
+				50 = { #成功
+					news_event = { id = news.2002 }
+					add_timed_idea = {
+						idea = op_canavel_success
+						days = 180
+					}
+					army_experience = 50
+					navy_experience = 50
+					air_experience = 50
+				}
+				50 = { #失敗
+					news_event = { id = news.2003 }
+					add_timed_idea = {
+						idea = op_canavel_fail
+						days = 180
+					}
+					army_experience = -30
+					navy_experience = -30
+					air_experience = -30
+				}
+			}
+		}
+	}
+	# 79.10 カクタス作戦
+	op_cacutas = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+		}
+		visible = {
+			has_war_with = ZEO
+			has_completed_focus = efsf_earth_counter_strategy
+			NOT = {
+				OR = {
+					270 = {
+						is_controlled_by = EFS
+					}
+					641 = {
+						is_controlled_by = EFS
+					}
+					726 = {
+						is_controlled_by = EFS
+					}
+					868 = {
+						is_controlled_by = EFS
+					}
+					943 = {
+						is_controlled_by = EFS
+					}
+					945 = {
+						is_controlled_by = EFS
+					}
+					946 = {
+						is_controlled_by = EFS
+					}
+					947 = {
+						is_controlled_by = EFS
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 270
+				state = 641
+				state = 726
+				state = 868
+				state = 943
+				state = 945
+				state = 946
+				state = 947
+			}
+		}
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+
+		remove_effect = {
+			activate_mission = op_cacutas_2
+		}
+	}
+	op_cacutas_2 = {
+		icon = generic_operation
+		available = {
+			OR = {
+				controls_state = 947
+				controls_state = 641
+				controls_state = 726
+				controls_state = 868
+				controls_state = 943
+				controls_state = 945
+				controls_state = 946
+				controls_state = 270
+			}
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+			news_event = { id = news.2007 }
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			news_event = { id = news.2006 }
+		}
+	}
+	# グラナダ攻略作戦
+	op_granada = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+			ZEO = {
+				has_army_size = {
+					size < 100
+				}
+			}
+			NOT = {
+				OR = {
+					has_non_aggression_pact_with = GRA
+					has_guaranteed = GRA
+				}
+			}
+		}
+		visible = {
+			has_war_with = ZEO
+			has_completed_focus = efsf_earth_counter_strategy
+			NOT = {
+				OR = {
+					862 = {
+						is_controlled_by = EFS
+					}
+					863 = {
+						is_controlled_by = EFS
+					}
+					864 = {
+						is_controlled_by = EFS
+					}
+				}
+			}
+			GRA = {
+				OR = {
+					is_subject_of = ZEO
+					is_puppet_of = ZEO
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 862
+				state = 863
+				state = 864
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_granada_2
+		}
+	}
+	op_granada_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 862
+			controls_state = 863
+			controls_state = 864
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+			news_event = { id = news.2007 }
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			news_event = { id = news.2006 }
+		}
+	}
+	# チェンバロ作戦
+	op_chembalo = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+			ZEO = {
+				has_army_size = {
+					size < 101
+				}
+			}
+		}
+		visible = {
+			has_war_with = ZEO
+			has_completed_focus = efsf_earth_counter_strategy
+			NOT = {
+				830 = {
+						is_controlled_by = EFS
+				}
+				831 = {
+						is_controlled_by = EFS
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 932
+				state = 933
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_chembalo_2
+		}
+	}
+	op_chembalo_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 932
+			controls_state = 933
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+			news_event = { id = news.2009 }
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			news_event = { id = news.2008 }
+		}
+	}
+	# 星一号作戦
+	op_hoshi_ichigo = {
+		icon = generic_operation
+		available = {
+			has_completed_focus = efsf_earth_counter_strategy
+			ZEO = {
+				has_army_size = {
+					size < 101
+				}
+			}
+		}
+		visible = {
+			has_war_with = ZEO
+			has_completed_focus = efsf_earth_counter_strategy
+			NOT = {
+				832 = {
+						is_controlled_by = EFS
+				}
+				833 = {
+						is_controlled_by = EFS
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 934
+				state = 935
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_hoshi_ichigo_2
+		}
+	}
+	op_hoshi_ichigo_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 934
+			controls_state = 935
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+			news_event = { id = news.2011 }
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			news_event = { id = news.2010 }
+		}
+	}
+	# ソーラ・システム発射
+	op_solar_system = {
+		icon = generic_operation
+		available = {
+			num_of_civilian_factories_available_for_projects > 29
+		}
+		visible = {
+			has_war_with = ZEO
+			has_completed_focus = efsf_earth_counter_strategy
+			has_country_flag = solar_system_is_finish
+		}
+		allowed = {
+			original_tag = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			civilian_factory_use = 30
+		}
+		days_remove = 60
+		days_re_enable = 240
+
+		remove_effect = {
+		}
+	}
+}
+special_projects = {
+	sp_establish_side7 = {
+		icon = generic_construction
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_promotion_of_side7_construction_project
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			has_completed_focus = efsf_earth_revitalization_plan
+			NOT = {
+				country_exists = SI7
+			}
+		}
+		cost = 75
+		days_remove = 180
+		days_re_enable = 120
+
+		modifier = {
+			civilian_factory_use = 6
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			news_event = { id = news.118 }
+		}
+		remove_effect = {
+			927 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			928 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			929 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	sp_immigration_side7 = {
+		icon = generic_political_discourse
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_resumption_of_immigration_plan
+			num_of_civilian_factories_available_for_projects > 5
+		}
+		visible = {
+			has_completed_focus = efsf_earth_revitalization_plan
+			NOT = {
+				country_exists = SI7
+			}
+		}
+		cost = 75
+		days_remove = 180
+		days_re_enable = 120
+
+		modifier = {
+			civilian_factory_use = 6
+			MONTHLY_POPULATION = -0.1
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		complete_effect = {
+			news_event = { id = news.119 }
+		}
+		remove_effect = {
+			927 = {
+				add_manpower = 150000
+			}
+			928 = {
+				add_manpower = 150000
+			}
+			929 = {
+				add_manpower = 150000
+			}
+		}
+	}
+	sp_fort_luna2 = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 930
+			}
+		}
+		available = {
+			has_tech = excavation2
+			threat > 0.20
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				OR = {
+					has_decision = develop_luna2_1
+					has_decision = develop_luna2_2
+					has_decision = develop_luna2_3
+				}
+			}
+			owns_state = 930
+			controls_state = 930
+			owns_state = 931
+			controls_state = 931
+		}
+		visible = {
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			OR = {
+				has_war = yes
+				has_tech = construction2
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 180
+		days_re_enable = 0
+		cost = 50
+		remove_effect = {
+			set_country_flag = forted_luna2
+			930 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = space_forted_state
+			}
+			931 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 5
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = space_forted_state
+			}
+			add_mines = {
+				region = 253
+				amount = 300
+			}
+		}
+	}
+	sp_solar_system = {
+		icon = generic_construction
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_tech = construction4
+		}
+		visible = {
+			has_tech = construction3
+			has_war_with = ZEO
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = EFS
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 10
+				is_historical_focus_on = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 180
+		days_re_enable = 0
+		cost = 100
+
+		complete_effect = {
+		}
+		remove_effect = {
+			set_country_flag = solar_system_is_finish
+		}
+	}
+}
+espionage_decision_category = {
+	#! ギレン暗殺計画
+	pa_giren_assassination_plan = {
+
+		icon = steel
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_regime_change
+			NOT = {
+				has_war_with = ZEO
+			}
+		}
+		visible = {
+			has_completed_focus = efsf_support_anti_zabi_faction
+			NOT = {
+				has_global_flag = start_is_uc0079
+				has_global_flag = registance_zeon_is_start
+				has_war_with = ZEO
+			}
+			ZEO = {
+				has_country_leader = {
+					character = ZEO_gihren_zabi
+					ruling_only = yes
+				}
+		}
+		}
+		cancel_trigger = {
+			has_war_with = ZEO
+			ZEO = {
+				NOT = {
+					has_country_leader = {
+						character = ZEO_gihren_zabi
+						ruling_only = yes
+					}
+				}
+	    }
+		}
+
+		days_remove = 60
+		fire_only_once = yes
+
+		cost = 75
+
+		modifier = {
+			political_power_gain = -1
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		fixed_random_seed = no
+		complete_effect = {
+			set_global_flag = giren_assassination_plan_is_start
+			custom_effect_tooltip = assasinate_gihren_zabi_start
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_global_flag = maharaja_support
+				}
+				random_list = {
+					50 = {
+						news_event = { id = news.112 days = 10 random = 100 }
+					}
+					50 = {
+						news_event = { id = news.167 days = 10 random = 100 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = maharaja_support
+					}
+				}
+				random_list = {
+					25 = {
+						news_event = { id = news.112 days = 10 random = 100 }
+					}
+					75 = {
+						news_event = { id = news.167 days = 10 random = 100 }
+					}
+				}
+			}
+		}
+	}
+	#! ジオンでクーデターを扇動
+	pa_registance_zeon = {
+
+		icon = steel
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			has_completed_focus = efsf_regime_change
+			NOT = {
+				has_war_with = ZEO
+			}
+		}
+		visible = {
+			has_completed_focus = efsf_support_anti_zabi_faction
+			NOT = {
+				has_global_flag = start_is_uc0079
+				has_global_flag = giren_assassination_plan_is_start
+				has_war_with = ZEO
+			}
+			ZEO = {
+				has_government = spacesupremacy
+			}
+		}
+		cancel_trigger = {
+			ZEO = {
+				NOT = {
+					has_government = spacesupremacy
+				}
+			}
+			has_war_with = ZEO
+		}
+
+		fire_only_once = yes
+		days_remove = 150
+
+		cost = 150
+
+		modifier = {
+			political_power_gain = -1
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+		complete_effect = {
+			set_global_flag = registance_zeon_is_start
+			custom_effect_tooltip = zeon_registance_start
+		}
+		remove_effect = {
+			ZEO = {
+				country_event = { id = zeon.124 }
+			}
+		}
+	}
+}

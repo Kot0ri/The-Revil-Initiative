@@ -1,0 +1,1022 @@
+﻿###########################
+# Election Events
+###########################
+
+add_namespace = election
+
+# 絶対民主主義　支持（ジオン）
+country_event = {
+	id = election.1
+	title = election.1.t
+	desc = election.1.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = ZEO
+    has_government = zeonism
+    AND = {
+      democratic > 0.3
+			democratic < 0.51
+      spacesupremacy < 0.15
+      earthsupremacy < 0.15
+    }
+	}
+
+	option = {
+		ai_chance = {
+			factor = 0.6
+		}
+		name = election.1.a
+	}
+
+	option = {
+		name = election.1.b
+		ai_chance = {
+			factor = 0.4
+		}
+    add_popularity = {
+      ideology = democratic
+      popularity = -0.05
+    }
+    add_stability = -0.05
+	}
+}
+# 地球至上主義　支持（ジオン）
+country_event = {
+	id = election.2
+	title = election.2.t
+	desc = election.2.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = ZEO
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    earthsupremacy > 0.3
+		earthsupremacy < 0.51
+    earthsupremacy > party_popularity@spacesupremacy
+	}
+
+	option = {
+		name = election.2.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.2.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = earthsupremacy
+      popularity = -0.05
+    }
+	}
+}
+# ジオニズム　支持（ジオン）
+country_event = {
+	id = election.3
+	title = election.3.t
+	desc = election.3.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = ZEO
+    has_government = democratic
+    AND = {
+      zeonism > 0.3
+			zeonism < 0.51
+      spacesupremacy < 0.15
+      earthsupremacy < 0.15
+    }
+	}
+
+	option = {
+		name = election.3.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.3.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = zeonism
+      popularity = -0.05
+    }
+	}
+}
+# スペースノイド至上主義　支持（ジオン）
+country_event = {
+	id = election.4
+	title = election.4.t
+	desc = election.4.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = ZEO
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    spacesupremacy > 0.3
+		spacesupremacy < 0.51
+    spacesupremacy > party_popularity@earthsupremacy
+	}
+
+	option = {
+		name = election.4.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.4.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = spacesupremacy
+      popularity = -0.05
+    }
+	}
+}
+# 絶対民主主義　過半超え（ジオン）
+country_event = {
+	id = election.5
+	title = election.5.t
+	desc = election.5.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = ZEO
+    has_government = zeonism
+    democratic > 0.5
+	}
+
+	option = {
+		name = election.5.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = election.5.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = democratic
+			size = 0.5
+			keep_unit_leaders_trigger = {
+        NOT = {
+          has_trait = democratic_party
+        }
+      }
+		}
+	}
+}
+# 地球至上主義　過半超え（ジオン）
+country_event = {
+	id = election.6
+	title = election.6.t
+	desc = election.6.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = ZEO
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    earthsupremacy > 0.5
+	}
+
+	option = {
+		name = election.6.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = earthsupremacy
+			elections_allowed = no
+		}
+	}
+
+	option = {
+		name = election.6.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = earthsupremacy
+			size = 0.5
+			keep_unit_leaders_trigger = {
+        NOT = {
+          has_trait = earthsupremacy_party
+        }
+      }
+		}
+	}
+}
+# ジオニズム　過半超え（ジオン）
+country_event = {
+	id = election.7
+	title = election.7.t
+	desc = election.7.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = ZEO
+    has_government = democratic
+    zeonism > 0.5
+	}
+
+	option = {
+		name = election.7.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = zeonism
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = election.7.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = zeonism
+			size = 0.5
+			keep_unit_leaders_trigger = {
+				NOT = {
+        	has_trait = democratic_party
+				}
+      }
+		}
+	}
+}
+# スペースノイド至上主義　過半超え（ジオン）
+country_event = {
+	id = election.8
+	title = election.8.t
+	desc = election.8.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = ZEO
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    spacesupremacy > 0.5
+	}
+
+	option = {
+		name = election.8.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = spacesupremacy
+			elections_allowed = no
+		}
+	}
+
+	option = {
+		name = election.8.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = spacesupremacy
+			size = 0.5
+			keep_unit_leaders_trigger = {
+        NOT = {
+          has_trait = anti_zabi_party
+        }
+      }
+		}
+	}
+}
+
+# 絶対民主主義　支持（連邦）
+country_event = {
+	id = election.21
+	title = election.21.t
+	desc = election.21.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = EFS
+    has_government = zeonism
+    AND = {
+      democratic > 0.3
+			democratic < 0.51
+      spacesupremacy < 0.15
+      earthsupremacy < 0.15
+    }
+	}
+
+	option = {
+		name = election.21.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.21.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = democratic
+      popularity = -0.05
+    }
+	}
+}
+# 地球至上主義　支持（連邦）
+country_event = {
+	id = election.22
+	title = election.22.t
+	desc = election.22.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = EFS
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    earthsupremacy > 0.3
+		earthsupremacy < 0.51
+    earthsupremacy > party_popularity@spacesupremacy
+	}
+
+	option = {
+		name = election.22.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.22.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = earthsupremacy
+      popularity = -0.05
+    }
+	}
+}
+# ジオニズム　支持（連邦）
+country_event = {
+	id = election.23
+	title = election.23.t
+	desc = election.23.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = EFS
+    has_government = democratic
+    AND = {
+      zeonism > 0.3
+			zeonism < 0.51
+      spacesupremacy < 0.15
+      earthsupremacy < 0.15
+    }
+	}
+
+	option = {
+		name = election.23.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.23.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = zeonism
+      popularity = -0.05
+    }
+	}
+}
+# スペースノイド至上主義　支持（連邦）
+country_event = {
+	id = election.24
+	title = election.24.t
+	desc = election.24.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = EFS
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    spacesupremacy > 0.3
+		spacesupremacy < 0.51
+    spacesupremacy > party_popularity@earthsupremacy
+	}
+
+	option = {
+		name = election.24.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.24.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = spacesupremacy
+      popularity = -0.05
+    }
+	}
+}
+# 絶対民主主義　過半超え（連邦）
+country_event = {
+	id = election.25
+	title = election.25.t
+	desc = election.25.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = EFS
+    has_government = zeonism
+    democratic > 0.5
+	}
+
+	option = {
+		name = election.25.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		drop_cosmetic_tag = yes
+	}
+
+	option = {
+		name = election.25.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = democratic
+			size = 0.5
+			keep_unit_leaders_trigger = {
+        NOT = {
+          has_trait = aeug_party
+        }
+      }
+		}
+	}
+}
+# 地球至上主義　過半超え（連邦）
+country_event = {
+	id = election.26
+	title = election.26.t
+	desc = election.26.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = EFS
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    earthsupremacy > 0.5
+	}
+
+	option = {
+		name = election.26.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = earthsupremacy
+			elections_allowed = no
+		}
+		set_cosmetic_tag = EFS_TIT
+	}
+
+	option = {
+		name = election.26.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = earthsupremacy
+			size = 0.5
+			keep_unit_leaders_trigger = {
+        NOT = {
+          has_trait = titans_party
+        }
+      }
+		}
+	}
+}
+# ジオニズム　過半超え（連邦）
+country_event = {
+	id = election.27
+	title = election.27.t
+	desc = election.27.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = EFS
+    has_government = democratic
+    zeonism > 0.5
+	}
+
+	option = {
+		name = election.27.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = zeonism
+			elections_allowed = yes
+		}
+		set_cosmetic_tag = EFS_AEU
+	}
+
+	option = {
+		name = election.27.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = zeonism
+			size = 0.5
+			keep_unit_leaders_trigger = {
+        NOT = {
+          has_trait = aeug_party
+        }
+      }
+		}
+	}
+}
+# スペースノイド至上主義　過半超え（連邦）
+country_event = {
+	id = election.28
+	title = election.28.t
+	desc = election.28.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    original_tag = EFS
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    spacesupremacy > 0.5
+	}
+
+	option = {
+		name = election.28.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = spacesupremacy
+			elections_allowed = no
+		}
+		drop_cosmetic_tag = yes
+	}
+
+	option = {
+		name = election.28.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = spacesupremacy
+			size = 0.5
+			keep_unit_leaders_trigger = {
+				NOT = {
+					has_trait = spacesupremacy_party
+				}
+			}
+		}
+	}
+}
+
+# 絶対民主主義　支持（その他）
+country_event = {
+	id = election.41
+	title = election.41.t
+	desc = election.41.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+    NOT = {
+			OR = {
+				original_tag = ZEO
+				original_tag = EFS
+			}
+		}
+    has_government = zeonism
+    AND = {
+      democratic > 0.3
+			democratic < 0.51
+      spacesupremacy < 0.15
+      earthsupremacy < 0.15
+    }
+	}
+
+	option = {
+		name = election.41.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.41.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = democratic
+      popularity = -0.05
+    }
+	}
+}
+# 地球至上主義　支持（その他）
+country_event = {
+	id = election.42
+	title = election.42.t
+	desc = election.42.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+				original_tag = EFS
+			}
+		}
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    earthsupremacy > 0.3
+		earthsupremacy < 0.51
+    earthsupremacy > party_popularity@spacesupremacy
+	}
+
+	option = {
+		name = election.42.a
+		ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.42.b
+		ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = earthsupremacy
+      popularity = -0.05
+    }
+	}
+}
+# ジオニズム　支持（その他）
+country_event = {
+	id = election.43
+	title = election.43.t
+	desc = election.43.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+				original_tag = EFS
+			}
+		}
+    has_government = democratic
+    AND = {
+      zeonism > 0.3
+			zeonism < 0.51
+      spacesupremacy < 0.15
+      earthsupremacy < 0.15
+    }
+	}
+
+	option = {
+		name = election.43.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.43.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = zeonism
+      popularity = -0.05
+    }
+	}
+}
+# スペースノイド至上主義　支持（その他）
+country_event = {
+	id = election.44
+	title = election.44.t
+	desc = election.44.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+				original_tag = EFS
+			}
+		}
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    spacesupremacy > 0.3
+		spacesupremacy < 0.51
+    spacesupremacy > party_popularity@earthsupremacy
+	}
+
+	option = {
+		name = election.44.a
+    ai_chance = {
+			factor = 0.6
+		}
+	}
+
+	option = {
+		name = election.44.b
+    ai_chance = {
+			factor = 0.4
+		}
+    add_stability = -0.05
+    add_popularity = {
+      ideology = spacesupremacy
+      popularity = -0.05
+    }
+	}
+}
+# 絶対民主主義　過半超え（その他）
+country_event = {
+	id = election.45
+	title = election.45.t
+	desc = election.45.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+				original_tag = EFS
+			}
+		}
+    has_government = zeonism
+    democratic > 0.5
+	}
+
+	option = {
+		name = election.45.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = election.45.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = democratic
+			size = 0.5
+		}
+	}
+}
+# 地球至上主義　過半超え（その他）
+country_event = {
+	id = election.46
+	title = election.46.t
+	desc = election.46.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+				original_tag = EFS
+			}
+		}
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    earthsupremacy > 0.5
+	}
+
+	option = {
+		name = election.46.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = earthsupremacy
+			elections_allowed = no
+		}
+	}
+
+	option = {
+		name = election.46.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = earthsupremacy
+			size = 0.5
+		}
+	}
+}
+# ジオニズム　過半超え（その他）
+country_event = {
+	id = election.47
+	title = election.47.t
+	desc = election.47.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+				original_tag = EFS
+			}
+		}
+    has_government = democratic
+    zeonism > 0.5
+	}
+
+	option = {
+		name = election.47.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = zeonism
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = election.47.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = zeonism
+			size = 0.5
+		}
+	}
+}
+# スペースノイド至上主義　過半超え（その他）
+country_event = {
+	id = election.48
+	title = election.48.t
+	desc = election.48.d
+	picture = GFX_election
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				original_tag = ZEO
+				original_tag = EFS
+			}
+		}
+    OR = {
+      has_government = democratic
+      has_government = zeonism
+    }
+    spacesupremacy > 0.5
+	}
+
+	option = {
+		name = election.48.a
+    ai_chance = {
+			factor = 0.6
+		}
+    set_politics = {
+			ruling_party = spacesupremacy
+			elections_allowed = no
+		}
+	}
+
+	option = {
+		name = election.48.b
+    ai_chance = {
+			factor = 0.4
+		}
+    start_civil_war = {
+			ideology = spacesupremacy
+			size = 0.5
+		}
+	}
+}

@@ -1,0 +1,21 @@
+#################
+	#  WEAPON   #
+#################
+
+objectTypes = {
+
+#####     #####
+	pdxmesh = {
+		name = "EFS_infantry_weapon_Type95_mesh"
+		file = "gfx/models/infantry/weapon/Type95.mesh"
+		scale = 0.8
+		meshsettings = {
+	    texture_diffuse = "type95.dds"
+      texture_normal = "w_Weapon_N.dds"
+      texture_specular = "w_Weapon_S.dds"
+		}
+	}
+#####
+
+#############################################
+	}

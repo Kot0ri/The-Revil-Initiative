@@ -1,0 +1,53 @@
+﻿EFS = {
+  fleet_names_template = FLEET_NAME
+  archetype_submarine = {
+    prefix = "EFS"
+    generic = { "Submarine" }
+    unique = {
+
+    }
+  }
+  archetype_submarine_carrier = {
+    prefix = "EFS"
+    generic = { "Submarine Carrier" }
+    unique = {
+
+    }
+  }
+  archetype_carrier = {
+    prefix = "EFS"
+    generic = { "Aircraft Carrier" }
+    unique = {
+      "Alexandria" "Al Giza" "Al Qasr" "Aswan" "Belgrade" "Gaunland" "Hario" "Kandahar" "Key West" "Luxor" "Mesopotamia" "Tel Aviv" "Ra Cailum" "Ra Gustar" "Jeanne D'Arc" "Abram" "Ajax" "Admiral Tianem" "Columbus" "Beehive"
+    }
+  }
+  archetype_destroyer = {
+    prefix = "EFS"
+    generic = { "Destroyer" }
+    unique = {
+      "Salamis" "Madagascar" "Saffran" "Philadelphia" "Cisco" "Cyprus" "Java" "Mariana" "Tsushima" "Camranh-bay" "Johore" "Burgundy" "Sierra Leone" "Graden" "Sakhalin" "Orlando" "Corsica" "Kalimantan" "Paramushir" "Rugen" "Lemnos" "Maluku" "Samos" "Quetta" "Ascension" "Squaw Valley" "Hampton" "Suruga" "West Sahara" "Nelson" "Yulin" "Nashville" "Monterey" "Yerevan" "Kaifang" "Danji" "South Dakota" "Salt Lake City" "Maracaibo" "Lawrenceville" "Madras" "Arahas" "Arahas II" "Artemis" "Astoria" "Atlanta" "Bosnia" "Brasilia" "Canberra" "Cumberland" "Danang" "Dortmund" "Esmeralda" "Exeter" "Helat" "Kashima" "Long Beach" "Lune" "Macedonia" "Mogami" "Panama II" "Pasadena" "Philadelphia" "Portland" "Prinz Eugen" "Repluse" "Seikyou" "Sheffield" "Stockholm" "Strasbourg" "Stykisholmur" "Sussex" "Trieste" "Ulysses" "Volgograd" "York" "Delphi" "McKinley" "Mont Blanc" "Rene" "Sichuan" "Sicily" "Siviant II" "Suruga" "Aoba" "Brunei" "Dunkerque" "Izmir" "Takao" "Trent" "Eretria" "Sulu" "Herat" "Salamanca" "Valencia" "Sibuyan"
+    }
+  }
+  archetype_cruiser = {
+    prefix = "EFS"
+    generic = { "Cruiser" }
+    unique = {
+      "Ananke" "Nereid" "Magellan" "Magellan II" "Phoebe" "Titan" "Hyperion" "Hood" "Kilimanjaro" "Tatar" "Juliet" "Lismore" "Renown" "Wisconsin" "Orwell" "Garland" "Hull" "Ruzal" "Drag" "Geibach" "Issei" "Luzar" "Niad" "Jerriet" "Lismore" "Summerville" "Jarvis" "Toulon" "North Carolina" "Bull Run" "Marengo" "Nagato" "Scharnhorst" "Trafalgar" "Ra Caim" "Ra Charter" "Ra Chutter" "Ra Clop" "Ra Dels" "Ra Eym" "Ra Keim" "Ra Kiev" "Ra Zyme" "Carry Base" "Carrot" "Linkai" "Tenenbaum" "Damascus" "Ra-Gills" "Irish" "Radish" "Arlberg" "Meteran" "Saint Ives" "Zwickbau" "Wadatsumi" "Ivanhoe" "St. Gallen" "Cologne" "Windermere" "Oasis" "Areion" "Cookstown" "Stout" "Mustache" "Échalote"
+    }
+  }
+  archetype_survey = {
+    prefix = "EFS"
+    generic = { "Surveillance Ship" }
+    unique = {
+      "Columbus" "Srinagar" "Iosima" "Ivan Rogoff" "Alaska" "Sao Tome Principe"
+    }
+  }
+  air_wing_names_template = AIR_WING_NAME
+  archetype_assault_ship = {
+    prefix = ""
+    generic = { "" }
+    unique = {
+      "Thoroughbred" "Trojan Horse" "Branival" "White Base II" "Slap Neil-Kai" "White Base" "White Base Jr" "Stallion" "Spartan"
+    }
+  }
+}

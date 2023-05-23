@@ -1,0 +1,377 @@
+technologies = {
+  ymt05_tech = {
+    enable_equipments = {
+      mobiletank_equipment
+    }
+    dependencies = {
+      ms05_tech = 1
+      ZEO_mbt1_tech = 1
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mobiletank }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_mobiletank"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    path = {
+      leads_to_tech = yms16_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 2 }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 100
+        has_completed_focus = zeon_focus_on_mobiletank
+      }
+    }
+    categories = {
+      mobiletank
+      armor
+    }
+  }
+  yms16_tech = {
+    enable_equipments = {
+      yms16_equipment
+    }
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 4 }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+    categories = {
+      mobilesuit
+    }
+  }
+  ZEO_mbt1_tech = {
+    enable_equipments = {
+      mbt1_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = motorised_infantry
+          }
+          load_oob = "unlock_tanks_mot"
+        }
+        if = {
+          limit = {
+            NOT = { has_tech = motorised_infantry }
+          }
+          load_oob = "unlock_tanks"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    path = {
+      leads_to_tech = ZEO_mbt2_tech
+      research_cost_coeff = 1
+    }
+
+    path = {
+      leads_to_tech = ZEO_para_tank_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 2
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 61
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      base = 10
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+    }
+  }
+  ZEO_mbt2_tech = {
+
+    enable_equipments = {
+      mbt2_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = motorised_infantry
+          }
+          load_oob = "unlock_tanks_mot"
+        }
+        if = {
+          limit = {
+            NOT = { has_tech = motorised_infantry }
+          }
+          load_oob = "unlock_tanks"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 2 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 20
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+    }
+  }
+  ZEO_para_tank_tech = {
+
+    enable_equipments = {
+      para_tank_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = para_tank }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_paratank"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = -4 y = 2 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 50
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 0
+        has_war_with = EFS
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+    }
+  }
+  ZEO_ac1_tech = {
+
+    enable_equipments = {
+      ac1_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 61
+
+    path = {
+      leads_to_tech = ZEO_ac2_tech
+      research_cost_coeff = 1
+    }
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      base = 10
+    }
+
+    categories = {
+      armored_car
+      armor
+    }
+  }
+  ZEO_ac2_tech = {
+
+    enable_equipments = {
+      ac2_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 2 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 50
+        has_war = yes
+      }
+    }
+
+    categories = {
+      armored_car
+      armor
+    }
+  }
+  ZEO_lbs1_tech = {
+
+    enable_equipments = {
+      lbs1_equipment
+    }
+    dependencies = {
+      mega_particle1 = 1
+      nuclear_reactor1 = 1
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = lbs }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_lbs"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    path = {
+      leads_to_tech = ZEO_lbs2_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 2 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 50
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 50
+        has_war = yes
+      }
+    }
+
+    categories = {
+      landbattleship
+    }
+  }
+  ZEO_lbs2_tech = {
+
+    enable_equipments = {
+      lbs2_equipment
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 4 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 50
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 50
+        has_war = yes
+      }
+    }
+
+    categories = {
+      landbattleship
+    }
+  }
+}

@@ -1,0 +1,746 @@
+technologies = {
+  EFS_ms_weapon_machinegun_01_tech = {
+		enable_equipments = {
+		  ms_weapon_machinegun_02_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 2 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_machinegun_02_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      plan_rx_tech = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_machinegun
+      mobilesuit_weapon_yashima_hi_machinegun
+      mobilesuit_weapon_bullet
+		}
+    on_research_complete = {
+      custom_effect_tooltip = efsf_ms_need_machinegun
+    }
+		ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 0
+        NOT = {
+          has_tech = rx78_tech
+        }
+      }
+      modifier = {
+        factor = 100
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 2
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 2
+        has_tech = rgm79_tech
+      }
+		}
+	}
+  EFS_ms_weapon_machinegun_02_tech = {
+		enable_equipments = {
+		  ms_weapon_machinegun_03_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 4 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_machinegun_03_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = ms_weapon_rifle_01_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_machinegun
+      mobilesuit_weapon_holyfield_fw_machinegun
+      mobilesuit_weapon_bullet
+		}
+		ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 20
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 20
+        date > 80.1.1
+      }
+		}
+	}
+  EFS_ms_weapon_machinegun_03_tech = {
+		enable_equipments = {
+		  ms_weapon_machinegun_04_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 6 }
+		}
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_machinegun
+      mobilesuit_weapon_holyfield_fw_machinegun
+      mobilesuit_weapon_bullet
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 20
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 20
+        date > 80.1.1
+      }
+		}
+	}
+  EFS_ms_weapon_bazooka_01_tech = {
+		enable_equipments = {
+		  ms_weapon_bazooka_03_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 0 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_bazooka_02_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      plan_rx_tech = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_bazooka
+      mobilesuit_weapon_brash_bazooka
+      mobilesuit_weapon_bullet
+      plan_rx
+		}
+    on_research_complete = {
+      custom_effect_tooltip = efsf_ms_need_bazooka
+    }
+		ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 0
+        NOT = {
+          has_tech = rx78_tech
+        }
+      }
+      modifier = {
+        factor = 10
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 5
+        has_tech = rx78_tech
+      }
+		}
+	}
+  EFS_ms_weapon_bazooka_02_tech = {
+		enable_equipments = {
+		  ms_weapon_bazooka_04_equipment
+		}
+    enable_equipment_modules = {
+      rocket_gun_module_2
+    }
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 2 }
+		}
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_bazooka
+      mobilesuit_weapon_brash_bazooka
+      mobilesuit_weapon_bullet
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 80.1.1
+      }
+		}
+	}
+  EFS_ms_weapon_beamsord_01_tech = {
+		enable_equipments = {
+		  ms_weapon_beamsord_01_equipment
+		}
+    enable_equipment_modules = {
+      beam_sord_module_1
+    }
+    dependencies = {
+      mega_particle2 = 1
+    }
+		research_cost = 1.5
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 0 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamsord_02_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      plan_rx_tech = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamsord
+      mobilesuit_weapon_brash_beam
+      plan_rx
+		}
+    on_research_complete = {
+      custom_effect_tooltip = efsf_ms_need_beamsord
+    }
+		ai_will_do = {
+			base = 1000
+		}
+	}
+  EFS_ms_weapon_beamsord_02_tech = {
+		enable_equipments = {
+		  ms_weapon_beamsord_02_equipment
+		}
+    enable_equipment_modules = {
+      beam_sord_module_2
+    }
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 81
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 6 }
+		}
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamsord
+      mobilesuit_weapon_brash_beam
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 81.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 82.1.1
+      }
+		}
+	}
+  EFS_ms_weapon_beamgun_01_tech = {
+		enable_equipments = {
+		  ms_weapon_beamgun_01_equipment
+		}
+    dependencies = {
+      mega_particle2 = 1
+    }
+		research_cost = 1.5
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = -4 y = 0 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamgun_02_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamsplay_01_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      plan_rx_tech = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamgun
+      mobilesuit_weapon_brash_beam
+      plan_rx
+		}
+    on_research_complete = {
+      custom_effect_tooltip = efsf_ms_need_beamgun
+    }
+		ai_will_do = {
+			base = 1000
+		}
+	}
+  EFS_ms_weapon_beamgun_02_tech = {
+		enable_equipments = {
+		  ms_weapon_beamgun_02_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = -4 y = 4 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamgun_03_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamgun
+      mobilesuit_weapon_brash_beam
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 80.1.1
+      }
+		}
+	}
+  EFS_ms_weapon_beamgun_03_tech = {
+		enable_equipments = {
+		  ms_weapon_beamgun_03_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 81
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = -4 y = 6 }
+		}
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamgun
+      mobilesuit_weapon_bowa_beam
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 81.1.1
+      }
+      modifier = {
+        factor = 20
+        date > 82.1.1
+      }
+		}
+	}
+  EFS_ms_weapon_beamsplay_01_tech = {
+		enable_equipments = {
+		  ms_weapon_beamsplay_01_equipment
+		}
+    enable_equipment_modules = {
+      beam_rifle_module_1
+    }
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 2 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamsplay_02_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      plan_rx_tech = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamgun
+      mobilesuit_weapon_beamsplay
+      mobilesuit_weapon_bowa_beam
+		}
+    on_research_complete = {
+      custom_effect_tooltip = efsf_ms_need_beamsplay
+    }
+		ai_will_do = {
+			base = 1000
+		}
+	}
+  EFS_ms_weapon_beamsplay_02_tech = {
+		enable_equipments = {
+		  ms_weapon_beamsplay_02_equipment
+		}
+    enable_equipment_modules = {
+      beam_rifle_module_2
+    }
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 4 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamsplay_03_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamgun
+      mobilesuit_weapon_beamsplay
+      mobilesuit_weapon_bowa_beam
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 80.1.1
+      }
+		}
+	}
+  EFS_ms_weapon_beamsplay_03_tech = {
+		enable_equipments = {
+		  ms_weapon_beamsplay_03_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 82
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 8 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamrifle_03_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamgun
+      mobilesuit_weapon_beamsplay
+      mobilesuit_weapon_bowa_beam
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 82.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 83.1.1
+      }
+		}
+	}
+  EFS_ms_weapon_beamrifle_01_tech = {
+		enable_equipments = {
+		  ms_weapon_beamrifle_01_equipment
+		}
+    dependencies = {
+      mega_particle2 = 1
+    }
+		research_cost = 1.5
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 4 y = 0 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamrifle_02_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      plan_rx_tech = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamgun
+      mobilesuit_weapon_beamrifle
+      mobilesuit_weapon_bowa_beam
+      plan_rx
+		}
+    on_research_complete = {
+      custom_effect_tooltip = efsf_ms_need_beamrifle
+    }
+		ai_will_do = {
+			base = 1000
+		}
+	}
+  EFS_ms_weapon_beamrifle_02_tech = {
+		enable_equipments = {
+		  ms_weapon_beamrifle_02_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 4 y = 4 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamrifle_03_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamgun
+      mobilesuit_weapon_beamrifle
+      mobilesuit_weapon_bowa_beam
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 80.1.1
+      }
+		}
+	}
+  EFS_ms_weapon_beamrifle_03_tech = {
+		enable_equipments = {
+		  ms_weapon_beamrifle_03_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 82
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 4 y = 8 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_weapon_beamsplay_03_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_weapon_beam
+      mobilesuit_weapon_beamgun
+      mobilesuit_weapon_beamrifle
+      mobilesuit_weapon_bowa_beam
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 82.1.1
+      }
+      modifier = {
+        factor = 40
+        date > 83.1.1
+      }
+		}
+	}
+
+  EFS_ms_shield_01_tech = {
+		enable_equipments = {
+		  ms_shield_02_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 78
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 0 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_shield_02_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      plan_rx_tech = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_shield
+      plan_rx
+		}
+    on_research_complete = {
+      custom_effect_tooltip = efsf_ms_need_shield
+    }
+		ai_will_do = {
+			base = 1000
+		}
+	}
+  EFS_ms_shield_02_tech = {
+		enable_equipments = {
+		  ms_shield_03_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 2 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_shield_03_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_shield
+      mobilesuit_yashima_hi_shiled
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 80.1.1
+      }
+		}
+	}
+  EFS_ms_shield_03_tech = {
+		enable_equipments = {
+		  ms_shield_04_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 4 }
+		}
+    path = {
+      leads_to_tech = EFS_ms_shield_04_tech
+      research_cost_coeff = 1
+    }
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_shield
+      mobilesuit_norfolk_shield
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 80.1.1
+      }
+		}
+	}
+  EFS_ms_shield_04_tech = {
+		enable_equipments = {
+		  ms_shield_05_equipment
+		}
+		research_cost = 1.0
+    xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 81
+		folder = {
+			name = EFS_ms_weapon_folder
+			position = { x = 0 y = 6 }
+		}
+		categories = {
+			mobilesuit_weapon
+      mobilesuit_shield
+		}
+    ai_will_do = {
+			base = 10
+      modifier = {
+        factor = 10
+        date > 81.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 82.1.1
+      }
+		}
+	}
+}

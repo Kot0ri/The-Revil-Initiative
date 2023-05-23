@@ -1,0 +1,27 @@
+state={
+	id=728
+	name="STATE_728"
+	manpower = 200000
+	
+	state_category = enclave
+	
+	history={
+		owner = EFS
+		add_core_of = EFS
+		buildings = {
+			infrastructure = 2
+			11981 = {
+				naval_base = 1
+			}
+		}
+		79.3.18 = {
+			controller = ZEO
+		}
+	}
+	
+	provinces={
+		11981 
+	}
+
+	local_supplies=0.0 
+}

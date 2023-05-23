@@ -1,0 +1,95 @@
+EFS_SC_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SC
+  for_countries = { EFS }
+  type = ship
+  ship_types = { archetype_efsf_space_cruiser }
+  prefix = ""
+  fallback_name = "CL-%d"
+
+  unique = {
+    "Salamis" "Madagascar" "Saffran" "Philadelphia" "Cisco" "Cyprus" "Java" "Mariana" "Tsushima" "Camranh-bay" "Johore" "Burgundy" "Sierra Leone" "Graden" "Sakhalin" "Orlando" "Corsica" "Kalimantan" "Paramushir" "Rugen" "Lemnos" "Maluku" "Samos" "Quetta" "Ascension" "Squaw Valley" "Hampton" "Suruga" "West Sahara" "Nelson" "Yulin" "Nashville" "Monterey" "Yerevan" "Kaifang" "Danji" "South Dakota" "Salt Lake City" "Maracaibo" "Lawrenceville" "Madras" "Arahas" "Arahas II" "Artemis" "Astoria" "Atlanta" "Bosnia" "Brasilia" "Canberra" "Cumberland" "Danang" "Dortmund" "Esmeralda" "Exeter" "Helat" "Kashima" "Long Beach" "Lune" "Macedonia" "Mogami" "Panama II" "Pasadena" "Philadelphia" "Portland" "Prinz Eugen" "Repluse" "Seikyou" "Sheffield" "Stockholm" "Strasbourg" "Stykisholmur" "Sussex" "Trieste" "Ulysses" "Volgograd" "York" "Delphi" "McKinley" "Mont Blanc" "Rene" "Sichuan" "Sicily" "Siviant II" "Suruga" "Aoba" "Brunei" "Dunkerque" "Izmir" "Takao" "Trent" "Eretria" "Sulu" "Herat" "Salamanca" "Valencia" "Sibuyan" "Iowa" "Montana" "Georgia" "Texas" "Arizona" "New Mexico" "Colorado" "North Carolina" "South Carolina" "Dallas" "Surrey" "Fiji" "Leander" "Edinburgh" "Odessa" "Aigle" "Cossack" "Tribal" "Mogador" "Le Terrible" "Vauquelin" "Guepard" "Nicholas" "Kidd" "Black" "Boise" "Bayard" "Strasbourg" "Alsace" "Dijon" "Melbourne" "Perth" "Christchurch" "Des Moines" "Seattle" "Baltimore" "Uthrecht" "Friesland" "Minotaur" "Alabama" "Utah" "Omaha" "Kokura" "Nagasaki" "Tokyo" "Hokkaido" "Bali" "Banten" "Sunda" "Sumatra" "Sulawesi" "Singapore" "Kuala Lumpur" "Minsk" "Ochakov" "Leningrad" "Dublin" "Kosovo" "Beograd" "Budapest" "Kaliningrad" "Burma" "Islamabad" "Aegypt" "Eureka" "Libya" "Tripolitania" "Barcelona" "New Guinea" "Baja" "Tijuana" "Tiera Del Fuego" "Pommerania" "Danzig" "Estonia" "Lithuania" "Vilnius" "Helsinki" "Stockholm" "Narvik" "Rotterdam" "Corinth" "Kreta" "Liguria" "Milan" "Bologna" "Gearing" "Daring" "Liberty" "Burgundy" "Cilia" "Bosnia" "Herzegovina" "Admiral Lutjens" "Eindhoven" "Antwerp" "Guile" "Deceiver" "Receiver" "Kronos" "Kronus" "Krones" "Messalia" "Syracuse" "Cambridge" "Churchill" "King George V of Britain" "New Batavia" "Buitenzorg" "Jogjakarta" "Priok" "Medan" "Bintan" "Vesuvius" "Everest" "Alpini"
+  }
+}
+EFS_SB_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SB
+  for_countries = { EFS }
+  type = ship
+  ship_types = { archetype_space_battleship }
+  prefix = ""
+  fallback_name = "BB-%d"
+
+  unique = {
+    "Ananke" "Nereid" "Magellan" "Magellan II" "Phoebe" "Titan" "Hyperion" "Hood" "Kilimanjaro" "Tatar" "Juliet" "Lismore" "Renown" "Wisconsin" "Orwell" "Garland" "Hull" "Ruzal" "Drag" "Geibach" "Issei" "Luzar" "Niad" "Jerriet" "Lismore" "Summerville" "Jarvis" "Toulon" "North Carolina" "Bull Run" "Marengo" "Nagato" "Scharnhorst" "Trafalgar" "Ra Caim" "Ra Charter" "Ra Chutter" "Ra Clop" "Ra Dels" "Ra Eym" "Ra Keim" "Ra Kiev" "Ra Zyme" "Carry Base" "Carrot" "Linkai" "Tenenbaum" "Damascus" "Ra-Gills" "Irish" "Radish" "Arlberg" "Meteran" "Saint Ives" "Zwickbau" "Wadatsumi" "Ivanhoe" "St. Gallen" "Cologne" "Windermere" "Oasis" "Areion" "Cookstown" "Stout" "Mustache" "Échalote" "Birmingham" "Leeds" "London" "New York" "San Francisco" "Ural" "Caucasia" "Banten" "Shanghai" "Missisipi" "Tiberias" "George Washington" "Amazonia" "Krakatau" "Versailles" "Yokohama" "Cairo" "Istanbul" "Ploesti" "Amsterdam" "Brussels" "Indomitable" "Victory" "Victory II" "Kansas" "New Delhi" "Toronto" "Monarch" "Knossos" "Thunderer" "Conqueror" "Copernicus" "Wallachia" "Moldava" "Ostroda" "Ironclad" "Admiral Revil" "Admiral Gopp" "Jupiter" "Uranus" "Neptune" "Mercury" "Mars" "Rio Grande" "Caracas" "Bogota" "Granada" "Von Braun" "Anaheim" "Dreadnought" "Lyon" "Normandie" "Richeleu" "Irian Jaya" "Bengal" "Mandalay" "Admiral Nelson" "Henri IV" "Charles Martel" "Saint Louis" "Orion" "Barbarossa" "Beibars" "Mahan "Athena "Herculean" "Antares" "Fletcher"
+  }
+}
+
+EFS_DD_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_DESTROYERS
+  for_countries = { EFS }
+  type = ship
+  ship_types = { archetype_destroyer }
+  prefix = ""
+  fallback_name = "Destroyer %d"
+
+  unique = {
+    "Salamis" "Madagascar" "Saffran" "Philadelphia" "Cisco" "Cyprus" "Java" "Mariana" "Tsushima" "Camranh-bay" "Johore" "Burgundy" "Sierra Leone" "Graden" "Sakhalin" "Orlando" "Corsica" "Kalimantan" "Paramushir" "Rugen" "Lemnos" "Maluku" "Samos" "Quetta" "Ascension" "Squaw Valley" "Hampton" "Suruga" "West Sahara" "Nelson" "Yulin" "Nashville" "Monterey" "Yerevan" "Kaifang" "Danji" "South Dakota" "Salt Lake City" "Maracaibo" "Lawrenceville" "Madras" "Arahas" "Arahas II" "Artemis" "Astoria" "Atlanta" "Bosnia" "Brasilia" "Canberra" "Cumberland" "Danang" "Dortmund" "Esmeralda" "Exeter" "Helat" "Kashima" "Long Beach" "Lune" "Macedonia" "Mogami" "Panama II" "Pasadena" "Philadelphia" "Portland" "Prinz Eugen" "Repluse" "Seikyou" "Sheffield" "Stockholm" "Strasbourg" "Stykisholmur" "Sussex" "Trieste" "Ulysses" "Volgograd" "York" "Delphi" "McKinley" "Mont Blanc" "Rene" "Sichuan" "Sicily" "Siviant II" "Suruga" "Aoba" "Brunei" "Dunkerque" "Izmir" "Takao" "Trent" "Eretria" "Sulu" "Herat" "Salamanca" "Valencia" "Sibuyan"
+  }
+}
+
+EFS_CA_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_CA
+  for_countries = { EFS }
+  type = ship
+  ship_types = { archetype_cruiser }
+  prefix = ""
+  fallback_name = "Cruiser %d"
+
+  unique = {
+    "Ananke" "Nereid" "Magellan" "Magellan II" "Phoebe" "Titan" "Hyperion" "Hood" "Kilimanjaro" "Tatar" "Juliet" "Lismore" "Renown" "Wisconsin" "Orwell" "Garland" "Hull" "Ruzal" "Drag" "Geibach" "Issei" "Luzar" "Niad" "Jerriet" "Lismore" "Summerville" "Jarvis" "Toulon" "North Carolina" "Bull Run" "Marengo" "Nagato" "Scharnhorst" "Trafalgar" "Ra Caim" "Ra Charter" "Ra Chutter" "Ra Clop" "Ra Dels" "Ra Eym" "Ra Keim" "Ra Kiev" "Ra Zyme" "Carry Base" "Carrot" "Linkai" "Tenenbaum" "Damascus" "Ra-Gills" "Irish" "Radish" "Arlberg" "Meteran" "Saint Ives" "Zwickbau" "Wadatsumi" "Ivanhoe" "St. Gallen" "Cologne" "Windermere" "Oasis" "Areion" "Cookstown" "Stout" "Mustache" "Échalote"
+  }
+}
+
+EFS_CV_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_CARRIERS
+  for_countries = { EFS }
+  type = ship
+  ship_types = { archetype_carrier }
+  prefix = ""
+  fallback_name = "Carrier %d"
+
+  unique = {
+    "Alexandria" "Al Giza" "Al Qasr" "Aswan" "Belgrade" "Gaunland" "Hario" "Kandahar" "Key West" "Luxor" "Mesopotamia" "Tel Aviv" "Ra Cailum" "Ra Gustar" "Jeanne D'Arc" "Abram" "Ajax" "Admiral Tianem" "Columbus" "Beehive"
+  }
+}
+
+EFS_SS_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SUBMARINES
+  for_countries = { EFS }
+  type = ship
+  ship_types = { archetype_submarine }
+  prefix = ""
+  fallback_name = "U-%d"
+}
+
+EFS_SCV_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SUBMARINES
+  for_countries = { EFS }
+  type = ship
+  ship_types = { archetype_submarine_carrier }
+  prefix = "EFS "
+  fallback_name = "Submarine %d"
+
+}
+
+EFS_SUV_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SURVEY
+  for_countries = { EFS }
+  type = ship
+  ship_types = { archetype_survey }
+  prefix = ""
+  fallback_name = "Survey Ship %d"
+
+  unique = {
+    "Columbus" "Srinagar" "Iosima" "Ivan Rogoff" "Alaska" "Sao Tome Principe"
+  }
+}

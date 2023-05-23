@@ -1,0 +1,2504 @@
+characters={
+	EFS_johann_a_revil={
+		name=EFS_johann_a_revil
+		portraits={
+			civilian={
+				large="gfx/leaders/EFS/Portrait_Efsf_Johann_Revil.dds"
+			}
+		}
+		field_marshal={
+			traits={ conservatism_party organizer trait_engineer offensive_doctrine inspirational_leader fortress_buster }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			planning_skill=6
+			logistics_skill=5
+			legacy_id=107
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ indomitable_leader }
+			expire="100.1.1.1"
+			id=-1
+		}
+	}
+	EFS_blex_forer={
+		name=EFS_blex_forer
+		portraits={
+			army = {
+				small = GFX_idea_blex_forer
+			}
+			civilian={
+				large="gfx/leaders/EFS/Portrait_Efsf_blex_forer.dds"
+			}
+		}
+		corps_commander={
+			traits={ aeug_party }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=103
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		country_leader={
+			ideology=antiefsfism
+			traits={ avid_idealist }
+			expire="100.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = blex_forer
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				blex_forer_trait
+			}
+			available = {
+				NOT = {
+					has_country_flag = purge_reformers
+				}
+			}
+			do_effect = {
+				NOT = {
+					has_government = zeonism
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+				modifier = {
+					factor = 5
+					has_completed_focus = efsf_earth_revitalization_plan
+				}
+				modifier = {
+					factor = 10
+					has_completed_focus = efsf_transfer_of_government_function
+				}
+				modifier = {
+					factor = 0
+					has_completed_focus = efsf_oppression_of_anti-earth_federation
+				}
+			}
+		}
+	}
+	EFS_jamitov_hymen={
+		name=EFS_jamitov_hymen
+		portraits={
+			civilian={
+				small=GFX_idea_jamitov_hymem
+				large="gfx/leaders/EFS/Portrait_Efsf_jamitov_hymem.dds"
+			}
+		}
+		corps_commander={
+			traits={ titans_party }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=101
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		country_leader={
+			ideology=earth_elitism
+			traits={ dictator elitism }
+			expire="100.1.1.1"
+			id=-1
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = jamitov_hymem
+			allowed = {
+				original_tag = EFS
+			}
+			do_effect = {
+				NOT = {
+					has_government = earthsupremacy
+				}
+			}
+			traits = {
+				jamitov_hymem_trait
+			}
+			available = {
+				NOT = {
+					has_country_flag = eliminate_radical_right
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+				modifier = {
+					factor = 0
+					has_completed_focus = efsf_appeasement_policy_for_zeon
+				}
+				modifier = {
+					factor = 0
+					has_completed_focus = efsf_army_reform
+				}
+				modifier = {
+					factor = 5
+					has_completed_focus = efsf_show_to_colony
+				}
+				modifier = {
+					factor = 10
+					has_completed_focus = efsf_oppression_of_anti-earth_federation
+				}
+				modifier = {
+					factor = 0.2
+					OR = {
+						has_completed_focus = efsf_scenario_for_collapse_of_zeon
+						has_completed_focus = efsf_appeasement_policy_for_zeon
+					}
+				}
+			}
+		}
+	}
+	EFS_space_supremacist_senator={
+		name=EFS_space_supremacist_senator
+		portraits={
+			civilian={
+				large="gfx/leaders/Portrait_mob_leader_7.dds"
+			}
+		}
+		country_leader={
+			ideology=space_elitism
+			expire="100.1.1.1"
+			id=-1
+		}
+	}
+	EFS_gene_coliny={
+		name=EFS_gene_coliny
+		portraits={
+			army={
+				small="GFX_idea_geen_coliny"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_geen_coliny.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard titans_party }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=111
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		advisor = {
+			slot = space_forces_chief
+			idea_token = gene_coliny
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 150
+			traits = {
+				geen_coliny_trait
+			}
+			modifier = {
+				navy_org_factor = 0.2
+			}
+			available = {
+				NOT = {
+					has_country_flag = eliminate_radical_right
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					has_war = yes
+				}
+			}
+		}
+	}
+	EFS_john_kowen={
+		name=EFS_john_kowen
+		portraits={
+			army={
+				small="GFX_idea_john_kowen"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_john_kowen.dds"
+			}
+		}
+		field_marshal={
+			traits={ conservatism_party }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=4
+			legacy_id=104
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		advisor = {
+			slot = space_forces_chief
+			idea_token = john_kowen
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 80
+			traits = {
+				john_kowen_trait
+			}
+			available = {
+				NOT = {
+					has_country_flag = purge_reformers
+				}
+			}
+			modifier = {
+				naval_detection = 0.1
+			}
+			research_bonus = {
+				rx78_gp1_tech = 0.2
+				rx78_gp1_2_tech = 0.2
+				rx78_gp2_tech = 0.2
+				rx78_gp3_tech = 0.2
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					has_war = yes
+				}
+			}
+		}
+	}
+	EFS_gopp={
+		name=EFS_gopp
+		portraits={
+			army={
+				small="GFX_idea_gopp"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_gopp.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard politically_connected conservatism_party }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=106
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gopp
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				gopp_trait
+			}
+			available = {
+				NOT = {
+					has_completed_focus = efsf_eradication_of_corruption
+				}
+			}
+			do_effect = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 2
+					is_historical_focus_on = yes
+				}
+				modifier = {
+					factor = 0
+					has_completed_focus = efsf_oppression_of_anti-earth_federation
+				}
+				modifier = {
+					factor = 0
+					has_completed_focus = efsf_transfer_of_government_function
+				}
+			}
+		}
+	}
+	EFS_adenauer_paraya = {
+		name = EFS_adenauer_paraya
+		portraits={
+			army={
+				small="GFX_idea_adenauer_paraya"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = adenauer_paraya
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				adenauer_paraya_trait
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					has_completed_focus = efsf_oppression_of_anti-earth_federation
+				}
+			}
+		}
+	}
+	EFS_elran_gfc = {
+		name = EFS_elran_gfc
+		portraits={
+			army={
+				small="GFX_idea_elran_gfc"
+			}
+		}
+		advisor = {
+			slot = ground_forces_chief
+			idea_token = elran_gfc
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				elran_gfc_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = elran_is_capture
+					}
+				}
+			}
+			on_add = {
+				EFS = {
+					country_event = { id = efsf.2001 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	EFS_melanie_hue_carbine = {
+		name=melanie_hue_carbine
+		portraits={
+			army={
+				small=GFX_idea_melanie_hue_carbine
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = melanie_hue_carbine
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				NOT = {
+					has_global_flag = ae_is_not_yes
+				}
+			}
+			traits = {
+				melanie_hue_carbine_trait
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+	}
+	EFS_won_lee = {
+		name=won_lee
+		portraits={
+			army={
+				small=GFX_idea_won_lee
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = won_lee
+			traits = {
+				won_lee_trait
+			}
+			available = {
+				NOT = {
+					has_global_flag = ae_is_not_yes
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 3
+					has_war = yes
+				}
+			}
+		}
+	}
+	EFS_josef_eschonbach = {
+		name=josef_eschonbach
+		portraits={
+			army={
+				small=GFX_idea_josef_eschonbach
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = josef_eschonbach
+			traits = {
+				eschonbach_trait
+			}
+			modifier = {
+			}
+			available = {
+				hidden_trigger = {
+					if = {
+						limit = {
+							original_tag = ZEO
+						}
+						NOT = {
+							has_country_flag = eschonbach_is_out_zeon
+						}
+					}
+					if = {
+						limit = {
+							original_tag = EFS
+						}
+						NOT = {
+							has_country_flag = eschonbach_is_out_efsf
+						}
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 6
+				modifier = {
+					factor = 0
+					has_war = no
+				}
+			}
+		}
+	}
+	EFS_stephanie_luio = {
+		name=stephanie_luio
+		portraits={
+			army={
+				small=GFX_idea_stephanie_luio
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = stephanie_luio
+			traits = {
+				stephanie_luio_trait
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	EFS_kiki_rosita = {
+		name=kiki_rosita
+		portraits={
+			army={
+				small=GFX_idea_kiki_rosita
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = kiki_rosita
+			traits = {
+				hc_guerrilla_2
+			}
+			allowed = {
+				OR = {
+					original_tag = EFS
+					original_tag = ZEO
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_torenov_y_minovsky = {
+		name = torenov_y_minovsky
+		portraits={
+			army={
+				small=GFX_idea_torenov_y_minovsky
+			}
+		}
+		advisor = {
+			slot = theorist
+			cost = 100
+			ledger = army
+			idea_token = torenov_y_minovsky
+			available = {
+				has_country_flag = minovsky_is_ours
+			}
+			allowed = {
+				OR = {
+					original_tag = EFS
+					original_tag = ZEO
+				}
+			}
+			research_bonus = {
+				minovsky = 0.2
+			}
+			traits = {
+				minovsky_specialist
+			}
+			on_add = {
+				EFS = {
+					if = {
+						limit = {
+							has_idea = tem_ray
+						}
+						country_event = { id = efsf.102 }
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 500
+			}
+			}
+	}
+	EFS_chlust_morses = {
+		name = chlust_morses
+		portraits={
+			army={
+				small=GFX_idea_chlust_morses
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = chlust_morses
+			available = {
+				has_country_flag = chlust_is_ours
+			}
+			allowed = {
+				OR = {
+					original_tag = EFS
+					original_tag = ZEO
+				}
+			}
+			traits = {
+				exam_specialist
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 10
+					has_tech = newtype_tech2
+				}
+				modifier = {
+					factor = 0
+					OR = {
+						NOT = {
+							has_tech = newtype_tech2
+						}
+						has_tech = ms08_tx_ex_tech
+						has_tech = rx79_d3_tech
+					}
+				}
+			}
+		}
+	}
+	EFS_nakamoto = {
+		name = nakamoto
+		portraits={
+			army={
+				small=GFX_idea_nakamoto
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = nakamoto
+			available = {
+				has_country_flag = nakamoto_is_ours
+			}
+			allowed = {
+				OR = {
+					original_tag = EFS
+					original_tag = ZEO
+				}
+			}
+			modifier = {
+			}
+			traits = {
+				efficient_scientist
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	EFS_seki = {
+		name = EFS_seki
+		portraits={
+			army={
+				small="GFX_idea_seki"
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = air
+			cost = 100
+			idea_token = seki
+			allowed = {
+				original_tag = EFS
+			}
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			traits = {
+				seki_trait
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	EFS_mosk_han = {
+		name = EFS_mosk_han
+		portraits={
+			army={
+				small="GFX_idea_mosk_han"
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = mosk_han
+			allowed = {
+				original_tag = EFS
+			}
+			research_bonus = {
+				mobilesuit_electronics = 0.1
+			}
+			traits = {
+				ambac_specialist
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 2
+					has_tech = rx78_tech
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						has_tech = rx78_tech
+					}
+				}
+			}
+		}
+	}
+	EFS_tem_ray = {
+		name = EFS_tem_ray
+		portraits={
+			army={
+				small="GFX_idea_tem_ray"
+			}
+		}
+		advisor={
+			slot = theorist
+			cost = 100
+			ledger = army
+			idea_token = tem_ray
+			allowed = {
+				original_tag = EFS
+			}
+			research_bonus = {
+				plan_rx = 0.5
+			}
+			available = {
+				has_tech = plan_rx_tech
+				hidden_trigger = {
+					NOT = {
+						OR = {
+							has_country_flag = tem_is_mia
+							has_country_flag = tem_is_dead
+						}
+					}
+					has_country_flag = tem_is_ours
+				}
+			}
+			traits = {
+				rx_specialist
+			}
+			on_add = {
+				EFS = {
+					if = {
+						limit = {
+							has_idea = torenov_y_minovsky
+						}
+						country_event = { id = efsf.102 }
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 250
+				modifier = {
+					factor = 0.01
+					has_tech = rx78_tech
+					has_tech = rx75_tech
+					has_tech = rx77_tech
+				}
+			}
+		}
+	}
+	EFS_dick_lumnba = {
+		name = EFS_dick_lumnba
+		portraits={
+			army={
+				small="GFX_idea_dick_lumnba"
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = dick_lumnba
+			allowed = {
+				original_tag = EFS
+			}
+			research_bonus = {
+				ambac = 0.15
+				rx78nt = 0.2
+			}
+			traits = {
+				rx78nt_specialist
+			}
+			ai_will_do = {
+				factor = 20
+				modifier = {
+					factor = 0.1
+					has_tech = rx78_nt_tech
+				}
+			}
+		}
+	}
+	EFS_nina_purpleton = {
+		name = EFS_nina_purpleton
+		portraits={
+			army={
+				small="GFX_idea_nina_purpleton"
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = nina_purpleton
+			allowed = {
+				original_tag = EFS
+			}
+			research_bonus = {
+				computing_tech = 0.15
+				plan_gundam = 0.2
+			}
+			available = {
+			}
+			traits = {
+				plan_gundam_specialist
+			}
+			on_add = {
+				EFS = {
+					if = {
+						limit = {
+							has_idea = anaheim_electronics
+						}
+						country_event = { id = achievement.38 }
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 5
+				modifier = {
+					factor = 0
+					has_tech = plan_gundam_tech
+				}
+			}
+		}
+	}
+	EFS_stephan_hepbum={
+		name=EFS_stephan_hepbum
+		portraits={
+			army={
+				small="GFX_idea_stephan_hepbum"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_stephan_hepbum.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard fort_commander }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=121
+		}
+		advisor={
+			slot = space_forces_chief
+			idea_token = stephan_hepbum
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 50
+			traits = {
+				stephan_hepbum_trait
+			}
+			modifier = {
+				naval_defense_factor = 0.1
+				navy_fuel_consumption_factor = -0.05
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					has_war = yes
+				}
+			}
+		}
+	}
+	EFS_hawkins_marnery={
+		name=EFS_hawkins_marnery
+		portraits={
+			army={
+				small="GFX_idea_hawkins_marnery"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_hawkins_marnery.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_cautious fort_commander }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=126
+		}
+		advisor={
+			slot = ground_forces_chief
+			idea_token = hawkins_marnery
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 100
+			traits = {
+				hawkings_marnery_trait
+			}
+			on_add = {
+				EFS = {
+					country_event = { id = efsf.2002 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	EFS_bask_om={
+		name=EFS_bask_om
+		portraits={
+			army={
+				small="GFX_idea_bask_om"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_bask_om.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader titans_party }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=5
+			legacy_id=102
+			visible = {
+				OR = {
+					has_character_flag = enable_corps_commander
+					NOT = {
+						has_character_flag = disable_corps_commander
+					}
+				}
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = air
+			cost = 100
+			idea_token = bask_om
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				NOT = {
+					has_country_flag = eliminate_radical_right
+				}
+			}
+			traits = {
+				hc_air_bomb_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_antonio_callas={
+		name=EFS_antonio_callas
+		portraits={
+			army={
+				small="GFX_idea_antonio_callas"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_antonio_callas.dds"
+			}
+		}
+		corps_commander={
+			traits={ fort_commander }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=115
+		}
+		advisor={
+			slot = ground_forces_chief
+			idea_token = antonio_callas
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 100
+			traits = {
+				antonio_callas_trait
+			}
+			on_add = {
+				EFS = {
+					country_event = { id = efsf.2000 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	EFS_isan_ryer={
+		name=EFS_isan_ryer
+		portraits={
+			army={
+				small="GFX_idea_ethan_liar"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_ethan_liar.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard harsh_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=109
+		}
+		advisor={
+			slot = ground_forces_chief
+			idea_token = ethan_liar
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				ethan_liar_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = eathan_is_dead
+					}
+				}
+			}
+			on_add = {
+				EFS = {
+					country_event = { id = efsf.2003 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	EFS_kojima={
+		name=EFS_kojima
+		portraits={
+			army={
+				small="GFX_idea_kojima"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_kojima.dds"
+			}
+		}
+		corps_commander={
+			traits={ jungle_rat }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=119
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = kojima
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_jungle_commander_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_michael_colmatta={
+		name=EFS_michael_colmatta
+		portraits={
+			army={
+				small="GFX_idea_michele_colematta"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_michele_kolematta.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = michele_colematta
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_army_commander_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+		corps_commander={
+			traits={ reaper_vampire harsh_leader infantry_officer armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=128
+		}
+	}
+	EFS_woody_malden={
+		name=EFS_woody_malden
+		portraits={
+			army={
+				small="GFX_idea_woody_malden"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_Woody_Malden.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=154
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = woody_malden
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = woody_is_dead
+					}
+				}
+			}
+			traits = {
+				hc_mechanic_specialist_3
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_nakohha_nakato={
+		name=EFS_nakohha_nakato
+		portraits={
+			army={
+				small="GFX_idea_nakohha_nakato"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_Nakohha_Nakato.dds"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=178
+		}
+	}
+	EFS_matilda_ajan={
+		name=EFS_matilda_ajan
+		portraits={
+			army={
+				small="GFX_idea_matild_ajan"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_Matilda_Ajan.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=181
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = matild_ajan
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = matild_is_dead
+					}
+				}
+			}
+			traits = {
+				hc_logistics_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_ben_barberry={
+		name=EFS_ben_barberry
+		portraits={
+			army={
+				small="GFX_idea_ben_barberry"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_Ben_Barberry.dds"
+			}
+		}
+		corps_commander={
+			traits={ bearer_of_artillery infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=194
+		}
+	}
+	EFS_herman_yandell={
+		name=EFS_herman_yandell
+		portraits={
+			army={
+				small="GFX_idea_herman_yandell"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_Herman_Yandell.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=195
+		}
+	}
+	EFS_arleen_nazon={
+		name=EFS_arleen_nazon
+		portraits={
+			army={
+				small="GFX_idea_arleen_nazon"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_Arleen_Nazon.dds"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=196
+		}
+	}
+	EFS_green_wyatt={
+		name=EFS_green_wyatt
+		portraits={
+			army={
+				small="GFX_idea_green_wyatt"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_green_wyatt.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=105
+		}
+		advisor={
+			slot = space_forces_chief
+			idea_token = green_wyatt
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 80
+			traits = {
+				green_wyatt_trait
+			}
+			modifier = {
+				naval_enemy_retreat_chance = 0.1
+				positioning = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					has_war = yes
+				}
+			}
+		}
+	}
+	EFS_tianem={
+		name=EFS_tianem
+		portraits={
+			army={
+				small="GFX_idea_tianem"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_tianem.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner ironside space_expert }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=122
+		}
+		advisor = {
+			slot = space_forces_chief
+			idea_token = tianem
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 150
+			traits = {
+				tianem_trait
+			}
+			modifier = {
+				naval_retreat_chance = 0.2
+				naval_retreat_speed = 0.2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 15
+					has_war = yes
+				}
+			}
+		}
+	}
+	EFS_wakkein={
+		name=EFS_wakkein
+		portraits={
+			army={
+				small="GFX_idea_watkein"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_watkein.dds"
+			}
+		}
+		navy_leader={
+			traits={ spotter space_expert }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=134
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			idea_token = watkein
+			cost = 100
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_army_leader_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_paolo_cassius={
+		name=EFS_paolo_cassius
+		portraits={
+			army={
+				small="GFX_idea_paolo_cassius"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_paolo_cassius.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy space_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=108
+			visible = {
+				OR = {
+					has_character_flag = enable_navy_leader
+					NOT = {
+						has_character_flag = disable_navy_leader
+					}
+				}
+			}
+		}
+	}
+	EFS_eiphar_synapse={
+		name=EFS_eiphar_synapse
+		portraits={
+			army={
+				small="GFX_idea_eyper_sinapus"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_eyper_sinapus.dds"
+			}
+		}
+		navy_leader={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			ledger = navy
+			cost = 100
+			idea_token = eyper_sinapus
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_ship_commander_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_jamaican_daninghan={
+		name=EFS_jamaican_daninghan
+		portraits={
+			army={
+				small="GFX_idea_jamaican_daningan"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_jamaican_daningan.dds"
+			}
+		}
+		navy_leader={
+			traits={ titans_party }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=110
+			visible = {
+				OR = {
+					has_character_flag = enable_navy_leader
+					NOT = {
+						has_character_flag = disable_navy_leader
+					}
+				}
+			}
+		}
+	}
+	EFS_lead={
+		name=EFS_lead
+		portraits={
+			army={
+				small="GFX_idea_reed"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_lead.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=133
+		}
+	}
+	EFS_gady_kinsey={
+		name=EFS_gady_kinsey
+		portraits={
+			army={
+				small="GFX_idea_gady_kinsey"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_gady_kinsey.dds"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=190
+		}
+	}
+	EFS_yazan_gable={
+		name=EFS_yazan_gable
+		portraits={
+			army={
+				small="GFX_idea_yazan_gable"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_yazan_gable.dds"
+			}
+		}
+		corps_commander={
+			traits={ titans_party pilot }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	EFS_lila_milla_rira={
+		name=EFS_lila_milla_rira
+		portraits={
+			army={
+				small="GFX_idea_lila_milla_rira"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_laila_milla_rira.dds"
+			}
+		}
+		corps_commander={
+			traits={ titans_party pilot }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_you_kajima={
+		name=EFS_you_kajima
+		portraits={
+			army={
+				small="GFX_idea_you_kajima"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_you_kajima.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_master_p_rayer={
+		name=EFS_master_p_rayer
+		portraits={
+			army={
+				small="GFX_idea_master_pierce_rayer"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_master_p_rayer.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_south_burning={
+		name=EFS_south_burning
+		portraits={
+			army={
+				small="GFX_idea_south_burning"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_south_burning.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = south_burning
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_instructor_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_hugues_courand={
+		name=EFS_hugues_courand
+		portraits={
+			army={
+				small="GFX_idea_hugues_curro"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_hugues_courand.dds"
+			}
+		}
+		corps_commander={
+			traits={ commando pilot }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_astonaige_medoz = {
+		name=EFS_astonaige_medoz
+		portraits={
+			army={
+				small="GFX_idea_astonaige_medoz"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = astonaige_medoz
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_mechanic_specialist_1
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	EFS_omle_fang = {
+		name=EFS_omle_fang
+		portraits={
+			army={
+				small="GFX_idea_omle_fang"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = omle_fang
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_mechanic_specialist_2
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	EFS_bright_noah = {
+		name=EFS_bright_noah
+		portraits={
+			army={
+				small="GFX_idea_bright_noah"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_Bright_Noah.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = air
+			cost = 100
+			idea_token = bright_noah
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_ship_commander_2
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = bright_is_dead
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+		navy_leader = {
+			traits = {
+				aeug_party
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+			legacy_id = 124
+			visible = {
+				has_character_flag = enable_navy_leader
+			}
+		}
+	}
+	EFS_alice_miller = {
+		name=EFS_alice_miller
+		portraits={
+			army={
+				small="GFX_idea_alice_miller"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = alice_miller
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_spy_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_gidan_nickerd = {
+		name=EFS_gidan_nickerd
+		portraits={
+			army={
+				small="GFX_idea_gidan_nickerd"
+				large = "gfx/leaders/EFS/Portrait_efsf_Jidan_Nickard.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = gidan_nickerd
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_logistics_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+		corps_commander = {
+			legacy_id = 191
+			traits = {
+				trait_engineer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 5
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_federico_czariano = {
+		name=EFS_federico_czariano
+		portraits={
+			army={
+				small="GFX_idea_federico_czariano"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_federico_czariano.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = federico_czariano
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_special_force_1
+			}
+			available = {
+				has_character_flag = enable_corps_commander
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = federico_is_dead
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+		corps_commander = {
+			traits = {
+				pilot
+				trait_engineer
+				scavenger
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_amuro_ray = {
+		name = EFS_amuro_ray
+		portraits={
+			army={
+				small="GFX_idea_amuro_ray"
+			}
+			army={
+				large = "gfx/leaders/EFS/Portrait_Efsf_amuro_ray.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 113
+			traits = {
+				pilot
+				newtype1
+				aeug_party
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_kou_uraki = {
+		name = EFS_kou_uraki
+		portraits={
+			army={
+				small="GFX_idea_kou_uraki"
+			}
+			army={
+				large = "gfx/leaders/EFS/Portrait_Efsf_kou_uraki.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 118
+			traits = {
+				pilot
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_io_fleming = {
+		name = EFS_io_fleming
+		portraits={
+			army={
+				small="GFX_idea_io_fleming"
+			}
+			army={
+				large = "gfx/leaders/EFS/Portrait_Efsf_io_fleming.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				pilot
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_claudia_peer = {
+		name = EFS_claudia_peer
+		portraits={
+			army={
+				small="GFX_idea_claudia_peer"
+			}
+			army={
+				large = "gfx/leaders/EFS/Portrait_Efsf_claudia_peer.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+			visible = {
+				has_character_flag = enable_navy_leader
+			}
+		}
+	}
+	EFS_shiro_amada = {
+		name = EFS_shiro_amada
+		portraits={
+			army={
+				small="GFX_idea_shiroh_amada"
+			}
+			army={
+				large = "gfx/leaders/EFS/Portrait_Efsf_shiroh_amada.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 112
+			traits = {
+				jungle_rat
+				pilot
+				trait_lucky
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_henken_bekkener = {
+		name = EFS_henken_bekkener
+		portraits={
+			army={
+				small="GFX_idea_henken_bekkener"
+			}
+			army={
+				large = "gfx/leaders/EFS/Portrait_Efsf_henken_bekkener.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				aeug_party
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 4
+			visible = {
+				has_character_flag = enable_navy_leader
+			}
+		}
+	}
+	EFS_christina_mackenzie = {
+		name = "Christina Mackenzie"
+		portraits={
+			army={
+				small=GFX_idea_christina_mackenzie
+				large = "gfx/leaders/EFS/Portrait_Efsf_christina_mackenzie.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				pilot
+			}
+			legacy_id = 114
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_sleggar_law = {
+		name = EFS_sleggar_law
+		portraits={
+			army={
+				small=GFX_idea_sleggar_law
+				large = "gfx/leaders/EFS/Portrait_efsf_Sleggar_Law.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 167
+			traits = {
+				pilot
+				aeug_party
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_ryu_jose = {
+		name = EFS_ryu_jose
+		portraits={
+			army={
+				small=GFX_idea_ryu_jose
+				large = "gfx/leaders/EFS/Portrait_efsf_Ryu_Jose.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 185
+			traits = {
+				pilot
+				aeug_party
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 5
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_kai_shiden = {
+		name = EFS_kai_shiden
+		portraits={
+			army={
+				small=GFX_idea_kai_shiden
+				large = "gfx/leaders/EFS/Portrait_efsf_Kai_Shiden.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 157
+			traits = {
+				pilot
+				aeug_party
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_hayato_kobayashi = {
+		name = EFS_hayato_kobayashi
+		portraits={
+			army={
+				small=GFX_idea_hayato_kobayashi
+				large = "gfx/leaders/EFS/Portrait_efsf_hayato_kobayashi.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 179
+			traits = {
+				pilot
+				aeug_party
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_sayla_mass = {
+		name = EFS_sayla_mass
+		portraits={
+			army={
+				small=GFX_idea_sayla_mass
+				large = "gfx/leaders/EFS/Portrait_efsf_Sayla_Mass.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 169
+			traits = {
+				pilot
+				aeug_party
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_karen_joshua = {
+		name = EFS_karen_joshua
+		portraits={
+			army={
+				small=GFX_idea_karen_joshua
+				large = "gfx/leaders/EFS/Portrait_efsf_Karen_Joshua.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 160
+			traits = {
+				pilot
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_terry_sanders = {
+		name = EFS_terry_sanders
+		portraits={
+			army={
+				small=GFX_idea_terry_sanders
+				large = "gfx/leaders/EFS/Portrait_efsf_Terry_Sanders.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 175
+			traits = {
+				pilot
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_eledore_massis = {
+		name = EFS_eledore_massis
+		portraits={
+			army={
+				small=GFX_idea_eledore_massis
+				large = "gfx/leaders/EFS/Portrait_efsf_eledore_massis.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 155
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_michel_ninorich = {
+		name = EFS_michel_ninorich
+		portraits={
+			army={
+				small=GFX_idea_michel_ninorich
+				large = "gfx/leaders/EFS/Portrait_efsf_Michel_Ninorich.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 192
+			traits = {
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_chuck_keith = {
+		name = EFS_chuck_keith
+		portraits={
+			army={
+				small=GFX_idea_chuck_keith
+				large = "gfx/leaders/EFS/Portrait_efsf_Chuck_Keith.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 170
+			traits = {
+				pilot
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_bernard_monsha = {
+		name = EFS_bernard_monsha
+		portraits={
+			army={
+				small=GFX_idea_bernard_monsha
+				large = "gfx/leaders/EFS/Portrait_efsf_Bernard_Monsha.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 180
+			traits = {
+				pilot
+				titans_party
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_alpha_bate = {
+		name = EFS_alpha_bate
+		portraits={
+			army={
+				small=GFX_idea_alpha_bate
+				large = "gfx/leaders/EFS/Portrait_efsf_Alpha_A_Bate.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 152
+			traits = {
+				pilot
+				titans_party
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_chap_adel = {
+		name = EFS_chap_adel
+		portraits={
+			army={
+				small=GFX_idea_chap_adel
+				large = "gfx/leaders/EFS/Portrait_efsf_Chap_Adel.dds"
+			}
+		}
+		corps_commander = {
+			legacy_id = 171
+			traits = {
+				pilot
+				titans_party
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+		}
+	}
+	EFS_quattro_vageena = {
+		name = EFS_quattro_vageena
+		portraits={
+			army={
+				small=GFX_idea_quattro_vageena
+				large = "gfx/leaders/EFS/Portrait_Efsf_Quattro_Vageena.dds"
+			}
+		}
+		corps_commander = {
+      legacy_id = 143
+      traits = {
+        pilot
+        newtype1
+        aeug_party
+      }
+      skill = 6
+      attack_skill = 8
+      defense_skill = 5
+      planning_skill = 5
+      logistics_skill = 5
+			visible = {
+				has_character_flag = enable_corps_commander
+			}
+    }
+	}
+}

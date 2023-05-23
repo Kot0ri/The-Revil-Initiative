@@ -1,0 +1,1743 @@
+scripted_gui = {
+
+	op_assault_earth = {
+		context_type = player_context
+		window_name = "op_assault_earth_container"
+
+		visible = {
+			is_ai = no
+			has_country_flag = op_assault_earth_window_on
+		}
+
+		effects = {
+
+			Increase_ms05_click = {
+				ROOT = {
+					add_to_variable = { ROOT.amount_of_ms_division_var = 1 }
+					add_to_variable = { ROOT.amount_of_ms_var = 36 }
+					add_to_variable = { ROOT.amount_of_ms_weapon_heathawk_var = 36 }
+					add_to_variable = { ROOT.amount_of_ms_weapon_machinegun_var = 36 }
+					add_to_variable = { ROOT.amount_of_ms_shield_var = 36 }
+					add_to_variable = { ROOT.amount_of_support_var = 64 }
+					add_to_variable = { ROOT.amount_of_infantry_var = 10 }
+					add_to_variable = { ROOT.amount_of_manpower_var = 3100 }
+				}
+			}
+			Decrease_ms05_click = {
+				ROOT = {
+					add_to_variable = { ROOT.amount_of_ms_division_var = -1 }
+					add_to_variable = { ROOT.amount_of_ms_var = -36 }
+					add_to_variable = { ROOT.amount_of_ms_weapon_heathawk_var = -36 }
+					add_to_variable = { ROOT.amount_of_ms_weapon_machinegun_var = -36 }
+					add_to_variable = { ROOT.amount_of_ms_shield_var = -36 }
+					add_to_variable = { ROOT.amount_of_support_var = -64 }
+					add_to_variable = { ROOT.amount_of_infantry_var = -10 }
+					add_to_variable = { ROOT.amount_of_manpower_var = -3100 }
+				}
+			}
+			Increase_mbt_click = {
+				ROOT = {
+					add_to_variable = { ROOT.amount_of_mbt_division_var = 1 }
+					add_to_variable = { ROOT.amount_of_mbt_var = 200 }
+					add_to_variable = { ROOT.amount_of_support_var = 55 }
+					add_to_variable = { ROOT.amount_of_infantry_var = 210 }
+					add_to_variable = { ROOT.amount_of_mortorized_var = 100 }
+					add_to_variable = { ROOT.amount_of_manpower_var = 5700 }
+				}
+			}
+			Decrease_mbt_click = {
+				ROOT = {
+					add_to_variable = { ROOT.amount_of_mbt_division_var = -1 }
+					add_to_variable = { ROOT.amount_of_mbt_var = -200 }
+					add_to_variable = { ROOT.amount_of_support_var = -55 }
+					add_to_variable = { ROOT.amount_of_infantry_var = -210 }
+					add_to_variable = { ROOT.amount_of_mortorized_var = -100 }
+					add_to_variable = { ROOT.amount_of_manpower_var = -5700 }
+				}
+			}
+			Increase_mortorized_click = {
+				ROOT = {
+					add_to_variable = { ROOT.amount_of_mortorized_division_var = 1 }
+					add_to_variable = { ROOT.amount_of_mortorized_var = 450 }
+					add_to_variable = { ROOT.amount_of_support_var = 55 }
+					add_to_variable = { ROOT.amount_of_infantry_var = 910 }
+					add_to_variable = { ROOT.amount_of_manpower_var = 11600 }
+				}
+			}
+			Decrease_mortorized_click = {
+				ROOT = {
+					add_to_variable = { ROOT.amount_of_mortorized_division_var = -1 }
+					add_to_variable = { ROOT.amount_of_mortorized_var = -450 }
+					add_to_variable = { ROOT.amount_of_support_var = -55 }
+					add_to_variable = { ROOT.amount_of_infantry_var = -910 }
+					add_to_variable = { ROOT.amount_of_manpower_var = -11600 }
+				}
+			}
+			Increase_infantry_click = {
+				ROOT = {
+					add_to_variable = { ROOT.amount_of_infantry_division_var = 1 }
+					add_to_variable = { ROOT.amount_of_support_var = 30 }
+					add_to_variable = { ROOT.amount_of_infantry_var = 910 }
+					add_to_variable = { ROOT.amount_of_manpower_var = 9300 }
+				}
+			}
+			Decrease_infantry_click = {
+				ROOT = {
+					add_to_variable = { ROOT.amount_of_infantry_division_var = -1 }
+					add_to_variable = { ROOT.amount_of_support_var = -30 }
+					add_to_variable = { ROOT.amount_of_infantry_var = -910 }
+					add_to_variable = { ROOT.amount_of_manpower_var = -9300 }
+				}
+			}
+
+			bool_assault_north_america_1_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 1 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@357 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@358 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@359 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@360 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@361 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@362 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@363 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@364 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@365 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@366 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@367 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@368 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@369 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@370 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@371 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@372 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@373 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@374 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@375 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@376 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@377 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@378 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@379 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@380 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@381 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@382 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@383 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@384 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@385 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@386 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@387 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@388 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@390 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@391 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@392 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@393 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@394 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@395 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@396 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@465 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@466 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@467 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@468 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@480 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@481 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@482 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@483 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@484 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_north_america_1_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+			bool_assault_north_america_2_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 1 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@357 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@358 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@359 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@360 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@361 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@362 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@363 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@364 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@365 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@366 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@367 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@368 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@369 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@370 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@371 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@372 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@373 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@374 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@375 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@376 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@377 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@378 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@379 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@380 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@381 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@382 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@383 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@384 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@385 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@386 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@387 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@388 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@390 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@391 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@392 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@393 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@394 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@395 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@396 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@465 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@466 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@467 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@468 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@480 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@481 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@482 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@483 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@484 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_north_america_2_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+
+			bool_assault_south_america_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 2 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@278 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@279 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@280 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@300 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@301 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@302 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@303 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@304 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@305 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@306 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@307 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@308 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@309 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@310 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@486 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@487 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@488 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@489 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@490 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@491 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@492 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@493 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@494 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@495 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@496 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@497 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@498 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@499 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@500 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@501 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@502 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@503 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@504 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@505 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@506 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@507 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@508 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@509 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@510 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@511 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@512 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@687 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@698 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_south_america_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+
+			bool_assault_africa_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 3 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@268 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@269 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@271 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@272 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@273 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@292 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@293 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@294 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@446 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@447 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@448 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@449 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@450 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@451 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@452 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@453 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@454 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@455 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@456 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@457 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@458 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@549 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@550 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@551 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@552 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@553 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@554 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@658 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@659 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@660 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@661 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@662 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@663 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@665 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@678 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@679 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@675 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@765 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_africa_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+
+			bool_assault_europa_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 4 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@1 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@2 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@3 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@4 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@5 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@6 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@7 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@8 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@9 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@14 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@15 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@16 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@17 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@18 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@19 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@20 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@21 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@22 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@23 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@24 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@25 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@26 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@27 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@28 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@29 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@30 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@31 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@32 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@33 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@34 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@35 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@36 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@39 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@42 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@50 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@51 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@52 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@53 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@54 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@55 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@56 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@57 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@58 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@59 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@60 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@62 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@63 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@64 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@65 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@66 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@69 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@117 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@151 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@156 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@157 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@158 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@159 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@160 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@161 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@162 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@785 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_europa_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+
+			bool_assault_asia_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 5 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@440 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@441 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@442 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@443 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@444 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@445 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@433 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@439 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@322 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@758 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@757 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@323 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@324 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@432 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@430 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@431 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@435 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@438 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@426 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@436 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@437 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@428 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@429 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@427 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@424 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@425 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@423 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@422 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@415 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@267 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@410 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_asia_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+
+			bool_assault_austraria_1_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 6 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@519 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@520 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@521 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@522 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@517 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@285 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@518 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@284 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@723 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@635 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@634 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@737 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@523 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@669 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@738 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@668 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@721 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@673 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@667 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@333 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@334 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@627 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@628 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@623 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@327 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@626 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@672 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@335 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@336 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@724 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@288 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@640 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@289 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@670 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@741 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@286 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@591 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@671 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@747 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@325 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_austraria_1_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+			bool_assault_austraria_2_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 6 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@519 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@520 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@521 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@522 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@517 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@285 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@518 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@284 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@723 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@635 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@634 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@737 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@523 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@669 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@738 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@668 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@721 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@673 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@667 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@333 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@334 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@627 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@628 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@623 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@327 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@626 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@672 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@335 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@336 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@724 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@288 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@640 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@289 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@670 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@741 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@286 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@591 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@671 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@747 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@325 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_austraria_2_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+
+			bool_assault_odessa_1_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 7 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@192 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@78 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@766 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@137 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@197 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@196 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@226 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@200 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@227 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@221 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@228 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@218 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@245 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@238 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@234 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@233 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@231 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@232 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@237 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@238 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@217 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@236 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@407 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@406 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@587 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@402 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@585 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@584 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@416 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@266 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@418 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@420 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@198 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@202 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@203 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@259 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@79 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@46 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@77 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@211 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@230 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@229 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@353 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@354 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_odessa_1_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+			bool_assault_odessa_2_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 7 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@192 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@78 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@766 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@137 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@197 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@196 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@226 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@200 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@227 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@221 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@228 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@218 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@245 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@238 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@234 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@233 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@231 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@232 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@237 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@238 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@217 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@236 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@407 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@406 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@587 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@402 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@585 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@584 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@416 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@266 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@418 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@420 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@198 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@202 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@203 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@259 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@79 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@46 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@77 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@211 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@230 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@229 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@353 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@354 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_odessa_2_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+
+			bool_assault_china_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 8 }
+					set_temp_variable = { enemy_size_temp = 0 }
+					set_temp_variable = { enemy_size_haba_percent = 100 }
+					subtract_from_temp_variable = { enemy_size_haba_percent = ZEO.army_intel@EFS }
+					multiply_temp_variable = { enemy_size_haba_percent = 0.01 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@528 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@529 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@530 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@531 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@532 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@533 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@534 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@535 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@536 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@282 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@526 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@524 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@525 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@527 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@716 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@610 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@609 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@608 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@611 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@614 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@597 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@598 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@613 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@749 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@596 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@606 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@600 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@595 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@592 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@593 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@594 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@591 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@728 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@599 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@602 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@603 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@748 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@750 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@751 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@605 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@620 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@744 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@607 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@615 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@622 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@621 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@746 }
+					# add_to_temp_variable = { enemy_size_temp = EFS.num_armies_in_state@283 }
+					set_variable = { enemy_size_max = enemy_size_temp }
+					set_variable = { enemy_size_min = enemy_size_temp }
+					set_temp_variable = { enemy_size_haba_temp = enemy_size_temp }
+					multiply_temp_variable = { enemy_size_haba_temp = enemy_size_haba_percent }
+					add_to_variable = { enemy_size_max = enemy_size_haba_temp }
+					subtract_from_variable = { enemy_size_min = enemy_size_haba_temp }
+					round_variable = enemy_size_max
+					round_variable = enemy_size_min
+				}
+			}
+			bool_assault_china_selected_click = {
+				ROOT = {
+					set_variable = { drop_point_selected = 0 }
+					set_variable = { enemy_size = 0 }
+				}
+			}
+
+			submit_button_click = {
+				ROOT = {
+					country_event = { id = zeon.4030 }
+					clr_country_flag = op_assault_earth_window_on
+					add_to_variable = { var = how_many_drop_earth value = 1 }
+				}
+			}
+			close_button_click = {
+				ROOT = {
+					clr_country_flag = op_assault_earth_window_on
+				}
+			}
+
+		}
+
+		triggers = {
+			bool_assault_north_america_1_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_1
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 946
+						}
+					}
+				}
+			}
+			bool_assault_north_america_1_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 1 }
+							has_country_flag = droped_point_1
+						}
+					}
+				}
+			}
+			bool_assault_north_america_1_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 1 }
+						has_country_flag = droped_point_1
+					}
+				}
+			}
+			bool_assault_north_america_2_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_1
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 946
+						}
+					}
+				}
+			}
+			bool_assault_north_america_2_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 1 }
+							has_country_flag = droped_point_1
+						}
+					}
+				}
+			}
+			bool_assault_north_america_2_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 1 }
+						has_country_flag = droped_point_1
+					}
+				}
+			}
+			bool_assault_south_america_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_2
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 270
+						}
+					}
+				}
+			}
+			bool_assault_south_america_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 2 }
+							has_country_flag = droped_point_2
+						}
+					}
+				}
+			}
+			bool_assault_south_america_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 2 }
+						has_country_flag = droped_point_2
+					}
+				}
+			}
+			bool_assault_africa_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_3
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 943
+						}
+					}
+				}
+			}
+			bool_assault_africa_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 3 }
+							has_country_flag = droped_point_3
+						}
+					}
+				}
+			}
+			bool_assault_africa_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 3 }
+						has_country_flag = droped_point_3
+					}
+				}
+			}
+			bool_assault_europa_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_4
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 945
+						}
+					}
+				}
+			}
+			bool_assault_europa_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 4 }
+							has_country_flag = droped_point_4
+						}
+					}
+				}
+			}
+			bool_assault_europa_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 4 }
+						has_country_flag = droped_point_4
+					}
+				}
+			}
+			bool_assault_asia_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_5
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 641
+						}
+					}
+				}
+			}
+			bool_assault_asia_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 5 }
+							has_country_flag = droped_point_5
+						}
+					}
+				}
+			}
+			bool_assault_asia_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 5 }
+						has_country_flag = droped_point_5
+					}
+				}
+			}
+			bool_assault_austraria_1_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_6
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 868
+						}
+					}
+				}
+			}
+			bool_assault_austraria_1_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 6 }
+							has_country_flag = droped_point_6
+						}
+					}
+				}
+			}
+			bool_assault_austraria_1_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 6 }
+						has_country_flag = droped_point_6
+					}
+				}
+			}
+			bool_assault_austraria_2_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_6
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 868
+						}
+					}
+				}
+			}
+			bool_assault_austraria_2_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 6 }
+							has_country_flag = droped_point_6
+						}
+					}
+				}
+			}
+			bool_assault_austraria_2_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 6 }
+						has_country_flag = droped_point_6
+					}
+				}
+			}
+			bool_assault_odessa_1_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_7
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 947
+						}
+					}
+				}
+			}
+			bool_assault_odessa_1_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 7 }
+							has_country_flag = droped_point_7
+						}
+					}
+				}
+			}
+			bool_assault_odessa_1_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 7 }
+						has_country_flag = droped_point_7
+					}
+				}
+			}
+			bool_assault_odessa_2_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_7
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 947
+						}
+					}
+				}
+			}
+			bool_assault_odessa_2_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 7 }
+							has_country_flag = droped_point_7
+						}
+					}
+				}
+			}
+			bool_assault_odessa_2_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 7 }
+						has_country_flag = droped_point_7
+					}
+				}
+			}
+			bool_assault_china_click_enabled = {
+				ROOT = {
+					NOT = {
+						has_country_flag = droped_point_8
+					}
+					OR = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_ORBIT
+							}
+							OR = {
+								has_full_control_of_state = 270
+								has_full_control_of_state = 726
+								has_full_control_of_state = 641
+								has_full_control_of_state = 868
+								has_full_control_of_state = 943
+								has_full_control_of_state = 945
+								has_full_control_of_state = 946
+								has_full_control_of_state = 947
+							}
+						}
+						AND = {
+							has_game_rule = {
+								rule = allow_earth_drop
+								option = NEED_EACH_ORBIT
+							}
+							has_full_control_of_state = 726
+						}
+					}
+				}
+			}
+			bool_assault_china_visible = {
+				ROOT = {
+					NOT = {
+						OR = {
+							check_variable = { drop_point_selected = 8 }
+							has_country_flag = droped_point_8
+						}
+					}
+				}
+			}
+			bool_assault_china_selected_visible = {
+				ROOT = {
+					OR = {
+						check_variable = { drop_point_selected = 8 }
+						has_country_flag = droped_point_8
+					}
+				}
+			}
+			op_assault_earth_drop_1_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 1 }
+				}
+			}
+			op_assault_earth_drop_2_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 2 }
+				}
+			}
+			op_assault_earth_drop_3_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 3 }
+				}
+			}
+			op_assault_earth_drop_4_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 4 }
+				}
+			}
+			op_assault_earth_drop_5_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 5 }
+				}
+			}
+			op_assault_earth_drop_6_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 6 }
+				}
+			}
+			op_assault_earth_drop_7_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 7 }
+				}
+			}
+			op_assault_earth_drop_8_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 8 }
+				}
+			}
+			drop_point_objective_1_1_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 1 }
+				}
+			}
+			drop_point_objective_1_2_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 1 }
+				}
+			}
+			drop_point_objective_2_1_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 2 }
+				}
+			}
+			drop_point_objective_2_2_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 2 }
+				}
+			}
+			drop_point_objective_3_1_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 3 }
+				}
+			}
+			drop_point_objective_3_2_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 3 }
+				}
+			}
+			drop_point_objective_3_3_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 3 }
+				}
+			}
+			drop_point_objective_4_1_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 4 }
+				}
+			}
+			drop_point_objective_4_2_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 4 }
+				}
+			}
+			drop_point_objective_4_3_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 4 }
+				}
+			}
+			drop_point_objective_5_1_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 5 }
+				}
+			}
+			drop_point_objective_5_2_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 5 }
+				}
+			}
+			drop_point_objective_6_1_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 6 }
+				}
+			}
+			drop_point_objective_6_2_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 6 }
+				}
+			}
+			drop_point_objective_7_1_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 7 }
+				}
+			}
+			drop_point_objective_7_2_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 7 }
+				}
+			}
+			drop_point_objective_8_1_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 8 }
+				}
+			}
+			drop_point_objective_8_2_visible = {
+				ROOT = {
+					check_variable = { drop_point_selected = 8 }
+				}
+			}
+			subtitle_ms_visible = {
+				ROOT = {
+					NOT = {
+						has_tech = recruiment_zudah
+					}
+				}
+			}
+			subtitle_ems_visible = {
+				ROOT = {
+					has_tech = recruiment_zudah
+				}
+			}
+
+			Increase_ms05_click_enabled = {
+				ROOT = {
+					set_temp_variable = { amount_of_ms_var_temp = 36 }
+					add_to_temp_variable = { amount_of_ms_var_temp = amount_of_ms_var }
+					if = {
+						limit = {
+							has_tech = recruiment_zudah
+						}
+						has_equipment = { archetype_ems10 > amount_of_ms_var_temp }
+						else = {
+							has_equipment = { archetype_ms05 > amount_of_ms_var_temp }
+						}
+					}
+					set_temp_variable = { amount_of_ms_weapon_heathawk_var_temp = 36 }
+					add_to_temp_variable = { amount_of_ms_weapon_heathawk_var_temp = amount_of_ms_weapon_heathawk_var }
+					has_equipment = { archetype_ms_weapon_heathawk > amount_of_ms_weapon_heathawk_var_temp }
+					has_equipment = { archetype_ms_weapon_machinegun > amount_of_ms_weapon_heathawk_var_temp }
+					has_equipment = { archetype_ms_shield > amount_of_ms_weapon_heathawk_var_temp }
+					set_temp_variable = { amount_of_infantry_var_temp = 10 }
+					add_to_temp_variable = { amount_of_infantry_var_temp = amount_of_infantry_var }
+					has_equipment = { infantry_equipment > amount_of_infantry_var_temp }
+					set_temp_variable = { amount_of_support_var_temp = 64 }
+					add_to_temp_variable = { amount_of_support_var_temp = amount_of_support_var }
+					has_equipment = { support_equipment > amount_of_support_var_temp }
+					set_temp_variable = { amount_of_manpower_var_temp = 2600 }
+					add_to_temp_variable = { amount_of_manpower_var_temp = amount_of_manpower_var }
+					has_manpower > amount_of_manpower_var_temp
+				}
+			}
+			Decrease_ms05_click_enabled = {
+				ROOT = {
+					check_variable = { ROOT.amount_of_ms_division_var > 0 }
+				}
+			}
+			Increase_mbt_click_enabled = {
+				ROOT = {
+					set_temp_variable = { amount_of_mbt_var_temp = 200 }
+					add_to_temp_variable = { amount_of_mbt_var_temp = amount_of_mbt_var }
+					has_equipment = { archetype_mbt > amount_of_mbt_var_temp }
+					set_temp_variable = { amount_of_mortorized_var_temp = 100 }
+					add_to_temp_variable = { amount_of_mortorized_var_temp = amount_of_mortorized_var }
+					has_equipment = { motorized_equipment > amount_of_mortorized_var_temp }
+					set_temp_variable = { amount_of_infantry_var_temp = 210 }
+					add_to_temp_variable = { amount_of_infantry_var_temp = amount_of_infantry_var }
+					has_equipment = { infantry_equipment > amount_of_infantry_var_temp }
+					set_temp_variable = { amount_of_support_var_temp = 55 }
+					add_to_temp_variable = { amount_of_support_var_temp = amount_of_support_var }
+					has_equipment = { support_equipment > amount_of_support_var_temp }
+					set_temp_variable = { amount_of_manpower_var_temp = 5700 }
+					add_to_temp_variable = { amount_of_manpower_var_temp = amount_of_manpower_var }
+					has_manpower > amount_of_manpower_var_temp
+				}
+			}
+			Decrease_mbt_click_enabled = {
+				ROOT = {
+					check_variable = { ROOT.amount_of_mbt_division_var > 0 }
+				}
+			}
+			Increase_mortorized_click_enabled = {
+				ROOT = {
+					set_temp_variable = { amount_of_mortorized_var_temp = 450 }
+					add_to_temp_variable = { amount_of_mortorized_var_temp = amount_of_mortorized_var }
+					has_equipment = { motorized_equipment > amount_of_mortorized_var_temp }
+					set_temp_variable = { amount_of_infantry_var_temp = 910 }
+					add_to_temp_variable = { amount_of_infantry_var_temp = amount_of_infantry_var }
+					has_equipment = { infantry_equipment > amount_of_infantry_var_temp }
+					set_temp_variable = { amount_of_support_var_temp = 55 }
+					add_to_temp_variable = { amount_of_support_var_temp = amount_of_support_var }
+					has_equipment = { support_equipment > amount_of_support_var_temp }
+					set_temp_variable = { amount_of_manpower_var_temp = 11600 }
+					add_to_temp_variable = { amount_of_manpower_var_temp = amount_of_manpower_var }
+					has_manpower > amount_of_manpower_var_temp
+				}
+			}
+			Decrease_mortorized_click_enabled = {
+				ROOT = {
+					check_variable = { ROOT.amount_of_mortorized_division_var > 0 }
+				}
+			}
+			Increase_infantry_click_enabled = {
+				ROOT = {
+					set_temp_variable = { amount_of_infantry_var_temp = 910 }
+					add_to_temp_variable = { amount_of_infantry_var_temp = amount_of_infantry_var }
+					has_equipment = { infantry_equipment > amount_of_infantry_var_temp }
+					set_temp_variable = { amount_of_support_var_temp = 30 }
+					add_to_temp_variable = { amount_of_support_var_temp = amount_of_support_var }
+					has_equipment = { support_equipment > amount_of_support_var_temp }
+					set_temp_variable = { amount_of_manpower_var_temp = 9300 }
+					add_to_temp_variable = { amount_of_manpower_var_temp = amount_of_manpower_var }
+					has_manpower > amount_of_manpower_var_temp
+				}
+			}
+			Decrease_infantry_click_enabled = {
+				ROOT = {
+					check_variable = { ROOT.amount_of_infantry_division_var > 0 }
+				}
+			}
+
+			submit_button_click_enabled = {
+				ROOT = {
+					check_variable = { ROOT.drop_point_selected > 0 }
+				}
+			}
+
+			drop_point_target_1_visible = {
+				ROOT = {
+					check_variable = { ROOT.drop_point_selected = 1 }
+				}
+			}
+			drop_point_target_2_visible = {
+				ROOT = {
+					check_variable = { ROOT.drop_point_selected = 2 }
+				}
+			}
+			drop_point_target_3_visible = {
+				ROOT = {
+					check_variable = { ROOT.drop_point_selected = 3 }
+				}
+			}
+			drop_point_target_4_visible = {
+				ROOT = {
+					check_variable = { ROOT.drop_point_selected = 4 }
+				}
+			}
+			drop_point_target_5_visible = {
+				ROOT = {
+					check_variable = { ROOT.drop_point_selected = 5 }
+				}
+			}
+			drop_point_target_6_visible = {
+				ROOT = {
+					check_variable = { ROOT.drop_point_selected = 6 }
+				}
+			}
+			drop_point_target_7_visible = {
+				ROOT = {
+					check_variable = { ROOT.drop_point_selected = 7 }
+				}
+			}
+			drop_point_target_8_visible = {
+				ROOT = {
+					check_variable = { ROOT.drop_point_selected = 8 }
+				}
+			}
+		}
+
+		ai_enabled = {
+      always = no
+    }
+
+	}
+}

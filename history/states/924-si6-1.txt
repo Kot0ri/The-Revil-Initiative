@@ -1,0 +1,56 @@
+
+state={
+	id=924
+	name="STATE_924"
+
+	history={
+		owner = SI6
+		buildings = {
+			infrastructure = 3
+			arms_factory = 7
+			industrial_complex = 15
+			synthetic_refinery = 1
+			fuel_silo = 1
+			dockyard = 1
+			13299 = {
+				naval_base = 2
+			}
+
+		}
+		victory_points = {
+			13299 25
+		}
+		victory_points = {
+			13297 5
+		}
+		victory_points = {
+			13300 5
+		}
+		add_core_of = SI6
+		78.1.1 = {
+			buildings = {
+				arms_factory = 9
+				fuel_silo = 1
+
+			}
+
+		}
+		79.1.1 = {
+			buildings = {
+				arms_factory = 11
+				fuel_silo = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		13299 13297 13300
+	}
+	manpower=100000000
+	buildings_max_level_factor=1.000
+	state_category=colony
+	local_supplies=5.0
+}

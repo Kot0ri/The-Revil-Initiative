@@ -1,0 +1,318 @@
+sub_units = {
+  vulcan_ac = {
+    sprite = artillery
+    map_icon_category = armored
+    priority = 200
+    ai_priority = 50
+    active = yes
+    categories = {
+category_line_artillery
+category_army
+}
+    group = infantry
+    type = {
+motorized
+anti_air
+}
+    need = {
+archetype_vulcan_ac = 30
+}
+    max_strength = 2
+    max_organisation = 10
+    default_morale = 0.1
+    weight = 0.5
+    supply_consumption = 0.15
+    combat_width = 2
+    manpower = 500
+    training_time = 60
+    forest = {
+attack = -0.1
+movement = -0.5
+}
+    hills = {
+movement = -0.05
+}
+    mountain = {
+movement = -0.2
+}
+    jungle = {
+attack = -0.2
+movement = -0.5
+}
+    marsh = {
+attack = -0.2
+movement = -0.2
+}
+    river = {
+attack = -0.2
+movement = -0.2
+}
+    amphibious = {
+attack = -0.4
+}
+    asteroid = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    moon = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    orbit = {
+attack = -0.1
+defence = -0.1
+}
+  }
+  vulcan_ac_support = {
+    sprite = artillery
+    map_icon_category = armored
+    priority = 200
+    ai_priority = 50
+    active = yes
+    categories = {
+category_artillery
+category_army
+category_support_battalions
+}
+    group = support
+    type = {
+motorized
+support
+}
+    need = {
+archetype_vulcan_ac = 15
+}
+    max_strength = 2
+    max_organisation = 10
+    default_morale = 0.1
+    weight = 0.1
+    supply_consumption = 0.1
+    manpower = 300
+    training_time = 60
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+  }
+  misile_ac = {
+    sprite = artillery
+    map_icon_category = armored
+    priority = 200
+    ai_priority = 50
+    active = yes
+    categories = {
+category_line_artillery
+category_army
+}
+    group = infantry
+    type = {
+motorized
+artillery
+rocket
+}
+    need = {
+archetype_misile_ac = 50
+}
+    max_strength = 2
+    max_organisation = 10
+    default_morale = 0.1
+    weight = 0.5
+    supply_consumption = 0.3
+    combat_width = 2
+    manpower = 500
+    training_time = 60
+    forest = {
+attack = -0.1
+movement = -0.5
+}
+    hills = {
+movement = -0.05
+}
+    mountain = {
+movement = -0.2
+}
+    jungle = {
+attack = -0.25
+movement = -0.5
+}
+    marsh = {
+attack = -0.2
+movement = -0.5
+}
+    river = {
+attack = -0.2
+movement = -0.2
+}
+    fort = {
+attack = 0.1
+}
+    amphibious = {
+attack = -0.4
+}
+    asteroid = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    moon = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    orbit = {
+attack = -0.1
+defence = -0.1
+}
+    underbase = {
+attack = 0.1
+}
+    space_port = {
+attack = 0.1
+}
+  }
+  misile_ac_support = {
+    sprite = artillery
+    priority = 200
+    ai_priority = 50
+    active = yes
+    categories = {
+category_artillery
+category_army
+category_support_battalions
+}
+    group = support
+    type = {
+motorized
+support
+}
+    need = {
+archetype_misile_ac = 15
+}
+    max_strength = 2
+    max_organisation = 10
+    default_morale = 0.1
+    weight = 0.1
+    supply_consumption = 0.16
+    manpower = 300
+    training_time = 60
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+  }
+  mobile_ac = {
+    sprite = artillery
+    map_icon_category = armored
+    priority = 250
+    ai_priority = 55
+    active = yes
+    categories = {
+category_line_artillery
+category_army
+}
+    group = infantry
+    type = {
+motorized
+anti_tank
+}
+    need = {
+archetype_mobile_ac = 50
+}
+    max_strength = 2
+    max_organisation = 10
+    default_morale = 0.1
+    weight = 0.5
+    supply_consumption = 0.15
+    combat_width = 2
+    manpower = 500
+    training_time = 60
+    forest = {
+attack = -0.1
+movement = -0.5
+}
+    hills = {
+movement = -0.05
+}
+    mountain = {
+movement = -0.2
+}
+    jungle = {
+attack = -0.25
+movement = -0.5
+}
+    marsh = {
+attack = -0.2
+movement = -0.5
+}
+    river = {
+attack = -0.2
+movement = -0.2
+}
+    fort = {
+attack = 0.1
+}
+    amphibious = {
+attack = -0.4
+}
+    asteroid = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    moon = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    orbit = {
+attack = -0.1
+defence = -0.1
+}
+    underbase = {
+attack = 0.1
+}
+    space_port = {
+attack = 0.1
+}
+    soft_attack = 0.5
+  }
+  mobile_ac_support = {
+    sprite = artillery
+    map_icon_category = armored
+    priority = 250
+    ai_priority = 55
+    active = yes
+    categories = {
+category_artillery
+category_army
+category_support_battalions
+}
+    group = support
+    type = {
+motorized
+support
+}
+    need = {
+archetype_mobile_ac = 15
+}
+    max_strength = 2
+    max_organisation = 10
+    default_morale = 0.1
+    weight = 0.1
+    supply_consumption = 0.08
+    manpower = 300
+    training_time = 60
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+  }
+}

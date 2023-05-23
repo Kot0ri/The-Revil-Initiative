@@ -1,0 +1,31 @@
+ace_pilots = {
+	icon = military_operation
+	picture = GFX_decision_cat_picture_ace_pilots
+}
+military_build = {
+	icon = generic_formable_nations
+	picture = GFX_decision_cat_picture_military_build
+}
+research_and_development = {
+	icon = generic
+	picture = GFX_decision_cat_picture_research_and_development
+}
+diplomacy = {
+	icon = usa_congress
+	picture = GFX_decision_cat_picture_diplomacy
+}
+espionage_decision_category = {
+	icon = generic_fascism
+	picture = GFX_decision_cat_picture_espionage
+}
+full_moon_war = {
+	icon = generic_fascism
+  picture = GFX_decision_cat_picture_military_build
+}
+EFS_congress = {
+	icon = usa_congress
+	allowed = {
+		original_tag = EFS
+	}
+	priority = 85
+}

@@ -1,0 +1,817 @@
+# ジオン
+# ラプラスの箱回収
+operation_laprace = {
+	icon = GFX_op_laprace
+	map_icon = GFX_op_laprace_icon
+	name = op_laprace
+	desc = op_laprace_desc
+	days = 30
+
+	allowed = {
+		original_tag = ZEO
+	}
+	available = {
+		FROM = {
+			original_tag = SI5
+		}
+	}
+	visible = {
+		has_country_flag = laprace_op_enable
+		NOT = {
+			has_war_with = EFS
+		}
+	}
+	operation_target = {
+		targets = { SI5 }
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+
+	operatives = 1
+	experience = 5
+	risk_chance = 0
+	outcome_extra_chance = 0.15
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 5
+
+	equipment = {
+		infantry_equipment = 100
+		support_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		EFS = {
+			country_event = { id = efsf.60 days = 10 }
+		}
+	}
+	outcome_potential = {
+		custom_effect_tooltip = op_laprace_outcome_tt
+	}
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = {
+			country_event = { id = efsf.59 days = 1 }
+			clr_country_flag = laprace_op_enable
+		}
+	}
+	outcome_extra_execute = {
+		ROOT = {
+			set_country_flag = laprace_op_good_end
+		}
+	}
+
+	phases = {
+		op_laprace_1 = { base = 100 }
+	}
+	phases = {
+		op_laprace_2 = { base = 100 }
+	}
+	phases = {
+		op_laprace_3 = { base = 100 }
+	}
+}
+# V作戦調査
+operation_searching_v = {
+	icon = GFX_op_searching_v
+	map_icon = GFX_op_searching_v_icon
+	name = op_searching_v
+	desc = op_searching_v_desc
+	days = 10
+
+	allowed = {
+		original_tag = ZEO
+	}
+	available = {
+		has_tech = ZEO_space_cruiser1_tech
+		FROM = {
+			original_tag = SI7
+		}
+	}
+	visible = {
+		has_country_flag = searching_v_op_enable
+	}
+	operation_target = {
+		targets = { SI7 }
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+
+	operatives = 2
+	experience = 5
+	risk_chance = 0
+	outcome_extra_chance = 0.1
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 15
+
+	requirements = {
+	}
+	equipment = {
+		archetype_ms05 = 3
+		archetype_ms_weapon_heathawk = 3
+		archetype_ms_weapon_machinegun = 3
+		archetype_ms_shield = 3
+	}
+
+	on_start = {  # SCOPE_OPERATION
+	}
+	outcome_potential = {
+		custom_effect_tooltip = op_searching_v_outcome_tt
+	}
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = {
+			country_event = { id = zeon.57 days = 1 }
+			clr_country_flag = searching_v_op_enable
+		}
+    EFS = {
+      country_event = { id = efsf.35 days = 1 }
+    }
+	}
+	outcome_extra_execute = {
+		ROOT = {
+			set_country_flag = searching_v_op_good_end
+			army_experience = 100
+			set_technology = {
+				mega_particle2 = 1
+			}
+		}
+	}
+
+	phases = {
+		op_searching_v_1 = { base = 100 }
+	}
+	phases = {
+		op_searching_v_2 = { base = 100 }
+	}
+	phases = {
+		op_searching_v_3 = { base = 100 }
+	}
+}
+# スパイ107号潜入
+operation_spy107 = {
+	icon = GFX_op_spy107
+	map_icon = GFX_op_spy107_icon
+	name = op_spy107
+	desc = op_spy107_desc
+	days = 3
+
+	allowed = {
+		original_tag = ZEO
+	}
+	available = {
+		FROM = {
+			original_tag = EFS
+		}
+    has_tech = ZEO_submarine1_tech
+    has_tech = msm07_tech
+	}
+	visible = {
+		has_country_flag = madangler_spy107_is_yes
+		has_war_with = EFS
+		NOT = {
+			OR = {
+				has_country_flag = madangler_spy107_is_end
+				has_global_flag = spy107_in_wb
+			}
+		}
+	}
+	operation_target = {
+		targets = { EFS }
+	}
+	ai_will_do = {
+		factor = 100
+		modifier = {
+			factor = 10
+			is_historical_focus_on = yes
+		}
+	}
+
+	operatives = 2
+	experience = 5
+	risk_chance = 0
+	outcome_extra_chance = 0.1
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 35
+
+	requirements = {
+	}
+	equipment = {
+		support_equipment = 20
+		infantry_equipment = 100
+	}
+
+	on_start = {  # SCOPE_OPERATION
+	}
+	outcome_potential = {
+		custom_effect_tooltip = op_spy107_outcome_tt
+	}
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = {
+			country_event = { id = zeon.146 }
+		}
+	}
+	outcome_extra_execute = {
+	}
+
+	phases = {
+		op_spy107_1 = { base = 100 }
+	}
+	phases = {
+		op_spy107_2 = { base = 100 }
+	}
+	phases = {
+		op_spy107_3 = { base = 100 }
+	}
+}
+# 月での破壊工作
+# 北極基地襲撃（ストーリーミッションに移動）
+# operation_north_pole = {
+# 	icon = GFX_op_north_pole
+# 	map_icon = GFX_op_north_pole_icon
+# 	name = op_north_pole
+# 	desc = op_north_pole_desc
+# 	days = 15
+
+# 	allowed = {
+# 		original_tag = ZEO
+# 	}
+# 	available = {
+# 		FROM = {
+# 			original_tag = EFS
+# 		}
+#     has_tech = ZEO_submarine1_tech
+#     has_tech = msm03_c_tech
+# 	}
+# 	visible = {
+# 		has_country_flag = north_pole_is_yes
+# 		has_war_with = EFS
+# 	}
+# 	operation_target = {
+# 		targets = { EFS }
+# 	}
+# 	ai_will_do = {
+# 		factor = 100
+# 		modifier = {
+# 			factor = 10
+# 			is_historical_focus_on = yes
+# 		}
+# 	}
+
+# 	operatives = 2
+# 	experience = 5
+# 	risk_chance = 0.3
+# 	outcome_extra_chance = 0
+# 	outcome_modifiers = { operation_outcome }
+# 	cost_modifiers = { operation_cost }
+# 	risk_modifiers = { operation_risk }
+
+# 	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+# 	network_strength = 35
+
+# 	requirements = {
+# 	}
+# 	equipment = {
+# 		support_equipment = 200
+# 		infantry_equipment = 100
+# 	}
+
+# 	on_start = {  # SCOPE_OPERATION
+# 	}
+# 	outcome_potential = {
+# 		custom_effect_tooltip = op_north_pole_outcome_tt
+# 	}
+# 	outcome_execute = { # SCOPE_OPERATION
+# 		ROOT = {
+# 			clr_country_flag = north_pole_is_yes
+# 		}
+# 		random_list = {
+# 			80 = {
+# 				ZEO = {
+# 					country_event = { id = zeon.100 }
+# 				}
+# 				EFS = {
+# 					country_event = { id = efsf.78 }
+# 				}
+# 			}
+# 			15 = {
+# 				ZEO = {
+# 					country_event = { id = zeon.99 }
+# 				}
+# 				EFS = {
+# 					country_event = { id = efsf.79 }
+# 				}
+# 			}
+# 			5 = {
+# 				ZEO = {
+# 					country_event = { id = zeon.101 }
+# 				}
+# 				EFS = {
+# 					country_event = { id = efsf.80 }
+# 				}
+# 			}
+# 		}
+# 	}
+# 	outcome_extra_execute = {
+# 	}
+
+# 	phases = {
+# 		op_north_pole_1 = { base = 100 }
+# 	}
+# 	phases = {
+# 		op_north_pole_2 = { base = 100 }
+# 	}
+# 	phases = {
+# 		op_north_pole_3 = { base = 100 }
+# 	}
+# }
+# ルビコン計画（ストーリーミッションに移動）
+# operation_lubicon = {
+# 	icon = GFX_op_lubicon
+# 	map_icon = GFX_op_lubicon_icon
+# 	name = op_lubicon
+# 	desc = op_lubicon_desc
+# 	days = 30
+
+# 	allowed = {
+# 		original_tag = ZEO
+# 	}
+# 	available = {
+# 		FROM = {
+# 			original_tag = EFS
+# 		}
+# 	}
+# 	visible = {
+# 		has_war_with = EFS
+# 		has_country_flag = lubicon_is_yes
+# 	}
+# 	operation_target = {
+# 		targets = { EFS }
+# 	}
+# 	ai_will_do = {
+# 		factor = 100
+# 		modifier = {
+# 			factor = 10
+# 			is_historical_focus_on = yes
+# 		}
+# 	}
+
+# 	operatives = 2
+# 	experience = 5
+# 	risk_chance = 0
+# 	outcome_extra_chance = 0.1
+# 	outcome_modifiers = { operation_outcome }
+# 	cost_modifiers = { operation_cost }
+# 	risk_modifiers = { operation_risk }
+
+# 	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+# 	network_strength = 10
+
+# 	requirements = {
+# 	}
+# 	equipment = {
+# 		support_equipment = 100
+# 		infantry_equipment = 500
+# 		archetype_ms18 = 1
+# 	}
+
+# 	on_start = {  # SCOPE_OPERATION
+# 		ROOT = {
+# 			country_event = { id = zeon.1003 days = 1 }
+# 		}
+# 	}
+# 	outcome_potential = {
+# 		custom_effect_tooltip = op_lubicon_outcome_tt
+# 	}
+# 	outcome_execute = { # SCOPE_OPERATION
+# 		ROOT = {
+# 			country_event = { id = zeon.35 }
+# 			clr_country_flag = lubicon_is_yes
+# 		}
+# 	}
+# 	outcome_extra_execute = {
+# 	}
+
+# 	phases = {
+# 		op_lubicon_1 = { base = 100 }
+# 	}
+# 	phases = {
+# 		op_lubicon_2 = { base = 100 }
+# 	}
+# 	phases = {
+# 		op_lubicon_3 = { base = 100 }
+# 	}
+# }
+# グラナダ市長暗殺
+operation_granada_mayor = {
+	icon = GFX_op_granada_mayor
+	map_icon = GFX_op_granada_mayor_icon
+	name = op_granada_mayor
+	desc = op_granada_mayor_desc
+	days = 10
+
+	allowed = {
+		original_tag = ZEO
+	}
+	available = {
+		FROM = {
+			original_tag = GRA
+		}
+	}
+	visible = {
+		has_global_flag = op_granada_mayor_enable
+		NOT = {
+			has_war_with = EFS
+		}
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 100
+			is_historical_focus_on = yes
+		}
+	}
+	operation_target = {
+		targets = { GRA }
+	}
+
+	operatives = 1
+	experience = 5
+	risk_chance = 0
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 35
+
+	equipment = {
+		support_equipment = 100
+		infantry_equipment = 300
+	}
+
+	on_start = {  # SCOPE_OPERATION
+
+	}
+	outcome_potential = {
+		custom_effect_tooltip = op_granada_mayor_outcome_tt
+	}
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+		clr_global_flag = op_granada_mayor_enable
+		set_global_flag = zeon_granada_mayer_death
+		ROOT = {
+			country_event = { id = zeon.159 }
+		}
+	}
+
+	phases = { #infiltration
+		op_granada_mayor_1 = { base = 100 }
+	}
+	phases = {
+		op_granada_mayor_2 = { base = 100 }
+	}
+	phases = {
+		op_granada_mayor_3 = { base = 100 }
+	}
+}
+
+# 連邦
+# レビル救出作戦
+operation_rescue_revil = {
+	icon = GFX_op_rescue_revil
+	map_icon = GFX_op_rescue_revil_icon
+	name = op_rescue_revil
+	desc = op_rescue_revil_desc
+	days = 3
+
+	allowed = {
+		original_tag = EFS
+	}
+	available = {
+		FROM = {
+			original_tag = ZEO
+		}
+	}
+	visible = {
+		has_global_flag = revil_is_captive
+		has_war_with = ZEO
+		NOT = {
+			OR = {
+				has_global_flag = revil_return_is_no
+				has_global_flag = revil_return_is_yes
+			}
+		}
+	}
+	operation_target = {
+		targets = { ZEO }
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 100
+			is_historical_focus_on = yes
+		}
+	}
+
+	operatives = 1
+	experience = 5
+	risk_chance = 0
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 0
+
+	equipment = {
+		infantry_equipment = 100
+		support_equipment = 200
+	}
+
+	on_start = {  # SCOPE_OPERATION
+
+	}
+	outcome_potential = {
+		custom_effect_tooltip = op_rescue_revil_outcome_tt
+	}
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = {
+			set_global_flag = revil_return_is_yes
+		}
+	}
+
+	phases = { #infiltration
+		op_rescue_revil_1 = { base = 100 }
+	}
+	phases = {
+		op_rescue_revil_2 = { base = 100 }
+	}
+	phases = {
+		op_rescue_revil_3 = { base = 100 }
+	}
+}
+# メリーさんの羊
+operation_little_lamb = {
+	icon = GFX_op_little_lamb
+	map_icon = GFX_op_little_lamb_icon
+	name = op_little_lamb
+	desc = op_little_lamb_desc
+	days = 10
+
+	allowed = {
+		original_tag = EFS
+	}
+	available = {
+		FROM = {
+			original_tag = GRA
+		}
+	}
+	visible = {
+		ZEO = {
+			has_idea = ghost_fighter_idea
+			has_war_with = EFS
+		}
+	}
+	operation_target = {
+		targets = { GRA }
+	}
+	ai_will_do = {
+		factor = 1000
+	}
+
+	operatives = 1
+	experience = 5
+	risk_chance = 0
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 25
+
+	equipment = {
+		civilian_factories = {
+			amount = 5
+			days = 10
+		}
+	}
+
+	on_start = {  # SCOPE_OPERATION
+	}
+	outcome_potential = {
+		custom_effect_tooltip = op_little_lamb_outcome_tt
+	}
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = {
+			country_event = { id = efsf.129 }
+		}
+	}
+
+	phases = { #infiltration
+		op_little_lamb_1 = { base = 100 }
+	}
+	phases = {
+		op_little_lamb_2 = { base = 100 }
+	}
+	phases = {
+		op_little_lamb_3 = { base = 100 }
+	}
+}
+# ミラーズレポート
+operation_millers_report = {
+	icon = GFX_op_millers_report
+	map_icon = GFX_op_millers_report_icon
+	name = op_millers_report
+	desc = op_millers_report_desc
+	days = 20
+
+	allowed = {
+		original_tag = EFS
+	}
+	available = {
+		FROM = {
+			original_tag = ZEO
+		}
+	}
+	visible = {
+		has_country_flag = millars_report_start
+		NOT = {
+			has_country_flag = millars_report_end
+		}
+		has_war_with = ZEO
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 100
+			is_historical_focus_on = yes
+		}
+	}
+	operation_target = {
+		targets = { ZEO }
+	}
+
+	operatives = 1
+	experience = 5
+	risk_chance = 0
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 15
+
+	equipment = {
+		support_equipment = 30
+		transport_plane_equipment = 1
+		civilian_factories = {
+			amount = 5
+			days = 10
+		}
+	}
+
+	on_start = {  # SCOPE_OPERATION
+
+	}
+	outcome_potential = {
+		custom_effect_tooltip = op_millers_report_outcome_tt
+	}
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+		ROOT = {
+			country_event = { id = efsf.47 }
+		}
+	}
+
+	phases = { #infiltration
+		op_millers_report_1 = { base = 100 }
+	}
+	phases = {
+		op_millers_report_2 = { base = 100 }
+	}
+	phases = {
+		op_millers_report_3 = { base = 100 }
+	}
+}
+# ミノフスキー博士の亡命
+operation_minovsky_exile = {
+	icon = GFX_op_minovsky_exile
+	map_icon = GFX_op_minovsky_exile_icon
+	name = op_minovsky_exile
+	desc = op_minovsky_exile_desc
+	days = 30
+
+	allowed = {
+		original_tag = EFS
+	}
+	available = {
+		FROM = {
+			original_tag = GRA
+		}
+	}
+	visible = {
+		has_global_flag = minovsky_exile_start
+		NOT = {
+			has_war_with = ZEO
+		}
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 100
+			is_historical_focus_on = yes
+		}
+	}
+	operation_target = {
+		targets = { GRA }
+	}
+
+	operatives = 1
+	experience = 5
+	risk_chance = 0
+	outcome_modifiers = { operation_outcome }
+	cost_modifiers = { operation_cost }
+	risk_modifiers = { operation_risk }
+
+	# Integer [0-100] - Every operation has a hard requirement of network strength in the target country
+	network_strength = 35
+
+	equipment = {
+		support_equipment = 100
+		infantry_equipment = 20
+		transport_plane_equipment = 1
+		civilian_factories = {
+			amount = 5
+			days = 10
+		}
+	}
+
+	on_start = {  # SCOPE_OPERATION
+		ZEO = {
+			country_event = { id = zeon.11 days = 10 }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = ms_is_out
+				}
+			}
+			ROOT = {
+				country_event = { id = efsf.1 days = 10 }
+			}
+		}
+	}
+	outcome_potential = {
+		custom_effect_tooltip = op_minovsky_exile_outcome_tt
+	}
+	# outcome is an effect that runs when the operation has completed
+	outcome_execute = { # SCOPE_OPERATION
+		if = {
+			limit = {
+				has_global_flag = minovsky_free
+			}
+			set_global_flag = minovksy_exile_success
+			else = {
+				random_list = {
+					15 = {
+						set_global_flag = minovsky_exile_success
+					}
+					55 = {
+						set_global_flag = minovsky_exile_failed
+					}
+					30 = {
+						set_global_flag = minovsky_exile_deport
+					}
+				}
+			}
+		}
+	}
+
+	phases = { #infiltration
+		op_minovsky_exile_1 = { base = 100 }
+	}
+	phases = {
+		op_minovsky_exile_2 = { base = 100 }
+	}
+	phases = {
+		op_minovsky_exile_3 = { base = 100 }
+	}
+}
+
+
+# ギレン暗殺計画
+# ジオンでクーデターを扇動

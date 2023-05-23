@@ -1,0 +1,9802 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+#1 !! ダルシア・バハロが首相になる
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news001
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = news.1.a
+		trigger = {
+			NOT = {
+				TAG = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = {
+			TAG = ZEO
+		}
+		add_timed_idea = {
+			idea = resistance_to_dictatorship
+			days = 180
+		}
+		if = {
+			limit = {
+				has_idea = brothers_quarrel
+			}
+			remove_ideas = brothers_quarrel
+			else = {
+				remove_ideas = brothers_quarrel2
+			}
+		}
+		set_politics = {
+			ruling_party = zeonism
+			elections_allowed = yes
+		}
+	}
+}
+
+#2 !! デギン・ソド・ザビが首相になる
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_news002
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = news.2.a
+		trigger = {
+			NOT = {
+				TAG = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2.b
+		trigger = {
+			TAG = ZEO
+		}
+	}
+}
+
+#3 !! キャスバル・レム・ダイクンが首相になる
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_news003
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news.3.a
+		trigger = {
+			NOT = {
+				TAG = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = {
+			TAG = ZEO
+		}
+	}
+}
+
+#4 !! U.C.0075 7 ムサイ１番艦進宙
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_news004
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news.4.a
+		trigger = {
+			NOT = {
+				TAG = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.4.b
+		trigger = {
+			TAG = ZEO
+		}
+		add_named_threat = {
+			threat = 3
+			name = threat_name_news4
+		}
+	}
+}
+
+#5 !! U.C.0075 8 MS05の公表
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_news005
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news.5.a
+		trigger = {
+			NOT = {
+				TAG = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.5.b
+		trigger = {
+			TAG = ZEO
+		}
+		news_event = { id = news.113 days = 90 }
+	}
+}
+
+#6 !! ダイクンの遺児1
+news_event = {
+	id = news.6
+	title = news.6.t
+	desc = news.6.d
+	picture = GFX_news006
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ZEO = {
+			set_country_flag = casval_and_aletesia_1
+		}
+	}
+
+	option = {
+		name = news.6.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.6.b
+		trigger = {
+			tag = ZEO
+		}
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = altesia_som_deikun
+	}
+}
+
+#7 !! ダイクンの遺児2
+news_event = {
+	id = news.7
+	title = news.7.t
+	desc = news.7.d
+	picture = GFX_news007
+
+	major = yes
+
+	trigger = {
+		ZEO = {
+			has_country_flag = casval_and_aletesia_1
+		}
+		NOT = {
+			ZEO = {
+				has_country_flag = casval_and_aletesia_2
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+	immediate = {
+		ZEO = {
+			set_country_flag = casval_and_aletesia_2
+		}
+	}
+
+	option = {
+		name = news.7.a
+	}
+}
+
+#8 !! ダイクンの遺児4
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_news008
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news.8.a
+		trigger = {
+			NOT = {
+				original_tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.8.a
+		trigger = {
+			original_tag = ZEO
+		}
+	}
+}
+
+#9 !! ザビ家の一掃1
+news_event = {
+	id = news.9
+	title = news.9.t
+	desc = news.9.d
+	picture = GFX_news009
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ZEO = {
+			set_country_flag = sweep_away_zabi_1
+		}
+	}
+
+	option = {
+		name = news.9.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.9.b
+		trigger = {
+			tag = ZEO
+		}
+		add_political_power = -25
+		news_event = { id = news.10 days = 14 }
+	}
+}
+
+#10 !! ザビ家の一掃2
+news_event = {
+	id = news.10
+	title = news.10.t
+	desc = news.10.d
+	picture = GFX_news010
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ZEO = {
+			set_country_flag = sweep_away_zabi_2
+		}
+	}
+
+	option = {
+		name = news.10.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.10.b
+		trigger = {
+			tag = ZEO
+		}
+		add_political_power = -25
+		news_event = { id = news.11 days = 14 }
+	}
+}
+
+#11 !! ザビ家の一掃3
+news_event = {
+	id = news.11
+	title = news.11.t
+	desc = news.11.d
+	picture = GFX_news011
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ZEO = {
+			set_country_flag = sweep_away_zabi_3
+		}
+	}
+
+	option = {
+		name = news.11.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.11.b
+		trigger = {
+			tag = ZEO
+		}
+		add_political_power = -25
+		remove_ideas = brothers_quarrel
+		custom_effect_tooltip = not_available_political_advisor
+	}
+}
+
+#14 !! ミノフスキーの亡命 成功
+news_event = {
+	id = news.14
+	title = news.14.t
+	desc = news.14.d
+	picture = GFX_news014
+
+	major = yes
+
+	trigger = {
+		has_global_flag = minovsky_exile_start
+		has_global_flag = minovsky_exile_success
+	}
+	immediate = {
+		clr_global_flag = minovsky_exile_start
+	}
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = news.14.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.14.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			name = minovsky_is_efsf
+			threat = 3
+		}
+		EFS = {
+			set_country_flag = minovsky_is_ours
+		}
+		ZEO = {
+			clr_country_flag = minovsky_is_ours
+		}
+	}
+}
+
+#15 !! ミノフスキーの亡命 失敗 死亡
+news_event = {
+	id = news.15
+	title = news.15.t
+	desc = news.15.d
+	picture = GFX_news015
+
+	major = yes
+	trigger = {
+		has_global_flag = minovsky_exile_start
+		has_global_flag = minovsky_exile_failed
+	}
+	immediate = {
+		clr_global_flag = minovsky_exile_start
+	}
+	mean_time_to_happen = { days = 3 }
+
+	option = {
+		name = news.15.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.15.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			name = minovsky_is_dead
+			threat = 5
+		}
+		ZEO = {
+			clr_country_flag = minovsky_is_ours
+		}
+	}
+}
+
+#16 !! ミノフスキーの亡命 失敗 強制送還
+news_event = {
+	id = news.16
+	title = news.16.t
+	desc = news.16.d
+	picture = GFX_news016
+
+	major = yes
+	trigger = {
+		has_global_flag = minovsky_exile_start
+		has_global_flag = minovsky_exile_deport
+	}
+	mean_time_to_happen = { days = 3 }
+
+	immediate = {
+		clr_global_flag = minovsky_exile_start
+	}
+	option = {
+		name = news.16.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.16.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			name = minovsky_is_zeon
+			threat = 2
+		}
+	}
+	option = {
+		name = news.16.C
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+
+#17 !! U.C.0077 暁の蜂起 接触事故
+news_event = {
+	id = news.17
+	title = news.17.t
+	desc = news.17.d
+	picture = GFX_news017
+
+	major = yes
+	trigger = {
+		date > 77.3.1
+		NOT = {
+			has_global_flag = sunrise_uprising_1
+		}
+		has_global_flag = start_is_uc0075
+	}
+	mean_time_to_happen = { months = 6 }
+
+	immediate = {
+		set_global_flag = sunrise_uprising_1
+	}
+
+	option = {
+		name = news.17.a
+		trigger = {
+			tag = EFS
+		}
+		EFS = {
+			country_event = { id = efsf.4 days = 7 }
+		}
+	}
+	option = {
+		name = news.17.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			name = sunrise_uprising_1
+			threat = 3
+		}
+		add_timed_idea = {
+			idea = sunrise_uprising_1
+			days = 180
+		}
+	}
+	option = {
+		name = news.17.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+}
+
+#18 !! U.C.0077 暁の蜂起 蜂起成功
+news_event = {
+	id = news.18
+	title = news.18.t
+	desc = news.18.d
+	picture = GFX_news018
+
+	major = yes
+	trigger = {
+		ZEO = {
+			has_completed_focus = zeon_defense_military_academy
+			NOT = {
+				OR = {
+					has_completed_focus = zeon_capitalizing_on_the_fame_of_parent
+					has_completed_focus = zeon_casval_and_altesia
+					has_completed_focus = zeon_restructuring_of_military
+					has_country_flag = sweep_away_zabi_3
+				}
+			}
+		}
+		has_global_flag = sunrise_uprising_2_a
+		NOT = {
+			has_global_flag = sunrise_uprising_3
+		}
+	}
+	mean_time_to_happen = { days = 10 }
+
+	immediate = {
+		set_global_flag = sunrise_uprising_3
+		set_global_flag = sunrise_uprising_success
+	}
+
+	option = {
+		name = news.18.a
+		trigger = {
+			tag = EFS
+		}
+		add_popularity = {
+			ideology = earthsupremacy
+			popularity = 0.07
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.07
+		}
+	}
+	option = {
+		name = news.18.b
+		trigger = {
+			tag = ZEO
+		}
+		add_war_support = 0.1
+		add_named_threat = {
+			name = sunrise_uprising_success
+			threat = 13
+		}
+		army_experience = 50
+		add_autonomy_ratio = {
+			value = 0.15
+			localization = sunrise_uprising_success
+		}
+	}
+	option = {
+		name = news.18.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+
+#19 !! U.C.0077 暁の蜂起 鎮圧せず
+news_event = {
+	id = news.19
+	title = news.19.t
+	desc = news.19.d
+	picture = GFX_news019
+
+	major = yes
+	trigger = {
+		has_global_flag = sunrise_uprising_2_b
+		NOT = {
+			has_global_flag = sunrise_uprising_3
+		}
+	}
+	mean_time_to_happen = { days = 10 }
+
+	immediate = {
+		set_global_flag = sunrise_uprising_3
+	}
+
+	option = {
+		name = news.19.a
+		trigger = {
+			tag = EFS
+		}
+		add_stability = -0.04
+		add_war_support = 0.05
+		add_named_threat = {
+			name = sunrise_uprising_3
+			threat = 6
+		}
+		add_popularity = {
+			ideology = earthsupremacy
+			popularity = 0.07
+		}
+	}
+	option = {
+		name = news.19.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.19.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+}
+
+#20 !! U.C.0077 暁の蜂起 鎮圧成功
+news_event = {
+	id = news.20
+	title = news.20.t
+	desc = news.20.d
+	picture = GFX_news020
+
+	major = yes
+	trigger = {
+		has_global_flag = sunrise_uprising_2_a
+		OR = {
+			ZEO = {
+				has_completed_focus = zeon_capitalizing_on_the_fame_of_parent
+				has_completed_focus = zeon_casval_and_altesia
+				has_completed_focus = zeon_restructuring_of_military
+				has_country_flag = sweep_away_zabi_3
+			}
+			NOT = {
+				ZEO = {
+					has_completed_focus = zeon_defense_military_academy
+				}
+			}
+		}
+		NOT = {
+			has_global_flag = sunrise_uprising_3
+		}
+	}
+	mean_time_to_happen = { days = 10 }
+
+	immediate = {
+		set_global_flag = sunrise_uprising_3
+		set_global_flag = sunrise_uprising_failure
+	}
+
+	option = {
+		name = news.20.a
+		trigger = {
+			tag = EFS
+		}
+		army_experience = 25
+		add_stability = 0.05
+		add_named_threat = {
+			name = sunrise_uprising_failure
+			threat = 8
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = zeonism
+			popularity = -0.03
+		}
+	}
+	option = {
+		name = news.20.b
+		trigger = {
+			tag = ZEO
+		}
+		add_autonomy_ratio = {
+			value = -0.1
+			localization = sunrise_uprising_failure
+		}
+		add_war_support = -0.05
+		add_stability = -0.03
+	}
+	option = {
+		name = news.20.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+}
+
+#21 !! 関税の撤廃要求　拒否
+news_event = {
+	id = news.21
+	title = news.21.t
+	desc = news.21.d
+	picture = GFX_news021
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		EFS = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = export_focus
+					}
+				}
+				add_ideas = {
+					export_focus
+				}
+			}
+			add_timed_idea = {
+				idea = trade_friction_EFS
+				days = 180
+			}
+			every_other_country = {
+				add_timed_idea = {
+					idea = trade_friction
+					days = 180
+				}
+			}
+		}
+		ZEO = {
+			add_named_threat = {
+				name = refuse_reduce_tariff
+				threat = 4
+			}
+		}
+	}
+
+	option = {
+		name = news.21.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.21.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+
+#22 !! 関税の撤廃要求　受入
+news_event = {
+	id = news.22
+	title = news.22.t
+	desc = news.22.d
+	picture = GFX_news022
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		EFS = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = free_trade
+					}
+				}
+				add_ideas =	{
+					free_trade
+				}
+			}
+			add_timed_idea = {
+				idea = no_tax_trade_EFS
+				days = 180
+			}
+			every_other_country = {
+				add_timed_idea = {
+					idea = no_tax_trade
+					days = 180
+				}
+			}
+			add_named_threat = {
+				name = accept_reduce_tariff
+				threat = -2
+			}
+		}
+	}
+
+	option = {
+		name = news.22.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.22.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+
+#23 !! 駐留軍の撤兵要求　拒否
+news_event = {
+	id = news.23
+	title = news.23.t
+	desc = news.23.d
+	picture = GFX_news023
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = news.23.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.23.b
+		trigger = {
+			tag = EFS
+		}
+		ZEO = {
+			add_named_threat = {
+				name = refuse_reduce_army
+				threat = 4
+			}
+		}
+		add_timed_idea = {
+			idea = refuse_reduce_army_EFS
+			days = 180
+		}
+		every_other_country = {
+			add_timed_idea = {
+				idea = refuse_reduce_army
+				days = 180
+			}
+		}
+	}
+}
+
+#24 !! 駐留軍の撤兵要求　受入
+news_event = {
+	id = news.24
+	title = news.24.t
+	desc = news.24.d
+	picture = GFX_news024
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		EFS = {
+			add_timed_idea = {
+				idea = accept_reduce_army_EFS
+				days = 180
+			}
+			every_other_country = {
+				add_timed_idea = {
+					idea = accept_reduce_army
+					days = 180
+				}
+			}
+			add_named_threat = {
+				name = accept_reduce_army
+				threat = -2
+			}
+		}
+	}
+
+	option = {
+		name = news.24.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.24.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+
+#25 !! 連邦高官との接触　裏切り
+news_event = {
+	id = news.25
+	title = news.25.t
+	desc = news.25.d
+	picture = GFX_news025
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ZEO = {
+				set_country_flag = meeting_with_king_end
+			}
+			EFS = {
+				add_named_threat = {
+					name = news.25.t
+					threat = 5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = news.25.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.25.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+
+#26 !! 連邦高官との接触　段階的自治の承認
+news_event = {
+	id = news.26
+	title = news.26.t
+	desc = news.26.d
+	picture = GFX_news026
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				ZEO = {
+					has_government = zeonism
+				}
+			}
+			news_event = { id = news.164 days = 30 }
+		}
+	}
+
+	option = {
+		name = news.26.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.26.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#27 !! ブリティッシュ作戦 サイド壊滅（不使用）
+news_event = {
+	id = news.27
+	title = news.27.t
+	desc = news.27.d
+	picture = GFX_news027
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = operation_british_1
+			news_event = { id = news.171 days = 5 }
+			news_event = { id = news.175 days = 2 }
+			EFS = {
+				country_event = { id = efsf.9 hours = 15 }
+			}
+			ZEO = {
+				country_event = { id = zeon.12 hours = 15 }
+				set_state_controller = 811
+				set_state_controller = 812
+				set_state_controller = 813
+				set_state_controller = 814
+				set_state_controller = 815
+				set_state_controller = 816
+				set_state_controller = 817
+				set_state_controller = 818
+				set_state_controller = 819
+			}
+			SI1 = {
+				delete_unit_template_and_units = {
+					division_template = "Infantry Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Mountaineer-Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "National Guard Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "National Guard Division 2"
+				}
+				load_oob = "generic"
+			}
+			SI2 = {
+				delete_unit_template_and_units = {
+					division_template = "Infantry Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Mountaineer-Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "National Guard Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "National Guard Division 2"
+				}
+				load_oob = "generic"
+			}
+			SI4 = {
+				delete_unit_template_and_units = {
+					division_template = "Infantry Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "Mountaineer-Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "National Guard Division"
+				}
+				delete_unit_template_and_units = {
+					division_template = "National Guard Division 2"
+				}
+				load_oob = "generic"
+			}
+			811 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 10
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 10
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+			}
+			812 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 10
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 10
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+			}
+			813 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 10
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 10
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+			}
+			launch_nuke = {
+				state = 811
+				controller = ZEO
+				use_nuke = no
+			}
+			814 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 10
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 10
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+			}
+			815 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 10
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 10
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+			}
+			816 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 10
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 10
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+			}
+			launch_nuke = {
+				state = 814
+				controller = ZEO
+				use_nuke = no
+			}
+			817 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 10
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 10
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+			}
+			818 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 10
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 10
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+			}
+			819 = {
+				damage_building = {
+					type = industrial_complex
+					damage = 10
+				}
+				damage_building = {
+					type = arms_factory
+					damage = 10
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+			}
+			launch_nuke = {
+				state = 817
+				controller = ZEO
+				use_nuke = no
+			}
+		}
+	}
+
+	option = {
+		name = news.27.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.27.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.27.c
+		trigger = {
+			OR = {
+				tag = SI1
+				tag = SI2
+				tag = SI4
+			}
+		}
+	}
+	option = {
+		name = news.27.e
+		trigger = {
+			OR = {
+				tag = VBC
+				tag = GRA
+				tag = SI5
+				tag = SI6
+				tag = SI7
+			}
+		}
+	}
+}
+#28 !! ブリティッシュ作戦 コロニー攻防戦
+news_event = {
+	id = news.28
+	title = news.28.t
+	desc = news.28.d
+	picture = GFX_news028
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = operation_british_2
+		hidden_effect = {
+			random_list = {
+				95 = {
+					news_event = { id = news.29 days = 2 }
+				}
+				5 = {
+					news_event = { id = news.30 days = 2 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = news.28.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.28.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#29 !! ブリティッシュ作戦 コロニー落とし失敗
+news_event = {
+	id = news.29
+	title = news.29.t
+	desc = news.29.d
+	picture = GFX_news029
+
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = operation_british_fail
+		news_event = { id = news.174 days = 15 }
+		ZEO = {
+			set_country_flag = earth_invasion_is_yes
+			add_command_power = 25
+			add_political_power = 100
+		}
+		launch_nuke = {
+			province = 12406
+			state = 285
+			controller = ZEO
+			use_nuke = no
+		}
+	}
+
+	option = {
+		name = news.29.a
+		custom_effect_tooltip = news.29.a_desc
+		goto_state = 285
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.29.b
+		custom_effect_tooltip = news.29.a_desc
+		goto_state = 285
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.29.c
+		custom_effect_tooltip = news.29.a_desc
+		goto_state = 285
+		trigger = {
+			tag = EFS
+		}
+		285 = {
+			remove_building = {
+				type = industrial_complex
+				level = 10
+			}
+			remove_building = {
+				type = arms_factory
+				level = 10
+			}
+			remove_building = {
+				type = air_base
+				level = 10
+			}
+			remove_building = {
+				type = dockyard
+				level = 10
+			}
+			remove_building = {
+				type = infrastructure
+				level = 10
+			}
+			remove_building = {
+				type = anti_air_building
+				level = 10
+			}
+			remove_building = {
+				type = synthetic_refinery
+				level = 10
+			}
+			remove_building = {
+				type = fuel_silo
+				level = 10
+			}
+			remove_building = {
+				type = rocket_site
+				level = 10
+			}
+			remove_building = {
+				type = nuclear_reactor
+				level = 10
+			}
+			remove_building = {
+				type = radar_station
+				level = 10
+			}
+			set_building_level = {
+				type = bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = coastal_bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = naval_base
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_state_category = wasteland
+		}
+		destroy_ships = {
+			type = archetype_carrier
+			count = 4
+		}
+		destroy_ships = {
+			type = archetype_destroyer
+			count = 30
+		}
+		destroy_ships = {
+			type = archetype_cruiser
+			count = 15
+		}
+		destroy_ships = {
+			type = archetype_submarine_carrier
+			count = 5
+		}
+		destroy_ships = {
+			type = archetype_submarine
+			count = 10
+		}
+		add_ideas = {
+			after_colony
+		}
+		add_timed_idea = {
+			idea = after_colony2
+			days = 180
+		}
+		country_event = { id = efsf.43 days = 2 }
+	}
+}
+#30 !! ブリティッシュ作戦 コロニー落とし成功
+news_event = {
+	id = news.30
+	title = news.30.t
+	desc = news.30.d
+	picture = GFX_news030
+
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = operation_british_success
+		hidden_effect = {
+			ZEO = {
+				country_event = { id = zeon.16 days = 7 }
+			}
+		}
+		ZEO = {
+			set_country_flag = earth_invasion_is_yes
+			add_command_power = 25
+			add_political_power = 100
+		}
+		launch_nuke = {
+			province = 13505
+			state = 687
+			controller = ZEO
+			use_nuke = no
+		}
+	}
+
+	option = {
+		name = news.30.a
+		goto_state = 687
+		custom_effect_tooltip = news.30.a_desc
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.30.b
+		goto_state = 687
+		custom_effect_tooltip = news.30.a_desc
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.30.c
+		goto_state = 687
+		custom_effect_tooltip = news.30.a_desc
+		trigger = {
+			tag = EFS
+		}
+		687 = {
+			remove_building = {
+				type = industrial_complex
+				level = 10
+			}
+			remove_building = {
+				type = arms_factory
+				level = 10
+			}
+			remove_building = {
+				type = air_base
+				level = 10
+			}
+			remove_building = {
+				type = dockyard
+				level = 10
+			}
+			remove_building = {
+				type = infrastructure
+				level = 10
+			}
+			remove_building = {
+				type = anti_air_building
+				level = 10
+			}
+			remove_building = {
+				type = synthetic_refinery
+				level = 10
+			}
+			remove_building = {
+				type = fuel_silo
+				level = 10
+			}
+			remove_building = {
+				type = rocket_site
+				level = 10
+			}
+			remove_building = {
+				type = nuclear_reactor
+				level = 10
+			}
+			remove_building = {
+				type = radar_station
+				level = 10
+			}
+			set_building_level = {
+				type = bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = coastal_bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = naval_base
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_state_category = wasteland
+		}
+		309 = {
+			remove_building = {
+				type = industrial_complex
+				level = 10
+			}
+			remove_building = {
+				type = arms_factory
+				level = 10
+			}
+			remove_building = {
+				type = air_base
+				level = 10
+			}
+			remove_building = {
+				type = dockyard
+				level = 10
+			}
+			remove_building = {
+				type = infrastructure
+				level = 10
+			}
+			remove_building = {
+				type = anti_air_building
+				level = 10
+			}
+			remove_building = {
+				type = synthetic_refinery
+				level = 10
+			}
+			remove_building = {
+				type = fuel_silo
+				level = 10
+			}
+			remove_building = {
+				type = rocket_site
+				level = 10
+			}
+			remove_building = {
+				type = nuclear_reactor
+				level = 10
+			}
+			remove_building = {
+				type = radar_station
+				level = 10
+			}
+			set_building_level = {
+				type = bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = coastal_bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = naval_base
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_state_category = wasteland
+		}
+		488 = {
+			remove_building = {
+				type = industrial_complex
+				level = 10
+			}
+			remove_building = {
+				type = arms_factory
+				level = 10
+			}
+			remove_building = {
+				type = air_base
+				level = 10
+			}
+			remove_building = {
+				type = dockyard
+				level = 10
+			}
+			remove_building = {
+				type = infrastructure
+				level = 10
+			}
+			remove_building = {
+				type = anti_air_building
+				level = 10
+			}
+			remove_building = {
+				type = synthetic_refinery
+				level = 10
+			}
+			remove_building = {
+				type = fuel_silo
+				level = 10
+			}
+			remove_building = {
+				type = rocket_site
+				level = 10
+			}
+			remove_building = {
+				type = nuclear_reactor
+				level = 10
+			}
+			remove_building = {
+				type = radar_station
+				level = 10
+			}
+			set_building_level = {
+				type = bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = coastal_bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = naval_base
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_state_category = wasteland
+		}
+		set_capital = { state = 272 }
+		destroy_ships = {
+			type = archetype_carrier
+			count = 10
+		}
+		destroy_ships = {
+			type = archetype_destroyer
+			count = 60
+		}
+		destroy_ships = {
+			type = archetype_cruiser
+			count = 30
+		}
+		destroy_ships = {
+			type = archetype_submarine_carrier
+			count = 10
+		}
+		destroy_ships = {
+			type = archetype_submarine
+			count = 20
+		}
+		add_ideas = {
+			after_colony
+		}
+		add_timed_idea = {
+			idea = after_colony2
+			days = 360
+		}
+		country_event = { id = efsf.43 days = 2 }
+	}
+}
+#31 !! ルウム会戦
+news_event = {
+	id = news.31
+	title = news.31.t
+	desc = news.31.d
+	picture = GFX_news031
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					EFS = {
+						has_country_leader = {
+							character = EFS_johann_a_revil
+						}
+					}
+				}
+				news_event = { id = news.32 days = 1 }
+				else = {
+					ZEO = {
+						country_event = { id = zeon.16 days = 7 }
+					}
+				}
+			}
+			ZEO = {
+				country_event = { id = zeon.1001 days = 5 }
+			}
+			EFS = {
+				country_event = { id = efsf.1002 days = 5 }
+			}
+			if = {
+				limit = {
+					ZEO = {
+						has_country_flag = establish_603_technical_test_team
+					}
+				}
+				ZEO = {
+					country_event = { id = zeon.15 days = 3 }
+				}
+			}
+		}
+	}
+	option = {
+		name = news.31.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.31.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.31.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#32 !! サイド5壊滅/アナンケ拿捕
+news_event = {
+	id = news.32
+	title = news.32.t
+	desc = news.32.d
+	picture = GFX_news032
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = { id = news.33 days = 3 }
+		}
+	}
+	option = {
+		name = news.32.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.32.b
+		trigger = {
+			tag = EFS
+		}
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = option_battle_of_loum
+					option = "DESTROY_SHIPS_SMALL"
+				}
+			}
+			EFS = {
+				destroy_ships = {
+					type = archetype_efsf_space_cruiser
+					count = 20
+				}
+				destroy_ships = {
+					type = archetype_space_battleship
+					count = 5
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = option_battle_of_loum
+					option = "DESTROY_SHIPS_MEDIUM"
+				}
+			}
+			EFS = {
+				destroy_ships = {
+					type = archetype_efsf_space_cruiser
+					count = 40
+				}
+				destroy_ships = {
+					type = archetype_space_battleship
+					count = 10
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_game_rule = {
+					rule = option_battle_of_loum
+					option = "DESTROY_SHIPS_LARGE"
+				}
+			}
+			EFS = {
+				destroy_ships = {
+					type = archetype_efsf_space_cruiser
+					count = 60
+				}
+				destroy_ships = {
+					type = archetype_space_battleship
+					count = 15
+				}
+			}
+		}
+	}
+	option = {
+		name = news.32.c
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#33 !! レビル捕虜放送
+news_event = {
+	id = news.33
+	title = news.33.t
+	desc = news.33.d
+	picture = GFX_news033
+
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = revil_is_captive
+	}
+
+	option = {
+		name = news.33.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.33.b
+		trigger = {
+			tag = ZEO
+		}
+		country_event = { id = zeon.16 days = 7 }
+	}
+	option = {
+		name = news.33.c
+		trigger = {
+			tag = EFS
+		}
+		custom_effect_tooltip = news.33.c_desc
+		add_war_support = -0.05
+	}
+}
+#34 !! 南極条約 会議開始
+news_event = {
+	id = news.34
+	title = news.34.t
+	desc = news.34.d
+	picture = GFX_news034
+
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_global_flag = revil_return_is_yes
+				}
+				random_list = {
+					75 = {
+						news_event = { id = news.35 hours = 3 }
+					}
+					25 = {
+						country_event = { id = efsf.11 hours = 3 }
+					}
+				}
+				else = {
+					set_global_flag = revil_return_is_no
+					EFS = {
+						country_event = { id = efsf.11 hours = 3 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = news.34.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.34.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#35 !! 南極条約 レビル演説
+news_event = {
+	id = news.35
+	title = news.35.t
+	desc = news.35.d
+	picture = GFX_news035
+
+	major = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = { id = news.36 hours = 3 }
+			set_global_flag = revil_return
+		}
+	}
+
+	option = {
+		name = news.35.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.35.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.35.c
+		trigger = {
+			tag = EFS
+		}
+		add_country_leader_trait = no_soldier
+	}
+}
+#36 !! 南極条約 締結
+news_event = {
+	id = news.36
+	title = news.36.t
+	desc = news.36.d
+	picture = GFX_news036
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ZEO = {
+			set_country_flag = earth_invasion_is_yes
+		}
+	}
+
+	option = {
+		name = news.36.a
+		trigger = {
+			tag = EFS
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_global_flag = revil_return
+				}
+			}
+			EFS = {
+				add_country_leader_role = {
+					character = EFS_gopp
+					promote_leader = yes
+					country_leader={
+						expire = "100.1.1"
+						ideology = conservatism
+						traits = {
+							conservative_grandee
+						}
+					}
+				}
+				retire_character = EFS_johann_a_revil
+			}
+		}
+	}
+	option = {
+		name = news.36.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.36.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = EFS
+					tag = ZEO
+				}
+			}
+		}
+	}
+}
+#37 !! サイド6への政治介入
+news_event = {
+	id = news.37
+	title = news.37.t
+	desc = news.37.d
+	picture = GFX_news037
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = zeon_side6_non_aggression
+		hidden_effect = {
+			SI6 = {
+				set_politics = { ruling_party = spacesupremacy elections_allowed = no }
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = 0.3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = news.37.a
+		trigger = {
+			tag = SI6
+		}
+	}
+	option = {
+		name = news.37.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.37.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = SI6
+				}
+			}
+		}
+	}
+}
+#38 !! 駐留部隊の縮小
+news_event = {
+	id = news.38
+	title = news.38.t
+	desc = news.38.d
+	picture = GFX_news038
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.38.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.38.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#39 !! 関税の緩和
+news_event = {
+	id = news.39
+	title = news.39.t
+	desc = news.39.d
+	picture = GFX_news039
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.39.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.39.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#40 !! 駐留部隊の増強
+news_event = {
+	id = news.40
+	title = news.40.t
+	desc = news.40.d
+	picture = GFX_news040
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = news.40.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.40.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#41 !! 関税強化
+news_event = {
+	id = news.41
+	title = news.41.t
+	desc = news.41.d
+	picture = GFX_news041
+	major = yes
+
+	is_triggered_only = yes
+	option = {
+		name = news.41.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.41.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#42 !! 急進右派を排除
+news_event = {
+	id = news.42
+	title = news.42.t
+	desc = news.42.d
+	picture = GFX_news042
+	major = yes
+
+	immediate = {
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = news.42.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.42.b
+		trigger = {
+			tag = EFS
+		}
+		custom_effect_tooltip = news.42.tooltip
+		EFS_jamitov_hymen = {
+			set_character_flag = disable_corps_commander
+		}
+		EFS_bask_om = {
+			set_character_flag = disable_corps_commander
+		}
+		EFS_jamaican_daninghan = {
+			set_character_flag = disable_navy_leader
+		}
+		EFS_gene_coliny = {
+			set_character_flag = disable_corps_commander
+		}
+	}
+}
+#43 !! 守旧派を排除
+news_event = {
+	id = news.43
+	title = news.43.t
+	desc = news.43.d
+	picture = GFX_news043
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.43.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.43.b
+		trigger = {
+			tag = EFS
+		}
+		custom_effect_tooltip = news.43.tooltip
+		EFS_john_kowen = {
+			set_character_flag = disable_corps_commander
+		}
+		EFS_blex_forer = {
+			set_character_flag = disable_corps_commander
+		}
+		EFS_johann_a_revil = {
+			set_character_flag = disable_corps_commander
+		}
+		EFS_paolo_cassius = {
+			set_character_flag = disable_navy_leader
+		}
+	}
+}
+#44 !! U.C.0079 3.1 地球侵攻作戦 オデッサ降下
+news_event = {
+	id = news.44
+	title = news.44.t
+	desc = news.44.d
+	picture = GFX_news044
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_variable = { ROOT.drop_point_selected = 0 }
+			set_variable = { ROOT.amount_of_manpower_var = 0 }
+			set_variable = { ROOT.amount_of_ms_division_var = 0 }
+			set_variable = { ROOT.amount_of_ms_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_heathawk_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_machinegun_var = 0 }
+			set_variable = { ROOT.amount_of_ms_shield_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_division_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_var = 0 }
+			set_variable = { ROOT.amount_of_support_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_division_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_var = 0 }
+		}
+	}
+
+	option = {
+		name = news.44.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.44.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#45 !! U.C.0079 3.1 地球侵攻作戦 北米降下
+news_event = {
+	id = news.45
+	title = news.45.t
+	desc = news.45.d
+	picture = GFX_news045
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_variable = { ROOT.drop_point_selected = 0 }
+			set_variable = { ROOT.amount_of_manpower_var = 0 }
+			set_variable = { ROOT.amount_of_ms_division_var = 0 }
+			set_variable = { ROOT.amount_of_ms_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_heathawk_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_machinegun_var = 0 }
+			set_variable = { ROOT.amount_of_ms_shield_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_division_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_var = 0 }
+			set_variable = { ROOT.amount_of_support_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_division_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_var = 0 }
+		}
+	}
+
+	option = {
+		name = news.45.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.45.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#46 !! U.C.0079 3.1 地球侵攻作戦 インド降下
+news_event = {
+	id = news.46
+	title = news.46.t
+	desc = news.46.d
+	picture = GFX_news046
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_variable = { ROOT.drop_point_selected = 0 }
+			set_variable = { ROOT.amount_of_manpower_var = 0 }
+			set_variable = { ROOT.amount_of_ms_division_var = 0 }
+			set_variable = { ROOT.amount_of_ms_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_heathawk_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_machinegun_var = 0 }
+			set_variable = { ROOT.amount_of_ms_shield_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_division_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_var = 0 }
+			set_variable = { ROOT.amount_of_support_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_division_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_var = 0 }
+		}
+	}
+
+	option = {
+		name = news.46.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.46.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#47 !! U.C.0079 3.1 地球侵攻作戦 アフリカ降下
+news_event = {
+	id = news.47
+	title = news.47.t
+	desc = news.47.d
+	picture = GFX_news047
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_variable = { ROOT.drop_point_selected = 0 }
+			set_variable = { ROOT.amount_of_manpower_var = 0 }
+			set_variable = { ROOT.amount_of_ms_division_var = 0 }
+			set_variable = { ROOT.amount_of_ms_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_heathawk_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_machinegun_var = 0 }
+			set_variable = { ROOT.amount_of_ms_shield_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_division_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_var = 0 }
+			set_variable = { ROOT.amount_of_support_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_division_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_var = 0 }
+		}
+	}
+
+	option = {
+		name = news.47.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.47.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#48 !! U.C.0079 3.1 地球侵攻作戦 ヨーロッパ降下
+news_event = {
+	id = news.48
+	title = news.48.t
+	desc = news.48.d
+	picture = GFX_news048
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_variable = { ROOT.drop_point_selected = 0 }
+			set_variable = { ROOT.amount_of_manpower_var = 0 }
+			set_variable = { ROOT.amount_of_ms_division_var = 0 }
+			set_variable = { ROOT.amount_of_ms_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_heathawk_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_machinegun_var = 0 }
+			set_variable = { ROOT.amount_of_ms_shield_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_division_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_var = 0 }
+			set_variable = { ROOT.amount_of_support_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_division_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_var = 0 }
+		}
+	}
+
+	option = {
+		name = news.48.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.48.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#49 !! U.C.0079 3.1 地球侵攻作戦 南米降下
+news_event = {
+	id = news.49
+	title = news.49.t
+	desc = news.49.d
+	picture = GFX_news049
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_variable = { ROOT.drop_point_selected = 0 }
+			set_variable = { ROOT.amount_of_manpower_var = 0 }
+			set_variable = { ROOT.amount_of_ms_division_var = 0 }
+			set_variable = { ROOT.amount_of_ms_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_heathawk_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_machinegun_var = 0 }
+			set_variable = { ROOT.amount_of_ms_shield_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_division_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_var = 0 }
+			set_variable = { ROOT.amount_of_support_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_division_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_var = 0 }
+		}
+	}
+
+	option = {
+		name = news.49.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.49.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#50 !! U.C.0079 3.1 地球侵攻作戦 オーストラリア降下
+news_event = {
+	id = news.50
+	title = news.50.t
+	desc = news.50.d
+	picture = GFX_news050
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_variable = { ROOT.drop_point_selected = 0 }
+			set_variable = { ROOT.amount_of_manpower_var = 0 }
+			set_variable = { ROOT.amount_of_ms_division_var = 0 }
+			set_variable = { ROOT.amount_of_ms_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_heathawk_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_machinegun_var = 0 }
+			set_variable = { ROOT.amount_of_ms_shield_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_division_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_var = 0 }
+			set_variable = { ROOT.amount_of_support_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_division_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_var = 0 }
+		}
+	}
+
+	option = {
+		name = news.50.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.50.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#51 !! U.C.0077 戦力整備計画
+news_event = {
+	id = news.51
+	title = news.51.t
+	desc = news.51.d
+	picture = GFX_news051
+	major = yes
+
+	is_triggered_only = yes
+	option = {
+		name = news.51.a
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.51.b
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.51.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = EFS
+					tag = ZEO
+				}
+			}
+		}
+	}
+}
+#52 !! クルスト・モーゼスの亡命
+news_event = {
+	id = news.52
+	title = news.52.t
+	desc = news.52.d
+	picture = GFX_news052
+	major = yes
+
+	immediate = {
+		ZEO = {
+			clr_country_flag = chlust_is_ours
+			clr_country_flag = nakamoto_is_ours
+		}
+		EFS = {
+			set_country_flag = chlust_is_ours
+			set_country_flag = nakamoto_is_ours
+		}
+	}
+
+	is_triggered_only = yes
+	option = {
+		name = news.52.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.52.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#53 !! 地球方面軍設立
+news_event = {
+	id = news.53
+	title = news.53.t
+	desc = news.53.d
+	picture = GFX_news053
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.53.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.53.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#61 !! サイド6 中立宣言
+news_event = {
+	id = news.61
+	title = news.61.t
+	desc = news.61.d
+	picture = GFX_news061
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = side6_neutrality
+	}
+
+	option = {
+		name = news.61.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.61.b
+		trigger = {
+			tag = ZEO
+		}
+		diplomatic_relation = {
+			country = SI6
+			relation = guarantee
+		}
+		diplomatic_relation = {
+			country = SI6
+			relation = non_aggression_pact
+		}
+	}
+	option = {
+		name = news.61.c
+		trigger = {
+			tag = EFS
+		}
+		diplomatic_relation = {
+			country = SI6
+			relation = non_aggression_pact
+		}
+		diplomatic_relation = {
+			country = SI6
+			relation = guarantee
+		}
+	}
+}
+#62 !! サイドとの新しい関係
+news_event = {
+	id = news.62
+	title = news.62.t
+	desc = news.62.d
+	picture = GFX_news062
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.62.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.62.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#63 !! サイドへの見せしめ
+news_event = {
+	id = news.63
+	title = news.63.t
+	desc = news.63.d
+	picture = GFX_news063
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.63.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.63.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#64 !! ライセンス販売
+news_event = {
+	id = news.64
+	title = news.64.t
+	desc = news.64.d
+	picture = GFX_news064
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.64.a
+		trigger = {
+			NOT = {
+				tag = ROOT
+			}
+		}
+	}
+	option = {
+		name = news.64.b
+		trigger = {
+			tag = ROOT
+		}
+	}
+}
+#65 !! 地球圏の保護者
+news_event = {
+	id = news.65
+	title = news.65.t
+	desc = news.65.d
+	picture = GFX_news065
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.65.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.65.b
+		add_ideas = save_earth
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#68 !! 政府機能の移転
+news_event = {
+	id = news.68
+	title = news.68.t
+	desc = news.68.d
+	picture = GFX_news068
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.68.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.68.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#70 !! 新しい地球連邦
+news_event = {
+	id = news.70
+	title = news.70.t
+	desc = news.70.d
+	picture = GFX_news070
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		EFS = {
+			every_other_country = {
+				limit = {
+					is_subject_of = ROOT
+				}
+				end_puppet = PREV
+			}
+		}
+	}
+	option = {
+		name = news.70.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.70.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#71 !! エレズム
+news_event = {
+	id = news.71
+	title = news.71.t
+	desc = news.71.d
+	picture = GFX_news071
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.71.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.71.b
+		trigger = {
+			tag = EFS
+		}
+		EFS = {
+			start_civil_war = {
+				ideology = earthsupremacy
+				size = 0.4
+				keep_unit_leaders_trigger = {
+					NOT = {
+						has_trait = titans_party
+					}
+				}
+			}
+		}
+	}
+}
+#72 !! コロニー自治法
+news_event = {
+	id = news.72
+	title = news.72.t
+	desc = news.72.d
+	picture = GFX_news072
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.72.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.72.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#73 0! AE重役の怪死
+news_event = {
+	id = news.73
+	title = news.73.t
+	desc = news.73.d
+	picture = GFX_news073
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.73.a
+	}
+}
+#74 !! ジオンの独立を認めない
+news_event = {
+	id = news.74
+	title = news.74.t
+	desc = news.74.d
+	picture = GFX_news074
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.74.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.74.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#75 !! 地球連邦総会 開会
+news_event = {
+	id = news.75
+	title = {
+		trigger = {
+			has_global_flag = meeting_sub_is_1
+		}
+		text = news.75.t1
+	}
+	title = {
+		trigger = {
+			has_global_flag = meeting_sub_is_2
+		}
+		text = news.75.t2
+	}
+	desc = {
+		trigger = {
+			has_global_flag = meeting_sub_is_1
+		}
+		text = news.75.d1
+	}
+	desc = {
+		trigger = {
+			has_global_flag = meeting_sub_is_2
+		}
+		text = news.75.d2
+	}
+	picture = GFX_news075
+
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = meeting_is_start
+		every_country = {
+			country_event = { id = efsf.54 days = 60 }
+		}
+	}
+
+	option = {
+		name = news.75.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.75.b
+		trigger = {
+			tag = EFS
+		}
+		add_timed_idea = {
+			idea = general_meeting
+			days = 60
+		}
+	}
+}
+#76 !! 地球連邦総会 閉会
+news_event = {
+	id = news.76
+	title = {
+		trigger = {
+			has_global_flag = meeting_sub_is_1
+		}
+		text = news.76.t1
+	}
+	title = {
+		trigger = {
+			has_global_flag = meeting_sub_is_2
+		}
+		text = news.76.t2
+	}
+	desc = {
+		trigger = {
+			has_global_flag = meeting_sub_is_1
+		}
+		text = news.76.d1
+	}
+	desc = {
+		trigger = {
+			has_global_flag = meeting_sub_is_2
+		}
+		text = news.76.d2
+	}
+	picture = GFX_news076
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_global_flag = meeting_is_start
+		set_global_flag = meeting_is_end
+		every_country = {
+			remove_opinion_modifier = {
+				target = EFS
+				modifier = parliamentary_work_opinion
+			}
+			remove_opinion_modifier = {
+				target = ZEO
+				modifier = parliamentary_work_opinion
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = meeting_sub_is_1
+				check_variable = {
+					var = global.vote_is_yes
+					value = global.vote_is_no
+					compare = greater_than
+				}
+			}
+			set_global_flag = meeting_sub_is_1_right
+		}
+		if = {
+			limit = {
+				has_global_flag = meeting_sub_is_2
+				check_variable = {
+					var = global.vote_is_yes
+					value = global.vote_is_no
+					compare = greater_than
+				}
+			}
+			set_global_flag = meeting_sub_is_2_right
+		}
+	}
+	option = {
+		name = news.76.a
+	}
+}
+#77 !! ジオン包囲網
+news_event = {
+	id = news.77
+	title = news.77.t
+	desc = news.77.d
+	picture = GFX_news077
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.77.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.77.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#78 !! ティターンズとジオンの同盟
+news_event = {
+	id = news.78
+	title = news.78.t
+	desc = news.78.d
+	picture = GFX_news078
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.78.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.78.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#79 !! 世論操作
+news_event = {
+	id = news.79
+	title = news.79.t
+	desc = news.79.d
+	picture = GFX_news079
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.79.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.79.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#80 !! 精鋭治安維持部隊
+news_event = {
+	id = news.80
+	title = news.80.t
+	desc = news.80.d
+	picture = GFX_news080
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			news_event = { id = news.166 days = 10 }
+		}
+	}
+
+	option = {
+		name = news.80.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.80.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#81 !! 30バンチ事件
+news_event = {
+	id = news.81
+	title = news.81.t
+	desc = news.81.d
+	picture = GFX_news081
+	major = yes
+
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.81.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = EFS
+					tag = SI1
+				}
+			}
+		}
+		add_opinion_modifier = {
+			target = EFS
+			modifier = g_3_gus
+		}
+	}
+	option = {
+		name = news.81.b
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.81.c
+		trigger = {
+			tag = SI1
+		}
+		add_opinion_modifier = {
+			target = EFS
+			modifier = g_3_gus_SI1
+		}
+		812 = {
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+			add_manpower = -2000000
+		}
+	}
+}
+#82 !! ティターンズのバスク・オム大佐が連邦議会で演説
+news_event = {
+	id = news.82
+	title = news.82.t
+	desc = news.82.d
+	picture = GFX_news082
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.82.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.82.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#83 !! 地球至上主義に政体変化
+news_event = {
+	id = news.83
+	title = news.83.t
+	desc = news.83.d
+	picture = GFX_news083
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = news.83.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.83.b
+		trigger = {
+			tag = EFS
+		}
+		if = {
+			limit = {
+				EFS = {
+					has_completed_focus = efsf_enemy_is_efsf
+				}
+			}
+			news_event = { id = news.154 days = 120 }
+		}
+	}
+}
+#84 !! 経済制裁の強化
+news_event = {
+	id = news.84
+	title = news.84.t
+	desc = news.84.d
+	picture = GFX_news084
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.84.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.84.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#85 !! ザビ家の独裁を承認
+news_event = {
+	id = news.85
+	title = news.85.t
+	desc = news.85.d
+	picture = GFX_news085
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = news.85.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.85.b
+		add_stability = 0.1
+		add_popularity = {
+			ideology = spacesupremacy
+			popularity = 0.1
+		}
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.85.c
+		add_popularity = {
+			ideology = spacesupremacy
+			popularity = 0.05
+		}
+		add_named_threat = {
+			name = efsf_approved_dictatorship
+			threat = -3
+		}
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#86 !! コロニー制圧演習
+news_event = {
+	id = news.86
+	title = news.86.t
+	desc = news.86.d
+	picture = GFX_news086
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.86.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+		add_opinion_modifier = {
+			target = EFS
+			modifier = colony_exclusion_exercise
+		}
+	}
+	option = {
+		name = news.86.b
+		trigger = {
+			tag = EFS
+		}
+		add_named_threat = {
+			name = pa_colony_exclusion_exercise
+			threat = 5
+		}
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.3
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+#87 !! フェデレーションポスト
+news_event = {
+	id = news.87
+	title = news.87.t
+	desc = news.87.d
+	picture = GFX_news087
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.87.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.87.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#88 !! コントリズムの代弁者
+news_event = {
+	id = news.88
+	title = news.88.t
+	desc = news.88.d
+	picture = GFX_news088
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.88.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.88.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.88.c
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#89 !! 優性人類生存説
+news_event = {
+	id = news.89
+	title = news.89.t
+	desc = news.89.d
+	picture = GFX_news089
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.89.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.89.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			name = threat_name_news89
+			threat = 3
+		}
+		add_timed_idea = {
+			idea = zeon_dominance_of_human_survival_theory
+			days = 90
+		}
+		add_political_power = 100
+	}
+}
+#90 !! サイド間の連帯
+news_event = {
+	id = news.90
+	title = news.90.t
+	desc = news.90.d
+	picture = GFX_news090
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.90.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.90.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.90.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#91 !! サイド経済ブロック
+news_event = {
+	id = news.91
+	title = news.91.t
+	desc = news.91.d
+	picture = GFX_news091
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.91.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.91.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#92 !! サイド共栄圏
+news_event = {
+	id = news.92
+	title = news.92.t
+	desc = news.92.d
+	picture = GFX_news092
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.92.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.92.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			threat = 5
+			name = zeon_colony_alliance
+		}
+	}
+	option = {
+		name = news.92.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+		add_opinion_modifier = {
+			target = ZEO
+			modifier = colony_alliance
+		}
+		add_opinion_modifier = {
+			target = EFS
+			modifier = colony_alliance_EFS
+		}
+	}
+}
+#93 !! サイド7への移民開始
+news_event = {
+	id = news.93
+	title = news.93.t
+	desc = news.93.d
+	picture = GFX_news093
+	major = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				has_global_flag = side7_is_established
+				has_global_flag = side7_immigrated
+				country_exists = SI7
+				EFS = {
+					has_completed_focus = efsf_resumption_of_immigration_plan
+				}
+			}
+		}
+		date > 78.3.1
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	immediate = {
+		set_global_flag = side7_immigrated
+	}
+
+	option = {
+		name = news.93.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.93.b
+		trigger = {
+			tag = EFS
+		}
+		825 = {
+			add_manpower = 100000
+		}
+		826 = {
+			add_manpower = 100000
+		}
+		827 = {
+			add_manpower = 100000
+		}
+	}
+}
+#94 0! ブレックス・フォーラの暗殺
+news_event = {
+	id = news.94
+	title = news.94.t
+	desc = news.94.d
+	picture = GFX_news094
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.94.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.94.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#95 0! クワトロ・バジーナの演説
+news_event = {
+	id = news.95
+	title = news.95.t
+	desc = news.95.d
+	picture = GFX_news095
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.95.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.95.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#97 0! 79年度観艦式
+news_event = {
+	id = news.97
+	title = news.97.t
+	desc = news.97.d
+	picture = GFX_news097
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.97.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.97.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#98 ! 地球寒冷化作戦 アクシズ移動開始
+news_event = {
+	id = news.98
+	title = news.98.t
+	desc = news.98.d
+	picture = GFX_news098
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.98.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.98.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.98.c
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#99 !! 地球寒冷化作戦 攻防戦
+news_event = {
+	id = news.99
+	title = news.99.t
+	desc = {
+		trigger = {
+			ZEO = {
+				has_full_control_of_state = 829
+				has_full_control_of_state = 830
+			}
+		}
+		text = news.99.d1
+	}
+	desc = {
+		trigger = {
+			ZEO = {
+				NOT = {
+					OR = {
+						has_full_control_of_state = 829
+						has_full_control_of_state = 830
+					}
+				}
+			}
+		}
+		text = news.99.d2
+	}
+	picture = GFX_news099
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					ZEO = {
+						has_full_control_of_state = 829
+						has_full_control_of_state = 830
+					}
+				}
+				ZEO = {
+					country_event = { id = zeon.67 days = 1 }
+				}
+				news_event = { id = news.172 days = 2 }
+				else = {
+					ZEO = {
+						country_event = { id = zeon.68 days = 1 }
+					}
+					news_event = { id = news.98 days = 2 }
+				}
+			}
+			if = {
+				limit = {
+					ZEO = {
+						has_tech = recruiment_zudah
+					}
+				}
+				news_event = { id = news.180 days = 5 }
+				else = {
+					news_event = { id = news.171 days = 5 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = news.99.a
+		country_event = { id = efsf.1002 days = 5 }
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.99.b
+		country_event = { id = zeon.1001 days = 5 }
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.99.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = EFS
+					tag = ZEO
+				}
+			}
+		}
+	}
+}
+#100 !! 地球寒冷化作戦 成功
+news_event = {
+	id = news.100
+	title = news.100.t
+	desc = news.100.d
+	picture = GFX_news100
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = operation_freeze_earth_success
+		ZEO = {
+			set_country_flag = earth_invasion_is_yes
+		}
+		launch_nuke = {
+			province = 13505
+			state = 687
+			controller = ZEO
+			use_nuke = no
+		}
+	}
+
+	option = {
+		name = news.100.a
+		custom_effect_tooltip = news.30.a_desc
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+		goto_state = 687
+	}
+	option = {
+		name = news.100.b
+		custom_effect_tooltip = news.30.a_desc
+		goto_state = 687
+		EFS = {
+			set_capital = { state = 272 }
+			destroy_ships = {
+				type = archetype_carrier
+				count = 2
+			}
+			destroy_ships = {
+				type = archetype_destroyer
+				count = 200
+			}
+			destroy_ships = {
+				type = archetype_cruiser
+				count = 5
+			}
+			destroy_ships = {
+				type = archetype_submarine_carrier
+				count = 5
+			}
+			destroy_ships = {
+				type = archetype_submarine
+				count = 20
+			}
+			add_ideas = {
+				after_colony
+			}
+			add_timed_idea = {
+				idea = after_colony2
+				days = 360
+			}
+			country_event = { id = efsf.43 days = 2 }
+		}
+		687 = {
+			remove_building = {
+				type = industrial_complex
+				level = 10
+			}
+			remove_building = {
+				type = arms_factory
+				level = 10
+			}
+			remove_building = {
+				type = air_base
+				level = 10
+			}
+			remove_building = {
+				type = dockyard
+				level = 10
+			}
+			remove_building = {
+				type = infrastructure
+				level = 10
+			}
+			remove_building = {
+				type = anti_air_building
+				level = 10
+			}
+			remove_building = {
+				type = synthetic_refinery
+				level = 10
+			}
+			remove_building = {
+				type = fuel_silo
+				level = 10
+			}
+			remove_building = {
+				type = rocket_site
+				level = 10
+			}
+			remove_building = {
+				type = nuclear_reactor
+				level = 10
+			}
+			remove_building = {
+				type = radar_station
+				level = 10
+			}
+			set_building_level = {
+				type = bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = coastal_bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = naval_base
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_state_category = wasteland
+		}
+		309 = {
+			remove_building = {
+				type = industrial_complex
+				level = 10
+			}
+			remove_building = {
+				type = arms_factory
+				level = 10
+			}
+			remove_building = {
+				type = air_base
+				level = 10
+			}
+			remove_building = {
+				type = dockyard
+				level = 10
+			}
+			remove_building = {
+				type = infrastructure
+				level = 10
+			}
+			remove_building = {
+				type = anti_air_building
+				level = 10
+			}
+			remove_building = {
+				type = synthetic_refinery
+				level = 10
+			}
+			remove_building = {
+				type = fuel_silo
+				level = 10
+			}
+			remove_building = {
+				type = rocket_site
+				level = 10
+			}
+			remove_building = {
+				type = nuclear_reactor
+				level = 10
+			}
+			remove_building = {
+				type = radar_station
+				level = 10
+			}
+			set_building_level = {
+				type = bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = coastal_bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = naval_base
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_state_category = wasteland
+		}
+		488 = {
+			remove_building = {
+				type = industrial_complex
+				level = 10
+			}
+			remove_building = {
+				type = arms_factory
+				level = 10
+			}
+			remove_building = {
+				type = air_base
+				level = 10
+			}
+			remove_building = {
+				type = dockyard
+				level = 10
+			}
+			remove_building = {
+				type = infrastructure
+				level = 10
+			}
+			remove_building = {
+				type = anti_air_building
+				level = 10
+			}
+			remove_building = {
+				type = synthetic_refinery
+				level = 10
+			}
+			remove_building = {
+				type = fuel_silo
+				level = 10
+			}
+			remove_building = {
+				type = rocket_site
+				level = 10
+			}
+			remove_building = {
+				type = nuclear_reactor
+				level = 10
+			}
+			remove_building = {
+				type = radar_station
+				level = 10
+			}
+			set_building_level = {
+				type = bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = coastal_bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = naval_base
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_state_category = wasteland
+		}
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#101 !! 地球寒冷化作戦 失敗
+news_event = {
+	id = news.101
+	title = news.101.t
+	desc = news.101.d
+	picture = GFX_news101
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = operation_freeze_earth_fail
+		news_event = { id = news.174 days = 15 }
+		ZEO = {
+			set_country_flag = earth_invasion_is_yes
+		}
+		launch_nuke = {
+			province = 12406
+			state = 285
+			controller = ZEO
+			use_nuke = no
+		}
+	}
+
+	option = {
+		name = news.101.a
+		custom_effect_tooltip = news.29.a_desc
+		goto_state = 285
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.101.b
+		custom_effect_tooltip = news.29.a_desc
+		trigger = {
+			tag = ZEO
+		}
+		goto_state = 285
+		EFS = {
+			destroy_ships = {
+				type = archetype_carrier
+				count = 2
+			}
+			destroy_ships = {
+				type = archetype_destroyer
+				count = 200
+			}
+			destroy_ships = {
+				type = archetype_cruiser
+				count = 5
+			}
+			destroy_ships = {
+				type = archetype_submarine_carrier
+				count = 5
+			}
+			destroy_ships = {
+				type = archetype_submarine
+				count = 20
+			}
+			add_ideas = {
+				after_colony
+			}
+			add_timed_idea = {
+				idea = after_colony2
+				days = 180
+			}
+			country_event = { id = efsf.43 days = 2 }
+		}
+		285 = {
+			remove_building = {
+				type = industrial_complex
+				level = 10
+			}
+			remove_building = {
+				type = arms_factory
+				level = 10
+			}
+			remove_building = {
+				type = air_base
+				level = 10
+			}
+			remove_building = {
+				type = dockyard
+				level = 10
+			}
+			remove_building = {
+				type = infrastructure
+				level = 10
+			}
+			remove_building = {
+				type = anti_air_building
+				level = 10
+			}
+			remove_building = {
+				type = synthetic_refinery
+				level = 10
+			}
+			remove_building = {
+				type = fuel_silo
+				level = 10
+			}
+			remove_building = {
+				type = rocket_site
+				level = 10
+			}
+			remove_building = {
+				type = nuclear_reactor
+				level = 10
+			}
+			remove_building = {
+				type = radar_station
+				level = 10
+			}
+			set_building_level = {
+				type = bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = coastal_bunker
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_building_level = {
+				type = naval_base
+				level = 0
+				instant_build = yes
+				province = {
+					all_provinces = yes
+				}
+			}
+			set_state_category = wasteland
+		}
+	}
+}
+#102 !! キャスバルの結婚（ララア）
+news_event = {
+	id = news.102
+	title = news.102.t
+	desc = news.102.d
+	picture = GFX_news102
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.102.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.102.b
+		if = {
+			limit = {
+				has_country_leader = {
+					character = ZEO_casval_rem_deikun
+					ruling_only = yes
+				}
+			}
+			add_country_leader_trait = leader_trait_power_of_love
+		}
+		every_unit_leader = {
+			limit = {
+				OR = {
+					has_id = 144
+					has_id = 140
+				}
+			}
+			add_unit_leader_trait = power_of_love
+		}
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#104 0! GP計画 デラーズ演説 GP02の存在を公表
+news_event = {
+	id = news.104
+	title = news.104.t
+	desc = news.104.d
+	picture = GFX_news104
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.104.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.104.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#105 !! ネオ・ジオン
+news_event = {
+	id = news.105
+	title = news.105.t
+	desc = news.105.d
+	picture = GFX_news105
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = zeon_is_independence
+	}
+
+	option = {
+		name = news.105.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.105.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			name = threat_name_news105
+			threat = 12
+		}
+		set_global_flag = zeon_is_independence
+		set_cosmetic_tag = ZEO_NEO
+	}
+}
+#106 !! 人の革新
+news_event = {
+	id = news.106
+	title = news.106.t
+	desc = news.106.d
+	picture = GFX_news106
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.106.a
+		add_to_variable = { newtype_accepted_status = 2 }
+		custom_effect_tooltip = newtype_accepted_status_add2
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.106.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#107 !! 水の星へ愛をこめて
+news_event = {
+	id = news.107
+	title = news.107.t
+	desc = {
+		text = news.107.d1
+		trigger = {
+			has_global_flag = laprace_is_out
+		}
+	}
+	desc = {
+		text = news.107.d2
+		trigger = {
+			NOT = {
+				has_global_flag = laprace_is_out
+			}
+		}
+	}
+	picture = GFX_news107
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.107.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.107.b
+		trigger = {
+			tag = ZEO
+		}
+		country_event = { id = zeon.71 days = 5 }
+	}
+}
+#108 !! 幻の演説
+news_event = {
+	id = news.108
+	title = news.108.t
+	desc = news.108.d
+	picture = GFX_news108
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.108.a
+		news_event = { id = news.173 }
+	}
+}
+#109 !! 続・優性人類生存説
+news_event = {
+	id = news.109
+	title = news.109.t
+	desc = news.109.d
+	picture = GFX_news109
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.109.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.109.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			name = threat_name_news109
+			threat = 5
+		}
+		modify_timed_idea = {
+			idea = zeon_dominance_of_human_survival_theory
+			days = 90
+		}
+		add_popularity = { ideology = spacesupremacy popularity = 0.03 }
+	}
+	option = {
+		name = news.109.c
+		add_timed_idea = {
+			idea = zeon_dominance_of_human_survival_theory2
+			days = 90
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#110 !! サイド6の革命を支援（判定）
+news_event = {
+	id = news.110
+	title = news.110.t
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+				SI6 = {
+					spacesupremacy > 49
+				}
+			}
+			random_list = {
+				90 = {
+					news_event = { id = news.125 days = 20 }
+				}
+				10 = {
+					news_event = { id = news.126 days = 20 }
+				}
+			}
+  		else_if = {
+  			limit = {
+  				SI6 = {
+  					spacesupremacy < 50
+  					spacesupremacy > 29
+  				}
+  			}
+  			random_list = {
+  				70 = {
+  					news_event = { id = news.125 days = 20 }
+  				}
+  				30 = {
+  					news_event = { id = news.126 days = 20 }
+  				}
+  			}
+      }
+  		else_if = {
+  			limit = {
+					SI6 = {
+						spacesupremacy < 30
+  				}
+          ZEO = {
+  					has_idea = kycilia_zabi
+  				}
+  			}
+  			random_list = {
+  				65 = {
+  					news_event = { id = news.125 days = 20 }
+  				}
+  				35 = {
+  					news_event = { id = news.126 days = 20 }
+  				}
+  			}
+		  }
+      else = {
+        random_list = {
+  				30 = {
+  					news_event = { id = news.125 days = 20 }
+  				}
+  				70 = {
+  					news_event = { id = news.126 days = 20 }
+  				}
+  			}
+      }
+    }
+	}
+
+	option = {
+		name = news.110.a
+	}
+}
+#111 !! 小惑星の保有を禁止
+news_event = {
+	id = news.111
+	title = news.111.t
+	desc = news.111.d
+	picture = GFX_news111
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.111.a
+		trigger = {
+			tag = EFS
+		}
+		add_named_threat = {
+			name = threat_name_news111
+			threat = 5
+		}
+	}
+	option = {
+		name = news.111.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.111.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#112 0! ギレン暗殺計画成功
+news_event = {
+	id = news.112
+	title = news.112.t
+	desc = news.112.d
+	picture = GFX_news112
+	major = yes
+
+	immediate = {
+		clr_global_flag = giren_assassination_plan_is_start
+		hidden_effect = {
+			ZEO = {
+				if = {
+					limit = {
+						has_character = ZEO_gihren_zabi
+					}
+					retire_character = ZEO_gihren_zabi
+				}
+				add_stability = -0.15
+				set_politics = {
+					ruling_party = zeonism
+					elections_allowed = yes
+				}
+				add_country_leader_role = {
+					character = ZEO_degwin_sodo_zabi
+					promote_leader = yes
+					country_leader = {
+						expire = "100.1.1"
+						ideology = contlism
+						traits = {
+							bloody_revolutionary
+						}
+					}
+				}
+			}
+		}
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = news.112.a
+		trigger = {
+			tag = EFS
+		}
+		custom_effect_tooltip = giren_is_dead
+	}
+	option = {
+		name = news.112.b
+		trigger = {
+			tag = ZEO
+		}
+		custom_effect_tooltip = giren_is_dead
+	}
+	option = {
+		name = news.112.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+		custom_effect_tooltip = giren_is_dead
+	}
+}
+#113 !! ハロが人気
+news_event = {
+	id = news.113
+	title = news.113.t
+	desc = news.113.d
+	picture = GFX_news113
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.113.a
+		add_stability = 0.02
+	}
+}
+#114 サイド評議会
+news_event = {
+	id = news.114
+	title = news.114.t
+	desc = news.114.d
+	picture = GFX_news114
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.114.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.114.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			threat = 5
+			name = threat_name_news114
+		}
+	}
+	option = {
+		name = news.114.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#115 サイド安全保障
+news_event = {
+	id = news.115
+	title = news.115.t
+	desc = news.115.d
+	picture = GFX_news115
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.115.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.115.b
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+}
+#116 !! 78年度観艦式
+news_event = {
+	id = news.116
+	title = news.116.t
+	desc = news.116.d
+	picture = GFX_news116
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.116.a
+		trigger = {
+			tag = EFS
+		}
+		add_named_threat = {
+			name = threat_name_news116
+			threat = 7
+		}
+	}
+	option = {
+		name = news.116.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.116.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#117 !! サイド7が正式に設立
+news_event = {
+	id = news.117
+	title = news.117.t
+	desc = news.117.d
+	picture = GFX_news117
+	major = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				has_global_flag = side7_is_established
+				country_exists = SI7
+			}
+		}
+		date > 78.5.1
+	}
+	mean_time_to_happen = {
+		days = 100
+	}
+	immediate = {
+		set_global_flag = side7_is_established
+	}
+
+	option = {
+		name = news.117.a
+		release_puppet = SI7
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.117.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.117.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+}
+#118 !! サイド7建設事業の促進
+news_event = {
+	id = news.118
+	title = news.118.t
+	desc = news.118.d
+	picture = GFX_news118
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.118.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.118.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.118.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#119 !! サイド7移民事業の促進
+news_event = {
+	id = news.119
+	title = news.119.t
+	desc = news.119.d
+	picture = GFX_news119
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.119.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.119.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.119.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#120 !! 宣戦布告（ギレン演説）
+news_event = {
+	id = news.120
+	title = news.120.t
+	desc = news.120.d
+	picture = GFX_news120
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = giren_war_speech_is_yes
+		ZEO = {
+			add_popularity = {
+				ideology = spacesupremacy
+				popularity = 0.2
+			}
+		}
+	}
+	option = {
+		name = news.120.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.120.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.120.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+}
+#121 !! ジオン独立宣言
+news_event = {
+	id = news.121
+	title = news.121.t
+	desc = news.121.d
+	picture = GFX_news121
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = zeon_is_independence
+	}
+
+	option = {
+		name = news.121.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.121.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			name = threat_name_news121
+			threat = 14
+		}
+	}
+	option = {
+		name = news.121.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#122 !! 参政権の要求
+news_event = {
+	id = news.122
+	title = news.122.t
+	desc = news.122.d
+	picture = GFX_news122
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.122.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.122.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.122.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#123 !! 宣戦は憎しみ深く
+news_event = {
+	id = news.123
+	title = news.123.t
+	desc = news.123.d
+	picture = GFX_news123
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.123.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.123.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.123.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#124 !! グラナダ進駐
+news_event = {
+	id = news.124
+	title = news.124.t
+	desc = news.124.d
+	picture = GFX_news124
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_autonomy = {
+				target = GRA
+				autonomy_state = autonomy_dominion
+			}
+		}
+	}
+	option = {
+		name = news.124.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.124.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.124.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+}
+#125 !! サイド6の革命を支援（成功）
+news_event = {
+	id = news.125
+	title = news.125.t
+	desc = news.125.d
+	picture = GFX_news125
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = zeon_side6_alliance
+			ZEO = {
+				add_named_threat = {
+					name = threat_name_news125
+					threat = 7
+				}
+			}
+			SI6 = {
+				set_politics = { ruling_party = spacesupremacy elections_allowed = no }
+			}
+		}
+	}
+
+	option = {
+		name = news.125.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.125.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.125.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#126 !! サイド6の革命を支援（失敗）
+news_event = {
+	id = news.126
+	title = news.126.t
+	desc = news.126.d
+	picture = GFX_news126
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = zeon_side6_casus_belli
+			ZEO = {
+				add_named_threat = {
+					name = threat_name_news126
+					threat = 5
+				}
+				create_wargoal = {
+					target = SI6
+					type = topple_government
+				}
+			}
+			SI6 = {
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = -0.12
+				}
+			}
+		}
+	}
+
+	option = {
+		name = news.126.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.126.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.126.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#127 !! グラナダ市長の事故死
+news_event = {
+	id = news.127
+	title = news.127.t
+	desc = news.127.d
+	picture = GFX_news127
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.127.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.127.b
+		trigger = {
+			tag = ZEO
+		}
+		add_named_threat = {
+			name = threat_name_news127
+			threat = 6
+		}
+	}
+	option = {
+		name = news.127.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+					tag = GRA
+				}
+			}
+		}
+	}
+	option = {
+		name = news.127.e
+		trigger = {
+			tag = GRA
+		}
+		if = {
+			limit = {
+				has_character = GRA_smokey_wilson
+			}
+			retire_character =GRA_smokey_wilson
+		}
+	}
+}
+#128 !! グラナダを保護
+news_event = {
+	id = news.128
+	title = news.128.t
+	desc = news.128.d
+	picture = GFX_news128
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.128.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.128.b
+		trigger = {
+			tag = ZEO
+		}
+		set_autonomy = {
+			target = GRA
+			autonomy_state = autonomy_colony
+		}
+		add_named_threat = {
+			name = threat_name_news128
+			threat = 12
+		}
+	}
+	option = {
+		name = news.128.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+					tag = GRA
+				}
+			}
+		}
+	}
+	option = {
+		name = news.128.e
+		trigger = {
+			tag = GRA
+		}
+	}
+}
+#129 !! サイド2攻撃をリーク　対応
+news_event = {
+	id = news.129
+	title = news.129.t
+	desc = news.129.d
+	picture = GFX_news129
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.129.a
+		trigger = {
+			tag = EFS
+		}
+		add_named_threat = {
+			name = threat_name_news129
+			threat = 4
+		}
+	}
+	option = {
+		name = news.129.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.129.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#130 !! サイド6へ侵攻（未使用）
+news_event = {
+	id = news.130
+	title = news.130.t
+	desc = news.130.d
+	picture = GFX_news130
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ZEO = {
+			transfer_state = 822
+			transfer_state = 823
+			transfer_state = 824
+		}
+	}
+
+	option = {
+		name = news.130.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.130.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.130.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#131 !! サイド6と同盟
+news_event = {
+	id = news.131
+	title = news.131.t
+	desc = news.131.d
+	picture = GFX_news131
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ZEO = {
+					NOT = {
+						has_non_aggression_pact_with = SI6
+					}
+				}
+			}
+			ZEO = {
+				diplomatic_relation = {
+					country = SI6
+					relation = non_aggression_pact
+				}
+			}
+			SI6 = {
+				add_to_faction = FactionZeon
+			}
+		}
+	}
+
+	option = {
+		name = news.131.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.131.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.131.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#132 !! サイド2進駐
+news_event = {
+	id = news.132
+	title = news.132.t
+	desc = news.132.d
+	picture = GFX_news132
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		ZEO = {
+			transfer_state = 813
+			transfer_state = 814
+			transfer_state = 815
+			add_named_threat = {
+				name = threat_name_news132
+				threat = 12
+			}
+		}
+	}
+	option = {
+		name = news.132.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.132.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.132.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#133 !! キャスバルの結婚（ハマーン・カーン）
+news_event = {
+	id = news.133
+	title = news.133.t
+	desc = news.133.d
+	picture = GFX_news133
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_country_flag = casval_haman_marriage
+		}
+	}
+
+	option = {
+		name = news.133.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.133.b
+		trigger = {
+			tag = ZEO
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = ZEO_casval_rem_deikun
+					ruling_only = yes
+				}
+			}
+			add_country_leader_trait = leader_trait_power_of_love
+		}
+		every_unit_leader = {
+			limit = {
+				has_id = 144
+			}
+			add_unit_leader_trait = power_of_love
+		}
+	}
+}
+#134 !! キャスバルの結婚（ナナイ・ミゲル）
+news_event = {
+	id = news.134
+	title = news.134.t
+	desc = news.134.d
+	picture = GFX_news134
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.134.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.134.b
+		trigger = {
+			tag = ZEO
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = ZEO_casval_rem_deikun
+					ruling_only = yes
+				}
+			}
+			add_country_leader_trait = leader_trait_power_of_love
+		}
+		every_unit_leader = {
+			limit = {
+				has_id = 144
+			}
+			add_unit_leader_trait = power_of_love
+		}
+	}
+}
+#135 !! ガルマとイセリナの結婚
+news_event = {
+	id = news.135
+	title = news.135.t
+	desc = news.135.d
+	picture = GFX_news135
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		EFS = {
+			set_country_flag = eschonbach_is_out_efsf
+		}
+	}
+
+	option = {
+		name = news.135.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.135.b
+		trigger = {
+			tag = ZEO
+		}
+		add_political_power = -150
+	}
+}
+#136 !! ガルマとイセリナの駆け落ち
+news_event = {
+	id = news.136
+	title = news.136.t
+	desc = news.136.d
+	picture = GFX_news136
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.136.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.136.b
+		trigger = {
+			tag = ZEO
+		}
+		add_political_power = -50
+		set_country_flag = eschonbach_is_out_zeon
+	}
+}
+#137 !! 経済制裁解除を発表
+news_event = {
+	id = news.137
+	title = news.137.t
+	desc = news.137.d
+	picture = GFX_news137
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.137.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.137.b
+		trigger = {
+			tag = EFS
+		}
+		add_opinion_modifier = {
+			target = ZEO
+			modifier = meeting_agree_economic_sanctions
+		}
+	}
+	option = {
+		name = news.137.c
+		trigger = {
+			tag = ZEO
+		}
+		if = {
+			limit = {
+				has_idea = economic_sanctions
+			}
+			remove_ideas = economic_sanctions
+		}
+		if = {
+			limit = {
+				has_idea = economic_sanctions2
+			}
+			remove_ideas = economic_sanctions2
+		}
+		add_opinion_modifier = {
+			target = EFS
+			modifier = meeting_agree_economic_sanctions
+		}
+		set_country_flag = deliver_roselcia
+		clr_country_flag = concessionto_efsf_start
+	}
+}
+#138 0! アナハイムがジオニックを買収
+news_event = {
+	id = news.138
+	title = news.138.t
+	desc = news.138.d
+	picture = GFX_news138
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = zeonic_is_not_yes
+		if = {
+			limit = {
+				ZEO = {
+					has_completed_focus = zeon_fullmoon
+				}
+			}
+			news_event = { id = news.73 days = 5 }
+		}
+	}
+
+	option = {
+		name = news.138.a
+	}
+}
+#139 0! ジオニックがアナハイムを買収
+news_event = {
+	id = news.139
+	title = news.139.t
+	desc = news.139.d
+	picture = GFX_news139
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		set_global_flag = ae_is_not_yes
+	}
+
+	option = {
+		name = news.139.a
+	}
+}
+#140 !! サイド7の建設進捗
+news_event = {
+	id = news.140
+	title = news.140.t
+	desc = news.140.d
+	picture = GFX_news140
+	major = yes
+
+	trigger = {
+		NOT = {
+			OR = {
+				has_global_flag = side7_is_established
+				has_global_flag = side7_is_construction
+				country_exists = SI7
+				EFS = {
+					has_completed_focus = efsf_promotion_of_side7_construction_project
+				}
+			}
+		}
+		date > 78.1.1
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+	immediate = {
+		set_global_flag = side7_is_construction
+	}
+
+	option = {
+		name = news.140.a
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.140.b
+		trigger = {
+			tag = EFS
+		}
+		825 = {
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
+				province = 13272
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		826 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+		827 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	option = {
+		name = news.140.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#141 0! ジオン討論会
+news_event = {
+	id = news.141
+	title = news.141.t
+	desc = news.141.d
+	picture = GFX_news141
+	major = yes
+
+	trigger = {
+		NOT = {
+			has_global_flag = zeon_discuss
+		}
+		ZEO = {
+			has_added_tension_amount > 19
+		}
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+	immediate = {
+		set_global_flag = zeon_discuss
+	}
+
+	option = {
+		name = news.141.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.141.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#142 0! ミノフスキー物理学の軍事利用に関する討論会
+news_event = {
+	id = news.142
+	title = news.142.t
+	desc = news.142.d
+	picture = GFX_news142
+	major = yes
+
+	trigger = {
+		any_country = {
+			has_war = no
+			has_tech = bounded_battle
+		}
+		NOT = {
+			has_global_flag = minovsky_discuss
+		}
+	}
+	mean_time_to_happen = { months = 12 }
+	immediate = {
+		set_global_flag = minovsky_discuss
+	}
+
+	option = {
+		name = news.142.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.142.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#143 0! メカニカルアームとモビルスーツ
+news_event = {
+	id = news.143
+	title = news.143.t
+	desc = news.143.d
+	picture = GFX_news143
+	major = yes
+
+	trigger = {
+		any_country = {
+			NOT = {
+				original_tag = ZEO
+			}
+			has_tech = ambac1
+		}
+		NOT = {
+			has_global_flag = ms_discuss
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+		set_global_flag = ms_discuss
+	}
+
+	option = {
+		name = news.143.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.143.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#144 0! モビルスーツの軍事利用の可能性
+news_event = {
+	id = news.144
+	title = news.144.t
+	desc = news.144.d
+	picture = GFX_news144
+	major = yes
+
+	trigger = {
+		any_country = {
+			NOT = {
+				original_tag = ZEO
+			}
+			has_tech = nuclear_reactor1
+		}
+		has_global_flag = ms_discuss
+		NOT = {
+			has_global_flag = ms_discuss2
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+		set_global_flag = ms_discuss2
+	}
+
+	option = {
+		name = news.144.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.144.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#145 0! 教育型コンピューター特集
+news_event = {
+	id = news.145
+	title = news.145.t
+	desc = news.145.d
+	picture = GFX_news145
+	major = yes
+
+	trigger = {
+		any_country = {
+			NOT = {
+				original_tag = ZEO
+			}
+			has_tech = amc1
+		}
+		NOT = {
+			has_global_flag = computing_discuss
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	immediate = {
+		set_global_flag = computing_discuss
+	}
+
+	option = {
+		name = news.145.a
+	}
+}
+#146 ザビ家独裁への反発
+news_event = {
+	id = news.146
+	title = news.146.t
+	desc = news.146.d
+	picture = GFX_news146
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = news.146.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.146.b
+		add_political_power = -10
+		add_war_support = -0.01
+		add_stability = -0.01
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#147 地球至上主義への反発
+news_event = {
+	id = news.147
+	title = news.147.t
+	desc = news.147.d
+	picture = GFX_news147
+	major = yes
+
+	trigger = {
+		EFS = {
+			earthsupremacy < 0.5
+			has_government = earthsupremacy
+		}
+	}
+	mean_time_to_happen = {
+		months = 10
+	}
+	immediate = {
+	}
+
+	option = {
+		name = news.147.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.147.b
+		trigger = {
+			tag = EFS
+		}
+		add_stability = -0.01
+		add_war_support = -0.01
+	}
+}
+#148 地球至上主義を支持
+news_event = {
+	id = news.148
+	title = news.148.t
+	desc = news.148.d
+	picture = GFX_news148
+	major = yes
+
+	trigger = {
+		EFS = {
+			earthsupremacy > 0.5
+			has_government = democratic
+		}
+	}
+	mean_time_to_happen = {
+		months = 36
+	}
+	immediate = {
+	}
+
+	option = {
+		name = news.148.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.148.b
+		trigger = {
+			tag = EFS
+		}
+		add_stability = -0.01
+		add_war_support = 0.01
+	}
+}
+#149 エレズムへの反発
+news_event = {
+	id = news.149
+	title = news.149.t
+	desc = news.149.d
+	picture = GFX_news149
+	major = yes
+
+	trigger = {
+		EFS = {
+			zeonism < 0.5
+			has_government = zeonism
+		}
+	}
+	mean_time_to_happen = {
+		months = 10
+	}
+	immediate = {
+	}
+
+	option = {
+		name = news.149.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.149.b
+		trigger = {
+			tag = EFS
+		}
+		add_stability = -0.01
+		add_war_support = -0.01
+	}
+}
+#150 エレズムを支持
+news_event = {
+	id = news.150
+	title = news.150.t
+	desc = news.150.d
+	picture = GFX_news150
+	major = yes
+
+	trigger = {
+		zeonism > 0.5
+		has_government = democratic
+	}
+	mean_time_to_happen = {
+		months = 10
+	}
+	immediate = {
+	}
+
+	option = {
+		name = news.150.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.150.b
+		trigger = {
+			tag = EFS
+		}
+		add_stability = -0.01
+		add_war_support = -0.01
+	}
+}
+#151 レビル免責
+news_event = {
+	id = news.151
+	title = news.151.t
+	desc = news.151.d
+	picture = GFX_news151
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.151.a
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+	option = {
+		name = news.151.b
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#152 人の革新議論
+news_event = {
+	id = news.152
+	title = news.152.t
+	desc = news.152.d
+	picture = GFX_news152
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.152.a
+		add_to_variable = { newtype_accepted_status = 1 }
+		custom_effect_tooltip = newtype_accepted_status_add
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.152.b
+		add_to_variable = { newtype_accepted_status = 1 }
+		custom_effect_tooltip = newtype_accepted_status_add
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#153 地球至上主義への反発（判定）
+news_event = {
+	id = news.153
+	title = news.153.t
+	hidden = yes
+	mean_time_to_happen = {
+		months = 10
+	}
+	trigger = {
+		EFS = {
+			earthsupremacy < 0.5
+			has_government = earthsupremacy
+		}
+	}
+	immediate = {
+		news_event = { id = news.147 days = 70 random = 15 }
+	}
+}
+#154 内乱イベント（連邦　絶対民主主義）
+news_event = {
+	id = news.154
+	title = news.154.t
+	desc = news.154.d
+	picture = GFX_news154
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		add_named_threat = {
+			name = threat_name_news154
+			threat = 25
+		}
+		EFS = {
+			start_civil_war = {
+				ideology = democratic
+				ruling_party = earthsupremacy
+				size = 0.4
+				capital = 687
+				states = { 309 310 488 687 495 497 498 499 280 505 500 496 357 358 359 360 361 362 363 364 365 366 367 464 465 466 468 332 682 683 467 393 394 395 396 368 369 370 261 113 119 134 135 120 121 133 136 130 131 132 122 123 125 126 127 128 129 338 501 503 504 522 517 518 519 520 521 674 285 523 667 668 669 721 738 673 333 334 335 336 672 635 636 284 723 724 288 289 286 721 670 640 671 325 674 327 623 624 625 626 627 628 290 460 461 459 513 458 460 661 665 448 449 662 663 451 452 446 447 456 457 453 634 737 741 747 711 712 462 276 331 100 101 337 273 514 699 786 556 557 272 515 775 767 551 552 782 }
+				keep_unit_leaders_trigger = {
+					has_trait = titans_party
+				}
+			}
+		}
+	}
+	option = {
+		name = news.154.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = EFS
+					tag = ZEO
+				}
+			}
+		}
+	}
+	option = {
+		name = news.154.b
+		trigger = {
+			tag = ZEO
+		}
+		if = {
+			limit = {
+				has_country_flag = zeon_accept_titans
+			}
+			ZEO = {
+				add_to_war = {
+					targeted_alliance = EFS
+					enemy = D01
+					hostility_reason = asked_to_join
+				}
+			}
+		}
+	}
+	option = {
+		name = news.154.c
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#155 内乱イベント（連邦　ティターンズ）
+news_event = {
+	id = news.155
+	title = news.155.t
+	desc = news.155.d
+	picture = GFX_news155
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			EFS = {
+				start_civil_war = {
+					ideology = earthsupremacy
+					ruling_party = democratic
+					size = 0.6
+					keep_unit_leaders_trigger = {
+						NOT = {
+							has_trait = titans_party
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = news.155.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = EFS
+					tag = ZEO
+				}
+			}
+		}
+	}
+	option = {
+		name = news.155.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.155.c
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#156 内乱イベント（連邦　エゥーゴ）
+news_event = {
+	id = news.156
+	title = news.156.t
+	desc = news.156.d
+	picture = GFX_news156
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		EFS = {
+			start_civil_war = {
+				ideology = zeonism
+				ruling_party = democratic
+				size = 0.4
+				#capital =
+				#states = {	}
+				keep_unit_leaders_trigger = {
+					NOT = { has_trait = aeug_party }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = news.156.a
+		trigger = { NOT = { tag = EFS } }
+	}
+
+	option = {
+		name = news.156.b
+		trigger = { tag = EFS }
+		if = {
+			limit = { has_global_flag = missing_amuro_is_yes }
+			D01 = {
+				generate_character = {
+					token_base = token_amuro_ray
+					name = EFS_amuro_ray
+					portraits={
+						army={
+							small="GFX_idea_amuro_ray"
+						}
+						army={
+							large = "gfx/leaders/EFS/Portrait_Efsf_amuro_ray.dds"
+						}
+					}
+					corps_commander = {
+						traits = {
+							pilot
+							newtype2
+							aeug_party
+						}
+						skill = 5
+						attack_skill = 5
+						defense_skill = 4
+						planning_skill = 4
+						logistics_skill = 4
+						visible = {
+							has_character_flag = enable_corps_commander
+						}
+					}
+				}
+				token_amuro_ray = {
+					set_character_flag = enable_corps_commander
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_global_flag = missing_amuro_is_yes
+				EFS = {
+					has_country_flag = tem_is_mia
+					NOT = {
+						has_country_flag = tem_is_dead
+					}
+				}
+			}
+			D01 = {
+				country_event = { id = efsf.127 days = 5 }
+			}
+		}
+		if = {
+			limit = {
+				has_character = token_quattro_vageena
+			}
+			retire_character = EFS_quattro_vageena
+			D01 = {
+				generate_character = {
+					token_base = token_quattro_vageena
+					name = EFS_quattro_vageena
+					portraits={
+						army={
+							small=GFX_idea_quattro_vageena
+							large = "gfx/leaders/EFS/Portrait_Efsf_Quattro_Vageena.dds"
+						}
+					}
+					corps_commander = {
+						traits = {
+							pilot
+							newtype1
+							aeug_party
+						}
+						skill = 6
+						attack_skill = 8
+						defense_skill = 5
+						planning_skill = 5
+						logistics_skill = 5
+						visible = {
+							has_character_flag = enable_corps_commander
+						}
+					}
+				}
+				token_quattro_vageena = {
+					set_character_flag = enable_corps_commander
+				}
+			}
+			news_event = { id = news.95 days = 3 }
+		}
+	}
+}
+#157 内乱イベント（ジオン　デラーズ）
+news_event = {
+	id = news.157
+	title = news.157.t
+	desc = news.157.d
+	picture = GFX_news157
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		ZEO = {
+			start_civil_war = {
+				ideology = zeonism
+				ruling_party = spacesupremacy
+				size = 0.3
+				#capital =
+				#states = {	}
+				#keep_unit_leaders = {	}
+			}
+		}
+	}
+	option = {
+		name = news.157.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.157.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#158 内乱イベント（ジオン　キシリア）
+news_event = {
+	id = news.158
+	title = news.158.t
+	desc = news.158.d
+	picture = GFX_news158
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		ZEO = {
+			start_civil_war = {
+				ideology = spacesupremacy
+				ruling_party = zeonism
+				size = 0.3
+				#capital =
+				#states = {	}
+				#keep_unit_leaders = {	}
+			}
+		}
+	}
+	option = {
+		name = news.158.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.158.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#159 !! グラナダ密約（連邦）
+news_event = {
+	id = news.159
+	title = news.159.t
+	desc = news.159.d
+	picture = GFX_news128
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			transfer_state = 936
+			transfer_state = 937
+			transfer_state = 938
+		}
+	}
+
+	option = {
+		name = news.159.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.159.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.159.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+				tag = GRA
+			}
+		}
+	}
+	option = {
+		name = news.159.e
+		trigger = {
+			tag = GRA
+		}
+	}
+}
+#160 ジオン崩壊へのシナリオ
+news_event = {
+	id = news.160
+	title = news.160.t
+	desc = news.160.d
+	picture = GFX_news160
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			add_timed_idea = {
+				idea = efsf_scenario_for_collapse_of_zeon
+				days = 180
+			}
+		}
+	}
+
+	option = {
+		name = news.160.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.160.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.160.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#161 ジオンへの宥和政策
+news_event = {
+	id = news.161
+	title = news.161.t
+	desc = news.161.d
+	picture = GFX_news161
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			add_timed_idea = {
+				idea = efsf_appeasement_policy_for_zeon
+				days = 180
+			}
+		}
+	}
+
+	option = {
+		name = news.161.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.161.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.161.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#162 デギンの死（会談阻止）
+news_event = {
+	id = news.162
+	title = news.162.t
+	desc = news.162.d
+	picture = GFX_news162
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_country_flag = degwin_is_dead
+		}
+	}
+
+	option = {
+		name = news.162.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.162.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.162.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#163 公王との約束によりジオンでクーデター未遂
+news_event = {
+	id = news.163
+	title = news.163.t
+	desc = news.163.d
+	picture = GFX_news163
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.163.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.163.b
+		trigger = {
+			tag = ZEO
+		}
+		set_country_flag = degwin_is_dead
+		add_stability = -0.1
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = zeonism
+			popularity = -0.1
+		}
+	}
+	option = {
+		name = news.163.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#164 段階的自治の承認によるジオンでのスペースノイド至上主義者によるクーデター
+news_event = {
+	id = news.164
+	title = news.164.t
+	desc = news.164.d
+	picture = GFX_news164
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		if = {
+			limit = {
+				ZEO = {
+					has_country_flag = sweep_away_zabi_3
+				}
+			}
+			ZEO = {
+				add_country_leader_role = {
+					character = ZEO_aiguille_delaz
+					promote_leader = yes
+					country_leader = {
+						expire = "100.1.1"
+						ideology = space_elitism
+						traits = {
+							fanatic_followers
+							elitism
+						}
+					}
+				}
+			}
+		}
+		ZEO = {
+			add_popularity = {
+				ideology = spacesupremacy
+				popularity = 0.15
+			}
+			set_politics = {
+				ruling_party = spacesupremacy
+				elections_allowed = no
+			}
+			create_wargoal = {
+				target = EFS
+				type = puppet_wargoal_focus
+			}
+			add_named_threat = {
+				name = news.164.t
+				threat = 15
+			}
+		}
+	}
+
+	option = {
+		name = news.164.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.164.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.164.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+}
+#165 ジオンとジオニック社の重役が接触
+news_event = {
+	id = news.165
+	title = news.165.t
+	desc = news.165.d
+	picture = GFX_news165
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = full_moon_war_is_prepare
+	}
+
+	option = {
+		name = news.165.a
+		trigger = {
+			tag = EFS
+		}
+		unlock_decision_tooltip = support_by_politics
+		unlock_decision_tooltip = support_by_mil_power
+		unlock_decision_tooltip = support_by_equipment
+	}
+	option = {
+		name = news.165.b
+		add_named_threat = {
+			name = threat_name_news165
+			threat = 3
+		}
+		trigger = {
+			tag = ZEO
+		}
+		unlock_decision_tooltip = support_by_politics
+		unlock_decision_tooltip = support_by_mil_power
+		unlock_decision_tooltip = support_by_equipment
+	}
+	option = {
+		name = news.165.c
+		trigger = {
+			OR = {
+				tag = GRA
+				tag = VBC
+			}
+		}
+	}
+	option = {
+		name = news.165.e
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+				tag = GRA
+				tag = VBC
+			}
+		}
+	}
+}
+#166 サイド1などで抗議デモが活発化
+news_event = {
+	id = news.166
+	title = news.166.t
+	desc = news.166.d
+	picture = GFX_news166
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = news.166.a
+		trigger = {
+			tag = EFS
+		}
+		country_event = { id = efsf.109 days = 30 }
+	}
+	option = {
+		name = news.166.b
+		trigger = {
+			NOT = {
+				tag = EFS
+			}
+		}
+	}
+}
+#167 ギレン暗殺計画失敗
+news_event = {
+	id = news.167
+	title = news.167.t
+	desc = news.167.d
+	picture = GFX_news167
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_global_flag = giren_assassination_plan_is_start
+		every_country = {
+			limit = {
+				NOT = {
+					original_tag = EFS
+				}
+			}
+			add_opinion_modifier = {
+				target = EFS
+				modifier = efsf_planed_assasinate
+			}
+		}
+	}
+
+	option = {
+		name = news.167.a
+		trigger = {
+			tag = EFS
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.1
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = news.167.b
+		trigger = {
+			tag = ZEO
+		}
+		add_popularity = {
+			ideology = spacesupremacy
+			popularity = 0.1
+		}
+		add_political_power = 150
+		add_war_support = 0.1
+	}
+	option = {
+		name = news.167.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#168 レジームチェンジ成功
+news_event = {
+	id = news.168
+	title = news.168.t
+	desc = news.168.d
+	picture = GFX_news168
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_global_flag = registance_zeon_is_start
+	}
+
+	option = {
+		name = news.168.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.168.b
+		trigger = {
+			tag = ZEO
+		}
+		set_politics = {
+			ruling_party = zeonism
+			elections_allowed = yes
+		}
+		add_stability = -0.2
+		add_war_support = -0.2
+		if = {
+			limit = {
+				has_character = ZEO_gihren_zabi
+			}
+			retire_character = ZEO_gihren_zabi
+		}
+	}
+	option = {
+		name = news.168.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#169 レジームチェンジ失敗
+news_event = {
+	id = news.169
+	title = news.169.t
+	desc = news.169.d
+	picture = GFX_news169
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		clr_global_flag = registance_zeon_is_start
+	}
+
+	option = {
+		name = news.169.a
+		trigger = {
+			tag = EFS
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.05
+		}
+		add_political_power = -25
+	}
+	option = {
+		name = news.169.b
+		trigger = {
+			tag = ZEO
+		}
+		add_popularity = {
+			ideology = spacesupremacy
+			popularity = 0.05
+		}
+		add_political_power = -50
+		add_war_support = 0.05
+		add_stability = -0.15
+		every_country = {
+			limit = {
+				NOT = {
+					original_tag = EFS
+				}
+			}
+			add_opinion_modifier = {
+				target = EFS
+				modifier = efsf_planed_registance
+			}
+		}
+	}
+	option = {
+		name = news.169.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#170 ジオンで大粛清（レジームチェンジ）
+news_event = {
+	id = news.170
+	title = news.170.t
+	desc = news.170.d
+	picture = GFX_news170
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_global_flag = zeon_great_purge
+	}
+	option = {
+		name = news.170.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.170.b
+		trigger = {
+			tag = ZEO
+		}
+		if = {
+			limit = {
+				has_character = ZEO_kycilia_zabi
+			}
+			retire_character = ZEO_kycilia_zabi
+		}
+		if = {
+			limit = {
+				has_character = ZEO_mquve
+			}
+			retire_character = ZEO_mquve
+		}
+		if = {
+			limit = {
+				has_character = ZEO_dozle_zabi
+			}
+			retire_character = ZEO_dozle_zabi
+		}
+		if = {
+			limit = {
+				has_character = ZEO_yuri_kellerne
+			}
+			retire_character = ZEO_yuri_kellerne
+		}
+		if = {
+			limit = {
+				has_character = ZEO_neuen_bitter
+			}
+			retire_character = ZEO_neuen_bitter
+		}
+		if = {
+			limit = {
+				has_character = ZEO_ramba_ral
+			}
+			retire_character = ZEO_ramba_ral
+		}
+		if = {
+			limit = {
+				has_character = ZEO_romeo_garcia
+			}
+			retire_character = ZEO_romeo_garcia
+		}
+		if = {
+			limit = {
+				has_character = ZEO_twanning
+			}
+			retire_character = ZEO_twanning
+		}
+		if = {
+			limit = {
+				has_character = ZEO_rugens
+			}
+			retire_character = ZEO_rugens
+		}
+		if = {
+			limit = {
+				has_character = ZEO_yuri_hasler
+			}
+			retire_character = ZEO_yuri_hasler
+		}
+		add_popularity = {
+			ideology = spacesupremacy
+			popularity = -0.1
+		}
+		add_stability = -0.15
+		if = {
+			limit = {
+				NOT = {
+					has_country_leader = {
+						character = ZEO_casval_rem_deikun
+						ruling_only = yes
+					}
+				}
+			}
+			country_event = { id = zeon.66 days = 3 random = 48 }
+		}
+	}
+	option = {
+		name = news.170.c
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+}
+#171 モビルスーツの真価
+news_event = {
+	id = news.171
+	title = news.171.t
+	desc = news.171.d
+	picture = GFX_news171
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = news.171.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.171.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.171.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+}
+#172 ! 地球寒冷化作戦 ルナツー移動開始
+news_event = {
+	id = news.172
+	title = news.172.t
+	desc = news.172.d
+	picture = GFX_news172
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.172.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.172.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.172.c
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#173 !! 幻の演説（108の続き）
+news_event = {
+	id = news.173
+	title = news.173.t
+	desc = news.173.d
+	picture = GFX_news108
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = {
+					original_tag = EFS
+				}
+			}
+			add_opinion_modifier = {
+				target = EFS
+				modifier = phantom_speech_EFS
+			}
+			add_to_variable = { newtype_accepted_status = 2 }
+			custom_effect_tooltip = newtype_accepted_status_add2
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.173.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.173.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.173.c
+		trigger = {
+			tag = EFS
+		}
+	}
+}
+#174 奇跡の子どもたち
+news_event = {
+	id = news.174
+	title = news.174.t
+	desc = {
+		text = news.174.d1
+		trigger = {
+			has_global_flag = operation_british_fail
+		}
+	}
+	desc = {
+		text = news.174.d2
+		trigger = {
+			has_global_flag = operation_freeze_earth_fail
+		}
+	}
+	picture = GFX_news174
+	major = yes
+
+	immediate = {
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = news.174.a
+		add_to_variable = { newtype_accepted_status = 1 }
+		custom_effect_tooltip = newtype_accepted_status_add
+	}
+}
+#175 ムーア市長の自殺
+news_event = {
+	id = news.175
+	title = news.175.t
+	desc = news.175.d
+	picture = GFX_news175
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					country_exists = SI4
+					SI4 = {
+						has_character = SI4_flemming
+					}
+				}
+				SI4 = {
+					retire_character = SI4_flemming
+					add_country_leader_role = {
+						character = "SI4_moores_zeonist_senator"
+						country_leader={
+							ideology=contlism
+							expire="100.1.1.1"
+						}
+						promote_leader = yes
+					}
+				}
+			}
+			set_global_flag = side4_capitulated
+		}
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = news.175.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.175.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#176 !! U.C.0079 3.1 地球侵攻作戦 アジア降下
+news_event = {
+	id = news.176
+	title = news.176.t
+	desc = news.176.d
+	picture = GFX_news046
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		ZEO = {
+			set_variable = { ROOT.drop_point_selected = 0 }
+			set_variable = { ROOT.amount_of_manpower_var = 0 }
+			set_variable = { ROOT.amount_of_ms_division_var = 0 }
+			set_variable = { ROOT.amount_of_ms_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_heathawk_var = 0 }
+			set_variable = { ROOT.amount_of_ms_weapon_machinegun_var = 0 }
+			set_variable = { ROOT.amount_of_ms_shield_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_division_var = 0 }
+			set_variable = { ROOT.amount_of_mbt_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_division_var = 0 }
+			set_variable = { ROOT.amount_of_infantry_var = 0 }
+			set_variable = { ROOT.amount_of_support_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_division_var = 0 }
+			set_variable = { ROOT.amount_of_mortorized_var = 0 }
+		}
+	}
+
+	option = {
+		name = news.176.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.176.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#177 !! フォン・ブラウン 中立宣言
+news_event = {
+	id = news.177
+	title = news.177.t
+	desc = news.177.d
+	picture = GFX_news177
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = news.177.a
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ZEO
+					tag = EFS
+				}
+			}
+		}
+	}
+	option = {
+		name = news.177.b
+		trigger = {
+			tag = ZEO
+		}
+		diplomatic_relation = {
+			country = VBC
+			relation = guarantee
+		}
+		diplomatic_relation = {
+			country = VBC
+			relation = non_aggression_pact
+		}
+	}
+	option = {
+		name = news.177.c
+		trigger = {
+			tag = EFS
+		}
+		diplomatic_relation = {
+			country = VBC
+			relation = non_aggression_pact
+		}
+		diplomatic_relation = {
+			country = VBC
+			relation = guarantee
+		}
+	}
+	option = {
+		name = news.177.e
+		trigger = {
+			tag = VBC
+		}
+	}
+}
+#178 駐留部隊の変更
+news_event = {
+	id = news.178
+	title = news.178.t
+	desc = {
+		text = news.178.d_1
+		trigger = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+	}
+	desc = {
+		text = news.178.d_2
+		trigger = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+	}
+	desc = {
+		text = news.178.d_3
+		trigger = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+	}
+	desc = {
+		text = news.178.d_4
+		trigger = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+	}
+	desc = {
+		text = news.178.d_5
+		trigger = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+	}
+	picture = GFX_news178
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+
+	option = {
+		name = news.178.a
+	}
+}
+#179 終戦協定
+news_event = {
+	id = news.179
+	title = news.179.t
+	desc = news.179.d
+	picture = GFX_news179
+	major = yes
+
+	immediate = {
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = news.179.a
+	}
+}
+#180 モビルスーツの真価（ヅダ）
+news_event = {
+	id = news.180
+	title = news.180.t
+	desc = news.180.d
+	picture = GFX_news180
+	major = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	option = {
+		name = news.180.a
+		trigger = {
+			tag = EFS
+		}
+	}
+	option = {
+		name = news.180.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+	option = {
+		name = news.180.c
+		trigger = {
+			NOT = {
+				tag = ZEO
+				tag = EFS
+			}
+		}
+	}
+}
+
+#占領イベント
+#1000 バイコヌール（連邦）
+news_event = {
+	id = news.1000
+	title = news.1000.t
+	desc = news.1000.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1000.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1000.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1001 バイコヌール（ジオン）
+news_event = {
+	id = news.1001
+	title = news.1001.t
+	desc = news.1001.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1001.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1001.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1002 モスクワ（連邦）
+news_event = {
+	id = news.1002
+	title = news.1002.t
+	desc = news.1002.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1002.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1002.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1003 モスクワ（ジオン）
+news_event = {
+	id = news.1003
+	title = news.1003.t
+	desc = news.1003.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1003.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1003.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1004 オデッサ（連邦）
+news_event = {
+	id = news.1004
+	title = news.1004.t
+	desc = news.1004.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1004.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1004.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1005 オデッサ（ジオン）
+news_event = {
+	id = news.1005
+	title = news.1005.t
+	desc = news.1005.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		# 潜水艦を奪取
+		ZEO = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = capture_ships
+					}
+				}
+				set_country_flag = capture_ships
+				country_event = { id = zeon.152 days = 1 }
+			}
+		}
+	}
+	option = {
+		name = news.1005.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1005.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1006 ライプツィヒ研究所（連邦）
+news_event = {
+	id = news.1006
+	title = news.1006.t
+	desc = news.1006.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1006.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1006.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1007 ライプツィヒ研究所（ジオン）
+news_event = {
+	id = news.1007
+	title = news.1007.t
+	desc = news.1007.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1007.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1007.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1008 ハノーバー基地（連邦）
+news_event = {
+	id = news.1008
+	title = news.1008.t
+	desc = news.1008.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1008.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1008.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1009 ハノーバー基地（ジオン）
+news_event = {
+	id = news.1009
+	title = news.1009.t
+	desc = news.1009.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1009.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1009.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1010 パリ（連邦）
+news_event = {
+	id = news.1010
+	title = news.1010.t
+	desc = news.1010.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1010.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1010.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1011 パリ（ジオン）
+news_event = {
+	id = news.1011
+	title = news.1011.t
+	desc = news.1011.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1011.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1011.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1012 ジェノバ基地（連邦）
+news_event = {
+	id = news.1012
+	title = news.1012.t
+	desc = news.1012.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1012.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1012.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1013 ジェノバ基地（ジオン）
+news_event = {
+	id = news.1013
+	title = news.1013.t
+	desc = news.1013.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1013.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1013.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1014 ローマ（連邦）
+news_event = {
+	id = news.1014
+	title = news.1014.t
+	desc = news.1014.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1014.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1014.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1015 ローマ（ジオン）
+news_event = {
+	id = news.1015
+	title = news.1015.t
+	desc = news.1015.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1015.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1015.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1016 カイロ基地（連邦）
+news_event = {
+	id = news.1016
+	title = news.1016.t
+	desc = news.1016.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1016.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1016.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1017 カイロ基地（ジオン）
+news_event = {
+	id = news.1017
+	title = news.1017.t
+	desc = news.1017.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1017.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1017.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1018 アレクサンドリア基地（連邦）
+news_event = {
+	id = news.1018
+	title = news.1018.t
+	desc = news.1018.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1018.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1018.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1019 アレクサンドリア基地（ジオン）
+news_event = {
+	id = news.1019
+	title = news.1019.t
+	desc = news.1019.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		# 潜水艦を奪取
+		ZEO = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = capture_ships
+					}
+				}
+				set_country_flag = capture_ships
+				country_event = { id = zeon.153 days = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = news.1019.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1019.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1020 アデン基地（連邦）
+news_event = {
+	id = news.1020
+	title = news.1020.t
+	desc = news.1020.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1020.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1020.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1021 アデン基地（ジオン）
+news_event = {
+	id = news.1021
+	title = news.1021.t
+	desc = news.1021.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1021.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1021.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1022 キリマンジャロ基地（連邦）
+news_event = {
+	id = news.1022
+	title = news.1022.t
+	desc = news.1022.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1022.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1022.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1023 キリマンジャロ基地（ジオン）
+news_event = {
+	id = news.1023
+	title = news.1023.t
+	desc = news.1023.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1023.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1023.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1024 キンバライド基地（連邦）
+news_event = {
+	id = news.1024
+	title = news.1024.t
+	desc = news.1024.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1024.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1024.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1025 キンバライド基地（ジオン）
+news_event = {
+	id = news.1025
+	title = news.1025.t
+	desc = news.1025.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1025.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1025.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1026 ダカール（連邦）
+news_event = {
+	id = news.1026
+	title = news.1026.t
+	desc = news.1026.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1026.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1026.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1027 ダカール（ジオン）
+news_event = {
+	id = news.1027
+	title = news.1027.t
+	desc = news.1027.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1027.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1027.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1028 トリポリ基地（連邦）
+news_event = {
+	id = news.1028
+	title = news.1028.t
+	desc = news.1028.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1028.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1028.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1029 トリポリ基地（ジオン）
+news_event = {
+	id = news.1029
+	title = news.1029.t
+	desc = news.1029.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1029.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1029.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1030 ベンガジ基地（連邦）
+news_event = {
+	id = news.1030
+	title = news.1030.t
+	desc = news.1030.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1030.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1030.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1031 ベンガジ基地（ジオン）
+news_event = {
+	id = news.1031
+	title = news.1031.t
+	desc = news.1031.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1031.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1031.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1032 アーティジブラルタル（連邦）
+news_event = {
+	id = news.1032
+	title = news.1032.t
+	desc = news.1032.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1032.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1032.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1033 アーティジブラルタル（ジオン）
+news_event = {
+	id = news.1033
+	title = news.1033.t
+	desc = news.1033.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1033.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1033.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1034 ロンドン（連邦）
+news_event = {
+	id = news.1034
+	title = news.1034.t
+	desc = news.1034.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1034.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1034.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1035 ロンドン（ジオン）
+news_event = {
+	id = news.1035
+	title = news.1035.t
+	desc = news.1035.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1035.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1035.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1036 ベルファスト基地（連邦）
+news_event = {
+	id = news.1036
+	title = news.1036.t
+	desc = news.1036.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1036.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1036.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1037 ベルファスト基地（ジオン）
+news_event = {
+	id = news.1037
+	title = news.1037.t
+	desc = news.1037.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1037.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1037.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1038 ニューホンコン（連邦）
+news_event = {
+	id = news.1038
+	title = news.1038.t
+	desc = news.1038.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1038.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1038.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1039 ニューホンコン（ジオン）
+news_event = {
+	id = news.1039
+	title = news.1039.t
+	desc = news.1039.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1039.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1039.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1040 北京（連邦）
+news_event = {
+	id = news.1040
+	title = news.1040.t
+	desc = news.1040.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1040.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1040.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1041 北京（ジオン）
+news_event = {
+	id = news.1041
+	title = news.1041.t
+	desc = news.1041.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1041.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1041.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1042 東京（連邦）
+news_event = {
+	id = news.1042
+	title = news.1042.t
+	desc = news.1042.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1042.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1042.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1043 東京（ジオン）
+news_event = {
+	id = news.1043
+	title = news.1043.t
+	desc = news.1043.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1043.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1043.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1044 キャリフォルニアベース（連邦）
+news_event = {
+	id = news.1044
+	title = news.1044.t
+	desc = news.1044.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1044.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1044.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1045 キャリフォルニアベース（ジオン）
+news_event = {
+	id = news.1045
+	title = news.1045.t
+	desc = news.1045.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		# 潜水艦を奪取
+		ZEO = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = capture_ships
+					}
+				}
+				set_country_flag = capture_ships
+				country_event = { id = zeon.87 days = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = news.1045.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1045.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1046 オーガスタ基地（連邦）
+news_event = {
+	id = news.1046
+	title = news.1046.t
+	desc = news.1046.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1046.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1046.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1047 オーガスタ基地（ジオン）
+news_event = {
+	id = news.1047
+	title = news.1047.t
+	desc = news.1047.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1047.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1047.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1048 ケープカナベラル基地（連邦）
+news_event = {
+	id = news.1048
+	title = news.1048.t
+	desc = news.1048.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1048.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1048.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1049 ケープカナベラル基地（ジオン）
+news_event = {
+	id = news.1049
+	title = news.1049.t
+	desc = news.1049.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1049.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1049.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1050 ニューヤーク（連邦）
+news_event = {
+	id = news.1050
+	title = news.1050.t
+	desc = news.1050.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1050.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1050.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1051 ニューヤーク（ジオン）
+news_event = {
+	id = news.1051
+	title = news.1051.t
+	desc = news.1051.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1051.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1051.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1052 パナマ運河（連邦）
+news_event = {
+	id = news.1052
+	title = news.1052.t
+	desc = news.1052.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1052.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1052.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1053 パナマ運河（ジオン）
+news_event = {
+	id = news.1053
+	title = news.1053.t
+	desc = news.1053.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1053.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1053.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1054 パナマ基地（連邦）
+news_event = {
+	id = news.1054
+	title = news.1054.t
+	desc = news.1054.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1054.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1054.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1055 パナマ基地（ジオン）
+news_event = {
+	id = news.1055
+	title = news.1055.t
+	desc = news.1055.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1055.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1055.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1056 ジャブロー（連邦）
+news_event = {
+	id = news.1056
+	title = news.1056.t
+	desc = news.1056.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1056.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1056.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1057 ジャブロー（ジオン）
+news_event = {
+	id = news.1057
+	title = news.1057.t
+	desc = news.1057.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1057.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1057.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1058 ストックホルム基地（連邦）
+news_event = {
+	id = news.1058
+	title = news.1058.t
+	desc = news.1058.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1058.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1058.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1059 ストックホルム基地（ジオン）
+news_event = {
+	id = news.1059
+	title = news.1059.t
+	desc = news.1059.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1059.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1059.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1060 デリー（連邦）
+news_event = {
+	id = news.1060
+	title = news.1060.t
+	desc = news.1060.d
+	picture = GFX_news1000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1060.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1060.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#1061 デリー（ジオン）
+news_event = {
+	id = news.1061
+	title = news.1061.t
+	desc = news.1061.d
+	picture = GFX_news1001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.1061.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.1061.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+
+# 宇宙の作戦
+# 連邦
+#2000 ヘリオン作戦　成功
+news_event = {
+	id = news.2000
+	title = news.2000.t
+	desc = news.2000.d
+	picture = GFX_news2000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2000.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2000.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2001 ヘリオン作戦　失敗
+news_event = {
+	id = news.2001
+	title = news.2001.t
+	desc = news.2001.d
+	picture = GFX_news2001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2001.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2001.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2002 カナヴェル海戦　成功
+news_event = {
+	id = news.2002
+	title = news.2002.t
+	desc = news.2002.d
+	picture = GFX_news2000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2000.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2000.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2003 カナヴェル海戦　失敗
+news_event = {
+	id = news.2003
+	title = news.2003.t
+	desc = news.2003.d
+	picture = GFX_news2001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2001.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2001.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2004 カクタス作戦　成功
+news_event = {
+	id = news.2004
+	title = news.2004.t
+	desc = news.2004.d
+	picture = GFX_news2000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2000.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2000.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2005 カクタス作戦　失敗
+news_event = {
+	id = news.2005
+	title = news.2005.t
+	desc = news.2005.d
+	picture = GFX_news2001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2001.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2001.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2006 グラナダ攻略作戦　成功
+news_event = {
+	id = news.2006
+	title = news.2006.t
+	desc = news.2006.d
+	picture = GFX_news2000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2000.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2000.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2007 グラナダ攻略作戦　失敗
+news_event = {
+	id = news.2007
+	title = news.2007.t
+	desc = news.2007.d
+	picture = GFX_news2001
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2001.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2001.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2008 チェンバロ作戦　成功
+news_event = {
+	id = news.2008
+	title = news.2008.t
+	desc = news.2008.d
+	picture = GFX_news2008
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			EFS = {
+				country_event = { id = achievement.20 }
+			}
+		}
+	}
+
+	option = {
+		name = news.2008.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2008.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2009 チェンバロ作戦　失敗
+news_event = {
+	id = news.2009
+	title = news.2009.t
+	desc = news.2009.d
+	picture = GFX_news2009
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2009.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2009.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2010 星一号作戦　成功
+news_event = {
+	id = news.2010
+	title = news.2010.t
+	desc = news.2010.d
+	picture = GFX_news2010
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			EFS = {
+				country_event = { id = achievement.25 }
+			}
+		}
+	}
+
+	option = {
+		name = news.2010.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2010.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2011 星一号作戦　失敗
+news_event = {
+	id = news.2011
+	title = news.2011.t
+	desc = news.2011.d
+	picture = GFX_news2011
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2011.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2011.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#ジオン
+#2012 ルナツー攻略作戦　成功
+news_event = {
+	id = news.2012
+	title = news.2012.t
+	desc = news.2012.d
+	picture = GFX_news2012
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2012.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2012.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2013 ルナツー攻略作戦　失敗
+news_event = {
+	id = news.2013
+	title = news.2013.t
+	desc = news.2013.d
+	picture = GFX_news2013
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2013.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2013.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2014 アポロ作戦　成功
+news_event = {
+	id = news.2014
+	title = news.2014.t
+	desc = news.2014.d
+	picture = GFX_news2001
+	major = yes
+
+	is_triggered_only = yes
+	immediate = {
+	}
+
+	option = {
+		name = news.2001.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2001.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}
+#2015 アポロ作戦　失敗
+news_event = {
+	id = news.2015
+	title = news.2015.t
+	desc = news.2015.d
+	picture = GFX_news2000
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = news.2000.a
+		trigger = {
+			NOT = {
+				tag = ZEO
+			}
+		}
+	}
+	option = {
+		name = news.2000.b
+		trigger = {
+			tag = ZEO
+		}
+	}
+}

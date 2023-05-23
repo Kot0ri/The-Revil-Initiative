@@ -1,0 +1,26 @@
+objectTypes = {
+#############################################
+#####	SIDE_helmet Blue	#####
+	pdxmesh = {
+		name = "SIDE_helmet_blue_mesh"
+		file = "gfx/models/infantry/eff/helmet/EFF_helmet_1.mesh"
+		scale = 0.95
+		meshsettings = {
+	    texture_diffuse = "eff_helmet_ColonyBlue_AM.dds"
+			texture_normal = "eff_helmet_ColonyBlue_NM.dds"
+			texture_specular = "eff_helmet_ColonyBlue_SP.dds"
+		 }
+	}
+#############################################
+#####	SIDE_helmet Camo	#####
+	pdxmesh = {
+		name = "SIDE_helmet_camo_mesh"
+		file = "gfx/models/infantry/eff/helmet/EFF_helmet_1.mesh"
+		scale = 0.95
+		meshsettings = {
+			texture_diffuse = "eff_helmet_ColonyCamo_AM.dds"
+			texture_normal = "eff_helmet_ColonyCamo_NM.dds"
+			texture_specular = "eff_helmet_ColonyCamo_SP.dds"
+		}
+	}
+}

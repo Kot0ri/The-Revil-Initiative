@@ -1,0 +1,2056 @@
+ideas = {
+	country = {
+		#大艦巨砲主義
+		bigship_principle = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			}
+			research_bonus = {
+				assault_ship = -0.3
+				space_ship = 0.3
+			}
+			removal_cost = -1
+		}
+		#戦力整備計
+		bigship_principle2 = {
+			allowed ={
+				always = no
+			}
+		 	allowed_civil_war = {
+			 	always = yes
+		 	}
+			research_bonus = {
+				assault_ship = -0.3
+				space_ship = 0.5
+			}
+		 	removal_cost = -1
+	 	}
+		#SCV-X計画
+		bigship_principle3 = {
+			allowed ={
+				always = no
+			}
+		 	allowed_civil_war = {
+			 	always = yes
+		 	}
+			research_bonus = {
+				assault_ship = -0.15
+				space_ship = 0.5
+			}
+		 	removal_cost = -1
+	 	}
+		#ビンソン計画
+		bigship_principle4 = {
+			allowed ={
+				always = no
+			}
+		 	allowed_civil_war = {
+			 	always = yes
+		 	}
+			modifier = {
+			}
+			research_bonus = {
+				assault_ship = 0.15
+				space_ship = 0.65
+			}
+			equipment_bonus = {
+				archetype_assault_ship = {
+					build_cost_ic = -0.3
+				}
+				archetype_efsf_space_cruiser = {
+					build_cost_ic = -0.3
+				}
+				archetype_space_battleship = {
+					build_cost_ic = -0.3
+				}
+			}
+		 	removal_cost = -1
+	 	}
+		#ジャブローのモグラ
+		mole_of_jablo = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning = -0.5
+				planning_speed = -0.5
+			}
+			research_bonus = {
+				minovsky = -0.5
+				mobilesuit_electronics = -0.5
+			}
+			traits = {
+
+			}
+		}
+		#ミノフスキー軍事利用
+		mole_of_jablo2 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning = -0.5
+				planning_speed = -0.5
+			}
+			research_bonus = {
+				minovsky = -0.3
+				mobilesuit_electronics = -0.5
+			}
+			traits = {
+
+			}
+		}
+		#ジオン新兵器
+		mole_of_jablo3 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning = -0.5
+				planning_speed = -0.5
+			}
+			research_bonus = {
+				minovsky = -0.3
+				mobilesuit_electronics = -0.3
+			}
+			traits = {
+
+			}
+		}
+		#ジャブローのモグラ→RX計画
+		mole_of_jablo4 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning = -0.5
+				planning_speed = -0.5
+			}
+			research_bonus = {
+				minovsky = -0.3
+				mobilesuit_electronics = -0.3
+			}
+			traits = {
+
+			}
+		}
+		#ミノフスキー軍事利用→RX計画
+		mole_of_jablo5 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning = -0.5
+				planning_speed = -0.5
+			}
+			research_bonus = {
+				minovsky = -0.15
+				mobilesuit_electronics = -0.3
+			}
+			traits = {
+
+			}
+		}
+		#ジオン新兵器→RX計画
+		mole_of_jablo6 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				max_planning = -0.5
+				planning_speed = -0.5
+			}
+			research_bonus = {
+				minovsky = -0.15
+				mobilesuit_electronics = -0.15
+			}
+			traits = {
+
+			}
+		}
+		#産業の空洞化
+		hollowing_out_industry = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.3
+				local_resources_factor = -0.75
+				industrial_capacity_factory = -0.8
+				industrial_capacity_dockyard = -0.6
+				production_factory_max_efficiency_factor = -0.4
+			}
+			targeted_modifier = {
+				tag = ZEO
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI1
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI2
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI4
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI5
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI6
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = GRA
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = VBC
+				trade_cost_for_target_factor = 0.5
+			}
+			removal_cost = -1
+		}
+		#産業の空洞化→関税の緩和
+		hollowing_out_industry2 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.35
+				local_resources_factor = -0.75
+				industrial_capacity_factory = -0.85
+				industrial_capacity_dockyard = -0.65
+				production_factory_max_efficiency_factor = -0.45
+			}
+			targeted_modifier = {
+				tag = ZEO
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI1
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI2
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI4
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI5
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI6
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = GRA
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = VBC
+				trade_cost_for_target_factor = 0.5
+			}
+			removal_cost = -1
+		}
+		#関税の緩和→工場の再稼働
+		hollowing_out_industry3 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.4
+				industrial_capacity_factory = -0.75
+				industrial_capacity_dockyard = -0.55
+				production_factory_max_efficiency_factor = -0.35
+			}
+			targeted_modifier = {
+				tag = ZEO
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI1
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI2
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI4
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI5
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI6
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = GRA
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = VBC
+				trade_cost_for_target_factor = 0.5
+			}
+			removal_cost = -1
+		}
+		#関税の緩和→農業への注力
+		hollowing_out_industry4 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.3
+				local_resources_factor = -0.6
+				industrial_capacity_factory = -0.8
+				industrial_capacity_dockyard = -0.6
+				production_factory_max_efficiency_factor = -0.4
+			}
+			targeted_modifier = {
+				tag = ZEO
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI1
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI2
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI4
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI5
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI6
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = GRA
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = VBC
+				trade_cost_for_target_factor = 0.5
+			}
+			removal_cost = -1
+		}
+		#農業への注力→雇用の創出
+		hollowing_out_industry5 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.25
+				local_resources_factor = -0.6
+				conscription_factor = 0.1
+				industrial_capacity_factory = -0.75
+				industrial_capacity_dockyard = -0.55
+				production_factory_max_efficiency_factor = -0.35
+			}
+			targeted_modifier = {
+				tag = ZEO
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI1
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI2
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI4
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI5
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI6
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = GRA
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = VBC
+				trade_cost_for_target_factor = 0.5
+			}
+			removal_cost = -1
+		}
+		#工場の再稼働→マス・ドライバー
+		hollowing_out_industry6 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.20
+				local_resources_factor = -0.3
+				industrial_capacity_factory = -0.6
+				industrial_capacity_dockyard = -0.4
+				production_factory_max_efficiency_factor = -0.2
+			}
+			targeted_modifier = {
+				tag = ZEO
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI1
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI2
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI4
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI5
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI6
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = GRA
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = VBC
+				trade_cost_for_target_factor = 0.5
+			}
+			removal_cost = -1
+		}
+		#雇用の創出→マス・ドライバー
+		hollowing_out_industry7 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.20
+				local_resources_factor = -0.45
+				conscription_factor = 0.1
+				industrial_capacity_factory = -0.7
+				industrial_capacity_dockyard = -0.5
+				production_factory_max_efficiency_factor = -0.3
+			}
+			targeted_modifier = {
+				tag = ZEO
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI1
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI2
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI4
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI5
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI6
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = GRA
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = VBC
+				trade_cost_for_target_factor = 0.5
+			}
+			removal_cost = -1
+		}
+		#産業の空洞化→関税強化
+		hollowing_out_industry8 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+				local_resources_factor = -0.65
+				industrial_capacity_factory = -0.7
+				industrial_capacity_dockyard = -0.5
+				production_factory_max_efficiency_factor = -0.3
+			}
+			targeted_modifier = {
+				tag = ZEO
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI1
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI2
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI4
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI5
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = SI6
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = GRA
+				trade_cost_for_target_factor = 0.5
+			}
+			targeted_modifier = {
+				tag = VBC
+				trade_cost_for_target_factor = 0.5
+			}
+			removal_cost = -1
+		}
+		#軍の改革
+		army_reform = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				experience_gain_army = 0.2
+				experience_gain_navy = 0.2
+				experience_gain_air = 0.2
+			}
+		}
+		army_reform2 = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				military_leader_cost_factor = -0.1
+				army_leader_start_level = 1
+				experience_gain_army = 0.2
+				experience_gain_navy = 0.2
+				experience_gain_air = 0.2
+			}
+		}
+		army_reform3 = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.2
+				max_command_power = 25
+				mobilization_speed = 0.15
+				military_leader_cost_factor = -0.1
+				army_leader_start_level = 1
+				experience_gain_army = 0.2
+				experience_gain_navy = 0.2
+				experience_gain_air = 0.2
+			}
+		}
+		army_reform4 = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conversion_cost_civ_to_mil_factor = 0.2
+				max_command_power = -25
+				mobilization_speed = -0.15
+				military_leader_cost_factor = -0.1
+				army_leader_start_level = 1
+				experience_gain_army = 0.2
+				experience_gain_navy = 0.2
+				experience_gain_air = 0.2
+			}
+		}
+		#汚職の根絶
+		eradication_of_corruption = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				mobilesuit_manufacturer_cost_factor = 0.3
+				beam_manufacturer_cost_factor = 0.3
+				ammunition_manufacturer_cost_factor = 0.3
+				armament_manufacturer_cost_factor = 0.3
+				naval_manufacturer_cost_factor = 0.3
+				aircraft_manufacturer_cost_factor = 0.3
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		#V作戦
+		efsf_plan_v = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			removal_cost = -1
+			research_bonus = {
+				mobilesuit = 0.5
+				mobilesuit_weapon = 0.5
+			}
+			modifier = {
+				cat_mobilesuit_warfare_cost_factor = -0.5
+			}
+			equipment_bonus = {
+				archetype_rx75 = {
+					build_cost_ic = -0.5
+					instant = yes
+				}
+				archetype_rx77 = {
+					build_cost_ic = -0.5
+					instant = yes
+				}
+				archetype_rx78 = {
+					build_cost_ic = -0.5
+					instant = yes
+				}
+				archetype_rx79 = {
+					build_cost_ic = -0.5
+					instant = yes
+				}
+				archetype_rgm79g = {
+					build_cost_ic = -0.5
+					instant = yes
+				}
+				archetype_rgm79 = {
+					build_cost_ic = -0.5
+					instant = yes
+				}
+			}
+		}
+		#合同軍事練習
+		joint_military_exercises = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				land_doctrine_cost_factor = -0.15
+			}
+		}
+		#代表を議会へ
+		efsf_president_to_congress = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.5
+			}
+		}
+		efsf_president_to_congress_EFS = {
+			allowed = {
+				always = no
+				original_tag = EFS
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.5
+			}
+		}
+		#フェデレーションポスト（ザビ家独裁を批判）
+		federation_post = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				opinion_gain_monthly_factor = -0.1
+			}
+		}
+		#ザビ家の独裁を排除
+		efsf_support_anti_zabi_faction = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				zeonism_drift = 0.05
+			}
+		}
+		#インターナショナル国債管理公社
+		efsf_international_JGB_management_corporation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		#建艦競争
+		efsf_building_competition = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			research_bonus = {
+			}
+			equipment_bonus = {
+				archetype_efsf_space_cruiser = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+				archetype_space_battleship = {
+					instant = yes
+					build_cost_ic = -0.15
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				earthsupremacy_drift = 0.02
+			}
+		}
+		#ジオンへの宥和政策
+		efsf_appeasement_policy_for_zeon = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = 1
+			}
+		}
+		#ジオン崩壊へのシナリオ
+		efsf_scenario_for_collapse_of_zeon = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				autonomy_gain = -1
+			}
+		}
+		#ハイテク産業
+		high_tech_industry = {
+			allowed = {
+				always = no
+				original_tag = EFS
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_concern_cost_factor = -0.2
+				armament_manufacturer_cost_factor = -0.2
+			}
+		}
+		#白い悪魔
+		white_devil = {
+			allowed = {
+				always = no
+				original_tag = EFS
+			}
+			removal_cost = -1
+			equipment_bonus = {
+				archetype_rx78 = {
+					max_organisation = 0.5
+				}
+			}
+		}
+		#地球連邦総会
+		general_meeting = {
+			allowed = {
+				always = no
+				original_tag = EFS
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.2
+			}
+		}
+		#コロニー落とし
+		after_colony = {
+			allowed = {
+				always = no
+				original_tag = EFS
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.4
+        surrender_limit = -0.2
+			}
+		}
+		#コロニー落としの後遺症
+		after_colony2 = {
+			allowed = {
+				always = no
+				original_tag = EFS
+			}
+			removal_cost = -1
+			targeted_modifier = {
+				tag = ZEO
+				defense_bonus_against = -0.5
+			}
+			modifier = {
+				defensive_war_stability_factor = -0.3
+				war_support_factor = -0.5
+				army_org_Factor = -0.5
+				army_morale_factor = -0.5
+				industry_repair_factor = -0.5
+			}
+		}
+		#地球圏の保護者
+		save_earth = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.15
+				army_core_defence_factor = 0.05
+			}
+		}
+		#二人の天才
+		two_genius = {
+			allowed = {
+				always = no
+			}
+			available = {
+				has_idea = torenov_y_minovsky
+				has_idea = tem_ray
+			}
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.2
+			}
+		}
+		#貿易摩擦
+		trade_friction = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				zeonism_drift = 0.01
+			}
+			removal_cost = -1
+		}
+		trade_friction_EFS = {
+			allowed = {
+				always = no
+				original_tag = EFS
+			}
+			modifier = {
+				democratic_drift = 0.01
+				stability_factor = 0.05
+			}
+			removal_cost = -1
+		}
+		#関税撤廃
+		no_tax_trade = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				democratic_drift = 0.02
+			}
+			removal_cost = -1
+		}
+		no_tax_trade_EFS = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			modifier = {
+				zeonism_drift = 0.02
+				stability_factor = -0.1
+			}
+			removal_cost = -1
+		}
+		#駐留軍の撤兵拒否
+		refuse_reduce_army = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				war_support_factor = 0.1
+			}
+			removal_cost = -1
+		}
+		refuse_reduce_army_EFS = {
+			allowed = {
+				always = no
+				original_tag = EFS
+			}
+			modifier = {
+				war_support_factor = 0.1
+				earthsupremacy_drift = 0.02
+			}
+			removal_cost = -1
+		}
+		#駐留軍の撤兵受入
+		accept_reduce_army = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				war_support_factor = -0.1
+				zeonism_drift = 0.02
+			}
+			removal_cost = -1
+		}
+		accept_reduce_army_EFS = {
+			allowed = {
+				original_tag = EFS
+				always = no
+			}
+			modifier = {
+				war_support_factor = -0.1
+			}
+			removal_cost = -1
+		}
+		#パイロットを優先
+		prioritize_pilot_life_support = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				air_ace_generation_chance_factor = 0.2
+				experience_loss_factor = -0.2
+			}
+			removal_cost = -1
+		}
+		#データを優先
+		prioritize_battle_data = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				experience_gain_air_factor = 0.1
+				experience_gain_army_factor = 0.1
+			}
+			removal_cost = -1
+		}
+		#陸の王者
+		champion_of_land = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.05
+				army_armor_speed_factor = 0.05
+			}
+			removal_cost = -1
+		}
+		#MSとの連携
+		coop_with_ms = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_armor_attack_factor = 0.2
+				mechanized_defence_factor = 0.2
+				motorized_defence_factor = 0.2
+			}
+			removal_cost = -1
+		}
+		#アムロをプロパガンダに利用
+		amuro_propaganda = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.1
+				army_morale_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+		#ヘリオン作戦成功
+		op_helion_success = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#ヘリオン作戦失敗
+		op_helion_fail = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#カナヴェル海戦成功
+		op_canavel_success = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#カナヴェル海戦失敗
+		op_canavel_fail = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#カクタス作戦成功
+		op_cacutas_success = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#カクタス作戦失敗
+		op_cacutas_fail = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#グラナダ攻略作戦成功
+		op_granada_success = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#グラナダ攻略作戦失敗
+		op_granada_fail = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#チェンバロ作戦成功
+		op_chembalo_success = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#チェンバロ作戦失敗
+		op_chembalo_fail = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#星一号作戦成功
+		op_hoshi_ichigo_success = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#星一号作戦失敗
+		op_hoshi_ichigo_fail = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+			}
+		}
+	}
+	mobilesuit_manufacturer = {
+		designer = yes
+		anaheim_electronics = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				NOT = {
+					has_global_flag = ae_is_not_yes
+				}
+			}
+      research_bonus = {
+				anaheim_electronics_mobilesuit = 0.1
+        mobilesuit = 0.05
+			}
+			cost = 250
+			equipment_bonus = {
+				archetype_rx78 = {
+					build_cost_ic = -0.2
+				}
+				archetype_rx79 = {
+					build_cost_ic = -0.2
+				}
+				archetype_rx78_xx = {
+					build_cost_ic = -0.2
+				}
+				archetype_rx78_nt = {
+					build_cost_ic = -0.2
+				}
+				archetype_rx78_gp1 = {
+					build_cost_ic = -0.2
+				}
+				archetype_rx78_gp2 = {
+					build_cost_ic = -0.2
+				}
+				archetype_rx78_gp4 = {
+					build_cost_ic = -0.2
+				}
+			}
+			traits = {
+				anaheim_electronics_ms_trait
+			}
+			on_add = {
+				if = {
+					limit = {
+						has_idea = nina_purpleton
+					}
+					hidden_effect = {
+          	country_event = { id = achievement.38 }
+					}
+				}
+			}
+			ai_will_do = {
+        factor = 4
+      }
+		}
+		augusta_lab = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				365 = {
+					is_controlled_by = EFS
+				}
+			}
+      research_bonus = {
+				augusta_mobilesuit = 0.1
+        mobilesuit = 0.05
+			}
+			equipment_bonus = {
+				archetype_rx78_nt = {
+					armor_value = 0.1
+					breakthrough = 0.1
+					build_cost_ic = -0.1
+				}
+				archetype_rgm79_d = {
+					armor_value = 0.1
+					breakthrough = 0.1
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+			}
+			traits = {
+				augusta_lab_ms_trait
+			}
+			ai_will_do = {
+        factor = 1
+				modifier = {
+					factor = 2
+					is_historical_focus_on = no
+				}
+      }
+		}
+		jabulo_lab = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				687 = {
+					is_controlled_by = EFS
+				}
+			}
+      research_bonus = {
+				jabulo_mobilesuit = 0.1
+        mobilesuit = 0.05
+			}
+			equipment_bonus = {
+				archetype_rgm79 = {
+					armor_value = 0.1
+					breakthrough = 0.1
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+				archetype_rgm79_fp = {
+					armor_value = 0.1
+					breakthrough = 0.1
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+				archetype_rgc80 = {
+					armor_value = 0.1
+					breakthrough = 0.1
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+			}
+			traits = {
+				jabulo_lab_ms_trait
+			}
+			ai_will_do = {
+        factor = 1
+				modifier = {
+					factor = 2
+					is_historical_focus_on = yes
+				}
+      }
+		}
+	}
+	ammunition_manufacturer = {
+		designer = yes
+		holyfield_fw= {
+			allowed = {
+				original_tag = EFS
+			}
+      research_bonus = {
+				mobilesuit_weapon_holyfield_fw_machinegun = 0.1
+        mobilesuit_weapon_bullet = 0.05
+			}
+			equipment_bonus = {
+				archetype_ms_weapon_machinegun = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+					build_cost_ic = 0.1
+				}
+			}
+			traits = {
+				holyfield_fw_trait
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					NOT = {
+						has_tech = plan_rx_tech
+					}
+				}
+			}
+		}
+		yashima_hi= {
+			allowed = {
+				original_tag = EFS
+			}
+      research_bonus = {
+				mobilesuit_weapon_yashima_hi_machinegun = 0.1
+        mobilesuit_weapon_bullet = 0.05
+			}
+			equipment_bonus = {
+				archetype_ms_weapon_machinegun = {
+					build_cost_ic = -0.1
+				}
+			}
+			traits = {
+				yashima_hi_trait
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					NOT = {
+						has_tech = plan_rx_tech
+					}
+				}
+			}
+		}
+		norfolk = {
+			allowed = {
+				original_tag = EFS
+			}
+      research_bonus = {
+				mobilesuit_weapon_machinegun = 0.05
+        mobilesuit_weapon_bullet = 0.05
+			}
+			equipment_bonus = {
+				archetype_ms_weapon_machinegun = {
+					reliability = 0.05
+					build_cost_ic = -0.05
+				}
+			}
+			traits = {
+				norfolk_trait
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					NOT = {
+						has_tech = plan_rx_tech
+					}
+				}
+			}
+		}
+		brash_amu = {
+			allowed = {
+				original_tag = EFS
+			}
+      research_bonus = {
+				mobilesuit_weapon_brash_bazooka = 0.1
+        mobilesuit_weapon_bullet = 0.05
+			}
+			equipment_bonus = {
+				archetype_ms_weapon_bazooka = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+					reliability = 0.05
+					build_cost_ic = 0.1
+				}
+			}
+			traits = {
+				brash_amu_trait
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					NOT = {
+						has_tech = plan_rx_tech
+					}
+				}
+			}
+		}
+	}
+	beam_manufacturer = {
+		brash = {
+			allowed = {
+				original_tag = EFS
+			}
+      research_bonus = {
+				mobilesuit_weapon_brash_beam = 0.1
+        mobilesuit_weapon_beam = 0.05
+			}
+			equipment_bonus = {
+				archetype_ms_weapon_beamgun = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+					build_cost_ic = 0.1
+				}
+			}
+			traits = {
+				brash_trait
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					NOT = {
+						has_tech = plan_rx_tech
+					}
+				}
+			}
+		}
+		takim_hi_beam = {
+			allowed = {
+				original_tag = EFS
+			}
+      research_bonus = {
+				mobilesuit_weapon_beamsord = 0.1
+        mobilesuit_weapon_beam = 0.05
+			}
+			equipment_bonus = {
+				archetype_ms_weapon_beamsord = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+					build_cost_ic = 0.05
+				}
+			}
+			traits = {
+				takim_hi_beam_trait
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					NOT = {
+						has_tech = plan_rx_tech
+					}
+				}
+			}
+		}
+		bowa = {
+			allowed = {
+				original_tag = EFS
+			}
+      research_bonus = {
+				mobilesuit_weapon_bowa_beam = 0.1
+        mobilesuit_weapon_beam = 0.05
+			}
+			equipment_bonus = {
+				archetype_ms_weapon_beamsplay = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+					build_cost_ic = 0.05
+				}
+				archetype_ms_weapon_beamrifle = {
+					soft_attack = 0.1
+					hard_attack = 0.1
+					ap_attack = 0.1
+					build_cost_ic = 0.05
+				}
+			}
+			traits = {
+				bowa_trait
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					NOT = {
+						has_tech = plan_rx_tech
+					}
+				}
+			}
+		}
+	 	abine = {
+			allowed = {
+				original_tag = EFS
+			}
+      research_bonus = {
+				space_ship = 0.1
+        mobilesuit_weapon = 0.05
+			}
+			equipment_bonus = {
+				archetype_ms_weapon_beamgun = {
+					reliability = 0.05
+				}
+				archetype_ms_weapon_beamsplay = {
+					reliability = 0.05
+				}
+				archetype_ms_weapon_beamrifle = {
+					reliability = 0.05
+				}
+				archetype_ms_weapon_beamsord = {
+					reliability = 0.05
+				}
+			}
+			traits = {
+				abine_trait
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					NOT = {
+						has_tech = plan_rx_tech
+					}
+				}
+			}
+		}
+	}
+	armament_manufacturer = {
+		suze = {
+			allowed = {
+				original_tag = EFS
+			}
+			research_bonus = {
+				decryption_tech = 0.1
+        mobilesuit = 0.03
+        mobilesuit_weapon = 0.03
+			}
+			modifier = {
+			}
+			traits = {
+				suze_trait
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		samsony_cim = {
+			allowed = {
+				original_tag = EFS
+			}
+			research_bonus = {
+				ambac = 0.15
+        mobilesuit = 0.03
+        mobilesuit_weapon = 0.03
+			}
+			traits = {
+				samsony_cim_trait
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		mathum_sonic = {
+			allowed = {
+				original_tag = EFS
+			}
+			research_bonus = {
+				visible_light_communication = 0.15
+			}
+			traits = {
+				mathum_sonic_trait
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		migren = {
+			allowed = {
+				original_tag = EFS
+			}
+      research_bonus = {
+        mobilesuit = 0.03
+        mobilesuit_weapon = 0.03
+			}
+			equipment_bonus = {
+				archetype_rx75 = {
+					reliability = 0.2
+				}
+				archetype_rx75_2 = {
+					reliability = 0.2
+				}
+				archetype_rx77 = {
+					reliability = 0.2
+				}
+				archetype_rx77_2 = {
+					reliability = 0.2
+				}
+				archetype_rx78 = {
+					reliability = 0.2
+				}
+				archetype_rx78_xx = {
+					reliability = 0.2
+				}
+				archetype_rx78_nt = {
+					reliability = 0.2
+				}
+				archetype_rgm79g = {
+					reliability = 0.2
+				}
+				archetype_rx79 = {
+					reliability = 0.2
+				}
+				archetype_rgm79 = {
+					reliability = 0.2
+				}
+				archetype_rgm79_d = {
+					reliability = 0.2
+				}
+				archetype_rgc80 = {
+					reliability = 0.2
+				}
+				archetype_rgm79_fp = {
+					reliability = 0.2
+				}
+				archetype_rx78_gp1 = {
+					reliability = 0.2
+				}
+				archetype_rx78_gp2 = {
+					reliability = 0.2
+				}
+				archetype_rx78_gp4 = {
+					reliability = 0.2
+				}
+        archetype_rx121 = {
+          reliability = 0.2
+        }
+			}
+			traits = {
+				migren_trait
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	aircraft_manufacturer = {
+		designer = yes
+		hervic = {
+			allowed = {
+				original_tag = EFS
+			}
+			modifier = {
+			}
+			traits = { hervic_trait }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		vic_wellington = {
+			allowed = {
+				original_tag = EFS
+			}
+			equipment_bonus = {
+				archetype_assault_ship = {
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+				archetype_core_fighter = {
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+				archetype_fighter = {
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+				archetype_multirolle = {
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+			}
+			traits = { vic_wellington_trait }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		takim_hi = {
+			allowed = {
+				original_tag = EFS
+			}
+			equipment_bonus = {
+				archetype_attacker = {
+					air_agility = 0.1
+					reliability = 0.05
+				}
+				archetype_tactical_bomber = {
+					air_agility = 0.1
+					reliability = 0.05
+				}
+				archetype_naval_bomber = {
+					air_agility = 0.1
+					reliability = 0.05
+				}
+			}
+			traits = { takim_hi_trait }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+		tolro = {
+			allowed = {
+				original_tag = EFS
+			}
+			modifier = {
+			}
+			traits = { tolro_trait }
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	special_force_1 = {
+		wb_sf_1 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_1_tooltip has_country_flag = wb_sf_1_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_1_trait
+			}
+		}
+		wb_sf_2 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_2_tooltip has_country_flag = wb_sf_2_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_2_trait
+			}
+		}
+		wb_sf_3 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_3_tooltip has_country_flag = wb_sf_3_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_3_trait
+			}
+		}
+		wb_sf_4 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_4_tooltip has_country_flag = wb_sf_4_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_4_trait
+			}
+		}
+		wb_sf_5 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_5_tooltip has_country_flag = wb_sf_5_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_5_trait
+			}
+		}
+		wb_sf_6 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_6_tooltip has_country_flag = wb_sf_6_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_6_trait
+			}
+		}
+		wb_sf_7 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_7_tooltip has_country_flag = wb_sf_7_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_7_trait
+			}
+		}
+		wb_sf_8 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_8_tooltip has_country_flag = wb_sf_8_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_8_trait
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		wb_sf_9 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_9_tooltip has_country_flag = wb_sf_9_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_9_trait
+			}
+		}
+		wb_sf_10 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = wb_sf_10_tooltip has_country_flag = wb_sf_10_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				wb_sf_10_trait
+			}
+		}
+	}
+	special_force_2 = {
+		ms08_sf_1 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = ms08_sf_1_tooltip has_country_flag = ms08_sf_1_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				ms08_sf_1_trait
+			}
+		}
+		ms08_sf_2 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = ms08_sf_2_tooltip has_country_flag = ms08_sf_2_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				ms08_sf_2_trait
+			}
+		}
+		ms08_sf_3 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = ms08_sf_3_tooltip has_country_flag = ms08_sf_3_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				ms08_sf_3_trait
+			}
+		}
+		ms08_sf_4 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = ms08_sf_4_tooltip has_country_flag = ms08_sf_4_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				ms08_sf_4_trait
+			}
+		}
+		ms08_sf_5 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = ms08_sf_5_tooltip has_country_flag = ms08_sf_5_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				ms08_sf_5_trait
+			}
+		}
+		ms08_sf_6 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = ms08_sf_6_tooltip has_country_flag = ms08_sf_6_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				ms08_sf_6_trait
+			}
+		}
+	}
+	special_force_3 = {
+		albion_sf_1 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = albion_sf_1_tooltip has_country_flag = albion_sf_1_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				albion_sf_1_trait
+			}
+		}
+		albion_sf_2 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = albion_sf_2_tooltip has_country_flag = albion_sf_2_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				albion_sf_2_trait
+			}
+		}
+		albion_sf_3 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = albion_sf_3_tooltip has_country_flag = albion_sf_3_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				albion_sf_3_trait
+			}
+		}
+		albion_sf_4 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = albion_sf_4_tooltip has_country_flag = albion_sf_4_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				albion_sf_4_trait
+			}
+		}
+		albion_sf_5 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = albion_sf_5_tooltip has_country_flag = albion_sf_5_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				albion_sf_5_trait
+			}
+		}
+		albion_sf_6 = {
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				custom_trigger_tooltip = { tooltip = albion_sf_6_tooltip has_country_flag = albion_sf_6_enable }
+			}
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				albion_sf_6_trait
+			}
+		}
+	}
+}

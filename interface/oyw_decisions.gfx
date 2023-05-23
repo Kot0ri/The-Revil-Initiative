@@ -1,0 +1,46 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_category_generic_ace_pilots"
+		texturefile = "gfx/interface/decisions/decision_category_military_operation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_military_operation"
+		texturefile = "gfx/interface/decisions/decision_category_border_war.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_generic_military_build"
+		texturefile = "gfx/interface/decisions/decision_category_ger_military_buildup.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_generic_diplomacy"
+		texturefile = "gfx/interface/decisions/decision_category_generic_monarchism.dds"
+	}
+
+	### category pictures
+
+	spriteType = {
+		name = "GFX_decision_cat_picture_ace_pilots"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_ace_pilots.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_military_build"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_military_build.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_research_and_development"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_research_and_development.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_diplomacy"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_diplomacy.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_espionage"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_espionage.dds"
+	}
+  spriteType = {
+		name = "GFX_decision_cat_picture_full_moon_war"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_fullmoon.dds"
+	}
+
+}

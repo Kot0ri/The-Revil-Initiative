@@ -1,0 +1,110 @@
+ZEO_SC_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SC
+  for_countries = { ZEO }
+  type = ship
+  ship_types = { archetype_space_cruiser }
+  prefix = ""
+  fallback_name = "Cruiser %d"
+
+  unique = {
+    "Falmel" "Camel" "Tokmel" "Swamel" "Kuwamel" "Baromel" "Siegfried" "Valkyrie" "Nibelung" "Peer Gynt" "Schleswig" "Kempten" "Nordhausen" "Retvizan" "Kiel" "Zatopek" "Wimmel" "Umel" "Kelmel" "Kimmel" "Havoc" "Hokum" "Wormel" "Snail" "Hell-Hawk" "Brummel" "Brave" "Ahamel" "Meirmel" "Bifrost" "Gulltoppr" "Dromi" "Iwo Jima" "Konig" "Lorelei" "Medgar Evers" "Primus" "Remul" "Vamel" "Melmel" "Mailmer" "Tokmel" "Wismar" "Fuhlt" "Trenet" "Butai" "Endra" "Endra II" "Mindra" "Sandra" "Landra" "Indra" "Heusinger" "Caio Dulio" "Siegfried" "Emden" "Munchen" "Mainz" "Milan" "Nurnberg" "Konigsberg" "Jotunheim" "Jormungand" "Falco" "Seydlitz" "Giulio Cesare" "Caesar" "Okinawa" "Norvalk" "Garvalk" "Marvalk" "Korvalk" "Wilhemshaven" "Paulo Emilio" "Gwaram" "Kwaram" "Laram" "Mwaram" "Nwaram" "Owaram" "Takao" "Siliwangi" "Irian" "Kitakami" "Akizuki" "Fubuki" "Kitakaze" "Shimakaze" "Blyskawica" "Moskva" "Aegir" "Hindenburg" "Victoria" "Veneto" "Lenram" "Genram" "Benram" "Kenram" "Montecuccoli" "Visby" "Ostergotland" "Halland" "Agile" "Venator" "Kontos" "Kopis" "Hoplon" "Sarissa" "Pugio" "Scutarii" "Ishizuchi" "Fuso" "Nagato" "Izumo" "Amagi" "Atago" "Kagero" "Yugumo" "Yubari" "Amalfi" "Cristoforo Colombo" "Littorio" "Anatolikon" "Ioustinnianos" "Yorck" "Berlin" "Rostock" "Dresden" "Potsdam" "Frederich Der Grosse" "Grosse Kurfurst" "Melusi" "Kaga" "Hosho" "Taiho" "Ryujo" "Shokaku" "Falco II" "Emilio III" "Regina Elena I" "Dante Aleghieri" "Trento" "Piedmonte" "Sardinia" "Tripolitania" "Kronstadt" "Vesuvio" "Stromboli" "Ettore Fieramosca" "Nino Bixio" "Campania" "Dogali" "Basilicata" "Libia" "Calabria" "Luigi Cadorna" "Armando Diaz" "Giovanni dalle Bande Nere" "Eugenio di Savoia" "Giuseppe Garibaldi" "Vettor Pisani" "San Giorgio" "San Marco" "Gorizia" "Bolzano" "Heimdallr" "Hod" "Loki" "Njord" "Thor" "Tyr" "Vili" "Ve" "Vidar" "Muspelheim" "Alfheim" "Svartalheim" "Hel" "Kaguya" "Shinonome" "Fuji" "Yashima" "Shikisima" "Hatsuse" "Asahi" "Mikasa" "Tango" "Sagami" "Suwo" "Satsuma" "Kii" "Aki" "Yamashiro" "Ise" "Hyuga" "Mutsu" "Tosa" "Kaga" "Hiei" "Kirishima" "Haruna" "Erherzog Ferdinand Max" "Salamander" "Custoza" "Tegetthoff" "Habsburg" "Budapest" "Monarch" "Wien" "Radetzky" "Zrinyi" "Szent Istvan" "Admiral Nakhimov"
+  }
+}
+ZEO_SB_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SB
+  for_countries = { ZEO }
+  type = ship
+  ship_types = { archetype_space_heavy_battleship }
+  prefix = ""
+  fallback_name = "Battleship %d"
+
+  unique = {
+    "Gwazine" "Gwaran" "Gwalib" "Gwaden" "Gandowa" "Gidol" "Zwamel" "Gwamel" "Asarum" "Gwaban" "Gwadan" "Gwazan" "Gwashu" "Gwalay" "In Excess" "Gwanban" "Gwanzan" "Sadaran" "Sasadaan" "Rewloola" "Great Degwin" "Gwanram" "Gwadara" "Gwahlama" "Das Rheingold" "Die Walkure" "Gotterdammerung" "Lohengrin" "Waltraute" "Gutrune" "des Nibelungen" "Yamato" "Brandenburg" "Deustchland" "Kaiser Friederich" "Konig" "Magdeburg" "Nassau" "Scharnhorst" "Wittelsbach" "Victoria Luise" "Enrico Dandolo" "Meiji" "Vittorio Emanuele" "Imperator" "Izmail" "Sinope" "Vladivostok" "Kremlin" "Massachusets" "Kronprinz Gihren Zabi" "Kronprinz Dozle Zabi" "Kronprinz Garma Zabi" "Kronprinzessin Kycilia Zabi" "Svetlana" "Bogatyr" "Izumrud" "Admiral Kornilov" "Paimat Merkuria" "Andrei Pervozvanny" "Borodino" "Imperator Aleksandr II" "Peresvet" "Evstafi" "Knyaz Suvorov" "Orel" "Oryol" "Slava" "Pobeda" "Imperator Nikolai I" "Poltava" "Enrico Accoretti" "Mario Adami" "Guido Bacci" "Carlo Balsamo" "Normandia" "Pietro Barone"
+  }
+}
+ZEO_FVSC_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_FVSC
+  for_countries = { ZEO }
+  type = ship
+  ship_types = { archetype_space_fv_cruiser }
+  prefix = ""
+  fallback_name = "Fast Heavy Cruiser %d"
+
+  unique = {
+    "Gidoru" "Graf Zeppelin" "Chekhov" "Tikal" "Chivvay" "Von Moltke" "Von Der Tann" "Tannenberg" "Van Helsing" "Von Richtofen" "Parzival" "Hipper" "Von Roon" "Von Bismarck" "Zara" "Venezia" "Furutaka" "Aoba" "Mogami" "Odin" "Pommern" "Brumhilde" "Graf Spee" "Wesser" "Rheinubung" "Tivvay" "Kivvay" "Mivvay" "Midway" "Tsushima" "Jutland" "Suragao" "Kutuzov" "Smolensk" "Conte Di Cavour" "Francesco Carraciolo" "Da Vinci" "Andrea Doria" "Republique" "Alcis" "Balder" "Bragi" "Forseti" "Freyr" "Freya" "Frigga" "Sif" "Idun" "Midgard" "Asgard" "Vanaheim" "Niflheim" "Amaterasu Omikami" "Tenjin" "Ryujin" "Tsukuyomi" "Raijin" "Mushashi" "Shinano" "Von Throtha" "William Michaelis" "Paul Behncke" "Erich Raeder" "Schleswig-Holstein" "Hannover" "Schleisen" "Braunschweig" "Elsass" "Hessen" "Hamburg" "Deustchland" "Admiral Scheer" "Leipzig" "Mowe" "Falke" "Greif" "Kondor" "Albatros" "Seeadler" "Bayern" "Ruggiero di Lauria" "Re Umberto" "Ammiraglio di Saint Bon" "Emmanuele Filiberto" "Regina Margherita" "Benedetto Brin" "Rosolino Pilo" "Giuseppe Cesare Alba" "Pilade Bronzetti" "Giuseppe Missori" "Antonio Mosto" "Simone Schiaffino" "Francesco Nulio" "Audace" "Animoso" "Santa Elisabetta" "San Michele" "San Carlos" "Kaiser" "Prinz Eugen" "Don Juan d'Austria" "Osterreich" "Viribus Unitis" "Maria Theresia" "Sankt Georg" "Karl III der Grosse" "Franz Joseph" "Aspern-Esling" "Szigetvar" "Zenta" "Admiral Spaun" "Helgoland" "Novara" "Huszar" "Csikos" "Dinara" "Pandur" "Reka" "Scharfschutze" "Streiter" "Turul" "Ulan" "Uskoke" "Velebit" "Wildfang" "Warasdiner" "Tatra" "Balaton" "Csepel" "Lika" "Orjan" "Orjen" "Orjun" "Dukla" "Dikrimi" "Darumndo" "Darumdel" "Triglav" "Uzsok" "Fogas" "Stohr"
+  }
+}
+ZEO_SCa_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SCa
+  for_countries = { ZEO }
+  type = ship
+  ship_types = { archetype_space_carrier }
+  prefix = ""
+  fallback_name = "Carrier-%d"
+
+  unique = {
+    "Dolos" "Dolwa" "Midolo" "Papua" "Dried Fish" "Pazock" "Bismarck" "Dolos II" "Dolos III" "Dolwa" "Midolo" "Midolu" "Dolwe" "Gruise" "Kruise" "Mruise" "Ktempkin" "Badr" "Kornilov" "Gangut" "Pyotr Velikiy" "Pyotr Bagration" "Riga" "Petropavlovsk" "Schors" "Talinn" "Kuznetzov" "Von Hohenzollern" "Gihren the Great" "Kirov" "Molotov" "Kaiser Degwin" "Tirpitz" "Gneissenau" "Admiral Seniavin" "Sissoi Velikiy" "Tsesarevich" "General-Admiral Apraksin" "Georgii Pobedenosets" "Terror" "Reaper" "Lusyanka" "Admiral Delaz" "Wilhelm Carpelan" "Romeo Bernotti" "Giuseppe Bertoldi" "Luigi Bianchieri"
+  }
+}
+
+
+﻿ZEO_DD_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_DESTROYERS
+  for_countries = { ZEO }
+  type = ship
+  ship_types = { archetype_destroyer }
+  prefix = ""
+  fallback_name = "Z-%d"
+
+  unique = {
+    "Falmel" "Camel" "Tokmel" "Swamel" "Kuwamel" "Baromel" "Siegfried" "Valkyrie" "Nibelung" "Peer Gynt" "Schleswig" "Kempten" "Nordhausen" "Retvizan" "Kiel" "Zatopek" "Wimmel" "Umel" "Kelmel" "Kimmel" "Havoc" "Hokum" "Wormel" "Snail" "Hell-Hawk" "Brummel" "Brave" "Ahamel" "Meirmel" "Bifrost" "Gulltoppr" "Dromi" "Iwo Jima" "Konig" "Lorelei" "Medgar Evers" "Primus" "Remul" "Vamel" "Melmel" "Mailmer" "Tokmel" "Wismar" "Fuhlt" "Trenet" "Butai" "Endra" "Endra II" "Mindra" "Sandra" "Landra" "Indra"
+  }
+}
+
+ZEO_CA_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_CA
+  for_countries = { ZEO }
+  type = ship
+  ship_types = { archetype_cruiser }
+  prefix = ""
+  fallback_name = "SchKrz-%d"
+
+  unique = {
+    "Gwazine" "Gwaran" "Gwalib" "Gwaden" "Gandowa" "Gidol" "Zwamel" "Gwamel" "Asarum" "Gwaban" "Gwadan" "Gwazan" "Gwashu" "Gwalay" "In Excess" "Gwanban" "Gwanzan" "Sadaran" "Sasadaan" "Rewloola" "Great Degwin" "Gidoru" "Graf Zeppelin" "Chekhov" "Tikal" "Chivvay"
+  }
+}
+
+ZEO_CV_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_CARRIERS
+  for_countries = { ZEO }
+  type = ship
+  ship_types = { archetype_carrier }
+  prefix = ""
+  fallback_name = "FzgTG-%d"
+
+  unique = {
+    "Dolos" "Dolwa" "Midolo" "Papua" "Dried Fish" "Pazock"
+  }
+}
+
+ZEO_SS_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SUBMARINES
+  for_countries = { ZEO }
+  type = ship
+  ship_types = { archetype_submarine }
+  prefix = ""
+  fallback_name = "U-%d"
+}
+
+ZEO_SCV_HISTORICAL = {
+  name = NAME_THEME_HISTORICAL_SUBMARINES
+  for_countries = { ZEO }
+  type = ship
+  ship_types = { archetype_submarine_carrier }
+  prefix = ""
+  fallback_name = "M-%d"
+
+  unique = {
+    "Sea Serpent" "Green Siren" "Naga III" "Red Dolphin" "Zuai" "Bwo-Kuto"
+  }
+}

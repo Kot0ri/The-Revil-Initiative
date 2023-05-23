@@ -1,0 +1,22 @@
+units = {
+	fleet = {
+		name = "Space Fast Heavy Cruisers"
+		naval_base = 13284
+		task_force = {
+			name = ""
+			location = 13284
+			ship = {
+				name = ""
+				definition = zeon_space_fv_cruiser
+			}
+			ship = {
+				name = ""
+				definition = zeon_space_fv_cruiser
+			}
+			ship = {
+				name = ""
+				definition = zeon_space_fv_cruiser
+			}
+		}
+	}
+}

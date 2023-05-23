@@ -1,0 +1,705 @@
+ZEO_naval_mobilesuit = {
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		naval_mobilesuit
+	}
+
+	priority = {
+		factor = 50
+	}
+
+	naval_mobilesuit_ms06 = {
+
+		priority = {
+			factor = 2
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = archetype_ms06_m
+			modules = {
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = empty
+				fixed_ship_sonar_slot = empty
+				fixed_ship_engine_slot = sub_mobilesuit_engine
+				fixed_ship_armor_slot = ship_mobilesuit_armor
+				head_1_custom_slot = vulcan_weapon_mobilesuit
+				body_1_custom_slot = torpedo_weapon_mobilesuit
+				right_hand_1_custom_slot = hand_gun_weapon_mobilesuit
+				left_hand_1_custom_slot = empty
+			}
+		}
+
+		allowed_modules = {
+			sub_mobilesuit_engine
+			ship_mobilesuit_armor
+			ship_sonar
+			ship_radar
+			ship_fire_control_system
+			vulcan_weapon_mobilesuit
+			ship_mine_layer_sub
+			ship_mine_warfare
+			ship_sub_snorkel
+			ship_torpedo_sub
+			torpedo_weapon_mobilesuit
+			hand_gun_weapon_mobilesuit
+		}
+	}
+	naval_mobilesuit_msm03 = {
+
+		priority = {
+			factor = 10
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 1500.0
+
+			type = archetype_msm03
+			modules = {
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = empty
+				fixed_ship_sonar_slot = empty
+				fixed_ship_engine_slot = sub_mobilesuit_engine
+				fixed_ship_armor_slot = ship_mobilesuit_armor
+				body_1_custom_slot = mega_particle_weapon
+				body_2_custom_slot = empty
+				right_hand_1_custom_slot = hand_weapon_mobilesuit
+				left_hand_1_custom_slot = hand_weapon_mobilesuit
+			}
+		}
+
+		allowed_modules = {
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+			sub_mobilesuit_engine
+			hand_weapon_mobilesuit
+			mega_particle_weapon
+			ship_torpedo_sub
+			torpedo_weapon_mobilesuit
+			ship_mine_warfare
+			ship_mine_layer_sub
+			ship_sub_snorkel
+		}
+	}
+	naval_mobilesuit_msm04 = {
+
+		priority = {
+			factor = 5
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 2000.0
+
+			type = archetype_msm04
+			modules = {
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = ship_radar
+				fixed_ship_sonar_slot = ship_sonar
+				fixed_ship_engine_slot = sub_mobilesuit_engine
+				fixed_ship_armor_slot = ship_mobilesuit_armor
+				head_1_custom_slot = vulcan_weapon_mobilesuit
+				body_1_custom_slot = empty
+				right_hand_1_custom_slot = hand_weapon_mobilesuit
+				left_hand_1_custom_slot = torpedo_weapon_mobilesuit
+			}
+		}
+
+		allowed_modules = {
+			ship_torpedo
+			torpedo_weapon_mobilesuit
+			sub_mobilesuit_engine
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+
+		}
+	}
+	naval_mobilesuit_msm07 = {
+
+		priority = {
+			factor = 15
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 2200.0
+
+			type = archetype_msm07
+			modules = {
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = empty
+				fixed_ship_sonar_slot = empty
+				fixed_ship_engine_slot = sub_mobilesuit_engine
+				fixed_ship_armor_slot = ship_mobilesuit_armor
+				head_1_custom_slot = torpedo_weapon_mobilesuit
+				body_1_custom_slot = empty
+				right_hand_1_custom_slot = hand_weapon_mobilesuit
+				left_hand_1_custom_slot = hand_weapon_mobilesuit
+				right_hand_2_custom_slot = mega_particle_weapon
+				left_hand_2_custom_slot = mega_particle_weapon
+			}
+		}
+
+		allowed_modules = {
+			ship_torpedo_sub
+			torpedo_weapon_mobilesuit
+			sub_mobilesuit_engine
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+			ship_mine_layer_sub
+			ship_mine_warfare
+			ship_sub_snorkel
+			hand_weapon_mobilesuit
+			mega_particle_weapon
+		}
+	}
+	naval_mobilesuit_msm03_c = {
+
+		priority = {
+			factor = 20
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 3000.0
+
+			type = archetype_msm03_c
+			modules = {
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = empty
+				fixed_ship_sonar_slot = empty
+				fixed_ship_engine_slot = sub_mobilesuit_engine
+				fixed_ship_armor_slot = ship_mobilesuit_armor
+				head_1_custom_slot = empty
+				right_hand_1_custom_slot = hand_weapon_mobilesuit
+				left_hand_1_custom_slot = hand_weapon_mobilesuit
+				right_hand_2_custom_slot = mega_particle_weapon
+				left_hand_2_custom_slot = mega_particle_weapon
+			}
+		}
+
+		allowed_modules = {
+			ship_torpedo_sub
+			torpedo_weapon_mobilesuit
+			sub_mobilesuit_engine
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+			ship_mine_layer_sub
+			ship_mine_warfare
+			ship_sub_snorkel
+			hand_weapon_mobilesuit
+			mega_particle_weapon
+		}
+	}
+	naval_mobilesuit_msm07_e = {
+
+		priority = {
+			factor = 25
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 3500.0
+
+			type = archetype_msm07_e
+			modules = {
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = empty
+				fixed_ship_sonar_slot = empty
+				fixed_ship_engine_slot = sub_mobilesuit_engine
+				fixed_ship_armor_slot = ship_mobilesuit_armor
+				head_1_custom_slot = torpedo_weapon_mobilesuit
+				body_1_custom_slot = empty
+				right_hand_1_custom_slot = hand_weapon_mobilesuit
+				left_hand_1_custom_slot = hand_weapon_mobilesuit
+				right_hand_2_custom_slot = mega_particle_weapon
+				left_hand_2_custom_slot = mega_particle_weapon
+			}
+		}
+
+		allowed_modules = {
+			ship_torpedo_sub
+			torpedo_weapon_mobilesuit
+			sub_mobilesuit_engine
+			ship_fire_control_system
+			ship_radar
+			ship_sonar
+			ship_mine_layer_sub
+			ship_mine_warfare
+			ship_sub_snorkel
+			hand_weapon_mobilesuit
+			mega_particle_weapon
+		}
+	}
+}
+
+ZEO_naval_mobilearmor = {
+
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		naval_mobilearmor
+	}
+
+	priority = {
+		factor = 20
+	}
+	naval_mobilearmor_mam07 = {
+
+		priority = {
+			factor = 20
+		}
+		role_icon_index = 2
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = archetype_mam07
+			modules = {
+				fixed_ship_fire_control_system_slot = ship_fire_control_system
+				fixed_ship_radar_slot = empty
+				fixed_ship_sonar_slot = empty
+				fixed_ship_engine_slot = sub_mobilesuit_engine
+				fixed_ship_armor_slot = ship_mobilesuit_armor
+				head_1_custom_slot = high_mega_particle_weapon
+				body_1_custom_slot = torpedo_weapon_mobilesuit
+				body_2_custom_slot = ship_anti_air
+				body_3_custom_slot = empty
+				body_4_custom_slot = empty
+				right_hand_1_custom_slot = hand_weapon_mobilesuit
+				left_hand_1_custom_slot = hand_weapon_mobilesuit
+			}
+		}
+
+		allowed_modules = {
+			ship_anti_air
+			ship_torpedo
+			torpedo_weapon_mobilesuit
+			ship_fire_control_system
+			sub_mobilesuit_engine
+			ship_radar
+			ship_sonar
+			mega_particle_weapon
+			high_mega_particle_weapon
+			hand_weapon_mobilesuit
+			ship_mine_layer_sub
+			ship_mine_warfare
+		}
+	}
+}
+
+ZEO_naval_submarine = {
+	category = naval
+
+	blocked_for = {
+
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		naval_submarine
+	}
+
+	priority = {
+		factor = 50
+		modifier = {
+			factor = 10
+			has_war = yes
+		}
+	}
+
+	submarine_early = {
+
+		priority = {
+			factor = 10
+		}
+		role_icon_index = 6
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = submarine1_equipment
+			modules = {
+				fixed_ship_engine_slot = sub_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				rear_1_custom_slot = empty
+			}
+		}
+
+		allowed_modules = {
+			ship_torpedo_sub
+			sub_ship_engine
+			ship_mine_layer_sub
+			ship_sub_snorkel
+			ship_radar
+		}
+	}
+	submarine_basic = {
+
+		priority = {
+			factor = 20
+		}
+		role_icon_index = 6
+
+		target_variant = {
+			match_value = 2000.0
+
+			type = submarine2_equipment
+			modules = {
+				fixed_ship_engine_slot = sub_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_sub_2
+				rear_1_custom_slot = empty
+			}
+		}
+
+		allowed_modules = {
+			ship_torpedo_sub
+			sub_ship_engine
+			ship_mine_layer_sub
+			ship_sub_snorkel
+			ship_radar
+		}
+	}
+	submarine_improved = {
+
+		priority = {
+			factor = 20
+		}
+		role_icon_index = 6
+
+		target_variant = {
+			match_value = 3000.0
+
+			type = submarine3_equipment
+			modules = {
+				fixed_ship_engine_slot = sub_ship_engine
+				fixed_ship_torpedo_slot = ship_torpedo_sub
+				rear_1_custom_slot = ship_torpedo_sub
+			}
+		}
+
+		allowed_modules = {
+			ship_torpedo_sub
+			sub_ship_engine
+			ship_mine_layer_sub
+			ship_sub_snorkel
+			ship_radar
+		}
+	}
+}
+ZEO_naval_submarine_carrier = {
+	category = naval
+
+	blocked_for = {
+
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		naval_submarine
+	}
+
+	priority = {
+		factor = 50
+		modifier = {
+			factor = 10
+			has_war = yes
+		}
+	}
+
+	submarine_carrier_early = {
+
+		priority = {
+			factor = 10
+		}
+		role_icon_index = 6
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = archetype_submarine_carrier
+			modules = {
+				fixed_ship_engine_slot = sub_ship_engine_1
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				rear_1_custom_slot = empty
+			}
+		}
+
+		allowed_modules = {
+			ship_torpedo_sub
+			sub_ship_engine
+			ship_mine_layer_sub
+			ship_sub_snorkel
+			ship_radar
+		}
+	}
+}
+
+ZEO_naval_mine_sweeper = {
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		naval_mine_sweeper
+	}
+
+	priority = {
+		factor = 2
+		modifier = {
+			factor = 5
+			has_war = yes
+		}
+	}
+
+	mine_sweeper_light_early = { # base variant
+
+		priority = {
+			factor = 10
+			modifier = {
+				factor = 1
+			}
+		}
+		role_icon_index = 5
+		enable = { has_tech = ZEO_basic_naval_mines }
+		target_variant = {
+			match_value = 1000.0
+
+			type = archetype_destroyer
+			modules = {
+				rear_1_custom_slot = ship_mine_sweeper_1
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+			}
+		}
+		requirements = {
+			module = ship_mine_sweeper_1
+		}
+		allowed_modules = {
+			ship_anti_air
+			ship_mine_warfare
+			ship_light_battery
+			ship_depth_charge
+			ship_fire_control_system
+			light_ship_engine
+			ship_radar
+			ship_sonar
+		}
+	}
+	mine_sweeper_light_late = { #improved variant for late war
+
+		priority = {
+			factor = 100
+			modifier = {
+				factor = 1
+			}
+		}
+		role_icon_index = 5
+
+		enable = {
+			has_tech = ZEO_dp_secondary_battery
+		}
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = archetype_destroyer
+			modules = {
+				rear_1_custom_slot = ship_mine_sweeper_1
+				mid_1_custom_slot = ship_mine_sweeper_1
+				fixed_ship_battery_slot = {
+					any_of = { dp_light_battery ship_light_battery_1 }
+					upgrade > current
+				}
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_torpedo_slot = empty
+				fixed_ship_anti_air_slot = ship_anti_air
+			}
+		}
+
+		requirements = {
+			module = ship_mine_sweeper_1
+		}
+		allowed_modules = {
+			ship_mine_sweeper_1
+			ship_mine_warfare
+			ship_anti_air
+			ship_light_battery
+			ship_depth_charge
+			ship_fire_control_system
+			light_ship_engine
+			ship_radar
+			ship_sonar
+		}
+	}
+}
+
+ZEO_naval_mine_layer = {
+	category = naval
+
+	blocked_for = {
+	}
+
+	available_for = {
+		ZEO
+	}
+
+	roles = {
+		naval_mine_layer
+	}
+
+	priority = {
+		factor = 3
+		modifier = {
+			factor = 5
+			has_war = yes
+		}
+	}
+
+
+	mine_layer_light = {
+
+		priority = {
+			factor = 2
+			modifier = {
+				factor = 10
+				num_of_naval_factories < 20
+			}
+		}
+		role_icon_index = 4
+
+		target_variant = {
+			match_value = 1000.0
+
+			type = archetype_destroyer
+			modules = {
+				rear_1_custom_slot = ship_mine_layer_1
+				fixed_ship_engine_slot = light_ship_engine_1
+				fixed_ship_battery_slot = ship_light_battery_1
+				fixed_ship_torpedo_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_anti_air_slot < ship_anti_air_3
+			}
+		}
+
+		requirements = {
+			module = ship_mine_layer_1
+		}
+		allowed_modules = {
+			ship_mine_layer_1
+			ship_anti_air
+			ship_light_battery
+			ship_fire_control_system
+			light_ship_engine
+			ship_torpedo
+			ship_radar
+			ship_sonar
+			ship_depth_charge
+		}
+	}
+	submarine_mine_layer = {
+
+		priority = {
+			factor = 20
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+		role_icon_index = 4
+
+		target_variant = {
+			match_value = 2000.0
+
+			type = destroyer1_equipment
+			modules = {
+				fixed_ship_engine_slot = sub_ship_engine
+				fixed_ship_torpedo_slot = ship_torpedo_sub
+				rear_1_custom_slot = ship_mine_layer_sub
+			}
+		}
+
+		requirements = {
+			module = ship_mine_layer_sub
+		}
+		allowed_modules = {
+
+			ship_torpedo_sub
+			sub_ship_engine
+			ship_mine_layer_sub
+			ship_sub_snorkel
+			ship_radar
+
+		}
+	}
+	mine_layer_cruiser = {
+
+		priority = {
+			factor = 2
+			modifier = {
+				factor = 10
+				num_of_naval_factories > 19
+			}
+		}
+		role_icon_index = 4
+
+		target_variant = {
+			match_value = 3000.0
+
+			type = archetype_destroyer
+			modules = {
+				rear_1_custom_slot = ship_mine_layer_1
+				fixed_ship_engine_slot < cruiser_ship_engine_3
+				fixed_ship_battery_slot = ship_light_battery
+				fixed_ship_anti_air_slot = ship_anti_air
+			}
+		}
+
+		allowed_modules = {
+			ship_mine_layer_1
+			ship_anti_air
+			ship_light_battery
+			ship_fire_control_system
+			cruiser_ship_engine
+			ship_radar
+			ship_sonar
+		}
+	}
+}

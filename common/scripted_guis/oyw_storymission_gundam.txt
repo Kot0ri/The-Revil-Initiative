@@ -1,0 +1,22 @@
+scripted_gui = {
+  # ロジック（ガンダム）
+  oyw_storymission_mission_gundam = {
+    window_name = "storymission_mission_gundam_window"
+    context_type = player_context
+    parent_window_token = top_bar
+    visible = {
+      has_country_flag = storymission_mission_gundam_window_visible
+      has_country_flag = storymission_window_visible
+    }
+    triggers = {
+      
+    }
+    effects = {
+      storymission_close_button_click = {
+        clr_country_flag = storymission_window_visible
+        clr_country_flag = storymission_mission_gundam_window_visible
+        set_variable = { storymission_button_frame_var = 1 }
+      }
+    }
+  }
+}

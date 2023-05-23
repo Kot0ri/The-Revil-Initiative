@@ -1,0 +1,484 @@
+1yw_stationed_force_SI1_cap = {
+	SI1 = {
+		is_subject_of = EFS
+	}
+  # set_temp_variable = { force_in_state = EFS.num_armies_in_state }
+  # add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+  # add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+  if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+		set_temp_variable = { force_cap = 0 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+		set_temp_variable = { force_cap = 1 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+		set_temp_variable = { force_cap = 3 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+		set_temp_variable = { force_cap = 5 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+		always = no
+	}
+}
+1yw_stationed_force_SI2_cap = {
+	SI2 = {
+		is_subject_of = EFS
+	}
+  # set_temp_variable = { force_in_state = EFS.num_armies_in_state }
+  # add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+  # add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+  if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+		set_temp_variable = { force_cap = 0 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+		set_temp_variable = { force_cap = 1 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+		set_temp_variable = { force_cap = 3 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+		set_temp_variable = { force_cap = 5 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+		always = no
+	}
+}
+1yw_stationed_force_ZEO_cap = {
+	ZEO = {
+		is_subject_of = EFS
+	}
+	# set_temp_variable = { force_in_state = EFS.num_armies_in_state }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state }
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+		set_temp_variable = { force_cap = 0 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+		set_temp_variable = { force_cap = 1 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+		set_temp_variable = { force_cap = 3 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+		set_temp_variable = { force_cap = 5 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+		always = no
+	}
+}
+1yw_stationed_force_SI4_cap = {
+	SI4 = {
+		is_subject_of = EFS
+	}
+	# set_temp_variable = { force_in_state = EFS.num_armies_in_state@816 }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state@817 }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state@818 }
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+		set_temp_variable = { force_cap = 0 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+		set_temp_variable = { force_cap = 1 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+		set_temp_variable = { force_cap = 3 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+		set_temp_variable = { force_cap = 5 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+		always = no
+	}
+}
+1yw_stationed_force_SI5_cap = {
+	SI5 = {
+		is_subject_of = EFS
+	}
+	# set_temp_variable = { force_in_state = EFS.num_armies_in_state@819 }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state@820 }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state@821 }
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+		set_temp_variable = { force_cap = 0 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+		set_temp_variable = { force_cap = 1 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+		set_temp_variable = { force_cap = 3 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+		set_temp_variable = { force_cap = 5 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+		always = no
+	}
+}
+1yw_stationed_force_SI6_cap = {
+	SI6 = {
+		is_subject_of = EFS
+	}
+	# set_temp_variable = { force_in_state = EFS.num_armies_in_state@822 }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state@823 }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state@824 }
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+		set_temp_variable = { force_cap = 0 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+		set_temp_variable = { force_cap = 1 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+		set_temp_variable = { force_cap = 3 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+		set_temp_variable = { force_cap = 5 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+		always = no
+	}
+}
+1yw_stationed_force_SI7_cap = {
+	SI7 = {
+		is_subject_of = EFS
+	}
+	# set_temp_variable = { force_in_state = EFS.num_armies_in_state@825 }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state@826 }
+	# add_to_temp_variable = { force_in_state = EFS.num_armies_in_state@827 }
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+		set_temp_variable = { force_cap = 0 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+		set_temp_variable = { force_cap = 1 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+		set_temp_variable = { force_cap = 3 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+		set_temp_variable = { force_cap = 5 }
+		check_variable = { force_in_state > force_cap }
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+		always = no
+	}
+}
+1yw_total_ship_cap = {
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+		EFS = {
+			has_navy_size = {
+				size > 80
+			}
+		}
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+		EFS = {
+			has_navy_size = {
+				size > 100
+			}
+		}
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+		EFS = {
+			has_navy_size = {
+				size > 120
+			}
+		}
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+		EFS = {
+			has_navy_size = {
+				size > 140
+			}
+		}
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+		always = no
+	}
+}
+1yw_create_ship_cap = {
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_1
+			}
+		}
+		EFS = {
+			has_navy_size = {
+				size > 80
+			}
+		}
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_2
+			}
+		}
+		EFS = {
+			has_navy_size = {
+				size > 100
+			}
+		}
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_3
+			}
+		}
+		EFS = {
+			has_navy_size = {
+				size > 120
+			}
+		}
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_4
+			}
+		}
+		EFS = {
+			has_navy_size = {
+				size > 140
+			}
+		}
+	}
+	if = {
+		limit = {
+			EFS = {
+				has_idea = oversea_army_5
+			}
+		}
+		always = no
+	}
+}

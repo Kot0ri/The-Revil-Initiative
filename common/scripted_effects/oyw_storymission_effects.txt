@@ -1,0 +1,564 @@
+# ガンダム 最終試験
+oyw_storymission_mission_gundam_1_effect = {
+  set_global_flag = oyw_storymission_mission_gundam_1_done
+  country_event = { id = zeon.3 }
+}
+
+####################
+# ポケットの中の戦争 #
+####################
+# 01A サイクロプス隊
+oyw_storymission_mission_warinthepocket_01a_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_01a_done
+  set_variable = { global.storymission_mission_warinthepocket_01a_button_frame_var = 2 }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_01a_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+  ZEO = {
+    country_event = { id = warinthepocket.0001 }
+    add_command_power = 25
+    army_experience = 50
+    ZEO_mikhail_kaminsky = {
+      set_character_flag = enable_corps_commander
+    }
+    ZEO_gabriel_ramirez_garcia = {
+      set_character_flag = enable_corps_commander
+    }
+    ZEO_andy_strauss = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+}
+# 01B アレックス
+oyw_storymission_mission_warinthepocket_01b_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_01b_done
+  set_variable = { global.storymission_mission_warinthepocket_01b_button_frame_var = 2 }
+  EFS = {
+    army_experience = 25
+    navy_experience = 25
+    air_experience = 25
+    add_to_variable = {
+      newtype_accepted_status = 1
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_completed_focus = efsf_augusta_lab
+        }
+      }
+      complete_national_focus = efsf_augusta_lab
+    }
+    set_technology = {
+      plan_g4_tech = 1
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ambac4
+        }
+      }
+      add_tech_bonus = {
+        technology = ambac4
+        uses = 1
+        bonus = 0.5
+        ahead_reduction = 1
+      }
+    }
+  }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_01b_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 02 戦場まで何マイル
+oyw_storymission_mission_warinthepocket_02_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_02_done
+  set_variable = { global.storymission_mission_warinthepocket_02_button_frame_var = 2 }
+  set_variable = { global.storymission_mission_warinthepocket_02_bar_frame_var = 2 }
+  country_event = { id = warinthepocket.0040 random_days = 3 }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_02_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 03A アレックスの秘密
+oyw_storymission_mission_warinthepocket_03a_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_03a_done
+  set_variable = { global.storymission_mission_warinthepocket_03a_button_frame_var = 2 }
+  set_variable = { global.storymission_mission_warinthepocket_03_3_bar_frame_var = 2 }
+  if = {
+    limit = {
+      has_global_flag = oyw_storymission_mission_warinthepocket_09a_done
+    }
+    set_variable = { global.storymission_mission_warinthepocket_03_4_bar_frame_var = 2 }
+    else_if = {
+      limit = {
+        has_global_flag = oyw_storymission_mission_warinthepocket_05_done
+      }
+      set_variable = { global.storymission_mission_warinthepocket_06_bar_frame_var = 2 }
+      set_variable = { global.storymission_mission_warinthepocket_03_2_bar_frame_var = 2 }
+    }
+    else = {
+      set_variable = { global.storymission_mission_warinthepocket_03_bar_frame_var = 2 }
+      set_variable = { global.storymission_mission_warinthepocket_03_2_bar_frame_var = 2 }
+    }
+  }
+  ZEO = {
+    add_political_power = 250
+    add_command_power = 50
+    add_equipment_to_stockpile = {
+      type = rx78_nt_equipment
+      amount = 3
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = archetype_ms_weapon_beamgun
+      amount = 3
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = archetype_ms_shield
+      amount = 3
+      producer = EFS
+    }
+    add_equipment_to_stockpile = {
+      type = archetype_ms_weapon_beamsord
+      amount = 6
+      producer = EFS
+    }
+    set_technology = {
+      rx78_nt_tech = 1
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_ms_weapon_beamgun_01_tech
+        }
+      }
+      set_technology = {
+        ZEO_ms_weapon_beamgun_01_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_ms_weapon_beamsord_01_tech
+        }
+      }
+      set_technology = {
+        ZEO_ms_weapon_beamsord_01_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = mega_particle2
+        }
+      }
+      set_technology = {
+        mega_particle2 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ambac3
+        }
+      }
+      set_technology = {
+        ambac3 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ambac4
+        }
+      }
+      set_technology = {
+        ambac4 = 1
+      }
+    }
+  }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_03a_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 03B 茶色の瞳に映るもの
+oyw_storymission_mission_warinthepocket_03b_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_03b_done
+  set_variable = { global.storymission_mission_warinthepocket_03b_button_frame_var = 2 }
+  set_variable = { global.storymission_mission_warinthepocket_03_bar_frame_var = 3 }
+  every_country = {
+    set_country_flag = story_event_warinthepocket_02_window_visible
+  }
+  ZEO = {
+    set_country_flag = lubicon_is_yes
+  }
+  EFS = {
+    add_political_power = 50
+    add_command_power = 25
+    if = {
+      limit = {
+        NOT = {
+          has_tech = rx78_nt_tech
+        }
+      }
+      set_technology = {
+        rx78_nt_tech = 1
+      }
+    }
+    add_equipment_to_stockpile = {
+      type = rx78_nt_equipment
+      amount = 3
+      producer = EFS
+    }
+  }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_03b_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 04A バーニィ
+oyw_storymission_mission_warinthepocket_04a_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_04a_done
+  set_variable = { global.storymission_mission_warinthepocket_04a_button_frame_var = 2 }
+  if = {
+    limit = {
+      has_global_flag = oyw_storymission_mission_warinthepocket_04b_done
+    }
+    set_variable = { global.storymission_mission_warinthepocket_04_bar_frame_var = 4 }
+    else = {
+      set_variable = { global.storymission_mission_warinthepocket_04_bar_frame_var = 2 }
+    }
+  }
+  set_variable = { global.storymission_mission_warinthepocket_04a_bar_frame_var = 2 }
+  country_event = { id = zeon.1003 }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_04a_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 04B クリス
+oyw_storymission_mission_warinthepocket_04b_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_04b_done
+  set_variable = { global.storymission_mission_warinthepocket_04b_button_frame_var = 2 }
+  if = {
+    limit = {
+      has_global_flag = oyw_storymission_mission_warinthepocket_04a_done
+    }
+    set_variable = { global.storymission_mission_warinthepocket_04_bar_frame_var = 4 }
+    else = {
+      set_variable = { global.storymission_mission_warinthepocket_04_bar_frame_var = 3 }
+    }
+  }
+  country_event = { id = efsf.1001 }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_04b_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 05 河を渡って木立を抜けて
+oyw_storymission_mission_warinthepocket_05_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_05_done
+  set_variable = { global.storymission_mission_warinthepocket_05_button_frame_var = 2 }
+  set_variable = { global.storymission_mission_warinthepocket_05_bar_frame_var = 2 }
+  country_event = { id = warinthepocket.0012 random_days = 3 }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_05_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 06 嘘だと言ってよ、バーニィ
+oyw_storymission_mission_warinthepocket_06_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_06_done
+  set_variable = { global.storymission_mission_warinthepocket_06_button_frame_var = 2 }
+  set_variable = { global.storymission_mission_warinthepocket_06_bar_frame_var = 3 }
+  ZEO = {
+    country_event = { id = warinthepocket.0038 }
+    if = {
+      limit = {
+        has_character = ZEO_bernard_wiseman
+      }
+      ZEO_bernard_wiseman = {
+        clr_character_flag = enable_corps_commander
+      }
+    }
+  }
+  random_list = {
+    30 = {
+      EFS = {
+        country_event = { id = warinthepocket.0029 }
+        set_country_flag = chris_decision
+      }
+    }
+    70 = {
+    }
+  }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_06_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 07 フランチェスカ
+oyw_storymission_mission_warinthepocket_07_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_07_done
+  set_variable = { global.storymission_mission_warinthepocket_07_button_frame_var = 2 }
+  if = {
+    limit = {
+      has_global_flag = oyw_storymission_mission_warinthepocket_08a_done
+    }
+    set_variable = { global.storymission_mission_warinthepocket_07_bar_frame_var = 4 }
+    else = {
+      set_variable = { global.storymission_mission_warinthepocket_07_bar_frame_var = 2 }
+    }
+  }
+  country_event = { id = warinthepocket.0039 }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_07_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 08A キリングの暴走を阻止
+oyw_storymission_mission_warinthepocket_08a_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_08a_done
+  set_variable = { global.storymission_mission_warinthepocket_08a_button_frame_var = 2 }
+  if = {
+    limit = {
+      has_global_flag = oyw_storymission_mission_warinthepocket_07_done
+    }
+    set_variable = { global.storymission_mission_warinthepocket_07_bar_frame_var = 4 }
+    else = {
+      set_variable = { global.storymission_mission_warinthepocket_07_bar_frame_var = 3 }
+    }
+  }
+  country_event = { id = warinthepocket.0022 random_days = 3 }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_08a_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 08B 核攻撃を阻止
+oyw_storymission_mission_warinthepocket_08b_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_08b_done
+  set_variable = { global.storymission_mission_warinthepocket_08b_button_frame_var = 2 }
+  set_variable = { global.storymission_mission_warinthepocket_08_bar_frame_var = 2 }
+  country_event = { id = warinthepocket.0024 random_days = 3 }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_08b_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 09A クリスマス作戦
+oyw_storymission_mission_warinthepocket_09a_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_09a_done
+  set_variable = { global.storymission_mission_warinthepocket_09a_button_frame_var = 2 }
+  if = {
+    limit = {
+      has_global_flag = oyw_storymission_mission_warinthepocket_08b_done
+    }
+    set_variable = { global.storymission_mission_warinthepocket_08_bar_frame_var = 5 }
+    else = {
+      set_variable = { global.storymission_mission_warinthepocket_08_bar_frame_var = 3 }
+    }
+  }
+  country_event = { id = warinthepocket.0030 random_days = 3 }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_09a_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_09b_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 09B クリスマス作戦中止
+oyw_storymission_mission_warinthepocket_09b_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_09b_done
+  set_variable = { global.storymission_mission_warinthepocket_09b_button_frame_var = 2 }
+  ZEO = {
+    army_experience = 50
+  }
+  EFS = {
+    army_experience = 50
+    every_unit_leader = {
+      limit = {
+        has_id = 114 #クリス
+      }
+      add_skill_level = 2
+      add_timed_unit_leader_trait = {
+        trait = wounded
+        days = 30
+      }
+      add_unit_leader_trait = ranger
+    }
+  }
+  if = {
+    limit = {
+      has_country_flag = kiling_is_arrest
+    }
+    every_country = {
+      set_country_flag = story_event_warinthepocket_05a_window_visible
+    }
+    else = {
+      every_country = {
+        set_country_flag = story_event_warinthepocket_05b_window_visible
+      }
+    }
+  }
+  if = {
+    limit = {
+      has_global_flag = oyw_storymission_mission_warinthepocket_08b_done
+    }
+    set_variable = { global.storymission_mission_warinthepocket_08_bar_frame_var = 6 }
+    else = {
+      set_variable = { global.storymission_mission_warinthepocket_08_bar_frame_var = 4 }
+    }
+  }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_09a_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_09b_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 10A ポケットの中の戦争
+oyw_storymission_mission_warinthepocket_10a_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_10a_done
+  set_variable = { global.storymission_mission_warinthepocket_10a_button_frame_var = 2 }
+  set_variable = { global.storymission_mission_warinthepocket_10a_bar_frame_var = 2 }
+  ZEO = {
+    add_political_power = 250
+    add_command_power = 50
+  }
+  EFS = {
+    add_political_power = 250
+    add_command_power = 50
+  }
+  if = {
+    limit = {
+      has_global_flag = christmas_is_fail
+    }
+    every_country = {
+      set_country_flag = story_event_warinthepocket_06a_window_visible
+      play_song = "story_event_warinthepocket"
+    }
+    else = {
+      every_country = {
+        set_country_flag = story_event_warinthepocket_06b_window_visible
+        play_song = "story_event_warinthepocket"
+      }
+    }
+  }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_10a_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}
+# 10B もう一つの結末
+oyw_storymission_mission_warinthepocket_10b_effect = {
+  set_global_flag = oyw_storymission_mission_warinthepocket_10b_done
+  set_variable = { global.storymission_mission_warinthepocket_10b_button_frame_var = 2 }
+  set_variable = { global.storymission_mission_warinthepocket_10b_bar_frame_var = 2 }
+  ZEO = {
+    add_political_power = 250
+    add_command_power = 50
+    if = {
+      limit = {
+        has_character = ZEO_bernard_wiseman
+      }
+      ZEO_bernard_wiseman = {
+        set_character_flag = enable_corps_commander
+      }
+    }
+    every_unit_leader = {
+      limit = {
+        has_id = 44 # バーニィ
+      }
+      add_skill_level = 2
+      add_unit_leader_trait = ranger
+    }
+    country_event = { id = achievement.12 }
+  }
+  EFS = {
+    add_political_power = 250
+    add_command_power = 50
+  }
+  if = {
+    limit = {
+      has_country_flag = kiling_is_arrest
+    }
+    every_country = {
+      set_country_flag = story_event_warinthepocket_07a_window_visible
+      play_song = "story_event_warinthepocket"
+    }
+    else = {
+      every_country = {
+        set_country_flag = story_event_warinthepocket_07b_window_visible
+        play_song = "story_event_warinthepocket"
+      }
+    }
+  }
+  if = {
+    limit = {
+      check_variable = { storymission_mission_amount > 0 }
+      has_country_flag = oyw_storymission_mission_warinthepocket_10b_trigger_counted
+    }
+    add_to_variable = { storymission_mission_amount = -1 }
+  }
+}

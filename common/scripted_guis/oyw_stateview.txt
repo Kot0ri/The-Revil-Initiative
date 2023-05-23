@@ -1,0 +1,113 @@
+scripted_gui = {
+
+	oyw_colony_drop = {
+		context_type = selected_state_context
+		window_name = "oyw_colony_drop_container"
+		parent_window_token = selected_state_view
+
+		effects = {
+			oyw_colony_drop_click = {
+				remove_building = {
+					type = industrial_complex
+					level = 5
+				}
+				remove_building = {
+					type = arms_factory
+					level = 5
+				}
+				remove_building = {
+					type = infrastructure
+					level = 5
+				}
+				if = {
+					limit = {
+						THIS = {
+							is_core_of = SI1
+						}
+					}
+					set_variable = { global.op_british_side = 1 }
+				}
+				if = {
+					limit = {
+						THIS = {
+							is_core_of = SI2
+						}
+					}
+					set_variable = { global.op_british_side = 2 }
+				}
+				if = {
+					limit = {
+						THIS = {
+							is_core_of = SI4
+						}
+					}
+					set_variable = { global.op_british_side = 4 }
+				}
+				if = {
+					limit = {
+						THIS = {
+							is_core_of = SI5
+						}
+					}
+					set_variable = { global.op_british_side = 5 }
+				}
+				if = {
+					limit = {
+						THIS = {
+							is_core_of = SI6
+						}
+					}
+					set_variable = { global.op_british_side = 6 }
+				}
+	      EFS = {
+	        country_event = { id = efsf.9 hours = 15 }
+	      }
+	      ZEO = {
+	        country_event = { id = zeon.12 hours = 15 }
+					set_country_flag = operation_british_is_start
+	      }
+			}
+		}
+
+		triggers = {
+			oyw_colony_drop_visible = {
+				has_state_category = colony
+			}
+			oyw_colony_drop_click_enabled = {
+				ROOT = {
+					original_tag = ZEO
+					has_country_flag = operation_british_is_yes
+					NOT = {
+						has_country_flag = operation_british_is_start
+					}
+				}
+				has_state_category = colony
+				is_fully_controlled_by = ZEO
+				NOT = {
+					is_core_of = ZEO
+				}
+			}
+		}
+		ai_enabled = {
+			always = yes
+		}
+		ai_check = {
+			original_tag = ZEO
+			has_country_flag = operation_british_is_yes
+			NOT = {
+				has_country_flag = operation_british_is_start
+			}
+		}
+		ai_test_interval = 5
+		ai_max_weight_taken_per_test = 1
+
+		ai_weights = {
+			oyw_colony_drop_click = {
+				weight = 1
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+	}
+}

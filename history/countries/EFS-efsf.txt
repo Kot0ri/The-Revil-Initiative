@@ -1,0 +1,595 @@
+﻿capital = 687
+oob = "EFS_UC0075"
+set_research_slots = 4
+
+set_stability = 0.70
+set_war_support = 0.15
+
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = SI1
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = SI2
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = ZEO
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = SI4
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = SI5
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = SI6
+		autonomous_state = autonomy_colony
+	}
+}
+
+# Starting tech
+set_technology = {
+	basic_train = 1
+	acclimatization_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	paratroopers = 1
+	marines = 1
+	tech_mountaineers = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	motorised_infantry = 1
+	EFS_mbt1_tech = 1
+	EFS_ac1_tech = 1
+	vulcan_ac_tech = 1
+	misile_ac1_tech = 1
+	EFS_attack_helicopter_tech = 1
+	EFS_scout_plane1_tech = 1
+	EFS_fighter1_tech = 1
+	EFS_attacker_tech = 1
+	EFS_tactical_bomber1_tech = 1
+	EFS_naval_bomber_tech = 1
+	EFS_transporter1_tech = 1
+	EFS_destroyer1_tech = 1
+	EFS_smoke_generator = 1
+	EFS_cruiser1_tech = 1
+	EFS_improved_airplane_launcher = 1
+	EFS_carrier1_tech = 1
+	EFS_submarine1_tech = 1
+	EFS_submarine_carrier1_tech = 1
+	EFS_transport = 1
+	EFS_basic_naval_mines = 1
+	EFS_submarine_mine_laying = 1
+	EFS_basic_battery = 1
+	EFS_basic_secondary_battery = 1
+	EFS_damage_control_1 = 1
+	EFS_basic_torpedo = 1
+	EFS_basic_light_battery = 1
+	EFS_basic_light_shell = 1
+	EFS_basic_medium_battery = 1
+	EFS_basic_medium_shell = 1
+	EFS_basic_heavy_battery = 1
+	EFS_basic_heavy_shell = 1
+	EFS_improved_secondary_battery = 1
+	EFS_damage_control_2 = 1
+	EFS_improved_ship_torpedo_launcher = 1
+	EFS_improved_submarine_mine_laying = 1
+	EFS_improved_naval_mines = 1
+	EFS_magnetic_detonator = 1
+	EFS_space_battleship1_tech = 1
+	EFS_space_cruiser1_tech = 1
+	minovsky_particle = 1
+	i_field = 1
+	mega_particle1 = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	superior_firepower = 1
+	sup_delay = 1
+	mobile_defence = 1
+	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+}
+
+add_ideas = {
+	bigship_principle
+	mole_of_jablo
+	hollowing_out_industry
+	civilian_economy
+	disarmed_nation
+	export_focus
+	customs_duty_3
+	oversea_army_3
+	newtype_division_1
+}
+
+set_convoys = 3500
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+
+# DIPLOMACY
+
+set_popularities = {
+	democratic = 64
+	earthsupremacy = 17
+	zeonism = 14
+	spacesupremacy = 5
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "74.12.1"
+	election_frequency = 48
+	elections_allowed = yes ##suspended through duration of war, which is handled via event
+}
+
+set_country_flag = tem_is_ours
+set_country_flag = {
+	flag = lend_lease_to_vbc_value
+	value = 0
+}
+set_variable = { newtype_accepted_status = 0 }
+
+add_opinion_modifier = {
+	target = ZEO
+	modifier = efsf_zeon_rival
+}
+
+78.1.1 = {
+	oob = "EFS_UC0078"
+
+	set_technology = {
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		paratroopers = 1
+		marines = 1
+		tech_mountaineers = 1
+		support_weapons = 1
+		support_weapons1 = 1
+		infantry_at = 1
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		motorised_infantry = 1
+		EFS_mbt1_tech = 1
+		EFS_mbt2_tech = 1
+		EFS_mbt3_tech = 1
+		EFS_ac1_tech = 1
+		EFS_ac2_tech = 1
+		EFS_lbs1_tech = 1
+		vulcan_ac_tech = 1
+		misile_ac1_tech = 1
+		misile_ac2_tech = 1
+		EFS_attack_helicopter_tech = 1
+		EFS_scout_plane1_tech = 1
+		EFS_fighter1_tech = 1
+		EFS_fighter2_tech = 1
+		EFS_multirolle1_tech = 1
+		EFS_attacker_tech = 1
+		EFS_tactical_bomber1_tech = 1
+		EFS_naval_bomber_tech = 1
+		EFS_assault_ship1_tech = 1
+		EFS_transporter1_tech = 1
+		EFS_transporter2_tech = 1
+		plan_rx_tech = 1
+		plan_scvx_tech = 1
+		EFS_space_battleship1_tech = 1
+		EFS_space_cruiser1_tech = 1
+		EFS_destroyer1_tech = 1
+		EFS_destroyer2_tech = 1
+		EFS_cruiser1_tech = 1
+		EFS_carrier1_tech = 1
+		EFS_submarine1_tech = 1
+		EFS_submarine_carrier1_tech = 1
+		EFS_transport = 1
+		EFS_landing_craft = 1
+		visible_light_communication1 = 1
+		minovsky_particle = 1
+		minovsky_dissemination1 = 1
+		nuclear_reactor1 = 1
+		nuclear_reactor2 = 1
+		i_field = 1
+		mega_particle1 = 1
+		minovsky_craft = 1
+		ambac1 = 1
+		ambac2 = 1
+		ambac3 = 1
+		amc1 = 1
+		amc2 = 1
+		simulator1 = 1
+		atomic_research = 1
+		nuclear_reactor = 1
+		nukes = 1
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		improved_equipment_conversion = 1
+		advanced_equipment_conversion = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		construction1 = 1
+		construction2 = 1
+		excavation1 = 1
+		excavation2 = 1
+		superior_firepower = 1
+		sup_delay = 1
+		mobile_defence = 1
+	}
+
+	remove_ideas = {
+		bigship_principle
+	}
+	add_ideas = {
+		bigship_principle3
+		export_focus
+		volunteer_only
+		low_economic_mobilisation
+		customs_duty_4
+		oversea_army_4
+		gopp
+		melanie_hue_carbine
+		tem_ray
+		calfornia_naval
+		hervic
+		elran_gfc
+		tianem
+		watkein
+		jupiter_fleet_get_resource
+	}
+
+	set_war_support = 0.4
+
+	complete_national_focus = efsf_show_to_colony
+	complete_national_focus = efsf_enhancement_of_stationed_units
+	complete_national_focus = efsf_tariff_enhancement
+	complete_national_focus = efsf_scenario_for_collapse_of_zeon
+	complete_national_focus = efsf_enhance_monitoring_network
+	complete_national_focus = efsf_building_competition
+	complete_national_focus = efsf_enhanced_economic_sanction
+	unlock_national_focus = efsf_strength_improvement_plan
+	unlock_national_focus = efsf_focus_on_mbt
+	unlock_national_focus = efsf_federal_navy_tradition
+	unlock_national_focus = efsf_focus_on_mainstay_fighter
+	unlock_national_focus = efsf_scvx_plan
+	complete_national_focus = efsf_plan_rx
+	unlock_national_focus = efsf_support_anti_zabi_faction
+	unlock_national_focus = efsf_zeons_new_weapon
+	unlock_national_focus = efsf_military_use_of_minovsky_particles
+
+	set_country_flag = jupiter_fleet_on
+  set_country_flag = jupiter_fleet_is_back
+
+}
+
+79.4.1 = {
+	oob = "EFS_UC0079"
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		set_autonomy = {
+			target = SI6
+			autonomous_state = autonomy_free
+		}
+		set_autonomy = {
+			target = SI7
+			autonomous_state = autonomy_colony
+		}
+		set_autonomy = {
+			target = ZEO
+			autonomous_state = autonomy_free
+		}
+	}
+	diplomatic_relation = { country = SI6 relation = non_aggression_pact }
+	diplomatic_relation = { country = VBC relation = non_aggression_pact }
+
+	set_technology = {
+		infantry_weapons = 1
+		infantry_weapons1 = 1
+		infantry_weapons2 = 1
+		improved_infantry_weapons = 1
+		paratroopers = 1
+		marines = 1
+		tech_mountaineers = 1
+		support_weapons = 1
+		support_weapons1 = 1
+		infantry_at = 1
+		tech_support = 1
+		tech_engineers = 1
+		tech_recon = 1
+		tech_military_police = 1
+		tech_maintenance_company = 1
+		tech_field_hospital = 1
+		tech_logistics_company = 1
+		tech_signal_company = 1
+		motorised_infantry = 1
+		mechanised_infantry = 1
+		EFS_mbt1_tech = 1
+		EFS_mbt2_tech = 1
+		EFS_mbt3_tech = 1
+		EFS_ac1_tech = 1
+		EFS_ac2_tech = 1
+		EFS_lbs1_tech = 1
+		vulcan_ac_tech = 1
+		misile_ac1_tech = 1
+		misile_ac2_tech = 1
+		mobile_ac_tech = 1
+		EFS_attack_helicopter_tech = 1
+		EFS_scout_plane1_tech = 1
+		EFS_scout_plane2_tech = 1
+		EFS_fighter1_tech = 1
+		EFS_fighter2_tech = 1
+		EFS_multirolle1_tech = 1
+		EFS_attacker_tech = 1
+		EFS_tactical_bomber1_tech = 1
+		EFS_naval_bomber_tech = 1
+		EFS_assault_ship1_tech = 1
+		EFS_transporter1_tech = 1
+		EFS_transporter2_tech = 1
+		EFS_space_battleship1_tech = 1
+		EFS_space_cruiser1_tech = 1
+		EFS_ms_weapon_bazooka_01_tech = 1
+		EFS_ms_weapon_beamsord_01_tech = 1
+		EFS_ms_shield_01_tech = 1
+		EFS_ms_weapon_beamgun_01_tech = 1
+		EFS_ms_weapon_beamrifle_01_tech = 1
+		plan_rx_tech = 1
+		plan_scvx_tech = 1
+		rx75_tech = 1
+		rx76_tech = 1
+		rx77_tech = 1
+		rx78_tech = 1
+		rx79_tech = 1
+		rgm79g_tech = 1
+		EFS_destroyer1_tech = 1
+		EFS_destroyer2_tech = 1
+		EFS_cruiser1_tech = 1
+		EFS_carrier1_tech = 1
+		EFS_submarine1_tech = 1
+		EFS_submarine_carrier1_tech = 1
+		EFS_transport = 1
+		EFS_landing_craft = 1
+		visible_light_communication1 = 1
+		visible_light_communication2 = 1
+		minovsky_particle = 1
+		minovsky_dissemination1 = 1
+		minovsky_dissemination2 = 1
+		mpiws1 = 1
+		nuclear_reactor1 = 1
+		nuclear_reactor2 = 1
+		i_field = 1
+		mega_particle1 = 1
+		mega_particle2 = 1
+		minovsky_craft = 1
+		ambac1 = 1
+		ambac2 = 1
+		ambac3 = 1
+		amc1 = 1
+		amc2 = 1
+		simulator1 = 1
+		simulator2 = 1
+		atomic_research = 1
+		nuclear_reactor = 1
+		nukes = 1
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		improved_equipment_conversion = 1
+		advanced_equipment_conversion = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+		construction1 = 1
+		construction2 = 1
+		excavation1 = 1
+		excavation2 = 1
+		superior_firepower = 1
+		sup_delay = 1
+		mobile_defence = 1
+	}
+
+	remove_ideas = {
+	}
+	add_ideas = {
+		extensive_conscription
+		limited_exports
+		oversea_army_5
+		partial_economic_mobilisation
+		gopp
+		josef_eschonbach
+		melanie_hue_carbine
+		tem_ray
+		mosk_han
+		jabulo_lab
+		brash
+		calfornia_naval
+		hervic
+		elran_gfc
+		tianem
+		watkein
+		matild_ajan
+		after_colony
+	}
+	add_timed_idea = {
+		idea = after_colony2
+		days = 90
+	}
+
+	set_war_support = 0.65
+
+	unlock_national_focus = efsf_warning_to_granada
+	complete_national_focus = efsf_watching_expressions
+	complete_national_focus = efsf_prioritize_battle_data
+	complete_national_focus = efsf_vinson_plan
+	complete_national_focus = efsf_plan_v
+	unlock_national_focus = efsf_leak_plan_rx
+
+	activate_decision = ap_yazan_gable
+	activate_decision = ap_laila_milla_rira
+	activate_decision = ap_you_kajima
+	activate_decision = ap_master_p_rayer
+	activate_decision = ap_south_burning
+	activate_decision = ap_hugues_courand
+
+	add_country_leader_trait = no_soldier
+	set_variable = { newtype_accepted_status = 2 }
+
+}
+
+recruit_character = EFS_johann_a_revil
+recruit_character = EFS_blex_forer
+recruit_character = EFS_jamitov_hymen
+recruit_character = EFS_space_supremacist_senator
+recruit_character = EFS_gene_coliny
+recruit_character = EFS_john_kowen
+recruit_character = EFS_gopp
+recruit_character = EFS_adenauer_paraya
+recruit_character = EFS_elran_gfc
+recruit_character = EFS_seki
+recruit_character = EFS_mosk_han
+recruit_character = EFS_tem_ray
+recruit_character = EFS_stephan_hepbum
+recruit_character = EFS_hawkins_marnery
+recruit_character = EFS_bask_om
+recruit_character = EFS_antonio_callas
+recruit_character = EFS_isan_ryer
+recruit_character = EFS_kojima
+recruit_character = EFS_michael_colmatta
+recruit_character = EFS_woody_malden
+recruit_character = EFS_nakohha_nakato
+recruit_character = EFS_matilda_ajan
+recruit_character = EFS_ben_barberry
+recruit_character = EFS_herman_yandell
+recruit_character = EFS_arleen_nazon
+recruit_character = EFS_green_wyatt
+recruit_character = EFS_tianem
+recruit_character = EFS_wakkein
+recruit_character = EFS_paolo_cassius
+recruit_character = EFS_eiphar_synapse
+recruit_character = EFS_jamaican_daninghan
+recruit_character = EFS_lead
+recruit_character = EFS_gady_kinsey
+recruit_character = EFS_yazan_gable
+recruit_character = EFS_lila_milla_rira
+recruit_character = EFS_you_kajima
+recruit_character = EFS_master_p_rayer
+recruit_character = EFS_south_burning
+recruit_character = EFS_hugues_courand
+recruit_character = EFS_astonaige_medoz
+recruit_character = EFS_omle_fang
+recruit_character = EFS_bright_noah
+recruit_character = EFS_alice_miller
+recruit_character = EFS_gidan_nickerd
+recruit_character = EFS_federico_czariano
+recruit_character = EFS_christina_mackenzie
+recruit_character = EFS_henken_bekkener
+recruit_character = EFS_shiro_amada
+recruit_character = EFS_claudia_peer
+recruit_character = EFS_amuro_ray
+recruit_character = EFS_kou_uraki
+recruit_character = EFS_io_fleming
+recruit_character = EFS_sleggar_law
+recruit_character = EFS_kai_shiden
+recruit_character = EFS_ryu_jose
+recruit_character = EFS_hayato_kobayashi
+recruit_character = EFS_sayla_mass
+recruit_character = EFS_karen_joshua
+recruit_character = EFS_terry_sanders
+recruit_character = EFS_eledore_massis
+recruit_character = EFS_michel_ninorich
+recruit_character = EFS_chuck_keith
+recruit_character = EFS_bernard_monsha
+recruit_character = EFS_alpha_bate
+recruit_character = EFS_chap_adel
+recruit_character = EFS_quattro_vageena
+
+recruit_character = EFS_melanie_hue_carbine
+recruit_character = EFS_won_lee
+recruit_character = EFS_josef_eschonbach
+recruit_character = EFS_stephanie_luio
+recruit_character = EFS_kiki_rosita
+recruit_character = EFS_torenov_y_minovsky
+recruit_character = EFS_chlust_morses
+recruit_character = EFS_nakamoto
+recruit_character = EFS_dick_lumnba
+recruit_character = EFS_nina_purpleton
+
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Alice Miller"
+		GFX = GFX_portrait_alice_miller
+		traits = { operative_master_interrogator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { EFS }
+	}
+}
+
+
+create_equipment_variant = {
+	name = "Salamis Class"
+	type = efsf_space_cruiser1_equipment
+	name_group = EFS_SC_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = space_battery_1
+		fixed_ship_secondaries_slot = space_secondaries_1
+		fixed_ship_engine_slot = light_space_engine_1
+	}
+	obsolete = no
+}
+create_equipment_variant = {
+	name = "Magellan Class"
+	type = efsf_space_battleship1_equipment
+	name_group = EFS_SB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = space_battery_1
+		fixed_ship_secondaries_slot = space_secondaries_1
+		fixed_ship_engine_slot = space_engine_1
+    front_1_custom_slot = space_battery_1
+    mid_1_custom_slot = ship_anti_air_1
+    mid_2_custom_slot = space_secondaries_1
+	}
+	obsolete = no
+}
+
+79.4.1 = {
+	create_equipment_variant = {
+		name = "RX-78-2 Gundam"
+		type = rx78_equipment
+		parent_version = 0
+		upgrades = {
+			mobilesuit_sensor_upgrade = 1
+			mobilesuit_armor_upgrade = 1
+			mobilesuit_generator_upgrade = 2
+			mobilesuit_thruster_upgrade = 2
+		}
+	}
+}

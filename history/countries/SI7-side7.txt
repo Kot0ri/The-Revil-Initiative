@@ -1,0 +1,84 @@
+﻿capital = 927
+oob = "generic"
+
+set_research_slots = 3
+set_convoys = 100
+starting_train_buffer = 2
+set_fuel_ratio = 0.2
+set_stability = 0.7
+set_war_support = 0.3
+
+set_technology = {
+	basic_train = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	minovsky_particle = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	EFS_ac1_tech = 1
+	fuel_refining = 1
+	EFS_transport = 1
+	oil_processing = 1
+	rubber_processing = 1
+	fuel_refining2 = 1
+}
+
+set_variable = { newtype_accepted_status = 1 }
+
+set_popularities = {
+	democratic = 57
+	zeonism = 16
+	spacesupremacy = 2
+	earthsupremacy = 25
+}
+set_politics = {
+	ruling_party = democratic
+	last_election = "74.12.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+add_ideas = {
+	colony_country
+	free_trade
+	civilian_economy
+	volunteer_only
+	customs_duty_6
+	oversea_army_6
+	newtype_division_2
+}
+
+78.5.1 = {
+	927 = {
+		add_manpower = 300000
+	}
+	928 = {
+		add_manpower = 300000
+	}
+	929 = {
+		add_manpower = 300000
+	}
+}
+78.1.1 = {
+	set_convoys = 50
+}
+
+79.4.1 = {
+	set_convoys = 15
+	set_variable = { newtype_accepted_status = 3 }
+}
+
+recruit_character = SI7_noas_democrats_senator
+recruit_character = SI7_noas_spacenoid_supremacist_senator
+recruit_character = SI7_noas_earth_supremacist_senator
+recruit_character = SI7_noas_zeonist_senator
+

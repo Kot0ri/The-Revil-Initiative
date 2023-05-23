@@ -1,0 +1,298 @@
+EFS_congress = {
+	EFS_congress_stationed_force_SI1 = {
+		icon = revolt
+		allowed = {
+			tag = EFS
+		}
+		activation = {
+			# has_war = no
+			# 1yw_stationed_force_SI1_cap = yes
+      always = no
+		}
+		available = {
+			OR = {
+				has_war = yes
+				1yw_stationed_force_SI1_cap = no
+			}
+		}
+
+		days_mission_timeout = 10
+		is_good = no
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		timeout_effect = {
+			SI1 = {
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = 0.03
+				}
+			}
+			add_political_power = -50
+			activate_mission = EFS_congress_stationed_force_SI1
+		}
+	}
+	EFS_congress_stationed_force_SI2 = {
+		icon = revolt
+		allowed = {
+			tag = EFS
+		}
+		activation = {
+			# has_war = no
+			# 1yw_stationed_force_SI2_cap = yes
+      always = no
+		}
+		available = {
+			OR = {
+				has_war = yes
+				1yw_stationed_force_SI2_cap = no
+			}
+		}
+
+		days_mission_timeout = 10
+		is_good = no
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		timeout_effect = {
+			SI2 = {
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = 0.03
+				}
+			}
+			add_political_power = -50
+			activate_mission = EFS_congress_stationed_force_SI2
+		}
+	}
+	EFS_congress_stationed_force_ZEO = {
+		icon = revolt
+		allowed = {
+			tag = EFS
+		}
+		activation = {
+			# has_war = no
+			# 1yw_stationed_force_ZEO_cap = yes
+      always = no
+		}
+		available = {
+			OR = {
+				has_war = yes
+				1yw_stationed_force_ZEO_cap = no
+			}
+		}
+
+		days_mission_timeout = 10
+		is_good = no
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		timeout_effect = {
+			ZEO = {
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = 0.03
+				}
+			}
+			add_political_power = -50
+			activate_mission = EFS_congress_stationed_force_ZEO
+		}
+	}
+	EFS_congress_stationed_force_SI4 = {
+		icon = revolt
+		allowed = {
+			tag = EFS
+		}
+		activation = {
+			# has_war = no
+			# 1yw_stationed_force_SI4_cap = yes
+      always = no
+		}
+		available = {
+			OR = {
+				has_war = yes
+				1yw_stationed_force_SI4_cap = no
+			}
+		}
+
+		days_mission_timeout = 10
+		is_good = no
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		timeout_effect = {
+			SI4 = {
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = 0.03
+				}
+			}
+			add_political_power = -50
+			activate_mission = EFS_congress_stationed_force_SI4
+		}
+	}
+	EFS_congress_stationed_force_SI5 = {
+		icon = revolt
+		allowed = {
+			tag = EFS
+		}
+		activation = {
+			# has_war = no
+			# 1yw_stationed_force_SI5_cap = yes
+      always = no
+		}
+		available = {
+			OR = {
+				has_war = yes
+				1yw_stationed_force_SI5_cap = no
+			}
+		}
+
+		days_mission_timeout = 10
+		is_good = no
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		timeout_effect = {
+			SI5 = {
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = 0.03
+				}
+			}
+			add_political_power = -50
+			activate_mission = EFS_congress_stationed_force_SI5
+		}
+	}
+	EFS_congress_stationed_force_SI6 = {
+		icon = revolt
+		allowed = {
+			tag = EFS
+		}
+		activation = {
+			# has_war = no
+			# 1yw_stationed_force_SI6_cap = yes
+      always = no
+		}
+		available = {
+			OR = {
+				has_war = yes
+				1yw_stationed_force_SI6_cap = no
+			}
+		}
+
+		days_mission_timeout = 10
+		is_good = no
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		timeout_effect = {
+			SI6 = {
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = 0.03
+				}
+			}
+			add_political_power = -50
+			activate_mission = EFS_congress_stationed_force_SI6
+		}
+	}
+	EFS_congress_stationed_force_SI7 = {
+		icon = revolt
+		allowed = {
+			tag = EFS
+		}
+		activation = {
+			# has_war = no
+			# 1yw_stationed_force_SI7_cap = yes
+      always = no
+		}
+		available = {
+			OR = {
+				has_war = yes
+				1yw_stationed_force_SI7_cap = no
+			}
+		}
+
+		days_mission_timeout = 10
+		is_good = no
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		timeout_effect = {
+			SI7 = {
+				add_popularity = {
+					ideology = spacesupremacy
+					popularity = 0.03
+				}
+			}
+			add_political_power = -50
+			activate_mission = EFS_congress_stationed_force_SI7
+		}
+	}
+	# 1.12から動かない
+	# EFS_congress_total_ships = {
+	# 	icon = revolt
+	# 	allowed = {
+	# 		tag = EFS
+	# 	}
+	# 	activation = {
+	# 		has_war = no
+	# 		1yw_total_ship_cap = yes
+	# 	}
+	# 	available = {
+	# 		OR = {
+	# 			has_war = yes
+	# 			1yw_total_ship_cap = no
+	# 		}
+	# 	}
+
+	# 	days_mission_timeout = 10
+	# 	is_good = no
+
+	# 	modifier = {
+	# 	}
+
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# 	timeout_effect = {
+	# 		add_political_power = -50
+	# 		every_other_country = {
+	# 			add_popularity = {
+	# 				ideology = spacesupremacy
+	# 				popularity = 0.05
+	# 			}
+	# 		}
+	# 		activate_mission = EFS_congress_total_ships
+	# 	}
+	# }
+}

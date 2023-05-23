@@ -1,0 +1,35 @@
+# ジャブロー周辺
+state={
+	id=309
+	name="STATE_309"
+	manpower = 152000
+
+	resources={
+		aluminium=60 # was: 104
+	}
+
+	history={
+		owner = EFS
+		add_core_of = EFS
+		victory_points = {
+			10906 1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 10
+			13583 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		1928 10906 12828 13490 13493 13496 13497 13505 13511 13514 13526 13531 13533 13537 13541 13545 13551 13555 13557 13558 13559 13569 13570 13571 13577 13578 13580 13583
+	}
+
+	local_supplies=0.0 
+	state_category=megalopolis
+}

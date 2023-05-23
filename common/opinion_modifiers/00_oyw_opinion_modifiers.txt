@@ -1,0 +1,197 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	# ジオニックへの貸し
+	zeonic_owe_us_modifier = {
+		value = 30
+	}
+	# ジオニックの不正を公表した
+	false_competition_modifier = {
+		value = -30
+	}
+	# 連邦vsジオン
+	efsf_zeon_rival = {
+		value = -50
+	}
+	# 商売敵
+	moon_commerce_rival = {
+		value = -50
+	}
+
+	# コロニー間の連帯
+	zeon_solidarity_among_colonies = { value = 15 }
+
+	# ラプラスの箱
+	laplas_is_out = { value = -80 }
+	laplas_is_out_EFS = { value = -80 }
+
+	# 月への電力供給
+	zeon_power_supply_to_moon = {
+		trade = yes
+		value = 30
+	}
+
+	# 月の裏側
+	zeon_other_side_of_moon = {
+		trade = yes
+		value = 20
+	}
+
+	# 宇宙経済ブロック
+	zeon_space_block_economy = {
+		trade = yes
+		value = 30
+	}
+	zeon_space_block_economy_EFS = {
+		trade = yes
+		value = -50
+	}
+	# ダイクン派を弾圧
+	zeon_repression_of_deikun = {
+		value = -20
+	}
+
+	# 暁の蜂起
+	zeon_sunrise_uprising = {
+		value = -35
+		days = 10
+		decay = 1
+	}
+
+	# コロニーとの新しい関係
+	new_relationship_with_colony = {
+		value = 10
+	}
+	# 駐留軍の縮小
+	efsf_reduction_of_stationed_troops = {
+		value = 15
+	}
+	# 関税の緩和
+	efsf_relaxation_of_tariffs = {
+		trade = yes
+		value = 15
+	}
+	#フォン・ブラウンへの投資
+	efsf_lending_to_von_brown = {
+		trade = yes
+		value = 30
+	}
+  efsf_lending_to_von_brown_ZEO = {
+		trade = yes
+		value = -30
+	}
+  efsf_lending_to_von_brown_ZEO_hate = {
+    value = -40
+  }
+	# 合同軍事演習
+	joint_military_exercises = {
+		value = 15
+	}
+	# 政府機能の移転
+	efsf_transfer_of_government_function = {
+		value = 20
+	}
+	# ジオンの独立を認めない
+	efsf_dont_admit_zeons_independence_ZEO = {
+		value = -35
+	}
+	# コロニーへの見せしめ
+	show_to_colony_ZEO = {
+		value = -20
+	}
+	show_to_colony = {
+		value = -10
+	}
+	# 駐留部隊の増強
+	efsf_enhancement_of_stationed_units = {
+		value = -15
+	}
+	# 関税強化
+	efsf_tariff_enhancement = {
+		trade = yes
+		value = -10
+	}
+	# 反地球連邦の弾圧
+	efsf_oppression_of_anti-earth_federation = {
+		value = -15
+	}
+	# 参政権の要求
+	request_of_suffrage = {
+		value = 20
+	}
+	request_of_suffrage_EFS = {
+		value = -35
+	}
+	# 小惑星の保有を禁止
+	efsf_reciving_asteroid = {
+		value = -20
+	}
+	# コロニー制圧演習
+	colony_exclusion_exercise = {
+		value = -10
+	}
+	# 人の革新
+	human_innovation = {
+		value = 25
+	}
+	# コロニー建設への投資
+	zeon_moon_aliance = {
+		value = 35
+	}
+	# 月の専制君主
+	tyrant_of_moon = {
+		value = 25
+	}
+	# 地球の有力者
+	influential_people_of_earth = {
+		value = 25
+	}
+	# サイド共栄圏
+	colony_alliance = {
+		value = 50
+	}
+	colony_alliance_EFS = {
+		value = -50
+	}
+	# 連邦総会のための工作
+	parliamentary_work_opinion = {
+		value = 10
+	}
+	# 連邦（ジオン）が経済制裁解除の交渉に応じた
+	meeting_agree_economic_sanctions = {
+		value = 15
+	}
+	# 連邦（ジオン）が経済制裁解除の交渉に応じなかった
+	meeting_not_agree_economic_sanctions = {
+		value = -30
+	}
+	# 幻の演説（連邦）
+	phantom_speech_EFS = {
+		value = -80
+	}
+	# G-3ガス
+	g_3_gus = {
+		value = -80
+	}
+	g_3_gus_SI1 = {
+		value = -150
+	}
+	# 連邦の暗殺計画が露見
+	efsf_planed_assasinate = {
+		value = -50
+	}
+	# 連邦のクーデター工作が露見
+	efsf_planed_registance = {
+		value = -30
+	}
+
+}

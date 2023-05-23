@@ -1,0 +1,2740 @@
+﻿division_template = {
+	name = "Infantry Division"
+  division_names_group = ZEO_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+    infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+    infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "National Guard"
+  division_names_group = ZEO_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Armour Division"
+  division_names_group = ZEO_Arm_01
+	regiments = {
+		mbt = { x = 0 y = 0 }
+		mbt = { x = 0 y = 1 }
+    mbt = { x = 1 y = 0 }
+		mbt = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+    motorized = { x = 2 y = 1 }
+	}
+	support = {
+    ac = { x = 0 y = 0 }
+    engineer = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Motorised Division"
+  division_names_group = ZEO_Mot_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	  motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+	 	engineer = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Mountaineer-Division"
+  division_names_group = ZEO_Mnt_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	  mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Paratroopers"
+  division_names_group = ZEO_Par_01
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Paratank Division"
+  division_names_group = ZEO_Arm_01
+	regiments = {
+		para_tank = { x = 0 y = 0 }
+    para_tank = { x = 0 y = 1 }
+		para_tank = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Mobile Tank Division"
+  division_names_group = ZEO_Arm_01
+	regiments = {
+		mobiletank = { x = 0 y = 0 }
+    mobiletank = { x = 0 y = 1 }
+		mbt = { x = 1 y = 0 }
+		mbt = { x = 1 y = 1 }
+    motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+	}
+  support = {
+    ac = { x = 0 y = 0 }
+    engineer = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+	}
+  priority = 1
+}
+division_template = {
+	name = "Marine"
+  division_names_group = ZEO_Mar_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "HQ"
+  division_names_group = ZEO_Arm_01
+	regiments = {
+		lbs = { x = 0 y = 0 }
+		mbt = { x = 1 y = 0 }
+		mbt = { x = 1 y = 1 }
+		mbt = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "MS Division (Zaku)"
+  division_names_group = ZEO_MS_01
+	regiments = {
+		ms05 = { x = 0 y = 0 }
+		ms05 = { x = 0 y = 1 }
+		ms05 = { x = 0 y = 2 }
+	}
+  support = {
+		ac = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 2 }
+	}
+	priority = 3
+}
+division_template = {
+	name = "Desert MS Division"
+  division_names_group = ZEO_MS_01
+	regiments = {
+		ms06_d = { x = 0 y = 0 }
+		ms06_d = { x = 0 y = 1 }
+		ms06_d = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "MS Artillery Division (Zaku)"
+	regiments = {
+    ms05 = { x = 0 y = 0 }
+    ms05 = { x = 0 y = 1 }
+		ms06_k = { x = 1 y = 0 }
+    ms06_k = { x = 1 y = 1 }
+	}
+  support = {
+		engineer = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "MS Division (Gouf)"
+  division_names_group = ZEO_MS_01
+	regiments = {
+		ms07 = { x = 0 y = 0 }
+		ms05_rpg = { x = 0 y = 1 }
+		ms05_rpg = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		maintenance_company = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+
+units = {
+	# 宇宙
+	division= {
+		name = "1st Satellite Orbit Defense Force"
+		location = 13301
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Satellite Orbit Defense Force"
+		location = 13316
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Satellite Orbit Defense Force"
+		location = 13309
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Satellite Orbit Defense Force"
+		location = 13304
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Satellite Orbit Defense Force"
+		location = 13303
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Satellite Orbit Defense Force"
+		location = 13305
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Satellite Orbit Defense Force"
+		location = 13322
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Satellite Orbit Defense Force"
+		location = 13317
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+
+	division= {
+		name = "1st National Guard"
+		location = 13280
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Motorised Division"
+		location = 13280
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Solomon MS Division"
+		location = 13384
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "2nd National Guard"
+		location = 13262
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "2nd Motorised Division"
+		location = 13283
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Armour Division"
+		location = 13285
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "3rd National Guard"
+		location = 13262
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "3rd Motorised Division"
+		location = 13284
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "4th Motorised Division"
+		location = 13284
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st A Baoa Qu Guard"
+		location = 13335
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st A Baoa Qu Motorised Division"
+		location = 13333
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st MS Division"
+		location = 13280
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "2nd A Baoa Qu Guard"
+		location = 13333
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Side5 Motorised Division"
+		location = 13336
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Side5 Armour Division"
+		location = 13308
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Solomon Guard"
+		location = 13384
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Side2 Motorised Division"
+		location = 13282
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st A Baoa Qu MS Division"
+		location = 13335
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "2nd Solomon Guard"
+		location = 13385
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Side4 Motorised Division"
+		location = 13392
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "1st Solomon Armour Division"
+		location = 13385
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	# アメリカ戦線
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 10157
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 10693
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 1832
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 4838
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Armour Division"
+		location = 1857
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 4863
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 4759
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 12685
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Armour Division"
+		location = 1870
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 11667
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 12588
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Armour Division"
+		location = 11602
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 6676
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 3661
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 12459
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 9713
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 3678
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 12021
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 4180
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 7361
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 3635
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 3778
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 4270
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Armour Division"
+		location = 4345
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 7291
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 12149
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 1562
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "America HQ"
+		location = 9814
+		division_template = "HQ"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 12374
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 10783
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Armour Division"
+		location = 3834
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 5044
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 10740
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 1954
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Armour Division"
+		location = 12728
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 2019
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "America HQ"
+		location = 12782
+		division_template = "HQ"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 5061
+		division_template = "MS Division (Gouf)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 12369
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 7524
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 7552
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 7599
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 1559
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 10355
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 10337
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 1646
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Armour Division"
+		location = 10615
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 10824
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 10281
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 10909
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 10495
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st MS Division"
+		location = 7138
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Paratroopers"
+		location = 10051
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 11800
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 6890
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 9450
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 1866
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 4569
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 6710
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 4865
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st Infantry Division"
+		location = 1019
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 7315
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 3513
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 9671
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 9814
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 6732
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 9832
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 3878
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 6845
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 3957
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "North America 1st National Guard"
+		location = 788
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	# East Asia 戦線
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 11944
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 11996
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 10022
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 7109
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 7000
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Armour Division"
+		location = 10480
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 12432
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 12432
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 10507
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 9958
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 10000
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 8049
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 4960
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 6638
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 10451
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 1959
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 10854
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 3745
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 1985
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 1630
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 12732
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Armour Division"
+		location = 2053
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 2099
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 7997
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 1698
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 5736
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 2074
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 1943
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 2010
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 2093
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 4900
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 2014
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Asia HQ"
+		location = 5033
+		division_template = "HQ"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 8010
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Armour Division"
+		location = 1497
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 12395
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 10090
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 3999
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 11966
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st Paratroopers"
+		location = 1142
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 7071
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 4196
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 9974
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 7418
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 1330
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 6999
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 4189
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 10000
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 11913
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 7014
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 4925
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 2045
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st National Guard"
+		location = 7191
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Asia 1st MS Division"
+		location = 10062
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	# Oceania 戦線
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 1814
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st MS Division"
+		location = 10458
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st Paratroopers"
+		location = 1570
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 7564
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st MS Division"
+		location = 2116
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st MS Division"
+		location = 2221
+		division_template = "Desert MS Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania HQ"
+		location = 2205
+		division_template = "HQ"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st Paratroopers"
+		location = 12906
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st Armour Division"
+		location = 7623
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st MS Division"
+		location = 2133
+		division_template = "Desert MS Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st Paratank Division"
+		location = 12451
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 7669
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st Paratroopers"
+		location = 5138
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st MS Division"
+		location = 12948
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 4329
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 7408
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 4075
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 4401
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 10237
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 7371
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 12371
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 4608
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 7381
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 4241
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 12118
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 12268
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 10297
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 12299
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 2223
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Oceania 1st National Guard"
+		location = 7566
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	# 東欧戦線
+	division= {
+		name = "East Europa Paratroopers"
+		location = 9821
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 11858
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 937
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6970
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 6998
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 9602
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Armour Division"
+		location = 630
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 3649
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6682
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Armour Division"
+		location = 6697
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 3696
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Armour Division"
+		location = 746
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 11689
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6761
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 3407
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6455
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 476
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 9481
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Armour Division"
+		location = 11424
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11438
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11454
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11530
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 9519
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6605
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 9413
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 3557
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11397
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 418
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 9556
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 3409
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11541
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 570
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11513
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 547
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 3540
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 9565
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 414
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Europa HQ"
+		location = 11670
+		division_template = "HQ"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 9464
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6528
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11512
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 544
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 3539
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 518
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6563
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6539
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11523
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 9432
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11421
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6502
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6339
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11321
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 6473
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 3404
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11537
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 566
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 11510
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 3502
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 1318
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 4351
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 7438
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 4294
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 7341
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 7313
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Armour Division"
+		location = 12227
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 10164
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 7337
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Europa HQ"
+		location = 7243
+		division_template = "HQ"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 10277
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 10220
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 10268
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 12111
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 4250
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 7335
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 1402
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 12385
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 10603
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 4224
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 1591
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 12239
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 756
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 5003
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Armour Division"
+		location = 4958
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 10806
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 1888
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 8009
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 10828
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 8031
+		division_template = "Motorised Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 4928
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa Paratroopers"
+		location = 5089
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa National Guard"
+		location = 9940
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa National Guard"
+		location = 4109
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa National Guard"
+		location = 11818
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa National Guard"
+		location = 9833
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa National Guard"
+		location = 1005
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "East Europa MS Division"
+		location = 11670
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	# 中東・Africa 戦線
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 12039
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st MS Division"
+		location = 10067
+		division_template = "Desert MS Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 1130
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 7154
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 1149
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 11954
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 4076
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 7011
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 12725
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st MS Division"
+		location = 2003
+		division_template = "Desert MS Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 2088
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Armour Division"
+		location = 12862
+		division_template = "Armour Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st MS Division"
+		location = 7925
+		division_template = "Desert MS Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 12806
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st MS Division"
+		location = 4961
+		division_template = "Desert MS Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st MS Division"
+		location = 4115
+		division_template = "MS Division (Zaku)"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st MS Division"
+		location = 4603
+		division_template = "Desert MS Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 4562
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 4574
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 4206
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 4440
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 1631
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st MS Division"
+		location = 10744
+		division_template = "Desert MS Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 12879
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st Paratroopers"
+		location = 8085
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st National Guard"
+		location = 2097
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st National Guard"
+		location = 792
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st National Guard"
+		location = 12473
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "Africa 1st National Guard"
+		location = 11746
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+
+	#Space Fleet
+	fleet = {
+		name = "A Baoa Qu Command"
+		naval_base = 13336
+		task_force = {
+			name = "A Baoa Qu Fleet"
+			location = 13336
+			ship = {
+				name = "Dolos"
+				definition = zeon_space_carrier
+				start_experience_factor = 0.2
+				equipment = { zeon_space_carrier1_equipment = { amount = 1 owner = ZEO version_name = "Dolos Class" } }
+			}
+			ship = {
+				definition = zeon_space_fv_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_fv_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Tivvay Class" } }
+			}
+			ship = {
+				definition = zeon_space_fv_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_fv_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Tivvay Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+		}
+	}
+	fleet = {
+		name = "Solomon Command"
+		naval_base = 13389
+		task_force = {
+			name = "Solomon Fleet"
+			location = 13389
+			ship = {
+				definition = zeon_space_battleship
+				start_experience_factor = 1
+				equipment = { zeon_space_hv_battleship1_equipment = { amount = 1 owner = ZEO version_name = "Gwazine Class" } }
+			}
+			ship = {
+				definition = zeon_space_fv_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_fv_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Tivvay Class" } }
+			}
+			ship = {
+				definition = zeon_space_fv_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_fv_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Tivvay Class" } }
+			}
+			ship = {
+				name = "Falmel"
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+		}
+	}
+	fleet = {
+		name = "Granada Command"
+		naval_base = 13292
+		task_force = {
+			name = "Granada Fleet"
+			location = 13292
+			ship = {
+				name = "Gwazine"
+				definition = zeon_space_battleship
+				start_experience_factor = 1
+				equipment = { zeon_space_hv_battleship1_equipment = { amount = 1 owner = ZEO version_name = "Gwazine Class" } }
+			}
+			ship = {
+				definition = zeon_space_fv_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_fv_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Tivvay Class" } }
+			}
+			ship = {
+				definition = zeon_space_fv_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_fv_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Tivvay Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+		}
+	}
+	fleet = {
+		name = "Home Command"
+		naval_base = 13280
+		task_force = {
+			name = "Home Fleet"
+			location = 13280
+			ship = {
+				name = "Great Degwin"
+				definition = zeon_space_battleship
+				start_experience_factor = 1
+				equipment = { zeon_space_hv_battleship1_equipment = { amount = 1 owner = ZEO version_name = "Gwazine Class" } }
+			}
+			ship = {
+				definition = zeon_space_fv_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_fv_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Tivvay Class" } }
+			}
+			ship = {
+				definition = zeon_space_fv_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_fv_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Tivvay Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser2_equipment = { amount = 1 owner = ZEO version_name = "Musai Late Production Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 1
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+			ship = {
+				definition = zeon_space_cruiser
+				start_experience_factor = 0.5
+				equipment = { zeon_space_cruiser1_equipment = { amount = 1 owner = ZEO version_name = "Musai Class" } }
+			}
+		}
+	}
+
+	#Earth Fleet
+	fleet = {
+		name = "Pacific Command"
+		naval_base = 4180
+		task_force = {
+			name = "1st Hawaii Fleet"
+			location = 4180
+			ship = {
+				name = "Zhukov"
+				definition = submarine
+			}
+			ship = {
+				name = "Gestalt"
+				definition = submarine
+			}
+			ship = {
+				name = "Plutonium"
+				definition = submarine
+			}
+			ship = {
+				name = "Uranium"
+				definition = submarine
+			}
+			ship = {
+				name = "Mad Angler"
+				definition = submarine_carrier
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+		}
+	}
+	fleet = {
+		name = "America Command"
+		naval_base = 9671
+		task_force = {
+			name = "1st America Submarine Fleet"
+			location = 9671
+			ship = {
+				name = "Fitzgerald"
+				definition = submarine
+				equipment = {
+					submarine1_equipment = { amount = 1 owner = ZEO }
+				}
+			}
+			ship = {
+				name = "Gabriel"
+				definition = submarine
+				equipment = {
+					submarine1_equipment = { amount = 1 owner = ZEO }
+				}
+			}
+			ship = {
+				name = ""
+				definition = submarine
+				equipment = {
+					ms06_m_equipment = { amount = 1 owner = ZEO }
+				}
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+		}
+		task_force = {
+			name = "2nd America Submarine Fleet"
+			location = 9671
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+			ship = {
+				name = ""
+				definition = ms06_m
+			}
+		}
+	}
+}
+
+air_wings = {
+	385 = {
+		core_fighter1_equipment = { owner = ZEO amount = 200 }
+		attack_helicopter_equipment = { owner = ZEO amount = 100 }
+		attacker_equipment = { owner = ZEO amount = 100 }
+		strategic_bomber_equipment = { owner = ZEO amount = 10 }
+		assault_ship1_equipment = { owner = ZEO amount = 10 }
+		scout_plane1_equipment = { owner = ZEO amount = 10 }
+		transport_plane_equipment_1 = { owner = ZEO amount = 100 }
+	}
+	359 = {
+		core_fighter1_equipment = { owner = ZEO amount = 200 }
+		attack_helicopter_equipment = { owner = ZEO amount = 100 }
+		attacker_equipment = { owner = ZEO amount = 100 }
+		strategic_bomber_equipment = { owner = ZEO amount = 10 }
+		assault_ship1_equipment = { owner = ZEO amount = 10 }
+		scout_plane1_equipment = { owner = ZEO amount = 10 }
+		transport_plane_equipment_1 = { owner = ZEO amount = 100 }
+	}
+	520 = {
+		core_fighter1_equipment = { owner = ZEO amount = 200 }
+		attack_helicopter_equipment = { owner = ZEO amount = 100 }
+		attacker_equipment = { owner = ZEO amount = 100 }
+		strategic_bomber_equipment = { owner = ZEO amount = 10 }
+		assault_ship1_equipment = { owner = ZEO amount = 10 }
+		scout_plane1_equipment = { owner = ZEO amount = 10 }
+		transport_plane_equipment_1 = { owner = ZEO amount = 100 }
+	}
+	605 = {
+		core_fighter1_equipment = { owner = ZEO amount = 200 }
+		attack_helicopter_equipment = { owner = ZEO amount = 100 }
+		attacker_equipment = { owner = ZEO amount = 100 }
+		strategic_bomber_equipment = { owner = ZEO amount = 10 }
+		assault_ship1_equipment = { owner = ZEO amount = 10 }
+		scout_plane1_equipment = { owner = ZEO amount = 10 }
+		transport_plane_equipment_1 = { owner = ZEO amount = 100 }
+	}
+	446 = {
+		core_fighter1_equipment = { owner = ZEO amount = 200 }
+		attack_helicopter_equipment = { owner = ZEO amount = 100 }
+		attacker_equipment = { owner = ZEO amount = 100 }
+		strategic_bomber_equipment = { owner = ZEO amount = 10 }
+		assault_ship1_equipment = { owner = ZEO amount = 10 }
+		scout_plane1_equipment = { owner = ZEO amount = 10 }
+		transport_plane_equipment_1 = { owner = ZEO amount = 100 }
+	}
+	629 = {
+		core_fighter1_equipment = { owner = ZEO amount = 200 }
+		attack_helicopter_equipment = { owner = ZEO amount = 100 }
+		attacker_equipment = { owner = ZEO amount = 100 }
+		strategic_bomber_equipment = { owner = ZEO amount = 10 }
+		assault_ship1_equipment = { owner = ZEO amount = 10 }
+		scout_plane1_equipment = { owner = ZEO amount = 10 }
+		transport_plane_equipment_1 = { owner = ZEO amount = 100 }
+	}
+	192 = {
+		core_fighter1_equipment = { owner = ZEO amount = 200 }
+		attack_helicopter_equipment = { owner = ZEO amount = 100 }
+		attacker_equipment = { owner = ZEO amount = 100 }
+		strategic_bomber_equipment = { owner = ZEO amount = 10 }
+		assault_ship1_equipment = { owner = ZEO amount = 10 }
+		scout_plane1_equipment = { owner = ZEO amount = 10 }
+		transport_plane_equipment_1 = { owner = ZEO amount = 100 }
+	}
+}
+
+instant_effect = {
+	add_equipment_to_stockpile = {
+		type = archetype_mbt
+		amount = 500
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_mobiletank
+		amount = 150
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_ms05
+		amount = 1500
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_ms07
+		amount = 500
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_ms_weapon_bazooka
+		amount = 200
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_ms_weapon_machinegun
+		amount = 300
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_ms_weapon_heathawk
+		amount = 500
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_ms_shield
+		amount = 500
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = infantry_equipment
+		amount = 10000
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_lbs
+		amount = 15
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = motorized_equipment
+		amount = 400
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_ac
+		amount = 500
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = support_equipment
+		amount = 5000
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_attack_helicopter
+		amount = 300
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_core_fighter
+		amount = 300
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_strategic_bomber
+		amount = 100
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_assault_ship
+		amount = 20
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_scout_plane
+		amount = 100
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = archetype_attacker
+		amount = 200
+		producer = ZEO
+	}
+	add_equipment_to_stockpile = {
+		type = transport_plane_equipment
+		amount = 300
+		producer = ZEO
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ms06_j_equipment
+			creator = ZEO
+		}
+		requested_factories = 15
+		progress = 0.0
+		efficiency = 80
+	}
+	add_equipment_production = {
+		equipment = {
+			type = mbt2_equipment
+			creator = ZEO
+		}
+		requested_factories = 10
+		progress = 0.0
+		efficiency = 80
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_2
+			creator = ZEO
+		}
+		requested_factories = 10
+		progress = 0.0
+		efficiency = 80
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = ZEO
+		}
+		requested_factories = 5
+		progress = 0.0
+		efficiency = 80
+	}
+}

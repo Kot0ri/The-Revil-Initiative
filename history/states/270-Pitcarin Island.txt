@@ -1,0 +1,23 @@
+state={
+	id=270
+	name="STATE_270"
+	history={
+		owner = EFS
+		add_core_of = EFS
+		buildings = {
+			13305 = {
+				naval_base = 5
+			}
+		}
+		79.3.1 = {
+			controller = ZEO
+		}
+	}
+	provinces={
+		13305
+	}
+	manpower=10
+	buildings_max_level_factor=1.000
+	state_category=orbit
+	local_supplies=15.0 
+}

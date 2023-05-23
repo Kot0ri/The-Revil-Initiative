@@ -1,0 +1,272 @@
+﻿division_template = {
+	name = "ガンダム"
+	regiments = {
+		rx75 = { x = 0 y = 0 }
+		rx78 = { x = 0 y = 1 }
+		rx77 = { x = 0 y = 2 }
+	}
+	support = {
+ 	  recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "ジム"
+	regiments = {
+		rgm79 = { x = 0 y = 0 }
+		rgm79 = { x = 0 y = 1 }
+    rgm79 = { x = 0 y = 2 }
+	}
+	support = {
+    recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "ジムMG"
+	regiments = {
+		rgm79_mg = { x = 0 y = 0 }
+		rgm79_mg = { x = 0 y = 1 }
+    rgm79_mg = { x = 0 y = 2 }
+	}
+	support = {
+    recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "フルアーマー"
+	regiments = {
+		fa78 = { x = 0 y = 0 }
+		rgm79 = { x = 0 y = 1 }
+    rgm79 = { x = 0 y = 2 }
+	}
+	support = {
+    recon = { x = 0 y = 0 }
+    engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "陸戦型"
+	regiments = {
+		rx79 = { x = 0 y = 0 }
+		rgm79g = { x = 0 y = 1 }
+    rgm79g = { x = 0 y = 2 }
+	}
+	support = {
+    recon = { x = 0 y = 0 }
+    engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "アレックス"
+	regiments = {
+		rx78_nt = { x = 0 y = 0 }
+		rgm79g = { x = 0 y = 1 }
+    rgm79g = { x = 0 y = 2 }
+	}
+	support = {
+    recon = { x = 0 y = 0 }
+    engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "スナイパー"
+	regiments = {
+		rx79 = { x = 0 y = 0 }
+		rgm79 = { x = 0 y = 1 }
+    rgm79 = { x = 0 y = 2 }
+	}
+	support = {
+    rgm79_sc_support = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+	division= {
+		name = "ガンダム"
+		location = 968
+		division_template = "ガンダム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "ガンダム"
+		location = 968
+		division_template = "ガンダム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "ガンダム"
+		location = 968
+		division_template = "ガンダム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "ガンダム"
+		location = 968
+		division_template = "ガンダム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "ガンダム"
+		location = 968
+		division_template = "ガンダム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "ジム"
+		location = 5090
+		division_template = "ジム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "ジム"
+		location = 5090
+		division_template = "ジム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "ジム"
+		location = 5090
+		division_template = "ジム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "ジム"
+		location = 5090
+		division_template = "ジム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "ジム"
+		location = 5090
+		division_template = "ジム"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "スナイパー"
+		location = 968
+		division_template = "スナイパー"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "アレックス"
+		location = 5090
+		division_template = "アレックス"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "陸戦型"
+		location = 968
+		division_template = "陸戦型"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "フルアーマー"
+		location = 5090
+		division_template = "フルアーマー"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "スナイパー"
+		location = 968
+		division_template = "スナイパー"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "アレックス"
+		location = 5090
+		division_template = "アレックス"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "陸戦型"
+		location = 968
+		division_template = "陸戦型"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "フルアーマー"
+		location = 5090
+		division_template = "フルアーマー"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "スナイパー"
+		location = 968
+		division_template = "スナイパー"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "アレックス"
+		location = 5090
+		division_template = "アレックス"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "陸戦型"
+		location = 968
+		division_template = "陸戦型"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "フルアーマー"
+		location = 5090
+		division_template = "フルアーマー"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "スナイパー"
+		location = 968
+		division_template = "スナイパー"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "アレックス"
+		location = 5090
+		division_template = "アレックス"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "陸戦型"
+		location = 968
+		division_template = "陸戦型"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "フルアーマー"
+		location = 5090
+		division_template = "フルアーマー"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "スナイパー"
+		location = 968
+		division_template = "スナイパー"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "アレックス"
+		location = 5090
+		division_template = "アレックス"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "陸戦型"
+		location = 968
+		division_template = "陸戦型"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "フルアーマー"
+		location = 5090
+		division_template = "フルアーマー"
+		start_experience_factor = 0.2
+	}
+}
+air_wings = {
+	365 = {
+		assault_ship1_equipment = { amount = 10 owner = EFS }
+		core_fighter1_equipment = { amount = 100 owner = EFS }
+		attacker_equipment = { amount = 100 owner = EFS }
+		tactical_bomber1_equipment = { amount = 100 owner = EFS }
+	}
+}

@@ -1,0 +1,1402 @@
+technologies = {
+  plan_rx_tech = {
+    allow = {
+      always = no
+    }
+  }
+  plan_gundam_tech = {
+    allow = {
+      always = no
+    }
+  }
+  plan_g4_tech = {
+    allow = {
+      always = no
+    }
+  }
+  plan_scvx_tech = {
+    allow = {
+      always = no
+    }
+  }
+  rx75_tech = {
+    enable_equipments = {
+      rx75_equipment
+    }
+    dependencies = {
+      ambac3 = 1
+      EFS_mbt3_tech = 1
+      EFS_multirolle1_tech = 1
+    }
+    path = {
+      leads_to_tech = rmv1_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rx76_tech
+      research_cost_coeff = 1
+    }
+    sub_technologies = {
+      rx75_2_tech
+    }
+    research_cost = 2.0
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 2 }
+    }
+    categories = {
+      mobilesuit
+      plan_rx
+      artillery_mobilesuit
+    }
+    on_research_complete_limit = {
+      NOT = {
+        has_template_containing_unit = rx75
+        has_template_containing_unit = rx77
+        has_template_containing_unit = rx78
+      }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_plan_v"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+    ai_will_do = {
+		  base = 1000
+    }
+  }
+  rx75_2_tech = {
+    enable_equipments = {
+      rx75_2_equipment
+    }
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    categories = {
+      mobilesuit
+      artillery_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 50
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 100
+        date > 80.1.1
+      }
+    }
+  }
+  rx76_tech = {
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    enable_equipment_modules = {
+      space_hanger_rx76
+    }
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = -4 y = 4 }
+    }
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 6 }
+    }
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 0 }
+    }
+    categories = {
+      mobilepod
+      plan_rx
+      artillery_mobilesuit
+      space_mobilesuit
+    }
+    ai_will_do = {
+      factor = 2000
+    }
+  }
+  rmv1_tech = {
+    enable_equipments = {
+      rmv1_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 4 }
+    }
+    categories = {
+      mobilesuit
+      artillery_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 80.1.1
+      }
+    }
+  }
+  rx77_tech = {
+    enable_equipments = {
+      rx77_equipment
+    }
+    dependencies = {
+      EFS_multirolle1_tech = 1
+      ambac3 = 1
+    }
+    path = {
+      leads_to_tech = rx77_4_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rgc80_tech
+      research_cost_coeff = 1
+    }
+    sub_technologies = {
+      rx77_2_tech
+    }
+    research_cost = 2.0
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 2 }
+    }
+    categories = {
+      plan_rx
+      mobilesuit
+      artillery_mobilesuit
+    }
+    on_research_complete_limit = {
+      NOT = {
+        has_template_containing_unit = rx75
+        has_template_containing_unit = rx77
+        has_template_containing_unit = rx78
+      }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_plan_v"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+    ai_will_do = {
+      base = 1000
+    }
+  }
+  rx77_2_tech = {
+    enable_equipments = {
+      rx77_2_equipment
+    }
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    categories = {
+      mobilesuit
+      artillery_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 50
+        date > 79.1.1
+      }
+      modifier = {
+        factor = 100
+        date > 80.1.1
+      }
+    }
+  }
+  rx77_4_tech = {
+    enable_equipments = {
+      rx77_4_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 4 }
+    }
+    categories = {
+      mobilesuit
+      artillery_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 80.1.1
+      }
+    }
+  }
+  rgc80_tech = {
+    enable_equipments = {
+      rgc80_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 4 y = 4 }
+    }
+    path = {
+      leads_to_tech = rgc83_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      jabulo_mobilesuit
+      mobilesuit
+      artillery_mobilesuit
+    }
+		on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template = "unlock_efsf_artillery_rgc80" }
+          }
+          load_oob = "unlock_efsf_artillery_rgc80"
+        }
+        country_event = { id = efsf.128 }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+    }
+  }
+  rgc83_tech = {
+    enable_equipments = {
+      rgc83_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 80
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 4 y = 6 }
+    }
+    categories = {
+      jabulo_mobilesuit
+      mobilesuit
+      artillery_mobilesuit
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 5
+        date > 80.1.1
+      }
+    }
+  }
+  rx78_tech = {
+    enable_equipments = {
+      rx78_equipment
+    }
+    dependencies = {
+      EFS_multirolle1_tech = 1
+      ambac3 = 1
+    }
+    path = {
+      leads_to_tech = rx79_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rgm79g_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rgm79_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = fa78_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rx78_xx_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rx78_nt_tech
+      research_cost_coeff = 1
+    }
+    research_cost = 2.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 4 y = 2 }
+    }
+    categories = {
+      plan_rx
+      mobilesuit
+      mobilesuit_rx78
+    }
+    on_research_complete_limit = {
+      NOT = {
+        has_template_containing_unit = rx75
+        has_template_containing_unit = rx77
+        has_template_containing_unit = rx78
+      }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_plan_v"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+    ai_will_do = {
+      base = 1000
+    }
+  }
+  fa78_tech = {
+    enable_equipments = {
+      fsws_equipment
+    }
+    enable_subunits = {
+      fa78
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 4 }
+    }
+    dependencies = {
+      plan_g4_tech = 1
+    }
+    categories = {
+      mobilesuit
+      mobilesuit_rx78
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 100
+        has_tech = plan_g4_tech
+      }
+    }
+  }
+  rx78_xx_tech = {
+    enable_equipments = {
+      rx78_xx_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 8 y = 4 }
+    }
+    dependencies = {
+      plan_g4_tech = 1
+    }
+    categories = {
+      mobilesuit
+      mobilesuit_rx78
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 100
+        has_tech = plan_g4_tech
+      }
+    }
+  }
+  rx78_nt_tech = {
+    enable_equipments = {
+      rx78_nt_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 4 y = 8 }
+    }
+    path = {
+      leads_to_tech = rgm79_n_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rx78_gp1_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      ambac4 = 1
+      plan_g4_tech = 1
+    }
+    sub_technologies = {
+      rx78_nt_2_tech
+    }
+    categories = {
+      augusta_mobilesuit
+      nt_mobilesuit
+      mobilesuit
+      rx78nt
+      mobilesuit_rx78
+    }
+    ai_will_do = {
+      base = 100
+      modifier = {
+        factor = 3
+        has_tech = rgm79_tech
+      }
+    }
+  }
+  rx78_nt_2_tech = {
+    enable_equipments = {
+      fsws_equipment
+    }
+    enable_subunits = {
+      rx78_nt_2
+    }
+    research_cost = 0.1
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    categories = {
+      augusta_mobilesuit
+      nt_mobilesuit
+      mobilesuit
+      rx78nt
+      mobilesuit_rx78
+    }
+    ai_will_do = {
+      base = 100
+    }
+  }
+  rx78_gp1_tech = {
+    enable_equipments = {
+      rx78_gp1_equipment
+    }
+    research_cost = 2.0
+    xp_research_type = army
+    xp_boost_cost = 100
+		xp_research_bonus = 0.3
+    start_year = 81
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 4 y = 10 }
+    }
+    path = {
+      leads_to_tech = rx78_gp2_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rx78_gp3_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rx78_gp4_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      EFS_fighter4_tech = 1
+      plan_gundam_tech = 1
+    }
+    sub_technologies = {
+      rx78_gp1_2_tech
+    }
+    categories = {
+      anaheim_electronics_mobilesuit
+      plan_gundam
+      mobilesuit
+      mobilesuit_rx78
+      space_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 30
+        date > 81.1.1
+      }
+    }
+  }
+  rx78_gp1_2_tech = {
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 81
+    dependencies = {
+      plan_gundam_tech = 1
+    }
+    categories = {
+      anaheim_electronics_mobilesuit
+      plan_gundam
+      mobilesuit
+      mobilesuit_rx78
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 30
+        date > 81.1.1
+      }
+    }
+  }
+  rx78_gp2_tech = {
+    enable_equipments = {
+      rx78_gp2_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 100
+		xp_research_bonus = 0.3
+    start_year = 81
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 12 }
+    }
+    sub_technologies = {
+      rx78_gp2_2_tech
+    }
+    dependencies = {
+      plan_gundam_tech = 1
+    }
+    categories = {
+      anaheim_electronics_mobilesuit
+      plan_gundam
+      mobilesuit
+      mobilesuit_rx78
+      artillery_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 30
+        date > 81.1.1
+      }
+    }
+  }
+  rx78_gp2_2_tech = {
+    enable_subunits = {
+      rx78_gp2_2
+    }
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 81
+    categories = {
+      anaheim_electronics_mobilesuit
+      plan_gundam
+      mobilesuit
+      mobilesuit_rx78
+      artillery_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+    }
+  }
+  rx78_gp3_tech = {
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 100
+		xp_research_bonus = 0.3
+    start_year = 81
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 4 y = 12 }
+    }
+    dependencies = {
+      plan_gundam_tech = 1
+      ifield_barrier = 1
+    }
+    categories = {
+      anaheim_electronics_mobilesuit
+      plan_gundam
+      mobilesuit
+      mobilesuit_rx78
+      space_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 30
+        date > 81.1.1
+      }
+    }
+  }
+  rx78_gp4_tech = {
+    enable_equipments = {
+      rx78_gp4_equipment
+    }
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 100
+		xp_research_bonus = 0.3
+    start_year = 81
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 8 y = 12 }
+    }
+    dependencies = {
+      plan_gundam_tech = 1
+    }
+    categories = {
+      anaheim_electronics_mobilesuit
+      plan_gundam
+      mobilesuit
+      mobilesuit_rx78
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 30
+        date > 81.1.1
+      }
+    }
+  }
+  rx79_tech = {
+    enable_equipments = {
+      rx79_equipment
+    }
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 12 y = 4 }
+    }
+    path = {
+      leads_to_tech = rx79_d_tech
+      research_cost_coeff = 1
+    }
+    sub_technologies = {
+      rx79_ez8_tech
+    }
+    categories = {
+      mobilesuit
+      early_mp_mobilesuit
+      mobilesuit_rx78
+    }
+    on_research_complete_limit = {
+      NOT = {
+        has_template_containing_unit = rx79
+      }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_efsf_early_ms"
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+    ai_will_do = {
+      base = 100
+      modifier = {
+        factor = 10
+        has_country_flag = plan_rx79_is_yes
+      }
+      modifier = {
+        factor = 10
+        has_tech = rgm79_tech
+      }
+    }
+  }
+  rx79_ez8_tech = {
+    enable_equipments = {
+      rx79_ez8_equipment
+    }
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    categories = {
+      mobilesuit
+      early_mp_mobilesuit
+      mobilesuit_rx78
+    }
+    ai_will_do = {
+      base = 10
+    }
+  }
+  rx79_d_tech = {
+    enable_equipments = {
+      rx79_d_equipment
+    }
+    dependencies = {
+      exam = 1
+    }
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 12 y = 6 }
+    }
+    sub_technologies = {
+      rx79_d2_tech
+      rx79_d3_tech
+    }
+    categories = {
+      mobilesuit
+      exam_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+    }
+  }
+  rx79_d2_tech = {
+    enable_equipments = {
+      rx79_d2_equipment
+    }
+    research_cost = 0.4
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    categories = {
+      mobilesuit
+      exam_mobilesuit
+    }
+    dependencies = {
+      exam = 1
+    }
+    ai_will_do = {
+      base = 10
+    }
+  }
+  rx79_d3_tech = {
+    enable_equipments = {
+      rx79_d3_equipment
+    }
+    research_cost = 0.4
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    categories = {
+      mobilesuit
+      exam_mobilesuit
+    }
+    dependencies = {
+      exam = 1
+    }
+    ai_will_do = {
+      base = 10
+    }
+  }
+  rgm79g_tech = {
+    enable_equipments = {
+      rgm79g_equipment
+    }
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 16 y = 4 }
+    }
+    categories = {
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = rgm79g }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_efsf_early_ms"
+        country_event = { id = efsf.128 }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+    ai_will_do = {
+      base = 100
+      modifier = {
+        factor = 10
+        has_country_flag = plan_rx79_is_yes
+      }
+      modifier = {
+        factor = 10
+        has_tech = rgm79_tech
+      }
+    }
+  }
+  rgm79_tech = {
+    enable_equipments = {
+      rgm79_equipment
+    }
+    enable_equipment_modules = {
+      space_hanger_rgm79
+    }
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 20 y = 4 }
+    }
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 6 }
+    }
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 2 }
+    }
+    path = {
+      leads_to_tech = rgm79_d_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rgm79_f_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rgm79_sc_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rgm79_c_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      jabulo_mobilesuit
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = rgm79 }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        load_oob = "unlock_efsf_ms"
+        country_event = { id = efsf.128 }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+    ai_will_do = {
+			base = 1000
+		}
+  }
+  rgm79_c_tech = {
+    enable_equipments = {
+      rgm79_c_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 20 y = 6 }
+    }
+    path = {
+      leads_to_tech = rgm79_n_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rgm79_p_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      jabulo_mobilesuit
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+    }
+  }
+  rgm79_p_tech = {
+    enable_equipments = {
+      rgm79_p_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 83
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 18 y = 8 }
+    }
+    categories = {
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+      modifier = {
+        factor = 10
+        date > 83.1.1
+      }
+    }
+  }
+  rgm79_n_tech = {
+    enable_equipments = {
+      rgm79_n_equipment
+    }
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 80
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 20 y = 10 }
+    }
+    path = {
+      leads_to_tech = rgm79_q_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      rx78_nt_tech = 1
+      rgm79_c_tech = 1
+      rgm79_g_tech = 1
+    }
+    categories = {
+      jabulo_mobilesuit
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+      modifier = {
+        factor = 10
+        date > 80.1.1
+      }
+    }
+  }
+  rgm79_q_tech = {
+    enable_equipments = {
+      rgm79_q_equipment
+    }
+    enable_equipment_modules = {
+      space_hanger_rgm79_q
+    }
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 81
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 20 y = 12 }
+    }
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 6 }
+    }
+    path = {
+      leads_to_tech = rgm79_r_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = achievement.40 }
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+      modifier = {
+        factor = 10
+        date > 81.1.1
+      }
+    }
+  }
+  rgm79_r_tech = {
+    enable_equipments = {
+      rgm79_r_equipment
+    }
+    enable_equipment_modules = {
+      space_hanger_rgm79_r
+    }
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 82
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 20 y = 14 }
+    }
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 8 }
+    }
+    categories = {
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+      modifier = {
+        factor = 10
+        date > 82.1.1
+      }
+    }
+  }
+  rgm79_f_tech = {
+    enable_subunits = {
+      rgm79_f
+      rgm79_f_mg
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 24 y = 6 }
+    }
+    path = {
+      leads_to_tech = rgm79_fp_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      jabulo_mobilesuit
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+    }
+  }
+  rgm79_fp_tech = {
+    enable_equipments = {
+      rgm79_fp_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 24 y = 8 }
+    }
+    categories = {
+      jabulo_mobilesuit
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+    }
+  }
+  rgm79_sc_tech = {
+    enable_subunits = {
+      rgm79_sc
+      rgm79_sc_support
+    }
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 28 y = 6 }
+    }
+    categories = {
+      jabulo_mobilesuit
+      mobilesuit
+      rgm_series
+      sniper_mobilesuit
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = rgm79_sc }
+            is_ai = yes
+          }
+          load_oob = "unlock_efsf_sniper_rgm79sc"
+        }
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+    }
+  }
+  rgm79_d_tech = {
+    enable_equipments = {
+      rgm79_d_equipment
+    }
+    research_cost = 1.0
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 32 y = 6 }
+    }
+    path = {
+      leads_to_tech = rgm79_g_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      augusta_mobilesuit
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+    }
+  }
+  rgm79_g_tech = {
+    enable_equipments = {
+      rgm79_g_equipment
+    }
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 32 y = 8 }
+    }
+    path = {
+      leads_to_tech = rgm79_sp_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = rgm79_n_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      augusta_mobilesuit
+      mobilesuit
+      rgm_series
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+    }
+  }
+  rgm79_gs_tech = {
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    enable_equipment_modules = {
+      space_hanger_rgm79_gs
+    }
+    categories = {
+      augusta_mobilesuit
+      mobilesuit
+      rgm_series
+      space_mobilesuit
+    }
+    dependencies = {
+      rgm79_g_tech = 1
+    }
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 4 }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        country_event = { id = efsf.128 }
+      }
+		}
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        has_war = yes
+      }
+    }
+  }
+  rgm79_sp_tech = {
+    enable_subunits = {
+      rgm79_sp
+      rgm79_sp_support
+    }
+    research_cost = 0.5
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 32 y = 10 }
+    }
+    categories = {
+      augusta_mobilesuit
+      mobilesuit
+      rgm_series
+      sniper_mobilesuit
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = rgm79_sp }
+            is_ai = yes
+          }
+          load_oob = "unlock_efsf_sniper_rgm79sp"
+        }
+        country_event = { id = efsf.128 }
+      }
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        has_idea = efsf_plan_v
+      }
+    }
+  }
+  rx121_tech = {
+    enable_equipments = {
+      rx121_equipment
+    }
+    allow = {
+      always = no
+    }
+    categories = {
+      mobilesuit
+      custom_mobilesuit
+    }
+  }
+}

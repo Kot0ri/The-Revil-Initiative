@@ -1,0 +1,116 @@
+sub_units = {
+	zeon_space_cruiser = {
+		sprite = zeon_space_cruiser
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		categories = {
+			category_space_ship
+			category_space_cruiser
+		}
+		need = { archetype_space_cruiser = 1 }
+		max_organisation = 40
+		supply_consumption = 0.01
+
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire rudder_jammed}
+		critical_part_damage_chance_mult = 1
+
+		hit_profile_mult = 1.0
+	}
+	efsf_space_cruiser = {
+		sprite = efsf_space_cruiser
+		map_icon_category = ship
+		priority = 3
+		active = yes
+		type = { screen_ship }
+		categories = {
+			category_space_ship
+			category_space_cruiser
+		}
+		need = { archetype_efsf_space_cruiser = 1 }
+		max_organisation = 40
+		supply_consumption = 0.01
+
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire rudder_jammed}
+		critical_part_damage_chance_mult = 1
+
+		hit_profile_mult = 1.0
+	}
+	zeon_space_fv_cruiser = {
+		sprite = zeon_space_fv_cruiser
+		map_icon_category = ship
+		priority = 8
+		active = yes
+		type = { capital_ship }
+		categories = {
+			category_space_ship
+			category_space_fv_cruiser
+		}
+		need = { archetype_space_fv_cruiser = 1 }
+		max_organisation = 40
+		supply_consumption = 0.05
+
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+
+		hit_profile_mult = 1.0
+	}
+	zeon_space_battleship = {
+		sprite = zeon_space_battleship
+		map_icon_category = ship
+		priority = 9
+		active = yes
+		type = { capital_ship }
+		categories = {
+			category_space_ship
+			category_space_battleship
+		}
+		need = { archetype_space_heavy_battleship = 1 }
+		max_organisation = 40
+		supply_consumption = 0.2
+
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+
+		hit_profile_mult = 1.0
+	}
+	efsf_space_battleship = {
+		sprite = efsf_space_battleship
+		map_icon_category = ship
+		priority = 9
+		active = yes
+		type = { capital_ship }
+		categories = {
+			category_space_ship
+			category_space_battleship
+		}
+		need = { archetype_space_battleship = 1 }
+		max_organisation = 40
+		supply_consumption = 0.2
+
+		critical_parts = { rudder_jammed destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+
+		hit_profile_mult = 1.0
+	}
+	zeon_space_carrier = {
+		sprite = zeon_space_carrier
+		map_icon_category = ship
+		priority = 10
+		active = yes
+		type = { carrier }
+		categories = {
+			category_space_ship
+			category_space_carrier
+		}
+		need = { archetype_space_carrier = 1 }
+		max_organisation = 40
+		supply_consumption = 0.3
+
+		critical_parts = { destroyed_ammo_storage broken_propeller on_fire }
+		critical_part_damage_chance_mult = 1
+
+		hit_profile_mult = 1.0
+	}
+}

@@ -1,0 +1,381 @@
+﻿# エースパイロット
+#1000 ! 教導機動大隊演習（シャア・ガイア・ラル）
+country_event = {
+  id = zeon.1000
+  title = zeon.1000.t
+  desc = zeon.1000.d
+  picture = GFX_country_zeon1000
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.1000.a
+    set_country_flag = ap_char_aznable_enable
+    set_country_flag = ap_miguel_gaia_enable
+    set_country_flag = ap_ramba_ral_enable
+  }
+}
+#1001 ! ルウム会戦・地球寒冷化作戦（ガトー・ライデン・マツナガ・カスペン・トップ・ジャン・リュック・デュバル・ドナヒュー）
+country_event = {
+  id = zeon.1001
+  title = zeon.1001.t
+  desc = zeon.1001.d
+  picture = GFX_country_zeon1001
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.1001.a
+    set_country_flag = ap_anabel_gato_enable
+    set_country_flag = ap_johnny_riden_enable
+    set_country_flag = ap_shin_matsunaga_enable
+    set_country_flag = ap_herbert_von_kuspen_enable
+    set_country_flag = ap_top_enable
+    set_country_flag = ap_jean_luc_duvall_enable
+    set_country_flag = ap_visch_donahue_enable
+  }
+}
+#1002 ! 傷痍軍人（狙撃）部隊（ダリル・ローレンツ）
+country_event = {
+  id = zeon.1002
+  title = zeon.1002.t
+  desc = zeon.1002.d
+  picture = GFX_country_zeon1002
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.1002.a
+    set_country_flag = ap_daryl_lorenz_enable
+    set_country_flag = ap_burroughs_enable
+  }
+}
+#1003 サイクロプス隊増員（バーナード・ワイズマン）
+country_event = {
+  id = zeon.1003
+  title = zeon.1003.t
+  desc = zeon.1003.d
+  picture = GFX_country_zeon1003
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    ZEO_bernard_wiseman = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = zeon.1003.a
+    set_country_flag = ap_bernerd_wiseman_enable
+  }
+}
+#1004 EXAM開発（ニムバス・シュターゼン）
+country_event = {
+  id = zeon.1004
+  title = zeon.1004
+  desc = zeon.1004
+  picture = GFX_country_zeon1004
+
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.1004.a
+    set_country_flag = ap_nimbus_schterzen_enable
+  }
+}
+#1005
+country_event = {
+  id = zeon.1005
+  title = zeon.1005.t
+  desc = zeon.1005.d
+  picture = GFX_country_zeon1005
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.1005.a
+  }
+}
+#1006 ! ハーディ・シュタイナー
+country_event = {
+  id = zeon.1006
+  title = zeon.1006.t
+  desc = zeon.1006.d
+  picture = GFX_country_zeon1006
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    country_event = { id = zeon.31 days = 10 }
+  }
+
+  option = {
+    name = zeon.1006.a
+    set_country_flag = ap_hardie_steiner_enable
+  }
+}
+#1007 ! アフリカ戦線（デザート・ロンメル）
+country_event = {
+  id = zeon.1007
+  title = zeon.1007.t
+  desc = zeon.1007.d
+  picture = GFX_country_zeon1007
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.1007.a
+    set_country_flag = ap_desert_ronmel_enable
+  }
+}
+#1008 ! G3ガス（シーマ・ガラハウ）
+country_event = {
+  id = zeon.1008
+  title = zeon.1008.t
+  desc = zeon.1008.d
+  picture = GFX_country_zeon1008
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.1008.a
+    set_country_flag = ap_cima_garahau_enable
+  }
+}
+#1009 国防軍士官学校（エリク・ブランケ）
+country_event = {
+  id = zeon.1009
+  title = zeon.1009.t
+  desc = zeon.1009.d
+  picture = GFX_country_zeon1009
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.1009.a
+    set_country_flag = ap_erik_blanke_enable
+  }
+}
+#1010 ! モビルダイバー試験生存（ヴェルナー・ホルバイン）
+country_event = {
+  id = zeon.1010
+  title = zeon.1010.t
+  desc = zeon.1010.d
+  picture = GFX_country_zeon1010
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.1010.a
+    set_country_flag = ap_velner_holvain_enable
+  }
+}
+#1011 ! ヒルドルブ試験生存（デメジエール・ソンネン）
+country_event = {
+  id = zeon.1011
+  title = zeon.1011.t
+  desc = zeon.1011.d
+  picture = GFX_country_zeon1011
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.1011.a
+    set_country_flag = ap_demeziere_sonnen_enable
+  }
+}
+#1012 ザクスナイパー研究（ヨンム・カークス）
+country_event = {
+  id = zeon.1012
+  title = zeon.1012.t
+  hidden = yes
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    if = {
+      limit = {
+        any_unit_leader = {
+          NOT = { has_id = 210 }
+        }
+        original_tag = ZEO
+      }
+      ZEO_yonem_kirks = {
+        set_character_flag = enable_corps_commander
+      }
+    }
+  }
+
+  option = {
+    name = zeon.1012.a
+  }
+}
+#1013 グラブロ（ロニ・ガーベイ）
+country_event = {
+  id = zeon.1013
+  title = zeon.1013.t
+  hidden = yes
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    if = {
+      limit = {
+        any_unit_leader = {
+          NOT = { has_id = 211 }
+        }
+        original_tag = ZEO
+      }
+      ZEO_loni_garvey = {
+        set_character_flag = enable_corps_commander
+      }
+    }
+  }
+
+  option = {
+    name = zeon.1013.a
+  }
+}
+
+#1000 サイド7で戦闘（アムロ・ブライト）
+country_event = {
+  id = efsf.1000
+  title = efsf.1000.t
+  desc = efsf.1000.d
+  picture = GFX_country_efsf1000
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_country_flag = ap_amuro_ray_enable
+    set_country_flag = ap_bright_noah_enable
+  }
+  option = {
+    name = efsf.1000.a
+  }
+}
+#1001 テストパイロットの採用（クリス・ウラキ）
+country_event = {
+  id = efsf.1001
+  title = efsf.1001.t
+  desc = efsf.1001.d
+  picture = GFX_country_efsf1001
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_country_flag = ap_christina_mackenzie_enable
+    set_country_flag = ap_kou_uraki_enable
+    EFS_christina_mackenzie = {
+      set_character_flag = enable_corps_commander
+    }
+}
+  option = {
+    name = efsf.1001.a
+  }
+}
+#1002 ! ルウム会戦・地球寒冷化作戦（ヤザン・ライラ・ユウ・マスター・バニング・ユーグ）
+country_event = {
+  id = efsf.1002
+  title = efsf.1002.t
+  desc = efsf.1002.d
+  picture = GFX_country_efsf1002
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_country_flag = ap_yazan_gable_enable
+    set_country_flag = ap_laila_milla_rira_enable
+    set_country_flag = ap_you_kajima_enable
+    set_country_flag = ap_master_p_rayer_enable
+    set_country_flag = ap_south_burning_enable
+    set_country_flag = ap_hugues_courand_enable
+  }
+  option = {
+    name = efsf.1002.a
+  }
+}
+#1003 ! ムーア同胞団（イオ・フレミング、クローディア・ペール）
+country_event = {
+  id = efsf.1003
+  title = efsf.1003.t
+  desc = efsf.1003.d
+  picture = GFX_country_efsf1003
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_country_flag = ap_io_fleming_enable
+    set_country_flag = ap_claudia_peer_enable
+  }
+  option = {
+    name = efsf.1003.a
+  }
+}
+#1004 艦長採用（ヘンケン）
+country_event = {
+  id = efsf.1004
+  title = efsf.1004.t
+  desc = efsf.1004.d
+  picture = GFX_country_efsf1004
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_country_flag = ap_henken_bekkener_enable
+  }
+  option = {
+    name = efsf.1004.a
+  }
+}
+#1005 ! シロー08小隊に着任
+country_event = {
+  id = efsf.1005
+  title = efsf.1005.t
+  desc = efsf.1005.d
+  picture = GFX_country_efsf1005
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_country_flag = ap_shiroh_amada_enable
+  }
+  option = {
+    name = efsf.1005.a
+  }
+}
+#1006 ! ザクを鹵獲（フェデリコ）
+country_event = {
+  id = efsf.1006
+  title = efsf.1006.t
+  desc = efsf.1006.d
+  picture = GFX_country_efsf1006
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_country_flag = ap_federico_czariano_enable
+  }
+  option = {
+    name = efsf.1006.a
+  }
+}

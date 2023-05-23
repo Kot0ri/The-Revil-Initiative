@@ -1,0 +1,3763 @@
+﻿add_namespace = zeon
+
+#9999 テストイベント
+country_event = {
+  id = zeon.9999
+  title = zeon.9999.t
+  desc = zeon.9999.d
+  picture = GFX_report_event_german_parade_paris
+
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.9999.a
+    set_technology = {
+      ms06_r_tech = 1
+      ms07_c_tech = 1
+      ms08_tx_tech = 1
+      ms09_tech = 1
+      ms14_tech = 1
+      ms18_tech = 1
+      max03_tech = 1
+      ma08_tech = 1
+      ms06_z_tech = 1
+      msn02_tech = 1
+      ZEO_ms_weapon_beamgun_01_tech = 1
+      ZEO_ms_weapon_beamsord_01_tech = 1
+      mega_particle2 = 1
+      ZEO_tactical_bomber1_tech = 1
+      msm07_tech = 1
+      msm04_tech = 1
+      msm04_g_tech = 1
+    }
+    load_oob = "ZEO_test"
+  }
+}
+#9991
+country_event = {
+  id = zeon.9991
+  title = zeon.9991.t
+  desc = zeon.9991.d
+  picture = GFX_report_event_german_parade_paris
+
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.9991.a
+    ZEO = {
+      add_equipment_to_stockpile = {
+        type = ms05_equipment
+        amount = 1
+        producer = ZEO
+      }
+    }
+  }
+  option = {
+    name = zeon.9991.b
+    EFS = {
+      add_equipment_to_stockpile = {
+        type = ms05_equipment
+        amount = 1000
+        producer = ZEO
+      }
+      add_equipment_to_stockpile = {
+        type = ms_weapon_machinegun_01_equipment
+        amount = 1000
+        producer = ZEO
+      }
+      add_equipment_to_stockpile = {
+        type = ms_weapon_heathawk_01_equipment
+        amount = 1000
+        producer = ZEO
+      }
+      add_equipment_to_stockpile = {
+        type = ms_shield_01_equipment
+        amount = 1000
+        producer = ZEO
+      }
+    }
+  }
+}
+#9992
+country_event = {
+  id = zeon.9992
+  title = zeon.9992.t
+  desc = "number of units is [?EFS.num_equipment@archetype_ms05]"
+  picture = GFX_report_event_german_parade_paris
+
+  fire_only_once = yes
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.9992.a
+  }
+}
+
+#2 !! ザクロールアウト
+country_event = {
+  id = zeon.2
+  title = zeon.2.t
+  desc = zeon.2.d
+  picture = GFX_country_zeon002
+
+  trigger = {
+    original_tag = ZEO
+    has_equipment = {
+      archetype_ms05 > 0
+    }
+    has_war = no
+    has_global_flag = start_is_uc0075
+  }
+  mean_time_to_happen = { days = 1 }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.2.a
+    ai_chance = {
+			base = 1
+		}
+    hidden_effect = {
+      country_event = { id = zeon.58 days = 10 }
+    }
+  }
+}
+#3 !! 総力戦研究
+country_event = {
+  id = zeon.3
+  title = zeon.3.t
+  desc = {
+    text = zeon.3.d_1
+    trigger = {
+      has_completed_focus = zeon_harmony_with_deikun
+    }
+  }
+  desc = {
+    text = zeon.3.d_2
+    trigger = {
+      has_completed_focus = zeon_repression_of_deikun
+    }
+  }
+  picture = GFX_country_zeon003
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.3.a
+    if = {
+      limit = {
+        has_completed_focus = zeon_harmony_with_deikun
+      }
+      unlock_decision_tooltip = op_freeze_earth
+      ZEO = {
+        set_country_flag = operation_freeze_earth_is_yes
+      }
+    }
+    if = {
+      limit = {
+        has_completed_focus = zeon_repression_of_deikun
+      }
+      unlock_decision_tooltip = op_british
+      ZEO = {
+        set_country_flag = operation_british_is_yes
+      }
+    }
+    ZEO = {
+      set_country_flag = operation_drop_earth_is_yes
+    }
+  }
+}
+#5 !! 連邦政府高官との接触　交渉成立
+country_event = {
+  id = zeon.5
+  title = zeon.5.t
+  desc = zeon.5.d
+  picture = GFX_country_zeon005
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.5.a
+    EFS = {
+      country_event = { id = efsf.8 days = 15 }
+    }
+  }
+}
+#6 !! 連邦政府高官との接触　交渉不成立
+country_event = {
+  id = zeon.6
+  title = zeon.6.t
+  desc = zeon.6.d
+  picture = GFX_country_zeon006
+
+  is_triggered_only = yes
+  immediate = {
+    ZEO = {
+      set_country_flag = meeting_with_king_end
+    }
+  }
+
+  option = {
+    name = zeon.6.a
+  }
+}
+#8 !! ザンジバル進宙
+country_event = {
+  id = zeon.8
+  title = zeon.8.t
+  desc = zeon.8.d
+  picture = GFX_country_zeon008
+
+  trigger = {
+    original_tag = ZEO
+    has_equipment = {
+      archetype_assault_ship > 0
+    }
+    has_war = no
+  }
+  mean_time_to_happen = { days = 1 }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.8.a
+    ai_chance = {
+			base = 1
+		}
+  }
+}
+#9 !! ダイクンの遺児3
+country_event = {
+  id = zeon.9
+  title = zeon.9.t
+  desc = zeon.9.d
+  picture = GFX_country_zeon009
+
+  trigger = {
+    has_country_flag = casval_and_aletesia_2
+  }
+  fire_only_once = yes
+  mean_time_to_happen = { days = 7 }
+
+  immediate = {
+    ZEO = {
+      set_country_flag = casval_and_aletesia_3
+      clr_country_flag = ap_char_aznable_enable
+    }
+  }
+
+  option = {
+    name = zeon.9.a
+    ai_chance = {
+			base = 80
+		}
+    news_event = { id = news.3 hours = 12 }
+    hidden_effect = {
+      if = {
+        limit = {
+          has_character = ZEO_char_aznable
+        }
+        retire_character = ZEO_char_aznable
+      }
+    }
+    clr_country_flag = ap_char_aznable_enable
+    add_country_leader_role = {
+      character = ZEO_casval_rem_deikun
+      promote_leader = yes
+      country_leader={
+        expire = "100.1.1"
+        ideology = contlism
+        traits = {
+        }
+      }
+    }
+    ZEO_casval_rem_deikun = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = zeon.9.b
+    ai_chance = {
+			base = 20
+		}
+    news_event = { id = news.8 hours = 12 }
+  }
+}
+#11 !! ミノフスキーの亡命
+country_event = {
+  id = zeon.11
+  title = zeon.11.t
+  desc = zeon.11.d
+  picture = GFX_country_zeon011
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.11.a
+    ai_chance = {
+      base = 80
+    }
+    set_global_flag = minovsky_not_free
+  }
+  option = {
+    name = zeon.11.b
+    ai_chance = {
+      base = 20
+    }
+    set_global_flag = minovsky_free
+  }
+}
+#12 !! ブリティッシュ作戦 コロニー移動開始
+country_event = {
+  id = zeon.12
+  title = zeon.12.t
+  desc = zeon.12.d
+  picture = GFX_country_zeon012
+
+  is_triggered_only = yes
+  immediate = {
+    news_event = { id = news.28 days = 4 }
+    ZEO = {
+      country_event = { id = zeon.1008 hours = 5 }
+    }
+  }
+
+  option = {
+    name = zeon.12.a
+  }
+}
+#13 !! ドズルとゼナの結婚
+country_event = {
+  id = zeon.13
+  title = zeon.13.t
+  desc = zeon.13.d
+  picture = GFX_country_zeon013
+
+  trigger = {
+    tag = ZEO
+    has_global_flag = sunrise_uprising_success
+  }
+  immediate = {
+  }
+  mean_time_to_happen = { days = 60 }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.13.a
+    add_stability = 0.02
+    set_global_flag = dozle_marriage
+  }
+}
+#14 !! ミネバ・ラオ・ザビ誕生
+country_event = {
+  id = zeon.14
+  title = zeon.14.t
+  desc = zeon.14.d
+  picture = GFX_country_zeon014
+
+  trigger = {
+    tag = ZEO
+    has_global_flag = dozle_marriage
+  }
+  mean_time_to_happen = {
+    months = 30
+    modifier = {
+      factor = 0.5
+      has_global_flag = start_is_uc0078
+    }
+    modifier = {
+      factor = 0
+      has_global_flag = start_is_uc0079
+    }
+  }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.14.a
+    add_stability = 0.04
+  }
+}
+#16 !! サイド6を通じて休戦協定
+country_event = {
+  id = zeon.16
+  title = zeon.16.t
+  desc = {
+    text = zeon.16.d1
+    trigger = {
+      has_country_flag = operation_british_is_yes
+    }
+  }
+  desc = {
+    text = zeon.16.d2
+    trigger = {
+      has_country_flag = operation_freeze_earth_is_yes
+    }
+  }
+  picture = GFX_country_zeon016
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      EFS = {
+        country_event = { id = efsf.97 days = 3 }
+      }
+    }
+  }
+  option = {
+    name = zeon.16.a
+  }
+}
+#17 !! サイド2攻撃をリーク 無視
+country_event = {
+  id = zeon.17
+  title = zeon.17.t
+  desc = zeon.17.d
+  picture = GFX_country_zeon017
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.17.a
+    add_political_power = 200
+  }
+}
+#18 !! グラナダ密約（グラナダ）
+country_event = {
+  id = zeon.18
+  title = zeon.18.t
+  desc = zeon.18.d
+  picture = GFX_country_zeon018
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.18.a
+    ai_chance = {
+      factor = 80
+      modifier = {
+        factor = 0.5
+        GRA = {
+          has_opinion = {
+            target = ZEO
+            value > 39
+          }
+        }
+      }
+      modifier = {
+        factor = 0.5
+        GRA = {
+          spacesupremacy > 0.3
+        }
+      }
+    }
+    ZEO = {
+      country_event = { id = zeon.84 hours = 3 }
+    }
+  }
+  option = {
+    name = zeon.18.b
+    ai_chance = {
+      factor = 20
+      modifier = {
+        factor = 2
+        GRA = {
+          has_opinion = {
+            target = ZEO
+            value > 39
+          }
+        }
+      }
+      modifier = {
+        factor = 2
+        GRA = {
+          spacesupremacy > 0.3
+        }
+      }
+      modifier = {
+        factor = 0
+        GRA = {
+          has_country_flag = granada_efsf_warning_accept
+        }
+      }
+    }
+    ZEO = {
+      country_event = { id = zeon.85 hours = 3 }
+    }
+  }
+}
+#19 !! グラナダへの警告（連邦）
+country_event = {
+  id = zeon.19
+  title = zeon.19.t
+  desc = zeon.19.d
+  picture = GFX_country_zeon019
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.19.a
+    set_country_flag = granada_efsf_warning_accept
+    ai_chance = {
+      base = 80
+      modifier = {
+        factor = 0.5
+        GRA = {
+          has_opinion = {
+            target = ZEO
+            value > 49
+          }
+        }
+      }
+      modifier = {
+        factor = 0.5
+        GRA = {
+          spacesupremacy > 0.4
+        }
+      }
+    }
+  }
+  option = {
+    name = zeon.19.b
+    ai_chance = {
+      base = 20
+      modifier = {
+        factor = 2
+        GRA = {
+          has_opinion = {
+            target = ZEO
+            value > 49
+          }
+        }
+      }
+      modifier = {
+        factor = 2
+        GRA = {
+          spacesupremacy > 0.4
+        }
+      }
+    }
+  }
+}
+#20 !! 本土防衛ラインの完成
+country_event = {
+  id = zeon.20
+  title = zeon.20.t
+  desc = zeon.20.d
+  picture = GFX_country_zeon020
+
+  trigger = {
+    original_tag = ZEO
+    has_country_flag = forted_solomon
+    has_country_flag = forted_abaoaque
+    832 = {
+      is_fully_controlled_by = ZEO
+    }
+    833 = {
+      is_fully_controlled_by = ZEO
+    }
+    830 = {
+      is_fully_controlled_by = ZEO
+    }
+    831 = {
+      is_fully_controlled_by = ZEO
+    }
+    OR = {
+      AND = {
+        834 = {
+          is_fully_controlled_by = ZEO
+        }
+        909 = {
+          is_fully_controlled_by = ZEO
+        }
+        910 = {
+          is_fully_controlled_by = ZEO
+        }
+      }
+      GRA = {
+        OR = {
+          is_subject_of = ZEO
+          has_war_together_with = ZEO
+        }
+      }
+    }
+  }
+  fire_only_once = yes
+  mean_time_to_happen = { days = 1 }
+
+  option = {
+    name = zeon.20.a
+    add_political_power = 150
+    add_war_support = 0.05
+    add_stability = 0.05
+  }
+}
+#21 !! U.C.0079 シャリア・ブルの帰還
+country_event = {
+  id = zeon.21
+  title = zeon.21.t
+  desc = zeon.21.d
+  picture = GFX_country_zeon021
+
+  trigger = {
+    has_country_flag = newtype_division_is_yes
+    has_country_flag = jupiter_fleet_is_back
+    original_tag = ZEO
+  }
+  mean_time_to_happen = { days = 10 }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.21.a
+    set_country_flag = ap_challia_bull_enable
+  }
+  option = {
+    name = zeon.21.b
+  }
+}
+#40 !! 重力戦線
+country_event = {
+  id = zeon.40
+  title = zeon.40.t
+  desc = zeon.40.d
+  picture = GFX_country_zeon040
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.40.a
+  }
+}
+#46 !! U.C.0081 5.5 ゼナ・ザビ病死
+country_event = {
+  id = zeon.46
+  title = zeon.46.t
+  desc = zeon.46.d
+  picture = GFX_country_zeon046
+
+  trigger = {
+    original_tag = ZEO
+    date > 81.5.1
+    has_global_flag = dozle_marriage
+  }
+  mean_time_to_happen = { days = 100 }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.46.a
+  }
+}
+#47 !! 穏健派への接触
+country_event = {
+  id = zeon.47
+  title = {
+    text = zeon.47.t1
+    trigger = {
+      NOT = {
+        has_government = spacesupremacy
+      }
+    }
+  }
+  title = {
+    trigger = {
+      has_government = spacesupremacy
+    }
+    text = zeon.47.t2
+  }
+  desc = {
+    text = zeon.47.d1
+    trigger = {
+      NOT = {
+        has_government = spacesupremacy
+      }
+    }
+  }
+  desc = {
+    trigger = {
+      has_government = spacesupremacy
+    }
+    text = zeon.47.d2
+  }
+  picture = GFX_country_zeon047
+
+  is_triggered_only = yes
+  option = {
+    name = zeon.47.a
+    add_stability = -0.03
+    add_popularity = {
+      ideology = zeonism
+      popularity = -0.05
+    }
+    ai_chance = {
+      factor = 0.5
+      modifier = {
+        has_government = zeonism
+        factor = 0.5
+      }
+      modifier = {
+        has_government = spacesupremacy
+        factor = 1.5
+      }
+    }
+  }
+  option = {
+    name = zeon.47.b
+    add_popularity = {
+      ideology = zeonism
+      popularity = 0.1
+    }
+    ai_chance = {
+      factor = 0.5
+      modifier = {
+        has_government = zeonism
+        factor = 1.5
+      }
+      modifier = {
+        has_government = spacesupremacy
+        factor = 0.5
+      }
+    }
+  }
+}
+#48 !! ルナツーの売却
+country_event = {
+  id = zeon.48
+  title = zeon.48.t
+  desc = zeon.48.d
+  picture = GFX_country_zeon048
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.48.a
+    add_named_threat = {
+      name = sale_of_luna2
+      threat = -3
+    }
+    EFS = {
+      add_political_power = 150
+    }
+    ZEO = {
+      transfer_state = 930
+      transfer_state = 931
+      add_timed_idea = {
+        idea = buy_luna2
+        days = 730
+      }
+    }
+    930 = {
+      add_core_of = ZEO
+      remove_core_of = EFS
+    }
+    931 = {
+      add_core_of = ZEO
+      remove_core_of = EFS
+    }
+    ai_chance = {
+      base = 90
+    }
+  }
+  option = {
+    name = zeon.48.b
+    ai_chance = {
+      base = 10
+    }
+  }
+}
+#49 !! 公王との会談
+country_event = {
+  id = zeon.49
+  title = zeon.49.t
+  desc = {
+    text = zeon.49.d1
+    trigger = {
+      NOT = {
+        has_country_leader = {
+          character= ZEO_degwin_sodo_zabi
+          ruling_only = yes
+        }
+      }
+    }
+  }
+  desc = {
+    text = zeon.49.d2
+    trigger = {
+      has_country_leader = {
+        character= ZEO_degwin_sodo_zabi
+        ruling_only = yes
+      }
+  }
+  }
+  picture = GFX_country_zeon049
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.49.a
+    trigger = {
+      NOT = {
+        has_country_leader = {
+          character= ZEO_degwin_sodo_zabi
+          ruling_only = yes
+        }
+      }
+    }
+    ai_chance = {
+      factor = 0.5
+      modifier = {
+        has_government = spacesupremacy
+        factor = 2
+      }
+    }
+    ZEO = {
+      country_event = { id = zeon.123 days = 3 }
+      add_stability = -0.05
+      add_political_power = -100
+    }
+  }
+  option = {
+    name = zeon.49.b
+    trigger = {
+      NOT = {
+        has_country_leader = {
+          character= ZEO_degwin_sodo_zabi
+          ruling_only = yes
+        }
+      }
+    }
+    ai_chance = {
+      factor = 1
+      modifier = {
+        has_government = spacesupremacy
+        factor = 0.5
+      }
+    }
+    EFS = {
+      country_event = { id = efsf.108 days = 6 }
+    }
+  }
+  option = {
+    name = zeon.49.c
+    trigger = {
+      has_country_leader = {
+        character= ZEO_degwin_sodo_zabi
+        ruling_only = yes
+      }
+  }
+    EFS = {
+      country_event = { id = efsf.108 days = 6 }
+    }
+  }
+}
+#50 !! 反ザビ派を支援
+country_event = {
+  id = zeon.50
+  title = zeon.50.t
+  desc = zeon.50.d
+  picture = GFX_country_zeon050
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.50.a
+  }
+}
+#52 !! 月への電力供給
+country_event = {
+  id = zeon.52
+  title = zeon.52.t
+  desc = zeon.52.d
+  picture = GFX_country_zeon052
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.52.a
+  }
+}
+#53 !! ローゼルシアの引き渡し
+country_event = {
+  id = zeon.53
+  title = zeon.53.t
+  desc = zeon.53.d
+  picture = GFX_country_zeon053
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.53.a
+    ai_chance = {
+      base = 70
+    }
+    news_event = { id = news.137 days = 10 }
+    country_event = { id = achievement.3 }
+  }
+  option = {
+    name = zeon.53.b
+    ai_chance = {
+      base = 30
+    }
+    EFS = {
+      country_event = { id = zeon.122 days = 3 }
+    }
+  }
+}
+#58 ジオニックの不正疑惑
+country_event = {
+  id = zeon.58
+  title = zeon.58.t
+  desc = zeon.58.d
+  picture = GFX_country_zeon058
+
+  is_triggered_only = yes
+
+  immediate = {
+    hidden_effect = {
+      news_event = { id = news.5 days = 20 }
+    }
+  }
+
+  option = { # Zaku
+    name = zeon.58.a
+    if = {
+      limit = {
+        has_idea = zimmad
+      }
+      remove_ideas = zeonic
+    }
+    add_ideas = {
+      zeonic
+    }
+    add_timed_idea = {
+      idea = zeonic_owe_us
+      days = 360
+    }
+    add_political_power = 150
+    add_opinion_modifier = {
+      target = GRA
+      modifier = zeonic_owe_us_modifier
+    }
+    ai_chance = {
+      base = 100
+    }
+  }
+  option = { # Zudah
+    name = zeon.58.b
+    set_technology = {
+      recruiment_zudah = 1
+      ems04_tech = 1
+      nuclear_reactor2 = 1
+      nuclear_reactor3 = 1
+    }
+    delete_unit_template_and_units = {
+      division_template = "MS Division (Invasion)"
+    }
+    load_oob = "ZEO_zudah_invasion"
+    if = {
+      limit = {
+        has_idea = zeonic
+      }
+      remove_ideas = zimmad
+    }
+    add_ideas = {
+      zeonic_is_evil
+      zimmad
+    }
+    add_opinion_modifier = {
+      target = GRA
+      modifier = false_competition_modifier
+    }
+    add_timed_idea = {
+      idea = false_competition
+      days = 360
+    }
+    add_political_power = -100
+    set_global_flag = zeonic_is_not_yes
+    unlock_decision_tooltip = ap_jean_luc_duvall
+    set_country_flag = ap_jean_luc_duvall_enable
+    hidden_effect = {
+      country_event = { id = achievement.16 }
+    }
+    ai_chance = {
+      base = 0
+    }
+  }
+}
+#66 大粛清でシャア失踪（クワトロ・バジーナ）
+country_event = {
+  id = zeon.66
+  title = zeon.66.t
+  desc = zeon.66.d
+  picture = GFX_country_zeon066
+
+  is_triggered_only = yes
+
+  immediate = {
+  }
+
+  option = {
+    name = zeon.66.a
+    retire_character = ZEO_char_aznable
+    EFS = {
+      country_event = { id = efsf.52 days = 180 random = 100 }
+    }
+  }
+}
+#67 0! 地球寒冷化作戦 ルナ2移動開始
+country_event = {
+  id = zeon.67
+  title = zeon.67.t
+  desc = zeon.67.d
+  picture = GFX_country_zeon067
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.67.a
+  }
+}
+#68 0! 地球寒冷化作戦 アクシズ移動開始
+country_event = {
+  id = zeon.68
+  title = zeon.68.t
+  desc = zeon.68.d
+  picture = GFX_country_zeon068
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.68.a
+  }
+}
+#69 !! 月の専制君主
+country_event = {
+  id = zeon.69
+  title = zeon.69.t
+  desc = zeon.69.d
+  picture = GFX_country_zeon112
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.69.a
+  }
+}
+#70 0! 白い悪魔
+country_event = {
+  id = zeon.70
+  title = zeon.70.t
+  desc = zeon.70.d
+  picture = GFX_country_zeon070
+
+  is_triggered_only = yes
+  immediate = {
+    add_ideas = white_devil_ZEO
+  }
+
+  option = {
+    name = zeon.70.a
+  }
+}
+#71 !! アルテイシアの離脱
+country_event = {
+  id = zeon.71
+  title = zeon.71.t
+  desc = zeon.71.d
+  picture = GFX_country_zeon071
+
+  is_triggered_only = yes
+  immediate = {
+    clr_country_flag = casval_and_aletesia_1
+  }
+
+  option = {
+    name = zeon.71.a
+  }
+}
+#72 !! オデッサ降下作戦成功
+country_event = {
+  id = zeon.72
+  title = zeon.72.t
+  desc = zeon.72.d
+  picture = GFX_country_zeon072
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.72.a
+  }
+}
+#73 !! 北米降下作戦成功
+country_event = {
+  id = zeon.73
+  title = zeon.73.t
+  desc = zeon.73.d
+  picture = GFX_country_zeon073
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.73.a
+  }
+}
+#74 !! ジャブロー降下作戦成功
+country_event = {
+  id = zeon.74
+  title = zeon.74.t
+  desc = zeon.74.d
+  picture = GFX_country_zeon074
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.74.a
+  }
+}
+#75 !! ヨーロッパ降下作戦成功
+country_event = {
+  id = zeon.75
+  title = zeon.75.t
+  desc = zeon.75.d
+  picture = GFX_country_zeon075
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.75.a
+  }
+}
+#76 !! アジア降下作戦成功
+country_event = {
+  id = zeon.76
+  title = zeon.76.t
+  desc = zeon.76.d
+  picture = GFX_country_zeon076
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.76.a
+  }
+}
+#77 !! アフリカ降下作戦成功
+country_event = {
+  id = zeon.77
+  title = zeon.77.t
+  desc = zeon.77.d
+  picture = GFX_country_zeon077
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.77.a
+  }
+}
+#78 !! オーストラリア降下作戦成功
+country_event = {
+  id = zeon.78
+  title = zeon.78.t
+  desc = zeon.78.d
+  picture = GFX_country_zeon078
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.78.a
+  }
+}
+#79 0! 敵の敵
+country_event = {
+  id = zeon.79
+  title = zeon.79.t
+  desc = zeon.79.d
+  picture = GFX_country_zeon079
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.79.a
+    ai_chance = {
+      base = 80
+    }
+    EFS = {
+      country_event = { id = efsf.91 hours = 3 }
+    }
+  }
+  option = {
+    name = zeon.79.b
+    ai_chance = {
+      base = 20
+    }
+    EFS = {
+      country_event = { id = efsf.92 hours = 3 }
+    }
+  }
+}
+#80 !! ア・バオア・クーの接収
+country_event = {
+  id = zeon.80
+  title = zeon.80.t
+  desc = zeon.80.d
+  picture = GFX_country_zeon080
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.80.a
+    ai_chance = {
+      base = 10
+    }
+    EFS = {
+      country_event = { id = efsf.93 days = 3 }
+    }
+  }
+  option = {
+    name = zeon.80.b
+    ai_chance = {
+      base = 90
+    }
+    EFS = {
+      country_event = { id = efsf.94 days = 3 }
+    }
+  }
+}
+#81 !! ソロモンの接収
+country_event = {
+  id = zeon.81
+  title = zeon.81.t
+  desc = zeon.81.d
+  picture = GFX_country_zeon081
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.81.a
+    ai_chance = {
+      base = 10
+    }
+    EFS = {
+      country_event = { id = efsf.95 days = 3 }
+    }
+  }
+  option = {
+    name = zeon.81.b
+    ai_chance = {
+      base = 90
+    }
+    EFS = {
+      country_event = { id = efsf.96 days = 3 }
+    }
+  }
+}
+#82 0! MS飛行試験（失敗）
+country_event = {
+  id = zeon.82
+  title = zeon.82.t
+  desc = zeon.82.d
+  picture = GFX_country_zeon082
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.82.a
+  }
+}
+#83 0! MS飛行試験（成功）
+country_event = {
+  id = zeon.83
+  title = zeon.83.t
+  desc = zeon.83.d
+  picture = GFX_country_zeon083
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.83.a
+    set_technology = {
+      ms07_h_8_tech = 1
+    }
+    country_event = { id = achievement.1 }
+  }
+}
+#84 !! グラナダが拒否（ジオン）
+country_event = {
+  id = zeon.84
+  title = zeon.84.t
+  desc = zeon.84.d
+  picture = GFX_country_zeon084
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.84.a
+    ai_chance = {
+      base = 75
+    }
+    set_global_flag = op_granada_mayor_enable
+    custom_effect_tooltip = zeon.84.a_desc
+  }
+  option = {
+    name = zeon.84.b
+    ai_chance = {
+      base = 25
+    }
+    set_global_flag = zeon_granada_not_accept
+  }
+}
+#85 !! グラナダが受け入れる（ジオン）
+country_event = {
+  id = zeon.85
+  title = zeon.85.t
+  desc = zeon.85.d
+  picture = GFX_country_zeon085
+
+  is_triggered_only = yes
+  immediate = {
+    set_global_flag = zeon_granada_military_access
+  }
+
+  option = {
+    name = zeon.85.a
+    news_event = { id = news.124 days = 10 }
+    add_named_threat = {
+      name = threat_name_zeon85
+      threat = 8
+    }
+  }
+}
+#86 !! 地球の有力者
+country_event = {
+  id = zeon.86
+  title = zeon.86.t
+  desc = zeon.86.d
+  picture = GFX_country_zeon086
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      ZEO = {
+        country_event = { id = zeon.92 days = 90 }
+      }
+    }
+  }
+
+  option = {
+    name = zeon.86.a
+  }
+}
+#87 カリフォルニア海軍基地を占拠して潜水艦を取得
+country_event = {
+  id = zeon.87
+  title = zeon.87.t
+  desc = zeon.87.d
+  picture = GFX_country_zeon087
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine_carrier1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine_carrier1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_landing_craft
+        }
+      }
+      set_technology = {
+        ZEO_landing_craft = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_secondary_battery
+        }
+      }
+      set_technology = {
+        ZEO_improved_secondary_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_damage_control_2
+        }
+      }
+      set_technology = {
+        ZEO_damage_control_2 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_ship_torpedo_launcher
+        }
+      }
+      set_technology = {
+        ZEO_improved_ship_torpedo_launcher = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_magnetic_detonator
+        }
+      }
+      set_technology = {
+        ZEO_magnetic_detonator = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_cruiser1_tech
+        }
+      }
+      set_technology = {
+        ZEO_cruiser1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_destroyer1_tech
+        }
+      }
+      set_technology = {
+        ZEO_destroyer1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_naval_mines
+        }
+      }
+      set_technology = {
+        ZEO_improved_naval_mines = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_submarine_mine_laying
+        }
+      }
+      set_technology = {
+        ZEO_improved_submarine_mine_laying = 1
+      }
+    }
+  }
+  option = {
+    name = zeon.87.a
+    load_oob = capture_california_ships
+  }
+}
+#88 ハワイ海軍基地を占拠して潜水艦を取得
+country_event = {
+  id = zeon.88
+  title = zeon.88.t
+  desc = zeon.88.d
+  picture = GFX_country_zeon088
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine_carrier1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine_carrier1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_landing_craft
+        }
+      }
+      set_technology = {
+        ZEO_landing_craft = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_secondary_battery
+        }
+      }
+      set_technology = {
+        ZEO_improved_secondary_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_damage_control_2
+        }
+      }
+      set_technology = {
+        ZEO_damage_control_2 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_ship_torpedo_launcher
+        }
+      }
+      set_technology = {
+        ZEO_improved_ship_torpedo_launcher = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_magnetic_detonator
+        }
+      }
+      set_technology = {
+        ZEO_magnetic_detonator = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_cruiser1_tech
+        }
+      }
+      set_technology = {
+        ZEO_cruiser1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_destroyer1_tech
+        }
+      }
+      set_technology = {
+        ZEO_destroyer1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_naval_mines
+        }
+      }
+      set_technology = {
+        ZEO_improved_naval_mines = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_submarine_mine_laying
+        }
+      }
+      set_technology = {
+        ZEO_improved_submarine_mine_laying = 1
+      }
+    }
+  }
+  option = {
+    name = zeon.88.a
+    load_oob = capture_hawaii_ships
+  }
+}
+#89 ! サイド2への最後通牒（サイド２）
+country_event = {
+  id = zeon.89
+  title = zeon.89.t
+  desc = zeon.89.d
+  picture = GFX_country_zeon089
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.89.a
+    ai_chance = {
+      base = 40
+      modifier = {
+        is_historical_focus_on = yes
+        factor = 0.1
+      }
+    }
+    news_event = { id = news.132 days = 3 }
+  }
+  option = {
+    name = zeon.89.b
+    ai_chance = {
+      base = 60
+      modifier = {
+        is_historical_focus_on = yes
+        factor = 1.5
+      }
+    }
+    ZEO = {
+      country_event = { id = zeon.90 days = 3 }
+    }
+  }
+}
+#90 ! サイド2への最後通牒（拒絶）
+country_event = {
+  id = zeon.90
+  title = zeon.90.t
+  desc = zeon.90.d
+  picture = GFX_country_zeon090
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.90.a
+  }
+}
+#91 !! キャスバルの嫁探し
+country_event = {
+  id = zeon.91
+  title = zeon.91.t
+  desc = zeon.91.d
+  picture = GFX_country_zeon091
+
+  trigger = {
+    original_tag = ZEO
+    has_country_leader = {
+      character= ZEO_casval_rem_deikun
+    }
+  }
+  mean_time_to_happen = {
+    months = 30
+  }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.91.a
+    ai_chance = {
+      base = 35
+    }
+    news_event = { id = news.102 days = 30 }
+  }
+  option = {
+    name = zeon.91.b
+    ai_chance = {
+      base = 50
+    }
+    news_event = { id = news.133 days = 30 }
+  }
+  option = {
+    name = zeon.91.c
+    ai_chance = {
+      base = 15
+    }
+    news_event = { id = news.134 days = 30 }
+  }
+}
+#92 ! イセリナ、恋のあと（発覚）
+country_event = {
+  id = zeon.92
+  title = zeon.92.t
+  desc = zeon.92.d
+  picture = GFX_country_zeon092
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.92.a
+    ai_chance = {
+      base = 35
+    }
+    news_event = { id = news.135 days = 30 }
+  }
+  option = {
+    name = zeon.92.b
+    ai_chance = {
+      base = 65
+    }
+    random_list = {
+      25 = {
+        news_event = { id = news.136 days = 30 }
+      }
+      75 = {
+      }
+    }
+  }
+}
+#93 ! 経済制裁解除の交渉（連邦）
+country_event = {
+  id = zeon.93
+  title = zeon.93.t
+  desc = zeon.93.d
+  picture = GFX_country_zeon093
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.93.a
+    ZEO = {
+      country_event = { id = zeon.53 days = 3 }
+    }
+    ai_chance = {
+      base = 80
+    }
+  }
+  option = {
+    name = zeon.93.b
+    trigger = {
+      NOT = {
+        has_opinion = {
+          target = ZEO
+          value > 49
+        }
+      }
+    }
+    ZEO = {
+      country_event = { id = zeon.121 days = 3 }
+    }
+    ai_chance = {
+      base = 20
+    }
+  }
+}
+#94 !! 地球降下作戦の完了
+country_event = {
+  id = zeon.94
+  title = zeon.94.t
+  desc = zeon.94.d
+  picture = GFX_country_zeon094
+
+  trigger = {
+    original_tag = ZEO
+    ZEO = {
+      has_country_flag = drop_earth_is_end
+    }
+  }
+  mean_time_to_happen = { days = 3 }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.94.a
+    set_division_template_lock = {
+      division_template = "Infantry Division (Invasion)"
+      is_locked = no
+    }
+    set_division_template_lock = {
+      division_template = "Armour Division (Invasion)"
+      is_locked = no
+    }
+    set_division_template_lock = {
+      division_template = "Motorised Division (Invasion)"
+      is_locked = no
+    }
+    set_division_template_lock = {
+      division_template = "MS Division (Invasion)"
+      is_locked = no
+    }
+  }
+}
+#102 ! U.C.0075 7 ムサイ１番艦進宙（news.4）トリガー
+country_event = {
+  id = zeon.102
+  hidden = yes
+
+  trigger = {
+    original_tag = ZEO
+    has_navy_size = {
+      size > 0
+      type = screen_ship
+    }
+    has_war = no
+    has_global_flag = start_is_uc0075
+  }
+  mean_time_to_happen = { days = 10 }
+  fire_only_once = yes
+  immediate = {
+    news_event = { id = news.4 }
+  }
+
+  option = {
+    name = zeon.102.a
+  }
+}
+#103 ! 不使用 宣戦布告（ギレン演説）（news.120）トリガー
+country_event = {
+  id = zeon.103
+  hidden = yes
+
+  is_triggered_only = yes
+
+#  trigger = {
+#    NOT = {
+#      has_global_flag = start_is_uc0079
+#    }
+#    ZEO = {
+#      has_war_with = EFS
+#      has_country_leader = { name = "Gihren Zabi" ruling_only = yes }
+#      has_completed_focus = zeon_megiddo_fire
+#    }
+#  }
+  fire_only_once = yes
+  immediate = {
+    news_event = { id = news.120 }
+  }
+  option = {
+    name = zeon.103.a
+  }
+}
+#104 ! 不使用 グラナダ進駐（news.124）トリガー
+country_event = {
+  id = zeon.104
+  hidden = yes
+
+is_triggered_only = yes
+
+#  trigger = {
+#    country_exists = GRA
+#    ZEO = {
+#      has_war_with = EFS
+#    }
+#    has_global_flag = zeon_granada_military_access
+#  }
+  fire_only_once = yes
+
+  immediate = {
+    news_event = { id = news.124 }
+  }
+  option = {
+    name = zeon.104.a
+  }
+}
+#105 !! フランシス・オービットが総帥を批判
+country_event = {
+  id = zeon.105
+  title = zeon.105.t
+  desc = zeon.105.d
+  picture = GFX_country_zeon105
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    set_country_flag = invite_francis_orbit
+  }
+
+  option = {
+    name = zeon.105.a
+    add_popularity = {
+      ideology = spacesupremacy
+      popularity = -0.05
+    }
+    add_named_threat = {
+      name = threat_name_zeon105
+      threat = 2
+    }
+  }
+}
+#106 !! 総帥の真の友
+country_event = {
+  id = zeon.106
+  title = zeon.106.t
+  desc = zeon.106.d
+  picture = GFX_country_zeon106
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.106.a
+    add_popularity = {
+      ideology = spacesupremacy
+      popularity = 0.08
+    }
+  }
+}
+#108 0! ジオン十字勲章
+country_event = {
+  id = zeon.108
+  title = zeon.108.t
+  desc = zeon.108.d
+  picture = GFX_country_zeon108
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.108.a
+  }
+}
+#109 0! 思想犯の逮捕
+country_event = {
+  id = zeon.109
+  title = zeon.109.t
+  desc = zeon.109.d
+  picture = GFX_country_zeon109
+
+  is_triggered_only = yes
+
+  immediate = {
+  }
+
+  option = {
+    name = zeon.109.a
+    remove_ideas = { zeon_munzo_univercity }
+    add_stability = -0.08
+    add_named_threat = {
+      name = threat_name_zeon109
+      threat = 2
+    }
+  }
+}
+#110 0! フラナガン機関設立
+country_event = {
+  id = zeon.110
+  title = zeon.110.t
+  desc = zeon.110.d
+  picture = GFX_country_zeon110
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.110.a
+  }
+}
+#111 0! ニュータイプ部隊
+country_event = {
+  id = zeon.111
+  title = zeon.111.t
+  desc = zeon.111.d
+  picture = GFX_country_zeon111
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    set_country_flag = ap_lalah_sune_enable
+    set_country_flag = ap_qusco_ale_enable
+    set_country_flag = newtype_division_is_yes
+  }
+
+  option = {
+    name = zeon.111.a
+  }
+}
+#112 AE重役とジオンの密談
+country_event = {
+  id = zeon.112
+  title = zeon.112.t
+  desc = zeon.112.d
+  picture = GFX_country_zeon069
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.112.a
+    ai_chance = {
+      base = 30
+    }
+    ZEO = {
+      country_event = { id = zeon.114 days = 3 }
+    }
+  }
+  option = {
+    name = zeon.112.b
+    ai_chance = {
+      base = 70
+    }
+    ZEO = {
+      country_event = { id = zeon.115 days = 3 }
+    }
+  }
+}
+#113 ギレンとジャミトフの会談
+country_event = {
+  id = zeon.113
+  title = zeon.113.t
+  desc = zeon.113.d
+  picture = GFX_country_zeon113
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  option = {
+    name = zeon.113.a
+  }
+}
+#114 AE重役とジオンの密談（投資で解決）
+country_event = {
+  id = zeon.114
+  title = zeon.114.t
+  desc = zeon.114.d
+  picture = GFX_country_zeon114
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    add_timed_idea = {
+      idea = vbc_promise_zeon
+      days = 360
+    }
+  }
+
+  option = {
+    name = zeon.114.a
+    news_event = { id = news.73 days = 3 }
+  }
+}
+#115 AE重役とジオンの密談（ジオニックとの競争で解決）
+country_event = {
+  id = zeon.115
+  title = zeon.115.t
+  desc = zeon.115.d
+  picture = GFX_country_zeon115
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+  }
+
+  option = {
+    name = zeon.115.a
+    add_political_power = -50
+    random_list = {
+      75 = {
+
+      }
+      25 = {
+        news_event = { id = news.138 days = 3 }
+      }
+    }
+  }
+}
+#116 宣戦布告しないことへの抗議デモ
+country_event = {
+  id = zeon.116
+  title = zeon.116.t
+  desc = zeon.116.d
+  picture = GFX_country_zeon116
+
+  is_triggered_only = yes
+
+  immediate = {
+    add_named_threat = {
+      name = cr_not_decration_war
+      threat = 8
+    }
+  }
+
+  option = {
+    name = zeon.116.a
+  }
+}
+#117 キシリアを逮捕する
+country_event = {
+  id = zeon.117
+  title = zeon.117.t
+  desc = zeon.117.d
+  picture = GFX_country_zeon117
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.117.b
+  }
+}
+#118 マ・クベを逮捕する
+country_event = {
+  id = zeon.118
+  title = zeon.118.t
+  desc = zeon.118.d
+  picture = GFX_country_zeon118
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.118.b
+  }
+}
+#119 MS08イベント
+#120 グラナダ密約（連邦）
+country_event = {
+  id = zeon.120
+  title = zeon.120.t
+  desc = zeon.120.d
+  picture = GFX_country_zeon120
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.120.a
+    set_global_flag = granada_efsf_accept
+    unlock_decision_tooltip = dip_resident_forces_in_granada
+    if = {
+      limit = {
+        has_government = spacesupremacy
+      }
+      unlock_decision_tooltip = dip_protect_granada
+    }
+    ai_chance = {
+      base = 95
+    }
+  }
+  option = {
+    name = zeon.120.b
+    EFS = {
+      country_event = { id = efsf.107 days = 1 }
+    }
+    ai_chance = {
+      base = 5
+    }
+  }
+}
+#121 経済制裁解除の交渉（連邦が交渉を打ち切る）
+country_event = {
+  id = zeon.121
+  title = zeon.121.t
+  desc = zeon.121.d
+  picture = GFX_country_zeon121
+
+  is_triggered_only = yes
+  immediate = {
+    ZEO = {
+      clr_country_flag = concessionto_efsf_start
+    }
+  }
+
+  option = {
+    name = zeon.121.a
+    ZEO = {
+      add_opinion_modifier = {
+        target = EFS
+        modifier = meeting_not_agree_economic_sanctions
+      }
+    }
+  }
+}
+#122 経済制裁解除の交渉（ジオンが引き渡しを拒否）
+country_event = {
+  id = zeon.122
+  title = zeon.122.t
+  desc = zeon.122.d
+  picture = GFX_country_zeon122
+
+  is_triggered_only = yes
+  immediate = {
+    ZEO = {
+      clr_country_flag = concessionto_efsf_start
+    }
+  }
+
+  option = {
+    name = zeon.122.a
+    EFS = {
+      add_opinion_modifier = {
+        target = ZEO
+        modifier = meeting_not_agree_economic_sanctions
+      }
+    }
+  }
+}
+#123 公王との会談を阻止する
+country_event = {
+  id = zeon.123
+  title = zeon.123.t
+  desc = zeon.123.d
+  picture = GFX_country_zeon123
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.123.a
+    if = {
+      limit = {
+        OR = {
+          has_country_leader = {
+            character= ZEO_gihren_zabi
+            ruling_only = yes
+          }
+          has_country_leader = {
+            character= ZEO_casval_rem_deikun
+            ruling_only = yes
+          }
+          }
+      }
+      random_list = {
+        30 = {
+          news_event = { id = news.162 days = 3 }
+        }
+        70 = {
+        }
+      }
+    }
+  }
+}
+#124 連邦の差し金でクーデター
+country_event = {
+  id = zeon.124
+  title = zeon.124.t
+  desc = zeon.124.d
+  picture = GFX_country_zeon124
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.124.a
+    news_event = { id = news.170 days = 5 random = 24 }
+    if = {
+      limit = {
+        is_ai = no
+      }
+      news_event = { id = news.169 days = 30 random = 100 }
+      else_if = {
+        limit = {
+          has_global_flag = maharaja_support
+        }
+        random_list = {
+          30 = {
+            news_event = { id = news.168 days = 30 random = 100 }
+          }
+          70 = {
+            news_event = { id = news.169 days = 30 random = 100 }
+          }
+        }
+      }
+      else = {
+        random_list = {
+          15 = {
+            news_event = { id = news.168 days = 30 random = 100 }
+          }
+          85 = {
+            news_event = { id = news.169 days = 30 random = 100 }
+          }
+        }
+      }
+    }
+    ai_chance = {
+      base = 80
+    }
+  }
+  option = {
+    name = zeon.124.b
+    if = {
+      limit = {
+        is_ai = no
+      }
+      random_list = {
+        35 = {
+          news_event = { id = news.168 days = 20 random = 100 }
+        }
+        65 = {
+          news_event = { id = news.169 days = 20 random = 100 }
+        }
+      }
+      else_if = {
+        limit = {
+          has_global_flag = maharaja_support
+        }
+        random_list = {
+          65 = {
+            news_event = { id = news.168 days = 20 random = 100 }
+          }
+          35 = {
+            news_event = { id = news.169 days = 20 random = 100 }
+          }
+        }
+      }
+      else = {
+        random_list = {
+          35 = {
+            news_event = { id = news.168 days = 20 random = 100 }
+          }
+          65 = {
+            news_event = { id = news.169 days = 20 random = 100 }
+          }
+        }
+      }
+    }
+    ai_chance = {
+      base = 20
+    }
+  }
+}
+#125 マハラジャカーンについてドズルの具申
+country_event = {
+  id = zeon.125
+  title = zeon.125.t
+  desc = zeon.125.d
+  picture = GFX_country_zeon125
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.125.a
+    custom_effect_tooltip = zeon.125.a_desc
+    ai_chance = {
+      base = 80
+    }
+  }
+  option = {
+    name = zeon.125.b
+    custom_effect_tooltip = zeon.125.b_desc
+    set_country_flag = maharaja_is_not_accept
+    ai_chance = {
+      base = 20
+    }
+  }
+}
+#126 ラサの秘密基地防衛成功（MS08連鎖イベント）
+#127 ラスト・リゾート（MS08連鎖イベント）
+#128 サイド6への核攻撃を辞めさせる（0080連鎖イベント）
+#129 クリスマス作戦発生せず（0080連鎖イベント）
+#130 トライデント作戦成功
+country_event = {
+  id = zeon.130
+  title = zeon.130.t
+  desc = zeon.130.d
+  picture = GFX_country_zeon130
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.130.a
+  }
+}
+#131 ジャベリン作戦成功
+country_event = {
+  id = zeon.131
+  title = zeon.131.t
+  desc = zeon.131.d
+  picture = GFX_country_zeon131
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.131.a
+  }
+}
+#132 青作戦成功
+country_event = {
+  id = zeon.132
+  title = zeon.132.t
+  desc = zeon.132.d
+  picture = GFX_country_zeon132
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.132.a
+  }
+}
+#133 赤作戦成功
+country_event = {
+  id = zeon.133
+  title = zeon.133.t
+  desc = zeon.133.d
+  picture = GFX_country_zeon133
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.133.a
+  }
+}
+#134 アトラス作戦成功
+country_event = {
+  id = zeon.134
+  title = zeon.134.t
+  desc = zeon.134.d
+  picture = GFX_country_zeon134
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.134.a
+  }
+}
+#135 コロニアル作戦成功
+country_event = {
+  id = zeon.135
+  title = zeon.135.t
+  desc = zeon.135.d
+  picture = GFX_country_zeon135
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.135.a
+  }
+}
+#136 マッドアングラー隊設立（V作戦連鎖インベント）
+#137 ランバ・ラル隊補給要請（V作戦連鎖イベント）
+#138 ランバ・ラル戦死（V作戦連鎖イベント）
+#139 WB隊ランバ・ラルにやられる（V作戦連鎖イベント）
+#140 黒い三連星を派遣（V作戦連鎖イベント）
+#141 マチルダ死亡（V作戦連鎖イベント）
+#142 マチルダ生存（V作戦連鎖イベント）
+#143 黒い三連星戦死（V作戦連鎖イベント）
+#144 WB隊黒い三連星にやられる（V作戦連鎖イベント）
+#145 ベルファストでWB発見（V作戦連鎖イベント）
+#146 スパイ107号WB潜入（V作戦連鎖イベント）
+#147 ジャブロー基地を発見する（V作戦連鎖イベント）
+#148 ジャブロー基地破壊工作（V作戦連鎖イベント）
+#149 ジンネマンと共闘してWB隊と戦闘（V作戦連鎖イベント）
+#150 大西洋上でWB隊を攻撃（V作戦連鎖イベント）
+#151 シャア、アルテイシアと遭遇（説得）（V作戦連鎖イベント）
+#152 オデッサを占拠して潜水艦を取得
+country_event = {
+  id = zeon.152
+  title = zeon.152.t
+  desc = zeon.152.d
+  picture = GFX_country_zeon087
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine_carrier1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine_carrier1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_landing_craft
+        }
+      }
+      set_technology = {
+        ZEO_landing_craft = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_secondary_battery
+        }
+      }
+      set_technology = {
+        ZEO_improved_secondary_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_damage_control_2
+        }
+      }
+      set_technology = {
+        ZEO_damage_control_2 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_ship_torpedo_launcher
+        }
+      }
+      set_technology = {
+        ZEO_improved_ship_torpedo_launcher = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_magnetic_detonator
+        }
+      }
+      set_technology = {
+        ZEO_magnetic_detonator = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_cruiser1_tech
+        }
+      }
+      set_technology = {
+        ZEO_cruiser1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_destroyer1_tech
+        }
+      }
+      set_technology = {
+        ZEO_destroyer1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_naval_mines
+        }
+      }
+      set_technology = {
+        ZEO_improved_naval_mines = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_submarine_mine_laying
+        }
+      }
+      set_technology = {
+        ZEO_improved_submarine_mine_laying = 1
+      }
+    }
+  }
+  option = {
+    name = zeon.152.a
+    load_oob = capture_odessa_ships
+  }
+}
+#153 アレクサンドリアを占拠して潜水艦を取得
+country_event = {
+  id = zeon.153
+  title = zeon.153.t
+  desc = zeon.153.d
+  picture = GFX_country_zeon087
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine_carrier1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine_carrier1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_landing_craft
+        }
+      }
+      set_technology = {
+        ZEO_landing_craft = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_secondary_battery
+        }
+      }
+      set_technology = {
+        ZEO_improved_secondary_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_damage_control_2
+        }
+      }
+      set_technology = {
+        ZEO_damage_control_2 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_ship_torpedo_launcher
+        }
+      }
+      set_technology = {
+        ZEO_improved_ship_torpedo_launcher = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_magnetic_detonator
+        }
+      }
+      set_technology = {
+        ZEO_magnetic_detonator = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_cruiser1_tech
+        }
+      }
+      set_technology = {
+        ZEO_cruiser1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_destroyer1_tech
+        }
+      }
+      set_technology = {
+        ZEO_destroyer1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_naval_mines
+        }
+      }
+      set_technology = {
+        ZEO_improved_naval_mines = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_submarine_mine_laying
+        }
+      }
+      set_technology = {
+        ZEO_improved_submarine_mine_laying = 1
+      }
+    }
+  }
+  option = {
+    name = zeon.153.a
+    load_oob = capture_africa_ships
+  }
+}
+#154 ダーウィンを占拠して潜水艦を取得
+country_event = {
+  id = zeon.154
+  title = zeon.154.t
+  desc = zeon.154.d
+  picture = GFX_country_zeon087
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine_carrier1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine_carrier1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_landing_craft
+        }
+      }
+      set_technology = {
+        ZEO_landing_craft = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_secondary_battery
+        }
+      }
+      set_technology = {
+        ZEO_improved_secondary_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_damage_control_2
+        }
+      }
+      set_technology = {
+        ZEO_damage_control_2 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_ship_torpedo_launcher
+        }
+      }
+      set_technology = {
+        ZEO_improved_ship_torpedo_launcher = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_magnetic_detonator
+        }
+      }
+      set_technology = {
+        ZEO_magnetic_detonator = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_cruiser1_tech
+        }
+      }
+      set_technology = {
+        ZEO_cruiser1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_destroyer1_tech
+        }
+      }
+      set_technology = {
+        ZEO_destroyer1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_naval_mines
+        }
+      }
+      set_technology = {
+        ZEO_improved_naval_mines = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_submarine_mine_laying
+        }
+      }
+      set_technology = {
+        ZEO_improved_submarine_mine_laying = 1
+      }
+    }
+  }
+  option = {
+    name = zeon.154.a
+    load_oob = capture_austraria_ships
+  }
+}
+#155 リオを占拠して潜水艦を取得
+country_event = {
+  id = zeon.155
+  title = zeon.155.t
+  desc = zeon.155.d
+  picture = GFX_country_zeon087
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine_carrier1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine_carrier1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_landing_craft
+        }
+      }
+      set_technology = {
+        ZEO_landing_craft = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_secondary_battery
+        }
+      }
+      set_technology = {
+        ZEO_improved_secondary_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_damage_control_2
+        }
+      }
+      set_technology = {
+        ZEO_damage_control_2 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_ship_torpedo_launcher
+        }
+      }
+      set_technology = {
+        ZEO_improved_ship_torpedo_launcher = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_magnetic_detonator
+        }
+      }
+      set_technology = {
+        ZEO_magnetic_detonator = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_cruiser1_tech
+        }
+      }
+      set_technology = {
+        ZEO_cruiser1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_destroyer1_tech
+        }
+      }
+      set_technology = {
+        ZEO_destroyer1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_naval_mines
+        }
+      }
+      set_technology = {
+        ZEO_improved_naval_mines = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_submarine_mine_laying
+        }
+      }
+      set_technology = {
+        ZEO_improved_submarine_mine_laying = 1
+      }
+    }
+  }
+  option = {
+    name = zeon.155.a
+    load_oob = capture_south_america_ships
+  }
+}
+#156 ボンベイを占拠して潜水艦を取得
+country_event = {
+  id = zeon.156
+  title = zeon.156.t
+  desc = zeon.156.d
+  picture = GFX_country_zeon087
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine_carrier1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine_carrier1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_landing_craft
+        }
+      }
+      set_technology = {
+        ZEO_landing_craft = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_secondary_battery
+        }
+      }
+      set_technology = {
+        ZEO_improved_secondary_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_damage_control_2
+        }
+      }
+      set_technology = {
+        ZEO_damage_control_2 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_ship_torpedo_launcher
+        }
+      }
+      set_technology = {
+        ZEO_improved_ship_torpedo_launcher = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_magnetic_detonator
+        }
+      }
+      set_technology = {
+        ZEO_magnetic_detonator = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_cruiser1_tech
+        }
+      }
+      set_technology = {
+        ZEO_cruiser1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_destroyer1_tech
+        }
+      }
+      set_technology = {
+        ZEO_destroyer1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_naval_mines
+        }
+      }
+      set_technology = {
+        ZEO_improved_naval_mines = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_submarine_mine_laying
+        }
+      }
+      set_technology = {
+        ZEO_improved_submarine_mine_laying = 1
+      }
+    }
+  }
+  option = {
+    name = zeon.156.a
+    load_oob = capture_asia_ships
+  }
+}
+#157 ロッテルダムを占拠して潜水艦を取得
+country_event = {
+  id = zeon.157
+  title = zeon.157.t
+  desc = zeon.157.d
+  picture = GFX_country_zeon087
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_submarine_carrier1_tech
+        }
+      }
+      set_technology = {
+        ZEO_submarine_carrier1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_landing_craft
+        }
+      }
+      set_technology = {
+        ZEO_landing_craft = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_light_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_light_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_shell
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_shell = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_basic_medium_battery
+        }
+      }
+      set_technology = {
+        ZEO_basic_medium_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_secondary_battery
+        }
+      }
+      set_technology = {
+        ZEO_improved_secondary_battery = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_damage_control_2
+        }
+      }
+      set_technology = {
+        ZEO_damage_control_2 = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_ship_torpedo_launcher
+        }
+      }
+      set_technology = {
+        ZEO_improved_ship_torpedo_launcher = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_magnetic_detonator
+        }
+      }
+      set_technology = {
+        ZEO_magnetic_detonator = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_cruiser1_tech
+        }
+      }
+      set_technology = {
+        ZEO_cruiser1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_destroyer1_tech
+        }
+      }
+      set_technology = {
+        ZEO_destroyer1_tech = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_naval_mines
+        }
+      }
+      set_technology = {
+        ZEO_improved_naval_mines = 1
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          has_tech = ZEO_improved_submarine_mine_laying
+        }
+      }
+      set_technology = {
+        ZEO_improved_submarine_mine_laying = 1
+      }
+    }
+  }
+  option = {
+    name = zeon.157.a
+    load_oob = capture_europa_ships
+  }
+}
+
+# こっから見直し
+#158 実績11判定
+country_event = {
+  id = zeon.158
+  title = zeon.158.t
+  hidden = yes
+
+  is_triggered_only = yes
+
+  immediate = {
+    if = {
+      limit = {
+        has_tech = ms06_p_tech
+        has_tech = ms06_tech
+        has_tech = ms05_l_tech
+        has_tech = ms06_e_tech
+        has_tech = ms06_f_tech
+        has_tech = ms06_s_tech
+        has_tech = ms06_j_tech
+        has_tech = ms06_d_tech
+        has_tech = ms06_k_tech
+        has_tech = ms06_r_tech
+        has_tech = ms11_tech
+        has_tech = ms06_z_tech
+      }
+      country_event = { id = achievement.11 }
+    }
+  }
+
+  option = {
+    name = zeon.158.a
+  }
+}
+#159 news.127を作戦から実行
+country_event = {
+  id = zeon.159
+  title = zeon.159.t
+  hidden = yes
+
+  is_triggered_only = yes
+
+  immediate = {
+    news_event = { id = news.127 }
+  }
+
+  option = {
+    name = zeon.159.a
+  }
+}
+#160 !! アジア（中国）降下作戦成功
+country_event = {
+  id = zeon.160
+  title = zeon.160.t
+  desc = zeon.160.d
+  picture = GFX_country_zeon076
+
+  is_triggered_only = yes
+
+  option = {
+    name = zeon.160.a
+  }
+}
+#161 ヅダの事故
+country_event = {
+  id = zeon.161
+  title = zeon.161.t
+  desc = zeon.161.d
+  picture = GFX_country_zeon161
+
+  trigger = {
+    original_tag = ZEO
+    ZEO = {
+      has_tech = recruiment_zudah
+      check_variable = { how_many_exercise > 0 }
+    }
+    has_global_flag = start_is_uc0075
+  }
+  fire_only_once = yes
+  mean_time_to_happen = {
+    months = 12
+    modifier = {
+      factor = 0.8
+      ZEO = {
+        check_variable = { how_many_exercise > 1 }
+      }
+    }
+    modifier = {
+      factor = 0.8
+      ZEO = {
+        check_variable = { how_many_exercise > 2 }
+      }
+    }
+  }
+
+  option = { # 再発防止策
+    name = zeon.161.a
+    trigger = {
+      has_army_experience > 50
+    }
+    army_experience = -50
+    ai_chance = {
+      base = 70
+    }
+  }
+  option = { # 再検査
+    name = zeon.161.b
+    trigger = {
+      has_equipment = {
+        archetype_ems10 > 149
+      }
+    }
+    add_equipment_to_stockpile = {
+      type = archetype_ems10
+      amount = -150
+    }
+    ai_chance = {
+      base = 20
+    }
+  }
+  option = { # 隠蔽
+    name = zeon.161.c
+    add_political_power = -150
+    ai_chance = {
+      base = 10
+    }
+  }
+}
+
+
+
+# 83.1 GP計画 察知、AEに工作員潜入
+# 83.7.3 GP計画 星の屑作戦立案
+# 83.10.13 GP02奪取
+# 83.10.23 キンバライド基地降伏、GP02宇宙へ
+
+# 83.8.9 マハラジャ・カーン死去
+# 83.8.11 ハマーン・カーンアクシズの摂政に
+
+
+# 地上軍総司令
+#2000 ガルマ・ザビ
+country_event = {
+  id = zeon.2000
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    every_army_leader = {
+      limit = {
+        is_field_marshal = yes
+      }
+      add_unit_leader_trait = garma_zabi_trait_fm
+      remove_unit_leader_trait = mquve_trait_fm
+      remove_unit_leader_trait = garcia_romeo_trait_fm
+      remove_unit_leader_trait = yuri_kellerne_trait_fm
+      remove_unit_leader_trait = neuen_bitter_trait_fm
+    }
+  }
+  option = {
+    name = oyw.2000.a
+  }
+}
+#2001 マ・クベ
+country_event = {
+  id = zeon.2001
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    every_army_leader = {
+      limit = {
+        is_field_marshal = yes
+      }
+      remove_unit_leader_trait = garma_zabi_trait_fm
+      add_unit_leader_trait = mquve_trait_fm
+      remove_unit_leader_trait = garcia_romeo_trait_fm
+      remove_unit_leader_trait = yuri_kellerne_trait_fm
+      remove_unit_leader_trait = neuen_bitter_trait_fm
+    }
+  }
+  option = {
+    name = zeon.2001.a
+  }
+}
+#2002 ガルシア・ロメオ
+country_event = {
+  id = zeon.2002
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    every_army_leader = {
+      limit = {
+        is_field_marshal = yes
+      }
+      remove_unit_leader_trait = garma_zabi_trait_fm
+      remove_unit_leader_trait = mquve_trait_fm
+      add_unit_leader_trait = garcia_romeo_trait_fm
+      remove_unit_leader_trait = yuri_kellerne_trait_fm
+      remove_unit_leader_trait = neuen_bitter_trait_fm
+    }
+  }
+  option = {
+    name = zeon.2002.a
+  }
+}
+#2003 ユーリ・ケラーネ
+country_event = {
+  id = zeon.2003
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    every_army_leader = {
+      limit = {
+        is_field_marshal = yes
+      }
+      remove_unit_leader_trait = garma_zabi_trait_fm
+      remove_unit_leader_trait = mquve_trait_fm
+      remove_unit_leader_trait = garcia_romeo_trait_fm
+      add_unit_leader_trait = yuri_kellerne_trait_fm
+      remove_unit_leader_trait = neuen_bitter_trait_fm
+    }
+  }
+  option = {
+    name = zeon.2003.a
+  }
+}
+#2004 ノイエン・ビッター
+country_event = {
+  id = zeon.2004
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    every_army_leader = {
+      limit = {
+        is_field_marshal = yes
+      }
+      remove_unit_leader_trait = garma_zabi_trait_fm
+      remove_unit_leader_trait = mquve_trait_fm
+      remove_unit_leader_trait = garcia_romeo_trait_fm
+      remove_unit_leader_trait = yuri_kellerne_trait_fm
+      add_unit_leader_trait = neuen_bitter_trait_fm
+    }
+  }
+  option = {
+    name = zeon.2004.a
+  }
+}

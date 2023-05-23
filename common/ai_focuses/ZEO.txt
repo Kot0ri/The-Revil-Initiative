@@ -1,0 +1,193 @@
+ai_historical_focus_list_ZEO = {
+  ai_national_focuses = {
+    zeon_repression_of_deikun #70 75.3.10 ダイクン派を弾圧
+    zeon_dominance_of_human_survival_theory #70 75.5.20 優性人類生存説
+    zeon_defense_military_academy #70 75.7.30 ジオン国防軍士官学校
+    zeon_organization_of_mobilized_mobile_battalion #70 75.10.10 教導起動大隊の編成
+    zeon_munzo_univercity #70 75.12.20 ムンゾ大学
+    zeon_medal_of_cross #70 76.2.30 ジオン十字勲章
+    zeon_hold_parliament #70 76.5.10 議会を掌握
+    zeon_enhancement_of_defense_army #70 76.7.20 国防軍の増強
+    zeon_puneemunde_institution #70 76.9.30 ペーネミュンデ機関
+    zeon_focus_on_mobiletank #70 76.12.10 モビルタンクに注力
+    zeon_focus_on_MS_for_local_battle #35 77.1.15 局地戦用MSに注力
+    zeon_enhancement_of_general_purpose_MS #70 77.3.25 汎用MSに注力
+    zeon_political_intervention_on_side6 #70 77.6.5 サイド6への政治介入
+    zeon_total_force_warfare_study #70 77.8.15 総力戦研究
+    zeon_resident_forces_in_granada #70 77.10.25 グラナダ密約
+    zeon_leak_side2_attack #70 78.1.5 サイド2攻撃をリーク
+    zeon_focus_on_MA #70 78.3.15 MAに注力
+    zeon_improvement_of_MS_weapons #35 78.4.20 MS用兵装の改良
+    zeon_national_mobilization_act #70 78.6.15 国家総動員法
+    zeon_high_mobility_of_general_purpose_MS #70 78.8.25 汎用MSの高機動化
+    zeon_miniaturization_of_mega_particle_cannon #70 78.11.5 ビーム兵装の小型化
+    zeon_megiddo_fire #70 79.1.15 メギドの火
+    zeon_improvement_of_bullet-proof_weapons #35 79.2.20
+    zeon_gravity_front_line #70 79.4.30 重力戦線
+    zeon_aircraft_research #70 79.4.10 航空機の研究
+    zeon_zeon_navy #70 79.6.20 公国海軍
+    zeon_development_of_amphibious_MS #70 79.8.30 水陸両用MSに注力
+    zeon_miniaturization_of_mega_particle_cannon #70 79.11.10 ビーム兵器の小型化
+    zeon_occupation_policy #70 80.1.20 占領地政策
+    zeon_logistics #70 80.3.30 兵站確保
+    zeon_focus_on_bombers #70 80.6.10 爆撃機に注力
+    zeon_MS_and_ground_forces_collaboration #70 80.8.20 MSと地上部隊の連携
+    zeon_attacking_carrier_aircraft #70 80.10.30 攻撃空母に注力
+    zeon_submarine_force #70 81.1.10 潜水艦部隊
+    zeon_trade_destruction #70 81.3.20 通商破壊
+    zeon_development_of_underwater_MA #70 81.5.30 水中MAに注力
+    zeon_focus_on_sfs #70 81.8.10 S.F.S
+    zeon_MS_airborne_division #70 81.10.20 MS空挺師団
+
+    #70 82.3.10
+    #70 82.5.20
+    #70 82.7.30
+    #70 82.10.10
+    #70 82.12.20
+    #70 83.2.30
+    #70 83.5.10
+    #70 83.7.20
+    #70 83.9.30
+    #70 83.12.10
+    #70 84.2.20
+    #70 84.4.30
+  }
+}
+
+#ai_focusのresearchは0~10で指定　※floatの桁あふれ防止
+
+ai_focus_defense_ZEO = {
+	research = {
+		defensive = 5.0
+		radar_tech = 1.0
+		construction_tech = 2.0
+    mobilesuit = 10
+    mobilearmor = 10
+    mobilesuit_weapon = 8
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+    space_ship = 10
+	}
+}
+
+ai_focus_aggressive_ZEO = {
+	research = {
+	offensive = 5.0
+	synth_resources = 1.0
+    mobilesuit = 10
+    mobilearmor = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+    space_ship = 10
+	}
+}
+
+ai_focus_war_production_ZEO = {
+	research = {
+		industry = 10.0
+		construction_tech = 2.0
+		electronics = 2.0
+		computing_tech = 2.0
+    newtype = 10
+    mobilesuit = 10
+    mobilearmor = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+    space_ship = 10
+	}
+}
+
+ai_focus_military_equipment_ZEO = {
+	research = {
+    infantry_weapons = 10.0
+    infantry_tech = 10.0
+    support_tech = 6.5
+    armor = 10
+    mobilesuit = 10
+    mobilearmor = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+	}
+}
+
+ai_focus_military_advancements_ZEO = {
+	research = {
+		land_doctrine = 10
+		radar_tech = 3.0
+		encryption_tech = 7.5
+		decryption_tech = 7.5
+		synth_resources = 3.0
+    armor = 10
+    infantry_tech = 10
+    support_tech = 10
+    mobilesuit = 10
+    mobilearmor = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+	}
+}
+
+
+ai_focus_peaceful_ZEO = {
+	research = {
+		industry = 10
+		construction_tech = 5.0
+		electronics = 10.0
+		computing_tech = 10.0
+    armor = 10
+    infantry_tech = 10
+    support_tech = 10
+    mobilesuit = 10
+    mobilearmor = 10
+    mobilesuit_weapon = 10
+    ambac = 10
+    mobilesuit_electronics = 10
+    minovsky = 10
+	}
+}
+
+ai_focus_naval_ZEO = {
+  research = {
+    naval_equipment = 7.0
+    naval_doctrine = 10.0
+    marine_tech = 10.0
+    ca_tech = 5.0
+    tp_tech = 10.0
+    cv_tech = 5.0
+    ss_tech = 10.0
+    naval_mobilesuit = 10
+  }
+}
+
+ai_focus_naval_air_ZEO = {
+	research = {
+		naval_air = 4.0
+		naval_bomber = 3.0
+    naval_mobilesuit = 10
+	}
+}
+
+ai_focus_aviation_ZEO = {
+	research = {
+		air_doctrine = 5.0
+		light_air = 3.0
+		light_fighter = 3.0
+		cas_bomber = 2.0
+		medium_air = 3.0
+		tactical_bomber = 3.0
+		heavy_air = 1.0
+		air_equipment = 3.0
+		para_tech = 10.0
+    air_mobilesuit = 10
+    air_mobilearmor = 10
+	}
+}

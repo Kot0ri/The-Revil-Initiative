@@ -1,0 +1,22 @@
+units = {
+	fleet = {
+		name = "Space Crusers"
+		naval_base = 13280
+		task_force = {
+			name = ""
+			location = 13280
+			ship = {
+				name = ""
+				definition = zeon_space_cruiser
+			}
+			ship = {
+				name = ""
+				definition = zeon_space_cruiser
+			}
+			ship = {
+				name = ""
+				definition = zeon_space_cruiser
+			}
+		}
+	}
+}

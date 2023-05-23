@@ -1,0 +1,189 @@
+sub_units = {
+  ms06_m = {
+    sprite = ms06_m
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 65
+    supply_consumption = 0.01
+    type = {
+submarine
+}
+    categories = {
+category_naval_mobilesuit
+category_naval_mobilesuit_mobilearmor
+}
+    need_equipment = {
+archetype_ms06_m = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  msm04 = {
+    sprite = msm04
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 65
+    supply_consumption = 0.01
+    type = {
+submarine
+}
+    categories = {
+category_naval_mobilesuit
+category_naval_mobilesuit_mobilearmor
+}
+    need_equipment = {
+archetype_msm04 = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  msm03 = {
+    sprite = msm03
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 65
+    supply_consumption = 0.02
+    type = {
+submarine
+}
+    categories = {
+category_naval_mobilesuit
+category_naval_mobilesuit_mobilearmor
+}
+    need_equipment = {
+archetype_msm03 = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  msm03_c = {
+    sprite = msm03_c
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 65
+    supply_consumption = 0.03
+    type = {
+submarine
+}
+    categories = {
+category_naval_mobilesuit
+category_naval_mobilesuit_mobilearmor
+}
+    need_equipment = {
+archetype_msm03_c = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  msm07 = {
+    sprite = msm07
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 65
+    supply_consumption = 0.02
+    type = {
+submarine
+}
+    categories = {
+category_naval_mobilesuit
+category_naval_mobilesuit_mobilearmor
+
+}
+    need_equipment = {
+archetype_msm07 = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  msm07_e = {
+    sprite = msm07_e
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 65
+    supply_consumption = 0.04
+    type = {
+submarine
+}
+    categories = {
+category_naval_mobilesuit
+category_naval_mobilesuit_mobilearmor
+}
+    need_equipment = {
+archetype_msm07_e = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  msm10 = {
+    sprite = msm10
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 65
+    supply_consumption = 0.1
+    type = {
+submarine
+}
+    categories = {
+category_naval_mobilesuit
+category_naval_mobilesuit_mobilearmor
+}
+    need_equipment = {
+archetype_msm10 = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  mam07 = {
+    sprite = mam07
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 65
+    supply_consumption = 0.5
+    type = {
+capital_ship
+submarine
+}
+    categories = {
+category_naval_mobilearmor
+category_naval_mobilesuit_mobilearmor
+
+}
+    need_equipment = {
+archetype_mam07 = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+}

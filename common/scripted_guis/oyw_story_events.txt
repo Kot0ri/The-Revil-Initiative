@@ -1,0 +1,500 @@
+scripted_gui = {
+  # ポケットの中の戦争
+	# 01 A 戦場まで何マイル 破壊
+  story_event_warinthepocket_01a = {
+		window_name = "story_event_warinthepocket_01a_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_01a_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_01a_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_01a_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+	}
+	# 01 B 戦場まで何マイル 奪取
+  story_event_warinthepocket_01b = {
+		window_name = "story_event_warinthepocket_01b_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_01b_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_01b_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_01b_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+	}
+	# 01 C 戦場まで何マイル 失敗
+  story_event_warinthepocket_01c = {
+		window_name = "story_event_warinthepocket_01c_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_01c_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				add_political_power = 100
+				clr_country_flag = story_event_warinthepocket_01c_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_01c_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+	}
+
+	# 02 茶色の瞳に映るもの
+  story_event_warinthepocket_02 = {
+		window_name = "story_event_warinthepocket_02_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_02_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_02_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_02_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+
+	# 03 A 河を渡って木立を抜けて 破壊
+  story_event_warinthepocket_03a = {
+		window_name = "story_event_warinthepocket_03a_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_03a_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_03a_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_03a_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+	}
+	# 03 B 河を渡って木立を抜けて 奪取
+  story_event_warinthepocket_03b = {
+		window_name = "story_event_warinthepocket_03b_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_03b_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_03b_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_03b_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+	}
+	# 03 C 河を渡って木立を抜けて 失敗
+  story_event_warinthepocket_03c = {
+		window_name = "story_event_warinthepocket_03c_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_03c_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_03c_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_03c_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+	}
+
+	# 04 A クリスマス作戦 破壊
+  story_event_warinthepocket_04a = {
+		window_name = "story_event_warinthepocket_04a_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_04a_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_04a_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_04a_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+	# 04 B クリスマス作戦 相打ち
+  story_event_warinthepocket_04b = {
+		window_name = "story_event_warinthepocket_04b_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_04b_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_04b_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_04b_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+	# 04 C クリスマス作戦 失敗
+  story_event_warinthepocket_04c = {
+		window_name = "story_event_warinthepocket_04c_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_04c_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_04c_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_04c_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+
+	# 05 A クリスマス作戦 攻撃中止
+  story_event_warinthepocket_05a = {
+		window_name = "story_event_warinthepocket_05a_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_05a_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_05a_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_05a_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+	# 05 B クリスマス作戦 回避
+  story_event_warinthepocket_05b = {
+		window_name = "story_event_warinthepocket_05b_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_05b_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_05b_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_05b_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+
+	# 06 A ポケットの中の戦争 失敗
+  story_event_warinthepocket_06a = {
+		window_name = "story_event_warinthepocket_06a_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_06a_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_06a_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_06a_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+	# 06 A ポケットの中の戦争 相打ち
+  story_event_warinthepocket_06b = {
+		window_name = "story_event_warinthepocket_06b_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_06b_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_06b_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_06b_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+
+	# 07 A もう一つの結末 核攻撃中止時 バーニィ逮捕
+  story_event_warinthepocket_07a = {
+		window_name = "story_event_warinthepocket_07a_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_07a_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_07a_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_07a_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+	# 07 B もう一つの結末 核攻撃があった サイクロプス隊継続
+  story_event_warinthepocket_07b = {
+		window_name = "story_event_warinthepocket_07b_window"
+		context_type = player_context
+
+		visible = {
+			has_country_flag = story_event_warinthepocket_07b_window_visible
+		}
+
+		effects = {
+			story_event_ok_button_click = {
+				clr_country_flag = story_event_warinthepocket_07b_window_visible
+			}
+			story_event_close_button_click = {
+				clr_country_flag = story_event_warinthepocket_07b_window_visible
+			}
+		}
+		ai_enabled = {
+			always = yes
+    }
+		ai_test_interval = 24
+		ai_test_variance = 0
+		ai_weights = {
+			story_event_ok_button_click = {
+				ai_will_do = {
+          base = 100
+        }
+			}
+		}
+
+	}
+}

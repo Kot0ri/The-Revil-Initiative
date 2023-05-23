@@ -1,0 +1,1943 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { is_ai = no }
+				country_event = { id = oyw.1000 }
+			}
+			every_country = {
+				country_event = { id = oyw.13 } # ニュータイプ許容度
+			}
+			# v.1.12から動かなくなったっぽい
+			# コロニー国家の装艦隊数
+      # EFS = {
+      #   if = {
+      #     limit = {
+      #       OR = {
+      #         has_idea = oversea_army_1
+      #         has_idea = oversea_army_2
+      #         has_idea = oversea_army_3
+      #         has_idea = oversea_army_4
+      #       }
+      #     }
+      #     country_event = { id = efsf.130 }
+      #   }
+			# }
+      # 特殊部隊数上限（カスタムルール）
+			ZEO = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_1
+						}
+					}
+					add_ideas = {
+						special_force_cap_1
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_2
+						}
+					}
+					add_ideas = {
+						special_force_cap_2
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_3
+						}
+					}
+					add_ideas = {
+						special_force_cap_3
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_4
+						}
+					}
+					add_ideas = {
+						special_force_cap_4
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_5
+						}
+					}
+					add_ideas = {
+						special_force_cap_5
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_6
+						}
+					}
+					add_ideas = {
+						special_force_cap_6
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_7
+						}
+					}
+					add_ideas = {
+						special_force_cap_7
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_8
+						}
+					}
+					add_ideas = {
+						special_force_cap_8
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_9
+						}
+					}
+					add_ideas = {
+						special_force_cap_9
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = zeon_special_force_cap
+							option = SPECIAL_FORCE_CAP_10
+						}
+					}
+					add_ideas = {
+						special_force_cap_10
+					}
+				}
+			}
+			EFS = {
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_1
+						}
+					}
+					add_ideas = {
+						special_force_cap_1
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_2
+						}
+					}
+					add_ideas = {
+						special_force_cap_2
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_3
+						}
+					}
+					add_ideas = {
+						special_force_cap_3
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_4
+						}
+					}
+					add_ideas = {
+						special_force_cap_4
+					}
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_5
+						}
+					}
+					add_ideas = {
+						special_force_cap_5
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_6
+						}
+					}
+					add_ideas = {
+						special_force_cap_6
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_7
+						}
+					}
+					add_ideas = {
+						special_force_cap_7
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_8
+						}
+					}
+					add_ideas = {
+						special_force_cap_8
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_9
+						}
+					}
+					add_ideas = {
+						special_force_cap_9
+					}
+				}
+        if = {
+					limit = {
+						has_game_rule = {
+							rule = efsf_special_force_cap
+							option = SPECIAL_FORCE_CAP_10
+						}
+					}
+					add_ideas = {
+						special_force_cap_10
+					}
+				}
+			}
+		}
+	}
+	on_declare_war = {
+		effect = {
+			#サイド6中立宣言
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							ROOT = {
+								original_tag = ZEO
+							}
+							FROM = {
+								original_tag = EFS
+							}
+						}
+						AND = {
+							ROOT = {
+								original_tag = EFS
+							}
+							FROM = {
+								original_tag = ZEO
+							}
+						}
+					}
+					country_exists = SI6
+					NOT = {
+			      has_global_flag = side6_neutrality
+			    }
+			    has_global_flag = zeon_side6_non_aggression
+				}
+				EFS = {
+					end_puppet = SI6
+				}
+				news_event = { id = news.61 days = 14 }
+			}
+			#フォン・ブラウン中立宣言
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							ROOT = {
+								original_tag = ZEO
+							}
+							FROM = {
+								original_tag = EFS
+							}
+						}
+						AND = {
+							ROOT = {
+								original_tag = EFS
+							}
+							FROM = {
+								original_tag = ZEO
+							}
+						}
+					}
+					country_exists = VBC
+					VBC = {
+						has_war = no
+					}
+				}
+				news_event = { id = news.177 }
+			}
+			#グラナダ進駐
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ZEO
+					}
+					FROM = {
+						original_tag = EFS
+					}
+					country_exists = GRA
+					NOT = {
+						OR = {
+							has_global_flag = zeon_granada_military_access
+							VBC = {
+								is_subject_of = GRA
+							}
+						}
+					}
+					GRA = {
+						is_subject = no
+					}
+				}
+				news_event = { id = news.124 }
+			}
+			#宣戦布告演説
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ZEO
+					}
+					ZEO = {
+						has_country_leader = {
+							character = ZEO_gihren_zabi
+							ruling_only = yes
+						}
+						NOT = {
+							has_war_with = EFS
+						}
+					}
+					FROM = {
+						original_tag = EFS
+					}
+				}
+				news_event = { id = news.120 }
+			}
+      #連邦の駐軍法変更
+      if = {
+        limit = {
+          EFS = {
+            has_war = yes
+            NOT = {
+              has_idea = oversea_army_5
+            }
+          }
+        }
+        EFS = {
+          add_ideas = oversea_army_5
+        }
+      }
+			#サイドにも宣戦
+      if = {
+				limit = {
+					country_exists = SI1
+          ROOT = {
+						original_tag = ZEO
+						has_country_flag = operation_british_is_yes
+            NOT = {
+  						has_war_with = SI1
+  						has_non_aggression_pact_with = SI1
+  					}
+					}
+					FROM = {
+						original_tag = EFS
+					}
+				}
+				declare_war_on = {
+					target = SI1
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SI2
+          ROOT = {
+						original_tag = ZEO
+						has_country_flag = operation_british_is_yes
+            NOT = {
+  						has_war_with = SI2
+  						has_non_aggression_pact_with = SI2
+  					}
+					}
+					FROM = {
+						original_tag = EFS
+					}
+				}
+				declare_war_on = {
+					target = SI2
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SI4
+          ROOT = {
+						original_tag = ZEO
+						has_country_flag = operation_british_is_yes
+            NOT = {
+  						has_war_with = SI4
+  						has_non_aggression_pact_with = SI4
+  					}
+					}
+					FROM = {
+						original_tag = EFS
+					}
+				}
+				declare_war_on = {
+					target = SI4
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SI5
+          ROOT = {
+						original_tag = ZEO
+						has_country_flag = operation_british_is_yes
+            NOT = {
+  						has_war_with = SI5
+  						has_non_aggression_pact_with = SI5
+  					}
+					}
+					FROM = {
+						original_tag = EFS
+					}
+				}
+				declare_war_on = {
+					target = SI5
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					country_exists = SI6
+					NOT = {
+						has_global_flag = side6_neutrality
+					}
+			    has_global_flag = zeon_side6_casus_belli
+          ROOT = {
+						original_tag = ZEO
+						has_country_flag = operation_british_is_yes
+            NOT = {
+              has_non_aggression_pact_with = SI6
+  						has_war_with = SI6
+  					}
+					}
+					FROM = {
+						original_tag = EFS
+					}
+				}
+				declare_war_on = {
+					target = SI6
+					type = annex_everything
+				}
+				else_if = {
+					limit = {
+						country_exists = SI6
+						ROOT = {
+							original_tag = ZEO
+							has_country_flag = operation_british_is_yes
+							NOT = {
+				        has_non_aggression_pact_with = SI6
+								has_war_with = SI6
+				      }
+						}
+						NOT = {
+							has_global_flag = side6_neutrality
+						}
+						has_global_flag = zeon_side6_alliance
+						FROM = {
+							original_tag = EFS
+						}
+					}
+					news_event = { id = news.131 days = 3 }
+				}
+			}
+		}
+	}
+	on_new_term_election = {
+		#zeon
+		random_events = {
+			100 = election.1
+			100 = election.2
+			100 = election.3
+			100 = election.4
+			100 = election.5
+			100 = election.6
+			100 = election.7
+			100 = election.8
+		}
+		#efsf
+		random_events = {
+			100 = election.21
+			100 = election.22
+			100 = election.23
+			100 = election.24
+			100 = election.25
+			100 = election.26
+			100 = election.27
+			100 = election.28
+		}
+		#other
+		random_events = {
+			100 = election.41
+			100 = election.42
+			100 = election.43
+			100 = election.44
+			100 = election.45
+			100 = election.46
+			100 = election.47
+			100 = election.48
+		}
+	}
+	on_justifying_wargoal_pulse = {
+	}
+	on_wargoal_expire = {
+	}
+	on_create_faction = {
+	}
+	on_offer_join_faction = {
+	}
+	on_leave_faction = {
+	}
+	on_join_faction = {
+	}
+	on_faction_formed = {
+	}
+	on_capitulation = {
+		effect = {
+			news_event = { id = country_capitulated.0 days = 0 }
+      if = {
+        limit = {
+          FROM = {
+						original_tag = ZEO
+					}
+          ROOT = {
+						original_tag = SI4
+					}
+					NOT = {
+						has_global_flag = side4_capitulated
+					}
+        }
+        news_event = { id = news.175 days = 3 }
+      }
+		}
+	}
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ZEO
+						has_country_leader = {
+							character = ZEO_casval_rem_deikun
+							ruling_only = yes
+						}
+					}
+				}
+				news_event = { id = news.105 hours = 3 }
+			}
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ZEO
+						NOT = {
+							has_country_leader = {
+								character = ZEO_casval_rem_deikun
+								ruling_only = yes
+							}
+						}
+					}
+				}
+				news_event = { id = news.121 hours = 3 }
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			# バイコヌール宇宙基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 402 }
+				}
+				news_event = news.1000
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 402 }
+				}
+				news_event = news.1001
+			}
+			# モスクワ
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 219 }
+				}
+				news_event = news.1002
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 219 }
+				}
+				news_event = news.1003
+			}
+			# オデッサ
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 192 }
+				}
+				news_event = news.1004
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 192 }
+				}
+				news_event = news.1005
+			}
+			# ライプツィヒ研究所
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 65 }
+				}
+				news_event = news.1006
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 65 }
+				}
+				news_event = news.1007
+			}
+			# ハノーバー基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 59 }
+				}
+				news_event = news.1008
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 59 }
+				}
+				news_event = news.1009
+			}
+			# パリ
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 16 }
+				}
+				news_event = news.1010
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 16 }
+				}
+				news_event = news.1011
+			}
+			# ジェノバ基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 158 }
+				}
+				news_event = news.1012
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 158 }
+				}
+				news_event = news.1013
+			}
+			# ローマ
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 2 }
+				}
+				news_event = news.1014
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 2 }
+				}
+				news_event = news.1015
+			}
+			# カイロ基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 446 }
+				}
+				news_event = news.1016
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 446 }
+				}
+				news_event = news.1017
+			}
+			# アレクサンドリア基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 447 }
+				}
+				news_event = news.1018
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 447 }
+				}
+				news_event = news.1019
+			}
+			# アデン基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 659 }
+				}
+				news_event = news.1020
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 659 }
+				}
+				news_event = news.1021
+			}
+			# キリマンジャロ基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 547 }
+				}
+				news_event = news.1022
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 547 }
+				}
+				news_event = news.1023
+			}
+			# キンバライド基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 718 }
+				}
+				news_event = news.1024
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 718 }
+				}
+				news_event = news.1025
+			}
+			# ダカール
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 272 }
+				}
+				news_event = news.1026
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 272 }
+				}
+				news_event = news.1027
+			}
+			# トリポリ基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 448 }
+				}
+				news_event = news.1028
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 448 }
+				}
+				news_event = news.1029
+			}
+			# ベンガジ基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 450 }
+				}
+				news_event = news.1030
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 450 }
+				}
+				news_event = news.1031
+			}
+			# アーティジブラルタル
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 118 }
+				}
+				news_event = news.1032
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 118 }
+				}
+				news_event = news.1033
+			}
+			# ロンドン
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 126 }
+				}
+				news_event = news.1034
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 126 }
+				}
+				news_event = news.1035
+			}
+			# ベルファスト基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 119 }
+				}
+				news_event = news.1036
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 119 }
+				}
+				news_event = news.1037
+			}
+			# ニューホンコン
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 326 }
+				}
+				news_event = news.1038
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 326 }
+				}
+				news_event = news.1039
+			}
+			# 北京
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 608 }
+				}
+				news_event = news.1040
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 608 }
+				}
+				news_event = news.1041
+			}
+			# 東京
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 282 }
+				}
+				news_event = news.1042
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 282 }
+				}
+				news_event = news.1043
+			}
+			# キャリフォルニアベース
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 378 }
+				}
+				news_event = news.1044
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 378 }
+				}
+				news_event = news.1045
+			}
+			# オーガスタ基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 365 }
+				}
+				news_event = news.1046
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 365 }
+				}
+				news_event = news.1047
+			}
+			# ケープカナベラル基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 366 }
+				}
+				news_event = news.1048
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 366 }
+				}
+				news_event = news.1049
+			}
+			# ニューヤーク
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 358 }
+				}
+				news_event = news.1050
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 358 }
+				}
+				news_event = news.1051
+			}
+			# パナマ運河
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 685 }
+				}
+				news_event = news.1052
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 685 }
+				}
+				news_event = news.1053
+			}
+			# パナマ基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 304 }
+				}
+				news_event = news.1054
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 304 }
+				}
+				news_event = news.1055
+			}
+			# ジャブロー
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 687 }
+				}
+				news_event = news.1056
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 687 }
+				}
+				news_event = news.1057
+			}
+			# ストックホルム基地
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 141 }
+				}
+				news_event = news.1058
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 141 }
+				}
+				news_event = news.1059
+			}
+			# デリー
+			if = {
+				limit = {
+					FROM = { original_tag = ZEO }
+					FROM.FROM = { state = 439 }
+				}
+				news_event = news.1060
+			}
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 439 }
+				}
+				news_event = news.1061
+			}
+			# ダーウィン（海軍奪取）
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 520 }
+          ZEO = {
+						NOT = {
+            	has_country_flag = capture_ships
+						}
+          }
+				}
+				set_country_flag = capture_ships
+				country_event = { id = zeon.154 days = 1 }
+			}
+			# ハワイ（海軍奪取）
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 629 }
+          ZEO = {
+						NOT = {
+            	has_country_flag = capture_ships
+						}
+          }
+				}
+				set_country_flag = capture_ships
+				country_event = { id = zeon.88 days = 1 }
+			}
+			# リオ（海軍奪取）
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 500 }
+          ZEO = {
+						NOT = {
+            	has_country_flag = capture_ships
+						}
+          }
+				}
+				set_country_flag = capture_ships
+				country_event = { id = zeon.155 days = 1 }
+			}
+			# ボンベイ（海軍奪取）
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 429 }
+          ZEO = {
+						NOT = {
+            	has_country_flag = capture_ships
+						}
+          }
+				}
+				set_country_flag = capture_ships
+				country_event = { id = zeon.156 days = 1 }
+			}
+			# ロッテルダム（海軍奪取）
+			if = {
+				limit = {
+					tag = ZEO
+					FROM = { original_tag = EFS }
+					FROM.FROM = { state = 7 }
+          ZEO = {
+						NOT = {
+            	has_country_flag = capture_ships
+						}
+          }
+				}
+				set_country_flag = capture_ships
+				country_event = { id = zeon.157 days = 1 }
+			}
+		}
+	}
+	on_peaceconference_ended = {
+		effect = {
+			#月の代理戦争（グラナダ勝利）
+			if = {
+				limit = {
+					original_tag = GRA
+					FROM = { original_tag = VBC }
+				}
+				news_event = { id = news.139 days = 5 }
+				set_global_flag = full_moon_war_is_end
+			}
+			#月の代理戦争（VBC勝利）
+			if = {
+				limit = {
+					original_tag = VBC
+					FROM = { original_tag = GRA }
+				}
+				news_event = { id = news.138 days = 5 }
+				set_global_flag = full_moon_war_is_end
+			}
+			#ジオン or 連邦
+			if = {
+				limit = {
+					OR = {
+						AND = {
+							ROOT = { original_tag = EFS }
+							FROM = { original_tag = ZEO }
+						}
+						AND = {
+							ROOT = { original_tag = ZEO }
+							FROM = { original_tag = EFS }
+						}
+					}
+				}
+				news_event = { id = news.179 }
+			}
+		}
+	}
+	on_civil_war_end = {
+	}
+	on_unit_leader_level_up = {
+		effect = {
+			#アムロ・レイ3
+			if = {
+				limit = {
+					has_id = 113
+					has_trait = newtype1
+					skill > 5
+				}
+				remove_unit_leader_trait = newtype1
+				add_unit_leader_trait = newtype2
+				EFS = {
+					country_event = { id = efsf.50 }
+					set_country_flag = amuro_is_newtype2
+				}
+			}
+			if = {
+				limit = {
+					has_id = 113
+					has_trait = newtype2
+					skill > 6
+				}
+				remove_unit_leader_trait = newtype2
+				add_unit_leader_trait = newtype3
+			}
+			#シャア・アズナブル6
+			if = {
+				limit = {
+					has_id = 11
+					has_trait = newtype1
+					skill > 7
+				}
+				remove_unit_leader_trait = newtype1
+				add_unit_leader_trait = newtype2
+			}
+			if = {
+				limit = {
+					has_id = 11
+					has_trait = newtype2
+					skill > 8
+				}
+				remove_unit_leader_trait = newtype2
+				add_unit_leader_trait = newtype3
+			}
+			#クワトロ・バジーナ6
+			if = {
+				limit = {
+					has_id = 143
+					has_trait = newtype1
+					skill > 7
+				}
+				remove_unit_leader_trait = newtype1
+				add_unit_leader_trait = newtype2
+			}
+			if = {
+				limit = {
+					has_id = 143
+					has_trait = newtype2
+					skill > 8
+				}
+				remove_unit_leader_trait = newtype2
+				add_unit_leader_trait = newtype3
+			}
+			#ララァ・スン 2
+			if = {
+				limit = {
+					has_id = 140
+					has_trait = newtype2
+					skill > 2
+				}
+				remove_unit_leader_trait = newtype2
+				add_unit_leader_trait = newtype3
+			}
+			#マリオン・ウェルチ1
+			if = {
+				limit = {
+					has_id = 139
+					has_trait = newtype1
+					skill > 2
+				}
+				remove_unit_leader_trait = newtype1
+				add_unit_leader_trait = newtype2
+			}
+			if = {
+				limit = {
+					has_id = 139
+					has_trait = newtype2
+					skill > 3
+				}
+				remove_unit_leader_trait = newtype2
+				add_unit_leader_trait = newtype3
+			}
+			#シャリア・ブル5
+			if = {
+				limit = {
+					has_id = 136
+					has_trait = newtype1
+					skill > 6
+				}
+				remove_unit_leader_trait = newtype1
+				add_unit_leader_trait = newtype2
+			}
+			if = {
+				limit = {
+					has_id = 136
+					has_trait = newtype2
+					skill > 8
+				}
+				remove_unit_leader_trait = newtype2
+				add_unit_leader_trait = newtype3
+			}
+			#クスコアル2
+			if = {
+				limit = {
+					has_id = 135
+					has_trait = newtype2
+					skill > 2
+				}
+				remove_unit_leader_trait = newtype2
+				add_unit_leader_trait = newtype3
+			}
+			#コウ・ウラキ実績
+			if = {
+				limit = {
+					has_id = 118
+					skill > 4
+				}
+				country_event = { id = achievement.35 }
+			}
+		}
+	}
+	# From is owner country
+	on_army_leader_daily = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = { random < 0.02 }
+					NOT = { has_trait = sick }
+					set_temp_variable = { temp = sum_unit_terrain_modifier@sickness_chance }
+					divide_temp_variable = { temp = num_units }
+					check_variable = { temp > 0.75 }
+					NOT = { has_unit_leader_flag = recently_sick }
+				}
+				add_timed_unit_leader_trait = {
+					trait = sick
+					days = 30
+				}
+				unit_leader_event = { id = oyw.10 }
+			}
+		}
+	}
+	# From is owner country
+	on_army_leader_won_combat = {
+		effect = {
+			if = {
+				limit = {
+					set_temp_variable = { chance = 0.001 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor }
+					multiply_temp_variable = { chance = factor }
+					check_variable = { random < chance }
+					NOT = { has_trait = wounded }
+				}
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 90
+				}
+				unit_leader_event = { id = oyw.11 }
+			}
+			if = {
+				limit = {
+					OR = {
+						has_trait = wounded
+						has_trait = sick
+					}
+					FROM = {
+						original_tag = EFS
+					}
+				}
+				FROM = {
+					country_event = { id = achievement.21 }
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_trait = wounded
+						has_trait = sick
+					}
+					FROM = {
+						original_tag = ZEO
+					}
+				}
+				FROM = {
+					country_event = { id = achievement.8 }
+				}
+			}
+		}
+	}
+	# From is owner country
+	on_army_leader_lost_combat = {
+		effect = {
+			if = {
+				limit = {
+					set_temp_variable = { chance = 0.005 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor }
+					multiply_temp_variable = { chance = factor }
+					check_variable = { random < chance }
+					NOT = { has_trait = wounded }
+				}
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 90
+				}
+				unit_leader_event = { id = oyw.11 }
+			}
+		}
+	}
+	on_army_leader_promoted = {
+		effect = {
+			add_timed_unit_leader_trait = {
+				trait = recently_promoted
+				days = 100
+			}
+			if = {
+				limit = {
+					has_trait = pilot
+				}
+				remove_unit_leader_trait = pilot
+			}
+			if = {
+				limit = {
+					has_trait = akai_suisei
+				}
+				remove_unit_leader_trait = akai_suisei
+			}
+			if = {
+				limit = {
+					has_trait = aoi_kyosei
+				}
+				remove_unit_leader_trait = aoi_kyosei
+			}
+			if = {
+				limit = {
+					has_trait = hakuro
+				}
+				remove_unit_leader_trait = hakuro
+			}
+			if = {
+				limit = {
+					has_trait = solomons_nightmare
+				}
+				remove_unit_leader_trait = solomons_nightmare
+			}
+			if = {
+				limit = {
+					has_trait = solomons_ghost
+				}
+				remove_unit_leader_trait = solomons_ghost
+			}
+			if = {
+				limit = {
+					has_trait = kuroi_sanrensei
+				}
+				remove_unit_leader_trait = kuroi_sanrensei
+			}
+			if = {
+				limit = {
+					has_trait = red_rightning
+				}
+				remove_unit_leader_trait = red_rightning
+			}
+			if = {
+				limit = {
+					has_trait = kouya_jinrai
+				}
+				remove_unit_leader_trait = kouya_jinrai
+			}
+			if = {
+				limit = {
+					has_trait = ghost_fighter
+				}
+				remove_unit_leader_trait = ghost_fighter
+			}
+			if = {
+				limit = {
+					has_trait = disabled_veteran
+				}
+				remove_unit_leader_trait = disabled_veteran
+			}
+		}
+	}
+	# Ace pilots
+	# country, FROM = ace
+	on_ace_promoted = {
+		random_events = {
+			100 = ace_promoted.1
+			5 = ace_promoted.2
+		}
+	}
+
+	# country, FROM = ace, PREV = enemy ace
+	# This event fires twice, once for each ace.
+	on_aces_killed_each_other = {
+		random_events = {
+			100 = aces_killed_each_other.1
+		}
+	}
+
+	# country, FROM = our ace,
+	# PREV = enemy ace, has killed FROM
+	on_ace_killed_by_ace = {
+		random_events = {
+			100 = ace_killed_by_ace.1
+		}
+	}
+
+	# country, FROM = our ace,
+	# PREV = enemy ace, killed by FROM
+	on_ace_killed_other_ace = {
+		random_events = {
+			100 = ace_killed_other_ace.1
+		}
+	}
+
+	# country, FROM = ace
+	on_ace_killed = {
+		random_events = {
+			100 = ace_died.1
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			# ジオン実績判定
+			if = {
+				limit = {
+					original_tag = ZEO
+					OR = {
+						has_equipment = {
+							archetype_rx75 > 0
+						}
+						has_equipment = {
+							archetype_rx77 > 0
+						}
+						has_equipment = {
+							archetype_rx78 > 0
+						}
+					}
+				}
+				ZEO = {
+					country_event = { id = achievement.6 }
+				}
+			}
+			# v.1.12から動かなくなったっぽい
+			# コロニー国家の装艦隊数
+      # if = {
+      #   limit = {
+      #     ROOT = {
+      #       original_tag = EFS
+      #     }
+      #     EFS = {
+      #       OR = {
+      #         has_idea = oversea_army_1
+      #         has_idea = oversea_army_2
+      #         has_idea = oversea_army_3
+      #         has_idea = oversea_army_4
+      #       }
+      #     }
+      #   }
+      #   EFS = {
+      #     country_event = { id = efsf.130 }
+      #   }
+			# }
+      # ジオンが宣戦しないなら連邦から宣戦する
+      if = {
+        limit = {
+          EFS = {
+            is_ai = yes
+            NOT = {
+              has_war_with = ZEO
+            }
+          }
+          ZEO = {
+            NOT = {
+              is_subject_of = EFS
+            }
+            has_wargoal_against = EFS
+          }
+          country_exists = ZEO
+          date > 79.03.01
+        }
+        EFS = {
+          declare_war_on = {
+            target = ZEO
+            type = topple_government
+          }
+        }
+      }
+		}
+	}
+	on_government_change = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = ZEO
+						has_government = zeonism
+						has_idea = zeon_munzo_univercity
+					}
+				}
+				remove_ideas = zeon_munzo_univercity
+				add_timed_idea = {
+					idea = zeon_munzo_univercity_zeonism
+					days = 120
+				}
+			}
+		}
+	}
+  on_daily = {
+    effect = {
+			if = {
+				limit = {
+					ZEO = {
+						has_war_with = EFS
+					}
+					original_tag = ZEO
+					NOT = {
+						has_global_flag = oyw_storymission_mission_warinthepocket_02_done
+					}
+				}
+				# 戦場まで何マイル成功確率計算
+				set_temp_variable = { operation_success_rate = 35 } #基本成功確率
+				set_temp_variable = { zeon_army_intel_to_efs = ZEO.army_intel@EFS }
+				set_temp_variable = { efs_army_intel_to_zeon = EFS.army_intel@ZEO }
+				subtract_from_temp_variable = { zeon_army_intel_to_efs = efs_army_intel_to_zeon }
+				add_to_temp_variable = { operation_success_rate = zeon_army_intel_to_efs }
+				if = {
+					limit = {
+						ZEO = {
+							has_tech = msm03_c_tech
+							has_tech = msm07_e_tech
+						}
+					}
+					add_to_temp_variable = { operation_success_rate = 10 } #成功確率へのプラス補正
+				}
+				clamp_temp_variable = {
+					var = operation_success_rate
+					min = 0
+					max = 100
+				}
+				set_temp_variable = { negative_var = 100 }
+				set_variable = { global.storymission_mission_warinthepocket_02_result_01_per_value = operation_success_rate }
+				round_variable = global.storymission_mission_warinthepocket_02_result_01_per_value
+				subtract_from_temp_variable = { negative_var = global.storymission_mission_warinthepocket_02_result_01_per_value }
+				set_variable = { global.storymission_mission_warinthepocket_02_result_02_per_value = negative_var }
+				round_variable = global.storymission_mission_warinthepocket_02_result_02_per_value
+			}
+			if = {
+				limit = {
+					has_global_flag = oyw_storymission_mission_warinthepocket_02_done
+					ZEO = {
+						has_war_with = EFS
+					}
+					original_tag = ZEO
+					NOT = {
+						has_global_flag = oyw_storymission_mission_warinthepocket_05_done
+					}
+				}
+				# 河を渡って木立を抜けて成功確率計算
+				set_temp_variable = { operation_success_rate = 25 } #基本成功確率
+				set_temp_variable = { zeon_army_intel_to_efs = ZEO.army_intel@EFS }
+				add_to_temp_variable = { zeon_army_intel_to_efs = ZEO.army_intel@SI6 }
+				divide_temp_variable = { zeon_army_intel_to_efs = 2 }
+				set_temp_variable = { efs_army_intel_to_zeon = EFS.army_intel@ZEO }
+				add_to_temp_variable = { efs_army_intel_to_zeon = EFS.army_intel@SI6 }
+				divide_temp_variable = { efs_army_intel_to_zeon = 2 }
+				subtract_from_temp_variable = { zeon_army_intel_to_efs = efs_army_intel_to_zeon }
+				add_to_temp_variable = { operation_success_rate = zeon_army_intel_to_efs }
+				clamp_temp_variable = {
+					var = operation_success_rate
+					min = 0
+					max = 100
+				}
+				set_temp_variable = { negative_var = 100 }
+				set_variable = { global.storymission_mission_warinthepocket_05_result_01_per_value = operation_success_rate }
+				round_variable = global.storymission_mission_warinthepocket_05_result_01_per_value
+				subtract_from_temp_variable = { negative_var = global.storymission_mission_warinthepocket_05_result_01_per_value }
+				set_variable = { global.storymission_mission_warinthepocket_05_result_02_per_value = negative_var }
+				round_variable = global.storymission_mission_warinthepocket_05_result_02_per_value
+			}
+			if = {
+				limit = {
+					has_global_flag = oyw_storymission_mission_warinthepocket_05_done
+					ZEO = {
+						has_war_with = EFS
+					}
+					original_tag = ZEO
+					NOT = {
+						has_global_flag = oyw_storymission_mission_warinthepocket_09a_done
+						has_global_flag = oyw_storymission_mission_warinthepocket_09b_done
+					}
+				}
+				# クリスマス作戦成功確率計算
+				set_temp_variable = { operation_success_rate = 15 } #基本成功確率
+				set_temp_variable = { zeon_army_intel_to_efs = ZEO.army_intel@EFS }
+				add_to_temp_variable = { zeon_army_intel_to_efs = ZEO.army_intel@SI6 }
+				divide_temp_variable = { zeon_army_intel_to_efs = 2 }
+				set_temp_variable = { efs_army_intel_to_zeon = EFS.army_intel@ZEO }
+				add_to_temp_variable = { efs_army_intel_to_zeon = EFS.army_intel@SI6 }
+				divide_temp_variable = { efs_army_intel_to_zeon = 2 }
+				subtract_from_temp_variable = { zeon_army_intel_to_efs = efs_army_intel_to_zeon }
+				add_to_temp_variable = { operation_success_rate = zeon_army_intel_to_efs }
+				if = {
+					limit = {
+						EFS = {
+							has_country_flag = chris_decision
+						}
+					}
+					subtract_from_temp_variable = { operation_success_rate = 10 } #クリスの決意
+				}
+				clamp_temp_variable = {
+					var = operation_success_rate
+					min = 0
+					max = 100
+				}
+				set_temp_variable = { negative_var = 100 }
+				set_variable = { global.storymission_mission_warinthepocket_09a_result_01_per_value = operation_success_rate }
+				round_variable = global.storymission_mission_warinthepocket_09a_result_01_per_value
+				subtract_from_temp_variable = { negative_var = global.storymission_mission_warinthepocket_09a_result_01_per_value }
+				set_variable = { global.storymission_mission_warinthepocket_09a_result_02_per_value = negative_var }
+				round_variable = global.storymission_mission_warinthepocket_09a_result_02_per_value
+			}
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_01a_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_01a_done
+          }
+          oyw_storymission_mission_warinthepocket_01a_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_01a_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = oyw_storymission_mission_warinthepocket_01b_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_01b_done
+					}
+					oyw_storymission_mission_warinthepocket_01b_trigger = yes
+				}
+				add_to_variable = { storymission_mission_amount = 1 }
+				set_country_flag = oyw_storymission_mission_warinthepocket_01b_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = oyw_storymission_mission_warinthepocket_02_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_02_done
+					}
+					oyw_storymission_mission_warinthepocket_02_trigger = yes
+				}
+				add_to_variable = { storymission_mission_amount = 1 }
+				set_country_flag = oyw_storymission_mission_warinthepocket_02_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+			}
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_03a_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_03a_done
+          }
+          oyw_storymission_mission_warinthepocket_03a_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_03a_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_03b_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_03b_done
+          }
+          oyw_storymission_mission_warinthepocket_03b_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_03b_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_04a_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_04a_done
+          }
+          oyw_storymission_mission_warinthepocket_04a_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_04a_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_04b_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_04b_done
+          }
+          oyw_storymission_mission_warinthepocket_04b_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_04b_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_05_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_05_done
+          }
+          oyw_storymission_mission_warinthepocket_05_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_05_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_06_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_06_done
+          }
+          oyw_storymission_mission_warinthepocket_06_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_06_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_07_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_07_done
+          }
+          oyw_storymission_mission_warinthepocket_07_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_07_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_08a_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_08a_done
+          }
+          oyw_storymission_mission_warinthepocket_08a_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_08a_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_08b_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_08b_done
+          }
+          oyw_storymission_mission_warinthepocket_08b_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_08b_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_09a_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_09a_done
+          }
+          oyw_storymission_mission_warinthepocket_09a_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_09a_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_09b_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_09b_done
+          }
+          oyw_storymission_mission_warinthepocket_09b_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_09b_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_10a_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_10a_done
+          }
+          oyw_storymission_mission_warinthepocket_10a_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_10a_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+      if = {
+        limit = {
+          NOT = {
+            has_country_flag = oyw_storymission_mission_warinthepocket_10b_trigger_counted
+						has_global_flag = oyw_storymission_mission_warinthepocket_10b_done
+          }
+          oyw_storymission_mission_warinthepocket_10b_trigger = yes
+        }
+        add_to_variable = { storymission_mission_amount = 1 }
+        set_country_flag = oyw_storymission_mission_warinthepocket_10b_trigger_counted
+				sound_effect = "alert_enemy_generate_wargoal_sound"
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+upgrades = {
+
+	naval_mobilesuit_armor_upgrade = {
+		max_level = 5
+		cost = naval
+		reliability = -0.05
+	}
+	naval_mobilesuit_generator_upgrade = {
+		max_level = 5
+		cost = naval
+		naval_speed = 0.05
+		naval_range = 0.05
+		sub_visibility = 0.03
+		reliability = 0.01
+	}
+	naval_mobilesuit_thruster_upgrade = {
+		max_level = 5
+		cost = naval
+		sub_visibility = 0.03
+		reliability = -0.02
+	}
+	naval_mobilesuit_sensor_upgrade = {
+		max_level = 5
+		cost = naval
+		surface_detection = 0.03
+		sub_detection = 0.02
+		sub_visibility = 0.02
+	}
+
+}

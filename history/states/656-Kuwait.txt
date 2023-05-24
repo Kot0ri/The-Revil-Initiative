@@ -3,14 +3,15 @@ state={
 	name="STATE_656"
 	manpower = 80000
 	
-	state_category = rural
+	state_category = metropolis
 	
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = MEZ
+		add_core_of = MEZ
 		victory_points = {
 			8085 30 
 		}
+	
 		buildings = {
 			infrastructure = 2
 			8085 = {
@@ -24,6 +25,5 @@ state={
 	provinces={
 		8085
 	}
-
 	local_supplies=0.0 
 }

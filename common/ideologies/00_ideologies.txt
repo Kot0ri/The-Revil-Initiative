@@ -198,7 +198,7 @@ ideologies = {
 			"FACTION_NAME_ES_4"
 		}
 
-		color = { 144 144 144 }
+		color = { 104 164 164 }
 
 
 		war_impact_on_world_tension = 1.0
@@ -254,7 +254,7 @@ ideologies = {
 			"FACTION_NAME_ES_4"
 		}
 
-		color = { 144 144 144 }
+		color = { 122 120 200 }
 
 
 		war_impact_on_world_tension = 1.0
@@ -308,7 +308,7 @@ ideologies = {
 				"FACTION_NAME_ES_4"
 			}
 	
-			color = { 144 144 144 }
+			color = { 200 100 120 }
 	
 	
 			war_impact_on_world_tension = 1.0
@@ -365,6 +365,76 @@ military government = {
 	}
 
 	color = { 71 214 56 }
+
+	war_impact_on_world_tension = 1
+	faction_impact_on_world_tension = 0.5
+
+	rules = {
+		can_declare_war_on_same_ideology = no
+		can_force_government = yes
+		can_send_volunteers = yes
+		can_puppet = yes
+		can_lower_tension = no
+		can_only_justify_war_on_threat_country = yes
+		can_guarantee_other_ideologies = yes
+		can_generate_female_aces = yes
+	}
+
+	modifiers = {
+		generate_wargoal_tension = 0.5
+		join_faction_tension = 0.2
+		lend_lease_tension = 0.4
+		send_volunteers_tension = 0.4
+		guarantee_tension = 0.4
+		drift_defence_factor = -0.3
+		civilian_intel_to_others = 20.0
+		army_intel_to_others = 10.0
+		navy_intel_to_others = 20.0
+		airforce_intel_to_others = 10.0
+  female_random_army_leader_chance = 0.65
+  female_random_admiral_chance = 0.65
+  female_random_operative_chance = 0.65
+  female_random_country_leader_chance = 0.65
+	}
+
+	faction_modifiers = {
+		faction_trade_opinion_factor = 0.50 #plus 50% trade opinion
+	}
+
+	can_be_boosted = no
+	can_collaborate = yes
+
+	ai_neutral = yes
+}
+
+Communism = {
+
+	types = {
+		socialism = {
+		}
+		communism = {
+		}
+		syndicalism = {
+		}
+		agrarian_socialism = {
+		}
+		anarcho_socialism = {
+		}
+		democratic_socialism = {
+		}
+		chairmanism_communism = {
+		}
+	}
+
+	dynamic_faction_names = {
+		"FACTION_NAME_ZEONISM_1"
+		"FACTION_NAME_ZEONISM_2"
+		"FACTION_NAME_ZEONISM_3"
+		"FACTION_NAME_ZEONISM_4"
+		"FACTION_NAME_ZEONISM_5"
+	}
+
+	color = { 200 74 56 }
 
 	war_impact_on_world_tension = 1
 	faction_impact_on_world_tension = 0.5

@@ -4,38 +4,14 @@
 
 add_namespace = super
 
-news_event = { #Fall of Japan
+news_event = { #One Year War Begins
 	id = super.1
 	hidden = yes
 	is_triggered_only = yes
 	timeout_days = 1
 	option = {
-			set_country_flag = SUPER_JAP_invasion							#country flag that handles title, should always be prefixed with SUPER_
-			set_country_flag = SUPER_JAP_invasion_TEXT						#country flag that handles description should always be identical to the previous flag, but end in _TEXT
-			set_variable = {BR_Super_Event_Var = token:SUPER_JAP_invasion}  #variable that stores the name of the country flag for the title so we can do some voodoo
-		}
-}
-
-news_event = { #Russia CW Start
-	id = super.2
-	hidden = yes	
-	is_triggered_only = yes
-	timeout_days = 1
-	option = {
-		set_country_flag = SUPER_RCW_start
-		set_country_flag = SUPER_RCW_start_TEXT
-		set_variable = {BR_Super_Event_Var = token:SUPER_RCW_start}
-		}
-}
-
-news_event = { #Russia CW End
-	id = super.3
-	hidden = yes	
-	is_triggered_only = yes
-	timeout_days = 1
-	option = {
-		set_country_flag = SUPER_RCW_end
-		set_country_flag = SUPER_RCW_end_TEXT
-		set_variable = {BR_Super_Event_Var = token:SUPER_RCW_end}
+			set_country_flag = SUPER_One_Year_war							#country flag that handles title, should always be prefixed with SUPER_
+			set_country_flag = SUPER_One_Year_War_TEXT						#country flag that handles description should always be identical to the previous flag, but end in _TEXT
+			set_variable = {BR_Super_Event_Var = token:SUPER_One_Year_War}  #variable that stores the name of the country flag for the title so we can do some voodoo
 		}
 }

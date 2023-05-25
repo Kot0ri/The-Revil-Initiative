@@ -39,21 +39,8 @@ spriteTypes = {
 	#	}
 
 	spriteType = {														#GFX FOR SUPEREVENTS START HERE
-		name = "GFX_SUPER_JAP_invasion"									#FORMAT FOR NAMING THESE SHOULD ALWAYS BE "GFX_SUPER_COUNTRYFLAG"
-		texturefile = "gfx/super_events/JAP_invasion.dds"				#473 X 242 .dds
+		name = "GFX_SUPER_One_Year_war"									#FORMAT FOR NAMING THESE SHOULD ALWAYS BE "GFX_SUPER_COUNTRYFLAG"
+		texturefile = "gfx/super_events/One_Year_War_Start.dds"				#473 X 242 .dds
 		legacy_lazy_load = no
 	}
-
-	spriteType = {
-		name = "GFX_SUPER_RCW_start"
-		texturefile = "gfx/super_events/RCW_start.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_SUPER_RCW_end"
-		texturefile = "gfx/super_events/RCW_end.dds"
-		legacy_lazy_load = no
-	}
-
 }

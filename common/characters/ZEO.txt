@@ -24,7 +24,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=space_elitism
+			ideology=supremacist
 			traits={ dictator iq240 }
 			expire="100.1.1.1"
 			id=-1
@@ -41,7 +41,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=contlism
+			ideology=democratic
 			expire="100.1.1.1"
 			id=-1
 		}
@@ -89,32 +89,6 @@ characters={
 			}
 		}
 	}
-	ZEO_munzos_earth_supremacist_senator={
-		name=ZEO_munzos_earth_supremacist_senator
-		portraits={
-			civilian={
-				large="gfx/leaders/Portrait_mob_leader_8.dds"
-			}
-		}
-		country_leader={
-			ideology=earth_elitism
-			expire="100.1.1.1"
-			id=-1
-		}
-	}
-	ZEO_munzos_democrats_senator={
-		name=ZEO_munzos_democrats_senator
-		portraits={
-			civilian={
-				large="gfx/leaders/Portrait_mob_leader_9.dds"
-			}
-		}
-		country_leader={
-			ideology=conservatism
-			expire="100.1.1.1"
-			id=-1
-		}
-	}
 	ZEO_casval_rem_deikun = {
 		name = ZEO_casval_rem_deikun
 		portraits={
@@ -155,6 +129,11 @@ characters={
 			army = {
 				small=GFX_idea_degwin_sodo_zabi
 			}
+		}
+		country_leader={
+			ideology=contolism
+			expire="100.1.1.1"
+			id=-1
 		}
 		advisor={
 			slot = political_advisor

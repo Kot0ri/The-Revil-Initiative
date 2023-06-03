@@ -405,36 +405,6 @@ characters={
 			}
 		}
 	}
-	ZEO_kiki_rosita = {
-		name=kiki_rosita
-		portraits={
-			army={
-				small=GFX_idea_kiki_rosita
-			}
-		}
-		advisor={
-			slot = high_command
-			ledger = army
-			cost = 100
-			idea_token = kiki_rosita
-			traits = {
-				hc_guerrilla_2
-			}
-			allowed = {
-				OR = {
-					original_tag = EFS
-					original_tag = ZEO
-				}
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_war = no
-					factor = 0
-				}
-			}
-		}
-	}
 	ZEO_torenov_y_minovsky = {
 		name = torenov_y_minovsky
 		portraits={

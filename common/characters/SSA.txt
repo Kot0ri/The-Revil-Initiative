@@ -1,0 +1,45 @@
+characters={
+	SSA_levan_fuu={
+		name=SSA_levan_fuu
+		portraits={
+			civilian={
+				
+			}
+		}
+		leader={
+			ideology= "military_administration"
+			traits={ man of the nation}
+			expire="100.1.1.1"
+			id=-1
+		}
+	}	
+	SSA_kiki_rosita = {
+		name=kiki_rosita
+		portraits={
+		army={
+			small=GFX_idea_kiki_rosita
+		}
+	}
+		advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = kiki_rosita
+		traits = {
+			hc_guerrilla_2
+		}
+		allowed = {
+			OR = {
+				original_tag = EFS
+				original_tag = SSA
+			}
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}

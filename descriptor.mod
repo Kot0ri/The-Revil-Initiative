@@ -1,4 +1,4 @@
-version="0.2.31"
+version="0.1"
 tags={
 	"Alternative History"
 	"Events"
@@ -33,5 +33,5 @@ replace_path="history/countries"
 replace_path="history/general"
 picture="thumbnail.png"
 name="ONE YEAR WAR"
-supported_version="1.12.12"
+supported_version="1.12.14"
 remote_file_id="2064985570"

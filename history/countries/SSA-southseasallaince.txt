@@ -91,6 +91,11 @@ set_fuel_ratio = 0.8
 
 # DIPLOMACY
 
+set_autonomy = {
+	target = HIN
+	autonomous_state = autonomy_colony
+}
+
 set_popularities = {
 	democratic = 33
 	corporatism = 25

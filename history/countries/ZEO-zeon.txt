@@ -81,6 +81,15 @@ set_variable = {
 	value = 1
 }
 
+set_autonomy = {
+	target = SOL
+	autonomous_state = autonomy_dominion
+}
+set_autonomy = {
+	target = ABQ
+	autonomous_state = autonomy_colony
+}
+
 set_popularities = {
 	democratic = 11
 	supremacist = 53

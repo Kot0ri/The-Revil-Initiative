@@ -1,35 +1,4 @@
 characters={
-	ZEO_gihren_zabi={
-		name=ZEO_gihren_zabi
-		portraits={
-			civilian={
-				large="gfx/leaders/ZEO/Portrait_Zeon_Giren_Zabi.dds"
-			}
-		}
-		navy_leader={
-			traits={ iq240 zabi_party superior_tactician }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=1
-			visible = {
-				OR = {
-					has_character_flag = enable_navy_leader
-					NOT = {
-						has_character_flag = disable_navy_leader
-					}
-				}
-			}
-		}
-		country_leader={
-			ideology="spacenoid_supremacist"
-			traits={ dictator iq240 }
-			expire="100.1.1.1"
-			id=-1
-		}
-	}
 	ZEO_darcia_bakharo={
 		name=ZEO_darcia_bakharo
 		portraits={

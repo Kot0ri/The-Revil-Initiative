@@ -237,29 +237,13 @@ add_opinion_modifier = {
   unlock_national_focus = zeon_high_mobility_of_general_purpose_MS
   unlock_national_focus = zeon_miniaturization_of_mega_particle_cannon
 
-	activate_decision = ap_char_aznable
 	activate_decision = ap_miguel_gaia
 	activate_decision = ap_ramba_ral
 
-	ZEO_denim = {
-		set_character_flag = enable_corps_commander
-	}
-	ZEO_gene = {
-		set_character_flag = enable_corps_commander
-	}
-	ZEO_slender = {
-		set_character_flag = enable_corps_commander
-	}
 	ZEO_dimitri = {
 		set_character_flag = enable_corps_commander
 	}
 	ZEO_tokwan = {
-		set_character_flag = enable_corps_commander
-	}
-	ZEO_andy = {
-		set_character_flag = enable_corps_commander
-	}
-	ZEO_ricardo_vega = {
 		set_character_flag = enable_corps_commander
 	}
 	ZEO_cucuruz_doan = {
@@ -410,9 +394,7 @@ add_opinion_modifier = {
 	unlock_national_focus = zeon_focus_on_MA
 
 	activate_decision = mb_foreign_force
-	activate_decision = ap_anabel_gato
 	activate_decision = ap_johnny_riden
-	activate_decision = ap_shin_matsunaga
 	activate_decision = ap_cima_garahau
 	activate_decision = ap_top
 	activate_decision = ap_herbert_von_kuspen
@@ -447,7 +429,6 @@ recruit_character = ZEO_kycilia_zabi
 recruit_character = ZEO_mquve
 recruit_character = ZEO_neuen_bitter
 recruit_character = ZEO_romeo_garcia
-recruit_character = ZEO_gadem
 recruit_character = ZEO_barom
 recruit_character = ZEO_wolfgang_wall
 recruit_character = ZEO_twanning
@@ -455,35 +436,22 @@ recruit_character = ZEO_rugens
 recruit_character = ZEO_killing
 recruit_character = ZEO_mulligan
 recruit_character = ZEO_darota
-recruit_character = ZEO_dozle_zabi
-recruit_character = ZEO_dren
-recruit_character = ZEO_bily_glardle
 recruit_character = ZEO_von_helsing
 recruit_character = ZEO_yuri_hasler
-recruit_character = ZEO_conscon
 recruit_character = ZEO_draize
 recruit_character = ZEO_deatroaf_kocsel
 recruit_character = ZEO_flanagan_boone
-recruit_character = ZEO_char_aznable
 recruit_character = ZEO_miguel_gaia
 recruit_character = ZEO_mash
 recruit_character = ZEO_ortega
 recruit_character = ZEO_ramba_ral
-recruit_character = ZEO_denim
-recruit_character = ZEO_gene
-recruit_character = ZEO_slender
 recruit_character = ZEO_dimitri
 recruit_character = ZEO_tokwan
-recruit_character = ZEO_andy
-recruit_character = ZEO_ricardo_vega
 recruit_character = ZEO_cucuruz_doan
 recruit_character = ZEO_adamski
 recruit_character = ZEO_gaily
-recruit_character = ZEO_anavel_gato
 recruit_character = ZEO_karius
-recruit_character = ZEO_kelley_layzner
 recruit_character = ZEO_johnny_ridden
-recruit_character = ZEO_shin_matsunaga
 recruit_character = ZEO_cima_garahau
 recruit_character = ZEO_topp
 recruit_character = ZEO_dell

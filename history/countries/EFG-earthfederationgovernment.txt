@@ -91,6 +91,31 @@ set_fuel_ratio = 0.8
 
 # DIPLOMACY
 
+if = {
+	limit = {
+		OR = {
+			has_dlc = "Together for Victory"
+			has_dlc = "Man the Guns"
+		}
+	}
+	set_autonomy = {
+		target = EUF
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = MEZ
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = AFZ
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = SSA
+		autonomous_state = autonomy_colony
+	}
+}
+
 set_popularities = {
 	democratic = 64
 	earthsupremacy = 17

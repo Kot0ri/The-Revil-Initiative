@@ -1,0 +1,27 @@
+characters={
+SOL_dozle_zabi={
+	name="Dozle Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/SOL/Dozzle.dds"
+		}
+		army={
+			large="gfx/leaders/SOL/Dozzle.dds"
+		}
+	}
+	country_leader={
+		ideology=military_administration
+		traits={}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = {
+		}
+		skill = 6
+		attack_skill = 8
+		defense_skill = 5
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+}

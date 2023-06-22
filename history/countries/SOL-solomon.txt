@@ -82,10 +82,12 @@ set_variable = {
 }
 
 set_popularities = {
-	supremacist = 12
-	contolism = 16
-	military_government = 60
-	aristocracy = 18
+	supremacist = 0
+	contolism = 0
+	military_government = 100
+	aristocracy = 0
+	corporatism = 0
+	communism = 0
 }
 set_politics = {
 	ruling_party = military_government

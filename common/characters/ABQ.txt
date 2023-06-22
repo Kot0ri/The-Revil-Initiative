@@ -1,13 +1,18 @@
-characters={
+characters = {
 	ABQ_gihren_zabi={
 		name="Gihren Zabi"
 		portraits={
 			civilian={
 				large="gfx/leaders/ABQ/Gihren.dds"
 			}
-			military = {
-			"gfx/leaders/ABQ/Gihren.dds"
+			army = {
+			large="gfx/leaders/ABQ/Gihren.dds"
 			}
+		}
+		country_leader = {
+			ideology= spacenoid_supremacist
+			traits={ dictator iq240 }
+			expire="1000.1.1.1"
 		}
 		navy_leader={
 			traits={ iq240 zabi_party superior_tactician }
@@ -16,7 +21,6 @@ characters={
 			defense_skill=3
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=1
 			visible = {
 				OR = {
 					has_character_flag = enable_navy_leader
@@ -26,11 +30,5 @@ characters={
 				}
 			}
 		}
-		country_leader={
-			ideology="supremacist"
-			traits={ dictator iq240 }
-			expire="1000.1.1.1"
-		}
 	}
-	
 }

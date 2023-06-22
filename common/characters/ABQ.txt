@@ -1,4 +1,5 @@
 characters = {
+	#leaders
 	ABQ_gihren_zabi={
 		name="Gihren Zabi"
 		portraits={
@@ -31,4 +32,25 @@ characters = {
 			}
 		}
 	}
+	#generals
+	ABQ_eric_manthfield={
+		name="Eric Manthfield"
+		portraits={
+			army={
+				small="GFX_idea_char_aznable"
+			}
+			army={
+				large="gfx/leaders/ABQ/manthfield.dds"
+			}
+		}
+		corps_commander={
+			traits={ zabi_party pilot }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 }
+

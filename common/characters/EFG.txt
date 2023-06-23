@@ -1,0 +1,58 @@
+characters = {
+#Leaders
+	EFG_ronan_marcena={
+		name="Ronan Marcena"
+		portraits={
+			civilian={
+				large= "gfx/leaders/EFG/Ronan_Marcena.dds"
+			}
+		}
+		country_leader={
+			ideology= republicanism
+			traits={}
+			expire="1000.1.1.1"
+		}
+	}
+
+	#Generals
+	EFG_tsurugi={
+		name="Ittou Tsurugi"
+		portraits={
+			army={
+				small="GFX_idea_anavel_gato"
+			}
+			army={
+				large="gfx/leaders/EFG/Ittou_Tsurugi.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	#Admirals
+	EFG_mauri={
+		name="Mauri"
+		portraits={
+			army={
+				small="GFX_idea_conscon"
+			}
+			army={
+				large= "gfx/leaders/EFG/Mauri.dds"
+			}
+		}
+		navy_leader={
+			traits={}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+		}
+	}
+}

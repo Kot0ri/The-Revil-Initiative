@@ -55,5 +55,23 @@ characters = {
 			logistics_skill=2
 		}
 	}
+	ABQ_adamski={
+		name='Adamski"'
+		portraits={
+			army={
+				small="GFX_idea_adamski"
+			}
+			army={
+				large="gfx/leaders/ABQ/Portrait_zeon_adamski.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+		}
 }
-
+}

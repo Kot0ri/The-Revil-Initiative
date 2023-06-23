@@ -448,56 +448,6 @@ characters={
 	}
 
 	}
-<<<<<<< Updated upstream
-
-	ZEO_gadem={
-		name=ZEO_gadem
-		portraits={
-			army={
-				small=GFX_idea_gadem
-			}
-			army={
-				large="gfx/leaders/ZEO/Portrait_Zeon_gadem.dds"
-			}
-		}
-		corps_commander={
-			traits={ old_guard supply_division }
-			skill=4
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=13
-		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			cost = 100
-			idea_token = gadem
-			allowed = {
-				original_tag = ZEO
-			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = gadem_is_dead
-					}
-				}
-			}
-			traits = {
-				hc_logistics_1
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_war = no
-					factor = 0
-				}
-			}
-		}
-	}
-=======
->>>>>>> Stashed changes
 	ZEO_barom={
 		name=ZEO_barom
 		portraits={
@@ -969,110 +919,6 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=161
-			visible = {
-				has_character_flag = enable_corps_commander
-			}
-		}
-	}
-<<<<<<< Updated upstream
-
-	ZEO_anavel_gato={
-		name=ZEO_anavel_gato
-		portraits={
-			army={
-				small="GFX_idea_anavel_gato"
-			}
-			army={
-				large="gfx/leaders/ZEO/Portrait_Zeon_anabel_gato.dds"
-			}
-		}
-		corps_commander={
-			traits={ solomons_nightmare war_hero zabi_party pilot }
-			skill=4
-			attack_skill=5
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=40
-			visible = {
-				has_character_flag = enable_corps_commander
-			}
-		}
-	}
-	ZEO_karius={
-		name=ZEO_karius
-		portraits={
-			army={
-				small="GFX_idea_karius"
-			}
-			army={
-				large="gfx/leaders/ZEO/Portrait_zeon_karius.dds"
-=======
-	ZEO_adamski={
-		name=ZEO_adamski
-		portraits={
-			army={
-				small="GFX_idea_adamski"
-			}
-			army={
-				large="gfx/leaders/ZEO/Portrait_zeon_adamski.dds"
->>>>>>> Stashed changes
-			}
-		}
-		corps_commander={
-			traits={ pilot }
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=3
-<<<<<<< Updated upstream
-			legacy_id=159
-=======
-			legacy_id=150
->>>>>>> Stashed changes
-			visible = {
-				has_character_flag = enable_corps_commander
-			}
-		}
-	}
-<<<<<<< Updated upstream
-	ZEO_kelley_layzner={
-		name=ZEO_kelley_layzner
-		portraits={
-			army={
-				small="GFX_idea_kelley_layzner"
-			}
-			army={
-				large="gfx/leaders/ZEO/Portrait_zeon_Kelley_Layzner.dds"
-=======
-	ZEO_gaily={
-		name=ZEO_gaily
-		portraits={
-			army={
-				small="GFX_idea_gaily"
-			}
-			army={
-				large="gfx/leaders/ZEO/Portrait_zeon_Gaily.dds"
->>>>>>> Stashed changes
-			}
-		}
-		corps_commander={
-			traits={ pilot }
-			skill=2
-<<<<<<< Updated upstream
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=164
-=======
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=163
->>>>>>> Stashed changes
 			visible = {
 				has_character_flag = enable_corps_commander
 			}
@@ -2016,6 +1862,3 @@ characters={
 			}
 		}
 	}
-
-
-

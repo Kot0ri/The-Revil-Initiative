@@ -1,4 +1,5 @@
 characters={
+	#Leaders
 	GRA_smokey_wilson={
 		name=GRA_smokey_wilson
 		portraits={
@@ -7,9 +8,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=elenism
-			expire="100.1.1.1"
-			id=-1
+			ideology=corporate_state
+			expire="1000.1.1.1"
 		}
 	}
 	GRA_granadas_spacenoid_supremacist_senator={
@@ -21,8 +21,7 @@ characters={
 		}
 		country_leader={
 			ideology=space_elitism
-			expire="100.1.1.1"
-			id=-1
+			expire="1000.1.1.1"
 		}
 	}
 	GRA_granadas_earth_supremacist_senator={
@@ -34,8 +33,7 @@ characters={
 		}
 		country_leader={
 			ideology=earth_elitism
-			expire="100.1.1.1"
-			id=-1
+			expire="1000.1.1.1"
 		}
 	}
 	GRA_granadas_democrats_senator={
@@ -47,8 +45,27 @@ characters={
 		}
 		country_leader={
 			ideology=conservatism
-			expire="100.1.1.1"
-			id=-1
+			expire="1000.1.1.1"
+		}
+	}
+	#Generals
+	GRA_reccoa={
+		name="Reccoa Londe"
+		portraits={
+			army={
+				small="GFX_idea_kelley_layzner"
+			}
+			army={
+				large="gfx/leaders/GRA/Reccoa Londe.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
 		}
 	}
 }

@@ -355,7 +355,7 @@ SOL_shin_matsunaga={
 }
 
 SOL_kelly_layzner={
-	name="kelly layzner"
+	name="Kelly Layzner"
 	portraits={
 		army={
 			small="GFX_idea_kelley_layzner"
@@ -432,10 +432,6 @@ SOL_karius={
 		defense_skill=1
 		planning_skill=2
 		logistics_skill=3
-		legacy_id=159
-		visible = {
-			has_character_flag = enable_corps_commander
-		}
 	}
 }
 
@@ -456,7 +452,6 @@ SOL_andy={
 		defense_skill=1
 		planning_skill=2
 		logistics_skill=3
-		legacy_id=151
 	}
 }
 
@@ -477,10 +472,6 @@ SOL_ricardo_vega={
 		defense_skill=2
 		planning_skill=3
 		logistics_skill=3
-		legacy_id=186
-		visible = {
-			has_character_flag = enable_corps_commander
-		}
 	}
 }
 

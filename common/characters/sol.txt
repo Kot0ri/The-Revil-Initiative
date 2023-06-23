@@ -385,7 +385,7 @@ SOL_space_rommel={
 		}
 	}
 	corps_commander={
-		traits={ pilot }
+		traits={}
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -405,7 +405,7 @@ SOL_milkyway_rommel={
 		}
 	}
 	corps_commander={
-		traits={ pilot }
+		traits={}
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -486,7 +486,7 @@ SOL_ricardo_vega={
 
 #Admirals
 SOL_billy_glardle = {
-	name=ZEO_flanagan_boone
+	name="Billy Glardle"
 	portraits={
 		army={
 			small="GFX_idea_flanagan_boone"
@@ -496,7 +496,7 @@ SOL_billy_glardle = {
 		}
 	}
 	navy_leader={
-		traits={ naval_pilot }
+		traits={}
 		skill=2
 		attack_skill=2
 		defense_skill=1

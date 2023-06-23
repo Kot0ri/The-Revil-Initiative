@@ -51,14 +51,15 @@ set_technology = {
 set_variable = { newtype_accepted_status = 1 }
 
 set_popularities = {
-	democratic = 30
-	supremacist = 12
-	contolism = 20
-	oligarchy = 17
-	corporatism = 21
+	supremacist = 0
+	contolism = 0
+	military_government = 0
+	aristocracy = 0
+	corporatism = 100
+	communism = 0
 }
 set_politics = {
-	ruling_party = coporatism
+	ruling_party = corporatism
 	last_election = "74.12.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -141,11 +142,6 @@ add_opinion_modifier = {
 	set_variable = { newtype_accepted_status = 3 }
 }
 
-recruit_character = GRA_smokey_wilson
-recruit_character = GRA_granadas_spacenoid_supremacist_senator
-recruit_character = GRA_granadas_earth_supremacist_senator
-recruit_character = GRA_granadas_democrats_senator
-
 create_equipment_variant = {
 	name = "Salamis Class"
 	type = efsf_space_cruiser1_equipment
@@ -157,3 +153,20 @@ create_equipment_variant = {
 	}
 	obsolete = no
 }
+
+
+#Leaders
+recruit_character = GRA_smokey_wilson
+recruit_character = GRA_granadas_spacenoid_supremacist_senator
+recruit_character = GRA_granadas_earth_supremacist_senator
+recruit_character = GRA_granadas_democrats_senator
+
+#Field Marshalls
+
+#Generals
+
+#Admirals
+
+#Advisors
+
+#Highcommand

@@ -56,7 +56,7 @@ characters = {
 		}
 	}
 	ABQ_adamski={
-		name='Adamski"'
+		name="Adamski"
 		portraits={
 			army={
 				small="GFX_idea_adamski"
@@ -74,4 +74,227 @@ characters = {
 			logistics_skill=3
 		}
 }
+
+ABQ_stream={
+	name="Filius Stream"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Filius_Stream.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+ABQ_zemela={
+	name="Gaius Zemela"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Zemela.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_vermillion={
+	name="Vanessa Vermillion"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Zemela.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+
+ABQ_hickman={
+	name="Billy Hickman"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Billy_Hickmam.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=2
+		attack_skill=3
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_marini={
+	name= "Rio Marini"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Marini.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_hazard={
+	name= "Gabby Hazard"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Gabby_Hazard.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=4
+		attack_skill=5
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+ABQ_gilliam={
+	name= "Robert Gilliam"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/gilliam.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=4
+		attack_skill=4
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+ABQ_nakagawa={
+	name= "Masaya Nakagawa"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/gilliam.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_stein={
+	name= "Ramukio Stein"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/stein.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_wedner={
+	name= "Siegfried Wedner"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/wedner.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+ABQ_wedner={
+	name= "Siegfried Wedner"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/wedner.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+
 }

@@ -122,7 +122,7 @@ ABQ_vermillion={
 			small="GFX_idea_adamski"
 		}
 		army={
-			large= "gfx/leaders/ABQ/Zemela.dds"
+			large= "gfx/leaders/ABQ/Vermillion.dds"
 		}
 	}
 	corps_commander={
@@ -223,7 +223,7 @@ ABQ_nakagawa={
 			small="GFX_idea_adamski"
 		}
 		army={
-			large= "gfx/leaders/ABQ/gilliam.dds"
+			large= "gfx\leaders/ABQ/nakagawa.dds"
 		}
 	}
 	corps_commander={
@@ -276,23 +276,107 @@ ABQ_wedner={
 	}
 }
 
-ABQ_wedner={
+ABQ_serein={
 	name= "Siegfried Wedner"
 	portraits={
 		army={
 			small="GFX_idea_adamski"
 		}
 		army={
-			large= "gfx/leaders/ABQ/wedner.dds"
+			large=  "gfx/leaders/ABQ/serein.dds"
 		}
 	}
 	corps_commander={
 		traits={ pilot }
-		skill=2
+		skill=1
 		attack_skill=2
-		defense_skill=2
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_lewi={
+	name= "Ein Lewi"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large=  "gfx/leaders/ABQ/Ein_Lewi.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_gleisner={
+	name= "Vincent Gleisner"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large=  "gfx/leaders/ABQ/Vincent_gleisner.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=4
+		attack_skill=5
+		defense_skill=3
 		planning_skill=2
 		logistics_skill=2
+	}
+}
+
+#Admirals
+
+ABQ_jirom={
+	name="Chapman Jirom"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/ABQ/jirom.dds"
+		}
+	}
+	navy_leader={
+		traits={old_guard career_officier}
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		maneuvering_skill=2
+		coordination_skill=2
+
+	}
+}
+
+ABQ_weigelman={
+	name="Randoplh Wiegelman"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/ABQ/weigelman.dds"
+		}
+	}
+	navy_leader={
+		traits={old_guard career_officier}
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		maneuvering_skill=2
+		coordination_skill=2
+
 	}
 }
 

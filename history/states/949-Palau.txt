@@ -1,6 +1,6 @@
 state={
-	id=948
-	name="STATE_948"
+	id=949
+	name="STATE_949"
   resources={
 		aluminium=20.000
 		tungsten=15.000
@@ -10,8 +10,8 @@ state={
 	}
 
 	history={
-		owner = PEZ
-		controller = PEZ
+		owner = SI6
+		controller = SI6
 		buildings = {
 			infrastructure = 2
 			arms_factory = 15
@@ -21,7 +21,7 @@ state={
 			fuel_silo = 1
 			
 		}
-		add_core_of = PEZ
+		add_core_of = SI6
 		78.1.1 = {
 			buildings = {
 				arms_factory = 23
@@ -42,15 +42,21 @@ state={
 		}
 
 		victory_points = {
-			13593 30 
+			13594 5 
 			}
 		victory_points = {
-			13592 15
+			13595 10
+			}
+		victory_points = {
+			13596 5
+			}
+		victory_points = {
+			13597 15
 			}
 	}
 
 	provinces={
-		13592	13593
+		13594	13595	13596	13597
 	}
 	manpower=75000
 	buildings_max_level_factor=1.000

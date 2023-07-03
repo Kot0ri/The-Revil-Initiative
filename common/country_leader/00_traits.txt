@@ -3,6 +3,23 @@
 @tier3 = 10
 
 leader_traits = {
+	#Dozle
+	hero_to_the_troops = {
+		random = no
+		war_support_factor = 0.2
+	}
+
+	well_respected = {
+		random = no
+		stability_factor = 0.2
+	}
+
+	mission_focused = {
+		random = no
+		surrender_limit = 0.70
+	}
+
+#Gihren?
 	iq240 = {
 		random = no
 		max_planning = 0.2

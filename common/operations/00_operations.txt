@@ -1040,15 +1040,15 @@ operation_coup_government = { ### 7 1/70
 			}
 			if = {
 				limit = {
-					PREV.ROOT = { has_government = spacesupremacy }
+					PREV.ROOT = { has_government = supremacist }
 				}
-				spacesupremacy > 0.2
+				supremacist > 0.2
 			}
 			if = {
 				limit = {
-					PREV.ROOT = { has_government = zeonism }
+					PREV.ROOT = { has_government = contolism }
 				}
-				zeonism > 0.2
+				contolism  > 0.2
 			}
 			if = {
 				limit = {
@@ -1056,12 +1056,7 @@ operation_coup_government = { ### 7 1/70
 				}
 				democratic > 0.2
 			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = earthsupremacy }
-				}
-				earthsupremacy > 0.2
-			}
+			
 				#set_temp_variable = { coup_ideology@ROOT = PREV.ROOT.current_party_ideology_group }
 				#set_temp_variable = { coup_ideology_popularity@ROOT = party_popularity@ROOT.coup_ideology }
 				#check_variable = { ROOT.coup_ideology_popularity > 0.2 }

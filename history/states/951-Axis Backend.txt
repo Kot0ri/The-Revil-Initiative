@@ -1,0 +1,56 @@
+state={
+	id=951
+	name="STATE_951"
+  resources={
+		aluminium=20.000
+		tungsten=15.000
+		chromium=15.000
+		steel=70.000
+		titanium=5.000
+	}
+
+	history={
+		owner = AXS
+		add_core_of = AXS
+		buildings = {
+			infrastructure = 2
+			arms_factory = 10
+			synthetic_refinery = 2
+			fuel_silo = 2
+			dockyard = 2
+			anti_air_building = 1
+			13345 = {
+				naval_base = 5
+				coastal_bunker = 1
+			}
+			13351 = {
+				bunker = 1
+			}
+		}
+		victory_points = {
+			13351 15
+		}
+		add_core_of = AXS
+		78.1.1 = {
+			buildings = {
+				arms_factory = 15
+			}
+
+		}
+		79.1.1 = {
+			buildings = {
+				arms_factory = 20
+			}
+
+		}
+
+	}
+
+	provinces={
+		13600	13601	13602	13603	13604
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=asteroid
+	local_supplies=15.0
+}

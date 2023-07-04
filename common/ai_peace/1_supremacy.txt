@@ -1,8 +1,8 @@
-supremacy_peace = {
+supremacist_peace = {
 	enable = {
 		OR = {
-			has_government = spacesupremacy
-      has_government = earthsupremacy
+			has_government = supremacist
+      has_government = supremacist
 		}
 	}
 
@@ -56,7 +56,7 @@ supremacy_peace = {
 			factor = 0 #0.5 - only liberate fascists!
 			NOT = {
 				FROM = {
-					has_government = spacesupremacy
+					has_government = supremacist
 				}
 			}
 		}

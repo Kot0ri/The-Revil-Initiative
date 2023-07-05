@@ -42,11 +42,15 @@ set_technology = {
 	EFS_basic_naval_mines = 1
 }
 
+
 set_popularities = {
-	democratic = 45
-	contolism = 40
-	supremacist = 10
-	aristocracy = 5
+	democratic = 100
+	supremacist = 0
+	contolism = 0
+	military_government = 0
+	aristocracy = 0
+	corporatism = 0
+	communism = 0
 }
 set_politics = {
 	ruling_party = democratic

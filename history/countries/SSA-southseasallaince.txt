@@ -96,11 +96,15 @@ set_autonomy = {
 	autonomous_state = autonomy_colony
 }
 
+
 set_popularities = {
-	democratic = 33
-	corporatism = 25
-	military_government = 16
-	aristocracy = 26
+	democratic = 100
+	supremacist = 0
+	contolism = 0
+	military_government = 0
+	aristocracy = 0
+	corporatism = 0
+	communism = 0
 }
 set_politics = {
 	ruling_party = democratic

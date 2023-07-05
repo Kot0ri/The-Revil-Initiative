@@ -42,14 +42,18 @@ set_technology = {
 
 set_variable = { newtype_accepted_status = 1 }
 
+
 set_popularities = {
-	democratic = 40
-	contolism = 45
-	supremacist = 10
-	aristocracy = 5
+	democratic = 0
+	supremacist = 0
+	contolism = 100
+	military_government = 0
+	aristocracy = 0
+	corporatism = 0
+	communism = 0
 }
 set_politics = {
-	ruling_party = zeonism
+	ruling_party = contolism
 	last_election = "74.12.1"
 	election_frequency = 48
 	elections_allowed = yes

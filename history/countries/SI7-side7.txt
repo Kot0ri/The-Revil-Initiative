@@ -34,11 +34,15 @@ set_technology = {
 
 set_variable = { newtype_accepted_status = 1 }
 
+
 set_popularities = {
-	democratic = 68
-	contolism = 15
-	supremacist = 15
-	aristocracy = 2
+	democratic = 100
+	supremacist = 0
+	contolism = 0
+	military_government = 0
+	aristocracy = 0
+	corporatism = 0
+	communism = 0
 }
 set_politics = {
 	ruling_party = democratic

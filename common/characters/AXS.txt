@@ -1,0 +1,130 @@
+characters={
+	#Leaders
+	AXS_maharaja_karn={
+	name="Maharaja Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/MaharajaKarn.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/MaharajaKarn.dds"
+		}
+	}
+	country_leader={
+		ideology=military_administration
+		traits={}
+		expire="1000.1.1.1"
+	}
+	navy_leader={
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		maneuvering_skill=2
+		coordination_skill=2
+	}
+}
+
+#Admirals
+AXS_yuri_hasler={
+	name="Yuri Hasler"
+	portraits={
+		army={
+			small=GFX_idea_dren
+		}
+		army={
+			large= "gfx/leaders/AXS/Yuri_Hasler.dds"
+		}
+	}
+	navy_leader={
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		maneuvering_skill=4
+		coordination_skill=4
+	}
+	advisor = {
+		slot = high_command
+		ledger = navy
+		cost = 100
+		idea_token = dren
+		allowed = {
+			original_tag = AXS
+		}
+		traits = {
+			hc_ship_commander_1
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+AXS_phaeton_rahu={
+	name="Phaeton Rahu Featon (Virions) one billion"
+	portraits={
+		army={
+			small=GFX_idea_dren
+		}
+		army={
+			large= "gfx/leaders/AXS/Phaeton_Rahu.dds"
+		}
+	}
+	navy_leader={
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		maneuvering_skill=3
+		coordination_skill=2
+	}
+}
+
+#Pilots
+AXS_maharaja_jr={
+	name="Maharaja Karn Jr."
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/maharaja_jr.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=2
+		attack_skill=3
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+#General
+AXS_gottn_goh={
+	name="Gottn Goh"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/gottem.dds"
+		}
+	}
+	corps_commander={
+		traits={}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=
+		logistics_skill=1
+	}
+}
+
+
+
+
+}

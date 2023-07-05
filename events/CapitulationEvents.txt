@@ -16,8 +16,8 @@ news_event = {
 			NOT = {
 				OR = {
 					AND = {
-						ROOT = { has_government = spacesupremacy }
-						FROM.FROM = { has_government = spacesupremacy }
+						ROOT = { has_government = supremacist }
+						FROM.FROM = { has_government = supremacist }
 					}
 					AND = {
 						ROOT = { has_government = democratic }
@@ -25,11 +25,7 @@ news_event = {
 					}
 					AND = {
 						ROOT = { has_government = zeonism }
-						FROM.FROM = { has_government = zeonism }
-					}
-					AND = {
-						ROOT = { has_government = earthsupremacy }
-						FROM.FROM = { has_government = earthsupremacy }
+						FROM.FROM = { has_government = contolism }
 					}
 				}
 			}

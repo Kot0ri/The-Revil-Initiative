@@ -44,9 +44,9 @@ set_variable = { newtype_accepted_status = 1 }
 
 
 set_popularities = {
-	democratic = 0
+	democratic = 60
 	supremacist = 0
-	contolism = 100
+	contolism = 40
 	military_government = 0
 	aristocracy = 0
 	corporatism = 0
@@ -54,7 +54,7 @@ set_popularities = {
 }
 
 set_politics = {
-	ruling_party = contolism
+	ruling_party = democratic
 	last_election = "74.12.1"
 	election_frequency = 48
 	elections_allowed = yes

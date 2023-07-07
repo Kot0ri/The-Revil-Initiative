@@ -28,8 +28,7 @@ ideas = {
 
 			available = {
 				OR = {
-					has_government = spacesupremacy
-					has_government = earthsupremacy
+					has_government = supremacist
 					has_war = yes
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
@@ -71,8 +70,7 @@ ideas = {
 
 			available = {
 				OR = {
-					has_government = spacesupremacy
-					has_government = earthsupremacy
+					has_government = supremacist
 					has_war = yes
 					threat > 0.3
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
@@ -118,8 +116,7 @@ ideas = {
 			available = {
 				threat > 0.3
 				OR = {
-					has_government = spacesupremacy
-					has_government = earthsupremacy
+					has_government = supremacist
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
 						has_war = yes
@@ -244,8 +241,7 @@ ideas = {
 					}
 					NOT = {
 						OR = {
-							has_government = spacesupremacy
-							has_government = earthsupremacy
+							has_government = supremacist
 						}
 					}
 				}
@@ -330,8 +326,7 @@ ideas = {
 			available = {
 				has_war = yes
 				OR = {
-					has_government = spacesupremacy
-					has_government = earthsupremacy
+					has_government = supremacist
 				}
 				OR = {
 					has_idea = war_economy

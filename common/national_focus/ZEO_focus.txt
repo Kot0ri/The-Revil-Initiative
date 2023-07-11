@@ -47,6 +47,8 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_hoping_for_more_time }
+
 	completion_reward = {
 	}
 	relative_position_id = ZEO_degwins_age
@@ -62,6 +64,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_designating_an_heir}
 	completion_reward = {
 	
 	}
@@ -94,6 +97,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_kycilias_plotting }
 	completion_reward = {
 	
 	}
@@ -110,6 +114,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_gihrens_speeches }
 	completion_reward = {
 	}
 	relative_position_id = ZEO_sibling_rivalry
@@ -887,6 +892,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_use_dark_and_ocean_colonies_for_civilian_use }
 	completion_reward = {
 	}
 	relative_position_id = ZEO_side_3_colony_evaluation
@@ -1038,6 +1044,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_use_dark_and_ocean_colonies_for_military_use }
 	completion_reward = {
 	}
 	relative_position_id = ZEO_side_3_colony_evaluation
@@ -1175,6 +1182,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_choose_pezun_as_testing_grounds }
 	completion_reward = {
 	}
 	relative_position_id = ZEO_zaku_versus_zudah_competition
@@ -1190,6 +1198,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_choose_a_baoa_qu_as_testing_grounds }
 	completion_reward = {
 	}
 	relative_position_id = ZEO_zaku_versus_zudah_competition
@@ -1311,6 +1320,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_light_ships_focus }
 	completion_reward = {
 	}
 	prerequisite = { focus = ZEO_expansion_of_the_starfleet }
@@ -1371,6 +1381,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_heavy_ship_focus }
 	completion_reward = {
 	}
 	relative_position_id = ZEO_expansion_of_the_starfleet

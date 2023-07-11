@@ -60,7 +60,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -11
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -187,7 +187,7 @@ focus = {
 
 focus = {
 	id = ZEO_theory_of_spacenoid_supremacy
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_dominance_of_human_survival_theory
 	cost = 2
 	x = 0
 	y = 1
@@ -195,7 +195,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		news_event = { id = news.89 hours = 6 }
+		unlock_decision_tooltip = pe_invited_francis_orbit
 	}
 	relative_position_id = ZEO_increase_funding_to_the_military
 	prerequisite = { focus = ZEO_increase_funding_to_the_military }

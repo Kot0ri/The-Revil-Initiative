@@ -62,6 +62,7 @@ set_technology = {
 #Leaders
 recruit_character = ZEO_degwin_sodo_zabi
 recruit_character = ZEO_darcia_bakharo
+
 #Field Marshalls
 
 
@@ -234,46 +235,7 @@ add_opinion_modifier = {
 		jupiter_fleet_get_resource
 	}
 	clr_country_flag = minovsky_is_ours
-	set_country_flag = establish_research_institution
-	set_country_flag = establish_603_technical_test_team
 
-	complete_national_focus = zeon_repression_of_deikun
-	complete_national_focus = zeon_dominance_of_human_survival_theory
-	complete_national_focus = zeon_defense_military_academy
-	complete_national_focus = zeon_hold_parliament
-	complete_national_focus = zeon_medal_of_cross
-	complete_national_focus = zeon_enhancement_of_defense_army
-	complete_national_focus = zeon_political_intervention_on_side6
-	complete_national_focus = zeon_organization_of_mobilized_mobile_battalion
-	complete_national_focus = zeon_puneemunde_institution
-	complete_national_focus = zeon_total_force_warfare_study
-	unlock_national_focus = zeon_improvement_of_MS_weapons
-	unlock_national_focus = zeon_munzo_univercity
-	unlock_national_focus = zeon_enhancement_of_general_purpose_MS
-	unlock_national_focus = zeon_focus_on_MS_for_local_battle
-	unlock_national_focus = zeon_focus_on_mobiletank
-  unlock_national_focus = zeon_high_mobility_of_general_purpose_MS
-  unlock_national_focus = zeon_miniaturization_of_mega_particle_cannon
-
-	activate_decision = ap_miguel_gaia
-	activate_decision = ap_ramba_ral
-
-	ZEO_dimitri = {
-		set_character_flag = enable_corps_commander
-	}
-	ZEO_tokwan = {
-		set_character_flag = enable_corps_commander
-	}
-	ZEO_cucuruz_doan = {
-		set_character_flag = enable_corps_commander
-	}
-	ZEO_adamski = {
-		set_character_flag = enable_corps_commander
-	}
-	ZEO_gaily = {
-		set_character_flag = enable_corps_commander
-	}
-}
 
 79.4.1 = {
 	set_global_flag = start_is_uc0079

@@ -737,6 +737,21 @@ focus = {
 }
 
 focus = {
+	id = ZEO_noblis_oblige 
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_foster_a_spirit_of_nobility
+	prerequisite = { focus = ZEO_foster_a_spirit_of_nobility }
+}
+
+focus = {
 	id = ZEO_strengthen_the_military_industrial_complex
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
@@ -1026,14 +1041,14 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -2
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_foster_a_spirit_of_nobility
-	prerequisite = { focus = ZEO_foster_a_spirit_of_nobility }
+	relative_position_id = ZEO_noblis_oblige
+	prerequisite = { focus = ZEO_noblis_oblige }
 }
 
 focus = {
@@ -1041,7 +1056,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -1118,14 +1133,14 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 1
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_foster_a_spirit_of_nobility
-	prerequisite = { focus = ZEO_foster_a_spirit_of_nobility }
+	relative_position_id = ZEO_noblis_oblige
+	prerequisite = { focus = ZEO_noblis_oblige }
 }
 
 focus = {
@@ -1133,7 +1148,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}

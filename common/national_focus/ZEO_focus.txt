@@ -203,6 +203,21 @@ focus = {
 }
 
 focus = {
+	id = ZEO_sequel_theory_of_spacenoid_supremacy
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_theory_of_spacenoid_supremacy
+	prerequisite = { focus = ZEO_theory_of_spacenoid_supremacy }
+}
+
+focus = {
 	id = ZEO_pressure_the_politicians
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
@@ -230,8 +245,8 @@ focus = {
 	completion_reward = {
 		
 	}
-	relative_position_id = ZEO_theory_of_spacenoid_supremacy
-	prerequisite = { focus = ZEO_theory_of_spacenoid_supremacy }
+	relative_position_id = ZEO_sequel_theory_of_spacenoid_supremacy
+	prerequisite = { focus = ZEO_sequel_theory_of_spacenoid_supremacy }
 }
 
 focus = {

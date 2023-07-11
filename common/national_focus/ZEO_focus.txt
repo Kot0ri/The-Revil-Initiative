@@ -741,7 +741,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -752,14 +752,31 @@ focus = {
 }
 
 focus = {
+	id = ZEO_a_new_aristocracy
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = { focus = ZEO_serve_coporate_intersts }
+	completion_reward = {
+	}
+	relative_position_id = ZEO_noblis_oblige
+	prerequisite = { focus = ZEO_noblis_oblige
+}
+}
+focus = {
 	id = ZEO_strengthen_the_military_industrial_complex
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
+
 	completion_reward = {
 	}
 	relative_position_id = ZEO_reach_out_to_the_coporate_sector
@@ -771,10 +788,11 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ZEO_a_new_aristocracy }
 	completion_reward = {
 	}
 	relative_position_id = ZEO_strengthen_the_military_industrial_complex
@@ -980,14 +998,14 @@ focus = {
 	id = ZEO_war_with_earth
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 2
+	x = -3
 	y = 2
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_embargo_the_earth
+	relative_position_id = ZEO_prepare_for_a_war_of_independence
 	prerequisite = { focus = ZEO_embargo_the_earth }
 	prerequisite = { focus = ZEO_prepare_for_a_war_of_independence }
 }
@@ -1047,8 +1065,8 @@ focus = {
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_noblis_oblige
-	prerequisite = { focus = ZEO_noblis_oblige }
+	relative_position_id = ZEO_a_new_aristocracy
+	prerequisite = { focus = ZEO_a_new_aristocracy }
 }
 
 focus = {
@@ -1139,8 +1157,8 @@ focus = {
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_noblis_oblige
-	prerequisite = { focus = ZEO_noblis_oblige }
+	relative_position_id = ZEO_a_new_aristocracy
+	prerequisite = { focus = ZEO_a_new_aristocracy }
 }
 
 focus = {

@@ -329,7 +329,7 @@ focus = {
 }
 
 focus = {
-	id = ZEO_war_with_earth
+	id = ZEO_invade_earth
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
@@ -511,7 +511,7 @@ focus = {
 }
 
 focus = {
-	id = ZEO_seek_to_station_troops_in_granada
+	id = ZEO_seek_to_garrison_troops_in_granada
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
@@ -536,8 +536,8 @@ focus = {
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_seek_to_station_troops_in_granada
-	prerequisite = { focus = ZEO_seek_to_station_troops_in_granada }
+	relative_position_id = ZEO_seek_to_garrison_troops_in_granada
+	prerequisite = { focus = ZEO_seek_to_garrison_troops_in_granada }
 }
 
 focus = {

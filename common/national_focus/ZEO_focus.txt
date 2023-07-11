@@ -1,0 +1,1614 @@
+focus_tree = {
+	id = ZEO
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ZEO
+		}
+	}
+shared_focus = {
+	id = ZEO_the_zabi_families_vision
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 14
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_the_zabi_families_vision"
+	}
+}
+
+shared_focus = {
+	id = ZEO_degwins_age
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_degwins_age"
+	}
+	relative_position_id = ZEO_the_zabi_families_vision
+	prerequisite = { focus = ZEO_the_zabi_families_vision }
+}
+
+shared_focus = {
+	id = ZEO_designating_an_heir
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_designating_an_heir"
+	}
+	relative_position_id = ZEO_degwins_age
+	prerequisite = { focus = ZEO_degwins_age }
+}
+
+shared_focus = {
+	id = ZEO_hoping_for_more_time
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -11
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_hoping_for_more_time"
+	}
+	relative_position_id = ZEO_degwins_age
+	prerequisite = { focus = ZEO_degwins_age }
+}
+
+shared_focus = {
+	id = ZEO_sibling_rivalry
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_sibling_rivalry"
+	}
+	relative_position_id = ZEO_designating_an_heir
+	prerequisite = { focus = ZEO_designating_an_heir }
+}
+
+shared_focus = {
+	id = ZEO_gihrens_speeches
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_gihrens_speeches"
+	}
+	relative_position_id = ZEO_sibling_rivalry
+	prerequisite = { focus = ZEO_sibling_rivalry }
+}
+
+shared_focus = {
+	id = ZEO_kycilias_plotting
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_kycilias_plotting"
+	}
+	relative_position_id = ZEO_sibling_rivalry
+	prerequisite = { focus = ZEO_sibling_rivalry }
+}
+
+shared_focus = {
+	id = ZEO_expand_the_powers_of_the_secret_service
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_expand_the_powers_of_the_secret_service"
+	}
+	relative_position_id = ZEO_gihrens_speeches
+	prerequisite = { focus = ZEO_gihrens_speeches }
+}
+
+shared_focus = {
+	id = ZEO_expand_the_powers_of_the_kycilia_agency
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_expand_the_powers_of_the_kycilia_agency"
+	}
+	relative_position_id = ZEO_kycilias_plotting
+	prerequisite = { focus = ZEO_kycilias_plotting }
+	mutually_exclusive = { focus = ZEO_expand_the_powers_of_the_kycilia_agency }
+	mutually_exclusive = { focus = ZEO_expand_the_powers_of_the_kycilia_agency }
+}
+
+shared_focus = {
+	id = ZEO_shut_down_political_thought_criminal
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_shut_down_political_thought_criminal"
+	}
+	relative_position_id = ZEO_expand_the_powers_of_the_secret_service
+	prerequisite = { focus = ZEO_expand_the_powers_of_the_secret_service }
+}
+
+shared_focus = {
+	id = ZEO_increase_funding_to_the_military
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_increase_funding_to_the_military"
+	}
+	relative_position_id = ZEO_expand_the_powers_of_the_secret_service
+	prerequisite = { focus = ZEO_expand_the_powers_of_the_secret_service }
+}
+
+shared_focus = {
+	id = ZEO_theory_of_spacenoid_supremacy
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_theory_of_spacenoid_supremacy"
+	}
+	relative_position_id = ZEO_increase_funding_to_the_military
+	prerequisite = { focus = ZEO_increase_funding_to_the_military }
+}
+
+shared_focus = {
+	id = ZEO_pressure_the_politicians
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_pressure_the_politicians"
+	}
+	relative_position_id = ZEO_shut_down_political_thought_criminal
+	prerequisite = { focus = ZEO_shut_down_political_thought_criminal }
+}
+
+shared_focus = {
+	id = ZEO_ties_with_granada
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_ties_with_granada"
+	}
+	relative_position_id = ZEO_theory_of_spacenoid_supremacy
+	prerequisite = { focus = ZEO_theory_of_spacenoid_supremacy }
+}
+
+shared_focus = {
+	id = ZEO_support_revolution_in_side_6
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_support_revolution_in_side_6"
+	}
+	relative_position_id = ZEO_ties_with_granada
+	prerequisite = { focus = ZEO_ties_with_granada }
+}
+
+shared_focus = {
+	id = ZEO_secure_ranks_neutrality
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_secure_ranks_neutrality"
+	}
+	relative_position_id = ZEO_support_revolution_in_side_6
+	prerequisite = { focus = ZEO_support_revolution_in_side_6 }
+}
+
+shared_focus = {
+	id = ZEO_send_kycilia_to_granada
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_send_kycilia_to_granada"
+	}
+	relative_position_id = ZEO_pressure_the_politicians
+	prerequisite = { focus = ZEO_pressure_the_politicians }
+}
+
+shared_focus = {
+	id = ZEO_seek_to_station_troops_in_granada
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_seek_to_station_troops_in_granada"
+	}
+	relative_position_id = ZEO_ties_with_granada
+	prerequisite = { focus = ZEO_ties_with_granada }
+	prerequisite = { focus = ZEO_send_kycilia_to_granada }
+}
+
+shared_focus = {
+	id = ZEO_minovsky_incident
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_minovsky_incident"
+	}
+	relative_position_id = ZEO_seek_to_station_troops_in_granada
+	prerequisite = { focus = ZEO_seek_to_station_troops_in_granada }
+}
+
+shared_focus = {
+	id = ZEO_declare_independence
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_declare_independence"
+	}
+	relative_position_id = ZEO_minovsky_incident
+	prerequisite = { focus = ZEO_minovsky_incident }
+}
+
+shared_focus = {
+	id = ZEO_war_with_earth
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_war_with_earth"
+	}
+	relative_position_id = ZEO_declare_independence
+	prerequisite = { focus = ZEO_declare_independence }
+}
+
+shared_focus = {
+	id = ZEO_userp_control_from_parliment
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_userp_control_from_parliment"
+	}
+	relative_position_id = ZEO_shut_down_political_thought_criminal
+	prerequisite = { focus = ZEO_shut_down_political_thought_criminal }
+	prerequisite = { focus = ZEO_send_a_message_to_parliment }
+}
+
+shared_focus = {
+	id = ZEO_plot_against_degwin
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_plot_against_degwin"
+	}
+	relative_position_id = ZEO_userp_control_from_parliment
+	prerequisite = { focus = ZEO_userp_control_from_parliment }
+}
+
+shared_focus = {
+	id = ZEO_identify_the_greater_threat
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_identify_the_greater_threat"
+	}
+	relative_position_id = ZEO_plot_against_degwin
+	prerequisite = { focus = ZEO_plot_against_degwin }
+}
+
+shared_focus = {
+	id = ZEO_fake_a_conspiracy
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_fake_a_conspiracy"
+	}
+	relative_position_id = ZEO_identify_the_greater_threat
+	prerequisite = { focus = ZEO_identify_the_greater_threat }
+	prerequisite = { focus = ZEO_remove_gihren_from_play }
+}
+
+shared_focus = {
+	id = ZEO_cold_night_in_side_3
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_cold_night_in_side_3"
+	}
+	relative_position_id = ZEO_fake_a_conspiracy
+	prerequisite = { focus = ZEO_fake_a_conspiracy }
+}
+
+shared_focus = {
+	id = ZEO_keep_tabs_on_the_loud_mouths
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_keep_tabs_on_the_loud_mouths"
+	}
+	relative_position_id = ZEO_expand_the_powers_of_the_kycilia_agency
+	prerequisite = { focus = ZEO_expand_the_powers_of_the_kycilia_agency }
+}
+
+shared_focus = {
+	id = ZEO_send_a_message_to_parliment
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_send_a_message_to_parliment"
+	}
+	relative_position_id = ZEO_keep_tabs_on_the_loud_mouths
+	prerequisite = { focus = ZEO_keep_tabs_on_the_loud_mouths }
+}
+
+shared_focus = {
+	id = ZEO_set_up_ties_with_granada
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_set_up_ties_with_granada"
+	}
+	relative_position_id = ZEO_expand_the_powers_of_the_kycilia_agency
+	prerequisite = { focus = ZEO_expand_the_powers_of_the_kycilia_agency }
+}
+
+shared_focus = {
+	id = ZEO_send_agents_to_granada_city
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_send_agents_to_granada_city"
+	}
+	relative_position_id = ZEO_set_up_ties_with_granada
+	prerequisite = { focus = ZEO_set_up_ties_with_granada }
+}
+
+shared_focus = {
+	id = ZEO_purchase_granada_property
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_purchase_granada_property"
+	}
+	relative_position_id = ZEO_send_agents_to_granada_city
+	prerequisite = { focus = ZEO_send_agents_to_granada_city }
+}
+
+shared_focus = {
+	id = ZEO_remove_gihren_from_play
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_remove_gihren_from_play"
+	}
+	relative_position_id = ZEO_send_a_message_to_parliment
+	prerequisite = { focus = ZEO_send_a_message_to_parliment }
+}
+
+shared_focus = {
+	id = ZEO_seek_to_station_troops_in_granada
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_seek_to_station_troops_in_granada"
+	}
+	relative_position_id = ZEO_purchase_granada_property
+	prerequisite = { focus = ZEO_purchase_granada_property }
+}
+
+shared_focus = {
+	id = ZEO_catch_wind_of_minovsky
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_catch_wind_of_minovsky"
+	}
+	relative_position_id = ZEO_seek_to_station_troops_in_granada
+	prerequisite = { focus = ZEO_seek_to_station_troops_in_granada }
+}
+
+shared_focus = {
+	id = ZEO_invade_from_brown
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_invade_from_brown"
+	}
+	relative_position_id = ZEO_catch_wind_of_minovsky
+	prerequisite = { focus = ZEO_catch_wind_of_minovsky }
+}
+
+shared_focus = {
+	id = ZEO_war_with_earth
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_war_with_earth"
+	}
+	relative_position_id = ZEO_invade_from_brown
+	prerequisite = { focus = ZEO_invade_from_brown }
+}
+
+shared_focus = {
+	id = ZEO_support_revolution_in_side_6
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_support_revolution_in_side_6"
+	}
+	relative_position_id = ZEO_expand_the_powers_of_the_kycilia_agency
+	prerequisite = { focus = ZEO_expand_the_powers_of_the_kycilia_agency }
+}
+
+shared_focus = {
+	id = ZEO_talk_with_ranks_goverment
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_talk_with_ranks_goverment"
+	}
+	relative_position_id = ZEO_support_revolution_in_side_6
+	prerequisite = { focus = ZEO_support_revolution_in_side_6 }
+}
+
+shared_focus = {
+	id = ZEO_propisition_on_palau
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_propisition_on_palau"
+	}
+	relative_position_id = ZEO_talk_with_ranks_goverment
+	prerequisite = { focus = ZEO_talk_with_ranks_goverment }
+}
+
+shared_focus = {
+	id = ZEO_station_troops_at_palau
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_station_troops_at_palau"
+	}
+	relative_position_id = ZEO_propisition_on_palau
+	prerequisite = { focus = ZEO_propisition_on_palau }
+}
+
+shared_focus = {
+	id = ZEO_guardian_of_spacenoids
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_guardian_of_spacenoids"
+	}
+	relative_position_id = ZEO_station_troops_at_palau
+	prerequisite = { focus = ZEO_station_troops_at_palau }
+	prerequisite = { focus = ZEO_secure_loum_pro_zeon_government }
+}
+
+shared_focus = {
+	id = ZEO_reach_out_to_pro_zeon_elements_in_loum
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 8
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_reach_out_to_pro_zeon_elements_in_loum"
+	}
+	relative_position_id = ZEO_expand_the_powers_of_the_kycilia_agency
+	prerequisite = { focus = ZEO_expand_the_powers_of_the_kycilia_agency }
+}
+
+shared_focus = {
+	id = ZEO_tip_election_scales
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_tip_election_scales"
+	}
+	relative_position_id = ZEO_reach_out_to_pro_zeon_elements_in_loum
+	prerequisite = { focus = ZEO_reach_out_to_pro_zeon_elements_in_loum }
+}
+
+shared_focus = {
+	id = ZEO_secure_loum_pro_zeon_government
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_secure_loum_pro_zeon_government"
+	}
+	relative_position_id = ZEO_tip_election_scales
+	prerequisite = { focus = ZEO_tip_election_scales }
+}
+
+shared_focus = {
+	id = ZEO_foster_a_spirit_of_nobility
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_foster_a_spirit_of_nobility"
+	}
+	relative_position_id = ZEO_hoping_for_more_time
+	prerequisite = { focus = ZEO_hoping_for_more_time }
+}
+
+shared_focus = {
+	id = ZEO_reach_out_to_the_coporate_sector
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_reach_out_to_the_coporate_sector"
+	}
+	relative_position_id = ZEO_hoping_for_more_time
+	prerequisite = { focus = ZEO_hoping_for_more_time }
+}
+
+shared_focus = {
+	id = ZEO_strengthen_the_military_industrial_complex
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_strengthen_the_military_industrial_complex"
+	}
+	relative_position_id = ZEO_reach_out_to_the_coporate_sector
+	prerequisite = { focus = ZEO_reach_out_to_the_coporate_sector }
+}
+
+shared_focus = {
+	id = ZEO_serve_coporate_intersts
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_serve_coporate_intersts"
+	}
+	relative_position_id = ZEO_strengthen_the_military_industrial_complex
+	prerequisite = { focus = ZEO_strengthen_the_military_industrial_complex }
+}
+
+shared_focus = {
+	id = ZEO_side_3_colony_evaluation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 32
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_side_3_colony_evaluation"
+	}
+}
+
+shared_focus = {
+	id = ZEO_further_military_research
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_further_military_research"
+	}
+	relative_position_id = ZEO_use_dark_and_ocean_colonies_for_military_use
+	prerequisite = { focus = ZEO_use_dark_and_ocean_colonies_for_military_use }
+}
+
+shared_focus = {
+	id = ZEO_new_financing_schemes
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_new_financing_schemes"
+	}
+	relative_position_id = ZEO_serve_coporate_intersts
+	prerequisite = { focus = ZEO_serve_coporate_intersts }
+}
+
+shared_focus = {
+	id = ZEO_seek_a_alliance_with_antifederation_earthnoids
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_seek_a_alliance_with_antifederation_earthnoids"
+	}
+	relative_position_id = ZEO_relations_with_earths_elites
+	prerequisite = { focus = ZEO_relations_with_earths_elites }
+}
+
+shared_focus = {
+	id = ZEO_trade_deals_with_the_moon
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_trade_deals_with_the_moon"
+	}
+	relative_position_id = ZEO_new_financing_schemes
+	prerequisite = { focus = ZEO_new_financing_schemes }
+}
+
+shared_focus = {
+	id = ZEO_further_industrial_research
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_further_industrial_research"
+	}
+	relative_position_id = ZEO_use_dark_and_ocean_colonies_for_civilian_use
+	prerequisite = { focus = ZEO_use_dark_and_ocean_colonies_for_civilian_use }
+}
+
+shared_focus = {
+	id = ZEO_arrangements_with_federation_officials
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_arrangements_with_federation_officials"
+	}
+	relative_position_id = ZEO_seek_a_alliance_with_antifederation_earthnoids
+	prerequisite = { focus = ZEO_seek_a_alliance_with_antifederation_earthnoids }
+}
+
+shared_focus = {
+	id = ZEO_talks_with_anaheim
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_talks_with_anaheim"
+	}
+	relative_position_id = ZEO_trade_deals_with_the_moon
+	prerequisite = { focus = ZEO_trade_deals_with_the_moon }
+}
+
+shared_focus = {
+	id = ZEO_side_3_weapons_development
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_side_3_weapons_development"
+	}
+	relative_position_id = ZEO_further_military_research
+	prerequisite = { focus = ZEO_further_military_research }
+}
+
+shared_focus = {
+	id = ZEO_use_dark_and_ocean_colonies_for_military_use
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_use_dark_and_ocean_colonies_for_military_use"
+	}
+	relative_position_id = ZEO_side_3_colony_evaluation
+	prerequisite = { focus = ZEO_side_3_colony_evaluation }
+}
+
+shared_focus = {
+	id = ZEO_expansion_of_side_3_garrison
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_expansion_of_side_3_garrison"
+	}
+	relative_position_id = ZEO_side_3_weapons_development
+	prerequisite = { focus = ZEO_side_3_weapons_development }
+}
+
+shared_focus = {
+	id = ZEO_expand_consumer_market
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_expand_consumer_market"
+	}
+	relative_position_id = ZEO_further_industrial_research
+	prerequisite = { focus = ZEO_further_industrial_research }
+}
+
+shared_focus = {
+	id = ZEO_browbeat_the_colonies_into_our_econimc_sphere
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_browbeat_the_colonies_into_our_econimc_sphere"
+	}
+	relative_position_id = ZEO_talks_with_anaheim
+	prerequisite = { focus = ZEO_talks_with_anaheim }
+	prerequisite = { focus = ZEO_talks_with_anaheim }
+}
+
+shared_focus = {
+	id = ZEO_war_with_earth
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_war_with_earth"
+	}
+	relative_position_id = ZEO_embargo_the_earth
+	prerequisite = { focus = ZEO_embargo_the_earth }
+	prerequisite = { focus = ZEO_prepare_for_a_war_of_independence }
+}
+
+shared_focus = {
+	id = ZEO_war_preperations
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 41
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_war_preperations"
+	}
+}
+
+shared_focus = {
+	id = ZEO_station_troops_on_luna
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_station_troops_on_luna"
+	}
+	relative_position_id = ZEO_talks_with_anaheim
+	prerequisite = { focus = ZEO_talks_with_anaheim }
+}
+
+shared_focus = {
+	id = ZEO_embargo_the_earth
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_embargo_the_earth"
+	}
+	relative_position_id = ZEO_station_troops_on_luna
+	prerequisite = { focus = ZEO_station_troops_on_luna }
+	prerequisite = { focus = ZEO_browbeat_the_colonies_into_our_econimc_sphere }
+}
+
+shared_focus = {
+	id = ZEO_grant_military_titles
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_grant_military_titles"
+	}
+	relative_position_id = ZEO_foster_a_spirit_of_nobility
+	prerequisite = { focus = ZEO_foster_a_spirit_of_nobility }
+}
+
+shared_focus = {
+	id = ZEO_knights_of_zeon
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_knights_of_zeon"
+	}
+	relative_position_id = ZEO_grant_military_titles
+	prerequisite = { focus = ZEO_grant_military_titles }
+}
+
+shared_focus = {
+	id = ZEO_use_dark_and_ocean_colonies_for_civilian_use
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_use_dark_and_ocean_colonies_for_civilian_use"
+	}
+	relative_position_id = ZEO_side_3_colony_evaluation
+	prerequisite = { focus = ZEO_side_3_colony_evaluation }
+}
+
+shared_focus = {
+	id = ZEO_special_ace_units
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_special_ace_units"
+	}
+	relative_position_id = ZEO_knights_of_zeon
+	prerequisite = { focus = ZEO_knights_of_zeon }
+}
+
+shared_focus = {
+	id = ZEO_lead_from_the_front_doctrine
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_lead_from_the_front_doctrine"
+	}
+	relative_position_id = ZEO_special_ace_units
+	prerequisite = { focus = ZEO_special_ace_units }
+}
+
+shared_focus = {
+	id = ZEO_prepare_for_a_war_of_independence
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_prepare_for_a_war_of_independence"
+	}
+	relative_position_id = ZEO_arrangements_with_federation_officials
+	prerequisite = { focus = ZEO_arrangements_with_federation_officials }
+	prerequisite = { focus = ZEO_lead_from_the_front_doctrine }
+}
+
+shared_focus = {
+	id = ZEO_prepare_garmas_kingdom
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_prepare_garmas_kingdom"
+	}
+	relative_position_id = ZEO_foster_a_spirit_of_nobility
+	prerequisite = { focus = ZEO_foster_a_spirit_of_nobility }
+}
+
+shared_focus = {
+	id = ZEO_relations_with_earths_elites
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_relations_with_earths_elites"
+	}
+	relative_position_id = ZEO_prepare_garmas_kingdom
+	prerequisite = { focus = ZEO_prepare_garmas_kingdom }
+}
+
+shared_focus = {
+	id = ZEO_ms_project
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_ms_project"
+	}
+	relative_position_id = ZEO_war_preperations
+	prerequisite = { focus = ZEO_war_preperations }
+}
+
+shared_focus = {
+	id = ZEO_zaku_versus_zudah_competition
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_zaku_versus_zudah_competition"
+	}
+	relative_position_id = ZEO_ms_project
+	prerequisite = { focus = ZEO_ms_project }
+	prerequisite = { focus = ZEO_ms_project }
+}
+
+shared_focus = {
+	id = ZEO_attract_immigration
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_attract_immigration"
+	}
+	relative_position_id = ZEO_expand_consumer_market
+	prerequisite = { focus = ZEO_expand_consumer_market }
+}
+
+shared_focus = {
+	id = ZEO_choose_a_baoa_qu_as_testing_grounds
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_choose_a_baoa_qu_as_testing_grounds"
+	}
+	relative_position_id = ZEO_zaku_versus_zudah_competition
+	prerequisite = { focus = ZEO_zaku_versus_zudah_competition }
+}
+
+shared_focus = {
+	id = ZEO_choose_pezun_as_testing_grounds
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_choose_pezun_as_testing_grounds"
+	}
+	relative_position_id = ZEO_zaku_versus_zudah_competition
+	prerequisite = { focus = ZEO_zaku_versus_zudah_competition }
+}
+
+shared_focus = {
+	id = ZEO_improve_ms_weapons
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_improve_ms_weapons"
+	}
+	relative_position_id = ZEO_begin_widescale_production_efforts
+	prerequisite = { focus = ZEO_begin_widescale_production_efforts }
+}
+
+shared_focus = {
+	id = ZEO_beam_weapon_development
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_beam_weapon_development"
+	}
+	relative_position_id = ZEO_improve_ms_weapons
+	prerequisite = { focus = ZEO_improve_ms_weapons }
+}
+
+shared_focus = {
+	id = ZEO_begin_widescale_production_efforts
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_begin_widescale_production_efforts"
+	}
+	relative_position_id = ZEO_choose_a_baoa_qu_as_testing_grounds
+	prerequisite = { focus = ZEO_choose_a_baoa_qu_as_testing_grounds }
+	prerequisite = { focus = ZEO_choose_pezun_as_testing_grounds }
+}
+
+shared_focus = {
+	id = ZEO_develop_the_musai
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_develop_the_musai"
+	}
+	relative_position_id = ZEO_war_preperations
+	prerequisite = { focus = ZEO_war_preperations }
+}
+
+shared_focus = {
+	id = ZEO_expansion_of_the_starfleet
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_expansion_of_the_starfleet"
+	}
+	relative_position_id = ZEO_develop_the_musai
+	prerequisite = { focus = ZEO_develop_the_musai }
+}
+
+shared_focus = {
+	id = ZEO_draw_up_plans_for_earth_invansion
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_draw_up_plans_for_earth_invansion"
+	}
+	relative_position_id = ZEO_send_aid_to_the_military_commands
+	prerequisite = { focus = ZEO_send_aid_to_the_military_commands }
+}
+
+shared_focus = {
+	id = ZEO_the_gravity_front
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_the_gravity_front"
+	}
+	relative_position_id = ZEO_draw_up_plans_for_earth_invansion
+	prerequisite = { focus = ZEO_draw_up_plans_for_earth_invansion }
+}
+
+shared_focus = {
+	id = ZEO_heavy_ship_focus
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 45
+	y = 6
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_heavy_ship_focus"
+	}
+}
+
+shared_focus = {
+	id = ZEO_equipment_shuffles
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_equipment_shuffles"
+	}
+	relative_position_id = ZEO_call_up_reserves
+	prerequisite = { focus = ZEO_call_up_reserves }
+}
+
+shared_focus = {
+	id = ZEO_send_aid_to_the_military_commands
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 7
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_send_aid_to_the_military_commands"
+	}
+	relative_position_id = ZEO_war_preperations
+	prerequisite = { focus = ZEO_war_preperations }
+}
+
+shared_focus = {
+	id = ZEO_plan_for_operation_british
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_plan_for_operation_british"
+	}
+	relative_position_id = ZEO_joint_development_of_the_dolos_with_a_baoa_qu
+	prerequisite = { focus = ZEO_joint_development_of_the_dolos_with_a_baoa_qu }
+	prerequisite = { focus = ZEO_joint_granada_development_on_heavy_cruisers }
+}
+
+shared_focus = {
+	id = ZEO_light_ships_focus
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_light_ships_focus"
+	}
+	relative_position_id = ZEO_expansion_of_the_starfleet
+	prerequisite = { focus = ZEO_expansion_of_the_starfleet }
+}
+
+shared_focus = {
+	id = ZEO_leak_side_5_attack_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_leak_side_5_attack_plan"
+	}
+	relative_position_id = ZEO_plan_for_operation_british
+	prerequisite = { focus = ZEO_plan_for_operation_british }
+}
+
+shared_focus = {
+	id = ZEO_call_up_reserves
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_call_up_reserves"
+	}
+	relative_position_id = ZEO_the_gravity_front
+	prerequisite = { focus = ZEO_the_gravity_front }
+}
+
+shared_focus = {
+	id = ZEO_fix_the_economy
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_fix_the_economy"
+	}
+	relative_position_id = ZEO_attract_immigration
+	prerequisite = { focus = ZEO_attract_immigration }
+}
+
+shared_focus = {
+	id = ZEO_joint_development_of_the_dolos_with_a_baoa_qu
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_joint_development_of_the_dolos_with_a_baoa_qu"
+	}
+	relative_position_id = ZEO_development_of_the_gwazine
+	prerequisite = { focus = ZEO_development_of_the_gwazine }
+}
+
+shared_focus = {
+	id = ZEO_begin_construction_of_the_colony_laser
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_begin_construction_of_the_colony_laser"
+	}
+	relative_position_id = ZEO_the_gravity_front
+	prerequisite = { focus = ZEO_the_gravity_front }
+}
+
+shared_focus = {
+	id = ZEO_development_of_the_gwazine
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_development_of_the_gwazine"
+	}
+	relative_position_id = ZEO_heavy_ship_focus
+	prerequisite = { focus = ZEO_heavy_ship_focus }
+}
+
+shared_focus = {
+	id = ZEO_prepare_capital_defense_guard_for_combat_use
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_prepare_capital_defense_guard_for_combat_use"
+	}
+	relative_position_id = ZEO_send_aid_to_the_military_commands
+	prerequisite = { focus = ZEO_send_aid_to_the_military_commands }
+}
+
+shared_focus = {
+	id = ZEO_joint_granada_development_on_heavy_cruisers
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_joint_granada_development_on_heavy_cruisers"
+	}
+	relative_position_id = ZEO_improve_the_musai
+	prerequisite = { focus = ZEO_improve_the_musai }
+}
+
+shared_focus = {
+	id = ZEO_begin_development_of_newtype_corps
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_begin_development_of_newtype_corps"
+	}
+	relative_position_id = ZEO_begin_construction_of_the_colony_laser
+	prerequisite = { focus = ZEO_begin_construction_of_the_colony_laser }
+}
+
+shared_focus = {
+	id = ZEO_improve_the_musai
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ZEO_improve_the_musai"
+	}
+	relative_position_id = ZEO_light_ships_focus
+	prerequisite = { focus = ZEO_light_ships_focus }
+}
+}

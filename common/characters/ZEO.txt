@@ -115,6 +115,112 @@ characters={
 			}
 		}
 	}
+
+	##Field Marshalls
+	ZEO_henri_schlesser={
+		name="Henri Schlesser"
+		portraits={
+			army={
+				small=GFX_idea_gadem
+			}
+			army={
+				large= "gfx/leaders/ZEO/Henri.dds"
+			}
+		}
+		field_marshal={
+			traits={}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = henri
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+			}
+			traits = {
+				hc_logistics_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	ZEO_hoth_fieseler={
+		name="Hot Fieseler"
+		portraits={
+			army={
+				small=GFX_idea_gadem
+			}
+			army={
+				large= "gfx/leaders/ZEO/hoth.dds"
+			}
+		}
+		field_marshal={
+			traits={old_guard}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	##Generals
+
+	ZEO_kline={
+		name="Kyle Kline"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large= "gfx/leaders/ZEO/Kline.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+       ZEO_rigel_moore={
+		name="Rigel Von Moore"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Rigel_von_moore.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	##Old
 	ZEO_cecilia_irene = {
 		name=ZEO_cecilia_irene
 		portraits={

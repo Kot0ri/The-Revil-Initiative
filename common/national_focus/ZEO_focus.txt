@@ -452,7 +452,7 @@ focus = {
 
 focus = {
 	id = ZEO_send_a_message_to_parliment
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_generic_self_management
 	cost = 2
 	x = 0
 	y = 1
@@ -556,8 +556,8 @@ focus = {
 }
 
 focus = {
-	id = ZEO_invade_from_brown
-	icon = GFX_goal_zeon_mobile_headquarters
+	id = ZEO_invade_von_braun
+	icon = GFX_goal_tyrant_of_moon
 	cost = 2
 	x = 0
 	y = 1
@@ -581,8 +581,8 @@ focus = {
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_invade_from_brown
-	prerequisite = { focus = ZEO_invade_from_brown }
+	relative_position_id = ZEO_invade_von_braun
+	prerequisite = { focus = ZEO_invade_von_braun }
 }
 
 focus = {
@@ -1193,7 +1193,7 @@ focus = {
 
 focus = {
 	id = ZEO_zaku_versus_zudah_competition
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon =  GFX_goal_enhancement_of_general_purpose_MS
 	cost = 2
 	x = 0
 	y = 2
@@ -1317,7 +1317,7 @@ focus = {
 
 focus = {
 	id = ZEO_expansion_of_the_starfleet
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_amphibious_assault
 	cost = 2
 	x = 0
 	y = 2
@@ -1347,7 +1347,7 @@ focus = {
 
 focus = {
 	id = ZEO_the_gravity_front
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_gravity_front_line
 	cost = 2
 	x = 0
 	y = 1
@@ -1362,7 +1362,7 @@ focus = {
 
 focus = {
 	id = ZEO_heavy_ship_focus
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_navy_battleship
 	cost = 2
 	x = 45
 	y = 6
@@ -1423,7 +1423,7 @@ focus = {
 
 focus = {
 	id = ZEO_light_ships_focus
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_navy_submarine
 	cost = 2
 	x = -1
 	y = 2
@@ -1454,7 +1454,7 @@ focus = {
 
 focus = {
 	id = ZEO_call_up_reserves
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_generic_little_entente
 	cost = 2
 	x = 3
 	y = 1

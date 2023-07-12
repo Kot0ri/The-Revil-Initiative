@@ -258,9 +258,26 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	completion_reward = {
-		
+	available = {
+		country_exists = SI6
+		threat > 0.2
+		if = {
+			limit = {
+				is_ai = no
+			}
+			SI6 = {
+				supremacist =  > 0.4
+			}
+		}
+		has_completed_focus = zeon_puneemunde_institution
+		NOT= {
+			has_war_with = EFS
+		}
 	}
+	completion_reward = {
+		news_event = { id = news.110 days = 30 }
+	}
+
 	relative_position_id = ZEO_ties_with_granada
 	prerequisite = { focus = ZEO_ties_with_granada }
 }

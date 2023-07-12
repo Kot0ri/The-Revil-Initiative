@@ -1,0 +1,840 @@
+focus_tree = {
+	id = ABQ
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ABQ
+		}
+	}
+	default = no
+	
+focus = {
+	id = ABQ_gihrens_headquaters
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 11
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = ABQ_space_fortress_a_baoa_qu
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_gihrens_headquaters
+	prerequisite = { focus = ABQ_gihrens_headquaters }
+}
+
+focus = {
+	id = ABQ_citadel_of_the_princepality
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_space_fortress_a_baoa_qu
+	prerequisite = { focus = ABQ_space_fortress_a_baoa_qu }
+}
+
+focus = {
+	id = ABQ_bastion_of_the_supreme_commander
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_citadel_of_the_princepality
+	prerequisite = { focus = ABQ_citadel_of_the_princepality }
+}
+
+focus = {
+	id = ABQ_gihrens_royal_guard
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_gihrens_headquaters
+	prerequisite = { focus = ABQ_gihrens_headquaters }
+}
+
+focus = {
+	id = ABQ_loyalty_beyond_death
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_gihrens_royal_guard
+	prerequisite = { focus = ABQ_gihrens_royal_guard }
+}
+
+focus = {
+	id = ABQ_cult_of_personality
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_loyalty_beyond_death
+	prerequisite = { focus = ABQ_loyalty_beyond_death }
+}
+
+focus = {
+	id = ABQ_competition_for_headquaters
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_bastion_of_the_supreme_commander
+	prerequisite = { focus = ABQ_bastion_of_the_supreme_commander }
+	prerequisite = { focus = ABQ_cult_of_personality }
+}
+
+focus = {
+	id = ABQ_found_the_living_dead_division
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_cult_of_personality
+	prerequisite = { focus = ABQ_cult_of_personality }
+}
+
+focus = {
+	id = ABQ_secure_the_thunderbolt_supply_line
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_found_the_living_dead_division
+	prerequisite = { focus = ABQ_found_the_living_dead_division }
+}
+
+focus = {
+	id = ABQ_undermine_granada
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_competition_for_headquaters
+	prerequisite = { focus = ABQ_competition_for_headquaters }
+}
+
+focus = {
+	id = ABQ_form_gihrens_secret_service
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 5
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_gihrens_headquaters
+	prerequisite = { focus = ABQ_gihrens_headquaters }
+}
+
+focus = {
+	id = ABQ_expand_the_secret_service
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_form_gihrens_secret_service
+	prerequisite = { focus = ABQ_form_gihrens_secret_service }
+}
+
+focus = {
+	id = ABQ_use_the_serice_as_military_police
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_expand_the_secret_service
+	prerequisite = { focus = ABQ_expand_the_secret_service }
+}
+
+focus = {
+	id = ABQ_expand_secret_service_powers
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_use_the_serice_as_military_police
+	prerequisite = { focus = ABQ_use_the_serice_as_military_police }
+}
+
+focus = {
+	id = ABQ_take_over_civilian_policing_duties
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_expand_secret_service_powers
+	prerequisite = { focus = ABQ_expand_secret_service_powers }
+}
+
+focus = {
+	id = ABQ_begin_mass_conscription
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_cult_of_personality
+	prerequisite = { focus = ABQ_cult_of_personality }
+}
+
+focus = {
+	id = ABQ_rush_ms_pilot_training_program
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_begin_mass_conscription
+	prerequisite = { focus = ABQ_begin_mass_conscription }
+}
+
+focus = {
+	id = ABQ_use_obsolete_ms
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_rush_ms_pilot_training_program
+	prerequisite = { focus = ABQ_rush_ms_pilot_training_program }
+}
+
+focus = {
+	id = ABQ_prepare_for_a_last_stand
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_secure_the_thunderbolt_supply_line
+	prerequisite = { focus = ABQ_secure_the_thunderbolt_supply_line }
+	prerequisite = { focus = ABQ_rush_ms_pilot_training_program }
+}
+
+focus = {
+	id = ABQ_gihrens_final_speech
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_prepare_for_a_last_stand
+	prerequisite = { focus = ABQ_prepare_for_a_last_stand }
+}
+
+focus = {
+	id = ABQ_fake_a_conspiracy
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_undermine_granada
+	prerequisite = { focus = ABQ_undermine_granada }
+}
+
+focus = {
+	id = ABQ_cold_night_in_side_3
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_fake_a_conspiracy
+	prerequisite = { focus = ABQ_fake_a_conspiracy }
+}
+
+focus = {
+	id = ABQ_move_high_comand_from_side_3
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_undermine_granada
+	prerequisite = { focus = ABQ_undermine_granada }
+	prerequisite = { focus = ABQ_fund_other_commands }
+}
+
+focus = {
+	id = ABQ_usurp_control_from_parliment
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_move_high_comand_from_side_3
+	prerequisite = { focus = ABQ_move_high_comand_from_side_3 }
+}
+
+focus = {
+	id = ABQ_fund_other_commands
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_economic_self_sufficiency
+	prerequisite = { focus = ABQ_economic_self_sufficiency }
+}
+
+focus = {
+	id = ABQ_mobile_suit_development_grounds
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 9
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_gihrens_headquaters
+	prerequisite = { focus = ABQ_gihrens_headquaters }
+}
+
+focus = {
+	id = ABQ_expansion_of_mobile_suit_production_capabilites
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_mobile_suit_development_grounds
+	prerequisite = { focus = ABQ_mobile_suit_development_grounds }
+}
+
+focus = {
+	id = ABQ_expansion_of_shipyards
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_expansion_of_mobile_suit_production_capabilites
+	prerequisite = { focus = ABQ_expansion_of_mobile_suit_production_capabilites }
+}
+
+focus = {
+	id = ABQ_begin_production_of_the_dolos
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_expansion_of_shipyards
+	prerequisite = { focus = ABQ_expansion_of_shipyards }
+}
+
+focus = {
+	id = ABQ_long_range_fleet_project
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_begin_production_of_the_dolos
+	prerequisite = { focus = ABQ_begin_production_of_the_dolos }
+}
+
+focus = {
+	id = ABQ_competition_with_pezun
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_mobile_suit_development_grounds
+	prerequisite = { focus = ABQ_mobile_suit_development_grounds }
+}
+
+focus = {
+	id = ABQ_vie_for_attention_from_side_3
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_competition_with_pezun
+	prerequisite = { focus = ABQ_competition_with_pezun }
+}
+
+focus = {
+	id = ABQ_use_the_supreme_commanders_sway
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_vie_for_attention_from_side_3
+	prerequisite = { focus = ABQ_vie_for_attention_from_side_3 }
+}
+
+focus = {
+	id = ABQ_begin_development_of_mobile_armors
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_use_the_supreme_commanders_sway
+	prerequisite = { focus = ABQ_use_the_supreme_commanders_sway }
+}
+
+focus = {
+	id = ABQ_produce_the_big_zam
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_begin_development_of_mobile_armors
+	prerequisite = { focus = ABQ_begin_development_of_mobile_armors }
+}
+
+focus = {
+	id = ABQ_begin_massproduction_of_the_big_zam
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_produce_the_big_zam
+	prerequisite = { focus = ABQ_produce_the_big_zam }
+}
+
+focus = {
+	id = ABQ_next_gen_ms_designs
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_use_the_supreme_commanders_sway
+	prerequisite = { focus = ABQ_use_the_supreme_commanders_sway }
+}
+
+focus = {
+	id = ABQ_a_suit_equal_to_the_white_devil
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ABQ_next_gen_ms_designs
+	prerequisite = { focus = ABQ_next_gen_ms_designs }
+}
+
+focus = {
+	id = ABQ_begin_looking_into_newtype_capabilities
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_a_suit_equal_to_the_white_devil
+	prerequisite = { focus = ABQ_a_suit_equal_to_the_white_devil }
+}
+
+focus = {
+	id = ABQ_newtype_battlefield_deployment
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+
+	}
+	relative_position_id = ABQ_begin_looking_into_newtype_capabilities
+	prerequisite = { focus = ABQ_begin_looking_into_newtype_capabilities }
+}
+
+focus = {
+	id = ABQ_experimental_mechanical_technoloy
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 6
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_use_the_supreme_commanders_sway
+	prerequisite = { focus = ABQ_use_the_supreme_commanders_sway }
+}
+
+focus = {
+	id = ABQ_p_reuse_device
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_experimental_mechanical_technoloy
+	prerequisite = { focus = ABQ_experimental_mechanical_technoloy }
+}
+
+focus = {
+	id = ABQ_mass_production_of_the_p_reuse_device
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_p_reuse_device
+	prerequisite = { focus = ABQ_p_reuse_device }
+}
+
+focus = {
+	id = ABQ_expand_living_space_for_soldiers_families
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 3
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = ABQ_clear_out_the_asteroid
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_expand_living_space_for_soldiers_families
+	prerequisite = { focus = ABQ_expand_living_space_for_soldiers_families }
+}
+
+focus = {
+	id = ABQ_build_new_research_labs
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_clear_out_the_asteroid
+	prerequisite = { focus = ABQ_clear_out_the_asteroid }
+}
+
+focus = {
+	id = ABQ_civilian_use_labs
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_build_new_research_labs
+	prerequisite = { focus = ABQ_build_new_research_labs }
+}
+
+focus = {
+	id = ABQ_economic_self_sufficiency
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_civilian_use_labs
+	prerequisite = { focus = ABQ_civilian_use_labs }
+	prerequisite = { focus = ABQ_reduce_need_for_supply_shipments }
+}
+
+focus = {
+	id = ABQ_expansion_of_civil_facilities
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_expand_living_space_for_soldiers_families
+	prerequisite = { focus = ABQ_expand_living_space_for_soldiers_families }
+}
+
+focus = {
+	id = ABQ_improve_soldiers_benefits
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_expansion_of_civil_facilities
+	prerequisite = { focus = ABQ_expansion_of_civil_facilities }
+}
+
+focus = {
+	id = ABQ_build_up_of_consumer_factories
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_expansion_of_civil_facilities
+	prerequisite = { focus = ABQ_expansion_of_civil_facilities }
+}
+
+focus = {
+	id = ABQ_reduce_need_for_supply_shipments
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_build_up_of_consumer_factories
+	prerequisite = { focus = ABQ_build_up_of_consumer_factories }
+}
+
+focus = {
+	id = ABQ_export_mineral_resources_to_the_homeland
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_reduce_need_for_supply_shipments
+	prerequisite = { focus = ABQ_reduce_need_for_supply_shipments }
+}
+
+focus = {
+	id = ABQ_draw_upon_civilian_businesses
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_export_mineral_resources_to_the_homeland
+	prerequisite = { focus = ABQ_export_mineral_resources_to_the_homeland }
+}
+}

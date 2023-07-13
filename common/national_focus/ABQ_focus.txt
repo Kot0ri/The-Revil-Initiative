@@ -531,6 +531,14 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = zeon_focus_on_MA
+			uses = 3
+			bonus = 0.3
+			category = mobilearmor
+			technology = minovsky_craft
+			technology = ifield_barrier
+		}
 	}
 	relative_position_id = ABQ_use_the_supreme_commanders_sway
 	prerequisite = { focus = ABQ_use_the_supreme_commanders_sway }
@@ -576,6 +584,13 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = zeon_high_mobility_of_general_purpose_MS
+			uses = 1
+			bonus = 0.5
+			ahead_reduction = 1
+			technology = ms06_r_tech
+		}
 	}
 	relative_position_id = ABQ_use_the_supreme_commanders_sway
 	prerequisite = { focus = ABQ_use_the_supreme_commanders_sway }

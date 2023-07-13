@@ -1335,7 +1335,7 @@ focus = {
 	id = ZEO_choose_pezun_as_testing_grounds
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 2
+	x = 1
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -1396,8 +1396,7 @@ focus = {
 	completion_reward = {
 	}
 	relative_position_id = ZEO_choose_a_baoa_qu_as_testing_grounds
-	prerequisite = { focus = ZEO_choose_a_baoa_qu_as_testing_grounds }
-	prerequisite = { focus = ZEO_choose_pezun_as_testing_grounds }
+	prerequisite = { focus = ZEO_choose_a_baoa_qu_as_testing_grounds focus = ZEO_choose_pezun_as_testing_grounds }
 }
 
 focus = {
@@ -1517,8 +1516,7 @@ focus = {
 	completion_reward = {
 	}
 	relative_position_id = ZEO_joint_development_of_the_dolos_with_a_baoa_qu
-	prerequisite = { focus = ZEO_joint_development_of_the_dolos_with_a_baoa_qu }
-	prerequisite = { focus = ZEO_joint_granada_development_on_heavy_cruisers }
+	prerequisite = { focus = ZEO_joint_development_of_the_dolos_with_a_baoa_qu focus = ZEO_joint_granada_development_on_heavy_cruisers }
 }
 
 focus = {

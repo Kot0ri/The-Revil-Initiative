@@ -20,6 +20,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_politcal_power 150
 	}
 }
 
@@ -1119,6 +1120,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_command_power 50
 	}
 	relative_position_id = ZEO_a_new_aristocracy
 	prerequisite = { focus = ZEO_a_new_aristocracy }

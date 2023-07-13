@@ -912,6 +912,22 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_timed_idea = {
+			idea = zeon_moon_aliance_ZEO
+			days = 180
+		}
+		every_other_country = {
+			limit = {
+				OR = {
+					tag = VBC
+					tag = GRA
+				}
+			}
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = zeon_moon_aliance
+			}
+		}
 	}
 	relative_position_id = ZEO_trade_deals_with_the_moon
 	prerequisite = { focus = ZEO_trade_deals_with_the_moon }

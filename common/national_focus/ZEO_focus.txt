@@ -958,7 +958,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = zeon_national_mobilization_act
+			add_named_threat = {
+				name = zeon_national_mobilization_act
+				threat = 5
 	}
+}
 	relative_position_id = ZEO_side_3_weapons_development
 	prerequisite = { focus = ZEO_side_3_weapons_development }
 }
@@ -1020,6 +1025,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_command_power = 30
+		army_experience = 50
+		air_experience = 25
+		navy_experience = 25
 	}
 }
 

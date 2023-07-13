@@ -843,6 +843,36 @@ focus = {
 }
 
 focus = {
+	id = ZEO_expand_civillian_contracting
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_new_financing_schemes
+	prerequisite = { focus = ZEO_new_financing_schemes}
+}
+
+focus = {
+	id = ZEO_sell_positions_in_government
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_expand_civillian_contracting
+	prerequisite = { focus = ZEO_expand_civillian_contracting }
+}
+
+focus = {
 	id = ZEO_seek_a_alliance_with_antifederation_earthnoids
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
@@ -1394,7 +1424,7 @@ focus = {
 	id = ZEO_send_aid_to_the_military_commands
 	icon = GFX_goal_generic_allies_build_infantry
 	cost = 2
-	x = 7
+	x = 16
 	y = 3
 	ai_will_do = {
 		factor = 1
@@ -1586,4 +1616,247 @@ focus = {
 	relative_position_id = ZEO_light_ships_focus
 	prerequisite = { focus = ZEO_light_ships_focus }
 }
+
+focus = {
+	id = ZEO_peneemunde
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 50
+	y = 4
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	prerequisite = { focus = ZEO_war_preperations }
+}
+
+focus = {
+	id = ZEO_asses_war_plans
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_peneemunde
+	prerequisite = { focus = ZEO_peneemunde }
+}
+
+focus = {
+	id = ZEO_space_focus
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_asses_war_plans
+	prerequisite = { focus = ZEO_asses_war_plans }
+}
+
+focus = {
+	id = ZEO_military_preparations
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_peneemunde
+	prerequisite = { focus = ZEO_peneemunde }
+}
+
+focus = {
+	id = ZEO_space_fortress_a_bao_qu
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_military_preparations
+	prerequisite = { focus = ZEO_military_preparations }
+}
+
+focus = {
+	id = ZEO_solomon_sea_operations
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_space_focus
+	prerequisite = { focus = ZEO_space_focus }
+	prerequisite = { focus = ZEO_space_fortress_a_bao_qu }
+}
+
+focus = {
+	id = ZEO_prepare_for_colony_warfare
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_space_focus
+	prerequisite = { focus = ZEO_space_focus }
+}
+
+focus = {
+	id = ZEO_expand_the_zeon_military_academy
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_prepare_for_colony_warfare
+	prerequisite = { focus = ZEO_prepare_for_colony_warfare }
+}
+
+focus = {
+	id = ZEO_zeon_iron_cross
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_expand_the_zeon_military_academy
+	prerequisite = { focus = ZEO_expand_the_zeon_military_academy }
+}
+
+focus = {
+	id = ZEO_reinforce_solomon
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_space_fortress_a_bao_qu
+	prerequisite = { focus = ZEO_space_fortress_a_bao_qu }
+}
+
+focus = {
+	id = ZEO_build_up_pezun
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_reinforce_solomon
+	prerequisite = { focus = ZEO_reinforce_solomon }
+}
+
+focus = {
+	id = ZEO_build_up_granada
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_build_up_pezun
+	prerequisite = { focus = ZEO_build_up_pezun }
+}
+
+focus = {
+	id = ZEO_axis_development
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_reinforce_solomon
+	prerequisite = { focus = ZEO_reinforce_solomon }
+}
+
+focus = {
+	id = ZEO_prepare_for_an_evacuation
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_axis_development
+	prerequisite = { focus = ZEO_axis_development }
+	prerequisite = { focus = ZEO_begin_development_of_newtype_corps }
+	prerequisite = { focus = ZEO_equipment_shuffles }
+}
+
+focus = {
+	id = ZEO_send_civillians_and_loyal_officials_to_axis
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_prepare_for_an_evacuation
+	prerequisite = { focus = ZEO_prepare_for_an_evacuation }
+}
+
+focus = {
+	id = ZEO_send_a_fleet_to_axis
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_send_civillians_and_loyal_officials_to_axis
+	prerequisite = { focus = ZEO_send_civillians_and_loyal_officials_to_axis }
+}
+
 }

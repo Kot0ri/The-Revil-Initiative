@@ -1,3 +1,20 @@
+search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	
+	FOCUS_FILTER_RESEARCH = 522
+	
+	FOCUS_FILTER_INDUSTRY = 509
+
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+
+}
+
 focus_tree = {
 	id = ZEO
 	continuous_focus_position = { x = 0 y = 2400}
@@ -1158,6 +1175,25 @@ focus = {
 }
 
 focus = {
+	id = ZEO_new_research_labs
+	icon = GFX_focus_research
+	x = 0
+	y = 3
+	cost = 5
+
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_research_slot = 1
+	}
+
+	relative_position_id = ZEO_side_3_colony_evaluation
+	prerequisite = { focus = ZEO_further_industrial_research focus = ZEO_further_military_research }
+}
+
+focus = {
 	id = ZEO_special_ace_units
 	icon = GFX_goal_generic_special_forces
 	cost = 2
@@ -1457,13 +1493,8 @@ focus = {
 focus = {
 	id = ZEO_send_aid_to_the_military_commands
 	icon = GFX_goal_generic_allies_build_infantry
-<<<<<<< HEAD
 	cost = 5
-	x = 7
-=======
-	cost = 2
 	x = 16
->>>>>>> Main-2.0
 	y = 3
 	ai_will_do = {
 		factor = 1
@@ -1657,7 +1688,7 @@ focus = {
 }
 
 focus = {
-	id = ZEO_peneemunde
+	id = ZEO_puneemunde
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 50
@@ -1681,8 +1712,8 @@ focus = {
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_peneemunde
-	prerequisite = { focus = ZEO_peneemunde }
+	relative_position_id = ZEO_puneemunde
+	prerequisite = { focus = ZEO_puneemunde }
 }
 
 focus = {
@@ -1711,8 +1742,8 @@ focus = {
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_peneemunde
-	prerequisite = { focus = ZEO_peneemunde }
+	relative_position_id = ZEO_puneemunde
+	prerequisite = { focus = ZEO_puneemunde }
 }
 
 focus = {

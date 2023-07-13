@@ -655,6 +655,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_to_tech_sharing_group = zeon_tech_share
+		}
 	}
 	relative_position_id = ZEO_station_troops_at_palau
 	prerequisite = { focus = ZEO_station_troops_at_palau }
@@ -1618,4 +1620,4 @@ focus = {
 	relative_position_id = ZEO_light_ships_focus
 	prerequisite = { focus = ZEO_light_ships_focus }
 }
-}
+

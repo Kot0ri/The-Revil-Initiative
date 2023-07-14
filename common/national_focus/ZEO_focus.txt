@@ -1006,6 +1006,7 @@ focus = {
 focus = {
 	id = ZEO_use_dark_and_ocean_colonies_for_military_use
 	icon = GFX_goal_generic_construct_mil_factory
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = -3
 	y = 1

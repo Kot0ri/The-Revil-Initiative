@@ -1,0 +1,116 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						has_tech = nuclear_reactor
+						NOT = { has_country_flag = scimpro_reactor_flag }
+					}
+					set_technology = { enable_nuclear_reactor_5 = 1 }
+					set_country_flag = scimpro_reactor_flag
+				}
+				if = {
+					limit = {
+						has_tech = experimental_rockets
+						NOT = { has_country_flag = scimpro_rocket_flag }
+					}
+					set_technology = { enable_rocket_site_5 = 1 }
+					set_country_flag = scimpro_rocket_flag
+				}
+				if = {
+					limit = {
+						has_tech = fuel_silos
+						NOT = { has_country_flag = scimpro_silo_flag }
+					}
+					set_technology = { enable_fuel_silo_5 = 1 }
+					set_country_flag = scimpro_silo_flag
+				}
+				if = {
+					limit = {
+						has_tech = synth_oil_experiments
+						NOT = { has_country_flag = scimpro_refinery_flag }
+					}
+					set_technology = { enable_synthetic_refinery_5 = 1 }
+					set_country_flag = scimpro_refinery_flag
+				}
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						has_tech = nuclear_reactor
+						NOT = { has_country_flag = scimpro_reactor_flag }
+					}
+					set_technology = { enable_nuclear_reactor_5 = 1 }
+					set_country_flag = scimpro_reactor_flag
+				}
+				if = {
+					limit = {
+						has_tech = experimental_rockets
+						NOT = { has_country_flag = scimpro_rocket_flag }
+					}
+					set_technology = { enable_rocket_site_5 = 1 }
+					set_country_flag = scimpro_rocket_flag
+				}
+				if = {
+					limit = {
+						has_tech = fuel_silos
+						NOT = { has_country_flag = scimpro_silo_flag }
+					}
+					set_technology = { enable_fuel_silo_5 = 1 }
+					set_country_flag = scimpro_silo_flag
+				}
+				if = {
+					limit = {
+						has_tech = synth_oil_experiments
+						NOT = { has_country_flag = scimpro_refinery_flag }
+					}
+					set_technology = { enable_synthetic_refinery_5 = 1 }
+					set_country_flag = scimpro_refinery_flag
+				}
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						has_tech = nuclear_reactor
+						NOT = { has_country_flag = scimpro_reactor_flag }
+					}
+					set_technology = { enable_nuclear_reactor_5 = 1 }
+					set_country_flag = scimpro_reactor_flag
+				}
+				if = {
+					limit = {
+						has_tech = experimental_rockets
+						NOT = { has_country_flag = scimpro_rocket_flag }
+					}
+					set_technology = { enable_rocket_site_5 = 1 }
+					set_country_flag = scimpro_rocket_flag
+				}
+				if = {
+					limit = {
+						has_tech = fuel_silos
+						NOT = { has_country_flag = scimpro_silo_flag }
+					}
+					set_technology = { enable_fuel_silo_5 = 1 }
+					set_country_flag = scimpro_silo_flag
+				}
+				if = {
+					limit = {
+						has_tech = synth_oil_experiments
+						NOT = { has_country_flag = scimpro_refinery_flag }
+					}
+					set_technology = { enable_synthetic_refinery_5 = 1 }
+					set_country_flag = scimpro_refinery_flag
+				}
+			}
+		}
+	}
+}

@@ -25,7 +25,7 @@ buildings = {
 		base_cost_conversion = 4000
 		military_production = 1
 		icon_frame = 2
-		max_level = 40
+		max_level = 60 #IEF #WAS = 20
 		shares_slots = yes
 		value = 8
 		infrastructure_construction_effect = yes
@@ -37,7 +37,7 @@ buildings = {
 		base_cost_conversion = 9000
 		general_production = 1
 		icon_frame = 1
-		max_level = 40
+		max_level = 72 #IEF #WAS = 20
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -68,8 +68,8 @@ buildings = {
 		allied_build = yes
 		always_shown = yes
 		infrastructure_construction_effect = yes
-	}	
-	
+	}
+
 	rail_way = {
 		base_cost = 170
 		per_level_extra_cost = 130
@@ -133,13 +133,13 @@ buildings = {
 		naval_production = 1
 		icon_frame = 4
 		only_costal = yes
-		max_level = 40
+		max_level = 60 #IEF #WAS = 20
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
 	}
 
-
+	
 	anti_air_building = {
 		show_on_map = 3
 		base_cost = 2500
@@ -159,27 +159,24 @@ buildings = {
 		icon_frame = 10
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
-		local_resources_titanium = 1
 		refinery = yes
-		max_level = 3 # This is the max unlock level
-		shares_slots = yes
+		max_level = 5 # This is the max unlock level
 		value = 5
 		infrastructure_construction_effect = yes
-
+		
 		show_modifier = yes
 		fuel_gain_from_states = 2.0 #per hour
 	}
-
+##HERE
 	fuel_silo = {
 		show_on_map = 1
 		base_cost = 5000
 		icon_frame = 14
-		#max_level = 1
-		shares_slots = yes
+		max_level = 10
 		value = 5
 		infrastructure_construction_effect = yes
 		fuel_silo = yes
-
+		
 		show_modifier = yes
 		max_fuel_building = 100.0 #k
 	}
@@ -197,7 +194,7 @@ buildings = {
 		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
-
+##HERE
 	rocket_site = {
 		show_on_map = 1
 		base_cost = 6400
@@ -205,21 +202,18 @@ buildings = {
 		rocket_production = 5
 		rocket_launch_capacity = 1
 		max_level = 5
-		shares_slots = yes
 		value = 1
 		infrastructure_construction_effect = yes
 	}
-
+##HERE
 	nuclear_reactor = {
 		show_on_map = 1
 		base_cost = 30000
 		icon_frame = 13
 		nuclear_reactor = yes
 		nuclear_production_factor = 1
-		max_level = 1 # This is the max unlock level
-		shares_slots = yes
+		max_level = 5 # This is the max unlock level
 		value = 10
 		infrastructure_construction_effect = yes
 	}
-
 }

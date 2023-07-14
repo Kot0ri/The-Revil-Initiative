@@ -371,6 +371,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = EFS
+		}
 	}
 	relative_position_id = ZEO_declare_independence
 	prerequisite = { focus = ZEO_declare_independence }
@@ -583,6 +587,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = VBC
+		}
 	}
 	relative_position_id = ZEO_catch_wind_of_minovsky
 	prerequisite = { focus = ZEO_catch_wind_of_minovsky }
@@ -598,6 +606,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = EFS
+		}
 	}
 	relative_position_id = ZEO_invade_von_braun
 	prerequisite = { focus = ZEO_invade_von_braun }
@@ -1219,6 +1231,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = EFS
+		}
 	}
 	relative_position_id = ZEO_prepare_for_a_war_of_independence
 	prerequisite = { focus = ZEO_embargo_the_earth }

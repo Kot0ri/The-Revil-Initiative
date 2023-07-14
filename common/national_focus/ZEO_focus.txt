@@ -1786,6 +1786,7 @@ focus = {
 focus = {
 	id = ZEO_space_focus
 	icon = GFX_goal_zeon_mobile_headquarters
+	search_filters = { FOCUS_FILTER_RESEARCH }
 	cost = 2
 	x = 0
 	y = 1
@@ -1793,6 +1794,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = USA_fund_the_navy
+			uses = 2
+			cost_reduction = 0.5
+			category = naval_doctrine
+		}
 	}
 	relative_position_id = ZEO_asses_war_plans
 	prerequisite = { focus = ZEO_asses_war_plans }
@@ -1831,6 +1838,7 @@ focus = {
 focus = {
 	id = ZEO_solomon_sea_operations
 	icon = GFX_goal_zeon_mobile_headquarters
+	search_filters = { FOCUS_FILTER_RESEARCH }
 	cost = 2
 	x = 2
 	y = 2
@@ -1838,6 +1846,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		navy_experience = 150
+		}
 	}
 	relative_position_id = ZEO_space_focus
 	prerequisite = { focus = ZEO_space_focus }

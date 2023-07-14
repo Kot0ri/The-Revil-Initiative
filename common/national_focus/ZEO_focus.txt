@@ -1434,6 +1434,7 @@ focus = {
 focus = {
 	id = ZEO_ms_project
 	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 2
 	x = -2
 	y = 1
@@ -1449,6 +1450,7 @@ focus = {
 focus = {
 	id = ZEO_zaku_versus_zudah_competition
 	icon =  GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 2
 	x = 0
 	y = 2
@@ -1480,6 +1482,7 @@ focus = {
 focus = {
 	id = ZEO_choose_a_baoa_qu_as_testing_grounds
 	icon = GFX_goal_zeon_mobile_headquarters
+	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 2
 	x = -1
 	y = 2
@@ -1496,6 +1499,7 @@ focus = {
 focus = {
 	id = ZEO_choose_pezun_as_testing_grounds
 	icon = GFX_goal_zeon_mobile_headquarters
+	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 2
 	x = 1
 	y = 2
@@ -1512,6 +1516,7 @@ focus = {
 focus = {
 	id = ZEO_improve_ms_weapons
 	icon = GFX_goal_improvement_of_MS_weapons
+	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 2
 	x = 0
 	y = 2
@@ -1527,6 +1532,7 @@ focus = {
 focus = {
 	id = ZEO_beam_weapon_development
 	icon = GFX_goal_miniaturization_of_mega_particle_cannon
+	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 5
 	x = 0
 	y = 2
@@ -1547,8 +1553,58 @@ focus = {
 }
 
 focus = {
+	id = ZEO_counter_federation_ms
+	icon = GFX_goal_plan_rx
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_beam_weapon_development
+	prerequisite = { focus = ZEO_beam_weapon_development }
+}
+
+focus = {
+	id = ZEO_upgrade_old_ms
+	icon =  GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	mutually_exclusive = { focus = ZEO_focus_on_new_ms }
+	relative_position_id = ZEO_counter_federation_ms
+	prerequisite = { focus = ZEO_counter_federation_ms }
+}
+
+focus = {
+	id = ZEO_focus_on_new_ms
+	icon = GFX_goal_MS_and_ground_forces_collaboration
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	mutually_exclusive = { focus = ZEO_upgrade_old_ms }
+	relative_position_id = ZEO_counter_federation_ms
+	prerequisite = { focus = ZEO_counter_federation_ms }
+}
+
+focus = {
 	id = ZEO_begin_widescale_production_efforts
-	icon = GFX_focus_SOV_organize_wreckers
+	icon = GFX_focus_SOV_organize_wreckers 
 	cost = 5
 	x = 1
 	y = 2

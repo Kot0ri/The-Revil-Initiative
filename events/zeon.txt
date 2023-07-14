@@ -446,7 +446,7 @@ country_event = {
       modifier = {
         factor = 0.5
         GRA = {
-          spacesupremacy > 0.3
+          supremacist > 0.3
         }
       }
     }
@@ -470,7 +470,7 @@ country_event = {
       modifier = {
         factor = 2
         GRA = {
-          spacesupremacy > 0.3
+          supremacist =  > 0.3
         }
       }
       modifier = {
@@ -511,7 +511,7 @@ country_event = {
       modifier = {
         factor = 0.5
         GRA = {
-          spacesupremacy > 0.4
+          supremacist =  > 0.4
         }
       }
     }
@@ -654,13 +654,13 @@ country_event = {
     text = zeon.47.t1
     trigger = {
       NOT = {
-        has_government = spacesupremacy
+        has_government = supremacist
       }
     }
   }
   title = {
     trigger = {
-      has_government = spacesupremacy
+      has_government = supremacist
     }
     text = zeon.47.t2
   }
@@ -668,13 +668,13 @@ country_event = {
     text = zeon.47.d1
     trigger = {
       NOT = {
-        has_government = spacesupremacy
+        has_government = supremacist
       }
     }
   }
   desc = {
     trigger = {
-      has_government = spacesupremacy
+      has_government = supremacist
     }
     text = zeon.47.d2
   }
@@ -685,17 +685,17 @@ country_event = {
     name = zeon.47.a
     add_stability = -0.03
     add_popularity = {
-      ideology = zeonism
+      ideology = contolism
       popularity = -0.05
     }
     ai_chance = {
       factor = 0.5
       modifier = {
-        has_government = zeonism
+        has_government = contolism
         factor = 0.5
       }
       modifier = {
-        has_government = spacesupremacy
+        has_government = supremacist
         factor = 1.5
       }
     }
@@ -703,17 +703,17 @@ country_event = {
   option = {
     name = zeon.47.b
     add_popularity = {
-      ideology = zeonism
+      ideology = contolism
       popularity = 0.1
     }
     ai_chance = {
       factor = 0.5
       modifier = {
-        has_government = zeonism
+        has_government = contolism
         factor = 1.5
       }
       modifier = {
-        has_government = spacesupremacy
+        has_government = supremacist
         factor = 0.5
       }
     }
@@ -805,7 +805,7 @@ country_event = {
     ai_chance = {
       factor = 0.5
       modifier = {
-        has_government = spacesupremacy
+        has_government = supremacist
         factor = 2
       }
     }
@@ -828,7 +828,7 @@ country_event = {
     ai_chance = {
       factor = 1
       modifier = {
-        has_government = spacesupremacy
+        has_government = supremacist
         factor = 0.5
       }
     }
@@ -980,26 +980,6 @@ country_event = {
     }
     ai_chance = {
       base = 0
-    }
-  }
-}
-#66 大粛清でシャア失踪（クワトロ・バジーナ）
-country_event = {
-  id = zeon.66
-  title = zeon.66.t
-  desc = zeon.66.d
-  picture = GFX_country_zeon066
-
-  is_triggered_only = yes
-
-  immediate = {
-  }
-
-  option = {
-    name = zeon.66.a
-    retire_character = ZEO_char_aznable
-    EFS = {
-      country_event = { id = efsf.52 days = 180 random = 100 }
     }
   }
 }
@@ -2208,7 +2188,7 @@ country_event = {
     unlock_decision_tooltip = dip_resident_forces_in_granada
     if = {
       limit = {
-        has_government = spacesupremacy
+        has_government = supremacist
       }
       unlock_decision_tooltip = dip_protect_granada
     }

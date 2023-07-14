@@ -999,6 +999,7 @@ focus = {
 focus = {
 	id = ZEO_side_3_weapons_development
 	icon = GFX_goal_generic_small_arms
+	search_filters = {  FOCUS_FILTER_RESEARCH }
 	cost = 2
 	x = 0
 	y = 1
@@ -1006,6 +1007,20 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = infantry_artillery_bonus
+			bonus = 1.0
+			ahead_reduction = 1
+			uses = 1
+			category = infantry_weapons
+		}
+		add_tech_bonus = {
+			name = motorized_bonus
+			ahead_reduction = 1
+			bonus = 50
+			uses = 1
+			category = motorized_equipment
+		}
 	}
 	relative_position_id = ZEO_further_military_research
 	prerequisite = { focus = ZEO_further_military_research }
@@ -1084,6 +1099,7 @@ focus = {
 focus = {	
 	id = ZEO_expansion_of_side_3_garrison
 	icon = GFX_focus_SOV_mobilization_plan
+	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 2
 	x = 0
 	y = 1
@@ -1099,6 +1115,66 @@ focus = {
 }
 	relative_position_id = ZEO_side_3_weapons_development
 	prerequisite = { focus = ZEO_side_3_weapons_development }
+}
+
+focus = {	
+	id = ZEO_ramp_up_miltary_armarment
+	icon = GFX_goal_generic_construct_mil_factory
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	909 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+		}
+
+		910 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+		}
+
+		911 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+		}
+
+}
+	relative_position_id = ZEO_expansion_of_side_3_garrison
+	prerequisite = { focus = ZEO_expansion_of_side_3_garrison  }
+}
+
+focus = {	
+	id = ZEO_united_maintenance
+	icon = GFX_goal_generic_army_tanks
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+}
+	relative_position_id = ZEO_ramp_up_miltary_armarment
+	prerequisite = { focus = ZEO_ramp_up_miltary_armarment focus= ZEO_fix_the_economy
+}
 }
 
 focus = {
@@ -1471,6 +1547,7 @@ focus = {
 focus = {
 	id = ZEO_develop_the_musai
 	icon = GFX_goal_generic_build_navy
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 3
 	y = 1
@@ -1478,6 +1555,20 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		every_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+	}
+		}
+		add_tech_bonus = {
+			name = zeon_zeon_navy
+			category = naval_equipment
+			uses = 1
+			bonus = 1
+		}
 	}
 	relative_position_id = ZEO_war_preperations
 	prerequisite = { focus = ZEO_war_preperations }
@@ -1486,6 +1577,7 @@ focus = {
 focus = {
 	id = ZEO_expansion_of_the_starfleet
 	icon = GFX_goal_generic_amphibious_assault
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 5
 	x = 0
 	y = 2
@@ -1493,7 +1585,15 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		every_state = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = dockyard
+				level = 4
+				instant_build = yes
 	}
+	}
+}
 	relative_position_id = ZEO_develop_the_musai
 	prerequisite = { focus = ZEO_develop_the_musai }
 }

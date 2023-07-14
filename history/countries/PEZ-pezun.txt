@@ -1,5 +1,5 @@
 capital = 948
-oob = ""
+oob = "PEZ0075"
 
 # Starting tech
 set_technology = {
@@ -28,7 +28,6 @@ set_technology = {
 	ZEO_basic_torpedo = 1
 	ZEO_basic_naval_mines = 1
 	ZEO_submarine_mine_laying = 1
-	ms05_tech = 1
 	ZEO_ms_weapon_machinegun_01_tech = 1
 	ZEO_ms_weapon_heathawk_01_tech = 1
 	ZEO_ms_shield_01_tech = 1
@@ -51,6 +50,10 @@ set_technology = {
 	oil_processing = 1
 	rubber_processing = 1
 	fuel_refining2 = 1
+	recruiment_zudah = 1
+	ems04_tech = 1
+	nuclear_reactor2 = 1
+	nuclear_reactor3 = 1
 }
 
 set_research_slots = 3
@@ -207,3 +210,16 @@ set_politics = {
 		obsolete = no
 	}
 }
+
+#Leaders
+recruit_character = PEZ_albert_schacht
+
+#Field Marshalls
+
+#Generals
+
+#Admirals
+
+#Advisors
+
+#Highcommand

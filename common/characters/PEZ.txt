@@ -1,0 +1,27 @@
+characters={
+	#Leaders
+	PEZ_albert_schacht ={
+		name="Albert Schacht"
+		portraits={
+			civilian={
+				large= "gfx/leaders/PEZ/schacht.dds"
+			}
+		}
+		country_leader={
+			traits={}
+			ideology=pezun_corporatism
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits = {schacht_trait}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	#Advisors
+
+}

@@ -1563,7 +1563,7 @@ focus = {
 focus = {
 	id = ZEO_choose_a_baoa_qu_as_testing_grounds
 	icon = GFX_goal_zeon_mobile_headquarters
-	search_filters = { FOCUS_FILTER_RESEARCH } 
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP } 
 	cost = 2
 	x = -1
 	y = 2
@@ -1582,7 +1582,7 @@ focus = {
 focus = {
 	id = ZEO_choose_pezun_as_testing_grounds
 	icon = GFX_goal_zeon_mobile_headquarters
-	search_filters = { FOCUS_FILTER_RESEARCH } 
+	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP } 
 	cost = 2
 	x = 1
 	y = 2
@@ -2180,6 +2180,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		ABQ = { is_subject_of = ROOT }
+	}
 	completion_reward = {
 		934 = {	add_extra_state_shared_building_slots = 4
 		instant_build = yes
@@ -2235,6 +2238,7 @@ focus = {
 focus = {
 	id = ZEO_prepare_for_colony_warfare
 	icon = GFX_goal_colony_alliance
+	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 2
 	x = -1
 	y = 2
@@ -2303,6 +2307,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		SOL = { is_subject_of = ROOT }
+	}
 	completion_reward = {
 		933 = {	add_extra_state_shared_building_slots = 4
 		instant_build = yes
@@ -2348,6 +2355,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		PEZ = { is_subject_of = ROOT }
+	}
 	completion_reward = {
 		948 = {	add_extra_state_shared_building_slots = 6		instant_build = yes
 		}
@@ -2386,6 +2396,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		GRA = { is_subject_of = ROOT }
 	}
 	completion_reward = {
 		937 = {	add_extra_state_shared_building_slots = 1
@@ -2430,6 +2443,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		AXS = { is_subject_of = ROOT }
 	}
 	completion_reward = {
 		951 = {	add_extra_state_shared_building_slots = 2

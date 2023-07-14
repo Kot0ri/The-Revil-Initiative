@@ -204,7 +204,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		add_country_leader_trait = pergamino_trait
+		add_autonomy_ratio = {
+			value = 0.5
+		}
+		add_war_support = 00.15
 	}
 	relative_position_id = ZEO_expand_the_powers_of_the_secret_service
 	prerequisite = { focus = ZEO_expand_the_powers_of_the_secret_service }

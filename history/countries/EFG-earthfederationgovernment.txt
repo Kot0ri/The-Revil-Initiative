@@ -116,6 +116,26 @@ if = {
 	}
 }
 
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = federation_research
+}
+
+create_faction = Federation
+add_to_faction = EFG
+add_to_faction = HIN
+add_to_faction = MEZ
+add_to_faction = SSA
+add_to_faction = AFZ
+add_to_faction = EUF
+add_to_faction = SI1
+add_to_faction = SI2
+add_to_faction = SI3
+add_to_faction = SI4
+add_to_faction = SI5
+add_to_faction = SI6
+
 set_popularities = {
 	democratic = 100
 	supremacist = 0

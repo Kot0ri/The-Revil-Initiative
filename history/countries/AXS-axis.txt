@@ -81,6 +81,13 @@ set_variable = {
 	value = 1
 }
 
+#Diplomacy
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = zeon_research
+}
+
 set_popularities = {
 	democratic = 0
 	supremacist = 0

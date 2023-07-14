@@ -41,8 +41,12 @@ set_technology = {
 	EFS_basic_torpedo = 1
 	EFS_basic_naval_mines = 1
 }
+#Diplomacy
+if = {
+	limit = { has_dlc = "Together for Victory" }
 
-
+	add_to_tech_sharing_group = federation_research
+}
 set_popularities = {
 	democratic = 60
 	supremacist = 0

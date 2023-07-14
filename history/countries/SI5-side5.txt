@@ -41,8 +41,12 @@ set_technology = {
 }
 
 set_variable = { newtype_accepted_status = 1 }
+#Diplomacy
+if = {
+	limit = { has_dlc = "Together for Victory" }
 
-
+	add_to_tech_sharing_group = federation_research
+}
 set_popularities = {
 	democratic = 60
 	supremacist = 0

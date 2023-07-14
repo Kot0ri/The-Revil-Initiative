@@ -124,7 +124,12 @@ set_convoys = 3500
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
-# DIPLOMACY
+#Diplomacy
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = federation_research
+}
 
 set_popularities = {
 	democratic = 70

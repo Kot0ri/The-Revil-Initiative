@@ -91,6 +91,12 @@ set_fuel_ratio = 0.8
 
 # DIPLOMACY
 
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = federation_research
+}
+
 set_popularities = {
 	democratic = 0
 	supremacist = 0

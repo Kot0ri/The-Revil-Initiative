@@ -107,6 +107,12 @@ set_politics = {
 	elections_allowed = yes ##suspended through duration of war, which is handled via event
 }
 
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = federation_research
+}
+
 set_variable = { newtype_accepted_status = 0 }
 
 create_equipment_variant = {

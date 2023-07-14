@@ -106,6 +106,13 @@ set_popularities = {
 	corporatism = 0
 	communism = 0
 }
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = federation_research
+}
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "74.12.1"

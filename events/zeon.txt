@@ -1,5 +1,33 @@
 ﻿add_namespace = zeon
 
+#66 Side 3 Colony Evaulation
+country_event = {
+  id = zeon.2
+  title = zeon.2.t
+  desc = zeon.2.d
+  picture = GFX_country_zeon002
+
+  trigger = {
+    original_tag = ZEO
+    has_equipment = {
+      archetype_ms05 > 0
+    }
+    has_war = no
+    has_global_flag = start_is_uc0075
+  }
+  mean_time_to_happen = { days = 1 }
+  fire_only_once = yes
+
+  option = {
+    name = zeon.2.a
+    ai_chance = {
+			base = 1
+		}
+    hidden_effect = {
+      country_event = { id = zeon.58 days = 10 }
+    }
+  }
+}
 #9999 テストイベント
 country_event = {
   id = zeon.9999

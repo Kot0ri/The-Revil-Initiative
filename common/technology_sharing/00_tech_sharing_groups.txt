@@ -1,17 +1,17 @@
 technology_sharing_group = {
-  id = zeon_tech_share
+  id = zeon_research
 	name = zeon_tech_share_name
 	desc = zeon_tech_share_desc
 	picture = GFX_commonwealth_research
 	research_sharing_per_country_bonus = 0.1
   available = {
     is_in_faction_with = ZEO
-    compare_autonomy_state > autonomy_puppet
+    compare_autonomy_state > autonomy_dominion
   }
 }
 
 technology_sharing_group = {
-	id = efsf_tech_share
+	id = federation_research
 	name = efsf_tech_share_name
 	desc = efsf_tech_share_desc
 	picture = GFX_commonwealth_research

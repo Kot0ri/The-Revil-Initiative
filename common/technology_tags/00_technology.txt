@@ -251,51 +251,63 @@ technology_folders = {
 		ledger = civilian
 	}
   ZEO_mobilesuit_folder = {
-		available = { original_tag = ZEO }
+	available = {
+		has_country_flag = zeon_country
+	}
 		ledger = army
  	}
 	ZEO_ms_weapon_folder = {
-		available = { original_tag = ZEO }
+		available = {
+			has_country_flag = zeon_country
+		}
 		ledger = army
 	}
   ZEO_armour_folder = {
-		available = { original_tag = ZEO }
+	available = {
+		has_country_flag = zeon_country
+	}
 		ledger = army
 	}
   ZEO_naval_folder = {
-		available = { original_tag = ZEO }
+	available = {
+		has_country_flag = zeon_country
+	}
 		ledger = navy
 	}
   ZEO_air_techs_folder = {
-		available = { original_tag = ZEO }
+	available = {
+		has_country_flag = zeon_country
+	}
 		ledger = air
 	}
 	ZEO_space_folder = {
-		available = { original_tag = ZEO }
+		available = {
+			has_country_flag = zeon_country
+		}
 		ledger = navy
 	}
   EFS_mobilesuit_folder = {
-		available = { original_tag = EFS }
+	available = { NOT = {has_country_flag = zeon_country} } 
 		ledger = army
 	}
 	EFS_ms_weapon_folder = {
-		available = { original_tag = EFS }
+		available = { NOT = {has_country_flag = zeon_country} } 
 		ledger = army
 	}
   EFS_armour_folder = {
-		available = { NOT = { original_tag = ZEO } }
+		available = { NOT = {has_country_flag = zeon_country} } 
 		ledger = army
 	}
   EFS_naval_folder = {
-		available = { NOT = { original_tag = ZEO } }
+	available = { NOT = {has_country_flag = zeon_country} } 
 		ledger = navy
 	}
   EFS_air_techs_folder = {
-		available = { NOT = { original_tag = ZEO } }
+	available = { NOT = {has_country_flag = zeon_country} } 
 		ledger = air
 	}
 	EFS_space_folder = {
-		available = { NOT = { original_tag = ZEO } }
+		available = { NOT = {has_country_flag = zeon_country} } 
 		ledger = navy
 	}
 }

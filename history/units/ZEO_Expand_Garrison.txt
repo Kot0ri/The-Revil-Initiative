@@ -1,0 +1,97 @@
+division_template = {
+	name = "National Guard"
+  division_names_group = ZEO_Inf_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+units = {
+	division= {
+		name = "1st Reserve National Guard"
+		location = 13280
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "2nd Reserve National Guard"
+		location = 13262
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "3rd Reserve National Guard"
+		location = 13284
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+
+	division= {
+		name = "4th Reserve National Guard"
+		location = 13284
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+
+	division= {
+		name = "5th Reserve National Guard"
+		location = 13284
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+
+	division= {
+		name = "6th Reserve National Guard"
+		location = 13280
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "7th Reserve National Guard"
+		location = 13262
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+	division= {
+		name = "8th Reserve National Guard"
+		location = 13284
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+
+	division= {
+		name = "9th Reserve National Guard"
+		location = 13284
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+
+	division= {
+		name = "10th Reserve National Guard"
+		location = 13284
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+
+	division= {
+		name = "11th Reserve National Guard"
+		location = 13284
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+
+	division= {
+		name = "12th Reserve National Guard"
+		location = 13284
+		division_template = "National Guard"
+		start_experience_factor = 0.5
+	}
+}

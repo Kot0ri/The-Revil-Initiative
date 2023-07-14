@@ -1301,8 +1301,7 @@ focus = {
 		}
 	}
 	relative_position_id = ZEO_prepare_for_a_war_of_independence
-	prerequisite = { focus = ZEO_embargo_the_earth }
-	prerequisite = { focus = ZEO_prepare_for_a_war_of_independence }
+	prerequisite = { focus = ZEO_embargo_the_earth focus = ZEO_prepare_for_a_war_of_independence }
 }
 
 focus = {

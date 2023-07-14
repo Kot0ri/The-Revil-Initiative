@@ -2069,6 +2069,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		signal_company
+	}
 	completion_reward = {
 		add_stability = -0.12
 		hidden_effect = {

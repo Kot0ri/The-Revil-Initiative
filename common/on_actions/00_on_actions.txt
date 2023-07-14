@@ -1,0 +1,10 @@
+on_actions = {
+on_startup = {
+	effect = {
+		#Axis Resources
+			AXS = {
+				give_resource_rights = { receiver = ZEO state = 951 }
+			}
+		}
+	}
+}

@@ -117,6 +117,7 @@ ideas = {
 				threat > 0.3
 				OR = {
 					has_government = supremacist
+					has_government = military_government
 					custom_trigger_tooltip = { tooltip = or_clarification_tooltip always = no }
 					AND = {
 						has_war = yes

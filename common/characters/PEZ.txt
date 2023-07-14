@@ -8,12 +8,12 @@ characters={
 			}
 		}
 		country_leader={
-			traits={}
+			traits={schacht_trait}
 			ideology=pezun_corporatism
 			expire="1000.1.1.1"
 		}
 		field_marshal = {
-			traits = {schacht_trait}
+			traits = {}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2

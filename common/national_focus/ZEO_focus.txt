@@ -364,6 +364,7 @@ focus = {
 focus = {
 	id = ZEO_invade_earth
 	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_ANNEXATION }
 	cost = 2
 	x = 0
 	y = 1
@@ -580,6 +581,7 @@ focus = {
 focus = {
 	id = ZEO_invade_von_braun
 	icon = GFX_goal_fullmoon
+	search_filters = { FOCUS_FILTER_ANNEXATION }
 	cost = 2
 	x = 0
 	y = 1
@@ -599,6 +601,7 @@ focus = {
 focus = {
 	id = ZEO_war_with_the_earth
 	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_ANNEXATION }
 	cost = 2
 	x = 0
 	y = 1
@@ -648,6 +651,7 @@ focus = {
 focus = {
 	id = ZEO_propisition_on_palau
 	icon = GFX_goal_generic_forceful_treaty
+	search_filters = { FOCUS_FILTER_ANNEXATION }
 	cost = 2
 	x = 0
 	y = 1
@@ -950,6 +954,7 @@ focus = {
 focus = {
 	id = ZEO_further_industrial_research
 	icon = GFX_goal_generic_production
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	cost = 2
 	x = 0
 	y = 1
@@ -957,6 +962,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.25
+			uses = 2
+			category = industry
+		}
 	}
 	relative_position_id = ZEO_use_dark_and_ocean_colonies_for_civilian_use
 	prerequisite = { focus = ZEO_use_dark_and_ocean_colonies_for_civilian_use }
@@ -1139,6 +1150,14 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		OR = {
+			has_full_control_of_state = 909
+			has_full_control_of_state = 910
+			has_full_control_of_state = 911
+		}
+		
+}
 	completion_reward = {
 	909 = {
 			add_extra_state_shared_building_slots = 5
@@ -1193,13 +1212,48 @@ focus = {
 focus = {
 	id = ZEO_expand_consumer_market
 	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		OR = {
+			has_full_control_of_state = 909
+			has_full_control_of_state = 910
+			has_full_control_of_state = 911
+		}	
+}
+
 	completion_reward = {
+		909 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		910 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		911 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 	relative_position_id = ZEO_further_industrial_research
 	prerequisite = { focus = ZEO_further_industrial_research }
@@ -1224,6 +1278,7 @@ focus = {
 focus = {
 	id = ZEO_war_with_earth
 	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_ANNEXATION }
 	cost = 2
 	x = -3
 	y = 2
@@ -1323,14 +1378,34 @@ focus = {
 focus = {
 	id = ZEO_use_dark_and_ocean_colonies_for_civilian_use
 	icon = GFX_goal_generic_construct_civ_factory
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		OR = {
+			has_full_control_of_state = 909}
+		}
 	mutually_exclusive = { focus = ZEO_use_dark_and_ocean_colonies_for_military_use }
 	completion_reward = {
+		909 = {	add_extra_state_shared_building_slots = 4
+		instant_build = yes
+	}
+	909 = {
+		if = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type =  industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
+
 	}
 	relative_position_id = ZEO_side_3_colony_evaluation
 	prerequisite = { focus = ZEO_side_3_colony_evaluation }
@@ -1442,6 +1517,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = zeon_enhancement_of_general_purpose_MS
+			uses = 1
+			bonus = 1.50
+			category = mass_mobilesuit
+		}
 	}
 	relative_position_id = ZEO_war_preperations
 	prerequisite = { focus = ZEO_war_preperations }
@@ -1491,6 +1572,8 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_choose_pezun_as_testing_grounds }
 	completion_reward = {
+		navy_experience = 50
+		army_experience = 50
 	}
 	relative_position_id = ZEO_zaku_versus_zudah_competition
 	prerequisite = { focus = ZEO_zaku_versus_zudah_competition }
@@ -1508,6 +1591,8 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_choose_a_baoa_qu_as_testing_grounds }
 	completion_reward = {
+		navy_experience = 50
+		army_experience = 50
 	}
 	relative_position_id = ZEO_zaku_versus_zudah_competition
 	prerequisite = { focus = ZEO_zaku_versus_zudah_competition }
@@ -1524,6 +1609,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = zeon_improvement_of_MS_weapons
+			uses = 2
+			bonus = 0.5
+			category = mobilesuit_weapon
+		}
 	}
 	relative_position_id = ZEO_begin_widescale_production_efforts
 	prerequisite = { focus = ZEO_begin_widescale_production_efforts }
@@ -1611,7 +1702,40 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		OR = {
+			has_full_control_of_state = 909
+			has_full_control_of_state = 910
+			has_full_control_of_state = 911
+		}
+	}
 	completion_reward = {
+		909 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		910 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		911 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 	relative_position_id = ZEO_choose_a_baoa_qu_as_testing_grounds
 	prerequisite = { focus = ZEO_choose_a_baoa_qu_as_testing_grounds focus = ZEO_choose_pezun_as_testing_grounds }
@@ -1627,14 +1751,40 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		OR = {
+			has_full_control_of_state = 909
+			has_full_control_of_state = 910
+			has_full_control_of_state = 911
+		}
+		
+}
 	completion_reward = {
-		every_state = {
-			add_extra_state_shared_building_slots = 2
+	909 = {
+			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
 				level = 2
 				instant_build = yes
-	}
+			}
+		}
+
+		910 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		911 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
 		}
 		add_tech_bonus = {
 			name = zeon_zeon_navy
@@ -1657,15 +1807,42 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		OR = {
+			has_full_control_of_state = 909
+			has_full_control_of_state = 910
+			has_full_control_of_state = 911
+		}
+		
+}
 	completion_reward = {
-		every_state = {
-			add_extra_state_shared_building_slots = 4
+	909 = {
+			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
-				level = 4
+				level = 2
 				instant_build = yes
-	}
-	}
+			}
+		}
+
+		910 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		911 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+
 }
 	relative_position_id = ZEO_develop_the_musai
 	prerequisite = { focus = ZEO_develop_the_musai }
@@ -1996,6 +2173,7 @@ focus = {
 focus = {
 	id = ZEO_space_fortress_a_bao_qu
 	icon = GFX_goal_zeon_mobile_headquarters
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 0
 	y = 1
@@ -2003,6 +2181,34 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		934 = {	add_extra_state_shared_building_slots = 4
+		instant_build = yes
+	}
+
+	935 = {	add_extra_state_shared_building_slots = 2
+	instant_build = yes
+}
+
+	934 = {
+		if = {
+			limit = { is_controlled_by = ABQ }
+			add_building_construction = {
+				type =  industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+	935 = {
+		if = {
+			limit = { is_controlled_by = ABQ }
+			add_building_construction = {
+				type =  arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
 	}
 	relative_position_id = ZEO_military_preparations
 	prerequisite = { focus = ZEO_military_preparations }
@@ -2011,7 +2217,7 @@ focus = {
 focus = {
 	id = ZEO_solomon_sea_operations
 	icon = GFX_goal_zeon_mobile_headquarters
-	search_filters = { FOCUS_FILTER_RESEARCH }
+	search_filters = {FOCUS_FILTER_NAVY_XP}
 	cost = 2
 	x = 2
 	y = 2
@@ -2036,6 +2242,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
 	}
 	relative_position_id = ZEO_space_focus
 	prerequisite = { focus = ZEO_space_focus }
@@ -2044,6 +2256,7 @@ focus = {
 focus = {
 	id = ZEO_expand_the_zeon_military_academy
 	icon = GFX_focus_generic_military_academy
+	search_filters = {FOCUS_FILTER_ARMY_XP}
 	cost = 2
 	x = 0
 	y = 1
@@ -2051,6 +2264,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = defense_military_academy
+		add_doctrine_cost_reduction = {
+			category = land_doctrine
+			uses = 3
+			cost_reduction = 0.2
+		}
 	}
 	relative_position_id = ZEO_prepare_for_colony_warfare
 	prerequisite = { focus = ZEO_prepare_for_colony_warfare }
@@ -2059,6 +2278,7 @@ focus = {
 focus = {
 	id = ZEO_zeon_iron_cross
 	icon = GFX_goal_medal_of_cross
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT }
 	cost = 2
 	x = 0
 	y = 1
@@ -2066,6 +2286,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		country_event = { id = zeon.108 }
+		add_ideas = zeon_medal_of_cross
 	}
 	relative_position_id = ZEO_expand_the_zeon_military_academy
 	prerequisite = { focus = ZEO_expand_the_zeon_military_academy }
@@ -2074,6 +2296,7 @@ focus = {
 focus = {
 	id = ZEO_reinforce_solomon
 	icon = GFX_goal_fortify_the_westwall
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 1
 	y = 2
@@ -2081,6 +2304,35 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		933 = {	add_extra_state_shared_building_slots = 4
+		instant_build = yes
+	}
+
+	932 = {	add_extra_state_shared_building_slots = 2
+	instant_build = yes
+}
+
+	933 = {
+		if = {
+			limit = { is_controlled_by = SOL }
+			add_building_construction = {
+				type =  industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+	932 = {
+		if = {
+			limit = { is_controlled_by = SOL }
+			add_building_construction = {
+				type =  arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+
 	}
 	relative_position_id = ZEO_space_fortress_a_bao_qu
 	prerequisite = { focus = ZEO_space_fortress_a_bao_qu }
@@ -2089,6 +2341,7 @@ focus = {
 focus = {
 	id = ZEO_build_up_pezun
 	icon = GFX_goal_generic_construction
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = -2
 	y = 1
@@ -2096,6 +2349,29 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		948 = {	add_extra_state_shared_building_slots = 6		instant_build = yes
+		}
+
+	948 = {
+		if = {
+			limit = { is_controlled_by = PEZ }
+			add_building_construction = {
+				type =  industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+	948 = {
+		if = {
+			limit = { is_controlled_by = PEZ }
+			add_building_construction = {
+				type =  arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
 	}
 	relative_position_id = ZEO_reinforce_solomon
 	prerequisite = { focus = ZEO_reinforce_solomon }
@@ -2104,6 +2380,7 @@ focus = {
 focus = {
 	id = ZEO_build_up_granada
 	icon = GFX_goal_generic_construction
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 0
 	y = 1
@@ -2111,6 +2388,34 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		937 = {	add_extra_state_shared_building_slots = 1
+		instant_build = yes
+	}
+
+	938 = {	add_extra_state_shared_building_slots = 2
+	instant_build = yes
+}
+
+	937 = {
+		if = {
+			limit = { is_controlled_by = GRA }
+			add_building_construction = {
+				type =  industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	952 = {
+		if = {
+			limit = { is_controlled_by = GRA }
+			add_building_construction = {
+				type =  arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
 	}
 	relative_position_id = ZEO_build_up_pezun
 	prerequisite = { focus = ZEO_build_up_pezun }
@@ -2119,6 +2424,7 @@ focus = {
 focus = {
 	id = ZEO_axis_development
 	icon = GFX_goal_generic_construction
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 2
 	y = 1
@@ -2126,6 +2432,34 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		951 = {	add_extra_state_shared_building_slots = 2
+		instant_build = yes
+	}
+
+	952 = {	add_extra_state_shared_building_slots = 1
+	instant_build = yes
+}
+
+	933 = {
+		if = {
+			limit = { is_controlled_by = AXS }
+			add_building_construction = {
+				type =  industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	952 = {
+		if = {
+			limit = { is_controlled_by = AXS }
+			add_building_construction = {
+				type =  arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
 	}
 	relative_position_id = ZEO_reinforce_solomon
 	prerequisite = { focus = ZEO_reinforce_solomon }

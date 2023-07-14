@@ -1148,7 +1148,9 @@ focus = {
 				name = zeon_national_mobilization_act
 				threat = 5
 	}
-	load_oob = ZEO_Expand_Garrison
+	hidden_effect = {
+		load_oob = ZEO_Expand_Garrison
+	}
 }
 	relative_position_id = ZEO_side_3_weapons_development
 	prerequisite = { focus = ZEO_side_3_weapons_development }
@@ -2068,6 +2070,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		hidden_effect = {
+			load_oob = ZEO_Capital_Defence
+		}
 	}
 	relative_position_id = ZEO_send_aid_to_the_military_commands
 	prerequisite = { focus = ZEO_send_aid_to_the_military_commands }

@@ -2055,6 +2055,7 @@ focus = {
 focus = {
 	id = ZEO_prepare_capital_defense_guard_for_combat_use
 	icon = GFX_focus_prc_infiltration
+	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = 3
 	y = 1

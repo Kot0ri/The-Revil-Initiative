@@ -691,7 +691,7 @@ focus = {
 
 focus = {
 	id = ABQ_expand_living_space_for_soldiers_families
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_construct_infrastructure
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 	cost = 2
 	x = 3
@@ -713,7 +713,7 @@ focus = {
 
 focus = {
 	id = ABQ_clear_out_the_asteroid
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_construction
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 2
@@ -772,7 +772,7 @@ focus = {
 
 focus = {
 	id = ABQ_economic_self_sufficiency
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_SWI_issue_war_bonds
 	cost = 2
 	x = 0
 	y = 1
@@ -788,7 +788,7 @@ focus = {
 
 focus = {
 	id = ABQ_expansion_of_civil_facilities
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_construct_civ_factory
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 
 	cost = 2
@@ -835,7 +835,7 @@ focus = {
 
 focus = {
 	id = ABQ_build_up_of_consumer_factories
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_consumer_goods
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = -1
@@ -865,7 +865,7 @@ focus = {
 
 focus = {
 	id = ABQ_reduce_need_for_supply_shipments
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_POL_develop_polish_shipbuilding
 	cost = 2
 	x = 0
 	y = 1
@@ -880,7 +880,7 @@ focus = {
 
 focus = {
 	id = ABQ_export_mineral_resources_to_the_homeland
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_generic_steel
 	cost = 2
 	x = 0
 	y = 1
@@ -895,7 +895,7 @@ focus = {
 
 focus = {
 	id = ABQ_draw_upon_civilian_businesses
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_mex_privatisation
 	cost = 2
 	x = 0
 	y = 2

@@ -123,7 +123,9 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_kycilias_plotting }
 	completion_reward = {
-		set_ruling_party =Supremacist
+		set_politics = {
+			ruling_party = supremacist
+		}
 	}
 	relative_position_id = ZEO_sibling_rivalry
 	prerequisite = { focus = ZEO_sibling_rivalry }
@@ -141,6 +143,9 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_gihrens_speeches }
 	completion_reward = {
+		set_politics = {
+			ruling_party = oligarchy
+		}
 	}
 	relative_position_id = ZEO_sibling_rivalry
 	prerequisite = { focus = ZEO_sibling_rivalry }
@@ -808,6 +813,9 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_serve_coporate_intersts }
 	completion_reward = {
+		set_politics = {
+			ruling_party = aristocracy
+		}
 	}
 	relative_position_id = ZEO_noblis_oblige
 	prerequisite = { focus = ZEO_noblis_oblige
@@ -841,6 +849,9 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_a_new_aristocracy }
 	completion_reward = {
+		set_politics = {
+			ruling_party = corporatism
+		}
 	}
 	relative_position_id = ZEO_strengthen_the_military_industrial_complex
 	prerequisite = { focus = ZEO_strengthen_the_military_industrial_complex }

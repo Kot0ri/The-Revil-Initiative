@@ -32,9 +32,32 @@ characters={
 			}
 			modifier = {
 			}
+			do_effect = {
+				NOT = {
+					has_government = zeonism
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+				modifier = {
+					factor = 8
+					has_completed_focus = zeon_harmony_with_deikun
+				}
+				modifier = {
+					factor = 0.2
+					has_completed_focus = zeon_comrades_of_deikun
+				}
+				modifier = {
+					factor = 0.5
+					has_war = yes
+				}
+			}
 		}
 	}
-}
 	
 	ZEO_degwin_sodo_zabi = {
 		name=ZEO_degwin_sodo_zabi
@@ -101,7 +124,7 @@ characters={
 			id=-1
 		}
 }
-}
+	}
 
 ZEO_kycilia_zabi = {
 	name=ZEO_kycilia_zabi
@@ -117,10 +140,8 @@ ZEO_kycilia_zabi = {
 		ideology=despotism 
 		expire="100.1.1.1"
 		id=-1
-
 	}
 }
-
 
 
 	##Field Marshalls

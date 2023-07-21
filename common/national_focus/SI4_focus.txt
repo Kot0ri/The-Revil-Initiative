@@ -1,0 +1,1706 @@
+focus_tree = {
+	id = ZEO
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = SI4
+		}
+	}
+	default = no
+
+focus = {
+	id = SI4_negotiations_with_federation_investors
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 24
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = SI4_building_contracts
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_negotiations_with_federation_investors
+	prerequisite = { focus = SI4_negotiations_with_federation_investors }
+}
+
+focus = {
+	id = SI4_full_federation_support
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_building_contracts
+	prerequisite = { focus = SI4_building_contracts }
+}
+
+focus = {
+	id = SI4_expanded_government_bureaucracy
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_building_contracts
+	prerequisite = { focus = SI4_building_contracts }
+}
+
+focus = {
+	id = SI4_expand_colony_tourism
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_building_contracts
+	prerequisite = { focus = SI4_building_contracts }
+	prerequisite = { focus = SI4_seek_closer_side_relations }
+}
+
+focus = {
+	id = SI4_contracts_between_officials
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_expanded_government_bureaucracy
+	prerequisite = { focus = SI4_expanded_government_bureaucracy }
+}
+
+focus = {
+	id = SI4_side_negotiations
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_contracts_between_officials
+	prerequisite = { focus = SI4_contracts_between_officials }
+}
+
+focus = {
+	id = SI4_side_diplomacy
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_side_negotiations
+	prerequisite = { focus = SI4_side_negotiations }
+	prerequisite = { focus = SI4_federation_port_officers }
+	prerequisite = { focus = SI4_social_welfare_policy }
+}
+
+focus = {
+	id = SI4_federation_military_bases
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_full_federation_support
+	prerequisite = { focus = SI4_full_federation_support }
+}
+
+focus = {
+	id = SI4_federation_port_officers
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_federation_military_bases
+	prerequisite = { focus = SI4_federation_military_bases }
+}
+
+focus = {
+	id = SI4_rework_work_visa_programs
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_expand_colony_tourism
+	prerequisite = { focus = SI4_expand_colony_tourism }
+}
+
+focus = {
+	id = SI4_social_welfare_policy
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_rework_work_visa_programs
+	prerequisite = { focus = SI4_rework_work_visa_programs }
+}
+
+focus = {
+	id = SI4_seek_accommodation_with_earths_government
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_side_diplomacy
+	prerequisite = { focus = SI4_side_diplomacy }
+}
+
+focus = {
+	id = SI4_build_up_a_stable_military_connection
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_federation_port_officers
+	prerequisite = { focus = SI4_federation_port_officers }
+}
+
+focus = {
+	id = SI4_purchase_federation_warships
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_build_up_a_stable_military_connection
+	prerequisite = { focus = SI4_build_up_a_stable_military_connection }
+}
+
+focus = {
+	id = SI4_form_the_moore_brotherhood
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_purchase_federation_warships
+	prerequisite = { focus = SI4_purchase_federation_warships }
+}
+
+focus = {
+	id = SI4_request_special_ms
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_form_the_moore_brotherhood
+	prerequisite = { focus = SI4_form_the_moore_brotherhood }
+}
+
+focus = {
+	id = SI4_thunderbolt_sector_ms
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_request_special_ms
+	prerequisite = { focus = SI4_request_special_ms }
+}
+
+focus = {
+	id = SI4_thunderbolt_operations
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_request_special_ms
+	prerequisite = { focus = SI4_request_special_ms }
+}
+
+focus = {
+	id = SI4_own_earth_property
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_seek_accommodation_with_earths_government
+	prerequisite = { focus = SI4_seek_accommodation_with_earths_government }
+}
+
+focus = {
+	id = SI4_expansion_of_democratic_principals
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_social_welfare_policy
+	prerequisite = { focus = SI4_social_welfare_policy }
+}
+
+focus = {
+	id = SI4_ensure_election_security
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_expansion_of_democratic_principals
+	prerequisite = { focus = SI4_expansion_of_democratic_principals }
+}
+
+focus = {
+	id = SI4_begin_expansion_of_colony_industries
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 34
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = SI4_contact_private_investors
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_begin_expansion_of_colony_industries
+	prerequisite = { focus = SI4_begin_expansion_of_colony_industries }
+}
+
+focus = {
+	id = SI4_expand_colony_shipping
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_begin_expansion_of_colony_industries
+	prerequisite = { focus = SI4_begin_expansion_of_colony_industries }
+}
+
+focus = {
+	id = SI4_fundraise_new_building_projects
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_begin_expansion_of_colony_industries
+	prerequisite = { focus = SI4_begin_expansion_of_colony_industries }
+}
+
+focus = {
+	id = SI4_new_docks_for_ships
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_expand_colony_shipping
+	prerequisite = { focus = SI4_expand_colony_shipping }
+}
+
+focus = {
+	id = SI4_renegotiate_trade_deals
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_new_docks_for_ships
+	prerequisite = { focus = SI4_new_docks_for_ships }
+}
+
+focus = {
+	id = SI4_reduce_costs_for_immigrants
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_renegotiate_trade_deals
+	prerequisite = { focus = SI4_renegotiate_trade_deals }
+}
+
+focus = {
+	id = SI4_give_private_contractors_an_advantage
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_contact_private_investors
+	prerequisite = { focus = SI4_contact_private_investors }
+}
+
+focus = {
+	id = SI4_stock_investments
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_give_private_contractors_an_advantage
+	prerequisite = { focus = SI4_give_private_contractors_an_advantage }
+}
+
+focus = {
+	id = SI4_expand_labor_progams
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_fundraise_new_building_projects
+	prerequisite = { focus = SI4_fundraise_new_building_projects }
+}
+
+focus = {
+	id = SI4_expansion_of_public_services
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_expand_labor_progams
+	prerequisite = { focus = SI4_expand_labor_progams }
+}
+
+focus = {
+	id = SI4_open_up_new_bonds
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_stock_investments
+	prerequisite = { focus = SI4_stock_investments }
+}
+
+focus = {
+	id = SI4_hire_doctors_from_earth
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_expansion_of_public_services
+	prerequisite = { focus = SI4_expansion_of_public_services }
+}
+
+focus = {
+	id = SI4_invest_in_the_lunar_companies
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_reduce_costs_for_immigrants
+	prerequisite = { focus = SI4_reduce_costs_for_immigrants }
+	prerequisite = { focus = SI4_open_up_new_bonds }
+	prerequisite = { focus = SI4_hire_doctors_from_earth }
+}
+
+focus = {
+	id = SI4_question_of_colony_defence
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 46
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = SI4_formalize_military_service
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_question_of_colony_defence
+	prerequisite = { focus = SI4_question_of_colony_defence }
+}
+
+focus = {
+	id = SI4_reinforce_the_defense_forces
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_question_of_colony_defence
+	prerequisite = { focus = SI4_question_of_colony_defence }
+}
+
+focus = {
+	id = SI4_push_for_new_military_legislation
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_formalize_military_service
+	prerequisite = { focus = SI4_formalize_military_service }
+}
+
+focus = {
+	id = SI4_begin_filed_tests_in_secret
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_push_for_new_military_legislation
+	prerequisite = { focus = SI4_push_for_new_military_legislation }
+}
+
+focus = {
+	id = SI4_designated_army_roles
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_begin_filed_tests_in_secret
+	prerequisite = { focus = SI4_begin_filed_tests_in_secret }
+}
+
+focus = {
+	id = SI4_official_military_allowance
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_designated_army_roles
+	prerequisite = { focus = SI4_designated_army_roles }
+}
+
+focus = {
+	id = SI4_expansion_of_the_armed_forces
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_official_military_allowance
+	prerequisite = { focus = SI4_official_military_allowance }
+	prerequisite = { focus = SI4_expand_nco_training }
+}
+
+focus = {
+	id = SI4_weapons_and_tactics_devlopment_taskforce
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_push_for_new_military_legislation
+	prerequisite = { focus = SI4_push_for_new_military_legislation }
+}
+
+focus = {
+	id = SI4_build_an_officer_school
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_weapons_and_tactics_devlopment_taskforce
+	prerequisite = { focus = SI4_weapons_and_tactics_devlopment_taskforce }
+}
+
+focus = {
+	id = SI4_minovsky_physics
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_weapons_and_tactics_devlopment_taskforce
+	prerequisite = { focus = SI4_weapons_and_tactics_devlopment_taskforce }
+}
+
+focus = {
+	id = SI4_expand_nco_training
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_build_an_officer_school
+	prerequisite = { focus = SI4_build_an_officer_school }
+}
+
+focus = {
+	id = SI4_begin_development_of_ms
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_minovsky_physics
+	prerequisite = { focus = SI4_minovsky_physics }
+}
+
+focus = {
+	id = SI4_first_ms_prototypes
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_begin_development_of_ms
+	prerequisite = { focus = SI4_begin_development_of_ms }
+}
+
+focus = {
+	id = SI4_lead_from_the_front
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_expand_nco_training
+	prerequisite = { focus = SI4_expand_nco_training }
+}
+
+focus = {
+	id = SI4_ms_command_squads
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_first_ms_prototypes
+	prerequisite = { focus = SI4_first_ms_prototypes }
+	prerequisite = { focus = SI4_lead_from_the_front }
+}
+
+focus = {
+	id = SI4_improve_funding
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_reinforce_the_defense_forces
+	prerequisite = { focus = SI4_reinforce_the_defense_forces }
+}
+
+focus = {
+	id = SI4_antirioting_training
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_improve_funding
+	prerequisite = { focus = SI4_improve_funding }
+}
+
+focus = {
+	id = SI4_antiterrorist_training
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_antirioting_training
+	prerequisite = { focus = SI4_antirioting_training }
+}
+
+focus = {
+	id = SI4_training_exercises_with_eff
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_improve_funding
+	prerequisite = { focus = SI4_improve_funding }
+}
+
+focus = {
+	id = SI4_send_ncos_to_earth
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_training_exercises_with_eff
+	prerequisite = { focus = SI4_training_exercises_with_eff }
+}
+
+focus = {
+	id = SI4_defense_force_intergration_with_efsf_stratcomm
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_antiterrorist_training
+	prerequisite = { focus = SI4_antiterrorist_training }
+	prerequisite = { focus = SI4_send_ncos_to_earth }
+}
+
+focus = {
+	id = SI4_expand_the_service
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 5
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_improve_funding
+	prerequisite = { focus = SI4_improve_funding }
+}
+
+focus = {
+	id = SI4_organizational_restructure
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_expand_the_service
+	prerequisite = { focus = SI4_expand_the_service }
+}
+
+focus = {
+	id = SI4_draw_up_a_new_draft_system
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 8
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_reinforce_the_defense_forces
+	prerequisite = { focus = SI4_reinforce_the_defense_forces }
+}
+
+focus = {
+	id = SI4_focus_on_defensive_tactics
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_draw_up_a_new_draft_system
+	prerequisite = { focus = SI4_draw_up_a_new_draft_system }
+}
+
+focus = {
+	id = SI4_antims_warfare
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_focus_on_defensive_tactics
+	prerequisite = { focus = SI4_focus_on_defensive_tactics }
+}
+
+focus = {
+	id = SI4_study_ms_designs
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_organizational_restructure
+	prerequisite = { focus = SI4_organizational_restructure }
+}
+
+focus = {
+	id = SI4_focus_on_petite_ms
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_study_ms_designs
+	prerequisite = { focus = SI4_study_ms_designs }
+}
+
+focus = {
+	id = SI4_license_ms_production_lines
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_focus_on_petite_ms
+	prerequisite = { focus = SI4_focus_on_petite_ms }
+}
+
+focus = {
+	id = SI4_distance_our_officials_from_federation
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 18
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = SI4_seek_closer_side_relations
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_distance_our_officials_from_federation
+	prerequisite = { focus = SI4_distance_our_officials_from_federation }
+}
+
+focus = {
+	id = SI4_push_for_spacenoid_rights
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_seek_closer_side_relations
+	prerequisite = { focus = SI4_seek_closer_side_relations }
+}
+
+focus = {
+	id = SI4_joint_colony_defense_treaties
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_push_for_spacenoid_rights
+	prerequisite = { focus = SI4_push_for_spacenoid_rights }
+}
+
+focus = {
+	id = SI4_expansion_of_colony_garrison
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_joint_colony_defense_treaties
+	prerequisite = { focus = SI4_joint_colony_defense_treaties }
+}
+
+focus = {
+	id = SI4_build_up_our_forces_in_secret
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_expansion_of_colony_garrison
+	prerequisite = { focus = SI4_expansion_of_colony_garrison }
+}
+
+focus = {
+	id = SI4_dealings_with_the_lunar_companies
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_build_up_our_forces_in_secret
+	prerequisite = { focus = SI4_build_up_our_forces_in_secret }
+}
+
+focus = {
+	id = SI4_colony_research_initiative
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_dealings_with_the_lunar_companies
+	prerequisite = { focus = SI4_dealings_with_the_lunar_companies }
+}
+
+focus = {
+	id = SI4_get_away_from_federationzeon_disagreements
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 13
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = SI4_seek_a_middle_ground_stance
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_get_away_from_federationzeon_disagreements
+	prerequisite = { focus = SI4_get_away_from_federationzeon_disagreements }
+}
+
+focus = {
+	id = SI4_build_up_a_small_garrison
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_seek_a_middle_ground_stance
+	prerequisite = { focus = SI4_seek_a_middle_ground_stance }
+}
+
+focus = {
+	id = SI4_try_to_maintain_relations_with_both_powers
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_seek_a_middle_ground_stance
+	prerequisite = { focus = SI4_seek_a_middle_ground_stance }
+}
+
+focus = {
+	id = SI4_demilitarized_zone
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_build_up_a_small_garrison
+	prerequisite = { focus = SI4_build_up_a_small_garrison }
+}
+
+focus = {
+	id = SI4_be_a_free_trade_zone
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_try_to_maintain_relations_with_both_powers
+	prerequisite = { focus = SI4_try_to_maintain_relations_with_both_powers }
+}
+
+focus = {
+	id = SI4_growing_antifederation_sentiment
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 4
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = SI4_align_with_zeon
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_growing_antifederation_sentiment
+	prerequisite = { focus = SI4_growing_antifederation_sentiment }
+}
+
+focus = {
+	id = SI4_our_own_path
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_growing_antifederation_sentiment
+	prerequisite = { focus = SI4_growing_antifederation_sentiment }
+}
+
+focus = {
+	id = SI4_begin_armament_efforts
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_our_own_path
+	prerequisite = { focus = SI4_our_own_path }
+}
+
+focus = {
+	id = SI4_birnam_contracts
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_begin_armament_efforts
+	prerequisite = { focus = SI4_begin_armament_efforts }
+}
+
+focus = {
+	id = SI4_form_the_crossbone_vangaurd
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_birnam_contracts
+	prerequisite = { focus = SI4_birnam_contracts }
+}
+
+focus = {
+	id = SI4_begin_work_on_the_space_fleet
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_form_the_crossbone_vangaurd
+	prerequisite = { focus = SI4_form_the_crossbone_vangaurd }
+}
+
+focus = {
+	id = SI4_buch_concern_investments
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_our_own_path
+	prerequisite = { focus = SI4_our_own_path }
+}
+
+focus = {
+	id = SI4_scharnhorst_buch_gains_political_sway
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_buch_concern_investments
+	prerequisite = { focus = SI4_buch_concern_investments }
+}
+
+focus = {
+	id = SI4_purchase_the_ronah_title
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_scharnhorst_buch_gains_political_sway
+	prerequisite = { focus = SI4_scharnhorst_buch_gains_political_sway }
+}
+
+focus = {
+	id = SI4_preach_aristocracy
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_purchase_the_ronah_title
+	prerequisite = { focus = SI4_purchase_the_ronah_title }
+}
+
+focus = {
+	id = SI4_remove_federation_influence
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_preach_aristocracy
+	prerequisite = { focus = SI4_preach_aristocracy }
+}
+
+focus = {
+	id = SI4_seize_power
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_remove_federation_influence
+	prerequisite = { focus = SI4_remove_federation_influence }
+}
+
+focus = {
+	id = SI4_declare_cosmo_babylonia
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_seize_power
+	prerequisite = { focus = SI4_seize_power }
+	prerequisite = { focus = SI4_improve_ms_mobility }
+}
+
+focus = {
+	id = SI4_early_ms_testing
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_begin_work_on_the_space_fleet
+	prerequisite = { focus = SI4_begin_work_on_the_space_fleet }
+}
+
+focus = {
+	id = SI4_improve_ms_mobility
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_early_ms_testing
+	prerequisite = { focus = SI4_early_ms_testing }
+}
+
+focus = {
+	id = SI4_reinforce_our_military_capabilties
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_declare_cosmo_babylonia
+	prerequisite = { focus = SI4_declare_cosmo_babylonia }
+}
+
+focus = {
+	id = SI4_inspire_the_population
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_declare_cosmo_babylonia
+	prerequisite = { focus = SI4_declare_cosmo_babylonia }
+}
+
+focus = {
+	id = SI4_build_new_palaces
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_inspire_the_population
+	prerequisite = { focus = SI4_inspire_the_population }
+}
+
+focus = {
+	id = SI4_beam_weapon_development
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_reinforce_our_military_capabilties
+	prerequisite = { focus = SI4_reinforce_our_military_capabilties }
+}
+
+focus = {
+	id = SI4_take_in_zeon_agitators
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_align_with_zeon
+	prerequisite = { focus = SI4_align_with_zeon }
+}
+
+focus = {
+	id = SI4_arms_deal_with_zeon
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_take_in_zeon_agitators
+	prerequisite = { focus = SI4_take_in_zeon_agitators }
+}
+
+focus = {
+	id = SI4_official_treaty
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_arms_deal_with_zeon
+	prerequisite = { focus = SI4_arms_deal_with_zeon }
+}
+
+focus = {
+	id = SI4_improve_beam_weapons
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_beam_weapon_development
+	prerequisite = { focus = SI4_beam_weapon_development }
+}
+
+focus = {
+	id = SI4_declare_war_on_earth
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_build_new_palaces
+	prerequisite = { focus = SI4_build_new_palaces }
+	prerequisite = { focus = SI4_beam_weapon_development }
+}
+
+focus = {
+	id = SI4_red_tape_on_weapons
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_demilitarized_zone
+	prerequisite = { focus = SI4_demilitarized_zone }
+}
+
+focus = {
+	id = SI4_offer_repairs_to_all_sides
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_be_a_free_trade_zone
+	prerequisite = { focus = SI4_be_a_free_trade_zone }
+}
+
+focus = {
+	id = SI4_backchannel_central
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_offer_repairs_to_all_sides
+	prerequisite = { focus = SI4_offer_repairs_to_all_sides }
+}
+
+focus = {
+	id = SI4_spy_stories
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_backchannel_central
+	prerequisite = { focus = SI4_backchannel_central }
+}
+
+focus = {
+	id = SI4_money_laundering
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_backchannel_central
+	prerequisite = { focus = SI4_backchannel_central }
+}
+
+focus = {
+	id = SI4_policy_of_noninvolvement
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_spy_stories
+	prerequisite = { focus = SI4_spy_stories }
+	prerequisite = { focus = SI4_money_laundering }
+}
+
+focus = {
+	id = SI4_license_zeon_ms
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_official_treaty
+	prerequisite = { focus = SI4_official_treaty }
+}
+
+focus = {
+	id = SI4_pilot_training_program
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_official_treaty
+	prerequisite = { focus = SI4_official_treaty }
+}
+}

@@ -952,4 +952,49 @@ focus = {
 	relative_position_id = ABQ_aid_operation_british
 	prerequisite = { focus = ABQ_aid_operation_british }
 }
+
+focus = {
+	id = ABQ_gihren_is_dead
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_gihrens_final_speech
+	prerequisite = { focus = ABQ_gihrens_final_speech }
+}
+
+focus = {
+	id = ABQ_evacuation_to_axis
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_gihren_is_dead
+	prerequisite = { focus = ABQ_gihren_is_dead }
+}
+
+focus = {
+	id = ABQ_delaz_orders_a_retreeat
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_gihren_is_dead
+	prerequisite = { focus = ABQ_gihren_is_dead }
+}
 }

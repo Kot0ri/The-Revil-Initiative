@@ -316,6 +316,22 @@ focus = {
 }
 
 focus = {
+	id = ZEO_use_side_6_to-get_energy_caps
+	icon = GFX_goal_generic_improve_relations
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_secure_ranks_neutrality
+	prerequisite = { focus = ZEO_secure_ranks_neutrality }
+}
+
+focus = {
 	id = ZEO_send_kycilia_to_granada
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
@@ -395,6 +411,46 @@ focus = {
 	}
 	relative_position_id = ZEO_declare_independence
 	prerequisite = { focus = ZEO_declare_independence }
+}
+
+focus = {
+	id = ZEO_state_funeral
+	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = EFS
+		}
+	}
+	relative_position_id = ZEO_invade_earth
+	prerequisite = { focus = ZEO_invade_earth }
+}
+
+focus = {
+	id = ZEO_colony_drop_on_jaburo
+	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = EFS
+		}
+	}
+	relative_position_id = ZEO_state_funeral
+	prerequisite = { focus = ZEO_state_funeral }
 }
 
 focus = {

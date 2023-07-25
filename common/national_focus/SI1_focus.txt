@@ -1181,14 +1181,16 @@ focus = {
 	id = SI1_be_a_free_trade_zone
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 20
-	y = 5
+	x = 0
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	
 	}
+	relative_position_id = SI1_try_to_maintain_relations_with_both_powers
+	prerequisite = { focus = SI1_try_to_maintain_relations_with_both_powers }
 }
 
 focus = {
@@ -1257,14 +1259,16 @@ focus = {
 	id = SI1_offer_repairs_to_all_sides
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 20
-	y = 7
+	x = 0
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	
 	}
+	relative_position_id = SI1_be_a_free_trade_zone
+	prerequisite = { focus = SI1_be_a_free_trade_zone}
 }
 
 focus = {

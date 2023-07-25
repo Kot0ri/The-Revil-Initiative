@@ -132,7 +132,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+
+	}
 	relative_position_id = SI1_side_negotiations
 	prerequisite = { focus = SI1_side_negotiations }
 	prerequisite = { focus = SI1_federation_port_officers }
@@ -2251,5 +2252,4 @@ focus = {
 	relative_position_id = SI1_embrace_moon_moon
 	prerequisite = { focus = SI1_embrace_moon_moon }
 }
-}
-}
+

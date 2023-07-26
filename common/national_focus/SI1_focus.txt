@@ -1394,7 +1394,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		set_politics = {
+			ruling_party = aristocracy
+		}
 	}
 	relative_position_id = SI1_the_identity_of_char_aznable
 	prerequisite = { focus = SI1_the_identity_of_char_aznable }
@@ -2281,4 +2283,5 @@ focus = {
 	}
 	relative_position_id = SI1_embrace_moon_moon
 	prerequisite = { focus = SI1_embrace_moon_moon }
+}
 }

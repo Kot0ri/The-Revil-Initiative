@@ -1410,7 +1410,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		add_country_leader_trait = kings_return
+		add_country_leader_trait = fanatic_followers
 	}
 	relative_position_id = SI1_legacy_of_the_father
 	prerequisite = { focus = SI1_legacy_of_the_father }
@@ -1453,7 +1454,6 @@ focus = {
 				instant_build = yes
 			}
 		}
-		add_country_leader_trait = basilesus
 	}
 	relative_position_id = SI1_savior_of_sweetwater
 	prerequisite = { focus = SI1_savior_of_sweetwater }

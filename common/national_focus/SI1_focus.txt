@@ -1555,7 +1555,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	create_wargoal = {
+		target = ZEO
+		type = annex_everything
+	}
 	}
 	relative_position_id = SI1_form_a_royal_guard
 	prerequisite = { focus = SI1_form_a_royal_guard }
@@ -1571,7 +1574,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		create_wargoal = {
+			target = EFS
+			type = annex_everything
+		}
 	}
 	relative_position_id = SI1_form_a_royal_guard
 	prerequisite = { focus = SI1_form_a_royal_guard }
@@ -1587,7 +1593,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_war_support = 20
 	}
 	relative_position_id = SI1_take_down_the_zabis
 	prerequisite = { focus = SI1_take_down_the_zabis }

@@ -1217,7 +1217,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_autonomy_score = {
+		value = 500
+	}
 	}
 	relative_position_id = SI1_growing_antifederation_sentiment
 	prerequisite = { focus = SI1_growing_antifederation_sentiment }
@@ -1233,7 +1235,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		add_autonomy_score = {
+			value = 850
+		}
 	}
 	relative_position_id = SI1_growing_antifederation_sentiment
 	prerequisite = { focus = SI1_growing_antifederation_sentiment }

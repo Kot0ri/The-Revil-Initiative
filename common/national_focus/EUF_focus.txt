@@ -1,0 +1,1106 @@
+
+focus = {
+	id = EUF_foundation_of_democracy
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 13
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = EUF_plays_in_the_earth_federation_parliament
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 5
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = EUF_hold_the_torch
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_foundation_of_democracy
+	prerequisite = { focus = EUF_foundation_of_democracy }
+}
+
+focus = {
+	id = EUF_policy_towards_the_eff
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 20
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = EUF_cooperation_with_the_efgf
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_policy_towards_the_eff
+	prerequisite = { focus = EUF_policy_towards_the_eff }
+	prerequisite = { focus = EUF_policy_towards_the_eff }
+}
+
+focus = {
+	id = EUF_intergration_with_efgf
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_cooperation_with_the_efgf
+	prerequisite = { focus = EUF_cooperation_with_the_efgf }
+}
+
+focus = {
+	id = EUF_animosity_towards_efgf
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_policy_towards_the_eff
+	prerequisite = { focus = EUF_policy_towards_the_eff }
+}
+
+focus = {
+	id = EUF_refuse_centralization
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_animosity_towards_efgf
+	prerequisite = { focus = EUF_animosity_towards_efgf }
+}
+
+focus = {
+	id = EUF_maintain_our_own_forces
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_refuse_centralization
+	prerequisite = { focus = EUF_refuse_centralization }
+}
+
+focus = {
+	id = EUF_continued_self_determination
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_hold_the_torch
+	prerequisite = { focus = EUF_hold_the_torch }
+}
+
+focus = {
+	id = EUF_guarantees_of_autonomy
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_continued_self_determination
+	prerequisite = { focus = EUF_continued_self_determination }
+}
+
+focus = {
+	id = EUF_push_for_oil_rights
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = EUF_play_ball_with_the_middle_east
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_plays_in_the_earth_federation_parliament
+	prerequisite = { focus = EUF_plays_in_the_earth_federation_parliament }
+}
+
+focus = {
+	id = EUF_exert_influence_in_africa
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_push_for_oil_rights
+	prerequisite = { focus = EUF_push_for_oil_rights }
+}
+
+focus = {
+	id = EUF_dominate_trade_in_the_west
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_exert_influence_in_africa
+	prerequisite = { focus = EUF_exert_influence_in_africa }
+}
+
+focus = {
+	id = EUF_reapproach_africa
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_play_ball_with_the_middle_east
+	prerequisite = { focus = EUF_play_ball_with_the_middle_east }
+}
+
+focus = {
+	id = EUF_slacken_trade_regulations
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_reapproach_africa
+	prerequisite = { focus = EUF_reapproach_africa }
+}
+
+focus = {
+	id = EUF_no_more_mercantilism
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_slacken_trade_regulations
+	prerequisite = { focus = EUF_slacken_trade_regulations }
+}
+
+focus = {
+	id = EUF_push_for_ownership_of_greenland_and_iceland
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_dominate_trade_in_the_west
+	prerequisite = { focus = EUF_dominate_trade_in_the_west }
+}
+
+focus = {
+	id = EUF_tangiers_crisis
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_exert_influence_in_africa
+	prerequisite = { focus = EUF_exert_influence_in_africa }
+}
+
+focus = {
+	id = EUF_demand_the_suez
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_tangiers_crisis
+	prerequisite = { focus = EUF_tangiers_crisis }
+}
+
+focus = {
+	id = EUF_demand_2nd_rome
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_push_for_ownership_of_greenland_and_iceland
+	prerequisite = { focus = EUF_push_for_ownership_of_greenland_and_iceland }
+	prerequisite = { focus = EUF_demand_the_suez }
+}
+
+focus = {
+	id = EUF_improve_relations_with_the_south_seas
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_no_more_mercantilism
+	prerequisite = { focus = EUF_no_more_mercantilism }
+}
+
+focus = {
+	id = EUF_keep_trade_open
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_improve_relations_with_the_south_seas
+	prerequisite = { focus = EUF_improve_relations_with_the_south_seas }
+}
+
+focus = {
+	id = EUF_fight_the_global_crisis
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_keep_trade_open
+	prerequisite = { focus = EUF_keep_trade_open }
+	prerequisite = { focus = EUF_shift_policy_focus }
+}
+
+focus = {
+	id = EUF_shift_policy_focus
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_demand_2nd_rome
+	prerequisite = { focus = EUF_demand_2nd_rome }
+}
+
+focus = {
+	id = EUF_lobby_for_increased_humanitarian_aid
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_fight_the_global_crisis
+	prerequisite = { focus = EUF_fight_the_global_crisis }
+}
+
+focus = {
+	id = EUF_send_more_people_to_space
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_lobby_for_increased_humanitarian_aid
+	prerequisite = { focus = EUF_lobby_for_increased_humanitarian_aid }
+}
+
+focus = {
+	id = EUF_adress_desertification
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_fight_the_global_crisis
+	prerequisite = { focus = EUF_fight_the_global_crisis }
+}
+
+focus = {
+	id = EUF_declare_nature_zones
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_adress_desertification
+	prerequisite = { focus = EUF_adress_desertification }
+}
+
+focus = {
+	id = EUF_the_looming_crisis
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_send_more_people_to_space
+	prerequisite = { focus = EUF_send_more_people_to_space }
+	prerequisite = { focus = EUF_declare_nature_zones }
+}
+
+focus = {
+	id = EUF_new_election_cycle
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_guarantees_of_autonomy
+	prerequisite = { focus = EUF_guarantees_of_autonomy }
+}
+
+focus = {
+	id = EUF_the_french_canidate
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_new_election_cycle
+	prerequisite = { focus = EUF_new_election_cycle }
+}
+
+focus = {
+	id = EUF_the_austrian_canidate
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_new_election_cycle
+	prerequisite = { focus = EUF_new_election_cycle }
+}
+
+focus = {
+	id = EUF_the_italian_canidate
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_new_election_cycle
+	prerequisite = { focus = EUF_new_election_cycle }
+}
+
+focus = {
+	id = EUF_pursue_welfare_polices
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_the_french_canidate
+	prerequisite = { focus = EUF_the_french_canidate }
+}
+
+focus = {
+	id = EUF_pension_expansion
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_pursue_welfare_polices
+	prerequisite = { focus = EUF_pursue_welfare_polices }
+}
+
+focus = {
+	id = EUF_expand_arts_programs
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_the_austrian_canidate
+	prerequisite = { focus = EUF_the_austrian_canidate }
+}
+
+focus = {
+	id = EUF_the_new_renaissance
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_expand_arts_programs
+	prerequisite = { focus = EUF_expand_arts_programs }
+	prerequisite = { focus = EUF_devotion_to_the_sciences }
+}
+
+focus = {
+	id = EUF_rebuild_old_infrastructure
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_expand_arts_programs
+	prerequisite = { focus = EUF_expand_arts_programs }
+}
+
+focus = {
+	id = EUF_devotion_to_the_sciences
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_the_italian_canidate
+	prerequisite = { focus = EUF_the_italian_canidate }
+}
+
+focus = {
+	id = EUF_review_our_role
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_pension_expansion
+	prerequisite = { focus = EUF_pension_expansion }
+	prerequisite = { focus = EUF_the_new_renaissance }
+	prerequisite = { focus = EUF_rebuild_old_infrastructure }
+}
+
+focus = {
+	id = EUF_2nd_in_the_federation
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_review_our_role
+	prerequisite = { focus = EUF_review_our_role }
+}
+
+focus = {
+	id = EUF_burial_of_industry
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_review_our_role
+	prerequisite = { focus = EUF_review_our_role }
+}
+
+focus = {
+	id = EUF_accept_the_status_quo
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_2nd_in_the_federation
+	prerequisite = { focus = EUF_2nd_in_the_federation }
+	prerequisite = { focus = EUF_burial_of_industry }
+}
+
+focus = {
+	id = EUF_formation_of_the_44th_mechanized_composite_regiment
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_intergration_with_efgf
+	prerequisite = { focus = EUF_intergration_with_efgf }
+}
+
+focus = {
+	id = EUF_the_king_of_battle
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_maintain_our_own_forces
+	prerequisite = { focus = EUF_maintain_our_own_forces }
+	prerequisite = { focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+}
+
+focus = {
+	id = EUF_improve_the_type_61
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_the_king_of_battle
+	prerequisite = { focus = EUF_the_king_of_battle }
+}
+
+focus = {
+	id = EUF_antiair_capabilities
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_improve_the_type_61
+	prerequisite = { focus = EUF_improve_the_type_61 }
+}
+
+focus = {
+	id = EUF_legacy_of_war
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_improve_the_type_61
+	prerequisite = { focus = EUF_improve_the_type_61 }
+}
+
+focus = {
+	id = EUF_keep_our_forces_mobile
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_legacy_of_war
+	prerequisite = { focus = EUF_legacy_of_war }
+}
+
+focus = {
+	id = EUF_war_never_changes
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_keep_our_forces_mobile
+	prerequisite = { focus = EUF_keep_our_forces_mobile }
+}
+
+focus = {
+	id = EUF_fortify_the_alps
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_war_never_changes
+	prerequisite = { focus = EUF_war_never_changes }
+}
+
+focus = {
+	id = EUF_fortress_britain
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_fortify_the_alps
+	prerequisite = { focus = EUF_fortify_the_alps }
+}
+
+focus = {
+	id = EUF_fall_back_from_odessa
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_war_never_changes
+	prerequisite = { focus = EUF_war_never_changes }
+}
+
+focus = {
+	id = EUF_retreat_from_the_danube
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_fall_back_from_odessa
+	prerequisite = { focus = EUF_fall_back_from_odessa }
+}
+
+focus = {
+	id = EUF_across_the_rhine
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_retreat_from_the_danube
+	prerequisite = { focus = EUF_retreat_from_the_danube }
+}
+
+focus = {
+	id = EUF_normandy_pocket
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_across_the_rhine
+	prerequisite = { focus = EUF_across_the_rhine }
+}
+
+focus = {
+	id = EUF_pull_the_enemy_into_iberia
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_normandy_pocket
+	prerequisite = { focus = EUF_normandy_pocket }
+}
+
+focus = {
+	id = EUF_hold_the_north
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_fall_back_from_odessa
+	prerequisite = { focus = EUF_fall_back_from_odessa }
+}
+
+focus = {
+	id = EUF_keep_a_foothold_in_northern_europe
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_hold_the_north
+	prerequisite = { focus = EUF_hold_the_north }
+}
+
+focus = {
+	id = EUF_expand_the_belfast_yards
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_fortress_britain
+	prerequisite = { focus = EUF_fortress_britain }
+}
+
+focus = {
+	id = EUF_draw_up_plans_for_a_counterattack
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_keep_a_foothold_in_northern_europe
+	prerequisite = { focus = EUF_keep_a_foothold_in_northern_europe }
+}
+
+focus = {
+	id = EUF_gibraltar_campaign
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_draw_up_plans_for_a_counterattack
+	prerequisite = { focus = EUF_draw_up_plans_for_a_counterattack }
+}
+
+focus = {
+	id = EUF_strike_from_the_north
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_keep_a_foothold_in_northern_europe
+	prerequisite = { focus = EUF_keep_a_foothold_in_northern_europe }
+}
+
+focus = {
+	id = EUF_sweep_across_europe
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_gibraltar_campaign
+	prerequisite = { focus = EUF_gibraltar_campaign }
+}
+
+focus = {
+	id = EUF_odessa_campaign
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = 0
+	y = 6
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_strike_from_the_north
+	prerequisite = { focus = EUF_strike_from_the_north }
+}
+
+focus = {
+	id = EUF_liberation_of_europe
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -1
+	y = 4
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_sweep_across_europe
+	prerequisite = { focus = EUF_sweep_across_europe }
+	prerequisite = { focus = EUF_odessa_campaign }
+}
+
+focus = {
+	id = EUF_prepare_for_war_in_siberia
+	icon = GFX_gosl_efsf_mobile_headquaters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_odessa_campaign
+	prerequisite = { focus = EUF_odessa_campaign }
+}

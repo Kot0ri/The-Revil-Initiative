@@ -1,4 +1,16 @@
 
+focus_tree = {
+	id = EUF
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = EUF
+		}
+	}
+	default = no
+
 focus = {
 	id = EUF_foundation_of_democracy
 	icon = GFX_gosl_efsf_mobile_headquaters
@@ -1103,4 +1115,5 @@ focus = {
 	}
 	relative_position_id = EUF_odessa_campaign
 	prerequisite = { focus = EUF_odessa_campaign }
+}
 }

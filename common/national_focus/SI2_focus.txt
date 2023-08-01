@@ -1,0 +1,1822 @@
+
+
+focus_tree = {
+	id = SI2
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = SI2
+		}
+	}
+	default = no
+	
+	focus = {
+	id = SI2_negotiations_with_federation_investors
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 29
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = SI2_building_contracts
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_negotiations_with_federation_investors
+	prerequisite = { focus = SI2_negotiations_with_federation_investors }
+}
+
+focus = {
+	id = SI2_full_federation_support
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_building_contracts
+	prerequisite = { focus = SI2_building_contracts }
+}
+
+focus = {
+	id = SI2_expanded_government_bureaucracy
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_building_contracts
+	prerequisite = { focus = SI2_building_contracts }
+}
+
+focus = {
+	id = SI2_expand_colony_tourism
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_building_contracts
+	prerequisite = { focus = SI2_building_contracts }
+	prerequisite = { focus = SI2_seek_closer_side_relations }
+}
+
+focus = {
+	id = SI2_contracts_between_officials
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_expanded_government_bureaucracy
+	prerequisite = { focus = SI2_expanded_government_bureaucracy }
+}
+
+focus = {
+	id = SI2_side_negotiations
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_contracts_between_officials
+	prerequisite = { focus = SI2_contracts_between_officials }
+}
+
+focus = {
+	id = SI2_side_diplomacy
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_side_negotiations
+	prerequisite = { focus = SI2_side_negotiations }
+	prerequisite = { focus = SI2_federation_port_officers }
+	prerequisite = { focus = SI2_social_welfare_policy }
+}
+
+focus = {
+	id = SI2_federation_military_bases
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_full_federation_support
+	prerequisite = { focus = SI2_full_federation_support }
+}
+
+focus = {
+	id = SI2_federation_port_officers
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_federation_military_bases
+	prerequisite = { focus = SI2_federation_military_bases }
+}
+
+focus = {
+	id = SI2_rework_work_visa_programs
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_expand_colony_tourism
+	prerequisite = { focus = SI2_expand_colony_tourism }
+}
+
+focus = {
+	id = SI2_social_welfare_policy
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_rework_work_visa_programs
+	prerequisite = { focus = SI2_rework_work_visa_programs }
+}
+
+focus = {
+	id = SI2_seek_accommodation_with_earths_government
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_side_diplomacy
+	prerequisite = { focus = SI2_side_diplomacy }
+}
+
+focus = {
+	id = SI2_own_earth_property
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_seek_accommodation_with_earths_government
+	prerequisite = { focus = SI2_seek_accommodation_with_earths_government }
+}
+
+focus = {
+	id = SI2_expansion_of_democratic_principals
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_social_welfare_policy
+	prerequisite = { focus = SI2_social_welfare_policy }
+}
+
+focus = {
+	id = SI2_ensure_election_security
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_expansion_of_democratic_principals
+	prerequisite = { focus = SI2_expansion_of_democratic_principals }
+}
+
+focus = {
+	id = SI2_begin_expansion_of_colony_industries
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 40
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = SI2_contact_private_investors
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_begin_expansion_of_colony_industries
+	prerequisite = { focus = SI2_begin_expansion_of_colony_industries }
+}
+
+focus = {
+	id = SI2_expand_colony_shipping
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_begin_expansion_of_colony_industries
+	prerequisite = { focus = SI2_begin_expansion_of_colony_industries }
+}
+
+focus = {
+	id = SI2_fundraise_new_building_projects
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_begin_expansion_of_colony_industries
+	prerequisite = { focus = SI2_begin_expansion_of_colony_industries }
+}
+
+focus = {
+	id = SI2_new_docks_for_ships
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_expand_colony_shipping
+	prerequisite = { focus = SI2_expand_colony_shipping }
+}
+
+focus = {
+	id = SI2_renegotiate_trade_deals
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_new_docks_for_ships
+	prerequisite = { focus = SI2_new_docks_for_ships }
+}
+
+focus = {
+	id = SI2_reduce_costs_for_immigrants
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_renegotiate_trade_deals
+	prerequisite = { focus = SI2_renegotiate_trade_deals }
+}
+
+focus = {
+	id = SI2_give_private_contractors_an_advantage
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_contact_private_investors
+	prerequisite = { focus = SI2_contact_private_investors }
+}
+
+focus = {
+	id = SI2_stock_investments
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_give_private_contractors_an_advantage
+	prerequisite = { focus = SI2_give_private_contractors_an_advantage }
+}
+
+focus = {
+	id = SI2_expand_labor_progams
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_fundraise_new_building_projects
+	prerequisite = { focus = SI2_fundraise_new_building_projects }
+}
+
+focus = {
+	id = SI2_expansion_of_public_services
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_expand_labor_progams
+	prerequisite = { focus = SI2_expand_labor_progams }
+}
+
+focus = {
+	id = SI2_open_up_new_bonds
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_stock_investments
+	prerequisite = { focus = SI2_stock_investments }
+}
+
+focus = {
+	id = SI2_hire_doctors_from_earth
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_expansion_of_public_services
+	prerequisite = { focus = SI2_expansion_of_public_services }
+}
+
+focus = {
+	id = SI2_invest_in_the_lunar_companies
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_reduce_costs_for_immigrants
+	prerequisite = { focus = SI2_reduce_costs_for_immigrants }
+	prerequisite = { focus = SI2_open_up_new_bonds }
+	prerequisite = { focus = SI2_hire_doctors_from_earth }
+}
+
+focus = {
+	id = SI2_question_of_colony_defence
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 51
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = SI2_formalize_military_service
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_question_of_colony_defence
+	prerequisite = { focus = SI2_question_of_colony_defence }
+}
+
+focus = {
+	id = SI2_reinforce_the_defense_forces
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_question_of_colony_defence
+	prerequisite = { focus = SI2_question_of_colony_defence }
+}
+
+focus = {
+	id = SI2_push_for_new_military_legislation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_formalize_military_service
+	prerequisite = { focus = SI2_formalize_military_service }
+}
+
+focus = {
+	id = SI2_begin_filed_tests_in_secret
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_push_for_new_military_legislation
+	prerequisite = { focus = SI2_push_for_new_military_legislation }
+}
+
+focus = {
+	id = SI2_designated_army_roles
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_begin_filed_tests_in_secret
+	prerequisite = { focus = SI2_begin_filed_tests_in_secret }
+}
+
+focus = {
+	id = SI2_official_military_allowance
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_designated_army_roles
+	prerequisite = { focus = SI2_designated_army_roles }
+}
+
+focus = {
+	id = SI2_expansion_of_the_armed_forces
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_official_military_allowance
+	prerequisite = { focus = SI2_official_military_allowance }
+	prerequisite = { focus = SI2_expand_nco_training }
+}
+
+focus = {
+	id = SI2_weapons_and_tactics_devlopment_taskforce
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_push_for_new_military_legislation
+	prerequisite = { focus = SI2_push_for_new_military_legislation }
+}
+
+focus = {
+	id = SI2_build_an_officer_school
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_weapons_and_tactics_devlopment_taskforce
+	prerequisite = { focus = SI2_weapons_and_tactics_devlopment_taskforce }
+}
+
+focus = {
+	id = SI2_minovsky_physics
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = SI2_weapons_and_tactics_devlopment_taskforce
+	prerequisite = { focus = SI2_weapons_and_tactics_devlopment_taskforce }
+}
+
+focus = {
+	id = SI2_expand_nco_training
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_build_an_officer_school
+	prerequisite = { focus = SI2_build_an_officer_school }
+}
+
+focus = {
+	id = SI2_begin_development_of_ms
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_minovsky_physics
+	prerequisite = { focus = SI2_minovsky_physics }
+}
+
+focus = {
+	id = SI2_first_ms_prototypes
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_begin_development_of_ms
+	prerequisite = { focus = SI2_begin_development_of_ms }
+}
+
+focus = {
+	id = SI2_lead_from_the_front
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_expand_nco_training
+	prerequisite = { focus = SI2_expand_nco_training }
+}
+
+focus = {
+	id = SI2_ms_command_squads
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_first_ms_prototypes
+	prerequisite = { focus = SI2_first_ms_prototypes }
+	prerequisite = { focus = SI2_lead_from_the_front }
+}
+
+focus = {
+	id = SI2_improve_funding
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_reinforce_the_defense_forces
+	prerequisite = { focus = SI2_reinforce_the_defense_forces }
+}
+
+focus = {
+	id = SI2_antirioting_training
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_improve_funding
+	prerequisite = { focus = SI2_improve_funding }
+}
+
+focus = {
+	id = SI2_antiterrorist_training
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_antirioting_training
+	prerequisite = { focus = SI2_antirioting_training }
+}
+
+focus = {
+	id = SI2_training_exercises_with_eff
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_improve_funding
+	prerequisite = { focus = SI2_improve_funding }
+}
+
+focus = {
+	id = SI2_send_ncos_to_earth
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_training_exercises_with_eff
+	prerequisite = { focus = SI2_training_exercises_with_eff }
+}
+
+focus = {
+	id = SI2_defense_force_intergration_with_efsf_stratcomm
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_antiterrorist_training
+	prerequisite = { focus = SI2_antiterrorist_training }
+	prerequisite = { focus = SI2_send_ncos_to_earth }
+}
+
+focus = {
+	id = SI2_expand_the_service
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 5
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_improve_funding
+	prerequisite = { focus = SI2_improve_funding }
+}
+
+focus = {
+	id = SI2_organizational_restructure
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_expand_the_service
+	prerequisite = { focus = SI2_expand_the_service }
+}
+
+focus = {
+	id = SI2_draw_up_a_new_draft_system
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 8
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_reinforce_the_defense_forces
+	prerequisite = { focus = SI2_reinforce_the_defense_forces }
+}
+
+focus = {
+	id = SI2_focus_on_defensive_tactics
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_draw_up_a_new_draft_system
+	prerequisite = { focus = SI2_draw_up_a_new_draft_system }
+}
+
+focus = {
+	id = SI2_antims_warfare
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_focus_on_defensive_tactics
+	prerequisite = { focus = SI2_focus_on_defensive_tactics }
+}
+
+focus = {
+	id = SI2_study_ms_designs
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_organizational_restructure
+	prerequisite = { focus = SI2_organizational_restructure }
+}
+
+focus = {
+	id = SI2_focus_on_petite_ms
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_study_ms_designs
+	prerequisite = { focus = SI2_study_ms_designs }
+}
+
+focus = {
+	id = SI2_license_ms_production_lines
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_focus_on_petite_ms
+	prerequisite = { focus = SI2_focus_on_petite_ms }
+}
+
+focus = {
+	id = SI2_distance_our_officials_from_federation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 23
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = SI2_seek_closer_side_relations
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_distance_our_officials_from_federation
+	prerequisite = { focus = SI2_distance_our_officials_from_federation }
+}
+
+focus = {
+	id = SI2_push_for_spacenoid_rights
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_seek_closer_side_relations
+	prerequisite = { focus = SI2_seek_closer_side_relations }
+}
+
+focus = {
+	id = SI2_joint_colony_defense_treaties
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_push_for_spacenoid_rights
+	prerequisite = { focus = SI2_push_for_spacenoid_rights }
+}
+
+focus = {
+	id = SI2_expansion_of_colony_garrison
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_joint_colony_defense_treaties
+	prerequisite = { focus = SI2_joint_colony_defense_treaties }
+}
+
+focus = {
+	id = SI2_build_up_our_forces_in_secret
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_expansion_of_colony_garrison
+	prerequisite = { focus = SI2_expansion_of_colony_garrison }
+}
+
+focus = {
+	id = SI2_dealings_with_the_lunar_companies
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI2_build_up_our_forces_in_secret
+	prerequisite = { focus = SI2_build_up_our_forces_in_secret }
+}
+
+focus = {
+	id = SI2_colony_research_initiative
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI2_dealings_with_the_lunar_companies
+	prerequisite = { focus = SI2_dealings_with_the_lunar_companies }
+}
+
+focus = {
+	id = SI2_get_away_from_federationzeon_disagreements
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 18
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = SI2_seek_a_middle_ground_stance
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI2_get_away_from_federationzeon_disagreements
+	prerequisite = { focus = SI2_get_away_from_federationzeon_disagreements }
+}
+
+focus = {
+	id = SI2_build_up_a_small_garrison
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI2_seek_a_middle_ground_stance
+	prerequisite = { focus = SI2_seek_a_middle_ground_stance }
+}
+
+focus = {
+	id = SI2_try_to_maintain_relations_with_both_powers
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI2_seek_a_middle_ground_stance
+	prerequisite = { focus = SI2_seek_a_middle_ground_stance }
+}
+
+focus = {
+	id = SI2_demilitarized_zone
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_build_up_a_small_garrison
+	prerequisite = { focus = SI2_build_up_a_small_garrison }
+}
+
+focus = {
+	id = SI2_be_a_free_trade_zone
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI2_try_to_maintain_relations_with_both_powers
+	prerequisite = { focus = SI2_try_to_maintain_relations_with_both_powers }
+}
+
+focus = {
+	id = SI2_growing_antifederation_sentiment
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 9
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = SI2_align_with_zeon
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI2_growing_antifederation_sentiment
+	prerequisite = { focus = SI2_growing_antifederation_sentiment }
+}
+
+focus = {
+	id = SI2_our_own_path
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_growing_antifederation_sentiment
+	prerequisite = { focus = SI2_growing_antifederation_sentiment }
+}
+
+focus = {
+	id = SI2_take_in_zeon_agitators
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_align_with_zeon
+	prerequisite = { focus = SI2_align_with_zeon }
+}
+
+focus = {
+	id = SI2_arms_deal_with_zeon
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI2_take_in_zeon_agitators
+	prerequisite = { focus = SI2_take_in_zeon_agitators }
+}
+
+focus = {
+	id = SI2_official_treaty
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI2_arms_deal_with_zeon
+	prerequisite = { focus = SI2_arms_deal_with_zeon }
+}
+
+focus = {
+	id = SI2_red_tape_on_weapons
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_demilitarized_zone
+	prerequisite = { focus = SI2_demilitarized_zone }
+}
+
+focus = {
+	id = SI2_offer_repairs_to_all_sides
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_be_a_free_trade_zone
+	prerequisite = { focus = SI2_be_a_free_trade_zone }
+}
+
+focus = {
+	id = SI2_backchannel_central
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_offer_repairs_to_all_sides
+	prerequisite = { focus = SI2_offer_repairs_to_all_sides }
+}
+
+focus = {
+	id = SI2_spy_stories
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_backchannel_central
+	prerequisite = { focus = SI2_backchannel_central }
+}
+
+focus = {
+	id = SI2_money_laundering
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_backchannel_central
+	prerequisite = { focus = SI2_backchannel_central }
+}
+
+focus = {
+	id = SI2_policy_of_noninvolvement
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_spy_stories
+	prerequisite = { focus = SI2_spy_stories }
+	prerequisite = { focus = SI2_money_laundering }
+}
+
+focus = {
+	id = SI2_license_zeon_ms
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_official_treaty
+	prerequisite = { focus = SI2_official_treaty }
+}
+
+focus = {
+	id = SI2_pilot_training_program
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_official_treaty
+	prerequisite = { focus = SI2_official_treaty }
+	prerequisite = { focus = SI2_guerrilla_training }
+}
+
+focus = {
+	id = SI2_loyalty_to_the_ideals_of_deikun
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_align_with_zeon
+	prerequisite = { focus = SI2_align_with_zeon }
+}
+
+focus = {
+	id = SI2_agitate_the_federation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_loyalty_to_the_ideals_of_deikun
+	prerequisite = { focus = SI2_loyalty_to_the_ideals_of_deikun }
+}
+
+focus = {
+	id = SI2_guerrilla_training
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_agitate_the_federation
+	prerequisite = { focus = SI2_agitate_the_federation }
+}
+
+focus = {
+	id = SI2_begin_armament_efforts
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_our_own_path
+	prerequisite = { focus = SI2_our_own_path }
+	prerequisite = { focus = SI2_our_own_path }
+}
+
+focus = {
+	id = SI2_political_moves
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -6
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_our_own_path
+	prerequisite = { focus = SI2_our_own_path }
+}
+
+focus = {
+	id = SI2_form_bespa
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_begin_armament_efforts
+	prerequisite = { focus = SI2_begin_armament_efforts }
+}
+
+focus = {
+	id = SI2_form_the_yellow_jacket
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_form_bespa
+	prerequisite = { focus = SI2_form_bespa }
+}
+
+focus = {
+	id = SI2_begin_building_a_fleet
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_form_bespa
+	prerequisite = { focus = SI2_form_bespa }
+}
+
+focus = {
+	id = SI2_angel_halo_project
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_begin_building_a_fleet
+	prerequisite = { focus = SI2_begin_building_a_fleet }
+}
+
+focus = {
+	id = SI2_follow_armonias_teachings
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_political_moves
+	prerequisite = { focus = SI2_political_moves }
+	prerequisite = { focus = SI2_political_moves }
+}
+
+focus = {
+	id = SI2_spread_the_word_to_other_colonies
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_follow_armonias_teachings
+	prerequisite = { focus = SI2_follow_armonias_teachings }
+}
+
+focus = {
+	id = SI2_kagaties_msission
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_political_moves
+	prerequisite = { focus = SI2_political_moves }
+}
+
+focus = {
+	id = SI2_secure_power
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_kagaties_msission
+	prerequisite = { focus = SI2_kagaties_msission }
+}
+
+focus = {
+	id = SI2_alliance_with_jupiter
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_secure_power
+	prerequisite = { focus = SI2_secure_power }
+}
+
+focus = {
+	id = SI2_receive_copious_supply_shipments
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_alliance_with_jupiter
+	prerequisite = { focus = SI2_alliance_with_jupiter }
+}
+
+focus = {
+	id = SI2_joint_ms_development
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_receive_copious_supply_shipments
+	prerequisite = { focus = SI2_receive_copious_supply_shipments }
+}
+
+focus = {
+	id = SI2_rise_of_a_new_status_quo
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_spread_the_word_to_other_colonies
+	prerequisite = { focus = SI2_spread_the_word_to_other_colonies }
+}
+
+focus = {
+	id = SI2_volunteers_from_around_the_earthsphere
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_rise_of_a_new_status_quo
+	prerequisite = { focus = SI2_rise_of_a_new_status_quo }
+}
+
+focus = {
+	id = SI2_bring_out_the_guillotines
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_political_moves
+	prerequisite = { focus = SI2_political_moves }
+}
+
+focus = {
+	id = SI2_a_new_harmony
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_volunteers_from_around_the_earthsphere
+	prerequisite = { focus = SI2_volunteers_from_around_the_earthsphere }
+}
+
+focus = {
+	id = SI2_war_with_earth
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_joint_ms_development
+	prerequisite = { focus = SI2_joint_ms_development }
+}
+
+focus = {
+	id = SI2_guarantees_of_protection
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_federation_port_officers
+	prerequisite = { focus = SI2_federation_port_officers }
+}
+
+focus = {
+	id = SI2_begin_conscription
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_guarantees_of_protection
+	prerequisite = { focus = SI2_guarantees_of_protection }
+}
+
+focus = {
+	id = SI2_prepare_for_a_siege
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_begin_conscription
+	prerequisite = { focus = SI2_begin_conscription }
+}
+
+focus = {
+	id = SI2_earth_use_ms
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_form_the_yellow_jacket
+	prerequisite = { focus = SI2_form_the_yellow_jacket }
+}
+}

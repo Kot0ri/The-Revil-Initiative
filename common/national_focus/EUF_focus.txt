@@ -775,7 +775,7 @@ focus = {
 	}
 	completion_reward = {
 	add_tech_bonus = {
-		
+		name = mbt
 	}
 	}
 	relative_position_id = EUF_the_king_of_battle
@@ -939,7 +939,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_temporary_buff_to_units = {
+		combat_defense = +0.50
+	}
 	}
 	relative_position_id = EUF_across_the_rhine
 	prerequisite = { focus = EUF_across_the_rhine }

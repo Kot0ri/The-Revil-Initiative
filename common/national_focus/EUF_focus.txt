@@ -642,7 +642,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+
 	}
 	relative_position_id = EUF_expand_arts_programs
 	prerequisite = { focus = EUF_expand_arts_programs }
@@ -658,7 +658,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_research_slot = 1
 	}
 	relative_position_id = EUF_the_italian_canidate
 	prerequisite = { focus = EUF_the_italian_canidate }
@@ -774,7 +774,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_tech_bonus = {
+		
+	}
 	}
 	relative_position_id = EUF_the_king_of_battle
 	prerequisite = { focus = EUF_the_king_of_battle }
@@ -806,7 +808,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_doctrine_cost_reduction = {
+		cost_reduction = 0.5
+		name = mobile_warfare
+	}
 	}
 	relative_position_id = EUF_improve_the_type_61
 	prerequisite = { focus = EUF_improve_the_type_61 }

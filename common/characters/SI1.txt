@@ -1,4 +1,5 @@
 characters={
+	##Leaders
 	SI1_zahns_zeonist_senator={
 		name=SI1_zahns_zeonist_senator
 		portraits={
@@ -7,9 +8,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=contlism
+			ideology=zeonism
 			expire="100.1.1.1"
-			id=-1
 		}
 	}
 	SI1_zahns_spacenoid_supremacist_senator={
@@ -20,9 +20,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=space_elitism
+			ideology=spacenoids_supremacist
 			expire="100.1.1.1"
-			id=-1
 		}
 	}
 	SI1_zahns_earth_supremacist_senator={
@@ -33,9 +32,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=earth_elitism
+			ideology=military_junta
 			expire="100.1.1.1"
-			id=-1
 		}
 	}
 	SI1_zahns_democrats_senator={
@@ -46,9 +44,33 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=conservatism
+			ideology=liberalism
 			expire="100.1.1.1"
-			id=-1
 		}
 	}
+
+	SI1_casval={
+	name="Casval Rem Deikun"
+	portraits={
+		civilian={
+			large="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+	}
+	country_leader={
+		ideology=
+		traits={}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+	 traits={ akai_suisei newtype1 war_hero anti_zabi_party trickster naval_invader pilot }
+		skill=6
+		attack_skill=8
+		defense_skill=5
+		planning_skill=5
+		logistics_skill=5
+	}
+}
 }

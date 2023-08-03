@@ -1,0 +1,27 @@
+characters={
+#Leaders
+	AFZ_zane_akunyili={
+	name="Zane Akunyili"
+	portraits={
+		civilian={
+			large="gfx/leaders/AFZ/Zane_Akunyili.dds"
+		}
+		army={
+			large="gfx/leaders/AFZ/Zane_Akunyili.dds"
+		}
+	}
+	country_leader={
+		ideology=conservatism
+		traits={industrial_tycoon}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = {politically_connected}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+}

@@ -19,6 +19,16 @@ leader_traits = {
 		surrender_limit = 0.70
 	}
 
+#Zane Trait
+	industrial_tycoon = {
+	sprite = 10
+	random = yes
+	production_speed_infrastructure_factor = 0.1
+	production_speed_rail_way_factor = 0.1
+	production_speed_arms_factory_factor = 0.1
+	}
+
+
 #Gihren?
 	iq240 = {
 		random = no
@@ -2921,6 +2931,65 @@ leader_traits = {
 				factor = 0
 				has_navy_size = { unit = carrier size < 1 }
 			}
+		}
+	}
+
+	#Economy 
+	war_industrialist = {
+		sprite = 10
+		random = yes
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_fuel_silo_factor = 0.1
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	captain_of_industry = {
+		sprite = 10
+		random = yes
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		production_speed_rail_way_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 1.8
+			}
+		}
+	}
+
+	financial_expert = {
+		sprite = 10
+		random = yes
+		consumer_goods_factor = -0.05
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	economist = {
+		sprite = 10
+		random = yes
+		production_factory_max_efficiency_factor = 0.05
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	editor = {
+		sprite = 10
+		random = yes
+		political_power_factor = 0.05
+		stability_factor = 0.05
+
+		ai_will_do = {
+			factor = 2
 		}
 	}
 

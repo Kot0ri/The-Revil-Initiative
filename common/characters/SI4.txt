@@ -1,4 +1,5 @@
 characters={
+	##Leaders
 	SI4_flemming={
 		name=SI4_flemming
 		portraits={
@@ -7,9 +8,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=contlism
+			ideology=conservatism
 			expire="100.1.1.1"
-			id=-1
 		}
 	}
 	SI4_moores_zeonist_senator={
@@ -18,6 +18,10 @@ characters={
 			civilian={
 				large="gfx/leaders/Portrait_mob_leader_2.dds"
 			}
+		}
+				country_leader={
+			ideology=zeonism
+			expire="100.1.1.1"
 		}
 	}
 	SI4_moores_spacenoid_supremacist_senator={
@@ -28,9 +32,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=space_elitism
+			ideology=spacenoid_supremacist
 			expire="100.1.1.1"
-			id=-1
 		}
 	}
 	SI4_moores_earth_supremacist_senator={
@@ -41,9 +44,8 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=earth_elitism
+			ideology=military_junta
 			expire="100.1.1.1"
-			id=-1
 		}
 	}
 	SI4_moores_democrats_senator={
@@ -54,9 +56,91 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=conservatism
+			ideology=socialism
 			expire="100.1.1.1"
-			id=-1
 		}
 	}
+
+	##Generals
+
+	SI4_io_fleming={
+	name="Io Fleming"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/SI4/IO_Fleming.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot politically_connected media_personality }
+		skill=4
+		attack_skill=4
+		defense_skill=4
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+	SI4_alicia={
+	name="Alicia"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/SI4/Alica.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+##Admirals
+SI4_graham = {
+	name="Graham"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "GFX/leaders/SI4/Graham.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		maneuvering_skill=2
+		coordination_skill=2
+	}
+}
+
+SI4_claudia = {
+	name="Claudia Peer"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/SI4/Claudia_peer.dds"
+		}
+	}
+	navy_leader={
+		traits={politically_connected}
+		skill=2
+		attack_skill=1
+		defense_skill=2
+		maneuvering_skill=2
+		coordination_skill=2
+	}
+}
 }

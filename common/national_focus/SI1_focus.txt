@@ -1401,6 +1401,11 @@ focus = {
 		set_politics = {
 			ruling_party = aristocracy
 		}
+		add_popularity = {
+			ideology = aristocracy
+			popularity = 0.35
+		}
+		add_political_power = 150
 	}
 	relative_position_id = SI1_the_identity_of_char_aznable
 	prerequisite = { focus = SI1_the_identity_of_char_aznable }
@@ -1418,6 +1423,10 @@ focus = {
 	completion_reward = {
 		add_country_leader_trait = kings_return
 		add_country_leader_trait = fanatic_followers
+		set_autonomy = {
+			target = SI1
+			autonomy_state = autonomy_free
+		}
 	}
 	relative_position_id = SI1_legacy_of_the_father
 	prerequisite = { focus = SI1_legacy_of_the_father }

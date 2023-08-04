@@ -1484,7 +1484,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_manpower = 50000
 	}
 	relative_position_id = SI1_militarization_of_side_1
 	prerequisite = { focus = SI1_militarization_of_side_1 }
@@ -1634,7 +1634,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+
 	}
 	relative_position_id = SI1_stroke_tensions_between_the_siblings
 	prerequisite = { focus = SI1_stroke_tensions_between_the_siblings }
@@ -1802,7 +1802,7 @@ focus = {
 }
 
 focus = {
-	id = SI1_negoptiations_with_the_other_sides
+	id = SI1_negotiations_with_the_other_sides
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = -3
@@ -1829,8 +1829,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = SI1_negoptiations_with_the_other_sides
-	prerequisite = { focus = SI1_negoptiations_with_the_other_sides }
+	relative_position_id = SI1_negotiations_with_the_other_sides
+	prerequisite = { focus = SI1_negotiations_with_the_other_sides }
 }
 
 focus = {
@@ -1859,6 +1859,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_research_slot = 1
 	
 	}
 	relative_position_id = SI1_reach_out_to_axis
@@ -1892,7 +1893,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		add_research_slot = 1
 	}
 	relative_position_id = SI1_preparations_for_the_char_continuation_project
 	prerequisite = { focus = SI1_preparations_for_the_char_continuation_project }

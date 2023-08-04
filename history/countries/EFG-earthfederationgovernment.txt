@@ -100,11 +100,11 @@ if = {
 	}
 	set_autonomy = {
 		target = EUF
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_dominion
 	}
 	set_autonomy = {
 		target = MEZ
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_dominion
 	}
 	set_autonomy = {
 		target = AFZ
@@ -112,7 +112,7 @@ if = {
 	}
 	set_autonomy = {
 		target = SSA
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_dominion
 	}
 }
 

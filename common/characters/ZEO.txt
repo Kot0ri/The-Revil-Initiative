@@ -144,8 +144,41 @@ ZEO_kycilia_zabi = {
 	}
 	traits={}
 }
-}
-}
+
+ZEO_cecilia_irene = {
+	name=ZEO_cecilia_irene
+	portraits={
+		army = {
+			small=GFX_idea_cecilia_irene
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = cecilia_irene
+		allowed = {
+			original_tag = ZEO
+		}
+		traits = {
+			cecilia_trait
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = sweep_away_zabi_2
+					has_global_flag = zeon_great_purge
+				}
+			}
+		}
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				has_completed_focus = zeon_repression_of_deikun
+			}
+		}
+	}
 }
 	##Field Marshalls
 	ZEO_henri_schlesser={
@@ -252,41 +285,7 @@ ZEO_kycilia_zabi = {
 	}
 
 	##Old
-	ZEO_cecilia_irene = {
-		name=ZEO_cecilia_irene
-		portraits={
-			army = {
-				small=GFX_idea_cecilia_irene
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = cecilia_irene
-			allowed = {
-				original_tag = ZEO
-			}
-			traits = {
-				cecilia_trait
-			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = sweep_away_zabi_2
-						has_global_flag = zeon_great_purge
-					}
-				}
-			}
-			modifier = {
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 2
-					has_completed_focus = zeon_repression_of_deikun
-				}
-			}
-		}
-	}
+
 
 	ZEO_altesia_som_deikun = {
 		name=ZEO_altesia_som_deikun

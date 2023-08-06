@@ -293,7 +293,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		add_threat = 10
 	}
 	relative_position_id = ZEO_ties_with_granada
 	prerequisite = { focus = ZEO_ties_with_granada }
@@ -357,6 +357,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_threat = 5
 	}
 	relative_position_id = ZEO_ties_with_granada
 	prerequisite = { focus = ZEO_ties_with_granada }
@@ -373,7 +374,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		add_threat = 15
 	}
 	relative_position_id = ZEO_seek_to_station_troops_in_granada
 	prerequisite = { focus = ZEO_seek_to_station_troops_in_granada }

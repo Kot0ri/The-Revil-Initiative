@@ -1986,6 +1986,14 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 50000
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 12000
+		}
 	}
 	relative_position_id = ZEO_call_up_reserves
 	prerequisite = { focus = ZEO_call_up_reserves }
@@ -2062,6 +2070,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_manpower = 50000
+		add_stability = -0.15
 	}
 	relative_position_id = ZEO_the_gravity_front
 	prerequisite = { focus = ZEO_the_gravity_front }

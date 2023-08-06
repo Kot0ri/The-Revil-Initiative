@@ -341,6 +341,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		
 	}
 	relative_position_id = ZEO_pressure_the_politicians
 	prerequisite = { focus = ZEO_pressure_the_politicians }
@@ -388,6 +389,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		set_autonomy = {
+			target = ZEO
+			autonomy_state = autonomy_free
+		}
 	}
 	relative_position_id = ZEO_minovsky_incident
 	prerequisite = { focus = ZEO_minovsky_incident }
@@ -415,7 +420,7 @@ focus = {
 
 focus = {
 	id = ZEO_state_funeral
-	icon = GFX_focus_eng_global_defense
+	icon = GFX_capitalizing_on_the_fame_of_parent
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	cost = 2
 	x = 0
@@ -424,10 +429,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = EFS
-		}
+		add_war_support = 0.15
 	}
 	relative_position_id = ZEO_invade_earth
 	prerequisite = { focus = ZEO_invade_earth }
@@ -435,7 +437,7 @@ focus = {
 
 focus = {
 	id = ZEO_colony_drop_on_jaburo
-	icon = GFX_focus_eng_global_defense
+	icon = GFX_goal_colony_alliance
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	cost = 2
 	x = 0
@@ -444,10 +446,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		create_wargoal = {
-			type = puppet_wargoal_focus
-			target = EFS
-		}
+
 	}
 	relative_position_id = ZEO_state_funeral
 	prerequisite = { focus = ZEO_state_funeral }

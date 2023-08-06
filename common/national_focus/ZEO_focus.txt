@@ -393,6 +393,7 @@ focus = {
 			target = ZEO
 			autonomy_state = autonomy_free
 		}
+		add_threat = 15
 	}
 	relative_position_id = ZEO_minovsky_incident
 	prerequisite = { focus = ZEO_minovsky_incident }
@@ -420,7 +421,7 @@ focus = {
 
 focus = {
 	id = ZEO_state_funeral
-	icon = GFX_capitalizing_on_the_fame_of_parent
+	icon = GFX_goal_capitalizing_on_the_fame_of_parent
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	cost = 2
 	x = 0

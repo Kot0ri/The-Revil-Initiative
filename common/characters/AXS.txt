@@ -153,4 +153,94 @@ AXS_fernandez={
 		}
 	}
 }	
+
+AXS_agawa={
+	name="Istuki Agawa"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = ramba_ral
+		allowed = {
+			original_tag = AXS
+		}
+		traits = {
+			army_logistics_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}	
+
+AXS_williams={
+	name="Alexander Williams"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = ramba_ral
+		allowed = {
+			original_tag = AXS
+		}
+		traits = {
+			army_chief_maneuver_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}	
+
+AXS_karlsson={
+	name="Johan Karlsson"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = ramba_ral
+		allowed = {
+			original_tag = AXS
+		}
+		traits = {
+			army_chief_organizational_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
 }

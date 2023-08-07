@@ -411,6 +411,37 @@ ZEO_cecilia_irene = {
 	}
 }
 
+##High Command
+	ZEO_nakamura={
+		name="Asashi Nakamura"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
 	##Old
 
 

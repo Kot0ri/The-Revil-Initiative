@@ -326,9 +326,13 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	add_tech_bonus = {
-		name = beam_rifle_module_1
-	}
+		add_tech_bonus = {
+			name = side_6_energy_cap_leaks
+			bonus = 0.5
+			ahead_reduction = 1
+			uses = 1
+			technology = mega_particle2
+		}
 	}
 	relative_position_id = ZEO_secure_ranks_neutrality
 	prerequisite = { focus = ZEO_secure_ranks_neutrality }

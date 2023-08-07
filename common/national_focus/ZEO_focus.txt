@@ -2240,6 +2240,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		every_army_leader = {
+			add_planning = 1
+		}
 	}
 	relative_position_id = ZEO_puneemunde
 	prerequisite = { focus = ZEO_puneemunde }

@@ -442,6 +442,36 @@ ZEO_cecilia_irene = {
 		}
 	}
 
+	ZEO_oberstein={
+		name="Hanz Oberstein"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				army_chief_morale_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
 	ZEO_takeda={
 		name="Ryusei Takeda"
 		portraits={
@@ -461,6 +491,66 @@ ZEO_cecilia_irene = {
 			}
 			traits = {
 				navy_chief_reform_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	ZEO_schmidt={
+		name="Aelbehrt Schmidt"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				navy_chief_maneuver_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	ZEO_pierre={
+		name="Jean-Louis Pierre"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				air_chief_ground_support_2
 			}
 			ai_will_do = {
 				factor = 2

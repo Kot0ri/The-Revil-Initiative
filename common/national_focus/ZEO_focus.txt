@@ -161,7 +161,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		add_popularity = {
+			ideology = supremacist
+			popularity = 0.15
+		}
 	}
 	relative_position_id = ZEO_gihrens_speeches
 	prerequisite = { focus = ZEO_gihrens_speeches }
@@ -326,7 +329,13 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-
+		add_tech_bonus = {
+			name = side_6_energy_cap_leaks
+			bonus = 0.5
+			ahead_reduction = 1
+			uses = 1
+			technology = mega_particle2
+		}
 	}
 	relative_position_id = ZEO_secure_ranks_neutrality
 	prerequisite = { focus = ZEO_secure_ranks_neutrality }
@@ -391,9 +400,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		set_autonomy = {
-			target = ZEO
-			autonomy_state = autonomy_free
+		OVERLORD = {
+			set_autonomy = {
+				target = ZEO
+				autonomy_state = autonomy_free
+			}
 		}
 		add_threat = 15
 	}
@@ -1123,7 +1134,7 @@ focus = {
 		add_tech_bonus = {
 			name = motorized_bonus
 			ahead_reduction = 1
-			bonus = 50
+			bonus = 0.50
 			uses = 1
 			category = motorized_equipment
 		}
@@ -2214,6 +2225,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = zeon_puneemunde_institution
 	}
 	prerequisite = { focus = ZEO_war_preperations }
 }

@@ -400,9 +400,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		set_autonomy = {
-			target = ZEO
-			autonomy_state = autonomy_free
+		OVERLORD = {
+			set_autonomy = {
+				target = ZEO
+				autonomy_state = autonomy_free
+			}
 		}
 		add_threat = 15
 	}

@@ -622,6 +622,36 @@ ZEO_mackenson={
 		}
 	}
 
+	ZEO_finnegan={
+		name="Elise Ann Finnegan"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				air_chief_reform_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
 	ZEO_rossi={
 		name="Alessandro Rossi"
 		portraits={

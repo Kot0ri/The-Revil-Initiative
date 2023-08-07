@@ -532,6 +532,36 @@ ZEO_mackenson={
 		}
 	}
 
+	ZEO_tripitz={
+		name="Wilhelm Von Tripitz"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				navy_capital_ship_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
 	ZEO_takeda={
 		name="Ryusei Takeda"
 		portraits={
@@ -581,6 +611,96 @@ ZEO_mackenson={
 			}
 			traits = {
 				navy_chief_maneuver_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	ZEO_rossi={
+		name="Alessandro Rossi"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				air_naval_strike_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	ZEO_varga={
+		name="Istvan Varga"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				air_air_superiority_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	ZEO_georgiev={
+		name="Boyan Georgiev"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				air_close_air_support_2
 			}
 			ai_will_do = {
 				factor = 2

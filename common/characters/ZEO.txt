@@ -442,6 +442,36 @@ ZEO_cecilia_irene = {
 		}
 	}
 
+	ZEO_takeda={
+		name="Ryusei Takeda"
+		portraits={
+			army={
+				small=GFX_idea_ramba_ral_pa
+			}
+		}
+
+
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = ramba_ral
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				navy_chief_reform_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
 	##Old
 
 

@@ -89,7 +89,11 @@ characters={
 		name=ZEO_gihren_zabi
 		portraits={
 			civilian={
-				large="gfx/leaders/ZEO/Portrait_Zeon_gihren_zabi.dds"
+				large= "gfx/leaders/ZEO/GihrenZabi.dds"
+			}
+
+			army={
+				large= "gfx/leaders/ZEO/GihrenZabi.dds"
 			}
 			army = {
 				small=GFX_idea_gihren_zabi
@@ -107,7 +111,9 @@ ZEO_kycilia_zabi = {
 	name=ZEO_kycilia_zabi
 	portraits={
 		civilian={
-			large="gfx/leaders/ZEO/Portrait_Zeon_kycilia_zabi.dds"
+			large= "gfx/leaders/ZEO/Kycillia_Zabi.dds"}
+			army={
+			large= "gfx/leaders/ZEO/Kycillia_Zabi.dds" }
 		}
 		army = {
 			small=GFX_idea_kycilia_zabi
@@ -204,7 +210,7 @@ ZEO_cecilia_irene = {
 	}
 
 	ZEO_hoth_fieseler={
-		name="Hot Fieseler"
+		name="Hoth Fieseler"
 		portraits={
 			army={
 				small=GFX_idea_gadem
@@ -264,6 +270,148 @@ ZEO_cecilia_irene = {
 			logistics_skill=2
 		}
 	}
+
+	    ZEO_ashley_horn={
+		name="Ashley Horn"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ashley_Horn.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		ZEO_barhst={
+		name="Barhst"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Barshts.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		ZEO_ellic_hugo={
+		name="Ellic Hugo"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ellic_Hugo.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+		ZEO_seak_hugo={
+		name="Seak Hugo"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large= "Revil/gfx/leaders/ZEO/Seak_Hugo.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		ZEO_mellic_hugo={
+		name="Mellic Hugo"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="Revil/gfx/leaders/ZEO/Mellic_Hugo.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+		ZEO_birgitte_knudsen={
+		name="Birgitte Knudsen"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Birgitte_Knudsen.dds"
+			}
+		}
+		corps_commander={
+			traits={newtype1 pilot}
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+
+	##Admirals
+	ZEO_asakura = {
+	name="Asakura"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/ZEO/Asakura.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		maneuvering_skill=1
+		coordination_skill=2
+	}
+}
 
 	##Old
 

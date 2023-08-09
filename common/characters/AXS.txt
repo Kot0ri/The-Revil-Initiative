@@ -257,13 +257,44 @@ AXS_aalto={
 		slot = high_command
 		ledger = army
 		cost = 100
-		idea_token = karlsson
+		idea_token = aalto
 		allowed = {
 			original_tag = AXS
 		}
 		traits = {
 			attack_skill=2
 
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+}
+
+AXS_weber={
+	name="Stefan Weber"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = weber
+		allowed = {
+			original_tag = AXS
+		}
+		traits = {
+			army_chief_drill_2
+		}
 		ai_will_do = {
 			factor = 2
 			modifier = {

@@ -382,5 +382,124 @@ ABQ_weigelman={
 }
 ##High Command
 
+ABQ_banks={
+	name="Richard Banks"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = banks
+		allowed = {
+			original_tag = ABQ
+		}
+		traits = {
+			army_chief_offensive_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+ABQ_williams={
+	name="Jenifer Williams"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = williams
+		allowed = {
+			original_tag = ABQ
+		}
+		traits = {
+			army_chief_organizational_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+ABQ_huang={
+	name="Gui Huang"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = huang
+		allowed = {
+			original_tag = ABQ
+		}
+		traits = {
+			army_chief_morale_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+ABQ_becker={
+	name="Andreas Becker"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = becker
+		allowed = {
+			original_tag = ABQ
+		}
+		traits = {
+			army_logistics_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
 
 }

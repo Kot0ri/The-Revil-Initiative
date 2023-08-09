@@ -1,0 +1,533 @@
+ideas = {
+	country = {
+		##Ideas
+		gihrens_headquarters = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			command_power_gain_mult = 0.05
+			}
+			removal_cost = -1
+		}
+
+		##Designers
+		mobilesuit_manufacturer = {
+			designer = yes
+			zeonic = {
+				allowed = {
+					original_tag = ABQ
+				}
+				available = {
+					NOT = {
+						has_global_flag = ABQnic_is_not_yes
+					}
+				}
+		  research_bonus = {
+					ABQnic_mobilesuit = 0.1
+			mobilesuit = 0.05
+				}
+				equipment_bonus = {
+					archetype_ms05 = {
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_ms06_s = {
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_ms06_k = {
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_ms07 = {
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_ms07_b_3 = {
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_ms11 = {
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_ms14 = {
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_ms14_c = {
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_ms14_fs = {
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+				}
+				traits = { ABQnic_ms_trait }
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						factor = 2
+						date > 77.1.1
+					}
+					modifier = {
+						factor = 2
+						is_historical_focus_on = yes
+					}
+				}
+			}
+			zimmad = {
+				allowed = {
+					original_tag = ABQ
+				}
+		  research_bonus = {
+					zimmad_mobilesuit = 0.1
+			mobilesuit = 0.05
+				}
+				equipment_bonus = {
+					archetype_ms08 = {
+						maximum_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+					archetype_ms08_ex = {
+						maximum_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+					archetype_ms09 = {
+						maximum_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+					archetype_ms09_k = {
+						maximum_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+					archetype_ms09_h = {
+						maximum_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+					archetype_yms15 = {
+						maximum_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+					archetype_msm03 = {
+						naval_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+					archetype_msm03_c = {
+						naval_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+					archetype_ems10 = {
+						maximum_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+					archetype_ems10_s = {
+						maximum_speed = 0.1
+						reliability = 0.03
+						build_cost_ic = -0.1
+					}
+				}
+				traits = { zimmad_ms_trait }
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						factor = 2
+						date > 78.1.1
+					}
+				}
+			}
+			mip = {
+				allowed = {
+					original_tag = ABQ
+				}
+		  research_bonus = {
+					mip_mobilesuit = 0.1
+			mobilesuit = 0.05
+				}
+				equipment_bonus = {
+					archetype_msm07 = {
+						armor_value = 0.05
+						max_strength = 0.2
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_msm07_e = {
+						armor_value = 0.05
+						max_strength = 0.2
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_msm08 = {
+						defense = 0.05
+						breakthrough = 0.05
+						armor_value = 0.05
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_max03 = {
+						defense = 0.1
+						breakthrough = 0.1
+						armor_value = 0.1
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_mam07 = {
+						armor_value = 0.1
+						max_strength = 0.2
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+				}
+				traits = { mip_ms_trait }
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						factor = 2
+						date > 78.1.1
+					}
+				}
+			}
+			zwinemn = {
+				allowed = {
+					original_tag = ABQ
+				}
+		  research_bonus = {
+					zwinemn_mobilesuit = 0.1
+			mobilesuit = 0.05
+				}
+				equipment_bonus = {
+					archetype_msm04 = {
+						sub_visibility = -0.2
+						sub_detection = 0.2
+						surface_detection = 0.2
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_msm04_n = {
+						recon = 0.2
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_msm04_g = {
+						soft_attack = 0.1
+						hard_attack = 0.1
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+					archetype_ems05 = {
+						defense = 0.1
+						breakthrough = 0.1
+						armor_value = 0.1
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+				}
+				traits = { zwinemn_ms_trait }
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 1
+						date > 78.1.1
+					}
+					modifier = {
+						factor = 0
+						is_historical_focus_on = yes
+					}
+				}
+			}
+		}
+		ammunition_manufacturer = {
+			designer = yes
+			mmp = {
+				allowed = {
+					original_tag = ABQ
+				}
+		  research_bonus = {
+					mobilesuit_weapon_machinegun = 0.1
+			mobilesuit_weapon_bullet = 0.05
+				}
+				equipment_bonus = {
+					archetype_ms_weapon_machinegun = {
+						soft_attack = 0.2
+						hard_attack = 0.2
+						ap_attack = 0.2
+						reliability = 0.05
+						build_cost_ic = -0.1
+					}
+				}
+				traits = { mmp_weapon_trait }
+				ai_will_do = {
+					factor = 2
+				}
+			}
+			handl = {
+				allowed = {
+					original_tag = ABQ
+				}
+		  research_bonus = {
+					mobilesuit_weapon_bazooka = 0.1
+			mobilesuit_weapon_bullet = 0.05
+				}
+				equipment_bonus = {
+					archetype_ms_weapon_bazooka = {
+						soft_attack = -0.05
+						hard_attack = -0.05
+						ap_attack = -0.05
+						reliability = -0.05
+						build_cost_ic = -0.2
+					}
+				}
+				traits = { handl_weapon_trait }
+				ai_will_do = {
+					factor = 2
+				}
+			}
+			val = {
+				allowed = {
+					original_tag = ABQ
+				}
+		  research_bonus = {
+					mobilesuit_weapon_bazooka = 0.1
+			mobilesuit_weapon_bullet = 0.05
+				}
+				equipment_bonus = {
+					archetype_ms_weapon_bazooka = {
+						soft_attack = 0.2
+						hard_attack = 0.2
+						ap_attack = 0.2
+						reliability = 0.05
+						build_cost_ic = 0.1
+					}
+				}
+				traits = { val_weapon_trait }
+				ai_will_do = {
+					factor = 2
+				}
+			}
+		}
+		beam_manufacturer = {
+			designer = yes
+			kia = {
+				allowed = {
+					original_tag = ABQ
+				}
+		  research_bonus = {
+					naval_mobilesuit = 0.1
+			mobilesuit_weapon_beam = 0.05
+				}
+				equipment_bonus = {
+					archetype_msm03 = {
+						sub_attack = 0.15
+						torpedo_attack = 0.25
+						build_cost_ic = 0.05
+					}
+					archetype_msm07 = {
+						sub_attack = 0.15
+						torpedo_attack = 0.25
+						build_cost_ic = 0.05
+					}
+					archetype_msm10 = {
+						sub_attack = 0.15
+						torpedo_attack = 0.25
+						build_cost_ic = 0.05
+					}
+					archetype_msn02 = {
+						soft_attack = 0.3
+						hard_attack = 0.3
+						build_cost_ic = 0.05
+					}
+				}
+				traits = { kia_weapon_trait }
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 2
+						date > 78.1.1
+					}
+					modifier = {
+						factor = 0.5
+						has_tech = mega_particle2
+					}
+				}
+			}
+			albert = {
+				allowed = {
+					original_tag = ABQ
+				}
+		  research_bonus = {
+					mobilesuit_weapon_beam = 0.1
+				}
+				equipment_bonus = {
+					archetype_ms_weapon_beamgun = {
+						soft_attack = 0.1
+						hard_attack = 0.1
+						ap_attack = 0.2
+						reliability = 0.05
+						build_cost_ic = 0.05
+					}
+					archetype_ms_weapon_beamsord = {
+						soft_attack = 0.1
+						hard_attack = 0.1
+						build_cost_ic = 0.05
+					}
+				}
+				traits = { albert_weapon_trait }
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 2
+						has_tech = mega_particle2
+					}
+				}
+			}
+			coda = {
+				allowed = {
+					original_tag = ABQ
+				}
+		  research_bonus = {
+					mobilearmor = 0.1
+			mobilesuit_weapon_beam = 0.05
+				}
+				equipment_bonus = {
+					archetype_msm07_di = {
+						air_attack = 0.2
+						air_bombing = 0.2
+						air_ground_attack = 0.2
+						build_cost_ic = 0.05
+					}
+					archetype_ma08 = {
+						soft_attack = 0.2
+						hard_attack = 0.2
+						air_attack = 0.2
+						build_cost_ic = 0.05
+					}
+				}
+				traits = { coda_weapon_trait }
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+		armament_manufacturer = {
+			khanom = {
+				allowed = {
+					original_tag = ABQ
+				}
+				modifier = {
+				}
+		  research_bonus = {
+			mobilesuit = 0.03
+			mobilesuit_weapon = 0.03
+				}
+				traits = { khanom_trait }
+				ai_will_do = {
+					factor = 2
+				}
+			}
+			zas = {
+				allowed = {
+					original_tag = ABQ
+				}
+				traits = { zas_trait }
+				research_bonus = {
+					nuclear_reactor = 0.1
+			mobilesuit = 0.03
+			mobilesuit_weapon = 0.03
+				}
+				ai_will_do = {
+					factor = 2
+				}
+			}
+			gramonica = {
+				allowed = {
+					original_tag = ABQ
+				}
+				research_bonus = {
+					decryption_tech = 0.1
+			mobilesuit = 0.03
+			mobilesuit_weapon = 0.03
+				}
+				traits = { gramonica_trait }
+				ai_will_do = {
+					factor = 2
+				}
+			}
+			felipe = {
+				allowed = {
+					original_tag = ABQ
+				}
+				research_bonus = {
+					decryption_tech = 0.1
+			mobilesuit = 0.03
+			mobilesuit_weapon = 0.03
+				}
+				traits = { felipe_trait }
+				ai_will_do = {
+					factor = 2
+				}
+			}
+		}
+		aircraft_manufacturer = {
+			designer = yes
+			ABQn_tech_team = {
+				allowed = {
+					original_tag = ABQ
+				}
+				research_bonus = {
+					air_equipment = 0.10
+				}
+				traits = { tech_team_trait }
+				equipment_bonus = {
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 2
+						has_war = yes
+					}
+				}
+			}
+		}
+		industrial_concern = {
+			code_logical = {
+				allowed = {
+					original_tag = ABQ
+				}
+				research_bonus = {
+					computing_tech = 0.2
+				}
+				traits = {
+					code_logical_trait
+				}
+				ai_will_do = {
+					factor = 2
+				}
+			}
+		}
+	}
+}

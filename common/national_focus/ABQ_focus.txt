@@ -12,7 +12,7 @@ focus_tree = {
 	
 focus = {
 	id = ABQ_gihrens_headquaters
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_dominance_of_human_survival_theory2
 	cost = 2
 	x = 11
 	y = 0
@@ -20,6 +20,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+	add_ideas = gihrens_headquarters
 	}
 }
 

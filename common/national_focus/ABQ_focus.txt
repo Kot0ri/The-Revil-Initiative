@@ -296,7 +296,7 @@ focus = {
 
 focus = {
 	id = ABQ_use_obsolete_ms
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_enhancement_of_general_purpose_MS
 	cost = 2
 	x = 2
 	y = 2
@@ -304,6 +304,14 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = archetype_ms05
+			amount = 2500
+		}
+		add_equipment_to_stockpile = {
+			type  =archetype_ms06_f
+			amount = 2500
+		}
 	}
 	relative_position_id = ABQ_rush_ms_pilot_training_program
 	prerequisite = { focus = ABQ_rush_ms_pilot_training_program }
@@ -633,7 +641,8 @@ focus = {
 
 focus = {
 	id = ABQ_produce_the_big_zam
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_focus_on_MA
+	search_filters = { FOCUS_FILTER_MANPOWER  FOCUS_FILTER_RESEARCH} 
 	cost = 2
 	x = 0
 	y = 2
@@ -641,6 +650,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = zeon_zam
+			uses = 1
+			bonus = 0.5
+			technology = ma08_tech
+		}
 	}
 	relative_position_id = ABQ_begin_development_of_mobile_armors
 	prerequisite = { focus = ABQ_begin_development_of_mobile_armors }
@@ -648,7 +663,7 @@ focus = {
 
 focus = {
 	id = ABQ_begin_massproduction_of_the_big_zam
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_focus_on_MA
 	cost = 2
 	x = 0
 	y = 2
@@ -656,6 +671,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = big_zam
 	}
 	relative_position_id = ABQ_produce_the_big_zam
 	prerequisite = { focus = ABQ_produce_the_big_zam }
@@ -664,6 +680,7 @@ focus = {
 focus = {
 	id = ABQ_next_gen_ms_designs
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	search_filters = {  FOCUS_FILTER_RESEARCH }
 	cost = 2
 	x = 3
 	y = 2
@@ -685,7 +702,8 @@ focus = {
 
 focus = {
 	id = ABQ_a_suit_equal_to_the_white_devil
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_army_tanks
+	search_filters = {  FOCUS_FILTER_RESEARCH }
 	cost = 2
 	x = 0
 	y = 2
@@ -693,7 +711,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-
+		add_tech_bonus = {
+			name = white_devil
+			uses = 1
+			bonus = 0.5
+			technology = ms14_tech
+		}
 	}
 	relative_position_id = ABQ_next_gen_ms_designs
 	prerequisite = { focus = ABQ_next_gen_ms_designs }
@@ -733,7 +756,8 @@ focus = {
 
 focus = {
 	id = ABQ_experimental_mechanical_technoloy
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_production
+	search_filters = { FOCUS_FILTER_RESEARCH }
 	cost = 2
 	x = 6
 	y = 2
@@ -741,6 +765,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = electronic_bonus
+			bonus = 0.5
+			uses = 2
+			category = electronics
+		}
 	}
 	relative_position_id = ABQ_use_the_supreme_commanders_sway
 	prerequisite = { focus = ABQ_use_the_supreme_commanders_sway }
@@ -748,7 +778,7 @@ focus = {
 
 focus = {
 	id = ABQ_p_reuse_device
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_SOV_organize_wreckers 
 	cost = 2
 	x = 0
 	y = 2
@@ -756,6 +786,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = p_reuse
+			uses = 1
+			bonus = 0.5
+			technology = p_reuse_device
+		}
 		
 	}
 	relative_position_id = ABQ_experimental_mechanical_technoloy
@@ -861,6 +897,7 @@ focus = {
 focus = {
 	id = ABQ_economic_self_sufficiency
 	icon = GFX_focus_SWI_issue_war_bonds
+	search_filters = { FOCUS_FILTER_INDUSTRY}
 	cost = 2
 	x = 0
 	y = 1
@@ -868,6 +905,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = economic_self_sufficiency
 	}
 	relative_position_id = ABQ_civilian_use_labs
 	prerequisite = { focus = ABQ_civilian_use_labs }
@@ -956,6 +994,7 @@ focus = {
 focus = {
 	id = ABQ_reduce_need_for_supply_shipments
 	icon = GFX_focus_POL_develop_polish_shipbuilding
+	search_filters = { FOCUS_FILTER_INDUSTRY}
 	cost = 2
 	x = 0
 	y = 1
@@ -963,6 +1002,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+	add_ideas = reduce_need_for_supply_shipments	
 	}
 	relative_position_id = ABQ_build_up_of_consumer_factories
 	prerequisite = { focus = ABQ_build_up_of_consumer_factories }
@@ -986,14 +1026,46 @@ focus = {
 focus = {
 	id = ABQ_draw_upon_civilian_businesses
 	icon = GFX_focus_mex_privatisation
+	search_filters = { FOCUS_FILTER_INDUSTRY}
 	cost = 2
 	x = 0
 	y = 2
 	ai_will_do = {
 		factor = 1
 	}
-	completion_reward = {
+	available = {
+		has_full_control_of_state = 935
+		has_full_control_of_state = 934
 	}
+completion_reward = {
+	934 = {
+		if = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = industrial_complex
+				level = 6
+				instant_build = yes
+			}
+		}
+	}
+	934 = {
+		if = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = industrial_complex
+				level = 6
+				instant_build = yes
+			}
+		}
+	}
+	935 = {	add_extra_state_shared_building_slots = 6
+	instant_build = yes
+	}
+	934 = {	add_extra_state_shared_building_slots = 6
+	instant_build = yes
+}
+
+}
 	relative_position_id = ABQ_export_mineral_resources_to_the_homeland
 	prerequisite = { focus = ABQ_export_mineral_resources_to_the_homeland }
 }

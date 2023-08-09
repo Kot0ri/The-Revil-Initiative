@@ -111,6 +111,56 @@ ideas = {
 			removal_cost = -1
 		}
 
+		reduce_need_for_supply_shipments = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			production_speed_industrial_complex_factor = 0.05
+			local_resources_factor = 0.1
+			}
+			removal_cost = -1
+		}
+
+		economic_self_sufficiency = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			production_speed_industrial_complex_factor = 0.15
+			consumer_goods_factor = -0.1
+			}
+			removal_cost = -1
+		}
+		
+		big_zam = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+				archetype_ma08 = {
+					build_cost_ic = -0.1
+				}
+			}
+			removal_cost = -1
+		}
+
+
 		##Designers
 		mobilesuit_manufacturer = {
 			designer = yes
@@ -120,7 +170,7 @@ ideas = {
 				}
 				available = {
 					NOT = {
-						has_global_flag = ABQnic_is_not_yes
+						has_global_flag = zeonic_is_not_yes
 					}
 				}
 		  research_bonus = {

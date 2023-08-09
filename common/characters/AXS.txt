@@ -243,4 +243,34 @@ AXS_karlsson={
 		}
 	}
 }
+
+AXS_aalto={
+	name="Eeli Aalto"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = karlsson
+		allowed = {
+			original_tag = AXS
+		}
+		traits = {
+			attack_skill=2
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
 }

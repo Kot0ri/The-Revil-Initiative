@@ -62,7 +62,7 @@ ideas = {
 		}
 
 		bastion_of_the_supreme_commander = {
-			picture = GFX_goal_dominance_of_human_survival_theory
+			picture = generic_constitutional_guarantees
 			allowed = {
 				always = no
 				original_tag = ABQ
@@ -74,6 +74,7 @@ ideas = {
 				production_speed_bunker_factor = 0.05
 				conscription_factor = 0.05
 				political_power_factor = 0.2
+				weekly_manpower = 500
 			}
 			removal_cost = -1
 		}

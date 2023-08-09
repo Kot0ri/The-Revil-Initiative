@@ -26,7 +26,8 @@ focus = {
 
 focus = {
 	id = ABQ_space_fortress_a_baoa_qu
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_fortify_the_westwall
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = -2
 	y = 2
@@ -34,6 +35,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = space_fortress_a_baoa_qu1
 	}
 	relative_position_id = ABQ_gihrens_headquaters
 	prerequisite = { focus = ABQ_gihrens_headquaters }
@@ -41,7 +43,8 @@ focus = {
 
 focus = {
 	id = ABQ_citadel_of_the_princepality
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_fortify_the_westwall
+	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 2
 	x = 0
 	y = 2
@@ -49,6 +52,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		remove_idea = space_fortress_a_baoa_qu1
+		add_ideas = space_fortress_a_baoa_qu2
 	}
 	relative_position_id = ABQ_space_fortress_a_baoa_qu
 	prerequisite = { focus = ABQ_space_fortress_a_baoa_qu }
@@ -57,6 +62,7 @@ focus = {
 focus = {
 	id = ABQ_bastion_of_the_supreme_commander
 	icon = GFX_goal_dominance_of_human_survival_theory
+	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 2
 	x = 0
 	y = 1
@@ -64,6 +70,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		remove_idea = space_fortress_a_baoa_qu2
+		add_ideas = bastion_of_the_supreme_commander
 	}
 	relative_position_id = ABQ_citadel_of_the_princepality
 	prerequisite = { focus = ABQ_citadel_of_the_princepality }
@@ -71,7 +79,8 @@ focus = {
 
 focus = {
 	id = ABQ_gihrens_royal_guard
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 2
 	x = 1
 	y = 2
@@ -79,6 +88,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		recruit_character = ABQ_eric_manthfield
+        add_ideas = gihrens_royal_guard
 	}
 	relative_position_id = ABQ_gihrens_headquaters
 	prerequisite = { focus = ABQ_gihrens_headquaters }

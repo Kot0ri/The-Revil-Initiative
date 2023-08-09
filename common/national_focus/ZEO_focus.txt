@@ -406,8 +406,6 @@ focus = {
 				target = ZEO
 				autonomy_state = autonomy_free
 			}
-			set_rule = { can_create_factions = yes }
-			create_faction = Zeon
 		}
 		add_threat = 15
 	}
@@ -430,6 +428,8 @@ focus = {
 			type = puppet_wargoal_focus
 			target = EFS
 		}
+		set_rule = { can_create_factions = yes }
+		create_faction = Zeon
 	}
 	relative_position_id = ZEO_declare_independence
 	prerequisite = { focus = ZEO_declare_independence }
@@ -2096,7 +2096,7 @@ focus = {
 focus = {
 	id = ZEO_fix_the_economy
 	icon = GFX_focus_generic_industry_1
-	cost = 10
+	cost = 20
 	x = 0
 	y = 1
 	ai_will_do = {

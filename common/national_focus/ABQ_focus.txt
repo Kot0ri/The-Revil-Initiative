@@ -98,6 +98,7 @@ focus = {
 focus = {
 	id = ABQ_loyalty_beyond_death
 	icon = GFX_goal_medal_of_cross
+	
 	cost = 2
 	x = 0
 	y = 2
@@ -105,6 +106,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+	remove_ideas = gihrens_royal_guard
+	add_ideas = gihrens_royal_guard2
 	}
 	relative_position_id = ABQ_gihrens_royal_guard
 	prerequisite = { focus = ABQ_gihrens_royal_guard }

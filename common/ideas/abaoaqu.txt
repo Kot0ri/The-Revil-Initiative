@@ -30,6 +30,21 @@ ideas = {
 			removal_cost = -1
 		}
 
+		gihrens_royal_guard2 = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_core_defence_factor = 0.075
+			}
+			removal_cost = -1
+		}
+
 		space_fortress_a_baoa_qu1 = {
 			picture = generic_constitutional_guarantees
 			allowed = {

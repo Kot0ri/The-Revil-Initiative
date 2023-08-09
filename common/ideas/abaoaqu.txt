@@ -94,6 +94,23 @@ ideas = {
 			removal_cost = -1
 		}
 
+		ABQ_improve_soldiers_benefits = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.05
+                consumer_goods_factor = 0.025
+				weekly_manpower = 500
+			}
+			removal_cost = -1
+		}
+
 		##Designers
 		mobilesuit_manufacturer = {
 			designer = yes

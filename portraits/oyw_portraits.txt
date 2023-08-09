@@ -17,7 +17,7 @@ default = {
 		}
 	}
 	political = {
-		zeonism = {
+		contolism = {
       male = {
 				"gfx/leaders/Portrait_mob_leader_1.dds"
 				"gfx/leaders/Portrait_mob_leader_2.dds"
@@ -49,7 +49,7 @@ default = {
         "gfx/leaders/Portrait_mob_leader_female_01.dds"
       }
 		}
-		spacesupremacy = {
+		supremacist = {
       male = {
 				"gfx/leaders/Portrait_mob_leader_1.dds"
 				"gfx/leaders/Portrait_mob_leader_2.dds"
@@ -65,7 +65,7 @@ default = {
         "gfx/leaders/Portrait_mob_leader_female_01.dds"
       }
 		}
-		earthsupremacy = {
+		autocracy = {
 			male = {
 				"gfx/leaders/Portrait_mob_leader_1.dds"
 				"gfx/leaders/Portrait_mob_leader_2.dds"
@@ -187,6 +187,203 @@ ZEO = {
     }
   }
 }
+
+ABQ = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Zeon_Generic_land_1"
+			  "GFX_Portrait_Zeon_Generic_land_2"
+			  "GFX_Portrait_Zeon_Generic_land_3"
+			  "GFX_Portrait_Zeon_Generic_land_4"
+			  "GFX_Portrait_Zeon_Generic_land_5"
+			  "GFX_Portrait_Zeon_Generic_land_6"
+			  "GFX_Portrait_Zeon_Generic_land_7"
+			  "GFX_Portrait_Zeon_Generic_land_8"
+			  "GFX_Portrait_Zeon_Generic_land_9"
+			  "GFX_Portrait_Zeon_Generic_land_10"
+			  "GFX_Portrait_Zeon_Generic_land_11"
+			  "GFX_Portrait_Zeon_Generic_land_12"
+			  "GFX_Portrait_Zeon_Generic_land_13"
+			  "GFX_Portrait_Zeon_Generic_land_14"
+			  "GFX_Portrait_Zeon_Generic_land_15"
+			  "GFX_Portrait_Zeon_Generic_land_16"
+			  "GFX_Portrait_Zeon_Generic_land_17"
+			  "GFX_Portrait_Zeon_Generic_land_18"
+			  "GFX_Portrait_Zeon_Generic_land_19"
+			  "GFX_Portrait_Zeon_Generic_land_20"
+			  "GFX_Portrait_Zeon_Generic_land_21"
+			  "GFX_Portrait_Zeon_Generic_land_22"
+	  }
+	  female = {
+			  "GFX_Portrait_Zeon_Generic_land_female_1"
+			  "GFX_Portrait_Zeon_Generic_land_female_2"
+			  "GFX_Portrait_Zeon_Generic_land_female_3"
+			  "GFX_Portrait_Zeon_Generic_land_female_4"
+			  "GFX_Portrait_Zeon_Generic_land_female_5"
+			  "GFX_Portrait_Zeon_Generic_land_female_6"
+			  "GFX_Portrait_Zeon_Generic_land_female_7"
+			  "GFX_Portrait_Zeon_Generic_land_female_8"
+			  "GFX_Portrait_Zeon_Generic_land_female_9"
+			  "GFX_Portrait_Zeon_Generic_land_female_10"
+	  }
+	}
+	navy = {
+	  male = {
+			  "GFX_Portrait_Zeon_Generic_navy_1"
+	  }
+	  female = {
+			  "GFX_Portrait_Zeon_Generic_navy_female_1"
+	  }
+	}
+  }
+
+  SOL = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Zeon_Generic_land_1"
+			  "GFX_Portrait_Zeon_Generic_land_2"
+			  "GFX_Portrait_Zeon_Generic_land_3"
+			  "GFX_Portrait_Zeon_Generic_land_4"
+			  "GFX_Portrait_Zeon_Generic_land_5"
+			  "GFX_Portrait_Zeon_Generic_land_6"
+			  "GFX_Portrait_Zeon_Generic_land_7"
+			  "GFX_Portrait_Zeon_Generic_land_8"
+			  "GFX_Portrait_Zeon_Generic_land_9"
+			  "GFX_Portrait_Zeon_Generic_land_10"
+			  "GFX_Portrait_Zeon_Generic_land_11"
+			  "GFX_Portrait_Zeon_Generic_land_12"
+			  "GFX_Portrait_Zeon_Generic_land_13"
+			  "GFX_Portrait_Zeon_Generic_land_14"
+			  "GFX_Portrait_Zeon_Generic_land_15"
+			  "GFX_Portrait_Zeon_Generic_land_16"
+			  "GFX_Portrait_Zeon_Generic_land_17"
+			  "GFX_Portrait_Zeon_Generic_land_18"
+			  "GFX_Portrait_Zeon_Generic_land_19"
+			  "GFX_Portrait_Zeon_Generic_land_20"
+			  "GFX_Portrait_Zeon_Generic_land_21"
+			  "GFX_Portrait_Zeon_Generic_land_22"
+	  }
+	  female = {
+			  "GFX_Portrait_Zeon_Generic_land_female_1"
+			  "GFX_Portrait_Zeon_Generic_land_female_2"
+			  "GFX_Portrait_Zeon_Generic_land_female_3"
+			  "GFX_Portrait_Zeon_Generic_land_female_4"
+			  "GFX_Portrait_Zeon_Generic_land_female_5"
+			  "GFX_Portrait_Zeon_Generic_land_female_6"
+			  "GFX_Portrait_Zeon_Generic_land_female_7"
+			  "GFX_Portrait_Zeon_Generic_land_female_8"
+			  "GFX_Portrait_Zeon_Generic_land_female_9"
+			  "GFX_Portrait_Zeon_Generic_land_female_10"
+	  }
+	}
+	navy = {
+	  male = {
+			  "GFX_Portrait_Zeon_Generic_navy_1"
+	  }
+	  female = {
+			  "GFX_Portrait_Zeon_Generic_navy_female_1"
+	  }
+	}
+  }
+
+  PEZ = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Zeon_Generic_land_1"
+			  "GFX_Portrait_Zeon_Generic_land_2"
+			  "GFX_Portrait_Zeon_Generic_land_3"
+			  "GFX_Portrait_Zeon_Generic_land_4"
+			  "GFX_Portrait_Zeon_Generic_land_5"
+			  "GFX_Portrait_Zeon_Generic_land_6"
+			  "GFX_Portrait_Zeon_Generic_land_7"
+			  "GFX_Portrait_Zeon_Generic_land_8"
+			  "GFX_Portrait_Zeon_Generic_land_9"
+			  "GFX_Portrait_Zeon_Generic_land_10"
+			  "GFX_Portrait_Zeon_Generic_land_11"
+			  "GFX_Portrait_Zeon_Generic_land_12"
+			  "GFX_Portrait_Zeon_Generic_land_13"
+			  "GFX_Portrait_Zeon_Generic_land_14"
+			  "GFX_Portrait_Zeon_Generic_land_15"
+			  "GFX_Portrait_Zeon_Generic_land_16"
+			  "GFX_Portrait_Zeon_Generic_land_17"
+			  "GFX_Portrait_Zeon_Generic_land_18"
+			  "GFX_Portrait_Zeon_Generic_land_19"
+			  "GFX_Portrait_Zeon_Generic_land_20"
+			  "GFX_Portrait_Zeon_Generic_land_21"
+			  "GFX_Portrait_Zeon_Generic_land_22"
+	  }
+	  female = {
+			  "GFX_Portrait_Zeon_Generic_land_female_1"
+			  "GFX_Portrait_Zeon_Generic_land_female_2"
+			  "GFX_Portrait_Zeon_Generic_land_female_3"
+			  "GFX_Portrait_Zeon_Generic_land_female_4"
+			  "GFX_Portrait_Zeon_Generic_land_female_5"
+			  "GFX_Portrait_Zeon_Generic_land_female_6"
+			  "GFX_Portrait_Zeon_Generic_land_female_7"
+			  "GFX_Portrait_Zeon_Generic_land_female_8"
+			  "GFX_Portrait_Zeon_Generic_land_female_9"
+			  "GFX_Portrait_Zeon_Generic_land_female_10"
+	  }
+	}
+	navy = {
+	  male = {
+			  "GFX_Portrait_Zeon_Generic_navy_1"
+	  }
+	  female = {
+			  "GFX_Portrait_Zeon_Generic_navy_female_1"
+	  }
+	}
+  }
+
+  AXS = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Zeon_Generic_land_1"
+			  "GFX_Portrait_Zeon_Generic_land_2"
+			  "GFX_Portrait_Zeon_Generic_land_3"
+			  "GFX_Portrait_Zeon_Generic_land_4"
+			  "GFX_Portrait_Zeon_Generic_land_5"
+			  "GFX_Portrait_Zeon_Generic_land_6"
+			  "GFX_Portrait_Zeon_Generic_land_7"
+			  "GFX_Portrait_Zeon_Generic_land_8"
+			  "GFX_Portrait_Zeon_Generic_land_9"
+			  "GFX_Portrait_Zeon_Generic_land_10"
+			  "GFX_Portrait_Zeon_Generic_land_11"
+			  "GFX_Portrait_Zeon_Generic_land_12"
+			  "GFX_Portrait_Zeon_Generic_land_13"
+			  "GFX_Portrait_Zeon_Generic_land_14"
+			  "GFX_Portrait_Zeon_Generic_land_15"
+			  "GFX_Portrait_Zeon_Generic_land_16"
+			  "GFX_Portrait_Zeon_Generic_land_17"
+			  "GFX_Portrait_Zeon_Generic_land_18"
+			  "GFX_Portrait_Zeon_Generic_land_19"
+			  "GFX_Portrait_Zeon_Generic_land_20"
+			  "GFX_Portrait_Zeon_Generic_land_21"
+			  "GFX_Portrait_Zeon_Generic_land_22"
+	  }
+	  female = {
+			  "GFX_Portrait_Zeon_Generic_land_female_1"
+			  "GFX_Portrait_Zeon_Generic_land_female_2"
+			  "GFX_Portrait_Zeon_Generic_land_female_3"
+			  "GFX_Portrait_Zeon_Generic_land_female_4"
+			  "GFX_Portrait_Zeon_Generic_land_female_5"
+			  "GFX_Portrait_Zeon_Generic_land_female_6"
+			  "GFX_Portrait_Zeon_Generic_land_female_7"
+			  "GFX_Portrait_Zeon_Generic_land_female_8"
+			  "GFX_Portrait_Zeon_Generic_land_female_9"
+			  "GFX_Portrait_Zeon_Generic_land_female_10"
+	  }
+	}
+	navy = {
+	  male = {
+			  "GFX_Portrait_Zeon_Generic_navy_1"
+	  }
+	  female = {
+			  "GFX_Portrait_Zeon_Generic_navy_female_1"
+	  }
+	}
+  }
+
 EFS = {
   army = {
     male = {
@@ -239,3 +436,322 @@ EFS = {
     }
   }
 }
+
+AFZ = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Efsf_Generic_land_1"
+			  "GFX_Portrait_Efsf_Generic_land_2"
+			  "GFX_Portrait_Efsf_Generic_land_3"
+			  "GFX_Portrait_Efsf_Generic_land_4"
+			  "GFX_Portrait_Efsf_Generic_land_5"
+			  "GFX_Portrait_Efsf_Generic_land_6"
+			  "GFX_Portrait_Efsf_Generic_land_7"
+			  "GFX_Portrait_Efsf_Generic_land_8"
+			  "GFX_Portrait_Efsf_Generic_land_9"
+			  "GFX_Portrait_Efsf_Generic_land_10"
+			  "GFX_Portrait_Efsf_Generic_land_11"
+			  "GFX_Portrait_Efsf_Generic_land_12"
+			  "GFX_Portrait_Efsf_Generic_land_13"
+			  "GFX_Portrait_Efsf_Generic_land_14"
+			  "GFX_Portrait_Efsf_Generic_land_15"
+			  "GFX_Portrait_Efsf_Generic_land_16"
+			  "GFX_Portrait_Efsf_Generic_land_17"
+			  "GFX_Portrait_Efsf_Generic_land_18"
+			  "GFX_Portrait_Efsf_Generic_land_19"
+			  "GFX_Portrait_Efsf_Generic_land_20"
+			  "GFX_Portrait_Efsf_Generic_land_21"
+			  "GFX_Portrait_Efsf_Generic_land_22"
+			  "GFX_Portrait_Efsf_Generic_land_23"
+			  "GFX_Portrait_Efsf_Generic_land_24"
+			  "GFX_Portrait_Efsf_Generic_land_25"
+			  "GFX_Portrait_Efsf_Generic_land_26"
+	  }
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_land_female_1"
+			  "GFX_Portrait_Efsf_Generic_land_female_2"
+			  "GFX_Portrait_Efsf_Generic_land_female_3"
+			  "GFX_Portrait_Efsf_Generic_land_female_4"
+			  "GFX_Portrait_Efsf_Generic_land_female_5"
+			  "GFX_Portrait_Efsf_Generic_land_female_6"
+			  "GFX_Portrait_Efsf_Generic_land_female_7"
+			  "GFX_Portrait_Efsf_Generic_land_female_8"
+			  "GFX_Portrait_Efsf_Generic_land_female_9"
+			  "GFX_Portrait_Efsf_Generic_land_female_10"
+			  "GFX_Portrait_Efsf_Generic_land_female_11"
+			  "GFX_Portrait_Efsf_Generic_land_female_12"
+			  "GFX_Portrait_Efsf_Generic_land_female_13"
+	  }
+	}
+	navy = {
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_navy_female_1"
+	  }
+	}
+  }
+  
+  EUF = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Efsf_Generic_land_1"
+			  "GFX_Portrait_Efsf_Generic_land_2"
+			  "GFX_Portrait_Efsf_Generic_land_3"
+			  "GFX_Portrait_Efsf_Generic_land_4"
+			  "GFX_Portrait_Efsf_Generic_land_5"
+			  "GFX_Portrait_Efsf_Generic_land_6"
+			  "GFX_Portrait_Efsf_Generic_land_7"
+			  "GFX_Portrait_Efsf_Generic_land_8"
+			  "GFX_Portrait_Efsf_Generic_land_9"
+			  "GFX_Portrait_Efsf_Generic_land_10"
+			  "GFX_Portrait_Efsf_Generic_land_11"
+			  "GFX_Portrait_Efsf_Generic_land_12"
+			  "GFX_Portrait_Efsf_Generic_land_13"
+			  "GFX_Portrait_Efsf_Generic_land_14"
+			  "GFX_Portrait_Efsf_Generic_land_15"
+			  "GFX_Portrait_Efsf_Generic_land_16"
+			  "GFX_Portrait_Efsf_Generic_land_17"
+			  "GFX_Portrait_Efsf_Generic_land_18"
+			  "GFX_Portrait_Efsf_Generic_land_19"
+			  "GFX_Portrait_Efsf_Generic_land_20"
+			  "GFX_Portrait_Efsf_Generic_land_21"
+			  "GFX_Portrait_Efsf_Generic_land_22"
+			  "GFX_Portrait_Efsf_Generic_land_23"
+			  "GFX_Portrait_Efsf_Generic_land_24"
+			  "GFX_Portrait_Efsf_Generic_land_25"
+			  "GFX_Portrait_Efsf_Generic_land_26"
+	  }
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_land_female_1"
+			  "GFX_Portrait_Efsf_Generic_land_female_2"
+			  "GFX_Portrait_Efsf_Generic_land_female_3"
+			  "GFX_Portrait_Efsf_Generic_land_female_4"
+			  "GFX_Portrait_Efsf_Generic_land_female_5"
+			  "GFX_Portrait_Efsf_Generic_land_female_6"
+			  "GFX_Portrait_Efsf_Generic_land_female_7"
+			  "GFX_Portrait_Efsf_Generic_land_female_8"
+			  "GFX_Portrait_Efsf_Generic_land_female_9"
+			  "GFX_Portrait_Efsf_Generic_land_female_10"
+			  "GFX_Portrait_Efsf_Generic_land_female_11"
+			  "GFX_Portrait_Efsf_Generic_land_female_12"
+			  "GFX_Portrait_Efsf_Generic_land_female_13"
+	  }
+	}
+	navy = {
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_navy_female_1"
+	  }
+	}
+  }
+  
+  EFG = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Efsf_Generic_land_1"
+			  "GFX_Portrait_Efsf_Generic_land_2"
+			  "GFX_Portrait_Efsf_Generic_land_3"
+			  "GFX_Portrait_Efsf_Generic_land_4"
+			  "GFX_Portrait_Efsf_Generic_land_5"
+			  "GFX_Portrait_Efsf_Generic_land_6"
+			  "GFX_Portrait_Efsf_Generic_land_7"
+			  "GFX_Portrait_Efsf_Generic_land_8"
+			  "GFX_Portrait_Efsf_Generic_land_9"
+			  "GFX_Portrait_Efsf_Generic_land_10"
+			  "GFX_Portrait_Efsf_Generic_land_11"
+			  "GFX_Portrait_Efsf_Generic_land_12"
+			  "GFX_Portrait_Efsf_Generic_land_13"
+			  "GFX_Portrait_Efsf_Generic_land_14"
+			  "GFX_Portrait_Efsf_Generic_land_15"
+			  "GFX_Portrait_Efsf_Generic_land_16"
+			  "GFX_Portrait_Efsf_Generic_land_17"
+			  "GFX_Portrait_Efsf_Generic_land_18"
+			  "GFX_Portrait_Efsf_Generic_land_19"
+			  "GFX_Portrait_Efsf_Generic_land_20"
+			  "GFX_Portrait_Efsf_Generic_land_21"
+			  "GFX_Portrait_Efsf_Generic_land_22"
+			  "GFX_Portrait_Efsf_Generic_land_23"
+			  "GFX_Portrait_Efsf_Generic_land_24"
+			  "GFX_Portrait_Efsf_Generic_land_25"
+			  "GFX_Portrait_Efsf_Generic_land_26"
+	  }
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_land_female_1"
+			  "GFX_Portrait_Efsf_Generic_land_female_2"
+			  "GFX_Portrait_Efsf_Generic_land_female_3"
+			  "GFX_Portrait_Efsf_Generic_land_female_4"
+			  "GFX_Portrait_Efsf_Generic_land_female_5"
+			  "GFX_Portrait_Efsf_Generic_land_female_6"
+			  "GFX_Portrait_Efsf_Generic_land_female_7"
+			  "GFX_Portrait_Efsf_Generic_land_female_8"
+			  "GFX_Portrait_Efsf_Generic_land_female_9"
+			  "GFX_Portrait_Efsf_Generic_land_female_10"
+			  "GFX_Portrait_Efsf_Generic_land_female_11"
+			  "GFX_Portrait_Efsf_Generic_land_female_12"
+			  "GFX_Portrait_Efsf_Generic_land_female_13"
+	  }
+	}
+	navy = {
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_navy_female_1"
+	  }
+	}
+  }
+  
+  SSA = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Efsf_Generic_land_1"
+			  "GFX_Portrait_Efsf_Generic_land_2"
+			  "GFX_Portrait_Efsf_Generic_land_3"
+			  "GFX_Portrait_Efsf_Generic_land_4"
+			  "GFX_Portrait_Efsf_Generic_land_5"
+			  "GFX_Portrait_Efsf_Generic_land_6"
+			  "GFX_Portrait_Efsf_Generic_land_7"
+			  "GFX_Portrait_Efsf_Generic_land_8"
+			  "GFX_Portrait_Efsf_Generic_land_9"
+			  "GFX_Portrait_Efsf_Generic_land_10"
+			  "GFX_Portrait_Efsf_Generic_land_11"
+			  "GFX_Portrait_Efsf_Generic_land_12"
+			  "GFX_Portrait_Efsf_Generic_land_13"
+			  "GFX_Portrait_Efsf_Generic_land_14"
+			  "GFX_Portrait_Efsf_Generic_land_15"
+			  "GFX_Portrait_Efsf_Generic_land_16"
+			  "GFX_Portrait_Efsf_Generic_land_17"
+			  "GFX_Portrait_Efsf_Generic_land_18"
+			  "GFX_Portrait_Efsf_Generic_land_19"
+			  "GFX_Portrait_Efsf_Generic_land_20"
+			  "GFX_Portrait_Efsf_Generic_land_21"
+			  "GFX_Portrait_Efsf_Generic_land_22"
+			  "GFX_Portrait_Efsf_Generic_land_23"
+			  "GFX_Portrait_Efsf_Generic_land_24"
+			  "GFX_Portrait_Efsf_Generic_land_25"
+			  "GFX_Portrait_Efsf_Generic_land_26"
+	  }
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_land_female_1"
+			  "GFX_Portrait_Efsf_Generic_land_female_2"
+			  "GFX_Portrait_Efsf_Generic_land_female_3"
+			  "GFX_Portrait_Efsf_Generic_land_female_4"
+			  "GFX_Portrait_Efsf_Generic_land_female_5"
+			  "GFX_Portrait_Efsf_Generic_land_female_6"
+			  "GFX_Portrait_Efsf_Generic_land_female_7"
+			  "GFX_Portrait_Efsf_Generic_land_female_8"
+			  "GFX_Portrait_Efsf_Generic_land_female_9"
+			  "GFX_Portrait_Efsf_Generic_land_female_10"
+			  "GFX_Portrait_Efsf_Generic_land_female_11"
+			  "GFX_Portrait_Efsf_Generic_land_female_12"
+			  "GFX_Portrait_Efsf_Generic_land_female_13"
+	  }
+	}
+	navy = {
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_navy_female_1"
+	  }
+	}
+  }
+  
+  HIN = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Efsf_Generic_land_1"
+			  "GFX_Portrait_Efsf_Generic_land_2"
+			  "GFX_Portrait_Efsf_Generic_land_3"
+			  "GFX_Portrait_Efsf_Generic_land_4"
+			  "GFX_Portrait_Efsf_Generic_land_5"
+			  "GFX_Portrait_Efsf_Generic_land_6"
+			  "GFX_Portrait_Efsf_Generic_land_7"
+			  "GFX_Portrait_Efsf_Generic_land_8"
+			  "GFX_Portrait_Efsf_Generic_land_9"
+			  "GFX_Portrait_Efsf_Generic_land_10"
+			  "GFX_Portrait_Efsf_Generic_land_11"
+			  "GFX_Portrait_Efsf_Generic_land_12"
+			  "GFX_Portrait_Efsf_Generic_land_13"
+			  "GFX_Portrait_Efsf_Generic_land_14"
+			  "GFX_Portrait_Efsf_Generic_land_15"
+			  "GFX_Portrait_Efsf_Generic_land_16"
+			  "GFX_Portrait_Efsf_Generic_land_17"
+			  "GFX_Portrait_Efsf_Generic_land_18"
+			  "GFX_Portrait_Efsf_Generic_land_19"
+			  "GFX_Portrait_Efsf_Generic_land_20"
+			  "GFX_Portrait_Efsf_Generic_land_21"
+			  "GFX_Portrait_Efsf_Generic_land_22"
+			  "GFX_Portrait_Efsf_Generic_land_23"
+			  "GFX_Portrait_Efsf_Generic_land_24"
+			  "GFX_Portrait_Efsf_Generic_land_25"
+			  "GFX_Portrait_Efsf_Generic_land_26"
+	  }
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_land_female_1"
+			  "GFX_Portrait_Efsf_Generic_land_female_2"
+			  "GFX_Portrait_Efsf_Generic_land_female_3"
+			  "GFX_Portrait_Efsf_Generic_land_female_4"
+			  "GFX_Portrait_Efsf_Generic_land_female_5"
+			  "GFX_Portrait_Efsf_Generic_land_female_6"
+			  "GFX_Portrait_Efsf_Generic_land_female_7"
+			  "GFX_Portrait_Efsf_Generic_land_female_8"
+			  "GFX_Portrait_Efsf_Generic_land_female_9"
+			  "GFX_Portrait_Efsf_Generic_land_female_10"
+			  "GFX_Portrait_Efsf_Generic_land_female_11"
+			  "GFX_Portrait_Efsf_Generic_land_female_12"
+			  "GFX_Portrait_Efsf_Generic_land_female_13"
+	  }
+	}
+	navy = {
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_navy_female_1"
+	  }
+	}
+  }
+  
+  MEZ = {
+	army = {
+	  male = {
+			  "GFX_Portrait_Efsf_Generic_land_1"
+			  "GFX_Portrait_Efsf_Generic_land_2"
+			  "GFX_Portrait_Efsf_Generic_land_3"
+			  "GFX_Portrait_Efsf_Generic_land_4"
+			  "GFX_Portrait_Efsf_Generic_land_5"
+			  "GFX_Portrait_Efsf_Generic_land_6"
+			  "GFX_Portrait_Efsf_Generic_land_7"
+			  "GFX_Portrait_Efsf_Generic_land_8"
+			  "GFX_Portrait_Efsf_Generic_land_9"
+			  "GFX_Portrait_Efsf_Generic_land_10"
+			  "GFX_Portrait_Efsf_Generic_land_11"
+			  "GFX_Portrait_Efsf_Generic_land_12"
+			  "GFX_Portrait_Efsf_Generic_land_13"
+			  "GFX_Portrait_Efsf_Generic_land_14"
+			  "GFX_Portrait_Efsf_Generic_land_15"
+			  "GFX_Portrait_Efsf_Generic_land_16"
+			  "GFX_Portrait_Efsf_Generic_land_17"
+			  "GFX_Portrait_Efsf_Generic_land_18"
+			  "GFX_Portrait_Efsf_Generic_land_19"
+			  "GFX_Portrait_Efsf_Generic_land_20"
+			  "GFX_Portrait_Efsf_Generic_land_21"
+			  "GFX_Portrait_Efsf_Generic_land_22"
+			  "GFX_Portrait_Efsf_Generic_land_23"
+			  "GFX_Portrait_Efsf_Generic_land_24"
+			  "GFX_Portrait_Efsf_Generic_land_25"
+			  "GFX_Portrait_Efsf_Generic_land_26"
+	  }
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_land_female_1"
+			  "GFX_Portrait_Efsf_Generic_land_female_2"
+			  "GFX_Portrait_Efsf_Generic_land_female_3"
+			  "GFX_Portrait_Efsf_Generic_land_female_4"
+			  "GFX_Portrait_Efsf_Generic_land_female_5"
+			  "GFX_Portrait_Efsf_Generic_land_female_6"
+			  "GFX_Portrait_Efsf_Generic_land_female_7"
+			  "GFX_Portrait_Efsf_Generic_land_female_8"
+			  "GFX_Portrait_Efsf_Generic_land_female_9"
+			  "GFX_Portrait_Efsf_Generic_land_female_10"
+			  "GFX_Portrait_Efsf_Generic_land_female_11"
+			  "GFX_Portrait_Efsf_Generic_land_female_12"
+			  "GFX_Portrait_Efsf_Generic_land_female_13"
+	  }
+	}
+	navy = {
+	  female = {
+			  "GFX_Portrait_Efsf_Generic_navy_female_1"
+	  }
+	}
+  }
+  

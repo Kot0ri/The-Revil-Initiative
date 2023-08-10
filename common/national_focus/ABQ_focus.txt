@@ -1011,6 +1011,7 @@ focus = {
 focus = {
 	id = ABQ_export_mineral_resources_to_the_homeland
 	icon = GFX_focus_generic_steel
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 0
 	y = 1
@@ -1018,6 +1019,20 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		909 = {
+			if = {
+				limit = { is_controlled_by = ZEO }
+			add_resource = {
+				type = steel
+				amount = 20
+			}
+         add_resource = {
+				type = tungsten
+				amount = 20
+			}
+		}
+	}
+	add_ideas = resources_to_the_homeland
 	}
 	relative_position_id = ABQ_reduce_need_for_supply_shipments
 	prerequisite = { focus = ABQ_reduce_need_for_supply_shipments }

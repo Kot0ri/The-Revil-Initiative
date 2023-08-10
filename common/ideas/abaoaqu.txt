@@ -160,6 +160,21 @@ ideas = {
 			removal_cost = -1
 		}
 
+		resources_to_the_homeland = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			consumer_goods_factor = -0.05
+			}
+			removal_cost = -1
+		}
+
 
 		##Designers
 		mobilesuit_manufacturer = {

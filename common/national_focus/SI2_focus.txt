@@ -807,7 +807,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		add_command_power = 50
+		army_experience = 50
+		air_experience = 50
+		navy_experience = 50
 	}
 	relative_position_id = SI2_improve_funding
 	prerequisite = { focus = SI2_improve_funding }

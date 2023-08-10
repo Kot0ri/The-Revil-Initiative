@@ -175,6 +175,21 @@ ideas = {
 			removal_cost = -1
 		}
 
+		the_living_dead = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				experience_loss_factor = -0.2
+			}
+			removal_cost = -1
+		}
+
 
 		##Designers
 		mobilesuit_manufacturer = {

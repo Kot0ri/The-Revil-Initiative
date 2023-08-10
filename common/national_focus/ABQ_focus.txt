@@ -146,7 +146,7 @@ focus = {
 
 focus = {
 	id = ABQ_found_the_living_dead_division
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_CAS
 	cost = 2
 	x = 0
 	y = 2
@@ -154,6 +154,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = the_living_dead
 	}
 	relative_position_id = ABQ_cult_of_personality
 	prerequisite = { focus = ABQ_cult_of_personality }

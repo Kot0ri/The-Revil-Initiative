@@ -732,7 +732,7 @@ focus = {
 
 focus = {
 	id = ABQ_begin_looking_into_newtype_capabilities
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_zeon_human_innovation
 	cost = 2
 	x = 0
 	y = 2
@@ -740,6 +740,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+	add_to_variable = { newtype_accepted_status = 2 }
 	}
 	relative_position_id = ABQ_a_suit_equal_to_the_white_devil
 	prerequisite = { focus = ABQ_a_suit_equal_to_the_white_devil }
@@ -747,7 +748,8 @@ focus = {
 
 focus = {
 	id = ABQ_newtype_battlefield_deployment
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_MS_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 2
 	x = 0
 	y = 2
@@ -798,7 +800,7 @@ focus = {
 			name = p_reuse
 			uses = 1
 			bonus = 0.5
-			technology = p_reuse_device
+			technology = psyco_com
 		}
 		
 	}

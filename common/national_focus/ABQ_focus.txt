@@ -267,7 +267,8 @@ focus = {
 
 focus = {
 	id = ABQ_begin_mass_conscription
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_axis_build_infantry
+	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 2
 	x = 2
 	y = 2
@@ -275,6 +276,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_manpower = 5000
+		add_ideas = hastened_division_training
 	}
 	relative_position_id = ABQ_cult_of_personality
 	prerequisite = { focus = ABQ_cult_of_personality }
@@ -282,7 +285,8 @@ focus = {
 
 focus = {
 	id = ABQ_rush_ms_pilot_training_program
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_generic_military_mission
+	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 2
 	x = 0
 	y = 2
@@ -290,6 +294,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		remove_ideas = hastened_division_training
+		add_ideas = hastened_division_training2
+		add_manpower = 5000
 	}
 	relative_position_id = ABQ_begin_mass_conscription
 	prerequisite = { focus = ABQ_begin_mass_conscription }
@@ -307,12 +314,12 @@ focus = {
 	completion_reward = {
 		add_equipment_to_stockpile = {
 			type = archetype_ms05
-			amount = 2500
+			amount = 5000
 		}
-		add_equipment_to_stockpile = {
-			type  =archetype_ms06_f
-			amount = 2500
-		}
+		##add_equipment_to_stockpile = {
+		##	type  = archetype_ms06
+		##	amount = 2500
+	##	}
 	}
 	relative_position_id = ABQ_rush_ms_pilot_training_program
 	prerequisite = { focus = ABQ_rush_ms_pilot_training_program }

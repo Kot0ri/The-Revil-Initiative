@@ -190,6 +190,42 @@ ideas = {
 			removal_cost = -1
 		}
 
+		hastened_division_training = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			conscription_factor = 0.05
+			army_org_Factor = -0.05
+			training_time_factor = -0.1
+			weekly_manpower = 50
+			}
+			removal_cost = -1
+		}
+
+		hastened_division_training2 = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			conscription_factor = 0.1
+			army_org_Factor = -0.1
+			training_time_factor = -0.3
+			weekly_manpower = 150
+			}
+			removal_cost = -1
+		}
+
 
 		##Designers
 		mobilesuit_manufacturer = {

@@ -841,7 +841,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		every_army_leader = {
+			add_planning = 1
+			add_logistics = 1
+		}
 	}
 	relative_position_id = SI5_antiterrorist_training
 	prerequisite = { focus = SI5_antiterrorist_training }

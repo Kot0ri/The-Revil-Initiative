@@ -356,6 +356,66 @@ ABQ_gleisner={
 	}
 }
 
+ABQ_killing={
+	name="Killing"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Killing.dds"
+		}
+	}
+	corps_commander={
+		traits={zabi_party harsh_leader}
+		skill=1
+		attack_skill=2
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_greniss_escot={
+	name= "Greniss Escot"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Greniss_Escot.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=4
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+	}
+}
+
+ABQ_gaily={
+	name= "Gaily"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Gaily.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
 #Admirals
 
 ABQ_delaz={
@@ -686,4 +746,5 @@ ABQ_gary_lodge={
 }
 
 ##Living Dead
+
 }

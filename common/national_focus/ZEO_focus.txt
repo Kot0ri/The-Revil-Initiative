@@ -236,7 +236,7 @@ focus = {
 	completion_reward = {
 		news_event = { id = news.89 hours = 6 }
 		unlock_decision_tooltip = pe_invited_francis_orbit
-		add_country_leader_trait = ideological_crusader
+		
 	}
 	relative_position_id = ZEO_increase_funding_to_the_military
 	prerequisite = { focus = ZEO_increase_funding_to_the_military }
@@ -252,6 +252,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_country_leader_trait = ideological_crusader
 	}
 	relative_position_id = ZEO_theory_of_spacenoid_supremacy
 	prerequisite = { focus = ZEO_theory_of_spacenoid_supremacy }

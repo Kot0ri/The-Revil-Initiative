@@ -746,5 +746,125 @@ ABQ_gary_lodge={
 }
 
 ##Living Dead
+ABQ_burroughs={
+	name="Burroughs"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/ABQ/burroughs.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		maneuvering_skill=2
+		coordination_skill=2
+
+	}
+}
+
+ABQ_daryl_lorenz={
+	name="Daryl Lorenz"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Daryl_Lorenz.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+	}
+}
+
+ABQ_sean_mitadera={
+	name="Sean Mitadera"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Sean_Mitadera.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_hoover_aisla={
+	name="Hoover Aisla"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Hoover_Aisla.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_fisher_ness={
+	name="Fisher Ness"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Fisher_Ness.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_layton={
+	name="Layton"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large="gfx/leaders/ABQ/Layton.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
 
 }

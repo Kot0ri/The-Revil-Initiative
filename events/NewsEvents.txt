@@ -39,7 +39,7 @@ news_event = {
 			}
 		}
 		set_politics = {
-			ruling_party = zeonism
+			ruling_party = contolism
 			elections_allowed = yes
 		}
 	}
@@ -571,7 +571,7 @@ news_event = {
 			tag = EFS
 		}
 		add_popularity = {
-			ideology = earthsupremacy
+			ideology = supremacist
 			popularity = 0.07
 		}
 		add_popularity = {
@@ -640,7 +640,7 @@ news_event = {
 			threat = 6
 		}
 		add_popularity = {
-			ideology = earthsupremacy
+			ideology = supremacist
 			popularity = 0.07
 		}
 	}
@@ -711,7 +711,7 @@ news_event = {
 			popularity = 0.03
 		}
 		add_popularity = {
-			ideology = zeonism
+			ideology = contolism
 			popularity = -0.03
 		}
 	}
@@ -994,7 +994,7 @@ news_event = {
 		if = {
 			limit = {
 				ZEO = {
-					has_government = zeonism
+					has_government = contolism
 				}
 			}
 			news_event = { id = news.164 days = 30 }
@@ -2991,7 +2991,7 @@ news_event = {
 		}
 		EFS = {
 			start_civil_war = {
-				ideology = earthsupremacy
+				ideology = supremacist
 				size = 0.4
 				keep_unit_leaders_trigger = {
 					NOT = {
@@ -4769,7 +4769,7 @@ news_event = {
 				}
 				add_stability = -0.15
 				set_politics = {
-					ruling_party = zeonism
+					ruling_party = contolism
 					elections_allowed = yes
 				}
 				add_country_leader_role = {
@@ -6210,8 +6210,8 @@ news_event = {
 
 	trigger = {
 		EFS = {
-			earthsupremacy < 0.5
-			has_government = earthsupremacy
+			supremacist < 0.5
+			has_government = supremacist
 		}
 	}
 	mean_time_to_happen = {
@@ -6247,7 +6247,7 @@ news_event = {
 
 	trigger = {
 		EFS = {
-			earthsupremacy > 0.5
+			supremacist > 0.5
 			has_government = democratic
 		}
 	}
@@ -6284,8 +6284,8 @@ news_event = {
 
 	trigger = {
 		EFS = {
-			zeonism < 0.5
-			has_government = zeonism
+			contolism < 0.5
+			has_government = contolism
 		}
 	}
 	mean_time_to_happen = {
@@ -6320,7 +6320,7 @@ news_event = {
 	major = yes
 
 	trigger = {
-		zeonism > 0.5
+		contolism > 0.5
 		has_government = democratic
 	}
 	mean_time_to_happen = {
@@ -6410,8 +6410,8 @@ news_event = {
 	}
 	trigger = {
 		EFS = {
-			earthsupremacy < 0.5
-			has_government = earthsupremacy
+			supremacist < 0.5
+			has_government = supremacist
 		}
 	}
 	immediate = {
@@ -6436,7 +6436,7 @@ news_event = {
 		EFS = {
 			start_civil_war = {
 				ideology = democratic
-				ruling_party = earthsupremacy
+				ruling_party = supremacist
 				size = 0.4
 				capital = 687
 				states = { 309 310 488 687 495 497 498 499 280 505 500 496 357 358 359 360 361 362 363 364 365 366 367 464 465 466 468 332 682 683 467 393 394 395 396 368 369 370 261 113 119 134 135 120 121 133 136 130 131 132 122 123 125 126 127 128 129 338 501 503 504 522 517 518 519 520 521 674 285 523 667 668 669 721 738 673 333 334 335 336 672 635 636 284 723 724 288 289 286 721 670 640 671 325 674 327 623 624 625 626 627 628 290 460 461 459 513 458 460 661 665 448 449 662 663 451 452 446 447 456 457 453 634 737 741 747 711 712 462 276 331 100 101 337 273 514 699 786 556 557 272 515 775 767 551 552 782 }
@@ -6496,7 +6496,7 @@ news_event = {
 		hidden_effect = {
 			EFS = {
 				start_civil_war = {
-					ideology = earthsupremacy
+					ideology = supremacist
 					ruling_party = democratic
 					size = 0.6
 					keep_unit_leaders_trigger = {
@@ -6545,7 +6545,7 @@ news_event = {
 	immediate = {
 		EFS = {
 			start_civil_war = {
-				ideology = zeonism
+				ideology = contolism
 				ruling_party = democratic
 				size = 0.4
 				#capital =
@@ -6666,7 +6666,7 @@ news_event = {
 	immediate = {
 		ZEO = {
 			start_civil_war = {
-				ideology = zeonism
+				ideology = contolism
 				ruling_party = spacesupremacy
 				size = 0.3
 				#capital =
@@ -6704,7 +6704,7 @@ news_event = {
 		ZEO = {
 			start_civil_war = {
 				ideology = spacesupremacy
-				ruling_party = zeonism
+				ruling_party = contolism
 				size = 0.3
 				#capital =
 				#states = {	}
@@ -6923,7 +6923,7 @@ news_event = {
 		add_stability = -0.1
 		add_war_support = 0.05
 		add_popularity = {
-			ideology = zeonism
+			ideology = contolism
 			popularity = -0.1
 		}
 	}
@@ -7184,7 +7184,7 @@ news_event = {
 			tag = ZEO
 		}
 		set_politics = {
-			ruling_party = zeonism
+			ruling_party = contolism
 			elections_allowed = yes
 		}
 		add_stability = -0.2

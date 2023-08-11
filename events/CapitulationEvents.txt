@@ -24,7 +24,7 @@ news_event = {
 						FROM.FROM = { has_government = democratic }
 					}
 					AND = {
-						ROOT = { has_government = zeonism }
+						ROOT = { has_government = contolism }
 						FROM.FROM = { has_government = contolism }
 					}
 				}
@@ -42,12 +42,12 @@ news_event = {
 		trigger = {
 			OR = {
 				AND = {
-					ROOT = { has_government = spacesupremacy }
-					FROM.FROM = { has_government = spacesupremacy }
+					ROOT = { has_government = supremacist }
+					FROM.FROM = { has_government = supremacist }
 				}
 				AND = {
-					ROOT = { has_government = earthsupremacy }
-					FROM.FROM = { has_government = earthsupremacy }
+					ROOT = { has_government = supremacist }
+					FROM.FROM = { has_government = supremacist }
 				}
 			}
 			FROM.FROM = {
@@ -123,20 +123,20 @@ news_event = {
 			NOT = {
 				OR = {
 					AND = {
-						ROOT = { has_government = spacesupremacy }
-						FROM.FROM = { has_government = spacesupremacy }
+						ROOT = { has_government = supremacist }
+						FROM.FROM = { has_government = supremacist }
 					}
 					AND = {
 						ROOT = { has_government = democratic }
 						FROM.FROM = { has_government = democratic }
 					}
 					AND = {
-						ROOT = { has_government = zeonism }
-						FROM.FROM = { has_government = zeonism }
+						ROOT = { has_government = contolism }
+						FROM.FROM = { has_government = contolism }
 					}
 					AND = {
-						ROOT = { has_government = earthsupremacy }
-						FROM.FROM = { has_government = earthsupremacy }
+						ROOT = { has_government = supremacist }
+						FROM.FROM = { has_government = supremacist }
 					}
 				}
 			}

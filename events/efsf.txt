@@ -918,9 +918,9 @@ country_event = {
   trigger = {
     original_tag = EFS
     EFS = {
-      earthsupremacy > 0.40
+      supremacist > 0.40
       NOT = {
-        has_government = earthsupremacy
+        has_government = supremacist
       }
     }
   }
@@ -980,7 +980,7 @@ country_event = {
     if = {
       limit = {
         ZEO = {
-          has_government = spacesupremacy
+          has_government = spacesupremacist
         }
       }
       news_event = { id = news.163 days = 10 }

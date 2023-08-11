@@ -2129,9 +2129,9 @@ news_event = {
 		set_global_flag = zeon_side6_non_aggression
 		hidden_effect = {
 			SI6 = {
-				set_politics = { ruling_party = spacesupremacy elections_allowed = no }
+				set_politics = { ruling_party = supremacist elections_allowed = no }
 				add_popularity = {
-					ideology = spacesupremacy
+					ideology = supremacist
 					popularity = 0.3
 				}
 			}
@@ -3466,7 +3466,7 @@ news_event = {
 		name = news.85.b
 		add_stability = 0.1
 		add_popularity = {
-			ideology = spacesupremacy
+			ideology = supremacist
 			popularity = 0.1
 		}
 		trigger = {
@@ -3476,7 +3476,7 @@ news_event = {
 	option = {
 		name = news.85.c
 		add_popularity = {
-			ideology = spacesupremacy
+			ideology = supremacist
 			popularity = 0.05
 		}
 		add_named_threat = {
@@ -4619,7 +4619,7 @@ news_event = {
 			idea = zeon_dominance_of_human_survival_theory
 			days = 90
 		}
-		add_popularity = { ideology = spacesupremacy popularity = 0.03 }
+		add_popularity = { ideology = supremacist popularity = 0.03 }
 	}
 	option = {
 		name = news.109.c
@@ -4649,7 +4649,7 @@ news_event = {
 		if = {
 			limit = {
 				SI6 = {
-					spacesupremacy > 49
+					supremacist > 49
 				}
 			}
 			random_list = {
@@ -4663,8 +4663,8 @@ news_event = {
   		else_if = {
   			limit = {
   				SI6 = {
-  					spacesupremacy < 50
-  					spacesupremacy > 29
+  					supremacist < 50
+  					supremacist > 29
   				}
   			}
   			random_list = {
@@ -4679,7 +4679,7 @@ news_event = {
   		else_if = {
   			limit = {
 					SI6 = {
-						spacesupremacy < 30
+						supremacist < 30
   				}
           ZEO = {
   					has_idea = kycilia_zabi
@@ -5061,7 +5061,7 @@ news_event = {
 		set_global_flag = giren_war_speech_is_yes
 		ZEO = {
 			add_popularity = {
-				ideology = spacesupremacy
+				ideology = supremacist
 				popularity = 0.2
 			}
 		}
@@ -5257,7 +5257,7 @@ news_event = {
 				}
 			}
 			SI6 = {
-				set_politics = { ruling_party = spacesupremacy elections_allowed = no }
+				set_politics = { ruling_party = supremacist elections_allowed = no }
 			}
 		}
 	}
@@ -5311,7 +5311,7 @@ news_event = {
 			}
 			SI6 = {
 				add_popularity = {
-					ideology = spacesupremacy
+					ideology = supremacist
 					popularity = -0.12
 				}
 			}
@@ -6667,7 +6667,7 @@ news_event = {
 		ZEO = {
 			start_civil_war = {
 				ideology = contolism
-				ruling_party = spacesupremacy
+				ruling_party = supremacist
 				size = 0.3
 				#capital =
 				#states = {	}
@@ -6703,7 +6703,7 @@ news_event = {
 	immediate = {
 		ZEO = {
 			start_civil_war = {
-				ideology = spacesupremacy
+				ideology = supremacist
 				ruling_party = contolism
 				size = 0.3
 				#capital =
@@ -6972,11 +6972,11 @@ news_event = {
 		}
 		ZEO = {
 			add_popularity = {
-				ideology = spacesupremacy
+				ideology = supremacist
 				popularity = 0.15
 			}
 			set_politics = {
-				ruling_party = spacesupremacy
+				ruling_party = supremacist
 				elections_allowed = no
 			}
 			create_wargoal = {
@@ -7140,7 +7140,7 @@ news_event = {
 			tag = ZEO
 		}
 		add_popularity = {
-			ideology = spacesupremacy
+			ideology = supremacist
 			popularity = 0.1
 		}
 		add_political_power = 150
@@ -7239,7 +7239,7 @@ news_event = {
 			tag = ZEO
 		}
 		add_popularity = {
-			ideology = spacesupremacy
+			ideology = supremacist
 			popularity = 0.05
 		}
 		add_political_power = -50
@@ -7354,7 +7354,7 @@ news_event = {
 			retire_character = ZEO_yuri_hasler
 		}
 		add_popularity = {
-			ideology = spacesupremacy
+			ideology = supremacist
 			popularity = -0.1
 		}
 		add_stability = -0.15

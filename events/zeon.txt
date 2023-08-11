@@ -580,7 +580,7 @@ country_event = {
       modifier = {
         factor = 2
         GRA = {
-          spacesupremacy > 0.4
+          supremacist > 0.4
         }
       }
     }
@@ -1987,7 +1987,7 @@ country_event = {
   option = {
     name = zeon.105.a
     add_popularity = {
-      ideology = spacesupremacy
+      ideology = supremacist
       popularity = -0.05
     }
     add_named_threat = {
@@ -2009,7 +2009,7 @@ country_event = {
   option = {
     name = zeon.106.a
     add_popularity = {
-      ideology = spacesupremacy
+      ideology = supremacist
       popularity = 0.08
     }
   }

@@ -4750,42 +4750,42 @@ news_event = {
 	}
 }
 #112 0! ギレン暗殺計画成功
-news_event = {
-	id = news.112
-	title = news.112.t
-	desc = news.112.d
-	picture = GFX_news112
-	major = yes
+##news_event = {
+	##id = news.112
+	##title = news.112.t
+	##desc = news.112.d
+	##picture = GFX_news112
+	##major = yes
 
-	immediate = {
-		clr_global_flag = giren_assassination_plan_is_start
-		hidden_effect = {
-			ZEO = {
-				if = {
-					limit = {
-						has_character = ZEO_gihren_zabi
-					}
-					retire_character = ZEO_gihren_zabi
-				}
-				add_stability = -0.15
-				set_politics = {
-					ruling_party = contolism
-					elections_allowed = yes
-				}
-				add_country_leader_role = {
-					character = ZEO_degwin_sodo_zabi
-					promote_leader = yes
-					country_leader = {
-						expire = "100.1.1"
-						ideology = contlism
-						traits = {
-							bloody_revolutionary
-						}
-					}
-				}
-			}
-		}
-	}
+	##immediate = {
+		##clr_global_flag = giren_assassination_plan_is_start
+		##hidden_effect = {
+		##	ZEO = {
+			##	if = {
+			##		limit = {
+			##			has_character = ZEO_gihren_zabi
+			##		}
+			##		retire_character = ZEO_gihren_zabi
+			##	}
+			##	add_stability = -0.15
+			##	set_politics = {
+			##		ruling_party = contolism
+			##		elections_allowed = yes
+			##	}
+			##	add_country_leader_role = {
+			##		character = ZEO_degwin_sodo_zabi
+			##		promote_leader = yes
+			##		country_leader = {
+			##			expire = "100.1.1"
+			##			ideology = contlism
+			##			traits = {
+			##				bloody_revolutionary
+			##			}
+			##		}
+			##	}
+		##	}
+	##	}
+##	}
 	is_triggered_only = yes
 
 	option = {

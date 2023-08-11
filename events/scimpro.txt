@@ -32,10 +32,10 @@ country_event = {
 	hidden = yes
 	fire_only_once = yes
 	trigger = {
-		has_tech = experimental_rockets
+##		has_tech = experimental_rockets
 		NOT = { has_country_flag = scimpro_rocket_flag }
 	}
-	immediate = {
+immediate = {
 		set_technology = { enable_rocket_site_5 = 1 }
 		set_country_flag = scimpro_rocket_flag
 	}

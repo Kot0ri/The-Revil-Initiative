@@ -1170,7 +1170,7 @@ focus = {
 	y = 2
 	ai_will_do = {
 		factor = 1
-	}
+	}mutually_exclusive = { focus = ABQ_delaz_orders_a_retreeat }
 	completion_reward = {
 	}
 	relative_position_id = ABQ_gihren_is_dead
@@ -1186,6 +1186,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = ABQ_evacuation_to_axis }
 	completion_reward = {
 	}
 	relative_position_id = ABQ_gihren_is_dead

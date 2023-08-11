@@ -1097,7 +1097,7 @@ completion_reward = {
 
 focus = {
 	id = ABQ_form_mau_corps
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	icon = GFX_goal_generic_special_forces
 	cost = 5
 	x = 20
 	y = 2
@@ -1105,6 +1105,13 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+	recruit_character = ABQ_cima_garahau
+	recruit_character = ABQ_dietroaf
+	recruit_character = ABQ_geil_hunt
+	recruit_character = ABQ_kult
+	recruit_character = ABQ_cara_lodge
+	recruit_character = ABQ_gary_lodge
+
 	}
 	relative_position_id = ABQ_gihrens_headquaters
 	prerequisite = { focus = ABQ_gihrens_headquaters }

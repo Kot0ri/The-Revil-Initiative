@@ -54,7 +54,6 @@ characters = {
 			planning_skill=2
 			logistics_skill=2
 		}
-		visible = { has_character_flag = manthfield }
 	}
 	ABQ_adamski={
 		name="Adamski"
@@ -339,6 +338,27 @@ ABQ_gleisner={
 
 #Admirals
 
+ABQ_delaz={
+	name="Aiguille Delaz"
+	portraits={
+		army={
+			small="GFX_idea_aiguille_delaz"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Aiguile_Delaz.dds"
+		}
+	}
+	navy_leader={
+		traits={zabi_party bold blockade_runner superior_tactician space_expert ironside}  
+		skill=7
+		attack_skill=5
+		defense_skill=5
+		maneuvering_skill=5
+		coordination_skill=5
+
+	}
+}
+
 ABQ_jirom={
 	name="Chapman Jirom"
 	portraits={
@@ -377,6 +397,27 @@ ABQ_weigelman={
 		defense_skill=3
 		maneuvering_skill=2
 		coordination_skill=2
+
+	}
+}
+
+ABQ_tokwan={
+	name="Tokwan"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Tokwan.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=1
+		attack_skill=1
+		defense_skill=2
+		maneuvering_skill=1
+		coordination_skill=1
 
 	}
 }
@@ -501,5 +542,128 @@ ABQ_becker={
 		}
 	}
 }
+
+### Mau Corps
+ABQ_cima_garahau={
+	name="Cima Garahau"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large="gfx/leaders/ABQ/Cima_Garahau.dds"
+		}
+	}
+	corps_commander={
+		traits={pirates anti_zabi_party}
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+ABQ_dietroaf={
+	name="Dietroaf"
+	portraits={
+		army={
+			small="GFX_idea_aiguille_delaz"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Deatroaf.dds"
+		}
+	}
+	navy_leader={
+		traits={pirates anti_zabi_party}  
+		skill=1
+		attack_skill=2
+		defense_skill=1
+		maneuvering_skill=1
+		coordination_skill=1
+
+	}
+}
+
+ABQ_geil_hunt={
+	name="Geil Hunt"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large="gfx/leaders/ABQ/Geil_Hunt.dds"
+		}
+	}
+	corps_commander={
+		traits={pirates anti_zabi_party pilot}
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_kult={
+	name="Kult"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large="gfx/leaders/ABQ/Kult.dds"
+		}
+	}
+	corps_commander={
+		traits={pirates anti_zabi_party pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_cara_lodge={
+	name="Cara Lodge"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large="gfx/leaders/ABQ/Cara_Lodge.dds"
+		}
+	}
+	corps_commander={
+		traits={pirates anti_zabi_party pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+ABQ_gary_lodge={
+	name="Gary Lodge"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Gary_Lodge.dds"
+		}
+	}
+	corps_commander={
+		traits={pirates anti_zabi_party pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
 
 }

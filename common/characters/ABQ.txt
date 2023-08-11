@@ -34,6 +34,26 @@ characters = {
 	}
 	#field marshall
 
+	ABQ_twanning={
+		name="Twanning"
+		portraits={
+			army={
+				small=GFX_idea_gadem
+			}
+			army={
+				large= "gfx/leaders/ABQ/Twanning.dds"
+			}
+		}
+		field_marshal={
+			traits={polically_connected}
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
 	
 	#generals
 	ABQ_eric_manthfield={

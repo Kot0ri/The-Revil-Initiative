@@ -320,7 +320,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				zeonism_drift = 0.1
+				contolism_drift = 0.1
 				autonomy_gain = 0.5
 			}
 		}
@@ -334,12 +334,12 @@ ideas = {
 			modifier = {
 				stability_weekly = -0.003
 				political_power_factor = -0.1
-				zeonism_drift = 0.05
+				contolism_drift = 0.05
 				autonomy_gain = 0.3
 			}
 		}
-		#ムンゾ大学(Zeonism)
-		zeon_munzo_univercity_zeonism = {
+		#ムンゾ大学(contolism)
+		zeon_munzo_univercity_contolism = {
 			allowed = {
 				original_tag = ZEO
 				always = no
@@ -348,7 +348,7 @@ ideas = {
 			modifier = {
 				stability_weekly = 0.001
 				political_power_factor = 0.05
-				zeonism_drift = 0.02
+				contolism_drift = 0.02
 				research_speed_factor = 0.05
 			}
 		}
@@ -461,7 +461,7 @@ ideas = {
 		#優性人類生存説
 		zeon_dominance_of_human_survival_theory = {
 			modifier = {
-				spacesupremacy_drift = 0.2
+				supremacist_drift = 0.2
 				autonomy_gain = 2
 			}
 			allowed = {
@@ -471,7 +471,7 @@ ideas = {
 		}
 		zeon_dominance_of_human_survival_theory2 = {
 			modifier = {
-				spacesupremacy_drift = 0.3
+				supremacist_drift = 0.3
 				autonomy_gain = 3
 			}
 			allowed = {

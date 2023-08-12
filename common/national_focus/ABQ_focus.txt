@@ -587,6 +587,52 @@ focus = {
 }
 
 focus = {
+	id = ABQ_cornerstone_of_the_supreme_commanders_power
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_long_range_fleet_project
+	prerequisite = { focus = ABQ_long_range_fleet_project }
+}
+
+focus = {
+	id = ABQ_develop_next_gen_ships_desgins
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_cornerstone_of_the_supreme_commanders_power
+	prerequisite = { focus = ABQ_cornerstone_of_the_supreme_commanders_power}
+}
+
+focus = {
+	id = ABQ_widescale_fighter_deployment
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = 2
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_use_obsolete_ms
+	prerequisite = { focus = ABQ_use_obsolete_ms}
+	prerequisite = { focus = ABQ_develop_next_gen_ships_desgins}
+}
+
+focus = {
 	id = ABQ_competition_with_pezun
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5

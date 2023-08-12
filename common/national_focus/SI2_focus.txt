@@ -1,15 +1,15 @@
 
 
-##focus_tree = {
-	##id = SI2
-	##continuous_focus_position = { x = 0 y = 8000}
-	##country = {
-	##	factor = 0
-	##	modifier = {
-	##		add = 10
-	##		original_tag = SI2
-	##	}
-	##}
+focus_tree = {
+	id = SI2
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = SI2
+		}
+	}
 	default = no
 	
 	focus = {

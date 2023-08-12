@@ -1894,7 +1894,7 @@ focus = {
 			name = zeon_musai_1
 			uses = 1
 			bonus = 0.5
-			technology = zeon_space_cruiser1_equipment
+			technology =ZEO_space_cruiser1_tech
 		}
 	}
 	relative_position_id = ZEO_war_preperations
@@ -1977,6 +1977,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_timed_idea = {
+			idea = gravity_front_line
+			days = 365
+		}
+		country_event = { id = zeon.40 }
 	}
 	relative_position_id = ZEO_draw_up_plans_for_earth_invansion
 	prerequisite = { focus = ZEO_draw_up_plans_for_earth_invansion }
@@ -1993,12 +1998,6 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_light_ships_focus }
 	completion_reward = {
-		add_tech_bonus = {
-			name = battlesship_space
-			uses = 1
-			bonus = 0.5
-			technology = zeon_space_cruiser2_equipment
-		}
 	}
 	prerequisite = { focus = ZEO_expansion_of_the_starfleet }
 }
@@ -2071,7 +2070,7 @@ focus = {
 			name = zeon_musai_2
 			uses = 1
 			bonus = 0.5
-			technology = zeon_space_cruiser2_equipment
+			technology = ZEO_space_cruiser2_tech
 		}
 	}
 	relative_position_id = ZEO_expansion_of_the_starfleet
@@ -2135,6 +2134,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = zeon_musai_1
+			uses = 1
+			bonus = 0.5
+			technology = ZEO_space_carrier1_tech
+		}
 	}
 	relative_position_id = ZEO_development_of_the_gwazine
 	prerequisite = { focus = ZEO_development_of_the_gwazine }
@@ -2157,7 +2162,7 @@ focus = {
 
 focus = {
 	id = ZEO_development_of_the_gwazine
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_generic_navy_battleship2
 	cost = 5
 	x = 0
 	y = 2
@@ -2165,6 +2170,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = battlesship_space
+			uses = 1
+			bonus = 0.5
+			technology =  ZEO_space_hv_battleship1_tech
+		}
 	}
 	relative_position_id = ZEO_heavy_ship_focus
 	prerequisite = { focus = ZEO_heavy_ship_focus }
@@ -2200,6 +2211,13 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = zeon_musai_1
+			uses = 2
+			bonus = 1
+			technology =ZEO_space_fv_cruiser1_tech 
+			technology =ZEO_space_fv_cruiser2_tech 
+		}
 	}
 	relative_position_id = ZEO_improve_the_musai
 	prerequisite = { focus = ZEO_improve_the_musai }
@@ -2222,7 +2240,7 @@ focus = {
 
 focus = {
 	id = ZEO_improve_the_musai
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon =  GFX_goal_generic_navy_cruiser
 	cost = 2
 	x = 0
 	y = 2
@@ -2230,6 +2248,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_tech_bonus = {
+			name = zeon_musai_1
+			uses = 1
+			bonus = 0.5
+			technology =ZEO_space_cruiser3_tech
+		}
 	}
 	relative_position_id = ZEO_light_ships_focus
 	prerequisite = { focus = ZEO_light_ships_focus }

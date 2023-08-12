@@ -1,0 +1,147 @@
+add_namespace = ABQ
+
+country_event = {
+	id = ABQ.1
+	title = ABQ.1.t
+	desc = ABQ.1.d
+	picture = GFX_country_zeon002
+  
+	trigger = {
+	  original_tag = ABQ
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+  
+	option = {
+	  name = ABQ.1.a
+	  ai_chance = {
+			  base = 1
+		  }
+	  hidden_effect = {
+		create_equipment_variant = {
+			name = "Gwazine Class"
+			type = zeon_space_hv_battleship1_equipment
+			name_group = ZEO_SB_HISTORICAL
+			allow_without_tech = yes
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = space_battery_3
+				fixed_ship_secondaries_slot = space_secondaries_3
+				fixed_ship_engine_slot = space_engine_1
+				fixed_ship_minovsky_slot = space_minovsky_1
+				front_1_custom_slot = space_battery_3
+				front_2_custom_slot = space_secondaries_3
+				mid_1_custom_slot = space_hanger_ms06
+				mid_2_custom_slot = space_hanger_ms06
+				mid_3_custom_slot = space_hanger_ms06
+				rear_1_custom_slot = space_battery_3
+				rear_2_custom_slot = space_secondaries_3
+			}
+			obsolete = no
+		}
+		add_equipment_production = {
+			equipment = {
+				type = zeon_space_hv_battleship1_equipment
+				
+				version_name = "Gwazine Class"
+			}
+			name = "Gwazine" 
+			requested_factories = 1
+			progress = 1
+			amount = 1
+		}
+
+		add_equipment_production = {
+			equipment = {
+				type = zeon_space_hv_battleship1_equipment
+				
+				version_name = "Gwazine Class"
+			}
+			name = "Liberator" 
+			requested_factories = 1
+			progress = 1
+			amount = 1
+		}
+	  }
+	}
+  }
+
+  country_event = {
+	id = ABQ.2
+	title = ABQ.2.t
+	desc = ABQ.2.d
+	picture = GFX_country_zeon002
+  
+	trigger = {
+	  original_tag = ABQ
+	}
+	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
+  
+	option = {
+	  name = ABQ.2.a
+	  ai_chance = {
+			  base = 1
+		  }
+	  hidden_effect = {
+			create_equipment_variant = {
+				name = "Dolos Class"
+				type = zeon_space_carrier1_equipment
+				name_group = ZEO_SCa_HISTORICAL
+				allow_without_tech = yes
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = space_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_1
+					fixed_ship_secondaries_slot = space_secondaries_1
+					fixed_ship_engine_slot = space_engine_1
+					fixed_ship_minovsky_slot = space_minovsky_1
+					front_1_custom_slot = space_hanger_ms05
+					front_2_custom_slot = space_hanger_ms05
+					mid_1_custom_slot = space_hanger_ms06
+					mid_2_custom_slot = space_hanger_ms06
+					mid_3_custom_slot = space_hanger_ms06
+					rear_1_custom_slot = space_hanger_ms06
+					rear_2_custom_slot = space_hanger_ms06
+				}
+				obsolete = no
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = zeon_space_carrier1_equipment
+					
+					version_name = "Dolos Class"
+				}
+				name = "Dolos" 
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = zeon_space_carrier1_equipment
+					
+					version_name = "Dolos Class"
+				}
+				name = "Dolowa" 
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}
+
+			add_equipment_production = {
+				equipment = {
+					type = zeon_space_carrier1_equipment
+					
+					version_name = "Dolos Class"
+				}
+				name = "Midola" 
+				requested_factories = 1
+				progress = 1
+				amount = 1
+			}
+	  }
+	}
+  }

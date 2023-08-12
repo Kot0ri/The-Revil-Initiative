@@ -560,7 +560,7 @@ focus = {
 
 focus = {
 	id = ABQ_begin_production_of_the_dolos
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_carrier
 	cost = 5
 	x = 0
 	y = 2
@@ -568,6 +568,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		ABQ = {
+			country_event = ABQ.2
+		}
 	}
 	relative_position_id = ABQ_expansion_of_shipyards
 	prerequisite = { focus = ABQ_expansion_of_shipyards }
@@ -575,7 +578,7 @@ focus = {
 
 focus = {
 	id = ABQ_long_range_fleet_project
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_generic_navy_battleship2
 	cost = 5
 	x = 0
 	y = 2
@@ -583,6 +586,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		ABQ = {
+			country_event = ABQ.1
+		}
 	}
 	relative_position_id = ABQ_begin_production_of_the_dolos
 	prerequisite = { focus = ABQ_begin_production_of_the_dolos }

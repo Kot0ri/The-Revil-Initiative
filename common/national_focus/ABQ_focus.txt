@@ -1140,10 +1140,56 @@ focus = {
 }
 
 focus = {
+	id = ABQ_MAU_corps_operations
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_form_mau_corps
+	prerequisite = { focus = ABQ_form_mau_corps }
+}
+
+focus = {
+	id = ABQ_test_out_new_marine_models
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_MAU_corps_operations
+	prerequisite = { focus = ABQ_MAU_corps_operations }
+}
+
+
+focus = {
 	id = ABQ_work_on_the_colony_laser
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
 	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_aid_operation_british
+	prerequisite = { focus = ABQ_aid_operation_british }
+}
+
+focus = {
+	id = ABQ_survival_of_conscious
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = -2
 	y = 2
 	ai_will_do = {
 		factor = 1

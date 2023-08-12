@@ -115,7 +115,8 @@ focus = {
 
 focus = {
 	id = ABQ_cult_of_personality
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_focus_generic_military_dictatorship
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}}
 	cost = 5
 	x = 0
 	y = 1
@@ -123,6 +124,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = ABQ_cult_of_personality
 	}
 	relative_position_id = ABQ_loyalty_beyond_death
 	prerequisite = { focus = ABQ_loyalty_beyond_death }
@@ -588,15 +590,45 @@ focus = {
 
 focus = {
 	id = ABQ_cornerstone_of_the_supreme_commanders_power
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_construct_naval_dockyard
+	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
-	completion_reward = {
+	available = {
+		has_full_control_of_state = 935
+		has_full_control_of_state = 934
 	}
+completion_reward = {
+	934 = {
+		if = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+	934 = {
+		if = {
+			limit = { is_controlled_by = ROOT }
+			add_building_construction = {
+				type = dockyard
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+	935 = {	add_extra_state_shared_building_slots = 4
+	}
+	934 = {	add_extra_state_shared_building_slots = 4
+}
+add_ideas = cornerstone_of_the_supreme_commanders_power
+}
 	relative_position_id = ABQ_long_range_fleet_project
 	prerequisite = { focus = ABQ_long_range_fleet_project }
 }
@@ -618,7 +650,7 @@ focus = {
 
 focus = {
 	id = ABQ_widescale_fighter_deployment
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_generic_build_airforce
 	cost = 5
 	x = 2
 	y = 3
@@ -626,6 +658,16 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = archetype_multirolle
+			amount = 2000
+		}
+
+		add_equipment_to_stockpile = {
+			type = archetype_fighter
+			amount = 2000
+		}
+
 	}
 	relative_position_id = ABQ_use_obsolete_ms
 	prerequisite = { focus = ABQ_use_obsolete_ms}
@@ -649,7 +691,8 @@ focus = {
 
 focus = {
 	id = ABQ_merge_ms_and_ship_doctrines
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon  = GFX_goal_generic_navy_cruiser
+	search_filters = {FOCUS_FILTER_NAVY_XP}
 	cost = 5
 	x = -2
 	y = 2
@@ -657,6 +700,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_command_power = 50
+		navy_experience = 50
 	}
 	relative_position_id = ABQ_widescale_fighter_deployment
 	prerequisite = { focus = ABQ_widescale_fighter_deployment}
@@ -949,8 +994,7 @@ focus = {
 
 focus = {
 	id = ABQ_reinforce_the_command_centers
-	icon = GFX_focus_research
-	search_filters = { FOCUS_FILTER_RESEARCH } 
+	icon = GFX_goal_fortify_the_westwall
 	cost = 5
 	x = 2
 	y = 1
@@ -958,7 +1002,29 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		add_research_slot = 1
+		935 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 13335
+					instant_build = yes
+				}
+			}
+		}
+
+		934 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = bunker
+					level = 3
+					province = 13312
+					instant_build = yes
+				}
+			}
+		}
 	}
 	relative_position_id = ABQ_clear_out_the_asteroid
 	prerequisite = { focus = ABQ_clear_out_the_asteroid }
@@ -984,8 +1050,8 @@ focus = {
 
 focus = {
 	id = ABQ_weapons_development_contracts
-	icon = GFX_goal_generic_production
-	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	icon = GFX_focus_focus_fra_maquis
+	search_filters = { FOCUS_FILTER_RESEARCH }
 	cost = 5
 	x = 2
 	y = 1
@@ -993,13 +1059,6 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		add_tech_bonus = {
-			name = industrial_bonus
-			bonus = 0.50
-			uses = 3
-			category = industry
-			category = electronics
-		}
 	}
 	relative_position_id = ABQ_build_new_research_labs
 	prerequisite = { focus = ABQ_build_new_research_labs }
@@ -1007,8 +1066,8 @@ focus = {
 
 focus = {
 	id = ABQ_zeon_medal_of_science
-	icon = GFX_goal_generic_production
-	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	icon = GFX_focus_research
+	search_filters = {FOCUS_FILTER_RESEARCH }
 	cost = 5
 	x = 0
 	y = 1
@@ -1016,13 +1075,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		add_tech_bonus = {
-			name = industrial_bonus
-			bonus = 0.50
-			uses = 3
-			category = industry
-			category = electronics
-		}
+		add_ideas = ABQ_medal_of_science
 	}
 	relative_position_id = ABQ_weapons_development_contracts
 	prerequisite = { focus = ABQ_weapons_development_contracts }
@@ -1117,6 +1170,23 @@ focus = {
 	}
 	relative_position_id = ABQ_expansion_of_civil_facilities
 	prerequisite = { focus = ABQ_expansion_of_civil_facilities }
+}
+
+focus = {
+	id = ABQ_build_up_propaganda_network
+	icon = GFX_goal_generic_propaganda
+	search_filters = { FOCUS_FILTER_PROPAGANDA FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = ABQ_propaganda_network
+	}
+	relative_position_id = ABQ_improve_soldiers_benefits
+	prerequisite = { focus = ABQ_improve_soldiers_benefits }
 }
 
 focus = {
@@ -1282,7 +1352,7 @@ focus = {
 
 focus = {
 	id = ABQ_mau_corps_operations
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	icon = GFX_goal_generic_amphibious_assault
 	cost = 5
 	x = 2
 	y = 2
@@ -1290,6 +1360,50 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		ABQ_cima_garahau = {			
+			limit = {
+				NOT = {
+					has_trait = naval_invader
+				}
+			}
+			add_trait = {trait = naval_invader}
+		}
+
+		ABQ_kult = {			
+			limit = {
+				NOT = {
+					has_trait = naval_invader
+				}
+			}
+			add_trait = {trait = naval_invader}
+		}
+
+		ABQ_geil_hunt = {			
+			limit = {
+				NOT = {
+					has_trait = naval_invader
+				}
+			}
+			add_trait = {trait = naval_invader}
+		}
+
+		ABQ_cara_lodge = {			
+			limit = {
+				NOT = {
+					has_trait = naval_invader
+				}
+			}
+			add_trait = {trait = naval_invader}
+		}
+
+		ABQ_gary_lodge = {			
+			limit = {
+				NOT = {
+					has_trait = naval_invader
+				}
+			}
+			add_trait = {trait = naval_invader}
+		}
 	}
 	relative_position_id = ABQ_form_mau_corps
 	prerequisite = { focus = ABQ_form_mau_corps }
@@ -1297,7 +1411,7 @@ focus = {
 
 focus = {
 	id = ABQ_test_out_new_marine_models
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
+    icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 0
 	y = 2
@@ -1306,8 +1420,8 @@ focus = {
 	}
 	completion_reward = {
 	}
-	relative_position_id = ABQ_MAU_corps_operations
-	prerequisite = { focus = ABQ_MAU_corps_operations }
+	relative_position_id = ABQ_mau_corps_operations
+	prerequisite = { focus = ABQ_mau_corps_operations }
 }
 
 

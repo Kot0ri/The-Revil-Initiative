@@ -226,6 +226,69 @@ ideas = {
 			removal_cost = -1
 		}
 
+		cornerstone_of_the_supreme_commanders_power = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            	industrial_capacity_dockyard = 0.1
+			}
+			removal_cost = -1
+		}
+
+		ABQ_propaganda_network = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            	stability_factor = 0.10
+				war_support_factor = 0.1
+			}
+			removal_cost = -1
+		}
+
+		ABQ_medal_of_science = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            	research_speed_factor = 0.15
+			}
+			removal_cost = -1
+		}
+
+		ABQ_cult_of_personality = {
+			picture = generic_constitutional_guarantees
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            	surrender_limit = 0.1
+				war_support_factor = 0.1
+				political_power_factor 0.1
+			}
+			removal_cost = -1
+		}
+
 
 		##Designers
 		mobilesuit_manufacturer = {

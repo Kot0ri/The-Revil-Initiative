@@ -633,6 +633,36 @@ focus = {
 }
 
 focus = {
+	id = ABQ_develop_cheaper_ms
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_widescale_fighter_deployment
+	prerequisite = { focus = ABQ_widescale_fighter_deployment}
+}
+
+focus = {
+	id = ABQ_merge_ms_and_ship_doctrines
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_widescale_fighter_deployment
+	prerequisite = { focus = ABQ_widescale_fighter_deployment}
+}
+
+focus = {
 	id = ABQ_competition_with_pezun
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5

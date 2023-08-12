@@ -82,6 +82,16 @@ leader_traits = {
 		high_command_cost_factor = -0.15
 		guarantee_cost = -0.3
 	}
+	ideological_crusader = {
+		random = yes
+		sprite = 13
+		opinion_gain_monthly_same_ideology_factor = 1.0
+		party_popularity_stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 0.2
+		}
+	}
 	bloody_revolutionary = {
 		random = no
 		political_advisor_cost_factor = -0.15

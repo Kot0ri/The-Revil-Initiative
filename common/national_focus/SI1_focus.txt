@@ -1,15 +1,15 @@
 
-focus_tree = {
-	id = SI1
-	continuous_focus_position = { x = 0 y = 8000}
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			original_tag = SI1
-		}
-	}
-	default = no
+##focus_tree = {
+##	id = SI1
+	##continuous_focus_position = { x = 0 y = 8000}
+	##country = {
+	##	factor = 0
+	##	modifier = {
+	##		add = 10
+	##		original_tag = SI1
+	##	}
+	##}
+	##default = no
 	
 	focus = {
 	id = SI1_negotiations_with_federation_investors

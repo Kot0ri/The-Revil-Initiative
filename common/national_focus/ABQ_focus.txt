@@ -948,6 +948,24 @@ focus = {
 }
 
 focus = {
+	id = ABQ_reinforce_the_command_centers
+	icon = GFX_focus_research
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_research_slot = 1
+	}
+	relative_position_id = ABQ_clear_out_the_asteroid
+	prerequisite = { focus = ABQ_clear_out_the_asteroid }
+	prerequisite = { focus = ABQ_space_fortress_a_baoa_qu }
+}
+
+focus = {
 	id = ABQ_build_new_research_labs
 	icon = GFX_focus_research
 	search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -962,6 +980,53 @@ focus = {
 	}
 	relative_position_id = ABQ_clear_out_the_asteroid
 	prerequisite = { focus = ABQ_clear_out_the_asteroid }
+}
+
+focus = {
+	id = ABQ_weapons_development_contracts
+	icon = GFX_goal_generic_production
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.50
+			uses = 3
+			category = industry
+			category = electronics
+		}
+	}
+	relative_position_id = ABQ_build_new_research_labs
+	prerequisite = { focus = ABQ_build_new_research_labs }
+}
+
+focus = {
+	id = ABQ_zeon_medal_of_science
+	icon = GFX_goal_generic_production
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.50
+			uses = 3
+			category = industry
+			category = electronics
+		}
+	}
+	relative_position_id = ABQ_weapons_development_contracts
+	prerequisite = { focus = ABQ_weapons_development_contracts }
+	prerequisite = { focus = ABQ_bastion_of_the_supreme_commander }
 }
 
 focus = {

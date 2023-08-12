@@ -1891,10 +1891,10 @@ focus = {
 			}
 		}
 		add_tech_bonus = {
-			name = zeon_zeon_navy
-			category = naval_equipment
+			name = zeon_musai_1
 			uses = 1
-			bonus = 1
+			bonus = 0.5
+			technology = zeon_space_cruiser1_equipment
 		}
 	}
 	relative_position_id = ZEO_war_preperations
@@ -1993,6 +1993,12 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_light_ships_focus }
 	completion_reward = {
+		add_tech_bonus = {
+			name = battlesship_space
+			uses = 1
+			bonus = 0.5
+			technology = zeon_space_cruiser2_equipment
+		}
 	}
 	prerequisite = { focus = ZEO_expansion_of_the_starfleet }
 }
@@ -2061,6 +2067,12 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_heavy_ship_focus }
 	completion_reward = {
+		add_tech_bonus = {
+			name = zeon_musai_2
+			uses = 1
+			bonus = 0.5
+			technology = zeon_space_cruiser2_equipment
+		}
 	}
 	relative_position_id = ZEO_expansion_of_the_starfleet
 	prerequisite = { focus = ZEO_expansion_of_the_starfleet }

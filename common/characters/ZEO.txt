@@ -1,4 +1,5 @@
 characters={
+	##Leaders
 	ZEO_darcia_bakharo={
 		name=ZEO_darcia_bakharo
 		portraits={
@@ -389,6 +390,45 @@ ZEO_cecilia_irene = {
 		}
 	}
 
+	ZEO_richard_raines={
+		name="Richard Raines"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Richard_Raines.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
+	ZEO_ralph_angelos={
+		name="Ralph Angelos"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
 
 	##Admirals
 	ZEO_asakura = {

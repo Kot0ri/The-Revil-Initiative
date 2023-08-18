@@ -41,12 +41,198 @@ AXS_char_aznable={
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-		traits = { akai_suisei }
+		traits = { akai_suisei newtype }
 		skill = 6
 		attack_skill = 8
 		defense_skill = 5
 		planning_skill = 5
 		logistics_skill = 5
+	}
+}
+
+AXS_haman_karn={
+	name="Haman Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+	}
+	country_leader={
+		ideology= oligarchy
+		traits={ghost_of_zeon}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { ghost_of_zeon newtype }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 6
+		logistics_skill = 5
+	}
+}
+
+AXS_garma_zabi={
+	name="Garma Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+	}
+	country_leader={
+		ideology= aristocracy
+		traits={hero_of_the_independence_war popular_icon heir_zabi_family}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		skill = 5
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+
+AXS_mineva_zabi={
+	name="Mineva Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+	}
+	country_leader={
+		ideology= aristocracy
+		traits={popular_figurehead heir_zabi_family}
+		expire="1000.1.1.1"
+	}
+}
+
+AXS_gihren_zabi={
+	name="Gihren Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+	}
+	country_leader={
+		ideology= supremacist
+		traits={bitter_loser cult_of_personality}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		skill = 5
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+
+AXS_kycilia_zabi={
+	name="Kycilia Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+	}
+	country_leader={
+		ideology= oligarchy
+		traits={bitter_loser technology_supremacist}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		skill = 5
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+
+AXS_glemy_zabi={
+	name="Glemy Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+	}
+	country_leader={
+		ideology= aristocracy
+		traits={heir_zabi_family}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+
+AXS_glemy_toto={
+	name="Glemy Toto"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+	}
+	country_leader={
+		ideology= aristocracy
+		traits={illegtimate_heir anti_karn}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+
+AXS_enzo_bernini={
+	name="Enzo Bernini"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Char_Aznable.dds"
+		}
+	}
+	country_leader={
+		ideology= supremacist
+		traits={gihren_loyalist bitter_loser anti_karn}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
 	}
 }
 

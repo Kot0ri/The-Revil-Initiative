@@ -15,7 +15,7 @@ characters={
 		traits={maharaja_trait}
 		expire="1000.1.1.1"
 	}
-	navy_leader={
+	navy_leader={0
 		traits={anti_zabi_part}
 		skill=3
 		attack_skill=3
@@ -29,10 +29,10 @@ AXS_char_aznable={
 	name="Char Aznable"
 	portraits={
 		civilian={
-			
+			large="gfx/leaders/AXS/Char_Aznable.dds"
 		}
 		army={
-			
+			large="gfx/leaders/AXS/Char_Aznable.dds"
 		}
 	}
 	country_leader={

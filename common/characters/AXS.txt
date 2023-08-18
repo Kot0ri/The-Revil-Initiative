@@ -319,6 +319,66 @@ AXS_maharaja_jr={
 	}
 }
 
+AXS_august_guidan={
+	name="August Guidan"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/maharaja_jr.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+AXS_arius_moma={
+	name="Arius Moma"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/maharaja_jr.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+AXS_rakan_dahkaran={
+	name="Rakan Dahkaran"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/maharaja_jr.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=4
+		attack_skill=3
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
 #General
 AXS_gottn_goh={
 	name="Gottn Goh"
@@ -339,6 +399,8 @@ AXS_gottn_goh={
 		logistics_skill=1
 	}
 }
+
+
 ##High Command
 AXS_fernandez={
 	name="Hugo Fernandez"

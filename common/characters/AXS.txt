@@ -25,6 +25,33 @@ characters={
 	}
 }
 
+AXS_char_aznable={
+	name="Char Aznable"
+	portraits={
+		civilian={
+			
+		}
+		army={
+			
+		}
+	}
+	country_leader={
+		ideology= progressive
+				  despotism
+		traits={well_respected hero_of_the_independence_war popular_icon vanguishier_of_the_white_devil}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = {
+		}
+		skill = 6
+		attack_skill = 8
+		defense_skill = 5
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+
 #Admirals
 AXS_yuri_hasler={
 	name="Yuri Hasler"

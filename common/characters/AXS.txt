@@ -379,6 +379,47 @@ AXS_rakan_dahkaran={
 	}
 }
 
+AXS_luce_krangel={
+	name="Luce Krangel"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/maharaja_jr.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot cyber_newtype}
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=2
+	}
+}
+
+AXS_fabian_frischknecht={
+	name="Fabian Frischknecht"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/maharaja_jr.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot cyber_newtype}
+		skill=2
+		attack_skill=3
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+
 #General
 AXS_gottn_goh={
 	name="Gottn Goh"

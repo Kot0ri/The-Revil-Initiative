@@ -107,7 +107,6 @@ SI1_gyunei={
 	
 }
 
-
 SI1_angelo={
 	name="Angelo Sauper"
 	portraits={
@@ -129,6 +128,26 @@ SI1_angelo={
 	
 }
 
-
+SI1_marida={
+	name="Marida Cruz"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		corps_commander= {
+	 traits={ pilot cyber_newtype }
+		skill=4
+		attack_skill=4
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+	
 }
+
+
 }

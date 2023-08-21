@@ -97,7 +97,7 @@ SI1_gyunei={
 		}
 	}
 	corps_commander= {
-	 traits={ pilot cyber_newtype royalguard }
+	 traits={ pilot cyber_newtype royal_guard }
 		skill=4
 		attack_skill=4
 		defense_skill=3
@@ -118,7 +118,7 @@ SI1_angelo={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot cyber_newtype royalguard }
+	 traits={ pilot cyber_newtype royal_guard }
 		skill=4
 		attack_skill=4
 		defense_skill=3
@@ -149,5 +149,67 @@ SI1_marida={
 	
 }
 
+SI1_rezin={
+	name="Rezin Schneider"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		corps_commander= {
+	 traits={ pilot }
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
+
+SI1_sergi={
+	name="Sergi Helfer"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		corps_commander= {
+	 traits={ pilot royal_guard }
+		skill=3
+		attack_skill=2
+		defense_skill=3
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
+
+SI1_bato={
+	name="Bato Paserinos"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		corps_commander= {
+	 traits={ pilot royal_guard }
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
 
 }

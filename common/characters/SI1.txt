@@ -275,5 +275,88 @@ SI1_spotter={
 	
 }
 
+SI1_chole={
+	name="Chole Croce"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		corps_commander= {
+	 traits={ pilot cyber_newtype}
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
 
+SI1_vincent={
+	name="Vincent Gleissner"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		corps_commander= {
+	 traits={ pilot}
+		skill=4
+		attack_skill=4
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=1
+	}
+	
+}
+
+
+## Admirals
+
+SI1_lyle={
+	name="Lyle"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		navy_leader = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 3
+		} 
+	
+}
+
+SI1_hill={
+	name="Hill Dawson"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		navy_leader = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 3
+		} 
+	
+}
 }

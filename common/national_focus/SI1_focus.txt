@@ -1493,7 +1493,8 @@ focus = {
 	completion_reward = {
 	add_manpower = 50000
 	recruit_character = SI1_rezin
-
+	recruit_character = SI1_lyle
+	recruit_character = SI1_hill
 	}
 	relative_position_id = SI1_militarization_of_side_1
 	prerequisite = { focus = SI1_militarization_of_side_1 }
@@ -1858,7 +1859,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	recruit_character = SI1_chole
+	recruit_character = SI1_vincent
 	}
 	relative_position_id = SI1_bring_in_deikun_loyalists
 	prerequisite = { focus = SI1_bring_in_deikun_loyalists }

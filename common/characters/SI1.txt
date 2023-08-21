@@ -204,12 +204,76 @@ SI1_bato={
 		corps_commander= {
 	 traits={ pilot royal_guard }
 		skill=3
-		attack_skill=3
+		attack_skill=2
+		defense_skill=3
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
+
+SI1_cuaron={
+	name="Cuaron Maskua"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		corps_commander= {
+	 traits={ pilot royal_guard }
+		skill=3
+		attack_skill=2
+		defense_skill=3
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
+
+SI1_zechst={
+	name="Zechst Ade"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		corps_commander= {
+	 traits={ pilot royal_guard newtype1}
+		skill=3
+		attack_skill=2
+		defense_skill=3
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
+
+SI1_spotter={
+	name="Spotter Sys"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+		corps_commander= {
+	 traits={ pilot royal_guard}
+		skill=2
+		attack_skill=2
 		defense_skill=2
 		planning_skill=1
 		logistics_skill=1
 	}
 	
 }
+
 
 }

@@ -1753,7 +1753,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		add_country_leader_trait = 
 	}
 	relative_position_id = SI1_triumphant_return_to_core_3
 	prerequisite = { focus = SI1_triumphant_return_to_core_3 }
@@ -1770,7 +1770,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		add_country_leader_trait =
 	}
 	relative_position_id = SI1_prince_of_space
 	prerequisite = { focus = SI1_prince_of_space }
@@ -1853,6 +1853,7 @@ focus = {
 	}
 	completion_reward = {
 		set_state_owner = 949
+		
 	}
 	relative_position_id = SI1_negotiations_with_the_other_sides
 	prerequisite = { focus = SI1_negotiations_with_the_other_sides }

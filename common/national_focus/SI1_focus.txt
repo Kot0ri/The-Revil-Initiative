@@ -1584,6 +1584,8 @@ focus = {
 		target = ZEO
 		type = annex_everything
 	}
+	recruit_character = SI1_nakamura
+	recruit_character = SI1_christenia
 	}
 	relative_position_id = SI1_form_a_royal_guard
 	prerequisite = { focus = SI1_form_a_royal_guard }
@@ -1603,6 +1605,7 @@ focus = {
 			target = EFS
 			type = annex_everything
 		}
+		recruit_character = SI1_kamille
 	}
 	relative_position_id = SI1_form_a_royal_guard
 	prerequisite = { focus = SI1_form_a_royal_guard }

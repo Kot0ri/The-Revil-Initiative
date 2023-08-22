@@ -317,6 +317,46 @@ SI1_vincent={
 	
 }
 
+SI1_kamille={
+	name="Kamille Bidan"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+	corps_commander= {
+ traits={ pilot newtype3
+	skill=6
+	attack_skill=5
+	defense_skill=5
+	planning_skill=1
+	logistics_skill=1
+}
+}
+
+SI1_christenia={
+	name="Christenia Mackenzie"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+	corps_commander= {
+ traits={ pilot}
+	skill=3
+	attack_skill=2
+	defense_skill=3
+	planning_skill=1
+	logistics_skill=1
+}
+}
+
 
 ## Admirals
 
@@ -358,5 +398,37 @@ SI1_hill={
 			coordination_skill = 3
 		} 
 	
+}
+
+
+##Adivsors
+SI1_nakamura={
+	name="Asashi Nakamura"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+
+
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = nakamura
+		allowed = {
+			original_tag = SI1
+		}
+		traits = {
+			army_chief_maneuver_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
 }
 }

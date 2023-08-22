@@ -1623,7 +1623,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	add_war_support = 20
+	add_war_support = 0.20
 	}
 	relative_position_id = SI1_take_down_the_zabis
 	prerequisite = { focus = SI1_take_down_the_zabis }
@@ -1855,7 +1855,7 @@ focus = {
 	}
 	completion_reward = {
 		set_state_owner = 949
-		
+		set_state_controller = 949
 	}
 	relative_position_id = SI1_negotiations_with_the_other_sides
 	prerequisite = { focus = SI1_negotiations_with_the_other_sides }

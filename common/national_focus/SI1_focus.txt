@@ -1973,6 +1973,7 @@ focus = {
 	}
 	relative_position_id = SI1_char_continuation_project_completetion
 	prerequisite = { focus = SI1_char_continuation_project_completetion }
+	mutually_exclusive = { focus = SI1_vessel_for_mankind }
 }
 
 focus = {
@@ -1989,6 +1990,7 @@ focus = {
 	}
 	relative_position_id = SI1_char_continuation_project_completetion
 	prerequisite = { focus = SI1_char_continuation_project_completetion }
+	mutually_exclusive = { focus = SI1_casvals_blue_eyes }
 }
 
 focus = {
@@ -2001,7 +2003,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	create_faction = "Side Coprosperity Sphere"
 	}
 	relative_position_id = SI1_vessel_for_mankind
 	prerequisite = { focus = SI1_vessel_for_mankind }
@@ -2066,7 +2068,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_manpower = 50000
 	}
 	relative_position_id = SI1_hunt_for_laplaces_box
 	prerequisite = { focus = SI1_hunt_for_laplaces_box }

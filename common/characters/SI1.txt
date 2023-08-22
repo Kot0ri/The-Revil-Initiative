@@ -81,6 +81,48 @@ characters={
 
 ## Field Marshals
 
+SI1_haman={
+	name="Haman Karn"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+	field_marshal = {
+	 traits={ newtype3 }
+		skill=5
+		attack_skill=4
+		defense_skill=3
+		planning_skill=5
+		logistics_skill=4
+	}
+	
+}
+
+SI1_garma={
+	name="Garma Zabi"
+	portraits={
+		army={
+			large= "gfx/leaders/SI1/Casval_Rem_Deikun.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+	field_marshal = {
+	 traits={ }
+		skill=5
+		attack_skill=4
+		defense_skill=3
+		planning_skill=5
+		logistics_skill=4
+	}
+	
+}
+
 ## Generals
 
 

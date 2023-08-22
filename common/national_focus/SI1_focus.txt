@@ -1495,6 +1495,7 @@ focus = {
 	recruit_character = SI1_rezin
 	recruit_character = SI1_lyle
 	recruit_character = SI1_hill
+	recruit_character = SI1_zimmerman
 	}
 	relative_position_id = SI1_militarization_of_side_1
 	prerequisite = { focus = SI1_militarization_of_side_1 }
@@ -1872,6 +1873,7 @@ focus = {
 	recruit_character = SI1_haman
 	recruit_character = SI1_chole
 	recruit_character = SI1_vincent
+	recruit_character = SI1_illia
 	}
 	relative_position_id = SI1_bring_in_deikun_loyalists
 	prerequisite = { focus = SI1_bring_in_deikun_loyalists }
@@ -1923,6 +1925,7 @@ focus = {
 	completion_reward = {
 		add_research_slot = 1
 		recruit_character = SI1_marida
+		recruit_character = SI1_luger
 	}
 	relative_position_id = SI1_preparations_for_the_char_continuation_project
 	prerequisite = { focus = SI1_preparations_for_the_char_continuation_project }

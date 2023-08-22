@@ -1653,7 +1653,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-
+		annex_country = {
+			target = GRA
+		}
 	}
 	relative_position_id = SI1_stroke_tensions_between_the_siblings
 	prerequisite = { focus = SI1_stroke_tensions_between_the_siblings }
@@ -1814,7 +1816,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	annex_country = {
+		target = SI2
+	}
 	}
 	relative_position_id = SI1_begin_operations_in_other_colonies
 	prerequisite = { focus = SI1_begin_operations_in_other_colonies }

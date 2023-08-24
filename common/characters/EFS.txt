@@ -1,4 +1,5 @@
 characters={
+#leaders
 	EFS_johann_a_revil={
 		name=EFS_johann_a_revil
 		portraits={
@@ -113,23 +114,6 @@ characters={
 				large="gfx/leaders/EFS/Portrait_Efsf_jamitov_hymem.dds"
 			}
 		}
-		corps_commander={
-			traits={ titans_party }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=101
-			visible = {
-				OR = {
-					has_character_flag = enable_corps_commander
-					NOT = {
-						has_character_flag = disable_corps_commander
-					}
-				}
-			}
-		}
 		country_leader={
 			ideology= earthnoid_supremacist
 			traits={ dictator elitism }
@@ -163,45 +147,11 @@ characters={
 					factor = 0
 					is_historical_focus_on = yes
 				}
-				modifier = {
-					factor = 0
-					has_completed_focus = efsf_appeasement_policy_for_zeon
-				}
-				modifier = {
-					factor = 0
-					has_completed_focus = efsf_army_reform
-				}
-				modifier = {
-					factor = 5
-					has_completed_focus = efsf_show_to_colony
-				}
-				modifier = {
-					factor = 10
-					has_completed_focus = efsf_oppression_of_anti-earth_federation
-				}
-				modifier = {
-					factor = 0.2
-					OR = {
-						has_completed_focus = efsf_scenario_for_collapse_of_zeon
-						has_completed_focus = efsf_appeasement_policy_for_zeon
-					}
+		
 				}
 			}
 		}
-	}
-	EFS_space_supremacist_senator={
-		name=EFS_space_supremacist_senator
-		portraits={
-			civilian={
-				large="gfx/leaders/Portrait_mob_leader_7.dds"
-			}
-		}
-		country_leader={
-			ideology=space_elitism
-			expire="100.1.1.1"
-			id=-1
-		}
-	}
+
 	EFS_gene_coliny={
 		name=EFS_gene_coliny
 		portraits={

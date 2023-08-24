@@ -1,0 +1,88 @@
+characters={
+	#Leaders
+	TIT_jamitov_hymen ={
+		name="Jamitov Hymen"
+		portraits={
+			civilian={
+				large= "gfx/leaders/PEZ/schacht.dds"
+			}
+		}
+		country_leader={
+			traits={dictator}
+			ideology=earthnoid_supremacist
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			slot = political_advisor
+			cost = 100
+			idea_token = jamitov_hymem
+			allowed = {
+				original_tag = TIT
+			}
+			traits = {
+				jamitov_hymem_trait
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	
+	}
+
+	TIT_bask_om ={
+		name="Bask Om"
+		portraits={
+			civilian={
+				large= "gfx/leaders/PEZ/schacht.dds"
+			}
+		}
+		country_leader={
+			traits={dictator}
+			ideology= military_dictatorship
+			expire="1000.1.1.1"
+		}
+		navy_leader = {
+			traits={space_expert ironside}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 4
+		}
+			advisor={
+				slot = high_command
+				ledger = army
+				cost = 100
+				idea_token = bask_om
+				allowed = {
+					original_tag = TIT
+				}
+				traits = {
+					navy_chief_decisive_battle_2
+				}
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						has_war = no
+						factor = 0
+					}
+				}
+			}
+		}
+
+
+	#Advisors
+
+}

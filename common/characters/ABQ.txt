@@ -32,6 +32,32 @@ characters = {
 			}
 		}
 	}
+
+	#advisors
+	ABQ_karla_mitchum = {
+		name="Karla Mitchum"
+		portraits={
+			army = {
+				small=GFX_idea_karla_mitchum
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = karla_mitchum
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				rpb_engineer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 	#field marshall
 
 	ABQ_twanning={

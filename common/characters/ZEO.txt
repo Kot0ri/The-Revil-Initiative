@@ -812,6 +812,115 @@ ZEO_mackenson={
 		}
 	}
 
+	##advisors
+
+	ZEO_torenov_y_minovsky = {
+		name = "Torenov Y Minovsky"
+		portraits={
+			army={
+				small=GFX_idea_torenov_y_minovsky
+			}
+		}
+		advisor = {
+			slot = theorist
+			ledger = army
+			idea_token = torenov_y_minovsky
+			cost = 100
+			available = {
+				has_country_flag = minovsky_is_ours
+			}
+			allowed = {
+				OR = {
+					original_tag = EFS
+					original_tag = ZEO
+				}
+			}
+			research_bonus = {
+				minovsky = 0.2
+			}
+			traits = {
+				minovsky_specialist
+			}
+			on_add = {
+				ZEO = {
+					if = {
+						limit = {
+							has_idea = tem_ray
+						}
+						country_event = { id = efsf.102 }
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 500
+			}
+			}
+	}
+
+	ZEO_flanagan_rom = {
+		name="Flanagan Rom"
+		portraits={
+			army = {
+				small=GFX_idea_flanagan_rom
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = flanagan_rom
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+				has_tech = newtype_institution
+			}
+			research_bonus = {
+				newtype = 0.3
+			}
+			traits = {
+				psyco_com_specialist
+			}
+			ai_will_do = {
+				factor = 400
+				modifier = {
+					factor = 0
+					has_tech = psyco_com
+				}
+			}
+		}
+	}
+	ZEO_simus_al_bakharov = {
+		name="Simus_al_Bakharov"
+		portraits={
+			army = {
+				small=GFX_idea_simus_al_bakharov
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = simus_al_bakharov
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				mobilearmor_specialist
+			}
+			research_bonus = {
+				mobilearmor = 0.15
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 2
+					has_tech = minovsky_craft
+				}
+			}
+		}
+	}
+
 	##Old
 
 
@@ -908,48 +1017,7 @@ ZEO_mackenson={
 			}
 		}
 	}
-	ZEO_torenov_y_minovsky = {
-		name = torenov_y_minovsky
-		portraits={
-			army={
-				small=GFX_idea_torenov_y_minovsky
-			}
-		}
-		advisor = {
-			slot = theorist
-			ledger = army
-			idea_token = torenov_y_minovsky
-			cost = 100
-			available = {
-				has_country_flag = minovsky_is_ours
-			}
-			allowed = {
-				OR = {
-					original_tag = EFS
-					original_tag = ZEO
-				}
-			}
-			research_bonus = {
-				minovsky = 0.2
-			}
-			traits = {
-				minovsky_specialist
-			}
-			on_add = {
-				ZEO = {
-					if = {
-						limit = {
-							has_idea = tem_ray
-						}
-						country_event = { id = efsf.102 }
-					}
-				}
-			}
-			ai_will_do = {
-				factor = 500
-			}
-			}
-	}
+
 
 	ZEO_nakamoto = {
 		name = nakamoto
@@ -982,69 +1050,7 @@ ZEO_mackenson={
 			}
 		}
 	}
-	ZEO_flanagan_rom = {
-		name=ZEO_flanagan_rom
-		portraits={
-			army = {
-				small=GFX_idea_flanagan_rom
-			}
-		}
-		advisor={
-			slot = theorist
-			ledger = army
-			cost = 100
-			idea_token = flanagan_rom
-			allowed = {
-				original_tag = ZEO
-			}
-			available = {
-				has_tech = newtype_institution
-			}
-			research_bonus = {
-				newtype = 0.3
-			}
-			traits = {
-				psyco_com_specialist
-			}
-			ai_will_do = {
-				factor = 400
-				modifier = {
-					factor = 0
-					has_tech = psyco_com
-				}
-			}
-		}
-	}
-	ZEO_simus_al_bakharov = {
-		name=ZEO_simus_al_bakharov
-		portraits={
-			army = {
-				small=GFX_idea_simus_al_bakharov
-			}
-		}
-		advisor={
-			slot = theorist
-			ledger = army
-			cost = 100
-			idea_token = simus_al_bakharov
-			allowed = {
-				original_tag = ZEO
-			}
-			traits = {
-				mobilearmor_specialist
-			}
-			research_bonus = {
-				mobilearmor = 0.15
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 2
-					has_tech = minovsky_craft
-				}
-			}
-		}
-	}
+	
 	ZEO_ginius_sahalim = {
 		name=ZEO_ginius_sahalim
 		portraits={
@@ -1083,33 +1089,7 @@ ZEO_mackenson={
 		}
 	}
 	Z
-	ZEO_karla_mitchum = {
-		name=ZEO_karla_mitchum
-		portraits={
-			army = {
-				small=GFX_idea_karla_mitchum
-			}
-		}
-		advisor={
-			slot = theorist
-			ledger = army
-			cost = 100
-			idea_token = karla_mitchum
-			allowed = {
-				original_tag = ZEO
-			}
-			available = {
-				has_completed_focus = zeon_medal_of_cross
-				has_tech = ms06_p_tech
-			}
-			traits = {
-				rpb_engineer
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+
 
 
 	ZEO_barom={
@@ -2526,4 +2506,6 @@ ZEO_mackenson={
 			}
 		}
 	}
+
+
 }

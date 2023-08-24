@@ -361,63 +361,7 @@ characters={
 			}
 		}
 	}
-	EFS_melanie_hue_carbine = {
-		name=melanie_hue_carbine
-		portraits={
-			army={
-				small=GFX_idea_melanie_hue_carbine
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = melanie_hue_carbine
-			allowed = {
-				original_tag = EFS
-			}
-			available = {
-				NOT = {
-					has_global_flag = ae_is_not_yes
-				}
-			}
-			traits = {
-				melanie_hue_carbine_trait
-			}
-			modifier = {
-			}
-			ai_will_do = {
-				factor = 20
-			}
-		}
-	}
-	EFS_won_lee = {
-		name=won_lee
-		portraits={
-			army={
-				small=GFX_idea_won_lee
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = won_lee
-			traits = {
-				won_lee_trait
-			}
-			available = {
-				NOT = {
-					has_global_flag = ae_is_not_yes
-				}
-			}
-			modifier = {
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 3
-					has_war = yes
-				}
-			}
-		}
-	}
+
 	EFS_josef_eschonbach = {
 		name=josef_eschonbach
 		portraits={

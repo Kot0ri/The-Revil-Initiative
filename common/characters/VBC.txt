@@ -120,4 +120,33 @@ characters={
 			}
 		}
 	}
+
+	EFS_melanie_hue_carbine = {
+		name=melanie_hue_carbine
+		portraits={
+			army={
+				small=GFX_idea_melanie_hue_carbine
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = melanie_hue_carbine
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				NOT = {
+					has_global_flag = ae_is_not_yes
+				}
+			}
+			traits = {
+				melanie_hue_carbine_trait
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 20
+			}
+		}
+	}
 }

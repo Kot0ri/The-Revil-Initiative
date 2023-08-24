@@ -85,4 +85,46 @@ characters={
 
 	#Advisors
 
+	#MS Pilots
+	
+	TIT_jerid_meesa={
+		name="Jerid Meesa"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot newtype1}
+			skill=6
+			attack_skill=5
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+		}
+	}
+
+	TIT_yazan_gable={
+		name="Yazan Gable"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot beast}
+			skill=6
+			attack_skill=6
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
 }

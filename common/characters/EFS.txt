@@ -719,49 +719,7 @@ characters={
 			}
 		}
 	}
-	EFS_nina_purpleton = {
-		name = EFS_nina_purpleton
-		portraits={
-			army={
-				small="GFX_idea_nina_purpleton"
-			}
-		}
-		advisor={
-			slot = theorist
-			ledger = army
-			cost = 100
-			idea_token = nina_purpleton
-			allowed = {
-				original_tag = EFS
-			}
-			research_bonus = {
-				computing_tech = 0.15
-				plan_gundam = 0.2
-			}
-			available = {
-			}
-			traits = {
-				plan_gundam_specialist
-			}
-			on_add = {
-				EFS = {
-					if = {
-						limit = {
-							has_idea = anaheim_electronics
-						}
-						country_event = { id = achievement.38 }
-					}
-				}
-			}
-			ai_will_do = {
-				factor = 5
-				modifier = {
-					factor = 0
-					has_tech = plan_gundam_tech
-				}
-			}
-		}
-	}
+	
 	EFS_stephan_hepbum={
 		name=EFS_stephan_hepbum
 		portraits={

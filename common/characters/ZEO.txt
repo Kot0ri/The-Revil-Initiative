@@ -1875,47 +1875,7 @@ ZEO_mackenson={
 			}
 			}
 	}
-	ZEO_monique_cadillac = {
-		name=ZEO_monique_cadillac
-		portraits={
-			army={
-				small=GFX_idea_monique_cadillac
-			}
-		}
-		advisor = {
-			slot = high_command
-			ledger = army
-			cost = 100
-			idea_token = monique_cadillac
-			allowed = {
-				original_tag = ZEO
-			}
-			available = {
-				has_completed_focus = zeon_puneemunde_institution
-			}
-			traits = {
-				hc_general_staff_1
-			}
-			on_add = {
-				ZEO = {
-					if = {
-						limit = {
-							has_idea = oliver_may
-							has_unit_leader = 25
-						}
-						country_event = { id = achievement.18 }
-					}
-				}
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_war = no
-					factor = 0
-				}
-			}
-			}
-	}
+
 	ZEO_may_kauwin = {
 		name=ZEO_may_kauwin
 		portraits={

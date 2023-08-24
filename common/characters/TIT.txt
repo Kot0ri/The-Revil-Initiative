@@ -445,4 +445,85 @@ characters={
 			logistics_skill=1
 		}
 	}
+
+	#Admrials
+	TIT_gady_kinsey={
+		name="Gady Kinsey"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		navy_leader = {
+			traits = { space_expert air_controller}
+			skill = 6
+			attack_skill = 4
+			defense_skill = 4
+			maneuvering_skill = 5
+			coordination_skill = 5
+		}
+	}
+
+	TIT_otto_patterson={
+		name="Otto Patterson"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		navy_leader = {
+			traits = { space_expert}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+
+	TIT_lycus_freiberg={
+		name="Lycus Freiberg"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		navy_leader = {
+			traits = { space_expert}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 3
+		}
+	}
+
+	TIT_jamican_daninghan={
+		name="GOtto Patterson"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		navy_leader = {
+			traits = {old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
 }

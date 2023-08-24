@@ -55,4 +55,29 @@ characters = {
 			coordination_skill=2
 		}
 	}
+
+	#advisors
+	EFS_adenauer_paraya = {
+		name = "Adenauer Paraya"
+		portraits={
+			army={
+				small="GFX_idea_adenauer_paraya"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = adenauer_paraya
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				adenauer_paraya_trait
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
 }

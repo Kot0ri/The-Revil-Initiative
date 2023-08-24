@@ -323,33 +323,7 @@ characters={
 			}
 		}
 	}
-	EFS_adenauer_paraya = {
-		name = EFS_adenauer_paraya
-		portraits={
-			army={
-				small="GFX_idea_adenauer_paraya"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = adenauer_paraya
-			allowed = {
-				original_tag = EFS
-			}
-			traits = {
-				adenauer_paraya_trait
-			}
-			modifier = {
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					factor = 0
-					has_completed_focus = efsf_oppression_of_anti-earth_federation
-				}
-			}
-		}
-	}
+	
 	EFS_elran_gfc = {
 		name = EFS_elran_gfc
 		portraits={

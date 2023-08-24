@@ -38,7 +38,6 @@ characters={
 				}
 			}
 		}
-	
 	}
 
 	TIT_bask_om ={
@@ -82,8 +81,88 @@ characters={
 			}
 		}
 
+		TIT_paptimus_scirocco ={
+			name="Paptimus Scirocco"
+			portraits={
+				civilian={
+					large= "gfx/leaders/PEZ/schacht.dds"
+				}
+			}
+			country_leader={
+				traits={dictator}
+				ideology=contolism
+				expire="1000.1.1.1"
+			}
+			corps_commander = {
+				traits = {pilot newtype3 man_from_jupiter}
+				skill = 6
+				attack_skill = 5
+				defense_skill = 3
+				planning_skill = 6
+				logistics_skill = 5
+			}
+			advisor={
+				slot = political_advisor
+				cost = 100
+				idea_token = paptimus_scirocco
+				allowed = {
+					original_tag = TIT
+				}
+				traits = {
+					paptimus_scirocco_trait
+				}
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						has_war = no
+						factor = 0
+					}
+				}
+			}
+		
+		}
+
 
 	#Advisors
+
+	#Field Marshals
+	TIT_giesele_albert ={
+		name="Giesele Albert"
+		portraits={
+			civilian={
+				large= "gfx/leaders/PEZ/schacht.dds"
+			}
+		}
+
+		field_marshal = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	TIT_brave_cod ={
+		name="Brave Cod"
+		portraits={
+			civilian={
+				large= "gfx/leaders/PEZ/schacht.dds"
+			}
+		}
+
+		field_marshal = {
+			traits = {pilot}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	
 
 	#MS Pilots
 	
@@ -124,6 +203,46 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=2
+		}
+	}
+
+	TIT_kacricon_cacooler={
+		name="Kacricon Cacooler"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_tosh_cray={
+		name="Tosh Cray"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 

@@ -507,8 +507,8 @@ characters={
 		}
 	}
 
-	TIT_jamican_daninghan={
-		name="GOtto Patterson"
+	TIT_jamaican_daninghan={
+		name="Jamaican Daninghan"
 		portraits={
 			army={
 				small="GFX_idea_barom"
@@ -526,4 +526,45 @@ characters={
 			coordination_skill = 3
 		}
 	}
+
+	TIT_koji={
+		name="Koji"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		navy_leader = {
+			traits = {space_expert}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 3
+		}
+	}
+
+	TIT_kaifan={
+		name="Kaifan"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		navy_leader = {
+			traits = {space_expert}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+
 }

@@ -87,6 +87,34 @@ characters = {
 			}
 	}
 
+	ABQ_oliver_may = {
+		name="Oliver May"
+		portraits={
+			army={
+				small=GFX_idea_monique_cadillac
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = oliver_may
+			allowed = {
+				original_tag = ABQ
+			}
+			traits = {
+				
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+			}
+	}
+
 	#field marshall
 
 	ABQ_twanning={

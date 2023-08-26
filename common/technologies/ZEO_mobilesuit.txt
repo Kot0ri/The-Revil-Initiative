@@ -988,9 +988,8 @@ technologies = {
 			name = ZEO_space_folder
 			position = { x = 0 y = 4 }
 		}
-		path = {
-			leads_to_tech = ms06_p_tech
-			research_cost_coeff = 1
+		sub_technologies = {
+			ms06_s_tech
 		}
 		path = {
 			leads_to_tech = ms14_tech
@@ -1030,11 +1029,11 @@ technologies = {
 		enable_equipments = {
 			ms06_p_equipment
 		}
-		dependencies = {
-			ambac2 = 1
-				  amc1 = 1
-			nuclear_reactor1 = 1
-		  }
+		research_cost = 0.2
+		xp_research_type = army
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		start_year = 79
 		categories = {
 			mobilesuit
 			zeonic_mobilesuit

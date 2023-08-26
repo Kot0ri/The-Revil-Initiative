@@ -1,35 +1,5 @@
 technologies = {
-	ms06_p_tech = {
-		enable_equipments = {
-			ms06_p_equipment
-		}
-		dependencies = {
-			ambac2 = 1
-				  amc1 = 1
-			nuclear_reactor1 = 1
-		  }
-		categories = {
-			mobilesuit
-			zeonic_mobilesuit
-			custom_mobilesuit
-		}
-    on_research_complete = {
-      hidden_effect = {
-        if = {
-          limit = {
-            NOT = {	has_template_containing_unit = ms06_p }
-            is_ai = yes
-          }
-          load_oob = "unlock_zeon_ms06p"
-        }
-      }
-    }
-		on_research_complete = {
-      hidden_effect = {
-        country_event = { id = zeon.158 }
-      }
-    }
-	}
+
 	agx04_tech = {
 		enable_equipments = {
 			agx04_equipment
@@ -1019,6 +989,10 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 		path = {
+			leads_to_tech = ms06_p_tech
+			research_cost_coeff = 1
+		}
+		path = {
 			leads_to_tech = ms14_tech
 			research_cost_coeff = 1
 		}
@@ -1051,6 +1025,37 @@ technologies = {
 				has_tech = nuclear_reactor2
 			}
 		}
+	}
+	ms06_p_tech = {
+		enable_equipments = {
+			ms06_p_equipment
+		}
+		dependencies = {
+			ambac2 = 1
+				  amc1 = 1
+			nuclear_reactor1 = 1
+		  }
+		categories = {
+			mobilesuit
+			zeonic_mobilesuit
+			custom_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms06_p }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_ms06p"
+        }
+      }
+    }
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
 	}
 	ms14_tech = {
 		enable_equipments = {

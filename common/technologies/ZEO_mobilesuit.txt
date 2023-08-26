@@ -3,9 +3,11 @@ technologies = {
 		enable_equipments = {
 			ms06_p_equipment
 		}
-		allow = {
-			always = no
-		}
+		dependencies = {
+			ambac2 = 1
+				  amc1 = 1
+			nuclear_reactor1 = 1
+		  }
 		categories = {
 			mobilesuit
 			zeonic_mobilesuit

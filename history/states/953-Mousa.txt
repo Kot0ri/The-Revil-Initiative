@@ -12,9 +12,41 @@ state={
 	history={
 		owner = AXS
 		add_core_of = AXS
+	buildings = {
+		infrastructure = 2
+		arms_factory = 6
+		synthetic_refinery = 1
+		industrial_complex = 2
+		fuel_silo = 1
+		dockyard = 3
+		anti_air_building = 1
+		13619 = {
+			naval_base = 5
+			}
+}
+victory_points = {
+	13619 10
+}
+add_core_of = AXS
+78.1.1 = {
+	buildings = {
+		arms_factory = 15
 	}
+
+}
+79.1.1 = {
+	buildings = {
+		arms_factory = 20
+	}
+
+}
+
 
 	provinces={
 		13619
 	}
+	manpower=22460
+	buildings_max_level_factor=1.000
+	state_category=asteroid
+	local_supplies=15.0
 }

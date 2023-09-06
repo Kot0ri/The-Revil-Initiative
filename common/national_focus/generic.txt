@@ -601,7 +601,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
 				type = dockyard
-				level = 3
+				level = 5
 				instant_build = yes
 			}
 		}
@@ -633,7 +633,7 @@ focus_tree = {
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 3
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
 						type = dockyard
 						level = 3
@@ -666,7 +666,7 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = dockyard
-						level = 3
+						level = 5
 						instant_build = yes
 					}
 				}
@@ -963,22 +963,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 3
 			modifier = {
-				factor = 0
-				date < 1939.1.1
-				OR = { 
-					# we dont want chinese minors to go crazy on slots early since they get eaten
-					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
-					tag = BEL
-					tag = LUX
-					tag = HOL
-					tag = DEN
-
-					# we also dont want tiny nations to go crazy with slots right away
-					num_of_controlled_states < 2
-				}				
+				factor = 100			
 			}
 		}
 	}
@@ -1008,7 +993,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 1
+						size < 3
 						include_locked = yes
 					}					
 				}
@@ -1019,7 +1004,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 3
 				instant_build = yes
 			}			
 		}
@@ -1048,10 +1033,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1082,7 +1067,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 2
 						include_locked = yes
 					}
 				}
@@ -1093,7 +1078,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1125,7 +1110,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1156,7 +1141,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 1
+						size < 3
 						include_locked = yes
 					}
 				}
@@ -1167,7 +1152,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = industrial_complex
-				level = 1
+				level = 3
 				instant_build = yes
 			}
 		}		
@@ -1196,10 +1181,10 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1230,7 +1215,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 5
 						include_locked = yes
 					}
 				}
@@ -1241,7 +1226,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 5
 				instant_build = yes
 			}
 		}		
@@ -1273,7 +1258,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1411,7 +1396,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
-				level = 1
+				level = 3
 				instant_build = yes
 			}
 		}		
@@ -1449,6 +1434,31 @@ focus_tree = {
 			}
 		}
 	}
+
+	focus = {
+		id = import_steel
+		icon = GFX_focus_generic_steel
+				
+		available = {
+		}
+        prerequisite = {
+			focus = infrastructure_effort
+		}
+		relative_position_id = infrastructure_effort
+		x = -2
+		y = 1
+		cost = 10
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_resource = {
+				type = steel
+				amount = 30
+				state = capital
+			} 
+			}
+		}
 
 	focus = {
 		id = infrastructure_effort_2
@@ -1570,7 +1580,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = industrial_complex
-						size < 2
+						size < 6
 						include_locked = yes
 					}
 				}
@@ -1581,7 +1591,7 @@ focus_tree = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
-				level = 2
+				level = 6
 				instant_build = yes
 			}
 		}

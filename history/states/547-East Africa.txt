@@ -3,8 +3,12 @@ state={
 	id=547
 	name="STATE_547"
 	manpower = 1085440
-	
 	state_category = rural
+
+	resources={
+		steel=8
+		rubber = 2
+	}
 
 	history={
 		owner = AFZ

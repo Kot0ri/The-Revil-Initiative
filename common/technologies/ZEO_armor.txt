@@ -223,7 +223,7 @@ technologies = {
     start_year = 77
     folder = {
       name = ZEO_armour_folder
-      position = { x = 0 y = 6 }
+      position = { x = 2 y = 6 }
     }
 
     ai_will_do = {
@@ -326,9 +326,6 @@ technologies = {
       mbt7_equipment
     }
 
-    on_research_complete_limit = {
-      NOT = {	has_template_containing_unit = mbt }
-    }
 
     research_cost = 1.5
     xp_research_type = army

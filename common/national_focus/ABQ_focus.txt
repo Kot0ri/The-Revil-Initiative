@@ -163,7 +163,6 @@ focus = {
 		recruit_character = ABQ_hoover_aisla
 		recruit_character = ABQ_fisher_ness
 		recruit_character = ABQ_layton
-
 	}
 	relative_position_id = ABQ_cult_of_personality
 	prerequisite = { focus = ABQ_cult_of_personality }
@@ -964,6 +963,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		
 	}
 	relative_position_id = ABQ_p_reuse_device
 	prerequisite = { focus = ABQ_p_reuse_device }

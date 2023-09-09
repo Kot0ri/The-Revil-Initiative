@@ -1,4 +1,8 @@
 technologies = {
+
+
+
+  ##
   ymt05_tech = {
     enable_equipments = {
       mobiletank_equipment
@@ -103,11 +107,6 @@ technologies = {
       research_cost_coeff = 1
     }
 
-    path = {
-      leads_to_tech = ZEO_para_tank_tech
-      research_cost_coeff = 1
-    }
-
     research_cost = 2
     xp_research_type = army
     xp_boost_cost = 50
@@ -128,6 +127,304 @@ technologies = {
     }
   }
   ZEO_mbt2_tech = {
+
+    enable_equipments = {
+      mbt2_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = motorised_infantry
+          }
+          load_oob = "unlock_tanks_mot"
+        }
+        if = {
+          limit = {
+            NOT = { has_tech = motorised_infantry }
+          }
+          load_oob = "unlock_tanks"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    path = {
+      leads_to_tech = ZEO_mbt3_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = ZEO_mbt4_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 2 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 20
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+    }
+  }
+  ZEO_mbt3_tech = {
+
+    enable_equipments = {
+      mbt2_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = motorised_infantry
+          }
+          load_oob = "unlock_tanks_mot"
+        }
+        if = {
+          limit = {
+            NOT = { has_tech = motorised_infantry }
+          }
+          load_oob = "unlock_tanks"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    path = {
+      leads_to_tech = ZEO_mbt5_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = ZEO_para_tank_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 2 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 20
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+    }
+  }
+  ZEO_mbt4_tech = {
+
+    enable_equipments = {
+      mbt2_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = motorised_infantry
+          }
+          load_oob = "unlock_tanks_mot"
+        }
+        if = {
+          limit = {
+            NOT = { has_tech = motorised_infantry }
+          }
+          load_oob = "unlock_tanks"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 2 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 20
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+    }
+  }
+  ZEO_mbt5_tech = {
+
+    enable_equipments = {
+      mbt2_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = motorised_infantry
+          }
+          load_oob = "unlock_tanks_mot"
+        }
+        if = {
+          limit = {
+            NOT = { has_tech = motorised_infantry }
+          }
+          load_oob = "unlock_tanks"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    path = {
+      leads_to_tech = ZEO_mbt6_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 2 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 20
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+    }
+  }
+  ZEO_mbt6_tech = {
+
+    enable_equipments = {
+      mbt2_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = motorised_infantry
+          }
+          load_oob = "unlock_tanks_mot"
+        }
+        if = {
+          limit = {
+            NOT = { has_tech = motorised_infantry }
+          }
+          load_oob = "unlock_tanks"
+        }
+      }
+      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+    }
+
+    path = {
+      leads_to_tech = ZEO_mbt7_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = army
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_armour_folder
+      position = { x = 0 y = 2 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 20
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+    }
+  }
+  ZEO_mbt7_tech = {
 
     enable_equipments = {
       mbt2_equipment

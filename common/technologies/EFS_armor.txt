@@ -35,10 +35,6 @@ technologies = {
       leads_to_tech = EFS_mbt2_tech
       research_cost_coeff = 1
     }
-    path = {
-      leads_to_tech = EFS_mbt3_tech
-      research_cost_coeff = 1
-    }
     folder = {
       name = EFS_armour_folder
       position = { x = 4 y = 0 }
@@ -59,27 +55,6 @@ technologies = {
       mbt2_equipment
     }
 
-    on_research_complete_limit = {
-      NOT = {	has_template_containing_unit = mbt }
-    }
-    on_research_complete = {
-      hidden_effect = {
-        if = {
-          limit = {
-            has_tech = motorised_infantry
-          }
-          load_oob = "unlock_tanks_mot"
-        }
-        if = {
-          limit = {
-            NOT = { has_tech = motorised_infantry }
-          }
-          load_oob = "unlock_tanks"
-        }
-      }
-      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
-    }
-
     research_cost = 1
     xp_research_type = army
     xp_boost_cost = 50
@@ -90,6 +65,14 @@ technologies = {
       position = { x = 4 y = 2 }
     }
 
+    path = {
+      leads_to_tech = EFS_mbt3_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = EFS_mbt7_tech
+      research_cost_coeff = 1
+    }
     ai_will_do = {
       base = 10
       modifier = {
@@ -112,22 +95,209 @@ technologies = {
     on_research_complete_limit = {
       NOT = {	has_template_containing_unit = mbt }
     }
-    on_research_complete = {
-      hidden_effect = {
-        if = {
-          limit = {
-            has_tech = motorised_infantry
-          }
-          load_oob = "unlock_tanks_mot"
-        }
-        if = {
-          limit = {
-            NOT = { has_tech = motorised_infantry }
-          }
-          load_oob = "unlock_tanks"
-        }
+
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 77
+    path = {
+      leads_to_tech = rtx440_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = EFS_mbt4_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = EFS_mbt6_tech
+      research_cost_coeff = 1
+    }
+    folder = {
+      name = EFS_armour_folder
+      position = { x = 0 y = 2 }
+    }
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 100
+        has_tech = plan_rx_tech
       }
-      custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+      modifier = {
+        factor = 100
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+      plan_rx
+    }
+  }
+  EFS_mbt4_tech = {
+
+    enable_equipments = {
+      mbt4_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 77
+    path = {
+      leads_to_tech = rtx440_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = EFS_mbt5_tech
+      research_cost_coeff = 1
+    }
+    folder = {
+      name = EFS_armour_folder
+      position = { x = 0 y = 2 }
+    }
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 100
+        has_tech = plan_rx_tech
+      }
+      modifier = {
+        factor = 100
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+      plan_rx
+    }
+  }
+  EFS_mbt5_tech = {
+
+    enable_equipments = {
+      mbt5_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = EFS_armour_folder
+      position = { x = 0 y = 2 }
+    }
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 100
+        has_tech = plan_rx_tech
+      }
+      modifier = {
+        factor = 100
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+      plan_rx
+    }
+  }
+  EFS_mbt6_tech = {
+
+    enable_equipments = {
+      mbt6_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
+    }
+
+    research_cost = 1
+    xp_research_type = army
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = EFS_armour_folder
+      position = { x = 0 y = 2 }
+    }
+    folder = {
+      name = EFS_mobilesuit_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 100
+        has_tech = plan_rx_tech
+      }
+      modifier = {
+        factor = 100
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 78.1.1
+      }
+    }
+
+    categories = {
+      armor
+      cat_medium_armor
+      plan_rx
+    }
+  }
+  EFS_mbt7_tech = {
+
+    enable_equipments = {
+      mbt7_equipment
+    }
+
+    on_research_complete_limit = {
+      NOT = {	has_template_containing_unit = mbt }
     }
 
     research_cost = 1

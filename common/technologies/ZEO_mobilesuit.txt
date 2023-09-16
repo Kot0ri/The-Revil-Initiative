@@ -326,7 +326,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = ms06_z_tech
+			leads_to_tech = yms06_z_tech
 			research_cost_coeff = 1
 		}
 		sub_technologies = {
@@ -1702,7 +1702,7 @@ technologies = {
 			base = 10
 		}
 	}
-	ms06_z_tech = {
+	yms06_z_tech = {
 		research_cost = 2.0
 		xp_research_type = army
 		xp_boost_cost = 100
@@ -1711,6 +1711,82 @@ technologies = {
 		folder = {
 			name = ZEO_mobilesuit_folder
 			position = { x = -4 y = 14 }
+		}
+		dependencies = {
+			psyco_com = 1
+			bishop_plan = 1
+    }
+		path = {
+			leads_to_tech = ms06_z_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+			zeonic_mobilesuit
+			nt_mobilesuit
+			mobilesuit
+			custom_mobilesuit
+			space_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				date > 79.1.1
+			}
+		}
+	}
+	ms06_z_tech = {
+		research_cost = 2.0
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = -4 y = 16 }
+		}
+		dependencies = {
+			psyco_com = 1
+			bishop_plan = 1
+    }
+		path = {
+			leads_to_tech = msn01_tech
+			research_cost_coeff = 1
+		}
+		categories = {
+			zeonic_mobilesuit
+			nt_mobilesuit
+			mobilesuit
+			custom_mobilesuit
+			space_mobilesuit
+		}
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+		ai_will_do = {
+			base = 10
+			modifier = {
+				factor = 5
+				date > 79.1.1
+			}
+		}
+	}
+	msn01_tech = {
+		research_cost = 2.0
+		xp_research_type = army
+		xp_boost_cost = 100
+		xp_research_bonus = 0.3
+		start_year = 79
+		folder = {
+			name = ZEO_mobilesuit_folder
+			position = { x = -4 y = 18 }
 		}
 		dependencies = {
 			psyco_com = 1

@@ -1710,7 +1710,7 @@ technologies = {
 		start_year = 79
 		folder = {
 			name = ZEO_mobilesuit_folder
-			position = { x = -4 y = 14 }
+			position = { x = -5 y = 14 }
 		}
 		dependencies = {
 			psyco_com = 1
@@ -1748,7 +1748,7 @@ technologies = {
 		start_year = 79
 		folder = {
 			name = ZEO_mobilesuit_folder
-			position = { x = -4 y = 16 }
+			position = { x = -5 y = 16 }
 		}
 		dependencies = {
 			psyco_com = 1
@@ -1766,9 +1766,6 @@ technologies = {
 			space_mobilesuit
 		}
 		on_research_complete = {
-      hidden_effect = {
-        country_event = { id = zeon.158 }
-      }
     }
 		ai_will_do = {
 			base = 10
@@ -1786,7 +1783,7 @@ technologies = {
 		start_year = 79
 		folder = {
 			name = ZEO_mobilesuit_folder
-			position = { x = -4 y = 18 }
+			position = { x = -5 y = 18 }
 		}
 		dependencies = {
 			psyco_com = 1
@@ -1804,9 +1801,6 @@ technologies = {
 			space_mobilesuit
 		}
 		on_research_complete = {
-      hidden_effect = {
-        country_event = { id = zeon.158 }
-      }
     }
 		ai_will_do = {
 			base = 10
@@ -1817,6 +1811,9 @@ technologies = {
 		}
 	}
 	msn02_tech = {
+		enable_equipments = {
+			msn02_equipment
+		}
 		research_cost = 2.0
 		xp_research_type = army
 		xp_boost_cost = 100
@@ -1824,7 +1821,7 @@ technologies = {
 		start_year = 79
 		folder = {
 			name = ZEO_mobilesuit_folder
-			position = { x = -4 y = 20 }
+			position = { x = -5 y = 20 }
 		}
 		categories = {
 			nt_mobilesuit
@@ -1841,7 +1838,7 @@ technologies = {
 	}
 	msn02_p_tech = {
 		enable_equipments = {
-			msn02_equipment
+			msn02p_equipment
 		}
 		research_cost = 1.0
 		xp_research_type = army

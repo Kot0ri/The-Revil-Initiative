@@ -1414,7 +1414,7 @@ focus = {
 		}
 		add_political_power = 150
 		set_character_flag = casval_leadership
-		news_event = {id = zeon.91}
+		country_event = {id = zeon.91}
 	}
 	relative_position_id = SI1_the_identity_of_char_aznable
 	prerequisite = { focus = SI1_the_identity_of_char_aznable }

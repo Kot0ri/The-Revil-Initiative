@@ -4415,20 +4415,13 @@ news_event = {
 
 	is_triggered_only = yes
 
-	option = {
-		name = news.102.a
-		trigger = {
-			NOT = {
-				tag = ZEO
-			}
-		}
-	}
+
 	option = {
 		name = news.102.b
 		if = {
 			limit = {
 				has_country_leader = {
-					character = ZEO_casval_rem_deikun
+					character = SI1_casval_rem_deikun
 					ruling_only = yes
 				}
 			}
@@ -4444,7 +4437,7 @@ news_event = {
 			add_unit_leader_trait = power_of_love
 		}
 		trigger = {
-			tag = ZEO
+			tag = SI1
 		}
 	}
 }
@@ -4814,7 +4807,7 @@ news_event = {
 		}
 		custom_effect_tooltip = giren_is_dead
 	}
-}
+
 #113 !! ハロが人気
 news_event = {
 	id = news.113
@@ -5633,28 +5626,21 @@ news_event = {
 
 	is_triggered_only = yes
 	immediate = {
-		ZEO = {
+		SI1 = {
 			set_country_flag = casval_haman_marriage
 		}
 	}
 
-	option = {
-		name = news.133.a
-		trigger = {
-			NOT = {
-				tag = ZEO
-			}
-		}
-	}
+
 	option = {
 		name = news.133.b
 		trigger = {
-			tag = ZEO
+			tag = SI1
 		}
 		if = {
 			limit = {
 				has_country_leader = {
-					character = ZEO_casval_rem_deikun
+					character = SI1_casval_rem_deikun
 					ruling_only = yes
 				}
 			}
@@ -5678,23 +5664,17 @@ news_event = {
 
 	is_triggered_only = yes
 
-	option = {
-		name = news.134.a
-		trigger = {
-			NOT = {
-				tag = ZEO
-			}
-		}
+
 	}
 	option = {
 		name = news.134.b
 		trigger = {
-			tag = ZEO
+			tag = SI1
 		}
 		if = {
 			limit = {
 				has_country_leader = {
-					character = ZEO_casval_rem_deikun
+					character = SI1_casval_rem_deikun
 					ruling_only = yes
 				}
 			}
@@ -5707,7 +5687,7 @@ news_event = {
 			add_unit_leader_trait = power_of_love
 		}
 	}
-}
+
 #135 !! ガルマとイセリナの結婚
 news_event = {
 	id = news.135

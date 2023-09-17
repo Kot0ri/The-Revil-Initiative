@@ -1754,46 +1754,7 @@ country_event = {
     name = zeon.90.a
   }
 }
-#91 !! キャスバルの嫁探し
-country_event = {
-  id = zeon.91
-  title = zeon.91.t
-  desc = zeon.91.d
-  picture = GFX_country_zeon091
 
-  trigger = {
-    original_tag = ZEO
-    has_country_leader = {
-      character= ZEO_casval_rem_deikun
-    }
-  }
-  mean_time_to_happen = {
-    months = 30
-  }
-  fire_only_once = yes
-
-  option = {
-    name = zeon.91.a
-    ai_chance = {
-      base = 35
-    }
-    news_event = { id = news.102 days = 30 }
-  }
-  option = {
-    name = zeon.91.b
-    ai_chance = {
-      base = 50
-    }
-    news_event = { id = news.133 days = 30 }
-  }
-  option = {
-    name = zeon.91.c
-    ai_chance = {
-      base = 15
-    }
-    news_event = { id = news.134 days = 30 }
-  }
-}
 #92 ! イセリナ、恋のあと（発覚）
 country_event = {
   id = zeon.92

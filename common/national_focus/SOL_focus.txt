@@ -10,11 +10,25 @@ focus_tree = {
 	}
 	default = no
 
+	focus = {
+		id = SOL_Mandate_of_Solomon
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 13
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+	}
+
 focus = {
 	id = SOL_Naval_Buildup
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 13
+	x = 10
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -59,11 +73,11 @@ focus = {
 			ahead_reduction = 1
 			bonus = 0.50
 			uses = 1
-			category = cruiser_hull
+			category = naval_doctrine
 		}
 		add_manpower = 50000
 		add_research_slot = 1
-		every_admiral  = {
+		every_navy_leader = {
 			add_coordination = 1
 		}
 		}

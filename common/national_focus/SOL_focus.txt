@@ -22,7 +22,7 @@ focus_tree = {
 		completion_reward = {
 			}
 		}
-	}
+	
 
 focus = {
 	id = SOL_Naval_Buildup
@@ -133,6 +133,7 @@ focus = {
 	prerequisite = { focus = SOL_Deadlock_Fortress_Plans }
 				}
 
+}
 }
 }
 }

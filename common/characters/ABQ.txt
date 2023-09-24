@@ -137,6 +137,26 @@ characters = {
 		}
 	}
 
+	ABQ_kleiber={
+		name="Kleiber"
+		portraits={
+			army={
+				small=GFX_idea_gadem
+			}
+			army={
+				large= "gfx/leaders/ABQ/Twanning.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
 	
 	#generals
 	ABQ_eric_manthfield={

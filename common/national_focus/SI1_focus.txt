@@ -1459,6 +1459,11 @@ focus = {
 				level = 5
 				instant_build = yes
 			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
 		}
 
 		913 = {
@@ -1468,6 +1473,11 @@ focus = {
 				level = 5
 				instant_build = yes
 			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
 		}
 
 		914 = {
@@ -1475,6 +1485,11 @@ focus = {
 			add_building_construction = {
 				type = arms_factory
 				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
 				instant_build = yes
 			}
 		}
@@ -1568,6 +1583,7 @@ focus = {
 	recruit_character = SI1_cuaron
 	recruit_character = SI1_zechst
 	recruit_character = SI1_spotter
+	add_manpower = 5000
 	}
 	relative_position_id = SI1_bring_in_deikun_loyalists
 	prerequisite = { focus = SI1_bring_in_deikun_loyalists }

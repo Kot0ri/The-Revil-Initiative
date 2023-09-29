@@ -23,6 +23,38 @@ focus_tree = {
 			}
 		}
 	
+		focus = {
+			id = SOL_Dolzes_Pride 
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 2
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				}
+				relative_position_id = SOL_Mandate_of_Solomon
+				prerequisite = { focus = SOL_Mandate_of_Solomon }
+				}
+		
+
+	focus = {
+			id = SOL_Meeting_in_Dark_Colony
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 2
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				}
+				relative_position_id = SOL_Dolzes_Pride
+					prerequisite = { focus = SOL_Dolzes_Pride }
+				}
+				}
+		
 
 focus = {
 	id = SOL_Naval_Buildup
@@ -130,10 +162,11 @@ focus = {
 				}
 			}
 		}
+	}
 	relative_position_id = SOL_Deadlock_Fortress_Plans
 	prerequisite = { focus = SOL_Deadlock_Fortress_Plans }
 				}
 
 }
-}
+
 

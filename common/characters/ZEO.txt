@@ -430,6 +430,126 @@ ZEO_cecilia_irene = {
 		}
 	}
 
+	ZEO_lino_fernadez={
+		name="Lino Fernadez"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	ZEO_jane={
+		name="Jane Smith"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	ZEO_william_burke={
+		name="William Burke"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={poltically_connected zabi_party}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	ZEO_alexander_keenly={
+		name="Alexander Keenly"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={poltically_connected zabi_party}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	ZEO_jessica_parker={
+		name="Jessica Parker"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	ZEO_james_abercombie={
+		name="James Abercrombie"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+			}
+		}
+		corps_commander={
+			traits={media_personality}
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
 	##Admirals
 	ZEO_asakura = {
 	name="Asakura"
@@ -451,6 +571,86 @@ ZEO_cecilia_irene = {
 	}
 }
 
+ZEO_fyodor = {
+	name="Fyodor Matveyevich Apraskin"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/ZEO/Asakura.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=4
+		attack_skill=3
+		defense_skill=3
+		maneuvering_skill=3
+		coordination_skill=4
+	}
+}
+
+ZEO_gottlieb = {
+	name="Fabian Gottlieb Thaddeus von Bellinghausen"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/ZEO/Asakura.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		maneuvering_skill=3
+		coordination_skill=3
+	}
+}
+
+ZEO_aksel = {
+	name="Aksel Ivanovich Berg"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/ZEO/Asakura.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		maneuvering_skill=2
+		coordination_skill=2
+	}
+}
+
+ZEO_yeltsin = {
+	name="Yeltsin Ivanov"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/ZEO/Asakura.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		maneuvering_skill=1
+		coordination_skill=1
+	}
+}
+
 ##High Command
 	ZEO_takiguchi={
 	name="Kei Takiguchi"
@@ -459,7 +659,15 @@ ZEO_cecilia_irene = {
 			small=GFX_idea_ramba_ral_pa
 		}
 	}
-
+	field_marshal={
+		traits={Zabi_party old_guard}
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=3
+	}
+}
 
 	advisor={
 		slot = high_command
@@ -489,8 +697,15 @@ ZEO_mackenson={
 			small=GFX_idea_ramba_ral_pa
 		}
 	}
-
-
+	field_marshal={
+		traits={}
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=3
+	}
+}
 	advisor={
 		slot = high_command
 		ledger = army
@@ -519,8 +734,15 @@ ZEO_mackenson={
 				small=GFX_idea_ramba_ral_pa
 			}
 		}
-
-
+		corps_commander={
+			traits={anti_Zabi_party}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 		advisor={
 			slot = high_command
 			ledger = army
@@ -540,7 +762,7 @@ ZEO_mackenson={
 				}
 			}
 		}
-	}
+	
 
 	ZEO_oberstein={
 		name="Hanz Oberstein"
@@ -549,8 +771,15 @@ ZEO_mackenson={
 				small=GFX_idea_ramba_ral_pa
 			}
 		}
-
-
+		corps_commander={
+			traits={}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+		}
+	}
 		advisor={
 			slot = high_command
 			ledger = army
@@ -578,9 +807,18 @@ ZEO_mackenson={
 			army={
 				small=GFX_idea_ramba_ral_pa
 			}
+		army={
+			large= "gfx/leaders/ZEO/Asakura.dds"
 		}
-
-
+	}
+	navy_leader={
+		traits={}
+		skill=3
+		attack_skill=3
+		defense_skill=1
+		maneuvering_skill=1
+		coordination_skill=2
+	}
 		advisor={
 			slot = high_command
 			ledger = army
@@ -608,9 +846,18 @@ ZEO_mackenson={
 			army={
 				small=GFX_idea_ramba_ral_pa
 			}
+		army={
+			large= "gfx/leaders/ZEO/Asakura.dds"
 		}
-
-
+	}
+	navy_leader={
+		traits={}
+		skill=2
+		attack_skill=1
+		defense_skill=1
+		maneuvering_skill=2
+		coordination_skill=2
+	}
 		advisor={
 			slot = high_command
 			ledger = army
@@ -638,9 +885,18 @@ ZEO_mackenson={
 			army={
 				small=GFX_idea_ramba_ral_pa
 			}
+		army={
+			large= "gfx/leaders/ZEO/Asakura.dds"
 		}
-
-
+	}
+	navy_leader={
+		traits={}
+		skill=2
+		attack_skill=1
+		defense_skill=1
+		maneuvering_skill=2
+		coordination_skill=2
+	}
 		advisor={
 			slot = high_command
 			ledger = army
@@ -669,8 +925,6 @@ ZEO_mackenson={
 				small=GFX_idea_ramba_ral_pa
 			}
 		}
-
-
 		advisor={
 			slot = high_command
 			ledger = army
@@ -699,8 +953,18 @@ ZEO_mackenson={
 				small=GFX_idea_ramba_ral_pa
 			}
 		}
-
-
+		army={
+			large= "gfx/leaders/ZEO/Asakura.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		maneuvering_skill=1
+		coordination_skill=3
+	
 		advisor={
 			slot = high_command
 			ledger = army
@@ -720,7 +984,7 @@ ZEO_mackenson={
 				}
 			}
 		}
-	}
+
 
 	ZEO_varga={
 		name="Istvan Varga"
@@ -729,7 +993,15 @@ ZEO_mackenson={
 				small=GFX_idea_ramba_ral_pa
 			}
 		}
-
+		field_marshal={
+			traits={}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 
 		advisor={
 			slot = high_command
@@ -750,7 +1022,7 @@ ZEO_mackenson={
 				}
 			}
 		}
-	}
+	
 
 	ZEO_georgiev={
 		name="Boyan Georgiev"
@@ -759,8 +1031,15 @@ ZEO_mackenson={
 				small=GFX_idea_ramba_ral_pa
 			}
 		}
-
-
+		field_marshal={
+			traits={}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
 		advisor={
 			slot = high_command
 			ledger = army
@@ -780,7 +1059,7 @@ ZEO_mackenson={
 				}
 			}
 		}
-	}
+	
 
 	ZEO_pierre={
 		name="Jean-Louis Pierre"
@@ -789,8 +1068,15 @@ ZEO_mackenson={
 				small=GFX_idea_ramba_ral_pa
 			}
 		}
-
-
+		corps_commander
+			traits={}
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	
 		advisor={
 			slot = high_command
 			ledger = army

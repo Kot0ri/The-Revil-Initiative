@@ -83,16 +83,19 @@ characters={
 				large= "gfx/leaders/VBC/O'sullivan.dds"
 			}
 			available = {
-				has_global_flag = andy_williams_replaced
+				has_global_flag = andy_wellington_replaced
 			}
 		}
 		country_leader={
 			ideology=corporate_state
 			expire="1000.1.1.1"
 		}
-
-		VBC_andy_williams={
-			name="Andy Williams"
+		traits = {
+			melanie_hue_carbine_trait
+		}
+	}
+		VBC_andy_wellington={
+			name="Andy Wellington"
 			portraits={
 				civilian={
 					large= "gfx/leaders/VBC/O'sullivan.dds"
@@ -101,6 +104,9 @@ characters={
 			country_leader={
 				ideology=corporate_state
 				expire="1000.1.1.1"
+			}
+			traits = {
+				andy_wellington_trait
 			}
 	}
 
@@ -273,4 +279,4 @@ characters={
 			}
 		}
 	}
-}
+

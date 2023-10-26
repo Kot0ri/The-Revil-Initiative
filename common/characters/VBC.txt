@@ -59,11 +59,10 @@ characters={
 			slot = political_advisor
 			idea_token = melanie_hue_carbine
 			allowed = {
-				original_tag = EFS
+				original_tag = VBC
 			}
 			available = {
-				NOT = {
-					has_global_flag = ae_is_not_yes
+					has_global_flag = o'sullivan_is_dead
 				}
 			}
 			traits = {
@@ -83,16 +82,31 @@ characters={
 			civilian={
 				large= "gfx/leaders/VBC/O'sullivan.dds"
 			}
+			available = {
+				has_global_flag = andy_williams_replaced
+			}
 		}
 		country_leader={
 			ideology=corporate_state
 			expire="1000.1.1.1"
 		}
+
+		VBC_andy_williams={
+			name="Andy Williams"
+			portraits={
+				civilian={
+					large= "gfx/leaders/VBC/O'sullivan.dds"
+				}
+			}
+			country_leader={
+				ideology=corporate_state
+				expire="1000.1.1.1"
+			}
 	}
 
 	#Advisors
 	VBC_won_lee = {
-		name=VBC_won_lee
+		name="Won Lee"
 		portraits={
 			army={
 				small=GFX_idea_won_lee
@@ -104,10 +118,77 @@ characters={
 			traits = {
 				won_lee_trait
 			}
-			available = {
-				NOT = {
-					has_global_flag = ae_is_not_yes
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 3
+					has_war = yes
 				}
+			}
+		}
+	}
+	VBC_kurena_hacksell = {
+		name="Kurena Hacksell"
+		portraits={
+			army={
+				small=GFX_idea_won_lee
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kurena_hacksell
+			traits = {
+				won_lee_trait
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 3
+					has_war = yes
+				}
+			}
+		}
+	}
+	VBC_raymond_mekynes = {
+		name="Raymond Mekynes"
+		portraits={
+			army={
+				small=GFX_idea_won_lee
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = raymond_mekynes
+			traits = {
+				won_lee_trait
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 3
+					has_war = yes
+				}
+			}
+		}
+	}
+	VBC_peter_purpleton = {
+		name="Peter Purpleton"
+		portraits={
+			army={
+				small=GFX_idea_won_lee
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = peter_purpleton
+			traits = {
+				won_lee_trait
 			}
 			modifier = {
 			}
@@ -121,37 +202,36 @@ characters={
 		}
 	}
 
-	EFS_melanie_hue_carbine = {
-		name=melanie_hue_carbine
+	VBC_lucette_audevie = {
+		name="Lucette Audevie"
 		portraits={
 			army={
-				small=GFX_idea_melanie_hue_carbine
+				small=GFX_idea_won_lee
 			}
 		}
 		advisor={
-			slot = political_advisor
-			idea_token = melanie_hue_carbine
-			allowed = {
-				original_tag = EFS
-			}
-			available = {
-				NOT = {
-					has_global_flag = ae_is_not_yes
-				}
-			}
+			slot = theorist
+			cost = 100
+			idea_token = lucette_audevie
 			traits = {
-				melanie_hue_carbine_trait
+				won_lee_trait
 			}
-			modifier = {
-			}
+				research_bonus = {
+					computing_tech = 0.15
+					plan_gundam = 0.2
+				}
 			ai_will_do = {
-				factor = 20
+				factor = 1
+				modifier = {
+					factor = 3
+					has_war = yes
+				}
 			}
 		}
 	}
 
-	EFS_nina_purpleton = {
-		name = EFS_nina_purpleton
+	VBC_nina_purpleton = {
+		name = "Nina Purpleton"
 		portraits={
 			army={
 				small="GFX_idea_nina_purpleton"
@@ -163,7 +243,7 @@ characters={
 			cost = 100
 			idea_token = nina_purpleton
 			allowed = {
-				original_tag = EFS
+				original_tag = VBC
 			}
 			research_bonus = {
 				computing_tech = 0.15

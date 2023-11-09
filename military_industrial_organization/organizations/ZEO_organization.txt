@@ -1,0 +1,148 @@
+ZEO_zeonic_organization = {
+	include = generic_mass_production_ms_organization
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+		OR = {
+			tag = ZEO
+			AND = {
+				tag = SOL
+				tag = ABQ
+				tag = GRA
+				tag = PEZ
+				tag = AXS
+				tag = EAF
+				tag = NAA
+				tag = VBC
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ZEO } }
+			}
+			FROM = { NOT = { has_war_with = ZEO } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { tag = SOL
+				tag = ABQ
+				tag = GRA
+				tag = PEZ
+				tag = AXS
+				tag = EAF
+				tag = NAA }
+			}
+			FROM = { is_in_faction_with = ZEO }
+		}
+		ELSE_IF = {
+			limit = {
+				FROM = { tag = VBC }
+			}
+			FROM = { has_completed_focus = VBC_take_in_zeonic }
+		}
+	}
+}
+
+ZEO_zimmand_organization = {
+	include = generic_high_speed_ms_organization
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+		OR = {
+			tag = ZEO
+			tag = PEZ
+			AND = {
+				tag = SOL
+				tag = ABQ
+				tag = GRA
+				tag = AXS
+				tag = EAF
+				tag = NAA
+				tag = VBC
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ZEO } }
+			}
+			FROM = { NOT = { has_war_with = ZEO } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { tag = SOL
+				tag = ABQ
+				tag = GRA
+				tag = AXS
+				tag = EAF
+				tag = NAA }
+			}
+			FROM = { is_in_faction_with = ZEO }
+		}
+		ELSE_IF = {
+			limit = {
+				FROM = { tag = VBC }
+			}
+			FROM = { has_completed_focus = VBC_take_in_zimmand }
+		}
+	}
+}
+
+ZEO_mip_organization = {
+	include = generic_mobile_armor_organization
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+		OR = {
+			tag = ZEO
+			AND = {
+				tag = SOL
+				tag = ABQ
+				tag = GRA
+				tag = PEZ
+				tag = AXS
+				tag = EAF
+				tag = NAA
+				tag = VBC
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ZEO } }
+			}
+			FROM = { NOT = { has_war_with = ZEO } }
+		}
+
+		IF = {
+			limit = {
+				FROM = { tag = SOL
+				tag = ABQ
+				tag = GRA
+				tag = PEZ
+				tag = AXS
+				tag = EAF
+				tag = NAA }
+			}
+			FROM = { is_in_faction_with = ZEO }
+		}
+		ELSE_IF = {
+			limit = {
+				FROM = { tag = VBC }
+			}
+			FROM = { has_completed_focus = VBC_take_in_mip}
+		}
+	}
+}

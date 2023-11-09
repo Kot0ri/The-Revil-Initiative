@@ -146,3 +146,90 @@ ZEO_mip_organization = {
 		}
 	}
 }
+
+ZEo_flanagan_institue_organization = {
+	include = generic_newtype_organization
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+		OR = {
+			tag = ZEO
+			AND = {
+				tag = ABQ
+				tag = GRA
+				tag = SI5
+				tag = SI6
+				tag = AXS
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ZEO } }
+			}
+			IF = {
+				limit = {
+					FROM = { tag = SOL
+					tag = ABQ
+					tag = GRA
+					tag = PEZ
+					tag = AXS
+					tag = EAF
+					tag = NAA }
+				}
+			FROM = { is_in_faction_with = ZEO}
+		}
+		}
+	}
+}
+
+ZEO_space_attack_forces_organization = {
+	include = generic_raider_ship_organization
+	icon = GFX_idea_porsche
+	
+	allowed = {	
+		OR = {
+			tag = ZEO
+			AND = {
+				tag = SOL
+			}
+		}
+	}
+
+	available = {
+		# When in a Foreign MIO, countries need to be at peace with original country
+		IF = {
+			limit = {
+				FROM = { NOT = { original_tag = ZEO } }
+			}
+			FROM = { is_in_faction_with = ZEO}
+		}
+		}
+	}
+
+	ZEO_mobile_assualt_force_organization = {
+		include = generic_task_force_ship_organization
+		icon = GFX_idea_porsche
+		
+		allowed = {	
+			OR = {
+				tag = ZEO
+				AND = {
+					tag = GRA
+				}
+			}
+		}
+	
+		available = {
+			# When in a Foreign MIO, countries need to be at peace with original country
+			IF = {
+				limit = {
+					FROM = { NOT = { original_tag = ZEO } }
+				}
+				FROM = { is_in_faction_with = ZEO}
+			}
+			}
+		}

@@ -69,3 +69,75 @@ AXS_axis_mass_production_ms_designer_organization = {
 				}
 				}
 			}
+
+			AXS_axis_newtype_lab_organization = {
+				include = generic_newtype_organization
+				icon = GFX_idea_porsche
+				
+				allowed = {	
+					OR = {
+						tag = AXS
+						AND = {
+							tag = SI1
+						}
+					}
+				}
+			
+				available = {
+					# When in a Foreign MIO, countries need to be at peace with original country
+					IF = {
+						limit = {
+							FROM = { NOT = { original_tag = AXS } }
+						}
+						FROM = { is_in_faction_with = AXS}
+					}
+					}
+				}
+
+			AXS_axis_advandce_fleet_organization = {
+				include = generic_raider_ship_organization
+				icon = GFX_idea_porsche
+				
+				allowed = {	
+					OR = {
+						tag = AXS
+						AND = {
+							tag = SI1
+						}
+					}
+				}
+			
+				available = {
+					# When in a Foreign MIO, countries need to be at peace with original country
+					IF = {
+						limit = {
+							FROM = { NOT = { original_tag = AXS } }
+						}
+						FROM = { is_in_faction_with = AXS}
+					}
+					}
+				}
+
+				AXS_axis_home_fleet_organization = {
+					include = generic_task_force_ship_organization
+					icon = GFX_idea_porsche
+					
+					allowed = {	
+						OR = {
+							tag = AXS
+							AND = {
+								tag = SI1
+							}
+						}
+					}
+				
+					available = {
+						# When in a Foreign MIO, countries need to be at peace with original country
+						IF = {
+							limit = {
+								FROM = { NOT = { original_tag = AXS } }
+							}
+							FROM = { is_in_faction_with = AXS}
+						}
+						}
+					}

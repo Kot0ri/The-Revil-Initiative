@@ -475,6 +475,23 @@ focus = {
 }
 
 focus = {
+	id = ZEO_lossen_conscription_standards
+	icon = GFX_goal_generic_axis_build_infantry
+	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_political_commissars
+	prerequisite = { focus = ZEO_political_commissars }
+}
+
+focus = {
 	id = ZEO_propgraganda_domination
 	icon = GFX_goal_generic_political_pressure
 	search_filters = { FOCUS_FILTER_PROPAGANDA }

@@ -1,7 +1,6 @@
 ideas = {
 	country = {
-		# ジオニックへの貸し
-		zeonic_owe_us = {
+		ZEO_zeonic_wins = {
 			allowed = {
 				always = no
 				original_tag = ZEO
@@ -17,13 +16,21 @@ ideas = {
 					build_cost_ic = -0.15
 				}
 			}
+			{
+			ZEO_zeonic_organization= {
+				limit = {
+				}
+				add_mio_size = 1
+				add_mio_research_bonus = 0.1
 			removal_cost = -1
 			traits = {
 				
 			}
 		}
-		# ヅダを採用
-		zeonic_is_evil = {
+	}
+}
+	
+		ZEO_zimmand_wins = {
 			allowed = {
 				always = no
 				original_tag = ZEO
@@ -32,15 +39,30 @@ ideas = {
 				always = yes
 			}
 			research_bonus = {
-				zeonic_mobilesuit = -0.5
+				zimmand_mobilesuit = 0.5
+			}
+			equipment_bonus = {
+				archetype_ems10 = {
+					build_cost_ic = -0.15
+				}
+			}
+			ZEO_zimmand_organization= {
+				limit = {
+				}
+				add_mio_size = 1
+				add_mio_research_bonus = 0.1
+			removal_cost = -1
+			traits = {
+				
 			}
 			removal_cost = -1
 			traits = {
 				
 			}
 		}
-		# 統合整備計画
-		integrated_maintenance_plan_idea = {
+	}
+
+		united_maintenance_plan_idea = {
 			allowed = {
 				always = no
 				original_tag = ZEO
@@ -59,28 +81,7 @@ ideas = {
 				
 			}
 		}
-		#疑惑のコンペ
-		false_competition = {
-			allowed = {
-				always = no
-				original_tag = ZEO
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
-				political_power_factor = -0.1
-				production_factory_efficiency_gain_factor = -0.2
-				industrial_capacity_factory = -0.2
-			}
-			equipment_bonus = {
-				archetype_ems10 = {
-					build_cost_ic = -0.15
-				}
-			}
-			removal_cost = -1
-			traits = {
-				
+	
 			}
 		}
 		#兄弟喧嘩
@@ -1555,4 +1556,6 @@ ideas = {
 			}
 		}
 	}
+}
+}
 }

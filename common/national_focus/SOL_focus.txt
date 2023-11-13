@@ -157,6 +157,7 @@ focus = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
+					province = 13616
 					type = fort
 					level = 2
 					instant_build = yes

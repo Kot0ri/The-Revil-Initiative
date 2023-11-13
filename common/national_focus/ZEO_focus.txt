@@ -1630,6 +1630,27 @@ focus = {
 }
 
 focus = {
+	id = ZEO_sell_zakupla
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = yes
+}
+
+	completion_reward = {
+	add_war_support = 0.05
+	}
+	relative_position_id = ZEO_expand_consumer_market
+	prerequisite = { focus = ZEO_expand_consumer_market }
+}
+
+focus = {
 	id = ZEO_browbeat_the_colonies_into_our_econimc_sphere
 	icon =  GFX_focus_ETH_adopt_the_lira
 	cost = 10
@@ -3005,6 +3026,7 @@ focus = {
 	
 	}
 	completion_reward = {
+		create_faction = Imperium_of_Zeon
 	}
 	relative_position_id = ZEO_axis_development
 	mutually_exclusive = {

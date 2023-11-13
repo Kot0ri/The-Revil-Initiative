@@ -1474,6 +1474,21 @@ focus = {
 }
 
 focus = {
+	id = ABQ_mayfly_of_space
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_survival_of_conscious
+	prerequisite = { focus = ABQ_survival_of_conscious}
+}
+
+focus = {
 	id = ABQ_gihren_is_dead
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
@@ -1498,6 +1513,8 @@ focus = {
 		factor = 1
 	}mutually_exclusive = { focus = ABQ_delaz_orders_a_retreeat }
 	completion_reward = {
+		change_tag_from = ABQ
+		change_tag_to = AXS
 	}
 	relative_position_id = ABQ_gihren_is_dead
 	prerequisite = { focus = ABQ_gihren_is_dead }
@@ -1514,6 +1531,8 @@ focus = {
 	}
 	mutually_exclusive = { focus = ABQ_evacuation_to_axis }
 	completion_reward = {
+		change_tag_from = ABQ
+		change_tag_to = DEL
 	}
 	relative_position_id = ABQ_gihren_is_dead
 	prerequisite = { focus = ABQ_gihren_is_dead }

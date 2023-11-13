@@ -441,11 +441,96 @@ focus = {
 }
 
 focus = {
-	id = ZEO_state_funeral
-	icon = GFX_goal_capitalizing_on_the_fame_of_parent
-	search_filters = { FOCUS_FILTER_ANNEXATION }
+	id = ZEO_ensure_the_militaries_loyalty
+	icon = GFX_goal_generic_axis_build_infantry
+	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	cost = 2
 	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_invade_earth
+	prerequisite = { focus = ZEO_invade_earth }
+}
+
+focus = {
+	id = ZEO_political_commissars
+	icon = GFX_goal_generic_axis_build_infantry
+	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ensure_the_militaries_loyalty
+	prerequisite = { focus = ZEO_ensure_the_militaries_loyalty }
+}
+
+focus = {
+	id = ZEO_propgraganda_domination
+	icon = GFX_goal_generic_political_pressure
+	search_filters = { FOCUS_FILTER_PROPAGANDA }
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_invade_earth
+	prerequisite = { focus = ZEO_invade_earth }
+}
+
+focus = {
+	id = ZEO_ZEONet
+	icon = GFX_goal_generic_political_pressure
+	search_filters = { FOCUS_FILTER_PROPAGANDA }
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_propgraganda_domination
+	prerequisite = { focus = ZEO_propgraganda_domination }
+}
+
+focus = {
+	id = ZEO_Z.w.P.A
+	icon = GFX_goal_generic_political_pressure
+	search_filters = { FOCUS_FILTER_PROPAGANDA }
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_propgraganda_domination
+	prerequisite = { focus = ZEO_propgraganda_domination }
+}
+
+focus = {
+	id = ZEO_state_funeral
+	icon = GFX_goal_capitalizing_on_the_fame_of_parent
+	search_filters = { FOCUS_FILTER_PROPAGANDA }
+	cost = 2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -454,6 +539,24 @@ focus = {
 		add_war_support = 0.15
 		add_manpower = 5000
 	}
+	relative_position_id = ZEO_ZEONet
+	prerequisite = { focus = ZEO_ZEONet}
+	prerequisite = { focus = ZEO_Z.w.P.A}
+}
+
+focus = {
+	id = ZEO_use_of_terror_weapons
+	icon = GFX_goal_generic_major_war
+	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
+	cost = 2
+	x = -2
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
 	relative_position_id = ZEO_invade_earth
 	prerequisite = { focus = ZEO_invade_earth }
 }
@@ -461,18 +564,52 @@ focus = {
 focus = {
 	id = ZEO_colony_drop_on_jaburo
 	icon = GFX_goal_colony_alliance
-	search_filters = { FOCUS_FILTER_ANNEXATION }
+	search_filters = { FOCUS_FILTER_MILITARY }
 	cost = 10
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 
 	}
-	relative_position_id = ZEO_state_funeral
-	prerequisite = { focus = ZEO_state_funeral }
+	relative_position_id = ZEO_use_of_terror_weapons
+	prerequisite = { focus = ZEO_use_of_terror_weapons}
+}
+
+focus = {
+	id = ZEO_colony_laser_project
+	icon = GFX_goal_colony_alliance
+	search_filters = { FOCUS_FILTER_MILITARY }
+	cost = 10
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ZEO_use_of_terror_weapons
+	prerequisite = { focus = ZEO_use_of_terror_weapons}
+}
+
+focus = {
+	id = ZEO_chemical_weapon_development
+	icon = GFX_goal_colony_alliance
+	search_filters = { FOCUS_FILTER_MILITARY }
+	cost = 10
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ZEO_use_of_terror_weapons
+	prerequisite = { focus = ZEO_use_of_terror_weapons}
 }
 
 focus = {
@@ -712,6 +849,78 @@ focus = {
 	prerequisite = { focus = ZEO_invade_von_braun }
 }
 
+focus = {
+	id = ZEO_prioritizie_MS_Development
+	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_war_with_the_earth
+	prerequisite = { focus = ZEO_war_with_the_earth}
+}
+
+focus = {
+	id = ZEO_ace_use_MS_focus
+	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	mutually_exclusive = {
+		focus = ZEO_flanagan_proposal
+	}
+	relative_position_id = ZEO_prioritizie_MS_Development
+	prerequisite = { focus = ZEO_prioritizie_MS_Development}
+}
+focus = {
+	id = ZEO_flanagan_proposal
+	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	mutually_exclusive = {
+		focus = ZEO_ace_use_MS_focus
+	}
+	relative_position_id = ZEO_prioritizie_MS_Development
+	prerequisite = { focus = ZEO_prioritizie_MS_Development}
+}
+focus = {
+	id = ZEO_Bishop_project
+	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_ANNEXATION }
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+
+	relative_position_id = ZEO_flanagan_proposal
+	prerequisite = { focus = ZEO_flanagan_proposal}
+}
 focus = {
 	id = ZEO_support_rebellion_in_side_6
 	icon = GFX_goal_zeon_mobile_headquarters
@@ -1798,6 +2007,39 @@ focus = {
 }
 
 focus = {
+	id = ZEO_Mobile_armor_development
+	icon = GFX_goal_zeon_mobile_headquarters
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_counter_federation_ms
+	prerequisite = { focus = ZEO_upgrade_old_ms }
+	prerequisite = { focus = ZEO_focus_on_new_ms }
+}
+
+focus = {
+	id = ZEO_newtype_weapon_development
+	icon = GFX_goal_zeon_mobile_headquarters
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_Mobile_armor_development
+	prerequisite = { focus = ZEO_Mobile_armor_development }
+}
+
+focus = {
 	id = ZEO_begin_widescale_production_efforts
 	icon = GFX_focus_SOV_organize_wreckers 
 	cost = 5
@@ -2651,6 +2893,9 @@ focus = {
 	}
 	completion_reward = {
 	}
+	mutually_exclusive = {
+		focus = ZEO_declare_imperium
+	}
 	relative_position_id = ZEO_axis_development
 	prerequisite = { focus = ZEO_axis_development }
 	prerequisite = { focus = ZEO_begin_development_of_newtype_corps }
@@ -2685,6 +2930,48 @@ focus = {
 	}
 	relative_position_id = ZEO_send_civillians_and_loyal_officials_to_axis
 	prerequisite = { focus = ZEO_send_civillians_and_loyal_officials_to_axis }
+}
+
+focus = {
+	id = ZEO_declare_imperium
+	icon = GFX_goal_generic_forceful_treaty
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_axis_development
+	mutually_exclusive = {
+		focus = ZEO_prepare_for_an_evacuation
+	}
+	prerequisite = { focus = ZEO_axis_development }
+	prerequisite = { focus = ZEO_build_up_granada }
+}
+
+focus = {
+	id = ZEO_pax_Zeon
+	icon = GFX_goal_generic_forceful_treaty
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_declare_imperium
+	prerequisite = { focus = ZEO_declare_imperium}
 }
 
 }

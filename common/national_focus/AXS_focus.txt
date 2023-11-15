@@ -474,4 +474,100 @@ focus = {
 	prerequisite = {focus = AXS_mobile_armor_bay}
 }
 
+focus = {
+	id = AXS_bring_in_survivors
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_end_of_the_war
+	prerequisite = {focus = AXS_end_of_the_war}
+}
+
+focus = {
+	id = AXS_experince_from_a_baoa_qu
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_bring_in_survivors
+	prerequisite = {focus = AXS_bring_in_survivors}
+}
+
+focus = {
+	id = AXS_supplies_from_side_3
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_bring_in_survivors
+	prerequisite = {focus = AXS_bring_in_survivors}
+}
+
+focus = {
+	id = AXS_remannts_of_the_fleet
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_experince_from_a_baoa_qu
+	prerequisite = {focus = AXS_bring_in_survivors}
+}
+
+focus = {
+	id = AXS_1st_battle_of_axis
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_remannts_of_the_fleet
+	prerequisite = {focus = AXS_remannts_of_the_fleet}
+}
+
+focus = {
+	id = AXS_gather_partially_complete_warships
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_end_of_the_war
+	prerequisite = {focus = AXS_end_of_the_war}
+}
+
 }

@@ -272,4 +272,206 @@ focus = {
 
 }
 
+focus = {
+	id = AXS_build_up_axis_facilities
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_secure_control_over_axis
+	prerequisite = {focus = AXS_secure_control_over_axis}
+
+}
+
+focus = {
+	id = AXS_hamans_potential
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_karn_family
+	prerequisite = {focus = AXS_karn_family}
+
+}
+
+focus = {
+	id = AXS_send_haman_to_flanagan
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_hamans_potential
+	prerequisite = {focus = AXS_hamans_potential}
+
+}
+
+focus = {
+	id = AXS_encounter_at_flanagan
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_send_haman_to_flanagan
+	prerequisite = {focus = AXS_send_haman_to_flanagan}
+
+}
+
+focus = {
+	id = AXS_increase_research_capabailites
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_build_up_axis_facilities
+	prerequisite = {focus = AXS_encounter_at_flanagan}
+	prerequisite = {focus = AXS_build_up_axis_facilities}
+}
+
+focus = {
+	id = AXS_expand_navy_capacity
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_increase_research_capabailites
+	prerequisite = {focus = AXS_increase_research_capabailites}
+	prerequisite = {focus = AXS_deals_with_jupiter}
+}
+
+focus = {
+	id = AXS_new_mobile_suit_factories
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_expand_navy_capacity
+	prerequisite = {focus = AXS_expand_navy_capacity}
+}
+
+focus = {
+	id = AXS_mobile_armor_bay
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_new_mobile_suit_factories
+	prerequisite = {focus = AXS_new_mobile_suit_factories}
+}
+
+focus = {
+	id = AXS_asteroid_defense_initiative
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_mobile_armor_bay
+	prerequisite = {focus = AXS_mobile_armor_bay}
+}
+
+focus = {
+	id = AXS_newtype_development
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_encounter_at_flanagan
+	prerequisite = {focus = AXS_encounter_at_flanagan}
+
+}
+
+
+focus = {
+	id = AXS_legacy_of_deikuns_dreams
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_newtype_development
+	prerequisite = {focus = AXS_newtype_development}
+
+}
+
+focus = {
+	id = AXS_end_of_the_war
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 4
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_legacy_of_deikuns_dreams
+	prerequisite = {focus = AXS_legacy_of_deikuns_dreams}
+	prerequisite = {focus = AXS_mobile_armor_bay}
+}
+
 }

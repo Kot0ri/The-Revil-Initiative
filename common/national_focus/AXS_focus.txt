@@ -171,6 +171,57 @@ focus = {
 }
 
 focus = {
+	id = AXS_guardian_of_the_asteroid_belt
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_industrialization_of_axis
+	prerequisite = {focus = AXS_private_mining_contracts focus = AXS_state_mining_contracts}
+}
+
+focus = {
+	id = AXS_deals_with_jupiter
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	mutually_exclusive = { focus = AXS_antagonism_towards_jupiter }
+	relative_position_id = AXS_guardian_of_the_asteroid_belt
+	prerequisite = {focus = AXS_guardian_of_the_asteroid_belt}
+}
+
+focus = {
+	id = AXS_antagonism_towards_jupiter
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	mutually_exclusive = { focus = AXS_deals_with_jupiter }
+	relative_position_id = AXS_guardian_of_the_asteroid_belt
+	prerequisite = {focus = AXS_guardian_of_the_asteroid_belt}
+}
+
+
+focus = {
 	id = AXS_karn_family
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -184,6 +235,40 @@ focus = {
 	}
 	relative_position_id = AXS_maharajas_wisdom
 	prerequisite = {focus = AXS_maharajas_wisdom}
+
+}
+
+focus = {
+	id = AXS_marlene_incindent
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_karn_family
+	prerequisite = {focus = AXS_karn_family}
+
+}
+
+focus = {
+	id = AXS_secure_control_over_axis
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_marlene_incindent
+	prerequisite = {focus = AXS_marlene_incindent}
 
 }
 

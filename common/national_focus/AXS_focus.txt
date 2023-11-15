@@ -1,0 +1,190 @@
+focus_tree = {
+	id = AXS
+	continuous_focus_position = { x = 0 y = 2800}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = AXS
+		}
+	}
+	default = no
+	
+focus = {
+	id = AXS_life_on_Axis
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 20
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_life_away_from_the_light_of_earth
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_life_on_Axis
+	prerequisite = {focus = AXS_life_on_Axis }
+}
+
+focus = {
+	id = AXS_spirit_of_the_asteroid_belt
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_life_away_from_the_light_of_earth
+	prerequisite = {focus = AXS_life_away_from_the_light_of_earth}
+}
+
+focus = {
+	id = AXS_build_up_long_range_communication_relays
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_spirit_of_the_asteroid_belt
+	prerequisite = {focus = AXS_spirit_of_the_asteroid_belt}
+}
+
+focus = {
+	id = AXS_aid_mars_development
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_spirit_of_the_asteroid_belt
+	prerequisite = {focus = AXS_spirit_of_the_asteroid_belt}
+}
+
+focus = {
+	id = AXS_maharajas_wisdom
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_build_up_long_range_communication_relays
+	prerequisite = {focus = AXS_build_up_long_range_communication_relays}
+}
+
+focus = {
+	id = AXS_expansion_of_mousa
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_maharajas_wisdom
+	prerequisite = {focus = AXS_maharajas_wisdom}
+}
+
+focus = {
+	id = AXS_industrialization_of_axis
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_expansion_of_mousa
+	prerequisite = {focus = AXS_expansion_of_mousa}
+}
+
+focus = {
+	id = AXS_state_mining_contracts
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	mutually_exclusive = { focus = AXS_private_mining_contracts}
+	relative_position_id = AXS_industrialization_of_axis
+	prerequisite = {focus = AXS_industrialization_of_axis}
+}
+
+focus = {
+	id = AXS_private_mining_contracts
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	mutually_exclusive = { focus = AXS_state_mining_contracts}
+	relative_position_id = AXS_industrialization_of_axis
+	prerequisite = {focus = AXS_industrialization_of_axis}
+}
+
+focus = {
+	id = AXS_karn_family
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_maharajas_wisdom
+	prerequisite = {focus = AXS_maharajas_wisdom}
+
+}
+
+}

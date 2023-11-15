@@ -299,6 +299,66 @@ AXS_phaeton_rahu={
 }
 
 #Pilots
+AXS_mashymre_cello_1={
+	name="Mashymre Cello"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/maharaja_jr.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot knight_of_axis}
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=2
+	}
+}
+
+AXS_mashymre_cello_2={
+	name="Mashymre Cello"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/maharaja_jr.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot knight_of_axis cyber_newtype}
+		skill=4
+		attack_skill=3
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=2
+	}
+}
+
+AXS_mashymre_cello_3={
+	name="Mashymre Cello"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/maharaja_jr.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot knight_of_axis}
+		skill=5
+		attack_skill=4
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+	}
+}
+
 AXS_maharaja_jr={
 	name="Maharaja Karn Jr."
 	portraits={

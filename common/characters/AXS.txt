@@ -501,6 +501,26 @@ AXS_gottn_goh={
 	}
 }
 
+AXS_Alfred_von_Scharenberg={
+	name="Alfred von Scharenberg"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/Alfred_von_Scharenberg.dds"
+		}
+	}
+	corps_commander={
+		traits={Royalguard}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
 
 ##High Command
 AXS_fernandez={

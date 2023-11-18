@@ -484,7 +484,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	recruit_character = AXS_enzo_bernini
+	recruit_character = AXS_fabian_frischknecht
+	recruit_character = AXS_rakan_dahkaran
+	add_manpower = 50000
 	}
 	relative_position_id = AXS_end_of_the_war
 	prerequisite = {focus = AXS_end_of_the_war}
@@ -532,7 +535,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	 
 	}
 	relative_position_id = AXS_experince_from_a_baoa_qu
 	prerequisite = {focus = AXS_bring_in_survivors}

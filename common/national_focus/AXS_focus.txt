@@ -573,4 +573,181 @@ focus = {
 	prerequisite = {focus = AXS_end_of_the_war}
 }
 
+focus = {
+	id = AXS_plans_for_axis_new_role
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_1st_battle_of_axis
+	prerequisite = {focus = AXS_1st_battle_of_axis}
+}
+
+focus = {
+	id = AXS_fortification_of_axis
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_plans_for_axis_new_role
+	prerequisite = {focus = AXS_plans_for_axis_new_role}
+}
+
+focus = {
+	id = AXS_build_up_a_defense_fleet
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_fortification_of_axis
+	prerequisite = {focus = AXS_fortification_of_axis}
+	prerequisite = {focus = AXS_gather_partially_complete_warships}
+}
+
+focus = {
+	id = AXS_axis_advance_fleet
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_build_up_a_defense_fleet
+	prerequisite = {focus = AXS_build_up_a_defense_fleet}
+}
+
+focus = {
+	id = AXS_axis_ms_project
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_plans_for_axis_new_role
+	prerequisite = {focus = AXS_plans_for_axis_new_role}
+}
+
+focus = {
+	id = AXS_retrofit_old_ms
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_axis_ms_project
+	prerequisite = {focus = AXS_axis_ms_project}
+}
+
+focus = {
+	id = AXS_new_ms_development
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_axis_ms_project
+	prerequisite = {focus = AXS_axis_ms_project}
+}
+
+focus = {
+	id = AXS_transformable_ms_theory
+	icon = GFX_goal_general_meeting
+	cost = 1
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_new_ms_development
+	prerequisite = {focus = AXS_new_ms_development}
+}
+
+focus = {
+	id = AXS_GAZA_line
+	icon = GFX_goal_general_meeting
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_transformable_ms_theory
+	prerequisite = {focus = AXS_transformable_ms_theory}
+}
+
+focus = {
+	id = AXS_technological_improvements
+	icon = GFX_goal_general_meeting
+	cost = 3
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_new_ms_development
+	prerequisite = {focus = AXS_new_ms_development}
+}
+
+focus = {
+	id = AXS_newtype_use_ms
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_technological_improvements
+	prerequisite = {focus = AXS_technological_improvements}
+}
+
 }

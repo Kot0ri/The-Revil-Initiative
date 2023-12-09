@@ -574,6 +574,70 @@ focus = {
 }
 
 focus = {
+	id = AXS_new_ship_program
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_gather_partially_complete_warships
+	prerequisite = {focus = AXS_gather_partially_complete_warships}
+}
+
+focus = {
+	id = AXS_deep_space_capabilty
+	icon = GFX_goal_general_meeting
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_new_ship_program
+	prerequisite = {focus = AXS_new_ship_program}
+}
+
+focus = {
+	id = AXS_heavy_ship_doctrine
+	icon = GFX_goal_general_meeting
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_deep_space_capabilty
+	prerequisite = {focus = AXS_deep_space_capabilty}
+}
+
+focus = {
+	id = AXS_improve_the_musai
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_gather_partially_complete_warships
+	prerequisite = {focus = AXS_gather_partially_complete_warships}
+}
+
+focus = {
 	id = AXS_plans_for_axis_new_role
 	icon = GFX_goal_general_meeting
 	cost = 2

@@ -998,6 +998,23 @@ focus = {
 }
 
 focus = {
+	id = AXS_crown_glemy
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_depose_mineva
+	prerequisite = {focus = AXS_depose_mineva}
+}
+
+
+focus = {
 	id = AXS_nothing_more_than_rumors
 	icon = GFX_goal_general_meeting
 	cost = 2

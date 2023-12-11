@@ -834,7 +834,7 @@ focus = {
 	id = AXS_gihren_loyalists
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 2
+	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -870,7 +870,7 @@ focus = {
 	id = AXS_char_aznables_true_idenity
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = -2
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1030,5 +1030,52 @@ focus = {
 	prerequisite = {focus = AXS_nothing_more_than_rumors}
 }
 
+focus = {
+	id = AXS_discover_the_reactionary_plot
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_hamans_regency
+	prerequisite = {focus = AXS_hamans_regency}
+}
+
+focus = {
+	id = AXS_emissary_from_zeon
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_discover_the_reactionary_plot
+	prerequisite = {focus = AXS_discover_the_reactionary_plot}
+}
+
+focus = {
+	id = AXS_natalie_incident
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_emissary_from_zeon
+	prerequisite = {focus = AXS_emissary_from_zeon}
+}
 
 }

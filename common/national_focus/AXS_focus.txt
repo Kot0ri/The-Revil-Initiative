@@ -948,4 +948,87 @@ focus = {
 	prerequisite = {focus = AXS_rumors_from_within}
 }
 
+focus = {
+	id = AXS_recoginze_the_claiment
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_gihrens_heir
+	mutually_exclusive = {focus = AXS_nothing_more_than_rumors}
+	prerequisite = {focus = AXS_gihrens_heir}
+}
+
+focus = {
+	id = AXS_pronounce_glemy_as_heir_of_gihren
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_recoginze_the_claiment
+	prerequisite = {focus = AXS_recoginze_the_claiment}
+}
+
+focus = {
+	id = AXS_depose_mineva
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_pronounce_glemy_as_heir_of_gihren
+	prerequisite = {focus = AXS_pronounce_glemy_as_heir_of_gihren}
+}
+
+focus = {
+	id = AXS_nothing_more_than_rumors
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_gihrens_heir
+	mutually_exclusive = {focus = AXS_recoginze_the_claiment}
+	prerequisite = {focus = AXS_gihrens_heir}
+}
+
+focus = {
+	id = AXS_enzo_seizes_more_power
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_nothing_more_than_rumors
+	prerequisite = {focus = AXS_nothing_more_than_rumors}
+}
+
+
 }

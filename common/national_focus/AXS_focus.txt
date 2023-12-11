@@ -843,6 +843,8 @@ focus = {
 	
 	}
 	relative_position_id = AXS_coronation_of_mineva_zabi
+	mutually_exclusive = { focus = AXS_hamans_regency}
+	mutually_exclusive = { focus = AXS_char_aznables_true_idenity}
 	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
 }
 
@@ -859,6 +861,8 @@ focus = {
 	
 	}
 	relative_position_id = AXS_coronation_of_mineva_zabi
+	mutually_exclusive = { focus = AXS_char_aznables_true_idenity}
+	mutually_exclusive = { focus = AXS_gihren_loyalists}
 	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
 }
 
@@ -875,7 +879,73 @@ focus = {
 	
 	}
 	relative_position_id = AXS_coronation_of_mineva_zabi
+	mutually_exclusive = { focus = AXS_hamans_regency}
+	mutually_exclusive = { focus = AXS_gihren_loyalists}
 	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+}
+
+focus = {
+	id = AXS_purge_the_moderates
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_gihren_loyalists
+	prerequisite = {focus = AXS_gihren_loyalists}
+}
+
+focus = {
+	id = AXS_prepare_for_anotehr_war_of_independence
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_purge_the_moderates
+	prerequisite = {focus = AXS_purge_the_moderates}
+}
+
+focus = {
+	id = AXS_rumors_from_within
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_prepare_for_anotehr_war_of_independence
+	prerequisite = {focus = AXS_prepare_for_anotehr_war_of_independence}
+}
+
+focus = {
+	id = AXS_gihrens_heir
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_rumors_from_within
+	prerequisite = {focus = AXS_rumors_from_within}
 }
 
 }

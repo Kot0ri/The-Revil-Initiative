@@ -814,4 +814,68 @@ focus = {
 	prerequisite = {focus = AXS_technological_improvements}
 }
 
+focus = {
+	id = AXS_coronation_of_mineva_zabi
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -8
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_1st_battle_of_axis
+	prerequisite = {focus = AXS_1st_battle_of_axis}
+}
+
+focus = {
+	id = AXS_gihren_loyalists
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_coronation_of_mineva_zabi
+	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+}
+
+focus = {
+	id = AXS_hamans_regency
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_coronation_of_mineva_zabi
+	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+}
+
+focus = {
+	id = AXS_char_aznables_true_idenity
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_coronation_of_mineva_zabi
+	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+}
+
 }

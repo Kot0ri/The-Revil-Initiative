@@ -12,6 +12,24 @@ focus_tree = {
 	default = no
 	
 	focus = {
+		id = SI1_side_government
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 31
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = contolism
+			has_government = democratic
+		}
+		completion_reward = {
+		add_ideas = Side_Government_Seat 
+		}
+	}
+
+	focus = {
 	id = SI1_negotiations_with_federation_investors
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
@@ -20,6 +38,9 @@ focus_tree = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = SI1_distance_our_officials_from_federation }
+	mutually_exclusive = { focus = SI1_get_away_from_federationzeon_disagreements }
+	mutually_exclusive = { focus = SI1_growing_antifederation_sentiment }
 	completion_reward = {
 	
 	}
@@ -988,6 +1009,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = SI1_growing_antifederation_sentiment }
+	mutually_exclusive = { focus = SI1_get_away_from_federationzeon_disagreements }
+	mutually_exclusive = { focus = SI1_negotiations_with_federation_investors }
 	completion_reward = {
 	
 	}
@@ -1114,6 +1138,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = SI1_distance_our_officials_from_federation }
+	mutually_exclusive = { focus = SI1_growing_antifederation_sentiment }
+	mutually_exclusive = { focus = SI1_negotiations_with_federation_investors }
 	completion_reward = {
 	
 	}
@@ -1208,6 +1235,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = SI1_distance_our_officials_from_federation }
+	mutually_exclusive = { focus = SI1_get_away_from_federationzeon_disagreements }
+	mutually_exclusive = { focus = SI1_negotiations_with_federation_investors }
 	completion_reward = {
 	
 	}

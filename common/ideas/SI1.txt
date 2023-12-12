@@ -1,6 +1,25 @@
 ideas = {
 
 	country = {
+
+		Side_Government_Seat = {
+			
+			allowed = {
+				original_tag = SI1
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+				improve_relations_maintain_cost_factor = -0.5
+			}
+		}
+
 			High_Hopes_and_Noble_Endevours = {
 			
 	allowed = {

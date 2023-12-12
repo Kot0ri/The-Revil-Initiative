@@ -19,6 +19,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_government = contolism
+			has_government = democratic
+		}
 		completion_reward = {
 			add_ideas = Side_Banking_Seat
 		}

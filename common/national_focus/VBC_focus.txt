@@ -86,8 +86,27 @@ focus_tree = {
 		available = {
 		}
 		relative_position_id = VBC_rx_project
+		prerequisite = {focus = VBC_rx_project}
 		completion_reward = {
 		add_ideas = Gundam_Development_Project
+		}
+	}
+
+	focus = {
+		id = VBC_Zeta_project
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		relative_position_id = VBC_gundam_development_project
+		prerequisite = {focus = VBC_gundam_development_project}
+		completion_reward = {
+		
 		}
 	}
 }

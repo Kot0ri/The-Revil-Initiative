@@ -10,6 +10,20 @@ focus_tree = {
 	}
 	default = no
 
+	focus = {
+		id = SI4_Side_Banking_seat
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 21
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = Side_Banking_Seat
+		}
+	}
+
 focus = {
 	id = SI4_negotiations_with_federation_investors
 	icon =  GFX_goal_zeon_mobile_headquarters
@@ -207,6 +221,54 @@ focus = {
 }
 
 focus = {
+	id = SI4_Flemming_connections
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = Connections_with_Anaheim
+	}
+	relative_position_id = SI4_negotiations_with_federation_investors
+	prerequisite = { focus = SI4_negotiations_with_federation_investors }
+}
+
+focus = {
+	id = SI4_plan_with_anaheim
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = Anaheim-Moore_Plan
+	}
+	relative_position_id = SI4_Flemming_connections
+	prerequisite = { focus = SI4_Flemming_connections }
+}
+
+focus = {
+	id = SI4_prepare_for_a_conflict_with_Zeon
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = SI4_plan_with_anaheim
+	prerequisite = { focus = SI4_plan_with_anaheim}
+}
+
+focus = {
 	id = SI4_build_up_a_stable_military_connection
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
@@ -219,6 +281,7 @@ focus = {
 	}
 	relative_position_id = SI4_federation_port_officers
 	prerequisite = { focus = SI4_federation_port_officers }
+	prerequisite = { focus = SI4_prepare_for_a_conflict_with_Zeon}
 }
 
 focus = {
@@ -246,6 +309,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		add_ideas = Moore_Brotherhood
 	}
 	relative_position_id = SI4_purchase_federation_warships
 	prerequisite = { focus = SI4_purchase_federation_warships }

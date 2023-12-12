@@ -37,6 +37,25 @@ Connections_with_Anaheim = {
 	}
 }
 
+Anaheim-Moore_Plan = {
+			
+	allowed = {
+		original_tag = SI1
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	
+	modifier = {
+		monthly_population = 750
+		trade_opinion_factor = 0.5
+		trade_laws_cost_factor = -0.05
+	}
+}
+
 Moore_Brotherhood = {
 			
 	allowed = {
@@ -52,7 +71,7 @@ Moore_Brotherhood = {
 	modifier = {
 	weekly_manpower = 100
 	weekly_casualties_war_support = -0.05
-	weekly_bombing_war_support = 0.02
+	weekly_bombing_war_support = -0.02
 	weekly_convoys_war_support = -0.02
 	}
 }

@@ -1,0 +1,50 @@
+ideas = {
+
+	country = {
+
+		EFGF_Command_Branch = {
+			
+			allowed = {
+				original_tag = EUF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 0.2
+				max_commander_army_size = 0.02
+				training_time_army = -0.02
+			}
+		}
+
+		King_of_Battle = {
+			
+			allowed = {
+				original_tag = EUF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_mbt_combat_factor = 0.1
+				experience_gain_mbt_training_factor = 0.05
+				mbt1_equipment_design_cost_factor = -0.05
+				mbt2_equipment_design_cost_factor = -0.05
+				mbt3_equipment_design_cost_factor = -0.05
+				mechanized_attack_factor = 0.05
+			}
+		}
+
+
+
+
+	}
+}

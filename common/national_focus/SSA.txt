@@ -1,0 +1,57 @@
+focus_tree = {
+	id = SSA
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = SSA
+		}
+	}
+	default = no
+
+	focus = {
+		id = SSA_government_appoinments
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_political_power = 50
+			}
+		}
+
+	focus = {
+		id = SSA_jungle_pathing
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 20
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		has_war = yes
+		}
+		completion_reward = {
+				}
+			}
+
+	focus = {
+	id = SSA_recruiting_locals
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {	
+	factor = 1
+				}
+	relative_position_id = SSA_jungle_pathing
+	prerequisite = {	focus = SSA_jungle_pathing	}
+	completion_reward = {
+				}
+		}
+}

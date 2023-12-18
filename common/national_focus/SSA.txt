@@ -54,4 +54,19 @@ focus_tree = {
 	completion_reward = {
 				}
 		}
+
+	focus = {
+			id = SSA_work_with_anti-federation_guerllias
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			relative_position_id = SSA_recruiting_locals
+			prerequisite = {	focus = SSA_recruiting_locals}
+			completion_reward = {
+						}
+				}
 }

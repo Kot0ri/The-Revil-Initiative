@@ -2777,6 +2777,23 @@ focus = {
 }
 
 focus = {
+	id = ZEO_found_the_zeon_military_prepatory_school
+	icon = GFX_focus_generic_military_academy
+	search_filters = {FOCUS_FILTER_ARMY_XP}
+	cost = 2
+	x = 1.5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_expand_the_zeon_military_academy
+	prerequisite = { focus = ZEO_expand_the_zeon_military_academy}
+}
+
+focus = {
 	id = ZEO_zeon_iron_cross
 	icon = GFX_goal_medal_of_cross
 	search_filters = {FOCUS_FILTER_WAR_SUPPORT }

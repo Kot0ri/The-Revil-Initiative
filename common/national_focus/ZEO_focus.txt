@@ -2598,7 +2598,7 @@ focus = {
 }
 
 focus = {
-	id = ZEO_puneemunde
+	id = ZEO_puneemunde_agency
 	icon = GFX_focus_ger_reichskommisariats
 	cost = 2
 	x = 50
@@ -2626,8 +2626,8 @@ focus = {
 			add_planning = 1
 		}
 	}
-	relative_position_id = ZEO_puneemunde
-	prerequisite = { focus = ZEO_puneemunde }
+	relative_position_id = ZEO_puneemunde_agency
+	prerequisite = { focus = ZEO_puneemunde_agency }
 }
 
 focus = {
@@ -2663,8 +2663,8 @@ focus = {
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_puneemunde
-	prerequisite = { focus = ZEO_puneemunde }
+	relative_position_id = ZEO_puneemunde_agency
+	prerequisite = { focus = ZEO_puneemunde_agency }
 }
 
 focus = {

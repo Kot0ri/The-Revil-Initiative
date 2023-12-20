@@ -1293,13 +1293,30 @@ focus = {
 	id = ZEO_sell_positions_in_government
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	}
+	mutually_exclusive = { focus = ZEO_road_to_coporatism }
+	relative_position_id = ZEO_expand_civillian_contracting
+	prerequisite = { focus = ZEO_expand_civillian_contracting }
+}
+
+focus = {
+	id = ZEO_road_to_coporatism
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	mutually_exclusive = { focus = ZEO_sell_positions_in_government }
 	relative_position_id = ZEO_expand_civillian_contracting
 	prerequisite = { focus = ZEO_expand_civillian_contracting }
 }

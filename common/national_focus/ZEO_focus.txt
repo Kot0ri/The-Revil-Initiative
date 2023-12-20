@@ -584,7 +584,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY }
 	cost = 10
 	x = 0
-	y = 2
+	y = 3
 	ai_will_do = {
 		factor = 1
 	}
@@ -695,6 +695,36 @@ focus = {
 }
 
 focus = {
+	id = ZEO_leave_for_a_baoa_qu
+	icon = GFX_focus_generic_court
+	cost = 10
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_government = supremacist
+		has_war = yes
+	}
+	completion_reward = {
+		remove_country_leader_role = {
+			character = ZEO_gihren
+	}
+	set_politics = {
+		ruling_party = military_dictatorshup
+		elections_allowed = no
+		last_election = "0075.1.1"
+		election_frequency = 48
+		long_name = ZEO_gihren_loyalists
+		name = ZEO_gihren_loyalists
+	}
+
+	relative_position_id = ZEO_fake_a_conspiracy
+	prerequisite = { focus = ZEO_fake_a_conspiracy }
+}
+
+focus = {
 	id = ZEO_cold_night_in_side_3
 	icon = GFX_focus_generic_conspiracy
 	cost = 3
@@ -704,6 +734,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		create_dynamic_country =
 	}
 	relative_position_id = ZEO_fake_a_conspiracy
 	prerequisite = { focus = ZEO_fake_a_conspiracy }
@@ -789,7 +820,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 10
 	x = 0
-	y = 2
+	y = 3.2
 	ai_will_do = {
 		factor = 1
 	}

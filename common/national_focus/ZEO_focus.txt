@@ -1667,6 +1667,195 @@ focus = {
 }
 
 focus = {
+	id = ZEO_post_war_economy
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = no
+}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_united_maintenance
+	prerequisite = { focus = ZEO_united_maintenance }
+}
+
+focus = {
+	id = ZEO_road_to_autarky
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = no
+	is_subject = no
+}
+
+	completion_reward = {
+	
+	}
+	mutually_exclusive = { focus = ZEO_road_to_technocarcy }
+	mutually_exclusive = { focus = ZEO_reparations_to_the_federation }
+	relative_position_id = ZEO_fix_the_economy
+	prerequisite = { focus = ZEO_fix_the_economy }
+	prerequisite = { focus = ZEO_post_war_economy }
+}
+
+focus = {
+	id = ZEO_road_to_technocarcy
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = no
+	is_subject = no
+}
+
+	completion_reward = {
+
+	}
+	mutually_exclusive = { focus = ZEO_road_to_autarky }
+	mutually_exclusive = { focus = ZEO_reparations_to_the_federation }
+	relative_position_id = ZEO_post_war_economy
+	prerequisite = { focus = ZEO_fix_the_economy }
+	prerequisite = { focus = ZEO_post_war_economy }
+}
+
+focus = {
+	id = ZEO_reparations_to_the_federation
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = no
+	is_subject = yes
+}
+
+	completion_reward = {
+
+	}
+	mutually_exclusive = { focus = ZEO_road_to_autarky }
+	mutually_exclusive = { focus = ZEO_road_to_technocarcy }
+	relative_position_id = ZEO_post_war_economy
+	prerequisite = { focus = ZEO_post_war_economy }
+}
+
+focus = {
+	id = ZEO_extract_the_fruits_of_the_earth
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = no
+	is_subject = no
+}
+
+	completion_reward = {
+
+	}
+	mutually_exclusive = { focus = ZEO_road_to_autarky }
+	mutually_exclusive = { focus = ZEO_road_to_technocarcy }
+	relative_position_id = ZEO_ramp_up_miltary_armarment
+	prerequisite = { focus = ZEO_ramp_up_miltary_armarment }
+	prerequisite = { focus = ZEO_post_war_economy }
+}
+
+focus = {
+	id = ZEO_warning_of_a_slump
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = no
+	is_subject = no
+}
+
+	completion_reward = {
+
+	}
+
+	relative_position_id = ZEO_extract_the_fruits_of_the_earth
+	prerequisite = { focus = ZEO_extract_the_fruits_of_the_earth }
+}
+
+focus = {
+	id = ZEO_the_bubble_bursts
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = no
+	is_subject = no
+}
+
+	completion_reward = {
+
+	}
+
+	relative_position_id = ZEO_warning_of_a_slump
+	prerequisite = { focus = ZEO_warning_of_a_slump }
+}
+
+focus = {
+	id = ZEO_the_big_crash
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = no
+	is_subject = no
+}
+
+	completion_reward = {
+
+	}
+
+	relative_position_id = ZEO_the_bubble_bursts
+	prerequisite = { focus = ZEO_the_bubble_bursts }
+}
+
+focus = {
 	id = ZEO_browbeat_the_colonies_into_our_econimc_sphere
 	icon =  GFX_focus_ETH_adopt_the_lira
 	cost = 10

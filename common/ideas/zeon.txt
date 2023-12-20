@@ -1,5 +1,48 @@
 ideas = {
 	country = {
+		ZMF = {
+			allowed = {
+				always = no
+				original_tag = ZEO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = 0.05
+				army_org_factor = 0.05
+				army_speed_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+	}
+
+	space_attack_force = {
+		allowed = {
+			always = no
+			original_tag = ZEO
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		modifier = {
+			naval_speed_factor = 0.5
+			naval_org_factor = 0.05
+			navy_max_range_factor = 0.05
+		}
+		equipment_bonus = {
+			archetype_space_battleship = {
+				build_cost_ic = -0.2
+			}
+			archetype_space_carrier = {
+				build_cost_ic = -0.2
+			}
+			archetype_space_fv_cruiser = {
+				build_cost_ic = -0.2
+			}
+		}
+	}
+
 		ZEO_zeonic_wins = {
 			allowed = {
 				always = no
@@ -82,7 +125,6 @@ ideas = {
 			}
 		}
 	
-			}
 		}
 		#兄弟喧嘩
 		brothers_quarrel = {
@@ -785,7 +827,7 @@ ideas = {
 			modifier = {
 			}
 		}
-	}
+	
 	mobilesuit_manufacturer = {
 		designer = yes
 		zeonic = {
@@ -1556,6 +1598,4 @@ ideas = {
 			}
 		}
 	}
-}
-}
 }

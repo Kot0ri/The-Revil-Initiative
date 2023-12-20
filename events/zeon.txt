@@ -27,6 +27,140 @@ country_event = {
 
 
 country_event = {
+  id = msg_sibiling_conflict
+  title = msg_sibiling_conflict.t
+  desc = msg_sibiling_conflict.d
+  picture = GFX_country_zeon_106.dds
+
+  trigger = {
+    original_tag = ZEO
+  }
+  mean_time_to_happen = { days = 1 }
+  fire_only_once = yes
+
+  option = {
+    name = msg_sibiling_conflict.a
+    ai_chance = {
+			base = 1
+		}
+    hidden_effect = {
+    
+    }
+
+    name = msg_sibiling_conflict.b
+    ai_chance = {
+			base = 0
+		}
+    hidden_effect = {
+    
+    }
+  }
+
+  id = ptag_valkyrie
+  title = ptag_valkyrie.t
+  desc = ptag_valkyrie.d
+  picture = GFX_country_zeon_106.dds
+
+  trigger = {
+    original_tag = ZEO
+  }
+  mean_time_to_happen = { days = 1 }
+  fire_only_once = yes
+
+  option = {
+    name = ptag_valkyrie.a
+    ai_chance = {
+			base = 1
+		}
+    hidden_effect = {
+    
+    }
+
+    name = ptag_valkyrie.b
+    ai_chance = {
+			base = 0
+		}
+    hidden_effect = {
+    
+    }
+  }
+
+    id = ptag_the_meeting
+  title = ptag_the_meeting.t
+  desc = ptag_valkyrie.d
+  picture = GFX_country_zeon_106.dds
+
+  trigger = {
+    original_tag = ZEO
+  }
+  mean_time_to_happen = { days = 1 }
+  fire_only_once = yes
+
+  option = {
+    name = msg_the_meeting.a
+    ai_chance = {
+			base = 1
+		}
+    hidden_effect = {
+    
+    }
+  }
+
+  id = ptag_abq
+  title = ptag_abq.t
+  desc = ptag_abq.d
+  picture = GFX_country_zeon_106.dds
+
+  trigger = {
+    original_tag = ZEO
+  }
+  mean_time_to_happen = { days = 1 }
+  fire_only_once = yes
+
+  option = {
+    name = msg_abq.a
+    ai_chance = {
+			base = 1
+		}
+    hidden_effect = {
+    
+    }
+  }
+
+  id = ptag_cold
+  title = ptag_cold.t
+  desc = ptag_cold.d
+  picture = GFX_country_zeon_106.dds
+
+  trigger = {
+    original_tag = ZEO
+  }
+  mean_time_to_happen = { days = 1 }
+  fire_only_once = yes
+
+  option = {
+    name = msg_cold.a
+    ai_chance = {
+			base = 1
+		}
+    hidden_effect = {
+    
+    }
+
+    name = msg_cold.b
+    ai_chance = {
+			base = 1
+		}
+    hidden_effect = {
+    
+    }
+  }
+
+
+}
+
+
+  #######old
   id = zeon.4
   title = zeon.4.t
   desc = zeon.4.d

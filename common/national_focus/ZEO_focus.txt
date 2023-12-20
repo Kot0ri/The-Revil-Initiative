@@ -673,6 +673,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		country_event = { id = ptag_valkyrie}
+		country_event = { id = msg_sibiling_conflict }
 	}
 	relative_position_id = ZEO_plot_against_degwin
 	prerequisite = { focus = ZEO_plot_against_degwin }
@@ -688,6 +690,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		country_event = { id = ptag_the_meeting }
 	}
 	relative_position_id = ZEO_identify_the_greater_threat
 	prerequisite = { focus = ZEO_identify_the_greater_threat }
@@ -708,20 +711,10 @@ focus = {
 		has_war = yes
 	}
 	completion_reward = {
-		remove_country_leader_role = {
-			character = ZEO_gihren
-	}
-	set_politics = {
-		ruling_party = military_dictatorshup
-		elections_allowed = no
-		last_election = "0075.1.1"
-		election_frequency = 48
-		long_name = ZEO_gihren_loyalists
-		name = ZEO_gihren_loyalists
-	}
-
+		country_event = { id = ptag_abq }
 	relative_position_id = ZEO_fake_a_conspiracy
 	prerequisite = { focus = ZEO_fake_a_conspiracy }
+}
 }
 
 focus = {
@@ -734,7 +727,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		create_dynamic_country =
+		country_event = { id = ptag_cold }
 	}
 	relative_position_id = ZEO_fake_a_conspiracy
 	prerequisite = { focus = ZEO_fake_a_conspiracy }

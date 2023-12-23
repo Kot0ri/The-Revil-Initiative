@@ -1,34 +1,35 @@
 
 state={
-	id=919
-	name="STATE_919"
+	id=963
+	name="STATE_963"
 
 	history={
-		owner = SI4
+		owner = SI2
 		buildings = {
 			infrastructure = 3
 			arms_factory = 7
 			industrial_complex = 15
 			synthetic_refinery = 1
 			fuel_silo = 1
-			dockyard = 1
-			13375 = {
+			13282 = {
 				naval_base = 2
 			}
+
 		}
 		victory_points = {
-			13375 10
+			13282 25
 		}
 		victory_points = {
-			13373 5
+			13279 5
 		}
 		victory_points = {
-			13376 5
+			13290 5
 		}
-		add_core_of = SI4
+		add_core_of = SI2
 		78.1.1 = {
 			buildings = {
 				arms_factory = 9
+				fuel_silo = 1
 
 			}
 
@@ -36,6 +37,7 @@ state={
 		79.1.1 = {
 			buildings = {
 				arms_factory = 11
+				fuel_silo = 2
 
 			}
 
@@ -48,7 +50,7 @@ state={
 	}
 
 	provinces={
-		13375 13373 13376
+		13282 13279 13290
 	}
 	manpower=100000000
 	buildings_max_level_factor=1.000

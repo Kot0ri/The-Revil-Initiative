@@ -7,10 +7,9 @@ state={
 	state_category = town
 
 	history={
-		owner = AFZ
-		add_core_of = AFZ
+		owner = EFS
 		buildings = {
-			infrastructure = 3 #was: 5
+			infrastructure = 5
 			industrial_complex = 2
 			air_base = 1
 			12589 = {
@@ -20,6 +19,7 @@ state={
 		victory_points = {
 			12589 10 
 		}
+		add_core_of = EFS
 	}
 
 	provinces={

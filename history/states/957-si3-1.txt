@@ -1,7 +1,7 @@
 
 state={
-	id=910
-	name="STATE_910"
+	id=957
+	name="STATE_957"
 
 	history={
 		owner = ZEO
@@ -13,26 +13,27 @@ state={
 			synthetic_refinery = 1
 			fuel_silo = 1
 			dockyard = 2
-			13262 = {
-				coastal_bunker = 1
+			air_base = 1
+			13280 = {
 				naval_base = 5
+				coastal_bunker = 2
 			}
-			13264 = {
-				coastal_bunker = 1
+			13283 = {
+				coastal_bunker = 2
 			}
-			13266 = {
-				coastal_bunker = 1
+			13285 = {
+				coastal_bunker = 2
 			}
-			anti_air_building = 1
+			anti_air_building = 2
 		}
 		victory_points = {
-			13262 10
+			13280 25
 		}
 		victory_points = {
-			13264 5
+			13283 5
 		}
 		victory_points = {
-			13266 5
+			13285 5
 		}
 		add_core_of = ZEO
 		78.1.1 = {
@@ -40,14 +41,12 @@ state={
 				arms_factory = 13
 				industrial_complex = 20
 			}
-
 		}
 		79.1.1 = {
 			buildings = {
 				arms_factory = 16
 				industrial_complex = 20
 				fuel_silo = 2
-
 			}
 
 		}
@@ -55,7 +54,7 @@ state={
 	}
 
 	provinces={
-		13262 13264 13266
+		13280 13283 13285
 	}
 	manpower=100000000
 	buildings_max_level_factor=1.000

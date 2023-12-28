@@ -15,7 +15,7 @@ ideas = {
 				army_attack_factor = 0.05
 			}
 		}
-	}
+	
 
 	space_attack_force = {
 		allowed = {
@@ -57,6 +57,73 @@ ideas = {
 		}
 	}
 
+	zeon_national_mobilization_act = {
+		modifier = {
+			conversion_cost_civ_to_mil_factor = -0.2
+			mobilization_laws_cost_factor = -0.3
+			surrender_limit = 0.1
+		}
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+	}
+
+	zeon_medal_of_cross = {
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+		modifier = {
+			theorist_cost_factor = -0.2
+			space_forces_chief_cost_factor = -0.2
+			ground_forces_chief_cost_factor = -0.2
+			high_command_cost_factor = -0.2
+		}
+	}
+
+	defense_military_academy = {
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+		modifier = {
+			max_command_power = 10
+			army_org_Factor = 0.05
+			experience_gain_army = 0.2
+		}
+	}
+	defense_military_academy2 = {
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+		modifier = {
+			training_time_factor = -0.1
+			max_command_power = 10
+			army_leader_start_level = 1
+			army_org_Factor = 0.05
+			experience_gain_army = 0.2
+			experience_gain_air = 0.1
+			experience_gain_navy = 0.1
+		}
+	}
+
+	zeon_puneemunde_institution = {
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+		modifier = {
+			max_planning = 0.1
+			planning_speed = 0.25
+		}
+	}
 
 		ZEO_zeonic_wins = {
 			allowed = {
@@ -428,60 +495,7 @@ ideas = {
 			}
 		}
 		#ジオン十字勲章
-		zeon_medal_of_cross = {
-			allowed = {
-				original_tag = ZEO
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				theorist_cost_factor = -0.2
-				space_forces_chief_cost_factor = -0.2
-				ground_forces_chief_cost_factor = -0.2
-				high_command_cost_factor = -0.2
-			}
-		}
-		#ジオン国防軍士官学校
-		defense_military_academy = {
-			allowed = {
-				original_tag = ZEO
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				max_command_power = 10
-				army_org_Factor = 0.05
-				experience_gain_army = 0.2
-			}
-		}
-		defense_military_academy2 = {
-			allowed = {
-				original_tag = ZEO
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				training_time_factor = -0.1
-				max_command_power = 10
-				army_leader_start_level = 1
-				army_org_Factor = 0.05
-				experience_gain_army = 0.2
-				experience_gain_air = 0.1
-				experience_gain_navy = 0.1
-			}
-		}
-		#ペーネミュンデ機関
-		zeon_puneemunde_institution = {
-			allowed = {
-				original_tag = ZEO
-				always = no
-			}
-			removal_cost = -1
-			modifier = {
-				max_planning = 0.1
-				planning_speed = 0.25
-			}
-		}
+
 		#次期主力MS開発競争
 		zeon_mainstay_MS_development_competition = {
 			allowed = {
@@ -497,18 +511,7 @@ ideas = {
 			}
 		}
 		#国家総動員法
-		zeon_national_mobilization_act = {
-			modifier = {
-				conversion_cost_civ_to_mil_factor = -0.2
-				mobilization_laws_cost_factor = -0.3
-				surrender_limit = 0.1
-			}
-			allowed = {
-				original_tag = ZEO
-				always = no
-			}
-			removal_cost = -1
-		}
+
 		#暁の蜂起
 		sunrise_uprising_1 = {
 			modifier = {
@@ -1613,4 +1616,4 @@ ideas = {
 			}
 		}
 	}
-}
+

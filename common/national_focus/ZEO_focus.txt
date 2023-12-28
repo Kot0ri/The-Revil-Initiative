@@ -2611,6 +2611,23 @@ focus = {
 }
 
 focus = {
+	id = ZEO_found_the_ZEF
+	icon = GFX_focus_prc_infiltration
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = ZEF
+	}
+	relative_position_id = ZEO_send_aid_to_the_military_commands
+	prerequisite = { focus = ZEO_send_aid_to_the_military_commands }
+}
+
+focus = {
 	id = ZEO_plan_for_operation_british
 	icon = GFX_goal_moon_aliance
 	cost = 5

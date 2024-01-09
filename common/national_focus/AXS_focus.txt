@@ -703,6 +703,86 @@ focus = {
 }
 
 focus = {
+	id = AXS_military_preperations_to_fight_again
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_axis_advance_fleet
+	prerequisite = {focus = AXS_axis_advance_fleet}
+}
+
+focus = {
+	id = AXS_call_from_delaz
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1.5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_military_preperations_to_fight_again
+	prerequisite = {focus = AXS_military_preperations_to_fight_again}
+}
+
+focus = {
+	id = AXS_send_agents_to_Side_3
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_call_from_delaz
+	prerequisite = {focus = AXS_call_from_delaz}
+}
+
+focus = {
+	id = AXS_preperations_to_restore_zeon
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_send_agents_to_Side_3
+	prerequisite = {focus = AXS_send_agents_to_Side_3}
+}
+
+focus = {
+	id = AXS_Declare_Neo-Zeon
+	icon = GFX_goal_general_meeting
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_preperations_to_restore_zeon
+	prerequisite = {focus = AXS_preperations_to_restore_zeon}
+}
+
+focus = {
 	id = AXS_axis_ms_project
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -716,6 +796,56 @@ focus = {
 	}
 	relative_position_id = AXS_plans_for_axis_new_role
 	prerequisite = {focus = AXS_plans_for_axis_new_role}
+}
+
+focus = {
+	id = AXS_mobile_armour_project
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = -0.7
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_military_preperations_to_fight_again
+	prerequisite = {focus = AXS_military_preperations_to_fight_again}
+	prerequisite = {focus = AXS_new_ms_development}
+}
+
+focus = {
+	id = AXS_develop_the_neue_ziel
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_mobile_armour_project
+	prerequisite = {focus = AXS_mobile_armour_project}
+}
+
+focus = {
+	id = AXS_aid_delaz
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_develop_the_neue_ziel
+	prerequisite = {focus = AXS_call_from_delaz}
+	prerequisite = {focus = AXS_develop_the_neue_ziel}
 }
 
 focus = {
@@ -863,9 +993,25 @@ focus = {
 }
 
 focus = {
-	id = AXS_Hiryuu_Project
+	id = AXS_improve_particle_technology
 	icon = GFX_goal_general_meeting
-	cost = 10
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_next_generation_ms
+	prerequisite = {focus = AXS_next_generation_ms}
+}
+
+focus = {
+	id = AXS_improve_ms_transformation_mechanisms
+	icon = GFX_goal_general_meeting
+	cost = 5
 	x = 1
 	y = 1
 	ai_will_do = {
@@ -876,6 +1022,22 @@ focus = {
 	}
 	relative_position_id = AXS_next_generation_ms
 	prerequisite = {focus = AXS_next_generation_ms}
+}
+
+focus = {
+	id = AXS_Hiryuu_Project
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_improve_ms_transformation_mechanisms
+	prerequisite = {focus = AXS_improve_ms_transformation_mechanisms}
 }
 
 focus = {

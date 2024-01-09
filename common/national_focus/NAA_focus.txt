@@ -9,6 +9,7 @@ focus_tree = {
 		}
 	}
 	default = no
+
 	focus = {
 		id = NAA_Phase_1_Operations
 		icon = GFX_goal_general_meeting
@@ -22,5 +23,70 @@ focus_tree = {
 		
 		}
 	}
+
+	focus = {
+		id = NAA_The_Man_Who_Pointed
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Phase_1_Operations}
+		relative_position_id = NAA_Phase_1_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Secure_New_Yark
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {focus = NAA_Phase_1_Operations}
+		relative_position_id = NAA_Phase_1_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Secure_Califronia_Bases
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {focus = NAA_Phase_1_Operations}
+		relative_position_id = NAA_Phase_1_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
 	
+	focus = {
+		id = NAA_Phase_2_Operations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {focus = NAA_Secure_Califronia_Bases}
+		prerequisite = {focus = NAA_Secure_New_Yark}
+		relative_position_id = NAA_Phase_1_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
 }

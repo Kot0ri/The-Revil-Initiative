@@ -965,7 +965,7 @@ focus = {
 }
 
 focus = {
-	id = AXS_prepare_for_anotehr_war_of_independence
+	id = AXS_prepare_for_another_war_of_independence
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 0
@@ -992,8 +992,24 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_prepare_for_anotehr_war_of_independence
-	prerequisite = {focus = AXS_prepare_for_anotehr_war_of_independence}
+	relative_position_id = AXS_prepare_for_another_war_of_independence
+	prerequisite = {focus = AXS_prepare_for_another_war_of_independence}
+}
+
+focus = {
+id = AXS_2nd_war_for_Zeon_independence
+icon = GFX_goal_general_meeting
+cost = 2
+x = 1.5
+y = 1
+ai_will_do = {
+	factor = 1
+}
+completion_reward = {
+
+}
+relative_position_id = AXS_prepare_for_another_war_of_independence
+prerequisite = {focus = AXS_prepare_for_another_war_of_independence}
 }
 
 focus = {

@@ -753,6 +753,41 @@ focus = {
 }
 
 focus = {
+	id = EUF_found_the_amsterdam_military_academy
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_intergration_with_efgf
+	prerequisite = { focus = EUF_intergration_with_efgf }
+}
+
+focus = {
+	id = EUF_MS_Pilot_Training
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = EUF_end_of_the_OYW
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_found_the_amsterdam_military_academy
+	prerequisite = { focus = EUF_found_the_amsterdam_military_academy }
+}
+
+focus = {
 	id = EUF_the_king_of_battle
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
@@ -1112,6 +1147,22 @@ focus = {
 }
 
 focus = {
+	id = EUF_end_of_the_OYW
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_liberation_of_europe
+	prerequisite = { focus = EUF_liberation_of_europe}
+}
+
+focus = {
 	id = EUF_prepare_for_war_in_siberia
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
@@ -1125,5 +1176,22 @@ focus = {
 	}
 	relative_position_id = EUF_odessa_campaign
 	prerequisite = { focus = EUF_odessa_campaign }
+}
+
+focus = {
+	id = EUF_crush_Zeon_remnants
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_end_of_the_OYW
+	prerequisite = { focus = EUF_end_of_the_OYW}
+	prerequisite = { focus = EUF_prepare_for_war_in_siberia}
 }
 }

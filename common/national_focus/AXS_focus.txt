@@ -783,6 +783,22 @@ focus = {
 }
 
 focus = {
+id = AXS_Gundamium_Upsilon_Alloy_Project
+icon = GFX_goal_general_meeting
+cost = 3
+x = 0
+y = 1
+ai_will_do = {
+	factor = 1
+}
+completion_reward = {
+
+}
+relative_position_id = AXS_GAZA_line
+prerequisite = {focus = AXS_GAZA_line}
+}
+
+focus = {
 	id = AXS_technological_improvements
 	icon = GFX_goal_general_meeting
 	cost = 3
@@ -812,6 +828,54 @@ focus = {
 	}
 	relative_position_id = AXS_technological_improvements
 	prerequisite = {focus = AXS_technological_improvements}
+}
+
+focus = {
+	id = AXS_next_generation_newtype_use_ms_systems
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_newtype_use_ms
+	prerequisite = {focus = AXS_newtype_use_ms}
+}
+
+focus = {
+	id = AXS_next_generation_ms
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_next_generation_newtype_use_ms_systems
+	prerequisite = {focus = AXS_next_generation_newtype_use_ms_systems}
+	prerequisite = {focus = AXS_Gundamium_Upsilon_Alloy_Project}
+}
+
+focus = {
+	id = AXS_Hiryuu_Project
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_next_generation_ms
+	prerequisite = {focus = AXS_next_generation_ms}
 }
 
 focus = {

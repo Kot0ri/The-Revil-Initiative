@@ -10,9 +10,11 @@ state={
 	}
 
 	history={
-		owner = EFG
-		add_core_of = EFG
-
+		owner = GXC
+		add_core_of = GXC
+		add_core_of = CHI
+		add_core_of = PRC
+		
 		buildings = {
 			infrastructure = 2
 			arms_factory = 2
@@ -28,8 +30,21 @@ state={
 		victory_points = {
 			1047 5
 		}
-		79.3.18 = {
-			controller = ZEO
+
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "Waking the Tiger" }
+				}
+				remove_core_of = GXC
+				CHI = { transfer_state = PREV }
+			}
+			JAP = {
+				set_province_controller = 1047
+				set_province_controller = 7152
+				set_province_controller = 11938
+				set_province_controller = 11941
+			} 			
 		}
 	}
 

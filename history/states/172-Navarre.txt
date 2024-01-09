@@ -1,17 +1,18 @@
-
 state={
 	id=172
 	name="STATE_172"
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SPR
+		add_core_of = NAV
 		victory_points = {
 			3933 1
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
 		}
+		add_core_of = SPR
+
 	}
 
 	provinces={

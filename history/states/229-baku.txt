@@ -6,28 +6,26 @@ state={
 	}
 
 	history={
-		owner = MEZ
-		add_core_of = MEZ
+		owner = SOV
 		victory_points = {
-			7661 10
+			7661 10 
 		}
-    victory_points = {
-			11674 1
+		victory_points = {
+			11674 1 
 		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			fuel_silo = 1
 			air_base = 1
+		}
+		add_core_of = SOV
+		add_core_of = AZR
 
-		}
-		79.3.1 = {
-			controller = EAF
-		}
 	}
 
 	provinces={
-		1467 1536 1539 1610 4458 4473 4477 4545 4614 6763 7495 7661 9715 11645 11674 11704 12434
+		1467 1536 1539 1610 4458 4473 4477 4545 4614 6763 7495 7661 9715 11645 11674 11704 12434 
 	}
 	manpower=2881049
 	buildings_max_level_factor=1.000

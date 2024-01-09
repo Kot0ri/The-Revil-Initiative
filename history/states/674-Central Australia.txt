@@ -2,21 +2,16 @@
 state={
 	id=674
 	name="STATE_674"
+	impassable = yes
 
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = AST
 		buildings = {
 			infrastructure = 1
 
 		}
-		victory_points = {
-			2223 5
-		}
-		79.3.18 = {
-			controller = ZEO
-			owner = ZEO
-		}
+		add_core_of = AST
+
 	}
 
 	provinces={

@@ -2,13 +2,13 @@ state={
 	id=786
 	name="STATE_786" # Mauritanian Desert
 	manpower = 124200
-
+	
 	state_category = wasteland
 	impassable = yes
 
 	history={
-	owner = AFZ
-	add_core_of = AFZ
+		owner = FRA
+		add_core_of = MRT
 		buildings = {
 			infrastructure = 0
 		}

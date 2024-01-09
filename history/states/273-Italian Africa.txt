@@ -3,19 +3,16 @@ state={
 	id=273
 	name="STATE_273" # Libyan Desert
 	manpower = 42633
-
+	
 	state_category = wasteland
 	impassable = yes
 
 	history={
-		owner = AFZ
-		add_core_of = AFZ
+		owner = ITA
 		buildings = {
 			infrastructure = 0
 		}
-		79.4.1 = {
-			controller = ZEO
-		}
+		add_core_of = LBA
 	}
 
 	provinces={

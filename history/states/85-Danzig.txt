@@ -5,11 +5,12 @@ state={
 	
 	state_category = city
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = POL
 		victory_points = {
 			362 10
 		}
+		
+		set_demilitarized_zone = yes
 		
 		buildings = {
 			infrastructure = 3
@@ -19,6 +20,12 @@ state={
 			362 = {
 				naval_base = 5
 			}
+		}
+		add_core_of = POL
+		add_core_of = DNZ
+		add_core_of = KSH
+		1938.3.12 = {
+			add_claim_by = GER
 		}
 	}
 

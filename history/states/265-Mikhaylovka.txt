@@ -3,18 +3,15 @@ state={
 	id=265
 	name="STATE_265"
 	manpower = 468781
-
+	
 	state_category = rural
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SOV
 		buildings = {
 			infrastructure = 3 #was: 5
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+		add_core_of = SOV
 		victory_points = {
 			487 1
 		}

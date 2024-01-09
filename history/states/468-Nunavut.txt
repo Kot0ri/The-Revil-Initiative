@@ -11,8 +11,7 @@ state={
 	}
 
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = CAN
 		buildings = {
 			infrastructure = 3 #was: 6
 			arms_factory = 2
@@ -22,15 +21,14 @@ state={
 				naval_base = 6
 			}
 		}
+		add_core_of = CAN
 		victory_points = {
 			4345 20
 		}
 		victory_points = {
 			12149 3
 		}
-		79.3.11 = {
-			controller = ZEO
-		}
+
 	}
 
 	provinces={

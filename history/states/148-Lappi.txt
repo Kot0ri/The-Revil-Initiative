@@ -7,11 +7,11 @@ state = {
 	state_category = rural
 	
 	resources={
-		steel=8
-		chromium=2 
+		steel=7 # was: 8
+		chromium=2 # was: 2
 	}
 	history={
-		owner = EUF
+		owner = FIN
 
 		victory_points = { #Kemi
 			11164 2
@@ -32,8 +32,13 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = EUF
-	
+		add_core_of = FIN
+		if = {
+			limit = {
+				has_dlc = "Arms Against Tyranny"
+			}
+			add_core_of = SMI
+		}
 	}
 
 	provinces={

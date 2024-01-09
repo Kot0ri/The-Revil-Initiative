@@ -3,12 +3,11 @@ state={
 	id=218
 	name="STATE_218"
 	manpower = 1501076
-
+	
 	state_category = city
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SOV
 		victory_points = {
 			9417 15 
 		}
@@ -21,8 +20,11 @@ state={
 				naval_base = 5
 			}
 		}
-		79.3.1 = {
-			controller = EAF
+		add_core_of = SOV
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
 		}
 	}
 

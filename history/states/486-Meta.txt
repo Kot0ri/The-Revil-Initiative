@@ -1,4 +1,4 @@
-# ジャブロー周辺
+
 state={
 	id=486
 	name="STATE_486"
@@ -7,17 +7,15 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = COL
 		buildings = {
 			infrastructure = 1
-
 		}
-
+		add_core_of = COL
 	}
 
 	provinces={
-		1887 2007 5026 10792 12729 12770 12825 13476 13481 13515
+		1887 2007 5026 10792 12729 12770 12825 
 	}
 
 	local_supplies=0.0 

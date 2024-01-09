@@ -3,22 +3,20 @@ state={
 	name="STATE_587"
 
 	history={
-		owner = MEZ
-		add_core_of = MEZ
+		owner = SOV
+		add_core_of = KAZ
 		buildings = {
 			infrastructure = 1
+		}
+		victory_points = {
+			1517 1 
+		}
+		add_core_of = SOV
 
-		}
-    victory_points = {
-			1517 1
-		}
-		79.3.1 = {
-			controller = ZEO
-		}
 	}
 
 	provinces={
-		475 642 1517 3593 4523 4620 7641 10262 11701 12163 12383 13008
+		475 642 1517 3593 4523 4620 7641 10262 11701 12163 12383 13008 
 	}
 	manpower=245133
 	buildings_max_level_factor=1.000

@@ -10,15 +10,17 @@ state={
 	state_category = city
 
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = USA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 1
 		}
-		79.3.11 = {
-			controller = ZEO
+		add_core_of = USA
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+			}
 		}
 		victory_points = {
 			4740 3

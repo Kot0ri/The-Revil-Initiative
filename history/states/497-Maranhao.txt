@@ -1,4 +1,4 @@
-# ジャブロー周辺
+
 state={
 	id=497
 	name="STATE_497"
@@ -11,18 +11,16 @@ state={
 	}
 
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = BRA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
 			12853 = {
 				naval_base = 2
-
 			}
-
 		}
+		add_core_of = BRA
 		victory_points = {
 			12853 1 
 		}
@@ -30,8 +28,8 @@ state={
 	}
 
 	provinces={
-		2035 2150 2214 2228 5153 5204 5220 10874 10956 10984 12853 12913 12933 12947 12999 13424 13428 13430 13434 13448 
+		2150 2214 2228 5153 5204 5220 10874 10984 12853 12913 12933 12947 12999 
 	}
 
-	local_supplies=5.0
+	local_supplies=0.0 
 }

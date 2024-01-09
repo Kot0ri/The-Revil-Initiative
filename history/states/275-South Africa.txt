@@ -3,18 +3,17 @@ state={
 	id=275
 	name="STATE_275" # Transvaal
 	manpower = 3680363
-
+	
 	state_category = city
-
+	
 	resources={
-		steel=5 # was: 8
+		steel=11 #was: 5   was: 8
 		chromium=53 # was: 80
 	}
 
 	history={
-		owner = AFZ
-		add_core_of = AFZ
-				buildings = {
+		owner = SAF
+		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
 			industrial_complex = 5
@@ -23,6 +22,7 @@ state={
 		victory_points = {
 			10400 10
 		}
+		add_core_of = SAF
 	}
 
 	provinces={

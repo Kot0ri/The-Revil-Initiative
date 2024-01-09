@@ -3,12 +3,11 @@ state={
 	id=454
 	name="STATE_454" #Palestine
 	manpower = 933142
-
+	
 	state_category = rural
 
 	history={
-		owner = MEZ
-		add_core_of = MEZ
+		owner = ENG
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
@@ -18,17 +17,16 @@ state={
 			}
 		}
 		victory_points = {
-			1086 1
+			1086 1 
 		}
 		victory_points = {
-			4206 1
+			4206 1 
 		}
-    victory_points = {
-			1065 1
+		victory_points = {
+			1065 1 
 		}
-		79.4.1 = {
-			controller = ZEO
-		}
+		add_core_of = PAL
+		add_core_of = ISR
 	}
 
 	provinces={

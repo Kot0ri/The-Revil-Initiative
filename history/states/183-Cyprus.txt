@@ -2,7 +2,7 @@ state= {
 	id=183
 	name="STATE_183"
 	manpower = 347959
-
+	
 	state_category = rural
 	resources={
 		chromium=3 # was: 4
@@ -10,8 +10,8 @@ state= {
 
 	history=
 	{
-		owner = MEZ
-		add_core_of = MEZ
+		owner = ENG
+		add_core_of = CYP
 		victory_points = {
 			11984 5
 		}
@@ -25,9 +25,7 @@ state= {
 				naval_base = 2
 			}
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+
 	}
 	provinces= { 7193 11984 }
 

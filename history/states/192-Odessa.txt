@@ -1,14 +1,13 @@
-# 宇宙港　オデッサ
-state={
-	id=192
-	name="STATE_192"
-	manpower = 1286238 #1 8th removed due to Balta-Tiraspol
 
+state = {
+	id = 192
+	name = "STATE_192"
+	manpower = 1286238 #1 8th removed due to Balta-Tiraspol
+	
 	state_category = city
 
-	history={
-		owner = EUF
-		add_core_of = EUF
+	history = {
+		owner = SOV
 		victory_points = {
 			11670 10 
 		}
@@ -21,13 +20,16 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		79.3.1 = {
-			controller = EAF
-			owner = EAF
+		add_core_of = SOV
+		add_core_of = UKR
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+			}
 		}
 	}
 
-	provinces={
+	provinces = {
 		  3575 3738 9698 9714 11670 11703 
 	}
 

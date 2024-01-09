@@ -2,16 +2,15 @@ state={
 	id=680
 	name="STATE_680"
 	manpower = 324110
-
+	
 	state_category = wasteland
 
 	history={
-		owner = MEZ
-		add_core_of = MEZ
+		owner = FRA
 		victory_points = {
 			3942 1
 		}
-    victory_points = {
+		victory_points = {
 			1549 1
 		}
 		victory_points = {
@@ -20,14 +19,13 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+		add_core_of = SYR
+		add_core_of = KUR
 	}
 
 
 	provinces={
-		901 1549 1578 1606 1634 2013 3942 6883 7513 10383 10882 12316 12442
+		901 1549 1578 1606 1634 2013 3942 6883 7513 10383 10882 12316 12442 
 	}
 
 	local_supplies=4.0 

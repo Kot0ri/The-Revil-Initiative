@@ -4,9 +4,8 @@ state={
 	name="STATE_353"
 
 	history={
-		owner = MEZ
-		add_core_of = MEZ
-    victory_points = {
+		owner = TUR
+		victory_points = {
 			11853 3
 		}
 		victory_points = {
@@ -20,17 +19,28 @@ state={
 		}
 		buildings = {
 			infrastructure = 1
+
 		}
-		79.3.18 = {
-			controller = ZEO
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			add_core_of = KUR
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = TUR
+			add_core_of = KUR
 		}
 	}
 
-  provinces={
+	provinces={
 		876 9858 9860 9868 9954 10399 11797  
 	}
 	manpower=523537
-  buildings_max_level_factor=1.000
+	buildings_max_level_factor=1.000
 	state_category=rural
 
 	local_supplies=9.0 

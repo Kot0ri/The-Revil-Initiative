@@ -3,9 +3,8 @@ state={
 	name="STATE_230"
 
 	history={
-		owner = EUF
-		add_core_of = EUF
-    victory_points = {
+		owner = SOV
+		victory_points = {
 			12320 3
 		}
 		victory_points = {
@@ -17,13 +16,20 @@ state={
 			air_base = 2
 
 		}
-		79.3.1 = {
-			controller = EAF
+		add_core_of = SOV
+		add_core_of = ARM
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+
+			}
+
 		}
+
 	}
 
-  provinces={
-		3564 4660 6642 6997 11708 12320 12380 12441 12450 13123
+	provinces={
+		3564 4660 6642 6997 11708 12320 12380 12441 12450 13123 
 	}
 	manpower=1250082
 	buildings_max_level_factor=1.000

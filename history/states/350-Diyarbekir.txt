@@ -4,28 +4,38 @@ state={
 	name="STATE_350"
 
 	history={
-		owner = MEZ
-		add_core_of = MEZ
-    victory_points = {
-			4512 5
+		owner = TUR
+		victory_points = {
+			4512 5 
 		}
 		victory_points = {
-			9823 1
+			9823 1 
 		}
 		victory_points = {
-			12387 1
+			12387 1 
 		}
 		buildings = {
 			infrastructure = 2
 			air_base = 2
+
 		}
-		79.3.1 = {
-			controller = ZEO
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			add_core_of = KUR
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = TUR
+			add_core_of = KUR
 		}
 	}
 
-  provinces={
-		4512 9823 11759 11871 12387 12416
+	provinces={
+		4512 9823 11759 11871 12387 12416 
 	}
 	manpower=571935
 	state_category=town

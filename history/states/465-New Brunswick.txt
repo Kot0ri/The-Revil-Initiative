@@ -7,8 +7,7 @@ state={
 	state_category = rural
 
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = CAN
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
@@ -16,9 +15,7 @@ state={
 				naval_base = 2
 			}
 		}
-		79.3.11 = {
-			controller = ZEO
-		}
+		add_core_of = CAN
 	}
 
 	provinces={

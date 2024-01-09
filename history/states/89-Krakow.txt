@@ -3,19 +3,21 @@ state={
 	name="STATE_89"
 
 	history={
-		owner = EUF
-		add_core_of = EUF
 		victory_points = {
 			11411 1
 		}
 		#victory_points = {
 		#	6483 1
 		#}
+		owner = POL
 		buildings = {
 			infrastructure = 3
 			air_base = 3
 
 		}
+		add_core_of = POL
+		add_core_of = UKR
+
 	}
 
 	provinces={

@@ -6,12 +6,13 @@ state={
 	
 	state_category = city
 	resources={
-		steel=100 # was: 236
+		steel=42 #was 100 # was: 236
 	}
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = FRA
+		#victory_points = { 6529 1 }
+		#victory_points = { 549 1 }
 		victory_points = { 678 5 }
 		victory_points = { 9503 5 }
 		victory_points = { 9559 10 }
@@ -49,6 +50,12 @@ state={
 			anti_air_building = 5
 			air_base = 5
 
+		}
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+			}
 		}
 	}
 

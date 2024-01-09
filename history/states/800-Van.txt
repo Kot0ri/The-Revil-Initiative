@@ -3,10 +3,9 @@ state={
 	name="STATE_800" #Van
 
 	history={
-		owner = MEZ
-		add_core_of = MEZ
+		owner = TUR
 		victory_points = {
-			6935 5
+			6935 5 
 		}
 		victory_points = {
 			12376 1
@@ -14,13 +13,23 @@ state={
 		buildings = {
 			infrastructure = 1
 		}
-    79.3.1 = {
-			controller = ZEO
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			add_core_of = KUR
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = TUR
+			add_core_of = KUR
 		}
 	}
 
 	provinces={
-		652 4583 6935 7470 11880 12376 13121
+		652 4583 6935 7470 11880 12376 13121 
 	}
 	manpower = 365490
 	state_category = rural

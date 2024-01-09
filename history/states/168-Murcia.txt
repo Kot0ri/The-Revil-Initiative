@@ -1,11 +1,9 @@
-
 state={
 	id=168
 	name="STATE_168"
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SPR
 		victory_points = {
 			10024 3
 		}
@@ -15,11 +13,12 @@ state={
 			air_base = 2
 			10024 = {
 				naval_base = 8
+
 			}
+
 		}
-		79.3.1 = {
-			controller = EAF
-		}
+		add_core_of = SPR
+
 	}
 
 	provinces={

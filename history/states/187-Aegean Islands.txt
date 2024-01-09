@@ -3,17 +3,16 @@ state={
 	id=187
 	name="STATE_187"
 	manpower = 322600
-
+	
 	state_category = small_island
-
+	
 	resources={
 		chromium=7 # was: 10
 	}
 
 	history={
-		owner = EUF
-		add_core_of = EUF
-    buildings = {
+		owner = GRE
+		buildings = {
 			infrastructure = 1
 			dockyard = 1
 			8435 = {
@@ -29,13 +28,11 @@ state={
 		victory_points = {
 			8435 1
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+		add_core_of = GRE
 	}
 
 	provinces={
-		3401 6550 8435
+		3401 6550 8435 
 	}
 
 	local_supplies=9.0 

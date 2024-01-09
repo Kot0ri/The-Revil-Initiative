@@ -2,18 +2,17 @@ state = {
 	id=182
 	name="STATE_182"
 	manpower = 387900
-
+	
 	state_category = town
 	history = {
-		owner = EUF
-		add_core_of = EUF
+		owner = GRE
 		victory_points = {
 			9940 5
 		}
 		victory_points = {
 			12058 3
 		}
-    buildings = {
+		buildings = {
 			infrastructure = 2
 			air_base = 2
 			12058 = {
@@ -23,9 +22,7 @@ state = {
 				naval_base = 3
 			}
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+		add_core_of = GRE
 	}
 	provinces = {
 		1164 4170 9940 12058

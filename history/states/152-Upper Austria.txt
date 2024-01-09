@@ -7,13 +7,12 @@ state={
 	state_category = city
 	
 	resources={
-		steel=5 # was: 8
+		steel=15 # was: 8
 		aluminium=1 # was: 1
 	}
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = AUS
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
@@ -30,11 +29,15 @@ state={
 		victory_points = {
 			732 10
 		}
-		victory_points = {
-			11612 3
-		}
-		79.3.1 = {
-			controller = EAF
+		#victory_points = {
+		#	11612 3
+		#}
+		add_core_of = AUS
+
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
 		}
 	}
 

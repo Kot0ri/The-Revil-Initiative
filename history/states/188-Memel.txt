@@ -8,17 +8,22 @@ state=
 	state_category = rural
 	
 	history = {
-		owner = EUF
-		add_core_of = EUF
 		victory_points = {
 			3288 3
 		}
+		owner = LIT
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 1
 			3288 = {
 				naval_base = 1
 			}
+		}
+		add_core_of = LIT
+
+		1939.3.22 = {
+			owner = GER
+			controller = GER
 		}
 	}
 	provinces={

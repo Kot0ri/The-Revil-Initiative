@@ -6,8 +6,8 @@ state={
 	state_category = large_city
 
 	history={
-		owner = EFG
-		add_core_of = EFG
+		owner = JAP
+		add_core_of = JAP
 		buildings = {
 			infrastructure = 4 #was: 7
 			air_base = 3
@@ -22,6 +22,13 @@ state={
 		
 		victory_points = {
 			1092 30
+		}
+		1939.1.1 = {
+			buildings = {
+				dockyard = 3
+				arms_factory = 3
+				industrial_complex = 3
+			}
 		}
 
 	}

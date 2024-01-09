@@ -3,21 +3,19 @@ state={
 	id=228
 	name="STATE_228" # Voroshilovgrad
 	manpower = 2167411
-
+	
 	state_category = town
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SOV
 		victory_points = {
 			9461 1
 		}
 		buildings = {
 			infrastructure = 3 #was: 5
 		}
-		79.3.1 = {
-			controller = EAF
-		}
+		add_core_of = SOV
+		add_core_of = UKR
 	}
 
 	provinces={

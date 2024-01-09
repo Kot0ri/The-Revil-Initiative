@@ -6,8 +6,9 @@ state={
 	}
 
 	history={
-		owner = EFG
-		add_core_of = EFG
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
 		buildings = {
 			infrastructure = 4
 			arms_factory = 3
@@ -20,8 +21,15 @@ state={
 		victory_points = {
 			6999 20 
 		}
-		79.3.18 = {
-			controller = ZEO
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 6
+				infrastructure = 3 #was: 6
+				air_base = 3
+				arms_factory = 3
+
+			}
+
 		}
 
 	}

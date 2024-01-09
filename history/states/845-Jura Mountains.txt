@@ -2,14 +2,13 @@
 state={
 	id=845
 	name="STATE_845"
-	manpower = 2211689
+	manpower = 2067296
 	resources={
 		aluminium=18 # was: 28 #CarloTODO
 	}
 	state_category = large_town
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SWI
 		victory_points = { 9638 5 }
 		victory_points = { 6666 5 }
 		buildings = {
@@ -17,6 +16,7 @@ state={
 			arms_factory = 1
 			industrial_complex = 2
 		}
+		add_core_of = SWI
 	}
 	provinces={
 		6666 6683 9622 9638 13124 

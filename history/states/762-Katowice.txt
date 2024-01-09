@@ -11,15 +11,16 @@ state={
 	}
 	state_category = city
 	history={
-		owner = EUF
-		add_core_of = EUF
 		victory_points = {
 			6464 5
 		}
+		owner = POL
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
 		}
+		add_core_of = POL
+		add_core_of = SIL
 	}
 
 	local_supplies=0.0 

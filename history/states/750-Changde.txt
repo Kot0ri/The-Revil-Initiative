@@ -8,8 +8,9 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = town
 	history={
-		owner = EFG
-		add_core_of = EFG
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -19,8 +20,15 @@ state={
 		victory_points = {
 			7101 10 
 		}
-		79.3.18 = {
-			controller = ZEO
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+				infrastructure = 3 #was: 6
+				air_base = 3
+				arms_factory = 1
+
+			}
+
 		}
 
 	}

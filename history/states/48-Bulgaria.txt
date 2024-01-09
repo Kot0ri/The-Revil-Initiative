@@ -6,17 +6,16 @@ state={
 	resources={
 		aluminium = 2
 	}
-
-
+	
+	
 	state_category = city
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = BUL
 		victory_points = { #Sofia
-			949 15
+			949 15 
 		}
-    victory_points = { #Vidin
+		victory_points = { #Vidin
 			9771 1
 		}
 		buildings = {
@@ -24,13 +23,11 @@ state={
 			industrial_complex = 6
 			air_base = 3
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+		add_core_of = BUL
 	}
 
-  provinces={
-		793 935 949 965 3908 3971 9771 11754
+	provinces={
+		793 935 949 965 3908 3971 9771 11754 
 	}
 
 	local_supplies=0.0 

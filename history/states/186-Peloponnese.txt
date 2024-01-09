@@ -3,12 +3,10 @@ state={
 	id=186
 	name="STATE_186"
 	manpower=945000
-
+	
 	state_category = town
 
 	history={
-		owner = EUF
-		add_core_of = EUF
 		victory_points = {
 			7211 5
 		}
@@ -18,7 +16,8 @@ state={
 		victory_points = {
 			11965 1
 		}
-    buildings = {
+		owner = GRE
+		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 			11965 = {
@@ -31,13 +30,12 @@ state={
 			}
 
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+		add_core_of = GRE
+
 	}
 
-	provinces={
-		1173 4078 4178 4193 7096 7211 11965
+	provinces = {
+		1173 4078 4178 4193 7096 7211 11965 
 	}
 
 	local_supplies=0.0 

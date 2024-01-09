@@ -1,11 +1,10 @@
-
 state={
 	id=36
 	name="STATE_36"
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = HOL
+		add_core_of = HOL
 		victory_points = {
 			6241 5 
 		}
@@ -19,12 +18,15 @@ state={
 			6336 1 
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 2
 			6336 = {
 				naval_base = 3
+
 			}
-		} 
+
+		}
+
 	}
 
 	provinces={

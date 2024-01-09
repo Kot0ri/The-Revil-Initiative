@@ -1,4 +1,4 @@
-# ダカール
+
 state={
 	id=272
 	name="STATE_272"
@@ -6,30 +6,27 @@ state={
 	resources={
 		steel=3 # was: 4
 	}
+	
+	state_category = pastoral
 
 	history={
-		owner = EFG
-		add_core_of = EFG
+		owner = FRA
+		add_core_of = SEN
 		victory_points = {
-			4948 15 
+			4948 5 
 		}
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 10
 			air_base = 4
 			4948 = {
 				naval_base = 3
-
 			}
-
 		}
-
 	}
 
 	provinces={
-		2100 4948 7972 8015 12710 12834 13455 13457 13470 13475 13479 13483 13485 13494 13508 13519 
+		2100 4948 7972 8015 12710 12834 
 	}
 
 	local_supplies=1.0 
-	state_category=megalopolis
 }

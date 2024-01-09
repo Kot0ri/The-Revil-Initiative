@@ -1,4 +1,4 @@
-# ダカール周辺
+
 state={
 	id=296
 	name="STATE_296" # Guinea-Bissau
@@ -8,26 +8,22 @@ state={
 	resources={
 		rubber=1 # was: 1
 	}
-
 	history={
-		owner = AFZ
-		add_core_of = AFZ
+		owner = POR
+		add_core_of = GNB
 		victory_points = {
-			12891 1 
+			12891 1
 		}
 		buildings = {
 			infrastructure = 1
-			12891 = {
+			12891 ={
 				naval_base = 1
-
 			}
-
 		}
-
 	}
 
 	provinces={
-		12747 12891 13433 13436 
+		12747 12891 
 	}
 
 	local_supplies=0.0 

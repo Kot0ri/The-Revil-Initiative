@@ -3,15 +3,14 @@ state={
 	id=219
 	name="STATE_219"
 	manpower = 8335992
-
+	
 	state_category = megalopolis
 	resources={
 		steel=16 # was: 28
 	}
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SOV
 		victory_points = {
 			6380 50 
 		}
@@ -20,6 +19,13 @@ state={
 			arms_factory = 7
 			industrial_complex = 3
 			air_base = 10
+		}
+		add_core_of = SOV
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
+				arms_factory = 10
+			}
 		}
 	}
 

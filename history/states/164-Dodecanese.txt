@@ -3,13 +3,11 @@ state=
 	id=164
 	name="STATE_164"
 	manpower = 120000
-
+	
 	state_category = small_island
-
-	history=
-	{
-		owner = MEZ
-		add_core_of = MEZ
+	
+	history = {
+		owner = ITA
 		victory_points = {
 			10007 1 
 		}
@@ -23,13 +21,16 @@ state=
 				naval_base = 1
 			}
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+		add_core_of = GRE
+
+		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
+		set_state_name = STATE_164_ITA
+		set_province_name = { id = 10007 name = VICTORY_POINTS_10007_ITA }
 	}
-	provinces=
-	{
-7003 10007 	}
+
+	provinces = {
+		7003 10007
+	}
 
 	local_supplies=0.0 
 }

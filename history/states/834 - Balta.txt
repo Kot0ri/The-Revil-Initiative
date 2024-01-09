@@ -7,8 +7,7 @@ state = {
 	state_category = rural
 
 	history = {
-		owner = EUF
-		add_core_of = EUF
+		owner = SOV
 		victory_points = {
 			3757 2 
 		}
@@ -20,8 +19,13 @@ state = {
 			infrastructure = 2
 			
 		}
-		79.3.1 = {
-			controller = ZEO
+		add_core_of = SOV
+		add_core_of = UKR
+		add_core_of = MOL
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+			}
 		}
 	}
 

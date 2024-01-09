@@ -3,21 +3,19 @@ state={
 	id=227
 	name="STATE_227"
 	manpower = 3767336
-
+	
 	state_category = city
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SOV
 		buildings = {
 			infrastructure = 3 #was: 5
 		}
 		victory_points = {
 			6474 10
 		}
-		79.3.1 = {
-			controller = EAF
-		}
+		add_core_of = SOV
+		add_core_of = UKR
 	}
 
 	provinces={

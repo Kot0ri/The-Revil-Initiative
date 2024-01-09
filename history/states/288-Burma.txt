@@ -3,17 +3,17 @@ state={
 	id=288
 	name="STATE_288"
 	manpower = 10722500
-
+	
 	state_category = town
-
+	
 	resources={
 		rubber=3 # was: 4
 		tungsten = 92
 	}
 
 	history={
-		owner = SSA
-		add_core_of = SSA
+		add_core_of = BRM
+		owner = RAJ
 		victory_points = {
 			1330 5 
 		}
@@ -25,9 +25,7 @@ state={
 				naval_base = 4
 			}
 		}
-		79.3.18 = {
-			controller = ZEO
-		}
+
 	}
 
 	provinces={

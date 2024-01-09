@@ -1,20 +1,22 @@
 
-state={
-	id=655
-	name="STATE_655"
+state = {
+	id = 655
+	name = "STATE_655"
 	manpower = 94759
 	
 	state_category = pastoral
-	history={
-		owner = EFG
-		add_core_of = EFG
+	history = {
+		owner = SOV
+		add_core_of = SOV
+		add_core_of = FER
+		add_claim_by = JAP
 		buildings = {
 			infrastructure = 2
 			air_base = 1
 		}
 	}
 
-	provinces={
+	provinces = {
 		855 1742 1755 
 	}
 

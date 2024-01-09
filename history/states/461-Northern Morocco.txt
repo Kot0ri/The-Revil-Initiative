@@ -3,8 +3,7 @@ state={
 	id=461
 	name="STATE_461"
 	resources={
-		chromium=12
-		steel = 8
+		chromium=12.000 #added due to portugal setup
 	}
 
 	manpower = 3197719
@@ -12,11 +11,10 @@ state={
 	state_category = rural
 	
 	history={
-		owner = AFZ
-		add_core_of = AFZ
-
+		owner = FRA
+		add_core_of = MOR
 		victory_points = {
-			7069 40
+			7069 10 
 		}
 		buildings = {
 			infrastructure = 2

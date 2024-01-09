@@ -1,4 +1,3 @@
-# 宇宙港　キンバライド基地
 state={
 	id=890
 	name="STATE_890"
@@ -10,15 +9,13 @@ state={
 	}
 	
 	history={
-		owner = AFZ
-		add_core_of = AFZ
+		owner = BEL
 		buildings = {
-			infrastructure = 2
-			air_base = 5
+			infrastructure = 1
+
 		}
-		victory_points = {
-			10766 20
-		}
+		add_core_of = COG
+
 	}
 	
 	provinces={

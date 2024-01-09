@@ -11,8 +11,7 @@ state={
 	}
 
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = MEX
 		buildings = {
 			infrastructure = 2
 			dockyard = 1
@@ -20,6 +19,7 @@ state={
 				naval_base = 3
 			}
 		}
+		add_core_of = MEX
 		victory_points = {
 			12810 5
 		}

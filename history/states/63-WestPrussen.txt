@@ -4,15 +4,14 @@ state={
 	name="STATE_63"
 	manpower = 1124417
 	resources={
-		steel=23 # was: 36
-		aluminium=8 # was: 12
+		steel=7 #was 8  #was 16 was: 23 # was: 36
+		aluminium=6 # was: 8 was: 12
 	}
 	
 	state_category = town
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = GER
 		victory_points = {
 			6282 5
 		}
@@ -31,6 +30,8 @@ state={
 			}
 			air_base = 3
 		}
+		add_core_of = GER
+		add_core_of = KSH
 	}
 
 	provinces={

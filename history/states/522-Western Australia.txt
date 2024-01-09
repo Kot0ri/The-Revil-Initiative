@@ -1,11 +1,9 @@
-
 state={
 	id=522
 	name="STATE_522"
-	
+
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = AST
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -13,14 +11,15 @@ state={
 			1652 = {
 				naval_base = 1
 				coastal_bunker = 1
+
 			}
+
 		}
 		victory_points = {
-			1652 10
+			1652 10 
 		}
-		79.3.18 = {
-			controller = ZEO
-		}
+		add_core_of = AST
+
 	}
 
 	provinces={

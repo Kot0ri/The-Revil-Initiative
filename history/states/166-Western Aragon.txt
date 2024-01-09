@@ -6,29 +6,28 @@ state={
 	}
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SPR
 		victory_points = {
-			3816 3
+			3816 3 
 		}
 		victory_points = {
-			9840 1
+			9840 1 
 		}
 		victory_points = {
-			7213 1
+			7213 1 
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
 			air_base = 3
+
 		}
-		79.3.1 = {
-			controller = EAF
-		}
+		add_core_of = SPR
+
 	}
 
 	provinces={
-		813 948 3816 6878 6901 7213 9812 9840 9842 11737 11838
+		813 948 3816 6878 6901 7213 9812 9840 9842 11737 11838 
 	}
 	manpower=668365
 	buildings_max_level_factor=1.000

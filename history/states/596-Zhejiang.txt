@@ -6,11 +6,12 @@ state=
 	state_category = city
 	history=
 	{
-		owner = EFG
-		add_core_of = EFG
-
-		victory_points = {
-			9974 1
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		
+		victory_points = { 
+			9974 1 
 		}
 		victory_points = { 
 			7191 1 
@@ -35,8 +36,19 @@ state=
 				bunker = 1
 			}
 		}
-		79.3.18 = {
-			controller = ZEO
+
+		1938.10.25 = {		
+			JAP = {
+				set_province_controller = 1055
+				set_province_controller = 1096
+				set_province_controller = 4042
+				set_province_controller = 7058
+				set_province_controller = 7191
+				set_province_controller = 9974
+				set_province_controller = 10014
+				set_province_controller = 10101
+				set_province_controller = 11991
+			} 			
 		}
 	}
 	provinces={

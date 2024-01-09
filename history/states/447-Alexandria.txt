@@ -5,14 +5,16 @@ state={
 	manpower = 3859239
 	resources={
 		oil=1 # was: 2
+		tungsten = 3 #maganese
+		steel = 3 #Maganese
+		
 	}
 	
 	state_category = town
 
 	history={
-		owner = AFZ
-		add_core_of = AFZ
-
+		owner = ENG
+		
 		victory_points = {
 			4076 10 
 		}
@@ -28,10 +30,8 @@ state={
 				naval_base = 8
 			}
 		}
-		79.4.1 = {
-			controller = ZEO
-			owner = ZEO
-		}
+
+		add_core_of = EGY
 	}
 
 	provinces={

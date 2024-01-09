@@ -6,22 +6,24 @@ state={
 		steel=2.000
 		chromium=3.000
 	}
-	
+
 	history={
-		owner = EFG
-		add_core_of = EFG
+		owner = MON
 		victory_points = {
 			4801 10
 		}
 		victory_points = {
-			7799 1
+			7799 1 
 		}
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
+
 		}
+		add_core_of = MON
+
 	}
 
 	provinces={

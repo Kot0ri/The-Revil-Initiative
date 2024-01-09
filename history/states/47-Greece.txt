@@ -9,14 +9,13 @@ state={
 		aluminium=30 # was: 58
 		tungsten = 10 # was: 20
 	}
-
+	
 	state_category = city
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = GRE
 		victory_points = {
-			4109 20
+			4109 20 
 		}
 		victory_points = {
 			3973 3
@@ -36,7 +35,7 @@ state={
 		victory_points = {
 			3988 1
 		}
-    buildings = {
+		buildings = {
 			infrastructure = 2
 			industrial_complex = 3
 			dockyard = 1
@@ -47,13 +46,12 @@ state={
 			}
 
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+		add_core_of = GRE
+
 	}
 
 	provinces={
-		863 976 1109 3864 3973 3988 4109 6930 7127
+		863 976 1109 3864 3973 3988 4109 6930 7127 
 	}
 
 	local_supplies=0.0 

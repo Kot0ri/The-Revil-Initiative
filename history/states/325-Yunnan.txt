@@ -6,8 +6,10 @@ state={
 	}
 
 	history={
-		owner = SSA
-		add_core_of = SSA
+		owner = YUN
+		add_core_of = YUN
+		add_core_of = CHI
+		add_core_of = PRC
 		victory_points = {
 			1319 10 
 		}
@@ -17,8 +19,21 @@ state={
 			industrial_complex = 3
 
 		}
-		79.3.18 = {
-			controller = ZEO
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger" 
+					}
+
+				}
+				CHI = {
+					transfer_state = PREV
+
+				}
+
+			}
+
 		}
 
 	}

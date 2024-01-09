@@ -3,12 +3,12 @@ state={
 	id=773
 	name="STATE_773" # Cameroon
 	manpower = 2945782
-
+	
 	state_category = rural
 
 	history={
-	owner = AFZ
-	add_core_of = AFZ
+		owner = FRA
+		add_core_of = CMR
 		victory_points = {
 			2080 1
 		}
@@ -24,7 +24,7 @@ state={
 	}
 
 	provinces={
-		2080 5036 5054 6039 7963 9137 11194
+		2080 5036 5054 6039 7963 9137 11194 
 	}
 
 	local_supplies=0.0 

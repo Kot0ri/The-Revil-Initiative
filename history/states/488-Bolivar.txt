@@ -1,35 +1,26 @@
-# ジャブロー周辺
+
 state={
 	id=488
 	name="STATE_488"
 	manpower = 245642
 	
+	state_category = pastoral
+
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = VEN
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 10
-			4982 = {
-				naval_base = 5
-				coastal_bunker = 5
-
-			}
+			infrastructure = 1
 
 		}
+		add_core_of = VEN
 		victory_points = {
-			4982 1 
+			10879 1
 		}
-		victory_points = {
-			10879 1 
-		}
-
 	}
 
 	provinces={
-		1981 4982 5317 7915 10736 10849 10879 12716 13522 13527 13539 13540 13542 13546 13547 13554 13556 13562 13563 13564 13567 13568 13572 13573 13574 13575 13579 13581 13582 13584 13585 13586 13587 13588 13589 13590 13591 
+		1981 5317 7915 8050 10736 10849 10879 
 	}
 
 	local_supplies=0.0 
-	state_category=megalopolis
 }

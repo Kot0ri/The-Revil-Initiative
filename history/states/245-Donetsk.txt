@@ -3,20 +3,17 @@ state={
 	id=245
 	name="STATE_245" # Millerovo
 	manpower = 761769
-
+	
 	state_category = rural
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = SOV
 		buildings = {
 			infrastructure = 3 #was: 5
 		}
+		add_core_of = SOV
 		victory_points = {
 			11476 1
-		}
-		79.3.1 = {
-			controller = EAF
 		}
 	}
 

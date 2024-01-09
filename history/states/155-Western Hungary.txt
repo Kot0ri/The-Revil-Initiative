@@ -3,14 +3,14 @@ state={
 	id=155
 	name="STATE_155" # Transdanubia
 	manpower = 2197605
-
+	
 	state_category = city
 	resources={
 		oil = 1 # was: 1
+		aluminium=60 # moved from Northern Hungary
 	}
 	history={
-		owner = EUF 
-		add_core_of = EUF
+		owner = HUN
 		victory_points = {
 			11610 5 
 		}
@@ -20,9 +20,7 @@ state={
 			arms_factory = 1
 			air_base = 3
 		}
-		79.3.1 = {
-			controller = EAF
-		}
+		add_core_of = HUN
 	}
 
 	provinces={

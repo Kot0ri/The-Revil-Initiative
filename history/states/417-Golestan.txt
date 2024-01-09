@@ -6,24 +6,21 @@ state={
 	state_category = rural
 
 	history={
-		owner = MEZ
-		add_core_of = MEZ
-    victory_points = {
-			8040 3
+		owner = PER
+		victory_points = {
+			8040 3 
 		}
 		victory_points = {
-			2065 1
+			2065 1 
 		}
 		buildings = {
 			infrastructure = 2
 		}
-		79.3.1 = {
-			controller = ZEO
-		}
+		add_core_of = PER
 	}
 
 	provinces={
-		1982 2065 8040 8125 10922
+		1982 2065 8040 8125 10922 
 	}
 
 	local_supplies=0.0 

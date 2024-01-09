@@ -8,8 +8,7 @@ state={
 
 
 	history={
-		owner = EUF
-		add_core_of = EUF
+		owner = YUG
 		victory_points = { #Dubrovnik
 			6889 3 
 		}
@@ -27,9 +26,9 @@ state={
 				naval_base = 1
 			}
 		}
-		79.3.1 = {
-			controller = EAF
-		}
+		add_core_of = YUG
+		#add_claim_by = ITA #added by focus
+		add_core_of = CRO
 	}
 
 	provinces={

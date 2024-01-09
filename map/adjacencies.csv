@@ -8,10 +8,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5388;803;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;Suez
 299;211;sea;2282;-1;-1;-1;-1;;Småland-Öland
 6345;6287;sea;2382;-1;-1;-1;-1;;Skåne-Sjaelland
-3260;3325;;2408;-1;-1;-1;-1;;Sjaelland-Fyn
-3260;3374;;2408;-1;-1;2973;1625;;Sjaelland-SdFyn
-3277;3325;;2408;-1;-1;-1;-1;;Fyn-Jylland
-11251;3325;;2408;2956;1628;2960;1629;;Fyn-SdrJylland
+3260;3325;sea;2408;-1;-1;-1;-1;;Sjaelland-Fyn
+3374;13260;sea;2408;2971;1622;2973;1620;;SdFyn-Langeland
+13260;13261;sea;2408;2975;1619;2977;1618;;Langeland-Lolland
+13261;3305;sea;2408;2987;1617;2989;1619;;Lolland-Själland
+3277;3325;sea;2408;-1;-1;-1;-1;;Fyn-Jylland
+3325;13259;sea;2408;-1;-1;-1;-1;;Fyn-Samsö
+6364;13259;sea;2408;2965;1642;2968;1641;;Jylland-Samsö
+11251;13258;sea;2408;2954;1621;2956;1621;;Sönderjylland-Als
+11251;3325;sea;2408;2956;1628;2960;1629;;Fyn-SdrJylland
+9388;13257;sea;2358;3010;1608;3012;1609;;Stralsund-Rügen
 83;185;sea;1885;-1;-1;-1;-1;;Estonia-Ösel
 185;6201;sea;1885;-1;-1;-1;-1;;Ösel-Dagö
 83;6201;sea;1660;-1;-1;-1;-1;;Dagö-Estonia
@@ -77,6 +83,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10048;7195;sea;8384;-1;-1;-1;-1;;Hawaii-Maui
 7195;4180;sea;8410;-1;-1;-1;-1;;Maui-Honolulu
 4180;7112;sea;5339;-1;-1;-1;-1;;Honolulu-Kauai
+12148;10188;sea;8660;-1;-1;-1;-1;;Tahiti-Raiatea
+7290;13080;sea;9081;-1;-1;-1;-1;;Samoan Islands
 4286;12159;sea;8289;-1;-1;-1;-1;;Fiji-Sanua Levu
 13055;13056;sea;8419;-1;-1;-1;-1;;Nukufetau-Funafuti
 13056;13057;sea;8419;-1;-1;-1;-1;;Funafuti-Nukulaelae
@@ -121,12 +129,15 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 44;11050;sea;5792;-1;-1;-1;-1;;Northern-Straits
 22;3016;sea;5792;-1;-1;-1;-1;;Northern-Straits
 6062;6205;sea;3590;-1;-1;-1;-1;;West Scottish-Strait
+3178;13269;sea;3590;-1;-1;-1;-1;;Isle of Skye
+13270;11064;sea;3195;-1;-1;-1;-1;;Orkney-Thurso
 8435;6550;sea;7452;-1;-1;-1;-1;;Aegan Isle-Strait
 7304;4360;sea;8614;-1;-1;-1;-1;;New Foundland-Strait
 5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar North
 5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;Gibraltar South
-2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
+2455;2431;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;Øresund
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;Bosphorus
+2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;hormuz
 10825;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
 10825;8029;impassable;-1;-1;-1;-1;-1;;Himalayas
 10910;1991;impassable;-1;-1;-1;-1;-1;;Himalayas
@@ -194,234 +205,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6691;9650;impassable;-1;-1;-1;-1;-1;;austrian alps
 9650;3684;impassable;-1;-1;-1;-1;-1;;austrian alps
 3314;6336;sea;2752;2885;1578;2890;1581;;Afsluitdijk
-6654;6848;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-6654;7052;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-6466;7052;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7504;7052;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7504;7277;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7504;8567;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7729;8567;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8907;8567;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8907;8955;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8932;8955;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8932;8544;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8932;9003;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8980;9003;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-9027;9003;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-9081;9003;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-9081;259;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-1040;259;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8364;259;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8364;835;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8364;8390;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8364;8337;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8364;2549;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-1487;2549;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2525;2549;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2525;2573;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2502;2573;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2476;2573;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2476;8439;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2476;645;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2476;1266;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2427;1266;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2427;5684;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2402;5684;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2145;5684;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2145;2253;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2145;5710;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2279;5710;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2279;8690;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8563;8690;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8563;8715;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8515;8715;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7234;8715;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7234;8741;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-9007;8741;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-9007;6425;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-13403;6425;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-13403;8959;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-6616;8959;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-6616;5862;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7286;8959;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7286;5862;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7286;5888;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7286;5983;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-6475;5983;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-6475;5940;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-6068;5940;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-6068;7051;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-5987;7051;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-5987;7276;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7503;7276;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7503;8868;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7728;8868;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7728;9010;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7955;9010;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7955;8429;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-7955;8405;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8166;8405;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-420;8405;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-420;1710;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-420;1259;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-1935;1259;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-1935;9026;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-9080;1259;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-9080;9026;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-9080;9002;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2435;9002;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-2435;9026;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8931;9002;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8931;2412;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8931;2484;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-8883;2484;sea;;-1;-1;-1;-1;SPACE_IS_NOT_SEA;
-13316;7243;sea;2723;868;281;-1;-1;ORBIT_AREA;odessa
-13322;2086;sea;2913;886;287;-1;-1;ORBIT_AREA;delhi
-13309;4135;sea;2746;863;259;-1;-1;ORBIT_AREA;arti-gibraltar
-13317;10000;sea;2913;905;280;-1;-1;ORBIT_AREA;qingdao
-13310;11763;sea;2401;907;258;-1;-1;ORBIT_AREA;california
-13304;12004;sea;2746;868;239;-1;-1;ORBIT_AREA;cairo
-13303;7471;sea;2746;886;233;-1;-1;ORBIT_AREA;torrington
-13305;10980;sea;2746;904;237;-1;-1;ORBIT_AREA;rio de janeiro
-13285;13264;sea;6059;-1;-1;-1;-1;;SI3
-13285;13284;sea;5955;-1;-1;-1;-1;;SI3
-13264;13284;sea;5955;-1;-1;-1;-1;;SI3
-13365;13359;sea;2352;-1;-1;-1;-1;;SI1
-13365;13363;sea;2352;-1;-1;-1;-1;;SI1
-13359;13363;sea;2352;-1;-1;-1;-1;;SI1
-13319;13307;sea;5144;-1;-1;-1;-1;;SI5
-13319;13314;sea;5600;-1;-1;-1;-1;;SI5
-13307;13314;sea;5144;-1;-1;-1;-1;;SI5
-13290;13263;sea;2524;-1;-1;-1;-1;;SI2
-13290;13281;sea;2362;-1;-1;-1;-1;;SI2
-13281;13263;sea;2362;-1;-1;-1;-1;;SI2
-13394;13373;sea;8280;-1;-1;-1;-1;;SI4
-13394;13391;sea;8280;-1;-1;-1;-1;;SI4
-13373;13391;sea;8280;-1;-1;-1;-1;;SI4
-13300;13294;sea;2793;-1;-1;-1;-1;;SI6
-13300;13298;sea;2793;-1;-1;-1;-1;;SI6
-13294;13298;sea;1039;-1;-1;-1;-1;;SI6
-13386;13369;sea;7061;-1;-1;-1;-1;;SI7
-13386;13380;sea;7514;-1;-1;-1;-1;;SI7
-13369;13380;sea;7061;-1;-1;-1;-1;;SI7
-13547;13552;impassable;-1;-1;-1;-1;-1;;Jaburo
-13552;13543;impassable;-1;-1;-1;-1;-1;;Jaburo
-13552;13564;impassable;-1;-1;-1;-1;-1;;Jaburo
-13544;13564;impassable;-1;-1;-1;-1;-1;;Jaburo
-13551;13544;impassable;-1;-1;-1;-1;-1;;Jaburo
-13544;13535;impassable;-1;-1;-1;-1;-1;;Jaburo
-13535;13528;impassable;-1;-1;-1;-1;-1;;Jaburo
-13528;13509;impassable;-1;-1;-1;-1;-1;;Jaburo
-13504;13512;impassable;-1;-1;-1;-1;-1;;Jaburo
-13513;13514;impassable;-1;-1;-1;-1;-1;;Jaburo
-13513;13501;impassable;-1;-1;-1;-1;-1;;Jaburo
-13498;13501;impassable;-1;-1;-1;-1;-1;;Jaburo
-13498;13489;impassable;-1;-1;-1;-1;-1;;Jaburo
-13498;13484;impassable;-1;-1;-1;-1;-1;;Jaburo
-13504;5214;impassable;-1;-1;-1;-1;-1;;Jaburo
-8107;13517;impassable;-1;-1;-1;-1;-1;;Jaburo
-13529;13528;impassable;-1;-1;-1;-1;-1;;Jaburo
-13525;13533;impassable;-1;-1;-1;-1;-1;;Jaburo
-13525;13514;impassable;-1;-1;-1;-1;-1;;Jaburo
-13513;13493;impassable;-1;-1;-1;-1;-1;;Jaburo
-13484;13504;impassable;-1;-1;-1;-1;-1;;Jaburo
-13543;13547;impassable;-1;-1;-1;-1;-1;;Jaburo
-13544;13558;impassable;-1;-1;-1;-1;-1;;Jaburo
-8107;5214;impassable;-1;-1;-1;-1;-1;;Jaburo
-13351;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Luna2 - P-India
-13351;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Luna2 - P-Odessa
-13351;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Luna2 - P-Europa
-13351;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Luna2 - P-Africa
-13351;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Luna2 - P-Australia
-13351;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Luna2 - P-South America
-13351;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Luna2 - P-North America
-13351;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Luna2 - P-China
-13271;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;VBC - P-India
-13271;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;VBC - P-Odessa
-13271;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;VBC - P-Europa
-13271;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;VBC - P-Africa
-13271;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;VBC - P-Australia
-13271;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;VBC - P-South America
-13271;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;VBC - P-North America
-13271;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;VBC - P-China
-13275;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Granada - P-India
-13275;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Granada - P-Odessa
-13275;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Granada - P-Europa
-13275;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Granada - P-Africa
-13275;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Granada - P-Australia
-13275;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Granada - P-South America
-13275;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Granada - P-North America
-13275;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Granada - P-China
-13335;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;ABQ - P-India
-13335;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;ABQ - P-Odessa
-13335;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;ABQ - P-Europa
-13335;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;ABQ - P-Africa
-13335;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;ABQ - P-Australia
-13335;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;ABQ - P-South America
-13335;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;ABQ - P-North America
-13335;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;ABQ - P-China
-13384;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Solomon - P-India
-13384;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Solomon - P-Odessa
-13384;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Solomon - P-Europa
-13384;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Solomon - P-Africa
-13384;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Solomon - P-Australia
-13384;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Solomon - P-South America
-13384;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Solomon - P-North America
-13384;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Solomon - P-China
-13264;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side3 - P-India
-13264;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side3 - P-Odessa
-13264;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side3 - P-Europa
-13264;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side3 - P-Africa
-13264;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side3 - P-Australia
-13264;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side3 - P-South America
-13264;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side3 - P-North America
-13264;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side3 - P-China
-13359;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side1 - P-India
-13359;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side1 - P-Odessa
-13359;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side1 - P-Europa
-13359;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side1 - P-Africa
-13359;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side1 - P-Australia
-13359;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side1 - P-South America
-13359;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side1 - P-North America
-13359;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side1 - P-China
-13263;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side2 - P-India
-13263;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side2 - P-Odessa
-13263;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side2 - P-Europa
-13263;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side2 - P-Africa
-13263;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side2 - P-Australia
-13263;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side2 - P-South America
-13263;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side2 - P-North America
-13263;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side2 - P-China
-13392;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side4 - P-India
-13392;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side4 - P-Odessa
-13392;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side4 - P-Europa
-13392;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side4 - P-Africa
-13392;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side4 - P-Australia
-13392;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side4 - P-South America
-13392;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side4 - P-North America
-13392;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side4 - P-China
-13307;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side5 - P-India
-13307;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side5 - P-Odessa
-13307;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side5 - P-Europa
-13307;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side5 - P-Africa
-13307;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side5 - P-Australia
-13307;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side5 - P-South America
-13307;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side5 - P-North America
-13307;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side5 - P-China
-13294;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side6 - P-India
-13294;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side6 - P-Odessa
-13294;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side6 - P-Europa
-13294;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side6 - P-Africa
-13294;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side6 - P-Australia
-13294;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side6 - P-South America
-13294;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side6 - P-North America
-13294;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side6 - P-China
-13369;13322;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side7 - P-India
-13369;13316;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side7 - P-Odessa
-13369;13309;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side7 - P-Europa
-13369;13304;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side7 - P-Africa
-13369;13303;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side7 - P-Australia
-13369;13305;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side7 - P-South America
-13369;13310;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side7 - P-North America
-13369;13317;sea;;-1;-1;-1;-1;SPACE_SUPPLY_NETWORK;Side7 - P-China
+13058;10245;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
+13058;12512;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
+13058;10636;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
+13058;13066;impassable;-1;-1;-1;-1;-1;;Greenland Glacier
 -1;-1;;-1;-1;-1;-1;-1;-1

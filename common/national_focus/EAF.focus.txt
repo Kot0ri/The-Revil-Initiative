@@ -9,12 +9,45 @@ focus_tree = {
 		}
 	}
 	default = no
+
 	focus = {
 		id = EAF_Phase_1_Operations
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 20
 		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Sieze_the_Space_Port
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = EAF_Phase_1_Operations}
+		relative_position_id = EAF_Phase_1_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Sieze_Odessa
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = EAF_Phase_1_Operations}
+		relative_position_id = EAF_Phase_1_Operations
 		ai_will_do = {
 			factor = 1
 		}

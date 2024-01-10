@@ -203,6 +203,7 @@ focus_tree = {
 		}
 	}
 
+
 	focus = {
 		id = NAA_Prepare_for_Naval_Warfare
 		icon = GFX_goal_general_meeting
@@ -333,6 +334,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NAA_Develope_Oakland_Labatories
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Tour_of_America}
+		relative_position_id = NAA_Tour_of_America
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_A_meeting_with_the_Eschonbachs
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -434,7 +451,7 @@ focus_tree = {
 		id = NAA_Royal_Marriage
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 3
+		x = 4
 		y = 5
 		prerequisite = {focus = NAA_Icelinas_Eyes}
 		prerequisite = {focus = NAA_Garmas_Fame}
@@ -693,16 +710,204 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = NAA_Kily_Takes_Command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_North_America_Focus}
+		relative_position_id = NAA_North_America_Focus
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Augusta_Defence_Plans
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {focus = NAA_Kily_Takes_Command}
+		relative_position_id = NAA_Kily_Takes_Command
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Reinforce_California_Defences
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = {focus = NAA_Kily_Takes_Command}
+		relative_position_id = NAA_Kily_Takes_Command
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Shift_to_Rail_for_Supply
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {focus = NAA_Reinforce_California_Defences}
+		prerequisite = {focus = NAA_Augusta_Defence_Plans}
+		relative_position_id = NAA_Kily_Takes_Command
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Slow_down_Federation_Forces
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Shift_to_Rail_for_Supply}
+		relative_position_id = NAA_Shift_to_Rail_for_Supply
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Destroy_Key_Infrastructure
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {focus = NAA_Slow_down_Federation_Forces}
+		relative_position_id = NAA_Slow_down_Federation_Forces
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = NAA_Logistics_Strikes
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = {focus = NAA_Slow_down_Federation_Forces}
+		relative_position_id = NAA_Slow_down_Federation_Forces
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
 	
 	focus = {
 		id = NAA_South_America_Focus
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 1
+		x = 2
 		y = 2
 		prerequisite = {focus = NAA_Garmas_Fate}
 		relative_position_id = NAA_Garmas_Fate
 		mutually_exclusive = { focus = NAA_North_America_Focus}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Garcia_Takes_Command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_South_America_Focus}
+		relative_position_id = NAA_South_America_Focus
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Besiege_Jaburo
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Garcia_Takes_Command}
+		relative_position_id = NAA_Garcia_Takes_Command
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Aid_Chars_Attack
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Besiege_Jaburo}
+		relative_position_id = NAA_Besiege_Jaburo
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Submit_to_Mquve
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Aid_Chars_Attack}
+		relative_position_id = NAA_Aid_Chars_Attack
+	
 		ai_will_do = {
 			factor = 1
 		}

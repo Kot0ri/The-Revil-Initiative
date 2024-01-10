@@ -139,6 +139,70 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_Push_Through_the_Alps
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = EAF_Continue_the_Push_Westwards}
+		relative_position_id = EAF_Continue_the_Push_Westwards
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Split_Iberia
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Push_Through_the_Alps}
+		relative_position_id = EAF_Push_Through_the_Alps
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Push_Towards_the_Rhine
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = EAF_Continue_the_Push_Westwards}
+		relative_position_id = EAF_Continue_the_Push_Westwards
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Cutoff_the_low_countries
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Push_Towards_the_Rhine}
+		relative_position_id = EAF_Push_Towards_the_Rhine
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_Grind_towards_the_East
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -155,12 +219,62 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_Siberian_March
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Grind_towards_the_East}
+		relative_position_id = EAF_Grind_towards_the_East
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Cross_the_Caucasus_Range
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Siberian_March}
+		relative_position_id = EAF_Siberian_March
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_Yuris_Defence_plans
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 3
 		y = 1
 		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Phase_3_Operations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 5
+		prerequisite ={ focus = EAF_Cross_the_Caucasus_Range}
+		prerequisite ={ focus = EAF_Cutoff_the_low_countries}
+		prerequisite ={ focus = EAF_Split_Iberia}
 		relative_position_id = EAF_Phase_2_Operations
 		ai_will_do = {
 			factor = 1

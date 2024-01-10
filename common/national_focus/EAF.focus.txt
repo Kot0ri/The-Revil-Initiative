@@ -510,6 +510,87 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_Nordic_Operations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = EAF_Northern_Siege}
+		relative_position_id = EAF_Northern_Siege
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Invade_Sweden
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = EAF_Nordic_Operations}
+		relative_position_id = EAF_Nordic_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Cuttoff_the_Artic_Circle
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Nordic_Operations}
+		relative_position_id = EAF_Nordic_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Invade_Britania
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = EAF_Northern_Siege}
+		relative_position_id = EAF_Northern_Siege
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Two_Progned_Attack
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Invade_Britania}
+		relative_position_id = EAF_Invade_Britania
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
 		id = EAF_Second_Wave_of_Landings
 		icon = GFX_goal_general_meeting
 		cost = 5

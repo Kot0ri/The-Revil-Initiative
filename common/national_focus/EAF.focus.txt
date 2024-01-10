@@ -429,10 +429,58 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_Cross_the_Suez
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Blitzkreig_through_the_Middle_East}
+		relative_position_id = EAF_Blitzkreig_through_the_Middle_East
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_North_Africa_Campaign
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = EAF_Cross_the_Suez}
+		relative_position_id = EAF_Cross_the_Suez
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_March_Towards_Kilimanjaro
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = EAF_Cross_the_Suez}
+		relative_position_id = EAF_Cross_the_Suez
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_Northern_Siege
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -5
+		x = -7
 		y = 1
 		prerequisite ={ focus = EAF_Phase_3_Operations}
 		relative_position_id = EAF_Phase_3_Operations

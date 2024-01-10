@@ -204,6 +204,119 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NAA_Prepare_for_Naval_Warfare
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = {focus = NAA_Expansion_of_Californaia_Dockyards}
+		relative_position_id = NAA_Expansion_of_Californaia_Dockyards
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Hawaii_Campaign
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = {focus = NAA_Prepare_for_Naval_Warfare}
+		relative_position_id = NAA_Prepare_for_Naval_Warfare
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Secure_the_Pacific
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Hawaii_Campaign}
+		relative_position_id = NAA_Hawaii_Campaign
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Aquatic_Conversions
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Prepare_for_Naval_Warfare}
+		relative_position_id = NAA_Prepare_for_Naval_Warfare
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Develop_Dedicated_Aquatic_MS
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Aquatic_Conversions}
+		relative_position_id = NAA_Aquatic_Conversions
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Develop_Aquatic_MA
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = {focus = NAA_Develop_Dedicated_Aquatic_MS}
+		relative_position_id = NAA_Develop_Dedicated_Aquatic_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Assualt_On_Jaburo_development_Program
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 3
+		prerequisite = {focus = NAA_Develop_Dedicated_Aquatic_MS}
+		prerequisite = {focus = NAA_Search_For_Jaburo}
+		relative_position_id = NAA_Develop_Dedicated_Aquatic_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_A_meeting_with_the_Eschonbachs
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -253,13 +366,110 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NAA_Secure_Caracas
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1.5
+		y = 2
+		prerequisite = {focus = NAA_South_America_Landings}
+		relative_position_id = NAA_South_America_Landings
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = NAA_Push_Into_the_Amazon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {focus = NAA_South_America_Landings}
+		relative_position_id = NAA_South_America_Landings
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Search_For_Jaburo
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Push_Into_the_Amazon}
+		relative_position_id = NAA_Push_Into_the_Amazon
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Ally_Natives
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = {focus = NAA_Search_For_Jaburo}
+		relative_position_id = NAA_Search_For_Jaburo
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_Create_the_Noisy_Faries
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 1
-		y = 1.5
+		x = 2
+		y = 2
 		prerequisite = {focus = NAA_Phase_3_Operations}
 		relative_position_id = NAA_Phase_3_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Push_back_near_the_Victoria_Line
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Create_the_Noisy_Faries}
+		relative_position_id = NAA_Create_the_Noisy_Faries
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Assualt_on_Panama
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Push_back_near_the_Victoria_Line}
+		relative_position_id = NAA_Push_back_near_the_Victoria_Line
 		ai_will_do = {
 			factor = 1
 		}
@@ -272,7 +482,7 @@ focus_tree = {
 		id = NAA_Begin_develoment_of_the_Thor_Cannon
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -1
+		x = -2.5
 		y = 1.5
 		prerequisite = {focus = NAA_Phase_3_Operations}
 		relative_position_id = NAA_Phase_3_Operations

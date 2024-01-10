@@ -670,4 +670,246 @@ focus_tree = {
 		
 		}
 	}
+
+	focus = {
+		id = EAF_New_wave_of_reinforcements
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -3
+		y = 1
+		prerequisite ={ focus = EAF_Phase_4_Operations}
+		relative_position_id = EAF_Phase_4_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Begin_research_Efforts
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_New_wave_of_reinforcements }
+		relative_position_id = EAF_New_wave_of_reinforcements
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = EAF_Close_Quarters_Combat_MS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = EAF_Begin_research_Efforts }
+		relative_position_id = EAF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Specialized_Ground_Combat_MS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = EAF_Begin_research_Efforts }
+		relative_position_id = EAF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Heavy_Assualt_MS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = EAF_Specialized_Ground_Combat_MS }
+		prerequisite ={ focus = EAF_Close_Quarters_Combat_MS }
+		relative_position_id = EAF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = EAF_Next_Gen_Mainline_MS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 3
+		prerequisite ={ focus = EAF_Heavy_Assualt_MS}
+		relative_position_id = EAF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_A_way_to_end_the_war
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -3
+		y = 1
+		prerequisite ={ focus = EAF_Begin_research_Efforts }
+		relative_position_id = EAF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Astaroth_Project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = EAF_A_way_to_end_the_war }
+		relative_position_id = EAF_A_way_to_end_the_war
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Apsaras_Project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = EAF_A_way_to_end_the_war }
+		relative_position_id = EAF_A_way_to_end_the_war
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Shuddering_Mountain
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Apsaras_Project}
+		relative_position_id = EAF_Apsaras_Project
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Operation_Staircase_to_the_Moon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = EAF_Phase_4_Operations}
+		relative_position_id = EAF_Phase_4_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Alagranza_Missile_Silo
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = EAF_Phase_4_Operations}
+		relative_position_id = EAF_Phase_4_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Is_Paris_Burning?
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Alagranza_Missile_Silo}
+		relative_position_id = EAF_Alagranza_Missile_Silo
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Siphon_Resources_for_Kycillia
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 1
+		prerequisite ={ focus = EAF_Phase_4_Operations}
+		relative_position_id = EAF_Phase_4_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Keep_Large_Scale_Mining_Operations_Secret
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 2
+		prerequisite ={ focus = EAF_Siphon_Resources_for_Kycillia}
+		relative_position_id = EAF_Phase_4_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
 }

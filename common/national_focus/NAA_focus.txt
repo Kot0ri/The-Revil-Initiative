@@ -317,6 +317,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NAA_Tour_of_America
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 1
+		prerequisite = {focus = NAA_Phase_2_Operations}
+		relative_position_id = NAA_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_A_meeting_with_the_Eschonbachs
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -423,6 +439,54 @@ focus_tree = {
 		prerequisite = {focus = NAA_Icelinas_Eyes}
 		prerequisite = {focus = NAA_Garmas_Fame}
 		relative_position_id = NAA_Icelinas_Eyes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Form_the_Jaburo_Assualt_Corps.
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Royal_Marriage}
+		relative_position_id = NAA_Royal_Marriage
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Victory_Parades
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {focus = NAA_Royal_Marriage}
+		relative_position_id = NAA_Royal_Marriage
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Prepare_for_the_New_Order
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Victory_Parades}
+		relative_position_id = NAA_Victory_Parades
 		ai_will_do = {
 			factor = 1
 		}

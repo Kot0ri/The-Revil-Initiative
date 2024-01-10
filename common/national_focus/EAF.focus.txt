@@ -55,5 +55,118 @@ focus_tree = {
 		
 		}
 	}
+
+	focus = {
+		id = EAF_Phase_2_Operations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = EAF_Sieze_the_Space_Port}
+		prerequisite ={ focus = EAF_Sieze_Odessa}
+		relative_position_id = EAF_Phase_1_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Mquves_Command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -6
+		y = 1
+		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Begin_Resource_Extraction
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Mquves_Command}
+		relative_position_id = EAF_Mquves_Command
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Expand_Solium_Mining_Operations
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Begin_Resource_Extraction}
+		relative_position_id = EAF_Begin_Resource_Extraction
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
 	
+	
+	focus = {
+		id = EAF_Continue_the_Push_Westwards
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -3
+		y = 1
+		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Grind_towards_the_East
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Yuris_Defence_plans
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 1
+		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
 }

@@ -381,6 +381,22 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = NAA_Expand_naval_facilities_at_Maracaibo
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Secure_Caracas}
+		relative_position_id = NAA_Secure_Caracas
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
 	
 	focus = {
 		id = NAA_Push_Into_the_Amazon

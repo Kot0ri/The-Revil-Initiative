@@ -333,6 +333,39 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NAA_Icelinas_Eyes
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_A_meeting_with_the_Eschonbachs}
+		relative_position_id = NAA_A_meeting_with_the_Eschonbachs
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Chars_Arrival
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Icelinas_Eyes}
+		relative_position_id = NAA_Icelinas_Eyes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
 		id = NAA_Phase_3_Operations
 		icon = GFX_goal_general_meeting
 		cost = 5

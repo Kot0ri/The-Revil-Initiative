@@ -267,6 +267,134 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_Stage_1_Defense_Operation_Planning
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Yuris_Defence_plans}
+		relative_position_id = EAF_Yuris_Defence_plans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Inner_Odessa_Line
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = EAF_Stage_1_Defense_Operation_Planning}
+		relative_position_id = EAF_Yuris_Defence_plans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Western_Focus
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite ={ focus = EAF_Stage_1_Defense_Operation_Planning}
+		relative_position_id = EAF_Yuris_Defence_plans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Stage_2_Defense_Operation_Planning
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 3
+		prerequisite ={ focus = EAF_Inner_Odessa_Line}
+		relative_position_id = EAF_Yuris_Defence_plans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Secondary_Odessa_Line
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 4
+		prerequisite ={ focus = EAF_Stage_2_Defense_Operation_Planning}
+		relative_position_id = EAF_Yuris_Defence_plans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Expansion_of_Aquatic_Facilities
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 4
+		prerequisite ={ focus = EAF_Stage_2_Defense_Operation_Planning}
+		relative_position_id = EAF_Yuris_Defence_plans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Stage_3_Defense_Operation_Planning
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 5
+		prerequisite ={ focus = EAF_Secondary_Odessa_Line}
+		relative_position_id = EAF_Yuris_Defence_plans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Outer_Odessa_Line
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 6
+		prerequisite ={ focus = EAF_Stage_3_Defense_Operation_Planning}
+		relative_position_id = EAF_Yuris_Defence_plans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_Phase_3_Operations
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -276,6 +404,119 @@ focus_tree = {
 		prerequisite ={ focus = EAF_Cutoff_the_low_countries}
 		prerequisite ={ focus = EAF_Split_Iberia}
 		relative_position_id = EAF_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Blitzkreig_through_the_Middle_East
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = EAF_Phase_3_Operations}
+		relative_position_id = EAF_Phase_3_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Northern_Siege
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -5
+		y = 1
+		prerequisite ={ focus = EAF_Phase_3_Operations}
+		relative_position_id = EAF_Phase_3_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Second_Wave_of_Landings
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 3
+		prerequisite ={ focus = EAF_Phase_3_Operations}
+		relative_position_id = EAF_Phase_3_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Secure_Mumbai
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = EAF_Second_Wave_of_Landings}
+		relative_position_id = EAF_Second_Wave_of_Landings
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_March_Towards_Lhasa
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = EAF_Second_Wave_of_Landings}
+		relative_position_id = EAF_Second_Wave_of_Landings
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Bejing_Capture_Operation
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = EAF_March_Towards_Lhasa}
+		prerequisite ={ focus = EAF_Secure_Mumbai}
+		relative_position_id = EAF_Second_Wave_of_Landings
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Phase_4_Operations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 3
+		prerequisite ={ focus = EAF_Bejing_Capture_Operation}
+		relative_position_id = EAF_Second_Wave_of_Landings
 		ai_will_do = {
 			factor = 1
 		}

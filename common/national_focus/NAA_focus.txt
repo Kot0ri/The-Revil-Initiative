@@ -364,6 +364,73 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = NAA_Hunt_Down_the_Trojan_Horse
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Chars_Arrival}
+		relative_position_id = NAA_Chars_Arrival
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Garmas_Fate
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = NAA_Hunt_Down_the_Trojan_Horse}
+		relative_position_id = NAA_Hunt_Down_the_Trojan_Horse
+		mutually_exclusive = { focus = NAA_Garmas_Fame	}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Garmas_Fame
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 2
+		prerequisite = {focus = NAA_Hunt_Down_the_Trojan_Horse}
+		relative_position_id = NAA_Hunt_Down_the_Trojan_Horse
+		mutually_exclusive = { focus = NAA_Garmas_Fate	}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Royal_Marriage
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 5
+		prerequisite = {focus = NAA_Icelinas_Eyes}
+		prerequisite = {focus = NAA_Garmas_Fame}
+		relative_position_id = NAA_Icelinas_Eyes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
 
 	focus = {
 		id = NAA_Phase_3_Operations
@@ -535,6 +602,43 @@ focus_tree = {
 		y = 1.5
 		prerequisite = {focus = NAA_Phase_3_Operations}
 		relative_position_id = NAA_Phase_3_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = NAA_North_America_Focus
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		prerequisite = {focus = NAA_Garmas_Fate}
+		prerequisite = {focus = NAA_Create_the_Noisy_Faries}
+		relative_position_id = NAA_Push_back_near_the_Victoria_Line
+		mutually_exclusive = { focus = NAA_South_America_Focus}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = NAA_South_America_Focus
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		prerequisite = {focus = NAA_Garmas_Fate}
+		relative_position_id = NAA_Garmas_Fate
+		mutually_exclusive = { focus = NAA_North_America_Focus}
 		ai_will_do = {
 			factor = 1
 		}

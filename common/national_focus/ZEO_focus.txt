@@ -1398,6 +1398,23 @@ focus = {
 }
 
 focus = {
+	id = ZEO_Zeon_academy_of_arts_and_culture
+	icon = GFX_goal_generic_production
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_use_dark_and_ocean_colonies_for_civilian_use
+	prerequisite = { focus = ZEO_use_dark_and_ocean_colonies_for_civilian_use }
+}
+
+focus = {
 	id = ZEO_arrangements_with_federation_officials
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5

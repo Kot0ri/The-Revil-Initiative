@@ -1,0 +1,26 @@
+focus_tree = {
+	id = REM
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = REM
+		}
+	}
+	default = no
+
+	focus = {
+		id = NAA_Beaten_but_not_Defeated
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 20
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+}

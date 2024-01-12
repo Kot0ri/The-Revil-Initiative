@@ -11,7 +11,7 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = NAA_Beaten_but_not_Defeated
+		id = REM_Beaten_but_not_Defeated
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 20
@@ -21,6 +21,102 @@ focus_tree = {
 		}
 		completion_reward = {
 		
+		}
+	}
+
+	focus = {
+		id = REM_Battle_of_California
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = REM_Battle_of_Augusta
+		icon = GFX_goal_general_meeting
+		cost = 3
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Battle_of_California}
+		relative_position_id = REM_Battle_of_California
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = REM_Karama_Point_Meeting
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = REM_Go_Into_Hiding
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = REM_Connections_to_the_New_Side_3_Government
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Karama_Point_Meeting}
+		relative_position_id = REM_Karama_Point_Meeting
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = REM_Land_the_Midola_on_Earth
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Connections_to_the_New_Side_3_Government}
+		relative_position_id = REM_Connections_to_the_New_Side_3_Government
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
 		}
 	}
 }

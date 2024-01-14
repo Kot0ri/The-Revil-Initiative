@@ -119,4 +119,20 @@ focus_tree = {
 		add_research_slot = 1
 		}
 	}
+
+	focus = {
+		id = REM_Work_On_Centralizing_Command
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Land_the_Midola_on_Earth}
+		relative_position_id = REM_Land_the_Midola_on_Earth
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
 }

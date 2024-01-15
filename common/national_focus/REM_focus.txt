@@ -25,6 +25,88 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REM_Zeon_8th_Army
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 5
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = REM_Fortification_Efforts
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_Zeon_8th_Army}
+		relative_position_id = REM_Zeon_8th_Army
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Pull_back_past_the_Urals
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Zeon_8th_Army}
+		relative_position_id = REM_Zeon_8th_Army
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Logistics_Efforts
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = REM_Pull_back_past_the_Urals}
+		relative_position_id = REM_Zeon_8th_Army
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Scrounge_for_Winter_Equipment
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 3
+		prerequisite = {focus = REM_Logistics_Efforts}
+		relative_position_id = REM_Zeon_8th_Army
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
 		id = REM_Battle_of_California
 		icon = GFX_goal_general_meeting
 		cost = 1
@@ -36,7 +118,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_research_slot = 1
+		
 		}
 	}
 
@@ -52,7 +134,71 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_research_slot = 1
+		
+		}
+	}
+
+	focus = {
+		id = REM_Utilize_new_prospects
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -4
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Loot_the_world
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Utilize_new_prospects}
+		relative_position_id = REM_Utilize_new_prospects
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_work_with_crimminial_organizations
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Utilize_new_prospects}
+		relative_position_id = REM_Utilize_new_prospects
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_connections_with_federation_officals
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 2
+		prerequisite = {focus = REM_work_with_crimminial_organizations}
+		relative_position_id = REM_Utilize_new_prospects
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
 		}
 	}
 
@@ -68,7 +214,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_research_slot = 1
+		
 		}
 	}
 
@@ -84,7 +230,55 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_research_slot = 1
+		
+		}
+	}
+
+	focus = {
+		id = REM_Deep_Sea_Bases
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Go_Into_Hiding}
+		relative_position_id = REM_Go_Into_Hiding
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Use_Wreckage
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Deep_Sea_Bases}
+		relative_position_id = REM_Deep_Sea_Bases
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_work_with_natives
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 2
+		prerequisite = {focus = REM_Use_Wreckage}
+		relative_position_id = REM_Use_Wreckage
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
 		}
 	}
 
@@ -100,7 +294,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_research_slot = 1
+		
 		}
 	}
 
@@ -111,12 +305,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		prerequisite = {focus = REM_Connections_to_the_New_Side_3_Government}
+		prerequisite = {focus = REM_Deep_Sea_Bases}
 		relative_position_id = REM_Connections_to_the_New_Side_3_Government
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-		add_research_slot = 1
+		
 		}
 	}
 
@@ -132,7 +327,71 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		add_research_slot = 1
+		
+		}
+	}
+
+	focus = {
+		id = REM_Kleiber_takes_charge
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Work_On_Centralizing_Command}
+		relative_position_id = REM_Work_On_Centralizing_Command
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Deadlock_Sector_reinforcement
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Kleiber_takes_charge}
+		relative_position_id = REM_Kleiber_takes_charge
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_Delaz_Plan
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_Work_On_Centralizing_Command}
+		relative_position_id = REM_Work_On_Centralizing_Command
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_Build_up_the_Garden_of_Thorns
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Delaz_Plan}
+		relative_position_id = REM_Delaz_Plan
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
 		}
 	}
 }

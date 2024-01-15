@@ -283,6 +283,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REM_Hells_Gate
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_work_with_natives}
+		relative_position_id = REM_work_with_natives
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_joint_planning_efforts
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_work_with_natives}
+		relative_position_id = REM_work_with_natives
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = REM_Connections_to_the_New_Side_3_Government
 		icon = GFX_goal_general_meeting
 		cost = 1
@@ -348,6 +380,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REM_Quest_to_reclaim_the_psycho_zakus
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Kleiber_takes_charge}
+		relative_position_id = REM_Kleiber_takes_charge
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Send_the_Living_Dead_into_the_SSA
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = REM_Quest_to_reclaim_the_psycho_zakus}
+		relative_position_id = REM_Kleiber_takes_charge
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = REM_Deadlock_Sector_reinforcement
 		icon = GFX_goal_general_meeting
 		cost = 1
@@ -355,6 +419,22 @@ focus_tree = {
 		y = 1
 		prerequisite = {focus = REM_Kleiber_takes_charge}
 		relative_position_id = REM_Kleiber_takes_charge
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_study_the_full_armour_gundam
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Deadlock_Sector_reinforcement}
+		relative_position_id = REM_Deadlock_Sector_reinforcement
 		ai_will_do = {
 			factor = 1
 		}

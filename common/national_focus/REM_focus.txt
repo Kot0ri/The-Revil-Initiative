@@ -25,6 +25,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REM_Mass_Retreat
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 10
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = REM_Zeon_8th_Army
 		icon = GFX_goal_general_meeting
 		cost = 1
@@ -49,6 +65,22 @@ focus_tree = {
 		y = 1
 		prerequisite = {focus = REM_Zeon_8th_Army}
 		relative_position_id = REM_Zeon_8th_Army
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Send_Prototypes_into_the_field
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Fortification_Efforts}
+		relative_position_id = REM_Fortification_Efforts
 		ai_will_do = {
 			factor = 1
 		}

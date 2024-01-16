@@ -1015,13 +1015,47 @@ available = {
 	}
 
 	focus = {
-		id = NAA_Weapons_Developmetn_Project
+		id = NAA_Weapons_Development_Project
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 4
 		y = 1
 		prerequisite = {focus = NAA_Declare_Reborn_Zeon}
 		relative_position_id = NAA_Declare_Reborn_Zeon
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Imporve_Zaku_Models
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = {focus = NAA_Weapons_Development_Project}
+		relative_position_id = NAA_Weapons_Development_Project
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Big_Zam_Production
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {focus = NAA_Weapons_Development_Project}
+		relative_position_id = NAA_Weapons_Development_Project
 	
 		ai_will_do = {
 			factor = 1

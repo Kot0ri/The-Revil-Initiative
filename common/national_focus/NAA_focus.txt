@@ -951,7 +951,7 @@ available = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			set_cosmetic_tag = North_America_Occupation_Force
 		}
 	}
 
@@ -1345,7 +1345,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		set_cosmetic_tag = Reborn_Zeon
 		}
 	}
 
@@ -1383,7 +1383,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		create_faction = Zeon_Reformation_Leauge
 		}
 	}
 
@@ -1400,7 +1400,12 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		declare_war_on = {
+			target = ZEO
+		}
+		declare_war_on = {
+			target = GRA
+		}
 		}
 	}
 

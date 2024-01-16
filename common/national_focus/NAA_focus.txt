@@ -441,6 +441,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = NAA_Garma_is_dead 
+		}
 		completion_reward = {
 		
 		}
@@ -458,6 +461,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+available = {
+	NOT = { has_country_flag = NAA_Garma_is_dead }
+}
+	
 		completion_reward = {
 		
 		}
@@ -943,6 +950,48 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_North_America_Occupation_force
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 35
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_country_flag = NAA_Garma_is_dead }
+		}
+		allow_branch = {
+			has_country_flag = NNA_Zeon_Victory
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Declare_Reborn_Zeon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 50
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = { has_country_flag = NAA_Garma_is_dead }
+		}
+		allow_branch = {
+			has_country_flag = NNA_Zeon_Civil_War
+		}
+		
 		completion_reward = {
 		
 		}

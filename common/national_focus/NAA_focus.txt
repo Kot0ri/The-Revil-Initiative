@@ -977,6 +977,379 @@ available = {
 	}
 
 	focus = {
+		id = NAA_Secure_the_Keypoints
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_North_America_Occupation_force}
+		relative_position_id = NAA_North_America_Occupation_force
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+	id = NAA_hunt_down_rebel_factions
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {focus = NAA_Secure_the_Keypoints}
+	relative_position_id = NAA_Secure_the_Keypoints
+
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+	
+
+focus = {
+	id = NAA_secure_transportation_routes
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {focus = NAA_hunt_down_rebel_factions}
+	relative_position_id = NAA_hunt_down_rebel_factions
+
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = NAA_re-education_campaign
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {focus = NAA_secure_transportation_routes}
+	relative_position_id = NAA_secure_transportation_routes
+
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+	focus = {
+		id = NAA_Reinforce_ties_with_the_elites
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = {focus = NAA_North_America_Occupation_force}
+		relative_position_id = NAA_North_America_Occupation_force
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_keep_the_flow_of_money_going
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Reinforce_ties_with_the_elites}
+		relative_position_id = NAA_Reinforce_ties_with_the_elites
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_provide_suitable_accomidations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_keep_the_flow_of_money_going}
+		relative_position_id = NAA_keep_the_flow_of_money_going
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_renew_the_media_camapaign
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_provide_suitable_accomidations}
+		relative_position_id = NAA_provide_suitable_accomidations
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_hero_of_the_people
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {focus = NAA_renew_the_media_camapaign}
+		prerequisite = {focus = NAA_re-education_campaign}
+		relative_position_id = NAA_renew_the_media_camapaign
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_begin_reconstruction_efforts
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {focus = NAA_North_America_Occupation_force}
+		relative_position_id = NAA_North_America_Occupation_force
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_focus_on_the_civilian_sector
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_begin_reconstruction_efforts}
+		relative_position_id = NAA_begin_reconstruction_efforts
+		mutually_exclusive = { focus = NAA_focus_on_the_military_sector}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_focus_on_the_military_sector
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {focus = NAA_begin_reconstruction_efforts}
+		relative_position_id = NAA_begin_reconstruction_efforts
+		mutually_exclusive = { focus = NAA_focus_on_the_civilian_sector}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_utilize_local_companies
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {focus = NAA_focus_on_the_military_sector focus = NAA_focus_on_the_civilian_sector}
+		relative_position_id = NAA_begin_reconstruction_efforts
+		mutually_exclusive = { focus = NAA_utilize_zeon_companies}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_utilize_zeon_companies
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite = {focus = NAA_focus_on_the_military_sector focus = NAA_focus_on_the_civilian_sector}
+		relative_position_id = NAA_begin_reconstruction_efforts
+		mutually_exclusive = { focus = NAA_utilize_local_companies}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_zeonic_acquisition_of_augusta
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		prerequisite = {focus = NAA_utilize_zeon_companies}
+		relative_position_id = NAA_utilize_zeon_companies
+		available = {
+			has_completed_focus = NAA_focus_on_the_military_sector
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_setup_MIP_facilities
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_zeonic_acquisition_of_augusta}
+		relative_position_id = NAA_zeonic_acquisition_of_augusta
+		available = {
+			has_completed_focus = NAA_focus_on_the_military_sector
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_increase_funding_to_Oakland
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 2
+		prerequisite = {focus = NAA_utilize_local_companies}
+		relative_position_id = NAA_utilize_local_companies
+		available = {
+			has_completed_focus = NAA_focus_on_the_military_sector
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_invest_in_augusta
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_increase_funding_to_Oakland}
+		relative_position_id = NAA_increase_funding_to_Oakland
+		available = {
+			has_completed_focus = NAA_focus_on_the_military_sector
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_seek_to_lower_unemployment
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		prerequisite = {focus = NAA_utilize_local_companies focus = NAA_utilize_zeon_companies }
+		relative_position_id = NAA_utilize_local_companies
+		available = {
+			has_completed_focus = NAA_focus_on_the_civilian_sector
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_rebrand_the_american_dream
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_seek_to_lower_unemployment }
+		relative_position_id = NAA_seek_to_lower_unemployment
+		available = {
+			has_completed_focus = NAA_focus_on_the_civilian_sector
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_estahblish_a_dynamic_economy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_rebrand_the_american_dream }
+		relative_position_id = NAA_rebrand_the_american_dream
+		available = {
+			has_completed_focus = NAA_focus_on_the_civilian_sector
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_Declare_Reborn_Zeon
 		icon = GFX_goal_general_meeting
 		cost = 5

@@ -1388,6 +1388,23 @@ focus = {
 	}
 
 	focus = {
+		id = NAA_Solomons_response
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Reach_Out_to_Dozle}
+		relative_position_id = NAA_Reach_Out_to_Dozle
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_True_Heir_of_the_Zabi
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -1408,6 +1425,25 @@ focus = {
 		}
 		}
 	}
+
+	focus = {
+		id = NAA_Send_an_Ultimatium_to_MQuve
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_True_Heir_of_the_Zabi}
+		relative_position_id = NAA_True_Heir_of_the_Zabi
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
 
 	focus = {
 		id = NAA_Weapons_Development_Project

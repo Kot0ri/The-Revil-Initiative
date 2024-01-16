@@ -1422,7 +1422,7 @@ focus = {
 	}
 
 	focus = {
-		id = NAA_Imporve_Zaku_Models
+		id = NAA_Improve_Zaku_Models
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -1
@@ -1444,8 +1444,8 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		prerequisite = {focus = NAA_Imporve_Zaku_Models}
-		relative_position_id = NAA_Imporve_Zaku_Models
+		prerequisite = {focus = NAA_Improve_Zaku_Models}
+		relative_position_id = NAA_Improve_Zaku_Models
 		mutually_exclusive = {	focus = NAA_Develop_Improved_Big_Zams }
 		ai_will_do = {
 			factor = 1

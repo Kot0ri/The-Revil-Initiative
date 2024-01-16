@@ -1512,6 +1512,38 @@ focus = {
 	}
 
 	focus = {
+		id = NAA_Begin_Testing_Experimental_Technology
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Focus_On_Ace_Use_MS}
+		relative_position_id = NAA_Focus_On_Ace_Use_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Begin_to_phase_out_the_Zaku
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Begin_Testing_Experimental_Technology}
+		relative_position_id = NAA_Begin_Testing_Experimental_Technology
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_Big_Zam_Production
 		icon = GFX_goal_general_meeting
 		cost = 5

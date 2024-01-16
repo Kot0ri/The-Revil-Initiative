@@ -7,7 +7,8 @@ state=
 	state_category = small_island
 	
 	history = {
-		owner = ITA
+		owner = EUF
+		add_core_of = EUF
 		victory_points = {
 			10007 1 
 		}
@@ -21,11 +22,6 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = GRE
-
-		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
-		set_state_name = STATE_164_ITA
-		set_province_name = { id = 10007 name = VICTORY_POINTS_10007_ITA }
 	}
 
 	provinces = {

@@ -1,5 +1,5 @@
 capital = 
-oob = ""
+oob = "EAF"
 
 # Starting tech
 set_technology = {
@@ -104,6 +104,9 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
+#advisor
+recruit_character = EAF_jane_contie
 
 78.1.1 = {
 	create_equipment_variant = {

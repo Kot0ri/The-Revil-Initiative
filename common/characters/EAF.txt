@@ -1,0 +1,56 @@
+characters={
+	#Leaders
+	EAF_mquve={
+	name="M'Quve"
+	portraits={
+		civilian={
+			large="gfx/leaders/EAF/mquve.dds"
+		}
+		army={
+			large="gfx/leaders/EAF/mquve.dds"
+		}
+	}
+	country_leader={
+		ideology=military_administration
+		traits={mquve_trait}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits={zabi_party}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+
+	#advisor
+	EAF_jane_contie={
+		name="Jane Contie"
+		portraits={
+			army={
+				small=GFX_idea_jane_contie_pa
+			}
+		}
+	}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 10
+			idea_token = pierre
+			allowed = {
+				original_tag = EAF
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+}
+}

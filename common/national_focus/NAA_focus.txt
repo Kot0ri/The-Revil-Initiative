@@ -1015,6 +1015,23 @@ available = {
 	}
 
 	focus = {
+		id = NAA_True_Heir_of_the_Zabi
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = {focus = NAA_Declare_Reborn_Zeon}
+		relative_position_id = NAA_Declare_Reborn_Zeon
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_Weapons_Development_Project
 		icon = GFX_goal_general_meeting
 		cost = 5

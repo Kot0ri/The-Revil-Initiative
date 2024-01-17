@@ -25,6 +25,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NAA_form_the_midnight_fenrir_corps.
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		prerequisite = {focus = NAA_Phase_1_Operations}
+		relative_position_id = NAA_Phase_1_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_The_Man_Who_Pointed
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -292,6 +308,21 @@ focus_tree = {
 		y = 1
 		prerequisite = {focus = NAA_Develop_Dedicated_Aquatic_MS}
 		relative_position_id = NAA_Develop_Dedicated_Aquatic_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+	focus = {
+		id = NAA_Contend_with_the_Federation_navy
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Develop_Aquatic_MA}
+		relative_position_id = NAA_Develop_Aquatic_MA
 		ai_will_do = {
 			factor = 1
 		}

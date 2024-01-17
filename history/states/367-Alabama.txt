@@ -7,7 +7,8 @@ state={
 	state_category = city
 
 	history={
-		owner = USA
+		owner = EFS
+		add_core_of = EFS
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 3
@@ -22,12 +23,6 @@ state={
 		victory_points = {
 			12735 1 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
-
 	}
 
 	provinces={

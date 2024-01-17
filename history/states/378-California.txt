@@ -12,7 +12,8 @@ state={
 	}
 
 	history={
-		owner = NAA
+		owner = EFS
+		add_core_of = EFS
 	
 		buildings = {
 			infrastructure = 3 #was: 6
@@ -33,7 +34,6 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = USA
 		victory_points = {
 			9814 30
 		}
@@ -45,11 +45,6 @@ state={
 		}
 		victory_points = {
 			9713 1 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 7
-			}
 		}
 	}
 

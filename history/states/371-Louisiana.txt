@@ -11,7 +11,8 @@ state={
 	}
 
 	history={
-		owner = USA
+		owner = EFS
+		add_core_of = EFS
 		buildings = {
 			infrastructure = 3 #was: 5
 			industrial_complex = 2
@@ -21,7 +22,6 @@ state={
 
 			}
 		}
-		add_core_of = USA
 		victory_points = {
 			7552 10 
 		}

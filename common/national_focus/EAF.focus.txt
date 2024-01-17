@@ -121,6 +121,21 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = EAF_Meeting_with_Kycilia
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Expand_Solium_Mining_Operations}
+		relative_position_id = EAF_Expand_Solium_Mining_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
 	
 	focus = {
 		id = EAF_Continue_the_Push_Westwards
@@ -494,6 +509,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_Raise_Support_amoungst_locals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Provide_aid_to_Sepratists}
+		relative_position_id = EAF_Provide_aid_to_Sepratists
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Push_to_Dakar
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_Raise_Support_amoungst_locals}
+		relative_position_id = EAF_Raise_Support_amoungst_locals
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_Northern_Siege
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -542,7 +589,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = EAF_Cuttoff_the_Artic_Circle
+		id = EAF_Cutoff_the_Artic_Circle
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 0
@@ -580,6 +627,23 @@ focus_tree = {
 		x = 0
 		y = 1
 		prerequisite ={ focus = EAF_Invade_Britania}
+		relative_position_id = EAF_Invade_Britania
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Contest_the_North_Atlantic
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 2
+		prerequisite ={ focus = EAF_Two_Progned_Attack}
+		prerequisite ={ focus = EAF_Cutoff_the_Artic_Circle}
 		relative_position_id = EAF_Invade_Britania
 		ai_will_do = {
 			factor = 1
@@ -904,6 +968,22 @@ focus_tree = {
 		x = 3
 		y = 2
 		prerequisite ={ focus = EAF_Siphon_Resources_for_Kycillia}
+		relative_position_id = EAF_Phase_4_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Defense_of_Odessa
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 5
+		y = 1
+		prerequisite ={ focus = EAF_Phase_4_Operations}
 		relative_position_id = EAF_Phase_4_Operations
 		ai_will_do = {
 			factor = 1

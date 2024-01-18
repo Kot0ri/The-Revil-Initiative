@@ -501,6 +501,48 @@ AXS_gottn_goh={
 	}
 }
 
+#Royal Guard
+
+AXS_Irina={
+	name="Irina"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/Irina.dds"
+		}
+	}
+	corps_commander={
+		traits={Royalguard}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_Abraham_Washington={
+	name="Abrham Washington"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/Abrham_Washington.dds"
+		}
+	}
+	corps_commander={
+		traits={Royalguard}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
 AXS_Alfred_von_Scharenberg={
 	name="Alfred von Scharenberg"
 	portraits={

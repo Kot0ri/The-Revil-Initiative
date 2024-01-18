@@ -1057,11 +1057,29 @@ focus = {
 }
 
 focus = {
+	id = AXS_form_a_royal_guard
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	recruit_character = AXS_Irina
+	recruit_character = AXS_Alfred_von_Scharenberg
+	recruit_character = AXS_Abraham_Washington
+	}
+	relative_position_id = AXS_coronation_of_mineva_zabi
+	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+}
+
+focus = {
 	id = AXS_gihren_loyalists
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 3
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -1079,7 +1097,7 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -1097,7 +1115,7 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = -3
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}

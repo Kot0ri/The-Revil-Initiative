@@ -73,6 +73,9 @@ leader_traits = {
 			recon_factor = 0.4
 			modifier_army_sub_unit_category_all_mobilesuit_mobilearmor_speed_factor = 0.5
 			modifier_army_sub_unit_category_all_mobilesuit_mobilearmor_attack_factor = 0.3
+			army_attack_speed_factor = 0.3
+			naval_invasion_prep_speed = -0.3
+			naval_invasion_capacity = 0.3
 		}
 		enable_ability = five_ship_jump
 		new_commander_weight = {

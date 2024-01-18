@@ -37,11 +37,11 @@ AXS_char_aznable={
 	}
 	country_leader={
 		ideology= social_democracy
-		traits={well_respected hero_of_the_independence_war popular_icon vanguishier_of_the_white_devil}
+		traits={well_respected }
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-		traits = { akai_suisei newtype1 }
+		traits = { akai_suisei pilot newtype1 hero_of_the_independence_war popular_icon vanguishier_of_the_white_devil}
 		skill = 6
 		attack_skill = 8
 		defense_skill = 5
@@ -63,11 +63,11 @@ AXS_haman_karn={
 	}
 	country_leader={
 		ideology= oligarchy
-		traits={ghost_of_zeon}
+		traits={}
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-		traits = { ghost_of_zeon newtype pilot}
+		traits = { ghost_of_zeon newtype2 pilot}
 		skill = 6
 		attack_skill = 6
 		defense_skill = 5

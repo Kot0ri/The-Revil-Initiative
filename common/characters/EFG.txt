@@ -9,7 +9,7 @@ characters = {
 		}
 		country_leader={
 			ideology= republicanism
-			traits={}
+			traits={chairman_of_the_Settlement_Issues_Council}
 			expire="1000.1.1.1"
 		}
 	}
@@ -57,7 +57,7 @@ characters = {
 	}
 
 	#advisors
-	EFS_adenauer_paraya = {
+	EFG_adenauer_paraya = {
 		name = "Adenauer Paraya"
 		portraits={
 			army={
@@ -68,11 +68,31 @@ characters = {
 			slot = political_advisor
 			idea_token = adenauer_paraya
 			allowed = {
-				original_tag = EFS
+				original_tag = EFG
 			}
-			traits = {
-				adenauer_paraya_trait
+			traits = { Vice_Foreign_Minister }
+			modifier = {
 			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	EFG_john_bauer = {
+		name = "John Bauer"
+		portraits={
+			army={
+				small="GFX_idea_adenauer_paraya"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = john_bauer
+			allowed = {
+				original_tag = EFG
+			}
+			traits = { Finance_Minister }
 			modifier = {
 			}
 			ai_will_do = {

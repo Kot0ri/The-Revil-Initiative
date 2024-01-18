@@ -22,7 +22,7 @@ leader_traits = {
 #Zane Trait
 	industrial_tycoon = {
 	sprite = 10
-	random = yes
+	random = no
 	production_speed_infrastructure_factor = 0.1
 	production_speed_rail_way_factor = 0.1
 	production_speed_arms_factory_factor = 0.1
@@ -31,11 +31,36 @@ leader_traits = {
 #EU Trait
 	parlimentary_system = {
 	sprite = 10
-	random = yes
+	random = no
 	political_advisor_cost_factor = -0.5
 	political_power_gain = 0.2
 	stability_factor = -0.1
 	}
+
+#Marcenas
+	chairman_of_the_Settlement_Issues_Council = {
+	sprite = 10
+	random = no
+	political_power_gain = 0.2
+	party_popularity_stability_factor = 0.15
+	}
+
+#adenauer paraya
+Vice_Foreign_Minister = {
+	random = no
+	sprite = 13
+	improve_relations_maintain_cost_factor = -0.1
+	enemy_justify_war_goal_time = -0.3
+	trade_opinion_factor = 0.2
+}
+
+#john bauer
+Finance_Minister = {
+	random = no
+	sprite = 13
+	political_power_gain = 0.05
+	consumer_goods_factor = -0.15
+}
 
 #Gihren?
 	iq240 = {
@@ -229,12 +254,7 @@ leader_traits = {
 		earthsupremacy_drift = 0.1
 		drift_defence_factor = 0.1
 	}
-	adenauer_paraya_trait = {
-		random = no
-		sprite = 13
-		improve_relations_maintain_cost_factor = -0.1
-		enemy_justify_war_goal_time = -0.3
-	}
+	
 	anaheim_electronics_ms_trait = {
 	}
 	augusta_lab_ms_trait = {

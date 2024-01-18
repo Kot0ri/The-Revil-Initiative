@@ -1340,7 +1340,7 @@ focus = {
 }
 
 focus = {
-	id = AXS_natalie_incident
+	id = AXS_Axis_civil_war
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 0
@@ -1355,4 +1355,81 @@ focus = {
 	prerequisite = {focus = AXS_emissary_from_zeon}
 }
 
+focus = {
+	id = AXS_natalie_incident
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_Axis_civil_war
+	prerequisite = {focus = AXS_Axis_civil_war}
+}
+
+focus = {
+	id = AXS_Purge_the_hardliners
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_natalie_incident
+	prerequisite = {focus = AXS_natalie_incident}
+}
+
+focus = {
+	id = AXS_Mission_to_the_Earthsphere
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_Purge_the_hardliners
+	prerequisite = {focus = AXS_Purge_the_hardliners}
+}
+focus = {
+	id = AXS_Formation_of_the_AEUG
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_Mission_to_the_Earthsphere
+	prerequisite = {focus = AXS_Mission_to_the_Earthsphere}
+}
+focus = {
+	id = AXS_Secure_Authority
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_Mission_to_the_Earthsphere
+	prerequisite = {focus = AXS_Mission_to_the_Earthsphere}
+}
 }

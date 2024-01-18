@@ -1,4 +1,31 @@
 leader_traits = {
+	hero_of_the_independence_war = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			surrender_limit = 2
+			max_commander_army_size = 4
+			max_army_group_size = 2
+			army_attack_against_major_factor = 0.5
+		}
+	}
+	popular_icon = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			political_power_gain = 0.1
+		}
+	}
+
+	vanguishier_of_the_white_devil = {
+		type = corps_commander
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			breakthrough_bonus_against = 0.5
+			army_defence_against_major_factor = 0.3
+		}
+	}
+
 	garma_zabi_trait_fm = {
 		type = field_marshal
 		trait_type = personality_trait

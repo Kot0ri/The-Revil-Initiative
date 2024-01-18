@@ -41,7 +41,7 @@ AXS_char_aznable={
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-		traits = { akai_suisei pilot newtype1 hero_of_the_independence_war popular_icon vanguishier_of_the_white_devil}
+		traits = { akai_suisei pilot newtype1 hero_of_the_independence_war popular_icon vanguishier_of_the_white_devil deikun_party}
 		skill = 6
 		attack_skill = 8
 		defense_skill = 5
@@ -67,7 +67,7 @@ AXS_haman_karn={
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-		traits = { ghost_of_zeon newtype2 pilot}
+		traits = { ghost_of_zeon newtype2 pilot karn_party}
 		skill = 6
 		attack_skill = 6
 		defense_skill = 5
@@ -88,10 +88,11 @@ AXS_garma_zabi={
 	}
 	country_leader={
 		ideology= aristocracy
-		traits={hero_of_the_independence_war popular_icon heir_zabi_family}
+		traits={}
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
+		traits = {hero_of_the_independence_war popular_icon heir_zabi_family}
 		skill = 5
 		attack_skill = 4
 		defense_skill = 3
@@ -106,6 +107,7 @@ AXS_mineva_zabi={
 	portraits={
 		civilian={
 			large="gfx/leaders/AXS/Mineva_Lao_Zabi.dds"
+		}
 		army={
 			large="gfx/leaders/AXS/Mineva_Lao_Zabi.dds"
 		}
@@ -116,7 +118,7 @@ AXS_mineva_zabi={
 		expire="1000.1.1.1"
 	}
 }
-}
+
 
 AXS_gihren_zabi={
 	name="Gihren Zabi"
@@ -154,7 +156,7 @@ AXS_kycilia_zabi={
 	}
 	country_leader={
 		ideology= oligarchy
-		traits={bitter_loser technology_supremacist}
+		traits={bitter_loser technology_supremacist zabi_party}
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
@@ -171,13 +173,14 @@ AXS_glemy_zabi={
 	portraits={
 		civilian={
 			large="gfx/leaders/AXS/Glemy_Zabi.dds"
+		}
 		army={
 			large="gfx/leaders/AXS/Glemy_Zabi.dds"
 		}
 	}
 	country_leader={
 		ideology= aristocracy
-		traits={heir_zabi_family}
+		traits={heir_zabi_family zabi_party}
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
@@ -188,7 +191,7 @@ AXS_glemy_zabi={
 		logistics_skill = 3
 	}
 }
-}
+
 
 AXS_glemy_toto={
 	name="Glemy Toto"
@@ -744,5 +747,4 @@ AXS_weber={
 			}
 		}
 	}
-}
 }

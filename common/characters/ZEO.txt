@@ -153,10 +153,6 @@ ZEO_cecilia_irene = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 2
-				has_completed_focus = zeon_repression_of_deikun
-			}
 		}
 	}
 	country_leader={
@@ -178,7 +174,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		field_marshal={
-			traits={}
+			traits={ deikun_party anti_zabi_party}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -321,7 +317,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		corps_commander={
-			traits={pilot}
+			traits={pilot deikun_party}
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -341,7 +337,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		corps_commander={
-			traits={pilot}
+			traits={pilot deikun_party}
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -361,7 +357,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		corps_commander={
-			traits={pilot}
+			traits={pilot deikun_party}
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -381,7 +377,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		corps_commander={
-			traits={newtype1 pilot}
+			traits={newtype1 pilot deikun_party}
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -441,7 +437,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		corps_commander={
-			traits={}
+			traits={deikun_party}
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -481,7 +477,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		corps_commander={
-			traits={poltically_connected zabi_party}
+			traits={ politically_connected zabi_party}
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -501,7 +497,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		corps_commander={
-			traits={poltically_connected zabi_party}
+			traits={politically_connected zabi_party}
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -562,7 +558,7 @@ ZEO_cecilia_irene = {
 		}
 	}
 	navy_leader={
-		traits={}
+		traits={politically_connected}
 		skill=1
 		attack_skill=1
 		defense_skill=1

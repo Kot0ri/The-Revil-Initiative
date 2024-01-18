@@ -128,7 +128,7 @@ characters = {
 			}
 		}
 		field_marshal={
-			traits={polictcally_connected }
+			traits={ politically_connected zabi_party }
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -148,7 +148,7 @@ characters = {
 			}
 		}
 		field_marshal={
-			traits={ old_guard organizer }
+			traits={ old_guard organizer zabi_party}
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -170,7 +170,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ zabi_party pilot }
+			traits={ zabi_party pilot Royalguard}
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -209,7 +209,7 @@ ABQ_stream={
 		}
 	}
 	corps_commander={
-		traits={ pilot }
+		traits={ pilot Royalguard zabi_party}
 		skill=2
 		attack_skill=2
 		defense_skill=2
@@ -229,7 +229,7 @@ ABQ_zemela={
 		}
 	}
 	corps_commander={
-		traits={ pilot }
+		traits={ pilot Royalguard zabi_party}
 		skill=1
 		attack_skill=1
 		defense_skill=1
@@ -249,7 +249,7 @@ ABQ_vermillion={
 		}
 	}
 	corps_commander={
-		traits={ pilot }
+		traits={ pilot Royalguard zabi_party}
 		skill=1
 		attack_skill=1
 		defense_skill=1
@@ -553,7 +553,7 @@ ABQ_jirom={
 		}
 	}
 	navy_leader={
-		traits={old_guard}
+		traits={old_guard zabi_party}
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -574,7 +574,7 @@ ABQ_weigelman={
 		}
 	}
 	navy_leader={
-		traits={old_guard}
+		traits={old_guard zabi_party}
 		skill=3
 		attack_skill=3
 		defense_skill=3

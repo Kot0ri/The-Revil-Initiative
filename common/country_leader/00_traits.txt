@@ -41,7 +41,7 @@ leader_traits = {
 	chairman_of_the_Settlement_Issues_Council = {
 	sprite = 10
 	random = no
-	political_power_gain = 0.2
+	political_power_gain = 0.15
 	party_popularity_stability_factor = 0.15
 	}
 
@@ -49,9 +49,25 @@ leader_traits = {
 	head_of_earthnoid_supremacism = {
 		sprite = 10
 		random = no
-		political_power_gain = 0.02
+		political_power_gain = 0.05
 		supremacist_drift = 0.05
 		recruitable_population_factor = 0.05
+		}
+
+#Gopp
+Chairman_of_the_Earth_Federation_Council  = {
+	sprite = 10
+	random = no
+	political_power_gain = 0.2
+	supremacist_drift = 0.01
+	recruitable_population_factor = 0.02
+	party_popularity_stability_factor = 0.1
+	}
+
+Mole_of_Jaburo  = {
+		sprite = 10
+		random = no
+		research_speed_factor = -0.15
 		}
 
 

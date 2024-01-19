@@ -1,5 +1,41 @@
 characters = {
 #Leaders
+
+EFG_council={
+	name="Earth Federation Council"
+	portraits={
+		civilian={
+			large= "gfx/leaders/EFG/Gopp.dds"
+		}
+	}
+	country_leader={
+		ideology= absolute_democracy
+		traits={}
+		expire="1000.1.1.1"
+	}
+}
+
+EFG_gopp={
+	name="Gopp"
+	portraits={
+		civilian={
+			large= "gfx/leaders/EFG/Gopp.dds"
+		}
+	}
+	country_leader={
+		ideology= earthnoid_supremacist
+		traits={Chairman_of_the_Earth_Federation_Council Mole_of_Jaburo}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+
 	EFG_ronan_marcenas={
 		name="Ronan Marcenas"
 		portraits={

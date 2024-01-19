@@ -131,7 +131,6 @@ add_to_faction = AFZ
 add_to_faction = EUF
 add_to_faction = SI1
 add_to_faction = SI2
-add_to_faction = SI3
 add_to_faction = SI4
 add_to_faction = SI5
 add_to_faction = SI6
@@ -164,7 +163,7 @@ create_equipment_variant = {
 		fixed_ship_secondaries_slot = space_secondaries_1
 		fixed_ship_engine_slot = light_space_engine_1
 	}
-	obsolete = no
+	
 }
 create_equipment_variant = {
 	name = "Magellan Class"
@@ -179,7 +178,7 @@ create_equipment_variant = {
     mid_1_custom_slot = ship_anti_air_1
     mid_2_custom_slot = space_secondaries_1
 	}
-	obsolete = no
+	
 }
 
 #Leaders

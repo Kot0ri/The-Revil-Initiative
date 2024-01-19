@@ -45,6 +45,16 @@ leader_traits = {
 	party_popularity_stability_factor = 0.15
 	}
 
+#Oxner
+	head_of_earthnoid_supremacism = {
+		sprite = 10
+		random = no
+		political_power_gain = 0.02
+		supremacist_drift = 0.05
+		recruitable_population_factor = 0.05
+		}
+
+
 #adenauer paraya
 Vice_Foreign_Minister = {
 	random = no
@@ -62,7 +72,7 @@ Finance_Minister = {
 	consumer_goods_factor = -0.15
 }
 
-#Gihren?
+#Gihren
 	iq240 = {
 		random = no
 		max_planning = 0.2
@@ -75,6 +85,16 @@ Finance_Minister = {
 		army_core_defence_factor = 0.1
 		surrender_limit = 0.1
 	}
+
+#Icelina
+heir_of_the_eschonbach_family = {
+		random = no
+		compliance_gain = 0.2
+		consumer_goods_factor = -0.05
+	}
+
+#Casval
+
 	kings_return = {
 		random = no
 		stability_factor = 0.15
@@ -82,6 +102,15 @@ Finance_Minister = {
 		drift_defence_factor = 0.3
 		opinion_gain_monthly_same_ideology_factor = 0.15
 	}
+
+#engeist
+Vice_President_of_Colony_Public_Corporation = {
+	random = no
+	monthly_population = 0.02
+	civilian_factory_use = -0.05
+	intel_network_gain = -0.2
+}
+
 	kycilia_org = {
 		random = no
 		high_command_cost_factor = -0.2

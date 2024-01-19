@@ -1,7 +1,7 @@
 characters = {
 #Leaders
-	EFG_ronan_marcena={
-		name="Ronan Marcena"
+	EFG_ronan_marcenas={
+		name="Ronan Marcenas"
 		portraits={
 			civilian={
 				large= "gfx/leaders/EFG/Ronan_Marcena.dds"
@@ -11,6 +11,49 @@ characters = {
 			ideology= republicanism
 			traits={chairman_of_the_Settlement_Issues_Council}
 			expire="1000.1.1.1"
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = EFG_ronan_marcenas
+			allowed = {
+				original_tag = EFG
+				is_country_leader = no
+				has_government = democratic
+			}
+			traits = { chairman_of_the_Settlement_Issues_Council}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	EFG_oxner_cliff={
+		name="Oxner Cliff"
+		portraits={
+			civilian={
+				large= "gfx/leaders/EFG/Oxner_Cliff.dds"
+			}
+		}
+		country_leader={
+			ideology= earthnoid_supremacist
+			traits={head_of_earthnoid_supremacism}
+			expire="1000.1.1.1"
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = EFG_oxner_cliff
+			allowed = {
+				original_tag = EFG
+				is_country_leader = no
+			}
+			traits = { head_of_earthnoid_supremacism}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
 		}
 	}
 
@@ -93,6 +136,28 @@ characters = {
 				original_tag = EFG
 			}
 			traits = { Finance_Minister }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	EFG_engeist_ronah = {
+		name = "Engeist Ronah"
+		portraits={
+			army={
+				small="GFX_idea_adenauer_paraya"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = engeist_ronah
+			allowed = {
+				original_tag = EFG
+			}
+			traits = { Vice_President_of_Colony_Public_Corporation}
 			modifier = {
 			}
 			ai_will_do = {

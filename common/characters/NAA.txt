@@ -1,0 +1,61 @@
+characters={
+	#Leaders
+    NAA_Garma_Zabi={
+	name="Garma Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Garma_Zabi.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Garma_Zabi.dds"
+		}
+	}
+	country_leader={
+		ideology= military_administration
+		traits={garma_pa_trait}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	}
+}
+
+#advisors
+NAA_Icelina_Eschonbach={
+	name="Icelina Eschonbach"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = Icelina_Eschonbach
+		allowed = {
+			original_tag = NAA
+		}
+		traits = {  }
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}
+
+#field marshals
+
+
+#generals
+
+
+
+}

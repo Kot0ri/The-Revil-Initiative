@@ -88,6 +88,18 @@ Finance_Minister = {
 	consumer_goods_factor = -0.15
 }
 
+#hundley
+Head_of_Federal_Criminal_Police_Organization = {
+	random = no
+	sprite = 13
+	no_compliance_gain = 1
+	required_garrison_factor = -0.5
+	resistance_activity = -0.5
+	resistance_damage_to_garrison_on_our_occupied_states = -0.15
+	resistance_decay_on_our_occupied_states = 0.2
+}
+
+
 #Gihren
 	iq240 = {
 		random = no

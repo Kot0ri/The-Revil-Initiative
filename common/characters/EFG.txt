@@ -201,4 +201,26 @@ EFG_gopp={
 			}
 		}
 	}
+
+	EFG_hundley_yeoskan = {
+		name = "Hundley_Yeoskans"
+		portraits={
+			army={
+				small="GFX_idea_adenauer_paraya"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = hundley_yeoskan
+			allowed = {
+				original_tag = EFG
+			}
+			traits = { Head_of_Federal_Criminal_Police_Organization }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
 }

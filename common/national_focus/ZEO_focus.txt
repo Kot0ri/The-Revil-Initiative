@@ -712,10 +712,11 @@ focus = {
 	}
 	completion_reward = {
 		country_event = { id = ptag_abq }
+	}
 	relative_position_id = ZEO_fake_a_conspiracy
 	prerequisite = { focus = ZEO_fake_a_conspiracy }
 }
-}
+
 
 focus = {
 	id = ZEO_cold_night_in_side_3
@@ -3353,5 +3354,6 @@ focus = {
 	relative_position_id = ZEO_declare_imperium
 	prerequisite = { focus = ZEO_declare_imperium}
 }
+
 
 }

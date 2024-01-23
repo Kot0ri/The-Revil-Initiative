@@ -516,6 +516,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI2_reinforce_the_defense_forces
+	}
 	completion_reward = {
 	
 	}
@@ -531,6 +534,9 @@ focus = {
 	y = 2
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI2_formalize_military_service
 	}
 	completion_reward = {
 	
@@ -1223,6 +1229,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI2_our_own_path
+	}
 	completion_reward = {
 		
 	}
@@ -1241,6 +1250,9 @@ focus = {
 	}
 	completion_reward = {
 	
+	}
+	mutually_exclusive = {
+		focus = SI2_align_with_zeon
 	}
 	relative_position_id = SI2_growing_antifederation_sentiment
 	prerequisite = { focus = SI2_growing_antifederation_sentiment }
@@ -1578,6 +1590,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI2_kagaties_mission
+	}
 	completion_reward = {
 	
 	}
@@ -1603,13 +1618,16 @@ focus = {
 }
 
 focus = {
-	id = SI2_kagaties_msission
+	id = SI2_kagaties_mission
 	icon = GFX_generic_suspend_constitution
 	cost = 2
 	x = -1
 	y = 2
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI2_follow_armonias_teachings
 	}
 	completion_reward = {
 	
@@ -1630,8 +1648,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = SI2_kagaties_msission
-	prerequisite = { focus = SI2_kagaties_msission }
+	relative_position_id = SI2_kagaties_mission
+	prerequisite = { focus = SI2_kagaties_mission }
 }
 
 focus = {
@@ -1759,7 +1777,7 @@ focus = {
 	
 	}
 	relative_position_id = SI2_joint_ms_development
-	prerequisite = { focus = SI2_joint_ms_development }
+	prerequisite = { focus = SI2_joint_ms_development focus = SI2_a_new_harmony }
 }
 
 focus = {

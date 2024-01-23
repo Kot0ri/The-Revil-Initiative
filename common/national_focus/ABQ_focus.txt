@@ -854,6 +854,24 @@ focus = {
 }
 
 focus = {
+	id = ABQ_miniaturize_beam_weaponry
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	search_filters = {  FOCUS_FILTER_RESEARCH }
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ABQ_next_gen_ms_designs
+	prerequisite = { focus = ABQ_next_gen_ms_designs }
+	prerequisite = { focus = ABQ_experimental_mechanical_technoloy }
+}
+
+focus = {
 	id = ABQ_a_suit_equal_to_the_white_devil
 	icon = GFX_goal_generic_army_tanks
 	search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -873,6 +891,28 @@ focus = {
 	}
 	relative_position_id = ABQ_next_gen_ms_designs
 	prerequisite = { focus = ABQ_next_gen_ms_designs }
+	prerequisite = { focus = ABQ_miniaturize_beam_weaponry }
+}
+
+focus = {
+	id = ABQ_Improve_the_Gelgoog
+	icon = GFX_goal_zeon_human_innovation
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	add_tech_bonus = {
+		name = refienment
+		uses = 1
+		bonus = 0.5
+		technology = ms14_tech
+	}
+	}
+	relative_position_id = ABQ_a_suit_equal_to_the_white_devil
+	prerequisite = { focus = ABQ_a_suit_equal_to_the_white_devil }
 }
 
 focus = {

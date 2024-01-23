@@ -292,6 +292,24 @@ focus = {
 }
 
 focus = {
+	id = ABQ_Award_Ceremony
+	icon = GFX_goal_generic_axis_build_infantry
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ABQ_begin_mass_conscription
+	prerequisite = { focus = ABQ_begin_mass_conscription }
+	prerequisite = { focus = ABQ_found_the_living_dead_division }
+}
+
+focus = {
 	id = ABQ_rush_ms_pilot_training_program
 	icon = GFX_focus_generic_military_mission
 	search_filters = { FOCUS_FILTER_MANPOWER }
@@ -790,6 +808,23 @@ focus = {
 	}
 	relative_position_id = ABQ_use_the_supreme_commanders_sway
 	prerequisite = { focus = ABQ_use_the_supreme_commanders_sway }
+}
+
+focus = {
+	id = ABQ_anti_ship_MA
+	icon = GFX_goal_focus_on_MA
+	search_filters = { FOCUS_FILTER_MANPOWER  FOCUS_FILTER_RESEARCH} 
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ABQ_begin_development_of_mobile_armors
+	prerequisite = { focus = ABQ_begin_development_of_mobile_armors }
 }
 
 focus = {

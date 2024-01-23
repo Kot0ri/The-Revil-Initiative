@@ -189,13 +189,45 @@ focus_tree = {
 	}
 
 	focus = {
-		id = EFG_proirtize_earth_issues
+		id = EFG_priortize_earth_issues
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -1
 		y = 1
 		prerequisite = { focus = EFG_invest_in_the_Arcadia_project focus = EFG_increase_the_EFF_budget }
 		relative_position_id = EFG_invest_in_the_Arcadia_project
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_combat_the_rise_of_anti-federation_partisans
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_priortize_earth_issues }
+		relative_position_id = EFG_priortize_earth_issues
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_medeate_between_regional_adminstrations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_priortize_earth_issues }
+		relative_position_id = EFG_priortize_earth_issues
 		ai_will_do = {
 			factor = 1
 		}
@@ -317,7 +349,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = EFG_defference_to_the_settlement_issue_counicl
+		id = EFG_defference_to_the_settlement_issue_council
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -2
@@ -443,6 +475,27 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = EFG_strengthen_banking_connections}
 		relative_position_id = EFG_strengthen_banking_connections
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_conflict_with_Zeon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 4
+		available = {
+			has_war_with = ZEO
+		}
+		allow_branch = {
+			has_war_with = ZEO
+		}
+		relative_position_id = EFG_priortize_earth_issues
 		ai_will_do = {
 			factor = 1
 		}

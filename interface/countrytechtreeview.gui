@@ -33,34 +33,40 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_plain_bg2"
 		}
+	}
 
+# AXS MS
+containerWindowType = {
+	name = "AXS_mobilesuit_folder"
+	position = { x=0 y=47 }
+	size = { width = 100%% height = 100%% }
+	margin = { top = 13 left = 13 bottom = 24 right = 25}
+	drag_scroll = { left middle }
+	verticalScrollbar = "right_vertical_slider"
+	horizontalScrollbar = "bottom_horizontal_slider"
 
+	background = {
+		name = "Background"
+		quadTextureSprite ="GFX_tiled_window_2b_border"
+	}
 
+	containerWindowType = {
+		name = "techtree_stripes"
+		position = { x= 0 y= 0 }
+		size = {
+			width = 2000 height = 1750
+			min = { width = 100%% height = 100%% }
+		}
+		clipping = no
+		iconType = {
+			name ="axs_ms_techtree_bg"
+			spriteType = "GFX_zeo_ms_techtree_bg"
+			position = { x=0 y=0 }
+			
+		}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	}
+}
 
 
     # ZEO MS
@@ -90,7 +96,7 @@ guiTypes = {
 					name ="zeo_ms_techtree_bg"
 					spriteType = "GFX_zeo_ms_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -296,7 +302,7 @@ guiTypes = {
 					name ="efs_ms_techtree_bg"
 					spriteType = "GFX_efs_ms_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -414,7 +420,7 @@ guiTypes = {
 					name ="zeo_ms_weapon_techtree_bg"
 					spriteType = "GFX_zeo_ms_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -697,7 +703,7 @@ guiTypes = {
 					name ="efs_ms_weapon_techtree_bg"
 					spriteType = "GFX_efs_ms_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -1039,7 +1045,7 @@ guiTypes = {
 					name ="naval_techtree_bg"
 					spriteType = "GFX_naval_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -1624,7 +1630,7 @@ guiTypes = {
 					name ="naval_techtree_bg"
 					spriteType = "GFX_naval_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -2200,7 +2206,7 @@ guiTypes = {
 					name ="armortech_bg"
 					spriteType = "GFX_armortech_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -2406,7 +2412,7 @@ guiTypes = {
 					name ="armortech_bg"
 					spriteType = "GFX_armortech_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -2579,7 +2585,7 @@ guiTypes = {
 					name ="air_techtree_bg"
 					spriteType = "GFX_air_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -3000,7 +3006,7 @@ guiTypes = {
 					name ="air_techtree_bg"
 					spriteType = "GFX_air_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -3324,7 +3330,7 @@ guiTypes = {
 					name ="zeo_space_techtree_bg"
 					spriteType = "GFX_zeo_space_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -3608,7 +3614,7 @@ guiTypes = {
 					name ="efs_space_techtree_bg"
 					spriteType = "GFX_efs_space_techtree_bg"
 					position = { x=0 y=0 }
-					allwaystransparent = yes
+					
 				}
 
 			}
@@ -5155,19 +5161,6 @@ guiTypes = {
 			}
 
 
-
-
-
-
-
-
-
-
-			
-
-
-
-
 			buttonType = {
 				name = "infantry_folder_tab"
 				position = { x = 22 y = 0 }
@@ -5230,9 +5223,6 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 
-
-		}
-
 		buttonType = {
 			name = "close_button"
 			position = { x = -50 y = 11 }
@@ -5243,8 +5233,8 @@ guiTypes = {
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"
 		}
+	
 	}
-
 	containerWindowType = {
 		name = "unlock_tech_info_window"
 		position = { x=500 y=100 }
@@ -5562,7 +5552,7 @@ guiTypes = {
 			fixedsize = yes
 			format = left
 		}
-
+	}
 		iconType = {
 			name = "bonus_icon"
 			position = { x=111 y=-22 }
@@ -5618,7 +5608,6 @@ guiTypes = {
 			}
 		}	
 
-	}
 
 	containerWindowType = {
 		name = "techtree_support_folder_item"
@@ -5667,6 +5656,7 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
+	}
 
 		containerWindowType = {
 			name = "sub_technology_slot_0"
@@ -5687,7 +5677,7 @@ guiTypes = {
 			}
 		}
 
-	}
+	
 
 	containerWindowType = {
 		name = "techtree_support_folder_small_item"
@@ -5992,7 +5982,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-
+	}
 		containerWindowType = {
 			name = "sub_technology_slot_1"
 			position = { x=141 y=28 }
@@ -6030,7 +6020,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-	}
+	
 
   # EFS MS Folder Item
 	containerWindowType = {
@@ -6133,7 +6123,6 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-
 	}
 
 	# ZEO MS WEAPON Folder Item
@@ -6454,7 +6443,7 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-	}
+	}	
 
   # ZEO Air Folder Item
 	containerWindowType = {
@@ -6993,7 +6982,7 @@ guiTypes = {
 				##size = { width=300 height=80 }
 			}
 		}
-	}
+	
 
 	containerWindowType = {
 		name = "technology_unit_statlist_item_module"
@@ -7555,5 +7544,6 @@ guiTypes = {
 		name = "padding_window"
 		position = { x=0 y=0 }
 		size = { width=1 height=1 }
+	}
 	}
 }

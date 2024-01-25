@@ -256,6 +256,7 @@ technology_folders = {
 	}
 		ledger = army
  	}
+
 	ZEO_ms_weapon_folder = {
 		available = {
 			has_country_flag = zeon_country
@@ -310,4 +311,10 @@ technology_folders = {
 		available = { NOT = {has_country_flag = zeon_country} } 
 		ledger = navy
 	}
+	AXS_mobilesuit_folder = {
+		available = {
+			has_country_flag = axis_country
+		}
+			ledger = army
+		 }
 }

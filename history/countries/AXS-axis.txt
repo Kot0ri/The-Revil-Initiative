@@ -2,7 +2,6 @@ capital = 952
 oob = "AXS0075"
 
 set_country_flag = zeon_country
-set_country_flag = axis_country
 # Starting tech
 set_technology = {
 	basic_train = 1
@@ -51,6 +50,7 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_refining = 1
 	oil_processing = 1
+	rubber_processing = 1
 	fuel_refining2 = 1
 }
 
@@ -68,6 +68,7 @@ add_named_threat = {
 }
 
 add_ideas = {
+	colony_country
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation

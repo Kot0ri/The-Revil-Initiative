@@ -579,7 +579,7 @@ focus = {
 }
 
 focus = {
-	id = ZEO_colony_drop_on_jaburo
+	id = ZEO_operation_british_2
 	icon = GFX_goal_colony_alliance
 	search_filters = { FOCUS_FILTER_MILITARY }
 	cost = 10
@@ -3076,6 +3076,28 @@ focus = {
 	}
 	relative_position_id = ZEO_expand_the_zeon_military_academy
 	prerequisite = { focus = ZEO_expand_the_zeon_military_academy }
+}
+
+focus = {
+	id = ZEO_reinforce_the_national_will_of_zeon
+	icon = GFX_goal_medal_of_cross
+	search_filters = {FOCUS_FILTER_WAR_SUPPORT }
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_government = supremacist
+		has_war = yes
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_zeon_iron_cross
+	prerequisite = { focus = ZEO_zeon_iron_cross}
+	prerequisite = { focus = ZEO_found_the_zeon_military_prepatory_school }
 }
 
 focus = {

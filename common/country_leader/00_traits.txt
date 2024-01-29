@@ -138,6 +138,29 @@ Vice_President_of_Colony_Public_Corporation = {
 	civilian_factory_use = -0.05
 	intel_network_gain = -0.2
 }
+#mquve
+zimmand_connections = {
+	random = no
+	equipment_bonus = {
+		archetype_yms15 = {
+			instant = yes
+			armor_value = 0.15
+			reliability = 0.05
+			build_cost_ic = -0.05
+		}
+	}
+}
+
+man_of_culture = {
+	random = no
+	monthly_population = -0.25
+	consumer_goods_factor = -0.05
+}
+
+plunderer_of_earth = {
+	random = no
+	local_resources_factor = 0.2
+}
 
 	kycilia_org = {
 		random = no
@@ -387,21 +410,7 @@ Vice_President_of_Colony_Public_Corporation = {
 	hawaii_naval_trait = {
 	}
 	tech_team_trait = {}
-	mquve_trait = {
-		random = no
-		sprite = 10
-		custom_modifier_tooltip = gf_mquve_effect_tooltip
-		command_cap = @tier2
-		local_resources_factor = 0.2
-		equipment_bonus = {
-			archetype_yms15 = {
-				instant = yes
-				armor_value = 0.15
-				reliability = 0.05
-				build_cost_ic = -0.05
-			}
-		}
-	}
+
 	gramonica_trait = {
 		random = no
 		sprite = 1

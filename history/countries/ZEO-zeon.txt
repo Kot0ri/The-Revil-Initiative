@@ -8,6 +8,13 @@ set_country_flag = zeon_country
 	set_variable = { var = how_many_exercise value = 0 }
 }
 
+### BOP ###
+set_variable = { FIN_motion_of_no_confidence_dec_cost = 150 } # 250 at Medium Range, 150 at Bad Range, 50 at Very Bad Range (adjust for 1939 bookmark below if BoP value changes)
+set_variable = { FIN_bop_decision_cost_multiplier = 2 } #BoP decisions with dynamic costs will double their cost every time they are taken
+set_variable = { FIN_organize_the_opposition_dec_cost = 25 }
+set_variable = { FIN_appeal_to_the_finnish_spirit_dec_cost = 75 }
+set_variable = { FIN_entice_the_masses_dec_cost = 50 }
+
 # Starting tech
 set_technology = {
 	basic_train = 1

@@ -69,4 +69,78 @@ focus_tree = {
 			completion_reward = {
 						}
 				}
+focus = {
+	id = SSA_weapon_caches
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {	
+	factor = 1
+	}
+	relative_position_id = SSA_work_with_anti-federation_guerllias
+		prerequisite = {focus = SSA_work_with_anti-federation_guerllias}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SSA_expand_pit_traps
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_weapon_caches
+			prerequisite = {focus = SSA_weapon_caches}
+		completion_reward = {
+			}
+		}
+
+	focus = {
+		id = SSA_jungle_training
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {	
+			factor = 1
+				}
+		relative_position_id = SSA_work_with_anti-federation_guerllias
+			prerequisite = {focus = SSA_work_with_anti-federation_guerllias}
+		completion_reward = {
+								}
+						}
+
+focus = {
+	id = SSA_advance_jungle_scouts
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {	
+	factor = 1
+	}
+	relative_position_id = SSA_jungle_training
+		prerequisite = {focus = SSA_jungle_training}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SSA_improve_communication_lines
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_advance_jungle_scouts
+			prerequisite = {focus = SSA_advance_jungle_scouts}
+		completion_reward = {
+			}
+		}
 }

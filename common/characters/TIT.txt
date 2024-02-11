@@ -4,11 +4,11 @@ characters={
 		name="Jamitov Hymen"
 		portraits={
 			civilian={
-				large= "gfx/leaders/PEZ/schacht.dds"
+				large= "gfx/leaders/TIT/jamitov_hymen.dds"
 			}
 		}
 		country_leader={
-			traits={dictator}
+			traits={titans_founder fdic_head scheming_politician}
 			ideology=earthnoid_supremacist
 			expire="1000.1.1.1"
 		}
@@ -85,16 +85,16 @@ characters={
 			name="Paptimus Scirocco"
 			portraits={
 				civilian={
-					large= "gfx/leaders/PEZ/schacht.dds"
+					large= "gfx/leaders/TIT/paptimus_scirocco.dds"
 				}
 			}
 			country_leader={
-				traits={dictator}
+				traits={ man_from_jupiter observer_of_history}
 				ideology=contolism
 				expire="1000.1.1.1"
 			}
 			corps_commander = {
-				traits = {pilot newtype3 man_from_jupiter}
+				traits = {pilot newtype3}
 				skill = 6
 				attack_skill = 5
 				defense_skill = 3

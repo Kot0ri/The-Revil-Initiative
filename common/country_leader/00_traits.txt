@@ -161,6 +161,35 @@ plunderer_of_earth = {
 	random = no
 	local_resources_factor = 0.2
 }
+#jamitov
+fdic_head = {
+	random = no
+	consumer_goods_factor = -0.15
+}
+
+titans_founder = {
+	random = no
+	war_support_factor = 0.1
+}
+
+scheming_politician = {
+	random = no
+	political_advisor_cost_factor = -0.15
+}
+#scirocco
+man_from_jupiter = {
+	random = no
+	naval_speed_factor = 0.05
+	naval_invasion_capacity = 2
+	naval_invasion_planning_bonus_speed = 0.5
+}
+
+observer_of_history = {
+	random = no
+	research_speed_factor = 0.05
+	send_volunteer_divisions_required = -2
+}
+
 
 	kycilia_org = {
 		random = no

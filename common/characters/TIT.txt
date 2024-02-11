@@ -119,7 +119,33 @@ characters={
 					}
 				}
 			}
-		
+		}
+		TIT_jerid_meesa_2={
+			name="Jerid Meesa"
+			portraits={
+				civilian={
+					large= "gfx/leaders/TIT/jerid_meesa_2.dds"
+				}
+				army={
+					small="GFX_idea_barom"
+				}
+				army={
+					large="gfx/leaders/TIT/jerid_meesa_2.dds"
+				}
+			}
+			country_leader={
+				traits={ defender_of_earth guide_of_the_world}
+				ideology=contolism
+				expire="1000.1.1.1"
+			}
+			corps_commander={
+				traits={pilot newtype1}
+				skill=6
+				attack_skill=5
+				defense_skill=2
+				planning_skill=4
+				logistics_skill=2
+			}
 		}
 
 
@@ -173,7 +199,7 @@ characters={
 				small="GFX_idea_barom"
 			}
 			army={
-				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+				large="gfx/leaders/TIT/jerid_meesa_1.dds"
 			}
 		}
 		corps_commander={

@@ -190,6 +190,20 @@ observer_of_history = {
 	send_volunteer_divisions_required = -2
 }
 
+#jerid
+defender_of_earth = {
+	random = no
+	army_core_attack_factor = 0.1
+	army_core_defense_factor = 0.1
+}
+guide_of_the_world = {
+	random = no
+	stability_weekly = 0.05
+	political_advisor_cost_factor = -0.1
+	air_advisor_cost_factor =  -0.05
+	army_advisor_cost_factor = -0.05
+	navy_advisor_cost_factor = -0.05
+}
 
 	kycilia_org = {
 		random = no

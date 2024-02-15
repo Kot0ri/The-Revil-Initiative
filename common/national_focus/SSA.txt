@@ -14,7 +14,7 @@ focus_tree = {
 		id = SSA_government_appoinments
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = 10
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -23,6 +23,21 @@ focus_tree = {
 		add_political_power = 50
 			}
 		}
+
+		focus = {
+			id = SSA_resolve_religious_tensions
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 2
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			relative_position_id = SSA_government_appoinments
+			prerequisite = {	focus = SSA_government_appoinments	}
+			completion_reward = {
+						}
+				}
 
 	focus = {
 		id = SSA_jungle_pathing

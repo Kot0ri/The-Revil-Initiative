@@ -444,6 +444,78 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REM_Inflitrate_the_Oil_rigs
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 3
+		prerequisite = {focus = REM_Send_the_Living_Dead_into_the_SSA}
+		relative_position_id = REM_Kleiber_takes_charge
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_War_to_reacquire_the_Reuse_Device
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Inflitrate_the_Oil_rigs}
+		relative_position_id = REM_Inflitrate_the_Oil_rigs
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		declare_war_on = {
+			target = SSA
+		}
+		}
+	}
+
+	focus = {
+		id = REM_traitors_amoungst_us
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {focus = REM_War_to_reacquire_the_Reuse_Device}
+		relative_position_id = REM_War_to_reacquire_the_Reuse_Device
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = REM_march_towards_vengenance
+		}
+		completion_reward = {
+		white_peace = SSA
+		}
+	}
+
+	focus = {
+		id = REM_march_towards_vengenance
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -1
+		y = 1
+		prerequisite = {focus = REM_War_to_reacquire_the_Reuse_Device}
+		relative_position_id = REM_War_to_reacquire_the_Reuse_Device
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = REM_traitors_amoungst_us
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = REM_Deadlock_Sector_reinforcement
 		icon = GFX_goal_general_meeting
 		cost = 1
@@ -502,6 +574,89 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_cooridinate_with_other_remnants
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Build_up_the_Garden_of_Thorns}
+		relative_position_id = REM_Build_up_the_Garden_of_Thorns
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_Mission_from_Axis
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = REM_cooridinate_with_other_remnants}
+		relative_position_id = REM_cooridinate_with_other_remnants
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_set_up_stable_lines
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Mission_from_Axis}
+		relative_position_id = REM_Mission_from_Axis
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_retreat_in_asia
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {focus = REM_traitors_amoungst_us}
+		relative_position_id = REM_traitors_amoungst_us
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_reinforce_kimberlite
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {focus = REM_retreat_in_asia}
+		prerequisite = {focus = REM_set_up_stable_lines}
+		relative_position_id = REM_retreat_in_asia
+		ai_will_do = {
+			factor = 1
+		}
+		
 		completion_reward = {
 		
 		}

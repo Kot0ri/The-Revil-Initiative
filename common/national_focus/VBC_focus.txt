@@ -92,6 +92,79 @@ focus_tree = {
 		}
 	}
 
+	
+
+
+	focus = {
+		id = VBC_rise_of_the_AEUG
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 20
+		y = 20
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_work_with_granada
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 2
+		y = 2
+		relative_position_id = VBC_rise_of_the_AEUG
+		prerequisite = {focus = VBC_rise_of_the_AEUG}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_facilitate_a_meeting
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = -1
+		y = 1
+		relative_position_id = VBC_rise_of_the_AEUG
+		prerequisite = {focus = VBC_rise_of_the_AEUG}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_begin_development_in_secret
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = -3
+		y = 1
+		relative_position_id = VBC_rise_of_the_AEUG
+		prerequisite = {focus = VBC_rise_of_the_AEUG}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
 	focus = {
 		id = VBC_Zeta_project
 		icon = GFX_goal_zeon_mobile_headquarters
@@ -103,8 +176,8 @@ focus_tree = {
 		}
 		available = {
 		}
-		relative_position_id = VBC_gundam_development_project
-		prerequisite = {focus = VBC_gundam_development_project}
+		relative_position_id = VBC_begin_development_in_secret
+		prerequisite = {focus = VBC_begin_development_in_secret}
 		completion_reward = {
 		
 		}

@@ -1,0 +1,78 @@
+focus_tree = {
+	id = TIT
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = TIT
+		}
+	}
+	default = no
+
+	focus = {
+		id = TIT_Titans_now_rise
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 10
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+	
+
+	focus = {
+		id = TIT_Titans_Taskforce
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Titans_now_rise
+		prerequisite = {
+			focus = TIT_Titans_now_rise
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+			id = TIT_Jamitovs_sway
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 6
+			y = 1
+			relative_position_id = TIT_Titans_now_rise
+			prerequisite = {
+				focus = TIT_Titans_now_rise
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				}
+			}
+
+			focus = {
+				id = TIT_FDIC_funding
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 2
+				y = 1
+				relative_position_id = TIT_Jamitovs_sway
+				prerequisite = {
+					focus = TIT_Jamitovs_sway
+				}
+				ai_will_do = {
+					factor = 1
+				}
+				completion_reward = {
+					}
+				}
+
+}

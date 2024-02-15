@@ -41,6 +41,57 @@ focus_tree = {
 			}
 		}
 
+	focus = {
+		id = TIT_recruit_the_elite_of_the_EFF
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Titans_Taskforce
+		prerequisite = {
+			focus = TIT_Titans_Taskforce
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = TIT_introduce_the_Quel
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_recruit_the_elite_of_the_EFF
+		prerequisite = {
+			focus = TIT_recruit_the_elite_of_the_EFF
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = TIT_hunt_down_suviors_of_Delaz_fleet
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_introduce_the_Quel
+		prerequisite = {
+			focus = TIT_introduce_the_Quel
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}	
+
 		focus = {
 			id = TIT_Jamitovs_sway
 			icon = GFX_goal_efsf_mobile_headquarters
@@ -58,21 +109,71 @@ focus_tree = {
 				}
 			}
 
-			focus = {
-				id = TIT_FDIC_funding
-				icon = GFX_goal_efsf_mobile_headquarters
-				cost = 5
-				x = 2
-				y = 1
-				relative_position_id = TIT_Jamitovs_sway
-				prerequisite = {
-					focus = TIT_Jamitovs_sway
-				}
-				ai_will_do = {
-					factor = 1
-				}
-				completion_reward = {
-					}
-				}
+	focus = {
+		id = TIT_FDIC_funding
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TIT_Jamitovs_sway
+		prerequisite = {
+			focus = TIT_Jamitovs_sway
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
 
+	focus = {
+		id = TIT_Hunt_down_rivals
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TIT_Jamitovs_sway
+		prerequisite = {
+			focus = TIT_Jamitovs_sway
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_EFF_HQ_connections
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Jamitovs_sway
+		prerequisite = {
+			focus = TIT_Jamitovs_sway
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_budget_lobbying
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_EFF_HQ_connections
+		prerequisite = {
+			focus = TIT_EFF_HQ_connections
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
 }

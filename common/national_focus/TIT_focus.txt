@@ -106,7 +106,64 @@ focus_tree = {
 		}
 		completion_reward = {
 		}
-	}	
+	}
+	
+	focus = {
+		id = TIT_build_up_up_earth_bases
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TIT_parpicipate_in_operation_clean_sweep
+		prerequisite = {
+			focus = TIT_parpicipate_in_operation_clean_sweep
+		}
+		available = {
+			has_completed_focus = TIT_Secure_Bases
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_build_up_in_Space
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_parpicipate_in_operation_clean_sweep
+		prerequisite = {
+			focus = TIT_parpicipate_in_operation_clean_sweep
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		available = {
+			has_completed_focus = TIT_Secure_Bases
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Gryps_2_project
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_build_up_in_Space
+		prerequisite = {
+			focus = TIT_build_up_in_Space
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
 		focus = {
 			id = TIT_Jamitovs_sway
 			icon = GFX_goal_efsf_mobile_headquarters
@@ -244,7 +301,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = Hazel_Project
+		id = TIT_Hazel_Project
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
 		x = -2
@@ -258,4 +315,177 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = TIT_Next_generation_gundams
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Hazel_Project
+		prerequisite = {focus = TIT_Hazel_Project}
+		
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Mass_Production_Gundams
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TIT_Next_generation_gundams
+		prerequisite = {focus = TIT_Next_generation_gundams}
+		prerequisite = {focus = TIT_continue_Quel_development}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+	id = TIT_continue_Quel_development
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = TIT_Quel_development_Project
+	prerequisite = {
+	focus = TIT_Quel_development_Project
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	mutually_exclusive = { focus = TIT_Hizack_Deal	}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+	id = TIT_Hizack_Deal
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 3
+	y = 1
+	relative_position_id = TIT_Quel_development_Project
+	prerequisite = {
+	focus = TIT_Quel_development_Project
+	}
+	ai_will_do = {
+	factor = 1
+	}
+		mutually_exclusive = { focus = TIT_continue_Quel_development	}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+	id = TIT_finish_the_testbeds
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = TIT_Hizack_Deal
+	prerequisite = {
+	focus = TIT_Hizack_Deal
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+	id = TIT_Adopt_the_Hizack
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = TIT_finish_the_testbeds
+	prerequisite = {
+	focus = TIT_finish_the_testbeds
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_adopt_the_Nemo
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TIT_continue_Quel_development
+		prerequisite = {focus = TIT_continue_Quel_development}
+		ai_will_do = {
+		factor = 1
+		}
+		available = {
+			has_country_flag = TIT_Nemo_captured
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Marasai_Development
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Adopt_the_Hizack
+		prerequisite = {
+		focus = TIT_Adopt_the_Hizack
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+			id = TIT_Barzam_Development
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 2
+			y = 1
+			relative_position_id = TIT_Marasai_Development
+			prerequisite = {
+			focus = TIT_Marasai_Development
+			}
+			ai_will_do = {
+			factor = 1
+			}
+			mutually_exclusive = { focus = TIT_Griffon_Development}
+			completion_reward = {
+				}
+			}
+
+			focus = {
+				id = TIT_Griffon_Development
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 0
+				y = 1
+				relative_position_id = TIT_Marasai_Development
+				prerequisite = {
+				focus = TIT_Marasai_Development
+				}
+				ai_will_do = {
+				factor = 1
+				}
+				mutually_exclusive = { focus = TIT_Barzam_Development}
+				completion_reward = {
+					}
+				}
 }

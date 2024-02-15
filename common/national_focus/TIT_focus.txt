@@ -177,6 +177,39 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = TIT_Secure_Bases
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TIT_hunt_down_suviors_of_Delaz_fleet
+		prerequisite = {
+			focus = TIT_hunt_down_suviors_of_Delaz_fleet
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Titans_Test_Team
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Secure_Bases
+		prerequisite = {
+			focus = TIT_Secure_Bases
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
 
 	focus = {
 		id = TIT_Quel_development_Project
@@ -202,9 +235,8 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = TIT_Quel_development_Project
-		prerequisite = {
-			focus = TIT_Quel_development_Project
-		}
+		prerequisite = {focus = TIT_Quel_development_Project	}
+		prerequisite = {focus = TIT_Titans_Test_Team	}
 		ai_will_do = {
 		factor = 1
 		}

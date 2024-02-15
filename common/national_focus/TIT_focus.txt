@@ -176,4 +176,39 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+
+	focus = {
+		id = TIT_Quel_development_Project
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 4
+		y = 4
+		relative_position_id = TIT_introduce_the_Quel
+		prerequisite = {
+			focus = TIT_introduce_the_Quel
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = Hazel_Project
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TIT_Quel_development_Project
+		prerequisite = {
+			focus = TIT_Quel_development_Project
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
 }

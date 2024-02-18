@@ -37,4 +37,82 @@ focus_tree = {
 			}
 		}
 
+		
+	focus = {
+		id = GRA_Book_a_business_trip
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Growing_Zeon_sentiments
+		prerequisite = {focus = GRA_Growing_Zeon_sentiments}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+			id = GRA_Secret_Backroom_deals
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			relative_position_id = GRA_Book_a_business_trip
+			prerequisite = {focus = GRA_Book_a_business_trip}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				}
+			}
+
+	
+	focus = {
+		id = GRA_Zeon_military_bases
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = GRA_Secret_Backroom_deals
+		prerequisite = {focus = GRA_Secret_Backroom_deals}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = GRA_Zeon_Luanr_MS_Battalion
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = GRA_Zeon_military_bases
+		prerequisite = {focus = GRA_Zeon_military_bases}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+
+	
+	focus = {
+		id = GRA_Invite_Zeon_agitators
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = GRA_Zeon_military_bases
+		prerequisite = {focus = GRA_Zeon_military_bases}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
 }

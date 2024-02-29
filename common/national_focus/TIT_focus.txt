@@ -488,4 +488,17 @@ focus_tree = {
 				completion_reward = {
 					}
 				}
+
+	focus = {
+		id = TIT_a_new_earthsphere
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 25
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
 }

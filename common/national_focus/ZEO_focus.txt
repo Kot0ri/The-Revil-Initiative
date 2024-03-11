@@ -3435,4 +3435,58 @@ focus = {
 	}
 }
 
+focus = {
+	id = ZEO_formation_of_parliment
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_aftermath_of_the_war}
+	relative_position_id = ZEO_aftermath_of_the_war
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_darcia_keeps_hold
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_formation_of_parliment}
+	relative_position_id = ZEO_formation_of_parliment
+	x = 2
+	y = 1
+	mutually_exclusive = { focus = ZEO_new_cabinet}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_new_cabinet
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_formation_of_parliment}
+	relative_position_id = ZEO_formation_of_parliment
+	x = -2
+	y = 1
+	mutually_exclusive = { focus = ZEO_darcia_keeps_hold}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
 }

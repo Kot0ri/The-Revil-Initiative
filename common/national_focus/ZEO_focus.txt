@@ -1766,7 +1766,9 @@ focus = {
 	has_war = no
 	is_subject = no
 }
-
+allow_branch = {
+	has_country_flag = won_independence_war
+}
 	completion_reward = {
 	
 	}
@@ -1791,7 +1793,9 @@ focus = {
 	has_war = no
 	is_subject = no
 }
-
+allow_branch = {
+	has_country_flag = won_independence_war
+}
 	completion_reward = {
 
 	}
@@ -1816,7 +1820,9 @@ focus = {
 	has_war = no
 	is_subject = yes
 }
-
+allow_branch = {
+	has_country_flag = lost_independence_war
+}
 	completion_reward = {
 
 	}
@@ -1840,7 +1846,9 @@ focus = {
 	has_war = no
 	is_subject = no
 }
-
+allow_branch = {
+	has_country_flag = won_independence_war
+}
 	completion_reward = {
 
 	}

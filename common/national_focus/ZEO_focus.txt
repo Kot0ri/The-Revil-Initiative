@@ -3535,6 +3535,23 @@ focus = {
 }
 
 focus = {
+	id = ZEO_begin_backroom_support_for_remnant_factions
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_support_peaceful_Contolist_movements}
+	relative_position_id = ZEO_support_peaceful_Contolist_movements
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = ZEO_new_cabinet
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -3548,7 +3565,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		set_politics = {
 		
+		}
 	}
 }
 
@@ -3621,6 +3640,23 @@ focus = {
 }
 
 focus = {
+	id = ZEO_increased_F.S.S_activity
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_turn_over_MS_prototypes}
+	relative_position_id = ZEO_turn_over_MS_prototypes
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = ZEO_expel_radicals_from_the_government
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -3661,6 +3697,23 @@ focus = {
 	cost = 5
 	prerequisite = { focus = ZEO_denounce_Zabist_remnants}
 	relative_position_id = ZEO_denounce_Zabist_remnants
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_anti_remnant_policies
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_investigate_high_command}
+	relative_position_id = ZEO_investigate_high_command
 	x = 0
 	y = 1
 	ai_will_do = {

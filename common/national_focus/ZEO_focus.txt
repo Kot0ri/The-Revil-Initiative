@@ -3364,6 +3364,10 @@ focus = {
 	completion_reward = {
 		create_faction = Imperium_of_Zeon
 	}
+	allow_branch = {
+		has_country_flag = won_independence_war
+	}
+	
 	relative_position_id = ZEO_axis_development
 	mutually_exclusive = {
 		focus = ZEO_prepare_for_an_evacuation
@@ -3480,6 +3484,57 @@ focus = {
 }
 
 focus = {
+	id = ZEO_maintain_autonomy
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_darcia_keeps_hold}
+	relative_position_id = ZEO_darcia_keeps_hold
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_shutdown_investigations
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_maintain_autonomy}
+	relative_position_id = ZEO_maintain_autonomy
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_support_peaceful_Contolist_movements
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_shutdown_investigations}
+	relative_position_id = ZEO_shutdown_investigations
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = ZEO_new_cabinet
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -3489,6 +3544,125 @@ focus = {
 	x = -2
 	y = 1
 	mutually_exclusive = { focus = ZEO_darcia_keeps_hold}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_demilitarization
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_new_cabinet focus = ZEO_darcia_keeps_hold }
+	relative_position_id = ZEO_new_cabinet
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_Federation_aligned_policies
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_new_cabinet}
+	relative_position_id = ZEO_new_cabinet
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_allow_federation_garrison
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_Federation_aligned_policies}
+	relative_position_id = ZEO_Federation_aligned_policies
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_turn_over_MS_prototypes
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_allow_federation_garrison}
+	relative_position_id = ZEO_allow_federation_garrison
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_expel_radicals_from_the_government
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_Federation_aligned_policies}
+	relative_position_id = ZEO_Federation_aligned_policies
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_denounce_Zabist_remnants
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_expel_radicals_from_the_government}
+	relative_position_id = ZEO_expel_radicals_from_the_government
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_investigate_high_command
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_denounce_Zabist_remnants}
+	relative_position_id = ZEO_denounce_Zabist_remnants
+	x = 0
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}

@@ -43,6 +43,47 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VBC_supply_anti_zabists
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = ZEO_opposition_to_the_zabi_family
+		}
+		relative_position_id = VBC_merchant_of_death
+		prerequisite = {focus = VBC_merchant_of_death}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_begin_expansion_of_Anaheim_facilties
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_merchant_of_death
+		prerequisite = {focus = VBC_merchant_of_death}
+		completion_reward = {
+		add_offsite_building = {
+			type = arms_factory
+			level = 3
+		}
+		}
+	}
+
+	focus = {
 		id = VBC_arcadia_project
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
@@ -55,6 +96,63 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = Arcadia_Project
+		}
+	}
+
+	focus = {
+		id = VBC_incentivise_immigration
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_arcadia_project
+		prerequisite = {focus = VBC_arcadia_project}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_investment_plans_with_Moore
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_arcadia_project
+		prerequisite = {focus = VBC_arcadia_project}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_meeting_with_the_jupiter_fleet
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_investment_plans_with_Moore
+		prerequisite = {focus = VBC_investment_plans_with_Moore}
+		completion_reward = {
+		
 		}
 	}
 
@@ -147,6 +245,42 @@ focus_tree = {
 		}
 	}
 
+focus = {
+	id = VBC_Blexs_plan
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = VBC_facilitate_a_meeting
+	prerequisite = {focus = VBC_facilitate_a_meeting}
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = VBC_arrivals_from_Axis
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = VBC_Blexs_plan
+	prerequisite = {focus = VBC_Blexs_plan}
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+	
+	}
+}
+
 	focus = {
 		id = VBC_begin_development_in_secret
 		icon = GFX_goal_zeon_mobile_headquarters
@@ -175,6 +309,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			has_completed_focus = VBC_arrivals_from_Axis
 		}
 		relative_position_id = VBC_begin_development_in_secret
 		prerequisite = {focus = VBC_begin_development_in_secret}

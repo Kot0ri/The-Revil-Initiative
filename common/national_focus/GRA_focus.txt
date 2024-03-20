@@ -1,6 +1,6 @@
 focus_tree = {
 	id = GRA
-	continuous_focus_position = { x = 0 y = 2000}
+	continuous_focus_position = { x = 0 y = 3000}
 	country = {
 		factor = 0
 		modifier = {
@@ -451,6 +451,21 @@ focus_tree = {
 		mutually_exclusive = { focus = GRA_execute_a_coup}
 		relative_position_id = GRA_Invite_Zeon_officals
 		prerequisite = {focus = GRA_Invite_Zeon_officals}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_form_a_new_government
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_sign_an_offical_treaty
+		prerequisite = {focus = GRA_sign_an_offical_treaty}
 		ai_will_do = {
 			factor = 1
 		}

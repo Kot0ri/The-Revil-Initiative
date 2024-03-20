@@ -231,6 +231,36 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GRA_expand_dockyards
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_ZMF_holdings
+		prerequisite = {focus = GRA_ZMF_holdings}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_Bastion_of_the_Mobile_Assualt_force
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_expand_dockyards
+		prerequisite = {focus = GRA_expand_dockyards}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = GRA_MS_Production
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5

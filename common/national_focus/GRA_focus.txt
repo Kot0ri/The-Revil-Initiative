@@ -14,7 +14,7 @@ focus_tree = {
 		id = GRA_Granada_Stands
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 6
+		x = 0
 		y = 0
 		mutually_exclusive = {
 			focus = GRA_Growing_Zeon_sentiments
@@ -216,10 +216,145 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRA_sign_an_offical_treaty
+		id = GRA_ZMF_holdings
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_kycilias_dominion
+		prerequisite = {focus = GRA_kycilias_dominion}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_MS_Production
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = GRA_ZMF_holdings
+		prerequisite = {focus = GRA_ZMF_holdings}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_ace_pilot_program
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_MS_Production
+		prerequisite = {focus = GRA_MS_Production}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_ZEF_recruitment
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = GRA_ZMF_holdings
+		prerequisite = {focus = GRA_ZMF_holdings}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_Engineer_Development_Facilities
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = GRA_ZMF_holdings
+		prerequisite = {focus = GRA_ZMF_holdings}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_YT-02
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = GRA_Engineer_Development_Facilities
+		prerequisite = {focus = GRA_Engineer_Development_Facilities}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_found_Flanagan_Institute
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Engineer_Development_Facilities
+		prerequisite = {focus = GRA_Engineer_Development_Facilities}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_ensure_loyalty_of_the_citizens
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
 		x = 6
+		y = 1
+		relative_position_id = GRA_kycilias_dominion
+		prerequisite = {focus = GRA_kycilias_dominion}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_expansion_of_kycilia_agency
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -6
+		y = 1
+		relative_position_id = GRA_kycilias_dominion
+		prerequisite = {focus = GRA_kycilias_dominion}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_sign_an_offical_treaty
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 7
+		x = 8
 		y = 1
 		mutually_exclusive = { focus = GRA_execute_a_coup}
 		relative_position_id = GRA_Invite_Zeon_officals

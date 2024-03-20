@@ -291,6 +291,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GRA_form_the_chimera_corps.
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_ace_pilot_program
+		prerequisite = {focus = GRA_ace_pilot_program}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
 		id = GRA_ZEF_recruitment
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -298,6 +314,37 @@ focus_tree = {
 		y = 1
 		relative_position_id = GRA_ZMF_holdings
 		prerequisite = {focus = GRA_ZMF_holdings}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_Granadan_Marine_Corps.
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_ZEF_recruitment
+		prerequisite = {focus = GRA_ZEF_recruitment}
+		prerequisite = {focus = GRA_kycilias_tour}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_loyalty_to_kycilia
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Granadan_Marine_Corps.
+		prerequisite = {focus = GRA_Granadan_Marine_Corps.}
 		ai_will_do = {
 			factor = 1
 		}
@@ -358,6 +405,21 @@ focus_tree = {
 		y = 1
 		relative_position_id = GRA_kycilias_dominion
 		prerequisite = {focus = GRA_kycilias_dominion}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_kycilias_tour
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_ensure_loyalty_of_the_citizens
+		prerequisite = {focus = GRA_ensure_loyalty_of_the_citizens}
 		ai_will_do = {
 			factor = 1
 		}

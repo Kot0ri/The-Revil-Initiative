@@ -67,6 +67,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			country_exists = ZEO
+		}
 		completion_reward = {
 		
 		}
@@ -706,6 +709,59 @@ focus_tree = {
 			factor = 1
 		}
 		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Launch_Operation_Stardust
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Final_Stardust_preperations}
+		relative_position_id = REM_Final_Stardust_preperations
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_A_Nightmare_Born_Anew
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Launch_Operation_Stardust}
+		relative_position_id = REM_Launch_Operation_Stardust
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_A_third_spear
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_A_Nightmare_Born_Anew}
+		relative_position_id = REM_A_Nightmare_Born_Anew
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = REM_search_for_kaito
+		}
 		completion_reward = {
 		
 		}

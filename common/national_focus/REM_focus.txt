@@ -41,6 +41,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REM_work_with_recovery_groups
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 4
+		y = 1
+		prerequisite = {focus = REM_Mass_Retreat}
+		relative_position_id = REM_Mass_Retreat
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_search_for_kaito
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_work_with_recovery_groups}
+		relative_position_id = REM_work_with_recovery_groups
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = REM_Zeon_8th_Army
 		icon = GFX_goal_general_meeting
 		cost = 1
@@ -653,6 +685,23 @@ focus_tree = {
 		prerequisite = {focus = REM_retreat_in_asia}
 		prerequisite = {focus = REM_set_up_stable_lines}
 		relative_position_id = REM_retreat_in_asia
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Final_Stardust_preperations
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_reinforce_kimberlite}
+		relative_position_id = REM_reinforce_kimberlite
 		ai_will_do = {
 			factor = 1
 		}

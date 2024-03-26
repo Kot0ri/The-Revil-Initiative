@@ -3502,6 +3502,24 @@ focus = {
 }
 
 focus = {
+	id = ZEO_form_a_new_high_command
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_maintain_autonomy}
+	prerequisite = { focus = ZEO_demilitarization}
+	relative_position_id = ZEO_maintain_autonomy
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = ZEO_shutdown_investigations
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }

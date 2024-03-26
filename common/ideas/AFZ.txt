@@ -1,0 +1,46 @@
+ideas = {
+
+	country = {
+		Army_Corruption = {
+			
+			allowed = {
+				original_tag = AFZ
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = -0.30
+				dig_in_speed = -0.15
+				org_loss_when_moving = -0.15
+				high_command_cost_factor = -0.25
+			}
+		}
+
+		Government_Corruption = {
+			
+			allowed = {
+				original_tag = AFZ
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_advisor_cost_factor = -0.15
+				political_power_gain = 0.05
+				stability_factor = -0.15
+				consumer_goods_factor = 0.35
+				production_speed_buildings_factor = -0.12
+			}
+		}
+	}
+
+}

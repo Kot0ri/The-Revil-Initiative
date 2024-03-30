@@ -402,6 +402,51 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GRA_Flanagan_Institute_expansion
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_found_Flanagan_Institute
+		prerequisite = {focus = GRA_found_Flanagan_Institute}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_Poach_Char
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Flanagan_Institute_expansion
+		prerequisite = {focus = GRA_Flanagan_Institute_expansion}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_form_the_300th_Autonomous_Corps.
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Poach_Char
+		prerequisite = {focus = GRA_Poach_Char}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = GRA_ensure_loyalty_of_the_citizens
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -439,6 +484,82 @@ focus_tree = {
 		y = 1
 		relative_position_id = GRA_kycilias_dominion
 		prerequisite = {focus = GRA_kycilias_dominion}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_New_Headquaters
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_expansion_of_kycilia_agency
+		prerequisite = {focus = GRA_expansion_of_kycilia_agency}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_keep_tabs_on_unruly_citizens
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_New_Headquaters
+		prerequisite = {focus = GRA_New_Headquaters}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_spy_on_Von_Braun
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_keep_tabs_on_unruly_citizens
+		prerequisite = {focus = GRA_keep_tabs_on_unruly_citizens}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	
+	focus = {
+		id = GRA_Operation_Rubicon
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_spy_on_Von_Braun
+		prerequisite = {focus = GRA_spy_on_Von_Braun}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_Silent_Night
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Operation_Rubicon
+		prerequisite = {focus = GRA_Operation_Rubicon}
 		ai_will_do = {
 			factor = 1
 		}

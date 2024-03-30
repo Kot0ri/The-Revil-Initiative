@@ -357,6 +357,134 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GRA_Plot_against_Gihren
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_loyalty_to_kycilia
+		prerequisite = {focus = GRA_loyalty_to_kycilia}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_help_instigate_tensions_in_Zeon
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Plot_against_Gihren
+		prerequisite = {focus = GRA_Plot_against_Gihren}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	
+	focus = {
+		id = GRA_the_end_draws_near
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = GRA_Plot_against_Gihren
+		prerequisite = {focus = GRA_Plot_against_Gihren}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_send_a_fleet_to_axis
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = GRA_the_end_draws_near
+		prerequisite = {focus = GRA_the_end_draws_near}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_send_forces_to_side_3
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = GRA_the_end_draws_near
+		prerequisite = {focus = GRA_the_end_draws_near}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_continue_the_fight
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 2
+		relative_position_id = GRA_the_end_draws_near
+		prerequisite = {focus = GRA_the_end_draws_near}
+		prerequisite = {focus = GRA_send_forces_to_side_3 focus = GRA_send_a_fleet_to_axis}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_flee_to_axis
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_continue_the_fight
+		prerequisite = {focus = GRA_continue_the_fight}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = GRA_Engineer_Development_Facilities
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5

@@ -392,6 +392,114 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = GRA_counter_loyalist_efforts
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_help_instigate_tensions_in_Zeon
+		prerequisite = {focus = GRA_help_instigate_tensions_in_Zeon}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_true_identity_of_the_red_comet
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 2
+		relative_position_id = GRA_Plot_against_Gihren
+		prerequisite = {focus = GRA_Plot_against_Gihren}
+		prerequisite = {focus = GRA_form_the_300th_Autonomous_Corps.}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_coup_attempt_against_gihren
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_counter_loyalist_efforts
+		prerequisite = {focus = GRA_counter_loyalist_efforts focus = GRA_true_identity_of_the_red_comet }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_leave_for_A_Baoa_Qu
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_true_identity_of_the_red_comet
+		prerequisite = {focus = GRA_true_identity_of_the_red_comet }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_Battle_of_Gel_Dorva
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_leave_for_A_Baoa_Qu
+		prerequisite = {focus = GRA_leave_for_A_Baoa_Qu }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_assassinate_Gihren
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Battle_of_Gel_Dorva
+		prerequisite = {focus = GRA_Battle_of_Gel_Dorva }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
 	
 	focus = {
 		id = GRA_the_end_draws_near
@@ -567,6 +675,37 @@ focus_tree = {
 		y = 1
 		relative_position_id = GRA_Poach_Char
 		prerequisite = {focus = GRA_Poach_Char}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_begin_widescale_deployment_of_newtypes
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_form_the_300th_Autonomous_Corps.
+		prerequisite = {focus = GRA_form_the_300th_Autonomous_Corps.}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = GRA_improve_newtype_use_mobile_weapons
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_form_the_300th_Autonomous_Corps.
+		prerequisite = {focus = GRA_form_the_300th_Autonomous_Corps.}
 		ai_will_do = {
 			factor = 1
 		}

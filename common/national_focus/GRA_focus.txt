@@ -325,11 +325,10 @@ focus_tree = {
 		id = GRA_Granadan_Marine_Corps.
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GRA_ZEF_recruitment
-		prerequisite = {focus = GRA_ZEF_recruitment}
-		prerequisite = {focus = GRA_kycilias_tour}
+		prerequisite = {focus = GRA_ZEF_recruitment focus = GRA_Build_up_secret_shipyards}
 		ai_will_do = {
 			factor = 1
 		}
@@ -347,6 +346,11 @@ focus_tree = {
 		prerequisite = {focus = GRA_Granadan_Marine_Corps.}
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			country_leader = {
+				GRA_kycilia_zabi
+			}
 		}
 		completion_reward = {
 		}
@@ -446,7 +450,7 @@ focus_tree = {
 		id = GRA_sign_an_offical_treaty
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 7
-		x = 8
+		x = 9
 		y = 1
 		mutually_exclusive = { focus = GRA_execute_a_coup}
 		relative_position_id = GRA_Invite_Zeon_officals
@@ -459,7 +463,70 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRA_form_a_new_government
+		id = GRA_begin_militarization_program
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = GRA_sign_an_offical_treaty
+		prerequisite = {focus = GRA_sign_an_offical_treaty}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus =  GRA_compete_with_Von_Braun_economically
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_Navy_Focus
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_begin_militarization_program
+		prerequisite = {focus = GRA_begin_militarization_program}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_Build_up_secret_shipyards
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Navy_Focus
+		prerequisite = {focus = GRA_Navy_Focus}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_Capital_Ship_Doctrine
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_Build_up_secret_shipyards
+		prerequisite = {focus = GRA_Build_up_secret_shipyards}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_compete_with_Von_Braun_economically
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
 		x = 0
@@ -468,6 +535,60 @@ focus_tree = {
 		prerequisite = {focus = GRA_sign_an_offical_treaty}
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus =  GRA_begin_militarization_program
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_form_a_new_government
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = GRA_sign_an_offical_treaty
+		prerequisite = {focus = GRA_sign_an_offical_treaty}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_pro-Zabi_government
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_form_a_new_government
+		prerequisite = {focus = GRA_form_a_new_government}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = GRA_pro-Deikun_government
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_pro-Deikun_government
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = GRA_form_a_new_government
+		prerequisite = {focus = GRA_form_a_new_government}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = GRA_pro-Zabi_government
 		}
 		completion_reward = {
 		}

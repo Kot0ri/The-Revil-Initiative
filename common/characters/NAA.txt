@@ -25,6 +25,8 @@ characters={
 	}
 }
 
+
+
 #advisors
 NAA_Icelina_Eschonbach={
 	name="Icelina Eschonbach"
@@ -53,9 +55,105 @@ NAA_Icelina_Eschonbach={
 
 #field marshals
 
+NAA_Garcia_Romeo={
+	name="Garcia Romeo"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Garcia_Romeo.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Garcia_Romeo.dds"
+		}
+	}
+	field_marshal = {
+		traits = { politically_connected }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
+NAA_Killy_Garret={
+	name="Killy Garret"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Killy_Garret.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Killy_Garret.dds"
+		}
+	}
+	field_marshal = {
+		traits = { pilot noisy_fairy }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
 
 #generals
 
+NAA_Garret_Schmitzer={
+	name="Garret Schmitzer"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Garret_Schmitzer.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Garret_Schmitzer.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	} 
+}
 
+NAA_Doug_Schneid={
+	name="Doug Schneid"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Doug_Schneid.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Doug_Schneid.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	} 
+}
 
+NAA_Sophie_Fran={
+	name="Sophie Fran"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Sophie_Fran.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Sophie_Fran.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	} 
+}
 }

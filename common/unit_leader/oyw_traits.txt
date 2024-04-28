@@ -1,4 +1,13 @@
 leader_traits = {
+	noisy_fairy = {
+		type = field_marshal
+		trait_type = personality_trait
+		field_marshal_modifier = {
+			recon_factor_while_entrenched = 0.2
+			dig_in_speed = 0.2
+			naval_invasion_prep_speed = 0.15
+		}
+	}
 	ghost_of_zeon = {
 		type = field_marshal
 		trait_type = personality_trait

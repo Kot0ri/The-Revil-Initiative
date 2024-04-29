@@ -8,6 +8,16 @@ leader_traits = {
 			naval_invasion_prep_speed = 0.15
 		}
 	}
+	ace_of_california_base = {
+		type = corps_commander
+		trait_type = personality_trait
+		corps_commander_modifier = {
+			recon_factor_while_entrenched = 0.2
+			dig_in_speed = 0.2
+			army_artillery_defence_factor = 0.05
+			army_morale_factor = 0.02
+		}
+	}
 	ghost_of_zeon = {
 		type = field_marshal
 		trait_type = personality_trait

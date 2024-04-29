@@ -156,4 +156,252 @@ NAA_Sophie_Fran={
 		logistics_skill = 2
 	} 
 }
+
+
+NAA_Lou_Roher={
+	name="Lou Roher"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Lou_Roher.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Lou_Roher.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+	} 
+}
+
+NAA_Matt_Austin={
+	name="Matt Austin"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Matt_Austin.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Matt_Austin.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Nikki_Roberto={
+	name="Nikki Roberto"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Nikki_Roberto.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Nikki_Robertos.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Charlotte_Hepner={
+	name="Charlotte Hepner"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Charlotte_Hepner.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Charlotte_Hepner.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Alma_Stirner={
+	name="Alma Stirner"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Alma_Stirner.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Alma_Stirner.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot newtype1 }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 1
+	} 
+}
+
+NAA_Helena_Hegel={
+	name="Helena Hegel"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Helena_Hegel.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Helena_Hegel.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+	} 
+}
+
+NAA_Mia_Brinkman={
+	name="Mia Brinkman"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Mia_Brinkman.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Mia_Brinkman.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Ian_Graden={
+	name="Ian Graden"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Ian_Graden.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Ian_Graden.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot ace_of_california_base  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Ramba_Ral={
+	name="Ramba Ral"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Ramba_Ral.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Ramba_Ral.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot aoi_kyosei  }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 3
+	} 
+}
+
+#Advisors
+NAA_Barbara_Hahari={
+	name="Barbara Hahari"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Barbara_Hahari.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Barbara_Hahari.dds"
+		}
+	}
+	corps_commander = {
+		traits = { naval_invader }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	} 
+	advisor={
+		slot = high_command
+		idea_token = Barbara_Hahari
+		allowed = {
+			original_tag = NAA
+		}
+		traits = {
+			air_bomber_interception_2
+		}
+		available = {
+			
+		}
+		modifier = {
+		}
+		do_effect = {
+		}
+	}
+}
+
+NAA_Irmela_Gruberi={
+	name="Irmela Gruberi"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Irmela_Gruberi.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Irmela_Gruberi.dds"
+		}
+	}
+	advisor={
+		slot = high_command
+		idea_token = Barbara_Hahari
+		allowed = {
+			original_tag = NAA
+		}
+		traits = {
+			hc_mechanic_specialist_2
+		}
+		available = {
+			
+		}
+		modifier = {
+		}
+		do_effect = {
+		}
+	}
+}
 }

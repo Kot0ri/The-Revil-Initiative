@@ -290,6 +290,54 @@ focus = {
 }
 
 focus = {
+	id = SI1_meeting_with_federation_junior_officers
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI1_own_earth_property
+	prerequisite = { focus = SI1_own_earth_property focus = SI1_federation_port_officers }
+}
+
+focus = {
+	id = SI1_colony_protection_taskforce_proposal
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI1_meeting_with_federation_junior_officers
+	prerequisite = { focus = SI1_meeting_with_federation_junior_officers }
+}
+
+focus = {
+	id = SI1_form_londo_bell
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI1_colony_protection_taskforce_proposal
+	prerequisite = { focus = SI1_colony_protection_taskforce_proposal }
+}
+
+focus = {
 	id = SI1_begin_expansion_of_colony_industries
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2

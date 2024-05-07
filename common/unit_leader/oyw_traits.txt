@@ -525,6 +525,61 @@ leader_traits = {
 		}
     show_in_combat = yes
 	}
+	cyber-newtype = {
+		type = corps_commander
+		trait_type = personality_trait
+		attack_skill = 1
+		defense_skill = 1
+		corps_commander_modifier = {
+			recon_factor = 0.3
+			experience_gain_factor = 0.2
+			modifier_army_sub_unit_category_newtype_mobilesuit_attack_factor = 0.5
+		}
+    new_commander_weight = {
+			factor = 0.1
+      modifier = {
+        OR = {
+          has_trait = newtype2
+          has_trait = newtype3
+        }
+        factor = 0
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_1
+        }
+        factor = 0
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_2
+        }
+        factor = 5
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_3
+        }
+        factor = 10
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_4
+        }
+        factor = 20
+      }
+      modifier = {
+        FROM = {
+          has_idea = newtype_division_5
+        }
+        factor = 30
+      }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+    show_in_combat = yes
+	}
 	newtype1 = {
 		type = corps_commander
 		trait_type = personality_trait

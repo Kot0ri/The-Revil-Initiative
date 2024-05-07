@@ -78,8 +78,29 @@ characters={
 	visible = { has_character_flag = casval_leadership}
 }
 
+SI1_bright_noa_cca={
+	name="Bright Noa"
+	portraits={
+		civilian={
+			large="gfx/leaders/Portrait_mob_leader_2.dds"
+		}
+	}
+	country_leader={
+		ideology=military_government
+		expire="100.1.1.1"
+	}
+	navy_leader = {
+		traits = { media_personality bold blockade_runner superior_tactician air_controller }
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		maneuvering_skill = 6
+		coordination_skill = 6
+	}
+}
 
-## Field Marshals
+
+## NZ Field Marshals
 
 SI1_haman={
 	name="Haman Karn"
@@ -123,10 +144,10 @@ SI1_garma={
 	
 }
 
-## Generals
+## NZ Generals
 
 
-## MS Pilots
+## NZ MS Pilots
 
 SI1_gyunei={
 	name="Gyunei Guss"
@@ -139,7 +160,7 @@ SI1_gyunei={
 		}
 	}
 	corps_commander= {
-	 traits={ pilot cyber_newtype royal_guard }
+	 traits={ pilot cyber_newtype Royalguard }
 		skill=4
 		attack_skill=4
 		defense_skill=3
@@ -160,7 +181,7 @@ SI1_angelo={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot cyber_newtype royal_guard }
+	 traits={ pilot cyber_newtype Royalguard }
 		skill=4
 		attack_skill=4
 		defense_skill=3
@@ -223,7 +244,7 @@ SI1_sergi={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot royal_guard }
+	 traits={ pilot Royalguard }
 		skill=3
 		attack_skill=2
 		defense_skill=3
@@ -244,7 +265,7 @@ SI1_bato={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot royal_guard }
+	 traits={ pilot Royalguard }
 		skill=3
 		attack_skill=2
 		defense_skill=3
@@ -265,7 +286,7 @@ SI1_cuaron={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot royal_guard }
+	 traits={ pilot Royalguard }
 		skill=3
 		attack_skill=2
 		defense_skill=3
@@ -286,7 +307,7 @@ SI1_zechst={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot royal_guard newtype1}
+	 traits={ pilot Royalguard newtype1}
 		skill=3
 		attack_skill=2
 		defense_skill=3
@@ -307,7 +328,7 @@ SI1_spotter={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot royal_guard}
+	 traits={ pilot Royalguard}
 		skill=2
 		attack_skill=2
 		defense_skill=2
@@ -441,7 +462,7 @@ SI1_luger={
 }
 
 
-## Admirals
+## NZ Admirals
 
 SI1_lyle={
 	name="Lyle"
@@ -454,6 +475,7 @@ SI1_lyle={
 		}
 	}
 		navy_leader = {
+			traits = { blockade_runner superior_tactician }
 			skill = 4
 			attack_skill = 3
 			defense_skill = 2
@@ -474,6 +496,7 @@ SI1_hill={
 		}
 	}
 		navy_leader = {
+			traits = { battleship_adherent }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -494,6 +517,7 @@ SI1_zimmerman={
 		}
 	}
 		navy_leader = {
+			traits = { blockade_runner }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -504,7 +528,7 @@ SI1_zimmerman={
 }
 
 
-##Adivsors
+## NZ Adivsors
 SI1_nakamura={
 	name="Asashi Nakamura"
 	portraits={
@@ -512,8 +536,6 @@ SI1_nakamura={
 			small=GFX_idea_ramba_ral_pa
 		}
 	}
-
-
 	advisor={
 		slot = high_command
 		ledger = army
@@ -524,6 +546,33 @@ SI1_nakamura={
 		}
 		traits = {
 			army_chief_maneuver_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+SI1_nanai={
+	name="Nanai Miquel"
+	portraits={
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+	advisor={
+		slot = theorist
+		ledger = army
+		cost = 100
+		idea_token = nanai
+		allowed = {
+			original_tag = SI1
+		}
+		traits = {
+			cyber-newtype_researcher
 		}
 		ai_will_do = {
 			factor = 2

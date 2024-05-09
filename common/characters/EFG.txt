@@ -95,6 +95,73 @@ EFG_gopp={
 	}
 
 	#Generals
+	EFG_kimberly_hayman={
+		name="Kimberly Hayman"
+		portraits={
+			army={
+				small="GFX_idea_anavel_gato"
+			}
+			army={
+				large="gfx/leaders/EFG/Ittou_Tsurugi.dds"
+			}
+		}
+		corps_commander={
+			traits={MaHa_party}
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kimberly_hayman
+			allowed = {
+				original_tag = EFG
+			}
+			traits = { founder_of_manhunters }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	EFG_bijon_dargol={
+		name="Bijon Dargol"
+		portraits={
+			army={
+				small="GFX_idea_anavel_gato"
+			}
+			army={
+				large="gfx/leaders/EFG/Ittou_Tsurugi.dds"
+			}
+		}
+		corps_commander={
+			traits={MaHa_party}
+			skill=4
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = bijon_dargol
+			allowed = {
+				original_tag = EFG
+			}
+			traits = { head_of_manhunters }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+	#Pilots
+
 	EFG_tsurugi={
 		name="Ittou Tsurugi"
 		portraits={
@@ -106,13 +173,52 @@ EFG_gopp={
 			}
 		}
 		corps_commander={
-			traits={pilot }
+			traits={pilot BGST_party}
 			skill=2
 			attack_skill=2
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=2
 		}
+	}
+
+	EFG_ul_urian={
+		name="Ul Urian "
+		portraits={
+			army={
+				small="GFX_idea_anavel_gato"
+			}
+			army={
+				large="gfx/leaders/EFG/Ittou_Tsurugi.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot MaHa_party}
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+		EFG_jean_wen_fu={
+			name="Jean wen Fu"
+			portraits={
+				army={
+					small="GFX_idea_anavel_gato"
+				}
+				army={
+					large="gfx/leaders/EFG/Ittou_Tsurugi.dds"
+				}
+			}
+			corps_commander={
+				traits={pilot MaHa_party}
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=1
+			}
 	}
 
 	#Admirals
@@ -133,6 +239,26 @@ EFG_gopp={
 			defense_skill=2
 			maneuvering_skill=2
 			coordination_skill=2
+		}
+	}
+
+	EFG_mauri={
+		name="Mauri"
+		portraits={
+			army={
+				small="GFX_idea_conscon"
+			}
+			army={
+				large= "gfx/leaders/EFG/Mauri.dds"
+			}
+		}
+		navy_leader={
+			traits={MaHa_party}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
 		}
 	}
 

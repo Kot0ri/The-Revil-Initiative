@@ -45,5 +45,47 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+
+		CIA = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				resistance_decay = 0.05
+				intel_network_gain = 0.07
+			}
+			removal_cost = -1
+		}
+
+		Manhunters = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				required_garrison_factor = -0.15
+				resistance_growth = -0.02
+			}
+			removal_cost = -1
+		}
+
+		FSS = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				intel_network_gain = 0.07
+				research_speed_factor = 0.02
+			}
+			removal_cost = -1
+		}
 	}
 }

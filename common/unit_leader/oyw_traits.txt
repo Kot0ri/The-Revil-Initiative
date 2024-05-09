@@ -877,7 +877,16 @@ leader_traits = {
 		trait_type = basic_terrain_trait
 		gui_row = 5
 	}
-
+	BGST_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
+	MaHa_party = {
+		type = all
+		trait_type = status_trait
+		show_in_combat = no
+	}
 	anti_zabi_party = {
 		type = all
 		trait_type = status_trait

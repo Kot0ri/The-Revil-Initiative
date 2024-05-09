@@ -5,12 +5,12 @@ state={
 	manpower = 9069000
 	state_category = large_city
 	resources={
-		chromium=52 # was: 88
+		chromium= 88
 	}
 
 	history={
-		owner = JAP
-		add_core_of = JAP
+		owner = EFG
+		add_core_of = EFG
 		buildings = {
 			infrastructure = 4 #was: 7
 			air_base = 3
@@ -32,12 +32,7 @@ state={
 		victory_points = {
 			9950 30
 		}
-		1939.1.1 = {
-			buildings = {
-				dockyard = 4
-				industrial_complex = 3
-			}
-		}
+	
 
 	}
 

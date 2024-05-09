@@ -16,8 +16,36 @@ characters={
 		expire="1000.1.1.1"
 	}
 }
+EUF_jean_moreau={
+	name="Jean Moreau V"
+	portraits={
+		civilian={
+			large="gfx/leaders/EUF/EU_Parliment.dds"
+		}
+		army={
+			large="gfx/leaders/EUF/EU_Parliment.dds"
+		}
+	}
+	country_leader={
+		ideology= military_government
+		traits={ eager_collaborator }
+		expire="1000.1.1.1"
+	}
+	advisor = {
+		slot = high_command
+		idea_token = jean_moreau
+		traits = { navy_chief_old_guard }
+	}
+	navy_leader = {
+		skill = 5
+		attack_skill = 4
+		defense_skill = 4
+		maneuvering_skill = 4
+		coordination_skill = 5
+	}
+}
 #field marshals
-EFS_michael_colmatta={
+EUF_michael_colmatta={
 	name=EFS_michael_colmatta
 	portraits={
 		army={
@@ -58,7 +86,7 @@ EFS_michael_colmatta={
 
 #generals
 
-EFS_ben_barberry={
+EUF_ben_barberry={
 	name=EFS_ben_barberry
 	portraits={
 		army={
@@ -78,7 +106,7 @@ EFS_ben_barberry={
 	}
 }
 
-EFS_herman_yandell={
+EUF_herman_yandell={
 	name=EFS_herman_yandell
 	portraits={
 		army={
@@ -98,7 +126,7 @@ EFS_herman_yandell={
 	}
 }
 
-EFS_arleen_nazon={
+EUF_arleen_nazon={
 	name=EFS_arleen_nazon
 	portraits={
 		army={

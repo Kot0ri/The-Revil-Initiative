@@ -248,6 +248,16 @@ guide_of_the_world = {
 			factor = 0.2
 		}
 	}
+	founder_of_manhunters = {
+		random = no
+		political_advisor_cost_factor = -0.15
+		drift_defence_factor = 0.2
+	}
+	head_of_manhunters = {
+		random = no
+		special_forces_cap = 0.05
+		drift_defence_factor = 0.2
+	}
 	bloody_revolutionary = {
 		random = no
 		political_advisor_cost_factor = -0.15

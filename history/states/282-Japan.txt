@@ -7,13 +7,13 @@ state = {
 	state_category = megalopolis
 	
 	resources = {
-		aluminium = 1 # was: 2
+		aluminium = 2
 	}
 
 	history = {
 
-		owner = JAP
-		add_core_of = JAP
+		owner = EFG
+		add_core_of = EFG
 
 		buildings = {
 			infrastructure = 4 #was: 8
@@ -34,13 +34,6 @@ state = {
 			9998 40 
 		}
 
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				dockyard = 4
-				industrial_complex = 5
-			}
-		}
 
 	}
 

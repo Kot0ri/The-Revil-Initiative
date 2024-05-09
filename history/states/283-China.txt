@@ -6,10 +6,8 @@ state = {
 	}
 
 	history = {
-		owner = XSM
-		add_core_of = XSM
-		add_core_of = CHI
-		add_core_of = PRC
+		owner = EFG
+		add_core_of = EFG
 
 		buildings = {
 			infrastructure = 2
@@ -20,20 +18,7 @@ state = {
 			2022 3 #Was in 12732, but is now here
 		}
 
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger"
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-			}
-		}
+	
 	}
 
 	provinces = {

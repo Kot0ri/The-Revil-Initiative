@@ -1,0 +1,49 @@
+ideas = {
+	country = {
+		UC_Charter = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_advisor_cost_factor = -0.05
+				political_power_gain = 0.05
+				improve_relations_maintain_cost_factor = 2
+			}
+			removal_cost = -1
+		}
+
+		empowered_earthnoid_enterprises = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				political_power_gain = 0.02
+				supremacist_drift = 0.05
+			}
+			removal_cost = -1
+		}
+
+		empowered_banks = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				supremacist_drift = 0.05
+				trade_laws_cost_factor = -0.25
+				trade_opinion_factor = 0.1
+			}
+			removal_cost = -1
+		}
+	}
+}

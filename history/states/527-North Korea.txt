@@ -5,12 +5,12 @@ state={
 	manpower = 6774200
 	state_category = town
 	resources={
-		steel=18 # was: 30
-		tungsten=28 # was: 52
+		steel=30
+		tungsten= 52
 	}
 
 	history={
-		owner = JAP
+		owner = EFG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -20,7 +20,7 @@ state={
 			4052 1
 		}	
 
-		add_core_of = KOR
+		add_core_of = EFG
 	}
 
 	provinces={

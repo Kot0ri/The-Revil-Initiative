@@ -7,9 +7,9 @@ state=
 	state_category = town
 	history=
 	{
-		owner = SSA
+		owner = PHI
 		buildings = {
-			infrastructure =  5
+			infrastructure = 3 #was: 5
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 6
@@ -23,7 +23,7 @@ state=
 		victory_points = {
 			1221 1 
 		}
-		add_core_of = SSA
+		add_core_of = PHI
 	}
 
 	provinces={

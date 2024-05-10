@@ -18,6 +18,23 @@ leader_traits = {
 			army_morale_factor = 0.02
 		}
 	}
+	thunderclap_in_the_wilderness = {
+		type = corps_commander
+		trait_type = personality_trait
+		corps_commander_modifier = {
+			recon_factor_while_entrenched = 0.2
+			org_loss_at_low_org_factor = -0.05
+			land_reinforce_rate = 0.02
+		}
+	}
+	white_rose = {
+		type = corps_commander
+		trait_type = personality_trait
+		corps_commander_modifier = {
+			recon_factor_while_entrenched = 0.2
+			winter_attrition = -0.08
+		}
+	}
 	ghost_of_zeon = {
 		type = field_marshal
 		trait_type = personality_trait

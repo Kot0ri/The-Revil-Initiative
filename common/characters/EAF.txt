@@ -77,7 +77,107 @@ characters={
 		}
 	}
 
+	EAF_zhukov ={
+		name="Zhukov"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/neun.dds"
+			}
+		}
+		field_marshal = {
+			traits={zabi_party }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
 	# generals
+
+	EAF_otto_eichman ={
+		name="Otto Eichman"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/doan.dds"
+			}
+		}
+		corps_commander = {
+			traits={ zabi_party politically_connected organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_douglas_rodin ={
+		name="Douglas Rodin"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/doan.dds"
+			}
+		}
+		corps_commander = {
+			traits={ organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_wolfgang_wall ={
+		name="Wolfgang Wall"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/doan.dds"
+			}
+		}
+		corps_commander = {
+			traits={ defensive_doctrine }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	EAF_bone_abust ={
+		name="Bone Abust"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/doan.dds"
+			}
+		}
+		corps_commander = {
+			traits={ armor_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 
 	#ms pilots
 
@@ -108,16 +208,36 @@ characters={
 				large="gfx/leaders/EAF/yuri.dds"
 			}
 			army={
-				large="gfx/leaders/EAF/lance.dds"
+				large="gfx/leaders/EAF/lance_garfield.dds"
 			}
 		}
 		corps_commander = {
-			traits={ deikun_party pilot winter_specialist urban_assault_specialist }
+			traits={ deikun_party pilot winter_specialist urban_assault_specialist  white_rose }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 2
+		}
+	}
+
+	EAF_visch_donahue ={
+		name="Visch Donahue"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/lance_garfield.dds"
+			}
+		}
+		corps_commander = {
+			traits={ deikun_party pilot thunderclap_in_the_wilderness  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 

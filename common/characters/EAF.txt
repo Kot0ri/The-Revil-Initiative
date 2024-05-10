@@ -261,26 +261,6 @@ characters={
 		}
 	}
 
-	EAF_erik_blanke ={
-		name="Erik Blanke"
-		portraits={
-			civilian={
-				large="gfx/leaders/EAF/yuri.dds"
-			}
-			army={
-				large="gfx/leaders/EAF/erik_blanke.dds"
-			}
-		}
-		corps_commander = {
-			traits={ pilot  }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 3
-		}
-	}
-
 	EAF_visch_donahue ={
 		name="Visch Donahue"
 		portraits={
@@ -338,46 +318,6 @@ characters={
 			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 2
-		}
-	}
-
-	EAF_ailos_bade ={
-		name="Ailos Bade"
-		portraits={
-			civilian={
-				large="gfx/leaders/EAF/yuri.dds"
-			}
-			army={
-				large="gfx/leaders/EAF/ailos_bade.dds"
-			}
-		}
-		corps_commander = {
-			traits={ pilot  }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
-	}
-
-	EAF_fritz_bauer ={
-		name="Fritz Bauer"
-		portraits={
-			civilian={
-				large="gfx/leaders/EAF/yuri.dds"
-			}
-			army={
-				large="gfx/leaders/EAF/fritz_bauer.dds"
-			}
-		}
-		corps_commander = {
-			traits={ pilot  }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
 		}
 	}
 

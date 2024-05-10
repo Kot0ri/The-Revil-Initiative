@@ -43,7 +43,7 @@ characters={
 			traits = { army_chief_defensive_2 }
 		}
 		field_marshal = {
-			traits={zabi_party defensive_doctrine}
+			traits={zabi_party defensive_doctrine expert_delegator }
 			skill = 4
 			attack_skill = 3
 			defense_skill = 3
@@ -88,7 +88,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits={zabi_party }
+			traits={ zabi_party }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -130,7 +130,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ zabi_party politically_connected organizer }
+			traits={ zabi_party politically_connected organizer skilled_staffer }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 3
@@ -316,6 +316,26 @@ characters={
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_yonem_kirks ={
+		name="Yonem Kirks"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/yonem_kirks.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
 		}

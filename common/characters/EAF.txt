@@ -199,6 +199,26 @@ characters={
 		}
 	}
 
+	EAF_massad ={
+		name="Massad"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/masad.dds"
+			}
+		}
+		corps_commander = {
+			traits={ jungle_rat }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
 	#ms pilots
 
 	EAF_crucuruz_doan ={
@@ -373,6 +393,46 @@ characters={
 		}
 		corps_commander = {
 			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_quint ={
+		name="Quint"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/quint.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot desert_fox}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_tessera_massera ={
+		name="Tessera Massera"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/tessera_massera.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot naval_invader}
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2

@@ -97,6 +97,26 @@ characters={
 		}
 	}
 
+	EAF_walter_curtis ={
+		name="Walter Curtis"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/neun.dds"
+			}
+		}
+		field_marshal = {
+			traits={ }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
 	# generals
 
 	EAF_otto_eichman ={
@@ -232,7 +252,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ deikun_party pilot thunderclap_in_the_wilderness  }
+			traits={pilot thunderclap_in_the_wilderness  }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 4

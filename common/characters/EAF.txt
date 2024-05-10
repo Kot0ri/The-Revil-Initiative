@@ -321,6 +321,66 @@ characters={
 		}
 	}
 
+	EAF_aina_sahalin ={
+		name="Aina Sahalin"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/aina_sahalin.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	EAF_sandra ={
+		name="Sandra"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/sandra.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_garsky_zinobiev ={
+		name="Sandra"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/garsky_zinobiev.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
 	#admirals
 
 	#advisor

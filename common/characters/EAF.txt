@@ -25,6 +25,144 @@ characters={
 	}
 }
 
+	#field marshals
+
+	EAF_yuri_kellerne ={
+		name="Yuri Kellerne"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/yuri_kellerne.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = yuri_kellerne
+			traits = { army_chief_defensive_2 }
+		}
+		field_marshal = {
+			traits={zabi_party defensive_doctrine}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	EAF_neun_bitter ={
+		name="Neun Bitter"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/neun.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = neun_bitter
+			traits = { army_chief_maneuver_2 }
+		}
+		field_marshal = {
+			traits={zabi_party organizer offensive_doctrine }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	# generals
+
+	#ms pilots
+
+	EAF_crucurz_doan ={
+		name="Cucuruz Doan"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/doan.dds"
+			}
+		}
+		corps_commander = {
+			traits={ anti_zabi_party pilot hill_fighter urban_assault_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	EAF_lance_garfield ={
+		name="Lance Garfield"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/lance.dds"
+			}
+		}
+		corps_commander = {
+			traits={ deikun_party pilot winter_specialist urban_assault_specialist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	EAF_norris_packard ={
+		name="Noris Packard"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/noris_packard.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot jungle_rat urban_assault_specialist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	EAF_desert_rommel ={
+		name="Deseert Rommel"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/desert_rommel.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot desert_fox organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	#admirals
+
 	#advisor
 	EAF_jane_contie={
 		name="Jane Contie"
@@ -40,7 +178,7 @@ characters={
 			slot = high_command
 			ledger = army
 			cost = 10
-			idea_token = pierre
+			idea_token = jane_contie
 			allowed = {
 				original_tag = EAF
 			}

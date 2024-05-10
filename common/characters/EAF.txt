@@ -146,7 +146,7 @@ characters={
 				large="gfx/leaders/EAF/yuri.dds"
 			}
 			army={
-				large="gfx/leaders/EAF/doan.dds"
+				large="gfx/leaders/EAF/douglas_rodin.dds"
 			}
 		}
 		corps_commander = {
@@ -208,7 +208,7 @@ characters={
 				large="gfx/leaders/EAF/yuri.dds"
 			}
 			army={
-				large="gfx/leaders/EAF/cucuruz_doan.dds"
+				large="gfx/leaders/EAF/crucuruz_doan.dds"
 			}
 		}
 		corps_commander = {
@@ -273,6 +273,26 @@ characters={
 		}
 		corps_commander = {
 			traits={ pilot jungle_rat urban_assault_specialist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	EAF_roy_greenwood ={
+		name="Roy Greenwood"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/roy_greenwood.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot desert_fox }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 4

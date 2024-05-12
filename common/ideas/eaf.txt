@@ -24,5 +24,44 @@ ideas = {
 				special_forces_training_time_factor = -0.05
 			}
 		}
+
+		EAF_defense_plan = {
+			
+			allowed = {
+				original_tag = EAF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				recon_factor_while_entrenched = 0.05
+				equipment_capture_factor = 0.07
+				dig_in_speed = 0.05
+			}
+		}
+
+		EAF_mquves_command = {
+			
+			allowed = {
+				original_tag = EAF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.05
+				command_power_gain = 0.02
+				local_resources = 0.25
+				research_sharing_per_country_bonus = 0.15
+			}
+		}
 	}
 }

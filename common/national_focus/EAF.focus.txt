@@ -428,6 +428,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_special_force_focus
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -5
+		y = 1
+		prerequisite ={ focus = EAF_Phase_3_Operations}
+		relative_position_id = EAF_Phase_3_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = EAF_special_forces
+		}
+	}
+
+	focus = {
 		id = EAF_Blitzkreig_through_the_Middle_East
 		icon = GFX_goal_general_meeting
 		cost = 5

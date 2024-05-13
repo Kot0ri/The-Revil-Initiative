@@ -283,6 +283,23 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_combined_arms_doctrine
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 7
+		y = 1
+		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_ideas = EAF_combined_arms
+		}
+	}
+
+	focus = {
 		id = EAF_Yuris_Defence_plans
 		icon = GFX_goal_general_meeting
 		cost = 5

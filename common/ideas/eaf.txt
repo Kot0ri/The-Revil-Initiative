@@ -65,6 +65,26 @@ ideas = {
 			}
 		}
 
+		EAF_combined_arms = {
+			
+			allowed = {
+				original_tag = EAF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				army_artillery_defence_factor = 0.05
+				army_artillery_attack_factor = 0.08
+				air_cas_efficiency = 0.1
+				air_cas_present_factor = 0.05
+			}
+		}
+
 		EAF_mquves_command = {
 			
 			allowed = {

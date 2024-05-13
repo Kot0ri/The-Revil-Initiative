@@ -891,7 +891,7 @@ focus_tree = {
 		id = EAF_Dom_developments
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 1
+		x = -1
 		y = 1
 		prerequisite ={ focus = EAF_Heavy_Assualt_MS}
 		relative_position_id = EAF_Heavy_Assualt_MS
@@ -1010,7 +1010,7 @@ focus_tree = {
 		id = EAF_A_way_to_end_the_war
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -3
+		x = -4
 		y = 1
 		prerequisite ={ focus = EAF_Begin_research_Efforts }
 		relative_position_id = EAF_Begin_research_Efforts

@@ -85,6 +85,26 @@ ideas = {
 			}
 		}
 
+		EAF_zaku_primacy = {
+			
+			allowed = {
+				original_tag = EAF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				ms05_equipment_design_cost_factor = -0.05
+				ms06_equipment_design_cost_factor = -0.05
+				ms06_f_equipment_design_cost_factor = -0.05
+				ms06_j_equipment_design_cost_factor = -0.05
+			}
+		}
+
 		EAF_mquves_command = {
 			
 			allowed = {

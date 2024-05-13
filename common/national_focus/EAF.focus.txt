@@ -879,19 +879,57 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = {
+			focus = EAF_improve_ms_mobility
+		}
 		completion_reward = {
 		
 		}
 	}
 
+	focus = {
+		id = EAF_improve_ms_mobility
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite ={ focus = EAF_Specialized_Ground_Combat_MS }
+		prerequisite ={ focus = EAF_Close_Quarters_Combat_MS }
+		relative_position_id = EAF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EAF_Heavy_Assualt_MS
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Zaku_primacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = EAF_improve_ms_mobility}
+		relative_position_id = EAF_improve_ms_mobility
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = EAF_zaku_primacy
+		}
+	}
 	
 	focus = {
 		id = EAF_Next_Gen_Mainline_MS
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = 1
 		y = 3
-		prerequisite ={ focus = EAF_Heavy_Assualt_MS}
+		prerequisite ={ focus = EAF_Heavy_Assualt_MS focus = EAF_improve_ms_mobility }
 		relative_position_id = EAF_Begin_research_Efforts
 		ai_will_do = {
 			factor = 1

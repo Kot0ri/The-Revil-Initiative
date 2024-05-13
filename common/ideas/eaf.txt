@@ -104,6 +104,26 @@ ideas = {
 				ms06_j_equipment_design_cost_factor = -0.05
 			}
 		}
+		
+		EAF_Dom_developments = {
+			
+			allowed = {
+				original_tag = EAF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				ms09_equipment_design_cost_factor = -0.05
+				ms09_g_equipment_design_cost_factor = -0.05
+				ms09_h_equipment_design_cost_factor = -0.05
+				ms09_k_equipment_design_cost_factor = -0.05
+			}
+		}
 
 		EAF_mquves_command = {
 			

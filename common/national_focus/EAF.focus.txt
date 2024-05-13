@@ -956,6 +956,57 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_Zimmand_primacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = EAF_Next_Gen_Mainline_MS }
+		prerequisite ={ focus = EAF_Dom_developments }
+		relative_position_id = EAF_Next_Gen_Mainline_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_Zeonic_acceptance
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = EAF_Next_Gen_Mainline_MS }
+		prerequisite ={ focus = EAF_Zaku_primacy }
+		relative_position_id = EAF_Next_Gen_Mainline_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_unified_development
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = EAF_Next_Gen_Mainline_MS }
+		prerequisite = { focus = EAF_Zeonic_acceptance focus = EAF_Zimmand_primacy}
+		relative_position_id = EAF_Next_Gen_Mainline_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_examine_experimental_ms_theory
 		icon = GFX_goal_general_meeting
 		cost = 5

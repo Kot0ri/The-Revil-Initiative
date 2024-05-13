@@ -18,14 +18,8 @@ state = {
 			9126 1
 		}
 		
-		owner = NOR
-		add_core_of = NOR
-		if = {
-			limit = {
-				has_dlc = "Arms Against Tyranny"
-			}
-			add_core_of = SMI
-		}
+		owner = EUF
+		add_core_of = EUF
 		buildings = {
 			infrastructure = 2
 			air_base = 1

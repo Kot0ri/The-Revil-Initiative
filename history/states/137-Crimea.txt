@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = SOV
+		owner = EUF
 		victory_points = {
 			3686 20
 		}
@@ -19,7 +19,7 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			dockyard = 1
+			dockyard = 2
 			air_base = 3
 			3686 ={
 				naval_base = 10
@@ -30,13 +30,7 @@ state={
 				coastal_bunker = 1
 			}
 		}
-		add_core_of = SOV
-		add_core_of = CRI
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-			}
-		}
+		add_core_of = EUF
 	}
 
 	provinces={

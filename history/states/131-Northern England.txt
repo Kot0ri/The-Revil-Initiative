@@ -11,24 +11,18 @@ state={
 	}
 
 	history={
-		owner = ENG
-		add_core_of = ENG
+		owner = EUF
+		add_core_of = EUF
 		victory_points = {
 			351 8 
 		}
 		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 1
-			dockyard = 4
+			infrastructure = 3
+			industrial_complex = 2
+			dockyard = 5
 			air_base = 6
 			351 = {
 				naval_base = 6
-			}
-		}
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
-				industrial_complex = 2
 			}
 		}
 	}

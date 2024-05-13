@@ -6,21 +6,20 @@ state={
 	}
 	manpower=1000000
 	resources={
-		steel=19 # was: 60
-		aluminium=7 # was: 20
+		steel= 60
+		aluminium= 20
 	}
 	state_category = city
 	history={
 		victory_points = {
 			6464 5
 		}
-		owner = POL
+		owner = EUF
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 1
 		}
-		add_core_of = POL
-		add_core_of = SIL
+		add_core_of = EUF
 	}
 
 	local_supplies=0.0 

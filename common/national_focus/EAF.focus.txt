@@ -266,6 +266,23 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_Nuens_offensive_plans
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 7
+		y = 1
+		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = { focus = EAF_Yuris_Defence_plans}
+		completion_reward = {
+		add_ideas = EAF_offense_plan
+		}
+	}
+
+	focus = {
 		id = EAF_Yuris_Defence_plans
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -276,6 +293,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = { focus = EAF_Nuens_offensive_plans }
 		completion_reward = {
 		add_ideas = EAF_defense_plan
 		}

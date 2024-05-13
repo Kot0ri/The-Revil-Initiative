@@ -44,6 +44,27 @@ ideas = {
 			}
 		}
 
+		EAF_offense_plan = {
+			
+			allowed = {
+				original_tag = EAF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				mechanized_attack_factor = 0.05
+				mechanized_defence_factor = 0.02
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.02
+				army_speed_factor = 0.05
+			}
+		}
+
 		EAF_mquves_command = {
 			
 			allowed = {

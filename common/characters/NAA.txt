@@ -363,6 +363,46 @@ NAA_Ramba_Ral={
 	} 
 }
 
+NAA_Kurt_Roswell={
+	name="Kurt Roswell"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Ian_Graden.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Kurt_Roswell.dds"
+		}
+	}
+	corps_commander = {
+		traits = { }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Robin_Bradshaw={
+	name="Robin Bradshaw"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Ian_Graden.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Robin_Bradshaw.dds"
+		}
+	}
+	corps_commander = {
+		traits = { }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
 #Advisors
 NAA_Barbara_Hahari={
 	name="Barbara Hahari"

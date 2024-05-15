@@ -48,6 +48,109 @@ characters={
 			expire="1000.1.1.1"
 		}
 	}
+
+	# Zeon Generals
+	GRA_mquve={
+		name="M'quve"
+		portraits={
+			army={
+				small="GFX_idea_kelley_layzner"
+			}
+			army={
+				large="gfx/leaders/GRA/m'quve.dds"
+			}
+		}
+		field_marshal = {
+			traits={}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+
+	GRA_johnny_ridden={
+		name="Johnny Ridden"
+		portraits={
+			army={
+				small="GFX_idea_kelley_layzner"
+			}
+			army={
+				large="gfx/leaders/GRA/johnny_ridden.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot red_rightning}
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+
+	GRA_mallet_sanquine={
+		name="Mall Sanquine"
+		portraits={
+			army={
+				small="GFX_idea_kelley_layzner"
+			}
+			army={
+				large="gfx/leaders/GRA/mallet_sanquine.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot}
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
+	GRA_hardy_steiner={
+		name="Hardy Steiner"
+		portraits={
+			army={
+				small="GFX_idea_kelley_layzner"
+			}
+			army={
+				large="gfx/leaders/GRA/hardy_steiner.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
+
+	GRA_bernie_wiseman={
+		name="Bernie Wiseman"
+		portraits={
+			army={
+				small="GFX_idea_kelley_layzner"
+			}
+			army={
+				large="gfx/leaders/GRA/bernie_wiseman.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
 	#Generals
 	GRA_reccoa={
 		name="Reccoa Londe"

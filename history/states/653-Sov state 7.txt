@@ -7,23 +7,18 @@ state={
 	state_category = city
 
 	history={
-		owner = SOV
+		owner = EFG
 		victory_points = {
 			1821 5
 		}
 		buildings = {
 			infrastructure = 3 #was: 6
-			arms_factory = 2
+			arms_factory = 3
 			industrial_complex = 1
 			air_base = 1
 
 		}
-		add_core_of = SOV
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-			}
-		}
+		add_core_of = EFG
 	}
 
 	provinces={

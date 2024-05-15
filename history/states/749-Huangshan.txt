@@ -11,25 +11,10 @@ state={
 		owner = EFG
 		add_core_of = EFG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 		}
 		victory_points = {
 			12019 1
-		}
-		
-		1938.10.25 = {
-			controller = JAP
-			CHI = {
-				set_province_controller = 1125
-				set_province_controller = 7104
-				set_province_controller = 12019
-
-			}
-			buildings = {
-				infrastructure = 3 #was: 6
-				air_base = 1
-			}
-
 		}
 
 	}

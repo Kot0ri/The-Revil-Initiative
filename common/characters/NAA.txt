@@ -4,10 +4,10 @@ characters={
 	name="Garma Zabi"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Garma_Zabi.dds"
+			large="gfx/leaders/NAA/Garma_1.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Garma_Zabi.dds"
+			large="gfx/leaders/NAA/Garma_1.dds"
 		}
 	}
 	country_leader={
@@ -22,6 +22,31 @@ characters={
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 3
+	}
+}
+
+NAA_Garma_Zabi_2={
+	name="Garma Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Garma_leader.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Garma_leader.dds"
+		}
+	}
+	country_leader={
+		ideology= military_administration
+		traits={garma_pa_trait garma_na_trait}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { pilot }
+		skill = 6
+		attack_skill = 3
+		defense_skill = 5
+		planning_skill = 6
+		logistics_skill = 5
 	}
 }
 

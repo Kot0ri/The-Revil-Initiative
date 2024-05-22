@@ -546,7 +546,26 @@ focus_tree = {
 			focus = REM_traitors_amoungst_us
 		}
 		completion_reward = {
+		add_ideas = vision_of_the_general
+		}
+	}
+
+	focus = {
+		id = REM_Revenge_against_the_federation
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = REM_march_towards_vengenance}
+		relative_position_id = REM_march_towards_vengenance
+		ai_will_do = {
+			factor = 1
+		}
 		
+		completion_reward = {
+		declare_war_on = {
+			target = EFS
+		}
 		}
 	}
 
@@ -730,6 +749,9 @@ focus_tree = {
 		add_trait = {
 			trait = ghost_of_gihren
 		}
+		declare_war_on = {
+			target = EFS
+		}
 		}
 	}
 
@@ -737,7 +759,7 @@ focus_tree = {
 		id = REM_Gato_Plan
 		icon = GFX_goal_general_meeting
 		cost = 1
-		x = 2
+		x = -2
 		y = 1
 		prerequisite = {focus = REM_Ghost_of_Gihren_Zabi}
 		relative_position_id = REM_Ghost_of_Gihren_Zabi
@@ -756,7 +778,7 @@ focus_tree = {
 		id = REM_Cima_Plan
 		icon = GFX_goal_general_meeting
 		cost = 1
-		x = -2
+		x = 2
 		y = 1
 		prerequisite = {focus = REM_Ghost_of_Gihren_Zabi}
 		relative_position_id = REM_Ghost_of_Gihren_Zabi

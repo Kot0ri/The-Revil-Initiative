@@ -1,6 +1,25 @@
 ideas = {
 	country = {
 
+		vision_of_the_general = {
+			allowed = {
+				always = no
+				original_tag = REM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				naval_invasion_capacity = 0.5
+				naval_invasion_penalty = -0.05
+				invasion_preparation = -0.75
+				army_attack_against_major_factor = 0.05
+				equipment_capture_factor = 0.02
+				paratrooper_aa_defense = 0.05
+				paradrop_organization_factor = 0.5
+			}
+		}
+
 		Warrior_Spirit_of_Zeon = {
 			allowed = {
 				always = no
@@ -29,6 +48,7 @@ ideas = {
 				equipment_capture_factor = 0.15
 				supply_consumption_factor = -0.05
 				army_speed_factor = 0.05
+				army_attack_against_major_factor = 0.02
 				intel_from_combat_factor = 0.07
 			}
 		}

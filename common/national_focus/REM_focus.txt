@@ -718,7 +718,7 @@ focus_tree = {
 		id = REM_Ghost_of_Gihren_Zabi
 		icon = GFX_goal_general_meeting
 		cost = 1
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = {focus = REM_Final_Stardust_preperations}
 		relative_position_id = REM_Final_Stardust_preperations
@@ -734,13 +734,51 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REM_Gato_Plan
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_Ghost_of_Gihren_Zabi}
+		relative_position_id = REM_Ghost_of_Gihren_Zabi
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = REM_Cima_Plan
+		}
+		completion_reward = {
+		add_ideas = Warrior_Spirit_of_Zeon
+		}
+	}
+
+	focus = {
+		id = REM_Cima_Plan
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Ghost_of_Gihren_Zabi}
+		relative_position_id = REM_Ghost_of_Gihren_Zabi
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = REM_Gato_Plan
+		}
+		completion_reward = {
+		add_ideas = Survialist_Insticts
+		}
+	}
+
+	focus = {
 		id = REM_Launch_Operation_Stardust
 		icon = GFX_goal_general_meeting
 		cost = 1
 		x = 0
 		y = 2
-		prerequisite = {focus = REM_Final_Stardust_preperations}
-		relative_position_id = REM_Final_Stardust_preperations
+		prerequisite = {focus = REM_Ghost_of_Gihren_Zabi}
+		relative_position_id = REM_Ghost_of_Gihren_Zabi
 		ai_will_do = {
 			factor = 1
 		}

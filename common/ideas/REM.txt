@@ -1,0 +1,36 @@
+ideas = {
+	country = {
+
+		Warrior_Spirit_of_Zeon = {
+			allowed = {
+				always = no
+				original_tag = REM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.05
+				army_attack_against_major_factor = 0.05
+			}
+		}
+
+		Survialist_Insticts = {
+			allowed = {
+				always = no
+				original_tag = REM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				equipment_capture_factor = 0.15
+				supply_consumption_factor = -0.05
+				army_speed_factor = 0.05
+				intel_from_combat_factor = 0.07
+			}
+		}
+	}
+}

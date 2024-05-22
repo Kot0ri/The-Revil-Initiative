@@ -35,18 +35,7 @@ leader_traits = {
 			winter_attrition = -0.08
 		}
 	}
-	ghost_of_zeon = {
-		type = field_marshal
-		trait_type = personality_trait
-		field_marshal_modifier = {
-			surrender_limit = 2
-			max_commander_army_size = 4
-			max_army_group_size = 2
-			army_attack_against_major_factor = 0.5
-			political_power_gain = 0.3
-			political_advisor_cost_factor = -0.2
-		}
-	}
+	
 	hero_of_the_independence_war = {
 		type = field_marshal
 		trait_type = personality_trait

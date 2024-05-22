@@ -381,12 +381,25 @@ guide_of_the_world = {
 		zeonism_drift = 0.1
 		improve_relations_maintain_cost_factor = -0.1
 	}
-	haman_karn_trait = {
+	ghost_of_zeon = {
 		random = no
-		sprite = 13
-		war_support_factor = 0.03
-		mobilization_speed = 0.2
-	}
+			surrender_limit = 2
+			max_commander_army_size = 4
+			max_army_group_size = 2
+			army_attack_against_major_factor = 0.5
+			political_power_gain = 0.3
+			political_advisor_cost_factor = -0.2
+		}
+		ghost_of_gihren = {
+			random = no
+				surrender_limit = 2
+				max_commander_army_size = 4
+				max_army_group_size = 2
+				army_attack_against_major_factor = 0.65
+				naval_invasion_capacity = 8
+				naval_speed_factor = 0.85
+				naval_coordination_factor = 0.75
+			}
 	melanie_hue_carbine_trait = {
 		random = no
 		sprite = 10

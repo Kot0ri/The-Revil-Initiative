@@ -63,11 +63,11 @@ AXS_haman_karn={
 	}
 	country_leader={
 		ideology= oligarchy
-		traits={}
+		traits={ghost_of_zeon }
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-		traits = { ghost_of_zeon newtype2 pilot karn_party}
+		traits = { newtype2 pilot karn_party}
 		skill = 6
 		attack_skill = 6
 		defense_skill = 5

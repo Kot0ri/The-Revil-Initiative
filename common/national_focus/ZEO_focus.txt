@@ -2679,11 +2679,12 @@ focus = {
 	id = ZEO_heavy_ship_focus
 	icon = GFX_focus_generic_navy_battleship2
 	cost = 10
-	x = 45
-	y = 6
+	x = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
+	relative_position_id = ZEO_expansion_of_the_starfleet
 	mutually_exclusive = { focus = ZEO_light_ships_focus }
 	completion_reward = {
 	}
@@ -2974,7 +2975,7 @@ focus = {
 	id = ZEO_puneemunde_agency
 	icon = GFX_focus_ger_reichskommisariats
 	cost = 2
-	x = 50
+	x = 10
 	y = 4
 	ai_will_do = {
 		factor = 1
@@ -2982,6 +2983,7 @@ focus = {
 	completion_reward = {
 		add_ideas = zeon_puneemunde_institution
 	}
+	relative_position_id =  ZEO_war_preperations 
 	prerequisite = { focus = ZEO_war_preperations }
 }
 

@@ -1733,6 +1733,94 @@ focus = {
 }
 
 focus = {
+	id = ZEO_nationalization_program
+	icon = GFX_goal_generic_construct_civ_factory
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 7
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_government = supremacist
+	}
+	relative_position_id = ZEO_side_3_colony_evaluation
+	prerequisite = { focus = ZEO_side_3_colony_evaluation }
+}
+
+focus = {
+	id = ZEO_seize_control_of_key_industries
+	icon = GFX_goal_generic_construct_civ_factory
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_government = supremacist
+	}
+	relative_position_id = ZEO_nationalization_program
+	prerequisite = { focus = ZEO_nationalization_program }
+}
+
+focus = {
+	id = ZEO_appoint_loyalist_overseers
+	icon = GFX_goal_generic_construct_civ_factory
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_government = supremacist
+	}
+	relative_position_id = ZEO_seize_control_of_key_industries
+	prerequisite = { focus = ZEO_seize_control_of_key_industries }
+}
+
+focus = {
+	id = ZEO_development_of_basic_welfare_systems
+	icon = GFX_goal_generic_construct_civ_factory
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_government = supremacist
+	}
+	relative_position_id = ZEO_appoint_loyalist_overseers
+	prerequisite = { focus = ZEO_appoint_loyalist_overseers }
+}
+
+focus = {
+	id = ZEO_ensure_control_over_everday_livelihood
+	icon = GFX_goal_generic_construct_civ_factory
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_government = supremacist
+	}
+	mutually_exclusive = {
+		focus = ZEO_fix_the_economy
+	}
+	relative_position_id = ZEO_development_of_basic_welfare_systems
+	prerequisite = { focus = ZEO_development_of_basic_welfare_systems }
+}
+
+focus = {
 	id = ZEO_post_war_economy
 	icon = GFX_goal_generic_consumer_goods
 	search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -1776,7 +1864,7 @@ allow_branch = {
 	mutually_exclusive = { focus = ZEO_road_to_technocarcy }
 	mutually_exclusive = { focus = ZEO_reparations_to_the_federation }
 	relative_position_id = ZEO_fix_the_economy
-	prerequisite = { focus = ZEO_fix_the_economy }
+	prerequisite = { focus = ZEO_fix_the_economy focus = ZEO_ensure_control_over_everday_livelihood }
 	prerequisite = { focus = ZEO_post_war_economy }
 }
 
@@ -1803,7 +1891,7 @@ allow_branch = {
 	mutually_exclusive = { focus = ZEO_road_to_autarky }
 	mutually_exclusive = { focus = ZEO_reparations_to_the_federation }
 	relative_position_id = ZEO_post_war_economy
-	prerequisite = { focus = ZEO_fix_the_economy }
+	prerequisite = { focus = ZEO_fix_the_economy focus = ZEO_ensure_control_over_everday_livelihood }
 	prerequisite = { focus = ZEO_post_war_economy }
 }
 
@@ -1969,7 +2057,7 @@ focus = {
 	id = ZEO_war_preperations
 	icon = GFX_goal_generic_army_doctrines
 	cost = 5
-	x = 41
+	x = 45
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2739,6 +2827,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+	}
+	mutually_exclusive = {
+		focus = ZEO_ensure_control_over_everday_livelihood 
 	}
 	relative_position_id = ZEO_attract_immigration
 	prerequisite = { focus = ZEO_attract_immigration }

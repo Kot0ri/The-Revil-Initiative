@@ -2293,7 +2293,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 1
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2325,7 +2325,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP } 
 	cost = 1
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2344,7 +2344,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_XP FOCUS_FILTER_NAVY_XP } 
 	cost = 1
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2363,7 +2363,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2385,7 +2385,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2490,7 +2490,7 @@ focus = {
 	icon = GFX_focus_SOV_organize_wreckers 
 	cost = 5
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2595,7 +2595,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2680,7 +2680,7 @@ focus = {
 	icon = GFX_focus_generic_navy_battleship2
 	cost = 10
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2754,7 +2754,7 @@ focus = {
 	icon = GFX_goal_moon_aliance
 	cost = 5
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2769,7 +2769,7 @@ focus = {
 	icon = GFX_goal_generic_navy_cruiser
 	cost = 10
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2841,7 +2841,7 @@ focus = {
 	icon = GFX_focus_generic_refit_civilian_ships
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2877,7 +2877,7 @@ focus = {
 	icon = GFX_focus_generic_navy_battleship2
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2918,7 +2918,7 @@ focus = {
 	icon =  GFX_focus_POL_develop_polish_shipbuilding
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2955,7 +2955,7 @@ focus = {
 	icon =  GFX_goal_generic_navy_cruiser
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3095,7 +3095,7 @@ focus = {
 	search_filters = {FOCUS_FILTER_NAVY_XP}
 	cost = 2
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3113,7 +3113,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 2
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3214,7 +3214,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 2
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3397,7 +3397,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3448,7 +3448,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 10
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3467,7 +3467,6 @@ focus = {
 		focus = ZEO_prepare_for_an_evacuation
 	}
 	prerequisite = { focus = ZEO_axis_development }
-	prerequisite = { focus = ZEO_build_up_granada }
 }
 
 focus = {

@@ -11,10 +11,8 @@ state={
 	}
 
 	history={
-		owner = GXC
-		add_core_of = GXC
-		add_core_of = CHI
-		add_core_of = PRC
+		owner = EFG
+		add_core_of = EFG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -23,20 +21,7 @@ state={
 			7137 10 
 		}
 
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				remove_core_of = GXC
-				CHI = { transfer_state = PREV }
-			}
-			JAP = {
-				set_province_controller = 1018
-				set_province_controller = 4023
-				set_province_controller = 10004
-			} 			
-		}
+		
 	}
 
 	provinces={

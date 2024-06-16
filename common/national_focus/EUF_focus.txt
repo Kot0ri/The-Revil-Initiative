@@ -1501,4 +1501,76 @@ focus = {
 
 }
 
+focus = {
+	id = EUF_address_failures_of_leadership
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_a_new_era
+	prerequisite = { focus = EUF_a_new_era }
+
+}
+
+focus = {
+	id = EUF_vote_of_no_confindence
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_address_failures_of_leadership
+	prerequisite = { focus = EUF_address_failures_of_leadership }
+
+}
+
+focus = {
+	id = EUF_form_a_new_government
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_vote_of_no_confindence
+	prerequisite = { focus = EUF_vote_of_no_confindence }
+
+}
+
+focus = {
+	id = EUF_examine_military_failures
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_a_new_era
+	prerequisite = { focus = EUF_a_new_era }
+
+}
+
 }

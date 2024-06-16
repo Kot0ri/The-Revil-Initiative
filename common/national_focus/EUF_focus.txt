@@ -195,6 +195,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = EUF_play_ball_with_the_middle_east
+	}
 	prerequisite = { focus = EUF_plays_in_the_earth_federation_parliament }
 	completion_reward = {
 		
@@ -209,6 +212,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_push_for_oil_rights
 	}
 	completion_reward = {
 		
@@ -322,6 +328,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = no
+	}
 	completion_reward = {
 		
 	}
@@ -338,6 +347,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = no
+	}
 	completion_reward = {
 		
 	}
@@ -349,10 +361,13 @@ focus = {
 	id = EUF_demand_2nd_rome
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = no
 	}
 	completion_reward = {
 		
@@ -398,10 +413,13 @@ focus = {
 	id = EUF_fight_the_global_crisis
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -3
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = no
 	}
 	completion_reward = {
 		
@@ -431,10 +449,13 @@ focus = {
 	id = EUF_lobby_for_increased_humanitarian_aid
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -1
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = no
 	}
 	completion_reward = {
 	
@@ -452,6 +473,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = no
+	}
 	completion_reward = {
 	
 	}
@@ -467,6 +491,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = no
 	}
 	completion_reward = {
 	
@@ -484,6 +511,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = no
+	}
 	completion_reward = {
 	
 	}
@@ -495,7 +525,7 @@ focus = {
 	id = EUF_the_looming_crisis
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 1
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -533,6 +563,12 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = EUF_the_austrian_canidate
+	}
+	mutually_exclusive = {
+		focus = EUF_the_italian_canidate
+	}
 	completion_reward = {
 	
 	}
@@ -548,6 +584,12 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_the_italian_canidate
+	}
+	mutually_exclusive = {
+		focus = EUF_the_french_canidate
 	}
 	completion_reward = {
 	
@@ -565,6 +607,12 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = EUF_the_french_canidate
+	}
+	mutually_exclusive = {
+		focus = EUF_the_austrian_canidate
+	}
 	completion_reward = {
 	
 	}
@@ -577,6 +625,25 @@ focus = {
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
 	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_the_french_canidate
+	prerequisite = { focus = EUF_the_french_canidate }
+}
+
+focus = {
+	id = EUF_the_rights_of_man
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -613,6 +680,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = no
+	}
 	completion_reward = {
 	
 	}
@@ -645,6 +715,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = no
 	}
 	completion_reward = {
 
@@ -682,9 +755,8 @@ focus = {
 	
 	}
 	relative_position_id = EUF_pension_expansion
-	prerequisite = { focus = EUF_pension_expansion }
-	prerequisite = { focus = EUF_the_new_renaissance }
-	prerequisite = { focus = EUF_rebuild_old_infrastructure }
+	prerequisite = { focus = EUF_pension_expansion focus = EUF_the_new_renaissance  focus = EUF_rebuild_old_infrastructure}
+
 }
 
 focus = {
@@ -757,7 +829,7 @@ focus = {
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
 	x = -1
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -928,6 +1000,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = yes
+	}
 	completion_reward = {
 	
 	}
@@ -943,6 +1018,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
 	}
 	completion_reward = {
 	
@@ -960,6 +1038,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = yes
+	}
 	completion_reward = {
 	
 	}
@@ -976,10 +1057,11 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	completion_reward = {
-	add_temporary_buff_to_units = {
-		combat_defense = 0.50
+	available = {
+		has_war = yes
 	}
+	completion_reward = {
+	
 	}
 	relative_position_id = EUF_across_the_rhine
 	prerequisite = { focus = EUF_across_the_rhine }
@@ -993,6 +1075,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
 	}
 	completion_reward = {
 	
@@ -1010,6 +1095,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = yes
+	}
 	completion_reward = {
 	
 	}
@@ -1025,6 +1113,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
 	}
 	completion_reward = {
 	
@@ -1058,6 +1149,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = yes
+	}
 	completion_reward = {
 	
 	}
@@ -1073,6 +1167,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
 	}
 	completion_reward = {
 	
@@ -1090,6 +1187,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = yes
+	}
 	completion_reward = {
 	
 	}
@@ -1106,6 +1206,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = yes
+	}
 	completion_reward = {
 	
 	}
@@ -1121,6 +1224,9 @@ focus = {
 	y = 4
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
 	}
 	completion_reward = {
 	
@@ -1166,7 +1272,7 @@ focus = {
 	id = EUF_prepare_for_war_in_siberia
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1

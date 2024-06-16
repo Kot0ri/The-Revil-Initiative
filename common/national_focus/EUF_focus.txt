@@ -833,6 +833,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_country_flag = oyw_over
+	}
 	completion_reward = {
 	
 	}
@@ -1262,7 +1265,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	set_country_flag = oyw_over
 	}
 	relative_position_id = EUF_liberation_of_europe
 	prerequisite = { focus = EUF_liberation_of_europe}
@@ -1300,4 +1303,203 @@ focus = {
 	prerequisite = { focus = EUF_end_of_the_OYW}
 	prerequisite = { focus = EUF_prepare_for_war_in_siberia}
 }
+
+focus = {
+	id = EUF_begin_research_into_newtype_phenomena
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_country_flag = oyw_over
+	}
+	allow_branch = {
+		has_country_flag = oyw_over
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_expand_the_belfast_yards
+	prerequisite = { focus = EUF_expand_the_belfast_yards }
+}
+
+focus = {
+	id = EUF_found_the_leipzig_research_institute
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_begin_research_into_newtype_phenomena
+	prerequisite = { focus = EUF_begin_research_into_newtype_phenomena }
+}
+
+focus = {
+	id = EUF_joint_development_with_the_titans
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_completed_focus = EUF_cooperation_with_the_titans
+	}
+	available = {
+		country_exists = TIT
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_found_the_leipzig_research_institute
+	prerequisite = { focus = EUF_found_the_leipzig_research_institute}
+}
+
+focus = {
+	id = EUF_a_new_era
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_country_flag = oyw_over
+	}
+	allow_branch = {
+		has_country_flag = oyw_over
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_accept_the_status_quo
+	prerequisite = { focus = EUF_accept_the_status_quo  }
+	prerequisite = { focus = EUF_the_looming_crisis}
+}
+
+focus = {
+	id = EUF_begin_recovery_efforts
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_a_new_era
+	prerequisite = { focus = EUF_a_new_era }
+
+}
+
+focus = {
+	id = EUF_reconsruction_effort
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_rehabilitaion_effort
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_begin_recovery_efforts
+	prerequisite = { focus = EUF_begin_recovery_efforts }
+
+}
+
+focus = {
+	id = EUF_rehabilitaion_effort
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_reconsruction_effort
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_begin_recovery_efforts
+	prerequisite = { focus = EUF_begin_recovery_efforts }
+
+}
+
+focus = {
+	id = EUF_address_security_concerns
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_a_new_era
+	prerequisite = { focus = EUF_a_new_era }
+
+}
+
+focus = {
+	id = EUF_implement_new_security_systems
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_address_security_concerns
+	prerequisite = { focus = EUF_address_security_concerns }
+
+}
+
+focus = {
+	id = EUF_cooperation_with_the_titans
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		country_exists = TIT
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_implement_new_security_systems
+	prerequisite = { focus = EUF_implement_new_security_systems }
+
+}
+
 }

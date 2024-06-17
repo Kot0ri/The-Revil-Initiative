@@ -15,9 +15,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				max_command_power = 2
-				max_commander_army_size = 20
-				training_time_army = -2
+				command_power_gain = 0.02
+				max_commander_army_size = 2
+				training_time_army_factor = -0.05
 			}
 		}
 
@@ -43,7 +43,22 @@ ideas = {
 			}
 		}
 
-
+		joint_development_with_the_titans = {
+			
+			allowed = {
+				original_tag = EUF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				mobilesuit_manufacturer_cost_factor = -0.02
+			}
+		}
 
 
 	}

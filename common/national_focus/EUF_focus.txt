@@ -1406,7 +1406,7 @@ focus = {
 }
 
 focus = {
-	id = EUF_reconsruction_effort
+	id = EUF_reconstruction_effort
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
 	x = -1
@@ -1426,6 +1426,24 @@ focus = {
 }
 
 focus = {
+	id = EUF_rebuild_financal_networks
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_reconstruction_effort
+	prerequisite = { focus = EUF_reconstruction_effort }
+
+}
+
+focus = {
 	id = EUF_rehabilitaion_effort
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
@@ -1435,13 +1453,31 @@ focus = {
 		factor = 1
 	}
 	mutually_exclusive = {
-		focus = EUF_reconsruction_effort
+		focus = EUF_reconstruction_effort
 	}
 	completion_reward = {
 	
 	}
 	relative_position_id = EUF_begin_recovery_efforts
 	prerequisite = { focus = EUF_begin_recovery_efforts }
+
+}
+
+focus = {
+	id = EUF_aid_the_displaced
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_rehabilitaion_effort
+	prerequisite = { focus = EUF_rehabilitaion_effort }
 
 }
 
@@ -1597,14 +1633,12 @@ focus = {
 	id = EUF_wide_scale_mobile_suit_adoption
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 2
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
-	mutually_exclusive = {
-		focus =  EUF_shuffle_high_command
-	}
+	
 	completion_reward = {
 	
 	}

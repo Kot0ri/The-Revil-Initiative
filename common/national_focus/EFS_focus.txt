@@ -1,0 +1,228 @@
+focus_tree = {
+	id = EFS
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = EFS
+		}
+	}
+	default = no
+
+	focus = {
+		id = efsf_strength_improvement_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 10
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_EFGF_prioritization
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = efsf_strength_improvement_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = efsf_strength_improvement_plan
+		mutually_exclusive = {
+			focus =  efsf_EFSF_prioritization
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_EFSF_prioritization
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_strength_improvement_plan
+		}
+		relative_position_id = efsf_strength_improvement_plan
+		mutually_exclusive = {
+			focus =  efsf_EFGF_prioritization
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = efsf_military_use_of_minovsky_particles
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 2
+		available = {
+			threat = 0.25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_EFSF_prioritization focus = efsf_EFGF_prioritization
+		}
+		relative_position_id = efsf_strength_improvement_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_finish_phase_1_jaburo_construction
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_EFSF_prioritization focus = efsf_EFGF_prioritization
+		}
+		relative_position_id = efsf_strength_improvement_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_begin_phase_2_jaburo_construction
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_finish_phase_1_jaburo_construction
+		}
+		relative_position_id = efsf_finish_phase_1_jaburo_construction
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_finish_year_70_space_construction
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_EFSF_prioritization 
+		}
+		relative_position_id = efsf_EFSF_prioritization 
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_start_year_75_space_procurement_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_finish_year_70_space_construction
+		}
+		relative_position_id = efsf_finish_year_70_space_construction
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_big_gun_doctrine
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_start_year_75_space_procurement_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_support_ship_doctrine focus =  efsf_Revil_plan
+		}
+		relative_position_id = efsf_start_year_75_space_procurement_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_Revil_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_start_year_75_space_procurement_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_big_gun_doctrine focus =  efsf_support_ship_doctrine
+		}
+		relative_position_id = efsf_start_year_75_space_procurement_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_support_ship_doctrine
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_start_year_75_space_procurement_plan
+		}
+		mutually_exclusive = {
+			focus = efsf_big_gun_doctrine focus =  efsf_Revil_plan
+		}
+		relative_position_id = efsf_start_year_75_space_procurement_plan
+		completion_reward = {
+		
+		}
+	}
+
+
+
+}

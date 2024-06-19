@@ -297,6 +297,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = efsf_begin_la_grandpa_construction
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_renew_navy_budget
+		}
+		
+		relative_position_id = efsf_renew_navy_budget
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
 		id = efsf_rapid_movement
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -318,6 +337,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = efsf_initiative_training
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_rapid_movement
+		}
+		
+		relative_position_id = efsf_rapid_movement
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = efsf_fire_power_supremacy
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -333,6 +371,25 @@ focus_tree = {
 			focus = efsf_rapid_movement focus =  efsf_rapid_movement
 		}
 		relative_position_id = efsf_begin_limited_modernizations
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_new_generation_of_artillery
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_fire_power_supremacy
+		}
+		
+		relative_position_id = efsf_fire_power_supremacy
 		completion_reward = {
 		
 		}
@@ -437,6 +494,143 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = efsf_move_command_hq_to_jaburo
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_expand_crew_quaters
+		}
+		prerequisite = {
+			focus = efsf_build_the_labs
+		}
+		relative_position_id = efsf_begin_phase_3_construction
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_improve_ground_vehicles
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_move_command_hq_to_jaburo
+		}
+
+		relative_position_id = efsf_move_command_hq_to_jaburo
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_improve_light_vehicles
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_improve_ground_vehicles
+		}
+		available = {
+			has_completed_focus = efsf_EFGF_prioritization
+		}
+		relative_position_id = efsf_improve_ground_vehicles
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_type_61_improvement_plan
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_improve_ground_vehicles
+		}
+		relative_position_id = efsf_improve_ground_vehicles
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_next_generation_tank_program
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_improve_ground_vehicles
+		}
+		available = {
+			has_completed_focus = efsf_EFGF_prioritization
+		}
+		relative_position_id = efsf_type_61_improvement_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_continue_jaburo_build_up
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_move_command_hq_to_jaburo
+		}
+
+		relative_position_id = efsf_move_command_hq_to_jaburo
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+	id = efsf_new_production_facilities
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_continue_jaburo_build_up
+	}
+
+	relative_position_id = efsf_continue_jaburo_build_up
+	completion_reward = {
+	
+	}
+}
 
 
 }

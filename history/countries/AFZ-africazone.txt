@@ -123,30 +123,3 @@ recruit_character = AFZ_zane_akunyili
 
 set_variable = { newtype_accepted_status = 0 }
 
-create_equipment_variant = {
-	name = "Salamis Class"
-	type = efsf_space_cruiser1_equipment
-	name_group = EFS_SC_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = space_battery_1
-		fixed_ship_secondaries_slot = space_secondaries_1
-		fixed_ship_engine_slot = light_space_engine_1
-	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Magellan Class"
-	type = efsf_space_battleship1_equipment
-	name_group = EFS_SB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = space_battery_1
-		fixed_ship_secondaries_slot = space_secondaries_1
-		fixed_ship_engine_slot = space_engine_1
-    front_1_custom_slot = space_battery_1
-    mid_1_custom_slot = ship_anti_air_1
-    mid_2_custom_slot = space_secondaries_1
-	}
-	obsolete = no
-}

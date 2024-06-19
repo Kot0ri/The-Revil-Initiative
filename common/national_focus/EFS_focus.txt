@@ -574,6 +574,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = efsf_queen_of_battle
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -5
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_move_command_hq_to_jaburo
+		}
+
+		relative_position_id = efsf_move_command_hq_to_jaburo
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = efsf_improve_ground_vehicles
 		icon = GFX_goal_general_meeting
 		cost = 10
@@ -653,6 +672,46 @@ focus_tree = {
 	}
 
 	focus = {
+		id = efsf_space_modernization_program
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_move_command_hq_to_jaburo
+		}
+
+		relative_position_id = efsf_move_command_hq_to_jaburo
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_Salamis_revitalization_program
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_space_modernization_program
+		}
+		available = {
+			has_completed_focus = efsf_EFSF_prioritization
+		}
+		relative_position_id = efsf_space_modernization_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = efsf_continue_jaburo_build_up
 		icon = GFX_goal_general_meeting
 		cost = 10
@@ -690,5 +749,23 @@ focus_tree = {
 	}
 }
 
+focus = {
+	id = efsf_look_into_newtype_phenomena
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_new_production_facilities
+	}
+
+	relative_position_id = efsf_new_production_facilities
+	completion_reward = {
+	
+	}
+}
 
 }

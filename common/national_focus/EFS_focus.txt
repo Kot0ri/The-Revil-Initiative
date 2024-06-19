@@ -27,7 +27,7 @@ focus_tree = {
 	focus = {
 		id = efsf_EFGF_prioritization
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 1
 		x = -1
 		y = 1
 		prerequisite = {
@@ -48,7 +48,7 @@ focus_tree = {
 	focus = {
 		id = efsf_EFSF_prioritization
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 1
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -66,6 +66,26 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = efsf_rebuild_army_intelligence_agency
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -3
+		y = 2
+		available = {
+			threat = 0.25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_EFSF_prioritization focus = efsf_EFGF_prioritization
+		}
+		relative_position_id = efsf_strength_improvement_plan
+		completion_reward = {
+		
+		}
+	}
 
 	focus = {
 		id = efsf_military_use_of_minovsky_particles
@@ -109,7 +129,7 @@ focus_tree = {
 	focus = {
 		id = efsf_begin_phase_2_jaburo_construction
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -125,10 +145,204 @@ focus_tree = {
 	}
 
 	focus = {
+		id = efsf_focus_on_the_command_bunker
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_phase_2_jaburo_construction
+		}
+		relative_position_id = efsf_begin_phase_2_jaburo_construction
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_focus_on_the_space_launch
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_phase_2_jaburo_construction
+		}
+		relative_position_id = efsf_begin_phase_2_jaburo_construction
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_begin_phase_3_construction
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_focus_on_the_space_launch 
+		}
+		prerequisite = {
+			focus = efsf_focus_on_the_command_bunker
+		}
+		relative_position_id = efsf_begin_phase_2_jaburo_construction
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = efsf_build_the_labs
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_phase_3_construction
+		}
+		relative_position_id = efsf_begin_phase_3_construction
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_expand_crew_quaters
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_phase_3_construction
+		}
+		relative_position_id = efsf_begin_phase_3_construction
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_reexamine_military_equipment
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -5
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_EFGF_prioritization 
+		}
+		relative_position_id = efsf_EFGF_prioritization 
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_begin_limited_modernizations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_reexamine_military_equipment
+		}
+		relative_position_id = efsf_reexamine_military_equipment
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = efsf_renew_navy_budget
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_limited_modernizations
+		}
+		mutually_exclusive = {
+			focus = efsf_rapid_movement focus =  efsf_fire_power_supremacy
+		}
+		relative_position_id = efsf_begin_limited_modernizations
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_rapid_movement
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_limited_modernizations
+		}
+		mutually_exclusive = {
+			focus = efsf_renew_navy_budget focus =  efsf_fire_power_supremacy
+		}
+		relative_position_id = efsf_begin_limited_modernizations
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_fire_power_supremacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_limited_modernizations
+		}
+		mutually_exclusive = {
+			focus = efsf_rapid_movement focus =  efsf_rapid_movement
+		}
+		relative_position_id = efsf_begin_limited_modernizations
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = efsf_finish_year_70_space_construction
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 4
+		x = 5
 		y = 2
 		ai_will_do = {
 			factor = 1

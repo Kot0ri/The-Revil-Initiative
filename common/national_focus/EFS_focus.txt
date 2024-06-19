@@ -768,4 +768,158 @@ focus = {
 	}
 }
 
+focus = {
+	id = efsf_v_project
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 25
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		threat = 0.35
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_guntank_development_program
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_v_project
+	}
+
+	relative_position_id = efsf_v_project
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_guncannon_develeopment_project
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_guntank_development_program
+	}
+
+	relative_position_id = efsf_guntank_development_program
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_work_with_anaheim
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_v_project
+	}
+
+	relative_position_id = efsf_v_project
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_seek_insights_into_zeonic
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_work_with_anaheim
+	}
+
+	relative_position_id = efsf_work_with_anaheim
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_examine_zaku_blueprints
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_seek_insights_into_zeonic
+	}
+
+	relative_position_id = efsf_seek_insights_into_zeonic
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_operation_v
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_v_project
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_v_project
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_RX_program
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_operation_v
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_operation_v
+	completion_reward = {
+	
+	}
+}
+
 }

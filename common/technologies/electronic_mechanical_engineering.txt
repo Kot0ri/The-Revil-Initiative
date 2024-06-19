@@ -218,10 +218,6 @@ technologies = {
 				has_completed_focus = efsf_military_use_of_minovsky_particles
 			}
 			modifier = {
-				factor = 20
-				has_completed_focus = efsf_zeons_new_weapon
-			}
-			modifier = {
 				factor = 10
 				has_tech = plan_rx_tech
 			}
@@ -653,10 +649,7 @@ technologies = {
 				factor = 20
 				has_completed_focus = efsf_military_use_of_minovsky_particles
 			}
-			modifier = {
-				factor = 20
-				has_completed_focus = efsf_zeons_new_weapon
-			}
+
 			modifier = {
 				factor = 10
 				has_tech = plan_rx_tech
@@ -1269,10 +1262,7 @@ technologies = {
 					has_completed_focus = efsf_strength_improvement_plan
 				}
 			}
-			modifier = {
-				factor = 20
-				has_completed_focus = efsf_zeons_new_weapon
-			}
+
 			modifier = {
 				factor = 100
 				has_tech = plan_rx_tech
@@ -1470,10 +1460,7 @@ technologies = {
 					has_completed_focus = efsf_strength_improvement_plan
 				}
 			}
-			modifier = {
-				factor = 20
-				has_completed_focus = efsf_zeons_new_weapon
-			}
+
 			modifier = {
 				factor = 100
 				has_tech = plan_rx_tech
@@ -1678,7 +1665,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 0 }
+			position = { x = 10 y = 0 }
 		}
 	
 		ai_will_do = {
@@ -1738,10 +1725,7 @@ technologies = {
 			name = electronics_folder
 			position = { x = 0 y = 2 }
 		}
-			folder = {
-			name = secret_weapons_folder
-			position = { x = 10 y = 0 }
-		}
+		
 		
 		
 		ai_will_do = {

@@ -786,6 +786,46 @@ focus = {
 }
 
 focus = {
+	id = efsf_SCV-X_development_project
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_v_project
+	}
+
+	relative_position_id = efsf_v_project
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_SCV-27A_project
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_SCV-X_development_project
+	}
+	prerequisite = {
+		focus = efsf_operation_v
+	}
+	relative_position_id = efsf_SCV-X_development_project
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_guntank_development_program
 	icon = GFX_goal_general_meeting
 	cost = 10
@@ -803,6 +843,8 @@ focus = {
 	
 	}
 }
+
+
 
 focus = {
 	id = efsf_guncannon_develeopment_project
@@ -906,7 +948,7 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 10
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -917,6 +959,88 @@ focus = {
 		has_war = yes
 	}
 	relative_position_id = efsf_operation_v
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_white_devil
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_RX_program
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_RX_program
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_FSFW_program
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_white_devil
+	}
+	
+	relative_position_id = efsf_white_devil
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_fullarmour_newtype_corps.
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_FSFW_program
+	}
+	allow_branch = {
+		has_completed_focus = efsf_look_into_newtype_phenomena
+	}
+	relative_position_id = efsf_FSFW_program
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_13th_autonomous_corps.
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_white_devil
+	}
+	allow_branch = {
+		has_completed_focus = efsf_look_into_newtype_phenomena
+	}
+	relative_position_id = efsf_white_devil
 	completion_reward = {
 	
 	}

@@ -750,6 +750,48 @@ focus_tree = {
 }
 
 focus = {
+	id = efsf_imrpove_atmoshperhic_combat_systems
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = -9
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_move_command_hq_to_jaburo
+	}
+	available = {
+		has_completed_focus = efsf_EFGF_prioritization
+	}
+	relative_position_id = efsf_move_command_hq_to_jaburo
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_Luna_2_fortification
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 9
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_move_command_hq_to_jaburo
+	}
+	available = {
+		has_completed_focus = efsf_EFSF_prioritization
+	}
+	relative_position_id = efsf_move_command_hq_to_jaburo
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_set_up_research_labs_in_Side_7
 	icon = GFX_goal_general_meeting
 	cost = 10

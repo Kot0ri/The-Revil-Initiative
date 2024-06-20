@@ -1221,7 +1221,9 @@ focus = {
 	prerequisite = {
 		focus = efsf_FSFW_program
 	}
-	
+	available = {
+		has_completed_focus = efsf_look_into_newtype_phenomena
+	}
 	relative_position_id = efsf_FSFW_program
 	completion_reward = {
 	
@@ -1305,10 +1307,90 @@ focus = {
 }
 
 focus = {
+	id = efsf_prioritize_earth_use_ms
+	icon = GFX_goal_coop_with_ms
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_mass_production_ms
+	}
+	mutually_exclusive = {
+		focus = efsf_prioritize_space_use_ms
+	}
+	relative_position_id = efsf_mass_production_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_aquatic_ms
+	icon = GFX_goal_navy_MS_troops
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_prioritize_earth_use_ms
+	}
+
+	relative_position_id = efsf_prioritize_earth_use_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_prioritize_space_use_ms
+	icon = GFX_goal_diversion_of_mobile_pod_for_space
+	cost = 10
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_mass_production_ms
+	}
+	mutually_exclusive = {
+		focus = efsf_prioritize_earth_use_ms
+	}
+	relative_position_id = efsf_mass_production_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_new_artillery_suits
 	icon = GFX_goal_focus_on_artilery_ms
 	cost = 10
 	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_mass_production_ms
+	}
+	
+	relative_position_id = efsf_mass_production_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_ace_use_suits
+	icon = GFX_goal_focus_on_sniper_ms
+	cost = 10
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1356,6 +1438,27 @@ focus = {
 	}
 	
 	relative_position_id = efsf_white_devil
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_newtype_use_gundam
+	icon = GFX_goal_high_mobility
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_improve_gundam_mobility
+	}
+	available = {
+		has_completed_focus = efsf_look_into_newtype_phenomena
+	}
+	relative_position_id = efsf_improve_gundam_mobility
 	completion_reward = {
 	
 	}

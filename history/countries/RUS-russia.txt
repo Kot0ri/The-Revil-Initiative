@@ -67,15 +67,10 @@ add_named_threat = {
 }
 
 add_ideas = {
-	colony_country
-	limited_exports
-	limited_conscription
-	partial_economic_mobilisation
-	customs_duty_6
-	oversea_army_6
+	isolated_remnants
 }
 
-set_variable = { newtype_accepted_status = 2 }
+set_variable = { newtype_accepted_status = 0 }
 set_variable = {
 	var = ms_flight_test
 	value = 1

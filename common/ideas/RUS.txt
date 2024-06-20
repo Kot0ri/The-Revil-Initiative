@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+
+		isolated_remnants = {
+			allowed = {
+				always = no
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain_factor = -0.5
+			}
+		}
+	}
+}

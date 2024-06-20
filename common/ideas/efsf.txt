@@ -27,6 +27,7 @@ ideas = {
 			research_bonus = {
 				assault_ship = -0.3
 				space_ship = 0.5
+				space_battleship = 0.2
 			}
 		 	removal_cost = -1
 	 	}
@@ -61,12 +62,14 @@ ideas = {
 			equipment_bonus = {
 				archetype_assault_ship = {
 					build_cost_ic = -0.3
+					air_attack_factor = 0.5
 				}
 				archetype_efsf_space_cruiser = {
 					build_cost_ic = -0.3
 				}
 				archetype_space_battleship = {
 					build_cost_ic = -0.3
+					hard_attack = 0.02
 				}
 			}
 		 	removal_cost = -1

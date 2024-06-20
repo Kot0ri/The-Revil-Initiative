@@ -1,32 +1,32 @@
 
 state={
-	id=272
-	name="STATE_272"
+	id=972
+	name="STATE_972"
 	manpower = 1638000
 	resources={
 		steel=3 # was: 4
 	}
 	
-	state_category = pastoral
+	state_category = large_city
 
 	history={
-		owner = AFZ
-		add_core_of = AFZ
-		
+		owner = EFG
+		add_core_of = EFG
 		victory_points = {
-			7972 2 
+			4948 25 
 		}
+		
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			air_base = 4
-			7972 = {
+			4948 = {
 				naval_base = 3
 			}
 		}
 	}
 
 	provinces={
-		2100 7972 8015 12710 12834 
+		 4948 
 	}
 
 	local_supplies=1.0 

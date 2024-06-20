@@ -1,19 +1,18 @@
-
 state={
-	id=547
-	name="STATE_547"
-	manpower = 1085440
-	state_category=rural
+	id=973
+	name="STATE_973"
+	manpower = 185440
+	state_category= underbase
 
 	history={
 		owner = AFZ
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
 			
 		}
 		victory_points = {
-			1939 2 
+			10962  5 
 		}
 		
 		add_core_of = AFZ
@@ -21,7 +20,7 @@ state={
 	}
 
 	provinces={
-		1939 10860 
+		10962 
 	}
 	buildings_max_level_factor=1.000
 	

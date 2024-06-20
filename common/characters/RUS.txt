@@ -12,6 +12,39 @@ characters={
 			ideology= military_junta
 			expire="1000.1.1.1"
 		}
-	
 	}
+		RUS_alexi_kornilov ={
+			name="Alexi Kornilov"
+			portraits={
+				civilian={
+					large= "gfx/leaders/RUS/Alexi Kornilov.dds"
+				}
+			}
+		
+			field_marshal = {
+				skill = 4
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 4
+				logistics_skill = 4
+			}
+	}
+
+	RUS_nickolai_krasnov ={
+		name="Nickolai Krasnov"
+		portraits={
+			civilian={
+				large= "gfx/leaders/RUS/Nickolai Krasnov.dds"
+			}
+		}
+		
+		field_marshal = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+
+}
 }

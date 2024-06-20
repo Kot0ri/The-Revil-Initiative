@@ -1074,10 +1074,58 @@ focus = {
 }
 
 focus = {
+	id = efsf_prioritize_battle_data
+	icon = GFX_goal_prioritize_battle_data
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_RX_program
+	}
+	available = {
+		has_war = yes
+	}
+	mutually_exclusive = {
+		focus = efsf_prioritize_pilot_life_support
+	}
+	relative_position_id = efsf_RX_program
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_prioritize_pilot_life_support
+	icon = GFX_goal_prioritize_pilot_life_support
+	cost = 10
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_RX_program
+	}
+	available = {
+		has_war = yes
+	}
+	mutually_exclusive = {
+		focus = efsf_prioritize_battle_data
+	}
+	relative_position_id = efsf_RX_program
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_Luna_2_MS_development_program
 	icon = GFX_goal_focus_on_mass_production_machines
 	cost = 10
-	x = 1
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1101,7 +1149,7 @@ focus = {
 	id = efsf_jaburo_MS_development_program
 	icon = GFX_goal_focus_on_mass_production_machines
 	cost = 10
-	x = -1
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1185,6 +1233,120 @@ focus = {
 	icon = GFX_goal_versatility
 	cost = 10
 	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_white_devil
+	}
+	
+	relative_position_id = efsf_white_devil
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_improve_projectilles
+	icon = GFX_goal_focus_on_amu_equipment
+	cost = 10
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_white_devil
+	}
+	
+	relative_position_id = efsf_white_devil
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_improve_beams
+	icon = GFX_goal_focus_on_beam_equipment
+	cost = 10
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_white_devil
+	}
+	
+	relative_position_id = efsf_white_devil
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_mass_production_ms
+	icon = GFX_goal_development_of_MS_for_local_warfare
+	cost = 10
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_white_devil
+	}
+	
+	relative_position_id = efsf_white_devil
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_new_artillery_suits
+	icon = GFX_goal_focus_on_artilery_ms
+	cost = 10
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_mass_production_ms
+	}
+	
+	relative_position_id = efsf_mass_production_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_begin_work_on_next_generation_ms
+	icon = GFX_goal_development_of_MS_for_custom
+	cost = 10
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_mass_production_ms
+	}
+	
+	relative_position_id = efsf_mass_production_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_improve_gundam_mobility
+	icon = GFX_goal_high_mobility
+	cost = 10
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1

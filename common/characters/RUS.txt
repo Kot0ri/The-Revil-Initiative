@@ -4,21 +4,14 @@ characters={
 		name="Military Cabinet"
 		portraits={
 			civilian={
-				large= "gfx/leaders/PEZ/schacht.dds"
+				large= "gfx/leaders/RUS/portrait_SOV_white_tranistionary_council.dds"
 			}
 		}
 		country_leader={
-			traits={schacht_trait}
-			ideology=pezun_corporatism
+			traits={}
+			ideology= military_junta
 			expire="1000.1.1.1"
 		}
-		field_marshal = {
-			traits = {}
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-		}
+	
 	}
 }

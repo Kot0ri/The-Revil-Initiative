@@ -750,19 +750,86 @@ focus_tree = {
 }
 
 focus = {
-	id = efsf_look_into_newtype_phenomena
+	id = efsf_set_up_research_labs_in_Side_7
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = 1
-	y = 3
+	x = 5
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = efsf_new_production_facilities
+		focus = efsf_move_command_hq_to_jaburo
 	}
 
-	relative_position_id = efsf_new_production_facilities
+	relative_position_id = efsf_move_command_hq_to_jaburo
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_negotiate_with_Side_6
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_set_up_research_labs_in_Side_7
+	}
+	available = {
+		SI6 = { has_government = supremacist }
+	}
+	mutually_exclusive = {
+		focus = efsf_embargo_Side_6
+	}
+	relative_position_id = efsf_set_up_research_labs_in_Side_7
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_embargo_Side_6
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_set_up_research_labs_in_Side_7
+	}
+	available = {
+		SI6 = { has_government = supremacist }
+	}
+	mutually_exclusive = {
+		focus = efsf_negotiate_with_Side_6
+	}
+	relative_position_id = efsf_set_up_research_labs_in_Side_7
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_look_into_newtype_phenomena
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_negotiate_with_Side_6 focus = efsf_embargo_Side_6
+	}
+	available = { has_war = yes }
+	relative_position_id = efsf_negotiate_with_Side_6
 	completion_reward = {
 	
 	}

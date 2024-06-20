@@ -13,5 +13,33 @@ ideas = {
 				political_power_gain_factor = -0.5
 			}
 		}
+
+		backwards_military_doctrine = {
+			allowed = {
+				always = no
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				land_doctrine_cost_factor = 0.5
+				air_doctrine_cost_factor = 0.5
+				naval_doctrine_cost_factor = 0.5
+			}
+		}
+
+		experinced_military_researchers = {
+			allowed = {
+				always = no
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.02
+			}
+		}
 	}
 }

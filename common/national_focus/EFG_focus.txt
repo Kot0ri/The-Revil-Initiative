@@ -388,6 +388,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_rumors_from_the_middle_east
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		prerequisite = { focus = EFG_medeate_between_regional_adminstrations }
+		relative_position_id = EFG_medeate_between_regional_adminstrations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_trade_negotiations_with_the_moon
 		icon = GFX_goal_general_meeting
 		cost = 5

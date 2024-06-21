@@ -1,0 +1,184 @@
+focus_tree = {
+	id = RUS
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = RUS
+		}
+	}
+	default = no
+
+	focus = {
+		id = RUS_work_with_the_new_regime
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 10
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet_of = EAF
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_our_own_fight
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 20
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_in_faction = no
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_land_wearfare_devlopment_program
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 15
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_focus_on_landships
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_land_wearfare_devlopment_program	
+		}
+		relative_position_id = RUS_land_wearfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_focus_on_tanks
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_land_wearfare_devlopment_program	
+		}
+		relative_position_id = RUS_land_wearfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_improve_tank_armor
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_focus_on_tanks	
+		}
+		relative_position_id = RUS_focus_on_tanks
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_reduce_tank_costs
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_improve_tank_armor
+		}
+		relative_position_id = RUS_improve_tank_armor
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_industrialization_program
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 25
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_focus_on_cities
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_industrialization_program
+		}
+		relative_position_id = RUS_industrialization_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_improve_rural_infrastructre
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_industrialization_program
+		}
+		relative_position_id = RUS_industrialization_program
+		completion_reward = {
+		
+		}
+	}
+}

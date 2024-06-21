@@ -249,6 +249,29 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_revenge_against_the_federation
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_60_divison_plan
+		}
+		prerequisite = {
+			focus = RUS_prepare_to_retake_the_east focus = RUS_prepare_to_take_the_urals
+		}
+		relative_position_id = RUS_60_divison_plan
+		completion_reward = {
+		declare_war_on = {
+			target = EFG
+		}
+		}
+	}
+
+	focus = {
 		id = RUS_focus_on_landships
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -554,4 +577,108 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = RUS_restock_winter_equipment
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_revenge_against_the_federation
+		}
+		available = {
+			has_war = yes
+		}
+		relative_position_id = RUS_revenge_against_the_federation
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = RUS_purchase_gear_from_anaheim
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_revenge_against_the_federation
+		}
+		available = {
+			has_war = yes
+		}
+		relative_position_id = RUS_revenge_against_the_federation
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = RUS_reassess_war_goals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_revenge_against_the_federation
+		}
+		available = {
+			has_war = yes
+		}
+		relative_position_id = RUS_revenge_against_the_federation
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = RUS_a_new_empire
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_reassess_war_goals
+		}
+		available = {
+			has_war = yes
+		}
+		relative_position_id = RUS_reassess_war_goals
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = RUS_break_the_hegenmony
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_a_new_empire
+		}
+		available = {
+			has_war = yes
+		}
+		relative_position_id = RUS_a_new_empire
+		completion_reward = {
+	
+		}
+	}
 }

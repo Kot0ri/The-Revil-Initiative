@@ -57,5 +57,19 @@ ideas = {
 				industry_repair_factor = 0.3
 			}
 		}
+
+		60_division_plan = {
+			allowed = {
+				always = no
+				original_tag = RUS
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				training_time_army_factor = -0.15
+				recruitable_population_factor = 0.05
+			}
+		}
 	}
 }

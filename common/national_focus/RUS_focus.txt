@@ -124,7 +124,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_prepare_to_tkae_the_urals
+		id = RUS_prepare_to_take_the_urals
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -1
@@ -208,6 +208,24 @@ focus_tree = {
 		focus = RUS_land_warfare_devlopment_program	
 		}
 		relative_position_id = RUS_land_warfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_next_generation_designs
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_focus_on_landships
+		}
+		relative_position_id = RUS_focus_on_landships
 		completion_reward = {
 		
 		}
@@ -406,4 +424,81 @@ focus_tree = {
 		
 		}
 	}
+
+	focus = {
+		id = RUS_yakut_newtype_lab
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_increase_cooperation_with_enthic_groups
+		}
+		prerequisite = {
+			focus = RUS_year_90_plan
+			}
+			available = {
+				is_in_faction_with = RNZ
+			}
+		relative_position_id = RUS_increase_cooperation_with_enthic_groups
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	
+	focus = {
+		id = RUS_yakut_development_project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_next_generation_designs
+		}
+		prerequisite = {
+			focus = RUS_reduce_tank_costs
+			}
+			available = {
+				is_in_faction_with = RNZ
+			}
+			available = {
+				has_completed_focus = RUS_yakut_newtype_lab
+			}
+		relative_position_id = RUS_next_generation_designs
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_cubery_system_prgram
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_yakut_development_project
+		}
+			available = {
+				is_in_faction_with = RNZ
+			}
+			available = {
+				has_completed_focus = RUS_yakut_newtype_lab
+			}
+		relative_position_id = RUS_yakut_development_project
+		completion_reward = {
+		
+		}
+	}
+
 }

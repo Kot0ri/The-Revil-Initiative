@@ -588,7 +588,7 @@ focus_tree = {
 
 		relative_position_id = efsf_move_command_hq_to_jaburo
 		completion_reward = {
-		
+		add_ideas = queen_of_battle
 		}
 	}
 
@@ -1069,7 +1069,7 @@ focus = {
 	}
 	relative_position_id = efsf_operation_v
 	completion_reward = {
-	
+		add_ideas = efsf_plan_v
 	}
 }
 
@@ -1093,7 +1093,7 @@ focus = {
 	}
 	relative_position_id = efsf_RX_program
 	completion_reward = {
-	
+	add_ideas = prioritize_battle_data
 	}
 }
 
@@ -1117,7 +1117,7 @@ focus = {
 	}
 	relative_position_id = efsf_RX_program
 	completion_reward = {
-	
+	add_ideas = prioritize_pilot_life_support
 	}
 }
 

@@ -221,6 +221,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_seek_to_undermine_local_rulers
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = { focus = EFG_combat_the_rise_of_anti-federation_partisans }
+		relative_position_id = EFG_combat_the_rise_of_anti-federation_partisans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_reinforce_key_locations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 1
+		prerequisite = { focus = EFG_combat_the_rise_of_anti-federation_partisans }
+		relative_position_id = EFG_combat_the_rise_of_anti-federation_partisans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_detangling_intelligence_and_policing
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -331,6 +363,22 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = EFG_priortize_earth_issues }
 		relative_position_id = EFG_priortize_earth_issues
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_address_the_africa_situation
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = { focus = EFG_medeate_between_regional_adminstrations }
+		relative_position_id = EFG_medeate_between_regional_adminstrations
 		ai_will_do = {
 			factor = 1
 		}

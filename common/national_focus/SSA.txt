@@ -160,34 +160,19 @@ focus = {
 		}
 
 
-		focus = {
-			id = SSA_nanyang_takeover
-			icon = GFX_goal_efsf_mobile_headquarters
-			cost = 5
-			x = 10
-			y = 30
-			ai_will_do = {
-				factor = 1
-			}
-			completion_reward = {
-			add_political_power = 50
-				}
-			}
+focus = {
+	id = SSA_nanyang_takeover
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 10
+	y = 20
+	ai_will_do = {
+	factor = 1
+	}
+	completion_reward = {
+	add_political_power = 50
+		}
+	}
 	
-			focus = {
-				id = SSA_resolve_religious_tensions
-				icon = GFX_goal_efsf_mobile_headquarters
-				cost = 5
-				x = 2
-				y = 1
-				ai_will_do = {	
-				factor = 1
-							}
-				relative_position_id = SSA_government_appoinments
-				prerequisite = {	focus = SSA_government_appoinments	}
-				completion_reward = {
-					
-							}
-					}
-	
+
 }

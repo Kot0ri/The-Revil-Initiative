@@ -45,7 +45,146 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_land_wearfare_devlopment_program
+		id = RUS_trials_of_survival
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_our_own_fight
+		}
+		relative_position_id = RUS_our_own_fight
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_restoration_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_trials_of_survival
+		}
+		relative_position_id = RUS_trials_of_survival
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = RUS_kornilov_proposal
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_restoration_plan
+		}
+		mutually_exclusive = {
+			focus = RUS_krasnov_proposal
+		}
+		relative_position_id = RUS_restoration_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_krasnov_proposal
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_restoration_plan
+		}
+		mutually_exclusive = {
+			focus = RUS_kornilov_proposal
+		}
+		relative_position_id = RUS_restoration_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_prepare_to_tkae_the_urals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_kornilov_proposal
+		}
+		
+		relative_position_id = RUS_kornilov_proposal
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_prepare_to_retake_the_east
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_krasnov_proposal
+		}
+		
+		relative_position_id = RUS_krasnov_proposal
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_60_divison_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_krasnov_proposal
+		}
+		prerequisite = {
+			focus = RUS_kornilov_proposal
+			}
+		
+		relative_position_id = RUS_krasnov_proposal
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_land_warfare_devlopment_program
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 15
@@ -55,7 +194,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+		add_research_slot = 1
 		}
 	}
 
@@ -69,9 +208,9 @@ focus_tree = {
 			factor = 1
 		}
 		prerequisite = {
-		focus = RUS_land_wearfare_devlopment_program	
+		focus = RUS_land_warfare_devlopment_program	
 		}
-		relative_position_id = RUS_land_wearfare_devlopment_program
+		relative_position_id = RUS_land_warfare_devlopment_program
 		completion_reward = {
 		
 		}
@@ -87,9 +226,9 @@ focus_tree = {
 			factor = 1
 		}
 		prerequisite = {
-		focus = RUS_land_wearfare_devlopment_program	
+		focus = RUS_land_warfare_devlopment_program	
 		}
-		relative_position_id = RUS_land_wearfare_devlopment_program
+		relative_position_id = RUS_land_warfare_devlopment_program
 		completion_reward = {
 		
 		}
@@ -142,7 +281,16 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+			570 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 
@@ -160,7 +308,69 @@ focus_tree = {
 		}
 		relative_position_id = RUS_industrialization_program
 		completion_reward = {
-		
+			570 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			571 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			572 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			653 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_year_90_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_focus_on_cities
+		}
+		relative_position_id = RUS_focus_on_cities
+		completion_reward = {
+		add_ideas = year_90_plan
 		}
 	}
 
@@ -177,6 +387,24 @@ focus_tree = {
 		focus = RUS_industrialization_program
 		}
 		relative_position_id = RUS_industrialization_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_increase_cooperation_with_enthic_groups
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_improve_rural_infrastructre
+		}
+		relative_position_id = RUS_improve_rural_infrastructre
 		completion_reward = {
 		
 		}

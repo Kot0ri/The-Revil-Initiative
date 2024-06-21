@@ -269,6 +269,61 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_FSS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_primacy_of_intelligence_conference }
+		relative_position_id = EFG_primacy_of_intelligence_conference
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_CIA
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_CIA
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_primacy_of_intelligence_conference }
+		relative_position_id = EFG_primacy_of_intelligence_conference
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_FSS
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_Godkiller
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_CIA }
+		relative_position_id = EFG_CIA
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_medeate_between_regional_adminstrations
 		icon = GFX_goal_general_meeting
 		cost = 5

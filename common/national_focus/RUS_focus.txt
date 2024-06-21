@@ -171,11 +171,8 @@ focus_tree = {
 			factor = 1
 		}
 		prerequisite = {
-		focus = RUS_krasnov_proposal
+		focus = RUS_krasnov_proposal focus = RUS_kornilov_proposal
 		}
-		prerequisite = {
-			focus = RUS_kornilov_proposal
-			}
 		
 		relative_position_id = RUS_krasnov_proposal
 		completion_reward = {

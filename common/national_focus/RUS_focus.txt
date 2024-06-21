@@ -599,6 +599,27 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_lessons_of_war
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_restock_winter_equipment
+		}
+		available = {
+			has_war = yes
+		}
+		relative_position_id = RUS_restock_winter_equipment
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
 		id = RUS_purchase_gear_from_anaheim
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -614,6 +635,28 @@ focus_tree = {
 			has_war = yes
 		}
 		relative_position_id = RUS_revenge_against_the_federation
+		completion_reward = {
+	
+		}
+	}
+
+	
+	focus = {
+		id = RUS_buy_mobile_suits
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_purchase_gear_from_anaheim
+		}
+		available = {
+			has_war = yes
+		}
+		relative_position_id = RUS_purchase_gear_from_anaheim
 		completion_reward = {
 	
 		}

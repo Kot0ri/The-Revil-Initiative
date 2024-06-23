@@ -397,6 +397,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NAA_incorporate_Augusta_researchers
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Develop_Oakland_Labatories}
+		relative_position_id = NAA_Develop_Oakland_Labatories
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
 		id = NAA_A_meeting_with_the_Eschonbachs
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -507,7 +523,6 @@ available = {
 		cost = 5
 		x = 4
 		y = 5
-		prerequisite = {focus = NAA_Icelinas_Eyes}
 		prerequisite = {focus = NAA_Garmas_Fame}
 		relative_position_id = NAA_Icelinas_Eyes
 		ai_will_do = {
@@ -526,6 +541,23 @@ available = {
 		y = 1
 		prerequisite = {focus = NAA_Royal_Marriage}
 		relative_position_id = NAA_Royal_Marriage
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = NAA_no_longer_on_the_coat_tails
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Form_the_Jaburo_Assualt_Corps.}
+		relative_position_id = NAA_Form_the_Jaburo_Assualt_Corps.
 		ai_will_do = {
 			factor = 1
 		}

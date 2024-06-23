@@ -525,18 +525,36 @@ focus_tree = {
 		}
 	}
 
-	
 	focus = {
-		id = RUS_yakut_development_project
+		id = RUS_purchase_prototype_units
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 1
-		y = 2
+		x = 0
+		y = 1
 		ai_will_do = {
 			factor = 1
 		}
 		prerequisite = {
-		focus = RUS_next_generation_designs
+			focus = RUS_next_generation_designs
+			}
+			available = {
+				country_exists = 9AR
+			}
+			
+		relative_position_id = RUS_next_generation_designs
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_yakut_development_project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
 		}
 		prerequisite = {
 			focus = RUS_reduce_tank_costs
@@ -547,7 +565,7 @@ focus_tree = {
 			available = {
 				has_completed_focus = RUS_yakut_newtype_lab
 			}
-		relative_position_id = RUS_next_generation_designs
+		relative_position_id = RUS_reduce_tank_costs
 		completion_reward = {
 		
 		}

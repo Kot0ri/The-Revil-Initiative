@@ -99,6 +99,37 @@ focus_tree = {
 				}
 			}
 
+focus = {
+	id = SSA_singapore_convention
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {	
+	factor = 1
+				}
+	relative_position_id = SSA_manilia_conference
+	prerequisite = {	focus = SSA_manilia_conference	}
+	completion_reward = {
+			}
+	}
+
+
+	focus = {
+		id = SSA_mission_to_saigon
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {	
+		factor = 1
+					}
+		relative_position_id = SSA_singapore_convention
+		prerequisite = {	focus = SSA_singapore_convention	}
+		completion_reward = {
+				}
+		}
+
 	focus = {
 	id = SSA_recruiting_locals
 	icon = GFX_goal_efsf_mobile_headquarters

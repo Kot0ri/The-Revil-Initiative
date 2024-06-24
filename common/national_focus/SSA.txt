@@ -40,6 +40,50 @@ focus_tree = {
 				}
 
 	focus = {
+			id = SSA_unity_together
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			relative_position_id = SSA_resolve_religious_tensions
+			prerequisite = {	focus = SSA_resolve_religious_tensions	}
+			completion_reward = {
+						}
+				}
+	focus = {
+			id = SSA_bangkok_proposal
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			relative_position_id = SSA_government_appoinments
+			prerequisite = {	focus = SSA_government_appoinments	}
+			completion_reward = {
+						}
+				}
+
+	focus = {
+			id = SSA_manilia_conference
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			relative_position_id = SSA_bangkok_proposal
+			prerequisite = {	focus = SSA_bangkok_proposal	}
+			completion_reward = {
+						}
+				}
+
+	focus = {
 		id = SSA_jungle_pathing
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5

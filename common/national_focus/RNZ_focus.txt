@@ -1,0 +1,797 @@
+focus_tree = {
+	id = RNZ
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = RNZ
+		}
+	}
+	default = no
+	
+
+focus = {
+	id = RNZ_legacy_of_the_father
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 2
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = RNZ_deikuns_vision
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = aristocracy
+		}
+		add_popularity = {
+			ideology = aristocracy
+			popularity = 0.35
+		}
+		add_political_power = 150
+		set_country_flag = casval_leadership
+		country_event = {id = zeon.91}
+	}
+	
+}
+
+focus = {
+	id = RNZ_deikuns_vision
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 0
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = RNZ_legacy_of_the_father
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = contolism
+		}
+		add_popularity = {
+			ideology = contolism
+			popularity = 0.20
+		}
+		add_political_power = 150
+		set_country_flag = casval_leadership
+		country_event = {id = zeon.91}
+	}
+}
+
+focus = {
+	id = RNZ_rise_of_radical_zeonists
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = supremacist
+			popularity = 0.10
+		}
+	}
+	relative_position_id = RNZ_legacy_of_the_father
+	prerequisite = {  focus = RNZ_deikuns_vision }
+}
+
+focus = {
+	id = RNZ_bring_in_former_zabi_supporters
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = supremacist
+			popularity = 0.15
+		}
+		add_manpower = 500000
+	}
+	relative_position_id = RNZ_rise_of_radical_zeonists
+	prerequisite = {  focus = RNZ_rise_of_radical_zeonists }
+}
+
+focus = {
+	id = RNZ_savior_of_sweetwater
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		add_country_leader_trait = kings_return
+		add_country_leader_trait = fanatic_followers
+		add_ideas = High_Hopes_and_Noble_Endevours 
+		if = {
+			limit = {country_exists = SI1 }
+			puppet = SI1
+		}
+		if = {
+			limit =  { country_exists = SI5 }
+			puppet = SI5
+		}
+	}
+	relative_position_id = RNZ_legacy_of_the_father
+	prerequisite = { focus = RNZ_legacy_of_the_father focus = RNZ_deikuns_vision }
+}
+
+focus = {
+	id = RNZ_militarization_of_side_1
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		912 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		913 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		914 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = RNZ_savior_of_sweetwater
+	prerequisite = { focus = RNZ_savior_of_sweetwater }
+}
+
+focus = {
+	id = RNZ_bring_in_deikun_loyalists
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	add_manpower = 50000
+	recruit_character = RNZ_rezin
+	recruit_character = RNZ_lyle
+	recruit_character = RNZ_hill
+	recruit_character = RNZ_zimmerman
+	}
+	relative_position_id = RNZ_militarization_of_side_1
+	prerequisite = { focus = RNZ_militarization_of_side_1 }
+}
+
+focus = {
+	id = RNZ_moon_moon_incident
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_legacy_of_the_father
+	prerequisite = { focus = RNZ_legacy_of_the_father focus = RNZ_deikuns_vision }
+}
+
+focus = {
+	id = RNZ_place_reuss_in_command
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_moon_moon_incident
+	prerequisite = { focus = RNZ_moon_moon_incident }
+}
+
+focus = {
+	id = RNZ_deal_with_the_moon_moon
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_place_reuss_in_command
+	prerequisite = { focus = RNZ_place_reuss_in_command }
+}
+
+focus = {
+	id = RNZ_form_a_royal_guard
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	recruit_character = RNZ_gyunei
+	recruit_character = RNZ_angelo
+	recruit_character = RNZ_sergi
+	recruit_character = RNZ_bato
+	recruit_character = RNZ_cuaron
+	recruit_character = RNZ_zechst
+	recruit_character = RNZ_spotter
+	add_manpower = 5000
+	}
+	relative_position_id = RNZ_bring_in_deikun_loyalists
+	prerequisite = { focus = RNZ_bring_in_deikun_loyalists }
+}
+
+focus = {
+	id = RNZ_take_down_the_zabis
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	create_wargoal = {
+		target = ZEO
+		type = annex_everything
+	}
+	recruit_character = RNZ_nakamura
+	recruit_character = RNZ_christenia
+	}
+	relative_position_id = RNZ_form_a_royal_guard
+	prerequisite = { focus = RNZ_form_a_royal_guard }
+}
+
+focus = {
+	id = RNZ_prioritize_the_federation
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		create_wargoal = {
+			target = EFS
+			type = annex_everything
+		}
+		recruit_character = RNZ_kamille
+	}
+	relative_position_id = RNZ_form_a_royal_guard
+	prerequisite = { focus = RNZ_form_a_royal_guard }
+}
+
+focus = {
+	id = RNZ_call_out_the_zabis
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	add_war_support = 0.20
+	}
+	relative_position_id = RNZ_take_down_the_zabis
+	prerequisite = { focus = RNZ_take_down_the_zabis }
+}
+
+focus = {
+	id = RNZ_stroke_tensions_between_the_siblings
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	recruit_character = RNZ_garma
+	}
+	relative_position_id = RNZ_call_out_the_zabis
+	prerequisite = { focus = RNZ_call_out_the_zabis }
+}
+
+focus = {
+	id = RNZ_crusade_to_side_3
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		annex_country = {
+			target = GRA
+		}
+	}
+	relative_position_id = RNZ_stroke_tensions_between_the_siblings
+	prerequisite = { focus = RNZ_stroke_tensions_between_the_siblings }
+}
+
+focus = {
+	id = RNZ_triumphant_return_to_core_3
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_crusade_to_side_3
+	prerequisite = { focus = RNZ_crusade_to_side_3 }
+}
+
+focus = {
+	id = RNZ_treaty_with_the_sides
+	icon = GFX_goal_colony_council
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_prioritize_the_federation
+	prerequisite = { focus = RNZ_prioritize_the_federation }
+}
+
+focus = {
+	id = RNZ_operation_cold_weather
+	icon = GFX_goal_for_star_of_water_with_love
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_treaty_with_the_sides
+	prerequisite = { focus = RNZ_treaty_with_the_sides }
+}
+
+focus = {
+	id = RNZ_meeting_at_londinium
+	icon = GFX_goal_ifluential_people_of_earth
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	annex_country = {
+		target = AXS
+	}
+
+	}
+	relative_position_id = RNZ_operation_cold_weather
+	prerequisite = { focus = RNZ_operation_cold_weather }
+}
+
+focus = {
+	id = RNZ_outplay_the_federation
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_meeting_at_londinium
+	prerequisite = { focus = RNZ_meeting_at_londinium }
+}
+
+focus = {
+	id = RNZ_prince_of_space
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = RNZ_triumphant_return_to_core_3
+	prerequisite = { focus = RNZ_triumphant_return_to_core_3 }
+	prerequisite = { focus = RNZ_outplay_the_federation }
+}
+
+focus = {
+	id = RNZ_hero_of_the_spacenoids
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_prince_of_space
+	prerequisite = { focus = RNZ_prince_of_space }
+}
+
+focus = {
+	id = RNZ_garner_loyalty_in_the_colonies
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_bring_in_deikun_loyalists
+	prerequisite = { focus = RNZ_bring_in_deikun_loyalists }
+}
+
+focus = {
+	id = RNZ_begin_operations_in_other_colonies
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_garner_loyalty_in_the_colonies
+	prerequisite = { focus = RNZ_garner_loyalty_in_the_colonies }
+}
+
+focus = {
+	id = RNZ_side_2_operations
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	annex_country = {
+		target = SI2
+	}
+	}
+	relative_position_id = RNZ_begin_operations_in_other_colonies
+	prerequisite = { focus = RNZ_begin_operations_in_other_colonies }
+}
+
+focus = {
+	id = RNZ_negotiations_with_the_other_sides
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = -3
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_bring_in_deikun_loyalists
+	prerequisite = { focus = RNZ_bring_in_deikun_loyalists }
+}
+
+focus = {
+	id = RNZ_lease_palau
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		set_state_owner = 949
+		set_state_controller = 949
+	}
+	relative_position_id = RNZ_negotiations_with_the_other_sides
+	prerequisite = { focus = RNZ_negotiations_with_the_other_sides }
+}
+
+focus = {
+	id = RNZ_reach_out_to_axis
+	icon = GFX_goal_maharaja_khan
+	cost = 2
+	x = -6
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	recruit_character = RNZ_haman
+	recruit_character = RNZ_chole
+	recruit_character = RNZ_vincent
+	recruit_character = RNZ_illia
+	}
+	relative_position_id = RNZ_bring_in_deikun_loyalists
+	prerequisite = { focus = RNZ_bring_in_deikun_loyalists }
+}
+
+focus = {
+	id = RNZ_joint_development_with_axis
+	icon = GFX_goal_maharaja_khan
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_research_slot = 1
+	
+	}
+	relative_position_id = RNZ_reach_out_to_axis
+	prerequisite = { focus = RNZ_reach_out_to_axis }
+}
+
+focus = {
+	id = RNZ_preparations_for_the_char_continuation_project
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_lease_palau
+	prerequisite = { focus = RNZ_lease_palau }
+	prerequisite = { focus = RNZ_joint_development_with_axis }
+}
+
+focus = {
+	id = RNZ_axis_cloning_technology
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_research_slot = 1
+		recruit_character = RNZ_marida
+		recruit_character = RNZ_luger
+	}
+	relative_position_id = RNZ_preparations_for_the_char_continuation_project
+	prerequisite = { focus = RNZ_preparations_for_the_char_continuation_project }
+}
+
+focus = {
+	id = RNZ_reach_out_to_officals_in_side_3
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_preparations_for_the_char_continuation_project
+	prerequisite = { focus = RNZ_preparations_for_the_char_continuation_project }
+}
+
+focus = {
+	id = RNZ_char_continuation_project_completetion
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_axis_cloning_technology
+	prerequisite = { focus = RNZ_axis_cloning_technology }
+	prerequisite = { focus = RNZ_reach_out_to_officals_in_side_3 }
+}
+
+focus = {
+	id = RNZ_casvals_blue_eyes
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_char_continuation_project_completetion
+	prerequisite = { focus = RNZ_char_continuation_project_completetion }
+	mutually_exclusive = { focus = RNZ_vessel_for_mankind }
+}
+
+focus = {
+	id = RNZ_vessel_for_mankind
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_char_continuation_project_completetion
+	prerequisite = { focus = RNZ_char_continuation_project_completetion }
+	mutually_exclusive = { focus = RNZ_casvals_blue_eyes }
+}
+
+focus = {
+	id = RNZ_plans_of_a_side_coprosperity_sphere
+	icon = GFX_goal_colony_allaince
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	create_faction = "Side Coprosperity Sphere"
+	}
+	relative_position_id = RNZ_vessel_for_mankind
+	prerequisite = { focus = RNZ_vessel_for_mankind }
+}
+
+focus = {
+	id = RNZ_hunt_for_laplaces_box
+	icon = GFX_goal_box_of_laplace
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_plans_of_a_side_coprosperity_sphere
+	prerequisite = { focus = RNZ_plans_of_a_side_coprosperity_sphere }
+	prerequisite = { focus = RNZ_plans_of_a_side_coprosperity_sphere }
+}
+
+focus = {
+	id = RNZ_earths_gravity
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_casvals_blue_eyes
+	prerequisite = { focus = RNZ_casvals_blue_eyes }
+}
+
+focus = {
+	id = RNZ_man_machines
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_earths_gravity
+	prerequisite = { focus = RNZ_earths_gravity }
+}
+
+focus = {
+	id = RNZ_contact_zeon_remnants
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	add_manpower = 50000
+	}
+	relative_position_id = RNZ_hunt_for_laplaces_box
+	prerequisite = { focus = RNZ_hunt_for_laplaces_box }
+	prerequisite = { focus = RNZ_man_machines }
+}
+}

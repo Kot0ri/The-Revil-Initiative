@@ -364,9 +364,12 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = RNZ_prioritize_the_federation
 	}
 	completion_reward = {
 	create_wargoal = {
@@ -374,7 +377,13 @@ focus = {
 		type = annex_everything
 	}
 	recruit_character = RNZ_nakamura
-	recruit_character = RNZ_christenia
+	
+
+	if = {
+		limit = {has_government = democratic }
+		recruit_character = RNZ_christenia
+	}
+
 	}
 	relative_position_id = RNZ_form_a_royal_guard
 	prerequisite = { focus = RNZ_form_a_royal_guard }
@@ -385,16 +394,23 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = RNZ_take_down_the_zabis
 	}
 	completion_reward = {
 		create_wargoal = {
 			target = EFS
 			type = annex_everything
 		}
-		recruit_character = RNZ_kamille
+		if = {
+			limit = {has_government = democratic }
+			recruit_character = RNZ_kamille
+		}
+		
 	}
 	relative_position_id = RNZ_form_a_royal_guard
 	prerequisite = { focus = RNZ_form_a_royal_guard }
@@ -405,7 +421,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -421,7 +437,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -437,7 +453,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -455,7 +471,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -471,7 +487,7 @@ focus = {
 	icon = GFX_goal_colony_council
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -487,7 +503,7 @@ focus = {
 	icon = GFX_goal_for_star_of_water_with_love
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -503,7 +519,7 @@ focus = {
 	icon = GFX_goal_ifluential_people_of_earth
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -522,7 +538,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -538,9 +554,14 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_government = supremacist
+		has_government = aristocracy
+		has_government = contolism
 	}
 	completion_reward = {
 		
@@ -555,7 +576,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}

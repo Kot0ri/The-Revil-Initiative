@@ -22,6 +22,7 @@ focus = {
 	}
 	mutually_exclusive = {
 		focus = RNZ_deikuns_vision
+		focus = RNZ_tears_of_time
 	}
 	completion_reward = {
 		set_politics = {
@@ -30,6 +31,34 @@ focus = {
 		add_popularity = {
 			ideology = aristocracy
 			popularity = 0.35
+		}
+		add_political_power = 150
+		set_country_flag = casval_leadership
+		country_event = {id = zeon.91}
+	}
+	
+}
+
+focus = {
+	id = RNZ_tears_of_time
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 4
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = RNZ_deikuns_vision
+		focus = RNZ_legacy_of_the_father
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = democratic
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.25
 		}
 		add_political_power = 150
 		set_country_flag = casval_leadership
@@ -49,6 +78,7 @@ focus = {
 	}
 	mutually_exclusive = {
 		focus = RNZ_legacy_of_the_father
+		focus = RNZ_tears_of_time
 	}
 	completion_reward = {
 		set_politics = {
@@ -69,7 +99,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = -3
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -110,11 +140,52 @@ focus = {
 }
 
 focus = {
+	id = RNZ_acquire_artic_bases
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		add_research_slot = 1
+	}
+	relative_position_id = RNZ_legacy_of_the_father
+	prerequisite = { focus = RNZ_legacy_of_the_father  focus = RNZ_tears_of_time }
+}
+
+focus = {
+	id = RNZ_militarization_of_side_5
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = RNZ_militarization_of_side_1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_acquire_artic_bases
+	prerequisite = { focus = RNZ_acquire_artic_bases  }
+}
+
+focus = {
 	id = RNZ_savior_of_sweetwater
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -135,7 +206,7 @@ focus = {
 		}
 	}
 	relative_position_id = RNZ_legacy_of_the_father
-	prerequisite = { focus = RNZ_legacy_of_the_father focus = RNZ_deikuns_vision }
+	prerequisite = { focus = RNZ_legacy_of_the_father focus = RNZ_deikuns_vision focus = RNZ_tears_of_time }
 }
 
 focus = {
@@ -146,6 +217,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = RNZ_militarization_of_side_5
 	}
 	completion_reward = {
 		912 = {
@@ -198,7 +272,7 @@ focus = {
 	id = RNZ_bring_in_deikun_loyalists
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -211,15 +285,15 @@ focus = {
 	recruit_character = RNZ_zimmerman
 	}
 	relative_position_id = RNZ_militarization_of_side_1
-	prerequisite = { focus = RNZ_militarization_of_side_1 }
+	prerequisite = { focus = RNZ_militarization_of_side_1 focus = RNZ_militarization_of_side_5 }
 }
 
 focus = {
 	id = RNZ_moon_moon_incident
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = 1
-	y = 2
+	x = 3
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -579,7 +653,7 @@ focus = {
 	id = RNZ_reach_out_to_axis
 	icon = GFX_goal_maharaja_khan
 	cost = 2
-	x = -6
+	x = -5
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -615,8 +689,8 @@ focus = {
 	id = RNZ_preparations_for_the_char_continuation_project
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = -2
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -632,8 +706,8 @@ focus = {
 	id = RNZ_axis_cloning_technology
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = -2
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -651,7 +725,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -667,7 +741,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -684,7 +758,7 @@ focus = {
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -700,8 +774,8 @@ focus = {
 	id = RNZ_vessel_for_mankind
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = -2
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}

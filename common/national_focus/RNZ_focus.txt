@@ -140,6 +140,102 @@ focus = {
 }
 
 focus = {
+	id = RNZ_reach_out_to_AEUG_remnants
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = RNZ_tears_of_time
+	prerequisite = { focus = RNZ_tears_of_time }
+}
+
+focus = {
+	id = RNZ_bring_in_former_AEUG
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		add_manpower = 12000
+	}
+	relative_position_id = RNZ_reach_out_to_AEUG_remnants
+	prerequisite = { focus = RNZ_reach_out_to_AEUG_remnants }
+}
+
+focus = {
+	id = RNZ_further_ties_to_luio_and_co.
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = RNZ_tears_of_time
+	prerequisite = { focus = RNZ_tears_of_time }
+}
+
+focus = {
+	id = RNZ_meeting_with_anaheim
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = RNZ_further_ties_to_luio_and_co.
+	prerequisite = { focus = RNZ_further_ties_to_luio_and_co. }
+}
+
+
+focus = {
+	id = RNZ_vist_foundation_offer
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = RNZ_meeting_with_anaheim
+	prerequisite = { focus = RNZ_,eeting_with_anaheim }
+}
+
+focus = {
 	id = RNZ_acquire_artic_bases
 	icon = GFX_goal_kings_return
 	cost = 2
@@ -292,7 +388,7 @@ focus = {
 	id = RNZ_moon_moon_incident
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = 3
+	x = -5
 	y = 1
 	ai_will_do = {
 		factor = 1

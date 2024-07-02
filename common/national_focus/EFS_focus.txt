@@ -1481,5 +1481,262 @@ focus = {
 	}
 }
 
+focus = {
+	id = efsf_begin_general_mobilization
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_defense_of_the_earth
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_defense_of_the_earth
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_begin_mass_conscription
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_general_mobilization
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_begin_general_mobilization
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_america_front
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_defense_of_the_earth
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_defense_of_the_earth
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_reinforce_cheyenne
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_america_front
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_america_front
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_north_america_strategy
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reinforce_cheyenne
+	}
+	available = {
+		has_war = yes
+	}
+	mutually_exclusive = {
+		focus = efsf_odessa_strategy
+	}
+	relative_position_id = efsf_reinforce_cheyenne
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = efsf_secure_panama
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_north_america_strategy
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_north_america_strategy
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_dominate_the_skys
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_north_america_strategy
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_north_america_strategy
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_old_world_front
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_defense_of_the_earth
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_defense_of_the_earth
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_reinforce_casablanca
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_old_world_front
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_old_world_front
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_odessa_strategy
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reinforce_casablanca
+	}
+	available = {
+		has_war = yes
+	}
+	mutually_exclusive = {
+		focus = efsf_north_america_strategy
+	}
+	relative_position_id = efsf_reinforce_casablanca
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_reinforce_north_africa_front
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_odessa_strategy
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_odessa_strategy
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_prepare_to_seize_gibrlater
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_odessa_strategy
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_odessa_strategy
+	completion_reward = {
+	
+	}
+}
 
 }

@@ -176,6 +176,14 @@ scheming_politician = {
 	random = no
 	political_advisor_cost_factor = -0.15
 }
+
+jamitov_hymem_trait = {
+	random = no
+	sprite = 13
+	supremacist_drift = 0.05
+	drift_defence_factor = 0.1
+}
+
 #scirocco
 man_from_jupiter = {
 	random = no
@@ -412,12 +420,7 @@ armchair_admiral = {
 		trade_opinion_factor = 0.3
 		civilian_factory_use = -3
 	}
-	jamitov_hymem_trait = {
-		random = no
-		sprite = 13
-		earthsupremacy_drift = 0.1
-		drift_defence_factor = 0.1
-	}
+	
 	
 	anaheim_electronics_ms_trait = {
 	}

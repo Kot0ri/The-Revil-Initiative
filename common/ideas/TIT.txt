@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		titans_taskforce = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				recruitable_population_factor = -0.35
+				war_support_factor = 0.2
+				promote_cost_factor = -0.15
+				research_speed_factor = 0.05
+				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.15
+				special_forces_cap = 12
+			}
+		
+			removal_cost = -1
+		}
+	}
+}

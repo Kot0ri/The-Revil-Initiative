@@ -1,0 +1,98 @@
+capital = 940
+oob = "VBC"
+
+set_research_slots = 4
+set_convoys = 500
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+set_stability = 0.7
+set_war_support = 0.4
+
+set_technology = {
+	basic_train = 1
+	infantry_weapons = 1
+	motorised_infantry = 1
+	tech_mountaineers = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	minovsky_particle = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	EFS_ac1_tech = 1
+	fuel_refining = 1
+	concentrated_industry = 1
+	construction1 = 1
+	excavation1 = 1
+	EFS_transport = 1
+	oil_processing = 1
+	rubber_processing = 1
+	concentrated_industry2 = 1
+	construction2 = 1
+	excavation2 = 1
+	improved_machine_tools = 1
+	improved_equipment_conversion = 1
+	fuel_refining2 = 1
+	i_field = 1
+	mega_particle1 = 1
+	EFS_space_cruiser1_tech = 1
+	EFS_basic_battery = 1
+	EFS_basic_secondary_battery = 1
+	EFS_damage_control_1 = 1
+	EFS_basic_torpedo = 1
+	EFS_basic_naval_mines = 1
+}
+
+set_variable = { newtype_accepted_status = 1 }
+
+set_popularities = {
+	supremacist = 60
+	contolism = 0
+	democratic = 0
+	military_government = 40
+	aristocracy = 0
+	corporatism = 0
+	communism = 0
+}
+set_politics = {
+	ruling_party = sumpremacist
+	last_election = "74.12.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+add_ideas = {
+	free_trade
+	partial_economic_mobilisation
+	limited_conscription
+	customs_duty_6
+	oversea_army_6
+	newtype_division_2
+}
+
+
+
+
+
+
+#Leaders
+recruit_character = TIT_jamitov_hymen
+recruit_character = TIT_bask_om
+
+#field marshals
+
+#generals
+
+#pilots
+
+#admirals
+
+#Advisors
+
+
+

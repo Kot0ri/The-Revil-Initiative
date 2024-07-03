@@ -2164,7 +2164,7 @@ focus = {
 	}
 	relative_position_id = efsf_high_command_machinations
 	completion_reward = {
-	
+	add_ideas = rise_of_the_titans_1
 	}
 }
 
@@ -2188,8 +2188,52 @@ focus = {
 	}
 	relative_position_id = efsf_rise_of_radicals
 	completion_reward = {
-	
+		remove_ideas = rise_of_the_titans_1
+		add_ideas = rise_of_the_titans_2
 	}
 }
 
+focus = {
+	id = efsf_form_the_titans
+	icon = GFX_goal_earths_supremacy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_seek_the_creation_of_elite_forces
+	}
+	available = {
+	
+	}
+	mutually_exclusive = {
+	
+	}
+	relative_position_id = efsf_seek_the_creation_of_elite_forces
+	completion_reward = {
+		transfer_state = 	
+		973
+	
+	transfer_state = 	
+		701
+	
+	remove_ideas = rise_of_the_titans_2
+	973 = {
+		add_core_of = TIT
+	}
+	}
+	completion_reward = {
+	701 = {
+		add_core_of = TIT
+	}
+	}
+	completion_reward = {
+	523 = {
+		add_core_of = TIT
+	}
+	release = TIT
+  }
+	}
 }

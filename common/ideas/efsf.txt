@@ -68,6 +68,36 @@ ideas = {
 			removal_cost = -1
 		}
 
+		rise_of_the_titans_1 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				supremacist_drift = 0.02
+			}
+		
+			removal_cost = -1
+		}
+
+		rise_of_the_titans_2 = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				supremacist_drift = 0.05
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+			}
+		
+			removal_cost = -1
+		}
+
 		queen_of_battle = {
 			allowed ={
 				always = no

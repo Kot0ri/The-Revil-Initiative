@@ -252,6 +252,26 @@ characters={
 		}
 	}
 
+	TIT_buran_blutarch={
+		name="Buran Blutarch"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/buran_blutarch.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	TIT_tosh_cray={
 		name="Tosh Cray"
 		portraits={
@@ -433,7 +453,7 @@ characters={
 	}
 
 	TIT_adol_zeno={
-		name="Adol_Zeno"
+		name="Adol Zeno"
 		portraits={
 			army={
 				small="GFX_idea_barom"
@@ -500,7 +520,7 @@ characters={
 				small="GFX_idea_barom"
 			}
 			army={
-				large="gfx/leaders/TIT/otto_paterson.dds"
+				large="gfx/leaders/TIT/otto_patterson.dds"
 			}
 		}
 		navy_leader = {
@@ -520,7 +540,7 @@ characters={
 				small="GFX_idea_barom"
 			}
 			army={
-				large="gfx/leaders/TIT/lycus_freiberg.dds"
+				large="gfx/leaders/TIT/lycus_freibergs.dds"
 			}
 		}
 		navy_leader = {
@@ -540,7 +560,7 @@ characters={
 				small="GFX_idea_barom"
 			}
 			army={
-				large="gfx/leaders/TIT/jamaican_daningham.dds"
+				large="gfx/leaders/TIT/jamaican_daninghan.dds"
 			}
 		}
 		navy_leader = {
@@ -573,6 +593,26 @@ characters={
 		}
 	}
 
+	TIT_brian_aeno={
+		name="Brian Aeno"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/brain_aeno.dds"
+			}
+		}
+		navy_leader = {
+			traits = {space_expert}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+
 	TIT_kaifan={
 		name="Haifan"
 		portraits={
@@ -581,6 +621,26 @@ characters={
 			}
 			army={
 				large="gfx/leaders/TIT/haifan.dds"
+			}
+		}
+		navy_leader = {
+			traits = {space_expert}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 2
+			coordination_skill = 1
+		}
+	}
+
+	TIT_okuriinu_warg={
+		name="Okuriinu Warg"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/okuriinu_warg.dds"
 			}
 		}
 		navy_leader = {

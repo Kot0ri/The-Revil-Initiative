@@ -1739,4 +1739,340 @@ focus = {
 	}
 }
 
+	focus = {
+		id = efsf_begin_post_war_military_reconstruction
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 10
+		y = 15
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+	id = efsf_operation_clean_sweep
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_post_war_military_reconstruction
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_begin_post_war_military_reconstruction
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_1st_battle_of_axis
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_operation_clean_sweep
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_operation_clean_sweep
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_make_underground_contacts
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_1st_battle_of_axis
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_1st_battle_of_axis
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_0081_reconstruction_plan
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_post_war_military_reconstruction
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+	focus = efsf_0083_reconstruction_plan
+	}
+	relative_position_id = efsf_begin_post_war_military_reconstruction
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_focus_on_retrofitting_oyw_ms
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_0081_reconstruction_plan
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_0081_reconstruction_plan
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_rebuild_light_ship_fleet
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_0081_reconstruction_plan
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_0081_reconstruction_plan
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_0083_reconstruction_plan
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 7
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_post_war_military_reconstruction
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+	focus = efsf_0081_reconstruction_plan
+	}
+	relative_position_id = efsf_begin_post_war_military_reconstruction
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_development_of_next_gen_ms
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_0083_reconstruction_plan
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_0083_reconstruction_plan
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_development_of_nuclear_capable_ms
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_development_of_next_gen_ms
+	}
+	available = {
+	has_completed_focus = efsf_1st_battle_of_axis
+	}
+	relative_position_id = efsf_development_of_next_gen_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_big_ship_doctrine_revived
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_0083_reconstruction_plan
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_0083_reconstruction_plan
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_improve_pegasus_design
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_big_ship_doctrine_revived
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_big_ship_doctrine_revived
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_new_generation_battleships
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_big_ship_doctrine_revived
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_big_ship_doctrine_revived
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_contract_anaheim
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_focus_on_retrofitting_oyw_ms focus = efsf_development_of_nuclear_capable_ms
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_development_of_nuclear_capable_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_gpo_series_proposal
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_contract_anaheim
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_contract_anaheim
+	completion_reward = {
+	
+	}
+}
+
+
+focus = {
+	id = efsf_hgh_command_machinations
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 15
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_post_war_military_reconstruction
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_begin_post_war_military_reconstruction
+	completion_reward = {
+	
+	}
+}
+
 }

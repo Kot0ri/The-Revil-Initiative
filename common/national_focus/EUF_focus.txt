@@ -703,8 +703,7 @@ focus = {
 	
 	}
 	relative_position_id = EUF_expand_arts_programs
-	prerequisite = { focus = EUF_expand_arts_programs }
-	prerequisite = { focus = EUF_devotion_to_the_sciences }
+	prerequisite = { focus = EUF_expand_arts_programs EUF_devotion_to_the_sciences }
 }
 
 focus = {

@@ -91,19 +91,19 @@ set_fuel_ratio = 0.8
 # DIPLOMACY
 
 set_popularities = {
-	democratic = 100
-	supremacist = 0
-	contolism = 0
-	military_government = 0
-	aristocracy = 0
-	corporatism = 0
-	communism = 0
+	democratic =100
+	supremacist =0
+	contolism =0
+	military_government =0
+	aristocracy =0
+	corporatism =0
+	communism =0
 }
 set_politics = {
 	ruling_party = democratic
 	last_election = "74.12.1"
 	election_frequency = 48
-	elections_allowed = yes ##suspended through duration of war, which is handled via event
+	elections_allowed = No ##suspended through duration of war, which is handled via event
 }
 
 if = {

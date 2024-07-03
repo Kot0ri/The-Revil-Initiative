@@ -1,5 +1,5 @@
-capital = 940
-oob = "VBC"
+capital = 973
+oob = "TIT"
 
 set_research_slots = 4
 set_convoys = 500
@@ -48,7 +48,7 @@ set_technology = {
 	EFS_basic_naval_mines = 1
 }
 
-set_variable = { newtype_accepted_status = 1 }
+set_variable = { newtype_accepted_status = 4 }
 
 set_popularities = {
 	supremacist = 60
@@ -60,7 +60,7 @@ set_popularities = {
 	communism = 0
 }
 set_politics = {
-	ruling_party = sumpremacist
+	ruling_party = supremacist
 	last_election = "74.12.1"
 	election_frequency = 48
 	elections_allowed = no

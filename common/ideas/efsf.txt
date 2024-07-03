@@ -1,5 +1,73 @@
 ideas = {
 	country = {
+		demobilization = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				recruitable_population_factor = -0.8
+				war_support_factor = -0.2
+				promote_cost_factor = 0.15
+				production_factory_max_efficiency_factor = -0.15
+				research_speed_factor = -0.15
+			}
+		
+			removal_cost = -1
+		}
+
+		post_war_reconstruction = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				repair_speed_factor = 0.4
+				industry_repair_factor = 0.3
+				consumer_goods_factor = -0.05
+			}
+		
+			removal_cost = -1
+		}
+
+		0081_reconstruction = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.02
+				efsf_space_cruiser3_equipment_design_cost_factor = -0.3
+				experience_gain_efsf_space_cruiser_combat_factor = 0.25
+			}
+		
+			removal_cost = -1
+		}
+
+		0083_reconstruction = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.1
+				efsf_space_battleship3_equipment_design_cost_factor = -0.5
+				consumer_goods_factor = 0.05
+				supply_node_range = 0.1
+				production_speed_dockyard_factor = 0.5 
+			}
+		
+			removal_cost = -1
+		}
+
 		queen_of_battle = {
 			allowed ={
 				always = no

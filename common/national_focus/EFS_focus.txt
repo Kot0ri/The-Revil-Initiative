@@ -613,7 +613,7 @@ focus_tree = {
 
 	focus = {
 		id = efsf_improve_light_vehicles
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_space_security
 		cost = 10
 		x = -2
 		y = 1
@@ -1483,7 +1483,7 @@ focus = {
 
 focus = {
 	id = efsf_begin_general_mobilization
-	icon = GFX_goal_earth_counter_strategy
+	icon = GFX_goal_parents_of_earth_sphere
 	cost = 10
 	x = 0
 	y = 1
@@ -1504,7 +1504,7 @@ focus = {
 
 focus = {
 	id = efsf_begin_mass_conscription
-	icon = GFX_goal_earth_counter_strategy
+	icon = GFX_goal_parents_of_earth_sphere
 	cost = 10
 	x = 0
 	y = 1
@@ -1741,7 +1741,7 @@ focus = {
 
 	focus = {
 		id = efsf_begin_post_war_military_reconstruction
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_parents_of_earth_sphere
 		cost = 1
 		x = 10
 		y = 15
@@ -1749,7 +1749,8 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = demobilization
+		add_ideas = post_war_reconstruction
 		}
 	}
 
@@ -1836,13 +1837,13 @@ focus = {
 	}
 	relative_position_id = efsf_begin_post_war_military_reconstruction
 	completion_reward = {
-	
+	add_ideas = 0081_reconstruction
 	}
 }
 
 focus = {
 	id = efsf_focus_on_retrofitting_oyw_ms
-	icon = GFX_goal_earth_counter_strategy
+	icon = GFX_goal_development_of_MS_for_local_warfare
 	cost = 10
 	x = 0
 	y = 1
@@ -1902,13 +1903,13 @@ focus = {
 	}
 	relative_position_id = efsf_begin_post_war_military_reconstruction
 	completion_reward = {
-	
+	add_ideas = 0083_reconstruction
 	}
 }
 
 focus = {
 	id = efsf_development_of_next_gen_ms
-	icon = GFX_goal_earth_counter_strategy
+	icon = GFX_goal_development_of_MS_for_custom
 	cost = 10
 	x = 0
 	y = 1
@@ -1919,7 +1920,7 @@ focus = {
 		focus = efsf_0083_reconstruction_plan
 	}
 	available = {
-	
+	has_completed_focus = efsf_begin_work_on_next_generation_ms
 	}
 	relative_position_id = efsf_0083_reconstruction_plan
 	completion_reward = {
@@ -2053,10 +2054,30 @@ focus = {
 	}
 }
 
+focus = {
+	id = efsf_begin_introduction_of_new_prototypes
+	icon = GFX_goal_next_generation_ms
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_gpo_series_proposal
+	}
+	available = {
+	has_completed_focus = efsf_development_of_next_gen_ms
+	}
+	relative_position_id = efsf_gpo_series_proposal
+	completion_reward = {
+	
+	}
+}
 
 focus = {
-	id = efsf_hgh_command_machinations
-	icon = GFX_goal_earth_counter_strategy
+	id = efsf_high_command_machinations
+	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 10
 	x = 15
 	y = 1
@@ -2070,6 +2091,102 @@ focus = {
 	
 	}
 	relative_position_id = efsf_begin_post_war_military_reconstruction
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_march_of_the_reformists
+	icon = GFX_goal_elenism
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_high_command_machinations
+	}
+	available = {
+	
+	}
+	mutually_exclusive = {
+		focus = efsf_rise_of_radicals
+	}
+	relative_position_id = efsf_high_command_machinations
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_reduce_pressure_on_colony_governments
+	icon = GFX_goal_elenism
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_march_of_the_reformists
+	}
+	available = {
+	
+	}
+	mutually_exclusive = {
+	
+	}
+	relative_position_id = efsf_march_of_the_reformists
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_rise_of_radicals
+	icon = GFX_goal_earths_supremacy
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_high_command_machinations
+	}
+	available = {
+	
+	}
+	mutually_exclusive = {
+		focus = efsf_march_of_the_reformists
+	}
+	relative_position_id = efsf_high_command_machinations
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_seek_the_creation_of_elite_forces
+	icon = GFX_goal_elite_security_maintenance_force
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_rise_of_radicals
+	}
+	available = {
+	
+	}
+	mutually_exclusive = {
+	
+	}
+	relative_position_id = efsf_rise_of_radicals
 	completion_reward = {
 	
 	}

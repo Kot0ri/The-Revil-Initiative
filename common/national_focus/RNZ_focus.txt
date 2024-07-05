@@ -684,6 +684,86 @@ focus = {
 }
 
 focus = {
+	id = RNZ_ms_development
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 7
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_bring_in_deikun_loyalists
+	prerequisite = { focus = RNZ_bring_in_deikun_loyalists }
+}
+
+focus = {
+	id = RNZ_psychoframe_development
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_ms_development
+	prerequisite = { focus = RNZ_ms_development }
+}
+
+focus = {
+	id = RNZ_granada_lab_scheme
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_psychoframe_development
+	prerequisite = { focus = RNZ_psychoframe_development }
+}
+
+focus = {
+	id = RNZ_build_up_a_starfleet
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 5
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_bring_in_deikun_loyalists
+	prerequisite = { focus = RNZ_bring_in_deikun_loyalists }
+}
+
+focus = {
+	id = RNZ_contact_jupiter
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_build_up_a_starfleet
+	prerequisite = { focus = RNZ_build_up_a_starfleet }
+}
+
+focus = {
 	id = RNZ_garner_loyalty_in_the_colonies
 	icon = GFX_goal_kings_return
 	cost = 2

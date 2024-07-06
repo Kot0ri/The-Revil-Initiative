@@ -2058,7 +2058,7 @@ focus = {
 	id = efsf_begin_introduction_of_new_prototypes
 	icon = GFX_goal_next_generation_ms
 	cost = 10
-	x = 1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2070,6 +2070,48 @@ focus = {
 	has_completed_focus = efsf_development_of_next_gen_ms
 	}
 	relative_position_id = efsf_gpo_series_proposal
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_reverse_engineer_zeon_psycommu_tech
+	icon = GFX_goal_next_generation_ms
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_introduction_of_new_prototypes
+	}
+	available = {
+
+	}
+	relative_position_id = efsf_begin_introduction_of_new_prototypes
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_moveable_frame_introduction
+	icon = GFX_goal_next_generation_ms
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_introduction_of_new_prototypes
+	}
+	available = {
+
+	}
+	relative_position_id = efsf_begin_introduction_of_new_prototypes
 	completion_reward = {
 	
 	}

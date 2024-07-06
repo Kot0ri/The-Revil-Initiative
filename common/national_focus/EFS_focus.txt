@@ -1739,6 +1739,27 @@ focus = {
 	}
 }
 
+focus = {
+	id = efsf_operation_star_one
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_secure_panama focus = efsf_reinforce_north_africa_front
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_secure_panama
+	completion_reward = {
+	
+	}
+}
+
 	focus = {
 		id = efsf_begin_post_war_military_reconstruction
 		icon = GFX_goal_parents_of_earth_sphere
@@ -1800,7 +1821,7 @@ focus = {
 	id = efsf_make_underground_contacts
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
-	x = 0
+	x =-1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1812,6 +1833,48 @@ focus = {
 	
 	}
 	relative_position_id = efsf_1st_battle_of_axis
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_conflcit_with_nanyang_allaince
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_1st_battle_of_axis
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_1st_battle_of_axis
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_hunt_down_the_psycho_zaku
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_conflcit_with_nanyang_allaince
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_conflcit_with_nanyang_allaince
 	completion_reward = {
 	
 	}

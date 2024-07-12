@@ -1467,7 +1467,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		RNZ = { change_tag_from = SI1 }
 	}
 	relative_position_id = SI1_seek_out_deikuns_heirs
 	prerequisite = { focus = SI1_seek_out_deikuns_heirs }
@@ -1604,120 +1604,6 @@ focus = {
 	prerequisite = { focus = SI1_steal_mobile_suits }
 }
 
-focus = {
-	id = SI1_build_up_forces_on_earth
-	icon = GFX_goal_zeon_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 2
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI1_contact_zeon_remnants
-	prerequisite = { focus = SI1_contact_zeon_remnants }
-}
-
-focus = {
-	id = SI1_secret_deal_with_anaheim
-	icon = GFX_goal_zeon_mobile_headquarters
-	cost = 2
-	x = -2
-	y = 2
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI1_plans_of_a_side_coprosperity_sphere
-	prerequisite = { focus = SI1_plans_of_a_side_coprosperity_sphere }
-}
-
-focus = {
-	id = SI1_all_out_assault
-	icon = GFX_goal_zeon_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 5
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI1_hunt_for_laplaces_box
-	prerequisite = { focus = SI1_hunt_for_laplaces_box }
-	prerequisite = { focus = SI1_build_up_forces_on_earth }
-}
-
-focus = {
-	id = SI1_technology_from_beyond_the_veil
-	icon = GFX_goal_zeon_mobile_headquarters
-	cost = 2
-	x = -1
-	y = 2
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI1_hunt_for_laplaces_box
-	prerequisite = { focus = SI1_hunt_for_laplaces_box }
-	prerequisite = { focus = SI1_secret_deal_with_anaheim }
-}
-
-focus = {
-	id = SI1_technological_supremacy
-	icon = GFX_goal_zeon_mobile_headquarters
-	cost = 2
-	x = 1
-	y = 3
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI1_man_machines
-	prerequisite = { focus = SI1_man_machines }
-}
-
-focus = {
-	id = SI1_attempt_to_crush_federation_forces
-	icon = GFX_goal_zeon_mobile_headquarters
-	cost = 2
-	x = 2
-	y = 2
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI1_build_up_forces_on_earth
-	prerequisite = { focus = SI1_build_up_forces_on_earth }
-	prerequisite = { focus = SI1_technological_supremacy }
-}
-
-focus = {
-	id = SI1_focus_on_crippling_the_government
-	icon = GFX_goal_zeon_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 2
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI1_attempt_to_crush_federation_forces
-	prerequisite = { focus = SI1_attempt_to_crush_federation_forces }
-}
 
 focus = {
 	id = SI1_spread_the_word_to_other_clusters

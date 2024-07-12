@@ -232,11 +232,11 @@ focus = {
 		
 	}
 	relative_position_id = RNZ_meeting_with_anaheim
-	prerequisite = { focus = RNZ_,eeting_with_anaheim }
+	prerequisite = { focus = RNZ_meeting_with_anaheim }
 }
 
 focus = {
-	id = RNZ_acquire_artic_bases
+	id = RNZ_acquire_arctic_bases
 	icon = GFX_goal_kings_return
 	cost = 2
 	x = 1
@@ -272,8 +272,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = RNZ_acquire_artic_bases
-	prerequisite = { focus = RNZ_acquire_artic_bases  }
+	relative_position_id = RNZ_acquire_arctic_bases
+	prerequisite = { focus = RNZ_acquire_arctic_bases  }
 }
 
 focus = {
@@ -294,7 +294,7 @@ focus = {
 		add_ideas = High_Hopes_and_Noble_Endevours 
 		if = {
 			limit = {country_exists = SI1 }
-			puppet = SI1
+			puppet = RNZ
 		}
 		if = {
 			limit =  { country_exists = SI5 }
@@ -1064,5 +1064,123 @@ focus = {
 	relative_position_id = RNZ_hunt_for_laplaces_box
 	prerequisite = { focus = RNZ_hunt_for_laplaces_box focus = RNZ_man_machines}
 
+}
+
+focus = {
+	id = RNZ_build_up_forces_on_earth
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 9
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_bring_in_deikun_loyalists
+	prerequisite = { focus = RNZ_bring_in_deikun_loyalists }
+}
+
+focus = {
+	id = RNZ_secret_deal_with_anaheim
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_plans_of_a_side_coprosperity_sphere
+	prerequisite = { focus = RNZ_plans_of_a_side_coprosperity_sphere }
+}
+
+focus = {
+	id = RNZ_all_out_assault
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 5
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = RNZ_build_up_forces_on_earth
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_hunt_for_laplaces_box
+	prerequisite = { focus = RNZ_hunt_for_laplaces_box }
+	
+}
+
+focus = {
+	id = RNZ_technology_from_beyond_the_veil
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_hunt_for_laplaces_box
+	prerequisite = { focus = RNZ_hunt_for_laplaces_box }
+	prerequisite = { focus = RNZ_secret_deal_with_anaheim }
+}
+
+focus = {
+	id = RNZ_technological_supremacy
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_man_machines
+	prerequisite = { focus = RNZ_man_machines }
+}
+
+focus = {
+	id = RNZ_attempt_to_crush_federation_forces
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_build_up_forces_on_earth
+	prerequisite = { focus = RNZ_build_up_forces_on_earth }
+	prerequisite = { focus = RNZ_technological_supremacy }
+}
+
+focus = {
+	id = RNZ_focus_on_crippling_the_government
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_attempt_to_crush_federation_forces
+	prerequisite = { focus = RNZ_attempt_to_crush_federation_forces }
 }
 }

@@ -1,0 +1,223 @@
+focus_tree = {
+	id = AR8
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = AR8
+		}
+	}
+	default = no
+
+
+focus = {
+	id = AR8_ural_march
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 15
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_prepare_trenchworks
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_ural_march
+	}
+	relative_position_id = AR8_ural_march
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_reinforce_hardpoints
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_prepare_trenchworks
+	}
+	relative_position_id = AR8_prepare_trenchworks
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = AR8_refurbish_damaged_equipment
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_ural_march
+	}
+	relative_position_id = AR8_ural_march
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_recover_air_corps.
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_refurbish_damaged_equipment
+	}
+	relative_position_id = AR8_refurbish_damaged_equipment
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = AR8_review_logistics
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_ural_march
+	}
+	relative_position_id = AR8_ural_march
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR8_prepare_for_winter_combat
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_review_logistics
+	}
+	relative_position_id = AR8_review_logistics
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR8_attempt_to_restore_fighting_spirit
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_ural_march
+	}
+	relative_position_id = AR8_ural_march
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR8_take_in_local_recruits
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_attempt_to_restore_fighting_spirit
+	}
+	relative_position_id = AR8_attempt_to_restore_fighting_spirit
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR8_prepare_the_final_stand
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_prepare_for_winter_combat
+	}
+	prerequisite = {
+		focus = AR8_reinforce_hardpoints
+		}
+	prerequisite = {
+		focus = AR8_take_in_local_recruits
+		}
+	prerequisite = {
+		focus = AR8_recover_air_corps.
+		}
+		available = {
+			has_war = yes
+		}
+	relative_position_id = AR8_prepare_for_winter_combat
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = AR8_changing_of_the_gaurd
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_prepare_the_final_stand
+		}
+		available = {
+			has_war = no
+		}
+	relative_position_id = AR8_prepare_the_final_stand
+	completion_reward = {
+		RUS = { change_tag_from = AR8 }
+	}
+}
+}

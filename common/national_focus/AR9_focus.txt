@@ -238,4 +238,148 @@ focus = {
 		add_manpower = 50000
 	}
 }
+
+focus = {
+	id = AR9_restructure_command
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_take_in_the_8th
+		}
+		available = {
+			has_war = no
+		}
+	relative_position_id = AR9_take_in_the_8th
+	completion_reward = {
+		add_command_power = 25
+	}
+}
+
+focus = {
+	id = AR9_begin_preperations_for_the_next_war
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_restructure_command
+		}
+		available = {
+			has_war = no
+		}
+	relative_position_id = AR9_restructure_command
+	completion_reward = {
+		army_experience = 15
+	}
+}
+
+focus = {
+	id = AR9_prioritize_high_performace_ace_suits
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_begin_preperations_for_the_next_war
+		}
+	mutually_exclusive = {
+		focus = AR9_prioritize_high_performace_general_production_suits
+	}
+	relative_position_id = AR9_begin_preperations_for_the_next_war
+	completion_reward = {
+	
+	}
+}
+
+
+focus = {
+	id = AR9_prioritize_high_performace_general_production_suits
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_begin_preperations_for_the_next_war
+		}
+	mutually_exclusive = {
+		focus = AR9_prioritize_high_performace_ace_suits
+	}
+	relative_position_id = AR9_begin_preperations_for_the_next_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR9_focus_on_beam_weapons
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_prioritize_high_performace_ace_suits focus = AR9_prioritize_high_performace_general_production_suits
+		}
+
+	relative_position_id = AR9_prioritize_high_performace_ace_suits
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR9_focus_on_projectille_weapons
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_prioritize_high_performace_ace_suits focus = AR9_prioritize_high_performace_general_production_suits
+		}
+
+	relative_position_id = AR9_prioritize_high_performace_general_production_suits
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR9_expand_mobile_armor_production
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_focus_on_beam_weapons focus = AR9_focus_on_projectille_weapons
+		}
+
+	relative_position_id = AR9_focus_on_beam_weapons
+	completion_reward = {
+	
+	}
+}
+
+
 }

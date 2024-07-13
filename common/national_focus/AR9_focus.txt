@@ -282,6 +282,46 @@ focus = {
 }
 
 focus = {
+	id = AR9_expand_local_recruitment
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_begin_preperations_for_the_next_war
+		}
+	
+	relative_position_id = AR9_begin_preperations_for_the_next_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR9_work_with_the_restoriation_army
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_begin_preperations_for_the_next_war
+		}
+	available = {
+		country_exists = RUS
+	}
+	relative_position_id = AR9_begin_preperations_for_the_next_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = AR9_prioritize_high_performace_ace_suits
 	icon = GFX_goal_general_meeting
 	cost = 5

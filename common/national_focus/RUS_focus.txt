@@ -14,7 +14,7 @@ focus_tree = {
 		id = RUS_work_with_the_new_regime
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 10
+		x = 0
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -31,7 +31,7 @@ focus_tree = {
 		id = RUS_our_own_fight
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 20
+		x = 25
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -234,7 +234,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_land_warfare_devlopment_program
+		id = RUS_military_modernization_program
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 15
@@ -245,6 +245,204 @@ focus_tree = {
 		
 		completion_reward = {
 		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = RUS_sea_warfare_devlopment_program
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_military_modernization_program
+			}
+			
+			relative_position_id = RUS_military_modernization_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_submarine_primacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_sea_warfare_devlopment_program
+			}
+			mutually_exclusive = {
+				focus = RUS_destroyer_primacy
+			}
+			relative_position_id = RUS_sea_warfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_destroyer_primacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_sea_warfare_devlopment_program
+			}
+			mutually_exclusive = {
+				focus = RUS_submarine_primacy
+			}
+			relative_position_id = RUS_sea_warfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_air_warfare_devlopment_program
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_military_modernization_program
+			}
+			
+			relative_position_id = RUS_military_modernization_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_improve_cas_capabilities
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_air_warfare_devlopment_program
+			}
+			
+			relative_position_id = RUS_air_warfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_study_federation_jets
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_air_warfare_devlopment_program
+			}
+			
+			relative_position_id = RUS_air_warfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_next_gen_stealth_craft
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_air_warfare_devlopment_program
+			}
+			
+			relative_position_id = RUS_air_warfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_paratrooper_training
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_air_warfare_devlopment_program
+			}
+			mutually_exclusive = {
+				focus = RUS_stratosphere_bombing
+			}
+			relative_position_id = RUS_air_warfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_stratosphere_bombing
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_air_warfare_devlopment_program
+			}
+			mutually_exclusive = {
+				focus = RUS_paratrooper_training
+			}
+			relative_position_id = RUS_air_warfare_devlopment_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_land_warfare_devlopment_program
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_military_modernization_program
+			}
+			
+			relative_position_id = RUS_military_modernization_program
+		completion_reward = {
+		
 		}
 	}
 
@@ -365,7 +563,7 @@ focus_tree = {
 		id = RUS_industrialization_program
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 25
+		x = 30
 		y = 0
 		ai_will_do = {
 			factor = 1

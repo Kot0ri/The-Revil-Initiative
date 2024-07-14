@@ -447,6 +447,69 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_air_domination_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_next_gen_stealth_craft
+			}
+		prerequisite = {
+			focus = RUS_paratrooper_training focus = RUS_stratosphere_bombing
+		}	
+			relative_position_id = RUS_next_gen_stealth_craft
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_guards_paratrooper
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_air_domination_plan
+			}
+		prerequisite = {
+			focus = RUS_paratrooper_training 
+		}	
+			relative_position_id = RUS_air_domination_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_advadnced_rocketry
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_air_domination_plan
+			}
+		prerequisite = {
+			focus = RUS_stratosphere_bombing
+		}	
+			relative_position_id = RUS_air_domination_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = RUS_land_warfare_devlopment_program
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -794,7 +857,7 @@ focus_tree = {
 			focus = RUS_next_generation_designs
 			}
 			available = {
-				country_exists = 9AR
+				country_exists = AR9
 			}
 			mutually_exclusive = {
 				focus = RUS_reduce_tank_costs

@@ -75,39 +75,7 @@ add_ideas = {
 	newtype_division_2
 }
 
-78.1.1 = {
-	set_technology = {
-		visible_light_communication1 = 1
-		nuclear_reactor1 = 1
-		minovsky_dissemination1 = 1
-		minovsky_dissemination2 = 1
-		ambac1 = 1
-		amc1 = 1
-		simulator1 = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		infantry_at = 1
-		support_weapons = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		concentrated_industry3 = 1
-		construction1 = 1
-		construction2 = 1
-		excavation1 = 1
-		excavation2 = 1
-		improved_oil_processing = 1
-		advanced_oil_processing = 1
-	}
-	add_ideas = {
-		jupiter_fleet_get_resource
-		pc_colony
-	}
-	set_convoys = 100
-	set_country_flag = jupiter_fleet_on
-  set_country_flag = jupiter_fleet_is_back
-}
+
 
 79.4.1 = {
 	oob = "generic"

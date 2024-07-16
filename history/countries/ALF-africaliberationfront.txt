@@ -68,14 +68,11 @@ add_named_threat = {
 
 add_ideas = {
 	disorganised_remnants
-	
+	warrior_spirit
 }
 
 set_variable = { newtype_accepted_status = 0 }
-set_variable = {
-	var = ms_flight_test
-	value = 1
-}
+
 
 #Diplomacy
 if = {

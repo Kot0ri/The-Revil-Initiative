@@ -25,7 +25,7 @@ RNZ_casval={
 		planning_skill=5
 		logistics_skill=5
 	}
-	visible = { has_country_flag = casval_leadership}
+
 }
 
 RNZ_casval_cca_1={
@@ -54,7 +54,36 @@ RNZ_casval_cca_1={
 		planning_skill=5
 		logistics_skill=5
 	}
-	visible = { has_country_flag = casval_leadership}
+
+}
+
+RNZ_casval_srw={
+	name="Casval Rem Deikun"
+	portraits={
+		civilian={
+			large="gfx/leaders/RNZ/casval_srw.dds"
+		}
+		army={
+			large= "gfx/leaders/RNZ/casval_srw.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
+	country_leader={
+		ideology= progressivism
+		traits={}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+	 traits={ akai_suisei newtype1 war_hero anti_zabi_party trickster naval_invader pilot }
+		skill=6
+		attack_skill=8
+		defense_skill=5
+		planning_skill=5
+		logistics_skill=5
+	}
+
 }
 
 ## NZ Field Marshals

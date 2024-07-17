@@ -1,0 +1,47 @@
+characters = {
+	#Generals
+
+	DON_petro_doroshenko={
+		name="Petro Doroshenko"
+		portraits={
+			civilian={
+				large="gfx/leaders/ABQ/Gihren.dds"
+			}
+			army = {
+			large="gfx/leaders/ABQ/Gihren.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				old_guard politically_connected
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	DON_andrei_shkuro={
+		name="Andrei Shkuro"
+		portraits={
+			civilian={
+				large="gfx/leaders/ABQ/Gihren.dds"
+			}
+			army = {
+			large="gfx/leaders/ABQ/Gihren.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_reckless war_hero
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

@@ -11,7 +11,7 @@ characters={
 		}
 	}
 	country_leader={
-		ideology=conservatism
+		ideology=military_administration
 		traits={industrial_tycoon}
 		expire="1000.1.1.1"
 	}
@@ -22,6 +22,23 @@ characters={
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 2
+	}
+}
+
+AFZ_mostafa_denali={
+	name=" Mostafa Denali"
+	portraits={
+		civilian={
+			large="gfx/leaders/AFZ/Mostafa_Delani.dds"
+		}
+		army={
+			large="gfx/leaders/AFZ/Mostafa_Delani.dds"
+		}
+	}
+	country_leader={
+		ideology=liberalism
+		traits={}
+		expire="1000.1.1.1"
 	}
 }
 }

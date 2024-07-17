@@ -89,31 +89,27 @@ starting_train_buffer = 2
 set_fuel_ratio = 0.8
 
 # DIPLOMACY
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = federation_research
-}
+add_to_tech_sharing_group = federation_research
 
 set_popularities = {
-	democratic = 70
-	supremacist = 10
-	contolism = 10
+	democratic = 50
+	supremacist = 20
+	contolism = 0
 	military_government = 0
 	aristocracy = 0
 	corporatism = 0
-	communism = 10
+	communism = 20
+	oligarchy = 10
 }
 set_politics = {
 	ruling_party = democratic
 	last_election = "74.12.1"
 	election_frequency = 48
-	elections_allowed = yes ##suspended through duration of war, which is handled via event
+	elections_allowed = no
 }
 
 #Leaders
-recruit_character = AFZ_zane_akunyili
+recruit_character = AFZ_mostafa_denali
 
 #Field Marshalls
 
@@ -123,3 +119,5 @@ recruit_character = AFZ_zane_akunyili
 
 set_variable = { newtype_accepted_status = 0 }
 
+##Terrorist Stuff
+set_country_flag = terror_bombing

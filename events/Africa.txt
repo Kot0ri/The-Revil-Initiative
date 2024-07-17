@@ -1,0 +1,30 @@
+add_namespace = AFZ
+
+country_event = {
+	id = AFZ.1
+	title = AFZ.1.t
+	desc = AFZ.1.d
+	picture = GFX_country_zeon001
+  
+	trigger = {
+	###has_country_flag = terror_bombing(EVENT BROKEN)
+	}
+	mean_time_to_happen = { days = 31 }
+	fire_only_once = yes
+	option = {
+	  name = AFZ.1.a
+	  ai_chance = {
+			  base = 1
+		  }
+	  hidden_effect = { 
+		recruit_character = AFZ_zane_akunyili
+		set_politics = {
+			ruling_party = military_administration
+		}
+		add_popularity = {
+			ideology =  military_administration
+			popularity = 0.15
+		}
+	  }
+	}
+  }

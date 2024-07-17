@@ -7,7 +7,7 @@ country_event = {
 	picture = GFX_country_zeon001
   
 	trigger = {
-	###has_country_flag = terror_bombing(EVENT BROKEN)
+	has_country_flag = terror_bombing
 	}
 	mean_time_to_happen = { days = 31 }
 	fire_only_once = yes
@@ -17,7 +17,6 @@ country_event = {
 			  base = 1
 		  }
 	  hidden_effect = { 
-		recruit_character = AFZ_zane_akunyili
 		set_politics = {
 			ruling_party = military_administration
 		}

@@ -1,0 +1,44 @@
+focus_tree = {
+	id = DON
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = DON
+		}
+	}
+	default = no
+	
+focus = {
+	id = DON_puppet_kuban
+	icon = GFX_goal_generic_alliance
+	cost = 5
+	x = 11
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	puppet = KUB
+	}
+}
+
+focus = {
+	id = DON_cossak_union_treaty
+	icon = GFX_goal_generic_alliance
+	cost = 5
+	x = 11
+	y = 5
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	annex_country = {
+		target = KUB
+	}
+	transfer_state = 227
+	transfer_state = 228
+	}
+}
+}

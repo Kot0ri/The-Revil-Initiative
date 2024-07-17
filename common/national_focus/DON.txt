@@ -19,6 +19,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = no
+	}
 	completion_reward = {
 	puppet = KUB
 	}
@@ -28,11 +31,18 @@ focus = {
 	id = DON_cossak_union_treaty
 	icon = GFX_goal_generic_alliance
 	cost = 5
-	x = 11
+	x = 0
 	y = 5
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = no
+	}
+	prerequisite = {
+		focus = DON_puppet_kuban
+	}
+	relative_position_id = DON_puppet_kuban
 	completion_reward = {
 	annex_country = {
 		target = KUB

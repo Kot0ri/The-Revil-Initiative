@@ -14,17 +14,15 @@ country_event = {
 	option = {
 	  name = AFZ.1.a
 	  ai_chance = {
-			  base = 1
+			  base = 100
 		  }
-	  effect = { 
-		set_politics = {
-			ruling_party = military_government
-			elections_allowed = no
+	    set_politics={
+		ruling_party=military_government
+			elections_allowed=no
 	  }
-	  add_popularity = {
-		ideology =  military_government
-		popularity = 0.15
-	}
+	  add_popularity={
+		ideology=military_government
+		popularity=0.15
 	}
 }
 }

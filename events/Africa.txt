@@ -16,11 +16,15 @@ country_event = {
 	  ai_chance = {
 			  base = 1
 		  }
-	  hidden_effect = { 
+	  effect = { 
 		set_politics = {
-			ruling_party = military_administration
-		}
-		
+			ruling_party = military_government
+			elections_allowed = no
 	  }
+	  add_popularity = {
+		ideology =  military_government
+		popularity = 0.15
 	}
-  }
+	}
+}
+}

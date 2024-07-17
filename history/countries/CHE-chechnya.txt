@@ -61,10 +61,7 @@ set_stability = 0.7
 set_war_support = 0.55
 
 set_cosmetic_tag = ZEO_EFS
-add_named_threat = {
-	name = zeon_0075_threat
-	threat = 5
-}
+
 
 add_ideas = {
 	isolated_remnants
@@ -72,10 +69,7 @@ add_ideas = {
 }
 
 set_variable = { newtype_accepted_status = 0 }
-set_variable = {
-	var = ms_flight_test
-	value = 1
-}
+
 
 #Diplomacy
 if = {
@@ -85,13 +79,13 @@ if = {
 }
 
 set_popularities = {
-	democratic = 0
+	democratic = 30
 	supremacist = 0
 	contolism = 0
-	military_government = 100
-	aristocracy = 0
+	military_government = 35
+	aristocracy = 25
 	corporatism = 0
-	communism = 0
+	communism = 20
 }
 
 set_politics = {

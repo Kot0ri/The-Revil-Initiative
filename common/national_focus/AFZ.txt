@@ -186,8 +186,7 @@ focus_tree = {
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_Small_And_Manageable_Reforms
-		prerequisite = { focus = AFZ_Small_And_Manageable_Reforms }
-		prerequisite = { focus = AFZ_A_Plan_For_True_Change }
+		prerequisite = { focus = AFZ_Small_And_Manageable_Reforms focus = AFZ_A_Plan_For_True_Change }
 
     }
 

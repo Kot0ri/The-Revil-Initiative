@@ -1,0 +1,120 @@
+capital = 234
+oob = "KUB"
+
+# Starting tech
+set_technology = {
+	basic_train = 1
+	acclimatization_tech = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	paratroopers = 1
+	marines = 1
+	tech_mountaineers = 1
+	support_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_maintenance_company = 1
+	motorised_infantry = 1
+	ZEO_mbt1_tech = 1
+	ZEO_ac1_tech = 1
+	ZEO_attack_helicopter_tech = 1
+	ZEO_transporter1_tech = 1
+	ZEO_basic_battery = 1
+	ZEO_transport = 1
+	ZEO_basic_secondary_battery = 1
+	ZEO_damage_control_1 = 1
+	ZEO_basic_torpedo = 1
+	ZEO_basic_naval_mines = 1
+	ZEO_submarine_mine_laying = 1
+	ms05_tech = 1
+	ZEO_ms_weapon_machinegun_01_tech = 1
+	ZEO_ms_weapon_heathawk_01_tech = 1
+	ZEO_ms_shield_01_tech = 1
+	visible_light_communication1 = 1
+	minovsky_particle = 1
+	minovsky_dissemination1 = 1
+	nuclear_reactor1 = 1
+	i_field = 1
+	mega_particle1 = 1
+	ambac1 = 1
+  ambac2 = 1
+	amc1 = 1
+	atomic_research = 1
+	nuclear_reactor = 1
+	nukes = 1
+	basic_machine_tools = 1
+	fuel_silos = 1
+	synth_oil_experiments = 1
+	fuel_refining = 1
+	oil_processing = 1
+	rubber_processing = 1
+	fuel_refining2 = 1
+}
+
+set_research_slots = 2
+set_convoys = 300
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+set_stability = 0.7
+set_war_support = 0.55
+
+set_cosmetic_tag = ZEO_EFS
+add_named_threat = {
+	name = zeon_0075_threat
+	threat = 5
+}
+
+add_ideas = {
+	isolated_remnants
+	legacy_of_the_cossaks
+}
+
+set_variable = { newtype_accepted_status = 0 }
+set_variable = {
+	var = ms_flight_test
+	value = 1
+}
+
+#Diplomacy
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_to_tech_sharing_group = zeon_research
+}
+
+set_popularities = {
+	democratic = 0
+	supremacist = 0
+	contolism = 0
+	military_government = 100
+	aristocracy = 0
+	corporatism = 0
+	communism = 0
+}
+
+set_politics = {
+	ruling_party = military_government
+	last_election = "68.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+#leader
+
+
+#field marshal
+
+
+#generals
+
+
+#ms pilots
+
+
+#advisor
+
+
+
+

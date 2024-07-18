@@ -4,7 +4,9 @@ search_filter_prios = {
 	FOCUS_FILTER_RESEARCH = 522
 	
 	FOCUS_FILTER_INDUSTRY = 509
-
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
 	FOCUS_FILTER_BALANCE_OF_POWER = 200
 	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
 	FOCUS_FILTER_PROPAGANDA = 110
@@ -46,13 +48,14 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_The_Great_Belt_Plan
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_focus_ETH_african_union
 	    cost = 5
 	    x = -2
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		search_filters = {FOCUS_FILTER_STABILITY}
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_Denali_Presidency
@@ -62,13 +65,14 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Laydown_Constitutional_Groundwork
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_goal_support_democracy
 	    cost = 5
 	    x = 0
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		search_filters = {FOCUS_FILTER_STABILITY}
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_Denali_Presidency
@@ -78,13 +82,14 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Repairing_The_Transatlantic_Railway
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_focus_generic_africa_factory
 	    cost = 5
 	    x = 2
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_Denali_Presidency
@@ -94,13 +99,14 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Agricultural_Oasis
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_focus_generic_coffee
 	    cost = 5
 	    x = 0
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		search_filters = {FOCUS_FILTER_STABILITY}
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_The_Great_Belt_Plan
@@ -110,13 +116,14 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Calming_The_Federation
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_goal_generic_neutrality_focus
 	    cost = 5
 	    x = 0
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		search_filters = { FOCUS_FILTER_POLITICAL }
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_Laydown_Constitutional_Groundwork
@@ -126,13 +133,14 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Consolidating_Remaining_Industry
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_focus_generic_industry_3
 	    cost = 5
 	    x = 0
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		search_filters = { FOCUS_FILTER_INDUSTRY }
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_Repairing_The_Transatlantic_Railway
@@ -142,7 +150,7 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Small_And_Manageable_Reforms
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_goal_generic_improve_relations
 	    cost = 5
 	    x = -1
 	    y = 1
@@ -159,7 +167,7 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_A_Plan_For_True_Change
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_focus_eng_concessions_to_the_trade_unions
 	    cost = 5
 	    x = 1
 	    y = 1
@@ -176,13 +184,14 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Presenting_The_Changes
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_focus_generic_the_giant_wakes
 	    cost = 5
 	    x = 1
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		search_filters = {FOCUS_FILTER_STABILITY}
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_Small_And_Manageable_Reforms
@@ -192,7 +201,7 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Reassure_The_Conservaties
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_goal_generic_major_alliance
 	    cost = 5
 	    x = -2
 	    y = 1
@@ -208,7 +217,7 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Inspire_Reformers
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_goal_generic_political_pressure
 	    cost = 5
 	    x = 2
 	    y = 1
@@ -224,7 +233,7 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Putting_It_to_a_Vote
-	    icon = GFX_generic_suspend_constitution
+	    icon = GFX_goal_generic_national_unity
 	    cost = 5
 	    x = 2
 	    y = 1
@@ -241,7 +250,7 @@ focus_tree = {
 
     focus = {
 	    id = AFZ_Depressing_Failures
-	    icon = GFX_generic_suspend_constitution
+	    icon =  GFX_focus_renounce_the_treaty_of_trianon
 	    cost = 5
 	    x = -1
 	    y = 1
@@ -266,6 +275,7 @@ focus_tree = {
 		    factor = 1
 	    }
 		mutually_exclusive = { focus = AFZ_Depressing_Failures }
+		search_filters = {FOCUS_FILTER_STABILITY}
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_Putting_It_to_a_Vote

@@ -11,6 +11,74 @@ focus_tree = {
 	default = no
 
 	focus = {
+		id = SSA_begin_renovations
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+			}
+		}
+
+	focus = {
+		id = SSA_address_the_employment_crisis
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SSA_begin_renovations
+		prerequisite = {
+			focus = SSA_begin_renovations
+		}
+		completion_reward = {
+		
+			}
+		}
+
+	focus = {
+		id = SSA_improve_sea_lane_traffic
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SSA_begin_renovations
+		prerequisite = {
+			focus = SSA_begin_renovations
+		}
+		completion_reward = {
+		
+			}
+		}
+
+	focus = {
+		id = SSA_south_china_sea_development
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SSA_improve_sea_lane_traffic
+		prerequisite = {
+			focus = SSA_improve_sea_lane_traffic
+		}
+		completion_reward = {
+		
+			}
+		}
+
+	focus = {
 		id = SSA_government_appoinments
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5

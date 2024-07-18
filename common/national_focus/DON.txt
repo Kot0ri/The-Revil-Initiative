@@ -10,6 +10,43 @@ focus_tree = {
 	}
 	default = no
 	
+	focus = {
+		id = DON_legacy_of_the_don
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 6
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = DON_black_sea_interdiction
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = DON_legacy_of_the_don
+		}
+		relative_position_id = DON_legacy_of_the_don
+		completion_reward = {
+		}
+	}
+
 focus = {
 	id = DON_puppet_kuban
 	icon = GFX_goal_generic_alliance

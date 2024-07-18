@@ -483,7 +483,7 @@ focus_tree = {
 		id = EAF_special_force_focus
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -5
+		x = -4
 		y = 1
 		prerequisite ={ focus = EAF_Phase_3_Operations}
 		relative_position_id = EAF_Phase_3_Operations
@@ -496,7 +496,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = EAF_Bwork_with_sepratist_engineers
+		id = EAF_work_with_sepratist_engineers
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 0
@@ -515,10 +515,14 @@ focus_tree = {
 		id = EAF_Blitzkreig_through_the_Middle_East
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -2
+		x = -10
 		y = 1
-		prerequisite ={ focus = EAF_Phase_3_Operations}
-		relative_position_id = EAF_Phase_3_Operations
+		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
+		available = {
+			has_completed_focus = EAF_Phase_3_Operations
+			has_country_flag = not_released_africa
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -538,6 +542,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = not_released_africa
+		}
 		completion_reward = {
 		
 		}
@@ -554,6 +561,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = not_released_africa
+		}
 		completion_reward = {
 		
 		}
@@ -569,6 +579,9 @@ focus_tree = {
 		relative_position_id = EAF_Cross_the_Suez
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_country_flag = not_released_africa
 		}
 		completion_reward = {
 		
@@ -587,6 +600,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = not_released_africa
+		}
 		completion_reward = {
 		
 		}
@@ -603,6 +619,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = not_released_africa
+		}
 		completion_reward = {
 		
 		}
@@ -618,6 +637,9 @@ focus_tree = {
 		relative_position_id = EAF_Raise_Support_amoungst_locals
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_country_flag = not_released_africa
 		}
 		completion_reward = {
 		
@@ -742,13 +764,18 @@ focus_tree = {
 		id = EAF_Second_Wave_of_Landings
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 2
+		x = 10
 		y = 3
-		prerequisite ={ focus = EAF_Phase_3_Operations}
-		relative_position_id = EAF_Phase_3_Operations
+		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_completed_focus = EAF_Phase_3_Operations
+			has_country_flag = not_released_asia
+		}
+		
 		completion_reward = {
 		
 		}
@@ -762,6 +789,9 @@ focus_tree = {
 		y = 1
 		prerequisite ={ focus = EAF_Second_Wave_of_Landings}
 		relative_position_id = EAF_Second_Wave_of_Landings
+		available = {
+			has_country_flag = not_released_asia
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -781,6 +811,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = not_released_asia
+		}
 		completion_reward = {
 		
 		}
@@ -798,6 +831,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_country_flag = not_released_asia
+		}
 		completion_reward = {
 		
 		}
@@ -809,8 +845,8 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 3
-		prerequisite ={ focus = EAF_Bejing_Capture_Operation}
-		relative_position_id = EAF_Second_Wave_of_Landings
+		prerequisite ={ focus = EAF_work_with_sepratist_engineers }
+		relative_position_id = EAF_work_with_sepratist_engineers
 		ai_will_do = {
 			factor = 1
 		}

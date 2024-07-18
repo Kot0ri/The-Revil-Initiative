@@ -30,7 +30,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 5
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -83,7 +83,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -101,7 +101,7 @@ focus = {
 
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -135,7 +135,7 @@ focus = {
 	icon = GFX_goal_zeon_new_weapon
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -151,7 +151,7 @@ focus = {
 	icon = GFX_goal_generic_CAS
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -188,7 +188,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -203,7 +203,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 5
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -218,7 +218,7 @@ focus = {
 	icon = GFX_goal_MS_special_forces
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -248,7 +248,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -262,8 +262,8 @@ focus = {
 	id = ABQ_take_over_civilian_policing_duties
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
-	x = 0
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -274,12 +274,43 @@ focus = {
 }
 
 focus = {
+	id = ABQ_creation_of_the_special_serivce
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_expand_secret_service_powers
+	prerequisite = { focus = ABQ_expand_secret_service_powers }
+}
+
+focus = {
+	id = ABQ_the_supreme_leader_of_zeon
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_creation_of_the_special_serivce
+	prerequisite = { focus = ABQ_creation_of_the_special_serivce }
+	prerequisite = { focus = ABQ_take_over_civilian_policing_duties }
+}
+
+focus = {
 	id = ABQ_begin_mass_conscription
 	icon = GFX_goal_generic_axis_build_infantry
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -356,7 +387,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 20
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -398,7 +429,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -428,7 +459,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -459,7 +490,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -475,7 +506,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 5
 	x = 9
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -590,7 +621,7 @@ focus = {
 	id = ABQ_begin_production_of_the_dolos
 	icon = GFX_goal_generic_navy_carrier
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -610,7 +641,7 @@ focus = {
 	icon = GFX_focus_generic_navy_battleship2
 	cost = 5
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -619,8 +650,8 @@ focus = {
 			country_event = ABQ.1
 		}
 	}
-	relative_position_id = ABQ_begin_production_of_the_dolos
-	prerequisite = { focus = ABQ_begin_production_of_the_dolos }
+	relative_position_id = ABQ_expansion_of_shipyards
+	prerequisite = { focus = ABQ_expansion_of_shipyards }
 }
 
 focus = {
@@ -762,7 +793,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -777,7 +808,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -791,8 +822,8 @@ focus = {
 	id = ABQ_begin_development_of_mobile_armors
 	icon = GFX_goal_focus_on_MA
 	cost = 5
-	x = 0
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -850,11 +881,11 @@ focus = {
 }
 
 focus = {
-	id = ABQ_begin_massproduction_of_the_big_zam
+	id = ABQ_begin_mass_production_of_the_big_zam
 	icon = GFX_goal_focus_on_MA
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -870,8 +901,8 @@ focus = {
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	search_filters = {  FOCUS_FILTER_RESEARCH }
 	cost = 5
-	x = 3
-	y = 2
+	x = 1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -916,6 +947,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = ABQ_mass_production_of_the_p_reuse_device
+	}
 	completion_reward = {
 		add_tech_bonus = {
 			name = white_devil
@@ -951,13 +985,40 @@ focus = {
 }
 
 focus = {
-	id = ABQ_begin_looking_into_newtype_capabilities
+	id = ABQ_prioritize_loyalty
 	icon = GFX_goal_zeon_human_innovation
 	cost = 5
 	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_begin_looking_into_newtype_capabilities
+	}
+	completion_reward = {
+	add_tech_bonus = {
+		name = refienment
+		uses = 1
+		bonus = 0.5
+		technology = ms14_tech
+	}
+	}
+	relative_position_id = ABQ_Improve_the_Gelgoog
+	prerequisite = { focus = ABQ_Improve_the_Gelgoog }
+}
+
+focus = {
+	id = ABQ_begin_looking_into_newtype_capabilities
+	icon = GFX_goal_zeon_human_innovation
+	cost = 5
+	x = -1
 	y = 2
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_prioritize_loyalty
 	}
 	completion_reward = {
 	add_to_variable = { newtype_accepted_status = 2 }
@@ -971,8 +1032,8 @@ focus = {
 	icon = GFX_goal_MS_special_forces
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
-	x = 0
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -985,12 +1046,30 @@ focus = {
 }
 
 focus = {
+	id = ABQ_prepare_to_counter_newtype_forces
+	icon = GFX_goal_MS_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+
+	}
+	relative_position_id = ABQ_begin_looking_into_newtype_capabilities
+	prerequisite = { focus = ABQ_begin_looking_into_newtype_capabilities focus = ABQ_prioritize_loyalty }
+}
+
+focus = {
 	id = ABQ_experimental_mechanical_technoloy
 	icon = GFX_goal_generic_production
 	search_filters = { FOCUS_FILTER_RESEARCH }
 	cost = 5
-	x = 6
-	y = 2
+	x = 3
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1010,8 +1089,8 @@ focus = {
 	id = ABQ_p_reuse_device
 	icon = GFX_focus_SOV_organize_wreckers 
 	cost = 5
-	x = 0
-	y = 2
+	x = 1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1033,9 +1112,12 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_a_suit_equal_to_the_white_devil
 	}
 	completion_reward = {
 		
@@ -1072,7 +1154,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 5
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1130,7 +1212,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1223,7 +1305,7 @@ focus = {
 
 	cost = 5
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1254,7 +1336,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1288,7 +1370,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 5
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1365,7 +1447,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY}
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1519,7 +1601,7 @@ focus = {
 
 
 focus = {
-	id = ABQ_work_on_the_colony_laser
+	id = ABQ_begin_work_on_the_colony_laser
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
 	x = 0
@@ -1531,6 +1613,37 @@ focus = {
 	}
 	relative_position_id = ABQ_aid_operation_british
 	prerequisite = { focus = ABQ_aid_operation_british }
+}
+
+focus = {
+	id = ABQ_prepare_for_colony_evacuation
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_begin_work_on_the_colony_laser
+	prerequisite = { focus = ABQ_begin_work_on_the_colony_laser }
+}
+
+focus = {
+	id = ABQ_finish_the_colony_laser
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 12
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_prepare_for_colony_evacuation
+	prerequisite = { focus = ABQ_prepare_for_colony_evacuation }
+	prerequisite = {focus = ABQ_experimental_mechanical_technoloy}
 }
 
 focus = {
@@ -1583,7 +1696,7 @@ focus = {
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}mutually_exclusive = { focus = ABQ_delaz_orders_a_retreeat }
@@ -1600,7 +1713,7 @@ focus = {
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}

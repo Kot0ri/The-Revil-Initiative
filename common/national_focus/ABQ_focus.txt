@@ -997,12 +997,24 @@ focus = {
 		focus = ABQ_begin_looking_into_newtype_capabilities
 	}
 	completion_reward = {
-	add_tech_bonus = {
-		name = refienment
-		uses = 1
-		bonus = 0.5
-		technology = ms14_tech
+	
 	}
+	relative_position_id = ABQ_Improve_the_Gelgoog
+	prerequisite = { focus = ABQ_Improve_the_Gelgoog }
+}
+
+focus = {
+	id = ABQ_zeon_gundam
+	icon = GFX_goal_zeon_human_innovation
+	cost = 5
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+	
 	}
 	relative_position_id = ABQ_Improve_the_Gelgoog
 	prerequisite = { focus = ABQ_Improve_the_Gelgoog }
@@ -1034,6 +1046,24 @@ focus = {
 	cost = 5
 	x = -1
 	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+
+	}
+	relative_position_id = ABQ_begin_looking_into_newtype_capabilities
+	prerequisite = { focus = ABQ_begin_looking_into_newtype_capabilities }
+}
+
+focus = {
+	id = ABQ_zeong_project
+	icon = GFX_goal_MS_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 0
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -1699,7 +1729,8 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
-	}mutually_exclusive = { focus = ABQ_delaz_orders_a_retreeat }
+	}
+	mutually_exclusive = { focus = ABQ_delaz_orders_a_retreat }
 	completion_reward = {
 		change_tag_from = ABQ
 		change_tag_to = AXS
@@ -1709,7 +1740,7 @@ focus = {
 }
 
 focus = {
-	id = ABQ_delaz_orders_a_retreeat
+	id = ABQ_delaz_orders_a_retreat
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
 	x = 2

@@ -1,0 +1,146 @@
+focus_tree = {
+	id = ZAF
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ZAF
+		}
+	}
+	default = no
+
+focus = {
+	id = EAF_Blitzkreig_through_the_Middle_East
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -10
+	y = 1
+	prerequisite ={ focus = EAF_Phase_2_Operations}
+	relative_position_id = EAF_Phase_2_Operations
+	available = {
+		
+	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = EAF_Cross_the_Suez
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite ={ focus = EAF_Blitzkreig_through_the_Middle_East}
+	relative_position_id = EAF_Blitzkreig_through_the_Middle_East
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = EAF_North_Africa_Campaign
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	prerequisite ={ focus = EAF_Cross_the_Suez}
+	relative_position_id = EAF_Cross_the_Suez
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = EAF_March_Towards_Kilimanjaro
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite ={ focus = EAF_Cross_the_Suez}
+	relative_position_id = EAF_Cross_the_Suez
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = EAF_Provide_aid_to_Sepratists
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite ={ focus = EAF_March_Towards_Kilimanjaro}
+	prerequisite ={ focus = EAF_North_Africa_Campaign}
+	relative_position_id = EAF_Cross_the_Suez
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = EAF_Raise_Support_amoungst_locals
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite ={ focus = EAF_Provide_aid_to_Sepratists}
+	relative_position_id = EAF_Provide_aid_to_Sepratists
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = EAF_Push_to_Dakar
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite ={ focus = EAF_Raise_Support_amoungst_locals}
+	relative_position_id = EAF_Raise_Support_amoungst_locals
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+}

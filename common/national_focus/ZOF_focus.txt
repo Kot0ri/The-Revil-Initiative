@@ -1,0 +1,481 @@
+focus_tree = {
+	id = ZOF
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ZOF
+		}
+	}
+	default = no
+
+	focus = {
+		id = ZOF_Second_Wave_of_Landings
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_work_with_sepratist_engineers
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		prerequisite ={ focus = ZOF_Bejing_Capture_Operation }
+		relative_position_id = ZOF_Bejing_Capture_Operation
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = ZOF_Provide_aid_to_Sepratists
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -6
+		y = 1
+		prerequisite ={ focus = ZOF_Bejing_Capture_Operation}
+		relative_position_id = ZOF_Bejing_Capture_Operation
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Raise_Support_amoungst_locals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_Provide_aid_to_Sepratists}
+		relative_position_id = ZOF_Provide_aid_to_Sepratists
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = not_released_africa
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = ZOF_Secure_Mumbai
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_Second_Wave_of_Landings}
+		relative_position_id = ZOF_Second_Wave_of_Landings
+		available = {
+			has_country_flag = not_released_asia
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_March_Towards_Lhasa
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_Second_Wave_of_Landings}
+		relative_position_id = ZOF_Second_Wave_of_Landings
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = not_released_asia
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Bejing_Capture_Operation
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = ZOF_March_Towards_Lhasa}
+		prerequisite ={ focus = ZOF_Secure_Mumbai}
+		relative_position_id = ZOF_Second_Wave_of_Landings
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = not_released_asia
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = ZOF_Begin_research_Efforts
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 18
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = ZOF_Close_Quarters_Combat_MS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_Begin_research_Efforts }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Specialized_Ground_Combat_MS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_Begin_research_Efforts }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Heavy_Assualt_MS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = ZOF_Specialized_Ground_Combat_MS }
+		prerequisite ={ focus = ZOF_Close_Quarters_Combat_MS }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_improve_ms_mobility
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Dom_developments
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_Heavy_Assualt_MS}
+		relative_position_id = ZOF_Heavy_Assualt_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ZOF_Dom_developments
+		}
+	}
+
+	focus = {
+		id = ZOF_improve_ms_mobility
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite ={ focus = ZOF_Specialized_Ground_Combat_MS }
+		prerequisite ={ focus = ZOF_Close_Quarters_Combat_MS }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_Heavy_Assualt_MS
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Zaku_primacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_improve_ms_mobility}
+		relative_position_id = ZOF_improve_ms_mobility
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = ZOF_zaku_primacy
+		}
+	}
+	
+	focus = {
+		id = ZOF_Next_Gen_Mainline_MS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 3
+		prerequisite ={ focus = ZOF_Heavy_Assualt_MS focus = ZOF_improve_ms_mobility }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Zimmand_primacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = ZOF_Next_Gen_Mainline_MS }
+		prerequisite ={ focus = ZOF_Dom_developments }
+		relative_position_id = ZOF_Next_Gen_Mainline_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Zeonic_acceptance
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = ZOF_Next_Gen_Mainline_MS }
+		prerequisite ={ focus = ZOF_Zaku_primacy }
+		relative_position_id = ZOF_Next_Gen_Mainline_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_unified_development
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = ZOF_Next_Gen_Mainline_MS }
+		prerequisite = { focus = ZOF_Zeonic_acceptance focus = ZOF_Zimmand_primacy}
+		relative_position_id = ZOF_Next_Gen_Mainline_MS
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_examine_experimental_ms_theory
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -7
+		y = 1
+		prerequisite ={ focus = ZOF_Begin_research_Efforts }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_begin_development_of_land_use_mobile_armors
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = ZOF_examine_experimental_ms_theory }
+		relative_position_id = ZOF_examine_experimental_ms_theory
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_begin_development_of_atmospheric_flight_capabilties
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_examine_experimental_ms_theory }
+		relative_position_id = ZOF_examine_experimental_ms_theory
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_experimental_transformable_frame
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_begin_development_of_atmospheric_flight_capabilties }
+		relative_position_id = ZOF_begin_development_of_atmospheric_flight_capabilties
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_A_way_to_end_the_war
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		prerequisite ={ focus = ZOF_Begin_research_Efforts }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Astaroth_Project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_A_way_to_end_the_war }
+		relative_position_id = ZOF_A_way_to_end_the_war
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Apsaras_Project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_A_way_to_end_the_war }
+		relative_position_id = ZOF_A_way_to_end_the_war
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Shuddering_Mountain
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_Apsaras_Project}
+		relative_position_id = ZOF_Apsaras_Project
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Operation_Staircase_to_the_Moon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_Bejing_Capture_Operation }
+		relative_position_id = ZOF_Bejing_Capture_Operation
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	
+}

@@ -30,7 +30,7 @@ focus_tree = {
 		id = ZOF_work_with_sepratist_engineers
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -4
+		x = 2
 		y = 1
 		prerequisite ={ focus = ZOF_Bejing_Capture_Operation }
 		relative_position_id = ZOF_Bejing_Capture_Operation
@@ -46,7 +46,7 @@ focus_tree = {
 		id = ZOF_Provide_aid_to_Sepratists
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -6
+		x = 0
 		y = 1
 		prerequisite ={ focus = ZOF_Bejing_Capture_Operation}
 		relative_position_id = ZOF_Bejing_Capture_Operation
@@ -70,9 +70,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			has_country_flag = not_released_africa
-		}
+		
 		completion_reward = {
 		
 		}
@@ -87,9 +85,7 @@ focus_tree = {
 		y = 1
 		prerequisite ={ focus = ZOF_Second_Wave_of_Landings}
 		relative_position_id = ZOF_Second_Wave_of_Landings
-		available = {
-			has_country_flag = not_released_asia
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -109,9 +105,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			has_country_flag = not_released_asia
-		}
+		
 		completion_reward = {
 		
 		}
@@ -129,9 +123,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			has_country_flag = not_released_asia
-		}
+		
 		completion_reward = {
 		
 		}
@@ -147,6 +139,12 @@ focus_tree = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			war_length_with = {
+				tag = EFS
+				months = 6
+			}
 		}
 		completion_reward = {
 		add_research_slot = 1
@@ -461,13 +459,70 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ZOF_australia_front
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 0
+	
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = ZOF_Second_Wave_of_Landings
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = ZOF_Operation_Staircase_to_the_Moon
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -1
 		y = 1
-		prerequisite ={ focus = ZOF_Bejing_Capture_Operation }
-		relative_position_id = ZOF_Bejing_Capture_Operation
+		prerequisite ={ focus = ZOF_australia_front }
+		relative_position_id = ZOF_australia_front
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			war_length_with = {
+				tag = EFS
+				months = 12
+			}
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_sieze_torrington_base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_australia_front }
+		relative_position_id = ZOF_australia_front
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_build_up_hughenden_base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = ZOF_australia_front }
+		relative_position_id = ZOF_australia_front
 		ai_will_do = {
 			factor = 1
 		}

@@ -78,6 +78,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ZOF_push_to_singapore
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_hard_point_network}
+		prerequisite ={ focus = ZOF_reinforce_hq}
+		relative_position_id = ZOF_hard_point_network
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = ZOF_plunder_the_east
 		icon = GFX_goal_general_meeting
 		cost = 5

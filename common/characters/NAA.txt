@@ -12,7 +12,7 @@ characters={
 	}
 	country_leader={
 		ideology= military_administration
-		traits={garma_pa_trait}
+		traits={garma_pa_trait garma_na_trait}
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
@@ -37,7 +37,7 @@ NAA_Garma_Zabi_2={
 	}
 	country_leader={
 		ideology= military_administration
-		traits={garma_pa_trait garma_na_trait}
+		traits={garma_pa_trait garma_na_trait man_who_pointed}
 		expire="1000.1.1.1"
 	}
 	field_marshal = {

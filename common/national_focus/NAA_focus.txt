@@ -51,8 +51,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			country_leader = {
+				NAA_Garma_Zabi = {
+
+				}
+			}
+		}
 		completion_reward = {
-		
+			add_trait = {
+				trait = man_who_pointed
+			}
 		}
 	}
 

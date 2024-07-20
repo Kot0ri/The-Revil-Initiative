@@ -106,11 +106,31 @@ NAA_rainer_haupman={
 		}
 	}
 	corps_commander = {
-		traits = {   commando naval_invader }
+		traits = {   commando naval_invader jaeger }
 		skill = 3
 		attack_skill = 3
 		defense_skill = 3
 		planning_skill = 3
+		logistics_skill = 2
+	} 
+}
+
+NAA_erwin_muller={
+	name="Erwin Muller"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/erwin_muller.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/erwin_muller.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   commando naval_invader jaeger }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
 		logistics_skill = 2
 	} 
 }

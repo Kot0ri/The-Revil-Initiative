@@ -219,6 +219,66 @@ characters={
 		}
 	}
 
+	EAF_hans_keller ={
+		name="Hans Keller"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/hans_keller.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/hans_keller.dds"
+			}
+		}
+		corps_commander = {
+			traits={ commando jaeger }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	EAF_jan_akerman ={
+		name="Jan Akerman"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/jan_akerman.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/jan_akerman.dds"
+			}
+		}
+		corps_commander = {
+			traits={ commando jaeger }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_boris_konev ={
+		name="Boris Konev"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/boris_konev.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/boris_konev.dds"
+			}
+		}
+		corps_commander = {
+			traits={ commando jaeger }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
 	#ms pilots
 
 	EAF_crucuruz_doan ={

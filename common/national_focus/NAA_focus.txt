@@ -55,9 +55,7 @@ focus_tree = {
 			has_government = military_government
 		}
 		completion_reward = {
-			add_trait = {
-				trait = man_who_pointed
-			}
+			add_country_leader_trait = man_who_pointed
 		}
 	}
 

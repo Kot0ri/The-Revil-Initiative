@@ -96,6 +96,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ZOF_adapt_to_jungle_warfare
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 2
+		prerequisite ={ focus = ZOF_Raise_Support_amoungst_locals}
+		prerequisite ={ focus = ZOF_push_to_singapore}
+		relative_position_id = ZOF_Raise_Support_amoungst_locals
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = ZOF_plunder_the_east
 		icon = GFX_goal_general_meeting
 		cost = 5

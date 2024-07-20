@@ -105,6 +105,44 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ZAF_desert_vehicles
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZAF_prepare_desert_warfare_logistics }
+		relative_position_id = ZAF_prepare_desert_warfare_logistics
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZAF_air_recon_tactics
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZAF_desert_vehicles }
+		relative_position_id = ZAF_desert_vehicles
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = ZAF_mobile_suit_retrofitting
 		icon = GFX_goal_general_meeting
 		cost = 5

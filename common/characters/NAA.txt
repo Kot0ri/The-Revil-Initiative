@@ -4,10 +4,10 @@ characters={
 	name="Garma Zabi"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Garma_1.dds"
+			large="gfx/leaders/NAA/garma_1.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Garma_1.dds"
+			large="gfx/leaders/NAA/garma_1.dds"
 		}
 	}
 	country_leader={
@@ -51,43 +51,16 @@ NAA_Garma_Zabi_2={
 }
 
 
-
-#advisors
-NAA_Icelina_Eschonbach={
-	name="Icelina Eschonbach"
-	portraits={
-		civilian={
-			large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
-		}
-		army={
-			large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
-		}
-	}
-	advisor={
-		slot = political_advisor
-		idea_token = Icelina_Eschonbach
-		allowed = {
-			original_tag = NAA
-		}
-		traits = { heir_of_the_eschonbach_family }
-		modifier = {
-		}
-		ai_will_do = {
-			factor = 2
-		}
-	}
-}
-
 #field marshals
 
 NAA_Garcia_Romeo={
 	name="Garcia Romeo"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Garcia_Romeo.dds"
+			large="gfx/leaders/NAA/garcia_romeo.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Garcia_Romeo.dds"
+			large="gfx/leaders/NAA/garcia_romeo.dds"
 		}
 	}
 	field_marshal = {
@@ -121,6 +94,28 @@ NAA_Killy_Garret={
 }
 
 #generals
+
+NAA_rainer_haupman={
+	name="Rainer Haupman"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/rainer_haupman.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/rainer_haupman.dds"
+		}
+	}
+	corps_commander = {
+		traits = {  jaeger commando naval_invader }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	} 
+}
+
+#pilots
 
 NAA_Garret_Schmitzer={
 	name="Garret Schmitzer"
@@ -230,7 +225,7 @@ NAA_Nikki_Roberto={
 			large="gfx/leaders/NAA/Nikki_Roberto.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Nikki_Robertos.dds"
+			large="gfx/leaders/NAA/Nikki_Roberto.dds"
 		}
 	}
 	corps_commander = {
@@ -469,4 +464,28 @@ NAA_Irmela_Gruberi={
 		}
 	}
 }
+	NAA_Icelina_Eschonbach={
+		name="Icelina Eschonbach"
+		portraits={
+			civilian={
+				large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+			}
+			army={
+				large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Icelina_Eschonbach
+			allowed = {
+				original_tag = NAA
+			}
+			traits = { heir_of_the_eschonbach_family }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
 }

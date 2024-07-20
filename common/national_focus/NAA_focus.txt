@@ -192,7 +192,7 @@ focus_tree = {
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		prerequisite = {focus = NAA_Develop_the_Calfifornia_Bases}
 		relative_position_id = NAA_Develop_the_Calfifornia_Bases
 		ai_will_do = {
@@ -207,7 +207,7 @@ focus_tree = {
 		id = NAA_Expansion_of_Californaia_Dockyards
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = {focus = NAA_Develop_the_Calfifornia_Bases}
 		relative_position_id = NAA_Develop_the_Calfifornia_Bases
@@ -219,6 +219,21 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = NAA_bring_in_marine_corps.
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {focus = NAA_Expansion_of_Californaia_Dockyards}
+		relative_position_id = NAA_Expansion_of_Californaia_Dockyards
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		recruit_character = NAA_rainer_haupman
+		}
+	}
 
 	focus = {
 		id = NAA_Prepare_for_Naval_Warfare
@@ -781,8 +796,8 @@ available = {
 		id = NAA_Begin_develoment_of_the_Thor_Cannon
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -2.5
-		y = 1.5
+		x = -2
+		y = 1
 		prerequisite = {focus = NAA_Phase_3_Operations}
 		relative_position_id = NAA_Phase_3_Operations
 		ai_will_do = {

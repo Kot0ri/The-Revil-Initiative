@@ -219,6 +219,26 @@ characters={
 		}
 	}
 
+	EAF_hermann_mannfredd ={
+		name="Hermann Mannfredd"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/hermann_mannfredd.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/hermann_mannfredd.dds"
+			}
+		}
+		corps_commander = {
+			traits={ commando paratrooper inflexible_strategist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
 	EAF_hans_keller ={
 		name="Hans Keller"
 		portraits={

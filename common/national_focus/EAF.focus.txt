@@ -725,7 +725,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_field_marshal_role = {
+				character = EAF_hermann_mannfredd
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 3
+				logistics_skill = 3
+			}
 		}
 	}
 

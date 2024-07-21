@@ -334,6 +334,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_air_domination_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 9
+		y = 1
+		prerequisite ={ focus = EAF_Phase_2_Operations}
+		relative_position_id = EAF_Phase_2_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_Stage_1_Defense_Operation_Planning
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -725,14 +741,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_field_marshal_role = {
-				character = EAF_hermann_mannfredd
-				skill = 3
-				attack_skill = 2
-				defense_skill = 2
-				planning_skill = 3
-				logistics_skill = 3
-			}
+		
 		}
 	}
 
@@ -774,7 +783,7 @@ focus_tree = {
 		id = EAF_Second_Wave_of_Landings
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 10
+		x = 12
 		y = 3
 		prerequisite ={ focus = EAF_Phase_2_Operations}
 		relative_position_id = EAF_Phase_2_Operations

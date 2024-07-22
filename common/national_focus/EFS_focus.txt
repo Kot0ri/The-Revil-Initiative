@@ -1775,6 +1775,48 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = efsf_incoporate_battle_data
+		icon = GFX_goal_earth_counter_strategy
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_post_war_military_reconstruction
+		}
+		available = {
+		
+		}
+		relative_position_id = efsf_begin_post_war_military_reconstruction
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = efsf_new_generation_pilots
+		icon = GFX_goal_earth_counter_strategy
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_incoporate_battle_data
+		}
+		available = {
+		
+		}
+		relative_position_id = efsf_incoporate_battle_data
+		completion_reward = {
+		
+		}
+	}
+
 focus = {
 	id = efsf_operation_clean_sweep
 	icon = GFX_goal_earth_counter_strategy

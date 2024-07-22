@@ -1898,4 +1898,61 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = NAA_new_yark_campaign
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_North_America_Remnants
+		}
+		relative_position_id = NAA_North_America_Remnants
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NAA_defense_of_new_yark
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_new_yark_campaign
+		}
+		relative_position_id = NAA_new_yark_campaign
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NAA_Augusta_holdout
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_defense_of_new_yark
+		}
+		prerequisite = {
+			focus = NAA_defense_of_califonia_base
+		}
+		relative_position_id = NAA_North_America_Remnants
+		completion_reward = {
+			
+		}
+	}
+
 }

@@ -1779,7 +1779,7 @@ focus = {
 		id = efsf_incoporate_battle_data
 		icon = GFX_goal_earth_counter_strategy
 		cost = 10
-		x = -2
+		x = -3
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -1812,6 +1812,27 @@ focus = {
 		
 		}
 		relative_position_id = efsf_incoporate_battle_data
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_best_of_the_best
+		icon = GFX_goal_earth_counter_strategy
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_new_generation_pilots
+		}
+		available = {
+		
+		}
+		relative_position_id = efsf_new_generation_pilots
 		completion_reward = {
 		
 		}

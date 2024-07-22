@@ -387,9 +387,10 @@ focus_tree = {
 		id = NAA_Operation_Stork
 		icon = GFX_goal_general_meeting
 		cost = 1
-		x = 0
+		x = 2
 		y = 1
 		prerequisite = {focus = NAA_Coordinate_With_other_Commands}
+		prerequisite = {focus = NAA_Infiltration_Attempts}
 		relative_position_id = NAA_Coordinate_With_other_Commands
 		ai_will_do = {
 			factor = 1
@@ -1837,6 +1838,63 @@ focus = {
 		}
 		completion_reward = {
 		
+		}
+	}
+
+	focus = {
+		id = NAA_North_America_Remnants
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 35
+		y = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = NAA_Garma_is_dead 
+		}
+		allow_branch = {
+			has_country_flag = NNA_Zeon_Defeat
+		}
+		
+		completion_reward = {
+			set_cosmetic_tag = North_America_Remnants
+		}
+	}
+
+	focus = {
+		id = NAA_california_campaign
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_North_America_Remnants
+		}
+		relative_position_id = NAA_North_America_Remnants
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NAA_defense_of_califonia_base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_california_campaign
+		}
+		relative_position_id = NAA_california_campaign
+		completion_reward = {
+			
 		}
 	}
 

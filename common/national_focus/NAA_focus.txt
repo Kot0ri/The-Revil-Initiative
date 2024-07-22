@@ -51,8 +51,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_government = military_government
+		}
 		completion_reward = {
-		
+			add_country_leader_trait = man_who_pointed
 		}
 	}
 
@@ -192,7 +195,7 @@ focus_tree = {
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		prerequisite = {focus = NAA_Develop_the_Calfifornia_Bases}
 		relative_position_id = NAA_Develop_the_Calfifornia_Bases
 		ai_will_do = {
@@ -207,7 +210,7 @@ focus_tree = {
 		id = NAA_Expansion_of_Californaia_Dockyards
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -1
+		x = -2
 		y = 1
 		prerequisite = {focus = NAA_Develop_the_Calfifornia_Bases}
 		relative_position_id = NAA_Develop_the_Calfifornia_Bases
@@ -219,6 +222,22 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = NAA_bring_in_marine_corps.
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {focus = NAA_Expansion_of_Californaia_Dockyards}
+		relative_position_id = NAA_Expansion_of_Californaia_Dockyards
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		recruit_character = NAA_rainer_haupman
+		recruit_character = NAA_erwin_muller
+		}
+	}
 
 	focus = {
 		id = NAA_Prepare_for_Naval_Warfare
@@ -359,6 +378,24 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = NAA_Operation_Stork
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = NAA_Coordinate_With_other_Commands}
+		prerequisite = {focus = NAA_Infiltration_Attempts}
+		relative_position_id = NAA_Coordinate_With_other_Commands
+		ai_will_do = {
+			factor = 1
+		}
+		
 		completion_reward = {
 		
 		}
@@ -781,8 +818,8 @@ available = {
 		id = NAA_Begin_develoment_of_the_Thor_Cannon
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -2.5
-		y = 1.5
+		x = -2
+		y = 1
 		prerequisite = {focus = NAA_Phase_3_Operations}
 		relative_position_id = NAA_Phase_3_Operations
 		ai_will_do = {
@@ -825,7 +862,10 @@ available = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			promote_character = {
+				character = NAA_Killy_Garret
+				ideology = military_administration
+			}
 		}
 	}
 
@@ -963,7 +1003,10 @@ available = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			promote_character = {
+				character = NAA_Garcia_Romeo
+				ideology = military_administration
+			}
 		}
 	}
 
@@ -1005,7 +1048,7 @@ available = {
 		id = NAA_Submit_to_Mquve
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = {focus = NAA_Aid_Chars_Attack}
 		relative_position_id = NAA_Aid_Chars_Attack
@@ -1013,6 +1056,80 @@ available = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = {
+			focus = NAA_Rudolfs_ascension
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NAA_Rudolfs_ascension
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {focus = NAA_Aid_Chars_Attack}
+		relative_position_id = NAA_Aid_Chars_Attack
+	
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = NAA_Submit_to_Mquve
+		}
+		completion_reward = {
+			promote_character = {
+				character = NAA_rudolf_dietrich
+				ideology = spacenoid_supremacist
+			}
+			set_politics = {
+				ruling_party = supremacist
+				elections_allowed = no
+				last_election = "79.1.3"
+				election_frequency = 48
+				long_name = gihren_loyalists
+				name = gihren_loyalists
+			}
+			add_popularity = {
+				ideology = supremacist
+				popularity = 0.5
+			}
+		}
+	}
+
+	focus = {
+		id = NAA_Scorch_the_Earth
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Rudolfs_ascension}
+		relative_position_id = NAA_Rudolfs_ascension
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NAA_The_Supreme_Commanders_Will
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = {focus = NAA_Scorch_the_Earth}
+		relative_position_id = NAA_Scorch_the_Earth
+	
+		ai_will_do = {
+			factor = 1
+		}
+		
 		completion_reward = {
 			
 		}
@@ -1721,6 +1838,120 @@ focus = {
 		}
 		completion_reward = {
 		
+		}
+	}
+
+	focus = {
+		id = NAA_North_America_Remnants
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 35
+		y = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = NAA_Garma_is_dead 
+		}
+		allow_branch = {
+			has_country_flag = NNA_Zeon_Defeat
+		}
+		
+		completion_reward = {
+			set_cosmetic_tag = North_America_Remnants
+		}
+	}
+
+	focus = {
+		id = NAA_california_campaign
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_North_America_Remnants
+		}
+		relative_position_id = NAA_North_America_Remnants
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NAA_defense_of_califonia_base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_california_campaign
+		}
+		relative_position_id = NAA_california_campaign
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NAA_new_yark_campaign
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_North_America_Remnants
+		}
+		relative_position_id = NAA_North_America_Remnants
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NAA_defense_of_new_yark
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_new_yark_campaign
+		}
+		relative_position_id = NAA_new_yark_campaign
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = NAA_Augusta_holdout
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = NAA_defense_of_new_yark
+		}
+		prerequisite = {
+			focus = NAA_defense_of_califonia_base
+		}
+		relative_position_id = NAA_North_America_Remnants
+		completion_reward = {
+			
 		}
 	}
 

@@ -1,0 +1,518 @@
+focus_tree = {
+	id = ZOF
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ZOF
+		}
+	}
+	default = no
+
+	focus = {
+		id = ZOF_Second_Wave_of_Landings
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_reinforce_hq
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_Bejing_Capture_Operation}
+		relative_position_id = ZOF_Bejing_Capture_Operation
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_defense_in_depth
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = ZOF_Bejing_Capture_Operation}
+		relative_position_id = ZOF_Bejing_Capture_Operation
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_hard_point_network
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_defense_in_depth}
+		relative_position_id = ZOF_defense_in_depth
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_push_to_singapore
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_hard_point_network}
+		prerequisite ={ focus = ZOF_reinforce_hq}
+		relative_position_id = ZOF_hard_point_network
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_adapt_to_jungle_warfare
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 2
+		prerequisite ={ focus = ZOF_Raise_Support_amoungst_locals}
+		prerequisite ={ focus = ZOF_push_to_singapore}
+		relative_position_id = ZOF_Raise_Support_amoungst_locals
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_plunder_the_east
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 1
+		prerequisite ={ focus = ZOF_Bejing_Capture_Operation }
+		relative_position_id = ZOF_Bejing_Capture_Operation
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = ZOF_Provide_aid_to_Sepratists
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = ZOF_Bejing_Capture_Operation}
+		relative_position_id = ZOF_Bejing_Capture_Operation
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Raise_Support_amoungst_locals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_Provide_aid_to_Sepratists}
+		relative_position_id = ZOF_Provide_aid_to_Sepratists
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = ZOF_Secure_Mumbai
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_Second_Wave_of_Landings}
+		relative_position_id = ZOF_Second_Wave_of_Landings
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_March_Towards_Lhasa
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_Second_Wave_of_Landings}
+		relative_position_id = ZOF_Second_Wave_of_Landings
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Bejing_Capture_Operation
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = ZOF_March_Towards_Lhasa}
+		prerequisite ={ focus = ZOF_Secure_Mumbai}
+		relative_position_id = ZOF_Second_Wave_of_Landings
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = ZOF_Begin_research_Efforts
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 13
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			war_length_with = {
+				tag = EFS
+				months = 6
+			}
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = ZOF_development_of_jungle_use_ms
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = ZOF_Begin_research_Efforts }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_anti_partisan_improvements
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_development_of_jungle_use_ms }
+		relative_position_id = ZOF_development_of_jungle_use_ms
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_multi-use_high-caliber_weapons
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_development_of_jungle_use_ms }
+		relative_position_id = ZOF_development_of_jungle_use_ms
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_improvised_ms_doctrine
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_anti_partisan_improvements }
+		prerequisite = {focus = ZOF_multi-use_high-caliber_weapons}
+		relative_position_id = ZOF_anti_partisan_improvements
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_ms_flight_development
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_improvised_ms_doctrine}
+		relative_position_id = ZOF_improvised_ms_doctrine
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_A_way_to_end_the_war
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = ZOF_Begin_research_Efforts }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_orders_from_the_supreme_commander
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_A_way_to_end_the_war }
+		relative_position_id = ZOF_A_way_to_end_the_war
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_australia_development_team
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_orders_from_the_supreme_commander }
+		relative_position_id = ZOF_orders_from_the_supreme_commander
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = ZOF_australia_front
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Astaroth_Project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_australia_development_team }
+		relative_position_id = ZOF_australia_development_team
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_ginias_team
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_orders_from_the_supreme_commander }
+		relative_position_id = ZOF_orders_from_the_supreme_commander
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Apsaras_Project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_ginias_team }
+		relative_position_id = ZOF_ginias_team
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Shuddering_Mountain
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_Apsaras_Project}
+		relative_position_id = ZOF_Apsaras_Project
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_australia_front
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 0
+	
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = ZOF_Second_Wave_of_Landings
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_Operation_Staircase_to_the_Moon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_australia_front }
+		relative_position_id = ZOF_australia_front
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			war_length_with = {
+				tag = EFS
+				months = 12
+			}
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_sieze_torrington_base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_australia_front }
+		relative_position_id = ZOF_australia_front
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_build_up_hughenden_base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = ZOF_australia_front }
+		relative_position_id = ZOF_australia_front
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	
+}

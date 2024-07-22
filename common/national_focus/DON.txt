@@ -10,12 +10,210 @@ focus_tree = {
 	}
 	default = no
 	
+	focus = {
+		id = DON_legacy_of_the_don
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 6
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = DON_black_sea_interdiction
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = DON_legacy_of_the_don
+		}
+		relative_position_id = DON_legacy_of_the_don
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DON_infrastructure_attacks
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = DON_legacy_of_the_don
+		}
+		relative_position_id = DON_legacy_of_the_don
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DON_ride_to_the_dnieper
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = DON_infrastructure_attacks
+		}
+		relative_position_id = DON_infrastructure_attacks
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DON_shield_of_azov
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = DON_infrastructure_attacks
+		}
+		relative_position_id = DON_infrastructure_attacks
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DON_memories_of_1919
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		prerequisite = {
+			focus = DON_legacy_of_the_don
+		}
+		relative_position_id = DON_legacy_of_the_don
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DON_prepare_for_conflict
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		prerequisite = {
+			focus = DON_memories_of_1919
+		}
+		relative_position_id = DON_memories_of_1919
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DON_capture_docked_ships
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		prerequisite = {
+			focus = DON_prepare_for_conflict
+		}
+		relative_position_id = DON_prepare_for_conflict
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DON_stockpile_fuel
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		prerequisite = {
+			focus = DON_prepare_for_conflict
+		}
+		relative_position_id = DON_prepare_for_conflict
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = DON_gather_aircraft
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		prerequisite = {
+			focus = DON_prepare_for_conflict
+		}
+		relative_position_id = DON_prepare_for_conflict
+		completion_reward = {
+		}
+	}
+
+
 focus = {
 	id = DON_puppet_kuban
 	icon = GFX_goal_generic_alliance
 	cost = 5
 	x = 11
-	y = 0
+	y = 6
 	ai_will_do = {
 		factor = 1
 	}
@@ -32,7 +230,7 @@ focus = {
 	icon = GFX_goal_generic_alliance
 	cost = 5
 	x = 0
-	y = 5
+	y = 3
 	ai_will_do = {
 		factor = 1
 	}

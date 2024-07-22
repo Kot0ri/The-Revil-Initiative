@@ -4,15 +4,15 @@ characters={
 	name="Garma Zabi"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Garma_1.dds"
+			large="gfx/leaders/NAA/garma_1.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Garma_1.dds"
+			large="gfx/leaders/NAA/garma_1.dds"
 		}
 	}
 	country_leader={
 		ideology= military_administration
-		traits={garma_pa_trait}
+		traits={garma_pa_trait garma_na_trait}
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
@@ -36,8 +36,8 @@ NAA_Garma_Zabi_2={
 		}
 	}
 	country_leader={
-		ideology= military_administration
-		traits={garma_pa_trait garma_na_trait}
+		ideology= parlimentary_monarchy
+		traits={garma_pa_trait garma_na_trait man_who_pointed}
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
@@ -51,43 +51,16 @@ NAA_Garma_Zabi_2={
 }
 
 
-
-#advisors
-NAA_Icelina_Eschonbach={
-	name="Icelina Eschonbach"
-	portraits={
-		civilian={
-			large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
-		}
-		army={
-			large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
-		}
-	}
-	advisor={
-		slot = political_advisor
-		idea_token = Icelina_Eschonbach
-		allowed = {
-			original_tag = NAA
-		}
-		traits = { heir_of_the_eschonbach_family }
-		modifier = {
-		}
-		ai_will_do = {
-			factor = 2
-		}
-	}
-}
-
 #field marshals
 
 NAA_Garcia_Romeo={
 	name="Garcia Romeo"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Garcia_Romeo.dds"
+			large="gfx/leaders/NAA/garcia_romeo.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Garcia_Romeo.dds"
+			large="gfx/leaders/NAA/garcia_romeo.dds"
 		}
 	}
 	field_marshal = {
@@ -121,6 +94,128 @@ NAA_Killy_Garret={
 }
 
 #generals
+
+NAA_rudolf_dietrich={
+	name="Rudolf Dietrich"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/rudolf_dietrich.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/rudolf_dietrich.dds"
+		}
+	}
+	corps_commander = {
+		traits = { politically_connected engineer_officer panzer_leader  jungle_rat zabi_party }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 4
+	} 
+}
+
+NAA_rainer_haupman={
+	name="Rainer Haupman"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/rainer_haupman.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/rainer_haupman.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   commando naval_invader jaeger }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	} 
+}
+
+NAA_erwin_muller={
+	name="Erwin Muller"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/erwin_muller.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/erwin_muller.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   commando naval_invader jaeger }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+	} 
+}
+
+NAA_darota={
+	name="Darota"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/darota.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/darota.dds"
+		}
+	}
+	corps_commander = {
+		traits = {  politically_connected }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_hugo_steller={
+	name="Hugo Steller"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/hugo_steller.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/hugo_steller.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_bob_thomas={
+	name="Bob Thomas"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/bob_thomas.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/bob_thomas.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+#pilots
 
 NAA_Garret_Schmitzer={
 	name="Garret Schmitzer"
@@ -230,7 +325,7 @@ NAA_Nikki_Roberto={
 			large="gfx/leaders/NAA/Nikki_Roberto.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Nikki_Robertos.dds"
+			large="gfx/leaders/NAA/Nikki_Roberto.dds"
 		}
 	}
 	corps_commander = {
@@ -247,10 +342,10 @@ NAA_Charlotte_Hepner={
 	name="Charlotte Hepner"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Charlotte_Hepner.dds"
+			large="gfx/leaders/NAA/charlotte_hepner.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Charlotte_Hepner.dds"
+			large="gfx/leaders/NAA/charlotte_hepner.dds"
 		}
 	}
 	corps_commander = {
@@ -267,10 +362,10 @@ NAA_Alma_Stirner={
 	name="Alma Stirner"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Alma_Stirner.dds"
+			large="gfx/leaders/NAA/alma_stirner.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Alma_Stirner.dds"
+			large="gfx/leaders/NAA/alma_stirner.dds"
 		}
 	}
 	corps_commander = {
@@ -287,10 +382,10 @@ NAA_Helena_Hegel={
 	name="Helena Hegel"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Helena_Hegel.dds"
+			large="gfx/leaders/NAA/helena_hegel.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Helena_Hegel.dds"
+			large="gfx/leaders/NAA/helena_hegel.dds"
 		}
 	}
 	corps_commander = {
@@ -307,10 +402,10 @@ NAA_Mia_Brinkman={
 	name="Mia Brinkman"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Mia_Brinkman.dds"
+			large="gfx/leaders/NAA/mia_brinkman.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Mia_Brinkman.dds"
+			large="gfx/leaders/NAA/mia_brinkman.dds"
 		}
 	}
 	corps_commander = {
@@ -327,10 +422,10 @@ NAA_Ian_Graden={
 	name="Ian Graden"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Ian_Graden.dds"
+			large="gfx/leaders/NAA/ian_graden.dds"
 		}
 		army={
-			large="gfx/leaders/NAA/Ian_Graden.dds"
+			large="gfx/leaders/NAA/ian_graden.dds"
 		}
 	}
 	corps_commander = {
@@ -367,7 +462,7 @@ NAA_Kurt_Roswell={
 	name="Kurt Roswell"
 	portraits={
 		civilian={
-			large="gfx/leaders/NAA/Ian_Graden.dds"
+			large="gfx/leaders/NAA/Kurt_Roswell.dds"
 		}
 		army={
 			large="gfx/leaders/NAA/Kurt_Roswell.dds"
@@ -469,4 +564,28 @@ NAA_Irmela_Gruberi={
 		}
 	}
 }
+	NAA_Icelina_Eschonbach={
+		name="Icelina Eschonbach"
+		portraits={
+			civilian={
+				large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+			}
+			army={
+				large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Icelina_Eschonbach
+			allowed = {
+				original_tag = NAA
+			}
+			traits = { heir_of_the_eschonbach_family }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
 }

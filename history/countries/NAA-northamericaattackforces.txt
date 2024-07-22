@@ -1,5 +1,5 @@
-capital = 
-oob = ""
+capital = 971
+oob = "NAA"
 
 # Starting tech
 set_technology = {
@@ -100,26 +100,30 @@ set_politics = {
 }
 
 
-79.4.1 = {
-	create_equipment_variant = {
-		name = "Dolos Class"
-		type = zeon_space_carrier1_equipment
-		name_group = ZEO_SCa_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = space_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_secondaries_slot = space_secondaries_1
-			fixed_ship_engine_slot = space_engine_1
-			fixed_ship_minovsky_slot = space_minovsky_1
-			front_1_custom_slot = space_hanger_ms05
-			front_2_custom_slot = space_hanger_ms05
-			mid_1_custom_slot = space_hanger_ms06
-			mid_2_custom_slot = space_hanger_ms06
-			mid_3_custom_slot = space_hanger_ms06
-			rear_1_custom_slot = space_hanger_ms06
-			rear_2_custom_slot = space_hanger_ms06
-		}
-		obsolete = no
-	}
-}
+# leader
+recruit_character = NAA_Garma_Zabi
+
+#field marshals
+recruit_character = NAA_Killy_Garret
+recruit_character = NAA_Garcia_Romeo
+
+#generals
+recruit_character = NAA_rudolf_dietrich
+recruit_character = NAA_darota
+recruit_character = NAA_hugo_steller
+recruit_character = NAA_bob_thomas
+
+#pilots
+recruit_character = NAA_Ramba_Ral
+recruit_character = NAA_Doug_Schneid
+recruit_character = NAA_Alma_Stirner
+recruit_character = NAA_Charlotte_Hepner
+recruit_character = NAA_Garret_Schmitzer
+recruit_character = NAA_Helena_Hegel
+recruit_character = NAA_Ian_Graden
+recruit_character = NAA_Mia_Brinkman
+recruit_character = NAA_Kurt_Roswell
+recruit_character = NAA_Robin_Bradshaw
+recruit_character = NAA_Nikki_Roberto
+recruit_character = NAA_Sophie_Fran
+recruit_character = NAA_Lou_Roher

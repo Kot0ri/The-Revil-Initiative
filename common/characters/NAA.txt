@@ -95,6 +95,26 @@ NAA_Killy_Garret={
 
 #generals
 
+NAA_rudolf_dietrich={
+	name="Rainer Haupman"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/rudolf_dietrich.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/rudolf_dietrich.dds"
+		}
+	}
+	corps_commander = {
+		traits = { politically_connected engineer_officer panzer_leader  jungle_rat zabi_party }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 4
+	} 
+}
+
 NAA_rainer_haupman={
 	name="Rainer Haupman"
 	portraits={

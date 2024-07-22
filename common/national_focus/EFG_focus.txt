@@ -237,6 +237,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_increase_federal_policing_mandates
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_seek_to_undermine_local_rulers }
+		relative_position_id = EFG_seek_to_undermine_local_rulers
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_reinforce_key_locations
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -356,6 +372,75 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_found_the_manhunters
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_primacy_of_policing_conference }
+		relative_position_id = EFG_primacy_of_policing_conference
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_found_the_BGST
+		}
+		mutually_exclusive = {
+			focus = EFG_expand_the_titans_overreach
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_found_the_BGST
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_primacy_of_policing_conference }
+		relative_position_id = EFG_primacy_of_policing_conference
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_found_the_manhunters
+		}
+		mutually_exclusive = {
+			focus = EFG_expand_the_titans_overreach
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+	id = EFG_expand_the_titans_overreach
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 4
+	y = 1
+	prerequisite = { focus = EFG_primacy_of_policing_conference }
+	relative_position_id = EFG_primacy_of_policing_conference
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EFG_found_the_manhunters
+	}
+	mutually_exclusive = {
+		focus = EFG_found_the_BGST
+	}
+	available = {
+		country_exists = TIT
+	}
+	completion_reward = {
+	
+	}
+}
+
+	focus = {
 		id = EFG_medeate_between_regional_adminstrations
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -388,6 +473,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_put_pressure_on_zane
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_address_the_africa_situation }
+		relative_position_id = EFG_address_the_africa_situation
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_rumors_from_the_middle_east
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -395,6 +496,22 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = EFG_medeate_between_regional_adminstrations }
 		relative_position_id = EFG_medeate_between_regional_adminstrations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_FOCA_meeting
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_rumors_from_the_middle_east }
+		relative_position_id = EFG_rumors_from_the_middle_east
 		ai_will_do = {
 			factor = 1
 		}

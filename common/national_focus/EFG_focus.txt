@@ -394,6 +394,23 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_space_immagration_reform
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_found_the_manhunters }
+		relative_position_id = EFG_found_the_manhunters
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_found_the_BGST
 		icon = GFX_goal_general_meeting
 		cost = 5

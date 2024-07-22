@@ -155,6 +155,66 @@ NAA_erwin_muller={
 	} 
 }
 
+NAA_darota={
+	name="Darota"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/darota.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/darota.dds"
+		}
+	}
+	corps_commander = {
+		traits = {  politically_connected }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_hugo_steller={
+	name="Hugo Steller"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/hugo_steller.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/hugo_steller.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_bob_thomas={
+	name="Bob Thomas"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/bob_thomas.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/bob_thomas.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
 #pilots
 
 NAA_Garret_Schmitzer={

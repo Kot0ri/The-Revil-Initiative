@@ -1,6 +1,34 @@
 characters={
 #leaders
 
+EFS_eff_high_command={
+	name= "EFF High Command"
+	portraits={
+		civilian={
+			large="gfx/leaders/EFS/eff_high_command.dds"
+		}
+	}
+
+	country_leader={
+		ideology=conservatism
+		traits={ indomitable_leader }
+		expire="100.1.1.1"
+	}
+
+	country_leader={
+		ideology= military_administration
+		traits={ indomitable_leader }
+		expire="100.1.1.1"
+	}
+
+	country_leader={
+		ideology= earthnoid_supremacist
+		traits={ indomitable_leader }
+		expire="100.1.1.1"
+		
+	}
+}
+
 #field_marshals
 	EFS_johann_a_revil={
 		name=EFS_johann_a_revil

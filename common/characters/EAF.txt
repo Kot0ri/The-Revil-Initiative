@@ -481,6 +481,26 @@ characters={
 		}
 	}
 
+	EAF_iria_sorari ={
+		name="Iria Sorari"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/iria_sorari.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
 	EAF_yonem_kirks ={
 		name="Yonem Kirks"
 		portraits={

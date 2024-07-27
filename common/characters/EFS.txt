@@ -1,5 +1,7 @@
 characters={
 #leaders
+
+#field_marshals
 	EFS_johann_a_revil={
 		name=EFS_johann_a_revil
 		portraits={
@@ -321,6 +323,25 @@ characters={
 					has_completed_focus = efsf_transfer_of_government_function
 				}
 			}
+		}
+	}
+
+	EFS_richard_barnes = {
+		name = "Richard Barnes"
+		portraits={
+			army={
+				small="gfx/leaders/EFS/richard_barnes.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				media_personality engineer_officer skilled_staffer expert_delegator
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
 		}
 	}
 	

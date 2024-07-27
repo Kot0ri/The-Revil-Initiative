@@ -1065,7 +1065,7 @@ available = {
 	}
 
 	focus = {
-		id = NAA_Rudolfs_ascension
+		id = NAA_Rudolfs_and_Ottos_ascension
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 1
@@ -1105,8 +1105,8 @@ available = {
 		cost = 5
 		x = 0
 		y = 1
-		prerequisite = {focus = NAA_Rudolfs_ascension}
-		relative_position_id = NAA_Rudolfs_ascension
+		prerequisite = {focus = NAA_Rudolfs_and_Ottos_ascension}
+		relative_position_id = NAA_Rudolfs_and_Ottos_ascension
 	
 		ai_will_do = {
 			factor = 1

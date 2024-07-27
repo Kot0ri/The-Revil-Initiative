@@ -148,6 +148,26 @@ NAA_rudolf_dietrich={
 	} 
 }
 
+NAA_rousseau_fluerbach={
+	name="Rousseau Fluerbach"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/rousseau_fluerbach.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/rousseau_fluerbach.dds"
+		}
+	}
+	corps_commander = {
+		traits = { winter_specialist winter_expert trickster }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	} 
+}
+
 NAA_rainer_haupman={
 	name="Rainer Haupman"
 	portraits={

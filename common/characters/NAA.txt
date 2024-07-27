@@ -93,6 +93,39 @@ NAA_Killy_Garret={
 	}
 }
 
+NAA_otto_kaufman={
+	name="Otto Kaufman"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/otto_kaufman.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/otto_kaufman.dds"
+		}
+	}
+	field_marshal = {
+		traits = { politically_connected zabi_party }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = otto_kaufman
+		allowed = {
+			original_tag = NAA
+		}
+		traits = { special_service_trait }
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}
+
 #generals
 
 NAA_rudolf_dietrich={

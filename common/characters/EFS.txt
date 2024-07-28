@@ -355,6 +355,25 @@ EFS_eff_high_command={
 			logistics_skill = 4
 		}
 	}
+
+	EFS_james_booth = {
+		name = "James Booth"
+		portraits={
+			army={
+				small="gfx/leaders/EFS/james_booth.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				politically_connected
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
 	
 	EFS_elran_gfc = {
 		name = EFS_elran_gfc

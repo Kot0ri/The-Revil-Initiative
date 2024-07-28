@@ -270,6 +270,26 @@ NAA_bob_thomas={
 
 #pilots
 
+NAA_elisa_heaven={
+	name="Elisa Heaven"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/elisa_heaven.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/elisa_heaven.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot ixtab }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	} 
+}
+
 NAA_Garret_Schmitzer={
 	name="Garret Schmitzer"
 	portraits={
@@ -634,6 +654,41 @@ NAA_Irmela_Gruberi={
 				original_tag = NAA
 			}
 			traits = { heir_of_the_eschonbach_family }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	NAA_crowley_hamon={
+		name="Crowley Hamon"
+		portraits={
+			civilian={
+				large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+			}
+			army={
+				large="gfx/leaders/NAA/crowley_hamon.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				anti_zabi_party deikun_party
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Crowley_Hamon
+			allowed = {
+				original_tag = NAA
+			}
+			traits = { hc_guerrilla_2 }
 			modifier = {
 			}
 			ai_will_do = {

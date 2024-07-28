@@ -18,6 +18,14 @@ leader_traits = {
 			army_morale_factor = 0.02
 		}
 	}
+	ixtab = {
+		type = corps_commander
+		trait_type = personality_trait
+		corps_commander_modifier = {
+			army_attack_factor = 0.05
+			army_breakthrough_against_major_factor = 0.1
+		}
+	}
 	thunderclap_in_the_wilderness = {
 		type = corps_commander
 		trait_type = personality_trait

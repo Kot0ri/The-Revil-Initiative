@@ -268,6 +268,46 @@ NAA_bob_thomas={
 	} 
 }
 
+NAA_clamp={
+	name="Clamp"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/clamp.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/clamp.dds"
+		}
+	}
+	corps_commander = {
+		traits = { engineer_officer }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_zeygan={
+	name="Zeygan"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/zeygan.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/zeygan.dds"
+		}
+	}
+	corps_commander = {
+		traits = { engineer_officer }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
 #pilots
 
 NAA_elisa_heaven={
@@ -542,7 +582,7 @@ NAA_Kurt_Roswell={
 		}
 	}
 	corps_commander = {
-		traits = { }
+		traits = { pilot }
 		skill = 3
 		attack_skill = 3
 		defense_skill = 2
@@ -562,13 +602,36 @@ NAA_Robin_Bradshaw={
 		}
 	}
 	corps_commander = {
-		traits = { }
+		traits = { pilot }
 		skill = 3
 		attack_skill = 3
 		defense_skill = 2
 		planning_skill = 1
 		logistics_skill = 1
 	} 
+}
+
+#admirals
+NAA_flanagan_boone={
+	name="Robin Bradshaw"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/flanagan_boone.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/flanagan_boone.dds"
+		}
+	}
+	navy_leader = {
+		traits = {
+			bold blockade_runner seawolf
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		maneuvering_skill = 3
+		coordination_skill = 3
+	}
 }
 
 #Advisors

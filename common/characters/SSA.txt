@@ -1,4 +1,5 @@
 characters={
+	#leaders
 	SSA_levan_fuu={
 		name=SSA_levan_fuu
 		portraits={
@@ -13,24 +14,34 @@ characters={
 			id=-1
 		}
 	}	
-	SSA_kiki_rosita = {
-		name=kiki_rosita
+	#field marshals
+	SSA_baresto_rosita = {
+		name="Baresto Rosita"
 		portraits={
 		army={
-			small=GFX_idea_kiki_rosita
+			large=GFX_baresto_rosita
 		}
+	}
+	field_marshal = {
+		traits = {
+			irregulars_officer militias_officer jungle_rat
+		}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
 	}
 		advisor={
 		slot = high_command
 		ledger = army
 		cost = 100
-		idea_token = kiki_rosita
+		idea_token = baresto_rosita
 		traits = {
 			hc_guerrilla_2
 		}
 		allowed = {
 			OR = {
-				original_tag = EFS
 				original_tag = SSA
 			}
 		}
@@ -42,5 +53,106 @@ characters={
 			}
 		}
 	}
+}
+
+#generals
+
+	SSA_kiki_rosita = {
+		name="Kiki Rosita"
+		portraits={
+		army={
+			large=GFX_idea_kiki_rosita
+		}
+	}
+	corps_commander = {
+		traits = {
+			irregulars_officer militias_officer jungle_rat
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	}
+		advisor={
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = kiki_rosita
+		traits = {
+			hc_guerrilla_1
+		}
+		allowed = {
+			OR = {
+				original_tag = SSA
+			}
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+SSA_chibi= {
+	name="Chibi"
+	portraits={
+	army={
+		large=GFX_chibi
+	}
+}
+corps_commander = {
+	traits = {
+		irregulars_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+}
+
+
+SSA_hige= {
+	name="Hige"
+	portraits={
+	army={
+		large=GFX_Hige
+	}
+}
+corps_commander = {
+	traits = {
+		irregulars_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+}
+
+
+SSA_noppo= {
+	name="Noppo"
+	portraits={
+	army={
+		large=GFX_noppo
+	}
+}
+corps_commander = {
+	traits = {
+		irregulars_officer
+	}
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
 }
 }

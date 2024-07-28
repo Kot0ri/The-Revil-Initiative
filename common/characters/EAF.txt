@@ -622,6 +622,49 @@ characters={
 	}
 
 	#admirals
+	EAF_dreiser ={
+		name="Dreiser"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/dreiser.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/dreiser.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				bold blockade_runner seawolf 
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+
+	EAF_erich_hartmann ={
+		name="Erich Hartmann"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/erich_hartmann.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/erich_hartmann.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				bold blockade_runner seawolf 
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 5
+		}
+	}
 
 	#advisor
 	EAF_jane_contie={

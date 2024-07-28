@@ -307,33 +307,6 @@ EFS_eff_high_command={
 			traits = {
 				gopp_trait
 			}
-			available = {
-				NOT = {
-					has_completed_focus = efsf_eradication_of_corruption
-				}
-			}
-			do_effect = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			modifier = {
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					factor = 2
-					is_historical_focus_on = yes
-				}
-				modifier = {
-					factor = 0
-					has_completed_focus = efsf_oppression_of_anti-earth_federation
-				}
-				modifier = {
-					factor = 0
-					has_completed_focus = efsf_transfer_of_government_function
-				}
-			}
 		}
 	}
 
@@ -372,6 +345,25 @@ EFS_eff_high_command={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
+		}
+	}
+
+	EFS_karel = {
+		name = "Karel"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/karel.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				battleship_adherent naval_lineage fleet_protector
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 3
+			coordination_skill = 3
 		}
 	}
 	

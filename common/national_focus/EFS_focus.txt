@@ -771,6 +771,25 @@ focus = {
 }
 
 focus = {
+	id = efsf_reorganize_ecoas
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = -7
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_move_command_hq_to_jaburo
+	}
+	relative_position_id = efsf_move_command_hq_to_jaburo
+	completion_reward = {
+	
+	}
+}
+
+
+focus = {
 	id = efsf_Luna_2_fortification
 	icon = GFX_goal_general_meeting
 	cost = 10
@@ -1611,6 +1630,27 @@ focus = {
 }
 
 focus = {
+	id = efsf_california_crush
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_secure_panama
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_secure_panama
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_dominate_the_skys
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
@@ -1740,7 +1780,7 @@ focus = {
 }
 
 focus = {
-	id = efsf_operation_star_one
+	id = efsf_operation_cemballo
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
 	x = 2
@@ -1755,6 +1795,27 @@ focus = {
 		has_war = yes
 	}
 	relative_position_id = efsf_secure_panama
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_operation_star_one
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0s
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_operation_cemballo
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_operation_cemballo
 	completion_reward = {
 	
 	}
@@ -1833,6 +1894,27 @@ focus = {
 		
 		}
 		relative_position_id = efsf_new_generation_pilots
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_expand_ecoas
+		icon = GFX_goal_earth_counter_strategy
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_post_war_military_reconstruction
+		}
+		available = {
+		has_completed_focus = efsf_reorganize_ecoas
+		}
+		relative_position_id = efsf_begin_post_war_military_reconstruction
 		completion_reward = {
 		
 		}

@@ -71,6 +71,25 @@ NAA_Garcia_Romeo={
 		planning_skill = 2
 		logistics_skill = 2
 	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = killy
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			army_chief_offensive_1
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
 }
 
 NAA_Killy_Garret={
@@ -90,6 +109,25 @@ NAA_Killy_Garret={
 		defense_skill = 4
 		planning_skill = 4
 		logistics_skill = 4
+	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = killy
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			army_chief_defensive_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
 	}
 }
 

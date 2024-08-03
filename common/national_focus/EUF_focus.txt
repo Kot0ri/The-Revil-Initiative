@@ -862,6 +862,79 @@ focus = {
 }
 
 focus = {
+	id = EUF_air_doctrine
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_maintain_our_own_forces
+	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+}
+
+focus = {
+	id = EUF_air_interception
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_air_domination
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_air_doctrine
+	prerequisite = { focus = EUF_air_doctrine }
+}
+
+focus = {
+	id = EUF_air_domination
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_air_interception
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_air_doctrine
+	prerequisite = { focus = EUF_air_doctrine }
+}
+
+focus = {
+	id = EUF_austrian_maneuvers
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = EUF_the_austrian_canidate
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_maintain_our_own_forces
+	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+}
+
+focus = {
 	id = EUF_the_king_of_battle
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
@@ -897,7 +970,7 @@ focus = {
 	id = EUF_antiair_capabilities
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 3
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -906,7 +979,23 @@ focus = {
 	
 	}
 	relative_position_id = EUF_improve_the_type_61
-	prerequisite = { focus = EUF_improve_the_type_61 }
+	prerequisite = { focus = EUF_improve_the_type_61 focus = EUF_air_interception }
+}
+
+focus = {
+	id = EUF_deny_the_sky
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_antiair_capabilities
+	prerequisite = { focus = EUF_antiair_capabilities }
 }
 
 focus = {

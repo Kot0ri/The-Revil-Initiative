@@ -25,6 +25,50 @@ characters={
 	}
 }
 
+EAF_ginias_sahalin ={
+	name="Ginias Sahalin"
+	portraits={
+		civilian={
+			large="gfx/leaders/EAF/ginias_sahalin.dds"
+		}
+		army={
+			large="gfx/leaders/EAF/ginias_sahalin.dds"
+		}
+	}
+	country_leader={
+		ideology= spacenoid_supremacist
+		traits={  }
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits={zabi_party}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	advisor={
+		slot = theorist
+		ledger = army
+		cost = 10
+		idea_token = ginias
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			head_of_asparas
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
 	#field marshals
 
 	EAF_yuri_kellerne ={
@@ -667,6 +711,37 @@ characters={
 	}
 
 	#advisor
+	EAF_uragang={
+		name="Uragang"
+		portraits={
+			civilian={
+				small="gfx/leaders/EAF/uragang.dds"
+			}
+			army={
+				small="gfx/leaders/EAF/uragang.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 10
+			idea_token = uragang
+			allowed = {
+				original_tag = EAF
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
 	EAF_jane_contie={
 		name="Jane Contie"
 		portraits={

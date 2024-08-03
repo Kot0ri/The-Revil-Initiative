@@ -727,6 +727,7 @@ characters={
 				}
 			}
 }
+
 EAF_yuki_nakasato={
 	name="Yuki Nakasato"
 	portraits={
@@ -757,6 +758,69 @@ EAF_yuki_nakasato={
 		}
 	}
 }
+
+EAF_estelle_firine={
+	name="Estelle Firine"
+	portraits={
+		civilian={
+			small="gfx/leaders/EAF/estelle_firine.dds"
+		}
+		army={
+			small="gfx/leaders/EAF/estelle_firine.dds"
+		}
+	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = firine
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			army_logistics_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+EAF_kergernenko={
+	name="Kergernenko"
+	portraits={
+		civilian={
+			small="gfx/leaders/EAF/kergernenko.dds"
+		}
+		army={
+			small="gfx/leaders/EAF/kergernenko.dds"
+		}
+	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = kergernenko
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			air_chief_safety_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
 EAF_may_kauwin={
 	name="May Kauwin"
 	portraits={

@@ -696,5 +696,95 @@ characters={
 				}
 			}
 		}
+	}
+		EAF_cynthia={
+			name="Cynthia"
+			portraits={
+				civilian={
+					small="gfx/leaders/EAF/cynthia.dds"
+				}
+				army={
+					small="gfx/leaders/EAF/cynthia.dds"
+				}
+			}
+			advisor={
+				slot = high_command
+				ledger = army
+				cost = 10
+				idea_token = cynthia
+				allowed = {
+					original_tag = EAF
+				}
+				traits = {
+					army_chief_reform_2
+				}
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						has_war = no
+						factor = 0
+					}
+				}
+			}
+}
+EAF_yuki_nakasato={
+	name="Yuki Nakasato"
+	portraits={
+		civilian={
+			small="gfx/leaders/EAF/yuki_nakasato.dds"
+		}
+		army={
+			small="gfx/leaders/EAF/yuki_nakasato.dds"
+		}
+	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = nakasato
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			army_regrouping_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+EAF_may_kauwin={
+	name="May Kauwin"
+	portraits={
+		civilian={
+			small="gfx/leaders/EAF/may_kauwin.dds"
+		}
+		army={
+			small="gfx/leaders/EAF/may_kauwin.dds"
+		}
+	}
+	advisor={
+		slot = theorist
+		ledger = army
+		cost = 10
+		idea_token = kauwin
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			zeonic_ms_trait
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
 }
 }

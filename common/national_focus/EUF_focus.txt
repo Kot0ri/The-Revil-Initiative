@@ -946,6 +946,9 @@ focus = {
 	mutually_exclusive = {
 		focus = EUF_pride_of_the_mediterranean
 	}
+	available = {
+		threat > 0.20
+	}
 	completion_reward = {
 		192 = {
 			if = {

@@ -1,5 +1,5 @@
-capital = 192
-oob = "EAF"
+capital = 975
+oob = "ZOF"
 
 # Starting tech
 set_technology = {
@@ -86,9 +86,9 @@ if = {
 
 set_popularities = {
 	democratic = 0
-	supremacist = 0
+	supremacist = 30
 	contolism = 0
-	military_government = 100
+	military_government = 70
 	aristocracy = 0
 	corporatism = 0
 	communism = 0
@@ -101,51 +101,6 @@ set_politics = {
 	elections_allowed = no
 }
 
-#leader
-recruit_character = EAF_mquve
-recruit_character = EAF_ginias_sahalin
 
-#field marshal
-recruit_character = EAF_neuen_bitter
-recruit_character = EAF_yuri_kellerne
-recruit_character = EAF_zhukov
-recruit_character = EAF_walter_curtis
-
-#generals
-recruit_character = EAF_otto_eichman
-recruit_character = EAF_douglas_rodin
-recruit_character = EAF_wolfgang_wall
-recruit_character = EAF_bone_abust
-recruit_character = EAF_massad
-recruit_character = EAF_hermann_mannfredd
-
-#ms pilots
-recruit_character = EAF_iria_sorari
-recruit_character = EAF_desert_rommel
-recruit_character = EAF_lance_garfield
-recruit_character = EAF_crucuruz_doan
-recruit_character = EAF_visch_donahue
-recruit_character = EAF_roy_greenwood
-recruit_character = EAF_aina_sahalin
-recruit_character = EAF_sandra
-recruit_character = EAF_garsky_zinobiev
-recruit_character = EAF_quint
-recruit_character = EAF_tessera_massera
-recruit_character = EAF_erik_blanke
-recruit_character = EAF_fritz_bauer
-recruit_character = EAF_ailos_bade
-
-#admirals
-recruit_character = EAF_dreiser
-recruit_character = EAF_erich_hartmann
-
-#advisor
-recruit_character = EAF_uragang
-recruit_character = EAF_jane_contie
-recruit_character = EAF_cynthia
-recruit_character = EAF_may_kauwin
-recruit_character = EAF_yuki_nakasato
-recruit_character = EAF_kergernenko
-recruit_character = EAF_estelle_firine
 
 

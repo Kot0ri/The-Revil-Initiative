@@ -935,6 +935,207 @@ focus = {
 }
 
 focus = {
+	id = EUF_restoration_of_naval_yards
+	icon = GFX_goal_generic_construct_naval_dockyard
+	cost = 10
+	x = 8
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_pride_of_the_mediterranean
+	}
+	completion_reward = {
+		192 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		196 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		137 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		218 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		234 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		813 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		85 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	relative_position_id = EUF_maintain_our_own_forces
+	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+}
+
+focus = {
+	id = EUF_belfast_yards
+	icon = GFX_goal_generic_construct_naval_dockyard
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+		119 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 6
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	relative_position_id = EUF_restoration_of_naval_yards
+	prerequisite = { focus = EUF_restoration_of_naval_yards }
+}
+
+focus = {
+	id = EUF_pride_of_the_mediterranean
+	icon = GFX_goal_generic_navy_battleship
+	cost = 2
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_restoration_of_naval_yards
+	}
+	available = {
+		has_completed_focus = EUF_the_italian_canidate
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_maintain_our_own_forces
+	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+}
+
+focus = {
+	id = EUF_mare_nostrum
+	icon = GFX_goal_generic_construct_naval_dockyard
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+		114 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		115 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+
+		116 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+		156 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	relative_position_id = EUF_pride_of_the_mediterranean
+	prerequisite = { focus = EUF_pride_of_the_mediterranean }
+}
+
+focus = {
 	id = EUF_the_king_of_battle
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
@@ -1223,8 +1424,25 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_completed_focus = EUF_belfast_yards
+	}
 	completion_reward = {
-	
+		119 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 	}
 	relative_position_id = EUF_fortress_britain
 	prerequisite = { focus = EUF_fortress_britain }
@@ -1272,7 +1490,7 @@ focus = {
 	id = EUF_strike_from_the_north
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -3
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1311,7 +1529,7 @@ focus = {
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 4
+	y = 3
 	ai_will_do = {
 		factor = 1
 	}
@@ -1329,8 +1547,8 @@ focus = {
 	id = EUF_liberation_of_europe
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -1
-	y = 2
+	x = 0
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1395,22 +1613,17 @@ focus = {
 	id = EUF_begin_research_into_newtype_phenomena
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 0
+	x = -8
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
-	available = {
-		has_country_flag = oyw_over
-	}
-	allow_branch = {
-		has_country_flag = oyw_over
-	}
+	
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_expand_the_belfast_yards
-	prerequisite = { focus = EUF_expand_the_belfast_yards }
+	relative_position_id = EUF_a_new_era
+	prerequisite = { focus = EUF_a_new_era }
 }
 
 focus = {

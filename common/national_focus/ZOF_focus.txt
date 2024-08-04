@@ -436,7 +436,26 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-		
+		975 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
 		}
 	}
 

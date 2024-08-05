@@ -331,7 +331,7 @@ focus_tree = {
 			focus = EFG_CIA
 		}
 		completion_reward = {
-		
+			create_intelligence_agency = FSS
 		}
 	}
 
@@ -350,7 +350,7 @@ focus_tree = {
 			focus = EFG_FSS
 		}
 		completion_reward = {
-		
+		create_intelligence_agency = CIA
 		}
 	}
 
@@ -434,7 +434,7 @@ focus_tree = {
 
 	focus = {
 	id = EFG_expand_the_titans_overreach
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_earths_supremacy
 	cost = 5
 	x = 5
 	y = 1
@@ -538,6 +538,156 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_new_himalaya_project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_medeate_between_regional_adminstrations focus = EFG_combat_the_rise_of_anti-federation_partisans }
+		relative_position_id = EFG_medeate_between_regional_adminstrations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			757 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  arms_factory
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  anti_air_building
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			758 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  anti_air_building
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			975 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  arms_factory
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  anti_air_building
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFG_mobilize_shipping_industry
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_new_himalaya_project }
+		relative_position_id = EFG_new_himalaya_project
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			743 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			745 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			524 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			528 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+			532 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = EFG_trade_negotiations_with_the_moon
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -571,7 +721,7 @@ focus_tree = {
 
 	focus = {
 		id = EFG_meeting_with_the_Vist_foundation
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_box_of_laplace
 		cost = 5
 		x = 0
 		y = 1
@@ -587,7 +737,7 @@ focus_tree = {
 
 	focus = {
 		id = EFG_give_preferential_treatment_to_Anaheim
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_tyrant_of_moon
 		cost = 5
 		x = 0
 		y = 1

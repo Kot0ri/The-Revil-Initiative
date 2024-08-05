@@ -236,7 +236,7 @@ focus_tree = {
 
 	focus = {
 		id = efsf_focus_on_the_space_launch
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_vinson_plan
 		cost = 10
 		x = 1
 		y = 1
@@ -690,7 +690,7 @@ focus_tree = {
 
 	focus = {
 		id = efsf_move_command_hq_to_jaburo
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_jablo_factory
 		cost = 10
 		x = 0
 		y = 2
@@ -1033,9 +1033,12 @@ focus = {
 	prerequisite = {
 		focus = efsf_move_command_hq_to_jaburo
 	}
-
+	available = {
+	has_war = yes
+	}
 	relative_position_id = efsf_move_command_hq_to_jaburo
 	completion_reward = {
+	add_research_slot = 1
 	
 	}
 }
@@ -1206,7 +1209,7 @@ focus = {
 
 focus = {
 	id = efsf_work_with_anaheim
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_tyrant_of_moon
 	cost = 10
 	x = 3
 	y = 1
@@ -2391,7 +2394,7 @@ focus = {
 
 focus = {
 	id = efsf_improve_pegasus_design
-	icon = GFX_goal_earth_counter_strategy
+	icon = GFX_goal_focus_on_amphibious_assault_ship
 	cost = 10
 	x = 2
 	y = 1
@@ -2454,7 +2457,7 @@ focus = {
 
 focus = {
 	id = efsf_gpo_series_proposal
-	icon = GFX_goal_earth_counter_strategy
+	icon = GFX_goal_tyrant_of_moon
 	cost = 10
 	x = 0
 	y = 1

@@ -2558,6 +2558,29 @@ focus = {
 }
 
 focus = {
+	id = efsf_move_hq_to_cheyenne_base
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_high_command_machinations
+	}
+	available = {
+	country_exists = TIT
+	}
+	relative_position_id = efsf_high_command_machinations
+	completion_reward = {
+	set_capital = {
+		state = 381
+	}
+	}
+}
+
+focus = {
 	id = efsf_march_of_the_reformists
 	icon = GFX_goal_elenism
 	cost = 10

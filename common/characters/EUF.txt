@@ -20,7 +20,7 @@ EUF_jean_moreau={
 	name="Jean Moreau V"
 	portraits={
 		civilian={
-			large="gfx/leaders/EUF/EU_Parliment.dds"
+			large="gfx/leaders/EUF/jean_moreau.dds"
 		}
 		army={
 			large="gfx/leaders/EUF/jean_moreau.dds"
@@ -117,9 +117,9 @@ EUF_herman_yandell={
 		}
 	}
 	corps_commander={
-		traits={ armor_officer }
+		traits={ armor_officer panzer_leader }
 		skill=3
-		attack_skill=4
+		attack_skill=3
 		defense_skill=2
 		planning_skill=2
 		logistics_skill=1
@@ -140,6 +140,23 @@ EUF_arleen_nazon={
 		traits={ armor_officer }
 		skill=3
 		attack_skill=3
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+EUF_jan_kozietulski={
+	name= "Jan Kozietulski"
+	portraits={
+		army={
+			large="gfx/leaders/EFS/jan_kozietulski.dds"
+		}
+	}
+	corps_commander={
+		traits={ cavalry_officer cavalry_leader cavalry_expert }
+		skill=4
+		attack_skill=4
 		defense_skill=2
 		planning_skill=2
 		logistics_skill=2

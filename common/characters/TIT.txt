@@ -233,6 +233,23 @@ characters={
 		}
 	}
 
+	TIT_ernest_mcquire={
+		name="Ernest McGuire"
+		portraits={
+			army={
+				large="gfx/leaders/TIT/ernest_mcquire.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	TIT_kacricon_cacooler={
 		name="Kacricon Cacooler"
 		portraits={
@@ -265,6 +282,23 @@ characters={
 		}
 		corps_commander={
 			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_rossweisse={
+		name="Rossweisse"
+		portraits={
+			army={
+				large="gfx/leaders/TIT/rossweisse.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot cyber-newtype}
 			skill=3
 			attack_skill=3
 			defense_skill=2

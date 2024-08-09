@@ -12,7 +12,7 @@ focus_tree = {
 
 	focus = {
 		id = ZOF_Second_Wave_of_Landings
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_gravity_front_line
 		cost = 5
 		x = 4
 		y = 0
@@ -240,7 +240,7 @@ focus_tree = {
 
 	focus = {
 		id = ZOF_development_of_jungle_use_ms
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_focus_on_MS_for_local_battle
 		cost = 5
 		x = 2
 		y = 1
@@ -256,7 +256,7 @@ focus_tree = {
 
 	focus = {
 		id = ZOF_anti_partisan_improvements
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_occupation_policy
 		cost = 5
 		x = -1
 		y = 1
@@ -272,7 +272,7 @@ focus_tree = {
 
 	focus = {
 		id = ZOF_multi-use_high-caliber_weapons
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_improvement_of_bullet-proof_weapons
 		cost = 5
 		x = 1
 		y = 1
@@ -288,7 +288,7 @@ focus_tree = {
 
 	focus = {
 		id = ZOF_improvised_ms_doctrine
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_MS_and_ground_forces_collaboration
 		cost = 5
 		x = 1
 		y = 1
@@ -305,12 +305,28 @@ focus_tree = {
 
 	focus = {
 		id = ZOF_ms_flight_development
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_zeon_new_weapon
 		cost = 5
 		x = 0
 		y = 1
 		prerequisite ={ focus = ZOF_improvised_ms_doctrine}
 		relative_position_id = ZOF_improvised_ms_doctrine
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_improved_ms_flight
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_ms_flight_development}
+		relative_position_id = ZOF_ms_flight_development
 		ai_will_do = {
 			factor = 1
 		}

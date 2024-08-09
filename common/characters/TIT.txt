@@ -189,7 +189,46 @@ characters={
 		}
 	}
 	
-	
+	#generals
+	TIT_tedam={
+		name="Tedam"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/tedam.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_matosh={
+		name="Matosh"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/matosh.dds"
+			}
+		}
+		corps_commander={
+			traits={}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
 
 	#MS Pilots
 	
@@ -494,7 +533,7 @@ characters={
 				small="GFX_idea_barom"
 			}
 			army={
-				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+				large="gfx/leaders/TIT/adol_zeno.dds"
 			}
 		}
 		corps_commander={
@@ -514,7 +553,7 @@ characters={
 				small="GFX_idea_barom"
 			}
 			army={
-				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+				large="gfx/leaders/TIT/sydle.dds"
 			}
 		}
 		corps_commander={

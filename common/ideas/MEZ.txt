@@ -1,0 +1,65 @@
+ideas = {
+	country = {
+
+		kingdom_without_a_king = {
+			allowed = {
+				always = no
+				original_tag = MEZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.15
+			}
+			rule = {
+				can_be_called_to_war = no
+			}
+		}
+
+		disorganised_military = {
+			allowed = {
+				always = no
+				original_tag = MEZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				training_time_army_factor = 0.30
+				special_forces_cap = -4
+				army_org_factor = -0.15
+			}
+		}
+
+		dysfunctional_high_command = {
+			allowed = {
+				always = no
+				original_tag = MEZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				command_power_gain = -0.3
+				max_command_power = -10
+				experience_gain_factor = -0.25
+			}
+		}
+
+		foca_1 = {
+			allowed = {
+				always = no
+				original_tag = MEZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				local_resources_factor = 0.15
+				state_resources_factor = 0.15
+			}
+		}
+	}
+}

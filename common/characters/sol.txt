@@ -583,5 +583,21 @@ SOL_conscon={
 	}
 }
 
+SOL_dellamin={
+	name="Dellamin"
+	portraits={
+		army={
+			large="gfx/leaders/SOL/dellamin.dds"
+		}
+	}
+	navy_leader={
+		traits={ space_expert }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		maneuvering_skill=1
+		coordination_skill=1
+	}
+}
 
 }

@@ -48,6 +48,23 @@ ideas = {
 			}
 		}
 
+		rehabilitated_military = {
+			allowed = {
+				always = no
+				original_tag = MEZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				command_power_gain = 0.15
+				experience_gain_factor = 0.15
+				army_org_factor = 0.15
+				cavalry_attack_factor = 0.15
+			}
+		}
+
+
 		foca_1 = {
 			allowed = {
 				always = no

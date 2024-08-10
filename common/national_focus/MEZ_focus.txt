@@ -1,0 +1,411 @@
+focus_tree = {
+	id = MEZ
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = MEZ
+		}
+	}
+	default = no
+	
+	focus = {
+		id = MEZ_a_kingdom_in_name_alone
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 1
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_assembly_address
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_a_kingdom_in_name_alone
+		}
+		relative_position_id = MEZ_a_kingdom_in_name_alone
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_elect_a_king
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_assembly_address
+		}
+		mutually_exclusive = {
+			focus = MEZ_the_fire_burns
+		}
+		mutually_exclusive = {
+			focus = MEZ_stay_the_course
+		}
+		relative_position_id = MEZ_assembly_address
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_house_of_osman
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_elect_a_king
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_hashemite
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_saud
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_pahlavi
+		}
+		relative_position_id = MEZ_elect_a_king
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_house_of_hashemite
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_elect_a_king
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_osman
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_saud
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_pahlavi
+		}
+		relative_position_id = MEZ_elect_a_king
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_house_of_saud
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_elect_a_king
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_osman
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_hashemite
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_pahlavi
+		}
+		relative_position_id = MEZ_elect_a_king
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_house_of_pahlavi
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_elect_a_king
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_osman
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_hashemite
+		}
+		mutually_exclusive = {
+			focus = MEZ_house_of_saud
+		}
+		relative_position_id = MEZ_elect_a_king
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_stay_the_course
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_assembly_address
+		}
+		mutually_exclusive = {
+			focus = MEZ_elect_a_king
+		}
+		mutually_exclusive = {
+			focus = MEZ_the_fire_burns
+		}
+		relative_position_id = MEZ_assembly_address
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_the_fire_burns
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 6
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_assembly_address
+		}
+		mutually_exclusive = {
+			focus = MEZ_elect_a_king
+		}
+		mutually_exclusive = {
+			focus = MEZ_stay_the_course
+		}
+		relative_position_id = MEZ_assembly_address
+		completion_reward = {
+			add_popularity = {
+				ideology = oligarchy
+				popularity = 0.15
+			}
+			start_civil_war = {
+				ideology = oligarchy
+			}
+		}
+	}
+
+	focus = {
+		id = MEZ_liquid_gold
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 12
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_year_75_FOCA_meeting
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_liquid_gold
+		}
+		relative_position_id = MEZ_liquid_gold
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_the_promethean_god
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_liquid_gold
+		}
+		relative_position_id = MEZ_liquid_gold
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_address_the_military_crisis
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 16
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_army_doctrine_reform
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_idea = rehabilitated_military
+		}
+		prerequisite = {
+			focus = MEZ_address_the_military_crisis
+		}
+		relative_position_id = MEZ_address_the_military_crisis
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_old_gaurd_supremacy
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = MEZ_rapid_movement
+		}
+		prerequisite = {
+			focus = MEZ_army_doctrine_reform
+		}
+		relative_position_id = MEZ_army_doctrine_reform
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_rapid_movement
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_army_doctrine_reform
+		}
+		mutually_exclusive = {
+			focus = MEZ_old_gaurd_supremacy
+		}
+		relative_position_id = MEZ_army_doctrine_reform
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_the_afyon_reform_plan
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_address_the_military_crisis
+		}
+		relative_position_id = MEZ_address_the_military_crisis
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_purge_the_officer_corps.
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_the_afyon_reform_plan
+		}
+		relative_position_id = MEZ_the_afyon_reform_plan
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_address_the_troops
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_purge_the_officer_corps.
+		}
+		relative_position_id = MEZ_purge_the_officer_corps.
+		completion_reward = {
+		add_ideas = rehabilitated_military
+		}
+	}
+}

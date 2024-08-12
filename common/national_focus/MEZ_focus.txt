@@ -486,6 +486,60 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MEZ_finish_off_the_monarchists
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_crush_the_mosul_society
+		}
+		relative_position_id = MEZ_crush_the_mosul_society
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = MEZ_a_kingdom_no_more
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_finish_off_the_monarchists
+		}
+		relative_position_id = MEZ_finish_off_the_monarchists
+		completion_reward = {
+		remove_ideas = kingdom_without_a_king
+		}
+	}
+
+	focus = {
+		id = MEZ_centralize_the_administration
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_a_kingdom_no_more
+		}
+		relative_position_id = MEZ_a_kingdom_no_more
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = MEZ_ask_for_aid_agaisnt_radicals
 		icon = GFX_goal_generic_alliance
 		cost = 5
@@ -498,6 +552,24 @@ focus_tree = {
 			focus = MEZ_stay_the_course
 		}
 		relative_position_id = MEZ_stay_the_course
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_increase_lobbying
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_ask_for_aid_agaisnt_radicals
+		}
+		relative_position_id = MEZ_ask_for_aid_agaisnt_radicals
 		completion_reward = {
 	
 		}

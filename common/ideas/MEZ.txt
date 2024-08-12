@@ -64,6 +64,20 @@ ideas = {
 			}
 		}
 
+		new_order_army = {
+			allowed = {
+				always = no
+				original_tag = MEZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+
 
 		foca_1 = {
 			allowed = {

@@ -94,6 +94,63 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MEZ_begin_civil_administration_reforms
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_house_of_osman
+		}
+		relative_position_id = MEZ_house_of_osman
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = MEZ_nizim-i_cid
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = MEZ_address_the_troops
+		}
+		prerequisite = {
+			focus = MEZ_begin_civil_administration_reforms
+		}
+		relative_position_id = MEZ_begin_civil_administration_reforms
+		completion_reward = {
+		add_ideas = new_order_army
+		}
+	}
+
+	focus = {
+		id = MEZ_appoint_new_pashas
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_nizim-i_cid
+		}
+		relative_position_id = MEZ_nizim-i_cid
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = MEZ_house_of_hashemite
 		icon = GFX_goal_generic_alliance
 		cost = 5
@@ -226,6 +283,27 @@ focus_tree = {
 		relative_position_id = MEZ_elect_a_king
 		completion_reward = {
 			remove_ideas = kingdom_without_a_king
+		}
+	}
+
+	focus = {
+		id = MEZ_nezam-e_jadid
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = MEZ_address_the_troops
+		}
+		prerequisite = {
+			focus = MEZ_house_of_pahlavi
+		}
+		relative_position_id = MEZ_house_of_pahlavi
+		completion_reward = {
+		add_ideas = new_order_army
 		}
 	}
 
@@ -474,6 +552,101 @@ focus_tree = {
 			focus = MEZ_army_doctrine_reform
 		}
 		relative_position_id = MEZ_army_doctrine_reform
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_supremacy_of_material
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		prerequisite = {
+			focus = MEZ_rapid_movement
+		}
+		relative_position_id = MEZ_rapid_movement
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_supremacy_of_will
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		prerequisite = {
+			focus = MEZ_old_gaurd_supremacy
+		}
+		relative_position_id = MEZ_old_gaurd_supremacy
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_infantry_reforms
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		prerequisite = {
+			focus = MEZ_supremacy_of_will
+		}
+		relative_position_id = MEZ_supremacy_of_will
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_improve_desert_equipment
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		prerequisite = {
+			focus = MEZ_supremacy_of_material
+		}
+		relative_position_id = MEZ_supremacy_of_material
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_the_new_officer_school
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		prerequisite = {
+			focus = MEZ_supremacy_of_will focus = MEZ_supremacy_of_material
+		}
+		relative_position_id = MEZ_supremacy_of_will
 		completion_reward = {
 	
 		}

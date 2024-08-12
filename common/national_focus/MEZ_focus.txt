@@ -290,13 +290,16 @@ focus_tree = {
 		id = MEZ_nezam-e_jadid
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
 			has_completed_focus = MEZ_address_the_troops
+		}
+		mutually_exclusive = {
+			focus = MEZ_sepah-e_behdasht
 		}
 		prerequisite = {
 			focus = MEZ_house_of_pahlavi
@@ -308,10 +311,52 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MEZ_the_new_white_revolution
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_house_of_pahlavi
+		}
+		relative_position_id = MEZ_house_of_pahlavi
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = MEZ_sepah-e_behdasht
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = MEZ_address_the_troops
+		}
+		mutually_exclusive = {
+			focus = MEZ_nezam-e_jadid
+		}
+		prerequisite = {
+			focus = MEZ_the_new_white_revolution
+		}
+		relative_position_id = MEZ_the_new_white_revolution
+		completion_reward = {
+		add_ideas = new_order_army
+		}
+	}
+
+	focus = {
 		id = MEZ_stay_the_course
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = 4
+		x = 5
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -407,7 +452,7 @@ focus_tree = {
 		id = MEZ_the_fire_burns
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = 8
+		x = 9
 		y = 1
 		ai_will_do = {
 			factor = 1

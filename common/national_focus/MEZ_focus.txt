@@ -46,7 +46,7 @@ focus_tree = {
 		id = MEZ_elect_a_king
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = -2
+		x = -3
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -290,7 +290,7 @@ focus_tree = {
 		id = MEZ_nezam-e_jadid
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = 1
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -299,7 +299,7 @@ focus_tree = {
 			has_completed_focus = MEZ_address_the_troops
 		}
 		mutually_exclusive = {
-			focus = MEZ_sepah-e_behdasht
+			focus = MEZ_sepah-e_danesh
 		}
 		prerequisite = {
 			focus = MEZ_house_of_pahlavi
@@ -327,12 +327,31 @@ focus_tree = {
 		
 		}
 	}
-	
+
 	focus = {
-		id = MEZ_sepah-e_behdasht
+		id = MEZ_found_new_academys
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = 1
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+	
+		prerequisite = {
+			focus = MEZ_the_new_white_revolution
+		}
+		relative_position_id = MEZ_the_new_white_revolution
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = MEZ_sepah-e_danesh
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -348,7 +367,43 @@ focus_tree = {
 		}
 		relative_position_id = MEZ_the_new_white_revolution
 		completion_reward = {
-		add_ideas = new_order_army
+		add_ideas = army_of_knowledge
+		}
+	}
+
+	focus = {
+		id = MEZ_sepah-e_tarvij_va_abadani
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_sepah-e_danesh
+		}
+		relative_position_id = MEZ_sepah-e_danesh
+		completion_reward = {
+		add_ideas = army_for_promotion_and_development
+		}
+	}
+
+	focus = {
+		id = MEZ_sepah-e_behdasht
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_sepah-e_tarvij_va_abadani
+		}
+		relative_position_id = MEZ_sepah-e_tarvij_va_abadani
+		completion_reward = {
+		add_ideas = army_for_hygiene
 		}
 	}
 

@@ -78,6 +78,46 @@ ideas = {
 			}
 		}
 
+		army_of_knowledge = {
+			allowed = {
+				always = no
+				original_tag = MEZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				recon_factor = 0.07
+				research_speed_factor = 0.02
+			}
+		}
+
+		army_for_promotion_and_development = {
+			allowed = {
+				always = no
+				original_tag = MEZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.1
+				repair_speed_infrastructure_factor = 0.1
+			}
+		}
+
+		army_for_hygiene = {
+			allowed = {
+				always = no
+				original_tag = MEZ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				experience_loss_factor = -0.25
+			}
+		}
 
 		foca_1 = {
 			allowed = {

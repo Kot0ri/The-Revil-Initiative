@@ -715,10 +715,74 @@ focus = {
 }
 
 focus = {
+	id = ABQ_improve_mega_particle_technology
+	icon = GFX_goal_generic_build_airforce
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ABQ_develop_next_gen_ships_desgins
+	prerequisite = { focus = ABQ_develop_next_gen_ships_desgins}
+}
+
+focus = {
+	id = ABQ_grand_fleet_proclamation
+	icon = GFX_goal_generic_build_airforce
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ABQ_improve_mega_particle_technology
+	prerequisite = { focus = ABQ_improve_mega_particle_technology}
+}
+
+focus = {
+	id = ABQ_battleship_supremacy
+	icon = GFX_goal_generic_build_airforce
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ABQ_grand_fleet_proclamation
+	prerequisite = { focus = ABQ_grand_fleet_proclamation}
+}
+
+focus = {
+	id = ABQ_dreadnaught_program
+	icon = GFX_goal_generic_build_airforce
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ABQ_battleship_supremacy
+	prerequisite = { focus = ABQ_battleship_supremacy}
+}
+
+focus = {
 	id = ABQ_widescale_fighter_deployment
 	icon = GFX_goal_generic_build_airforce
 	cost = 5
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1

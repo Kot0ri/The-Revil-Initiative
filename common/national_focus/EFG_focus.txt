@@ -335,10 +335,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_power_balance_value = {
-				id = EFG_power_balance
-				value = 0.1
-			}
+			
 		}
 	}
 
@@ -380,6 +377,10 @@ focus_tree = {
 			focus = EFG_FSS
 		}
 		completion_reward = {
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = 0.1
+			}
 		create_intelligence_agency = CIA
 		}
 	}
@@ -637,7 +638,7 @@ focus_tree = {
 	focus = {
 		id = EFG_new_himalaya_project
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 15
 		x = 1
 		y = 1
 		prerequisite = { focus = EFG_medeate_between_regional_adminstrations focus = EFG_combat_the_rise_of_anti-federation_partisans }
@@ -722,7 +723,7 @@ focus_tree = {
 	focus = {
 		id = EFG_mobilize_shipping_industry
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 10
 		x = -1
 		y = 1
 		prerequisite = { focus = EFG_new_himalaya_project }
@@ -777,6 +778,247 @@ focus_tree = {
 					add_building_construction = {
 						type =  dockyard
 						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFG_manchuria_project
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_mobilize_shipping_industry }
+		relative_position_id = EFG_mobilize_shipping_industry
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			745 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			716 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			328 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFG_siberan_project
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_new_himalaya_project }
+		relative_position_id = EFG_new_himalaya_project
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			653 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			572 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			570 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFG_far_east_development
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_siberan_project }
+		relative_position_id = EFG_siberan_project
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			408 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  dockyard
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			409 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			562 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  dockyard
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFG_korea_development_project
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_manchuria_project }
+		prerequisite = { focus = EFG_far_east_development }
+		relative_position_id = EFG_manchuria_project
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			527 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  nuclear_reactor
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			525 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  infrastructure
+						level = 2
 						instant_build = yes
 					}
 				}

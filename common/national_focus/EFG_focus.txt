@@ -55,7 +55,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = -0.15
+			}
 		}
 	}
 
@@ -88,7 +91,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = 0.1
+			}
 		}
 	}
 
@@ -120,7 +126,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = 0.05
+			}
 		}
 	}
 
@@ -137,7 +146,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -154,7 +166,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = 0.02
+			}
 		}
 	}
 
@@ -250,7 +265,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = 0.1
+			}
 		}
 	}
 
@@ -298,7 +316,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = 0.15
+			}
 		}
 	}
 
@@ -314,7 +335,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = 0.1
+			}
 		}
 	}
 
@@ -333,6 +357,10 @@ focus_tree = {
 			focus = EFG_CIA
 		}
 		completion_reward = {
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = -0.1
+			}
 			create_intelligence_agency = FSS
 		}
 	}
@@ -533,6 +561,73 @@ focus_tree = {
 		relative_position_id = EFG_rumors_from_the_middle_east
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_centralization_efforts
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_FOCA_meeting focus = EFG_put_pressure_on_zane }
+		relative_position_id = EFG_FOCA_meeting
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			power_balance_value = {
+				id = EFG_power_balance
+				value > 0.6
+			}
+			power_balance_value = {
+				id = EFG_power_balance
+				value < -0.6
+			}
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_the_africa_issue
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_centralization_efforts }
+		relative_position_id = EFG_centralization_efforts
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_appoint_overseers_to_kuwait
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_centralization_efforts }
+		relative_position_id = EFG_centralization_efforts
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		available = {
+			has_completed_focus = EFG_CIA
 		}
 		completion_reward = {
 		
@@ -765,7 +860,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -797,7 +895,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = 0.07
+			}
 		}
 	}
 
@@ -813,7 +914,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = -0.05
+			}
 		}
 	}
 
@@ -830,7 +934,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_power_balance_value = {
+			id = EFG_power_balance
+			value = 0.15
+		}
 		}
 	}
 

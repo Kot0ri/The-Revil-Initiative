@@ -239,6 +239,92 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ZOF_air_developments
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 6
+		y = 1
+		prerequisite ={ focus = ZOF_Begin_research_Efforts }
+		relative_position_id = ZOF_Begin_research_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_jet_focus
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_air_developments }
+		relative_position_id = ZOF_air_developments
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_helicopter_focus
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_improve_aerodynamics
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_jet_focus }
+		relative_position_id = ZOF_jet_focus
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_helicopter_focus
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_air_developments }
+		relative_position_id = ZOF_air_developments
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_jet_focus
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_improve_VTOL_capabilties
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_helicopter_focus }
+		relative_position_id = ZOF_helicopter_focus
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = ZOF_development_of_jungle_use_ms
 		icon = GFX_goal_focus_on_MS_for_local_battle
 		cost = 5
@@ -354,7 +440,7 @@ focus_tree = {
 
 	focus = {
 		id = ZOF_orders_from_the_supreme_commander
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_dominance_of_human_survival_theory2
 		cost = 5
 		x = 0
 		y = 1

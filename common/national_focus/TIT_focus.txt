@@ -129,6 +129,54 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			transfer_state = 974
+			transfer_state = 296
+			transfer_state = 446
+			transfer_state = 183
+			transfer_state = 182
+		}
+	}
+
+	focus = {
+		id = TIT_reinforce_our_garrisons
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_build_up_up_earth_bases
+		prerequisite = {
+			focus = TIT_build_up_up_earth_bases
+		}
+		available = {
+			has_completed_focus = TIT_Secure_Bases
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TIT_increase_control_in_jaburo
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TIT_build_up_up_earth_bases
+		prerequisite = {
+			focus = TIT_build_up_up_earth_bases
+		}
+		available = {
+			has_completed_focus = TIT_Secure_Bases
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			transfer_state = 963
+			transfer_state = 962
 		}
 	}
 
@@ -181,6 +229,9 @@ focus_tree = {
 			ai_will_do = {
 				factor = 1
 			}
+			mutually_exclusive = {
+				focus = TIT_contest_jamitovs_command
+			}
 			completion_reward = {
 				}
 			}
@@ -189,7 +240,7 @@ focus_tree = {
 		id = TIT_FDIC_funding
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 2
+		x = -4
 		y = 1
 		relative_position_id = TIT_Jamitovs_sway
 		prerequisite = {
@@ -252,6 +303,95 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = TIT_contest_jamitovs_command
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 10
+		y = 1
+		relative_position_id = TIT_Titans_now_rise
+		prerequisite = {
+			focus = TIT_Titans_now_rise
+		}
+		mutually_exclusive = {
+			focus = TIT_Jamitovs_sway
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+			id = TIT_interfernece_from_jaburo
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = -2
+			y = 1
+			relative_position_id = TIT_contest_jamitovs_command
+			prerequisite = {
+				focus = TIT_contest_jamitovs_command
+			}
+			mutually_exclusive = {
+				focus = TIT_increased_radicalism
+			}
+			mutually_exclusive = {
+				focus = TIT_the_young_gaurd
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				}
+			}
+
+		focus = {
+				id = TIT_increased_radicalism
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 2
+				y = 1
+				relative_position_id = TIT_contest_jamitovs_command
+				prerequisite = {
+					focus = TIT_contest_jamitovs_command
+				}
+				mutually_exclusive = {
+					focus = TIT_interfernece_from_jaburo
+				}
+				mutually_exclusive = {
+					focus = TIT_the_young_gaurd
+				}
+				ai_will_do = {
+					factor = 1
+				}
+				completion_reward = {
+					}
+				}
+
+			focus = {
+				id = TIT_the_young_gaurd
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 0
+				y = 1
+				relative_position_id = TIT_contest_jamitovs_command
+				prerequisite = {
+					focus = TIT_contest_jamitovs_command
+				}
+				mutually_exclusive = {
+					focus = TIT_interfernece_from_jaburo
+				}
+				mutually_exclusive = {
+					focus = TIT_increased_radicalism
+				}
+				ai_will_do = {
+					factor = 1
+				}
+				completion_reward = {
+					}
+				}
 
 	focus = {
 		id = TIT_Secure_Bases
@@ -560,12 +700,13 @@ focus_tree = {
 		id = TIT_newtype_research_program
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 20
+		x = 24
 		y = 0
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+			add_research_slot = 1
 			}
 		}
 
@@ -591,16 +732,98 @@ focus_tree = {
 				}
 			}
 
+			focus = {
+				id = TIT_newtype_use_weapons_program
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 2
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_newtype_research_program
+				prerequisite = {
+					focus = TIT_newtype_research_program
+				}
+				completion_reward = {
+					
+					}
+				}
+
+			focus = {
+				id = TIT_study_the_psycommu_system
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 0
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_newtype_use_weapons_program
+				prerequisite = {
+					focus = TIT_newtype_use_weapons_program
+				}
+				completion_reward = {
+					
+					}
+				}
+
+			focus = {
+				id = TIT_focus_on_psycommu
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = -1
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_study_the_psycommu_system
+				prerequisite = {
+					focus = TIT_study_the_psycommu_system
+				}
+				mutually_exclusive = {
+					focus = TIT_adopt_the_biosensor
+				}
+				completion_reward = {
+					
+					}
+				}
+
+				focus = {
+				id = TIT_adopt_the_biosensor
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 1
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_study_the_psycommu_system
+				prerequisite = {
+					focus = TIT_study_the_psycommu_system
+				}
+				available = {
+					has_country_flag = man_from_jupiter
+				}
+				mutually_exclusive = {
+					focus = TIT_focus_on_psycommu
+				}
+				completion_reward = {
+					
+					}
+				}
+			
 	focus = {
 		id = TIT_a_new_earthsphere
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 25
+		x = 28
 		y = 0
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
+
 			}
 		}
 }

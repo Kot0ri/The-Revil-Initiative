@@ -1832,7 +1832,7 @@ EFS_eff_high_command={
 		}
 		corps_commander = {
 			traits = {
-				pilot 
+				pilot titans_party
 			}
 			skill = 4
 			attack_skill = 4
@@ -2218,22 +2218,4 @@ EFS_eff_high_command={
 		}
 	}
 
-	EFS_hawkins_marnery = {
-		name = "Hawkins Marnery"
-		portraits={
-			army={
-				large = "gfx/leaders/EFS/hawkins_marnery.dds"
-			}
-		}
-		corps_commander = {
-			traits = {
-				pilot
-			}
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
-		}
-	}
 }

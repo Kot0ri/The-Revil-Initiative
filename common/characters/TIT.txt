@@ -634,6 +634,46 @@ characters={
 		}
 	}
 
+	TIT_eyah_kato={
+		name="Eyah Kato"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/eyah_kato.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_hamil={
+		name="Hamil"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/hamil.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	#Admrials
 	TIT_gady_kinsey={
 		name="Gady Kinsey"

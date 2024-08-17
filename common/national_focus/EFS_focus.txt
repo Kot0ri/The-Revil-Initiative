@@ -2084,7 +2084,7 @@ focus = {
 			focus = efsf_incoporate_battle_data
 		}
 		available = {
-		
+		add_ideas = new_generation_pilots
 		}
 		relative_position_id = efsf_incoporate_battle_data
 		completion_reward = {
@@ -2109,7 +2109,9 @@ focus = {
 		}
 		relative_position_id = efsf_new_generation_pilots
 		completion_reward = {
-		
+		recruit_character = EFS_kou_uraki
+		recruit_character = EFS_chuck_keith
+		recruit_character = EFS_jerid_meesa
 		}
 	}
 
@@ -2552,7 +2554,10 @@ focus = {
 		focus = efsf_begin_post_war_military_reconstruction
 	}
 	available = {
-	
+	has_completed_focus = efsf_1st_battle_of_axis
+	}
+	available = {
+		has_completed_focus = efsf_best_of_the_best
 	}
 	relative_position_id = efsf_begin_post_war_military_reconstruction
 	completion_reward = {
@@ -2705,6 +2710,9 @@ focus = {
 	
 		transfer_state = 	
 		701
+
+		transfer_state = 	
+		976
 	
 	remove_ideas = rise_of_the_titans_2
 	973 = {
@@ -2717,6 +2725,12 @@ focus = {
 		add_core_of = TIT
 	}
 	970 = {
+		add_core_of = TIT
+	}
+	976 = {
+		add_core_of = TIT
+	}
+	977 = {
 		add_core_of = TIT
 	}
 	release = TIT

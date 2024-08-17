@@ -1809,18 +1809,36 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander = {
-			legacy_id = 118
 			traits = {
-				pilot
+				pilot phantom_ace
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
 			planning_skill = 1
-			logistics_skill = 2
-			visible = {
-				has_character_flag = enable_corps_commander
+			logistics_skill = 1
+		}
+	}
+
+	EFS_jerid_meesa = {
+		name = "Jerid Meesa"
+		portraits={
+			army={
+				small="GFX_idea_kou_uraki"
 			}
+			army={
+				large = "gfx/leaders/EFS/jerid_meesa.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				pilot 
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 
@@ -2109,7 +2127,7 @@ EFS_eff_high_command={
 		}
 	}
 	EFS_chuck_keith = {
-		name = EFS_chuck_keith
+		name = "Chuck Keith"
 		portraits={
 			army={
 				small=GFX_idea_chuck_keith
@@ -2117,18 +2135,14 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander = {
-			legacy_id = 170
 			traits = {
 				pilot
 			}
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
-			visible = {
-				has_character_flag = enable_corps_commander
-			}
 		}
 	}
 	EFS_bernard_monsha = {
@@ -2201,6 +2215,25 @@ EFS_eff_high_command={
 			visible = {
 				has_character_flag = enable_corps_commander
 			}
+		}
+	}
+
+	EFS_hawkins_marnery = {
+		name = "Hawkins Marnery"
+		portraits={
+			army={
+				large = "gfx/leaders/EFS/hawkins_marnery.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				pilot
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 }

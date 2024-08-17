@@ -329,6 +329,74 @@ characters={
 		}
 	}
 
+	TIT_proto-zero={
+		name="Zero Murasame"
+		portraits={
+			army={
+				large="gfx/leaders/TIT/zero_murasame.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot cyber-newtype}
+			skill=5
+			attack_skill=5
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	TIT_four_murasame={
+		name="Four Mursame"
+		portraits={
+			army={
+				large="gfx/leaders/TIT/four_mursame.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot cyber-newtype}
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_rosamia_badam={
+		name="Rosamia Badam"
+		portraits={
+			army={
+				large="gfx/leaders/TIT/rosamia_badam.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot cyber-newtype}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_gates_cappa={
+		name="Gates Cappa"
+		portraits={
+			army={
+				large="gfx/leaders/TIT/gates_cappa.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot cyber-newtype}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
 	TIT_rossweisse={
 		name="Rossweisse"
 		portraits={

@@ -557,6 +557,41 @@ focus_tree = {
 				}
 
 	focus = {
+		id = TIT_newtype_research_program
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 20
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+			id = TIT_cyber_newtype_development_program
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = TIT_newtype_research_program
+			prerequisite = {
+				focus = TIT_newtype_research_program
+			}
+			completion_reward = {
+				recruit_character = TIT_rossweisse
+				recruit_character = TIT_proto-zero
+				recruit_character = TIT_four_murasame
+				recruit_character = TIT_rosamia_badam
+				recruit_character = TIT_gates_cappa
+				}
+			}
+
+	focus = {
 		id = TIT_a_new_earthsphere
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5

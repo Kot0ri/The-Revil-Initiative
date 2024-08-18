@@ -2200,7 +2200,31 @@ focus = {
 }
 
 focus = {
-	id = efsf_conflcit_with_nanyang_allaince
+	id = efsf_reorganize_fleet_command
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_make_underground_contacts
+	}
+	prerequisite = {
+		focus = efsf_hunt_down_the_psycho_zaku
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_make_underground_contacts
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_conflict_with_nanyang_allaince
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
 	x = 1
@@ -2230,12 +2254,12 @@ focus = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = efsf_conflcit_with_nanyang_allaince
+		focus = efsf_conflict_with_nanyang_allaince
 	}
 	available = {
 	
 	}
-	relative_position_id = efsf_conflcit_with_nanyang_allaince
+	relative_position_id = efsf_conflict_with_nanyang_allaince
 	completion_reward = {
 	
 	}
@@ -2631,6 +2655,30 @@ focus = {
 	
 	}
 	relative_position_id = efsf_march_of_the_reformists
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_karaba_rises
+	icon = GFX_goal_elenism
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reduce_pressure_on_colony_governments
+	}
+	available = {
+	
+	}
+	mutually_exclusive = {
+	
+	}
+	relative_position_id = efsf_reduce_pressure_on_colony_governments
 	completion_reward = {
 	
 	}

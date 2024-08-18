@@ -3489,6 +3489,25 @@ focus = {
 }
 
 focus = {
+	id = ZEO_begin_explusion_from_earth
+	icon = GFX_goal_generic_forceful_treaty
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_pax_Zeon
+	prerequisite = { focus = ZEO_pax_Zeon}
+}
+
+focus = {
 	id = ZEO_opposition_to_the_zabi_family
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -3511,7 +3530,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
 	x = 16
-	y = 24
+	y = 20
 	ai_will_do = {
 		factor = 1
 	}
@@ -3612,6 +3631,29 @@ focus = {
 }
 
 focus = {
+	id = ZEO_adopt_the_hizack
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_form_a_new_high_command}
+	relative_position_id = ZEO_form_a_new_high_command
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		country_exists = TIT
+	}
+	available = {
+		has_completed_focus = ZEO_connections_within_anaheim
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = ZEO_shutdown_investigations
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -3652,6 +3694,40 @@ focus = {
 	cost = 5
 	prerequisite = { focus = ZEO_support_peaceful_Contolist_movements}
 	relative_position_id = ZEO_support_peaceful_Contolist_movements
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_mission_from_axis
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_begin_backroom_support_for_remnant_factions}
+	relative_position_id = ZEO_begin_backroom_support_for_remnant_factions
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_connections_within_anaheim
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_mission_from_axis}
+	relative_position_id = ZEO_mission_from_axis
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -3825,6 +3901,23 @@ focus = {
 	cost = 5
 	prerequisite = { focus = ZEO_investigate_high_command}
 	relative_position_id = ZEO_investigate_high_command
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_aid_the_fight_against_nanyang
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_anti_remnant_policies}
+	relative_position_id = ZEO_anti_remnant_policies
 	x = 0
 	y = 1
 	ai_will_do = {

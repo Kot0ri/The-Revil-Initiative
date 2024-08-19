@@ -180,4 +180,72 @@ EUF_halder={
 	}
 }
 
+EUF_arimoto={
+	name= "Arimoto"
+	portraits={
+		army={
+			large="gfx/leaders/EUF/arimoto.dds"
+		}
+	}
+	corps_commander={
+		traits={ }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+EUF_hiroshi={
+	name= "Hiroshi"
+	portraits={
+		army={
+			large="gfx/leaders/EUF/hiroshi.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+EUF_takumi={
+	name= "Takumi"
+	portraits={
+		army={
+			large="gfx/leaders/EUF/takumi.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+EUF_imai={
+	name= "Imai"
+	portraits={
+		army={
+			large="gfx/leaders/EUF/imai.dds"
+		}
+	}
+	corps_commander={
+		traits={ }
+		skill= 2
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill= 2
+	}
+}
+
 }

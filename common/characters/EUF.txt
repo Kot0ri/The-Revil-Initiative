@@ -163,4 +163,21 @@ EUF_jan_kozietulski={
 	}
 }
 
+EUF_halder={
+	name= "Halder"
+	portraits={
+		army={
+			large="gfx/leaders/EUF/halder.dds"
+		}
+	}
+	corps_commander={
+		traits={ }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
 }

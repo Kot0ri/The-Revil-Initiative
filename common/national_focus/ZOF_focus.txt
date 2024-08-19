@@ -635,5 +635,56 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ZOF_sahalin_family_legacy
+		icon = GFX_goal_zeon_new_weapon
+		cost = 5
+		x = 26
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_connections_in_the_homeland
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_sahalin_family_legacy }
+		relative_position_id = ZOF_sahalin_family_legacy
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_coordinate_with_zeon_high_command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_sahalin_family_legacy }
+		relative_position_id = ZOF_sahalin_family_legacy
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
 	
 }

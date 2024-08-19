@@ -1,0 +1,282 @@
+characters={
+	##Leaders
+	ZOF_ginias_sahalin ={
+		name="Ginias Sahalin"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/ginias_sahalin.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/ginias_sahalin.dds"
+			}
+		}
+		country_leader={
+			ideology= spacenoid_supremacist
+			traits={  }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits={zabi_party}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 10
+			idea_token = ginias
+			allowed = {
+				original_tag = ZOF
+			}
+			traits = {
+				head_of_asparas
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	##field marshals
+	ZOF_zhukov ={
+		name="Zhukov"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/zhukov.dds"
+			}
+		}
+		field_marshal = {
+			traits={ zabi_party }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	ZOF_walter_curtis ={
+		name="Walter Curtis"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/walter_curtis.dds"
+			}
+		}
+		field_marshal = {
+			traits={ }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	##generals
+	ZOF_bone_abust ={
+		name="Bone Abust"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/bone_abust.dds"
+			}
+		}
+		corps_commander = {
+			traits={ armor_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	ZOF_massad ={
+		name="Massad"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/masad.dds"
+			}
+		}
+		corps_commander = {
+			traits={ jungle_rat }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	ZOF_kinryu ={
+		name="Kinryu"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/kinryu.dds"
+			}
+		}
+		corps_commander = {
+			traits={ }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	##pilots
+	ZOF_visch_donahue ={
+		name="Visch Donahue"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/visch_donahue.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot thunderclap_in_the_wilderness  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	ZOF_norris_packard ={
+		name="Noris Packard"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/noris_packard.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot jungle_rat urban_assault_specialist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	ZOF_yonem_kirks ={
+		name="Yonem Kirks"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/yonem_kirks.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	ZOF_aina_sahalin ={
+		name="Aina Sahalin"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/aina_sahalin.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	ZOF_leo_brauer ={
+		name="Leo Brauer"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/leo_brauer.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	ZOF_klaus_beltran ={
+		name="Klaus Beltran"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/klaus_beltran.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	ZOF_toldo_bobrov ={
+		name="Toldo Bobrov"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/toldo_bobrov.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	ZOF_anne_furiberi ={
+		name="Anne Furiberi"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/anne_furiberi.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

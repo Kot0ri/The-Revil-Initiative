@@ -12,7 +12,7 @@ characters={
 		}
 		country_leader={
 			ideology= spacenoid_supremacist
-			traits={  }
+			traits={ scion_of_the_sahalin_family hemoptysis }
 			expire="1000.1.1.1"
 		}
 		field_marshal = {
@@ -41,6 +41,31 @@ characters={
 					factor = 0
 				}
 			}
+		}
+	}
+
+	ZOF_aina_sahalin ={
+		name="Aina Sahalin"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/aina_sahalin.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/aina_sahalin.dds"
+			}
+		}
+		country_leader={
+			ideology= contolism
+			traits={ heartfelt_negotiator }
+			expire="1000.1.1.1"
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 
@@ -192,25 +217,6 @@ characters={
 		}
 	}
 
-	ZOF_aina_sahalin ={
-		name="Aina Sahalin"
-		portraits={
-			civilian={
-				large="gfx/leaders/ZOF/yuri.dds"
-			}
-			army={
-				large="gfx/leaders/ZOF/aina_sahalin.dds"
-			}
-		}
-		corps_commander = {
-			traits={ pilot }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-		}
-	}
 
 	ZOF_leo_brauer ={
 		name="Leo Brauer"

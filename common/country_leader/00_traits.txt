@@ -3,6 +3,24 @@
 @tier3 = 10
 
 leader_traits = {
+#ginias
+scion_of_the_sahalin_family = {
+	random = no
+	research_speed_factor = 0.02
+}
+hemoptysis = {
+	random = no
+	political_power_gain = -0.02
+}
+
+#aina
+heartfelt_negotiator = {
+	random = no
+	stability_factor = 0.1
+	war_support_factor = -0.05
+	improve_relations_maintain_cost_factor = -0.5
+}
+
 	#Dozle
 	hero_to_the_troops = {
 		random = no

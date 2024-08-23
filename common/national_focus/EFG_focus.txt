@@ -11,10 +11,120 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = EFG_Legacy_of_the_UC_Charter
+		id = EFG_manilia_incindent
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 20
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = EFG_combat_the_rise_of_anti-federation_partisans
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_philippine_crisis
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EFG_manilia_incindent
+		prerequisite = {
+			focus = EFG_manilia_incindent
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_compromise_with_ssa
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EFG_philippine_crisis
+		prerequisite = {
+			focus = EFG_philippine_crisis
+		}
+		mutually_exclusive = {
+			focus = EFG_crackdown_the_ssa
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_crackdown_the_ssa
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EFG_philippine_crisis
+		prerequisite = {
+			focus = EFG_philippine_crisis
+		}
+		mutually_exclusive = {
+			focus = EFG_compromise_with_ssa
+		}
+		available = {
+			has_completed_focus = EFG_centralization_efforts
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+		transfer_state = 623
+		transfer_state = 327
+		transfer_state = 624
+		transfer_state = 625
+		transfer_state = 627
+		transfer_state = 628
+		transfer_state = 626
+		remove_from_faction = SSA
+		start_border_war = {
+			change_state_after_war = yes
+			attacker = {
+				state = 640
+				num_provinces = 4
+				on_win = ssa_border_conflict.2
+				on_lose = ssa_border_conflict.3
+				on_cancel = ssa_border_conflict.4
+				modifier = 0.1
+				dig_in_factor = 0
+				terrain_factor = 0
+			}	
+			defender = {
+				state = 747
+				num_provinces = 4
+				on_win = efg_border_conflict.3
+				on_lose = efg_border_conflict.2
+				on_cancel = efg_border_conflict.4
+			}
+		}
+		}
+	}
+
+	focus = {
+		id = EFG_Legacy_of_the_UC_Charter
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 10
 		y = 0
 		ai_will_do = {
 			factor = 1

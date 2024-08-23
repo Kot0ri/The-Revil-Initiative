@@ -183,6 +183,58 @@ focus_tree = {
 			}
 		}
 
+		focus = {
+			id = SSA_philippines_development_project
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SSA_south_china_sea_development
+			prerequisite = {
+				focus = SSA_south_china_sea_development
+			}
+			completion_reward = {
+				627 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type =  industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				327 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type =  dockyard
+							level = 1
+							instant_build = yes
+						}
+						add_building_construction = {
+							type =  industrial_complex
+							level = 5
+							instant_build = yes
+						}
+					}
+				}
+				623 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+						add_building_construction = {
+							type =  industrial_complex
+							level = 2
+							instant_build = yes
+						}
+					}
+				}
+				}
+			}
+
 	focus = {
 		id = SSA_government_appoinments
 		icon = GFX_goal_efsf_mobile_headquarters
@@ -465,8 +517,34 @@ focus = {
 	}
 	completion_reward = {
 	add_political_power = 50
+	set_cosmetic_tag = SSA_nanyang_allaince
 		}
 	}
+
+	focus = {
+		id = SSA_great_march_north
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 5
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_nanyang_takeover
+			prerequisite = {focus = SSA_nanyang_takeover}
+		completion_reward = {
+			transfer_state = 594
+			transfer_state = 591
+			transfer_state = 728
+			transfer_state = 592
+			transfer_state = 729
+			transfer_state = 747
+			leave_faction = yes
+			declare_war_on = {
+				target = EFG
+			}
+			}
+		}
 	
 
 }

@@ -529,6 +529,86 @@ focus = {
 	}
 
 	focus = {
+		id = SSA_work_with_side_6
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_nanyang_takeover
+			prerequisite = {focus = SSA_nanyang_takeover}
+		completion_reward = {
+	
+			}
+		}
+
+	focus = {
+		id = SSA_bring_in_disenfranchised_eff
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_nanyang_takeover
+			prerequisite = {focus = SSA_nanyang_takeover}
+		completion_reward = {
+	
+			}
+		}
+
+		focus = {
+			id = SSA_sabotage_federation_intel
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {	
+			factor = 1
+			}
+			relative_position_id = SSA_bring_in_disenfranchised_eff
+				prerequisite = {focus = SSA_bring_in_disenfranchised_eff}
+			completion_reward = {
+		
+				}
+			}
+
+	focus = {
+		id = SSA_bring_in_disenfranchised_zeons
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_nanyang_takeover
+			prerequisite = {focus = SSA_nanyang_takeover}
+		completion_reward = {
+	
+			}
+		}
+
+		focus = {
+			id = SSA_begin_widespread_production_of_p-reuse_system
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {	
+			factor = 1
+			}
+			relative_position_id = SSA_bring_in_disenfranchised_zeons
+				prerequisite = {focus = SSA_bring_in_disenfranchised_zeons}
+			completion_reward = {
+		
+				}
+			}
+
+	focus = {
 		id = SSA_great_march_north
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5

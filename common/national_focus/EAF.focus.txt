@@ -1241,6 +1241,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_werewolf_program
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 7
+		y = 1
+		prerequisite ={ focus = EAF_Phase_4_Operations}
+		relative_position_id = EAF_Phase_4_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_Alagranza_Missile_Silo
 		icon = GFX_goal_general_meeting
 		cost = 5

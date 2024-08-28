@@ -1311,6 +1311,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_blank_cheque_the_military
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = { focus = EFG_pressure_the_colony_governments}
+		relative_position_id = EFG_pressure_the_colony_governments
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			 
+		}
+		completion_reward = {
+			add_ideas = military_blank_cheque
+		}
+	}
+
+	focus = {
 		id = EFG_intervene_in_colonial_affairs
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -1397,6 +1416,23 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_encourage_private_bisunesses
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_renew_trade_treaties}
+		relative_position_id = EFG_renew_trade_treaties
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = encouraged_private_owners
+		}
+	}
+
+
+	focus = {
 		id = EFG_conflict_with_Zeon
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -1416,4 +1452,350 @@ focus_tree = {
 		
 		}
 	}
+
+	focus = {
+		id = EFG_0080_elections
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 30
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		available = {
+			date = 1.1.80
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_liberal_victory
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		available = {
+			democratic > 0.4
+		}
+		relative_position_id = EFG_0080_elections
+		prerequisite = {
+			focus = EFG_0080_elections
+		}
+		mutually_exclusive = {
+			focus = EFG_reformer_victory
+		}
+		mutually_exclusive = {
+			focus = EFG_hardliner_victory
+		}
+		mutually_exclusive = {
+			focus = EFG_conservative_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_reformer_victory
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		available = {
+			contolism > .60
+		}
+		relative_position_id = EFG_0080_elections
+		prerequisite = {
+			focus = EFG_0080_elections
+		}
+		mutually_exclusive = {
+			focus = EFG_liberal_victory
+		}
+		mutually_exclusive = {
+			focus = EFG_hardliner_victory
+		}
+		mutually_exclusive = {
+			focus = EFG_conservative_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_conservative_victory
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		available = {
+			democratic > 0.4
+		}
+		relative_position_id = EFG_0080_elections
+		prerequisite = {
+			focus = EFG_0080_elections
+		}
+		mutually_exclusive = {
+			focus = EFG_liberal_victory
+		}
+		mutually_exclusive = {
+			focus = EFG_reformer_victory
+		}
+		mutually_exclusive = {
+			focus = EFG_hardliner_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_hardliner_victory
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 1
+		available = {
+			supremacist > .60
+		}
+		relative_position_id = EFG_0080_elections
+		prerequisite = {
+			focus = EFG_0080_elections
+		}
+		mutually_exclusive = {
+			focus = EFG_liberal_victory
+		}
+		mutually_exclusive = {
+			focus = EFG_reformer_victory
+		}
+		mutually_exclusive = {
+			focus = EFG_conservative_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_centrist_coalition
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		available = {
+			democratic < .70
+		}
+		relative_position_id = EFG_0080_elections
+		prerequisite = {
+			focus = EFG_liberal_victory focus = EFG_conservative_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_right_coalition
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 2
+		available = {
+			democratic < .40
+			supremacist < .80
+		}
+		relative_position_id = EFG_0080_elections
+		prerequisite = {
+			focus = EFG_hardliner_victory focus = EFG_conservative_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_left_coalition
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -3
+		y = 2
+		available = {
+			democratic < .50
+			contolism < .80
+		}
+		relative_position_id = EFG_0080_elections
+		prerequisite = {
+			focus = EFG_reformer_victory focus = EFG_liberal_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_reach_out_to_spacenoid_causes
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		available = {
+		}
+		relative_position_id = EFG_reformer_victory
+		prerequisite = {
+			focus = EFG_reformer_victory 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_aid_war_orphans
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		available = {
+		}
+		relative_position_id = EFG_reformer_victory
+		prerequisite = {
+			focus = EFG_reformer_victory focus = EFG_left_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_veterans_aid_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 2
+		available = {
+		}
+		relative_position_id = EFG_liberal_victory
+		prerequisite = {
+			focus = EFG_liberal_victory focus = EFG_left_coalition focus = EFG_centrist_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_housing_restoration_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		available = {
+		}
+		relative_position_id = EFG_centrist_coalition
+		prerequisite = {
+			focus = EFG_centrist_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_youth_democray_program
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		available = {
+		}
+		relative_position_id = EFG_conservative_victory
+		prerequisite = {
+			focus = EFG_conservative_victory focus = EFG_centrist_coalition focus = EFG_right_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_earth_defence_procedures
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		available = {
+		}
+		relative_position_id = EFG_hardliner_victory
+		prerequisite = {
+			focus = EFG_hardliner_victory focus = EFG_right_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_new_gaurd_of_earth
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		available = {
+		}
+		relative_position_id = EFG_hardliner_victory
+		prerequisite = {
+			focus = EFG_hardliner_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
 }

@@ -61,6 +61,35 @@ ideas = {
 			removal_cost = -1
 		}
 
+		encouraged_private_owners = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.02
+				democratic_drift = 0.02
+				democratic_acceptance = 20
+			}
+			removal_cost = -1
+		}
+
+		military_blank_cheque = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				military_government_drift = 0.05
+				democratic_acceptance = -10
+			}
+			removal_cost = -1
+		}
+
 		CIA = {
 			allowed ={
 				always = no

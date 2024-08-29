@@ -131,5 +131,21 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+
+	youth_democracy_program = {
+		allowed ={
+			always = no
+		}
+		allowed_civil_war = {
+			always = yes
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+			democratic_drift = 0.02
+			recruitable_population_factor = 0.02
+			research_speed_factor = 0.01
+		}
+		removal_cost = -1
 	}
+}
 }

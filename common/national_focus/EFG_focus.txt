@@ -524,6 +524,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			supremacist > .60
+		}
 		mutually_exclusive = {
 			focus = EFG_found_the_BGST
 		}
@@ -562,6 +565,9 @@ focus_tree = {
 		relative_position_id = EFG_primacy_of_policing_conference
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			military_government > .20
 		}
 		mutually_exclusive = {
 			focus = EFG_found_the_manhunters
@@ -1661,6 +1667,12 @@ focus_tree = {
 		available = {
 			democratic < .70
 		}
+		mutually_exclusive = {
+			focus = EFG_right_coalition
+		}
+		mutually_exclusive = {
+			focus = EFG_left_coalition
+		}
 		relative_position_id = EFG_0080_elections
 		prerequisite = {
 			focus = EFG_liberal_victory focus = EFG_conservative_victory
@@ -1683,6 +1695,9 @@ focus_tree = {
 			democratic < .40
 			supremacist < .80
 		}
+		mutually_exclusive = {
+			focus = EFG_centrist_coalition
+		}
 		relative_position_id = EFG_0080_elections
 		prerequisite = {
 			focus = EFG_hardliner_victory focus = EFG_conservative_victory
@@ -1704,6 +1719,9 @@ focus_tree = {
 		available = {
 			democratic < .50
 			contolism < .80
+		}
+		mutually_exclusive = {
+			focus = EFG_centrist_coalition
 		}
 		relative_position_id = EFG_0080_elections
 		prerequisite = {
@@ -1797,6 +1815,8 @@ focus_tree = {
 		}
 	}
 
+	
+
 	focus = {
 		id = EFG_youth_democray_program
 		icon = GFX_goal_general_meeting
@@ -1813,7 +1833,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		add_ideas = youth_democracy_program
 		}
 	}
 
@@ -1848,6 +1868,96 @@ focus_tree = {
 		relative_position_id = EFG_hardliner_victory
 		prerequisite = {
 			focus = EFG_hardliner_victory
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_federal_new_deal_plan
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+			has_completed_focus = EFG_liberal_victory
+		}
+		relative_position_id = EFG_housing_restoration_plan
+		prerequisite = {
+			focus = EFG_housing_restoration_plan
+		}
+		prerequisite = {
+			focus = EFG_veterans_aid_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_start_new_deal_year_1
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			has_war = no
+		}
+		relative_position_id = EFG_federal_new_deal_plan
+		prerequisite = {
+			focus = EFG_federal_new_deal_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_colony_restoration_plan
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+			has_completed_focus = EFG_centrist_coalition
+		}
+		relative_position_id = EFG_housing_restoration_plan
+		prerequisite = {
+			focus = EFG_housing_restoration_plan
+		}
+		prerequisite = {
+			focus = EFG_youth_democray_program
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_start_colony_restoration_plan_year_1
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			has_war = no
+		}
+		relative_position_id = EFG_colony_restoration_plan
+		prerequisite = {
+			focus = EFG_colony_restoration_plan
 		}
 		ai_will_do = {
 			factor = 1

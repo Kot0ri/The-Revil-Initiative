@@ -607,7 +607,7 @@ focus = {
 	id = EUF_the_italian_canidate
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 3
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -654,10 +654,26 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_ideas = rights_of_man
 	}
 	relative_position_id = EUF_the_french_canidate
 	prerequisite = { focus = EUF_the_french_canidate }
+}
+
+focus = {
+	id = EUF_liberty_forever
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = liberty_forever
+	}
+	relative_position_id = EUF_the_rights_of_man
+	prerequisite = { focus = EUF_the_rights_of_man }
 }
 
 focus = {
@@ -698,14 +714,14 @@ focus = {
 focus = {
 	id = EUF_the_new_renaissance
 	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
+	cost = 10
 	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_ideas = new_renaissance
 	}
 	relative_position_id = EUF_expand_arts_programs
 	prerequisite = { focus = EUF_expand_arts_programs focus =  EUF_devotion_to_the_sciences }
@@ -733,8 +749,24 @@ focus = {
 focus = {
 	id = EUF_devotion_to_the_sciences
 	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
+	cost = 5
 	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	add_ideas = devotion_to_science
+	}
+	relative_position_id = EUF_the_italian_canidate
+	prerequisite = { focus = EUF_the_italian_canidate }
+}
+
+focus = {
+	id = EUF_reopen_closed_labs
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 10
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -744,6 +776,22 @@ focus = {
 	}
 	relative_position_id = EUF_the_italian_canidate
 	prerequisite = { focus = EUF_the_italian_canidate }
+}
+
+focus = {
+	id = EUF_form_cordinilli_group
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 10
+	x = o
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = EUF_reopen_closed_labs
+	prerequisite = { focus = EUF_reopen_closed_labs }
 }
 
 focus = {
@@ -921,6 +969,44 @@ focus = {
 }
 
 focus = {
+	id = EUF_new_generation_aircraft
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_air_interception
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_air_domination
+	prerequisite = { focus = EUF_air_domination }
+}
+
+focus = {
+	id = EUF_improve_air-to-ground_capabilities
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EUF_air_interception
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_new_generation_aircraft
+	prerequisite = { focus = EUF_new_generation_aircraft }
+}
+
+focus = {
 	id = EUF_austrian_maneuvers
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
@@ -933,7 +1019,26 @@ focus = {
 		has_completed_focus = EUF_the_austrian_canidate
 	}
 	completion_reward = {
-	
+	add_ideas = austrian_maneuvers
+	}
+	relative_position_id = EUF_maintain_our_own_forces
+	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+}
+
+focus = {
+	id = EUF_peoples_army
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = EUF_the_french_canidate
+	}
+	completion_reward = {
+	add_ideas = peoples_army
 	}
 	relative_position_id = EUF_maintain_our_own_forces
 	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
@@ -943,7 +1048,7 @@ focus = {
 	id = EUF_restoration_of_naval_yards
 	icon = GFX_goal_generic_construct_naval_dockyard
 	cost = 10
-	x = 8
+	x = 10
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1066,7 +1171,7 @@ focus = {
 	id = EUF_pride_of_the_mediterranean
 	icon = GFX_goal_generic_navy_battleship
 	cost = 2
-	x = 6
+	x = 8
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1256,6 +1361,7 @@ focus = {
 	}
 	relative_position_id = EUF_keep_our_forces_mobile
 	prerequisite = { focus = EUF_keep_our_forces_mobile }
+		prerequisite = {focus = EUF_deny_the_sky focus = EUF_improve_air-to-ground_capabilities}
 }
 
 focus = {

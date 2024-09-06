@@ -687,4 +687,215 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = ZOF_request_additional_resources
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = ZOF_coordinate_with_zeon_high_command focus = ZOF_connections_in_the_homeland }
+		relative_position_id = ZOF_sahalin_family_legacy
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_offsite_building = {
+			type = arms_factory
+			level = 5
+		}
+		add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = ZOF_secure_ginias_positon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = ZOF_request_additional_resources }
+		relative_position_id = ZOF_request_additional_resources
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_explore_ainas_ideas
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_explore_ainas_ideas
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = ZOF_request_additional_resources }
+		relative_position_id = ZOF_request_additional_resources
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_secure_ginias_positon
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_zeon_civil_service_hearing
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_explore_ainas_ideas }
+		relative_position_id = ZOF_explore_ainas_ideas
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_support_civil_academia
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = ZOF_zeon_civil_service_hearing }
+		relative_position_id = ZOF_zeon_civil_service_hearing
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = ZOF_retire_ginias
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_zeon_civil_service_hearing }
+		relative_position_id = ZOF_zeon_civil_service_hearing
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_eliminate_rivals
+		}
+		mutually_exclusive = {
+			focus = ZOF_sahalins_united
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = ZOF_promise_the_forbidden
+		icon = GFX_goal_general_meeting
+			cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_secure_ginias_positon }
+		relative_position_id = ZOF_secure_ginias_positon
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_recieve_additonal_aid
+		icon = GFX_goal_general_meeting
+			cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = ZOF_promise_the_forbidden }
+		relative_position_id = ZOF_promise_the_forbidden
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+		}
+	}
+
+	focus = {
+		id = ZOF_eliminate_rivals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_promise_the_forbidden }
+		relative_position_id = ZOF_promise_the_forbidden
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_retire_ginias
+		}
+		mutually_exclusive = {
+			focus = ZOF_sahalins_united
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_RD-4_test_program
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = ZOF_explore_ainas_ideas focus = ZOF_secure_ginias_positon  }
+		relative_position_id = ZOF_request_additional_resources
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_sahalins_united
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_RD-4_test_program  }
+		relative_position_id = ZOF_RD-4_test_program
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_retire_ginias
+		}
+		mutually_exclusive= {
+			focus = ZOF_eliminate_rivals
+		}
+		completion_reward = {
+		
+		}
+	}
 }

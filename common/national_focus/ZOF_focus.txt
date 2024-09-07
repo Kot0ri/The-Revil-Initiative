@@ -802,6 +802,38 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = ZOF_work_with_locals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_retire_ginias  }
+		relative_position_id = ZOF_retire_ginias
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_study_federation_tactics
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = ZOF_retire_ginias  }
+		relative_position_id = ZOF_retire_ginias
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
 focus = {
 		id = ZOF_promise_the_forbidden
 		icon = GFX_goal_general_meeting
@@ -855,6 +887,39 @@ focus = {
 		}
 		mutually_exclusive = {
 			focus = ZOF_sahalins_united
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = ZOF_create_special_assualt_division
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_eliminate_rivals  }
+		relative_position_id = ZOF_eliminate_rivals
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_increase_production_quotas
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = ZOF_eliminate_rivals  }
+		relative_position_id = ZOF_eliminate_rivals
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
 		

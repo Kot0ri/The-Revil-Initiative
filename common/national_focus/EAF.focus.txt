@@ -499,7 +499,7 @@ focus_tree = {
 		id = EAF_special_force_focus
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -4
+		x = -6
 		y = 1
 		prerequisite ={ focus = EAF_Phase_3_Operations}
 		relative_position_id = EAF_Phase_3_Operations
@@ -527,6 +527,187 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = EAF_gefrangener_project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = EAF_Phase_3_Operations}
+		relative_position_id = EAF_Phase_3_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_reinforce_occupation_forces
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		prerequisite ={ focus = EAF_Phase_3_Operations}
+		relative_position_id = EAF_Phase_3_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_improve_infantry_kit
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = EAF_reinforce_occupation_forces}
+		relative_position_id = EAF_reinforce_occupation_forces
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_issue_winter_gear
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_improve_infantry_kit}
+		relative_position_id = EAF_improve_infantry_kit
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_in_faction_with = ZEO
+			is_in_faction_with = NAA
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_operation_northern_lights
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = EAF_issue_winter_gear  }
+		prerequisite = { focus = EAF_Two_Progned_Attack	}
+		relative_position_id = EAF_issue_winter_gear
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_increase_besatzungsmacht_numbers
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = EAF_reinforce_occupation_forces}
+		relative_position_id = EAF_reinforce_occupation_forces
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_intergrate_militärpolizei_with_besatzungsmacht
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_increase_besatzungsmacht_numbers}
+		relative_position_id = EAF_increase_besatzungsmacht_numbers
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EAF_besatzungsmacht_field_deployment
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_intergrate_armor_and_infantry_command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = EAF_intergrate_militärpolizei_with_besatzungsmacht}
+		prerequisite ={ focus = EAF_issue_winter_gear  }
+		relative_position_id = EAF_intergrate_militärpolizei_with_besatzungsmacht
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EAF_officer_initiative_training
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_officer_initiative_training
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = EAF_intergrate_militärpolizei_with_besatzungsmacht focus = EAF_besatzungsmacht_field_deployment }
+		relative_position_id = EAF_intergrate_militärpolizei_with_besatzungsmacht
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EAF_intergrate_armor_and_infantry_command
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_besatzungsmacht_field_deployment
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = EAF_increase_besatzungsmacht_numbers}
+		relative_position_id = EAF_increase_besatzungsmacht_numbers
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EAF_intergrate_militärpolizei_with_besatzungsmacht
+		}
+		completion_reward = {
+		
 		}
 	}
 
@@ -669,7 +850,7 @@ focus_tree = {
 		id = EAF_Northern_Siege
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -7
+		x = -8
 		y = 1
 		prerequisite ={ focus = EAF_Phase_3_Operations}
 		relative_position_id = EAF_Phase_3_Operations

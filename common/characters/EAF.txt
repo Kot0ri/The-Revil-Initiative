@@ -161,6 +161,26 @@ EAF_ginias_sahalin ={
 		}
 	}
 
+	EAF_johann_schneidermann ={
+		name="Johann Schneidermann"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/johann_schneidermann.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/johann_schneidermann.dds"
+			}
+		}
+		field_marshal = {
+			traits={ media_personality }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
 	# generals
 
 	EAF_otto_eichman ={

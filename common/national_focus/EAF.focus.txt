@@ -350,6 +350,47 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_dopp_improvement_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_air_domination_plan}
+		relative_position_id = EAF_air_domination_plan
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_in_faction_with = NAA
+		}
+		mutually_exclusive = {
+			focus = EAF_air-cav_primacy
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_air-cav_primacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = EAF_air_domination_plan}
+		relative_position_id = EAF_air_domination_plan
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EAF_dopp_improvement_plan
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_Stage_1_Defense_Operation_Planning
 		icon = GFX_goal_general_meeting
 		cost = 5

@@ -282,4 +282,21 @@ characters={
 			logistics_skill = 2
 		}
 	}
+	##advsors
+	ZOF_walter_janowitz ={
+		name="Walter Janowitz"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/visch_donahue.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = janowitz
+			traits = { mobilearmor_specialist }
+		}
+	}
 }

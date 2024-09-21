@@ -961,7 +961,7 @@ focus_tree = {
 }
 
 focus = {
-	id = efsf_improve_atmoshperhic_combat_systems
+	id = efsf_improve_atmospherhic_combat_systems
 	icon = GFX_goal_general_meeting
 	cost = 10
 	x = -9
@@ -2565,6 +2565,28 @@ focus = {
 	relative_position_id = efsf_begin_introduction_of_new_prototypes
 	completion_reward = {
 	
+	}
+}
+
+focus = {
+	id = efsf_found_snri
+	icon = GFX_goal_augusta_factory
+	cost = 10
+	x = 13
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_post_war_military_reconstruction
+	}
+	available = {
+	has_completed_focus = efsf_seek_insights_into_zeonic
+	}
+
+	relative_position_id = efsf_begin_post_war_military_reconstruction
+	completion_reward = {
+	add_research_slot = 1
 	}
 }
 

@@ -11,7 +11,7 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = RUS_work_with_the_new_regime
+		id = RUS_work_on_a_new_regime
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 0
@@ -20,10 +20,115 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			is_puppet_of = EAF
+			
 		}
 		completion_reward = {
 		
+		}
+	}
+
+	focus = {
+		id = RUS_reconnect_with_the_underground_government
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_work_on_a_new_regime
+		prerequisite = {
+			focus = RUS_work_on_a_new_regime
+		}
+		mutually_exclusive = {
+			focus = RUS_the_odd_factor
+		}
+		mutually_exclusive = {
+			focus = RUS_wisdom_of_age
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_the_odd_factor
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_work_on_a_new_regime
+		prerequisite = {
+			focus = RUS_work_on_a_new_regime
+		}
+		mutually_exclusive = {
+			focus = RUS_reconnect_with_the_underground_government
+		}
+		mutually_exclusive = {
+			focus = RUS_wisdom_of_age
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		add_popularity = {
+			ideology = supremacist
+			popularity = 35
+		}
+		retire_character = RUS_valdimir_admiral
+		recruit_character = RUS_valdimir_leader
+		set_politics = {
+			ruling_party = suupremacist
+			elections_allowed = no
+			last_election = "0080.12.17"
+			election_frequency = 48
+			long_name = RUS_new_russia_leauge
+			name = RUS_new_russia_league
+		}
+		}
+	}
+
+	focus = {
+		id = RUS_wisdom_of_age
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 6
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_work_on_a_new_regime
+		prerequisite = {
+			focus = RUS_work_on_a_new_regime
+		}
+		mutually_exclusive = {
+			focus = RUS_reconnect_with_the_underground_government
+		}
+		mutually_exclusive = {
+			focus = RUS_the_odd_factor
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		retire_country_leader = yes
+		retire_character = RUS_nikolai_alexander_admiral
+		recruit_character = RUS_nikolai_alexander_leader
+		add_country_leader_role = {
+			character = RUS_nikolai_alexander_leader
+			promote_leader = yes
+			country_leader = {
+				ideology = military_administration
+				expire = "0086.1.1.1"
+				traits = { staunch_monarchist supreme_ruler_of_russia }
+			}
+		}
 		}
 	}
 

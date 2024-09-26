@@ -377,6 +377,29 @@ special_service_trait = {
 		aircraft_manufacturer_cost_factor = -0.07
 	}
 
+	#russia traits
+	staunch_monarchist = {
+		sprite = 13
+		random = no
+		aristocracy_drift = 0.05
+		aristocracy_acceptance = 20
+	}
+	supreme_ruler_of_russia = {
+		sprite = 13
+		random = no
+		army_core_defence_factor = 0.10
+		army_core_attack_factor = 0.10
+		political_power_gain = 0.05
+	}
+	russian_ultranationalist = {
+		sprite = 13
+		random = no
+		supremacist_drift = 0.05
+		communism_drift = 0.01
+		supremacist_acceptance = -20
+		justify_war_goal_time = -0.5
+		weekly_manpower = 200
+	}
 
 	oliver_may_trait = {
 		random = no

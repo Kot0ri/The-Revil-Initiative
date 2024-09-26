@@ -79,12 +79,12 @@ focus_tree = {
 		completion_reward = {
 		add_popularity = {
 			ideology = supremacist
-			popularity = 35
+			popularity = 0.35
 		}
 		retire_character = RUS_valdimir_admiral
 		recruit_character = RUS_valdimir_leader
 		set_politics = {
-			ruling_party = suupremacist
+			ruling_party = supremacist
 			elections_allowed = no
 			last_election = "0080.12.17"
 			election_frequency = 48
@@ -128,6 +128,32 @@ focus_tree = {
 				expire = "0086.1.1.1"
 				traits = { staunch_monarchist supreme_ruler_of_russia }
 			}
+		}
+		set_cosmetic_tag = RUS_supreme_commander
+		}
+	}
+
+	focus = {
+		id = RUS_restore_the_crown
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_wisdom_of_age
+		prerequisite = {
+			focus = RUS_wisdom_of_age
+		}
+		available = {
+			aristocracy > 0.35
+		}
+		completion_reward = {
+			recruit_character = RUS_agustus_romanov
+		set_politics = {
+			ruling_party = aristocracy
+			elections_allowed = no
 		}
 		}
 	}

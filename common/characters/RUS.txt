@@ -14,6 +14,21 @@ characters={
 		}
 	}
 
+	RUS_agustus_romanov ={
+		name="Augustus Maximus Romanov"
+		portraits={
+			civilian={
+				large= "gfx/leaders/RUS/Augustus Maximus Romanov.dds"
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchy
+			traits = { 
+				tsar_and_autocrat_of_all_russians sovereign_and_grand_prince
+			}
+		}
+	}
+
 RUS_valdimir_leader ={
 	name="Valdimir Nikolayevich"
 	portraits={

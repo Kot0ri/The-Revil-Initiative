@@ -624,10 +624,50 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MEZ_prepare_for_conflict
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_the_fire_burns
+		}
+		relative_position_id = MEZ_the_fire_burns
+		completion_reward = {
+		add_war_support = 0.10
+		add_popularity = {
+			ideology = oligarchy
+			popularity = 0.20
+		}	
+		}
+	}
+
+	focus = {
+		id = MEZ_acquire_ground_equipment
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_prepare_for_conflict
+		}
+		relative_position_id = MEZ_prepare_for_conflict
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = MEZ_liquid_gold
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = 14
+		x = 16
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -677,7 +717,7 @@ focus_tree = {
 		id = MEZ_address_the_military_crisis
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = 18
+		x = 20
 		y = 0
 		ai_will_do = {
 			factor = 1

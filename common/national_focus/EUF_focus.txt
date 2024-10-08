@@ -11,6 +11,99 @@ focus_tree = {
 	}
 	default = no
 
+
+	focus = {
+		id = EUF_europa_council
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 36
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EUF_UC_0077_meeting
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EUF_europa_council
+		prerequisite = {
+			focus = EUF_europa_council
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EUF_combat_europa_influence
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EUF_UC_0077_meeting
+		prerequisite = {
+			focus = EUF_UC_0077_meeting
+		}
+		mutually_exclusive = {
+			focus = EUF_cooperate_with_europa
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EUF_purge_europa_members
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EUF_combat_europa_influence
+		prerequisite = {
+			focus = EUF_combat_europa_influence
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EUF_cooperate_with_europa
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EUF_UC_0077_meeting
+		prerequisite = {
+			focus = EUF_UC_0077_meeting
+		}
+		mutually_exclusive = {
+			focus = EUF_combat_europa_influence
+		}
+		completion_reward = {
+			
+		}
+	}
+
 focus = {
 	id = EUF_foundation_of_democracy
 	icon = GFX_goal_efsf_mobile_headquarters

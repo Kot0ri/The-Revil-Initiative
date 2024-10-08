@@ -13,6 +13,68 @@ characters={
 			expire="1000.1.1.1"
 		}
 	}
+
+	RUS_agustus_romanov ={
+		name="Augustus Maximus Romanov"
+		portraits={
+			civilian={
+				large= "gfx/leaders/RUS/Augustus Maximus Romanov.dds"
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchy
+			traits = { 
+				tsar_and_autocrat_of_all_russians sovereign_and_grand_prince
+			}
+		}
+	}
+
+RUS_valdimir_leader ={
+	name="Valdimir Nikolayevich"
+	portraits={
+		civilian={
+			large= "gfx/leaders/RUS/Valdimir_Nikolayevich_leader.dds"
+		}
+		military={
+			large= "gfx/leaders/RUS/Valdimir_Nikolayevich_leader.dds"
+		}
+	}
+	country_leader = {
+		ideology = earthnoid_supremacist
+		traits = {
+			russian_ultranationalist
+		}
+	}
+	field_marshal = {
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
+RUS_nikolai_alexander_leader ={
+	name="Nikolai Alexander Kolchak"
+	portraits={
+		civilian={
+			large= "gfx/leaders/RUS/Nikolai Alexander Kolchak.dds"
+		}
+		military={
+			large= "gfx/leaders/RUS/Nikolai Alexander Kolchak.dds"
+		}
+	}
+	field_marshal = {
+		skill = 4
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+
+	#field Marshals
+
 		RUS_alexi_kornilov ={
 			name="Alexi Kornilov"
 			portraits={
@@ -45,6 +107,51 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 		}
-
 }
+
+	#admirals
+
+	RUS_nikolai_alexander_admiral ={
+		name="Nikolai Alexander Kolchak"
+		portraits={
+			civilian={
+				large= "gfx/leaders/RUS/Nikolai Alexander Kolchak.dds"
+			}
+			military={
+				large= "gfx/leaders/RUS/Nikolai Alexander Kolchak.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				old_guard_navy
+			}
+			skill = 5
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 5
+		}
+	}
+
+	RUS_valdimir_admiral ={
+		name="Valdimir Nikolayevich"
+		portraits={
+			civilian={
+				large= "gfx/leaders/RUS/Valdimir_Nikolayevich_admiral.dds"
+			}
+			military={
+				large= "gfx/leaders/RUS/Valdimir_Nikolayevich_admrial.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				navy_media_personality
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
 }

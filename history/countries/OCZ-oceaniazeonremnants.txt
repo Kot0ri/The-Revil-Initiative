@@ -1,5 +1,5 @@
-capital = 570
-oob = "RUS"
+capital = 713
+oob = "OCZ"
 
 # Starting tech
 set_technology = {
@@ -53,7 +53,7 @@ set_technology = {
 	fuel_refining2 = 1
 }
 
-set_research_slots = 2
+set_research_slots = 3
 set_convoys = 300
 starting_train_buffer = 2
 set_fuel_ratio = 0.8
@@ -61,18 +61,17 @@ set_stability = 0.7
 set_war_support = 0.55
 
 set_cosmetic_tag = ZEO_EFS
-add_named_threat = {
-	name = zeon_0075_threat
-	threat = 5
-}
+
 
 add_ideas = {
-	isolated_remnants
-	backwards_military_doctrine 
-	experinced_military_researchers 
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+	customs_duty_6
+	oversea_army_6
 }
 
-set_variable = { newtype_accepted_status = 0 }
+set_variable = { newtype_accepted_status = 2 }
 set_variable = {
 	var = ms_flight_test
 	value = 1
@@ -87,9 +86,9 @@ if = {
 
 set_popularities = {
 	democratic = 0
-	supremacist = 0
+	supremacist = 30
 	contolism = 0
-	military_government = 100
+	military_government = 70
 	aristocracy = 0
 	corporatism = 0
 	communism = 0
@@ -102,24 +101,16 @@ set_politics = {
 	elections_allowed = no
 }
 
-#leader
-recruit_character = RUS_military_cabinet
 
-#field marshal
-recruit_character = RUS_alexi_kornilov
-recruit_character = RUS_nickolai_krasnov
-
-#generals
+##leader
 
 
-#ms pilots
-
-#admirals
-recruit_character = RUS_nikolai_alexander_admiral
-recruit_character = RUS_valdimir_admiral
-
-#advisor
+##field Marrshal
 
 
+##generals
+
+
+##pilots
 
 

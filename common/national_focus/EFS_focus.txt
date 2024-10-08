@@ -1208,6 +1208,29 @@ focus = {
 }
 
 focus = {
+	id = efsf_SRT_field_formation
+	icon = GFX_goal_coop_with_ms
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = efsf_Revil_plan
+		has_war = yes
+	}
+	prerequisite = {
+		focus = efsf_v_project
+	}
+
+	relative_position_id = efsf_v_project
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_work_with_anaheim
 	icon = GFX_goal_tyrant_of_moon
 	cost = 10
@@ -2138,6 +2161,7 @@ focus = {
 		
 		}
 	}
+
 
 focus = {
 	id = efsf_operation_clean_sweep

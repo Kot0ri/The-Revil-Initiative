@@ -476,6 +476,26 @@ SOL_ricardo_vega={
 }
 
 #Admirals
+SOL_killing = {
+	name="Killing Sr."
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/SOL/killing.dds"
+		}
+	}
+	navy_leader={
+		traits={ battleship_adherent gunnery_expert gentlemanly fleet_protector superior_tactician }
+		skill=5
+		attack_skill=5
+		defense_skill=2
+		maneuvering_skill=5
+		coordination_skill=4
+	}
+}
+
 SOL_billy_glardle = {
 	name="Billy Glardle"
 	portraits={

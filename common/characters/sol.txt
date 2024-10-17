@@ -374,43 +374,43 @@ SOL_kelly_layzner={
 	}
 }
 
-SOL_space_rommel={
-	name="Space Rommel"
+SOL_marshy={
+	name="Marshy"
 	portraits={
 		army={
 			small="GFX_idea_kelley_layzner"
 		}
 		army={
-			large="gfx/leaders/SOL/space_rommel.dds"
+			large="gfx/leaders/SOL/Marshy.dds"
 		}
 	}
 	corps_commander={
-		traits={}
+		traits={ pilot }
 		skill=3
-		attack_skill=3
-		defense_skill=3
-		planning_skill=2
-		logistics_skill=3
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
 	}
 }
 
-SOL_milkyway_rommel={
-	name="Milkyway Rommel"
+SOL_koka_lasa={
+	name="Koka Lasa"
 	portraits={
 		army={
 			small="GFX_idea_kelley_layzner"
 		}
 		army={
-			large="gfx/leaders/SOL/milkyway.dds"
+			large="gfx/leaders/SOL/koka.dds"
 		}
 	}
 	corps_commander={
-		traits={}
-		skill=3
-		attack_skill=3
-		defense_skill=3
-		planning_skill=2
-		logistics_skill=3
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
 	}
 }
 

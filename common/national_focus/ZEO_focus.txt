@@ -650,6 +650,38 @@ focus = {
 }
 
 focus = {
+	id = ZEO_ensure_loyalty_in_officer_corps.
+	icon = GFX_goal_generic_improve_relations
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_sequel_theory_of_spacenoid_supremacy
+	prerequisite = { focus = ZEO_sequel_theory_of_spacenoid_supremacy }
+}
+
+focus = {
+	id = ZEO_private_officers_fund
+	icon = GFX_goal_generic_improve_relations
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ensure_loyalty_in_officer_corps.
+	prerequisite = { focus = ZEO_ensure_loyalty_in_officer_corps. }
+}
+
+focus = {
 	id = ZEO_ties_with_granada
 	icon = GFX_goal_generic_improve_relations
 	cost = 8

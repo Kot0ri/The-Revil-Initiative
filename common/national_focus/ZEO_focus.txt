@@ -1186,7 +1186,7 @@ focus = {
 	icon = GFX_focus_generic_court
 	cost = 10
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1202,7 +1202,7 @@ focus = {
 	icon = GFX_focus_generic_court
 	cost = 10
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1224,7 +1224,7 @@ focus = {
 	icon = GFX_focus_generic_conspiracy
 	cost = 3
 	x = 0
-	y = 3
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -2813,10 +2813,10 @@ focus = {
 focus = {
 	id = ZEO_stormtrooper_corps.
 	icon = GFX_goal_enhancement_of_general_purpose_MS
-	search_filters = { FOCUS_FILTER_RESEARCH } 
+	search_filters = { FOCUS_FILTER_MILITARY } 
 	cost = 4
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2828,9 +2828,26 @@ focus = {
 }
 
 focus = {
+	id = ZEO_panzergrenadiers
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_MILITARY } 
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_stormtrooper_corps.
+	prerequisite = { focus = ZEO_stormtrooper_corps. }
+}
+
+focus = {
 	id = ZEO_expand_high_command
 	icon = GFX_goal_enhancement_of_general_purpose_MS
-	search_filters = { FOCUS_FILTER_RESEARCH } 
+	search_filters = { FOCUS_FILTER_MILITARY } 
 	cost = 4
 	x = -2
 	y = 1
@@ -2847,7 +2864,7 @@ focus = {
 focus = {
 	id = ZEO_noble_officer_corps.
 	icon = GFX_goal_enhancement_of_general_purpose_MS
-	search_filters = { FOCUS_FILTER_RESEARCH } 
+	search_filters = { FOCUS_FILTER_MILITARY } 
 	cost = 4
 	x = 0
 	y = 2
@@ -2859,6 +2876,24 @@ focus = {
 	}
 	relative_position_id = ZEO_expand_high_command
 	prerequisite = { focus = ZEO_expand_high_command }
+}
+
+focus = {
+	id = ZEO_modern_maneuver_warfare
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_MILITARY } 
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_noble_officer_corps.
+	prerequisite = { focus = ZEO_noble_officer_corps. }
+	prerequisite = { focus = ZEO_stormtrooper_corps. }
 }
 
 focus = {

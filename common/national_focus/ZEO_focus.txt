@@ -86,7 +86,7 @@ focus = {
 	icon = GFX_goal_generic_more_territorial_claims
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 10
-	x = -17
+	x = -19
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -398,7 +398,7 @@ focus = {
 }
 
 focus = {
-	id = ZEO_ministry_of_public_will
+	id = ZEO_ministry_of_argiculture
 	icon = GFX_goal_dominance_of_human_survival_theory
 	cost = 3
 	x = 0
@@ -411,6 +411,54 @@ focus = {
 	}
 	relative_position_id = ZEO_acension_of_the_amato_family
 	prerequisite = { focus = ZEO_acension_of_the_amato_family }
+}
+
+focus = {
+	id = ZEO_Side_3_colony_fortification
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ministry_of_argiculture
+	prerequisite = { focus = ZEO_ministry_of_argiculture }
+}
+
+focus = {
+	id = ZEO_acension_of_bernini
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = -12
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_ministry_of_public_will
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_acension_of_bernini
+	prerequisite = { focus = ZEO_acension_of_bernini }
 }
 
 focus = {
@@ -495,10 +543,14 @@ focus = {
 		focus = ZEO_acknowledge_glemy
 	}
 	completion_reward = {
-		
+		ZEO_gihren_zabi = {
+			add_trait = {
+				trait = supreme_leader
+			}
+		}
 	}
 	relative_position_id = ZEO_AI_research_program
-	prerequisite = { focus = ZEO_defence_of_the_homeland}
+	prerequisite = { focus = ZEO_defence_of_the_homeland focus = ZEO_Side_3_colony_fortification }
 	prerequisite = { focus = ZEO_AI_research_program focus = ZEO_Supersoldat_program focus = ZEO_Artemis-Akkad_development_program }
 }
 

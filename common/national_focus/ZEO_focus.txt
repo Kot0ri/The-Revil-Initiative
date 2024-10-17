@@ -131,6 +131,10 @@ focus = {
 		set_politics = {
 			ruling_party = supremacist
 		}
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.05
+		}
 	}
 	relative_position_id = ZEO_sibling_rivalry
 	prerequisite = { focus = ZEO_sibling_rivalry }
@@ -166,7 +170,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		add_political_power = 50
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.10
+		}
 	}
 	relative_position_id = ZEO_gihrens_speeches
 	prerequisite = { focus = ZEO_gihrens_speeches }
@@ -588,6 +596,10 @@ focus = {
 			ideology = supremacist
 			popularity = 0.15
 		}
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.10
+		}
 	}
 	relative_position_id = ZEO_gihrens_speeches
 	prerequisite = { focus = ZEO_gihrens_speeches }
@@ -624,7 +636,10 @@ focus = {
 			ideology = supremacist
 			popularity = 0.10
 		}
-		
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.5
+		}
 	}
 	relative_position_id = ZEO_expand_the_powers_of_the_secret_service
 	prerequisite = { focus = ZEO_expand_the_powers_of_the_secret_service }
@@ -695,7 +710,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.05
+		}
 	}
 	relative_position_id = ZEO_shut_down_political_thought_criminal
 	prerequisite = { focus = ZEO_shut_down_political_thought_criminal }
@@ -1121,6 +1139,10 @@ focus = {
 		has_war = yes
 	}
 	completion_reward = {
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.25
+		}
 	}
 	relative_position_id = ZEO_shut_down_political_thought_criminal
 	prerequisite = { focus = ZEO_shut_down_political_thought_criminal }
@@ -1308,7 +1330,7 @@ focus = {
 	icon =GFX_goal_generic_military_deal
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1468,7 +1490,7 @@ focus = {
 	icon = GFX_focus_eng_global_defense
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 2
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1485,7 +1507,7 @@ focus = {
 	id = ZEO_support_rebellion_in_side_6
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
-	x = 5
+	x = 4
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1547,7 +1569,7 @@ focus = {
 	icon = GFX_goal_colony_alliance
 	cost = 10
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1562,7 +1584,7 @@ focus = {
 	id = ZEO_reach_out_to_pro_zeon_elements_in_loum
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 8
+	x = 6
 	y = 2
 	ai_will_do = {
 		factor = 1

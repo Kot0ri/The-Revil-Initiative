@@ -4143,7 +4143,7 @@ focus = {
 
 focus = {
 	id = ZEO_opposition_to_the_zabi_family
-	icon = GFX_goal_repression_of_deikun
+	icon = GFX_goal_harmony_with_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
 	x = -14
@@ -4155,6 +4155,43 @@ focus = {
 	completion_reward = {
 		add_political_power = 150
 		add_stability = -0.05
+	}
+}
+
+focus = {
+	id = ZEO_honor_the_ideals_of_zeon
+	icon = GFX_goal_phantom_speech
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_opposition_to_the_zabi_family
+	prerequisite = {	focus = ZEO_opposition_to_the_zabi_family	}
+	completion_reward = {
+		add_popularity = {
+			ideology = contolism
+			popularity = 5
+		}
+	}
+}
+
+focus = {
+	id = ZEO_valkyrie_soceity
+	icon = GFX_goal_valkryie
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_opposition_to_the_zabi_family
+	prerequisite = {	focus = ZEO_opposition_to_the_zabi_family	}
+	completion_reward = {
+		
 	}
 }
 

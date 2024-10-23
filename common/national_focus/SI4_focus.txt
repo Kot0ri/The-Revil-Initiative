@@ -15,7 +15,7 @@ focus_tree = {
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
 		x = 21
-		y = 1
+		y = 0
 		ai_will_do = {
 			factor = 1
 		}
@@ -46,7 +46,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -61,7 +61,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -76,7 +76,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -91,15 +91,15 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	}
 	relative_position_id = SI4_building_contracts
-	prerequisite = { focus = SI4_building_contracts }
-	prerequisite = { focus = SI4_seek_closer_side_relations }
+	prerequisite = { focus = SI4_building_contracts  focus = SI4_seek_closer_side_relations }
+
 }
 
 focus = {
@@ -107,7 +107,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -122,7 +122,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -137,7 +137,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -154,7 +154,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -169,7 +169,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -184,7 +184,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -199,7 +199,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -214,7 +214,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -241,11 +241,27 @@ focus = {
 }
 
 focus = {
+	id = SI4_colony_flight
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI4_Flemming_connections
+	prerequisite = { focus = SI4_Flemming_connections }
+}
+
+focus = {
 	id = SI4_plan_with_anaheim
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -261,7 +277,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -277,9 +293,12 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = SI4_formalize_military_service
 	}
 	completion_reward = {
 	}
@@ -289,11 +308,51 @@ focus = {
 }
 
 focus = {
+	id = SI4_joint_pilot_training_program
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+		is_in_faction_with = EFS
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_build_up_a_stable_military_connection
+	prerequisite = { focus = SI4_build_up_a_stable_military_connection }
+}
+
+
+focus = {
+	id = SI4_ace_of_the_thunderbolt
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+		is_in_faction_with = EFS
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_joint_pilot_training_program
+	prerequisite = { focus = SI4_joint_pilot_training_program }
+	prerequisite = { focus = SI4_colony_flight }
+}
+
+focus = {
 	id = SI4_purchase_federation_warships
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 0
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -308,9 +367,13 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
+		is_in_faction_with = EFS
 	}
 	completion_reward = {
 		add_ideas = Moore_Brotherhood
@@ -324,7 +387,7 @@ focus = {
 	icon =  GFX_goal_focus_on_gundam
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -338,8 +401,8 @@ focus = {
 	id = SI4_thunderbolt_sector_ms
 	icon =  GFX_goal_white_devil
 	cost = 2
-	x = 2
-	y = 2
+	x = 1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -353,8 +416,8 @@ focus = {
 	id = SI4_thunderbolt_operations
 	icon =  GFX_goal_white_devil
 	cost = 2
-	x = 0
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -365,11 +428,30 @@ focus = {
 }
 
 focus = {
+	id = SI4_smooth_jazz
+	icon =  GFX_goal_white_devil
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+		has_completed_focus = SI4_ace_of_the_thunderbolt
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_request_special_ms
+	prerequisite = { focus = SI4_thunderbolt_operations focus = SI4_thunderbolt_sector_ms }
+}
+
+focus = {
 	id = SI4_own_earth_property
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -384,7 +466,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -399,7 +481,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -641,6 +723,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = SI4_reinforce_the_defense_forces }
 	completion_reward = {
 	}
 	relative_position_id = SI4_question_of_colony_defence
@@ -656,6 +739,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = { focus = SI4_formalize_military_service }
 	completion_reward = {
 	}
 	relative_position_id = SI4_question_of_colony_defence
@@ -1096,7 +1180,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}

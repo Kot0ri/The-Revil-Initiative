@@ -13,7 +13,7 @@ focus_tree = {
 	focus = {
 		id = SSA_begin_renovations
 		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 5
+		cost = 10
 		x = 1
 		y = 0
 		ai_will_do = {
@@ -25,9 +25,9 @@ focus_tree = {
 		}
 
 	focus = {
-		id = SSA_address_the_employment_crisis
+		id = SSA_re-industrialize
 		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 5
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -38,22 +38,25 @@ focus_tree = {
 			focus = SSA_begin_renovations
 		}
 		completion_reward = {
-		
+			swap_ideas = {
+				remove_idea = hollowing_out_industry
+				add_idea = partial_reindustry
+			}
 			}
 		}
 
 	focus = {
 		id = SSA_centralize_development
 		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 5
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
-		relative_position_id = SSA_address_the_employment_crisis
+		relative_position_id = SSA_re-industrialize
 		prerequisite = {
-			focus = SSA_address_the_employment_crisis
+			focus = SSA_re-industrialize
 		}
 		completion_reward = {
 			286 = {
@@ -98,6 +101,27 @@ focus_tree = {
 			}
 			}
 		}
+
+	focus = {
+		id = SSA_full_industry
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		relative_position_id = SSA_centralize_development
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = SSA_centralize_development
+		}
+		available = {
+			has_war = yes
+		}
+		completion_reward = {
+			remove_ideas = partial_reindustry
+		}
+	}
 
 	focus = {
 		id = SSA_improve_sea_lane_traffic
@@ -252,7 +276,7 @@ focus_tree = {
 		focus = {
 			id = SSA_resolve_religious_tensions
 			icon = GFX_goal_efsf_mobile_headquarters
-			cost = 5
+			cost = 10
 			x = 2
 			y = 1
 			ai_will_do = {	
@@ -261,13 +285,17 @@ focus_tree = {
 			relative_position_id = SSA_government_appoinments
 			prerequisite = {	focus = SSA_government_appoinments	}
 			completion_reward = {
+				swap_ideas = {
+					remove_idea = religious_tension
+					add_idea = improved_religious_tension
+				}
 						}
 				}
 
 	focus = {
-			id = SSA_unity_together
+			id = SSA_continuous_effort
 			icon = GFX_goal_efsf_mobile_headquarters
-			cost = 5
+			cost = 10
 			x = 0
 			y = 1
 			ai_will_do = {	
@@ -276,12 +304,33 @@ focus_tree = {
 			relative_position_id = SSA_resolve_religious_tensions
 			prerequisite = {	focus = SSA_resolve_religious_tensions	}
 			completion_reward = {
+				swap_ideas = {
+					remove_idea = improved_religious_tension
+					add_idea = minor_religious_tension
+				}
 						}
 				}
 	focus = {
+			id = SSA_united_together
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 20
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SSA_continuous_effort
+			prerequisite = {
+				focus = SSA_continuous_effort
+			}
+			completion_reward = {
+				remove_ideas = minor_religious_tension
+			}
+	}
+	focus = {
 			id = SSA_bangkok_proposal
 			icon = GFX_goal_efsf_mobile_headquarters
-			cost = 5
+			cost = 10
 			x = 0
 			y = 1
 			ai_will_do = {	
@@ -290,13 +339,17 @@ focus_tree = {
 			relative_position_id = SSA_government_appoinments
 			prerequisite = {	focus = SSA_government_appoinments	}
 			completion_reward = {
+				swap_ideas = {
+					remove_idea = fundamentalism
+					add_idea = reduced_fundamentalism
+				}
 						}
 				}
 
 	focus = {
 			id = SSA_manilia_conference
 			icon = GFX_goal_efsf_mobile_headquarters
-			cost = 5
+			cost = 10
 			x = 0
 			y = 1
 			ai_will_do = {	
@@ -305,6 +358,7 @@ focus_tree = {
 			relative_position_id = SSA_bangkok_proposal
 			prerequisite = {	focus = SSA_bangkok_proposal	}
 			completion_reward = {
+				remove_ideas = reduced_fundamentalism
 						}
 				}
 
@@ -329,7 +383,7 @@ focus_tree = {
 focus = {
 	id = SSA_singapore_convention
 	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 5
+	cost = 10
 	x = 0
 	y = 1
 	ai_will_do = {	
@@ -338,6 +392,7 @@ focus = {
 	relative_position_id = SSA_manilia_conference
 	prerequisite = {	focus = SSA_manilia_conference	}
 	completion_reward = {
+		conscription = 0.05
 			}
 	}
 
@@ -345,7 +400,7 @@ focus = {
 	focus = {
 		id = SSA_mission_to_saigon
 		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 5
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = {	
@@ -354,6 +409,7 @@ focus = {
 		relative_position_id = SSA_singapore_convention
 		prerequisite = {	focus = SSA_singapore_convention	}
 		completion_reward = {
+			research_speed_factor = 0.1
 				}
 		}
 
@@ -375,7 +431,7 @@ focus = {
 	focus = {
 			id = SSA_All_terrain_fighting-
 			icon = GFX_goal_efsf_mobile_headquarters
-			cost = 5
+			cost = 10
 			x = 0
 			y = 1
 			ai_will_do = {	
@@ -393,7 +449,7 @@ focus = {
 focus = {
 id = SSA_war_with_zeon
 icon = GFX_goal_efsf_mobile_headquarters
-cost = 1
+cost = 5
 x = -2
 y = 1
 ai_will_do = {	
@@ -412,7 +468,7 @@ completion_reward = {
 focus = {
 	id = SSA_prepare_invasion_craft
 	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 1
+	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {	
@@ -427,7 +483,7 @@ focus = {
 	focus = {
 		id = SSA_bleed_for_every_inch
 		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 1
+		cost = 5
 		x = 0
 		y = 1
 		ai_will_do = {	
@@ -482,6 +538,7 @@ focus = {
 		icon = GFX_goal_efsf_mobile_headquarters
 		x = 2
 		y = 1
+		cost = 10
 		ai_will_do = {	
 			factor = 1
 				}
@@ -495,7 +552,7 @@ focus = {
 focus = {
 	id = SSA_marines
 	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 1
+	cost = 10
 	x = 0
 	y = 1
 	ai_will_do = {	
@@ -510,7 +567,7 @@ focus = {
 	focus = {
 		id = SSA_convoy_protection
 		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 1
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {	

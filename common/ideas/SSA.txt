@@ -1,0 +1,57 @@
+ideas = {
+	country = {
+		religious_tension = {
+			modifier = {
+			}
+			modifier = {
+				political_power_factor = 0.5	}
+		}
+
+		improved_religious_tension = {
+			modifier = {
+				political_power_factor = 0.3
+			}
+		}
+
+		minor_religious_tension = {
+			modifier = {
+				political_power_factor = 0.1
+			}
+		}
+		
+		guerilla_fighting = {
+			modifier = {
+				army_core_defence_factor = 0.3
+			}
+			modifier = {
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		partial_reindustry = {
+			modifier = {
+				local_resources_factor = -0.5
+			}
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = -0.2
+			}
+			modifier = {
+				industrial_capacity_factory = -0.5
+			}
+			modifier = {
+				industrial_capacity_dockyard = -0.3
+		}
+	}
+		fundamentalism = {
+			modifier = {
+				conscription = -0.2
+			}
+		}
+		reduced_fundamentalism = {
+			modifier = {
+				conscription = -0.1
+			}
+		}
+}

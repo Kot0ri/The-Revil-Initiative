@@ -1,0 +1,27 @@
+characters = {
+	#leaders
+	CRI_guldan={
+		name="Guldan"
+		portraits={
+			civilian={
+				large="gfx/leaders/CRI/Guldan.dds"
+			}
+			army = {
+			large="gfx/leaders/ABQ/Guldan.dds"
+			}
+		}
+		country_leader = {
+			ideology= spacenoid_supremacist
+			traits={ sevastapool_commander }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits = { politically_connected defensive_doctrine	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

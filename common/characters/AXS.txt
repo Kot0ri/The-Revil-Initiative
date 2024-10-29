@@ -322,6 +322,23 @@ AXS_mashymre_cello_1={
 	}
 }
 
+AXS_Arnauld_Weissenberger={
+	name="Arnauld Weissenberger"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Arnauld_Weissenberger.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot knight_of_axis}
+		skill=4
+		attack_skill=3
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=2
+	}
+}
+
 AXS_mashymre_cello_2={
 	name="Mashymre Cello"
 	portraits={
@@ -334,7 +351,7 @@ AXS_mashymre_cello_2={
 	}
 	corps_commander={
 		traits={pilot knight_of_axis cyber_newtype}
-		skill=4
+		skill=5
 		attack_skill=3
 		defense_skill=2
 		planning_skill=3

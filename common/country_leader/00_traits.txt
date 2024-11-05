@@ -533,6 +533,15 @@ special_service_trait = {
 		navy_advisor_cost_factor = -0.10
 	}
 
+	Supreme_commander_of_zeon_earth_forces = { 
+		random = no
+		sprite = 13
+		army_org_factor = 0.1
+		army_speed_factor = 0.1
+		political_power_gain = 0.01
+		justify_war_goal_time = -0.5
+	}
+
 	melanie_hue_carbine_trait = {
 		random = no
 		sprite = 10

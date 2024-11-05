@@ -497,6 +497,42 @@ special_service_trait = {
 				naval_speed_factor = 0.85
 				naval_coordination_factor = 0.75
 			}
+
+			hawk = {
+				random = yes
+				sprite = 13
+				war_support_factor = 0.1
+				stability_factor = -0.05
+		
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		
+			cornered_fox = {
+				random = no
+				army_defence_factor = 0.15
+				army_morale_Factor = 0.10
+		
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+	Zabist_militarist = { 
+		random = no
+		sprite = 13
+		war_support_factor = 0.1
+		production_speed_arms_factory_factor = 0.05
+		mobilization_laws_cost_factor = -0.1
+		economy_cost_factor = -0.1
+		trade_laws_cost_factor = 0.15
+		conscription = 0.015
+		air_advisor_cost_factor = -0.10
+		army_advisor_cost_factor = -0.10
+		navy_advisor_cost_factor = -0.10
+	}
+
 	melanie_hue_carbine_trait = {
 		random = no
 		sprite = 10

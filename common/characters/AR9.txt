@@ -1,0 +1,27 @@
+characters={
+	#Leaders
+	AR9_shili_terare={
+	name="Shili Terare"
+	portraits={
+		civilian={
+			large="gfx/leaders/AR9/shili_terare.dds"
+		}
+		army={
+			large="gfx/leaders/AR9/shili_terare.dds"
+		}
+	}
+	country_leader={
+		ideology=military_administration
+		traits={ cornered_fox hawk Zabist_militarist }
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { zabi_party defensive_doctrine }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
+}

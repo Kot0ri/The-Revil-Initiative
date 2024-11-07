@@ -771,6 +771,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		is_puppet = no
+	}
 	completion_reward = {
 
 	}
@@ -1137,6 +1140,70 @@ focus = {
 	}
 	relative_position_id = ABQ_begin_looking_into_newtype_capabilities
 	prerequisite = { focus = ABQ_begin_looking_into_newtype_capabilities }
+}
+
+focus = {
+	id = ABQ_begin_newtype_ms_minaturization
+	icon = GFX_goal_MS_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		is_puppet = no
+	}
+	completion_reward = {
+
+
+	}
+	relative_position_id = ABQ_zeong_project
+	prerequisite = { focus = ABQ_zeong_project }
+}
+
+focus = {
+	id = ABQ_cyber_newtype_program
+	icon = GFX_goal_MS_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		is_puppet = no
+	}
+	completion_reward = {
+
+
+	}
+	relative_position_id = ABQ_newtype_battlefield_deployment
+	prerequisite = { focus = ABQ_newtype_battlefield_deployment }
+}
+
+focus = {
+	id = ABQ_mass_production_newtype_ms
+	icon = GFX_goal_MS_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		is_puppet = no
+	}
+	completion_reward = {
+
+
+	}
+	relative_position_id = ABQ_cyber_newtype_program
+	prerequisite = { focus = ABQ_begin_newtype_ms_minaturization }
+	prerequisite = { focus = ABQ_newtype_battlefield_deployment }
 }
 
 focus = {

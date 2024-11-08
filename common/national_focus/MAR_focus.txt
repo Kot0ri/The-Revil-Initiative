@@ -1,0 +1,140 @@
+focus_tree = {
+	id = MAR
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = MAR
+		}
+	}
+	default = no
+
+	focus = {
+		id = MAR_landing_on_olympus
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 1
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_secure_tharsis
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_landing_on_olympus }
+		relative_position_id = MAR_landing_on_olympus 
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_prepare_infiltration_program
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_secure_tharsis }
+		relative_position_id = MAR_secure_tharsis
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_form_the_independence_army
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_secure_tharsis }
+		relative_position_id = MAR_secure_tharsis
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_prepare_communications_blackout
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_secure_tharsis }
+		relative_position_id = MAR_secure_tharsis
+		completion_reward = {
+	
+		}
+	}
+
+
+	focus = {
+		id = MAR_begin_digging
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 8
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_landing_on_olympus }
+		relative_position_id = MAR_landing_on_olympus 
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_prepare_solomon_fortress
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_begin_digging }
+		relative_position_id = MAR_begin_digging
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_plans_for_olympus_cannon
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_begin_digging }
+		relative_position_id = MAR_begin_digging
+		completion_reward = {
+	
+		}
+	}
+
+}

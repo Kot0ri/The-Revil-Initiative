@@ -301,6 +301,25 @@ focus = {
 }
 
 focus = {
+	id = AR9_legacy_of_the_midnighters
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_begin_preperations_for_the_next_war
+		}
+	
+	relative_position_id = AR9_begin_preperations_for_the_next_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = AR9_work_with_the_restoriation_army
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -318,6 +337,92 @@ focus = {
 	relative_position_id = AR9_begin_preperations_for_the_next_war
 	completion_reward = {
 	
+	}
+}
+
+focus = {
+	id = AR9_contact_remnant_network
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 8
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_begin_preperations_for_the_next_war
+		}
+	available = {
+		
+	}
+	relative_position_id = AR9_begin_preperations_for_the_next_war
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR9_reach_out_to_the_1st
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_contact_remnant_network
+		}
+	available = {
+		country_exists = DI1
+	}
+	relative_position_id = AR9_contact_remnant_network
+	completion_reward = {
+		puppet = DI1
+	}
+}
+
+focus = {
+	id = AR9_pressure_crimea_cooperation
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_contact_remnant_network
+		}
+	available = {
+		country_exists = CRI
+	}
+	relative_position_id = AR9_contact_remnant_network
+	completion_reward = {
+		puppet = CRI
+	}
+}
+
+focus = {
+	id = AR9_supreme_commander_of_earth_forces
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_reach_out_to_the_1st focus = AR9_pressure_crimea_cooperation
+		}
+	available = {
+		
+	}
+	relative_position_id = AR9_contact_remnant_network
+	completion_reward = {
+		add_trait = {
+			trait = Supreme_commander_of_zeon_earth_forces
+		}
 	}
 }
 

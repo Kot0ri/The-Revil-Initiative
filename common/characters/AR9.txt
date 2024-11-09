@@ -1,0 +1,92 @@
+characters={
+	#Leaders
+	AR9_shili_terare={
+	name="Shili Terare"
+	portraits={
+		civilian={
+			large="gfx/leaders/AR9/shili_terare.dds"
+		}
+		army={
+			large="gfx/leaders/AR9/shili_terare.dds"
+		}
+	}
+	country_leader={
+		ideology=military_administration
+		traits={ cornered_fox hawk Zabist_militarist }
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { zabi_party defensive_doctrine }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
+
+	#generals
+	AR9_brett={
+		name="Brett"
+		portraits={
+			civilian={
+				large="gfx/leaders/AR9/brett.dds"
+			}
+			army={
+				large="gfx/leaders/AR9/brett.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { zabi_party }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	AR9_simo={
+		name="Simo"
+		portraits={
+			civilian={
+				large="gfx/leaders/AR9/simo.dds"
+			}
+			army={
+				large="gfx/leaders/AR9/simo.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { winter_expert winter_specialist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	#pilots
+	AR9_don_baker={
+		name="Don Baker"
+		portraits={
+			civilian={
+				large="gfx/leaders/AR9/don_baker.dds"
+			}
+			army={
+				large="gfx/leaders/AR9/don_baker.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { deikun_party pilot }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+}

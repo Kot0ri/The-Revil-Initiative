@@ -623,6 +623,38 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_foreign_legion_recruitment
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = EAF_start_einbindung_program}
+		relative_position_id = EAF_start_einbindung_program
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EAF_special_service_recruitment
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = EAF_foreign_legion_recruitment}
+		relative_position_id = EAF_foreign_legion_recruitment
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_Stage_3_Defense_Operation_Planning
 		icon = GFX_goal_general_meeting
 		cost = 5

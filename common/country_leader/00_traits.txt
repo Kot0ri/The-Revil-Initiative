@@ -125,8 +125,10 @@ Head_of_Federal_Criminal_Police_Organization = {
 		war_support_factor = 0.1
 		max_command_power = 50
 	}
-	no_soldier = {
+	supreme_leader = {
 		random = no
+		political_power_gain = 0.05
+		war_support_factor = 0.15
 		conscription_factor = 0.1
 		army_core_defence_factor = 0.1
 		surrender_limit = 0.1
@@ -288,6 +290,11 @@ special_service_trait = {
 		ai_will_do = {
 			factor = 0.2
 		}
+	}
+	sevastapool_commander = {
+		random = no
+		army_core_defence_factor = 0.1
+		army_core_attack_factor = 0.05
 	}
 	founder_of_manhunters = {
 		random = no
@@ -490,6 +497,51 @@ special_service_trait = {
 				naval_speed_factor = 0.85
 				naval_coordination_factor = 0.75
 			}
+
+			hawk = {
+				random = yes
+				sprite = 13
+				war_support_factor = 0.1
+				stability_factor = -0.05
+		
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		
+			cornered_fox = {
+				random = no
+				army_defence_factor = 0.15
+				army_morale_Factor = 0.10
+		
+				ai_will_do = {
+					factor = 1
+				}
+			}
+
+	Zabist_militarist = { 
+		random = no
+		sprite = 13
+		war_support_factor = 0.1
+		production_speed_arms_factory_factor = 0.05
+		mobilization_laws_cost_factor = -0.1
+		economy_cost_factor = -0.1
+		trade_laws_cost_factor = 0.15
+		conscription = 0.015
+		air_advisor_cost_factor = -0.10
+		army_advisor_cost_factor = -0.10
+		navy_advisor_cost_factor = -0.10
+	}
+
+	Supreme_commander_of_zeon_earth_forces = { 
+		random = no
+		sprite = 13
+		army_org_factor = 0.1
+		army_speed_factor = 0.1
+		political_power_gain = 0.01
+		justify_war_goal_time = -0.5
+	}
+
 	melanie_hue_carbine_trait = {
 		random = no
 		sprite = 10

@@ -1,0 +1,27 @@
+characters = {
+	#leaders
+	DI1_roshu={
+		name="Roshu"
+		portraits={
+			civilian={
+				large="gfx/leaders/DI1/roshu.dds"
+			}
+			army = {
+			large="gfx/leaders/DI1/roshu.dds"
+			}
+		}
+		country_leader = {
+			ideology= military_junta
+			traits={ editor }
+			expire="1000.1.1.1"
+		}
+		corps_commander = {
+			traits = { defensive_doctrine	}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

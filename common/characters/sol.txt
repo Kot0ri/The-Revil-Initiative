@@ -4,10 +4,10 @@ characters={
 	name="Dozle Zabi"
 	portraits={
 		civilian={
-			large="gfx/leaders/SOL/Dozzle.dds"
+			large="gfx/leaders/SOL/Dozle.dds"
 		}
 		army={
-			large="gfx/leaders/SOL/Dozzle.dds"
+			large="gfx/leaders/SOL/Dozle.dds"
 		}
 	}
 	country_leader={
@@ -31,10 +31,10 @@ SOL_Lackoc={
 	name="Lackoc"
 	portraits={
 		army={
-			small="GFX_idea_yuri_kellerne"
+			small="gfx/leaders/SOL/Lakoc.dds"
 		}
 		army={
-			large="gfx/leaders/SOL/Lacook.dds"
+			large="gfx/leaders/SOL/Lakoc.dds"
 		}
 	}
 	field_marshal={
@@ -239,8 +239,8 @@ SOL_meyer={
 		}
 	}
 	corps_commander={
-		traits={ pilot }
-		skill=2
+		traits={ pilot Royalguard}
+		skill=3
 		attack_skill=2
 		defense_skill=2
 		planning_skill=2
@@ -374,43 +374,43 @@ SOL_kelly_layzner={
 	}
 }
 
-SOL_space_rommel={
-	name="Space Rommel"
+SOL_marshy={
+	name="Marshy"
 	portraits={
 		army={
 			small="GFX_idea_kelley_layzner"
 		}
 		army={
-			large="gfx/leaders/SOL/space_rommel.dds"
+			large="gfx/leaders/SOL/Marshy.dds"
 		}
 	}
 	corps_commander={
-		traits={}
+		traits={ pilot }
 		skill=3
-		attack_skill=3
-		defense_skill=3
-		planning_skill=2
-		logistics_skill=3
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
 	}
 }
 
-SOL_milkyway_rommel={
-	name="Milkyway Rommel"
+SOL_koka_lasa={
+	name="Koka Lasa"
 	portraits={
 		army={
 			small="GFX_idea_kelley_layzner"
 		}
 		army={
-			large="gfx/leaders/SOL/milkyway.dds"
+			large="gfx/leaders/SOL/koka.dds"
 		}
 	}
 	corps_commander={
-		traits={}
-		skill=3
-		attack_skill=3
-		defense_skill=3
-		planning_skill=2
-		logistics_skill=3
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
 	}
 }
 
@@ -476,6 +476,26 @@ SOL_ricardo_vega={
 }
 
 #Admirals
+SOL_killing = {
+	name="Killing Sr."
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/SOL/killing.dds"
+		}
+	}
+	navy_leader={
+		traits={ battleship_adherent gunnery_expert gentlemanly fleet_protector superior_tactician }
+		skill=5
+		attack_skill=5
+		defense_skill=2
+		maneuvering_skill=5
+		coordination_skill=4
+	}
+}
+
 SOL_billy_glardle = {
 	name="Billy Glardle"
 	portraits={

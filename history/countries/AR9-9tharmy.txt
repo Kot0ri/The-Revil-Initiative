@@ -86,9 +86,9 @@ if = {
 
 set_popularities = {
 	democratic = 0
-	supremacist = 0
+	supremacist = 20
 	contolism = 0
-	military_government = 100
+	military_government = 80
 	aristocracy = 0
 	corporatism = 0
 	communism = 0
@@ -102,16 +102,17 @@ set_politics = {
 }
 
 #leader
-
+recruit_character = AR9_shili_terare
 
 #field marshal
 
 
 #generals
-
+recruit_character = AR9_brett
+recruit_character = AR9_simo
 
 #ms pilots
-
+recruit_character = AR9_don_baker
 
 #advisor
 

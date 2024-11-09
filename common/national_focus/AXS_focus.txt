@@ -14,7 +14,7 @@ focus = {
 	id = AXS_life_on_Axis
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 20
+	x = 0
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -457,21 +457,28 @@ focus = {
 
 }
 
+
+
 focus = {
 	id = AXS_end_of_the_war
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
-	y = 4
+	x = 20
+	y = 0
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_Götterdämmerung
+	}
+	available = {
+		has_completed_focus = AXS_legacy_of_deikuns_dreams
+		has_completed_focus = AXS_mobile_armor_bay
+		has_war = no
 	}
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_legacy_of_deikuns_dreams
-	prerequisite = {focus = AXS_legacy_of_deikuns_dreams}
-	prerequisite = {focus = AXS_mobile_armor_bay}
 }
 
 focus = {
@@ -1432,4 +1439,49 @@ focus = {
 	relative_position_id = AXS_Mission_to_the_Earthsphere
 	prerequisite = {focus = AXS_Mission_to_the_Earthsphere}
 }
+
+
+focus = {
+	id = AXS_Götterdämmerung
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 40
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_end_of_the_war
+	}
+	available = {
+		has_completed_focus = AXS_legacy_of_deikuns_dreams
+		has_completed_focus = AXS_mobile_armor_bay
+		has_war = no
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_the_burning_flower
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+	}
+	prerequisite = {
+		focus = AXS_Götterdämmerung
+	}
+	relative_position_id = AXS_Götterdämmerung
+	completion_reward = {
+	
+	}
+}
+
 }

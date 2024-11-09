@@ -68,7 +68,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
-	x = 0
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -86,7 +86,7 @@ focus = {
 	icon = GFX_goal_generic_more_territorial_claims
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 10
-	x = -11
+	x = -19
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -131,6 +131,10 @@ focus = {
 		set_politics = {
 			ruling_party = supremacist
 		}
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.05
+		}
 	}
 	relative_position_id = ZEO_sibling_rivalry
 	prerequisite = { focus = ZEO_sibling_rivalry }
@@ -141,7 +145,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 4
-	x = 4
+	x = 8
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -157,10 +161,432 @@ focus = {
 }
 
 focus = {
+	id = ZEO_ghirens_inner_circle
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_political_power = 50
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.10
+		}
+	}
+	relative_position_id = ZEO_gihrens_speeches
+	prerequisite = { focus = ZEO_gihrens_speeches }
+}
+
+focus = {
+	id = ZEO_acension_of_irene
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_supreme_commanders_award_bureau
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_acension_of_irene
+	prerequisite = { focus = ZEO_acension_of_irene }
+}
+
+focus = {
+	id = ZEO_general_secretary_of_zeon
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_supreme_commanders_award_bureau
+	prerequisite = { focus = ZEO_supreme_commanders_award_bureau }
+}
+
+focus = {
+	id = ZEO_acension_of_toto
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_toto_foundation
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_feed_the_Zeonic_corporation
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_acension_of_toto
+	prerequisite = { focus = ZEO_acension_of_toto }
+}
+
+focus = {
+	id = ZEO_plenipotentiary_of_economics
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_toto_foundation
+	prerequisite = { focus = ZEO_toto_foundation }
+}
+
+focus = {
+	id = ZEO_acension_of_delaz
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = -6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_acension_of_takiguchi
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_Uranprojekt
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_acension_of_delaz
+	prerequisite = { focus = ZEO_acension_of_delaz }
+}
+
+focus = {
+	id = ZEO_Artemis-Akkad_development_program
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_AI_research_program
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_Uranprojekt
+	prerequisite = { focus = ZEO_Uranprojekt }
+}
+
+focus = {
+	id = ZEO_Head_of_Zeonic
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_feed_the_Zeonic_corporation
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_toto_foundation
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_Head_of_Zeonic
+	prerequisite = { focus = ZEO_Head_of_Zeonic }
+}
+
+focus = {
+	id = ZEO_AI_research_program
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_Artemis-Akkad_development_program
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_feed_the_Zeonic_corporation
+	prerequisite = { focus = ZEO_feed_the_Zeonic_corporation }
+}
+
+focus = {
+	id = ZEO_acension_of_the_amato_family
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = -10
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_ministry_of_argiculture
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_acension_of_the_amato_family
+	prerequisite = { focus = ZEO_acension_of_the_amato_family }
+}
+
+focus = {
+	id = ZEO_Side_3_colony_fortification
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ministry_of_argiculture
+	prerequisite = { focus = ZEO_ministry_of_argiculture }
+}
+
+focus = {
+	id = ZEO_acension_of_bernini
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = -12
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_ministry_of_public_will
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_acension_of_bernini
+	prerequisite = { focus = ZEO_acension_of_bernini }
+}
+
+focus = {
+	id = ZEO_defence_of_the_homeland
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ministry_of_public_will
+	prerequisite = { focus = ZEO_ministry_of_public_will }
+}
+
+focus = {
+	id = ZEO_acension_of_takiguchi
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = -8
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_acension_of_delaz
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_army_primacy
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_acension_of_takiguchi
+	prerequisite = { focus = ZEO_acension_of_takiguchi }
+}
+
+focus = {
+	id = ZEO_Supersoldat_program
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_army_primacy
+	prerequisite = { focus = ZEO_army_primacy }
+}
+
+focus = {
+	id = ZEO_cult_of_the_supreme_commander
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_acknowledge_glemy
+	}
+	completion_reward = {
+		ZEO_gihren_zabi = {
+			add_trait = {
+				trait = supreme_leader
+			}
+		}
+	}
+	relative_position_id = ZEO_AI_research_program
+	prerequisite = { focus = ZEO_defence_of_the_homeland focus = ZEO_Side_3_colony_fortification }
+	prerequisite = { focus = ZEO_AI_research_program focus = ZEO_Supersoldat_program focus = ZEO_Artemis-Akkad_development_program }
+}
+
+focus = {
+	id = ZEO_acknowledge_glemy
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_cult_of_the_supreme_commander
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_plenipotentiary_of_economics
+	prerequisite = { focus = ZEO_plenipotentiary_of_economics }
+	prerequisite = { focus = ZEO_general_secretary_of_zeon focus = ZEO_Artemis-Akkad_development_program }
+}
+
+focus = {
 	id = ZEO_expand_the_powers_of_the_secret_service
 	icon = GFX_focus_generic_national_security
 	cost = 3
-	x = 0
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -169,6 +595,10 @@ focus = {
 		add_popularity = {
 			ideology = supremacist
 			popularity = 0.15
+		}
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.10
 		}
 	}
 	relative_position_id = ZEO_gihrens_speeches
@@ -206,7 +636,10 @@ focus = {
 			ideology = supremacist
 			popularity = 0.10
 		}
-		
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.5
+		}
 	}
 	relative_position_id = ZEO_expand_the_powers_of_the_secret_service
 	prerequisite = { focus = ZEO_expand_the_powers_of_the_secret_service }
@@ -277,10 +710,45 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.05
+		}
 	}
 	relative_position_id = ZEO_shut_down_political_thought_criminal
 	prerequisite = { focus = ZEO_shut_down_political_thought_criminal }
+}
+
+focus = {
+	id = ZEO_ensure_loyalty_in_officer_corps.
+	icon = GFX_goal_generic_improve_relations
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_sequel_theory_of_spacenoid_supremacy
+	prerequisite = { focus = ZEO_sequel_theory_of_spacenoid_supremacy }
+}
+
+focus = {
+	id = ZEO_private_officers_fund
+	icon = GFX_goal_generic_improve_relations
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ensure_loyalty_in_officer_corps.
+	prerequisite = { focus = ZEO_ensure_loyalty_in_officer_corps. }
 }
 
 focus = {
@@ -585,14 +1053,37 @@ focus = {
 }
 
 focus = {
+	id = ZEO_mass_driver_construction
+	icon = GFX_goal_colony_alliance
+	search_filters = { FOCUS_FILTER_MILITARY }
+	cost = 10
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ZEO_Artemis-Akkad_development_program
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ZEO_use_of_terror_weapons
+	prerequisite = { focus = ZEO_use_of_terror_weapons}
+}
+
+focus = {
 	id = ZEO_operation_british_2
 	icon = GFX_goal_colony_alliance
 	search_filters = { FOCUS_FILTER_MILITARY }
 	cost = 10
-	x = 0
-	y = 3
+	x = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = ZEO_acension_of_delaz
 	}
 	completion_reward = {
 
@@ -606,8 +1097,8 @@ focus = {
 	icon = GFX_goal_colony_alliance
 	search_filters = { FOCUS_FILTER_MILITARY }
 	cost = 10
-	x = -1
-	y = 2
+	x = -2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -623,8 +1114,8 @@ focus = {
 	icon = GFX_goal_colony_alliance
 	search_filters = { FOCUS_FILTER_MILITARY }
 	cost = 10
-	x = 1
-	y = 2
+	x = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -648,6 +1139,10 @@ focus = {
 		has_war = yes
 	}
 	completion_reward = {
+		add_power_balance_value = {
+			id = ZEO_power_balance
+			value = -0.25
+		}
 	}
 	relative_position_id = ZEO_shut_down_political_thought_criminal
 	prerequisite = { focus = ZEO_shut_down_political_thought_criminal }
@@ -691,7 +1186,7 @@ focus = {
 	icon = GFX_focus_generic_court
 	cost = 10
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -699,8 +1194,7 @@ focus = {
 		country_event = { id = ptag_the_meeting }
 	}
 	relative_position_id = ZEO_identify_the_greater_threat
-	prerequisite = { focus = ZEO_identify_the_greater_threat }
-	prerequisite = { focus = ZEO_remove_gihren_from_play }
+	prerequisite = { focus = ZEO_identify_the_greater_threat focus = ZEO_remove_gihren_from_play }
 }
 
 focus = {
@@ -708,7 +1202,7 @@ focus = {
 	icon = GFX_focus_generic_court
 	cost = 10
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -730,7 +1224,7 @@ focus = {
 	icon = GFX_focus_generic_conspiracy
 	cost = 3
 	x = 0
-	y = 3
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -836,7 +1330,7 @@ focus = {
 	icon =GFX_goal_generic_military_deal
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -920,7 +1414,7 @@ focus = {
 
 focus = {
 	id = ZEO_ace_use_MS_focus
-	icon = GFX_focus_eng_global_defense
+	icon = GFX_goal_chimera_corps_1
 	search_filters = { FOCUS_FILTER_ANNEXATION }
 	cost = 2
 	x = -1
@@ -996,7 +1490,7 @@ focus = {
 	icon = GFX_focus_eng_global_defense
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 2
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1013,7 +1507,7 @@ focus = {
 	id = ZEO_support_rebellion_in_side_6
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
-	x = 5
+	x = 4
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1075,7 +1569,7 @@ focus = {
 	icon = GFX_goal_colony_alliance
 	cost = 10
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1090,7 +1584,7 @@ focus = {
 	id = ZEO_reach_out_to_pro_zeon_elements_in_loum
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 8
+	x = 6
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -1135,7 +1629,7 @@ focus = {
 	id = ZEO_foster_a_spirit_of_nobility
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 10
-	x = 3
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1236,8 +1730,8 @@ focus = {
 	id = ZEO_side_3_colony_evaluation
 	icon = GFX_goal_generic_construct_infrastructure
 	cost = 4
-	x = 32
-	y = 1
+	x = 36
+	y = 0
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	ai_will_do = {
 		factor = 1
@@ -1358,7 +1852,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 10
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1427,7 +1921,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2057,8 +2551,8 @@ focus = {
 	id = ZEO_war_preperations
 	icon = GFX_goal_generic_army_doctrines
 	cost = 5
-	x = 45
-	y = 1
+	x = 50
+	y = 0
 	ai_will_do = {
 		factor = 1
 	}
@@ -2108,7 +2602,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2124,7 +2618,7 @@ focus = {
 	icon = GFX_goal_medal_of_cross
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2194,7 +2688,7 @@ focus = {
 	icon = GFX_goal_generic_special_forces
 	cost = 4
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2209,7 +2703,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 4
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2240,7 +2734,7 @@ focus = {
 	icon = GFX_goal_capitalizing_on_the_fame_of_parent
 	cost = 5
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2255,7 +2749,7 @@ focus = {
 	icon = GFX_goal_influential_people_of_earth
 	cost = 4
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2266,14 +2760,154 @@ focus = {
 }
 
 focus = {
-	id = ZEO_ms_project
+	id = ZEO_focus_on_conventional_warfare
 	icon = GFX_goal_enhancement_of_general_purpose_MS
 	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_war_preperations
+	prerequisite = { focus = ZEO_war_preperations }
+}
+
+focus = {
+	id = ZEO_mobile_tank_programm
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 4
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_focus_on_conventional_warfare
+	prerequisite = { focus = ZEO_focus_on_conventional_warfare }
+}
+
+focus = {
+	id = ZEO_artillery_project
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 4
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_focus_on_conventional_warfare
+	prerequisite = { focus = ZEO_focus_on_conventional_warfare }
+}
+
+focus = {
+	id = ZEO_stormtrooper_corps.
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_MILITARY } 
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_artillery_project
+	prerequisite = { focus = ZEO_artillery_project }
+}
+
+focus = {
+	id = ZEO_panzergrenadiers
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_MILITARY } 
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_stormtrooper_corps.
+	prerequisite = { focus = ZEO_stormtrooper_corps. }
+}
+
+focus = {
+	id = ZEO_expand_high_command
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_MILITARY } 
 	cost = 4
 	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_focus_on_conventional_warfare
+	prerequisite = { focus = ZEO_focus_on_conventional_warfare }
+}
+
+focus = {
+	id = ZEO_noble_officer_corps.
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_MILITARY } 
+	cost = 4
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_expand_high_command
+	prerequisite = { focus = ZEO_expand_high_command }
+}
+
+focus = {
+	id = ZEO_modern_maneuver_warfare
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_MILITARY } 
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_noble_officer_corps.
+	prerequisite = { focus = ZEO_noble_officer_corps. }
+	prerequisite = { focus = ZEO_stormtrooper_corps. }
+}
+
+focus = {
+	id = ZEO_ms_project
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_RESEARCH } 
+	cost = 4
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_focus_on_conventional_warfare
 	}
 	completion_reward = {
 		add_tech_bonus = {
@@ -2719,7 +3353,7 @@ focus = {
 	icon = GFX_goal_generic_allies_build_infantry
 	cost = 5
 	x = 16
-	y = 3
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -2976,7 +3610,7 @@ focus = {
 	icon = GFX_focus_ger_reichskommisariats
 	cost = 2
 	x = 10
-	y = 4
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -3509,10 +4143,10 @@ focus = {
 
 focus = {
 	id = ZEO_opposition_to_the_zabi_family
-	icon = GFX_goal_repression_of_deikun
+	icon = GFX_goal_harmony_with_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
-	x = -10
+	x = -14
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -3521,6 +4155,77 @@ focus = {
 	completion_reward = {
 		add_political_power = 150
 		add_stability = -0.05
+	}
+}
+
+focus = {
+	id = ZEO_honor_the_ideals_of_zeon
+	icon = GFX_goal_phantom_speech
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_opposition_to_the_zabi_family
+	prerequisite = {	focus = ZEO_opposition_to_the_zabi_family	}
+	completion_reward = {
+		add_popularity = {
+			ideology = contolism
+			popularity = 5
+		}
+	}
+}
+
+focus = {
+	id = ZEO_valkyrie_soceity
+	icon = GFX_goal_valkryie
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_opposition_to_the_zabi_family
+	prerequisite = {	focus = ZEO_opposition_to_the_zabi_family	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_ready_the_shield
+	icon = GFX_goal_shield_of_zeon_1
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_valkyrie_soceity
+	prerequisite = {	focus = ZEO_valkyrie_soceity	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_revolution_in_side_3
+	icon = GFX_goal_shield_of_zeon_2
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_ready_the_shield
+	prerequisite = {	focus = ZEO_ready_the_shield	}
+	completion_reward = {
+		
 	}
 }
 

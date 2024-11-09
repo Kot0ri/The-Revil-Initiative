@@ -365,6 +365,27 @@ EAF_ginias_sahalin ={
 
 	#ms pilots
 
+	EAF_loft={
+		name="Loft"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/loft.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/loft.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = {  pilot }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
 	EAF_crucuruz_doan ={
 		name="Cucuruz Doan"
 		portraits={

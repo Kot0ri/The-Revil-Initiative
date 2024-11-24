@@ -89,4 +89,25 @@ characters={
 			logistics_skill = 2
 		}
 	}
+
+	AR9_loft={
+		name="Loft"
+		portraits={
+			civilian={
+				large="gfx/leaders/AR9/loft.dds"
+			}
+			army={
+				large="gfx/leaders/AR9/loft.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = {  pilot }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 }

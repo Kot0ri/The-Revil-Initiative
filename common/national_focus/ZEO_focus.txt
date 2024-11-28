@@ -399,7 +399,7 @@ focus = {
 
 focus = {
 	id = ZEO_acension_of_the_amato_family
-	icon = GFX_goal_dominance_of_human_survival_theory
+	icon = GFX_focus_jap_spiritual_mobilization
 	cost = 3
 	x = -10
 	y = 1
@@ -3229,6 +3229,28 @@ focus = {
 	}
 	relative_position_id = ZEO_war_preperations
 	prerequisite = { focus = ZEO_war_preperations }
+}
+
+focus = {
+	id = ZEO_zeon_naval_academy
+	icon = GFX_focus_ger_japanese_naval_cooperation
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+		
+}
+completion_reward = {
+	
+
+}
+	relative_position_id = ZEO_develop_the_musai
+	prerequisite = { focus = ZEO_develop_the_musai }
 }
 
 focus = {

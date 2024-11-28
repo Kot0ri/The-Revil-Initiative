@@ -924,7 +924,7 @@ focus = {
 
 focus = {
 	id = ZEO_ensure_the_militaries_loyalty
-	icon = GFX_goal_generic_axis_build_infantry
+	icon = GFX_focus_GER_hegemony_of_the_ss
 	search_filters = { FOCUS_FILTER_MILITARY_CHARACTER }
 	cost = 2
 	x = 0
@@ -3235,7 +3235,7 @@ focus = {
 	id = ZEO_zeon_naval_academy
 	icon = GFX_focus_ger_japanese_naval_cooperation
 	search_filters = { FOCUS_FILTER_INDUSTRY }
-	cost = 5
+	cost = 2
 	x = 2
 	y = 1
 	ai_will_do = {
@@ -3246,7 +3246,7 @@ focus = {
 		
 }
 completion_reward = {
-	
+	navy_experience = 20
 
 }
 	relative_position_id = ZEO_develop_the_musai

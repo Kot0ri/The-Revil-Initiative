@@ -214,7 +214,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		add_ideas = supreme_commanders_award_bureau
 	}
 	relative_position_id = ZEO_acension_of_irene
 	prerequisite = { focus = ZEO_acension_of_irene }
@@ -361,7 +361,7 @@ focus = {
 
 focus = {
 	id = ZEO_feed_the_Zeonic_corporation
-	icon = GFX_goal_dominance_of_human_survival_theory
+	icon = GFX_focus_jap_zaibatsu
 	cost = 3
 	x = 0
 	y = 1
@@ -523,7 +523,7 @@ focus = {
 	}
 	
 	completion_reward = {
-		
+		army_experience = 50
 	}
 	relative_position_id = ZEO_acension_of_takiguchi
 	prerequisite = { focus = ZEO_acension_of_takiguchi }
@@ -540,7 +540,7 @@ focus = {
 	}
 	
 	completion_reward = {
-		
+		add_ideas = performance_enahncers
 	}
 	relative_position_id = ZEO_army_primacy
 	prerequisite = { focus = ZEO_army_primacy }
@@ -2871,7 +2871,7 @@ focus = {
 
 focus = {
 	id = ZEO_noble_officer_corps.
-	icon = GFX_goal_enhancement_of_general_purpose_MS
+	icon = GFX_focus_GER_japan_freind
 	search_filters = { FOCUS_FILTER_MILITARY } 
 	cost = 4
 	x = 0
@@ -4242,7 +4242,7 @@ focus = {
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
-	x = 16
+	x = 20
 	y = 20
 	ai_will_do = {
 		factor = 1

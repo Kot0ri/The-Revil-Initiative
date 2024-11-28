@@ -85,6 +85,30 @@ ideas = {
 		removal_cost = -1
 	}
 
+	supreme_commanders_award_bureau = {
+		modifier = {
+			grant_medal_cost_factor = -0.5
+			air_ace_generation_chance_factor = 0.15
+		}
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+	}
+
+	performance_enahncers = {
+		modifier = {
+			army_speed_factor = 0.05
+			attrition = 0.05
+		}
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+	}
+
 	zeon_medal_of_cross = {
 		allowed = {
 			original_tag = ZEO

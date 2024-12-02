@@ -81,6 +81,9 @@ RUS_nikolai_alexander_leader ={
 				civilian={
 					large= "gfx/leaders/RUS/Alexi Kornilov.dds"
 				}
+				military={
+					large= "gfx/leaders/RUS/Alexi Kornilov.dds"
+				}
 			}
 		
 			field_marshal = {
@@ -98,6 +101,9 @@ RUS_nikolai_alexander_leader ={
 			civilian={
 				large= "gfx/leaders/RUS/Nickolai Krasnov.dds"
 			}
+			military={
+				large= "gfx/leaders/RUS/Nickolai Krasnov.dds"
+			}
 		}
 		
 		field_marshal = {
@@ -106,6 +112,51 @@ RUS_nikolai_alexander_leader ={
 			defense_skill = 3
 			planning_skill = 3
 			logistics_skill = 3
+		}
+}
+
+	#general
+	RUS_michael_alexanderovich ={
+		name="Michael Alexanderovich"
+		portraits={
+			civilian={
+				large= "gfx/leaders/RUS/michael_alexanderovich.dds"
+			}
+			military={
+				large= "gfx/leaders/RUS/michael_alexanderovich.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = {	politically_connected infantry_leader cavalry_leader}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+}
+
+	#ms pilots
+
+	RUS_alexi ={
+		name="Alexi"
+		portraits={
+			civilian={
+				large= "gfx/leaders/RUS/alexi.dds"
+			}
+			military={
+				large= "gfx/leaders/RUS/alexi.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = {	pilot naval_invader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
 		}
 }
 
@@ -154,4 +205,19 @@ RUS_nikolai_alexander_leader ={
 			coordination_skill = 2
 		}
 	}
+
+	#advisors
+	RUS_pavlov_taboritsky ={
+		name="Pavlov Taboritsky"
+		portraits={
+			civilian={
+				small= "gfx/leaders/RUS/pavlov_taboritsky.dds"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = pavlov_taboritsky
+			traits = { esoteric_monarchist }
+		}
+}
 }

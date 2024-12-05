@@ -294,6 +294,72 @@ focus = {
 }
 
 focus = {
+	id = BEN_burgundy_reborn
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_government = supremacist
+	}
+	prerequisite = {
+	focus = BEN_the_golden_duke
+		}
+		
+	relative_position_id = BEN_the_golden_duke
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = BEN_a_familiar_face
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_government = supremacist
+	}
+	prerequisite = {
+	focus = BEN_burgundy_reborn
+		}
+		
+	relative_position_id = BEN_burgundy_reborn
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = BEN_new_zeon_order
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_government = supremacist
+	}
+	prerequisite = {
+	focus = BEN_a_familiar_face
+		}
+		
+	relative_position_id = BEN_a_familiar_face
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = BEN_continue_fortification
 	icon = GFX_goal_general_meeting
 	cost = 5

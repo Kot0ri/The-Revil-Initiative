@@ -3,4 +3,4 @@ tags={
 	"Alternative History"
 }
 name="Revil Initiative"
-supported_version="1.15.2"
+supported_version="1.15*"

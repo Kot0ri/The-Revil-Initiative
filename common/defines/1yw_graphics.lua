@@ -1,2 +1,0 @@
-NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {1000, 1000, 1000}
-NDefines_Graphics.NFrontend.CAMERA_MIN_HEIGHT = 40.0

@@ -1,0 +1,32 @@
+
+is_enemy_ideology = {
+	OR = {
+		AND = {
+			has_government = earthsupremacy
+			ROOT = {
+				OR = {
+					has_government = spacesupremacy
+					has_government = democratic
+				}
+			}
+		}
+		AND = {
+			has_government = democratic
+			ROOT = {
+				OR = {
+					has_government = spacesupremacy
+					has_government = earthsupremacy
+				}
+			}
+		}
+		AND = {
+			has_government = spacesupremacy
+			ROOT = {
+				OR = {
+					has_government = democratic
+					has_government = earthsupremacy
+				}
+			}
+		}
+	}
+}

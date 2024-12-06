@@ -1,0 +1,190 @@
+# ガンダム 最終試験
+oyw_storymission_mission_gundam_1_trigger = {
+  has_tech = rx75_tech
+  has_tech = rx77_tech
+  has_tech = rx78_tech
+  has_tech = EFS_assault_ship1_tech
+  NOT = {
+    has_country_flag = oyw_storymission_mission_gundam_1_done
+  }
+}
+
+
+####################
+# ポケットの中の戦争 #
+####################
+# 01A サイクロプス隊
+oyw_storymission_mission_warinthepocket_01a_trigger = {
+  has_unit_leader = 24 # ハーディ
+  ZEO = {
+    has_war_with = EFS
+  }
+  original_tag = ZEO
+}
+# 01B アレックス
+oyw_storymission_mission_warinthepocket_01b_trigger = {
+  has_tech = rx78_tech
+  OR = {
+    has_completed_focus = efsf_focus_on_gundam
+    has_completed_focus = efsf_augusta_lab
+  }
+  ZEO = {
+    has_war_with = EFS
+  }
+  original_tag = EFS
+}
+# 02 戦場まで何マイル
+oyw_storymission_mission_warinthepocket_02_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_01a_done
+  has_global_flag = oyw_storymission_mission_warinthepocket_01b_done
+  has_country_flag = north_pole_is_yes
+  OR = {
+    has_tech = msm03_c_tech
+    has_tech = msm07_e_tech
+  }
+  ZEO = {
+    has_war_with = EFS
+  }
+  original_tag = ZEO
+}
+# 03A アレックスの秘密
+oyw_storymission_mission_warinthepocket_03a_trigger = {
+  OR = {
+    has_global_flag = oyw_storymission_mission_warinthepocket_02_done
+    has_global_flag = oyw_storymission_mission_warinthepocket_05_done
+    has_global_flag = oyw_storymission_mission_warinthepocket_09a_done
+  }
+  ZEO = {
+    has_country_flag = rx78_nt_destroyed
+  }
+  original_tag = ZEO
+}
+# 03B 茶色の瞳に映るもの
+oyw_storymission_mission_warinthepocket_03b_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_02_done
+  ZEO = {
+    has_war_with = EFS
+    has_country_flag = assault_side6_is_yes
+  }
+  EFS = {
+    has_tech = ambac4
+  }
+  original_tag = EFS
+}
+# 04A バーニィ
+oyw_storymission_mission_warinthepocket_04a_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_03b_done
+  ZEO = {
+    has_war_with = EFS
+    has_country_flag = lubicon_is_yes
+  }
+  original_tag = ZEO
+}
+# 04B クリス
+oyw_storymission_mission_warinthepocket_04b_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_03b_done
+  ZEO = {
+    has_war_with = EFS
+    has_country_flag = lubicon_is_yes
+  }
+  original_tag = EFS
+}
+# 05 河を渡って木立を抜けて
+oyw_storymission_mission_warinthepocket_05_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_04a_done
+  has_global_flag = oyw_storymission_mission_warinthepocket_04b_done
+  ZEO = {
+    has_war_with = EFS
+    has_country_flag = lubicon_is_yes
+  }
+  original_tag = ZEO
+}
+# 06 嘘だと言ってよ、バーニィ
+oyw_storymission_mission_warinthepocket_06_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_05_done
+  ZEO = {
+    has_war_with = EFS
+    has_country_flag = lubicon_is_failed
+  }
+  original_tag = ZEO
+}
+# 07 フランチェスカ
+oyw_storymission_mission_warinthepocket_07_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_06_done
+  ZEO = {
+    has_war_with = EFS
+  }
+  original_tag = ZEO
+}
+# 08A キリングの暴走を阻止
+oyw_storymission_mission_warinthepocket_08a_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_06_done
+  ZEO = {
+    has_war_with = EFS
+  }
+  original_tag = ZEO
+}
+# 08b 核攻撃を阻止
+oyw_storymission_mission_warinthepocket_08b_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_08a_done
+  ZEO = {
+    has_war_with = EFS
+    has_country_flag = christmas_nuclear_is_yes
+  }
+  original_tag = EFS
+}
+# 09A クリスマス作戦
+oyw_storymission_mission_warinthepocket_09a_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_07_done
+  OR = {
+    has_global_flag = oyw_storymission_mission_warinthepocket_08a_done
+    has_global_flag = oyw_storymission_mission_warinthepocket_08b_done
+  }
+  NOT = {
+    has_global_flag = side6_is_destroy
+    has_global_flag = oyw_storymission_mission_warinthepocket_09b_done
+  }
+  ZEO = {
+    has_war_with = EFS
+    has_country_flag = christmas_wiseman_is_yes
+    has_country_flag = christmas_nuclear_is_no
+  }
+  original_tag = ZEO
+}
+# 09B クリスマス作戦中止
+oyw_storymission_mission_warinthepocket_09b_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_07_done
+  OR = {
+    has_global_flag = oyw_storymission_mission_warinthepocket_08a_done
+    has_global_flag = oyw_storymission_mission_warinthepocket_08b_done
+  }
+  NOT = {
+    has_global_flag = side6_is_destroy
+    has_global_flag = oyw_storymission_mission_warinthepocket_09a_done
+  }
+  ZEO = {
+    has_war_with = EFS
+    has_country_flag = christmas_wiseman_is_yes
+    has_country_flag = christmas_nuclear_is_no
+  }
+  original_tag = ZEO
+}
+# 10A ポケットの中の戦争
+oyw_storymission_mission_warinthepocket_10a_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_09a_done
+  ZEO = {
+    has_war_with = EFS
+    NOT = {
+      has_country_flag = rx78_nt_destroyed
+    }
+  }
+  original_tag = ZEO
+}
+# 10B もう一つの結末
+oyw_storymission_mission_warinthepocket_10b_trigger = {
+  has_global_flag = oyw_storymission_mission_warinthepocket_09b_done
+  ZEO = {
+    has_war_with = EFS
+  }
+  original_tag = ZEO
+}

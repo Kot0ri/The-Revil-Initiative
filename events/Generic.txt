@@ -1,0 +1,408 @@
+﻿add_namespace = oyw
+
+#1 0! フォン・ブラウンに投資
+country_event = {
+  id = oyw.1
+  title = oyw.1.t
+  desc = oyw.1.d
+  picture = GFX_oyw001
+
+  is_triggered_only = yes
+
+  option = {
+    name = oyw.1.a
+  }
+}
+#2 0! 軍産複合体
+country_event = {
+  id = oyw.2
+  title = oyw.2.t
+  desc = oyw.2.d
+  picture = GFX_oyw002
+
+  is_triggered_only = yes
+  immediate = {
+    add_tech_bonus = {
+      category = minovsky
+      category = mobilesuit_electronics
+      category = ambac
+      uses = 3
+      bonus = 0.3
+    }
+  }
+
+  option = {
+    name = oyw.2.a
+  }
+}
+#3 0! スプーンから宇宙戦艦まで
+country_event = {
+  id = oyw.3
+  title = oyw.3.t
+  desc = oyw.3.d
+  picture = GFX_oyw003
+
+  is_triggered_only = yes
+
+  option = {
+    name = oyw.3.a
+  }
+}
+#4 !! 木星船団出発
+country_event = {
+  id = oyw.4
+  title = oyw.4.t
+  desc = oyw.4.d
+  picture = GFX_oyw004
+  is_triggered_only = yes
+
+  option = {
+    name = oyw.4.a
+  }
+}
+#5 !! 木星船団帰国
+country_event = {
+  id = oyw.5
+  title = oyw.5.t
+  desc = oyw.5.d
+  picture = GFX_oyw005
+
+  is_triggered_only = yes
+
+  option = {
+    name = oyw.5.a
+  }
+}
+#6 0! 反地球連邦の弾圧
+country_event = {
+  id = oyw.6
+  title = oyw.6.t
+  desc = oyw.6.d
+  picture = GFX_oyw006
+  is_triggered_only = yes
+
+  option = {
+    name = oyw.6.a
+    ai_chance = {
+      factor = 90
+      modifier = {
+        factor = 0.2
+        tag = ZEO
+      }
+    }
+    add_popularity = {
+      ideology = spacesupremacy
+      popularity = -0.1
+    }
+    add_popularity = {
+      ideology = zeonism
+      popularity = -0.05
+    }
+    add_stability = -0.03
+    add_autonomy_ratio = {
+      value = -0.1
+      localization = efsf_oppression_of_anti-earth_federation
+    }
+  }
+  option = {
+    name = oyw.6.b
+    ai_chance = {
+      factor = 10
+      modifier = {
+        factor = 8
+        tag = ZEO
+      }
+    }
+    add_autonomy_ratio = {
+      value = 0.2
+      localization = efsf_oppression_of_anti-earth_federation
+    }
+    add_war_support = 0.05
+  }
+}
+#7 0! パイロットの異常反応報告
+country_event = {
+  id = oyw.7
+  title = oyw.7.t
+  desc = oyw.7.d
+  picture = GFX_oyw007
+
+  trigger = {
+    has_war = yes
+    NOT = {
+      has_country_flag = newtype_report
+      has_global_flag = start_is_uc0079
+    }
+  }
+  mean_time_to_happen = {
+    days = 180
+    modifier = {
+      factor = 0.3
+      tag = ZEO
+    }
+  }
+  immediate = {
+    ROOT = {
+      set_country_flag = newtype_report
+    }
+  }
+  option = {
+    name = oyw.7.a
+    add_to_variable = { newtype_accepted_status = 1 }
+    custom_effect_tooltip = newtype_accepted_status_add
+  }
+}
+#8 00 ランク政権の影響（未実装）
+country_event = {
+  id = oyw.8
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+  }
+  option = {
+    name = oyw.8.a
+  }
+}
+#9 00 新首都に宇宙のリソースを追加（未実装）
+country_event = {
+  id = oyw.9
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    set_variable = { next_cap = 358 }
+    var:next_cap = {
+      set_state_flag = space_depo
+    }
+  }
+  option = {
+    name = oyw.9.a
+  }
+}
+#10 Notification event that leader has gotten sick
+unit_leader_event = {
+	id = oyw.10
+	title = generic.17.t
+	desc = generic.17.d
+
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_unit_leader_flag = {
+					flag = recently_sick
+					value = 1
+					days = 180
+				}
+			}
+		}
+	}
+
+	option = {
+		name = unfortunate
+		effect_tooltip = {
+			FROM = {
+				add_timed_unit_leader_trait = {
+					trait = sick
+					days = 30
+				}
+			}
+		}
+	}
+}
+#11 Notification event that leader has been wounded
+unit_leader_event = {
+	id = oyw.11
+	title = generic.18.t
+	desc = generic.18.d
+
+	picture = GFX_report_event_military_planning
+
+	is_triggered_only = yes
+
+	option = {
+		name = unfortunate
+		effect_tooltip = {
+			FROM = {
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 90
+				}
+			}
+		}
+	}
+}
+#12 月の代理戦争（サポートを受けるかどうか）
+country_event = {
+  id = oyw.12
+  title = oyw.12.t
+  desc = {
+    text = oyw.12.d_1
+    trigger = {
+      original_tag = GRA
+    }
+  }
+  desc = {
+    text = oyw.12.d_2
+    trigger = {
+      original_tag = VBC
+    }
+  }
+  picture = GFX_oyw012
+  is_triggered_only = yes
+
+  option = {
+    name = oyw.12.a
+    trigger = {
+      original_tag = GRA
+    }
+    set_politics = {
+      ruling_party = spacesupremacy
+      elections_allowed = no
+    }
+    ai_chance = {
+      base = 90
+    }
+  }
+  option = {
+    name = oyw.12.b
+    trigger = {
+      original_tag = GRA
+    }
+    ai_chance = {
+      base = 10
+    }
+  }
+  option = {
+    name = oyw.12.c
+    trigger = {
+      original_tag = VBC
+    }
+    set_politics = {
+      ruling_party = democratic
+      elections_allowed = no
+    }
+    ai_chance = {
+      base = 90
+    }
+  }
+  option = {
+    name = oyw.12.d
+    trigger = {
+      original_tag = VBC
+    }
+    ai_chance = {
+      base = 10
+    }
+  }
+}
+#13 ニュータイプ許容値とニュータイプ政策を比較
+country_event = {
+  id = oyw.13
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+    ROOT = {
+      country_event = { id = oyw.13 days = 180 }
+      if = {
+        limit = {
+          check_variable = { newtype_accepted_status > 3 }
+          has_idea = newtype_division_1
+        }
+        country_event = { id = oyw.14 }
+      }
+      if = {
+        limit = {
+          check_variable = { newtype_accepted_status > 6 }
+          OR = {
+            has_idea = newtype_division_2
+          }
+        }
+        country_event = { id = oyw.14 }
+      }
+      if = {
+        limit = {
+          check_variable = { newtype_accepted_status > 9 }
+          OR = {
+            has_idea = newtype_division_3
+          }
+        }
+        country_event = { id = oyw.14 }
+      }
+    }
+  }
+  option = {
+    name = oyw.13.a
+  }
+}
+#14 ニュータイプ政策への不満
+country_event = {
+  id = oyw.14
+  title = oyw.14.t
+  desc = oyw.14.d
+  picture = GFX_oyw014
+  is_triggered_only = yes
+
+  immediate = {
+    add_stability = -0.03
+    add_war_support = -0.03
+    add_political_power = -30
+  }
+  option = {
+    name = oyw.14.a
+  }
+}
+
+
+#1000 !! スタートアップ
+country_event = {
+  id = oyw.1000
+  title = oyw.1000.t
+  desc = oyw.1000.d
+  picture = GFX_oyw1000
+
+  is_triggered_only = yes
+
+  option = {
+    name = oyw.1000.a
+  }
+  option = {
+    name = oyw.1000.b
+    country_event = { id = oyw.1001 }
+  }
+}
+#1001 更新履歴
+country_event = {
+  id = oyw.1001
+  title = oyw.1001.t
+  desc = oyw.1001.d
+  picture = GFX_oyw1000
+
+  is_triggered_only = yes
+
+  option = {
+    name = oyw.1001.a
+  }
+}
+
+#1002 テスト
+country_event = {
+  id = oyw.test
+  title = oyw.test.t
+  desc = oyw.test.d
+  picture = GFX_oyw1000
+
+  is_triggered_only = yes
+
+  option = {
+    name = oyw.test.a
+    ZEO = {
+      country_event = { id = zeon.9999 }
+    }
+    EFS = {
+      country_event = { id = efsf.9999 }
+    }
+  }
+}

@@ -1,0 +1,778 @@
+﻿add_namespace = warinthepocket
+
+#################################################
+# 0080 ポケットの中の戦争
+#################################################
+#0001 !! U.C.0079 8 サイクロプス隊 結成
+country_event = {
+  id = warinthepocket.0001
+  title = warinthepocket.0001.t
+  desc = warinthepocket.0001.d
+  picture = GFX_country_zeon031
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    set_country_flag = establishment_cyclops
+  }
+
+  option = {
+    name = warinthepocket.0001.a
+    add_command_power = 25
+    country_event = { id = achievement.7 }
+  }
+}
+#0002 !! U.C.0079 11 サイクロプス隊 月面で活動
+country_event = {
+  id = warinthepocket.0002
+  title = warinthepocket.0002.t
+  desc = warinthepocket.0002.d
+  picture = GFX_country_zeon032
+
+  is_triggered_only = yes
+  immediate = {
+  }
+
+  option = {
+    name = warinthepocket.0002.a
+    every_unit_leader = {
+      limit = {
+        OR = {
+          has_id = 24 # ハーディ
+          has_id = 1534 # アンディ
+          has_id = 158 # ガルシア
+          has_id = 184 # ミハイル
+        }
+      }
+      add_skill_level = 1
+    }
+    940 = {
+      damage_building = {
+        type = arms_factory
+        damage = 5
+      }
+    }
+  }
+}
+#0003 !! U.C.0079 12.6 サイクロプス隊 アレックス探知
+country_event = {
+  id = warinthepocket.0003
+  title = warinthepocket.0003.t
+  desc = warinthepocket.0003.d
+  picture = GFX_country_zeon033
+
+  trigger = {
+    has_global_flag = oyw_storymission_mission_warinthepocket_01a_done
+    has_global_flag = oyw_storymission_mission_warinthepocket_01b_done
+    original_tag = ZEO
+  }
+  mean_time_to_happen = { days = 5 }
+  fire_only_once = yes
+  immediate = {
+    set_country_flag = north_pole_is_yes
+  }
+
+  option = {
+    name = warinthepocket.0003.a
+  }
+}
+#0010 !! サイクロプス隊 アレックス サイド6へ搬入
+country_event = {
+  id = warinthepocket.0010
+  title = warinthepocket.0010.t
+  desc = warinthepocket.0010.d
+  picture = GFX_country_efsf020
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    ZEO = {
+      set_country_flag = assault_side6_is_yes
+    }
+  }
+
+  option = {
+    name = warinthepocket.0010.a
+  }
+}
+#0012 !! U.C.0079 12.14 サイクロプス隊 ルビコン作戦 判定
+country_event = {
+  id = warinthepocket.0012
+  title = warinthepocket.0012.t
+  hidden = yes
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    random_list = {
+      global.storymission_mission_warinthepocket_05_result_01_per_value = {
+        random_list = {
+          30 = { # 強奪
+            every_country = {
+              set_country_flag = story_event_warinthepocket_03a_window_visible
+            }
+            ZEO = {
+              set_country_flag = rx78_nt_destroyed
+              every_unit_leader = {
+                limit = {
+                  OR = {
+                    has_id = 24 # ハーディ
+                    has_id = 44 # バーニィ
+                    has_id = 158 # ガルシア
+                    has_id = 184 # ミハイル
+                  }
+                }
+                add_skill_level = 2
+                add_unit_leader_trait = urban_assault_specialist
+              }
+              country_event = { id = achievement.9 }
+              country_event = { id = achievement.12 }
+            }
+          }
+          70 = { # 破壊
+            every_country = {
+              set_country_flag = story_event_warinthepocket_03b_window_visible
+            }
+            ZEO = {
+              set_country_flag = rx78_nt_destroyed
+              every_unit_leader = {
+                limit = {
+                  OR = {
+                    has_id = 44 # バーニィ
+                    has_id = 184 # ミハイル
+                  }
+                }
+                add_skill_level = 1
+                add_unit_leader_trait = urban_assault_specialist
+                add_timed_unit_leader_trait = {
+                  trait = wounded
+                  days = 30
+                }
+              }
+              if = {
+                limit = {
+                  has_unit_leader = 24 #ハーディ
+                }
+                remove_unit_leader = 24
+              }
+              if = {
+                limit = {
+                  has_unit_leader = 158 #ガルシア
+                }
+                remove_unit_leader = 158
+              }
+              country_event = { id = achievement.9 }
+            }
+            EFS = {
+              if = {
+                limit = {
+                  has_unit_leader = 114 #クリス
+                }
+                remove_unit_leader = 114
+              }
+            }
+          }
+        }
+      }
+      global.storymission_mission_warinthepocket_05_result_02_per_value = {
+        # 失敗
+        every_country = {
+          set_country_flag = story_event_warinthepocket_03c_window_visible
+        }
+        ZEO = {
+          set_country_flag = steiner_is_dead
+          clr_country_flag = ap_hardie_steiner_enable
+          set_country_flag = lubicon_is_failed
+          if = {
+            limit = {
+              has_unit_leader = 24 #シュタイナー
+            }
+            remove_unit_leader = 24
+          }
+          if = {
+            limit = {
+              has_unit_leader = 184 #ミハイル
+            }
+            remove_unit_leader = 184
+          }
+          if = {
+            limit = {
+              has_unit_leader = 158 #ガルシア
+            }
+            remove_unit_leader = 158
+          }
+          every_unit_leader = {
+            limit = {
+              has_id = 44 # バーニィ
+            }
+            add_skill_level = 1
+          }
+        }
+        EFS = {
+          set_technology = {
+            rx78_nt_2_tech = 1
+          }
+          every_unit_leader = {
+            limit = {
+              has_id = 114 #クリス
+            }
+            add_skill_level = 1
+            add_timed_unit_leader_trait = {
+              trait = wounded
+              days = 30
+            }
+          }
+        }
+      }
+    }
+  }
+
+  option = {
+    name = warinthepocket.0012.a
+  }
+}
+#0022 !! U.C.0079 12.20 サイクロプス隊 核攻撃
+country_event = {
+  id = warinthepocket.0022
+  title = warinthepocket.0022.t
+  desc = warinthepocket.0022.d
+  picture = GFX_country_zeon039
+
+  is_triggered_only = yes
+
+  option = {
+    name = warinthepocket.0022.a
+    ai_chance = {
+      base = 60
+      modifier = {
+        add = 40
+        is_historical_focus_on = yes
+      }
+    }
+    ZEO = {
+      if = {
+        limit = {
+          has_unit_leader = 31 # ルーゲンス
+        }
+        remove_unit_leader = 31
+      }
+      set_country_flag = lugenth_is_dead
+      set_country_flag = christmas_nuclear_is_yes
+    }
+  }
+  option = {
+    name = warinthepocket.0022.b
+    ai_chance = {
+      base = 40
+      modifier = {
+        add = -40
+        is_historical_focus_on = yes
+      }
+    }
+    random_list = {
+      70 = {
+        ZEO = {
+          country_event = { id = warinthepocket.0023 days = 3 }
+        }
+      }
+      30 = {
+        ZEO = {
+          if = {
+            limit = {
+              has_unit_leader = 31 # ルーゲンス
+            }
+            remove_unit_leader = 31
+          }
+          set_country_flag = lugenth_is_dead
+          set_country_flag = christmas_nuclear_is_yes
+        }
+      }
+    }
+  }
+}
+#0023 !! U.C.0079 サイクロプス隊 核攻撃中止
+country_event = {
+  id = warinthepocket.0023
+  title = warinthepocket.0023.t
+  desc = warinthepocket.0023.d
+  picture = GFX_country_zeon128
+
+  is_triggered_only = yes
+  immediate = {
+    set_country_flag = kiling_is_arrest
+    set_country_flag = christmas_nuclear_is_no
+  }
+
+  option = {
+    name = warinthepocket.0023.a
+    add_political_power = 100
+    if = {
+      limit = {
+        has_unit_leader = 14 #キリング
+      }
+      remove_unit_leader = 14
+    }
+  }
+}
+#0024 !! サイクロプス隊 核攻撃アルの訴え
+country_event = {
+  id = warinthepocket.0024
+  title = warinthepocket.0024.t
+  desc = warinthepocket.0024.d
+  picture = GFX_country_efsf024
+
+  is_triggered_only = yes
+
+  option = {
+    name = warinthepocket.0024.a
+    ai_chance = {
+      base = 70
+      modifier = {
+        add = 30
+        is_historical_focus_on = yes
+      }
+    }
+    country_event = { id = warinthepocket.0026 days = 3 }
+  }
+  option = {
+    name = warinthepocket.0024.b
+    ai_chance = {
+      base = 30
+      modifier = {
+        add = -30
+        is_historical_focus_on = yes
+      }
+    }
+    news_event = { id = warinthepocket.0025 days = 4 }
+  }
+}
+#0025 !! サイクロプス隊 核攻撃 サイド6壊滅
+news_event = {
+  id = warinthepocket.0025
+  title = warinthepocket.0025.t
+  desc = warinthepocket.0025.d
+  picture = GFX_news059
+  major = yes
+
+  is_triggered_only = yes
+  immediate = {
+    set_global_flag = side6_is_destroy
+    822 = {
+      damage_building = {
+        type = infrastructure
+        damage = 10
+      }
+      damage_building = {
+        type = arms_factory
+        damage = 10
+      }
+      damage_building = {
+        type = industrial_complex
+        damage = 10
+      }
+    }
+  }
+
+  option = {
+    name = warinthepocket.0025.a
+    trigger = {
+      NOT = {
+        OR = {
+          tag = ZEO
+          tag = EFS
+        }
+      }
+    }
+  }
+  option = {
+    name = warinthepocket.0025.b
+    if = {
+      limit = {
+        has_unit_leader = 44 # バーニィ
+        NOT = {
+          has_country_flag = christmas_wiseman_is_no
+        }
+      }
+      remove_unit_leader = 44
+    }
+    clr_country_flag = ap_bernerd_wiseman_enable
+    trigger = {
+      tag = ZEO
+    }
+  }
+  option = {
+    name = warinthepocket.0025.c
+    if = {
+      limit = {
+        has_unit_leader = 114 # クリス
+      }
+      remove_unit_leader = 114
+    }
+    clr_country_flag = ap_christina_mackenzie_enable
+    if = {
+      limit = {
+        has_idea = cameron_bloom
+      }
+      country_event = { id = achievement.22 }
+    }
+    trigger = {
+      tag = EFS
+    }
+  }
+}
+#0026 !! サイクロプス隊 核攻撃 迎撃
+country_event = {
+  id = warinthepocket.0026
+  title = warinthepocket.0026.t
+  desc = warinthepocket.0026.d
+  picture = GFX_country_efsf025
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      random_list = {
+        90 = {
+          country_event = { id = warinthepocket.0027 days = 3 }
+          ZEO = {
+            country_event = { id = warinthepocket.0028 days = 3 }
+          }
+        }
+        10 = {
+          news_event = { id = warinthepocket.0025 days = 3 }
+        }
+      }
+    }
+  }
+  option = {
+    name = warinthepocket.0026.a
+  }
+}
+#0027 !! サイクロプス隊 核攻撃 迎撃成功
+country_event = {
+  id = warinthepocket.0027
+  title = warinthepocket.0027.t
+  desc = warinthepocket.0027.d
+  picture = GFX_country_efsf026
+
+  is_triggered_only = yes
+
+  option = {
+    name = warinthepocket.0027.a
+  }
+}
+#0028 !! U.C.0079 12.24 サイクロプス隊 核攻撃 失敗
+country_event = {
+  id = warinthepocket.0028
+  title = warinthepocket.0028.t
+  desc = warinthepocket.0028.d
+  picture = GFX_country_zeon041
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    set_country_flag = christmas_nuclear_is_no
+  }
+
+  option = {
+    name = warinthepocket.0028.a
+    if = {
+      limit = {
+        has_unit_leader = 29 # フォン・ヘルシング
+      }
+      remove_unit_leader = 29
+    }
+  }
+}
+#0029 クリスの決意
+country_event = {
+  id = warinthepocket.0029
+  title = warinthepocket.0029.t
+  desc = warinthepocket.0029.d
+  picture = GFX_country_efsf_warinthepocket_0029
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+  }
+
+  option = {
+    name = warinthepocket.0029.a
+  }
+}
+#0030 !! U.C.0079 12.25 サイクロプス隊 クリスマス作戦 判定
+country_event = {
+  id = warinthepocket.0030
+  title = warinthepocket.0030.t
+  hidden = yes
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    ZEO = {
+      army_experience = 50
+    }
+    EFS = {
+      army_experience = 50
+    }
+    random_list = {
+      global.storymission_mission_warinthepocket_09a_result_01_per_value = {
+        set_global_flag = christmas_is_success
+        # 破壊
+        every_country = {
+          set_country_flag = story_event_warinthepocket_04a_window_visible
+        }
+        ZEO = {
+          if = {
+            limit = {
+              has_character = ZEO_bernard_wiseman
+            }
+            ZEO_bernard_wiseman = {
+              set_character_flag = enable_corps_commander
+            }
+          }
+          every_unit_leader = {
+            limit = {
+              has_id = 44 #バーニィ
+            }
+            add_skill_level = 2
+            add_timed_unit_leader_trait = {
+              trait = wounded
+              days = 30
+            }
+            add_unit_leader_trait = ranger
+          }
+          set_country_flag = rx78_nt_destroyed
+          set_country_flag = cyclops_berney_arrive
+          country_event = { id = achievement.9 }
+        }
+        EFS = {
+          if = {
+            limit = {
+              has_unit_leader = 114 #クリス
+            }
+            remove_unit_leader = 114
+          }
+          clr_country_flag = ap_christina_mackenzie_enable
+        }
+      }
+      global.storymission_mission_warinthepocket_09a_result_02_per_value = {
+        random_list = {
+          30 = { # 失敗
+            set_global_flag = christmas_is_fail
+            every_country = {
+              set_country_flag = story_event_warinthepocket_04c_window_visible
+            }
+            ZEO = {
+              if = {
+                limit = {
+                  has_unit_leader = 44 #バーニィ
+                }
+                remove_unit_leader = 44
+              }
+              clr_country_flag = ap_bernerd_wiseman_enable
+            }
+            EFS = {
+              every_unit_leader = {
+                limit = {
+                  has_id = 114 #クリス
+                }
+                add_skill_level = 2
+                add_timed_unit_leader_trait = {
+                  trait = wounded
+                  days = 30
+                }
+                add_unit_leader_trait = ranger
+              }
+            }
+          }
+          70 = { # 相打ち
+            set_global_flag = christmas_is_both
+            every_country = {
+              set_country_flag = story_event_warinthepocket_04b_window_visible
+            }
+            ZEO = {
+              clr_country_flag = ap_bernerd_wiseman_enable
+              if = {
+                limit = {
+                  has_unit_leader = 44 #バーニィ
+                }
+                remove_unit_leader = 44
+              }
+              country_event = { id = achievement.9 }
+            }
+            EFS = {
+              clr_country_flag = ap_christina_mackenzie_enable
+              if = {
+                limit = {
+                  has_unit_leader = 114 #クリス
+                }
+                remove_unit_leader = 114
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  option = {
+    name = warinthepocket.0030.a
+  }
+}
+#0038 嘘だと言ってよ、バーニィ
+country_event = {
+  id = warinthepocket.0038
+  title = warinthepocket.0038.t
+  desc = warinthepocket.0038.d
+  picture = GFX_country_zeon_warinthepocket_0038
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+  }
+
+  option = {
+    name = warinthepocket.0038.a
+  }
+}
+#0039 フランチェスカ
+country_event = {
+  id = warinthepocket.0039
+  title = warinthepocket.0039.t
+  desc = warinthepocket.0039.d
+  picture = GFX_country_zeon_warinthepocket_0039
+
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+  }
+
+  option = {
+    name = warinthepocket.0039.a
+    set_country_flag = christmas_wiseman_is_yes
+    ai_chance = {
+      base = 70
+      modifier = {
+        add = 30
+        is_historical_focus_on = yes
+      }
+    }
+  }
+  option = {
+    name = warinthepocket.0039.b
+    set_country_flag = christmas_wiseman_is_no
+    if = {
+      limit = {
+        has_character = ZEO_bernard_wiseman
+      }
+      ZEO_bernard_wiseman = {
+        set_character_flag = enable_corps_commander
+      }
+    }
+    ai_chance = {
+      base = 30
+      modifier = {
+        add = -30
+        is_historical_focus_on = yes
+      }
+    }
+  }
+}
+#0040 北極基地襲撃 判定
+country_event = {
+  id = warinthepocket.0040
+  title = warinthepocket.0040.t
+  hidden = yes
+
+  is_triggered_only = yes
+  fire_only_once = yes
+
+  immediate = {
+    ZEO = {
+      army_experience = 100
+      navy_experience = 50
+    }
+    EFS = {
+      army_experience = 50
+    }
+    random_list = {
+      global.storymission_mission_warinthepocket_02_result_01_per_value = {
+        random_list = {
+          70 = { # 破壊
+            every_country = {
+              set_country_flag = story_event_warinthepocket_01a_window_visible
+            }
+            ZEO = {
+              set_country_flag = rx78_nt_destroyed
+              country_event = { id = achievement.9 }
+              if = {
+                limit = {
+                  has_unit_leader = 158 #ガルシア
+                }
+                remove_unit_leader = 158
+              }
+            }
+          }
+          30 = { # 奪取
+            every_country = {
+              set_country_flag = story_event_warinthepocket_01b_window_visible
+            }
+            ZEO = {
+              set_country_flag = cyclops_andi_arrive
+              set_country_flag = rx78_nt_destroyed
+              country_event = { id = achievement.9 }
+              country_event = { id = achievement.10 }
+              every_unit_leader = {
+                limit = {
+                  OR = {
+                    has_id = 24 # ハーディ
+                    has_id = 153 # アンディ
+                    has_id = 158 # ガルシア
+                    has_id = 184 # ミーシャ
+                  }
+                }
+                add_unit_leader_trait = winter_specialist
+              }
+            }
+          }
+        }
+      }
+      global.storymission_mission_warinthepocket_02_result_02_per_value = {
+        # 失敗
+        every_country = {
+          set_country_flag = story_event_warinthepocket_01c_window_visible
+        }
+        ZEO = {
+          if = {
+            limit = {
+              has_unit_leader = 153 #アンディ
+            }
+            remove_unit_leader = 153
+          }
+        }
+        EFS = {
+          country_event = { id = warinthepocket.0010 days = 3 }
+        }
+      }
+    }
+    ZEO = {
+      every_unit_leader = {
+        limit = {
+          OR = {
+            has_id = 24 # ハーディ
+            has_id = 153 # アンディ
+            has_id = 158 # ガルシア
+            has_id = 184 # ミーシャ
+          }
+        }
+        add_skill_level = 1
+      }
+    }
+  }
+
+  option = {
+    name = warinthepocket.0040.a
+  }
+}

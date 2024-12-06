@@ -1,0 +1,17 @@
+﻿##################
+# SUPER EVENTS 
+##################
+
+add_namespace = super
+
+news_event = { #One Year War Begins
+	id = super.1
+	hidden = yes
+	is_triggered_only = yes
+	timeout_days = 1
+	option = {
+			set_country_flag = SUPER_One_Year_war							#country flag that handles title, should always be prefixed with SUPER_
+			set_country_flag = SUPER_One_Year_War_TEXT						#country flag that handles description should always be identical to the previous flag, but end in _TEXT
+			set_variable = {BR_Super_Event_Var = token:SUPER_One_Year_War}  #variable that stores the name of the country flag for the title so we can do some voodoo
+		}
+}

@@ -11,42 +11,10 @@ set_war_support = 0.3
 set_variable = { newtype_accepted_status = 1 }
 
 set_technology = {
-	basic_train = 1
-	infantry_weapons = 1
-	motorised_infantry = 1
-	tech_mountaineers = 1
-	tech_support = 1
-	tech_engineers = 1
-	tech_recon = 1
-	tech_military_police = 1
-	minovsky_particle = 1
-	atomic_research = 1
-	nuclear_reactor = 1
-	nukes = 1
-	basic_machine_tools = 1
-	fuel_silos = 1
-	synth_oil_experiments = 1
-	EFS_ac1_tech = 1
-	fuel_refining = 1
-	EFS_transport = 1
-	oil_processing = 1
-	rubber_processing = 1
-	fuel_refining2 = 1
-	i_field = 1
-	mega_particle1 = 1
-	EFS_space_cruiser1_tech = 1
-	EFS_basic_battery = 1
-	EFS_basic_secondary_battery = 1
-	EFS_damage_control_1 = 1
-	EFS_basic_torpedo = 1
-	EFS_basic_naval_mines = 1
 }
 #Diplomacy
-if = {
-	limit = { has_dlc = "Together for Victory" }
+add_to_tech_sharing_group = federation_research
 
-	add_to_tech_sharing_group = federation_research
-}
 set_popularities = {
 	democratic = 60
 	supremacist = 0

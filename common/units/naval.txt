@@ -1,0 +1,116 @@
+sub_units = {
+  destroyer = {
+    sprite = destroyer
+    map_icon_category = ship
+    priority = 3
+    active = yes
+    max_organisation = 40
+    supply_consumption = 0.01
+    type = {
+screen_ship
+}
+    need_equipment = {
+archetype_destroyer = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  cruiser = {
+    sprite = battle_cruiser
+    map_icon_category = ship
+    priority = 8
+    active = yes
+    max_organisation = 40
+    supply_consumption = 0.12
+    type = {
+capital_ship
+}
+    need_equipment = {
+archetype_cruiser = 1
+}
+    critical_parts = {
+rudder_jammed destroyed_ammo_storage broken_propeller on_fire
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  carrier = {
+    sprite = carrier
+    map_icon_category = ship
+    priority = 10
+    active = yes
+    max_organisation = 40
+    supply_consumption = 0.3
+    type = {
+carrier
+}
+    need_equipment = {
+archetype_carrier = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  submarine = {
+    sprite = submarine
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 40
+    supply_consumption = 0.01
+    type = {
+submarine
+}
+    need_equipment = {
+archetype_submarine = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  submarine_carrier = {
+    sprite = submarine_carrier
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 40
+    supply_consumption = 0.1
+    type = {
+submarine
+}
+    need_equipment = {
+archetype_submarine_carrier = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+  survey = {
+    sprite = survey
+    map_icon_category = ship
+    priority = 2
+    active = yes
+    max_organisation = 40
+    supply_consumption = 0.01
+    type = {
+screen_ship
+}
+    need_equipment = {
+archetype_survey = 1
+}
+    critical_parts = {
+destroyed_ammo_storage broken_propeller on_fire rudder_jammed ballast_tanks_inoperable
+}
+    critical_part_damage_chance_mult = 1
+    hit_profile_mult = 1
+  }
+}

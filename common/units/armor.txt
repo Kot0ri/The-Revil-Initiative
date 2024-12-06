@@ -1,0 +1,377 @@
+sub_units = {
+  mbt = {
+    sprite = mbt
+    map_icon_category = armored
+    priority = 510
+    ai_priority = 3510
+    active = yes
+    categories = {
+category_tanks
+category_front_line
+category_all_armor
+category_army
+}
+    group = armor
+    type = {
+armor
+}
+    need = {
+archetype_mbt = 50
+}
+    max_strength = 2
+    max_organisation = 10
+    default_morale = 0.3
+    weight = 1.6
+    supply_consumption = 0.25
+    combat_width = 2
+    manpower = 500
+    training_time = 60
+    forest = {
+attack = -0.3
+movement = -0.4
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.4
+movement = -0.4
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.4
+defence = -0.1
+}
+    river = {
+attack = -0.2
+movement = -0.2
+}
+    amphibious = {
+attack = -0.7
+}
+    colony = {
+attack = -0.4
+defence = -0.1
+}
+    asteroid = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    moon = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    orbit = {
+attack = -0.1
+defence = -0.1
+}
+  }
+  para_tank = {
+    sprite = medium_armor
+    map_icon_category = armored
+    priority = 520
+    ai_priority = 3500
+    active = yes
+    categories = {
+category_tanks
+category_front_line
+category_all_armor
+category_army
+}
+    can_be_parachuted = yes
+    group = armor
+    type = {
+armor
+}
+    need = {
+archetype_para_tank = 30
+}
+    max_strength = 2
+    max_organisation = 10
+    default_morale = 0.5
+    weight = 0.6000000000000001
+    supply_consumption = 0.2
+    combat_width = 2
+    manpower = 300
+    training_time = 60
+    forest = {
+attack = -0.3
+movement = -0.4
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.4
+movement = -0.4
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.4
+defence = -0.1
+}
+    river = {
+attack = -0.2
+movement = -0.2
+}
+    amphibious = {
+attack = -0.7
+}
+    colony = {
+attack = -0.4
+defence = -0.1
+}
+    asteroid = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    moon = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    orbit = {
+attack = -0.1
+defence = -0.1
+}
+  }
+  mobiletank = {
+    sprite = heavy_armor
+    map_icon_category = armored
+    priority = 4300
+    ai_priority = 3100
+    active = yes
+    categories = {
+category_tanks
+category_front_line
+category_all_armor
+category_army
+category_mobiletank
+}
+    can_be_parachuted = yes
+    group = armor
+    type = {
+armor
+anti_tank
+anti_air
+artillery
+}
+    need = {
+archetype_mobiletank = 15
+}
+    max_strength = 17
+    max_organisation = 41
+    default_morale = 0.3
+    weight = 1.7000000000000002
+    supply_consumption = 3.75
+    combat_width = 2
+    manpower = 300
+    training_time = 100
+    forest = {
+attack = -0.3
+movement = -0.4
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.4
+movement = -0.4
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.4
+defence = -0.1
+}
+    river = {
+attack = -0.2
+movement = -0.2
+}
+    amphibious = {
+attack = -0.7
+}
+    colony = {
+attack = -0.4
+defence = -0.1
+}
+    asteroid = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    moon = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    orbit = {
+attack = -0.1
+defence = -0.1
+}
+  }
+  lbs = {
+    sprite = lbs
+    map_icon_category = armored
+    priority = 15000
+    ai_priority = 3000
+    active = yes
+    categories = {
+category_tanks
+category_front_line
+category_all_armor
+category_army
+}
+    group = armor
+    type = {
+armor
+anti_tank
+anti_air
+artillery
+}
+    need = {
+archetype_lbs = 3
+}
+    max_strength = 23.3
+    max_organisation = 55.300000000000004
+    default_morale = 0.8
+    suppression = 2
+    suppression_factor = 0.5
+    weight = 1
+    supply_consumption = 1.2
+    casualty_trickleback = 0.3
+    experience_loss_factor = -0.3
+    combat_width = 4
+    manpower = 500
+    training_time = 100
+    forest = {
+attack = -0.3
+movement = -0.4
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.4
+movement = -0.4
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.4
+defence = -0.1
+}
+    river = {
+attack = -0.2
+movement = -0.2
+}
+    amphibious = {
+attack = 0.2
+defence = 0.4
+movement = 0.2
+}
+    colony = {
+attack = -0.4
+defence = -0.1
+}
+    asteroid = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    moon = {
+attack = -0.1
+defence = -0.1
+movement = -0.2
+}
+    orbit = {
+attack = -0.1
+defence = -0.1
+}
+    soft_attack = 0.5
+  }
+  ac = {
+    sprite = infantry
+    map_icon_category = infantry
+    active = no
+    categories = {
+category_front_line
+category_support_battalions
+category_army
+category_recon
+}
+    can_be_parachuted = yes
+    same_support_type = recon
+    essential = {
+archetype_ac
+}
+    group = support
+    type = {
+infantry
+support
+}
+    need = {
+archetype_ac = 24
+}
+    max_strength = 2
+    max_organisation = 10
+    default_morale = 0.3
+    weight = 0.2
+    supply_consumption = 0.04
+    recon = 2
+    manpower = 500
+    training_time = 60
+    forest = {
+movement = 0.05
+}
+    hills = {
+movement = 0.1
+}
+    mountain = {
+movement = 0.05
+}
+    jungle = {
+movement = 0.05
+}
+    plains = {
+movement = 0.15
+}
+    desert = {
+movement = 0.15
+}
+    river = {
+movement = 0.1
+}
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+  }
+}

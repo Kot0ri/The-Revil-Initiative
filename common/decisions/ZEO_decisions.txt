@@ -1,0 +1,7154 @@
+crisis = {
+	cr_not_decration_war = {
+		icon = revolt
+		allowed = {
+			tag = ZEO
+		}
+		activation = {
+			has_global_flag = zeon_is_independence
+		}
+		available = {
+			has_war_with = EFS
+		}
+		fire_only_once = yes
+
+		days_mission_timeout = 120
+		is_good = no
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		timeout_effect = {
+			add_political_power = -20
+			add_popularity = {
+				ideology = spacesupremacy
+				popularity = -0.02
+			}
+			country_event = { id = zeon.116 }
+			activate_mission = cr_not_decration_war
+		}
+		complete_effect = {
+			add_political_power = 150
+		}
+	}
+	cr_anti_zabi = {
+		icon = revolt
+		allowed = {
+			tag = ZEO
+		}
+		activation = {
+			ZEO = {
+				has_government = spacesupremacy
+	      spacesupremacy < 0.5
+	      NOT = {
+	        has_completed_focus = zeon_solidarity_among_colonies
+	      }
+	    }
+		}
+		available = {
+			OR = {
+				has_completed_focus = zeon_solidarity_among_colonies
+				NOT = {
+					has_government = spacesupremacy
+				}
+				spacesupremacy > 0.5
+			}
+		}
+		fire_only_once = yes
+
+		days_mission_timeout = 90
+		is_good = no
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		timeout_effect = {
+			country_event = { id = news.146 }
+			activate_mission = cr_anti_zabi
+		}
+		complete_effect = {
+			add_political_power = 150
+		}
+	}
+}
+political_actions = {
+	#!
+	pa_social_security_policy = {
+		icon = eng_blackshirt_speech
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = casval_and_aletesia_1
+			num_of_civilian_factories_available_for_projects > 2
+			has_war = no
+			OR = {
+				909 = { infrastructure < 10 }
+				910 = { infrastructure < 10 }
+				911 = { infrastructure < 10 }
+			}
+		}
+		visible = {
+			has_global_flag = start_is_uc0075
+			has_country_flag = casval_and_aletesia_1
+			has_war = no
+			OR = {
+				909 = { infrastructure < 10 }
+				910 = { infrastructure < 10 }
+				911 = { infrastructure < 10 }
+			}
+		}
+
+		cost = 150
+		days_remove = 60
+		days_re_enable = 30
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = casval_and_aletesia_1
+			}
+			has_war = yes
+			909 = { infrastructure > 9 }
+			910 = { infrastructure > 9 }
+			911 = { infrastructure > 9 }
+		}
+		modifier = {
+			stability_weekly = 0.002
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			909 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						infrastructure < 10
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			910 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						infrastructure < 10
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			911 = {
+				if = {
+					limit = {
+						is_fully_controlled_by = ROOT
+						infrastructure < 10
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 5
+				909 = { infrastructure < 9 }
+				910 = { infrastructure < 9 }
+				911 = { infrastructure < 9 }
+			}
+		}
+	}
+	pa_immigration_acceptance = {
+		icon = eng_blackshirt_speech
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			OR = {
+				has_completed_focus = zeon_spokesman_for_contlism
+				has_completed_focus = zeon_dominance_of_human_survival_theory
+			}
+			has_war = no
+		}
+		visible = {
+			has_global_flag = start_is_uc0075
+			has_war = no
+		}
+		cancel_trigger = {
+			has_war = yes
+		}
+
+		cost = 75
+		days_remove = -1
+
+		modifier = {
+			MONTHLY_POPULATION = 0.15
+		}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 2
+				has_war = yes
+			}
+			modifier = {
+				factor = 0.5
+				has_stability < 0.6
+			}
+			modifier = {
+				factor = 0
+				has_stability < 0.5
+			}
+		}
+		complete_effect = {
+			add_stability = -0.05
+			add_war_support = 0.03
+		}
+	}
+	#!
+	ec_dark_colony_for_military = {
+
+		icon = eng_blackshirt_speech
+
+		allowed = {
+			original_tag = ZEO
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 910
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_tech = construction1
+			owns_state = 910
+			controls_state = 910
+			910 = {
+				free_building_slots = {
+					building = arms_factory
+					size > 5
+					include_locked = yes
+				}
+			}
+			NOT = {
+				has_country_flag = dark_colony_is_used
+			}
+		}
+
+		visible = {
+			owns_state = 910
+			controls_state = 910
+			has_tech = construction1
+			has_global_flag = start_is_uc0075
+			NOT = {
+				has_country_flag = dark_colony_is_used
+			}
+		}
+
+		cancel_trigger = {
+			NOT = {
+				910 = {
+					free_building_slots = {
+						building = arms_factory
+						size > 5
+						include_locked = yes
+					}
+				}
+				owns_state = 910
+				controls_state = 910
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 2.5
+			modifier = {
+				factor = 1.2
+				is_historical_focus_on = yes
+			}
+		}
+		complete_effect = {
+			set_country_flag = dark_colony_is_used
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_full_control_of_state = 910
+				}
+				910 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	#!
+	ec_dark_colony_for_civilian = {
+
+		icon = eng_blackshirt_speech
+
+		allowed = {
+			original_tag = ZEO
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 910
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 2
+			has_tech = construction1
+			owns_state = 910
+			controls_state = 910
+			910 = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 5
+					include_locked = yes
+				}
+			}
+			NOT = {
+				has_country_flag = dark_colony_is_used
+			}
+		}
+
+		visible = {
+			owns_state = 910
+			controls_state = 910
+			has_tech = construction1
+			has_global_flag = start_is_uc0075
+			910 = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 5
+					include_locked = yes
+				}
+			}
+			NOT = {
+				has_country_flag = dark_colony_is_used
+			}
+		}
+
+		cancel_trigger = {
+			NOT = {
+				910 = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 5
+						include_locked = yes
+					}
+				}
+				owns_state = 910
+				controls_state = 910
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0.8
+				is_historical_focus_on = yes
+			}
+		}
+		complete_effect = {
+			set_country_flag = dark_colony_is_used
+			add_stability = 0.03
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_full_control_of_state = 910
+				}
+				910 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+	#!
+	ec_ocean_colony_for_military = {
+
+		icon = eng_blackshirt_speech
+
+		allowed = {
+			original_tag = ZEO
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 911
+			}
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+			has_tech = construction1
+			owns_state = 911
+			controls_state = 911
+		}
+
+		visible = {
+			owns_state = 911
+			controls_state = 911
+			has_tech = construction1
+			911 = {
+				free_building_slots = {
+					building = dockyard
+					size > 5
+					include_locked = yes
+				}
+			}
+			has_global_flag = start_is_uc0075
+		}
+
+		cancel_trigger = {
+			NOT = {
+				owns_state = 911
+				controls_state = 911
+				911 = {
+					free_building_slots = {
+						building = dockyard
+						size > 5
+						include_locked = yes
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 4
+				is_historical_focus_on = yes
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					has_idea = colony_country2
+				}
+				swap_ideas = {
+					remove_idea = colony_country2
+					add_idea = colony_country4
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = colony_country
+						add_idea = colony_country3
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 911
+				}
+				911 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = dockyard
+						level = 5
+						instant_build = yes
+					}
+				}
+			}
+			set_country_flag = ocean_colony_for_military_is_yes
+		}
+	}
+	pa_catch_the_spirit_prisoner = {
+		icon = eng_blackshirt_speech
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+		}
+		visible = {
+			has_war = no
+			has_global_flag = start_is_uc0075
+			has_completed_focus = zeon_munzo_univercity
+			NOT = {
+				has_government = zeonism
+			}
+		}
+		cancel_trigger = {
+			has_government = zeonism
+		}
+		fire_only_once = yes
+
+		cost = 75
+
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_country_leader = {
+						character = ZEO_gihren_zabi
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		complete_effect = {
+			country_event = { id = zeon.109 days = 5 }
+		}
+	}
+	#!
+	catch_kycilia = {
+		icon = eng_blackshirt_speech
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+		}
+		visible = {
+			NOT = {
+				has_country_flag = sweep_away_zabi_3
+			}
+			has_country_leader = {
+				character = ZEO_gihren_zabi
+				ruling_only = yes
+			}
+	always = no
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_leader = {
+					character = ZEO_gihren_zabi
+					ruling_only = yes
+				}
+		}
+		}
+		fire_only_once = yes
+
+		cost = 150
+
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		complete_effect = {
+			country_event = { id = zeon.117 days = 7 }
+		}
+	}
+	#!
+	catch_mquve = {
+		icon = eng_blackshirt_speech
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+		}
+		visible = {
+			NOT = {
+				has_country_flag = sweep_away_zabi_3
+			}
+			has_country_leader = {
+				character = ZEO_gihren_zabi
+				ruling_only = yes
+			}
+	always = no
+		}
+		cancel_trigger = {
+			NOT = {
+				has_country_leader = {
+					character = ZEO_gihren_zabi
+					ruling_only = yes
+				}
+			}
+		}
+		fire_only_once = yes
+
+		cost = 150
+
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		complete_effect = {
+			country_event = { id = zeon.118 days = 7 }
+		}
+	}
+	pa_change_to_zeonism = {
+		icon = eng_blackshirt_speech
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_war = no
+			has_completed_focus = zeon_solidarity_among_colonies
+			zeonism > party_popularity@ruling_party
+		}
+		visible = {
+			has_global_flag = start_is_uc0075
+			has_completed_focus = zeon_spokesman_for_contlism
+			has_war = no
+			NOT = {
+				has_government = zeonism
+			}
+		}
+
+		cost = 200
+		cancel_trigger = {
+			OR = {
+				has_war = yes
+				has_government = zeonism
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_politics = {
+				ruling_party = zeonism
+				elections_allowed = yes
+			}
+			remove_country_leader_role = {
+				character = ZEO_gihren_zabi
+				ideology = space_elitism
+			}
+			add_country_leader_role = {
+				character = ZEO_gihren_zabi
+				promote_leader = yes
+				country_leader = {
+					ideology = contlism
+					traits= { dictator iq240 }
+					expire="100.1.1.1"
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+}
+propaganda_efforts = {
+	pe_invited_francis_orbit = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_completed_focus = zeon_dominance_of_human_survival_theory
+		}
+
+		visible = {
+			has_completed_focus = zeon_repression_of_deikun
+			has_global_flag = start_is_uc0075
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		complete_effect = {
+			country_event = { id = zeon.105 days = 7 }
+		}
+	}
+	pe_true_friend_of_general_manager = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = invite_francis_orbit
+			OR = {
+				has_completed_focus = zeon_hold_parliament
+				has_completed_focus = zeon_dominance_of_human_survival_theory2
+			}
+		}
+
+		visible = {
+			has_country_flag = invite_francis_orbit
+			has_global_flag = start_is_uc0075
+		}
+
+		fire_only_once = yes
+		cost = 50
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			country_event = { id = zeon.106 days = 20 }
+		}
+	}
+	pe_ghost_fighter = {
+
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+      has_tech = nuclear_reactor4
+		}
+
+		visible = {
+			has_country_flag = establish_603_technical_test_team
+			has_unit_leader = 38
+			has_war_with = EFS
+			ZEO = {
+				NOT = {
+					has_tech = recruiment_zudah
+				}
+			}
+		}
+
+		fire_only_once = yes
+		cost = 75
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+		complete_effect = {
+			news_event = { id = news.55 days = 14 }
+		}
+	}
+}
+military_build = {
+	mb_mentoring_mobile_battalion_exercise = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_completed_focus = zeon_organization_of_mobilized_mobile_battalion
+			has_war = no
+			if = {
+				limit = {
+					has_tech = recruiment_zudah
+				}
+				has_equipment = { archetype_ems10 > 11 }
+				else = {
+					has_equipment = { archetype_ms05 > 11 }
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = zeon_organization_of_mobilized_mobile_battalion
+			has_global_flag = start_is_uc0075
+			has_war = no
+		}
+		cancel_trigger = {
+			has_war = yes
+		}
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = command_power_more_than_50
+		days_remove = 120
+		days_re_enable = 30
+
+		modifier = {
+			experience_gain_army = 0.2
+		}
+		ai_will_do = {
+			factor = 4
+			modifier = {
+				factor = 0.5
+				check_variable = { how_many_exercise > 0 }
+			}
+			modifier = {
+				factor = 0.5
+				check_variable = { how_many_exercise > 1 }
+			}
+			modifier = {
+				factor = 0.3
+				check_variable = { how_many_exercise > 2 }
+			}
+      modifier = {
+				factor = 0
+				check_variable = { how_many_exercise > 3 }
+			}
+		}
+		complete_effect = {
+			add_command_power = -50
+			if = {
+				limit = {
+					has_tech = recruiment_zudah
+				}
+				add_equipment_to_stockpile = {
+					type = archetype_ems10
+					amount = -12
+					producer = ZEO
+				}
+				else = {
+					add_equipment_to_stockpile = {
+						type = archetype_ms05
+						amount = -12
+						producer = ZEO
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_doctrine_cost_reduction = {
+				name = zeon_organization_of_mobilized_mobile_battalion
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mobilesuit_warfare
+			}
+			if = {
+				limit = {
+					check_variable = { how_many_exercise < 1 }
+				}
+				country_event = { id = zeon.1000 days = 3 }
+				ZEO_denim = {
+					set_character_flag = enable_corps_commander
+				}
+				ZEO_gene = {
+					set_character_flag = enable_corps_commander
+				}
+				ZEO_slender = {
+					set_character_flag = enable_corps_commander
+				}
+				ZEO_dimitri = {
+					set_character_flag = enable_corps_commander
+				}
+				ZEO_tokwan = {
+					set_character_flag = enable_corps_commander
+				}
+				custom_effect_tooltip = mb_mentoring_mobile_battalion_exercise_tooltip
+        else_if = {
+          limit = {
+            check_variable = { how_many_exercise < 2 }
+          }
+					ZEO_andy = {
+						set_character_flag = enable_corps_commander
+					}
+					ZEO_ricardo_vega = {
+						set_character_flag = enable_corps_commander
+					}
+					ZEO_cucuruz_doan = {
+						set_character_flag = enable_corps_commander
+					}
+					ZEO_adamski = {
+						set_character_flag = enable_corps_commander
+					}
+					ZEO_gaily = {
+						set_character_flag = enable_corps_commander
+					}
+				}
+			}
+      add_to_variable = { var = how_many_exercise value = 1 }
+		}
+	}
+	mb_division_of_forces = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_completed_focus = zeon_national_mobilization_act
+			has_idea = brothers_quarrel
+		}
+
+		visible = {
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			has_completed_focus = zeon_national_mobilization_act
+			has_idea = brothers_quarrel
+		}
+		cancel_trigger = {
+			NOT = {
+				has_idea = brothers_quarrel
+			}
+		}
+
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = command_power_more_than_50
+		days_remove = 30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				date > 78.6.1
+				factor = 10
+			}
+		}
+		complete_effect = {
+			add_command_power = -50
+		}
+		remove_effect = {
+			set_country_flag = force_is_divided
+			swap_ideas = {
+				remove_idea = brothers_quarrel
+				add_idea = brothers_quarrel2
+			}
+		}
+	}
+	mb_home_country_air_defense_corps = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_completed_focus = zeon_enhancement_of_defense_army
+			owns_state = 909
+			has_full_control_of_state = 909
+			owns_state = 910
+			has_full_control_of_state = 910
+			owns_state = 911
+			has_full_control_of_state = 911
+		}
+
+		visible = {
+			has_global_flag = start_is_uc0075
+			has_completed_focus = zeon_enhancement_of_defense_army
+			owns_state = 909
+			has_full_control_of_state = 909
+			owns_state = 910
+			has_full_control_of_state = 910
+			owns_state = 911
+			has_full_control_of_state = 911
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_war_support = 0.05
+			909 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			910 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+			911 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	mb_foreign_force = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_completed_focus = zeon_national_mobilization_act
+		}
+
+		visible = {
+			has_completed_focus = zeon_national_mobilization_act
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			set_country_flag = foreign_force_is_yes
+			add_ideas = foreign_force
+		}
+	}
+	mb_oem_production = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			OR = {
+				has_completed_focus = zeon_enhancement_of_general_purpose_MS
+				has_completed_focus = zeon_focus_on_MS_for_local_battle
+			}
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = zeon_enhancement_of_general_purpose_MS
+				has_completed_focus = zeon_focus_on_MS_for_local_battle
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			add_ideas = oem_production
+		}
+	}
+}
+war_measures = {
+	wm_commercial_ship_recruitment = {
+
+		icon = generic_naval
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = capture_ships
+		}
+		visible = {
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			has_country_flag = establishment_of_army_of_earth
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 10
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				stockpile_ratio = {
+					archetype = convoy
+					ratio < 0.1
+				}
+				factor = 200
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = { type = convoy_1 amount = 500 producer = EFS }
+		}
+	}
+	#!
+	wm_recruitment_of_students = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_completed_focus = zeon_national_mobilization_act
+			has_manpower < 1000000
+			has_war = yes
+		}
+
+		visible = {
+			has_completed_focus = zeon_national_mobilization_act
+			has_manpower < 1500000
+			has_war = yes
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+			set_country_flag = recruit_student_is_yes
+		}
+	}
+	#!
+	wm_support_space_assault_force = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = force_is_divided
+		}
+		cancel_trigger = {
+			has_decision = wm_support_space_attack_force
+		}
+
+		visible = {
+			has_country_flag = force_is_divided
+		}
+
+		cost = 100
+		days_remove = -1
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				has_decision = wm_support_space_attack_force
+			}
+		}
+		complete_effect = {
+			add_ideas = support_space_assault_force
+		}
+	}
+	#!
+	wm_support_space_attack_force = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = force_is_divided
+		}
+		cancel_trigger = {
+			has_decision = wm_support_space_assault_force
+		}
+
+		visible = {
+			has_country_flag = force_is_divided
+		}
+
+		cost = 100
+		days_remove = -1
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				has_decision = wm_support_space_assault_force
+			}
+		}
+		complete_effect = {
+			add_ideas = support_space_attack_force
+		}
+	}
+	wm_strategic_maritime_intelligence_unit = {
+
+		icon = generic_naval
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = capture_ships
+		}
+
+		visible = {
+			has_country_flag = establishment_of_army_of_earth
+			has_country_flag = capture_ships
+			NOT = {
+				has_country_flag = strategic_maritime_intelligence_unit_is_yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 14
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 300
+		}
+		remove_effect = {
+			set_country_flag = strategic_maritime_intelligence_unit_is_yes
+			navy_experience = 100
+			add_doctrine_cost_reduction = {
+				name = wm_strategic_maritime_intelligence_unit
+				category = naval_doctrine
+				cost_reduction= 0.5
+				uses = 3
+			}
+			add_equipment_production = {
+				equipment = {
+					type = submarine1_equipment
+				}
+				requested_factories = 1
+				amount = 1
+				progress = 0.65
+			}
+			add_equipment_production = {
+				equipment = {
+					type = submarine1_equipment
+				}
+				requested_factories = 1
+				amount = 1
+				progress = 0.65
+			}
+			add_equipment_production = {
+				equipment = {
+					type = submarine_carrier1_equipment
+				}
+				requested_factories = 1
+				amount = 1
+				progress = 0.65
+			}
+		}
+	}
+	wm_establishment_of_army_of_earth = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_war_with = EFS
+			has_completed_focus = zeon_national_mobilization_act
+		}
+		visible = {
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			has_completed_focus = zeon_national_mobilization_act
+			has_war_with = EFS
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+		days_remove = 30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_country_flag = earth_invasion_is_yes
+				factor = 100
+			}
+		}
+		remove_effect = {
+			news_event = { id = news.53 days = 1 }
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = option_earth_drop
+						option = DAYS_60
+					}
+				}
+				add_timed_idea = {
+					idea = operation_drop_earth
+					days = 60
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = option_earth_drop
+						option = DAYS_90
+					}
+				}
+				add_timed_idea = {
+					idea = operation_drop_earth
+					days = 90
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = option_earth_drop
+						option = DAYS_120
+					}
+				}
+				add_timed_idea = {
+					idea = operation_drop_earth
+					days = 120
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = option_earth_drop
+						option = DAYS_150
+					}
+				}
+				add_timed_idea = {
+					idea = operation_drop_earth
+					days = 150
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = option_earth_drop
+						option = DAYS_180
+					}
+				}
+				add_timed_idea = {
+					idea = operation_drop_earth
+					days = 180
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = option_earth_drop
+						option = DAYS_210
+					}
+				}
+				add_timed_idea = {
+					idea = operation_drop_earth
+					days = 210
+				}
+			}
+
+			set_country_flag = establishment_of_army_of_earth
+			set_country_flag = operation_drop_earth_is_yes2
+			set_country_flag = earth_invasion_is_yes
+			unlock_decision_tooltip = op_drop_odessa
+	    unlock_decision_tooltip = op_drop_north_america
+	    unlock_decision_tooltip = op_drop_south_america
+	    unlock_decision_tooltip = op_drop_asia
+	    unlock_decision_tooltip = op_drop_austraria
+	    unlock_decision_tooltip = op_drop_europa
+	    unlock_decision_tooltip = op_drop_africa
+		}
+	}
+	wm_establishment_disabled_veteran_division = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = drop_earth_is_end
+		}
+
+		visible = {
+			has_country_flag = drop_earth_is_end
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		complete_effect = {
+			set_country_flag = establishment_disabled_veteran_division
+			country_event = { id = zeon.1002 days = 90 }
+		}
+	}
+}
+research_and_development = {
+	rd_bishop_plan = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_tech = psyco_com
+		}
+
+		visible = {
+			has_tech = newtype_tech2
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		complete_effect = {
+			set_technology = {
+				bishop_plan = 1
+			}
+			custom_effect_tooltip = zeon_bishop_plan_desc
+		}
+	}
+	wm_integrated_maintenance_plan = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_tech = ms06_tech
+			has_tech = ms06_f_tech
+			has_tech = ms06_s_tech
+			has_tech = ms06_j_tech
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		visible = {
+			has_tech = ms06_tech
+			has_tech = ms06_f_tech
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 120
+
+		modifier = {
+			civilian_factory_use = 5
+			production_factory_efficiency_gain_factor = -0.3
+			production_factory_max_efficiency_factor = -0.3
+			production_factory_start_efficiency_factor = -0.3
+		}
+
+		ai_will_do = {
+			factor = 150
+			modifier = {
+				factor = 10
+				NOT = {
+					OR = {
+						has_completed_focus = zeon_restructuring_of_military
+						has_country_flag = mquve_is_dead
+					}
+				}
+			}
+		}
+		remove_effect = {
+			add_ideas = integrated_maintenance_plan_idea
+			hidden_effect = {
+				set_technology = {
+					integrated_maintenance_plan = 1
+				}
+			}
+			custom_effect_tooltip = zeon_integrated_maintenance_plan_desc
+		}
+	}
+	rd_pezn_plan = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_tech = integrated_maintenance_plan
+		}
+
+		visible = {
+			has_tech = integrated_maintenance_plan
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		complete_effect = {
+			set_technology = {
+				pezn_tech = 1
+			}
+			custom_effect_tooltip = zeon_pezn_plan_desc
+		}
+	}
+	rd_air_mobilesuit = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_tech = ms07_h_tech
+			check_variable = { ms_flight_test < 8 }
+		}
+
+		visible = {
+			check_variable = { ms_flight_test < 8 }
+			has_tech = ms07_h_tech
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+			has_air_experience > 29
+		}
+		custom_cost_text = air_experience_more_than_30
+		days_remove = 20
+		days_re_enable = 5
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		complete_effect = {
+			air_experience = -30
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = ms_flight_test
+				value = 1
+			}
+			if = {
+				limit = {
+					check_variable = { ms_flight_test < 8 }
+				}
+				country_event = { id = zeon.82 }
+			}
+			if = {
+				limit = {
+					check_variable = { ms_flight_test > 7 }
+				}
+				country_event = { id = zeon.83 }
+			}
+		}
+	}
+	rd_apsalus_plan = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_tech = max03_tech
+			has_country_flag = establish_research_institution
+		}
+
+		visible = {
+			has_tech = max03_tech
+			has_country_flag = establish_research_institution
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		custom_cost_trigger = {
+			has_air_experience > 29
+		}
+		custom_cost_text = air_experience_more_than_30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		complete_effect = {
+			air_experience = -30
+			set_technology = {
+				plan_apsalus_tech = 1
+			}
+		}
+	}
+	rd_reuse_p_device = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = establishment_disabled_veteran_division
+			has_tech = ms06_r_tech
+		}
+
+		visible = {
+			has_country_flag = establishment_disabled_veteran_division
+			has_completed_focus = zeon_medal_of_cross
+		}
+
+		fire_only_once = yes
+
+		cost = 75
+		days_remove = 120
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			set_technology = {
+				ms06_p_tech = 1
+			}
+		}
+	}
+	rd_research_institution = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_completed_focus = zeon_puneemunde_institution
+		}
+
+		visible = {
+			has_completed_focus = zeon_organization_of_mobilized_mobile_battalion
+			has_global_flag = start_is_uc0075
+		}
+
+		fire_only_once = yes
+
+		cost = 150
+		days_remove = 30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 20
+		}
+		remove_effect = {
+			add_research_slot = 1
+			set_country_flag = establish_research_institution
+			if = {
+				limit = {
+					has_idea = colony_country3
+				}
+				swap_ideas = {
+					remove_idea = colony_country3
+					add_idea = colony_country4
+				}
+				else = {
+					swap_ideas = {
+						remove_idea = colony_country
+						add_idea = colony_country2
+					}
+				}
+			}
+		}
+	}
+	mb_603_technical_test_team = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = establish_research_institution
+		}
+
+		visible = {
+			has_global_flag = start_is_uc0075
+			has_country_flag = establish_research_institution
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 60
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		remove_effect = {
+			unlock_decision_tooltip = ap_martin_prochnow
+			army_experience = 50
+			set_country_flag = establish_603_technical_test_team
+			set_country_flag = ap_martin_prochnow_enable
+			country_event = { id = achievement.13 }
+			add_doctrine_cost_reduction = {
+				name = zeon_603_technical_test_team
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	rd_603_1 = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = establish_603_technical_test_team
+			has_tech = ymt05_tech
+      has_war_with = EFS
+	    OR = {
+	      482 = { is_controlled_by = ZEO }
+	      483 = { is_controlled_by = ZEO }
+	      376 = { is_controlled_by = ZEO }
+	      377 = { is_controlled_by = ZEO }
+	      379 = { is_controlled_by = ZEO }
+	      380 = { is_controlled_by = ZEO }
+	      382 = { is_controlled_by = ZEO }
+	    }
+		}
+
+		visible = {
+			has_country_flag = establish_603_technical_test_team
+			has_tech = ymt05_tech
+			has_war_with = EFS
+		}
+
+		fire_only_once = yes
+		cost = 0
+		custom_cost_trigger = {
+			has_army_experience > 29
+		}
+		custom_cost_text = army_experience_more_than_30
+		days_remove = 14
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			army_experience = -30
+		}
+		remove_effect = {
+			country_event = { id = zeon.22 }
+		}
+	}
+	rd_603_2 = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = establish_603_technical_test_team
+      has_war_with = EFS
+	    has_tech = msm07_di_tech
+	    EFS = {
+	      has_completed_focus = efsf_vinson_plan
+	      controls_state = 687
+	    }
+		}
+
+		visible = {
+			has_country_flag = establish_603_technical_test_team
+			has_war_with = EFS
+			has_tech = msm07_di_tech
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		custom_cost_trigger = {
+			has_air_experience > 29
+		}
+		custom_cost_text = air_experience_more_than_30
+		days_remove = 14
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			air_experience = -30
+			country_event = { id = zeon.25 days = 1 }
+		}
+		remove_effect = {
+			country_event = { id = zeon.26 }
+			EFS = {
+	      country_event = { id = efsf.16 }
+	    }
+		}
+	}
+	wm_procurement_of_next_generation_mainstay_MS = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			OR = {
+				has_tech = ms06_r_tech
+				has_tech = mega_particle2
+				has_global_flag = plan_v_is_revealed
+			}
+		}
+		visible = {
+			OR = {
+				has_tech = ms06_r_tech
+				has_tech = mega_particle2
+				has_global_flag = plan_v_is_revealed
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				uses = 3
+				bonus = 0.5
+				technology = ZEO_ms_weapon_beamgun_01_tech
+				technology = ZEO_ms_weapon_beamsord_01_tech
+				technology = ms14_tech
+				technology = yms15_tech
+				technology = mega_particle2
+				technology = ambac3
+				technology = ambac4
+			}
+		}
+	}
+	wm_development_of_jaburo_assault_MS = {
+
+		icon = generic_research
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_country_flag = drop_earth_is_end
+		}
+
+		visible = {
+			has_country_flag = drop_earth_is_end
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+		custom_cost_trigger = {
+			has_army_experience > 29
+		}
+		custom_cost_text = army_experience_more_than_30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0.5
+				is_historical_focus_on = yes
+			}
+		}
+		complete_effect = {
+			army_experience = -30
+		}
+		remove_effect = {
+			set_technology = {
+				jaburo_assault_mobilesuit = 1
+			}
+		}
+	}
+}
+diplomacy = {
+	dip_power_supply_to_moon = {
+
+		icon = eng_trade_unions_support
+
+		target_trigger = {
+			FROM = {
+				tag = GRA
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_war = no
+			country_exists = GRA
+		}
+		visible = {
+			has_war = no
+			country_exists = GRA
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					country_exists = GRA
+				}
+				has_war = yes
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 30
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 3
+				has_completed_focus = zeon_harmony_with_deikun
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = zeon_power_supply_to_moon
+				}
+				country_event = { id = zeon.52 }
+			}
+		}
+	}
+	dip_license_agreement = {
+
+		target_trigger = {
+			FROM = {
+				has_war_together_with = ROOT
+			}
+		}
+		icon = eng_trade_unions_support
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			FROM = {
+				num_of_available_military_factories > 0
+			}
+		}
+
+		visible = {
+		}
+
+		fire_only_once = yes
+
+		cost = 30
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 5
+		}
+		remove_effect = {
+			create_production_license = {
+				target = FROM
+				cost_factor = 1
+				equipment = {
+					type = ms05_equipment
+					version = 0
+				}
+			}
+			create_production_license = {
+				target = FROM
+				cost_factor = 3
+				equipment = {
+					type = ms_weapon_machinegun_01_equipment
+					version = 0
+				}
+			}
+			create_production_license = {
+				target = FROM
+				cost_factor = 2
+				equipment = {
+					type = ms_weapon_heathawk_01_equipment
+					version = 0
+				}
+			}
+			create_production_license = {
+				target = FROM
+				cost_factor = 1
+				equipment = {
+					type = ms_shield_01_equipment
+					version = 0
+				}
+			}
+		}
+	}
+	dip_independence_speech = {
+
+		icon = generic_break_treaty
+
+		allowed = {
+			tag = ZEO
+		}
+		available = {
+			NOT = {
+				has_war_with = EFS
+			}
+			is_subject = yes
+		}
+
+		visible = {
+			NOT = {
+				has_war_with = EFS
+			}
+			is_subject = yes
+			OR = {
+				threat > 0.2
+				compare_autonomy_progress_ratio > 0.6
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 100
+
+		modifier = {
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				NOT = {
+					has_completed_focus = zeon_total_force_warfare_study
+				}
+				factor = 0
+			}
+			modifier = {
+				has_completed_focus = zeon_national_mobilization_act
+				factor = 2
+			}
+			modifier = {
+				factor = 20
+				compare_autonomy_progress_ratio > 0.7
+			}
+			modifier = {
+				date > 78.10.1
+				factor = 20
+			}
+			modifier = {
+				date > 79.1.1
+				factor = 20
+			}
+			modifier = {
+				OR = {
+					focus_progress = {
+						focus = zeon_megiddo_fire
+						progress > 0.1
+					}
+					focus_progress = {
+						focus = zeon_for_star_of_water_with_love
+						progress > 0.1
+					}
+					focus_progress = {
+						focus = zeon_colony_alliance
+						progress > 0.1
+					}
+					focus_progress = {
+						focus = zeon_phantom_speech
+						progress > 0.1
+					}
+					focus_progress = {
+						focus = zeon_declaration_of_war_is_hatred_deeply
+						progress > 0.1
+					}
+				}
+				factor = 20
+			}
+		}
+
+		complete_effect = {
+			EFS = {
+				set_autonomy = {
+					target = ZEO
+					autonomy_state = autonomy_free
+				}
+			}
+			if = {
+				limit = {
+					has_country_leader = {
+						character = ZEO_casval_rem_deikun
+						ruling_only = yes
+					}
+				}
+				news_event = { id = news.105 hours = 3 }
+				else = {
+					news_event = { id = news.121 hours = 3 }
+				}
+			}
+		}
+	}
+	pa_request_to_eliminate_tariffs = {
+		icon = oppression
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_autonomy_state = autonomy_dominion
+			compare_autonomy_progress_ratio > 0.6
+			has_war = no
+		}
+		visible = {
+			has_global_flag = start_is_uc0075
+			compare_autonomy_progress_ratio > 0.55
+			has_war = no
+		}
+		cancel_trigger = {
+			has_war = yes
+			NOT = {
+				has_autonomy_state = autonomy_dominion
+			}
+		}
+
+		cost = 15
+		fire_only_once = yes
+
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 77.6.1
+			}
+		}
+		complete_effect = {
+			EFS = {
+				country_event = { id = efsf.5 days = 3 }
+			}
+		}
+	}
+	pa_withdrawal_request = {
+		icon = oppression
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_autonomy_state = autonomy_dominion
+			compare_autonomy_progress_ratio > 0.65
+			has_war = no
+		}
+		visible = {
+			has_global_flag = start_is_uc0075
+			compare_autonomy_progress_ratio > 0.6
+			has_war = no
+		}
+		cancel_trigger = {
+			has_war = yes
+			NOT = {
+				has_autonomy_state = autonomy_dominion
+			}
+		}
+
+		cost = 15
+		fire_only_once = yes
+
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				date < 77.6.1
+			}
+		}
+		complete_effect = {
+			EFS = {
+				country_event = { id = efsf.6 days = 3 }
+			}
+		}
+	}
+	dip_support_titans = {
+		icon = oppression
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_war = no
+			has_equipment = { infantry_equipment > 2999 }
+			has_equipment = { archetype_mbt > 499 }
+			has_equipment = { motorized_equipment > 499 }
+		}
+		visible = {
+			has_war = no
+			has_completed_focus = zeon_two_dictator
+		}
+		cancel_trigger = {
+			has_war = yes
+		}
+
+		cost = 25
+		days_re_enable = 30
+
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -3000
+			}
+			add_equipment_to_stockpile = {
+	      type = archetype_mbt
+	      amount = -500
+	    }
+	    add_equipment_to_stockpile = {
+	      type = motorized_equipment
+	      amount = -500
+	    }
+			add_to_variable = { var = zeon_support_titans_inf value = 3000 }
+			add_to_variable = { var = zeon_support_titans_mbt value = 500 }
+			add_to_variable = { var = zeon_support_titans_mor value = 500 }
+		}
+	}
+	dip_protect_granada = {
+		icon = oppression
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_war = no
+		}
+		visible = {
+			has_war = no
+			has_global_flag = granada_efsf_accept
+			has_government = spacesupremacy
+			country_exists = GRA
+		}
+		cancel_trigger = {
+			has_war = yes
+			NOT = {
+				country_exists = GRA
+			}
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = command_power_more_than_50
+		days_remove = 30
+		fire_only_once = yes
+
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			news_event = { id = news.128 days = 6 }
+		}
+		complete_effect = {
+			add_command_power = -50
+			clr_global_flag = granada_efsf_accept
+		}
+	}
+	dip_resident_forces_in_granada = {
+		icon = oppression
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			has_war = no
+			GRA = {
+				has_opinion = {
+					target = ZEO
+					value > 20
+				}
+			}
+		}
+		visible = {
+			has_war = no
+			has_global_flag = granada_efsf_accept
+			country_exists = GRA
+		}
+		cancel_trigger = {
+			has_war = yes
+			NOT = {
+				country_exists = GRA
+			}
+		}
+
+		cost = 150
+		days_re_enable = 10
+		fire_only_once = yes
+
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+			GRA = {
+				country_event = { id = zeon.18 }
+			}
+		}
+		complete_effect = {
+			clr_global_flag = granada_efsf_accept
+		}
+	}
+}
+ace_pilots = {
+	ap_char_aznable = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_char_aznable_enable
+		}
+		visible = {
+			has_country_flag = ap_char_aznable_enable
+			NOT = {
+				has_country_flag = casval_and_aletesia_3
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_char_aznable = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_anabel_gato = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_anabel_gato_enable
+		}
+		visible = {
+			has_country_flag = ap_anabel_gato_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_anavel_gato = {
+				set_character_flag = enable_corps_commander
+			}
+			ZEO_karius = {
+				set_character_flag = enable_corps_commander
+			}
+			ZEO_kelley_layzner = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_johnny_riden = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_johnny_riden_enable
+		}
+		visible = {
+			has_country_flag = ap_johnny_riden_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_johnny_ridden = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_shin_matsunaga = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_shin_matsunaga_enable
+		}
+		visible = {
+			has_country_flag = ap_shin_matsunaga_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_shin_matsunaga = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_miguel_gaia = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_miguel_gaia_enable
+		}
+		visible = {
+			has_country_flag = ap_miguel_gaia_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_miguel_gaia = {
+				set_character_flag = enable_corps_commander
+			}
+			ZEO_mash = {
+				set_character_flag = enable_corps_commander
+			}
+			ZEO_ortega = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_daryl_lorenz = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_daryl_lorenz_enable
+		}
+		visible = {
+			has_country_flag = ap_daryl_lorenz_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_daryl_lorenz = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_burroughs = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_burroughs_enable
+		}
+		visible = {
+			has_country_flag = ap_burroughs_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_burroughs = {
+				set_character_flag = enable_navy_leader
+			}
+		}
+	}
+	ap_nimbus_schterzen = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_nimbus_schterzen_enable
+		}
+		visible = {
+			has_country_flag = ap_nimbus_schterzen_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_nimbus_schterzen = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_jean_luc_duvall = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_jean_luc_duvall_enable
+		}
+		visible = {
+			has_country_flag = ap_jean_luc_duvall_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_jeanluc_duvall = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_desert_ronmel = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_desert_ronmel_enable
+		}
+		visible = {
+			has_country_flag = ap_desert_ronmel_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_desert_rommel = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_ramba_ral = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_ramba_ral_enable
+		}
+		visible = {
+			has_country_flag = ap_ramba_ral_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_ramba_ral = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_demeziere_sonnen = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_demeziere_sonnen_enable
+		}
+		visible = {
+			has_country_flag = ap_demeziere_sonnen_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_demeziere_sonnen = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_cima_garahau = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_cima_garahau_enable
+		}
+		visible = {
+			has_country_flag = ap_cima_garahau_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_cima_garahau = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_norris_packard = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_norris_packard_enable
+		}
+		visible = {
+			has_country_flag = ap_norris_packard_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_norris_packard = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_erik_blanke = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_erik_blanke_enable
+		}
+		visible = {
+			has_country_flag = ap_erik_blanke_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_erik_blanke = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_top = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_top_enable
+		}
+		visible = {
+			has_country_flag = ap_top_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_topp = {
+				set_character_flag = enable_corps_commander
+			}
+			ZEO_dell = {
+				set_character_flag = enable_corps_commander
+			}
+			ZEO_arth = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_martin_prochnow = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_martin_prochnow_enable
+		}
+		visible = {
+			has_country_flag = ap_martin_prochnow_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_martin_prochnow = {
+				set_character_flag = enable_navy_leader
+			}
+		}
+	}
+	ap_herbert_von_kuspen = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_herbert_von_kuspen_enable
+		}
+		visible = {
+			has_country_flag = ap_herbert_von_kuspen_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_herbert_von_kuspen = {
+				set_character_flag = enable_corps_commander
+			}
+			if = {
+				limit = {
+					has_idea = monique_cadillac
+					has_idea = oliver_may
+        }
+        country_event = { id = achievement.18 }
+			}
+		}
+	}
+	ap_hardie_steiner = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_hardie_steiner_enable
+		}
+		visible = {
+			has_country_flag = ap_hardie_steiner_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 25
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_steiner_hardy = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_aina_sahalin = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_aina_sahalin_enable
+		}
+		visible = {
+			has_country_flag = ap_aina_sahalin_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_aina_sahalin = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_lalah_sune = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_lalah_sune_enable
+		}
+		visible = {
+			has_country_flag = ap_lalah_sune_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_lalah_sune = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_qusco_ale = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_qusco_ale_enable
+		}
+		visible = {
+			has_country_flag = ap_qusco_ale_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_qusco_ale = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_challia_bull = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_challia_bull_enable
+		}
+		visible = {
+			has_country_flag = ap_challia_bull_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_challia_bull = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_marion_whelch = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_marion_whelch_enable
+		}
+		visible = {
+			has_country_flag = ap_marion_whelch_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_marion_whelch = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_velner_holvain = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_velner_holvain_enable
+		}
+		visible = {
+			has_country_flag = ap_velner_holvain_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_werner_holbein = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+	ap_visch_donahue = {
+		icon = generic_army_support
+		available = {
+			has_country_flag = ap_visch_donahue_enable
+		}
+		visible = {
+			has_country_flag = ap_visch_donahue_enable
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_remove = 0
+		days_re_enable = 0
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 14
+		}
+		custom_cost_text = command_power_more_than_15
+		complete_effect = {
+			add_command_power = -15
+			ZEO_visch_donahue = {
+				set_character_flag = enable_corps_commander
+			}
+		}
+	}
+}
+operations = {
+	# 79.1.3 ブリティッシュ作戦
+	op_british = {
+		icon = generic_operation
+		available = {
+			has_war_with = EFS
+		}
+		visible = {
+			has_country_flag = operation_british_is_yes
+			check_variable = { how_many_drop_earth < 2 }
+			NOT = {
+				has_country_flag = operation_british_is_start
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					has_war_with = EFS
+				}
+				has_country_flag = operation_british_is_start
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0.3
+				is_historical_focus_on = no
+			}
+		}
+		days_remove = 90
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			add_timed_idea = {
+				idea = operation_british
+				days = 60
+			}
+      set_global_flag = operation_british_1
+			clr_country_flag = earth_invasion_is_yes
+			if = {
+				limit = {
+					has_tech = recruiment_zudah
+				}
+				news_event = { id = news.180 days = 5 }
+				else = {
+					news_event = { id = news.171 days = 5 }
+				}
+			}
+		}
+		remove_effect = {
+			set_country_flag = earth_inavsion_is_yes
+		}
+	}
+	# 地球寒冷化作戦
+	op_freeze_earth = {
+		icon = generic_operation
+		available = {
+			has_war_with = EFS
+		}
+		visible = {
+			has_country_flag = operation_freeze_earth_is_yes
+			check_variable = { how_many_drop_earth < 2 }
+		}
+		cancel_trigger = {
+			NOT = { has_war_with = EFS }
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		days_remove = 7
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 49
+		}
+		custom_cost_text = command_power_more_than_50
+		complete_effect = {
+			add_command_power = -50
+			news_event = { id = news.99 hours = 3 }
+			clr_country_flag = earth_invasion_is_yes
+		}
+		remove_effect = {
+			add_command_power = 25
+			add_political_power = 100
+			random_list = {
+	      95 = {
+	        news_event = { id = news.101 }
+	      }
+	      5 = {
+	        news_event = { id = news.100 }
+	      }
+	    }
+		}
+	}
+	# 79.1.13 第二次ブリティッシュ作戦
+	op_british_2 = {
+		icon = generic_operation
+		available = {
+			has_global_flag = operation_british_fail
+		}
+		visible = {
+			has_global_flag = operation_british_fail
+			check_variable = { how_many_drop_earth < 2 }
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0.3
+				is_historical_focus_on = yes
+			}
+		}
+		modifier = {
+		}
+		complete_effect = {
+			add_command_power = -25
+			EFS = {
+				country_event = { id = efsf.10 days = 1 }
+			}
+			clr_country_flag = earth_invasion_is_yes
+		}
+		remove_effect = {
+		}
+	}
+	# 79.3.1 地球降下作戦
+	op_assault_earth = {
+		icon = generic_operation
+		available = {
+			has_idea = operation_drop_earth
+			if = {
+				limit = {
+					NOT = {
+						has_game_rule = {
+							rule = allow_earth_drop
+							option = DEFAULT
+						}
+					}
+				}
+				OR = {
+					has_full_control_of_state = 270
+					has_full_control_of_state = 726
+					has_full_control_of_state = 641
+					has_full_control_of_state = 868
+					has_full_control_of_state = 943
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
+		}
+		visible = {
+			has_war_with = EFS
+			has_country_flag = operation_drop_earth_is_yes2
+			has_country_flag = earth_invasion_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+		}
+		cancel_trigger = {
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 0
+		complete_effect = {
+			set_country_flag = op_assault_earth_window_on
+		}
+	}
+
+	# 79.3.1 地球降下作戦　オデッサ
+	op_drop_odessa = {
+		icon = infiltrate_state
+		activation = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth < 4 }
+			has_country_flag = operation_drop_earth_is_yes2
+			has_country_flag = earth_invasion_is_yes
+			is_ai = yes
+		}
+		available = {
+			has_country_flag = earth_invasion_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+			any_enemy_country = {
+				controls_state = 402
+				controls_state = 192
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_ORBIT
+					}
+				}
+				OR = {
+					has_full_control_of_state = 270
+					has_full_control_of_state = 726
+					has_full_control_of_state = 641
+					has_full_control_of_state = 868
+					has_full_control_of_state = 943
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_EACH_ORBIT
+					}
+				}
+				has_full_control_of_state = 947
+			}
+		}
+		days_mission_timeout = 120
+		selectable_mission = yes
+		is_good = no
+		visible = {
+ 			has_country_flag = operation_drop_earth_is_yes
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0.0
+				has_country_flag = now_drop_earth
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					has_active_mission = op_drop_europa_2
+					has_active_mission = op_drop_africa_2
+				}
+			}
+			modifier = {
+				factor = 1.2
+				has_active_mission = op_drop_asia_2
+			}
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			add_to_variable = { var = how_many_drop_earth value = 1 }
+			set_country_flag = droped_point_7
+			set_country_flag = now_drop_earth
+			# ジオン生産調整
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_equipment_to_stockpile = {
+					type = archetype_ms05
+					amount = 2000
+					producer = ZEO
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = ZEO
+				}
+			}
+		}
+		remove_effect = {
+			country_event = { id = zeon.4000 }
+		}
+	}
+	op_drop_odessa_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 192
+			controls_state = 402
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+		complete_effect = {
+			add_command_power = 50
+			country_event = { id = zeon.72 }
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+	}
+	# オデッサ
+	op_drop_odessa_cp_1 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 192
+		}
+		visible = {
+			NOT = {
+				192 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 192
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 192
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 192 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# バイコヌール
+	op_drop_odessa_cp_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 402
+		}
+		visible = {
+			NOT = {
+				402 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 402
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 402
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		days_re_enable = 10
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 402 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# 79.3.11 地球降下作戦　北米
+	op_drop_north_america = {
+		icon = infiltrate_state
+		activation = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth < 4 }
+			has_country_flag = operation_drop_earth_is_yes2
+			has_country_flag = earth_invasion_is_yes
+			is_ai = yes
+		}
+		available = {
+			has_country_flag = earth_invasion_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+			any_enemy_country = {
+				controls_state = 358
+				controls_state = 378
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_ORBIT
+					}
+				}
+				OR = {
+					has_full_control_of_state = 270
+					has_full_control_of_state = 726
+					has_full_control_of_state = 641
+					has_full_control_of_state = 868
+					has_full_control_of_state = 943
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_EACH_ORBIT
+					}
+				}
+				has_full_control_of_state = 946
+			}
+		}
+		days_mission_timeout = 120
+		selectable_mission = yes
+		is_good = no
+		visible = {
+			has_country_flag = operation_drop_earth_is_yes
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0.0
+				has_country_flag = now_drop_earth
+			}
+			modifier = {
+				factor = 1.2
+				check_variable = { how_many_drop_earth > 1 }
+			}
+			modifier = {
+				factor = 1.5
+				OR = {
+					check_variable = { how_many_drop_earth > 2 }
+					has_active_mission = op_drop_south_america_2
+				}
+			}
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			add_to_variable = { var = how_many_drop_earth value = 1 }
+			set_country_flag = droped_point_1
+			set_country_flag = now_drop_earth
+			# ジオン生産調整
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_equipment_to_stockpile = {
+					type = archetype_ms05
+					amount = 2000
+					producer = ZEO
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = ZEO
+				}
+			}
+		}
+		remove_effect = {
+			country_event = { id = zeon.4004 }
+		}
+	}
+	op_drop_north_america_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 378
+			controls_state = 358
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+		complete_effect = {
+			add_command_power = 50
+			country_event = { id = zeon.73 }
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+	}
+	# キャリフォルニア
+	op_drop_north_america_cp_1 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 378
+		}
+		visible = {
+			NOT = {
+				378 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 378
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 378
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 700
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		days_re_enable = 10
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 378 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# ニューヤーク
+	op_drop_north_america_cp_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 358
+		}
+		visible = {
+			NOT = {
+				358 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 358
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 358
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 358 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# 地球降下作戦　南米
+	op_drop_south_america = {
+		icon = infiltrate_state
+		activation = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth < 4 }
+			has_country_flag = operation_drop_earth_is_yes2
+			has_country_flag = earth_invasion_is_yes
+			is_ai = yes
+		}
+		available = {
+			has_country_flag = earth_invasion_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+			any_enemy_country = {
+				controls_state = 501
+				controls_state = 687
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_ORBIT
+					}
+				}
+				OR = {
+					has_full_control_of_state = 270
+					has_full_control_of_state = 726
+					has_full_control_of_state = 641
+					has_full_control_of_state = 868
+					has_full_control_of_state = 943
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_EACH_ORBIT
+					}
+				}
+				has_full_control_of_state = 270
+			}
+		}
+		days_mission_timeout = 120
+		selectable_mission = yes
+		is_good = no
+		visible = {
+			has_country_flag = operation_drop_earth_is_yes
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0.0
+				has_country_flag = now_drop_earth
+			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					has_active_mission = op_drop_north_america_2
+					has_active_mission = op_drop_africa_2
+				}
+			}
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			add_to_variable = { var = how_many_drop_earth value = 1 }
+			set_country_flag = droped_point_2
+			set_country_flag = now_drop_earth
+			# ジオン生産調整
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_equipment_to_stockpile = {
+					type = archetype_ms05
+					amount = 2000
+					producer = ZEO
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = ZEO
+				}
+			}
+		}
+		remove_effect = {
+			country_event = { id = zeon.4008 }
+		}
+	}
+	op_drop_south_america_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 497
+			controls_state = 501
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+		complete_effect = {
+			add_command_power = 50
+			country_event = { id = zeon.74 }
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+	}
+	# サンパウロ
+	op_drop_south_america_cp_1 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 501
+		}
+		visible = {
+			NOT = {
+				501 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 501
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 501
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 501 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# ジャブロー
+	op_drop_south_america_cp_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 687
+		}
+		visible = {
+			NOT = {
+				687 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 687
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 687
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 687 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# 地球降下作戦　ヨーロッパ
+	op_drop_europa = {
+		icon = infiltrate_state
+		activation = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth < 4 }
+			has_country_flag = operation_drop_earth_is_yes2
+			has_country_flag = earth_invasion_is_yes
+			is_ai = yes
+		}
+		available = {
+			has_country_flag = earth_invasion_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+			any_enemy_country = {
+				controls_state = 16
+				controls_state = 55
+				controls_state = 7
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_ORBIT
+					}
+				}
+				OR = {
+					has_full_control_of_state = 270
+					has_full_control_of_state = 726
+					has_full_control_of_state = 641
+					has_full_control_of_state = 868
+					has_full_control_of_state = 943
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_EACH_ORBIT
+					}
+				}
+				has_full_control_of_state = 945
+			}
+		}
+		days_mission_timeout = 120
+		selectable_mission = yes
+		is_good = no
+		visible = {
+			has_country_flag = operation_drop_earth_is_yes
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0.0
+				has_country_flag = now_drop_earth
+			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					has_active_mission = op_drop_odessa_2
+					has_active_mission = op_drop_africa_2
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_active_mission = op_drop_north_america_2
+			}
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			add_to_variable = { var = how_many_drop_earth value = 1 }
+			set_country_flag = droped_point_4
+			set_country_flag = now_drop_earth
+			# ジオン生産調整
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_equipment_to_stockpile = {
+					type = archetype_ms05
+					amount = 2000
+					producer = ZEO
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = ZEO
+				}
+			}
+		}
+		remove_effect = {
+			country_event = { id = zeon.4020 }
+		}
+	}
+	op_drop_europa_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 16
+			controls_state = 55
+			controls_state = 7
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+		complete_effect = {
+			add_command_power = 50
+			country_event = { id = zeon.75 }
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+	}
+	# パリ
+	op_drop_europa_cp_1 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 16
+		}
+		visible = {
+			NOT = {
+				16 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 16
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 16 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# アムステルダム
+	op_drop_europa_cp_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 7
+		}
+		visible = {
+			NOT = {
+				7 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 7
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 7
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 7 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# フランクフルト
+	op_drop_europa_cp_3 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 55
+		}
+		visible = {
+			NOT = {
+				55 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 55
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 55
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		days_re_enable = 10
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 55 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# 79.3.18 地球降下作戦　インド
+	op_drop_asia = {
+		icon = infiltrate_state
+		activation = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth < 4 }
+			has_country_flag = operation_drop_earth_is_yes2
+			has_country_flag = earth_invasion_is_yes
+			is_ai = yes
+		}
+		available = {
+			has_country_flag = earth_invasion_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+			any_enemy_country = {
+				controls_state = 423
+				controls_state = 428
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_ORBIT
+					}
+				}
+				OR = {
+					has_full_control_of_state = 270
+					has_full_control_of_state = 726
+					has_full_control_of_state = 641
+					has_full_control_of_state = 868
+					has_full_control_of_state = 943
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_EACH_ORBIT
+					}
+				}
+				has_full_control_of_state = 641
+			}
+		}
+		days_mission_timeout = 120
+		selectable_mission = yes
+		is_good = no
+		visible = {
+			has_country_flag = operation_drop_earth_is_yes
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0.0
+				has_country_flag = now_drop_earth
+			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					has_active_mission = op_drop_austraria_2
+					has_active_mission = op_drop_china_2
+				}
+			}
+			modifier = {
+				factor = 1.1
+				OR = {
+					has_active_mission = op_drop_odessa_2
+					has_active_mission = op_drop_africa_2
+				}
+			}
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			add_to_variable = { var = how_many_drop_earth value = 1 }
+			set_country_flag = droped_point_5
+			set_country_flag = now_drop_earth
+			# ジオン生産調整
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_equipment_to_stockpile = {
+					type = archetype_ms05
+					amount = 2000
+					producer = ZEO
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = ZEO
+				}
+			}
+		}
+		remove_effect = {
+			country_event = { id = zeon.4012 }
+		}
+	}
+	op_drop_asia_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 423
+			controls_state = 428
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+		complete_effect = {
+			add_command_power = 50
+			country_event = { id = zeon.76 }
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+	}
+	# マドラス
+	op_drop_asia_cp_1 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 423
+		}
+		visible = {
+			NOT = {
+				423 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 423
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 423
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 423 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# アフマダーバード
+	op_drop_asia_cp_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 428
+		}
+		visible = {
+			NOT = {
+				428 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 428
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 428
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 428 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# 地球降下作戦　オーストラリア
+	op_drop_austraria = {
+		icon = infiltrate_state
+		activation = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth < 4 }
+			has_country_flag = operation_drop_earth_is_yes2
+			has_country_flag = earth_invasion_is_yes
+			is_ai = yes
+		}
+		available = {
+			has_country_flag = earth_invasion_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+			any_enemy_country = {
+				controls_state = 520
+				controls_state = 289
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_ORBIT
+					}
+				}
+				OR = {
+					has_full_control_of_state = 270
+					has_full_control_of_state = 726
+					has_full_control_of_state = 641
+					has_full_control_of_state = 868
+					has_full_control_of_state = 943
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_EACH_ORBIT
+					}
+				}
+				has_full_control_of_state = 868
+			}
+		}
+		days_mission_timeout = 120
+		selectable_mission = yes
+		is_good = no
+		visible = {
+			has_country_flag = operation_drop_earth_is_yes
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0.0
+				has_country_flag = now_drop_earth
+			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					has_active_mission = op_drop_asia_2
+					has_active_mission = op_drop_china_2
+				}
+			}
+			modifier = {
+				factor = 1.1
+				OR = {
+					has_active_mission = op_drop_south_america_2
+					has_active_mission = op_drop_africa_2
+				}
+			}
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			add_to_variable = { var = how_many_drop_earth value = 1 }
+			set_country_flag = droped_point_6
+			set_country_flag = now_drop_earth
+			# ジオン生産調整
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_equipment_to_stockpile = {
+					type = archetype_ms05
+					amount = 2000
+					producer = ZEO
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = ZEO
+				}
+			}
+		}
+		remove_effect = {
+			country_event = { id = zeon.4024 }
+		}
+	}
+	op_drop_austraria_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 520
+			controls_state = 289
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+		complete_effect = {
+			add_command_power = 50
+			country_event = { id = zeon.78 }
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+	}
+	# ダーウィン
+	op_drop_austraria_cp_1 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 520
+		}
+		visible = {
+			NOT = {
+				520 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 520
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 520
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		days_re_enable = 10
+		modifier = {
+		}
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 520 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# バンコク
+	op_drop_austraria_cp_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 289
+		}
+		visible = {
+			NOT = {
+				289 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 289
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 289
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 289 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# 地球降下作戦　アフリカ
+	op_drop_africa = {
+		icon = infiltrate_state
+		activation = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth < 4 }
+			has_country_flag = operation_drop_earth_is_yes2
+			has_country_flag = earth_invasion_is_yes
+			is_ai = yes
+		}
+		available = {
+			has_country_flag = earth_invasion_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+			any_enemy_country = {
+				controls_state = 447
+				controls_state = 448
+				controls_state = 659
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_ORBIT
+					}
+				}
+				OR = {
+					has_full_control_of_state = 270
+					has_full_control_of_state = 726
+					has_full_control_of_state = 641
+					has_full_control_of_state = 868
+					has_full_control_of_state = 943
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_EACH_ORBIT
+					}
+				}
+				has_full_control_of_state = 943
+			}
+		}
+		days_mission_timeout = 120
+		selectable_mission = yes
+		is_good = no
+		visible = {
+			has_country_flag = operation_drop_earth_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0.0
+				has_country_flag = now_drop_earth
+			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					has_active_mission = op_drop_europa_2
+					has_active_mission = op_drop_odessa_2
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_active_mission = op_drop_austraria_2
+				has_active_mission = op_drop_south_america_2
+			}
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			add_to_variable = { var = how_many_drop_earth value = 1 }
+			set_country_flag = droped_point_3
+			set_country_flag = now_drop_earth
+			# ジオン生産調整
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_equipment_to_stockpile = {
+					type = archetype_ms05
+					amount = 1000
+					producer = ZEO
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = ZEO
+				}
+			}
+		}
+		remove_effect = {
+			country_event = { id = zeon.4016 }
+		}
+	}
+	op_drop_africa_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 448
+			controls_state = 447
+			controls_state = 659
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+		}
+		complete_effect = {
+			add_command_power = 50
+			country_event = { id = zeon.77 }
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_desert_ronmel_enable
+					}
+				}
+				country_event = { id = zeon.1007 days = 10 random = 10 }
+			}
+		}
+	}
+	# トリポリ
+	op_drop_africa_cp_1 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 448
+		}
+		visible = {
+			NOT = {
+				448 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 448
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 448
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 448 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# アレクサンドリア
+	op_drop_africa_cp_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 447
+		}
+		visible = {
+			NOT = {
+				447 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 447
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 447
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 447 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# アデン
+	op_drop_africa_cp_3 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 659
+		}
+		visible = {
+			NOT = {
+				659 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 659
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 659
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 659 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# 地球降下作戦　アジア
+	op_drop_china = {
+		icon = infiltrate_state
+		activation = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth < 4 }
+			has_country_flag = operation_drop_earth_is_yes2
+			has_country_flag = earth_invasion_is_yes
+			is_ai = yes
+		}
+		available = {
+			has_country_flag = earth_invasion_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+			any_enemy_country = {
+				controls_state = 608
+				controls_state = 613
+			}
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_ORBIT
+					}
+				}
+				OR = {
+					has_full_control_of_state = 270
+					has_full_control_of_state = 726
+					has_full_control_of_state = 641
+					has_full_control_of_state = 868
+					has_full_control_of_state = 943
+					has_full_control_of_state = 945
+					has_full_control_of_state = 946
+					has_full_control_of_state = 947
+				}
+			}
+			else_if = {
+				limit = {
+					has_game_rule = {
+						rule = allow_earth_drop
+						option = NEED_EACH_ORBIT
+					}
+				}
+				has_full_control_of_state = 726
+			}
+		}
+		days_mission_timeout = 120
+		selectable_mission = yes
+		is_good = no
+		visible = {
+			has_country_flag = operation_drop_earth_is_yes
+			check_variable = { how_many_drop_earth < 4 }
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0.0
+				has_country_flag = now_drop_earth
+			}
+			modifier = {
+				factor = 1.2
+				OR = {
+					has_active_mission = op_drop_asia_2
+					has_active_mission = op_drop_austraria_2
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_active_mission = op_drop_south_america_2
+				has_active_mission = op_drop_north_america_2
+			}
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+		complete_effect = {
+			add_to_variable = { var = how_many_drop_earth value = 1 }
+			set_country_flag = droped_point_8
+			set_country_flag = now_drop_earth
+			# ジオン生産調整
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				add_equipment_to_stockpile = {
+					type = archetype_ms05
+					amount = 2000
+					producer = ZEO
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 5000
+					producer = ZEO
+				}
+			}
+		}
+		remove_effect = {
+			country_event = { id = zeon.4028 }
+		}
+	}
+	op_drop_china_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 608
+			controls_state = 613
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+		complete_effect = {
+			add_command_power = 50
+			country_event = { id = zeon.160 }
+			if = {
+				limit = {
+					check_variable = { how_many_drop_earth > 3 }
+				}
+				set_country_flag = drop_earth_is_end
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = ap_hardie_steiner_enable
+					}
+				}
+				country_event = { id = zeon.1006 days = 10 random = 10 }
+			}
+		}
+	}
+	# 北京
+	op_drop_china_cp_1 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 608
+		}
+		visible = {
+			NOT = {
+				608 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 608
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 608
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 608 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# 南京
+	op_drop_china_cp_2 = {
+		icon = infiltrate_state
+		available = {
+			controls_state = 613
+		}
+		visible = {
+			NOT = {
+				613 = {
+					is_capital = yes
+				}
+			}
+			controls_state = 613
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 613
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 500
+			modifier = {
+				factor = 0
+				909 = {
+					is_capital = no
+				}
+			}
+		}
+		modifier = {
+		}
+		days_re_enable = 10
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+			ZEO = {
+				set_capital = { state = 613 }
+				set_country_flag = capital_earth
+				remove_ideas = {
+					colony_country
+					colony_country2
+					colony_country3
+					colony_country4
+				}
+			}
+		}
+	}
+	# 79.5.21 トライデント作戦
+	op_trident = {
+		icon = generic_operation
+		available = {
+			NOT = {
+				controls_state = 447
+			}
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			NOT = {
+				OR = {
+					controls_state = 447
+					has_active_mission = op_trident_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 447
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_trident_2
+		}
+	}
+	op_trident_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 447
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 447
+			}
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = zeon.130 days = 3 }
+		}
+	}
+	# 79.5.21 ジャベリン作戦
+	op_jabering = {
+		icon = generic_operation
+		available = {
+			NOT = {
+				controls_state = 454
+			}
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			NOT = {
+				OR = {
+					controls_state = 454
+					has_active_mission = op_jabering_2
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { has_war_with = EFS }
+				controls_state = 454
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 454
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_jabering_2
+		}
+	}
+	op_jabering_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 454
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 454
+			}
+		}
+		visible = {
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = zeon.131 days = 3 }
+		}
+	}
+	# 79.5 青作戦
+	op_blue = {
+		icon = generic_operation
+		available = {
+			NOT = {
+				controls_state = 685
+			}
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			NOT = {
+				OR = {
+					controls_state = 685
+					has_active_mission = op_blue_2
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { has_war_with = EFS }
+				controls_state = 685
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 685
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_blue_2
+		}
+	}
+	op_blue_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 685
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = zeon.132 days = 3 }
+		}
+	}
+	# 79.6 赤作戦
+	op_red = {
+		icon = generic_operation
+		available = {
+			NOT = {
+				controls_state = 288
+				controls_state = 430
+				controls_state = 431
+			}
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			NOT= {
+				OR = {
+					controls_state = 288
+					controls_state = 430
+					controls_state = 431
+					has_active_mission = op_red_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 288
+				state = 430
+				state = 431
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_red_2
+		}
+	}
+	op_red_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 288
+			controls_state = 430
+			controls_state = 431
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 288
+				state = 430
+				state = 431
+			}
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = zeon.133 days = 3 }
+		}
+	}
+	# アトラス作戦
+	op_atlas = {
+		icon = generic_operation
+		available = {
+			NOT = {
+				controls_state = 272
+			}
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			NOT = {
+				OR = {
+					controls_state = 272
+					has_active_mission = op_atlas_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 272
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_atlas_2
+		}
+	}
+	op_atlas_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 272
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 272
+			}
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = zeon.134 days = 3 }
+		}
+	}
+	# 79.10.1 コロニアル作戦
+	op_colonial = {
+		icon = generic_operation
+		available = {
+			NOT = {
+				controls_state = 423
+			}
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			NOT = {
+				OR = {
+					controls_state = 423
+					has_active_mission = op_colonial_2
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 423
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+
+		remove_effect = {
+		}
+	}
+	op_colonial_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 423
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 423
+			}
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			country_event = { id = zeon.135 days = 3 }
+		}
+	}
+
+	# 79.9.16 ルナ２奇襲作戦
+	op_assault_luna2 = {
+		icon = generic_operation
+		available = {
+			has_war_with = EFS
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			NOT = {
+				828 = {
+					is_controlled_by = ZEO
+				}
+				829 = {
+					is_controlled_by = ZEO
+				}
+			}
+			always = no
+		}
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		modifier = {
+		}
+		days_remove = 15
+		days_re_enable = 0
+
+		complete_effect = {
+			add_command_power = -25
+		}
+		remove_effect = {
+			country_event = { id = zeon.6200 }
+		}
+	}
+	# ルナツー攻略作戦
+	op_attack_luna2 = {
+		icon = generic_operation
+		available = {
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			NOT = {
+				OR = {
+					930 = {
+						is_controlled_by = ZEO
+					}
+					931 = {
+						is_controlled_by = ZEO
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 930
+				state = 931
+			}
+		}
+		cancel_if_not_visible = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		days_re_enable = 150
+		remove_effect = {
+			activate_mission = op_attack_luna2_2
+		}
+	}
+	op_attack_luna2_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 930
+			controls_state = 931
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+			news_event = { id = news.2013 }
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			news_event = { id = news.2012 }
+		}
+	}
+	# サイド６威力偵察（ストーリーミッションに移動）
+	# op_assault_side6 = {
+	# 	icon = generic_operation
+	# 	activation = {
+	# 		has_war_with = EFS
+	# 		has_country_flag = assault_side6_is_yes
+	# 	}
+	# 	days_mission_timeout = 30
+	# 	selectable_mission = yes
+	# 	is_good = no
+	# 	available = {
+	# 		has_country_flag = assault_side6_is_yes
+	# 	}
+	# 	visible = {
+	# 		has_war_with = EFS
+	# 		has_country_flag = assault_side6_is_yes
+	# 	}
+	# 	fire_only_once = yes
+	# 	allowed = {
+	# 		original_tag = ZEO
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 5
+	# 	}
+	# 	cost = 0
+	# 	custom_cost_trigger = {
+	# 		command_power > 9
+	# 	}
+	# 	custom_cost_text = command_power_more_than_10
+	# 	modifier = {
+	# 	}
+	# 	days_remove = 5
+	# 	days_re_enable = 0
+
+	# 	complete_effect = {
+	# 		add_command_power = -10
+	# 	}
+	# 	remove_effect = {
+	# 		news_event = { id = news.54 days = 1 }
+	# 	}
+	# }
+	# アポロ作戦
+	op_apolo = {
+		icon = generic_operation
+		available = {
+			NOT = {
+				OR = {
+					has_non_aggression_pact_with = VBC
+					has_guaranteed = VBC
+				}
+			}
+		}
+		visible = {
+			has_war_with = EFS
+			NOT = {
+				OR = {
+					has_completed_focus = zeon_colony_alliance
+					is_in_faction_with = VBC
+					865 = {
+						is_controlled_by = ZEO
+					}
+					940 = {
+						is_controlled_by = ZEO
+					}
+					941 = {
+						is_controlled_by = ZEO
+					}
+					VBC = {
+						OR = {
+							is_subject = yes
+							is_puppet = yes
+						}
+					}
+				}
+			}
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			planning_speed = 0.3
+			max_planning = 0.3
+			invasion_preparation = -0.3
+		}
+		days_remove = 30
+		cancel_if_not_visible = yes
+		days_re_enable = 150
+		remove_effect = {
+			declare_war_on = {
+				target = VBC
+				type = annex_everything
+			}
+			activate_mission = op_apolo_2
+		}
+	}
+	op_apolo_2 = {
+		icon = generic_operation
+		available = {
+			controls_state = 865
+			controls_state = 940
+			controls_state = 941
+		}
+		is_good = no
+		fire_only_once = yes
+		allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		days_mission_timeout = 120
+		timeout_effect = {
+			add_command_power = -30
+			add_war_support = -0.03
+			news_event = { id = news.2015 }
+		}
+		complete_effect = {
+			add_command_power = 30
+			add_war_support = 0.05
+			news_event = { id = news.2014 }
+		}
+	}
+	# 81 水天の涙作戦
+	op_suiten_namida = {
+		icon = generic_operation
+		available = {
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		modifier = {
+		}
+		days_remove = 15
+		days_re_enable = 0
+
+		complete_effect = {
+			add_command_power = -25
+		}
+	}
+	# 83 星の屑作戦
+	op_hoshi_kuzu = {
+		icon = generic_operation
+		available = {
+		}
+		visible = {
+			has_war_with = EFS
+			check_variable = { how_many_drop_earth > 3 }
+			always = no
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		modifier = {
+		}
+		days_remove = 15
+		days_re_enable = 0
+
+		complete_effect = {
+			add_command_power = -25
+		}
+	}
+
+	# ソーラ・レイ発射
+	op_solar_ray = {
+		icon = generic_operation
+		available = {
+			num_of_civilian_factories_available_for_projects > 29
+		}
+		visible = {
+			has_war_with = EFS
+			has_country_flag = solar_ray_is_finish
+		}
+		allowed = {
+			original_tag = ZEO
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		complete_effect = {
+			add_command_power = -25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		modifier = {
+			civilian_factory_use = 30
+		}
+		days_remove = 60
+		days_re_enable = 240
+
+		remove_effect = {
+		}
+	}
+}
+special_projects = {
+	sp_maharu = {
+		icon = generic_political_discourse
+		available = {
+			has_completed_focus = zeon_total_force_warfare_study
+		}
+		visible = {
+			has_completed_focus = zeon_total_force_warfare_study
+			OR = {
+				has_war = yes
+				has_tech = construction3
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 5
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 5
+				has_country_leader = {
+					character = ZEO_gihren_zabi
+					ruling_only = yes
+				}
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.05
+			stability_weekly = -0.005
+		}
+		days_remove = 90
+		days_re_enable = 0
+		cost = 250
+
+		complete_effect = {
+		}
+		remove_effect = {
+			set_country_flag = maharu_is_finish
+			unlock_decision_tooltip = sp_solar_ray
+		}
+	}
+	sp_solar_ray = {
+		icon = generic_construction
+		available = {
+			has_country_flag = maharu_is_finish
+			num_of_civilian_factories_available_for_projects > 4
+			has_tech = construction4
+		}
+		visible = {
+			has_country_flag = maharu_is_finish
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 50
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 180
+		days_re_enable = 0
+		cost = 100
+
+		complete_effect = {
+		}
+		remove_effect = {
+			set_country_flag = solar_ray_is_finish
+		}
+	}
+	sp_fort_odessa = {
+		icon = generic_construction
+		available = {
+			192 = {
+				is_fully_controlled_by = ROOT
+			}
+			num_of_civilian_factories_available_for_projects > 4
+			has_tech = construction3
+		}
+		visible = {
+			192 = {
+				is_fully_controlled_by = ROOT
+			}
+			has_tech = construction2
+		}
+		cancel_trigger = {
+			NOT = {
+				192 = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 50
+		days_re_enable = 0
+		cost = 50
+
+		remove_effect = {
+			192 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	sp_fort_africa = {
+		icon = generic_construction
+		available = {
+			446 = {
+				is_fully_controlled_by = ROOT
+			}
+			447 = {
+				is_fully_controlled_by = ROOT
+			}
+			num_of_civilian_factories_available_for_projects > 4
+			has_tech = construction3
+		}
+		visible = {
+			446 = {
+				is_fully_controlled_by = ROOT
+			}
+			447 = {
+				is_fully_controlled_by = ROOT
+			}
+			has_tech = construction2
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 50
+		days_re_enable = 0
+		cost = 50
+
+		complete_effect = {
+			446 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_border = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			447 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	sp_fort_solomon = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 932
+				state = 933
+			}
+		}
+		available = {
+			has_tech = construction3
+			threat > 0.20
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				OR = {
+					has_decision = develop_solomon_1
+					has_decision = develop_solomon_2
+					has_decision = develop_solomon_3
+				}
+			}
+			owns_state = 932
+			controls_state = 932
+			owns_state = 933
+			controls_state = 933
+		}
+		visible = {
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			OR = {
+				has_war = yes
+				has_tech = construction2
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 180
+		days_re_enable = 0
+		cost = 50
+		remove_effect = {
+			set_country_flag = forted_solomon
+			932 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = space_forted_state
+			}
+			933 = {
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = space_forted_state
+			}
+			add_mines = {
+				region = 246
+				amount = 300
+			}
+		}
+	}
+	sp_fort_abaoaque = {
+		icon = generic_construction
+		highlight_states = {
+			highlight_state_targets = {
+				state = 934
+				state = 935
+			}
+		}
+		available = {
+			has_tech = construction3
+			threat > 0.20
+			num_of_civilian_factories_available_for_projects > 4
+			NOT = {
+				OR = {
+					has_decision = develop_abaoaqu_1
+					has_decision = develop_abaoaqu_2
+					has_decision = develop_abaoaqu_3
+				}
+			}
+			owns_state = 934
+			controls_state = 934
+			owns_state = 935
+			controls_state = 935
+		}
+		visible = {
+			NOT = {
+				has_global_flag = start_is_uc0079
+			}
+			OR = {
+				has_war = yes
+				has_tech = construction2
+			}
+		}
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 180
+		days_re_enable = 0
+		cost = 50
+		remove_effect = {
+			set_country_flag = forted_abaoaque
+			934 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = space_forted_state
+			}
+			935 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = space_forted_state
+			}
+			add_mines = {
+				region = 243
+				amount = 300
+			}
+		}
+	}
+	wm_expansion_of_california_base = {
+
+		icon = steel
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			378 = {
+				is_controlled_by = ZEO
+			}
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		visible = {
+			378 = {
+				is_controlled_by = ZEO
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			378 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	wm_expansion_of_hawaiian_navy_arsenal = {
+
+		icon = steel
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			629 = {
+				is_controlled_by = ZEO
+			}
+			num_of_civilian_factories_available_for_projects > 4
+		}
+
+		visible = {
+			629 = {
+				is_controlled_by = ZEO
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 50
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+		remove_effect = {
+			629 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+espionage_decision_category = {
+	ep_moon_destroy = {
+		icon = border_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 940
+			}
+		}
+		available = {
+			has_country_flag = establishment_cyclops
+		}
+		visible = {
+			has_war_with = EFS
+			country_exists = VBC
+			NOT = {
+				940 = {
+					is_controlled_by = ZEO
+				}
+			}
+			VBC = {
+				NOT = {
+					is_subject_of = ZEO
+					is_in_faction_with = ZEO
+					has_war_together_with = ZEO
+				}
+			}
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 9
+		}
+		custom_cost_text = command_power_more_than_10
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+		}
+		days_remove = 20
+		days_re_enable = 0
+
+		complete_effect = {
+			add_command_power = -10
+		}
+		remove_effect = {
+			country_event = { id = warinthepocket.0002 }
+		}
+	}
+	ep_madangler_searching_jablo = {
+		icon = border_war
+		activation = {
+			has_war_with = EFS
+			has_country_flag = madangler_searcing_jablo_is_yes
+		}
+		days_mission_timeout = 10
+		selectable_mission = yes
+		is_good = no
+		available = {
+			has_country_flag = madangler_searcing_jablo_is_yes
+		}
+		visible = {
+			has_country_flag = madangler_searcing_jablo_is_yes
+			has_war_with = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+		}
+		days_remove = 5
+		days_re_enable = 0
+
+		complete_effect = {
+			add_command_power = -25
+		}
+		remove_effect = {
+			country_event = { id = zeon.147 }
+		}
+	}
+	ep_madangler_sabotage_jablo = {
+		icon = border_war
+		activation = {
+			has_war_with = EFS
+			has_country_flag = madangler_sabotage_jablo_is_yes
+		}
+		days_mission_timeout = 10
+		selectable_mission = yes
+		is_good = no
+		available = {
+			has_country_flag = madangler_sabotage_jablo_is_yes
+		}
+		visible = {
+			has_country_flag = madangler_sabotage_jablo_is_yes
+			has_war_with = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+
+		complete_effect = {
+			add_command_power = -25
+		}
+		remove_effect = {
+			country_event = { id = zeon.148 days = 2 }
+		}
+	}
+	ep_madangler_battle_of_africa = {
+		icon = border_war
+		activation = {
+			has_war_with = EFS
+			has_country_flag = madangler_battle_of_africa_is_yes
+		}
+		days_mission_timeout = 10
+		selectable_mission = yes
+		is_good = no
+		available = {
+			has_country_flag = madangler_battle_of_africa_is_yes
+		}
+		visible = {
+			has_country_flag = madangler_battle_of_africa_is_yes
+			has_war_with = EFS
+		}
+		cost = 0
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		custom_cost_text = command_power_more_than_25
+		fire_only_once = yes
+		allowed = {
+			original_tag = ZEO
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+		}
+		days_remove = 10
+		days_re_enable = 0
+
+		complete_effect = {
+			add_command_power = -25
+		}
+		remove_effect = {
+			country_event = { id = zeon.149 days = 2 }
+		}
+	}
+}

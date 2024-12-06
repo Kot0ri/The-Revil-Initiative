@@ -1,0 +1,3416 @@
+military_build = {
+	EFS_space_cruisers = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		visible = {
+			has_tech = EFS_space_cruiser1_tech
+			num_of_naval_factories > 4
+			OR = {
+				930 = {
+					is_owned_and_controlled_by = EFS
+				}
+				931 = {
+					is_owned_and_controlled_by = EFS
+				}
+			}
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				1yw_create_ship_cap = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 90
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					930 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "EFS_create_space_cruiser_13352"
+				else_if = {
+					limit = {
+						931 = {
+							is_owned_and_controlled_by = EFS
+						}
+					}
+					load_oob = "EFS_create_space_cruiser_13345"
+				}
+			}
+		}
+	}
+	EFS_space_battleship = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 9
+		}
+		visible = {
+			has_tech = EFS_space_battleship1_tech
+			num_of_naval_factories > 4
+			OR = {
+				930 = {
+					is_owned_and_controlled_by = EFS
+				}
+				931 = {
+					is_owned_and_controlled_by = EFS
+				}
+			}
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				1yw_create_ship_cap = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 10
+		}
+		days_remove = 360
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					930 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "EFS_create_space_battleship_13352"
+				else_if = {
+					limit = {
+						931 = {
+							is_owned_and_controlled_by = EFS
+						}
+					}
+					load_oob = "EFS_create_space_battleship_13345"
+				}
+			}
+		}
+	}
+	ZEO_space_cruisers = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		visible = {
+			has_tech = ZEO_space_cruiser1_tech
+			num_of_naval_factories > 4
+			OR = {
+				909 = {
+					is_owned_and_controlled_by = ZEO
+				}
+				910 = {
+					is_owned_and_controlled_by = ZEO
+				}
+				911 = {
+					is_owned_and_controlled_by = ZEO
+				}
+			}
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 60
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					909 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "ZEO_create_space_cruiser_13280"
+				else_if = {
+					limit = {
+						910 = {
+							is_owned_and_controlled_by = ZEO
+						}
+					}
+					load_oob = "ZEO_create_space_cruiser_13262"
+				}
+				else_if = {
+					limit = {
+						911 = {
+							is_owned_and_controlled_by = ZEO
+						}
+					}
+					load_oob = "ZEO_create_space_cruiser_13284"
+				}
+			}
+		}
+	}
+	ZEO_space_battleship = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		visible = {
+			has_tech = ZEO_space_hv_battleship1_tech
+			num_of_naval_factories > 4
+			OR = {
+				909 = {
+					is_owned_and_controlled_by = ZEO
+				}
+				910 = {
+					is_owned_and_controlled_by = ZEO
+				}
+				911 = {
+					is_owned_and_controlled_by = ZEO
+				}
+			}
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 240
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					909 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "ZEO_create_space_battleship_13280"
+				else_if = {
+					limit = {
+						910 = {
+							is_owned_and_controlled_by = ZEO
+						}
+					}
+					load_oob = "ZEO_create_space_battleship_13262"
+				}
+				else_if = {
+					limit = {
+						911 = {
+							is_owned_and_controlled_by = ZEO
+						}
+					}
+					load_oob = "ZEO_create_space_battleship_13284"
+				}
+			}
+		}
+	}
+	ZEO_space_fv_cruisers = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		visible = {
+			has_tech = ZEO_space_fv_cruiser1_tech
+			num_of_naval_factories > 4
+			OR = {
+				909 = {
+					is_owned_and_controlled_by = ZEO
+				}
+				910 = {
+					is_owned_and_controlled_by = ZEO
+				}
+				911 = {
+					is_owned_and_controlled_by = ZEO
+				}
+			}
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 150
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					909 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "ZEO_create_space_fv_cruiser_13280"
+				else_if = {
+					limit = {
+						910 = {
+							is_owned_and_controlled_by = ZEO
+						}
+					}
+					load_oob = "ZEO_create_space_fv_cruiser_13262"
+				}
+				else_if = {
+					limit = {
+						911 = {
+							is_owned_and_controlled_by = ZEO
+						}
+					}
+					load_oob = "ZEO_create_space_fv_cruiser_13284"
+				}
+			}
+		}
+	}
+	ZEO_space_carrier = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		visible = {
+			has_tech = ZEO_space_carrier1_tech
+			num_of_naval_factories > 4
+			OR = {
+				909 = {
+					is_owned_and_controlled_by = ZEO
+				}
+				910 = {
+					is_owned_and_controlled_by = ZEO
+				}
+				911 = {
+					is_owned_and_controlled_by = ZEO
+				}
+			}
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 240
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					909 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "ZEO_create_space_carrier_13280"
+				else_if = {
+					limit = {
+						910 = {
+							is_owned_and_controlled_by = ZEO
+						}
+					}
+					load_oob = "ZEO_create_space_carrier_13262"
+				}
+				else_if = {
+					limit = {
+						911 = {
+							is_owned_and_controlled_by = ZEO
+						}
+					}
+					load_oob = "ZEO_create_space_carrier_13284"
+				}
+			}
+		}
+	}
+
+	ZEO_naval_survey_deploy = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = ZEO_survey1_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 30
+		days_re_enable = 15
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_survey_9998"
+			}
+		}
+	}
+	EFS_naval_destroyer_deploy = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 9
+		}
+		visible = {
+			has_tech = EFS_destroyer1_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				1yw_create_ship_cap = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 10
+		}
+		days_remove = 60
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_4982"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_4180"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_9498"
+			}
+			else_if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_9671"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_3379"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_12406"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_4948"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_11670"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_7014"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_7408"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_destroyer_9998"
+			}
+		}
+	}
+	EFS_naval_cruiser_deploy = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 9
+		}
+		visible = {
+			has_tech = EFS_cruiser1_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				1yw_create_ship_cap = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 10
+		}
+		days_remove = 120
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_4982"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_4180"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_9498"
+			}
+			else_if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_9671"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_3379"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_12406"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_4948"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_11670"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_7014"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_7408"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_cruiser_9998"
+			}
+		}
+	}
+	ZEO_naval_submarine_deploy = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = ZEO_submarine1_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 30
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_9998"
+			}
+		}
+	}
+	ZEO_naval_submarine_carrier_deploy = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = ZEO
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = ZEO_submarine_carrier1_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 120
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_submarine_carrier_9998"
+			}
+		}
+	}
+	EFS_naval_carrier_deploy = {
+
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 14
+		}
+		visible = {
+			has_tech = EFS_carrier1_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				1yw_create_ship_cap = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 15
+		}
+		days_remove = 240
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_4982"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_4180"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_9498"
+			}
+			else_if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_9671"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_3379"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_12406"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_4948"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_11670"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_7014"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_7408"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_carrier_9998"
+			}
+		}
+	}
+
+	ms06m_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = ms06_m_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = msm04_tech
+					has_tech = msm03_tech
+					has_tech = msm07_tech
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 30
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_ms06m_9998"
+			}
+		}
+	}
+	msm04_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = msm04_tech
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0.1
+				has_tech = msm07_tech
+			}
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 40
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm04_9998"
+			}
+		}
+	}
+	msm03_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = msm03_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = msm07_tech
+					has_tech = msm03_c_tech
+				}
+			}
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 45
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03_9998"
+			}
+		}
+	}
+	msm07_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = msm07_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				has_tech = msm07_e_tech
+			}
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 50
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07_9998"
+			}
+		}
+	}
+	msm10_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = msm10_tech
+			num_of_naval_factories > 9
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 80
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm10_9998"
+			}
+		}
+	}
+	msm03c_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = msm03_c_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 60
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm03c_9998"
+			}
+		}
+	}
+	msm07e_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = msm07_e_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 70
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_msm07e_9998"
+			}
+		}
+	}
+	mam07_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			capital_scope = {
+				NOT = {
+					is_on_continent = space_cont
+				}
+			}
+		}
+		visible = {
+			has_tech = mam07_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 120
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_9671"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_4180"
+			}
+			else_if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_4982"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_11670"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_9498"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_7408"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_12406"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_3379"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_4948"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_7014"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = ZEO
+					}
+				}
+				load_oob = "create_mam07_9998"
+			}
+		}
+	}
+
+	rb79n_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		visible = {
+			has_tech = rb79_n_tech
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				1yw_create_ship_cap = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 30
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_4982"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_4180"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_9498"
+			}
+			else_if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_9671"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_3379"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_12406"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_4948"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_11670"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_7014"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_7408"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rb79n_9998"
+			}
+		}
+	}
+	rag79_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		visible = {
+			has_tech = rag79_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				1yw_create_ship_cap = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		days_remove = 50
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_4982"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_4180"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_9498"
+			}
+			else_if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_9671"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_3379"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_12406"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_4948"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_11670"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_7014"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_7408"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79_9998"
+			}
+		}
+	}
+	rag79g_deploy = {
+		icon = ger_military_buildup
+
+		allowed = {
+		}
+		available = {
+			num_of_civilian_factories_available_for_projects > 9
+		}
+		visible = {
+			has_tech = rag79_g_tech
+			num_of_naval_factories > 4
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				1yw_create_ship_cap = yes
+			}
+		}
+		modifier = {
+			civilian_factory_use = 10
+		}
+		days_remove = 80
+		days_re_enable = 0
+		remove_effect = {
+			if = {
+				limit = {
+					687 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_4982"
+			}
+			else_if = {
+				limit = {
+					629 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_4180"
+			}
+			else_if = {
+				limit = {
+					7 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_9498"
+			}
+			else_if = {
+				limit = {
+					358 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_3878"
+			}
+			else_if = {
+				limit = {
+					378 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_9671"
+			}
+			else_if = {
+				limit = {
+					126 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_11374"
+			}
+			else_if = {
+				limit = {
+					119 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_3379"
+			}
+			else_if = {
+				limit = {
+					285 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_12406"
+			}
+			else_if = {
+				limit = {
+					272 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_4948"
+			}
+			else_if = {
+				limit = {
+					446 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_12049"
+			}
+			else_if = {
+				limit = {
+					447 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_4076"
+			}
+			else_if = {
+				limit = {
+					192 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_11670"
+			}
+			else_if = {
+				limit = {
+					613 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_7014"
+			}
+			else_if = {
+				limit = {
+					428 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_9975"
+			}
+			else_if = {
+				limit = {
+					289 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_7408"
+			}
+			else_if = {
+				limit = {
+					659 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_5074"
+			}
+			else_if = {
+				limit = {
+					528 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_9950"
+			}
+			else_if = {
+				limit = {
+					282 = {
+						is_owned_and_controlled_by = EFS
+					}
+				}
+				load_oob = "create_rag79g_9998"
+			}
+		}
+	}
+
+	EFS_destroy_ships = {
+		icon = ger_military_buildup
+
+		allowed = {
+			original_tag = EFS
+		}
+		available = {
+		}
+		visible = {
+			1yw_total_ship_cap = yes
+			is_ai = yes
+		}
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+		modifier = {
+		}
+		days_remove = 1
+		days_re_enable = 0
+		remove_effect = {
+			destroy_ships = {
+				type = archetype_carrier
+				count = 2
+			}
+			destroy_ships = {
+				type = archetype_destroyer
+				count = 5
+			}
+			destroy_ships = {
+				type = archetype_cruiser
+				count = 3
+			}
+			destroy_ships = {
+				type = archetype_submarine_carrier
+				count = 2
+			}
+			destroy_ships = {
+				type = archetype_submarine
+				count = 5
+			}
+		}
+	}
+}

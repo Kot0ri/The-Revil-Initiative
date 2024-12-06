@@ -1,0 +1,168 @@
+############################################################
+###################    One Year War EFS AIR    ###################
+############################################################
+
+###################    Fighter?    ###################
+####	EFS Corefighter	####
+
+entity = {
+	name = "ZEO_core_fighter_entity"
+	pdxmesh = "ZEO_fighter_1_mesh"
+################### ################### ###################
+################### 		IDLE		 ###################
+################### ################### ###################
+	state = { name = "idle" animation = "AIR_idle1"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	chance = 3.5
+	looping = no
+	next_state = "idle"
+	}
+	state = { name = "idle" animation = "AIR_idle2"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	chance = 2
+	looping = no
+	next_state = "idle"
+	}
+################### ################### ###################
+################### 		Crash		 ###################
+################### ################### ###################
+	state = { name = "crash"			animation = "AIR_idle1"
+		event = {  time = 0 node = "up_rocket_5_locator14"	particle = "zzCrash_Smoke_Tail_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator14"	particle = "zzCrash_On_the_firel_particle"	keep_particle = yes }
+	}
+	state = { name = "crash"			animation = "Crash"
+		event = {  time = 0 node = "up_rocket_5_locator14"	particle = "zzCrash_Smoke_Tail_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator14"	particle = "zzCrash_On_the_firel_particle"	keep_particle = yes }
+	}
+################### ################### ###################
+################### 		fire1 VS Bombers		 ###################
+################### ################### ###################
+	state = { name = "fire1"			animation = "AIR_idle1"
+		event = { time = 0.1 node="up_rocket_5_locator1"	particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { time = 0.2 node="up_rocket_5_locator"		particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_light_fire" } }
+
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	}
+
+	state = { name = "fire1"			animation = "AIR_idle2"
+		event = { time = 0.1 node="up_rocket_5_locator1"	particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { time = 0.2 node="up_rocket_5_locator"		particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_light_fire" } }
+
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	}
+
+################### ################### ###################
+################### 		fire2 VS Fighters		 ###################
+################### ################### ###################
+	state = { name = "fire2"			animation = "AIR_idle1"
+		event = { time = 0.1 node="up_rocket_5_locator1"	particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { time = 0.2 node="up_rocket_5_locator"		particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_light_fire" } }
+
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	}
+
+	state = { name = "fire2"			animation = "AIR_idle2"
+		event = { time = 0.1 node="up_rocket_5_locator1"	particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { time = 0.2 node="up_rocket_5_locator"		particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_light_fire" } }
+
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	}
+################### ################### ###################
+################### 		passfire		 ###################
+################### ################### ###################
+	state = { name = "passfire"			animation = "AIR_idle1"
+		event = { time = 0.1 node="up_rocket_5_locator1"	particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { time = 0.2 node="up_rocket_5_locator"		particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_light_fire" } }
+
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	}
+
+	state = { name = "passfire"			animation = "AIR_idle2"
+		event = { time = 0.1 node="up_rocket_5_locator1"	particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { time = 0.2 node="up_rocket_5_locator"		particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_light_fire" } }
+
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	}
+################### ################### ###################
+################### 		fire4	counter attack	 ###################
+################### ################### ###################
+	state = { name = "fire4"			animation = "AIR_idle1"
+		event = { time = 0.1 node="up_rocket_5_locator1"	particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { time = 0.2 node="up_rocket_5_locator"		particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_light_fire" } }
+
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	}
+################### ################### ###################
+################### 		mgdefence		 ###################
+################### ################### ###################
+
+################### ################### ###################
+################### 		bomb		 ###################
+################### ################### ###################
+
+################### ################### ###################
+################### 		cas		 ###################
+################### ################### ###################
+	state = { name = "cas"			animation = "AIR_idle1"
+		event = { time = 0.1 node="up_rocket_5_locator1"	particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { time = 0.2 node="up_rocket_5_locator"		particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_light_fire" } }
+
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	}
+	state = { name = "cas"			animation = "AIR_idle2"
+		event = { time = 0.1 node="up_rocket_5_locator1"	particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { time = 0.2 node="up_rocket_5_locator"		particle = "zzGundam_MG_trace_30mm_particle"  keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_light_fire" } }
+
+		event = {  time = 0 node = "up_rocket_5_locator18"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.1 node = "up_rocket_5_locator17"	particle = "zzEngine_Jet_Faster_Blue_particle"	keep_particle = yes }
+		event = {  time = 0.2 node = "up_rocket_5_locator15"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+		event = {  time = 0.3 node = "up_rocket_5_locator16"	particle = "zzEngine_Jet_normal_White_small_particle"	keep_particle = yes }
+	}
+################### ################### ###################
+################### 		END		 ###################
+################### ################### ###################
+		scale = 0.2
+}
+####
+############################################################

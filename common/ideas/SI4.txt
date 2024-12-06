@@ -1,0 +1,79 @@
+ideas = {
+
+	country = {
+
+Side_Banking_Seat = {
+			
+			allowed = {
+				original_tag = SI4
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+
+Connections_with_Anaheim = {
+			
+	allowed = {
+		original_tag = SI4
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	
+	modifier = {
+	research_speed_factor = 0.05
+	production_factory_efficiency_gain_factor = 0.05
+	}
+}
+
+Anaheim-Moore_Plan = {
+			
+	allowed = {
+		original_tag = SI4
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	
+	modifier = {
+		monthly_population = 750
+		trade_opinion_factor = 0.5
+		trade_laws_cost_factor = -0.05
+	}
+}
+
+Moore_Brotherhood = {
+			
+	allowed = {
+		original_tag = SI4
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	
+	modifier = {
+	weekly_manpower = 100
+	weekly_casualties_war_support = -0.05
+	weekly_bombing_war_support = -0.02
+	weekly_convoys_war_support = -0.02
+	}
+}
+	}
+}

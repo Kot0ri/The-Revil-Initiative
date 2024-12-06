@@ -1,0 +1,1425 @@
+# MS-05 BeamSniperRifle
+entity = {
+	name = "ZEO_ms_weapon_beamsniperrifle_1_entity"
+	pdxmesh = "ZEO_ms_weapon_beamsniperrifle_1_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 node="Muzzle" particle = "zzGundam_Beam_peeeeeeeeeeeeew_Green_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 6.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+	}
+  state = {
+    name = "support_attack"
+    event = { time = 4.0 node="Muzzle" particle = "zzGundam_Beam_peeeeeeeeeeeeew_Green_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 6.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+  }
+  state = {
+    name = "defend"
+    event = { time = 4.0 node="Muzzle" particle = "zzGundam_Beam_peeeeeeeeeeeeew_Green_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 6.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+  }
+}
+# MS-05 BeamSniperRifle Backpack
+entity = {
+	name = "ZEO_ms_weapon_beamsniperrifle_backpack_1_entity"
+	pdxmesh = "ZEO_ms_weapon_beamsniperrifle_backpack_1_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+}
+# MS-05 Machinegun
+entity = {
+	name = "ZEO_ms_weapon_machinegun_1_entity"
+	pdxmesh = "ZEO_ms_weapon_machinegun_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 4.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 4.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "assault_attack"
+    event = { time = 2.15 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.15 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.15 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.66 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.17 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.17 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.17 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.17 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.17 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.17 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# MS-06 Machinegun
+entity = {
+	name = "ZEO_ms_weapon_machinegun_2_entity"
+	pdxmesh = "ZEO_ms_weapon_machinegun_2_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 4.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 4.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "rgm79c_attack"
+    event = { time = 2.3 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.3 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.3 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "assault_attack"
+    event = { time = 2.7 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.7 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.7 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.17 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.17 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.17 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.17 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.17 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.17 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# ZEO RX-79 Machinegun
+entity = {
+  name = "ZEO_ms_weapon_machinegun_2_rx79_entity"
+  pdxmesh = "ZEO_ms_weapon_machinegun_2_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.3 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.3 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 3.4 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 6.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 6.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 6.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 3.4 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 6.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 6.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 6.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# EFS MS-06 Machinegun
+entity = {
+	name = "ZEO_ms_weapon_machinegun_2_EFS_entity"
+	pdxmesh = "ZEO_ms_weapon_machinegun_2_EFS_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 4.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 4.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.17 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.17 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.17 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.17 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.17 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.17 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# MS-05/06 Bazooka
+entity = {
+	name = "ZEO_ms_weapon_bazooka_1_entity"
+	pdxmesh = "ZEO_ms_weapon_bazooka_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+		event = { time = 4.3 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 4.3 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+  state = { name = "assault_attack"
+    event = { time = 2.3 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 2.3 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 3.8 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 3.8 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+  state = { name = "defend"
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+}
+# MS-09 Bazooka
+entity = {
+	name = "ZEO_ms_weapon_bazooka_2_entity"
+	pdxmesh = "ZEO_ms_weapon_bazooka_2_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+		event = { time = 4.3 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 4.3 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 5.6 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 5.6 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+  state = { name = "support_attack"
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+  state = { name = "defend"
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+}
+# MS-09 Machinegun
+entity = {
+	name = "ZEO_ms_weapon_machinegun_2_dom_entity"
+	pdxmesh = "ZEO_ms_weapon_machinegun_2_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.4 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 1.4 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 1.4 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+
+# MS-06 S Machinegun Assault
+entity = {
+	name = "ZEO_ms_weapon_machinegun_2_assault_entity"
+	pdxmesh = "ZEO_ms_weapon_machinegun_2_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 5.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 5.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 5.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# MS-06 S Bazooka
+entity = {
+	name = "ZEO_ms_weapon_bazooka_1_ms06s_entity"
+	pdxmesh = "ZEO_ms_weapon_bazooka_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+		event = { time = 3.4 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 3.4 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+		event = { time = 3.8 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 3.8 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+}
+# MS-06 Heat Hawk
+entity = {
+	name = "ZEO_ms_weapon_heatmelee_1_entity"
+	pdxmesh = "ZEO_ms_weapon_heatmelee_1_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 sound = { soundeffect = ms_heatmelee_effect } }
+  }
+}
+# MS-07 Heat Sword
+entity = {
+	name = "ZEO_ms_weapon_heatmelee_2_entity"
+	pdxmesh = "ZEO_ms_weapon_heatmelee_2_mesh"
+  default_state = "idle"
+  state = { name = "idle" animation = "idle_stand_2" animation_blend_time = 0.0 animation_speed = 1.0 }
+  state = { name = "attack" animation = "attack_sword" animation_blend_time = 0.0 animation_speed = 1.0
+    event = { time = 6.3 sound = { soundeffect = ms_heatmelee_effect } }
+  }
+}
+# MS-07 Heat Rod
+entity = {
+	name = "ms07_rod_entity"
+	pdxmesh = "ms07_rod_mesh"
+  default_state = "idle"
+  state = { name = "idle" animation = "rod_idle" }
+  state = { name = "rod_attack_1" animation = "rod_attack_1" animation_blend_time = 0.0 animation_speed = 1.0
+    event = { time = 4.0 node="heatrod.031" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.029" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.027" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.025" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.023" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.021" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.019" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.017" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.015" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.013" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.011" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.009" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.007" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.009" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.005" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.003" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.001" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+  }
+  state = { name = "rod_attack_2" animation = "rod_attack_2" animation_blend_time = 0.0 animation_speed = 1.0
+    event = { time = 4.0 node="heatrod.031" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.029" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.027" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.025" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.023" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.021" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.019" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.017" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.015" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.013" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.011" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.009" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.007" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.009" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.005" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.003" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.0 node="heatrod.001" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+  }
+  state = { name = "rod_defend" animation = "rod_defend" animation_blend_time = 0.0 animation_speed = 1.0
+    event = { time = 4.66 node="heatrod.031" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.029" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.027" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.025" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.023" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.021" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.019" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.017" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.015" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.013" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.011" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.009" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.007" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.009" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.005" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.003" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+    event = { time = 4.66 node="heatrod.001" particle = "zzGundam_wave2_gouf_heat_rod_particle"  keep_particle = yes }
+  }
+}
+# MS-07 Shield
+entity = {
+	name = "ZEO_ms_shield_2_entity"
+	pdxmesh = "ZEO_ms_shield_2_mesh"
+}
+# MS-07 M Shield
+entity = {
+	name = "ZEO_ms_shield_2_M_entity"
+	pdxmesh = "ZEO_ms_shield_2_M_mesh"
+}
+# MS-07 K Shield
+entity = {
+	name = "ZEO_ms_shield_2_K_entity"
+	pdxmesh = "ZEO_ms_shield_2_K_mesh"
+}
+# MS-07 D Shield
+entity = {
+	name = "ZEO_ms_shield_2_D_entity"
+	pdxmesh = "ZEO_ms_shield_2_D_mesh"
+}
+# MS-07 EFF Shield
+entity = {
+	name = "ZEO_ms_shield_2_EFF_entity"
+	pdxmesh = "ZEO_ms_shield_2_EFF_mesh"
+}
+# MS-09 Heat Saber
+entity = {
+	name = "ZEO_ms_weapon_heatmelee_3_entity"
+	pdxmesh = "ZEO_ms_weapon_heatmelee_3_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 sound = { soundeffect = ms_heatmelee_effect } }
+  }
+}
+# Zudah Shield
+entity = {
+	name = "ZEO_ms_shield_zudah_entity"
+	pdxmesh = "ZEO_ms_shield_zudah_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" animation = "idle" }
+  state = { name = "move" animation = "idle" }
+  state = { name = "attack" animation = "idle" }
+  state = { name = "assault_attack" animation = "assault_attack" }
+  state = { name = "heathawk_attack" animation = "heathawk_attack" }
+  state = { name = "support_attack" animation = "idle" }
+  attach = { name = "ms_shield_fire" shield_luck.L = "ZEO_ms_weapon_strumfaust_entity" }
+  attach = { name = "ms_shield_fire" shield_luck.R = "ZEO_ms_weapon_strumfaust_entity" }
+}
+# Zudah 4 Shield
+entity = {
+	name = "ZEO_ms_shield_zudah_4_entity"
+	pdxmesh = "ZEO_ms_shield_zudah_4_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" animation = "idle" }
+  state = { name = "move" animation = "idle" }
+  state = { name = "attack" animation = "idle" }
+  state = { name = "assault_attack" animation = "assault_attack" }
+  state = { name = "heathawk_attack" animation = "heathawk_attack" }
+  state = { name = "support_attack" animation = "idle" }
+  attach = { name = "ms_shield_fire" shield_luck.L = "ZEO_ms_weapon_strumfaust_entity" }
+  attach = { name = "ms_shield_fire" shield_luck.R = "ZEO_ms_weapon_strumfaust_entity" }
+}
+# Zudah G Shield
+entity = {
+	name = "ZEO_ms_shield_zudah_G_entity"
+	pdxmesh = "ZEO_ms_shield_zudah_G_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" animation = "idle" }
+  state = { name = "move" animation = "idle" }
+  state = { name = "attack" animation = "idle" }
+  state = { name = "assault_attack" animation = "assault_attack" }
+  state = { name = "heathawk_attack" animation = "heathawk_attack" }
+  state = { name = "support_attack" animation = "idle" }
+  attach = { name = "ms_shield_fire" shield_luck.L = "ZEO_ms_weapon_strumfaust_entity" }
+  attach = { name = "ms_shield_fire" shield_luck.R = "ZEO_ms_weapon_strumfaust_entity" }
+}
+# Zudah igloo Shield
+entity = {
+	name = "ZEO_ms_shield_zudah_igloo_entity"
+	pdxmesh = "ZEO_ms_shield_zudah_igloo_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" animation = "idle" }
+  state = { name = "move" animation = "idle" }
+  state = { name = "attack" animation = "idle" }
+  state = { name = "assault_attack" animation = "assault_attack" }
+  state = { name = "heathawk_attack" animation = "heathawk_attack" }
+  state = { name = "support_attack" animation = "idle" }
+  attach = { name = "ms_shield_fire" shield_luck.L = "ZEO_ms_weapon_strumfaust_entity" }
+  attach = { name = "ms_shield_fire" shield_luck.R = "ZEO_ms_weapon_strumfaust_entity" }
+}
+# Zudah Strumfaust
+entity = {
+	name = "ZEO_ms_weapon_strumfaust_entity"
+	pdxmesh = "ZEO_ms_weapon_strumfaust_mesh"
+}
+# Gelgoog Shield
+entity = {
+	name = "ZEO_ms_shield_3_entity"
+	pdxmesh = "ZEO_ms_shield_3_mesh"
+}
+# Gelgoog Char Shield
+entity = {
+	name = "ZEO_ms_shield_3_char_entity"
+	pdxmesh = "ZEO_ms_shield_3_char_mesh"
+}
+# Gelgoog Herbert Shield
+entity = {
+	name = "ZEO_ms_shield_3_herbert_entity"
+	pdxmesh = "ZEO_ms_shield_3_herbert_mesh"
+}
+# Gelgoog Beamgun
+entity = {
+	name = "ZEO_ms_weapon_beamgun_1_entity"
+	pdxmesh = "ZEO_ms_weapon_beamgun_1_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 8.3 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "attack_assault"
+    event = { time = 3.6 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 5.3 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"
+    event = { time = 6.3 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "defend"
+    event = { time = 6.3 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "retreat" }
+}
+# Gelgoog Machinegun
+entity = {
+	name = "ZEO_ms_weapon_machinegun_3_entity"
+	pdxmesh = "ZEO_ms_weapon_machinegun_3_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 8.3 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 8.3 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 8.3 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "attack_assault"
+    event = { time = 3.6 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.6 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.6 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 5.3 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 5.3 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 5.3 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 6.3 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 6.3 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 6.3 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 6.3 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 6.3 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 6.3 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# Gelgoog Beam Saber
+entity = {
+	name = "ZEO_ms_weapon_beamsord_1_entity"
+	pdxmesh = "ZEO_ms_weapon_beamsord_1_mesh"
+  default_state = "idle"
+  state = { name = "idle" animation = "idle" }
+  state = { name = "idle_saber" animation = "idle_saber" animation_blend_time = 0.0 animation_speed = 1.0 }
+  state = { name = "attack" animation = "idle" }
+  state = { name = "move" animation = "idle" }
+  state = { name = "attack_saber" animation = "attack_saber" animation_blend_time = 0.0 animation_speed = 1.0
+    event = { time = 9.6 sound = { soundeffect = ms_beamsord_effect } }
+  }
+  state = { name = "attack_saber_2" animation = "attack_saber_2" animation_blend_time = 0.0 animation_speed = 1.0
+    event = { time = 8.6 sound = { soundeffect = ms_beamsord_effect } }
+  }
+  state = { name = "defend" animation = "idle" }
+  state = { name = "retreat" animation = "idle" }
+}
+
+# MS-06 S Antena
+entity = {
+	name = "ZEO_ms06_antena_entity"
+	pdxmesh = "ZEO_ms06_antena_mesh"
+}
+# MS-06 S Char Antena
+entity = {
+	name = "ZEO_ms06_antenaC_entity"
+	pdxmesh = "ZEO_ms06_antenaC_mesh"
+}
+# EFS MS-06 S Antena
+entity = {
+	name = "EFS_ms06_antena_entity"
+	pdxmesh = "EFS_ms06_antena_mesh"
+}
+# EFS Shield RGM-79
+entity = {
+	name = "EFS_ms_shield_1_entity"
+	pdxmesh = "EFS_ms_shield_1_mesh"
+}
+# EFS Shield RX-78-1
+entity = {
+	name = "EFS_ms_shield_1_781_entity"
+	pdxmesh = "EFS_ms_shield_1_781_mesh"
+}
+# EFS Shield RX-78-2
+entity = {
+	name = "EFS_ms_shield_1_782_entity"
+	pdxmesh = "EFS_ms_shield_1_782_mesh"
+}
+# EFS Shield RX-78-3
+entity = {
+	name = "EFS_ms_shield_1_783_entity"
+	pdxmesh = "EFS_ms_shield_1_783_mesh"
+}
+# EFS Shield RX-78-2 Char
+entity = {
+	name = "EFS_ms_shield_1_782Char_entity"
+	pdxmesh = "EFS_ms_shield_1_782Char_mesh"
+}
+# EFS Shield RX-78-2 FATB
+entity = {
+	name = "EFS_ms_shield_1_782FATB_entity"
+	pdxmesh = "EFS_ms_shield_1_782FATB_mesh"
+}
+# EFS Shield RX-78-2 Tit
+entity = {
+	name = "EFS_ms_shield_1_782TAM_entity"
+	pdxmesh = "EFS_ms_shield_1_782TAM_mesh"
+}
+# EFS Shield RGM-79G
+entity = {
+	name = "EFS_ms_shield_2_entity"
+	pdxmesh = "EFS_ms_shield_2_mesh"
+}
+# EFS Shield RX-79
+entity = {
+	name = "EFS_ms_shield_2_79_entity"
+	pdxmesh = "EFS_ms_shield_2_79_mesh"
+}
+# EFS Shield RX-79Z
+entity = {
+	name = "EFS_ms_shield_2_79Z_entity"
+	pdxmesh = "EFS_ms_shield_2_79Z_mesh"
+}
+# EFS Shield RGM-79 C
+entity = {
+	name = "EFS_ms_shield_3_entity"
+	pdxmesh = "EFS_ms_shield_3_mesh"
+}
+# EFS Shield RGM-79 C AEUG
+entity = {
+	name = "EFS_ms_shield_3_aeug_entity"
+	pdxmesh = "EFS_ms_shield_3_aeug_mesh"
+}
+# EFS Shield RGM-79 C Titans
+entity = {
+	name = "EFS_ms_shield_3_tit_entity"
+	pdxmesh = "EFS_ms_shield_3_tit_mesh"
+}
+# EFS Shield RGM-79 C Space
+entity = {
+	name = "EFS_ms_shield_3_space_entity"
+	pdxmesh = "EFS_ms_shield_3_space_mesh"
+}
+# EFS Shield RGM-79 C ZEON
+entity = {
+	name = "EFS_ms_shield_3_zeon_entity"
+	pdxmesh = "EFS_ms_shield_3_zeon_mesh"
+}
+# Beam Spray
+entity = {
+	name = "EFS_ms_weapon_beamspray_1_entity"
+	pdxmesh = "EFS_ms_weapon_beamspray_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"
+    event = { time = 1.66 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "defend"
+    event = { time = 1.66 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+}
+# Beam Spray RGM-79 C
+entity = {
+	name = "EFS_ms_weapon_beamspray_2_entity"
+	pdxmesh = "EFS_ms_weapon_beamspray_2_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "assault_attack"
+    event = { time = 2.7 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"
+    event = { time = 1.66 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "defend"
+    event = { time = 1.66 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+}
+# EFS Machinegun 1
+entity = {
+  name = "EFS_ms_weapon_machinegun_1_entity"
+  pdxmesh = "EFS_ms_weapon_machinegun_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.3 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.3 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# EFS Machinegun 1 Dom
+entity = {
+  name = "EFS_ms_weapon_machinegun_1_dom_entity"
+  pdxmesh = "EFS_ms_weapon_machinegun_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.4 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 1.4 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 1.4 node="Muzzle" particle = "zzMG_barrel_105mm_300ms_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# EFS Machinegun 1 RGM-79G
+entity = {
+  name = "EFS_ms_weapon_machinegun_1_rgm79g_entity"
+  pdxmesh = "EFS_ms_weapon_machinegun_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.3 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.3 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 3.4 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 6.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 6.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 6.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 3.4 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.4 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.4 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 6.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 6.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 6.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# EFS Machinegun 2 Short
+entity = {
+  name = "EFS_ms_weapon_machinegun_2_short_entity"
+  pdxmesh = "EFS_ms_weapon_machinegun_2_short_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.3 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.3 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "assault_attack"
+    event = { time = 2.7 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.7 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.7 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 1.66 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.0 node="Muzzle" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.0 node="Magazine" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# EFS Machinegun 2 Medium
+entity = {
+  name = "EFS_ms_weapon_machinegun_2_med_entity"
+  pdxmesh = "EFS_ms_weapon_machinegun_2_med_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle.001" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.3 node="Muzzle.001" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.3 node="Magazine.001" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "assault_attack"
+    event = { time = 2.7 node="Muzzle.001" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.7 node="Muzzle.001" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.7 node="Magazine.001" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 1.66 node="Muzzle.001" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle.001" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine.001" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.0 node="Muzzle.001" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.0 node="Muzzle.001" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.0 node="Magazine.001" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 1.66 node="Muzzle.001" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle.001" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine.001" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.0 node="Muzzle.001" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.0 node="Muzzle.001" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.0 node="Magazine.001" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# EFS Machinegun 2 Long
+entity = {
+  name = "EFS_ms_weapon_machinegun_2_long_entity"
+  pdxmesh = "EFS_ms_weapon_machinegun_2_long_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle.002" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.3 node="Muzzle.002" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.3 node="Magazine.002" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "assault_attack"
+    event = { time = 2.7 node="Muzzle.002" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 2.7 node="Muzzle.002" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 2.7 node="Magazine.002" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 1.66 node="Muzzle.002" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle.002" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine.002" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.0 node="Muzzle.002" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.0 node="Muzzle.002" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.0 node="Magazine.002" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 1.66 node="Muzzle.002" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 1.66 node="Muzzle.002" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 1.66 node="Magazine.002" particle = "mg_cartridge_particle"  keep_particle = yes }
+    event = { time = 3.0 node="Muzzle.002" particle = "zzMG_barrel_105mm_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = ms_machinegun_3shot_effect } }
+    event = { time = 3.0 node="Muzzle.002" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" }
+    event = { time = 3.0 node="Magazine.002" particle = "mg_cartridge_particle"  keep_particle = yes }
+  }
+}
+# EFS Bazooka 180
+entity = {
+  name = "EFS_ms_weapon_bazooka_180_entity"
+  pdxmesh = "EFS_ms_weapon_bazooka_180_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 3.3 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 3.3 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 3.3 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 3.3 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 6.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 6.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 3.3 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 3.3 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 6.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 6.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+}
+# EFS Missile Launcher 1
+entity = {
+  name = "EFS_ms_weapon_missile_launcher_1_entity"
+  pdxmesh = "EFS_ms_weapon_missile_launcher_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.4 node="Muzzle1" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 2.4 node="Muzzle1" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 2.5 node="Muzzle2" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 2.5 node="Muzzle2" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 2.6 node="Muzzle3" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 2.6 node="Muzzle3" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+  state = { name = "support_attack"
+    event = { time = 3.4 node="Muzzle1" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 3.4 node="Muzzle1" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 3.5 node="Muzzle2" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 3.5 node="Muzzle2" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 3.6 node="Muzzle3" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 3.6 node="Muzzle3" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 6.3 node="Muzzle1" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 6.3 node="Muzzle1" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 6.4 node="Muzzle2" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 6.4 node="Muzzle2" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="Muzzle3" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 6.5 node="Muzzle3" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"
+    event = { time = 3.4 node="Muzzle1" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 3.4 node="Muzzle1" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 3.5 node="Muzzle2" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 3.5 node="Muzzle2" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 3.6 node="Muzzle3" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 3.6 node="Muzzle3" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 6.3 node="Muzzle1" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 6.3 node="Muzzle1" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 6.4 node="Muzzle2" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 6.4 node="Muzzle2" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 6.5 node="Muzzle3" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+    event = { time = 6.5 node="Muzzle3" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+}
+# EFS Beamsword 1 RGM-79
+entity = {
+  name = "EFS_ms_weapon_beamsord_1_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_1_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Beamsword 1 Gundam
+entity = {
+  name = "EFS_ms_weapon_beamsord_1_gundam_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_1_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 3.0 node="muzzle" particle = "zzGundam_Beam_Saber_gundam_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Beamsword 1 Zeon
+entity = {
+  name = "EFS_ms_weapon_beamsord_1_gundam_Z_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_1_Z_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 3.0 node="muzzle" particle = "zzGundam_Beam_Saber_gundam_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Beamsword 1 Char
+entity = {
+  name = "EFS_ms_weapon_beamsord_1_gundam_Char_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_1_Char_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 3.0 node="muzzle" particle = "zzGundam_Beam_Saber_gundam_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Beamsword 1 Titans
+entity = {
+  name = "EFS_ms_weapon_beamsord_1_gundam_T_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_1_T_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 3.0 node="muzzle" particle = "zzGundam_Beam_Saber_gundam_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Beamsword 2 RGM-79 C
+entity = {
+  name = "EFS_ms_weapon_beamsord_2_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_2_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+  state = { name = "assault_attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+  state = { name = "attack_saber"
+    event = { time = 8.6 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+  state = { name = "attack_saber_2"
+    event = { time = 7.6 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Beamsword 2 RGM-79 C AEUG
+entity = {
+  name = "EFS_ms_weapon_beamsord_2_aeug_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_2_aeug_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+  state = { name = "assault_attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Beamsword 2 RGM-79 C Space
+entity = {
+  name = "EFS_ms_weapon_beamsord_2_space_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_2_space_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+  state = { name = "assault_attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Beamsword 2 RGM-79 C Titans
+entity = {
+  name = "EFS_ms_weapon_beamsord_2_tit_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_2_tit_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+  state = { name = "assault_attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Beamsword 2 RGM-79 C ZEON
+entity = {
+  name = "EFS_ms_weapon_beamsord_2_zeon_entity"
+  pdxmesh = "EFS_ms_weapon_beamsord_2_zeon_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+  state = { name = "assault_attack"
+    event = { time = 1.66 node="muzzle" particle = "zzGundam_Beam_Saber_particle" keep_particle = yes sound = { soundeffect = ms_beamsord_effect } }
+  }
+}
+# EFS Dom Bazooka
+entity = {
+  name = "EFS_ms_weapon_bazooka_1_dom_entity"
+  pdxmesh = "EFS_ms_weapon_bazooka_1_dom_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+		event = { time = 4.3 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 4.3 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 5.6 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 5.6 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+  state = { name = "support_attack"
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+  state = { name = "defend"
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 1.33 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+	}
+}
+# EFS Gundam Bazooka
+entity = {
+  name = "EFS_ms_weapon_bazooka_1_entity"
+  pdxmesh = "EFS_ms_weapon_bazooka_1_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 4.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 5.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 5.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+}
+# EFS Gundam Bazooka G-3
+entity = {
+  name = "EFS_ms_weapon_bazooka_1_gundam_783_entity"
+  pdxmesh = "EFS_ms_weapon_bazooka_1_gundam_783_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 4.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 5.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 5.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+}
+# EFS Gundam Bazooka T
+entity = {
+  name = "EFS_ms_weapon_bazooka_1_gundam_T_entity"
+  pdxmesh = "EFS_ms_weapon_bazooka_1_gundam_T_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 4.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 5.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 5.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+}
+# EFS Gundam Bazooka Char
+entity = {
+  name = "EFS_ms_weapon_bazooka_1_gundam_Char_entity"
+  pdxmesh = "EFS_ms_weapon_bazooka_1_gundam_Char_mesh"
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 4.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 4.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+    event = { time = 5.0 node="Muzzle" particle = "light_tank_attack_barrel_particle"  keep_particle = yes sound = { soundeffect = light_armour_fire } }
+		event = { time = 5.0 node="Muzzle" particle = "light_tank_attack_barrel_smoke_particle"  keep_particle = yes }
+  }
+}
+# EFS Shield 01 NT-1
+entity = {
+	name = "EFS_ms_shield_rx78nt1_entity"
+	pdxmesh = "EFS_ms_shield_rx78nt1_mesh"
+}
+entity = {
+	name = "EFS_ms_shield_rx78nt1_amuro_entity"
+	pdxmesh = "EFS_ms_shield_rx78nt1_amuro_mesh"
+}
+# gundam node1 / assault / defend / retreat
+entity = {
+	name = "EFS_ms_weapon_beamgun_1_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "defend"
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "retreat"
+    event = { time = 7.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+}
+# gundam node3 / brf
+entity = {
+	name = "EFS_ms_weapon_beamgun_1_2_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_1_mesh"
+  get_state_from_parent = yes
+  default_state = "attack"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 6.66 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"	}
+  state = { name = "defend"	}
+}
+# gundam node4 / jump / support
+entity = {
+	name = "EFS_ms_weapon_beamgun_1_3_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 5.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"
+    event = { time = 7.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "defend"	}
+}
+# gundam Char node1 / assault / defend / retreat
+entity = {
+	name = "EFS_ms_weapon_beamgun_1_gundam_Char_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_1_gundam_Char_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "defend"
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "retreat"
+    event = { time = 7.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+}
+# gundam Char node3 / brf
+entity = {
+	name = "EFS_ms_weapon_beamgun_1_gundam_Char_2_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_1_gundam_Char_mesh"
+  get_state_from_parent = yes
+  default_state = "attack"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 6.66 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"	}
+  state = { name = "defend"	}
+}
+# gundam Char node4 / jump / support
+entity = {
+	name = "EFS_ms_weapon_beamgun_1_gundam_Char_3_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_1_gundam_Char_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 5.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"
+    event = { time = 7.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "defend"	}
+}
+
+# NT-1 node1 / assault / defend
+entity = {
+	name = "EFS_ms_weapon_beamgun_rx78nt1_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_rx78nt1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "defend"
+    event = { time = 3.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+}
+# NT-1 node3 / brf
+entity = {
+	name = "EFS_ms_weapon_beamgun_rx78nt1_2_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_rx78nt1_mesh"
+  get_state_from_parent = yes
+  default_state = "attack"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 6.66 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"	}
+  state = { name = "defend"	}
+}
+# NT-1 node4 / jump
+entity = {
+	name = "EFS_ms_weapon_beamgun_rx78nt1_3_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_rx78nt1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 5.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"	}
+  state = { name = "defend"	}
+}
+# NT-1 node5 / gatling
+entity = {
+	name = "EFS_ms_weapon_gatling_rx78nt1_entity"
+	pdxmesh = "EFS_ms_weapon_gatling_rx78nt1_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle" particle = "mg_muzzle_rx78nt1_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+    event = { time = 2.3 node="Muzzle" particle = "mg_muzzle_smoke_rx78nt1_particle"  keep_particle = yes  light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+    event = { time = 2.3 node="Cartridge" particle = "mg_cartridge_rx78nt1_particle"  keep_particle = yes }
+	}
+  state = { name = "support_attack"
+    event = { time = 2.3 node="Muzzle" particle = "mg_muzzle_rx78nt1_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+    event = { time = 2.3 node="Muzzle" particle = "mg_muzzle_smoke_rx78nt1_particle"  keep_particle = yes  light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+    event = { time = 2.3 node="Cartridge" particle = "mg_cartridge_rx78nt1_particle"  keep_particle = yes }
+  }
+  state = { name = "defend"	}
+}
+
+# EFS Beam Gun 2
+entity = {
+	name = "EFS_ms_weapon_beamgun_2_entity"
+	pdxmesh = "EFS_ms_weapon_beamgun_2_mesh"
+  get_state_from_parent = yes
+  default_state = "idle"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 2.3 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "support_attack"
+    event = { time = 3.3 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 6.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+  state = { name = "defend"
+    event = { time = 3.3 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 6.0 node="Muzzle" particle = "zzGundam_Beam_pewpewpew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+	}
+}
+# EFS Beam Sniper Rifle 1
+entity = {
+	name = "EFS_ms_weapon_beamsniperrifle_1_entity"
+	pdxmesh = "EFS_ms_weapon_beamsniperrifle_1_mesh"
+  state = { name = "idle" }
+  state = { name = "move" }
+  state = { name = "attack"
+    event = { time = 5.0 node="Muzzle" particle = "zzGundam_Beam_peeeeeeeeeeeeew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 7.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 9.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 9.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+	}
+  state = {
+    name = "support_attack"
+    event = { time = 5.0 node="Muzzle" particle = "zzGundam_Beam_peeeeeeeeeeeeew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 7.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 9.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 9.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+  }
+  state = {
+    name = "defend"
+    event = { time = 5.0 node="Muzzle" particle = "zzGundam_Beam_peeeeeeeeeeeeew_particle" keep_particle = yes sound = { soundeffect = ms_beamrifle_3shot_effect } }
+    event = { time = 7.0 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="Muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 7.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.5 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 8.5 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 9.0 node="heat_radiation_1" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+    event = { time = 9.0 node="heat_radiation_2" particle = "mg_muzzle_smoke_particle"  keep_particle = yes }
+  }
+}
+
+# RX-79 BackPack
+entity = {
+	name = "EFS_rx79_backpack_entity"
+	pdxmesh = "EFS_rx79_backpack_mesh"
+}

@@ -1,0 +1,36 @@
+objectTypes = {
+############### particle zzGundam_wave2_Beam_Dom_particle
+	pdxparticle = {
+		name = "zzGundam_wave2_Beam_Dom_particle"
+		type = "zzGundam_wave2_Beam_Dom-file"
+		scale = 1.0
+	}
+################################################
+############### particle zzGundam_wave2_gouf_heat_rod_particle
+	pdxparticle = {
+		name = "zzGundam_wave2_gouf_heat_rod_particle"
+		type = "zzGundam_wave2_gouf_heat_rod-file"
+		scale = 5.0
+	}
+################################################
+############### particle zzGundam_wave2_big_zam_mega_particle
+	pdxparticle = {
+		name = "zzGundam_wave2_big_zam_mega_particle"
+		type = "zzGundam_wave2_big_zam_mega-file"
+		scale = 1.0
+	}
+################################################
+############### particle zzGundam_High_Mega_Particle
+	pdxparticle = {
+		name = "zzGundam_High_Mega_Particle"
+		type = "zzGundam_High_Mega_Particle-file"
+		scale = 0.5
+	}
+################################################
+############### particle zzGundam_wave2_big_zam_multiple_mega_particle
+	pdxparticle = {
+		name = "zzGundam_wave2_big_zam_multiple_mega_particle"
+		type = "zzGundam_wave2_big_zam_multiple_mega-file"
+		scale = 2.0
+	}
+}

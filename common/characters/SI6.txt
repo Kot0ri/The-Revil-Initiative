@@ -1,0 +1,112 @@
+characters={
+	SI6_rank_kiprodon={
+		name=SI6_rank_kiprodon
+		portraits={
+			civilian={
+				large="gfx/leaders/Portrait_mob_leader_4.dds"
+			}
+		}
+		country_leader={
+			ideology=space_elitism
+			expire="100.1.1.1"
+			id=1000
+		}
+	}
+	SI6_riahs_zeonist_senator={
+		name=SI6_riahs_zeonist_senator
+		portraits={
+			civilian={
+				large="gfx/leaders/Portrait_mob_leader_7.dds"
+			}
+		}
+		country_leader={
+			ideology=contlism
+			expire="100.1.1.1"
+			id=-1
+		}
+	}
+	SI6_riahs_earth_supremacist_senator={
+		name=SI6_riahs_earth_supremacist_senator
+		portraits={
+			civilian={
+				large="gfx/leaders/Portrait_mob_leader_5.dds"
+			}
+		}
+		country_leader={
+			ideology=earth_elitism
+			expire="100.1.1.1"
+			id=-1
+		}
+	}
+	SI6_riahs_democrats_senator={
+		name=SI6_riahs_democrats_senator
+		portraits={
+			civilian={
+				large="gfx/leaders/Portrait_mob_leader_6.dds"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="100.1.1.1"
+			id=-1
+		}
+	}
+	SI6_pergamino = {
+		name=SI6_pergamino
+		portraits={
+			army={
+				small=GFX_idea_pergamino
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = pergamino
+      traits = {
+        pergamino_trait
+      }
+      modifier = {
+      }
+      available = {
+        hidden_trigger = {
+          NOT = {
+            has_global_flag = side6_is_destroy
+          }
+        }
+      }
+      ai_will_do = {
+        factor = 5
+      }
+		}
+	}
+	SI6_cameron_bloom = {
+		name=SI6_cameron_bloom
+		portraits={
+			army={
+				small=GFX_idea_cameron_bloom
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = cameron_bloom
+			traits = {
+				cameron_bloom_trait
+			}
+			modifier = {
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = side6_is_destroy
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = yes
+					factor = 0.5
+				}
+			}
+		}
+	}
+}

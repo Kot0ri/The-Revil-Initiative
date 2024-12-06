@@ -1,0 +1,55 @@
+characters={
+	#Leaders
+	PEZ_albert_schacht ={
+		name="Albert Schacht"
+		portraits={
+			civilian={
+				large= "gfx/leaders/PEZ/schacht.dds"
+			}
+		}
+		country_leader={
+			traits={schacht_trait}
+			ideology=pezun_corporatism
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits = {}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	#Advisors
+
+	PEZ_monique_cadillac = {
+		name="Monique Cadillac"
+		portraits={
+			army={
+				small=GFX_idea_monique_cadillac
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = monique_cadillac
+			allowed = {
+				original_tag = PEZ
+			}
+			traits = {
+				hc_general_staff_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+			}
+	}
+
+}

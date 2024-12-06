@@ -1,0 +1,847 @@
+focus_tree = {
+	id = TIT
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = TIT
+		}
+	}
+	default = no
+
+	focus = {
+		id = TIT_Titans_now_rise
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 10
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = rise_of_the_titans
+			}
+		}
+	
+
+	focus = {
+		id = TIT_Titans_Taskforce
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Titans_now_rise
+		prerequisite = {
+			focus = TIT_Titans_now_rise
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			remove_ideas = titans_taskforce
+			add_ideas = titans_taskforce_2
+			}
+		}
+
+	focus = {
+		id = TIT_recruit_the_elite_of_the_EFF
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Titans_Taskforce
+		prerequisite = {
+			focus = TIT_Titans_Taskforce
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			add_manpower = 5000
+		}
+	}	
+
+	focus = {
+		id = TIT_introduce_the_Quel
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_recruit_the_elite_of_the_EFF
+		prerequisite = {
+			focus = TIT_recruit_the_elite_of_the_EFF
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}	
+
+	focus = {
+		id = TIT_hunt_down_suviors_of_Delaz_fleet
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_introduce_the_Quel
+		prerequisite = {
+			focus = TIT_introduce_the_Quel
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}	
+	focus = {
+		id = TIT_parpicipate_in_operation_clean_sweep
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_hunt_down_suviors_of_Delaz_fleet
+		prerequisite = {
+			focus = TIT_hunt_down_suviors_of_Delaz_fleet
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = TIT_build_up_up_earth_bases
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TIT_parpicipate_in_operation_clean_sweep
+		prerequisite = {
+			focus = TIT_parpicipate_in_operation_clean_sweep
+		}
+		available = {
+			has_completed_focus = TIT_Secure_Bases
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			transfer_state = 974
+			transfer_state = 296
+			transfer_state = 446
+			transfer_state = 183
+			transfer_state = 182
+		}
+	}
+
+	focus = {
+		id = TIT_reinforce_our_garrisons
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_build_up_up_earth_bases
+		prerequisite = {
+			focus = TIT_build_up_up_earth_bases
+		}
+		available = {
+			has_completed_focus = TIT_Secure_Bases
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TIT_increase_control_in_jaburo
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TIT_build_up_up_earth_bases
+		prerequisite = {
+			focus = TIT_build_up_up_earth_bases
+		}
+		available = {
+			has_completed_focus = TIT_Secure_Bases
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			transfer_state = 963
+			transfer_state = 962
+		}
+	}
+
+	focus = {
+		id = TIT_seize_full_control_of_jaburo
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_increase_control_in_jaburo
+		prerequisite = {
+			focus = TIT_increase_control_in_jaburo
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = TIT_build_up_in_Space
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_parpicipate_in_operation_clean_sweep
+		prerequisite = {
+			focus = TIT_parpicipate_in_operation_clean_sweep
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		available = {
+			has_completed_focus = TIT_Secure_Bases
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Gryps_2_project
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_build_up_in_Space
+		prerequisite = {
+			focus = TIT_build_up_in_Space
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+		focus = {
+			id = TIT_Jamitovs_sway
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 6
+			y = 1
+			relative_position_id = TIT_Titans_now_rise
+			prerequisite = {
+				focus = TIT_Titans_now_rise
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			mutually_exclusive = {
+				focus = TIT_contest_jamitovs_command
+			}
+			completion_reward = {
+				}
+			}
+
+	focus = {
+		id = TIT_FDIC_funding
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -4
+		y = 1
+		relative_position_id = TIT_Jamitovs_sway
+		prerequisite = {
+			focus = TIT_Jamitovs_sway
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Hunt_down_rivals
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TIT_Jamitovs_sway
+		prerequisite = {
+			focus = TIT_Jamitovs_sway
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_EFF_HQ_connections
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Jamitovs_sway
+		prerequisite = {
+			focus = TIT_Jamitovs_sway
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_budget_lobbying
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_EFF_HQ_connections
+		prerequisite = {
+			focus = TIT_EFF_HQ_connections
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_contest_jamitovs_command
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 10
+		y = 1
+		relative_position_id = TIT_Titans_now_rise
+		prerequisite = {
+			focus = TIT_Titans_now_rise
+		}
+		mutually_exclusive = {
+			focus = TIT_Jamitovs_sway
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+			id = TIT_interfernece_from_jaburo
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = -2
+			y = 1
+			relative_position_id = TIT_contest_jamitovs_command
+			prerequisite = {
+				focus = TIT_contest_jamitovs_command
+			}
+			mutually_exclusive = {
+				focus = TIT_increased_radicalism
+			}
+			mutually_exclusive = {
+				focus = TIT_the_young_gaurd
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				}
+			}
+
+		focus = {
+				id = TIT_increased_radicalism
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 2
+				y = 1
+				relative_position_id = TIT_contest_jamitovs_command
+				prerequisite = {
+					focus = TIT_contest_jamitovs_command
+				}
+				mutually_exclusive = {
+					focus = TIT_interfernece_from_jaburo
+				}
+				mutually_exclusive = {
+					focus = TIT_the_young_gaurd
+				}
+				ai_will_do = {
+					factor = 1
+				}
+				completion_reward = {
+					}
+				}
+
+			focus = {
+				id = TIT_the_young_gaurd
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 0
+				y = 1
+				relative_position_id = TIT_contest_jamitovs_command
+				prerequisite = {
+					focus = TIT_contest_jamitovs_command
+				}
+				mutually_exclusive = {
+					focus = TIT_interfernece_from_jaburo
+				}
+				mutually_exclusive = {
+					focus = TIT_increased_radicalism
+				}
+				ai_will_do = {
+					factor = 1
+				}
+				completion_reward = {
+					}
+				}
+
+	focus = {
+		id = TIT_Secure_Bases
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TIT_hunt_down_suviors_of_Delaz_fleet
+		prerequisite = {
+			focus = TIT_hunt_down_suviors_of_Delaz_fleet
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			973 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  arms_factory
+						level = 4
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = nuclear_reactor
+						level = 1
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 5
+					}
+				}
+			}
+			701 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  air_base
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+					}
+				}
+			}
+			523 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type =  industrial_complex
+						level = 3
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = dockyard
+						level = 3
+					}
+					add_building_construction = {
+						type = air_base
+						level = 2
+					}
+					add_building_construction = {
+						type = anti_air_building
+						level = 2
+					}
+				}
+			}
+			}
+	}
+
+	focus = {
+		id = TIT_Titans_Test_Team
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Secure_Bases
+		prerequisite = {
+			focus = TIT_Secure_Bases
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Quel_development_Project
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 4
+		y = 4
+		relative_position_id = TIT_introduce_the_Quel
+		prerequisite = {
+			focus = TIT_introduce_the_Quel
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Hazel_Project
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = TIT_Quel_development_Project
+		prerequisite = {focus = TIT_Quel_development_Project	}
+		prerequisite = {focus = TIT_Titans_Test_Team	}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Next_generation_gundams
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Hazel_Project
+		prerequisite = {focus = TIT_Hazel_Project}
+		
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Mass_Production_Gundams
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TIT_Next_generation_gundams
+		prerequisite = {focus = TIT_Next_generation_gundams}
+		prerequisite = {focus = TIT_continue_Quel_development}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+	id = TIT_continue_Quel_development
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = TIT_Quel_development_Project
+	prerequisite = {
+	focus = TIT_Quel_development_Project
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	mutually_exclusive = { focus = TIT_Hizack_Deal	}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+	id = TIT_Hizack_Deal
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 3
+	y = 1
+	relative_position_id = TIT_Quel_development_Project
+	prerequisite = {
+	focus = TIT_Quel_development_Project
+	}
+	ai_will_do = {
+	factor = 1
+	}
+		mutually_exclusive = { focus = TIT_continue_Quel_development	}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+	id = TIT_finish_the_testbeds
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = TIT_Hizack_Deal
+	prerequisite = {
+	focus = TIT_Hizack_Deal
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+	id = TIT_Adopt_the_Hizack
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = TIT_finish_the_testbeds
+	prerequisite = {
+	focus = TIT_finish_the_testbeds
+	}
+	ai_will_do = {
+	factor = 1
+	}
+	completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_adopt_the_Nemo
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TIT_continue_Quel_development
+		prerequisite = {focus = TIT_continue_Quel_development}
+		ai_will_do = {
+		factor = 1
+		}
+		available = {
+			has_country_flag = TIT_Nemo_captured
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_Marasai_Development
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Adopt_the_Hizack
+		prerequisite = {
+		focus = TIT_Adopt_the_Hizack
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+			id = TIT_Barzam_Development
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 2
+			y = 1
+			relative_position_id = TIT_Marasai_Development
+			prerequisite = {
+			focus = TIT_Marasai_Development
+			}
+			ai_will_do = {
+			factor = 1
+			}
+			mutually_exclusive = { focus = TIT_Griffon_Development}
+			completion_reward = {
+				}
+			}
+
+			focus = {
+				id = TIT_Griffon_Development
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 0
+				y = 1
+				relative_position_id = TIT_Marasai_Development
+				prerequisite = {
+				focus = TIT_Marasai_Development
+				}
+				ai_will_do = {
+				factor = 1
+				}
+				mutually_exclusive = { focus = TIT_Barzam_Development}
+				completion_reward = {
+					}
+				}
+
+	focus = {
+		id = TIT_newtype_research_program
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 24
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot = 1
+			}
+		}
+
+		focus = {
+			id = TIT_cyber_newtype_development_program
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = TIT_newtype_research_program
+			prerequisite = {
+				focus = TIT_newtype_research_program
+			}
+			completion_reward = {
+				recruit_character = TIT_rossweisse
+				recruit_character = TIT_proto-zero
+				recruit_character = TIT_four_murasame
+				recruit_character = TIT_rosamia_badam
+				recruit_character = TIT_gates_cappa
+				}
+			}
+
+			focus = {
+				id = TIT_newtype_use_weapons_program
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 2
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_newtype_research_program
+				prerequisite = {
+					focus = TIT_newtype_research_program
+				}
+				completion_reward = {
+					
+					}
+				}
+
+			focus = {
+				id = TIT_study_the_psycommu_system
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 0
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_newtype_use_weapons_program
+				prerequisite = {
+					focus = TIT_newtype_use_weapons_program
+				}
+				completion_reward = {
+					
+					}
+				}
+
+			focus = {
+				id = TIT_focus_on_psycommu
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = -1
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_study_the_psycommu_system
+				prerequisite = {
+					focus = TIT_study_the_psycommu_system
+				}
+				mutually_exclusive = {
+					focus = TIT_adopt_the_biosensor
+				}
+				completion_reward = {
+					
+					}
+				}
+
+				focus = {
+				id = TIT_adopt_the_biosensor
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 1
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_study_the_psycommu_system
+				prerequisite = {
+					focus = TIT_study_the_psycommu_system
+				}
+				available = {
+					has_country_flag = man_from_jupiter
+				}
+				mutually_exclusive = {
+					focus = TIT_focus_on_psycommu
+				}
+				completion_reward = {
+					
+					}
+				}
+			
+	focus = {
+		id = TIT_a_new_earthsphere
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 28
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+
+			}
+		}
+}

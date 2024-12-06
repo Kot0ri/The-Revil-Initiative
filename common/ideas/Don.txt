@@ -1,0 +1,37 @@
+ideas = {
+	country = {
+
+		isolated_remnants = {
+			allowed = {
+				always = no
+				original_tag = Don
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_gain = -0.5
+			}
+			rule = {
+				can_join_factions = no 
+			}
+		}
+
+		legacy_of_the_cossaks = {
+			allowed = {
+				always = no
+				original_tag = Don
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+				cavalry_expert_xp_gain_factor = 0.25
+				cavalry_leader_xp_gain_factor = 0.25
+				unit_cavalry_design_cost_factor = -0.35
+			}
+		}
+	}
+}

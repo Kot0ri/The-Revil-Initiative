@@ -1,0 +1,70 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ZEO_space_cruiser_1_mesh"
+		file = "gfx/models/units/ships/ZEO_space_cruiser_01.mesh"
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_space_hv_battleship_1_mesh"
+		file = "gfx/models/units/ships/ZEO_space_hv_battleship_01.mesh"
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "EFS_space_cruiser_EFS_mesh"
+		file = "gfx/models/units/ships/EFS_space_cruiser_01.mesh"
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+			texture_diffuse = "EFS_CL_01BASE_AM.dds"
+			texture_normal = "EFS_CL_01BASE_NM.dds"
+			texture_specular = "EFS_CL_01BASE_SP.dds"
+    }
+	}
+	pdxmesh = {
+		name = "EFS_space_cruiser_MSV_mesh"
+		file = "gfx/models/units/ships/EFS_space_cruiser_01.mesh"
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+			texture_diffuse = "EFS_CL_01MSV_AM.dds"
+			texture_normal = "EFS_CL_01BASE_NM.dds"
+			texture_specular = "EFS_CL_01BASE_SP.dds"
+    }
+	}
+	pdxmesh = {
+		name = "EFS_space_cruiser_TIT_mesh"
+		file = "gfx/models/units/ships/EFS_space_cruiser_01.mesh"
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+			texture_diffuse = "EFS_CL_01TITANS_AM.dds"
+			texture_normal = "EFS_CL_01BASE_NM.dds"
+			texture_specular = "EFS_CL_01TITANS_SP.dds"
+    }
+	}
+	pdxmesh = {
+		name = "EFS_space_cruiser_AEU_mesh"
+		file = "gfx/models/units/ships/EFS_space_cruiser_01.mesh"
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+			texture_diffuse = "EFS_CL_01AEUG_AM.dds"
+			texture_normal = "EFS_CL_01BASE_NM.dds"
+			texture_specular = "EFS_CL_01AEUG_SP.dds"
+    }
+	}
+	pdxmesh = {
+		name = "EFS_space_battleship_1_mesh"
+		file = "gfx/models/units/ships/EFS_space_battleship_01.mesh"
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+}

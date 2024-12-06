@@ -1,0 +1,970 @@
+characters={
+	#Leaders
+	EAF_mquve={
+	name="M'Quve"
+	portraits={
+		civilian={
+			large="gfx/leaders/EAF/mquve.dds"
+		}
+		army={
+			large="gfx/leaders/EAF/mquve.dds"
+		}
+	}
+	country_leader={
+		ideology=military_administration
+		traits={zimmand_connections man_of_culture plunderer_of_earth}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits={zabi_party}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
+EAF_ginias_sahalin ={
+	name="Ginias Sahalin"
+	portraits={
+		civilian={
+			large="gfx/leaders/EAF/ginias_sahalin.dds"
+		}
+		army={
+			large="gfx/leaders/EAF/ginias_sahalin.dds"
+		}
+	}
+	country_leader={
+		ideology= spacenoid_supremacist
+		traits={  }
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits={zabi_party}
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+	advisor={
+		slot = theorist
+		ledger = army
+		cost = 10
+		idea_token = ginias
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			head_of_asparas
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+	#field marshals
+
+	EAF_yuri_kellerne ={
+		name="Yuri Kellerne"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/yuri_kellerne.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = yuri_kellerne
+			traits = { army_chief_defensive_2 }
+		}
+		field_marshal = {
+			traits={zabi_party defensive_doctrine skilled_staffer expert_delegator }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+
+	EAF_neuen_bitter ={
+		name="Neuen Bitter"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/neuen_bitter.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = neun_bitter
+			traits = { army_chief_maneuver_2 }
+		}
+		field_marshal = {
+			traits={zabi_party organizer offensive_doctrine }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	EAF_zhukov ={
+		name="Zhukov"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/zhukov.dds"
+			}
+		}
+		field_marshal = {
+			traits={ zabi_party }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_walter_curtis ={
+		name="Walter Curtis"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/walter_curtis.dds"
+			}
+		}
+		field_marshal = {
+			traits={ }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	EAF_johann_schneidermann ={
+		name="Johann Schneidermann"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/johann_schneidermann.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/johann_schneidermann.dds"
+			}
+		}
+		field_marshal = {
+			traits={ media_personality }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	# generals
+
+	EAF_otto_eichman ={
+		name="Otto Eichman"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/otto_eichman.dds"
+			}
+		}
+		corps_commander = {
+			traits={ zabi_party politically_connected organizer skilled_staffer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_douglas_rodin ={
+		name="Douglas Rodin"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/douglas_rodin.dds"
+			}
+		}
+		corps_commander = {
+			traits={ organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_wolfgang_wall ={
+		name="Wolfgang Wall"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/wolfgang_wall.dds"
+			}
+		}
+		corps_commander = {
+			traits={ defensive_doctrine }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	EAF_bone_abust ={
+		name="Bone Abust"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/bone_abust.dds"
+			}
+		}
+		corps_commander = {
+			traits={ armor_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_massad ={
+		name="Massad"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/masad.dds"
+			}
+		}
+		corps_commander = {
+			traits={ jungle_rat }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_hermann_mannfredd ={
+		name="Hermann Mannfredd"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/hermann_mannfredd.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/hermann_mannfredd.dds"
+			}
+		}
+		corps_commander = {
+			traits={ commando paratrooper inflexible_strategist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	EAF_hans_keller ={
+		name="Hans Keller"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/hans_keller.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/hans_keller.dds"
+			}
+		}
+		corps_commander = {
+			traits={ commando jaeger }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+	EAF_jan_akerman ={
+		name="Jan Akerman"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/jan_akerman.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/jan_akerman.dds"
+			}
+		}
+		corps_commander = {
+			traits={ commando jaeger }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_boris_konev ={
+		name="Boris Konev"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/boris_konev.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/boris_konev.dds"
+			}
+		}
+		corps_commander = {
+			traits={ commando jaeger }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	#ms pilots
+
+	EAF_loft={
+		name="Loft"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/loft.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/loft.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = {  pilot }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	EAF_crucuruz_doan ={
+		name="Cucuruz Doan"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/crucuruz_doan.dds"
+			}
+		}
+		corps_commander = {
+			traits={ anti_zabi_party pilot hill_fighter urban_assault_specialist }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
+	EAF_lance_garfield ={
+		name="Lance Garfield"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/lance_garfield.dds"
+			}
+		}
+		corps_commander = {
+			traits={ deikun_party pilot winter_specialist urban_assault_specialist  white_rose }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	EAF_erik_blanke ={
+		name="Erik Blanke"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/erik_blanke.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+
+	EAF_visch_donahue ={
+		name="Visch Donahue"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/visch_donahue.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot thunderclap_in_the_wilderness  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_norris_packard ={
+		name="Noris Packard"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/noris_packard.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot jungle_rat urban_assault_specialist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	EAF_roy_greenwood ={
+		name="Roy Greenwood"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/roy_greenwood.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot desert_fox }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	EAF_ailos_bade ={
+		name="Ailos Bade"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/ailos_bade.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_fritz_bauer ={
+		name="Fritz Bauer"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/fritz_bauer.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_desert_rommel ={
+		name="Deseert Rommel"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/desert_rommel.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot desert_fox organizer harsh_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_iria_sorari ={
+		name="Iria Sorari"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/iria_sorari.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	EAF_yonem_kirks ={
+		name="Yonem Kirks"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/yonem_kirks.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	EAF_aina_sahalin ={
+		name="Aina Sahalin"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/aina_sahalin.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	EAF_sandra ={
+		name="Sandra"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/sandra.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_quint ={
+		name="Quint"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/quint.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot desert_fox}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_tessera_massera ={
+		name="Tessera Massera"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/tessera_massera.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot naval_invader}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_garsky_zinobiev ={
+		name="Garsky Zinobiev"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/garsky_zinobiev.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	#admirals
+	EAF_dreiser ={
+		name="Dreiser"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/dreiser.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/dreiser.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				bold blockade_runner seawolf 
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 4
+		}
+	}
+
+	EAF_erich_hartmann ={
+		name="Erich Hartmann"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/erich_hartmann.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/erich_hartmann.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				bold blockade_runner seawolf 
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 3
+			maneuvering_skill = 5
+			coordination_skill = 5
+		}
+	}
+
+	#advisor
+	EAF_uragang={
+		name="Uragang"
+		portraits={
+			civilian={
+				small="gfx/leaders/EAF/uragang.dds"
+			}
+			army={
+				small="gfx/leaders/EAF/uragang.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 10
+			idea_token = uragang
+			allowed = {
+				original_tag = EAF
+			}
+			traits = {
+				army_chief_drill_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	EAF_jane_contie={
+		name="Jane Contie"
+		portraits={
+			civilian={
+				small="gfx/leaders/EAF/jane_contie.dds"
+			}
+			army={
+				small="gfx/leaders/EAF/jane_contie.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 10
+			idea_token = jane_contie
+			allowed = {
+				original_tag = EAF
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+		EAF_cynthia={
+			name="Cynthia"
+			portraits={
+				civilian={
+					small="gfx/leaders/EAF/cynthia.dds"
+				}
+				army={
+					small="gfx/leaders/EAF/cynthia.dds"
+				}
+			}
+			advisor={
+				slot = high_command
+				ledger = army
+				cost = 10
+				idea_token = cynthia
+				allowed = {
+					original_tag = EAF
+				}
+				traits = {
+					army_chief_reform_2
+				}
+				ai_will_do = {
+					factor = 2
+					modifier = {
+						has_war = no
+						factor = 0
+					}
+				}
+			}
+}
+
+EAF_yuki_nakasato={
+	name="Yuki Nakasato"
+	portraits={
+		civilian={
+			small="gfx/leaders/EAF/yuki_nakasato.dds"
+		}
+		army={
+			small="gfx/leaders/EAF/yuki_nakasato.dds"
+		}
+	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = nakasato
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			army_regrouping_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+EAF_estelle_firine={
+	name="Estelle Firine"
+	portraits={
+		civilian={
+			small="gfx/leaders/EAF/estelle_firine.dds"
+		}
+		army={
+			small="gfx/leaders/EAF/estelle_firine.dds"
+		}
+	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = firine
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			army_logistics_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+EAF_kergernenko={
+	name="Kergernenko"
+	portraits={
+		civilian={
+			small="gfx/leaders/EAF/kergernenko.dds"
+		}
+		army={
+			small="gfx/leaders/EAF/kergernenko.dds"
+		}
+	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = kergernenko
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			air_chief_safety_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+EAF_may_kauwin={
+	name="May Kauwin"
+	portraits={
+		civilian={
+			small="gfx/leaders/EAF/may_kauwin.dds"
+		}
+		army={
+			small="gfx/leaders/EAF/may_kauwin.dds"
+		}
+	}
+	advisor={
+		slot = theorist
+		ledger = army
+		cost = 10
+		idea_token = kauwin
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			zeonic_ms_trait
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+}

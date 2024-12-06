@@ -1,0 +1,850 @@
+focus_tree = {
+	id = REM
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = REM
+		}
+	}
+	default = no
+
+	focus = {
+		id = REM_Beaten_but_not_Defeated
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 20
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Mass_Retreat
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 10
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_work_with_recovery_groups
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 4
+		y = 1
+		prerequisite = {focus = REM_Mass_Retreat}
+		relative_position_id = REM_Mass_Retreat
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_search_for_kaito
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_work_with_recovery_groups}
+		relative_position_id = REM_work_with_recovery_groups
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = ZEO
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Zeon_8th_Army
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 5
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		add_ideas = 8th_army
+		}
+	}
+
+	
+	focus = {
+		id = REM_Fortification_Efforts
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_Zeon_8th_Army}
+		relative_position_id = REM_Zeon_8th_Army
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Send_Prototypes_into_the_field
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Fortification_Efforts}
+		relative_position_id = REM_Fortification_Efforts
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Pull_back_past_the_Urals
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Zeon_8th_Army}
+		relative_position_id = REM_Zeon_8th_Army
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Logistics_Efforts
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = REM_Pull_back_past_the_Urals}
+		relative_position_id = REM_Zeon_8th_Army
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Scrounge_for_Winter_Equipment
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 3
+		prerequisite = {focus = REM_Logistics_Efforts}
+		relative_position_id = REM_Zeon_8th_Army
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = REM_Battle_of_California
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Battle_of_Augusta
+		icon = GFX_goal_general_meeting
+		cost = 3
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Battle_of_California}
+		relative_position_id = REM_Battle_of_California
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Utilize_new_prospects
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -4
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Loot_the_world
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Utilize_new_prospects}
+		relative_position_id = REM_Utilize_new_prospects
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_work_with_crimminial_organizations
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Utilize_new_prospects}
+		relative_position_id = REM_Utilize_new_prospects
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_connections_with_federation_officals
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 2
+		prerequisite = {focus = REM_work_with_crimminial_organizations}
+		relative_position_id = REM_Utilize_new_prospects
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Karama_Point_Meeting
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Go_Into_Hiding
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Beaten_but_not_Defeated}
+		relative_position_id = REM_Beaten_but_not_Defeated
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Deep_Sea_Bases
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Go_Into_Hiding}
+		relative_position_id = REM_Go_Into_Hiding
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Use_Wreckage
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Deep_Sea_Bases}
+		relative_position_id = REM_Deep_Sea_Bases
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_work_with_natives
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 2
+		prerequisite = {focus = REM_Use_Wreckage}
+		relative_position_id = REM_Use_Wreckage
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Hells_Gate
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_work_with_natives}
+		relative_position_id = REM_work_with_natives
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_joint_planning_efforts
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_work_with_natives}
+		relative_position_id = REM_work_with_natives
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Connections_to_the_New_Side_3_Government
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Karama_Point_Meeting}
+		relative_position_id = REM_Karama_Point_Meeting
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Land_the_Midola_on_Earth
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Connections_to_the_New_Side_3_Government}
+		prerequisite = {focus = REM_Deep_Sea_Bases}
+		relative_position_id = REM_Connections_to_the_New_Side_3_Government
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Work_On_Centralizing_Command
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Land_the_Midola_on_Earth}
+		relative_position_id = REM_Land_the_Midola_on_Earth
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Kleiber_takes_charge
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Work_On_Centralizing_Command}
+		relative_position_id = REM_Work_On_Centralizing_Command
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Quest_to_reclaim_the_psycho_zakus
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Kleiber_takes_charge}
+		relative_position_id = REM_Kleiber_takes_charge
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Send_the_Living_Dead_into_the_SSA
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = REM_Quest_to_reclaim_the_psycho_zakus}
+		relative_position_id = REM_Kleiber_takes_charge
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Inflitrate_the_Oil_rigs
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 3
+		prerequisite = {focus = REM_Send_the_Living_Dead_into_the_SSA}
+		relative_position_id = REM_Kleiber_takes_charge
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_War_to_reacquire_the_Reuse_Device
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Inflitrate_the_Oil_rigs}
+		relative_position_id = REM_Inflitrate_the_Oil_rigs
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		declare_war_on = {
+			target = SSA
+		}
+		}
+	}
+
+	focus = {
+		id = REM_traitors_amoungst_us
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {focus = REM_War_to_reacquire_the_Reuse_Device}
+		relative_position_id = REM_War_to_reacquire_the_Reuse_Device
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = REM_march_towards_vengenance
+		}
+		completion_reward = {
+		white_peace = SSA
+		}
+	}
+
+	focus = {
+		id = REM_march_towards_vengenance
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -1
+		y = 1
+		prerequisite = {focus = REM_War_to_reacquire_the_Reuse_Device}
+		relative_position_id = REM_War_to_reacquire_the_Reuse_Device
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = REM_traitors_amoungst_us
+		}
+		completion_reward = {
+		add_ideas = vision_of_the_general
+		}
+	}
+
+	focus = {
+		id = REM_Revenge_against_the_federation
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = REM_march_towards_vengenance}
+		relative_position_id = REM_march_towards_vengenance
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		declare_war_on = {
+			target = EFS
+		}
+		}
+	}
+
+	focus = {
+		id = REM_Deadlock_Sector_reinforcement
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Kleiber_takes_charge}
+		relative_position_id = REM_Kleiber_takes_charge
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_study_the_full_armour_gundam
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Deadlock_Sector_reinforcement}
+		relative_position_id = REM_Deadlock_Sector_reinforcement
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_Delaz_Plan
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_Work_On_Centralizing_Command}
+		relative_position_id = REM_Work_On_Centralizing_Command
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_Build_up_the_Garden_of_Thorns
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Delaz_Plan}
+		relative_position_id = REM_Delaz_Plan
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_cooridinate_with_other_remnants
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Build_up_the_Garden_of_Thorns}
+		relative_position_id = REM_Build_up_the_Garden_of_Thorns
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_Mission_from_Axis
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = REM_cooridinate_with_other_remnants}
+		relative_position_id = REM_cooridinate_with_other_remnants
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	Focus = {
+		id = REM_set_up_stable_lines
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Mission_from_Axis}
+		relative_position_id = REM_Mission_from_Axis
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_retreat_in_asia
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {focus = REM_traitors_amoungst_us}
+		relative_position_id = REM_traitors_amoungst_us
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_reinforce_kimberlite
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 1
+		y = 1
+		prerequisite = {focus = REM_retreat_in_asia}
+		prerequisite = {focus = REM_set_up_stable_lines}
+		relative_position_id = REM_retreat_in_asia
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Final_Stardust_preperations
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_reinforce_kimberlite}
+		relative_position_id = REM_reinforce_kimberlite
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_Ghost_of_Gihren_Zabi
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Final_Stardust_preperations}
+		relative_position_id = REM_Final_Stardust_preperations
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_trait = {
+			trait = ghost_of_gihren
+		}
+		declare_war_on = {
+			target = EFS
+		}
+		}
+	}
+
+	focus = {
+		id = REM_Gato_Plan
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_Ghost_of_Gihren_Zabi}
+		relative_position_id = REM_Ghost_of_Gihren_Zabi
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = REM_Cima_Plan
+		}
+		completion_reward = {
+		add_ideas = Warrior_Spirit_of_Zeon
+		recruit_character = REM_kelly_layzner 
+		}
+	}
+
+	focus = {
+		id = REM_Cima_Plan
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 2
+		y = 1
+		prerequisite = {focus = REM_Ghost_of_Gihren_Zabi}
+		relative_position_id = REM_Ghost_of_Gihren_Zabi
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = REM_Gato_Plan
+		}
+		completion_reward = {
+		add_ideas = Survialist_Insticts
+		recruit_character = REM_clara_lodge
+		}
+	}
+
+	focus = {
+		id = REM_Launch_Operation_Stardust
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 2
+		prerequisite = {focus = REM_Ghost_of_Gihren_Zabi}
+		relative_position_id = REM_Ghost_of_Gihren_Zabi
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_A_Nightmare_Born_Anew
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = 0
+		y = 1
+		prerequisite = {focus = REM_Launch_Operation_Stardust}
+		relative_position_id = REM_Launch_Operation_Stardust
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REM_A_third_spear
+		icon = GFX_goal_general_meeting
+		cost = 1
+		x = -2
+		y = 1
+		prerequisite = {focus = REM_A_Nightmare_Born_Anew}
+		relative_position_id = REM_A_Nightmare_Born_Anew
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = REM_search_for_kaito
+		}
+		completion_reward = {
+		
+		}
+	}
+}

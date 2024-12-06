@@ -1,0 +1,19 @@
+#################
+	#  WEAPON   #
+#################
+
+objectTypes = {
+#############################################
+#####	EFF_helmet_1 sand #####
+pdxmesh = {
+		name = "EFF_helmet_sand_mesh"
+		file = "gfx/models/infantry/eff/helmet/EFF_helmet_1.mesh"
+		scale = 0.95
+		meshsettings = {
+	    texture_diffuse = "eff_helmet_SAND_AM.dds"
+      texture_normal = "eff_helmet_SAND_NM.dds"
+      texture_specular = "eff_helmet_SAND_SP.dds"
+		}
+	}
+#####
+}

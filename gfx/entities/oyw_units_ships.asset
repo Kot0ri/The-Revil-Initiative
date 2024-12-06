@@ -1,0 +1,1248 @@
+####
+# SUBMARINE
+####
+
+entity = {
+	name = "survey_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "submarine_carrier_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "ms06_m_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "msm03_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "msm04_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "msm07_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "msm03_c_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "msm07_e_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "msm10_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "mam07_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "rag79_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "rb79_n_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}
+entity = {
+	name = "rag79_g_entity"
+	pdxmesh = "generic_submarine_mesh"
+
+	default_state = idle
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 particle = "submarine_idle_particle"  keep_particle = yes  }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { time = 0 node="front_moving_water_effect" particle = "ship_moving_front_fleet_particle"  keep_particle = yes trigger_once = yes }
+	}
+
+	state = { name = "attack"				animation = "attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "defend"				animation = "defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = damaged_attack looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = damaged_defend looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 0.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 1.3 node="left_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+		event = { time = 1.9 node="right_torpedo" particle = "submarine_torpedo_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+	}
+
+	scale = 2.0
+}

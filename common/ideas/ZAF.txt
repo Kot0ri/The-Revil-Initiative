@@ -1,0 +1,45 @@
+ideas = {
+
+	country = {
+
+		EAF_afrika_corps. = {
+			
+			allowed = {
+				original_tag = EAF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = 0.05
+				desert_fox_xp_gain_factor = 0.1
+				dig_in_speed_factor = 0.02
+				land_doctrine_cost_factor = -0.05
+			}
+		}
+	
+
+	EAF_rommel_corps. = {
+			
+		allowed = {
+			original_tag = EAF
+		}
+	
+		allowed_civil_war = {
+			always = yes
+		}
+	
+		removal_cost = -1
+		
+		modifier = {
+			equipment_capture_factor = 0.1
+			equipment_conversion_speed_factor = 0.5
+			equipment_capture_factor = 0.35
+		}
+	}
+}
+}

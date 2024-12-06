@@ -1,0 +1,33 @@
+ideas = {
+	country = {
+
+		disorganised_remnants = {
+			allowed = {
+				always = no
+				original_tag = ALF
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				max_planning_factor = -0.5
+				planning_speed_factor = -0.05
+			}
+		}
+
+		warrior_spirit = {
+			allowed = {
+				always = no
+				original_tag = ALF
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = 0.05
+				army_breakthrough_against_major_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+##################################################################	
+###########################    SMG 4 mp45   ###########################
+##################################################################
+entity = {
+	name = "ZEON_infantry_weapon_smg_stg45_left_entity"
+	pdxmesh = "ZEON_infantry_weapon_SMG_stg45_mesh"
+	scale = 1.0
+}	
+
+entity = {
+	name = "ZEON_infantry_weapon_smg_stg45_right_entity"
+	pdxmesh = "ZEON_infantry_weapon_SMG_stg45_mesh"
+	scale = 1.0
+	
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+	
+	state = { name = "attack"	animation = "attack" 
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="muzzle"    light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0.5 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { name = "defend"
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="muzzle"    light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes } 
+	}
+	
+	state = { 
+	name = "support_attack"	animation = "support_attack" 
+	event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+	event = { time = 0 node="muzzle"  light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } } 
+	event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "ZEON_infantry_weapon_smg_stg45_long_idle_entity"
+	pdxmesh = "ZEON_infantry_weapon_SMG_stg45_mesh"
+	scale = 1.0
+}	
+##################################################################
+##################################################################
+##################################################################
+
+
+

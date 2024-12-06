@@ -1,0 +1,623 @@
+characters={
+#Leaders
+	SOL_dozle_zabi={
+	name="Dozle Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/SOL/Dozle.dds"
+		}
+		army={
+			large="gfx/leaders/SOL/Dozle.dds"
+		}
+	}
+	country_leader={
+		ideology=military_administration
+		traits={well_respected hero_to_the_troops mission_focused}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = {
+		}
+		skill = 6
+		attack_skill = 8
+		defense_skill = 5
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+
+#Field Marshalls
+SOL_Lackoc={
+	name="Lackoc"
+	portraits={
+		army={
+			small="gfx/leaders/SOL/Lakoc.dds"
+		}
+		army={
+			large="gfx/leaders/SOL/Lakoc.dds"
+		}
+	}
+	field_marshal={
+		traits={ politically_connected inspirational_leader }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+#Generals
+SOL_char_aznable={
+	name="Char Aznable"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large="gfx/leaders/SOL/Char.dds"
+		}
+	}
+	corps_commander={
+		traits={ akai_suisei newtype1 war_hero anti_zabi_party trickster naval_invader pilot }
+		skill=6
+		attack_skill=8
+		defense_skill=5
+		planning_skill=5
+		logistics_skill=5
+	}
+}
+
+SOL_anavel_gato={
+	name="Anavel Gato"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large="gfx/leaders/SOL/gato.dds"
+		}
+	}
+	corps_commander={
+		traits={ solomons_nightmare war_hero zabi_party pilot }
+		skill=4
+		attack_skill=5
+		defense_skill=3
+		planning_skill=4
+		logistics_skill=4
+	}
+}
+
+SOL_olga={
+	name="Olga Talvitie"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/SOL/Talvite.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=3
+		attack_skill=4
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=3
+	}
+}
+
+SOL_jq={
+	name="J.Q"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large="gfx/leaders/SOL/JQ.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+SOL_kohm={
+	name="Kohm"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large="gfx/leaders/SOL/kohm.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+SOL_crown={
+	name="crown"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large="gfx/leaders/SOL/crown.dds"
+		}
+	}
+	corps_commander={
+		traits={}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+SOL_gene={
+	name="Gene"
+	portraits={
+		army={
+			small="GFX_idea_gene"
+		}
+		army={
+			large="gfx/leaders/SOL/Portrait_zeon_Gene.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+SOL_onizawa={
+	name="Smith Onizawa"
+	portraits={
+		army={
+			small="GFX_idea_gene"
+		}
+		army={
+			large="gfx/leaders/SOL/onizawa.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+SOL_joyce={
+	name="Joyce"
+	portraits={
+		army={
+			small="GFX_idea_gene"
+		}
+		army={
+			large="gfx/leaders/SOL/Joyce.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+SOL_meyer={
+	name="Meyer"
+	portraits={
+		army={
+			small="GFX_idea_gene"
+		}
+		army={
+			large="gfx/leaders/SOL/meyer.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot Royalguard}
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+SOL_slender={
+	name="Slender"
+	portraits={
+		army={
+			small="GFX_idea_slender"
+		}
+		army={
+			large="gfx/leaders/SOL/Portrait_zeon_Slender.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+SOL_denim={
+	name="Denim"
+	portraits={
+		army={
+			small="GFX_idea_denim"
+		}
+		army={
+			large="gfx/leaders/SOL/Portrait_zeon_Denim.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=2
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+SOL_gadem={
+	name="Gadem"
+	portraits={
+		army={
+			small=GFX_idea_gadem
+		}
+		army={
+			large="gfx/leaders/SOL/Portrait_Zeon_gadem.dds"
+		}
+	}
+	corps_commander={
+		traits={ old_guard supply_division }
+		skill=4
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=4
+	}
+	advisor = {
+		slot = high_command
+		ledger = army
+		cost = 100
+		idea_token = gadem
+		allowed = {
+			original_tag = SOL
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = gadem_is_dead
+				}
+			}
+		}
+		traits = {
+			hc_logistics_1
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+SOL_shin_matsunaga={
+	name="Shin Matsunaga"
+	portraits={
+		army={
+			small="GFX_idea_shin_matsunaga"
+		}
+		army={
+			large="gfx/leaders/SOL/matsunaga.dds"
+		}
+	}
+	corps_commander={
+		traits={ hakuro war_hero pilot }
+		skill=4
+		attack_skill=5
+		defense_skill=3
+		planning_skill=4
+		logistics_skill=4
+	}
+}
+
+SOL_kelly_layzner={
+	name="Kelly Layzner"
+	portraits={
+		army={
+			small="GFX_idea_kelley_layzner"
+		}
+		army={
+			large="gfx/leaders/SOL/Portrait_zeon_Kelley_Layzner.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=3
+	}
+}
+
+SOL_marshy={
+	name="Marshy"
+	portraits={
+		army={
+			small="GFX_idea_kelley_layzner"
+		}
+		army={
+			large="gfx/leaders/SOL/Marshy.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=3
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+SOL_koka_lasa={
+	name="Koka Lasa"
+	portraits={
+		army={
+			small="GFX_idea_kelley_layzner"
+		}
+		army={
+			large="gfx/leaders/SOL/koka.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+
+SOL_karius={
+	name="karius"
+	portraits={
+		army={
+			small="GFX_idea_karius"
+		}
+		army={
+			large="gfx/leaders/SOL/Portrait_zeon_karius.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=3
+	}
+}
+
+SOL_andy={
+	name="Andy"
+	portraits={
+		army={
+			small="GFX_idea_andy"
+		}
+		army={
+			large="gfx/leaders/SOL/andy.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=3
+	}
+}
+
+SOL_ricardo_vega={
+	name="Ricardo Vega"
+	portraits={
+		army={
+			small="GFX_idea_ricardo_vega"
+		}
+		army={
+			large="gfx/leaders/SOL/Portrait_zeon_Ricardo_Vega.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=3
+		logistics_skill=3
+	}
+}
+
+#Admirals
+SOL_killing = {
+	name="Killing Sr."
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/SOL/killing.dds"
+		}
+	}
+	navy_leader={
+		traits={ battleship_adherent gunnery_expert gentlemanly fleet_protector superior_tactician }
+		skill=5
+		attack_skill=5
+		defense_skill=2
+		maneuvering_skill=5
+		coordination_skill=4
+	}
+}
+
+SOL_billy_glardle = {
+	name="Billy Glardle"
+	portraits={
+		army={
+			small="GFX_idea_flanagan_boone"
+		}
+		army={
+			large= "gfx/leaders/SOL/Glardle.dds"
+		}
+	}
+	navy_leader={
+		traits={}
+		skill=2
+		attack_skill=2
+		defense_skill=1
+		maneuvering_skill=3
+		coordination_skill=1
+	}
+}
+
+SOL_dren={
+	name="Dren"
+	portraits={
+		army={
+			small=GFX_idea_dren
+		}
+		army={
+			large= "gfx/leaders/SOL/Dren.dds"
+		}
+	}
+	navy_leader={
+		skill=3
+		attack_skill=2
+		defense_skill=2
+		maneuvering_skill=1
+		coordination_skill=1
+	}
+	advisor = {
+		slot = high_command
+		ledger = navy
+		cost = 100
+		idea_token = dren
+		allowed = {
+			original_tag = SOL
+		}
+		traits = {
+			hc_ship_commander_1
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+SOL_conscon={
+	name="Conscon"
+	portraits={
+		army={
+			small="GFX_idea_conscon"
+		}
+		army={
+			large="gfx/leaders/SOL/Portrait_Zeon_conscon.dds"
+		}
+	}
+	navy_leader={
+		traits={ space_expert }
+		skill=4
+		attack_skill=3
+		defense_skill=2
+		maneuvering_skill=1
+		coordination_skill=1
+	}
+	advisor = {
+		slot = space_forces_chief
+		idea_token = conscon
+		allowed = {
+			original_tag = SOL
+		}
+		cost = 80
+		traits = {
+			conscon_trait
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = conscon_is_dead
+				}
+			}
+		}
+		modifier = {
+			naval_speed_factor = 0.1
+			naval_retreat_chance = -0.1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+		}
+	}
+}
+
+SOL_dellamin={
+	name="Dellamin"
+	portraits={
+		army={
+			large="gfx/leaders/SOL/dellamin.dds"
+		}
+	}
+	navy_leader={
+		traits={ space_expert }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		maneuvering_skill=1
+		coordination_skill=1
+	}
+}
+
+}

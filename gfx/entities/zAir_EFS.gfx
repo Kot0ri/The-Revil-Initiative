@@ -1,0 +1,73 @@
+### Gundam One Year War MOD	###
+objectTypes = {
+###	EFS Aircraft	###
+### Core Fighter	###
+
+	pdxmesh = {
+		name = "EFF_corefighter_1_mesh"
+		file = "gfx/models/units/planes/EFS/EFS_corefighter_1.mesh"
+		animation = { id = "Air_IDLE"			type = "EFS_corefighter_idle_0_animation" }
+		animation = { id = "Air_IDLE_Long"			type = "EFS_corefighter_idle_1_animation" }
+		animation = { id = "Air_IDLE_Long3"			type = "EFS_corefighter_idle_3_animation" }
+		animation = { id = "Air_IDLE_Long4"			type = "EFS_corefighter_idle_4_animation" }
+		animation = { id = "Air_IDLE_Mid"			type = "EFS_corefighter_idle_2_animation" }
+		animation = { id = "Air_IDLE_Short"			type = "EFS_corefighter_idle_short_animation" }
+		animation = { id = "Air_IDLE_Transfer"			type = "EFS_corefighter_idle_transform_animation" }
+		animation = { id = "attack_missile1"			type = "EFS_corefighter_attack_missile1_animation" }
+		animation = { id = "attack_missile2"			type = "EFS_corefighter_attack_missile2_animation" }
+		animation = { id = "attack_missile3"			type = "EFS_corefighter_attack_missile3_animation" }
+		animation = { id = "Crash"			type = "EFS_corefighter_crash_1_missile1_animation" }
+		animation = { id = "Explode"			type = "EFS_corefighter_explode_1_animation" }
+		scale = 2.0
+		meshsettings = {
+      shader = PdxMeshAdvancedCustom
+		}
+	}
+
+	pdxmesh = {
+		name = "EFF_corefighter_Real_mesh"
+		file = "gfx/models/units/planes/EFS/EFS_corefighter_1.mesh"
+		animation = { id = "Air_IDLE"			type = "EFS_corefighter_idle_0_animation" }
+		animation = { id = "Air_IDLE_Long"			type = "EFS_corefighter_idle_1_animation" }
+		animation = { id = "Air_IDLE_Long3"			type = "EFS_corefighter_idle_3_animation" }
+		animation = { id = "Air_IDLE_Long4"			type = "EFS_corefighter_idle_4_animation" }
+		animation = { id = "Air_IDLE_Mid"			type = "EFS_corefighter_idle_2_animation" }
+		animation = { id = "Air_IDLE_Short"			type = "EFS_corefighter_idle_short_animation" }
+		animation = { id = "Air_IDLE_Transfer"			type = "EFS_corefighter_idle_transform_animation" }
+		animation = { id = "attack_missile1"			type = "EFS_corefighter_attack_missile1_animation" }
+		animation = { id = "attack_missile2"			type = "EFS_corefighter_attack_missile2_animation" }
+		animation = { id = "attack_missile3"			type = "EFS_corefighter_attack_missile3_animation" }
+		animation = { id = "Crash"			type = "EFS_corefighter_crash_1_missile1_animation" }
+		animation = { id = "Explode"			type = "EFS_corefighter_explode_1_animation" }
+		scale = 2.0
+		meshsettings = {
+      shader = PdxMeshAdvancedCustom
+			texture_diffuse = "EFS_corefighter_RealColour_AM.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "EFF_corefighter_VF_mesh"
+		file = "gfx/models/units/planes/EFS/EFS_corefighter_1.mesh"
+		animation = { id = "Air_IDLE"			type = "EFS_corefighter_idle_0_animation" }
+		animation = { id = "Air_IDLE_Long"			type = "EFS_corefighter_idle_1_animation" }
+		animation = { id = "Air_IDLE_Long3"			type = "EFS_corefighter_idle_3_animation" }
+		animation = { id = "Air_IDLE_Long4"			type = "EFS_corefighter_idle_4_animation" }
+		animation = { id = "Air_IDLE_Mid"			type = "EFS_corefighter_idle_2_animation" }
+		animation = { id = "Air_IDLE_Short"			type = "EFS_corefighter_idle_short_animation" }
+		animation = { id = "Air_IDLE_Transfer"			type = "EFS_corefighter_idle_transform_animation" }
+		animation = { id = "attack_missile1"			type = "EFS_corefighter_attack_missile1_animation" }
+		animation = { id = "attack_missile2"			type = "EFS_corefighter_attack_missile2_animation" }
+		animation = { id = "attack_missile3"			type = "EFS_corefighter_attack_missile3_animation" }
+		animation = { id = "Crash"			type = "EFS_corefighter_crash_1_missile1_animation" }
+		animation = { id = "Explode"			type = "EFS_corefighter_explode_1_animation" }
+		scale = 2.0
+		meshsettings = {
+      shader = PdxMeshAdvancedCustom
+			texture_diffuse = "EFS_corefighter_VF_AM.dds"
+			texture_normal = "EFS_corefighter_VF_NM.dds"
+			texture_specular = "EFS_corefighter_VF_SP.dds"
+		}
+	}
+	###	END	###
+}

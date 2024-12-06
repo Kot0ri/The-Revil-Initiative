@@ -1,0 +1,96 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ZEO_mbt_2_mesh"
+		file = "gfx/models/units/tanks/zeo_mbt_2.mesh"
+    animation = { id = "attack"			type = "ENG_tank_medium_attack_animation" }
+    animation = { id = "attack_2" type = "zeo_mbt_2_attack_animation" }
+    animation = { id = "defend" type = "zeo_mbt_2_defend_animation" }
+		animation = { id = "idle"			type = "ENG_tank_medium_idle_animation" }
+		animation = { id = "move"			type = "ENG_tank_medium_moving_animation" }
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "EFS_mbt_mesh"
+		file = "gfx/models/units/tanks/efs_mbt.mesh"
+    animation = { id = "attack"			type = "efs_mbt_attack_animation" }
+		animation = { id = "idle"			type = "efs_mbt_idle_animation" }
+		animation = { id = "move"			type = "efs_mbt_move_animation" }
+		scale = 1
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+    name = "lbs_mesh"
+    file = "gfx/models/units/tanks/efs_lbs_1.mesh"
+    animation = { id = "attack"			type = "bigtray_attack_animation" }
+    animation = { id = "idle"			type = "bigtray_idle_animation" }
+    animation = { id = "move"			type = "bigtray_moving_animation" }
+    scale = 1
+    meshsettings = {
+      texture_diffuse = "BigTray_79_AM.dds"
+      texture_normal = "BigTray_NM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "lbs_1_mesh"
+    file = "gfx/models/units/tanks/efs_lbs_1.mesh"
+    animation = { id = "attack"			type = "bigtray_attack_animation" }
+    animation = { id = "idle"			type = "bigtray_idle_animation" }
+    animation = { id = "move"			type = "bigtray_moving_animation" }
+    scale = 1
+    meshsettings = {
+      texture_diffuse = "BigTray_08_AM.dds"
+      texture_normal = "BigTray_NM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "EFS_lbs_1_mesh"
+    file = "gfx/models/units/tanks/efs_lbs_1.mesh"
+    animation = { id = "attack"			type = "bigtray_attack_animation" }
+    animation = { id = "idle"			type = "bigtray_idle_animation" }
+    animation = { id = "move"			type = "bigtray_moving_animation" }
+    scale = 1
+    meshsettings = {
+      texture_diffuse = "BigTray_igloo_AM.dds"
+      texture_normal = "BigTray_NM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "ZEO_lbs_1_mesh"
+    file = "gfx/models/units/tanks/zeo_lbs_1.mesh"
+    animation = { id = "attack"			type = "zeo_lbs_1_attack_animation" }
+    animation = { id = "idle"			type = "zeo_lbs_1_idle_animation" }
+    animation = { id = "move"			type = "zeo_lbs_1_moving_animation" }
+    scale = 2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "ZEO_Org_lbs_1_mesh"
+    file = "gfx/models/units/tanks/zeo_lbs_1.mesh"
+    animation = { id = "attack"			type = "zeo_lbs_1_attack_animation" }
+    animation = { id = "idle"			type = "zeo_lbs_1_idle_animation" }
+    animation = { id = "move"			type = "zeo_lbs_1_moving_animation" }
+    scale = 2
+    meshsettings = {
+      texture_diffuse = "GallopBodyGTO_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "ZEO_lbs_1_cargo_mesh"
+    file = "gfx/models/units/tanks/zeo_lbs_1_cargo.mesh"
+    scale = 2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+}

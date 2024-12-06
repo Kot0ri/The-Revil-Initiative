@@ -1,0 +1,30 @@
+#################
+	#  WEAPON   #
+#################
+
+objectTypes = {
+#############################################
+#####	ZEON_helmet Green #####
+	pdxmesh = {
+		name = "ZEON_helmet_green_mesh"
+		file = "gfx/models/infantry/zeon/helmet/zeon_helmet_1.mesh"
+		scale = 0.95
+		meshsettings = {
+	    texture_diffuse = "zeon_helmet_1a.dds"
+      texture_normal = "zeon_helmet_N.dds"
+      texture_specular = "zeon_helmet_S_metal.dds"
+		}
+	}
+#############################################
+#####	ZEON_helmet Camo #####
+	pdxmesh = {
+		name = "ZEON_helmet_camo_mesh"
+		file = "gfx/models/infantry/eff/helmet/EFF_helmet_1.mesh"
+		scale = 0.95
+		meshsettings = {
+	    texture_diffuse = "zeo_helmet_ColonyCamo_AM.dds"
+      texture_normal = "zeo_helmet_ColonyCamo_NM.dds"
+      texture_specular = "zeo_helmet_ColonyCamo_SP.dds"
+		}
+	}
+}

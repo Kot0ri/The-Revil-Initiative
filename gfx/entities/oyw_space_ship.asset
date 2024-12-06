@@ -1,0 +1,2473 @@
+# ムサイ
+entity = {
+	name = "ZEO_efsf_space_cruiser_entity"
+	pdxmesh = "ZEO_space_cruiser_1_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_attacked" } }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 5.5
+}
+# ムサイ
+entity = {
+	name = "zeon_space_cruiser_entity"
+	pdxmesh = "ZEO_space_cruiser_1_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 5.5
+}
+# チベ
+entity = {
+	name = "zeon_space_fv_cruiser_entity"
+	pdxmesh = "ZEO_space_cruiser_1_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 5.5
+}
+# グワジン
+entity = {
+	name = "ZEO_efsf_space_battleship_entity"
+	pdxmesh = "ZEO_space_hv_battleship_1_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 3
+}
+# グワジン
+entity = {
+	name = "zeon_space_battleship_entity"
+	pdxmesh = "ZEO_space_hv_battleship_1_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+    event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_gwazine_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 3
+}
+# ドロス
+entity = {
+	name = "zeon_space_carrier_entity"
+	pdxmesh = "ZEO_space_cruiser_1_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine5"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine6"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine7"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine8"	particle = "zzEngine_Jet_Faster_Blue_musai_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 5.5
+}
+# サラミス MSV Generic
+entity = {
+	name = "efsf_space_cruiser_entity"
+	pdxmesh = "EFS_space_cruiser_MSV_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 0.7
+}
+# サラミス MSV EFS
+entity = {
+	name = "EFS_zeon_space_cruiser_entity"
+	pdxmesh = "EFS_space_cruiser_MSV_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 0.7
+}
+entity = {
+	name = "EFS_efsf_space_cruiser_entity"
+	pdxmesh = "EFS_space_cruiser_MSV_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 0.7
+}
+# サラミス 連邦 EFS 0
+entity = {
+	name = "EFS_zeon_space_cruiser_0_entity"
+	pdxmesh = "EFS_space_cruiser_EFS_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 0.7
+}
+entity = {
+	name = "EFS_efsf_space_cruiser_0_entity"
+	pdxmesh = "EFS_space_cruiser_EFS_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 0.7
+}
+# サラミス ティターンズ EFS TIT
+entity = {
+	name = "EFS_TIT_efsf_space_cruiser_0_entity"
+	pdxmesh = "EFS_space_cruiser_TIT_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 0.7
+}
+# サラミス ティターンズ generic 1
+entity = {
+	name = "efsf_space_cruiser_1_entity"
+	pdxmesh = "EFS_space_cruiser_TIT_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 0.7
+}
+# サラミス エゥーゴ EFS AEU
+entity = {
+	name = "EFS_AEU_efsf_space_cruiser_entity"
+	pdxmesh = "EFS_space_cruiser_AEU_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 0.7
+}
+# サラミス エゥーゴ generic 0
+entity = {
+	name = "efsf_space_cruiser_0_entity"
+	pdxmesh = "EFS_space_cruiser_AEU_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_destroyer }}
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { sound = { soundeffect = "ships_destroyer_attack" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes  }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { sound = { soundeffect = "ship_destroyer_damaged_attacking_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }
+		event = { time = 0.05 node="front1_cannon_muzzle" particle = "ship_fire_small_particle"  keep_particle = yes }
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0.9 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.1 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		event = { time = 0 particle = "ship_fire_water_shockwave_particle"  keep_particle = yes }
+
+		event = { time = 0.05 node="front1_cannon_watereffect" particle = "ship_fire_water_particle"  keep_particle = yes }	 	#waterfoam
+		event = { time = 0.05 node="front1_cannon_muzzle" particle  = "ship_fire_small_particle"  keep_particle = yes sound = { soundeffect = "ships_destroyer_attack" } }	 	#mussleflash
+
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { sound = { soundeffect = "ship_destroyer_damaged_defending_01" } }
+		event = {  time = 0 node = "RocketEngine"	particle = "zzEngine_Jet_Faster_Blue_salamis_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.15 type = small }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="waterfoam_01" particle = "ship_fire_water_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="back2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.2 node="front2_cannon_muzzle" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { sound = { soundeffect = "ships_destroyer_death" } }
+	}
+
+	scale = 0.7
+}
+# マゼラン
+entity = {
+	name = "EFS_zeon_space_battleship_entity"
+	pdxmesh = "EFS_space_battleship_1_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_battleship }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.1 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { sound = { soundeffect = super_heavy_battleship_attack } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = big }
+			hitmiss_effect = { time = 0.2 type = big }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_defend }}
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.2 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { time = 0.35 node="back2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { time = 0.55 node="back1_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = big }
+			hitmiss_effect = { time = 0.3 type = big }
+			hitmiss_effect = { time = 0.6 type = big }
+			hitmiss_effect = { time = 0.8 type = big }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_attacked }}
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		#event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.1 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_damaged_attack }}
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.1 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = big }
+			hitmiss_effect = { time = 0.2 type = big }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.5 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0.7 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_damaged_defend }}
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_attacked }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.2 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { time = 0.35 node="back2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { time = 0.55 node="back1_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_damaged_defend }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = big }
+			hitmiss_effect = { time = 0.3 type = big }
+			hitmiss_effect = { time = 0.6 type = big }
+			hitmiss_effect = { time = 0.8 type = big }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="damaged_smoke2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.7 node="hit_effect_locator3" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.2 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_destroyed }}
+	}
+
+	scale = 2.8
+}
+# マゼラン
+entity = {
+	name = "efsf_space_battleship_entity"
+	pdxmesh = "EFS_space_battleship_1_mesh"
+
+	state = { name = "idle"	animation = "idle" animation_blend_time = 0.3
+		event = { trigger_once = yes time = 0 sound = { soundeffect = ship_idle_battleship }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+	}
+
+	state = { name = "move"	animation = "idle" animation_blend_time = 0.3
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+	}
+
+	state = { name = "attack"			animation = "attack" animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.1 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { sound = { soundeffect = super_heavy_battleship_attack } }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = big }
+			hitmiss_effect = { time = 0.2 type = big }
+		}
+	}
+	state = { name = "defend"			animation = "defend" animation_blend_time = 0.3
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_defend }}
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.2 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { time = 0.35 node="back2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { time = 0.55 node="back1_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = big }
+			hitmiss_effect = { time = 0.3 type = big }
+			hitmiss_effect = { time = 0.6 type = big }
+			hitmiss_effect = { time = 0.8 type = big }
+		}
+	}
+	state = { name = "damaged_attack" looping = no animation = "damaged_attack" state_time = 3 next_state = damaged_attack_looping
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_attacked }}
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+		#event = { time = 0.5 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		#event = { time = 0.2 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.1 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+	}
+
+	state = { name = "damaged_attack_looping"				animation = "damaged_attack"   animation_blend_time = 0.3
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_damaged_attack }}
+
+
+		#event = { time = 0 node="miss_effect_locator1" particle = "water_impact_particle"  keep_particle = yes }
+
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.1 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		#event = { time = 0.5 node="cannon_locator2" particle = "ship_fire_particle"  keep_particle = yes }
+		#event = { time = 0.7 node="cannon_locator3" particle = "ship_fire_particle"  keep_particle = yes }
+
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = big }
+			hitmiss_effect = { time = 0.2 type = big }
+		}
+	}
+
+	state = { name = "damaged_defend" looping = no animation = "damaged_defend" state_time = 3 next_state = damaged_defend_loop
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.5 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.2 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0.7 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_damaged_defend }}
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_attacked }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+	}
+
+	state = { name = "damaged_defend_loop"				animation = "damaged_defend"   animation_blend_time = 0.3
+		event = { time = 0 node="front1_cannon_muzzle" particle  = "ship_fire_particle"  keep_particle = yes }	 	#mussleflash
+		event = { time = 0.2 node="front2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { time = 0.35 node="back2_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+		event = { time = 0.55 node="back1_cannon_muzzle" particle = "ship_fire_particle"  keep_particle = yes }		#mussleflash
+
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 node="hit_effect_locator2" particle = "ship_damaged_smoke_particle"  keep_particle = yes trigger_once = yes }
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_damaged_defend }}
+		event = {  time = 0 node = "RocketEngine1"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine2"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine3"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+		event = {  time = 0 node = "RocketEngine4"	particle = "zzEngine_Jet_Faster_Blue_magellan_particle"	keep_particle = yes }
+
+		game_data = {
+			hitmiss_effect = { time = 0.1 type = big }
+			hitmiss_effect = { time = 0.3 type = big }
+			hitmiss_effect = { time = 0.6 type = big }
+			hitmiss_effect = { time = 0.8 type = big }
+		}
+	}
+
+	state = { name = "death"	animation = "death"   animation_blend_time = 0.3  looping = no
+		#event = { time = 0 node="damaged_smoke1" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#event = { time = 0 node="damaged_smoke2" particle = "ship_damaged_smoke_particle"  keep_particle = yes }
+		#
+		event = { time = 0 node="hit_effect_locator1" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 0.4 node="damaged_smoke2" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0.7 node="hit_effect_locator3" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 1.2 node="hit_effect_locator2" particle = "ship_explosion_particle"  keep_particle = yes }
+		#event = { time = 1.6 node="damaged_smoke1" particle = "ship_explosion_particle"  keep_particle = yes }
+		event = { time = 0 sound = { soundeffect = super_heavy_battleship_destroyed }}
+	}
+
+	scale = 2.8
+}

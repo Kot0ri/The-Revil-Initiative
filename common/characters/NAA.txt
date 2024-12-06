@@ -1,0 +1,800 @@
+characters={
+	#Leaders
+    NAA_Garma_Zabi={
+	name="Garma Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/garma_1.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/garma_1.dds"
+		}
+	}
+	country_leader={
+		ideology= military_administration
+		traits={garma_pa_trait garma_na_trait}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 3
+	}
+}
+
+NAA_Garma_Zabi_2={
+	name="Garma Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Garma_leader.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Garma_leader.dds"
+		}
+	}
+	country_leader={
+		ideology= parlimentary_monarchy
+		traits={garma_pa_trait garma_na_trait man_who_pointed}
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { pilot }
+		skill = 6
+		attack_skill = 3
+		defense_skill = 5
+		planning_skill = 6
+		logistics_skill = 5
+	}
+}
+
+
+#field marshals
+
+NAA_Garcia_Romeo={
+	name="Garcia Romeo"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/garcia_romeo.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/garcia_romeo.dds"
+		}
+	}
+	field_marshal = {
+		traits = { politically_connected }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = killy
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			army_chief_offensive_1
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+NAA_Killy_Garret={
+	name="Killy Garret"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Killy_Garret.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Killy_Garret.dds"
+		}
+	}
+	field_marshal = {
+		traits = { pilot noisy_fairy }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+	advisor={
+		slot = high_command
+		ledger = army
+		cost = 10
+		idea_token = killy
+		allowed = {
+			original_tag = EAF
+		}
+		traits = {
+			army_chief_defensive_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+NAA_otto_kaufman={
+	name="Otto Kaufman"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/otto_kaufman.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/otto_kaufman.dds"
+		}
+	}
+	field_marshal = {
+		traits = { politically_connected zabi_party }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = otto_kaufman
+		allowed = {
+			original_tag = NAA
+		}
+		traits = { special_service_trait }
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}
+
+#generals
+
+NAA_rudolf_dietrich={
+	name="Rudolf Dietrich"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/rudolf_dietrich.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/rudolf_dietrich.dds"
+		}
+	}
+	corps_commander = {
+		traits = { politically_connected engineer_officer panzer_leader  jungle_rat zabi_party }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 4
+	} 
+}
+
+NAA_rousseau_fluerbach={
+	name="Rousseau Fluerbach"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/rousseau_fluerbach.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/rousseau_fluerbach.dds"
+		}
+	}
+	corps_commander = {
+		traits = { winter_specialist winter_expert trickster }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	} 
+}
+
+NAA_rainer_haupman={
+	name="Rainer Haupman"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/rainer_haupman.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/rainer_haupman.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   commando naval_invader jaeger }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	} 
+}
+
+NAA_erwin_muller={
+	name="Erwin Muller"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/erwin_muller.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/erwin_muller.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   commando naval_invader jaeger }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 2
+	} 
+}
+
+NAA_darota={
+	name="Darota"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/darota.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/darota.dds"
+		}
+	}
+	corps_commander = {
+		traits = {  politically_connected }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_hugo_steller={
+	name="Hugo Steller"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/hugo_steller.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/hugo_steller.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_bob_thomas={
+	name="Bob Thomas"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/bob_thomas.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/bob_thomas.dds"
+		}
+	}
+	corps_commander = {
+		traits = {   }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_clamp={
+	name="Clamp"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/clamp.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/clamp.dds"
+		}
+	}
+	corps_commander = {
+		traits = { engineer_officer }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_zeygan={
+	name="Zeygan"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/zeygan.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/zeygan.dds"
+		}
+	}
+	corps_commander = {
+		traits = { engineer_officer }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+#pilots
+
+NAA_elisa_heaven={
+	name="Elisa Heaven"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/elisa_heaven.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/elisa_heaven.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot ixtab }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	} 
+}
+
+NAA_Garret_Schmitzer={
+	name="Garret Schmitzer"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Garret_Schmitzer.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Garret_Schmitzer.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot skilled_staffer }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 2
+	} 
+}
+
+NAA_Doug_Schneid={
+	name="Doug Schneid"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Doug_Schneid.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Doug_Schneid.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	} 
+}
+
+NAA_Sophie_Fran={
+	name="Sophie Fran"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Sophie_Fran.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Sophie_Fran.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	} 
+}
+
+
+NAA_Lou_Roher={
+	name="Lou Roher"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Lou_Roher.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Lou_Roher.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+	} 
+}
+
+NAA_Matt_Austin={
+	name="Matt Austin"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Matt_Austin.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Matt_Austin.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Nikki_Roberto={
+	name="Nikki Roberto"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Nikki_Roberto.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Nikki_Roberto.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Charlotte_Hepner={
+	name="Charlotte Hepner"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/charlotte_hepner.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/charlotte_hepner.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Alma_Stirner={
+	name="Alma Stirner"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/alma_stirner.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/alma_stirner.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot newtype1 }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 1
+	} 
+}
+
+NAA_Helena_Hegel={
+	name="Helena Hegel"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/helena_hegel.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/helena_hegel.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 1
+	} 
+}
+
+NAA_Mia_Brinkman={
+	name="Mia Brinkman"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/mia_brinkman.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/mia_brinkman.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Ian_Graden={
+	name="Ian Graden"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/ian_graden.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/ian_graden.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot ace_of_california_base  }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Ramba_Ral={
+	name="Ramba Ral"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Ramba_Ral.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Ramba_Ral.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot aoi_kyosei  }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 3
+	} 
+}
+
+NAA_Kurt_Roswell={
+	name="Kurt Roswell"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Kurt_Roswell.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Kurt_Roswell.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_Robin_Bradshaw={
+	name="Robin Bradshaw"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Ian_Graden.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Robin_Bradshaw.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+#admirals
+NAA_flanagan_boone={
+	name="Flanagan Boone"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/flanagan_boone.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/flanagan_boone.dds"
+		}
+	}
+	navy_leader = {
+		traits = {
+			bold blockade_runner seawolf
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		maneuvering_skill = 3
+		coordination_skill = 3
+	}
+}
+
+#Advisors
+NAA_Barbara_Hahari={
+	name="Barbara Hahari"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Barbara_Hahari.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Barbara_Hahari.dds"
+		}
+	}
+	corps_commander = {
+		traits = { naval_invader }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	} 
+	advisor={
+		slot = high_command
+		idea_token = Barbara_Hahari
+		allowed = {
+			original_tag = NAA
+		}
+		traits = {
+			air_bomber_interception_2
+		}
+		available = {
+			
+		}
+		modifier = {
+		}
+		do_effect = {
+		}
+	}
+}
+
+NAA_Irmela_Gruberi={
+	name="Irmela Gruberi"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/Irmela_Gruberi.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/Irmela_Gruberi.dds"
+		}
+	}
+	advisor={
+		slot = high_command
+		idea_token = Barbara_Hahari
+		allowed = {
+			original_tag = NAA
+		}
+		traits = {
+			hc_mechanic_specialist_2
+		}
+		available = {
+			
+		}
+		modifier = {
+		}
+		do_effect = {
+		}
+	}
+}
+	NAA_Icelina_Eschonbach={
+		name="Icelina Eschonbach"
+		portraits={
+			civilian={
+				large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+			}
+			army={
+				large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Icelina_Eschonbach
+			allowed = {
+				original_tag = NAA
+			}
+			traits = { heir_of_the_eschonbach_family }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	NAA_crowley_hamon={
+		name="Crowley Hamon"
+		portraits={
+			civilian={
+				large="gfx/leaders/NAA/Icelina_Eschonbach.dds"
+			}
+			army={
+				large="gfx/leaders/NAA/crowley_hamon.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				anti_zabi_party deikun_party
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = Crowley_Hamon
+			allowed = {
+				original_tag = NAA
+			}
+			traits = { hc_guerrilla_2 }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+}

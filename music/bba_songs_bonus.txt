@@ -1,0 +1,23 @@
+
+music_station = "base_music"
+
+music = {
+	song = "bella_ciao"
+	chance = {
+		factor = 0.05
+		modifier = {
+			factor = 0
+			has_government = spacesupremacy
+		}	
+		modifier = {
+			factor = 5
+			has_government = earthsupremacy
+		}
+		modifier = {
+			factor = 1.5
+			any_enemy_country = {
+				has_government = spacesupremacy
+			}
+		}
+	}
+}

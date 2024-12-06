@@ -1,0 +1,783 @@
+﻿add_namespace = achievement
+
+# 実績
+#1 ランバ・ラル グフの飛行試験に成功した
+country_event = {
+  id = achievement.1
+  title = achievement.1.t
+  desc = achievement.1.d
+  picture = GFX_achievement1
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ramba_ral_sf_1
+    }
+    set_country_flag = ramba_ral_sf_1_enable
+  }
+  option = {
+    name = achievement.1.a
+  }
+}
+#2 クラウレ・ハモン ランバ・ラル隊がWB隊を撃破する
+country_event = {
+  id = achievement.2
+  title = achievement.2.t
+  desc = achievement.2.d
+  picture = GFX_achievement2
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ramba_ral_sf_2
+    }
+    set_country_flag = ramba_ral_sf_2_enable
+    ZEO_crowley_hamon = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.2.a
+  }
+}
+#3 ! クランプ ローゼルシアを連邦に引き渡す
+country_event = {
+  id = achievement.3
+  title = achievement.3.t
+  desc = achievement.3.d
+  picture = GFX_achievement3
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ramba_ral_sf_3
+    }
+    set_country_flag = ramba_ral_sf_3_enable
+    ZEO_clamp = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.3.a
+  }
+}
+#4 アコース ランバ・ラル隊がドムを受領する
+country_event = {
+  id = achievement.4
+  title = achievement.4.t
+  desc = achievement.4.d
+  picture = GFX_achievement4
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ramba_ral_sf_4
+    }
+    set_country_flag = ramba_ral_sf_4_enable
+    ZEO_acous = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.4.a
+  }
+}
+#5 ! タチ・オハラ 国家方針「ラル家の再興」を完了する
+country_event = {
+  id = achievement.5
+  title = achievement.5.t
+  desc = achievement.5.d
+  picture = GFX_achievement5
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ramba_ral_sf_5
+    }
+    set_country_flag = ramba_ral_sf_5_enable
+    ZEO_tachi_ohara = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.5.a
+  }
+}
+#6 コズン・グラハム ガンダム・ガンキャノン・ガンタンクのいずれかを鹵獲した（備蓄にある状態）
+country_event = {
+  id = achievement.6
+  title = achievement.6.t
+  desc = achievement.6.d
+  picture = GFX_achievement6
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ramba_ral_sf_6
+    }
+    set_country_flag = ramba_ral_sf_6_enable
+    ZEO_cozun_graham = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.6.a
+  }
+}
+#7 ! ハーディ サイクロプス隊のすべての作戦を成功させた
+country_event = {
+  id = achievement.7
+  title = achievement.7.t
+  desc = achievement.7.d
+  picture = GFX_achievement7
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      cyclops_sf_1
+    }
+    set_country_flag = cyclops_sf_1_enable
+  }
+  option = {
+    name = achievement.7.a
+  }
+}
+#8 ! ミハイル 病気または負傷状態の指揮官で戦闘に勝利した
+country_event = {
+  id = achievement.8
+  title = achievement.8.t
+  desc = achievement.8.d
+  picture = GFX_achievement8
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      cyclops_sf_2
+    }
+    set_country_flag = cyclops_sf_2_enable
+  }
+  option = {
+    name = achievement.8.a
+  }
+}
+#9 ! ガルシア アレックスを鹵獲または破壊した
+country_event = {
+  id = achievement.9
+  title = achievement.9.t
+  desc = achievement.9.d
+  picture = GFX_achievement9
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      cyclops_sf_3
+    }
+    set_country_flag = cyclops_sf_3_enable
+  }
+  option = {
+    name = achievement.9.a
+  }
+}
+#10 ! アンディ 北極基地襲撃作戦でアンディが死亡しなかった
+country_event = {
+  id = achievement.10
+  title = achievement.10.t
+  desc = achievement.10.d
+  picture = GFX_achievement10
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      cyclops_sf_4
+    }
+    set_country_flag = cyclops_sf_4_enable
+  }
+  option = {
+    name = achievement.10.a
+  }
+}
+#11 ! バーニー すべてのザクを開発した
+country_event = {
+  id = achievement.11
+  title = achievement.11.t
+  desc = achievement.11.d
+  picture = GFX_achievement11
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      cyclops_sf_5
+    }
+    set_country_flag = cyclops_sf_5_enable
+  }
+  option = {
+    name = achievement.11.a
+  }
+}
+#12 ! アル アルが幸せになった
+country_event = {
+  id = achievement.12
+  title = achievement.12.t
+  desc = achievement.12.d
+  picture = GFX_achievement12
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      cyclops_sf_6
+    }
+    set_country_flag = cyclops_sf_6_enable
+  }
+  option = {
+    name = achievement.12.a
+  }
+}
+#13 ! プロホノウ ２人以上の駐在武官を受け入れた
+country_event = {
+  id = achievement.13
+  title = achievement.13.t
+  desc = achievement.13.d
+  picture = GFX_achievement13
+  is_triggered_only = yes
+  immediate = {
+    add_ideas = {
+      tech603_sf_1
+    }
+    set_country_flag = tech603_sf_1_enable
+  }
+  option = {
+    name = achievement.13.a
+  }
+}
+#14 ! クリューガー ヒルドルブの試験報告を読んだ
+country_event = {
+  id = achievement.14
+  title = achievement.14.t
+  desc = achievement.14.d
+  picture = GFX_achievement14
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      tech603_sf_2
+    }
+    set_country_flag = tech603_sf_2_enable
+  }
+  option = {
+    name = achievement.14.a
+  }
+}
+#15 ! ジーン ゼーゴックの試験報告書を読んだ
+country_event = {
+  id = achievement.15
+  title = achievement.15.t
+  desc = achievement.15.d
+  picture = GFX_achievement15
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      tech603_sf_3
+    }
+    set_country_flag = tech603_sf_3_enable
+  }
+  option = {
+    name = achievement.15.a
+  }
+}
+#16 ! ワシヤ ヅダを正式採用した（すべての師団テンプレートからザクをなくしヅダのみにする）
+country_event = {
+  id = achievement.16
+  title = achievement.16.t
+  desc = achievement.16.d
+  picture = GFX_achievement16
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      tech603_sf_4
+    }
+    set_country_flag = tech603_sf_4_enable
+    ZEO_hideto_washiya = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.16.a
+  }
+}
+#17 ! ヘンメ ヨルムンガンドの試験報告を読んだ
+country_event = {
+  id = achievement.17
+  title = achievement.17.t
+  desc = achievement.17.d
+  picture = GFX_achievement17
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      tech603_sf_5
+    }
+    set_country_flag = tech603_sf_5_enable
+  }
+  option = {
+    name = achievement.17.a
+  }
+}
+#18 ! エルヴィン 「ヘルベルト・フォン・カスペン」「モニク・キャディラック」「オリヴァー・マイ」を採用した
+country_event = {
+  id = achievement.18
+  title = achievement.18.t
+  desc = achievement.18.d
+  picture = GFX_achievement18
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      tech603_sf_6
+    }
+    set_country_flag = tech603_sf_6_enable
+  }
+  option = {
+    name = achievement.18.a
+  }
+}
+
+#19 ! ブライト
+country_event = {
+  id = achievement.19
+  title = achievement.19.t
+  desc = achievement.19.d
+  picture = GFX_achievement19
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_1
+    }
+    set_country_flag = wb_sf_1_enable
+  }
+  option = {
+    name = achievement.19.a
+  }
+}
+#20 スレッガー チェンバロ作戦が成功した
+country_event = {
+  id = achievement.20
+  title = achievement.20.t
+  desc = achievement.20.d
+  picture = GFX_achievement20
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_2
+    }
+    set_country_flag = wb_sf_2_enable
+    EFS_sleggar_law = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.20.a
+  }
+}
+#21 ! リュウ 病気または負傷状態の指揮官で戦闘に勝利した
+country_event = {
+  id = achievement.21
+  title = achievement.21.t
+  desc = achievement.21.d
+  picture = GFX_achievement21
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_3
+    }
+    set_country_flag = wb_sf_3_enable
+    EFS_ryu_jose = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.21.a
+  }
+}
+#22 ミライ 「カムラン・ブルーム」を採用していない状態でサイド6が壊滅した
+country_event = {
+  id = achievement.22
+  title = achievement.22.t
+  desc = achievement.22.d
+  picture = GFX_achievement22
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_4
+    }
+    set_country_flag = wb_sf_4_enable
+  }
+  option = {
+    name = achievement.22.a
+  }
+}
+#23 アムロ アムロ・レイがニュータイプとして覚醒した
+country_event = {
+  id = achievement.23
+  title = achievement.23.t
+  desc = achievement.23.d
+  picture = GFX_achievement23
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_5
+    }
+    set_country_flag = wb_sf_5_enable
+  }
+  option = {
+    name = achievement.23.a
+  }
+}
+#24 カイ ミハル・ラトキエが生存した
+country_event = {
+  id = achievement.24
+  title = achievement.24.t
+  desc = achievement.24.d
+  picture = GFX_achievement24
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_6
+    }
+    set_country_flag = wb_sf_6_enable
+    EFS_kai_shiden = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.24.a
+  }
+}
+#25 ハヤト 星一号作戦が成功した
+country_event = {
+  id = achievement.25
+  title = achievement.25.t
+  desc = achievement.25.d
+  picture = GFX_achievement25
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_7
+    }
+    set_country_flag = wb_sf_7_enable
+    EFS_hayato_kobayashi = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.25.a
+  }
+}
+#26 セイラ 兄を説得した
+country_event = {
+  id = achievement.26
+  title = achievement.26.t
+  desc = achievement.26.d
+  picture = GFX_achievement26
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_8
+    }
+    set_country_flag = wb_sf_8_enable
+    EFS_sayla_mass = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.26.a
+  }
+}
+#27 フラウ WB隊をアフリカに派遣した
+country_event = {
+  id = achievement.27
+  title = achievement.27.t
+  desc = achievement.27.d
+  picture = GFX_achievement27
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_9
+    }
+    set_country_flag = wb_sf_9_enable
+  }
+  option = {
+    name = achievement.27.a
+  }
+}
+#28 カツ・レツ・キッカ テム・レイが生存した
+country_event = {
+  id = achievement.28
+  title = achievement.28.t
+  desc = achievement.28.d
+  picture = GFX_achievement28
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      wb_sf_10
+    }
+    set_country_flag = wb_sf_10_enable
+  }
+  option = {
+    name = achievement.28.a
+  }
+}
+#29 シロー アイナと添い遂げた
+country_event = {
+  id = achievement.29
+  title = achievement.29.t
+  desc = achievement.29.d
+  picture = GFX_achievement29
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ms08_sf_1
+    }
+    set_country_flag = ms08_sf_1_enable
+  }
+  option = {
+    name = achievement.29.a
+  }
+}
+#30 ! カレン ミラーズ・レポートを読んだ
+country_event = {
+  id = achievement.30
+  title = achievement.30.t
+  desc = achievement.30.d
+  picture = GFX_achievement30
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ms08_sf_2
+    }
+    set_country_flag = ms08_sf_2_enable
+    EFS_karen_joshua = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.30.a
+  }
+}
+#31 サンダース アプサラスを撃破した
+country_event = {
+  id = achievement.31
+  title = achievement.31.t
+  desc = achievement.31.d
+  picture = GFX_achievement31
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ms08_sf_3
+    }
+    set_country_flag = ms08_sf_3_enable
+    EFS_terry_sanders = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.31.a
+  }
+}
+#32 エレドア ラサの秘密基地を発見した
+country_event = {
+  id = achievement.32
+  title = achievement.32.t
+  desc = achievement.32.d
+  picture = GFX_achievement32
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ms08_sf_4
+    }
+    set_country_flag = ms08_sf_4_enable
+    EFS_eledore_massis = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.32.a
+  }
+}
+#33 ! ミケル ラサ掃討作戦で停戦の申し出を受け入れた
+country_event = {
+  id = achievement.33
+  title = achievement.33.t
+  desc = achievement.33.d
+  picture = GFX_achievement33
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ms08_sf_5
+    }
+    set_country_flag = ms08_sf_5_enable
+    EFS_michel_ninorich = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.33.a
+  }
+}
+#34 ! ジタン ラサ掃討作戦でノリス・パッカードを撃破した
+country_event = {
+  id = achievement.34
+  title = achievement.34.t
+  desc = achievement.34.d
+  picture = GFX_achievement34
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      ms08_sf_6
+    }
+    set_country_flag = ms08_sf_6_enable
+    EFS_gidan_nickerd = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.34.a
+  }
+}
+#35 コウ コウ・ウラキのレベルを5にした
+country_event = {
+  id = achievement.35
+  title = achievement.35.t
+  desc = achievement.35.d
+  picture = GFX_achievement35
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      albion_sf_1
+    }
+    set_country_flag = albion_sf_1_enable
+  }
+  option = {
+    name = achievement.35.a
+  }
+}
+#36 ! キース すべてのガンダムを開発した
+country_event = {
+  id = achievement.36
+  title = achievement.36.t
+  desc = achievement.36.d
+  picture = GFX_achievement36
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      albion_sf_2
+    }
+    set_country_flag = albion_sf_2_enable
+    EFS_chuck_keith = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.36.a
+  }
+}
+#37 バニング サウス・バニングが生存した
+country_event = {
+  id = achievement.37
+  title = achievement.37.t
+  desc = achievement.37.d
+  picture = GFX_achievement37
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      albion_sf_3
+    }
+    set_country_flag = albion_sf_3_enable
+  }
+  option = {
+    name = achievement.37.a
+  }
+}
+#38 ! モンシア  「アナハイム・エレクトロニクス」と「ニナ・パープルトン」を採用した
+country_event = {
+  id = achievement.38
+  title = achievement.38.t
+  desc = achievement.38.d
+  picture = GFX_achievement38
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      albion_sf_4
+    }
+    set_country_flag = albion_sf_4_enable
+    EFS_bernard_monsha = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.38.a
+  }
+}
+#39 ベイト 星の屑作戦を阻止した
+country_event = {
+  id = achievement.39
+  title = achievement.39.t
+  desc = achievement.39.d
+  picture = GFX_achievement39
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      albion_sf_5
+    }
+    set_country_flag = albion_sf_5_enable
+    EFS_alpha_bate = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.39.a
+  }
+}
+#40 ! アデル RGM-79Qを開発した
+country_event = {
+  id = achievement.40
+  title = achievement.40.t
+  desc = achievement.40.d
+  picture = GFX_achievement40
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+    add_ideas = {
+      albion_sf_6
+    }
+    set_country_flag = albion_sf_6_enable
+    EFS_chap_adel = {
+      set_character_flag = enable_corps_commander
+    }
+  }
+  option = {
+    name = achievement.40.a
+  }
+}

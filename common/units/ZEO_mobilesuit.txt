@@ -1,0 +1,2873 @@
+sub_units = {
+  ms05 = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4000
+    ai_priority = 5000
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+}
+    can_be_parachuted = yes
+    transport = archetype_ms05
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms05 = 12
+archetype_ms_weapon_machinegun = 12
+archetype_ms_weapon_heathawk = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 7.6000000000000005
+    max_organisation = 19.900000000000002
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 0.72
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms05_rpg = {
+    sprite = ms05_rpg
+    map_icon_category = armored
+    priority = 4000
+    ai_priority = 4990
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms05
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms05 = 12
+archetype_ms_weapon_bazooka = 12
+archetype_ms_weapon_heathawk = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 7.6000000000000005
+    max_organisation = 19.900000000000002
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 0.72
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms06_d = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4010
+    ai_priority = 4990
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_front_line_mobilesuit
+category_local_mobilesuit
+category_hot_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms05
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms05 = 12
+archetype_ms_weapon_machinegun = 12
+archetype_ms_weapon_heathawk = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 7.6000000000000005
+    max_organisation = 19.900000000000002
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 1.2
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    desert = {
+attack = 0.2
+movement = 0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms06_d_rpg = {
+    sprite = ms05_rpg
+    map_icon_category = armored
+    priority = 4010
+    ai_priority = 4990
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_front_line_mobilesuit
+category_local_mobilesuit
+category_hot_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms05
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms05 = 12
+archetype_ms_weapon_bazooka = 12
+archetype_ms_weapon_heathawk = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 7.6000000000000005
+    max_organisation = 19.900000000000002
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 1.2
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    desert = {
+attack = 0.2
+movement = 0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms05_l = {
+    sprite = ms05_l
+    map_icon_category = armored
+    priority = 4020
+    ai_priority = 4980
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_sniper_mobilesuit
+category_line_sniper_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms05
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms05 = 12
+archetype_ms_weapon_beamrifle = 12
+support_equipment = 3
+}
+    max_strength = 7.6000000000000005
+    max_organisation = 19.900000000000002
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 0.72
+    entrenchment = 0.2
+    combat_width = 3
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = 0.2
+defence = 0.3
+}
+    hills = {
+defence = 0.2
+}
+    mountain = {
+defence = 0.2
+}
+    jungle = {
+attack = 0.3
+defence = 0.4
+}
+    marsh = {
+attack = -0.2
+defence = -0.2
+}
+    plains = {
+attack = -0.2
+defence = -0.2
+}
+    desert = {
+attack = -0.2
+defence = -0.2
+}
+    urban = {
+attack = 0.2
+defence = 0.3
+}
+    fort = {
+defence = 0.3
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms05_l_support = {
+    sprite = ms05_l
+    map_icon_category = armored
+    priority = 4020
+    ai_priority = 4980
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_support_sniper_mobilesuit
+category_sniper_mobilesuit
+category_support_mobilesuit
+}
+    can_be_parachuted = yes
+    transport = archetype_ms05
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_ms05 = 3
+archetype_ms_weapon_beamrifle = 3
+support_equipment = 3
+}
+    max_strength = 2.5
+    max_organisation = 6.6000000000000005
+    default_morale = 0.1
+    weight = 0.1
+    supply_consumption = 0.18
+    entrenchment = 0.2
+    manpower = 150
+    training_time = 75
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+fuel_consumption = -0.7
+  }
+  ms06_e = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4000
+    ai_priority = 4990
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_support_mobilesuit
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ms05
+    same_support_type = recon
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_ms05 = 3
+support_equipment = 3
+}
+    max_strength = 2.5
+    max_organisation = 6.6000000000000005
+    default_morale = 0.1
+    weight = 0.1
+    supply_consumption = 0.3
+    recon = 5
+    manpower = 150
+    training_time = 75
+    defense = -1.1
+breakthrough = -1.1
+fuel_consumption = -0.7
+
+  }
+  ms06_s = {
+    sprite = ms06_s
+    map_icon_category = armored
+    priority = 12100
+    ai_priority = 15100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_custom_mobilesuit
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ms06_s
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms06_s = 3
+archetype_ms_weapon_machinegun = 3
+archetype_ms_weapon_bazooka = 3
+archetype_ms_weapon_heathawk = 3
+archetype_ms_shield = 3
+support_equipment = 3
+}
+    max_strength = 13.9
+    max_organisation = 34.1
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 0.3
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+  }
+  ms06_k_support = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4020
+    ai_priority = 4990
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_artillery_mobilesuit
+category_support_artillery_mobilesuit
+category_support_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms06_k
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_ms06_k = 3
+support_equipment = 3
+}
+    max_strength = 3.2
+    max_organisation = 8.1
+    default_morale = 0.1
+    weight = 0.1
+    supply_consumption = 0.21
+    manpower = 150
+    training_time = 75
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+fuel_consumption = -0.7
+  }
+  ms06_k = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4020
+    ai_priority = 4990
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_artillery_mobilesuit
+category_line_artillery_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms06_k
+    group = mobilesuit
+    type = {
+armor
+artillery
+}
+    need = {
+archetype_ms06_k = 12
+support_equipment = 3
+}
+    max_strength = 9.600000000000001
+    max_organisation = 24.400000000000002
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 2.64
+    combat_width = 3
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = 0.2
+defence = 0.1
+}
+    fort = {
+attack = 0.3
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms07 = {
+    sprite = ms07
+    map_icon_category = armored
+    priority = 12200
+    ai_priority = 15200
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    transport = archetype_ms07
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms07 = 12
+archetype_ms_weapon_heathawk = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 12.600000000000001
+    max_organisation = 31.200000000000003
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 1.92
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.1
+}
+    jungle = {
+attack = -0.2
+}
+    urban = {
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms07_b_3 = {
+    sprite = ms07
+    map_icon_category = armored
+    priority = 12300
+    ai_priority = 15300
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_custom_mobilesuit
+category_specialforce_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ms07_b_3
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms07_b_3 = 3
+archetype_ms_weapon_heathawk = 3
+archetype_ms_shield = 3
+support_equipment = 3
+}
+    max_strength = 16.2
+    max_organisation = 39.300000000000004
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 0.6
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+    river = {
+attack = 0.2
+}
+    fort = {
+attack = 0.2
+}
+    amphibious = {
+attack = 0.2
+}
+  }
+  ms07_h = {
+    sprite = ms07
+    map_icon_category = armored
+    priority = 12300
+    ai_priority = 15300
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_prototype_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    transport = archetype_ms07_h
+    group = mobilesuit
+    type = {
+armor
+anti_air
+}
+    need = {
+archetype_ms07_h = 12
+support_equipment = 3
+}
+    max_strength = 11.9
+    max_organisation = 29.6
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 2.88
+    combat_width = 2
+    manpower = 600
+    training_time = 150
+    forest = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = 0.1
+}
+    plains = {
+attack = 0.1
+}
+    desert = {
+attack = 0.1
+}
+    urban = {
+attack = -0.2
+}
+  }
+  ms06_sfs = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4050
+    ai_priority = 5050
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+category_sfs_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    transport = archetype_sfs
+    group = mobilesuit
+    type = {
+armor
+anti_air
+}
+    need = {
+archetype_sfs = 12
+archetype_ms05 = 12
+archetype_ms_weapon_machinegun = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 7.6000000000000005
+    max_organisation = 19.900000000000002
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.6000000000000001
+    supply_consumption = 2.04
+    combat_width = 3
+    manpower = 600
+    training_time = 150
+    forest = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = 0.1
+}
+    plains = {
+attack = 0.1
+}
+    desert = {
+attack = 0.1
+}
+    urban = {
+attack = -0.2
+}
+  }
+  ms07_sfs = {
+    sprite = ms07
+    map_icon_category = armored
+    priority = 12300
+    ai_priority = 15300
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+category_sfs_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    transport = archetype_sfs
+    group = mobilesuit
+    type = {
+armor
+anti_air
+}
+    need = {
+archetype_sfs = 12
+archetype_ms07 = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 12.600000000000001
+    max_organisation = 31.200000000000003
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.6000000000000001
+    supply_consumption = 3
+    combat_width = 3
+    manpower = 600
+    training_time = 150
+    forest = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = 0.1
+}
+    plains = {
+attack = 0.1
+}
+    desert = {
+attack = 0.1
+}
+    urban = {
+attack = -0.2
+}
+  }
+  ms08 = {
+    sprite = ms07
+    map_icon_category = armored
+    priority = 12400
+    ai_priority = 15400
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_specialforce_mobilesuit
+category_custom_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ms08
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms08 = 3
+archetype_ms_weapon_heathawk = 3
+archetype_ms_weapon_bazooka = 3
+archetype_ms_weapon_machinegun = 3
+support_equipment = 3
+}
+    max_strength = 18.1
+    max_organisation = 43.400000000000006
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 0.75
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+    river = {
+attack = 0.2
+}
+    fort = {
+attack = 0.2
+}
+    amphibious = {
+attack = 0.2
+}
+  }
+  ms08_ex = {
+    sprite = ms07
+    map_icon_category = armored
+    priority = 12500
+    ai_priority = 15500
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_specialforce_mobilesuit
+category_custom_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ms08_ex
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms08_ex = 3
+archetype_ms_weapon_heathawk = 3
+archetype_ms_weapon_bazooka = 3
+archetype_ms_weapon_machinegun = 3
+support_equipment = 3
+}
+    max_strength = 18.1
+    max_organisation = 43.400000000000006
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 0.75
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+    river = {
+attack = 0.2
+}
+    fort = {
+attack = 0.2
+}
+    amphibious = {
+attack = 0.2
+}
+  }
+  ms09 = {
+    sprite = ms09
+    map_icon_category = armored
+    priority = 4070
+    ai_priority = 5020
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+}
+    can_be_parachuted = yes
+    transport = archetype_ms09
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms09 = 12
+archetype_ms_weapon_bazooka = 12
+archetype_ms_weapon_heathawk = 12
+support_equipment = 3
+}
+    max_strength = 14.4
+    max_organisation = 35.300000000000004
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 2.16
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms09_mg = {
+    sprite = ms09_mg
+    map_icon_category = armored
+    priority = 4060
+    ai_priority = 5020
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms09
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms09 = 12
+archetype_ms_weapon_machinegun = 12
+archetype_ms_weapon_heathawk = 12
+support_equipment = 3
+}
+    max_strength = 14.4
+    max_organisation = 35.300000000000004
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 2.16
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms09_f = {
+    sprite = ms09
+    map_icon_category = armored
+    priority = 4090
+    ai_priority = 5030
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+category_local_mobilesuit
+category_hot_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms09
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms09 = 12
+archetype_ms_weapon_bazooka = 12
+archetype_ms_weapon_heathawk = 12
+support_equipment = 3
+}
+    max_strength = 14.4
+    max_organisation = 35.300000000000004
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 3.36
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    desert = {
+attack = 0.2
+movement = 0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms09_f_mg = {
+    sprite = ms09_mg
+    map_icon_category = armored
+    priority = 4080
+    ai_priority = 5020
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+category_local_mobilesuit
+category_hot_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms09
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms09 = 12
+archetype_ms_weapon_machinegun = 12
+archetype_ms_weapon_heathawk = 12
+support_equipment = 3
+}
+    max_strength = 14.4
+    max_organisation = 35.300000000000004
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 3.36
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    desert = {
+attack = 0.2
+movement = 0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms09_k_support = {
+    sprite = ms09
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_artillery_mobilesuit
+category_support_artillery_mobilesuit
+category_support_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms09_k
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_ms09_k = 3
+support_equipment = 3
+}
+    max_strength = 4.9
+    max_organisation = 12.100000000000001
+    default_morale = 0.1
+    weight = 0.2
+    supply_consumption = 0.24
+    manpower = 150
+    training_time = 75
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+fuel_consumption = -0.7
+  }
+  ms09_k = {
+    sprite = ms09
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_artillery_mobilesuit
+category_line_artillery_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms09_k
+    group = mobilesuit
+    type = {
+armor
+artillery
+}
+    need = {
+archetype_ms09_k = 12
+support_equipment = 3
+}
+    max_strength = 14.9
+    max_organisation = 36.4
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.5
+    supply_consumption = 3
+    combat_width = 3
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = 0.2
+defence = 0.1
+}
+    fort = {
+attack = 0.3
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms09_h = {
+    sprite = ms09
+    map_icon_category = armored
+    priority = 12400
+    ai_priority = 15400
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_custom_mobilesuit
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ms09_h
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms09_h = 3
+archetype_ms_weapon_heathawk = 3
+archetype_ms_weapon_bazooka = 3
+support_equipment = 3
+}
+    max_strength = 20.1
+    max_organisation = 48.1
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 0.96
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 210
+    river = {
+attack = 0.2
+}
+    fort = {
+attack = 0.2
+}
+    amphibious = {
+attack = 0.2
+}
+  }
+  ms10 = {
+    sprite = ms09
+    map_icon_category = armored
+    priority = 4080
+    ai_priority = 5000
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_front_line_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms10
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms10 = 12
+archetype_ms_weapon_bazooka = 12
+archetype_ms_weapon_heathawk = 12
+support_equipment = 3
+}
+    max_strength = 17
+    max_organisation = 41
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 5.4
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms11 = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4080
+    ai_priority = 5000
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms11
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms11 = 12
+archetype_ms_weapon_beamgun = 12
+archetype_ms_weapon_beamsord = 12
+support_equipment = 3
+}
+    max_strength = 14.9
+    max_organisation = 36.4
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 2.4
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms12 = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4080
+    ai_priority = 5000
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_support_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms12
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_ms12 = 3
+support_equipment = 3
+}
+    max_strength = 11.100000000000001
+    max_organisation = 27.700000000000003
+    default_morale = 0.3
+    weight = 0.2
+    supply_consumption = 0.45
+    entrenchment = 0.3
+    manpower = 150
+    training_time = 100
+    river = {
+defence = 0.3
+}
+    fort = {
+defence = 0.5
+}
+    amphibious = {
+defence = 0.3
+}
+    asteroid = {
+defence = 0.5
+}
+    moon = {
+defence = 0.5
+}
+    defense = -0.5
+breakthrough = -0.5
+
+  }
+  ms13 = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4080
+    ai_priority = 5000
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_support_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms13
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms13 = 12
+support_equipment = 3
+support_equipment = 3
+}
+    max_strength = 16
+    max_organisation = 38.900000000000006
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.6000000000000001
+    supply_consumption = 3.36
+    initiative = 0.1
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    river = {
+attack = 0.3
+}
+    fort = {
+attack = 0.5
+}
+    amphibious = {
+attack = 0.3
+}
+    asteroid = {
+attack = 0.5
+}
+    moon = {
+attack = 0.5
+}
+  }
+  yms15 = {
+    sprite = ms06_s
+    map_icon_category = armored
+    priority = 25000
+    ai_priority = 15600
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_prototype_mobilesuit
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_yms15
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_yms15 = 3
+archetype_ms_shield = 3
+archetype_ms_weapon_beamsord = 3
+support_equipment = 3
+}
+    max_strength = 18.5
+    max_organisation = 44.400000000000006
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 0.66
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+  }
+  ms14 = {
+    sprite = ms14
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_front_line_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms14
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms14 = 12
+archetype_ms_weapon_beamgun = 12
+archetype_ms_weapon_beamsord = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 15.8
+    max_organisation = 38.400000000000006
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 2.64
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms14_mg = {
+    sprite = ms14_mg
+    map_icon_category = armored
+    priority = 4090
+    ai_priority = 5090
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_front_line_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms14
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms14 = 12
+archetype_ms_weapon_machinegun = 12
+archetype_ms_weapon_beamsord = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 15.8
+    max_organisation = 38.400000000000006
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 2.64
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms14_d = {
+    sprite = ms14
+    map_icon_category = armored
+    priority = 4200
+    ai_priority = 5200
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+category_local_mobilesuit
+category_hot_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms14
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms14 = 12
+archetype_ms_weapon_beamgun = 12
+archetype_ms_weapon_beamsord = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 15.8
+    max_organisation = 38.400000000000006
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 2.64
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    desert = {
+attack = 0.2
+movement = 0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms14_d_mg = {
+    sprite = ms14_mg
+    map_icon_category = armored
+    priority = 4190
+    ai_priority = 5190
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+category_local_mobilesuit
+category_hot_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms14
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms14 = 12
+archetype_ms_weapon_machinegun = 12
+archetype_ms_weapon_beamsord = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 15.8
+    max_organisation = 38.400000000000006
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 2.64
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    desert = {
+attack = 0.2
+movement = 0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms14_jg_support = {
+    sprite = ms14
+    map_icon_category = armored
+    priority = 4210
+    ai_priority = 5210
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_sniper_mobilesuit
+category_support_sniper_mobilesuit
+category_support_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms14
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_ms14 = 3
+archetype_ms_weapon_beamrifle = 3
+support_equipment = 3
+}
+    max_strength = 6.5
+    max_organisation = 15.5
+    default_morale = 0.1
+    weight = 0.1
+    supply_consumption = 0.33
+    entrenchment = 0.2
+    manpower = 150
+    training_time = 75
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+fuel_consumption = -0.7
+  }
+  ms14_jg = {
+    sprite = ms14
+    map_icon_category = armored
+    priority = 4210
+    ai_priority = 5210
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_sniper_mobilesuit
+category_line_sniper_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms14
+    group = mobilesuit
+    type = {
+armor
+anti_tank
+}
+    need = {
+archetype_ms14 = 12
+archetype_ms_weapon_beamrifle = 12
+support_equipment = 3
+}
+    max_strength = 19.5
+    max_organisation = 46.6
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 3.84
+    entrenchment = 0.2
+    combat_width = 3
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = 0.2
+defence = 0.3
+}
+    hills = {
+defence = 0.2
+}
+    mountain = {
+defence = 0.2
+}
+    jungle = {
+attack = 0.3
+defence = 0.4
+}
+    marsh = {
+attack = -0.2
+defence = -0.2
+}
+    plains = {
+attack = -0.2
+defence = -0.2
+}
+    desert = {
+attack = -0.2
+defence = -0.2
+}
+    urban = {
+attack = 0.2
+defence = 0.3
+}
+    fort = {
+defence = 0.3
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms14_c_support = {
+    sprite = ms14
+    map_icon_category = armored
+    priority = 4210
+    ai_priority = 5210
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_artillery_mobilesuit
+category_support_artillery_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms14_c
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_ms14_c = 3
+support_equipment = 3
+}
+    max_strength = 6.300000000000001
+    max_organisation = 15.200000000000001
+    default_morale = 0.1
+    weight = 0.1
+    supply_consumption = 0.36
+    manpower = 150
+    training_time = 75
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+fuel_consumption = -0.7
+  }
+  ms14_c = {
+    sprite = ms14
+    map_icon_category = armored
+    priority = 4210
+    ai_priority = 5210
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_artillery_mobilesuit
+category_line_artillery_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms14_c
+    group = mobilesuit
+    type = {
+armor
+artillery
+}
+    need = {
+archetype_ms14_c = 12
+support_equipment = 3
+}
+    max_strength = 19
+    max_organisation = 45.6
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 4.2
+    combat_width = 3
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = 0.2
+defence = 0.1
+}
+    fort = {
+attack = 0.3
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms14_fs = {
+    sprite = ms14_fs
+    map_icon_category = armored
+    priority = 25100
+    ai_priority = 15700
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_custom_mobilesuit
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    marines = yes
+    transport = archetype_ms14_fs
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms14_fs = 3
+archetype_ms_weapon_machinegun = 3
+archetype_ms_weapon_beamgun = 3
+archetype_ms_weapon_beamsord = 3
+archetype_ms_shield = 3
+support_equipment = 3
+
+}
+    max_strength = 19.200000000000003
+    max_organisation = 46.1
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 0.84
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+    river = {
+attack = 0.2
+}
+    fort = {
+attack = 0.2
+}
+    amphibious = {
+attack = 0.2
+}
+  }
+  ms17 = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4230
+    ai_priority = 5230
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ms17
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms17 = 12
+archetype_ms_weapon_beamgun = 12
+archetype_ms_weapon_beamsord = 12
+support_equipment = 3
+}
+    max_strength = 16.6
+    max_organisation = 40.2
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.30000000000000004
+    supply_consumption = 3.6
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ms18 = {
+    sprite = ms06_s
+    map_icon_category = armored
+    priority = 25200
+    ai_priority = 16000
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_custom_mobilesuit
+category_specialforce_mobilesuit
+
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ms18
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms18 = 3
+archetype_ms_weapon_beamsord = 6
+archetype_ms_weapon_machinegun = 6
+archetype_ms_weapon_bazooka = 6
+support_equipment = 3
+}
+    max_strength = 19.900000000000002
+    max_organisation = 47.6
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 1.3800000000000001
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+    river = {
+attack = 0.2
+}
+    fort = {
+attack = 0.2
+}
+    amphibious = {
+attack = 0.2
+}
+  }
+  ms18_f = {
+    sprite = ms06_s
+    map_icon_category = armored
+    priority = 25300
+    ai_priority = 16100
+    active = no
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_custom_mobilesuit
+category_specialforce_mobilesuit
+
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ms18
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms18 = 3
+archetype_ms_weapon_beamsord = 6
+archetype_ms_weapon_beamgun = 6
+archetype_ms_weapon_bazooka = 6
+support_equipment = 3
+}
+    max_strength = 19.900000000000002
+    max_organisation = 47.6
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 1.5
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+    river = {
+attack = 0.2
+}
+    fort = {
+attack = 0.2
+}
+    amphibious = {
+attack = 0.2
+}
+  }
+  msn02 = {
+    sprite = ms06_s
+    map_icon_category = armored
+    priority = 25600
+    ai_priority = 16200
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_custom_mobilesuit
+category_newtype_mobilesuit
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_msn02
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_msn02 = 1
+archetype_newtype = 1
+support_equipment = 3
+}
+    max_strength = 23.900000000000002
+    max_organisation = 56.6
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.2
+    supply_consumption = 0.56
+    casualty_trickleback = 0.1
+    initiative = 0.5
+    combat_width = 1
+    manpower = 50
+    training_time = 150
+  }
+  msm04_n = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_support_mobilesuit
+category_specialforce_mobilesuit
+category_fort_assault_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    marines = yes
+    transport = archetype_msm04_n
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_msm04_n = 3
+support_equipment = 3
+}
+    max_strength = 14.4
+    max_organisation = 35.300000000000004
+    default_morale = 0.1
+    weight = 0.2
+    supply_consumption = 0.42
+    manpower = 150
+    training_time = 75
+    jungle = {
+attack = 0.3
+movement = 0.2
+}
+    marsh = {
+attack = 0.3
+movement = 0.2
+}
+    river = {
+attack = 0.5
+movement = 0.5
+}
+    fort = {
+attack = 0.3
+movement = 0.2
+}
+    amphibious = {
+attack = 0.5
+movement = 0.5
+}
+    underbase = {
+attack = 0.5
+movement = 0.5
+}
+  }
+  msm04_g = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_support_mobilesuit
+category_specialforce_mobilesuit
+category_fort_assault_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    marines = yes
+    transport = archetype_msm04_g
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_msm04_g = 3
+support_equipment = 3
+}
+    max_strength = 13.3
+    max_organisation = 32.7
+    default_morale = 0.1
+    weight = 0.30000000000000004
+    supply_consumption = 0.54
+    manpower = 150
+    training_time = 75
+    jungle = {
+attack = 0.3
+movement = 0.2
+}
+    marsh = {
+attack = 0.3
+movement = 0.2
+}
+    river = {
+attack = 0.5
+movement = 0.5
+}
+    fort = {
+attack = 0.3
+movement = 0.2
+}
+    amphibious = {
+attack = 0.5
+movement = 0.5
+}
+    underbase = {
+attack = 0.5
+movement = 0.5
+}
+  }
+  ems05 = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_specialforce_mobilesuit
+category_support_mobilesuit
+category_fort_assault_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    marines = yes
+    transport = archetype_ems05
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_ems05 = 3
+support_equipment = 3
+}
+    max_strength = 11.9
+    max_organisation = 29.6
+    default_morale = 0.1
+    weight = 0.2
+    supply_consumption = 0.3
+    manpower = 150
+    training_time = 75
+    jungle = {
+attack = 0.3
+movement = 0.2
+}
+    marsh = {
+attack = 0.3
+movement = 0.2
+}
+    river = {
+attack = 0.5
+movement = 0.5
+}
+    fort = {
+attack = 0.3
+movement = 0.2
+}
+    amphibious = {
+attack = 0.5
+movement = 0.5
+}
+    underbase = {
+attack = 0.5
+movement = 0.5
+}
+  }
+  msm08 = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_specialforce_mobilesuit
+category_support_mobilesuit
+category_fort_assault_mobilesuit
+category_local_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    marines = yes
+    transport = archetype_msm08
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_msm08 = 3
+support_equipment = 3
+}
+    max_strength = 16.6
+    max_organisation = 40.2
+    default_morale = 0.1
+    weight = 0.2
+    supply_consumption = 0.72
+    manpower = 150
+    training_time = 75
+    jungle = {
+attack = 0.3
+movement = 0.2
+}
+    marsh = {
+attack = 0.3
+movement = 0.2
+}
+    river = {
+attack = 0.5
+movement = 0.5
+}
+    fort = {
+attack = 0.3
+movement = 0.2
+}
+    amphibious = {
+attack = 0.5
+movement = 0.5
+}
+    underbase = {
+attack = 0.5
+movement = 0.5
+}
+  }
+  max03 = {
+    sprite = ma08
+    map_icon_category = armored
+    priority = 25700
+    ai_priority = 17000
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilearmor
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_max03
+    group = mobilesuit
+    type = {
+armor
+anti_tank
+artillery
+
+}
+    need = {
+archetype_max03 = 1
+support_equipment = 3
+}
+    max_strength = 173.20000000000002
+    max_organisation = 392.70000000000005
+    default_morale = 0.5
+    suppression = 2
+    suppression_factor = 0.1
+    weight = 0.2
+    supply_consumption = 0.9
+    combat_width = 40
+    manpower = 2000
+    training_time = 150
+    urban = {
+attack = 0.3
+}
+    fort = {
+attack = 0.5
+}
+  }
+  ma08 = {
+    sprite = ma08
+    map_icon_category = armored
+    priority = 25800
+    ai_priority = 17100
+    active = yes
+    categories = {
+category_army
+category_all_mobilearmor
+category_all_mobilesuit_mobilearmor
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ma08
+    group = mobilesuit
+    type = {
+armor
+anti_air
+anti_tank
+artillery
+
+}
+    need = {
+archetype_ma08 = 1
+support_equipment = 3
+}
+    max_strength = 199.5
+    max_organisation = 451.8
+    default_morale = 0.5
+    suppression = 5
+    suppression_factor = 0.1
+    weight = 0.6000000000000001
+    supply_consumption = 1.4000000000000001
+    combat_width = 40
+    manpower = 2000
+    training_time = 150
+    urban = {
+attack = 0.3
+}
+    fort = {
+attack = 0.5
+}
+  }
+  ems10 = {
+    sprite = ems10
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ems10
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ems10 = 12
+archetype_ms_weapon_machinegun = 12
+archetype_ms_weapon_heathawk = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 10.100000000000001
+    max_organisation = 25.6
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 1.2
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ems10_rpg = {
+    sprite = ems10
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_front_line_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_ems10
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ems10 = 12
+archetype_ms_weapon_bazooka = 12
+archetype_ms_weapon_heathawk = 12
+archetype_ms_shield = 12
+support_equipment = 3
+}
+    max_strength = 10.100000000000001
+    max_organisation = 25.6
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.4
+    supply_consumption = 1.2
+    combat_width = 2
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = -0.2
+defence = 0.1
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+  ems10_s = {
+    sprite = ems10
+    map_icon_category = armored
+    priority = 12100
+    ai_priority = 15100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_custom_mobilesuit
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ems10_s
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ems10_s = 3
+archetype_ms_weapon_machinegun = 3
+archetype_ms_weapon_bazooka = 3
+archetype_ms_weapon_heathawk = 3
+archetype_ms_shield = 3
+support_equipment = 3
+}
+    max_strength = 13.9
+    max_organisation = 34.1
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 0.3
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+  }
+  ms06_p = {
+    sprite = ms06_s
+    map_icon_category = armored
+    priority = 25900
+    ai_priority = 15200
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_custom_mobilesuit
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_ms06_p
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_ms06_p = 3
+archetype_ms_weapon_machinegun = 6
+archetype_ms_weapon_bazooka = 9
+archetype_ms_weapon_heathawk = 6
+archetype_ms_weapon_beamgun = 3
+archetype_ms_shield = 3
+support_equipment = 3
+}
+    max_strength = 13
+    max_organisation = 32
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 0.84
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+  }
+  agx04 = {
+    sprite = rx78_nt
+    map_icon_category = armored
+    priority = 25600
+    ai_priority = 15200
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit_mobilearmor
+category_all_mobilesuit
+category_custom_mobilesuit
+category_specialforce_mobilesuit
+}
+    can_be_parachuted = yes
+    special_forces = yes
+    transport = archetype_agx04
+    group = mobilesuit
+    type = {
+armor
+}
+    need = {
+archetype_agx04 = 3
+archetype_ms_weapon_beamgun = 3
+archetype_ms_weapon_beamsord = 3
+archetype_ms_shield = 3
+support_equipment = 3
+}
+    max_strength = 21.3
+    max_organisation = 50.7
+    default_morale = 0.5
+    suppression_factor = 0.1
+    weight = 0.1
+    supply_consumption = 1.02
+    casualty_trickleback = 0.1
+    initiative = 0.3
+    combat_width = 1
+    manpower = 150
+    training_time = 150
+    river = {
+attack = 0.2
+}
+    fort = {
+attack = 0.2
+}
+    amphibious = {
+attack = 0.2
+}
+  }
+  yms16_support = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_artillery_mobilesuit
+category_support_artillery_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_yms16
+    group = support
+    type = {
+armor
+support
+}
+    need = {
+archetype_yms16 = 3
+support_equipment = 3
+}
+    max_strength = 7.2
+    max_organisation = 17.1
+    default_morale = 0.1
+    weight = 0.2
+    supply_consumption = 0.36
+    entrenchment = 0.2
+    manpower = 150
+    training_time = 75
+    defense = -0.5
+breakthrough = -0.5
+soft_attack = -0.5
+hard_attack = -0.5
+air_attack = -0.5
+ap_attack = -0.15
+fuel_consumption = -0.7
+  }
+  yms16 = {
+    sprite = ms05
+    map_icon_category = armored
+    priority = 4100
+    ai_priority = 5100
+    active = yes
+    categories = {
+category_army
+category_all_mobilesuit
+category_all_mobilesuit_mobilearmor
+category_artillery_mobilesuit
+category_line_artillery_mobilesuit
+
+}
+    can_be_parachuted = yes
+    transport = archetype_yms16
+    group = mobilesuit
+    type = {
+armor
+artillery
+}
+    need = {
+archetype_yms16 = 12
+support_equipment = 3
+}
+    max_strength = 21.6
+    max_organisation = 51.400000000000006
+    default_morale = 0.3
+    suppression = 1
+    weight = 0.5
+    supply_consumption = 4.2
+    entrenchment = 0.2
+    combat_width = 3
+    manpower = 600
+    training_time = 100
+    forest = {
+attack = -0.2
+}
+    hills = {
+attack = -0.1
+}
+    mountain = {
+attack = -0.2
+}
+    jungle = {
+attack = -0.3
+}
+    marsh = {
+attack = -0.1
+movement = -0.1
+}
+    urban = {
+attack = 0.2
+defence = 0.1
+}
+    fort = {
+attack = 0.3
+}
+    amphibious = {
+attack = -0.3
+}
+  }
+}

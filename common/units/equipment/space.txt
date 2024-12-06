@@ -1,0 +1,1146 @@
+equipments = {
+  archetype_space_cruiser = {
+    is_archetype = yes
+    is_buildable = no
+
+    interface_category = interface_category_screen_ships
+
+    upgrades = {
+      ship_reliability_upgrade
+      ship_engine_upgrade
+      ship_armor_upgrade
+      ship_gun_upgrade
+    }
+
+    lg_armor_piercing = 0
+		lg_attack = 0
+
+		hg_armor_piercing = 0
+		hg_attack = 0
+
+		torpedo_attack = 0
+		sub_attack = 0
+
+    anti_air_attack = 0
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 10
+    naval_speed = 50
+    reliability = 0.8
+
+    naval_range = 2000
+
+    max_strength = 76
+
+    fuel_consumption = 5
+
+    type = {
+      screen_ship
+      anti_air
+    }
+
+    build_cost_ic = 385
+    resources = {
+      steel = 2
+    }
+
+    manpower = 500
+  }
+  zeon_space_cruiser1_equipment = {
+    archetype = archetype_space_cruiser
+    priority = 60
+    is_buildable = yes
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_minovsky_slot = {
+				required = no
+				allowed_module_categories = { space_minovsky }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { light_space_engine }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_cruiser_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+		}
+
+		default_modules = {
+			fixed_ship_engine_slot = light_space_engine_1
+		}
+  }
+  zeon_space_cruiser2_equipment = {
+    archetype = archetype_space_cruiser
+    parent = zeon_space_cruiser1_equipment
+    priority = 60
+
+    is_buildable = yes
+    module_slots = inherit
+    default_modules = {
+      fixed_ship_engine_slot = light_space_engine_1
+		}
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 10
+    naval_speed = 55
+    reliability = 0.85
+
+    naval_range = 2500
+
+    max_strength = 90
+
+    build_cost_ic = 495
+    resources = {
+      steel = 2
+    }
+    fuel_consumption = 5
+
+    manpower = 600
+  }
+  zeon_space_cruiser3_equipment = {
+    archetype = archetype_space_cruiser
+    parent = zeon_space_cruiser2_equipment
+    priority = 60
+
+    is_buildable = yes
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_minovsky_slot = {
+				required = no
+				allowed_module_categories = { space_minovsky }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { light_space_engine }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_cruiser_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_2_custom_slot = mid_1_custom_slot
+		}
+    default_modules = {
+      fixed_ship_engine_slot = light_space_engine_1
+		}
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 10
+    naval_speed = 60
+    reliability = 0.9
+
+    naval_range = 3000
+
+    max_strength = 116
+
+    build_cost_ic = 550
+    resources = {
+      steel = 3
+    }
+    fuel_consumption = 6.4
+
+    manpower = 650
+  }
+  archetype_efsf_space_cruiser = {
+    is_archetype = yes
+    is_buildable = no
+
+    interface_category = interface_category_screen_ships
+
+    upgrades = {
+      ship_reliability_upgrade
+      ship_engine_upgrade
+      ship_armor_upgrade
+      ship_gun_upgrade
+    }
+
+    lg_armor_piercing = 0
+		lg_attack = 0
+
+		hg_armor_piercing = 0
+		hg_attack = 0
+
+		torpedo_attack = 0
+		sub_attack = 0
+
+    anti_air_attack = 0
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 10
+    naval_speed = 50
+    reliability = 0.8
+
+    naval_range = 2000
+
+    max_strength = 76
+
+    fuel_consumption = 5
+
+    type = {
+      screen_ship
+      anti_air
+    }
+
+    build_cost_ic = 385
+    resources = {
+      steel = 2
+    }
+
+    manpower = 500
+  }
+  efsf_space_cruiser1_equipment = {
+    archetype = archetype_efsf_space_cruiser
+    priority = 60
+    is_buildable = yes
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { light_space_engine }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_cruiser_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+			mid_1_custom_slot = front_1_custom_slot
+		}
+
+		default_modules = {
+			fixed_ship_engine_slot = light_space_engine_1
+		}
+  }
+  efsf_space_cruiser2_equipment = {
+    archetype = archetype_efsf_space_cruiser
+    parent = efsf_space_cruiser1_equipment
+    priority = 60
+    is_buildable = yes
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+      fixed_ship_minovsky_slot = {
+        required = no
+        allowed_module_categories = { space_minovsky }
+      }
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { light_space_engine }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_cruiser_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+		}
+    default_modules = {
+      fixed_ship_engine_slot = light_space_engine_1
+		}
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 10
+    naval_speed = 55
+    reliability = 0.85
+
+    naval_range = 2500
+
+    max_strength = 90
+
+    build_cost_ic = 495
+    resources = {
+      steel = 2
+    }
+    fuel_consumption = 5
+
+    manpower = 600
+  }
+  efsf_space_cruiser3_equipment = {
+    archetype = archetype_efsf_space_cruiser
+    parent = efsf_space_cruiser2_equipment
+    priority = 60
+    is_buildable = yes
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+      fixed_ship_minovsky_slot = {
+        required = no
+        allowed_module_categories = { space_minovsky }
+      }
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { light_space_engine }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_cruiser_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_2_custom_slot = mid_1_custom_slot
+    }
+    default_modules = {
+      fixed_ship_engine_slot = light_space_engine_1
+		}
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 10
+    naval_speed = 60
+    reliability = 0.9
+
+    naval_range = 3000
+
+    max_strength = 116
+
+    build_cost_ic = 550
+    resources = {
+      steel = 3
+    }
+    fuel_consumption = 6.4
+
+    manpower = 650
+  }
+  archetype_space_fv_cruiser = {
+    is_archetype = yes
+    is_buildable = no
+    type = capital_ship
+
+    interface_category = interface_category_capital_ships
+
+    upgrades = {
+      ship_reliability_upgrade
+      ship_engine_upgrade
+      ship_armor_upgrade
+      ship_gun_upgrade
+    }
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_minovsky_slot = {
+				required = no
+				allowed_module_categories = { space_minovsky }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { light_space_engine }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      rear_1_custom_slot = front_1_custom_slot
+		}
+
+		default_modules = {
+			fixed_ship_engine_slot = light_space_engine_1
+		}
+
+    lg_armor_piercing = 0
+		lg_attack = 0
+
+		hg_armor_piercing = 0
+		hg_attack = 0
+
+		torpedo_attack = 0
+		sub_attack = 0
+
+    anti_air_attack = 0
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 15
+    naval_speed = 60
+    reliability = 0.8
+
+    naval_range = 2500
+
+    max_strength = 165
+
+    fuel_consumption = 8
+
+    build_cost_ic = 650
+    resources = {
+      steel = 2
+    }
+
+    manpower = 800
+  }
+  zeon_space_fv_cruiser1_equipment = {
+    archetype = archetype_space_fv_cruiser
+    priority = 60
+    is_buildable = yes
+    module_slots = inherit
+  }
+  zeon_space_fv_cruiser2_equipment = {
+    archetype = archetype_space_fv_cruiser
+    parent = zeon_space_fv_cruiser1_equipment
+    priority = 60
+    is_buildable = yes
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_minovsky_slot = {
+				required = no
+				allowed_module_categories = { space_minovsky }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { light_space_engine }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_2_custom_slot = mid_1_custom_slot
+      rear_1_custom_slot = front_1_custom_slot
+    }
+    default_modules = {
+			fixed_ship_engine_slot = light_space_engine_1
+		}
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 15
+    naval_speed = 65
+    reliability = 0.85
+
+    naval_range = 2750
+
+    max_strength = 210
+
+    build_cost_ic = 910
+    resources = {
+      steel = 2
+    }
+    fuel_consumption = 9
+
+    manpower = 900
+  }
+  archetype_space_battleship = {
+    is_archetype = yes
+    is_buildable = no
+    type = capital_ship
+
+    interface_category = interface_category_capital_ships
+
+    upgrades = {
+      ship_reliability_upgrade
+      ship_engine_upgrade
+      ship_armor_upgrade
+      ship_gun_upgrade
+    }
+
+    lg_armor_piercing = 0
+		lg_attack = 0
+
+		hg_armor_piercing = 0
+		hg_attack = 0
+
+		torpedo_attack = 0
+		sub_attack = 0
+
+    anti_air_attack = 0
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 20
+    naval_speed = 40
+    reliability = 0.8
+
+    naval_range = 3000
+
+    max_strength = 416
+
+    fuel_consumption = 6
+
+    build_cost_ic = 700
+    resources = {
+      steel = 2
+    }
+
+    manpower = 4000
+  }
+  efsf_space_battleship1_equipment = {
+    archetype = archetype_space_battleship
+    priority = 60
+    is_buildable = yes
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { space_engine }
+			}
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+			mid_1_custom_slot = front_1_custom_slot
+      mid_2_custom_slot = front_1_custom_slot
+      rear_1_custom_slot = front_1_custom_slot
+		}
+
+		default_modules = {
+			fixed_ship_engine_slot = space_engine_1
+		}
+  }
+  efsf_space_battleship2_equipment = {
+    archetype = archetype_space_battleship
+    parent = efsf_space_battleship1_equipment
+    priority = 60
+    is_buildable = yes
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+      fixed_ship_minovsky_slot = {
+        required = no
+        allowed_module_categories = { space_minovsky }
+      }
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { space_engine }
+			}
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_2_custom_slot = mid_1_custom_slot
+      rear_1_custom_slot = front_1_custom_slot
+		}
+    default_modules = {
+			fixed_ship_engine_slot = space_engine_1
+		}
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 20
+    naval_speed = 45
+    reliability = 0.85
+
+    naval_range = 3500
+
+    max_strength = 480
+
+    build_cost_ic = 770
+    resources = {
+      steel = 2
+    }
+    fuel_consumption = 6
+
+    manpower = 6600
+  }
+  efsf_space_battleship3_equipment = {
+    archetype = archetype_space_battleship
+    parent = efsf_space_battleship2_equipment
+    priority = 60
+    is_buildable = yes
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+      fixed_ship_minovsky_slot = {
+        required = no
+        allowed_module_categories = { space_minovsky }
+      }
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { space_engine }
+			}
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      front_2_custom_slot = front_1_custom_slot
+      mid_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_2_custom_slot = mid_1_custom_slot
+      rear_1_custom_slot = front_1_custom_slot
+		}
+    default_modules = {
+			fixed_ship_engine_slot = space_engine_1
+		}
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 20
+    naval_speed = 50
+    reliability = 0.9
+
+    naval_range = 4000
+
+    max_strength = 576
+
+    build_cost_ic = 840
+    resources = {
+      steel = 3
+    }
+    fuel_consumption = 7.6
+
+    manpower = 7900
+  }
+  archetype_space_heavy_battleship = {
+    is_archetype = yes
+    is_buildable = no
+    type = capital_ship
+
+    interface_category = interface_category_capital_ships
+
+    upgrades = {
+      ship_reliability_upgrade
+      ship_engine_upgrade
+      ship_armor_upgrade
+      ship_gun_upgrade
+    }
+
+    lg_armor_piercing = 0
+		lg_attack = 0
+
+		hg_armor_piercing = 0
+		hg_attack = 0
+
+		torpedo_attack = 0
+		sub_attack = 0
+
+    anti_air_attack = 0
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 25
+    naval_speed = 50
+    reliability = 0.9
+
+    naval_range = 4000
+
+    max_strength = 640
+
+    build_cost_ic = 1120
+    resources = {
+      steel = 3
+    }
+    fuel_consumption = 10
+
+    manpower = 6000
+  }
+  zeon_space_hv_battleship1_equipment = {
+    archetype = archetype_space_heavy_battleship
+    priority = 60
+    is_buildable = yes
+
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_minovsky_slot = {
+				required = no
+				allowed_module_categories = { space_minovsky }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { space_engine }
+			}
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      front_2_custom_slot = front_1_custom_slot
+      mid_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      mid_2_custom_slot = mid_1_custom_slot
+      mid_3_custom_slot = mid_1_custom_slot
+      rear_1_custom_slot = front_1_custom_slot
+      rear_2_custom_slot = front_1_custom_slot
+		}
+
+		default_modules = {
+			fixed_ship_engine_slot = space_engine_1
+		}
+  }
+  archetype_space_carrier = {
+    is_archetype = yes
+    is_buildable = no
+    type = carrier
+
+    interface_category = interface_category_capital_ships
+
+    upgrades = {
+      ship_reliability_upgrade
+      ship_engine_upgrade
+      ship_armor_upgrade
+      ship_gun_upgrade
+    }
+    module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { space_battery }
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_minovsky_slot = {
+				required = no
+				allowed_module_categories = { space_minovsky }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { space_engine }
+			}
+      fixed_ship_secondaries_slot = {
+        required = no
+        allowed_module_categories = { space_secondaries }
+      }
+      fixed_ship_armor_slot = {
+				required = no
+				allowed_module_categories = { ship_heavy_armor }
+			}
+
+      front_1_custom_slot = {
+        required = no
+        allowed_module_categories = {
+          space_battery
+          space_secondaries
+          ship_anti_air
+          space_hanger
+          ship_mine_warfare
+          ship_mine_layer
+        }
+      }
+      front_2_custom_slot = front_1_custom_slot
+			mid_1_custom_slot = front_1_custom_slot
+      mid_2_custom_slot = front_1_custom_slot
+      mid_3_custom_slot = front_1_custom_slot
+      rear_1_custom_slot = front_1_custom_slot
+      rear_2_custom_slot = front_1_custom_slot
+		}
+
+		default_modules = {
+			fixed_ship_engine_slot = space_engine_1
+		}
+
+    lg_armor_piercing = 0
+		lg_attack = 0
+
+		hg_armor_piercing = 0
+		hg_attack = 0
+
+		torpedo_attack = 0
+		sub_attack = 0
+
+    anti_air_attack = 0
+
+    armor_value = 0
+
+    surface_detection = 20
+    sub_detection = 1
+    surface_visibility = 30
+    naval_speed = 45
+    reliability = 0.8
+
+    naval_range = 2000
+
+    max_strength = 1200
+
+    fuel_consumption = 10
+
+    build_cost_ic = 1600
+    resources = {
+      steel = 2
+    }
+
+    manpower = 8000
+  }
+  zeon_space_carrier1_equipment = {
+    archetype = archetype_space_carrier
+    priority = 60
+    is_buildable = yes
+    module_slots = inherit
+  }
+}

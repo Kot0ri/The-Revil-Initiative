@@ -1,0 +1,218 @@
+script_enum_equipment_bonus_type = {
+	## Air
+	fighter_equipment
+	cv_fighter_equipment
+	jet_fighter_equipment
+	cv_CAS_equipment
+	CAS_equipment
+	nav_bomber_equipment
+	cv_nav_bomber_equipment
+	rocket_interceptor_equipment
+	tac_bomber_equipment
+	jet_tac_bomber_equipment
+	heavy_fighter_equipment
+	strat_bomber_equipment
+	jet_strat_bomber_equipment
+	transport_plane_equipment
+	guided_missile_equipment
+	scout_plane_equipment
+	small_plane_airframe
+	cv_small_plane_airframe
+	small_plane_cas_airframe
+	cv_small_plane_cas_airframe
+	small_plane_naval_bomber_airframe
+	cv_small_plane_naval_bomber_airframe
+	medium_plane_airframe
+	medium_plane_fighter_airframe
+	medium_plane_scout_plane_airframe
+	large_plane_airframe
+	large_plane_maritime_patrol_plane_airframe
+	
+
+	fighter
+	cas
+	tactical_bomber
+	scout_plane
+
+	## OYW
+	archetype_ms07_h_8
+	archetype_msm07_di
+	archetype_apsalus
+	archetype_attack_helicopter
+	archetype_scout_plane
+	archetype_assault_ship
+	archetype_core_fighter
+	archetype_attacker
+	archetype_strategic_bomber
+	archetype_fighter
+	archetype_multirolle
+	archetype_tactical_bomber
+	archetype_naval_bomber
+
+	## Land
+	infantry_equipment
+	support_equipment
+	artillery_equipment
+	rocket_artillery_equipment
+	anti_tank_equipment
+	anti_air_equipment
+	artillery
+
+	amphibious_mechanized_equipment
+	armored_car_equipment
+	mechanized_equipment
+	motorized_equipment
+	motorized_rocket_equipment
+	train_equipment
+	railway_gun_equipment
+
+	armor
+	light_tank_chassis
+	medium_tank_chassis
+	heavy_tank_chassis
+	super_heavy_tank_chassis
+	modern_tank_chassis
+	amphibious_tank_chassis
+
+	light_tank_artillery_chassis
+	medium_tank_artillery_chassis
+	heavy_tank_artillery_chassis
+
+	light_tank_destroyer_chassis
+	medium_tank_destroyer_chassis
+	heavy_tank_destroyer_chassis
+
+	## OYW
+	archetype_vulcan_ac
+	archetype_misile_ac
+	archetype_mobile_ac
+	archetype_mbt
+	archetype_para_tank
+	archetype_mobiletank
+	archetype_lbs
+	archetype_ac
+	archetype_rx75
+	archetype_rx75_2
+	archetype_rx77
+	archetype_rx77_2
+	archetype_rx78
+	archetype_fsws
+	archetype_rx78_xx
+	archetype_rx78_nt
+	archetype_rx79
+	archetype_rx79_d
+	archetype_rgm79g
+	archetype_rgm79
+	archetype_rgm79_fp
+	archetype_rgm79_d
+	archetype_rgc80
+	archetype_rx78_gp1
+	archetype_rx78_gp2
+	archetype_rx78_gp4
+	archetype_rx121
+	archetype_ms05
+	archetype_ms06_s
+	archetype_ms06_k
+	archetype_ms07
+	archetype_ms07_b_3
+	archetype_ms07_h
+	archetype_sfs
+	archetype_ms08
+	archetype_ms08_ex
+	archetype_ms09
+	archetype_ms09_k
+	archetype_ms09_h
+	archetype_ms10
+	archetype_ms11
+	archetype_ms12
+	archetype_ms13
+	archetype_yms15
+	archetype_ms14
+	archetype_ms14_c
+	archetype_ms14_fs
+	archetype_ms17
+	archetype_ms18
+	archetype_msn02
+	archetype_msm04_n
+	archetype_msm04_g
+	archetype_ems05
+	archetype_msm08
+	archetype_max03
+	archetype_ma08
+	archetype_ems10
+	archetype_ems10_s
+	archetype_ms06_p
+	archetype_agx04
+	archetype_yms16
+	archetype_ms_weapon_machinegun
+	archetype_ms_weapon_bazooka
+	archetype_ms_weapon_beamgun
+	archetype_ms_weapon_beamsplay
+	archetype_ms_weapon_beamrifle
+	archetype_ms_weapon_heathawk
+	archetype_ms_weapon_beamsord
+	archetype_ms_shield
+
+	## Sea
+	ship_hull_light
+	ship_hull_heavy
+	ship_hull_submarine
+	ship_hull_cruiser
+	ship_hull_carrier
+	ship_hull_super_heavy
+	ship_hull_super_heavy_1
+
+	convoy
+	submarine
+	destroyer
+	screen_ship
+	carrier
+	heavy_cruiser
+	capital_ship
+
+	ship_hull_cruiser_coastal_defense_ship
+	floating_harbor_equipment
+
+	## OYW
+	archetype_ms06_m
+	archetype_msm04
+	archetype_msm03
+	archetype_msm03_c
+	archetype_msm07
+	archetype_msm07_e
+	archetype_msm10
+	archetype_mam07
+	archetype_rag79
+	archetype_rag79_g
+	archetype_rb79_n
+	archetype_destroyer
+	archetype_cruiser
+	archetype_carrier
+	archetype_submarine
+	archetype_submarine_carrier
+	archetype_survey
+
+	## Space
+	archetype_space_cruiser
+	archetype_efsf_space_cruiser
+	archetype_space_fv_cruiser
+	archetype_space_battleship
+	archetype_space_heavy_battleship
+	archetype_space_carrier
+}
+
+script_enum_operative_mission_type = {
+	build_intel_network
+	counter_intelligence
+	quiet_network
+	root_out_resistance
+	control_trade
+}
+
+script_enum_advisor_slot_type = {
+	space_forces_chief
+	ground_forces_chief
+	theorist
+	high_command
+	political_advisor
+}

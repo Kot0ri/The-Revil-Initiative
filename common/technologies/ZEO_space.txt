@@ -1,0 +1,559 @@
+technologies = {
+  ZEO_space_cruiser1_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+    }
+    enable_equipments = {
+      zeon_space_cruiser1_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_1
+      ship_armor_cruiser_1
+      space_secondaries_1
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = ZEO_space_folder
+      position = { x = 0 y = 0 }
+    }
+    path = {
+			leads_to_tech = ZEO_space_cruiser2_tech
+			research_cost_coeff = 1
+		}
+    categories = {
+      space_equipment
+      space_cruiser
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = recruiment_zudah
+          }
+          create_equipment_variant = {
+            name = "Musai Class"
+            type = zeon_space_cruiser1_equipment
+            name_group = ZEO_SC_HISTORICAL
+            parent_version = 0
+            modules = {
+              fixed_ship_battery_slot = space_battery_1
+              fixed_ship_secondaries_slot = space_secondaries_1
+              fixed_ship_engine_slot = light_space_engine_1
+              fixed_ship_minovsky_slot = space_minovsky_1
+              mid_1_custom_slot = space_hanger_ems04
+            }
+            obsolete = no
+          }
+          else = {
+            create_equipment_variant = {
+              name = "Musai Class"
+              type = zeon_space_cruiser1_equipment
+              name_group = ZEO_SC_HISTORICAL
+              parent_version = 0
+              modules = {
+                fixed_ship_battery_slot = space_battery_1
+                fixed_ship_secondaries_slot = space_secondaries_1
+                fixed_ship_engine_slot = light_space_engine_1
+                fixed_ship_minovsky_slot = space_minovsky_1
+                mid_1_custom_slot = space_hanger_ms05
+              }
+              obsolete = no
+            }
+          }
+        }
+      }
+    }
+
+    ai_will_do = {
+      base = 1000
+    }
+  }
+  ZEO_space_cruiser2_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+    }
+    enable_equipments = {
+      zeon_space_cruiser2_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_2
+      ship_armor_cruiser_2
+      space_secondaries_2
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_space_folder
+      position = { x = 0 y = 4 }
+    }
+    path = {
+			leads_to_tech = ZEO_space_cruiser3_tech
+			research_cost_coeff = 1
+		}
+    categories = {
+      space_equipment
+      space_cruiser
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = recruiment_zudah
+          }
+          create_equipment_variant = {
+            name = "Musai Late Production Class"
+            type = zeon_space_cruiser2_equipment
+            name_group = ZEO_SC_HISTORICAL
+            parent_version = 0
+            modules = {
+              fixed_ship_battery_slot = space_battery_2
+              fixed_ship_secondaries_slot = space_secondaries_2
+              fixed_ship_engine_slot = light_space_engine_1
+              fixed_ship_minovsky_slot = space_minovsky_1
+              mid_1_custom_slot = space_hanger_ems04
+            }
+            obsolete = no
+          }
+          else = {
+            create_equipment_variant = {
+              name = "Musai Late Production Class"
+              type = zeon_space_cruiser2_equipment
+              name_group = ZEO_SC_HISTORICAL
+              parent_version = 0
+              modules = {
+                fixed_ship_battery_slot = space_battery_2
+                fixed_ship_secondaries_slot = space_secondaries_2
+                fixed_ship_engine_slot = light_space_engine_1
+                fixed_ship_minovsky_slot = space_minovsky_1
+                mid_1_custom_slot = space_hanger_ms05
+              }
+              obsolete = no
+            }
+          }
+        }
+      }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 20
+        date > 77.1.1
+      }
+    }
+  }
+  ZEO_space_cruiser3_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+    }
+    enable_equipments = {
+      zeon_space_cruiser3_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_3
+      ship_armor_cruiser_3
+      space_secondaries_3
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_space_folder
+      position = { x = 0 y = 8 }
+    }
+    categories = {
+      space_equipment
+      space_cruiser
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = recruiment_zudah
+          }
+          create_equipment_variant = {
+            name = "Musai Final Production Class"
+            type = zeon_space_cruiser3_equipment
+            name_group = ZEO_SC_HISTORICAL
+            parent_version = 0
+            modules = {
+              fixed_ship_battery_slot = space_battery_3
+              fixed_ship_secondaries_slot = space_secondaries_3
+              fixed_ship_engine_slot = light_space_engine_1
+              fixed_ship_minovsky_slot = space_minovsky_1
+              mid_1_custom_slot = space_hanger_ems04
+            }
+            obsolete = no
+          }
+          else = {
+            create_equipment_variant = {
+              name = "Musai Final Production Class"
+              type = zeon_space_cruiser3_equipment
+              name_group = ZEO_SC_HISTORICAL
+              parent_version = 0
+              modules = {
+                fixed_ship_battery_slot = space_battery_3
+                fixed_ship_secondaries_slot = space_secondaries_3
+                fixed_ship_engine_slot = light_space_engine_1
+                fixed_ship_minovsky_slot = space_minovsky_1
+                mid_1_custom_slot = space_hanger_ms05
+              }
+              obsolete = no
+            }
+          }
+        }
+      }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 20
+        date > 79.1.1
+      }
+    }
+  }
+  ZEO_space_fv_cruiser1_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+    }
+    enable_equipments = {
+      zeon_space_fv_cruiser1_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_2
+      ship_armor_bc_1
+      space_secondaries_2
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = ZEO_space_folder
+      position = { x = 0 y = 0 }
+    }
+    path = {
+			leads_to_tech = ZEO_space_fv_cruiser2_tech
+			research_cost_coeff = 1
+		}
+    categories = {
+      space_equipment
+      space_fv_cruiser
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = recruiment_zudah
+          }
+          create_equipment_variant = {
+            name = "Chivvay Class"
+            type = zeon_space_fv_cruiser1_equipment
+            name_group = ZEO_FVSC_HISTORICAL
+            parent_version = 0
+            modules = {
+              fixed_ship_battery_slot = space_battery_2
+              fixed_ship_secondaries_slot = space_secondaries_2
+              fixed_ship_engine_slot = light_space_engine_1
+              fixed_ship_minovsky_slot = space_minovsky_1
+              front_1_custom_slot = space_battery_2
+              mid_1_custom_slot = space_hanger_ems04
+            }
+            obsolete = no
+          }
+          else = {
+            create_equipment_variant = {
+              name = "Chivvay Class"
+              type = zeon_space_fv_cruiser1_equipment
+              name_group = ZEO_FVSC_HISTORICAL
+              parent_version = 0
+              modules = {
+                fixed_ship_battery_slot = space_battery_2
+                fixed_ship_secondaries_slot = space_secondaries_2
+                fixed_ship_engine_slot = light_space_engine_1
+                fixed_ship_minovsky_slot = space_minovsky_1
+                front_1_custom_slot = space_battery_2
+                mid_1_custom_slot = space_hanger_ms05
+              }
+              obsolete = no
+            }
+          }
+        }
+      }
+    }
+
+    ai_will_do = {
+      base = 1000
+    }
+  }
+  ZEO_space_fv_cruiser2_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+    }
+    enable_equipments = {
+      zeon_space_fv_cruiser2_equipment
+    }
+    enable_equipment_modules = {
+      ship_armor_bc_2
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_space_folder
+      position = { x = 0 y = 4 }
+    }
+    categories = {
+      space_equipment
+      space_fv_cruiser
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = recruiment_zudah
+          }
+          create_equipment_variant = {
+            name = "Tivvay Class"
+            type = zeon_space_fv_cruiser2_equipment
+            name_group = ZEO_FVSC_HISTORICAL
+            parent_version = 0
+            modules = {
+              fixed_ship_battery_slot = space_battery_2
+              fixed_ship_secondaries_slot = space_secondaries_2
+              fixed_ship_engine_slot = light_space_engine_1
+              fixed_ship_minovsky_slot = space_minovsky_1
+              front_1_custom_slot = space_battery_2
+              mid_1_custom_slot = space_hanger_ems04
+              mid_2_custom_slot = space_hanger_ems04
+            }
+            obsolete = no
+          }
+          else = {
+            create_equipment_variant = {
+              name = "Tivvay Class"
+              type = zeon_space_fv_cruiser2_equipment
+              name_group = ZEO_FVSC_HISTORICAL
+              parent_version = 0
+              modules = {
+                fixed_ship_battery_slot = space_battery_2
+                fixed_ship_secondaries_slot = space_secondaries_2
+                fixed_ship_engine_slot = light_space_engine_1
+                fixed_ship_minovsky_slot = space_minovsky_1
+                front_1_custom_slot = space_battery_2
+                mid_1_custom_slot = space_hanger_ms05
+                mid_2_custom_slot = space_hanger_ms05
+              }
+              obsolete = no
+            }
+          }
+        }
+      }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 20
+        date > 77.1.1
+      }
+    }
+  }
+  ZEO_space_hv_battleship1_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+    }
+    enable_equipments = {
+      zeon_space_hv_battleship1_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_3
+      ship_armor_bb_3
+      space_secondaries_3
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = ZEO_space_folder
+      position = { x = 0 y = 0 }
+    }
+    categories = {
+      space_equipment
+      space_battleship
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = recruiment_zudah
+          }
+          create_equipment_variant = {
+            name = "Gwazine Class"
+            type = zeon_space_hv_battleship1_equipment
+            name_group = ZEO_SB_HISTORICAL
+            parent_version = 0
+            modules = {
+              fixed_ship_battery_slot = space_battery_3
+              fixed_ship_secondaries_slot = space_secondaries_3
+              fixed_ship_engine_slot = space_engine_1
+              fixed_ship_minovsky_slot = space_minovsky_1
+              front_1_custom_slot = space_battery_3
+              front_2_custom_slot = space_secondaries_3
+              mid_1_custom_slot = space_hanger_ems04
+              mid_2_custom_slot = space_hanger_ems04
+              mid_3_custom_slot = space_hanger_ems04
+              rear_1_custom_slot = space_battery_3
+              rear_2_custom_slot = space_secondaries_3
+            }
+            obsolete = no
+          }
+          else = {
+            create_equipment_variant = {
+              name = "Gwazine Class"
+              type = zeon_space_hv_battleship1_equipment
+              name_group = ZEO_SB_HISTORICAL
+              parent_version = 0
+              modules = {
+                fixed_ship_battery_slot = space_battery_3
+                fixed_ship_secondaries_slot = space_secondaries_3
+                fixed_ship_engine_slot = space_engine_1
+                fixed_ship_minovsky_slot = space_minovsky_1
+                front_1_custom_slot = space_battery_3
+                front_2_custom_slot = space_secondaries_3
+                mid_1_custom_slot = space_hanger_ms05
+                mid_2_custom_slot = space_hanger_ms05
+                mid_3_custom_slot = space_hanger_ms05
+                rear_1_custom_slot = space_battery_3
+                rear_2_custom_slot = space_secondaries_3
+              }
+              obsolete = no
+            }
+          }
+        }
+      }
+    }
+
+    ai_will_do = {
+      base = 1000
+    }
+  }
+  ZEO_space_carrier1_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+    }
+    enable_equipments = {
+      zeon_space_carrier1_equipment
+    }
+    enable_equipment_modules = {
+      ship_armor_bb_3
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = ZEO_space_folder
+      position = { x = 0 y = 6 }
+    }
+    categories = {
+      space_equipment
+      space_battleship
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            has_tech = recruiment_zudah
+          }
+          create_equipment_variant = {
+            name = "Dolos Class"
+            type = zeon_space_carrier1_equipment
+            name_group = ZEO_SCa_HISTORICAL
+            parent_version = 0
+            modules = {
+              fixed_ship_battery_slot = space_battery_1
+              fixed_ship_anti_air_slot = ship_anti_air_1
+              fixed_ship_secondaries_slot = space_secondaries_1
+              fixed_ship_engine_slot = space_engine_1
+              fixed_ship_minovsky_slot = space_minovsky_1
+              front_1_custom_slot = space_hanger_ems04
+              front_2_custom_slot = space_hanger_ems04
+              mid_1_custom_slot = space_hanger_ems04
+              mid_2_custom_slot = space_hanger_ems04
+              mid_3_custom_slot = space_hanger_ems04
+              rear_1_custom_slot = space_hanger_ems04
+              rear_2_custom_slot = space_hanger_ems04
+            }
+            obsolete = no
+          }
+          else = {
+            create_equipment_variant = {
+              name = "Dolos Class"
+              type = zeon_space_carrier1_equipment
+              name_group = ZEO_SCa_HISTORICAL
+              parent_version = 0
+              modules = {
+                fixed_ship_battery_slot = space_battery_1
+                fixed_ship_anti_air_slot = ship_anti_air_1
+                fixed_ship_secondaries_slot = space_secondaries_1
+                fixed_ship_engine_slot = space_engine_1
+                fixed_ship_minovsky_slot = space_minovsky_1
+                front_1_custom_slot = space_hanger_ms05
+                front_2_custom_slot = space_hanger_ms05
+                mid_1_custom_slot = space_hanger_ms05
+                mid_2_custom_slot = space_hanger_ms05
+                mid_3_custom_slot = space_hanger_ms05
+                rear_1_custom_slot = space_hanger_ms05
+                rear_2_custom_slot = space_hanger_ms05
+              }
+              obsolete = no
+            }
+          }
+        }
+      }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 100
+        date > 79.1.1
+      }
+    }
+  }
+}

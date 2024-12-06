@@ -1,0 +1,1611 @@
+equipments = {
+  archetype_ms05 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms05_equipment = {
+    archetype = archetype_ms05
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 35
+    reliability = 0.8
+    defense = 5.7
+    breakthrough = 40.900000000000006
+    armor_value = 72.60000000000001
+    hardness = 1
+    build_cost_ic = 13.799999999999999
+    fuel_consumption = 6
+    resources = {
+      steel = 3
+    }
+  }
+  ms06_equipment = {
+    archetype = archetype_ms05
+    is_convertable = yes
+    can_convert_from = {
+ms05_equipment
+}
+    parent = ms05_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 40
+    reliability = 0.85
+    defense = 6.1000000000000005
+    breakthrough = 45.5
+    armor_value = 88.60000000000001
+    hardness = 1
+    build_cost_ic = 13.799999999999999
+    fuel_consumption = 6
+    resources = {
+      steel = 4
+    }
+  }
+  ms06_f_equipment = {
+    archetype = archetype_ms05
+    is_convertable = yes
+    can_convert_from = {
+ms06_equipment
+}
+    parent = ms06_equipment
+    priority = 120
+    visual_level = 2
+    maximum_speed = 40
+    reliability = 0.85
+    defense = 7.9
+    breakthrough = 62.800000000000004
+    armor_value = 81.4
+    hardness = 1
+    build_cost_ic = 20.7
+    fuel_consumption = 6
+    resources = {
+      steel = 4
+    }
+  }
+  ms06_j_equipment = {
+    archetype = archetype_ms05
+    is_convertable = yes
+    can_convert_from = {
+ms06_equipment
+ms06_f_equipment
+
+}
+    parent = ms06_f_equipment
+    priority = 130
+    visual_level = 3
+    maximum_speed = 45
+    reliability = 0.9
+    defense = 6.9
+    breakthrough = 53.400000000000006
+    armor_value = 85.10000000000001
+    hardness = 1
+    build_cost_ic = 17.25
+    fuel_consumption = 6
+    resources = {
+      steel = 4
+    }
+  }
+  archetype_ms06_s = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms06_s_equipment = {
+    archetype = archetype_ms06_s
+    is_convertable = yes
+    can_convert_from = {
+ms06_equipment
+ms06_f_equipment
+ms06_j_equipment
+
+}
+    priority = 140
+    maximum_speed = 60
+    reliability = 2
+    defense = 10.5
+    breakthrough = 88.4
+    armor_value = 112.5
+    hardness = 1
+    build_cost_ic = 23
+    fuel_consumption = 2.4
+    resources = {
+      steel = 4
+      chromium = 1
+    }
+  }
+  archetype_ms06_k = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms06_k_equipment = {
+    archetype = archetype_ms06_k
+    is_convertable = yes
+    can_convert_from = {
+ms06_equipment
+ms06_f_equipment
+ms06_j_equipment
+
+}
+    priority = 100
+    maximum_speed = 40
+    reliability = 0.85
+    soft_attack = 30.5
+    hard_attack = 27.200000000000003
+    air_attack = 6.2
+    ap_attack = 120
+    defense = 5.7
+    breakthrough = 40.900000000000006
+    armor_value = 88.60000000000001
+    hardness = 1
+    build_cost_ic = 13.799999999999999
+    fuel_consumption = 6
+    resources = {
+      steel = 4
+    }
+  }
+  archetype_ms07 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms07_equipment = {
+    archetype = archetype_ms07
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 45
+    reliability = 0.9
+    soft_attack = 27.700000000000003
+    hard_attack = 23.3
+    air_attack = 5.300000000000001
+    ap_attack = 50
+    defense = 8.4
+    breakthrough = 68
+    armor_value = 104.60000000000001
+    hardness = 1
+    build_cost_ic = 24.15
+    fuel_consumption = 6
+    resources = {
+      steel = 6
+      chromium = 1
+    }
+  }
+  ms07_c_equipment = {
+    archetype = archetype_ms07
+    is_convertable = yes
+    can_convert_from = {
+ms07_equipment
+}
+    parent = ms07_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 45
+    reliability = 0.9
+    soft_attack = 39
+    hard_attack = 39.400000000000006
+    air_attack = 9
+    ap_attack = 50
+    defense = 7.300000000000001
+    breakthrough = 56.800000000000004
+    armor_value = 122
+    hardness = 1
+    build_cost_ic = 17.25
+    fuel_consumption = 6
+    resources = {
+      steel = 8
+      chromium = 1
+    }
+  }
+  archetype_ms07_b_3 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms07_b_3_equipment = {
+    archetype = archetype_ms07_b_3
+    is_convertable = yes
+    can_convert_from = {
+ms07_equipment
+}
+    priority = 100
+    maximum_speed = 55
+    reliability = 2
+    soft_attack = 32.9
+    hard_attack = 30.700000000000003
+    air_attack = 7
+    ap_attack = 100
+    defense = 10.200000000000001
+    breakthrough = 85.4
+    armor_value = 127.30000000000001
+    hardness = 1
+    build_cost_ic = 20.7
+    fuel_consumption = 2.4
+    resources = {
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_ms07_h = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms07_h_equipment = {
+    archetype = archetype_ms07_h
+    is_convertable = yes
+    can_convert_from = {
+ms07_equipment
+}
+    priority = 100
+    maximum_speed = 70
+    reliability = 0.8
+    soft_attack = 32.1
+    hard_attack = 29.6
+    air_attack = 6.800000000000001
+    ap_attack = 130
+    defense = 10.9
+    breakthrough = 92.5
+    armor_value = 99.9
+    hardness = 1
+    build_cost_ic = 48.3
+    fuel_consumption = 6
+    resources = {
+      steel = 3
+      chromium = 1
+      aluminium = 2
+    }
+  }
+  archetype_sfs = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+anti_air
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  sfs_equipment = {
+    archetype = archetype_sfs
+    is_convertable = yes
+    can_convert_from = {
+tactical_bomber1_equipment
+}
+    priority = 100
+    maximum_speed = 120
+    reliability = 0.8
+    soft_attack = 32.1
+    hard_attack = 29.6
+    air_attack = 29.6
+    hardness = 1
+    build_cost_ic = 8.28
+    fuel_consumption = 2
+    resources = {
+      steel = 3
+      chromium = 1
+    }
+  }
+  archetype_ms08 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms08_tx_equipment = {
+    archetype = archetype_ms08
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 60
+    reliability = 2
+    defense = 11
+    breakthrough = 93.80000000000001
+    armor_value = 139
+    hardness = 1
+    build_cost_ic = 103.5
+    fuel_consumption = 2.4
+    resources = {
+      steel = 8
+      chromium = 1
+    }
+  }
+  ms08_tx_n_equipment = {
+    archetype = archetype_ms08
+    is_convertable = yes
+    can_convert_from = {
+ms08_tx_equipment
+}
+    parent = ms08_tx_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 60
+    reliability = 2
+    defense = 11.3
+    breakthrough = 96.70000000000002
+    armor_value = 141.15
+    hardness = 1
+    build_cost_ic = 207
+    fuel_consumption = 2.4
+    resources = {
+      steel = 11
+      chromium = 2
+    }
+  }
+  archetype_ms08_ex = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms08_tx_ex_equipment = {
+    archetype = archetype_ms08_ex
+    is_convertable = yes
+    can_convert_from = {
+ms08_tx_equipment
+}
+    priority = 100
+    maximum_speed = 65
+    reliability = 0.9
+    defense = 11.600000000000001
+    breakthrough = 99.60000000000001
+    armor_value = 143.3
+    hardness = 1
+    build_cost_ic = 158.7
+    fuel_consumption = 2.4
+    resources = {
+      steel = 10
+      chromium = 2
+    }
+  }
+  archetype_ms09 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms09_equipment = {
+    archetype = archetype_ms09
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 60
+    reliability = 0.85
+    defense = 8.9
+    breakthrough = 72.60000000000001
+    armor_value = 116
+    hardness = 1
+    build_cost_ic = 27.599999999999998
+    fuel_consumption = 6
+    resources = {
+      steel = 7
+      chromium = 1
+    }
+  }
+  ms09_g_equipment = {
+    archetype = archetype_ms09
+    is_convertable = yes
+    can_convert_from = {
+ms09_equipment
+}
+    parent = ms09_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 60
+    reliability = 0.85
+    defense = 10.200000000000001
+    breakthrough = 85.4
+    armor_value = 127.30000000000001
+    hardness = 1
+    build_cost_ic = 37.95
+    fuel_consumption = 6
+    resources = {
+      steel = 9
+      chromium = 2
+    }
+  }
+  archetype_ms09_k = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms09_k_equipment = {
+    archetype = archetype_ms09_k
+    is_convertable = yes
+    can_convert_from = {
+ms09_equipment
+ms09_g_equipment
+
+}
+    priority = 100
+    maximum_speed = 55
+    reliability = 0.85
+    soft_attack = 53.1
+    hard_attack = 59.6
+    air_attack = 13.700000000000001
+    ap_attack = 140
+    defense = 7.300000000000001
+    breakthrough = 56.800000000000004
+    armor_value = 119.10000000000001
+    hardness = 1
+    build_cost_ic = 20.7
+    fuel_consumption = 6
+    resources = {
+      steel = 8
+      chromium = 1
+    }
+  }
+  archetype_ms09_h = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms09_h_equipment = {
+    archetype = archetype_ms09_h
+    is_convertable = yes
+    can_convert_from = {
+ms09_equipment
+ms09_g_equipment
+
+}
+    priority = 100
+    maximum_speed = 65
+    reliability = 2
+    defense = 11.200000000000001
+    breakthrough = 95
+    armor_value = 152.1
+    hardness = 1
+    build_cost_ic = 82.8
+    fuel_consumption = 2.4
+    resources = {
+      steel = 8
+      chromium = 1
+    }
+  }
+  archetype_ms10 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms10_equipment = {
+    archetype = archetype_ms10
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 65
+    reliability = 0.9
+    defense = 10.600000000000001
+    breakthrough = 89.80000000000001
+    armor_value = 132
+    hardness = 1
+    build_cost_ic = 69
+    fuel_consumption = 6
+    resources = {
+      titanium = 3
+      steel = 8
+      chromium = 1
+    }
+  }
+  archetype_ms11 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms11_equipment = {
+    archetype = archetype_ms11
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 50
+    reliability = 0.9
+    defense = 11.700000000000001
+    breakthrough = 100.7
+    armor_value = 119.10000000000001
+    hardness = 1
+    build_cost_ic = 65.55
+    fuel_consumption = 6
+    resources = {
+      titanium = 2
+      steel = 6
+      chromium = 1
+    }
+  }
+  archetype_ms12 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms12_equipment = {
+    archetype = archetype_ms12
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 35
+    reliability = 0.9
+    soft_attack = 38
+    hard_attack = 38.1
+    air_attack = 8.700000000000001
+    ap_attack = 160
+    defense = 7.9
+    breakthrough = 62.800000000000004
+    armor_value = 94.7
+    hardness = 1
+    build_cost_ic = 20.7
+    fuel_consumption = 2.4
+    resources = {
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_ms13 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms13_equipment = {
+    archetype = archetype_ms13
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 40
+    reliability = 0.9
+    defense = 8.4
+    breakthrough = 68
+    armor_value = 126.10000000000001
+    hardness = 1
+    build_cost_ic = 27.599999999999998
+    fuel_consumption = 6
+    resources = {
+      steel = 9
+      chromium = 2
+    }
+  }
+  archetype_yms15 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  yms15_equipment = {
+    archetype = archetype_yms15
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 50
+    reliability = 2
+    soft_attack = 48.2
+    hard_attack = 52.6
+    air_attack = 12
+    ap_attack = 100
+    defense = 10.3
+    breakthrough = 86.9
+    armor_value = 127.30000000000001
+    hardness = 1
+    build_cost_ic = 69
+    fuel_consumption = 2.4
+    resources = {
+      steel = 6
+      chromium = 1
+    }
+  }
+  archetype_ms14 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms14_equipment = {
+    archetype = archetype_ms14
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 50
+    reliability = 0.9
+    defense = 10.200000000000001
+    breakthrough = 85.4
+    armor_value = 124.80000000000001
+    hardness = 1
+    build_cost_ic = 34.5
+    fuel_consumption = 6
+    resources = {
+      steel = 8
+      chromium = 1
+    }
+  }
+  ms14_f_equipment = {
+    archetype = archetype_ms14
+    is_convertable = yes
+    can_convert_from = {
+ms14_equipment
+}
+    parent = ms14_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 55
+    reliability = 0.95
+    defense = 10.9
+    breakthrough = 92.5
+    armor_value = 127.30000000000001
+    hardness = 1
+    build_cost_ic = 44.85
+    fuel_consumption = 6
+    resources = {
+      steel = 9
+      chromium = 2
+    }
+  }
+  archetype_ms14_c = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms14_c_equipment = {
+    archetype = archetype_ms14_c
+    is_convertable = yes
+    can_convert_from = {
+ms14_equipment
+ms14_f_equipment
+
+}
+    priority = 100
+    maximum_speed = 45
+    reliability = 0.9
+    soft_attack = 60.300000000000004
+    hard_attack = 69.9
+    air_attack = 16
+    ap_attack = 170
+    defense = 10.5
+    breakthrough = 88.4
+    armor_value = 144.9
+    hardness = 1
+    build_cost_ic = 23
+    fuel_consumption = 6
+    resources = {
+      steel = 7
+      chromium = 1
+    }
+  }
+  archetype_ms14_fs = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms14_fs_equipment = {
+    archetype = archetype_ms14_fs
+    is_convertable = yes
+    can_convert_from = {
+ms14_equipment
+ms14_f_equipment
+
+}
+    priority = 100
+    maximum_speed = 70
+    reliability = 2
+    defense = 11.600000000000001
+    breakthrough = 99.60000000000001
+    armor_value = 144.9
+    hardness = 1
+    build_cost_ic = 86.25
+    fuel_consumption = 2.4
+    resources = {
+      steel = 7
+      chromium = 1
+    }
+  }
+  archetype_ms17 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms17_equipment = {
+    archetype = archetype_ms17
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 60
+    reliability = 0.95
+    defense = 10.5
+    breakthrough = 88.4
+    armor_value = 129.70000000000002
+    hardness = 1
+    build_cost_ic = 51.75
+    fuel_consumption = 6
+    resources = {
+      titanium = 3
+      steel = 7
+      chromium = 1
+    }
+  }
+  archetype_ms18 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms18_equipment = {
+    archetype = archetype_ms18
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 70
+    reliability = 2
+    defense = 12.3
+    breakthrough = 106.5
+    armor_value = 150.8
+    hardness = 1
+    build_cost_ic = 182.85
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 7
+      chromium = 1
+    }
+  }
+  archetype_msn02 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  msn02_equipment = {
+    archetype = archetype_msn02
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 55
+    reliability = 2
+    soft_attack = 75.10000000000001
+    hard_attack = 91.2
+    air_attack = 20.900000000000002
+    ap_attack = 200
+    defense = 11.200000000000001
+    breakthrough = 95
+    armor_value = 176.10000000000002
+    hardness = 1
+    build_cost_ic = 162.14999999999998
+    fuel_consumption = 2.4
+    resources = {
+      steel = 16
+      chromium = 3
+    }
+  }
+  archetype_msm04_n = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  msm04_n_equipment = {
+    archetype = archetype_msm04_n
+    is_convertable = yes
+    can_convert_from = {
+msm04_equipment
+}
+    priority = 100
+    maximum_speed = 40
+    reliability = 0.8
+    soft_attack = 52.800000000000004
+    hard_attack = 59.300000000000004
+    air_attack = 13.600000000000001
+    ap_attack = 60
+    defense = 8.4
+    breakthrough = 68
+    armor_value = 116
+    hardness = 1
+    build_cost_ic = 27.599999999999998
+    fuel_consumption = 2.4
+    resources = {
+      steel = 7
+      chromium = 1
+    }
+  }
+  archetype_msm04_g = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  msm04_g_equipment = {
+    archetype = archetype_msm04_g
+    is_convertable = yes
+    can_convert_from = {
+msm04_equipment
+}
+    priority = 100
+    maximum_speed = 40
+    reliability = 0.8
+    soft_attack = 38.1
+    hard_attack = 38.2
+    air_attack = 8.700000000000001
+    ap_attack = 100
+    defense = 7.300000000000001
+    breakthrough = 56.800000000000004
+    armor_value = 108.80000000000001
+    hardness = 1
+    build_cost_ic = 20.7
+    fuel_consumption = 2.4
+    resources = {
+      steel = 6
+      chromium = 1
+    }
+  }
+  archetype_ems05 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ems05_equipment = {
+    archetype = archetype_ems05
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 30
+    reliability = 0.8
+    soft_attack = 47
+    hard_attack = 50.900000000000006
+    air_attack = 11.700000000000001
+    ap_attack = 100
+    defense = 6.6000000000000005
+    breakthrough = 49.7
+    armor_value = 99.9
+    hardness = 1
+    build_cost_ic = 17.25
+    fuel_consumption = 2.4
+    resources = {
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_msm08 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  msm08_equipment = {
+    archetype = archetype_msm08
+    is_convertable = yes
+    can_convert_from = {
+msm07_equipment
+msm07_e_equipment
+
+}
+    priority = 100
+    maximum_speed = 40
+    reliability = 0.8
+    soft_attack = 43.300000000000004
+    hard_attack = 45.5
+    air_attack = 10.4
+    ap_attack = 100
+    defense = 9.700000000000001
+    breakthrough = 80.4
+    armor_value = 129.70000000000002
+    hardness = 1
+    build_cost_ic = 37.95
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 3
+      steel = 6
+      chromium = 1
+    }
+  }
+  archetype_max03 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+anti_tank
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  max03_equipment = {
+    archetype = archetype_max03
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 50
+    reliability = 2
+    soft_attack = 450.1
+    hard_attack = 480.20000000000005
+    air_attack = 110.4
+    ap_attack = 200
+    defense = 586.4
+    breakthrough = 568.1
+    armor_value = 200
+    hardness = 1
+    build_cost_ic = 828
+    fuel_consumption = 2
+    resources = {
+      steel = 11
+      chromium = 2
+    }
+  }
+  archetype_ma08 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+anti_air
+anti_tank
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ma08_equipment = {
+    archetype = archetype_ma08
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 50
+    reliability = 2
+    soft_attack = 1226.7
+    hard_attack = 1591.9
+    air_attack = 795.9000000000001
+    ap_attack = 600
+    defense = 657.1
+    breakthrough = 655.1
+    armor_value = 1000
+    hardness = 1
+    build_cost_ic = 4830
+    fuel_consumption = 3
+    resources = {
+      steel = 26
+      chromium = 5
+    }
+  }
+  archetype_ems10 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ems04_equipment = {
+    archetype = archetype_ems10
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 45
+    reliability = 0.75
+    defense = 9.3
+    breakthrough = 76.7
+    armor_value = 77.2
+    hardness = 1
+    build_cost_ic = 19.55
+    fuel_consumption = 6
+    resources = {
+      steel = 3
+    }
+  }
+  ems10_equipment = {
+    archetype = archetype_ems10
+    is_convertable = yes
+    can_convert_from = {
+ems04_equipment
+}
+    parent = ems04_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 50
+    reliability = 0.9
+    defense = 10.200000000000001
+    breakthrough = 85.4
+    armor_value = 88.60000000000001
+    hardness = 1
+    build_cost_ic = 44.85
+    fuel_consumption = 6
+    resources = {
+      steel = 4
+    }
+  }
+  archetype_ems10_s = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ems10_s_equipment = {
+    archetype = archetype_ems10_s
+    is_convertable = yes
+    can_convert_from = {
+ems04_equipment
+ems10_equipment
+}
+    priority = 140
+    maximum_speed = 65
+    reliability = 2
+    defense = 10.9
+    breakthrough = 92.5
+    armor_value = 108.80000000000001
+    hardness = 1
+    build_cost_ic = 23
+    fuel_consumption = 2.4
+    resources = {
+      steel = 4
+      chromium = 1
+    }
+  }
+  archetype_ms06_p = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  ms06_p_equipment = {
+    archetype = archetype_ms06_p
+    is_convertable = yes
+    can_convert_from = {
+ms06_f_equipment
+}
+    priority = 100
+    maximum_speed = 60
+    reliability = 2
+    defense = 11.5
+    breakthrough = 98.10000000000001
+    armor_value = 124
+    hardness = 1
+    build_cost_ic = 165.6
+    fuel_consumption = 2.4
+    resources = {
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_agx04 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  agx04_equipment = {
+    archetype = archetype_agx04
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 70
+    reliability = 2
+    defense = 12.8
+    breakthrough = 110.80000000000001
+    armor_value = 159.4
+    hardness = 1
+    build_cost_ic = 255.29999999999998
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 4
+      steel = 8
+      chromium = 1
+    }
+  }
+  archetype_yms16 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+tank_reliability_upgrade
+tank_engine_upgrade
+tank_armor_upgrade
+tank_gun_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  yms16_equipment = {
+    archetype = archetype_yms16
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 60
+    reliability = 0.9
+    soft_attack = 55.1
+    hard_attack = 62.5
+    air_attack = 31.25
+    ap_attack = 200
+    defense = 7.6000000000000005
+    breakthrough = 59.900000000000006
+    armor_value = 161.5
+    hardness = 1
+    build_cost_ic = 16.1
+    fuel_consumption = 6
+    resources = {
+      titanium = 3
+      steel = 7
+      chromium = 1
+    }
+  }
+}

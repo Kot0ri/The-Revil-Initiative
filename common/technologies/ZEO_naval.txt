@@ -1,0 +1,2949 @@
+technologies = {
+  ZEO_destroyer1_tech = {
+
+    enable_equipments = {
+      destroyer1_equipment
+    }
+    enable_equipment_modules = {
+			light_ship_engine_1
+			light_ship_engine_2
+		}
+
+    path = {
+      leads_to_tech = ZEO_destroyer2_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = ZEO_smoke_generator
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ZEO_basic_depth_charges
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 60
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 0
+        OR = {
+          has_idea = colony_country
+          NOT = {
+            has_country_flag = strategic_maritime_intelligence_unit_is_yes
+          }
+        }
+      }
+    }
+
+    categories = {
+      naval_equipment
+      dd_tech
+    }
+  }
+  ZEO_destroyer2_tech = {
+
+    enable_equipments = {
+      destroyer2_equipment
+    }
+    enable_equipment_modules = {
+			light_ship_engine_3
+		}
+
+    path = {
+      leads_to_tech = ZEO_destroyer3_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 77
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        OR = {
+          is_historical_focus_on = yes
+          NOT = {
+            has_country_flag = strategic_maritime_intelligence_unit_is_yes
+          }
+        }
+      }
+    }
+
+    categories = {
+      naval_equipment
+      dd_tech
+    }
+  }
+  ZEO_destroyer3_tech = {
+
+    enable_equipments = {
+      destroyer3_equipment
+    }
+    enable_equipment_modules = {
+			light_ship_engine_4
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        OR = {
+          is_historical_focus_on = yes
+          NOT = {
+            has_country_flag = strategic_maritime_intelligence_unit_is_yes
+          }
+        }
+      }
+    }
+
+    categories = {
+      naval_equipment
+      dd_tech
+    }
+  }
+  ZEO_smoke_generator = {
+
+		naval_retreat_speed = 0.2
+
+		research_cost = 0.75
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 70
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 2 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 8
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+  ZEO_basic_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_1
+		}
+
+		path = {
+			leads_to_tech = ZEO_improved_depth_charges
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 75
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	ZEO_improved_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_2
+		}
+
+		path = {
+			leads_to_tech = ZEO_advanced_depth_charges
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	ZEO_advanced_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_3
+		}
+		path = {
+			leads_to_tech = ZEO_modern_depth_charges
+			research_cost_coeff = 1
+		}
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 79
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	ZEO_modern_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_4
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 81
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+  ZEO_cruiser1_tech = {
+
+    enable_equipments = {
+      cruiser1_equipment
+    }
+    enable_equipment_modules = {
+			ship_airplane_launcher_1
+			ship_armor_cruiser_1
+			cruiser_ship_engine_1
+      cruiser_ship_engine_2
+		}
+
+    path = {
+      leads_to_tech = ZEO_cruiser2_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = ZEO_improved_airplane_launcher
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 60
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        OR = {
+          is_historical_focus_on = yes
+          NOT = {
+            has_country_flag = strategic_maritime_intelligence_unit_is_yes
+          }
+        }
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cl_tech
+    }
+  }
+  ZEO_cruiser2_tech = {
+
+    enable_equipments = {
+      cruiser2_equipment
+    }
+    enable_equipment_modules = {
+			cruiser_ship_engine_3
+		}
+
+    path = {
+      leads_to_tech = ZEO_cruiser3_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = ZEO_basic_cruiser_armor_scheme
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 77
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        OR = {
+          is_historical_focus_on = yes
+          NOT = {
+            has_country_flag = strategic_maritime_intelligence_unit_is_yes
+          }
+        }
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cl_tech
+    }
+  }
+  ZEO_cruiser3_tech = {
+
+    enable_equipments = {
+      cruiser3_equipment
+    }
+    enable_equipment_modules = {
+			cruiser_ship_engine_4
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        OR = {
+          is_historical_focus_on = yes
+          NOT = {
+            has_country_flag = strategic_maritime_intelligence_unit_is_yes
+          }
+        }
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cl_tech
+    }
+  }
+  ZEO_improved_airplane_launcher = {
+
+
+		enable_equipment_modules = {
+			ship_airplane_launcher_2
+		}
+
+		research_cost = 0.75
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		folder = {
+			name = ZEO_naval_folder
+			position = {  x = 3 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 3.5
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+  ZEO_basic_cruiser_armor_scheme = {
+
+		enable_equipment_modules = {
+			ship_armor_cruiser_2
+		}
+
+		path = {
+			leads_to_tech = ZEO_improved_cruiser_armor_scheme
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+		folder = {
+			name = ZEO_naval_folder
+			position = {  x = 3 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	ZEO_improved_cruiser_armor_scheme = {
+
+		enable_equipment_modules = {
+			ship_armor_cruiser_3
+		}
+
+		path = {
+			leads_to_tech = ZEO_advanced_cruiser_armor_scheme
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 79
+
+		folder = {
+			name = ZEO_naval_folder
+			position = {  x = 3 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	ZEO_advanced_cruiser_armor_scheme = {
+
+		enable_equipment_modules = {
+			ship_armor_cruiser_4
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 81
+
+		folder = {
+			name = ZEO_naval_folder
+			position = {  x = 3 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+  ZEO_carrier1_tech = {
+
+    enable_equipments = {
+      carrier1_equipment
+    }
+    enable_equipment_modules = {
+			ship_armor_carrier_deck
+			carrier_ship_engine_1
+      carrier_ship_engine_2
+			ship_deck_space
+		}
+
+    path = {
+      leads_to_tech = ZEO_carrier2_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 60
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        OR = {
+          is_historical_focus_on = yes
+          NOT = {
+            has_country_flag = strategic_maritime_intelligence_unit_is_yes
+          }
+        }
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cv_tech
+    }
+  }
+  ZEO_carrier2_tech = {
+
+    enable_equipments = {
+      carrier2_equipment
+    }
+    enable_equipment_modules = {
+			carrier_ship_engine_3
+		}
+
+    path = {
+      leads_to_tech = ZEO_carrier3_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    start_year = 77
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        OR = {
+          is_historical_focus_on = yes
+          NOT = {
+            has_country_flag = strategic_maritime_intelligence_unit_is_yes
+          }
+        }
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cv_tech
+    }
+  }
+  ZEO_carrier3_tech = {
+
+    enable_equipments = {
+      carrier3_equipment
+    }
+    enable_equipment_modules = {
+			carrier_ship_engine_4
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        OR = {
+          is_historical_focus_on = yes
+          NOT = {
+            has_country_flag = strategic_maritime_intelligence_unit_is_yes
+          }
+        }
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cv_tech
+    }
+  }
+  ZEO_submarine1_tech = {
+
+    enable_equipments = {
+      submarine1_equipment
+    }
+    enable_equipment_modules = {
+			ship_torpedo_sub_1
+      sub_ship_engine_1
+		}
+
+    path = {
+      leads_to_tech = ZEO_submarine2_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 60
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 5
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+    }
+  }
+  ZEO_submarine2_tech = {
+
+    enable_equipments = {
+      submarine2_equipment
+    }
+    enable_equipment_modules = {
+			ship_torpedo_sub_2
+			sub_ship_engine_2
+		}
+
+    path = {
+      leads_to_tech = ZEO_submarine3_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = ZEO_basic_submarine_snorkel
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1.5
+    start_year = 77
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 5
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+    }
+  }
+  ZEO_submarine3_tech = {
+
+    enable_equipments = {
+      submarine3_equipment
+    }
+
+    research_cost = 1.5
+    start_year = 79
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 5
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+    }
+  }
+  ZEO_basic_submarine_snorkel = {
+
+		enable_equipment_modules = {
+			ship_sub_snorkel_1
+		}
+		path = {
+			leads_to_tech = ZEO_improved_submarine_snorkel
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		folder = {
+			name = ZEO_naval_folder
+			position = {  x = 2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	ZEO_improved_submarine_snorkel = {
+
+		enable_equipment_modules = {
+			ship_sub_snorkel_2
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2
+
+		start_year = 79
+
+		folder = {
+			name = ZEO_naval_folder
+			position = {  x = 2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+  ZEO_submarine_carrier1_tech = {
+
+    enable_equipments = {
+      submarine_carrier1_equipment
+    }
+    enable_equipment_modules = {
+			ship_torpedo_sub_3
+			sub_ship_engine_3
+      ship_extra_fuel_tank
+		}
+
+    path = {
+      leads_to_tech = ZEO_submarine_carrier2_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1
+    start_year = 75
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 4 y = 0 }
+    }
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 5
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+    categories = {
+      naval_equipment
+      ss_tech
+      cv_tech
+    }
+  }
+  ZEO_submarine_carrier2_tech = {
+
+    enable_equipments = {
+      submarine_carrier2_equipment
+    }
+    enable_equipment_modules = {
+			ship_torpedo_sub_4
+			sub_ship_engine_4
+		}
+
+    path = {
+      leads_to_tech = ZEO_submarine_carrier3_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = ZEO_basic_submarine_snorkel
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1.5
+    start_year = 77
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 4 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 5
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+      cv_tech
+    }
+  }
+  ZEO_submarine_carrier3_tech = {
+
+    enable_equipments = {
+      submarine_carrier3_equipment
+    }
+
+    research_cost = 1.5
+    start_year = 79
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 4 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 5
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+      cv_tech
+    }
+  }
+  ZEO_basic_torpedo = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = ZEO_magnetic_detonator
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_improved_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+
+    path = {
+      leads_to_tech = ZEO_mobilesuit_torpedo_1
+      research_cost_coeff = 1
+    }
+
+		enable_equipment_modules = {
+			ship_torpedo_1
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_magnetic_detonator = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_homing_torpedo
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_electric_torpedo
+			research_cost_coeff = 1
+		}
+
+		destroyer = {
+			torpedo_attack = 0.2
+		}
+		submarine = {
+			torpedo_attack = 0.2
+		}
+		cruiser = {
+			torpedo_attack = 0.2
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_homing_torpedo = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+		destroyer = {
+			torpedo_attack = 0.2
+		}
+		submarine = {
+			torpedo_attack = 0.2
+		}
+		cruiser = {
+			torpedo_attack = 0.2
+		}
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_electric_torpedo = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+
+		naval_torpedo_reveal_chance_factor = -0.25
+
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_improved_ship_torpedo_launcher = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_advanced_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_torpedo_2
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_advanced_ship_torpedo_launcher = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = ZEO_modern_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_torpedo_3
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_modern_ship_torpedo_launcher = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			ship_torpedo_4
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+  ZEO_mobilesuit_torpedo_1 = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+    path = {
+      leads_to_tech = ZEO_mobilesuit_torpedo_2
+      research_cost_coeff = 1
+    }
+
+		enable_equipment_modules = {
+			misile_module_1
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = -4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 5
+      modifier = {
+        factor = 20
+        has_tech = ms06_m_tech
+      }
+      modifier = {
+        factor = 30
+        OR = {
+          has_tech = msm03_tech
+          has_tech = msm07_tech
+          has_tech = msm04_tech
+        }
+      }
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+  ZEO_mobilesuit_torpedo_2 = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 78
+    path = {
+      leads_to_tech = ZEO_mobilesuit_torpedo_3
+      research_cost_coeff = 1
+    }
+
+		enable_equipment_modules = {
+			misile_module_2
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = -4 y = 8 }
+		}
+
+    ai_will_do = {
+			factor = 5
+      modifier = {
+        factor = 20
+        has_tech = ms06_m_tech
+      }
+      modifier = {
+        factor = 10
+        OR = {
+          has_tech = msm03_tech
+          has_tech = msm07_tech
+          has_tech = msm04_tech
+        }
+      }
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+  ZEO_mobilesuit_torpedo_3 = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			misile_module_3
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = -4 y = 10 }
+		}
+
+    ai_will_do = {
+			factor = 5
+      modifier = {
+        factor = 20
+        has_tech = ms06_m_tech
+      }
+      modifier = {
+        factor = 5
+        OR = {
+          has_tech = msm03_tech
+          has_tech = msm07_tech
+          has_tech = msm04_tech
+        }
+      }
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+  ZEO_survey1_tech = {
+
+    enable_equipments = {
+      survey1_equipment
+    }
+
+    research_cost = 0.5
+    start_year = 76
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 2 }
+    }
+    path = {
+      leads_to_tech = ZEO_survey2_tech
+      research_cost_coeff = 1
+    }
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 5
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      naval_survey_tech
+    }
+  }
+  ZEO_survey2_tech = {
+
+    enable_equipments = {
+      survey2_equipment
+    }
+
+    research_cost = 0.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 78
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 6 }
+    }
+
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 5
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      naval_survey_tech
+    }
+  }
+  ms06_m_tech = {
+    enable_equipments = {
+      ms06_m_equipment
+    }
+    enable_equipment_modules = {
+      vulcan_module_1
+      misile_module_1
+      ship_armor_mobilesuit_1
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 4 }
+    }
+    dependencies = {
+      ms06_f_tech = 1
+    }
+    path = {
+      leads_to_tech = msm03_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = msm04_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = msm07_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = msm10_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      naval_equipment
+      mobilesuit
+      naval_mobilesuit
+    }
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 10
+        date > 77.1.1
+      }
+      modifier = {
+        factor = 100
+        has_country_flag = ocean_colony_for_military_is_yes
+      }
+      modifier = {
+        factor = 2
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+      modifier = {
+        factor = 2
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+  }
+  msm03_tech = {
+    enable_equipments = {
+      msm03_equipment
+    }
+    enable_equipment_modules = {
+      iron_nail_module_1
+      ship_armor_mobilesuit_2
+    }
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 78
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 4 y = 6 }
+    }
+    ai_will_do = {
+      factor = 20
+      modifier = {
+        factor = 100
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+    path = {
+      leads_to_tech = msm03_c_tech
+      research_cost_coeff = 1
+    }
+    categories = {
+      naval_equipment
+      naval_mobilesuit
+      mobilesuit
+      zimmad_mobilesuit
+    }
+  }
+  msm03_c_tech = {
+    enable_equipments = {
+      msm03_c_equipment
+    }
+    enable_equipment_modules = {
+      iron_nail_module_2
+      hand_misile_module_1
+      ship_armor_mobilesuit_3
+    }
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 4 y = 8 }
+    }
+    ai_will_do = {
+      factor = 20
+      modifier = {
+        factor = 10
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+    }
+    dependencies = {
+			integrated_maintenance_plan = 1
+		}
+    categories = {
+      naval_equipment
+      naval_mobilesuit
+      mobilesuit
+      zimmad_mobilesuit
+    }
+  }
+  msm04_tech = {
+    enable_equipments = {
+      msm04_equipment
+    }
+    enable_equipment_modules = {
+      vulcan_module_2
+      iron_nail_module_1
+    }
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 6 }
+    }
+    ai_will_do = {
+      factor = 10
+      modifier = {
+        factor = 50
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+    categories = {
+      naval_equipment
+      naval_mobilesuit
+      mobilesuit
+      zwinemn_mobilesuit
+    }
+  }
+  msm07_tech = {
+    enable_equipments = {
+      msm07_equipment
+    }
+    enable_equipment_modules = {
+      iron_nail_module_1
+      misile_module_2
+      ship_armor_mobilesuit_2
+    }
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 78
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 8 y = 6 }
+    }
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 6 }
+    }
+    path = {
+      leads_to_tech = msm07_e_tech
+      research_cost_coeff = 1
+    }
+    ai_will_do = {
+      factor = 20
+      modifier = {
+        factor = 100
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+    }
+    categories = {
+      naval_equipment
+      naval_mobilesuit
+      mobilesuit
+      mip_mobilesuit
+    }
+  }
+  msm07_e_tech = {
+    enable_equipments = {
+      msm07_e_equipment
+    }
+    enable_equipment_modules = {
+      iron_nail_module_2
+      ship_armor_mobilesuit_3
+    }
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 8 y = 8 }
+    }
+    ai_will_do = {
+      factor = 20
+      modifier = {
+        factor = 10
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+    }
+    dependencies = {
+			integrated_maintenance_plan = 1
+		}
+    categories = {
+      naval_equipment
+      naval_mobilesuit
+      mobilesuit
+      mip_mobilesuit
+    }
+  }
+  msm10_tech = {
+    enable_equipments = {
+      msm10_equipment
+    }
+    enable_equipment_modules = {
+      ship_armor_mobilesuit_3
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 12 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 10
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+    }
+
+    categories = {
+      naval_equipment
+      naval_mobilesuit
+      mobilesuit
+    }
+  }
+  mam07_tech = {
+    enable_equipments = {
+      mam07_equipment
+    }
+    enable_equipment_modules = {
+      boomerang_misile_module_1
+      misile_module_3
+      ship_armor_mobilesuit_3
+    }
+    dependencies = {
+      mega_particle1 = 1
+      max03_tech = 1
+    }
+
+    research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = ZEO_naval_folder
+      position = { x = 0 y = 8 }
+    }
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 10
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+      modifier = {
+        factor = 10
+        date > 79.1.1
+      }
+    }
+		on_research_complete = {
+      hidden_effect = {
+				country_event = { id = zeon.1013 }
+			}
+			custom_effect_tooltip = loni_garvey_enabled
+    }
+    categories = {
+      naval_equipment
+      naval_mobilearmor
+      mip_mobilesuit
+      mobilearmor
+    }
+  }
+  ZEO_transport = {
+
+		transport_capacity = -0.5
+		naval_invasion_capacity = 10
+
+		path = {
+			leads_to_tech = ZEO_landing_craft
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 60
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 30
+      modifier = {
+        factor = 100
+        has_country_flag = ocean_colony_for_military_is_yes
+      }
+      modifier = {
+        factor = 5
+        date > 76.1.1
+      }
+      modifier = {
+        factor = 20
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+		}
+
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	ZEO_landing_craft = {
+
+		invasion_preparation = -0.5
+		amphibious_invasion_defence = 0.15
+		naval_invasion_capacity = 40
+
+		path = {
+			leads_to_tech = ZEO_tank_landing_craft
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 77
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 10
+        has_war = yes
+			}
+      modifier = {
+        factor = 5
+        date > 77.1.1
+      }
+		}
+
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	ZEO_tank_landing_craft = {
+
+		amphibious_invasion = 0.25
+		amphibious_invasion_defence = 0.5
+		naval_invasion_capacity = 100
+
+		research_cost = 1.5
+		start_year = 79
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+			modifier = {
+				factor = 5
+        has_war = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+  ZEO_damage_control_1 = {
+
+		research_cost = 2.5
+		path = {
+			leads_to_tech = ZEO_damage_control_2
+			research_cost_coeff = 1
+		}
+		critical_receive_chance = -0.1
+		naval_critical_effect_factor = -0.1
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_damage_control_2 = {
+
+		research_cost = 2.5
+		path = {
+			leads_to_tech = ZEO_damage_control_3
+			research_cost_coeff = 1
+		}
+		critical_receive_chance = -0.1
+		naval_critical_effect_factor = -0.1
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_damage_control_3 = {
+
+		research_cost = 2.5
+		critical_receive_chance = -0.1
+		naval_critical_effect_factor = -0.1
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+  ZEO_basic_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = ZEO_basic_light_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_basic_medium_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_basic_heavy_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_light_battery_1
+			ship_medium_battery_1
+			ship_light_medium_battery_1
+			ship_heavy_battery_1
+      ship_anti_air_1
+		}
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_basic_light_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_improved_light_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_basic_light_shell
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_light_battery_2
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = -4 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_improved_light_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = ZEO_advanced_light_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_light_battery_3
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = -4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_advanced_light_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			ship_light_battery_4
+		}
+
+
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = -4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+	ZEO_basic_light_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_improved_light_shell
+			research_cost_coeff = 1
+		}
+
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = -2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_improved_light_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = -2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+	ZEO_basic_medium_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_improved_medium_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_basic_medium_shell
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_medium_battery_2
+			ship_light_medium_battery_2
+      ship_anti_air_2
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_improved_medium_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = ZEO_advanced_medium_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_medium_battery_3
+			ship_light_medium_battery_3
+      ship_anti_air_3
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_advanced_medium_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			ship_medium_battery_4
+			ship_light_medium_battery_4
+      ship_anti_air_4
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_basic_medium_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_improved_medium_shell
+			research_cost_coeff = 1
+		}
+
+		cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_improved_medium_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+
+		cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+	ZEO_basic_heavy_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_improved_heavy_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_basic_heavy_shell
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_heavy_battery_2
+			ship_super_heavy_battery_1
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_improved_heavy_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = ZEO_advanced_heavy_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_heavy_battery_3
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_advanced_heavy_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			ship_heavy_battery_4
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_basic_heavy_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_improved_heavy_shell
+			research_cost_coeff = 1
+		}
+
+		cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 6 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_improved_heavy_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+
+		cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 6 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+	ZEO_basic_secondary_battery = {
+
+		research_cost = 0.8
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = ZEO_improved_secondary_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_secondaries_1
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_improved_secondary_battery = {
+
+		research_cost = 0.8
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_dp_secondary_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_secondaries_2
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	ZEO_dp_secondary_battery = {
+
+		research_cost = 0.8
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		enable_equipment_modules = {
+			dp_ship_secondaries
+			dp_light_battery
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 20
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+  ZEO_basic_naval_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = ZEO_improved_naval_mines
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_submarine_mine_laying
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_mine_layer_1
+		}
+
+		enable_equipment_modules = {
+			ship_mine_sweeper_1
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 6
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	ZEO_submarine_mine_laying = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = ZEO_improved_submarine_mine_laying
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_mine_layer_sub
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 6
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	ZEO_improved_submarine_mine_laying = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		submarine = {
+			mines_planting = 0.2
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				factor = 6
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	ZEO_improved_naval_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = ZEO_advanced_naval_mines
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_degaussing
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 6
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	ZEO_degaussing = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 76
+
+		naval_mines_effect_reduction = 0.5
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minesweeping
+			naval_equipment
+		}
+	}
+	ZEO_advanced_naval_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = ZEO_modern_naval_mines
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ZEO_airdrop_mines
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	ZEO_airdrop_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		category_nav_bomber = {
+			mines_planting = 0.05
+		}
+		category_tac_bomber = {
+			mines_planting = 0.08
+		}
+		category_air_carrier = {
+			mines_planting = 0.13
+		}
+    category_air_assaultship = {
+      mines_planting = 0.17
+    }
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	ZEO_modern_naval_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		path = {
+			leads_to_tech = ZEO_airsweep_mines
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	ZEO_airsweep_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		category_nav_bomber = {
+			mines_sweeping = 0.1
+		}
+
+		category_tac_bomber = {
+			mines_sweeping = 0.15
+		}
+
+		folder = {
+			name = ZEO_naval_folder
+			position = { x = 4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_mines
+			naval_minesweeping
+			naval_equipment
+		}
+	}
+}

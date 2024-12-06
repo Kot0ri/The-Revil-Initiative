@@ -1,0 +1,1113 @@
+equipments = {
+  archetype_rx75 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx75_equipment = {
+    archetype = archetype_rx75
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 30
+    reliability = 2
+    soft_attack = 38.1
+    hard_attack = 38.2
+    air_attack = 19.1
+    ap_attack = 180
+    defense = 5.7
+    breakthrough = 40.900000000000006
+    armor_value = 132
+    hardness = 1
+    build_cost_ic = 82.8
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 1
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_rx75_2 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  mbt3_equipment = {
+    archetype = archetype_rx75_2
+    is_convertable = yes
+    can_convert_from = {
+rx75_equipment
+}
+    priority = 30
+    maximum_speed = 30
+    reliability = 0.85
+    soft_attack = 24.720000000000002
+    hard_attack = 22.240000000000002
+    air_attack = 11.120000000000001
+    ap_attack = 161.5
+    defense = 3.6
+    breakthrough = 23.760000000000005
+    armor_value = 79.92000000000002
+    hardness = 1
+    build_cost_ic = 5.75
+    fuel_consumption = 2
+    resources = {
+      steel = 3
+      chromium = 1
+    }
+  }
+  rx75_2_equipment = {
+    archetype = archetype_rx75_2
+    is_convertable = yes
+    can_convert_from = {
+rx75_equipment
+mbt3_equipment
+
+}
+    parent = mbt3_equipment
+    priority = 100
+    visual_level = 1
+    maximum_speed = 30
+    reliability = 0.85
+    soft_attack = 30.900000000000002
+    hard_attack = 27.8
+    air_attack = 13.9
+    ap_attack = 170
+    defense = 4.5
+    breakthrough = 29.700000000000003
+    armor_value = 99.9
+    hardness = 1
+    build_cost_ic = 10.35
+    fuel_consumption = 6
+    resources = {
+      titanium = 1
+      steel = 4
+    }
+  }
+  rmv1_equipment = {
+    archetype = archetype_rx75_2
+    is_convertable = yes
+    can_convert_from = {
+rx75_equipment
+mbt3_equipment
+rx75_2_equipment
+
+}
+    parent = rx75_2_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 35
+    reliability = 0.9
+    soft_attack = 37.5
+    hard_attack = 37.300000000000004
+    air_attack = 18.650000000000002
+    ap_attack = 180
+    defense = 6.6000000000000005
+    breakthrough = 49.7
+    armor_value = 116
+    hardness = 1
+    build_cost_ic = 17.25
+    fuel_consumption = 6
+    resources = {
+      titanium = 2
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_rx77 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx77_equipment = {
+    archetype = archetype_rx77
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 40
+    reliability = 2
+    soft_attack = 42.6
+    hard_attack = 44.6
+    air_attack = 22.3
+    ap_attack = 180
+    defense = 7.9
+    breakthrough = 62.800000000000004
+    armor_value = 139.9
+    hardness = 1
+    build_cost_ic = 113.85000000000001
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_rx77_2 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx77_2_equipment = {
+    archetype = archetype_rx77_2
+    is_convertable = yes
+    can_convert_from = {
+rx77_equipment
+}
+    priority = 100
+    maximum_speed = 35
+    reliability = 0.85
+    soft_attack = 32.6
+    hard_attack = 30.3
+    air_attack = 15.15
+    ap_attack = 170
+    defense = 7.300000000000001
+    breakthrough = 56.800000000000004
+    armor_value = 119.10000000000001
+    hardness = 1
+    build_cost_ic = 24.15
+    fuel_consumption = 6
+    resources = {
+      titanium = 2
+      steel = 6
+      chromium = 1
+    }
+  }
+  rx77_4_equipment = {
+    archetype = archetype_rx77_2
+    is_convertable = yes
+    can_convert_from = {
+rx77_equipment
+}
+    priority = 110
+    visual_level = 1
+    maximum_speed = 40
+    reliability = 0.9
+    soft_attack = 46.400000000000006
+    hard_attack = 50
+    air_attack = 25
+    ap_attack = 180
+    defense = 8.4
+    breakthrough = 68
+    armor_value = 149.4
+    hardness = 1
+    build_cost_ic = 46
+    fuel_consumption = 6
+    resources = {
+      titanium = 2
+      steel = 6
+      chromium = 1
+    }
+  }
+  archetype_rx78 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx78_equipment = {
+    archetype = archetype_rx78
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 55
+    reliability = 2
+    defense = 11.200000000000001
+    breakthrough = 95
+    armor_value = 154.70000000000002
+    hardness = 1
+    build_cost_ic = 193.20000000000002
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 3
+      steel = 8
+      chromium = 1
+    }
+  }
+  archetype_fsws = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+      armor
+      }
+          group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  fsws_equipment = {
+    archetype = archetype_fsws
+    is_convertable = yes
+    priority = 100
+    reliability = 2
+    defense = 10.200000000000001
+    breakthrough = 85.4
+    armor_value = 165
+    hardness = 1
+    build_cost_ic = 71.3
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 3
+      chromium = 1
+    }
+  }
+  archetype_rx78_xx = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx78_xx_equipment = {
+    archetype = archetype_rx78_xx
+    is_convertable = yes
+    can_convert_from = {
+rx78_equipment
+}
+    priority = 100
+    maximum_speed = 70
+    reliability = 2
+    defense = 12.9
+    breakthrough = 112.4
+    armor_value = 136.1
+    hardness = 1
+    build_cost_ic = 172.5
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 6
+      chromium = 1
+    }
+  }
+  archetype_rx78_nt = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx78_nt_equipment = {
+    archetype = archetype_rx78_nt
+    is_convertable = yes
+    can_convert_from = {
+rx78_equipment
+}
+    priority = 100
+    maximum_speed = 60
+    reliability = 2
+    soft_attack = 28.6
+    hard_attack = 24.5
+    air_attack = 12.25
+    ap_attack = 120
+    defense = 12.8
+    breakthrough = 110.80000000000001
+    armor_value = 157.10000000000002
+    hardness = 1
+    build_cost_ic = 248.39999999999998
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 3
+      steel = 8
+      chromium = 1
+    }
+  }
+  archetype_rx79 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx79_equipment = {
+    archetype = archetype_rx79
+    is_convertable = yes
+    can_convert_from = {
+rx78_equipment
+rgm79_equipment
+
+}
+    priority = 100
+    maximum_speed = 50
+    reliability = 2
+    defense = 10.200000000000001
+    breakthrough = 85.4
+    armor_value = 124.80000000000001
+    hardness = 1
+    build_cost_ic = 186.3
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 6
+      chromium = 1
+    }
+  }
+  rx79_ez8_equipment = {
+    archetype = archetype_rx79
+    is_convertable = yes
+    can_convert_from = {
+rx79_equipment
+}
+    priority = 110
+    visual_level = 1
+    maximum_speed = 50
+    reliability = 2
+    defense = 11.200000000000001
+    breakthrough = 95
+    armor_value = 141.70000000000002
+    hardness = 1
+    build_cost_ic = 204.93000000000004
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_rx79_d = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx79_d_equipment = {
+    archetype = archetype_rx79_d
+    is_convertable = yes
+    can_convert_from = {
+rx79_equipment
+rx79_d2_equipment
+rx79_d3_equipment
+
+}
+    priority = 100
+    maximum_speed = 60
+    reliability = 0.9
+    defense = 11.4
+    breakthrough = 97.4
+    armor_value = 139
+    hardness = 1
+    build_cost_ic = 103.5
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 5
+      chromium = 1
+    }
+  }
+  rx79_d2_equipment = {
+    archetype = archetype_rx79_d
+    is_convertable = yes
+    can_convert_from = {
+rx79_equipment
+rx79_d_equipment
+rx79_d3_equipment
+
+}
+    priority = 110
+    visual_level = 1
+    maximum_speed = 60
+    reliability = 0.9
+    defense = 11.600000000000001
+    breakthrough = 99.60000000000001
+    armor_value = 140.8
+    hardness = 1
+    build_cost_ic = 110.39999999999999
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 5
+      chromium = 1
+    }
+  }
+  rx79_d3_equipment = {
+    archetype = archetype_rx79_d
+    is_convertable = yes
+    can_convert_from = {
+rx79_equipment
+rx79_d2_equipment
+rx79_d_equipment
+
+}
+    priority = 120
+    visual_level = 2
+    maximum_speed = 65
+    reliability = 0.95
+    defense = 11.8
+    breakthrough = 101.7
+    armor_value = 143.3
+    hardness = 1
+    build_cost_ic = 117.30000000000001
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_rgm79g = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rgm79g_equipment = {
+    archetype = archetype_rgm79g
+    is_convertable = yes
+    can_convert_from = {
+rx78_equipment
+rx79_equipment
+
+}
+    priority = 100
+    maximum_speed = 45
+    reliability = 0.95
+    defense = 8.9
+    breakthrough = 72.60000000000001
+    armor_value = 114.30000000000001
+    hardness = 1
+    build_cost_ic = 113.85000000000001
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 2
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_rgm79 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rgm79_equipment = {
+    archetype = archetype_rgm79
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 40
+    reliability = 0.8
+    defense = 7.300000000000001
+    breakthrough = 56.800000000000004
+    armor_value = 94.7
+    hardness = 1
+    build_cost_ic = 13.799999999999999
+    fuel_consumption = 6
+    resources = {
+      steel = 5
+      chromium = 1
+    }
+  }
+  rgm79_c_equipment = {
+    archetype = archetype_rgm79
+    is_convertable = yes
+    can_convert_from = {
+rgm79_equipment
+}
+    parent = rgm79_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 45
+    reliability = 0.85
+    defense = 10
+    breakthrough = 83.80000000000001
+    armor_value = 123.4
+    hardness = 1
+    build_cost_ic = 31.05
+    fuel_consumption = 6
+    resources = {
+      steel = 8
+      chromium = 1
+    }
+  }
+  rgm79_p_equipment = {
+    archetype = archetype_rgm79
+    is_convertable = yes
+    can_convert_from = {
+rgm79_c_equipment
+}
+    parent = rgm79_c_equipment
+    priority = 120
+    visual_level = 2
+    maximum_speed = 45
+    reliability = 0.9
+    defense = 11.4
+    breakthrough = 97.4
+    armor_value = 132
+    hardness = 1
+    build_cost_ic = 62.1
+    fuel_consumption = 6
+    resources = {
+      steel = 10
+      chromium = 2
+    }
+  }
+  rgm79_n_equipment = {
+    archetype = archetype_rgm79
+    is_convertable = yes
+    can_convert_from = {
+rgm79_c_equipment
+rgm79_g_equipment
+
+}
+    parent = rgm79_p_equipment
+    priority = 130
+    visual_level = 3
+    maximum_speed = 50
+    reliability = 0.9
+    defense = 10.600000000000001
+    breakthrough = 89.80000000000001
+    armor_value = 128.5
+    hardness = 1
+    build_cost_ic = 51.75
+    fuel_consumption = 6
+    resources = {
+      steel = 9
+      chromium = 2
+    }
+  }
+  rgm79_q_equipment = {
+    archetype = archetype_rgm79
+    is_convertable = yes
+    can_convert_from = {
+rgm79_n_equipment
+}
+    parent = rgm79_n_equipment
+    priority = 140
+    visual_level = 4
+    maximum_speed = 55
+    reliability = 0.95
+    defense = 10.9
+    breakthrough = 92.5
+    armor_value = 128.5
+    hardness = 1
+    build_cost_ic = 58.65
+    fuel_consumption = 6
+    resources = {
+      steel = 9
+      chromium = 2
+    }
+  }
+  rgm79_r_equipment = {
+    archetype = archetype_rgm79
+    is_convertable = yes
+    can_convert_from = {
+rgm79_q_equipment
+}
+    parent = rgm79_q_equipment
+    priority = 150
+    visual_level = 5
+    maximum_speed = 60
+    reliability = 0.95
+    defense = 9.700000000000001
+    breakthrough = 80.4
+    armor_value = 122
+    hardness = 1
+    build_cost_ic = 27.599999999999998
+    fuel_consumption = 6
+    resources = {
+      steel = 8
+      chromium = 1
+    }
+  }
+  archetype_rgm79_fp = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rgm79_fp_equipment = {
+    archetype = archetype_rgm79_fp
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 60
+    reliability = 0.9
+    defense = 10.8
+    breakthrough = 91.2
+    armor_value = 135.1
+    build_cost_ic = 86.25
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 1
+      steel = 5
+      chromium = 1
+    }
+  }
+  archetype_rgm79_d = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rgm79_d_equipment = {
+    archetype = archetype_rgm79_d
+    is_convertable = yes
+    can_convert_from = {
+rgm79_equipment
+}
+    priority = 100
+    maximum_speed = 45
+    reliability = 0.85
+    defense = 8.200000000000001
+    breakthrough = 65.5
+    armor_value = 102.30000000000001
+    hardness = 1
+    build_cost_ic = 20.7
+    fuel_consumption = 6
+    resources = {
+      steel = 5
+      chromium = 1
+    }
+  }
+  rgm79_g_equipment = {
+    archetype = archetype_rgm79_d
+    is_convertable = yes
+    can_convert_from = {
+rgm79_d_equipment
+}
+    parent = rgm79_d_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 50
+    reliability = 0.9
+    defense = 9.700000000000001
+    breakthrough = 80.4
+    armor_value = 116
+    hardness = 1
+    build_cost_ic = 20.7
+    fuel_consumption = 6
+    resources = {
+      steel = 7
+      chromium = 1
+    }
+  }
+  archetype_rgc80 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+artillery
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rgc80_equipment = {
+    archetype = archetype_rgc80
+    is_convertable = yes
+    can_convert_from = {
+rx77_equipment
+rx77_2_equipment
+rx77_4_equipment
+
+}
+    priority = 100
+    maximum_speed = 35
+    reliability = 0.8
+    soft_attack = 32.5
+    hard_attack = 30.1
+    air_attack = 15.05
+    ap_attack = 170
+    defense = 6.1000000000000005
+    breakthrough = 45.5
+    armor_value = 99.9
+    hardness = 1
+    build_cost_ic = 17.25
+    fuel_consumption = 6
+    resources = {
+      steel = 5
+      chromium = 1
+    }
+  }
+  rgc83_equipment = {
+    archetype = archetype_rgc80
+    is_convertable = yes
+    can_convert_from = {
+rgc80_equipment
+}
+    parent = rgc80_equipment
+    priority = 110
+    visual_level = 1
+    maximum_speed = 40
+    reliability = 0.85
+    soft_attack = 48.6
+    hard_attack = 53.1
+    air_attack = 26.55
+    ap_attack = 200
+    defense = 8.200000000000001
+    breakthrough = 65.5
+    armor_value = 123.4
+    hardness = 1
+    build_cost_ic = 31.05
+    fuel_consumption = 6
+    resources = {
+      steel = 9
+      chromium = 2
+    }
+  }
+  archetype_rx78_gp1 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx78_gp1_equipment = {
+    archetype = archetype_rx78_gp1
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 70
+    reliability = 2
+    defense = 12.5
+    breakthrough = 108.30000000000001
+    armor_value = 156.5
+    hardness = 1
+    build_cost_ic = 238.04999999999998
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 3
+      steel = 8
+      chromium = 1
+    }
+  }
+  archetype_rx78_gp2 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx78_gp2_equipment = {
+    archetype = archetype_rx78_gp2
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 55
+    reliability = 2
+    defense = 11.5
+    breakthrough = 98.5
+    armor_value = 168.60000000000002
+    hardness = 1
+    build_cost_ic = 289.79999999999995
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 5
+      steel = 10
+      chromium = 2
+    }
+  }
+  archetype_rx78_gp4 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx78_gp4_equipment = {
+    archetype = archetype_rx78_gp4
+    is_convertable = yes
+    priority = 100
+    maximum_speed = 70
+    reliability = 2
+    defense = 13.100000000000001
+    breakthrough = 113.9
+    armor_value = 161.5
+    hardness = 1
+    build_cost_ic = 276
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 4
+      steel = 9
+      chromium = 2
+    }
+  }
+  archetype_rx121 = {
+    is_archetype = yes
+    is_buildable = no
+    is_convertable = yes
+    type = {
+armor
+}
+    group_by = archetype
+    picture = archetype_light_tank_equipment
+    interface_category = interface_category_armor
+    upgrades = {
+mobilesuit_armor_upgrade
+mobilesuit_generator_upgrade
+mobilesuit_thruster_upgrade
+mobilesuit_sensor_upgrade
+
+}
+    lend_lease_cost = 15
+    resources = {
+    }
+  }
+  rx121_equipment = {
+    archetype = archetype_rx121
+    is_convertable = yes
+    can_convert_from = {
+rgm79_q_equipment
+}
+    priority = 100
+    maximum_speed = 65
+    reliability = 2
+    armor_value = 556
+    hardness = 1
+    build_cost_ic = 227.70000000000002
+    fuel_consumption = 2.4
+    resources = {
+      titanium = 3
+      steel = 8
+      chromium = 1
+    }
+  }
+}

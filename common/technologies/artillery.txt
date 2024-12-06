@@ -1,0 +1,185 @@
+technologies = {
+  misile_ac1_tech = {
+
+    enable_equipments = {
+      misile_ac1_equipment
+    }
+
+    research_cost = 1
+    start_year = 61
+    folder = {
+      name = artillery_folder
+      position = { x = 0 y = 0 }
+    }
+    path = {
+      leads_to_tech = vulcan_ac_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = misile_ac2_tech
+      research_cost_coeff = 1
+    }
+    path = {
+      leads_to_tech = mobile_ac_tech
+      research_cost_coeff = 1
+    }
+
+    ai_will_do = {
+      factor = 1
+      modifier = {
+        factor = 5
+        NOT = {
+          OR = {
+            original_tag = EFS
+            original_tag = ZEO
+          }
+        }
+      }
+      modifier = {
+        factor = 10
+        original_tag = EFS
+        NOT = {
+          has_tech = plan_rx_tech
+        }
+      }
+      modifier = {
+        factor = 0
+        original_tag = ZEO
+        is_historical_focus_on = yes
+      }
+    }
+
+    categories = {
+      artillery
+      cat_anti_tank
+    }
+  }
+	vulcan_ac_tech = {
+		enable_equipments = {
+			vulcan_ac_equipment
+		}
+
+		research_cost = 1
+		start_year = 77
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				NOT = {
+					OR = {
+						original_tag = EFS
+						original_tag = ZEO
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				original_tag = EFS
+				NOT = {
+					has_tech = plan_rx_tech
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = ZEO
+				is_historical_focus_on = yes
+			}
+		}
+
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	misile_ac2_tech = {
+
+		enable_equipments = {
+			misile_ac2_equipment
+		}
+
+		research_cost = 1
+		start_year = 77
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				NOT = {
+					OR = {
+						original_tag = EFS
+						original_tag = ZEO
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				original_tag = EFS
+				NOT = {
+					has_tech = plan_rx_tech
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = ZEO
+				is_historical_focus_on = yes
+			}
+		}
+
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+	mobile_ac_tech = {
+
+		enable_equipments = {
+			mobile_ac_equipment
+		}
+
+		research_cost = 1
+		start_year = 79
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+				NOT = {
+					OR = {
+						original_tag = EFS
+						original_tag = ZEO
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				original_tag = EFS
+				NOT = {
+					has_tech = plan_rx_tech
+				}
+			}
+			modifier = {
+				factor = 0
+				original_tag = ZEO
+				is_historical_focus_on = yes
+			}
+		}
+
+		categories = {
+			artillery
+			cat_anti_tank
+		}
+	}
+}

@@ -1,0 +1,2592 @@
+technologies = {
+  EFS_destroyer1_tech = {
+
+    enable_equipments = {
+      destroyer1_equipment
+    }
+    enable_equipment_modules = {
+			light_ship_engine_1
+			light_ship_engine_2
+		}
+
+    path = {
+      leads_to_tech = EFS_destroyer2_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = EFS_smoke_generator
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = EFS_basic_depth_charges
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 60
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+
+    categories = {
+      naval_equipment
+      dd_tech
+    }
+  }
+  EFS_destroyer2_tech = {
+
+    enable_equipments = {
+      destroyer2_equipment
+    }
+    enable_equipment_modules = {
+			light_ship_engine_3
+		}
+
+    path = {
+      leads_to_tech = EFS_destroyer3_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 77
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 2
+        has_war = yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      dd_tech
+    }
+  }
+  EFS_destroyer3_tech = {
+
+    enable_equipments = {
+      destroyer3_equipment
+    }
+    enable_equipment_modules = {
+			light_ship_engine_4
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 2
+        has_war = yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      dd_tech
+    }
+  }
+  EFS_smoke_generator = {
+
+		naval_retreat_speed = 0.2
+
+		research_cost = 0.75
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 70
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 2 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 8
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+  EFS_basic_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_1
+		}
+
+		path = {
+			leads_to_tech = EFS_improved_depth_charges
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	EFS_improved_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_2
+		}
+
+		path = {
+			leads_to_tech = EFS_advanced_depth_charges
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 4
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	EFS_advanced_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_3
+		}
+		path = {
+			leads_to_tech = EFS_modern_depth_charges
+			research_cost_coeff = 1
+		}
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 79
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	EFS_modern_depth_charges = {
+
+		enable_equipment_modules = {
+			ship_depth_charge_4
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 81
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+		}
+
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+  EFS_cruiser1_tech = {
+
+    enable_equipments = {
+      cruiser1_equipment
+    }
+    enable_equipment_modules = {
+			ship_airplane_launcher_1
+			ship_armor_cruiser_1
+			cruiser_ship_engine_1
+      cruiser_ship_engine_2
+		}
+
+    path = {
+      leads_to_tech = EFS_cruiser2_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = EFS_improved_airplane_launcher
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 60
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+
+    categories = {
+      naval_equipment
+      cl_tech
+    }
+  }
+  EFS_cruiser2_tech = {
+
+    enable_equipments = {
+      cruiser2_equipment
+    }
+    enable_equipment_modules = {
+			cruiser_ship_engine_3
+		}
+
+    path = {
+      leads_to_tech = EFS_cruiser3_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = EFS_basic_cruiser_armor_scheme
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 77
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 2
+        has_war = yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cl_tech
+    }
+  }
+  EFS_cruiser3_tech = {
+
+    enable_equipments = {
+      cruiser3_equipment
+    }
+    enable_equipment_modules = {
+			cruiser_ship_engine_4
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 2
+        has_war = yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cl_tech
+    }
+  }
+  EFS_improved_airplane_launcher = {
+
+
+		enable_equipment_modules = {
+			ship_airplane_launcher_2
+		}
+
+		research_cost = 0.75
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		folder = {
+			name = EFS_naval_folder
+			position = {  x = 3 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 3.5
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+  EFS_basic_cruiser_armor_scheme = {
+
+		enable_equipment_modules = {
+			ship_armor_cruiser_2
+		}
+
+		path = {
+			leads_to_tech = EFS_improved_cruiser_armor_scheme
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+		folder = {
+			name = EFS_naval_folder
+			position = {  x = 3 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	EFS_improved_cruiser_armor_scheme = {
+
+		enable_equipment_modules = {
+			ship_armor_cruiser_3
+		}
+
+		path = {
+			leads_to_tech = EFS_advanced_cruiser_armor_scheme
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 79
+
+		folder = {
+			name = EFS_naval_folder
+			position = {  x = 3 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	EFS_advanced_cruiser_armor_scheme = {
+
+		enable_equipment_modules = {
+			ship_armor_cruiser_4
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 81
+
+		folder = {
+			name = EFS_naval_folder
+			position = {  x = 3 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+  EFS_carrier1_tech = {
+
+    enable_equipments = {
+      carrier1_equipment
+    }
+    enable_equipment_modules = {
+			ship_armor_carrier_deck
+			carrier_ship_engine_1
+      carrier_ship_engine_2
+			ship_deck_space
+		}
+
+    path = {
+      leads_to_tech = EFS_carrier2_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 60
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+
+    categories = {
+      naval_equipment
+      cv_tech
+    }
+  }
+  EFS_carrier2_tech = {
+
+    enable_equipments = {
+      carrier2_equipment
+    }
+    enable_equipment_modules = {
+			carrier_ship_engine_3
+		}
+
+    path = {
+      leads_to_tech = EFS_carrier3_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 2
+        has_war = yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cv_tech
+    }
+  }
+  EFS_carrier3_tech = {
+
+    enable_equipments = {
+      carrier3_equipment
+    }
+    enable_equipment_modules = {
+			carrier_ship_engine_4
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 2
+        has_war = yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      cv_tech
+    }
+  }
+  EFS_submarine1_tech = {
+
+    enable_equipments = {
+      submarine1_equipment
+    }
+    enable_equipment_modules = {
+			ship_torpedo_sub_1
+      sub_ship_engine_1
+		}
+
+    path = {
+      leads_to_tech = EFS_submarine2_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 60
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 0 }
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+    }
+  }
+  EFS_submarine2_tech = {
+
+    enable_equipments = {
+      submarine2_equipment
+    }
+    enable_equipment_modules = {
+			ship_torpedo_sub_2
+			sub_ship_engine_2
+		}
+
+    path = {
+      leads_to_tech = EFS_submarine3_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = EFS_basic_submarine_snorkel
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+    }
+  }
+  EFS_submarine3_tech = {
+
+    enable_equipments = {
+      submarine3_equipment
+    }
+    enable_equipment_modules = {
+			ship_torpedo_sub_3
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+    }
+  }
+  EFS_basic_submarine_snorkel = {
+
+		enable_equipment_modules = {
+			ship_sub_snorkel_1
+		}
+		path = {
+			leads_to_tech = EFS_improved_submarine_snorkel
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		folder = {
+			name = EFS_naval_folder
+			position = {  x = 2 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+	EFS_improved_submarine_snorkel = {
+
+		enable_equipment_modules = {
+			ship_sub_snorkel_2
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 50
+		xp_research_bonus = 0.3
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		folder = {
+			name = EFS_naval_folder
+			position = {  x = 2 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+  EFS_submarine_carrier1_tech = {
+
+    enable_equipments = {
+      submarine_carrier1_equipment
+    }
+    enable_equipment_modules = {
+			ship_torpedo_sub_3
+			sub_ship_engine_3
+      ship_extra_fuel_tank
+		}
+
+    path = {
+      leads_to_tech = EFS_submarine_carrier2_tech
+      research_cost_coeff = 1
+    }
+
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 4 y = 0 }
+    }
+
+    ai_will_do = {
+      factor = 2
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+      cv_tech
+    }
+  }
+  EFS_submarine_carrier2_tech = {
+
+    enable_equipments = {
+      submarine_carrier2_equipment
+    }
+    enable_equipment_modules = {
+			ship_torpedo_sub_4
+			sub_ship_engine_4
+		}
+
+    path = {
+      leads_to_tech = EFS_submarine_carrier3_tech
+      research_cost_coeff = 1
+    }
+    path = {
+			leads_to_tech = EFS_basic_submarine_snorkel
+			research_cost_coeff = 1
+		}
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 77
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 4 y = 4 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        is_historical_focus_on = yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+      cv_tech
+    }
+  }
+  EFS_submarine_carrier3_tech = {
+
+    enable_equipments = {
+      submarine_carrier3_equipment
+    }
+
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 4 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 0
+        is_historical_focus_on = yes
+      }
+    }
+
+    categories = {
+      naval_equipment
+      ss_tech
+      cv_tech
+    }
+  }
+  EFS_basic_torpedo = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = EFS_magnetic_detonator
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_improved_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+
+    path = {
+      leads_to_tech = EFS_mobilesuit_torpedo_1
+      research_cost_coeff = 1
+    }
+
+		enable_equipment_modules = {
+			ship_torpedo_1
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_magnetic_detonator = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_homing_torpedo
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_electric_torpedo
+			research_cost_coeff = 1
+		}
+
+		destroyer = {
+			torpedo_attack = 0.2
+		}
+		submarine = {
+			torpedo_attack = 0.2
+		}
+		cruiser = {
+			torpedo_attack = 0.2
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_homing_torpedo = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+		destroyer = {
+			torpedo_attack = 0.2
+		}
+		submarine = {
+			torpedo_attack = 0.2
+		}
+		cruiser = {
+			torpedo_attack = 0.2
+		}
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_electric_torpedo = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+
+		naval_torpedo_reveal_chance_factor = -0.25
+
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_improved_ship_torpedo_launcher = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_advanced_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_torpedo_2
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_advanced_ship_torpedo_launcher = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = EFS_modern_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_torpedo_3
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_modern_ship_torpedo_launcher = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			ship_torpedo_4
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+  EFS_mobilesuit_torpedo_1 = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+    path = {
+      leads_to_tech = EFS_mobilesuit_torpedo_2
+      research_cost_coeff = 1
+    }
+
+		enable_equipment_modules = {
+			misile_module_1
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = -4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+      modifier = {
+        factor = 20
+        OR = {
+          has_tech = rag79_tech
+          has_tech = rag79_g_tech
+          has_tech = rb79_n_tech
+        }
+      }
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+  EFS_mobilesuit_torpedo_2 = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 78
+    path = {
+      leads_to_tech = EFS_mobilesuit_torpedo_3
+      research_cost_coeff = 1
+    }
+
+		enable_equipment_modules = {
+			misile_module_2
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = -4 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 2
+      modifier = {
+        factor = 10
+        OR = {
+          has_tech = rag79_tech
+          has_tech = rag79_g_tech
+          has_tech = rb79_n_tech
+        }
+      }
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+  EFS_mobilesuit_torpedo_3 = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			misile_module_3
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = -4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+      modifier = {
+        factor = 20
+        OR = {
+          has_tech = rag79_tech
+          has_tech = rag79_g_tech
+          has_tech = rb79_n_tech
+        }
+      }
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+  rag79_tech = {
+
+    enable_equipments = {
+      rag79_equipment
+    }
+    enable_equipment_modules = {
+      vulcan_module_2
+      ship_armor_mobilesuit_2
+    }
+
+    path = {
+      leads_to_tech = rag79_g_tech
+      research_cost_coeff = 1
+    }
+    dependencies = {
+      rgm79_tech = 1
+    }
+
+    research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    start_year = 79
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 2
+        has_tech = plan_rx_tech
+      }
+      modifier = {
+        factor = 2
+        is_historical_focus_on = no
+      }
+    }
+
+    categories = {
+      naval_equipment
+      mobilesuit
+      naval_mobilesuit
+    }
+  }
+  rag79_g_tech = {
+
+    enable_equipments = {
+      rag79_g_equipment
+    }
+    enable_equipment_modules = {
+      ship_armor_mobilesuit_3
+    }
+
+    research_cost = 2
+    start_year = 79
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 10 }
+    }
+
+    ai_will_do = {
+      factor = 2
+      modifier = {
+        factor = 2
+        has_tech = plan_rx_tech
+      }
+      modifier = {
+        factor = 2
+        is_historical_focus_on = no
+      }
+    }
+
+    categories = {
+      naval_equipment
+      mobilesuit
+      naval_mobilesuit
+    }
+  }
+  rb79_n_tech = {
+		enable_equipments = {
+			rb79_n_equipment
+		}
+    enable_equipment_modules = {
+      arm_clow_module_1
+      long_spear_module_1
+      ship_armor_mobilesuit_1
+    }
+    research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    dependencies = {
+      rx76_tech = 1
+    }
+
+    folder = {
+      name = EFS_naval_folder
+      position = { x = 0 y = 8 }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 4
+        has_tech = plan_rx_tech
+      }
+      modifier = {
+        factor = 2
+        is_historical_focus_on = no
+      }
+    }
+
+    categories = {
+      naval_equipment
+      mobilesuit
+      naval_mobilesuit
+    }
+	}
+  EFS_transport = {
+
+		transport_capacity = -0.5
+		naval_invasion_capacity = 10
+
+		path = {
+			leads_to_tech = EFS_landing_craft
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 60
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+    ai_will_do = {
+			factor = 2
+      modifier = {
+        factor = 10
+        has_country_flag = strategic_maritime_intelligence_unit_is_yes
+      }
+		}
+
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	EFS_landing_craft = {
+
+		invasion_preparation = -0.5
+		amphibious_invasion_defence = 0.15
+		naval_invasion_capacity = 40
+
+		path = {
+			leads_to_tech = EFS_tank_landing_craft
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 77
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+      modifier = {
+        factor = 5
+        date > 77.1.1
+      }
+			modifier = {
+				factor = 10
+				has_war = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	EFS_tank_landing_craft = {
+
+		amphibious_invasion = 0.25
+		amphibious_invasion_defence = 0.5
+		naval_invasion_capacity = 100
+
+		research_cost = 1.5
+		start_year = 79
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 2
+      modifier = {
+        factor = 5
+        date > 79.1.1
+      }
+			modifier = {
+				factor = 5
+				has_war = yes
+			}
+		}
+
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+  EFS_damage_control_1 = {
+
+		research_cost = 2.5
+		path = {
+			leads_to_tech = EFS_damage_control_2
+			research_cost_coeff = 1
+		}
+		critical_receive_chance = -0.1
+		naval_critical_effect_factor = -0.1
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_damage_control_2 = {
+
+		research_cost = 2.5
+		path = {
+			leads_to_tech = EFS_damage_control_3
+			research_cost_coeff = 1
+		}
+		critical_receive_chance = -0.1
+		naval_critical_effect_factor = -0.1
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_damage_control_3 = {
+
+		research_cost = 2.5
+		critical_receive_chance = -0.1
+		naval_critical_effect_factor = -0.1
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+  EFS_basic_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = EFS_basic_light_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_basic_medium_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_basic_heavy_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_light_battery_1
+			ship_medium_battery_1
+			ship_light_medium_battery_1
+			ship_heavy_battery_1
+      ship_anti_air_1
+		}
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_basic_light_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_improved_light_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_basic_light_shell
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_light_battery_2
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = -4 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_improved_light_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = EFS_advanced_light_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_light_battery_3
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = -4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_advanced_light_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			ship_light_battery_4
+		}
+
+
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = -4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+	EFS_basic_light_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_improved_light_shell
+			research_cost_coeff = 1
+		}
+
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = -2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_improved_light_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = -2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+	EFS_basic_medium_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_improved_medium_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_basic_medium_shell
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_medium_battery_2
+			ship_light_medium_battery_2
+      ship_anti_air_2
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_improved_medium_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = EFS_advanced_medium_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_medium_battery_3
+			ship_light_medium_battery_3
+      ship_anti_air_3
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_advanced_medium_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			ship_medium_battery_4
+			ship_light_medium_battery_4
+      ship_anti_air_4
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_basic_medium_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_improved_medium_shell
+			research_cost_coeff = 1
+		}
+
+		cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_improved_medium_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+
+		cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+	EFS_basic_heavy_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_improved_heavy_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_basic_heavy_shell
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_heavy_battery_2
+			ship_super_heavy_battery_1
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_improved_heavy_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = EFS_advanced_heavy_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_heavy_battery_3
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_advanced_heavy_battery = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		enable_equipment_modules = {
+			ship_heavy_battery_4
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_basic_heavy_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_improved_heavy_shell
+			research_cost_coeff = 1
+		}
+
+		cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 6 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_improved_heavy_shell = {
+
+		xp_research_type = navy
+		xp_boost_cost = 25
+		xp_research_bonus = 0.3
+		research_cost = 2.5
+
+		start_year = 77
+
+
+		cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 6 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+	EFS_basic_secondary_battery = {
+
+		research_cost = 0.8
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = EFS_improved_secondary_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_secondaries_1
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_improved_secondary_battery = {
+
+		research_cost = 0.8
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_dp_secondary_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_secondaries_2
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+	EFS_dp_secondary_battery = {
+
+		research_cost = 0.8
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		enable_equipment_modules = {
+			dp_ship_secondaries
+			dp_light_battery
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 20
+			}
+		}
+
+		categories = {
+			naval_equipment
+		}
+	}
+
+  EFS_basic_naval_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = EFS_improved_naval_mines
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_submarine_mine_laying
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_mine_layer_1
+		}
+
+		enable_equipment_modules = {
+			ship_mine_sweeper_1
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 6
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	EFS_submarine_mine_laying = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 60
+
+		path = {
+			leads_to_tech = EFS_improved_submarine_mine_laying
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = {
+			ship_mine_layer_sub
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 0 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 6
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	EFS_improved_submarine_mine_laying = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		submarine = {
+			mines_planting = 0.2
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				factor = 6
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	EFS_improved_naval_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 75
+
+		path = {
+			leads_to_tech = EFS_advanced_naval_mines
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_degaussing
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 2 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 6
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	EFS_degaussing = {
+
+		research_cost = 1
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 76
+
+		naval_mines_effect_reduction = 0.5
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 2 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minesweeping
+			naval_equipment
+		}
+	}
+	EFS_advanced_naval_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		path = {
+			leads_to_tech = EFS_modern_naval_mines
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = EFS_airdrop_mines
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 5
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	EFS_airdrop_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 77
+
+		category_nav_bomber = {
+			mines_planting = 0.05
+		}
+		category_tac_bomber = {
+			mines_planting = 0.08
+		}
+		category_air_carrier = {
+			mines_planting = 0.13
+		}
+    category_air_assaultship = {
+      mines_planting = 0.17
+    }
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 7
+			}
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	EFS_modern_naval_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		path = {
+			leads_to_tech = EFS_airsweep_mines
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 0 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+	EFS_airsweep_mines = {
+
+		research_cost = 2
+    xp_research_type = navy
+    xp_boost_cost = 25
+		xp_research_bonus = 0.3
+
+		start_year = 79
+
+		category_nav_bomber = {
+			mines_sweeping = 0.1
+		}
+
+		category_tac_bomber = {
+			mines_sweeping = 0.15
+		}
+
+		folder = {
+			name = EFS_naval_folder
+			position = { x = 4 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		categories = {
+			naval_mines
+			naval_minesweeping
+			naval_equipment
+		}
+	}
+}

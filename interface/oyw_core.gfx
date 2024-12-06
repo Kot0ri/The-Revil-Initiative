@@ -1,0 +1,23 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_oyw_scroll_drager"
+		texturefile = "gfx/interface/oyw_scroll_drager.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_oyw_scroll_track"
+		size= {x = 12 y = 12 }
+		texturefile = "gfx/interface/oyw_scroll_track.dds"
+		borderSize = { x=5 y=5 }
+	}
+	corneredTileSpriteType = {
+		name = "GFX_oyw_close_button"
+		size= {x = 45 y = 45 }
+		texturefile = "gfx/interface/oyw_close_button.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_oyw_button"
+		size= {x = 273 y = 60 }
+		texturefile = "gfx/interface/oyw_button.dds"
+	}
+}

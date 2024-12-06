@@ -1,0 +1,151 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_ZEO_ms_folder_tab"
+		textureFile = "gfx//interface//techtree//ZEO_techtree_ms_tab.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_EFS_ms_folder_tab"
+		textureFile = "gfx//interface//techtree//EFS_techtree_ms_tab.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_ZEO_weapon_folder_tab"
+		textureFile = "gfx//interface//techtree//ZEO_techtree_weapon_tab.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_EFS_weapon_folder_tab"
+		textureFile = "gfx//interface//techtree//EFS_techtree_weapon_tab.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_ZEO_space_folder_tab"
+		textureFile = "gfx//interface//techtree//ZEO_techtree_space_tab.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_EFS_space_folder_tab"
+		textureFile = "gfx//interface//techtree//EFS_techtree_space_tab.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_efs_ms_techtree_bg"
+		textureFile = "gfx//interface//techtree//efs_ms_techtree_bg.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_zeo_ms_techtree_bg"
+		textureFile = "gfx//interface//techtree//zeo_ms_techtree_bg.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_efs_space_techtree_bg"
+		textureFile = "gfx//interface//techtree//EFS_space_techtree_bg.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_zeo_space_techtree_bg"
+		textureFile = "gfx//interface//techtree//ZEO_space_techtree_bg.dds"
+		allwaystransparent = yes
+	}
+
+	spriteType = {
+		name = "GFX_technology_mobilesuit_folder_small_unavailable_item_bg"
+		textureFile = "gfx//interface//tech_doctrine_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_mobilesuit_folder_small_available_item_bg"
+		textureFile = "gfx//interface//tech_doctrine_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_mobilesuit_folder_small_researched_item_bg"
+		textureFile = "gfx//interface//tech_landdoctrine_researched_item_bg.dds"
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_mobilesuit_folder_small_currently_researching_item_bg"
+		texturefile = "gfx//interface//tech_doctrine_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	spriteType = {
+		name = "GFX_technology_mobilesuit_folder_currently_researching_item_bg"
+		textureFile = "gfx//interface//tech_naval_currently_researching_item.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_mobilesuit_folder_available_item_bg"
+		textureFile = "gfx//interface//tech_naval_available_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_mobilesuit_folder_unavailable_item_bg"
+		textureFile = "gfx//interface//tech_naval_unavailable_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_technology_mobilesuit_folder_researched_item_bg"
+		textureFile = "gfx//interface//tech_naval_researched_item_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ZEO_mobilesuit_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/ZEO_ms_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_EFS_mobilesuit_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/EFS_ms_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEO_ms_weapon_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/ZEO_weapon_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_EFS_ms_weapon_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/EFS_weapon_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEO_space_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/ZEO_space_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_EFS_space_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/EFS_space_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEO_air_techs_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/air_techs_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_EFS_air_techs_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/air_techs_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEO_naval_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/naval_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_EFS_naval_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/naval_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_ZEO_armour_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/armour_folder_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_EFS_armour_folder_icon"
+		textureFile = "gfx/interface/techtree/icons/armour_folder_icon.dds"
+	}
+
+}

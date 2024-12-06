@@ -1,0 +1,1963 @@
+guiTypes = {
+
+  # ポケットの中の戦争
+	# 01 A 戦場まで何マイル 破壊
+  containerWindowType = {
+		name = "story_event_warinthepocket_01a_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_01_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_logo"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.01.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.01.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_01a"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.01a.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+	# 01 B 戦場まで何マイル 奪取
+  containerWindowType = {
+		name = "story_event_warinthepocket_01b_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_01_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.01.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.01.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_01b"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.01b.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+	# 01 C 戦場まで何マイル 失敗
+  containerWindowType = {
+		name = "story_event_warinthepocket_01c_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_01_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.01.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.01.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_01c"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.01c.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+
+	# 02 茶色の瞳に映るもの
+  containerWindowType = {
+		name = "story_event_warinthepocket_02_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_02_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.02.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.02.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_02"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.02.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+
+	# 03 A 河を渡って木立を抜けて 破壊
+	containerWindowType = {
+		name = "story_event_warinthepocket_03a_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_03_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.03.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.03.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_03a"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.03a.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+	# 03 B 河を渡って木立を抜けて 奪取
+	containerWindowType = {
+		name = "story_event_warinthepocket_03b_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_03_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.03.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.03.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_03b"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.03b.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+	# 03 C 河を渡って木立を抜けて 失敗
+	containerWindowType = {
+		name = "story_event_warinthepocket_03c_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_03_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.03.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.03.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_03c"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.03c.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+
+	# 04 A クリスマス作戦 破壊
+  containerWindowType = {
+		name = "story_event_warinthepocket_04a_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_04_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.04.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.04.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_04a"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.04a.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+	# 04 B クリスマス作戦 相打ち
+  containerWindowType = {
+		name = "story_event_warinthepocket_04b_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_04_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.04.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.04.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_04b"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.04b.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+	# 04 C クリスマス作戦 失敗
+  containerWindowType = {
+		name = "story_event_warinthepocket_04c_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_04_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.04.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.04.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_04c"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.04c.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+
+	# 05 A クリスマス作戦 核攻撃中止 
+  containerWindowType = {
+		name = "story_event_warinthepocket_05a_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_05_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.05.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.05.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_05"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.05a.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+	# 05 B クリスマス作戦 回避 
+  containerWindowType = {
+		name = "story_event_warinthepocket_05b_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_05_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.05.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.05.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_05"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.05b.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.continue"
+				clicksound = click_close
+			}
+		}
+	}
+
+	# 06 A ポケットの中の戦争
+  containerWindowType = {
+		name = "story_event_warinthepocket_06a_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_06_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.06.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.06.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_06"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.06a.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.06.a"
+				clicksound = click_close
+			}
+		}
+	}
+	# 06 B ポケットの中の戦争
+  containerWindowType = {
+		name = "story_event_warinthepocket_06b_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_06_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.06.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.06.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_06"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.06b.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.06.a"
+				clicksound = click_close
+			}
+		}
+	}
+
+	# 07 A もう一つの結末 核攻撃はなかった バーニィ逮捕
+  containerWindowType = {
+		name = "story_event_warinthepocket_07a_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_07_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.07.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.07.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_07"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.07a.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.07.a"
+				clicksound = click_close
+			}
+		}
+	}
+	# 07 B もう一つの結末 核攻撃があった サイクロプス隊継続
+  containerWindowType = {
+		name = "story_event_warinthepocket_07b_window"
+		position = { x=-550 y=-375 }
+		size = { width=1100 height=750 }
+		moveable = yes
+		Orientation = CENTER
+		clipping = no
+
+		show_sound = event_popup
+		hide_sound = menu_close_window
+
+		background = {
+			name = "story_event_background"
+			quadTextureSprite ="GFX_story_event_warinthepocket_07_bg"
+		}
+
+		buttonType = {
+			name = "story_event_close_button"
+			quadTextureSprite = "GFX_oyw_close_button"
+			position = { x=-100 y=55 }
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CLOSE"
+			clicksound = click_close
+		}
+
+		# タイトル
+		containerWindowType = {
+			name = "story_event_title"
+			position = { x=90 y=80 }
+			size = { width=920 height=300 }
+			moveable = yes
+
+			iconType = {
+				name = "story_event_title_icon"
+				spriteType ="GFX_story_event_warinthepocket_title"
+				position = { x = 250 y = 0 }
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "story_event_title_label"
+				position = { x = 0 y = 150 }
+				font = "hoi_30"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.07.t"
+				format = center
+			}
+			instantTextBoxType = {
+				name = "story_event_title_date"
+				position = { x = 0 y = 190 }
+				font = "hoi_18"
+				maxWidth = 920
+				maxHeight = 100
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.07.date"
+				format = center
+			}
+		}
+
+		# ビジュアル
+		containerWindowType = {
+			name = "story_event_image"
+			position = { x=90 y=317 }
+			size = { width = 450 height = 353 }
+			moveable = yes
+
+      iconType = {
+  			name = "story_event_image_image"
+  			spriteType ="GFX_story_event_warinthepocket_07"
+				alwaystransparent = yes
+			}
+		}
+
+		# テキストエリア
+		containerWindowType = {
+			name = "story_event_text"
+			position = { x = 560 y = 317 }
+			size = { width = 490 height = 253 }
+			margin = { top = 0 left = 0 bottom = 0 right = 25 }
+			drag_scroll = { left middle }
+			verticalScrollbar = "oyw_right_vertical_slider"
+			clipping = yes
+			smooth_scrolling = yes
+
+			background = {
+				name = "storymission_mission_scrollbar_background"
+				quadTextureSprite = "GFX_tiled_window_transparent"
+			}
+
+			instantTextBoxType = {
+				name = "story_event_text_text"
+				position = { x = 0 y = 0 }
+				font = "hoi_20b"
+				maxWidth = 450
+				maxHeight = 353
+				borderSize = {x = 0 y = 0 }
+				text = "warinthepocket_se.07b.d"
+				format = left
+			}
+		}
+
+		# ボタンエリア
+		containerWindowType = {
+			name = "story_event_buttons"
+			position = { x = 420 y = 600 }
+			size = { width = 920 height = 150 }
+
+			buttonType = {
+				name = "story_event_ok_button"
+				position = { x = 0 y = 0 }
+				clicksound = click_close
+				quadTextureSprite ="GFX_oyw_button"
+				buttonFont = "hoi_18"
+				buttonText = "warinthepocket_se.07.a"
+				clicksound = click_close
+			}
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+guiTypes = {
+	containerWindowType = {
+		name = "oyw_colony_drop_container"
+		position = { x=20 y=657}
+		size = { width=436 height=796 }
+
+		buttonType = {
+			name = "oyw_colony_drop"
+			quadTextureSprite ="GFX_colony_drop_button"
+			position = { x= 80 y = 0 }
+			pdx_tooltip = "COLONY_DROP_BUTTON_DESC"
+			pdx_tooltip_delayed = "COLONY_DROP_BUTTON_DETAIL"
+		}
+	}
+}

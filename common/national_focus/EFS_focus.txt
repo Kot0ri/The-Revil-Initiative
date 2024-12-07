@@ -2842,4 +2842,24 @@ focus = {
 	release = TIT
   }
 	}
+
+	focus = {
+		id = efsf_deal_with_collaborators
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 19
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_begin_post_war_military_reconstruction
+		}
+		available = {
+		}
+		relative_position_id = efsf_begin_post_war_military_reconstruction
+		completion_reward = {
+		
+		}
+	}
 }

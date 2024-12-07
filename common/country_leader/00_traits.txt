@@ -427,6 +427,15 @@ special_service_trait = {
 	war_support_factor = 0.1
 	justify_war_goal_time = -0.25
 	}
+	#tabor
+	esoteric_monarchist = {
+		sprite = 13
+		random = no
+	aristocracy_drift = 0.05
+	supremacist_drift = 0.05
+	monthly_population = -5
+	stability_factor = -0.05
+	}
 
 	oliver_may_trait = {
 		random = no

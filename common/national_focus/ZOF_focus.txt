@@ -15,6 +15,7 @@ focus_tree = {
 		icon = GFX_goal_gravity_front_line
 		cost = 5
 		x = 2
+		x = 2
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -121,6 +122,55 @@ focus_tree = {
 		y = 1
 		prerequisite ={ focus = ZOF_Bejing_Capture_Operation }
 		relative_position_id = ZOF_Bejing_Capture_Operation
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_kaigun_keikaku
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 6
+		y = 1
+		prerequisite ={ focus = ZOF_Bejing_Capture_Operation }
+		relative_position_id = ZOF_Bejing_Capture_Operation
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_hondo_shinryaku
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_kaigun_keikaku }
+		relative_position_id = ZOF_kaigun_keikaku
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_göttlicher_windstoß
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = ZOF_hondo_shinryaku }
+		prerequisite ={ focus = ZOF_Büro_der_Asiatischen_vereinigung }
+		relative_position_id = ZOF_hondo_shinryaku
 		ai_will_do = {
 			factor = 1
 		}
@@ -334,6 +384,7 @@ focus_tree = {
 		id = ZOF_Begin_research_Efforts
 		icon = GFX_goal_zeon_new_weapon
 		cost = 5
+		x = 14
 		x = 14
 		y = 0
 		

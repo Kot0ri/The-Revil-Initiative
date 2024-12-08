@@ -1,0 +1,1097 @@
+focus_tree = {
+	id = OCZ
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = OCZ
+		}
+	}
+	default = no
+
+	focus = {
+		id = OCZ_Civilian_Placation_Path_Start
+		icon = GFX_goal_gravity_front_line
+		cost = 5
+		x = 4
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+	
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = OCZ_Allow_Civilian_Contractors
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Gday_Mate_Initiative}
+		relative_position_id = OCZ_Gday_Mate_Initiative
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = OCZ_Civil_Defense_Initiative
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = OCZ_Gday_Mate_Initiative}
+		relative_position_id = OCZ_Gday_Mate_Initiative
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Clandestine_Operations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Civil_Defense_Initiative}
+		relative_position_id = OCZ_Civil_Defense_Initiative
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Fortify_Australia
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = OCZ_Clandestine_Operations}
+		prerequisite ={ focus = OCZ_Allow_Civilian_Contractors}
+		relative_position_id = OCZ_Clandestine_Operations
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+					336 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#border inland bunker
+				add_building_construction = {
+					type = bunker
+					province = 4310
+					level = 2
+					instant_build = yes
+				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+			}
+
+			333 = {
+				#Fortify entire coastline
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+
+				#Extra fort on naval bases
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = OCZ_Our_Seas_and_Stars
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 2
+		prerequisite ={ focus = OCZ_The_Down_Under_Militia}
+		prerequisite ={ focus = OCZ_Fortify_Australia}
+		relative_position_id = OCZ_The_Down_Under_Militia
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+					add_tech_bonus = {
+				name = OCZ_Our_Seas_and_Stars
+				bonus = 1.0
+				uses = 1
+				category = para_tech
+			}
+			if = {
+				limit = { has_dlc = "Arms Against Tyranny" }
+				add_doctrine_cost_reduction = {
+					cost_reduction = 0.5
+					uses = 1
+					category = special_forces_doctrine
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = OCZ_Research_Cooperative
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 1
+		prerequisite ={ focus = OCZ_Gday_Mate_Initiative }
+		relative_position_id = OCZ_Gday_Mate_Initiative
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Provide_aid_to_Sepratists
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = OCZ_Gday_Mate_Initiative}
+		relative_position_id = OCZ_Gday_Mate_Initiative
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_The_Down_Under_Militia
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Provide_aid_to_Sepratists}
+		relative_position_id = OCZ_Provide_aid_to_Sepratists
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		army_experience = 25
+		}
+	}
+
+
+	focus = {
+		id = OCZ_Civilian_Aid_Program
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = OCZ_Civilian_Placation_Path_Start}
+		relative_position_id = OCZ_Civilian_Placation_Path_Start
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Cultivate_Good_Will
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = OCZ_Civilian_Placation_Path_Start}
+		relative_position_id = OCZ_Civilian_Placation_Path_Start
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Gday_Mate_Initiative
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = OCZ_Cultivate_Good_Will}
+		prerequisite ={ focus = OCZ_Civilian_Aid_Program}
+		relative_position_id = OCZ_Civilian_Placation_Path_Start
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+
+
+	focus = {
+		id = OCZ_Raison_Detre
+		icon = GFX_goal_zeon_new_weapon
+		cost = 5
+		x = 13
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			war_length_with = {
+				tag = EFS
+				months = 6
+			}
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = OCZ_Thunderclap_in_the_Wilderness
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 6
+		y = 1
+		prerequisite ={ focus = OCZ_Raison_Detre }
+		relative_position_id = OCZ_Raison_Detre
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Stall_for_Time
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = OCZ_Thunderclap_in_the_Wilderness }
+		relative_position_id = OCZ_Thunderclap_in_the_Wilderness
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = OCZ_Seize_Torrington_Base
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Staircase_to_the_Moon
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Stall_for_Time }
+		relative_position_id = OCZ_Stall_for_Time
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Seize_Torrington_Base
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = OCZ_Thunderclap_in_the_Wilderness }
+		relative_position_id = OCZ_Thunderclap_in_the_Wilderness
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = OCZ_Stall_for_Time
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_The_Fight_for_Oceania
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Seize_Torrington_Base }
+		relative_position_id = OCZ_Seize_Torrington_Base
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_development_of_jungle_use_ms
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = OCZ_Raison_Detre }
+		relative_position_id = OCZ_Raison_Detre
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_anti_partisan_improvements
+		icon = GFX_goal_occupation_policy
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = OCZ_development_of_jungle_use_ms }
+		relative_position_id = OCZ_development_of_jungle_use_ms
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_multi-use_high-caliber_weapons
+		icon = GFX_goal_improvement_of_bullet-proof_weapons
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = OCZ_development_of_jungle_use_ms }
+		relative_position_id = OCZ_development_of_jungle_use_ms
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_improvised_ms_doctrine
+		icon = GFX_goal_MS_and_ground_forces_collaboration
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = OCZ_anti_partisan_improvements }
+		prerequisite = {focus = OCZ_multi-use_high-caliber_weapons}
+		relative_position_id = OCZ_anti_partisan_improvements
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_ms_flight_development
+		icon = GFX_goal_zeon_new_weapon
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_improvised_ms_doctrine}
+		relative_position_id = OCZ_improvised_ms_doctrine
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_improved_ms_flight
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_ms_flight_development}
+		relative_position_id = OCZ_ms_flight_development
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_A_way_to_end_the_war
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = OCZ_Raison_Detre }
+		relative_position_id = OCZ_Raison_Detre
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_orders_from_the_supreme_commander
+		icon = GFX_goal_dominance_of_human_survival_theory2
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_A_way_to_end_the_war }
+		relative_position_id = OCZ_A_way_to_end_the_war
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_australia_development_team
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = OCZ_orders_from_the_supreme_commander }
+		relative_position_id = OCZ_orders_from_the_supreme_commander
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = OCZ_australia_front
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Astaroth_Project
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_australia_development_team }
+		relative_position_id = OCZ_australia_development_team
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Adopt_the_MS-14D_Gelgoog
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = OCZ_orders_from_the_supreme_commander }
+		relative_position_id = OCZ_orders_from_the_supreme_commander
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = OCZ_Rhinoceros_Type_A
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Adopt_the_MS-14D_Gelgoog }
+		relative_position_id = OCZ_Adopt_the_MS-14D_Gelgoog
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Rhinoceros_Type_B
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Rhinoceros_Type_A}
+		relative_position_id = OCZ_Rhinoceros_Type_A
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_australia_front
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 0
+	
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = OCZ_Civilian_Placation_Path_Start
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Fortify_Alice_Springs
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = OCZ_australia_front }
+		relative_position_id = OCZ_australia_front
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			war_length_with = {
+				tag = EFS
+				months = 12
+			}
+		}
+		completion_reward = {
+			975 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_sieze_torrington_base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = OCZ_australia_front }
+		relative_position_id = OCZ_australia_front
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_build_up_hughenden_base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = OCZ_australia_front }
+		relative_position_id = OCZ_australia_front
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			975 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type =  arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  air_base
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_The_Administration_of_Oceania
+		icon = GFX_goal_zeon_new_weapon
+		cost = 5
+		x = 26
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_connections_in_the_homeland
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = OCZ_The_Administration_of_Oceania }
+		relative_position_id = OCZ_The_Administration_of_Oceania
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_coordinate_with_zeon_high_command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = OCZ_The_Administration_of_Oceania }
+		relative_position_id = OCZ_The_Administration_of_Oceania
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = OCZ_request_additional_resources
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = OCZ_coordinate_with_zeon_high_command focus = OCZ_connections_in_the_homeland }
+		relative_position_id = OCZ_The_Administration_of_Oceania
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_offsite_building = {
+			type = arms_factory
+			level = 5
+		}
+		add_political_power = -50
+		}
+	}
+
+	focus = {
+		id = OCZ_Naval_Operations_Command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = OCZ_request_additional_resources }
+		relative_position_id = OCZ_request_additional_resources
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = OCZ_Special_Operations_Command
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Special_Operations_Command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = OCZ_request_additional_resources }
+		relative_position_id = OCZ_request_additional_resources
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = OCZ_Naval_Operations_Command
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Amphibious_Operations_Specialization
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Special_Operations_Command }
+		relative_position_id = OCZ_Special_Operations_Command
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Merge_Civilian_and_Military_Sectors
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = OCZ_Amphibious_Operations_Specialization }
+		relative_position_id = OCZ_Amphibious_Operations_Specialization
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = OCZ_A_Force_to_be_Reckoned_With
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Amphibious_Operations_Specialization }
+		relative_position_id = OCZ_Amphibious_Operations_Specialization
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = OCZ_Rule_the_Abyss
+		}
+		mutually_exclusive = {
+			focus = OCZ_Integrated_Command_Structures
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Advanced_Battle_Simulators
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_A_Force_to_be_Reckoned_With  }
+		relative_position_id = OCZ_A_Force_to_be_Reckoned_With
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_study_federation_tactics
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = OCZ_A_Force_to_be_Reckoned_With  }
+		relative_position_id = OCZ_A_Force_to_be_Reckoned_With
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = OCZ_Establish_the_Marines
+		icon = GFX_goal_general_meeting
+			cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Naval_Operations_Command }
+		relative_position_id = OCZ_Naval_Operations_Command
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_recieve_additonal_aid
+		icon = GFX_goal_general_meeting
+			cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = OCZ_Establish_the_Marines }
+		relative_position_id = OCZ_Establish_the_Marines
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_offsite_building = {
+			type = arms_factory
+			level = 2
+		}
+		}
+	}
+
+	focus = {
+		id = OCZ_Rule_the_Abyss
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Establish_the_Marines }
+		relative_position_id = OCZ_Establish_the_Marines
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = OCZ_A_Force_to_be_Reckoned_With
+		}
+		mutually_exclusive = {
+			focus = OCZ_Integrated_Command_Structures
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	
+	focus = {
+		id = OCZ_create_special_assualt_division
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Rule_the_Abyss  }
+		relative_position_id = OCZ_Rule_the_Abyss
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_increase_production_quotas
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite ={ focus = OCZ_Rule_the_Abyss  }
+		relative_position_id = OCZ_Rule_the_Abyss
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Cooperate_with_California_Base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite ={ focus = OCZ_Special_Operations_Command focus = OCZ_Naval_Operations_Command  }
+		relative_position_id = OCZ_request_additional_resources
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_Integrated_Command_Structures
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_Cooperate_with_California_Base  }
+		relative_position_id = OCZ_Cooperate_with_California_Base
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = OCZ_A_Force_to_be_Reckoned_With
+		}
+		mutually_exclusive= {
+			focus = OCZ_Rule_the_Abyss
+		}
+		completion_reward = {
+		
+		}
+	}
+}

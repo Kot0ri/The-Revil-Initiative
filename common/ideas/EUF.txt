@@ -2,6 +2,44 @@ ideas = {
 
 	country = {
 
+		Fallout_of_1993 = {
+			
+			allowed = {
+				original_tag = EUF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.5
+				monthly_population = -200
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		2020_accords = {
+
+		allowed = {
+			original_tag = EUF
+		}
+	
+		allowed_civil_war = {
+			always = yes
+		}
+	
+		removal_cost = -1
+		
+		modifier = {
+			max_command_power = -40
+			experience_gain_army_factor = -0.25
+			training_time_army_factor = 0.25
+		}
+	}
+
 		EFGF_Command_Branch = {
 			
 			allowed = {

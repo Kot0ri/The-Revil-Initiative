@@ -14,7 +14,7 @@ focus_tree = {
 		id = VBC_tyrant_of_the_moon
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 10
+		x = 5
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -27,10 +27,112 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VBC_rig_elections
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_tyrant_of_the_moon
+		prerequisite = {focus = VBC_tyrant_of_the_moon}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_maintain_social_status_qou
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = VBC_revitalize_lower_economic_sector
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_tyrant_of_the_moon
+		prerequisite = {focus = VBC_tyrant_of_the_moon}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_institute_fraudulent_welfare_systems
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_maintain_social_status_qou
+		prerequisite = {focus = VBC_maintain_social_status_qou}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_maintain_social_status_qou
+		prerequisite = {focus = VBC_maintain_social_status_qou}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_revitalize_lower_economic_sector
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = VBC_maintain_social_status_qou
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_tyrant_of_the_moon
+		prerequisite = {focus = VBC_tyrant_of_the_moon}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
 		id = VBC_merchant_of_death
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 15
+		x = 13
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -52,7 +154,26 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_completed_focus = ZEO_opposition_to_the_zabi_family
+			ZEO = { 	has_completed_focus = ZEO_opposition_to_the_zabi_family }
+		}
+		relative_position_id = VBC_merchant_of_death
+		prerequisite = {focus = VBC_merchant_of_death}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_intervene_in_levant
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			MEZ = { has_civil_war = yes }
 		}
 		relative_position_id = VBC_merchant_of_death
 		prerequisite = {focus = VBC_merchant_of_death}

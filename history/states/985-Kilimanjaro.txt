@@ -1,0 +1,28 @@
+state={
+	id=985
+	name="Kilimanjaro"
+	manpower = 185440
+	state_category= underbase
+
+	history={
+		owner = AFZ
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			
+		}
+		victory_points = {
+			10962  5 
+		}
+		
+		add_core_of = AFZ
+
+	}
+
+	provinces={
+		10962 
+	}
+	buildings_max_level_factor=1.000
+	
+	local_supplies=6.000
+}

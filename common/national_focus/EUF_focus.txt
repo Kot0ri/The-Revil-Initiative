@@ -21,6 +21,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_completed_focus = EUF_legacy_of_1993_war
+		}
 		completion_reward = {
 			
 		}
@@ -104,6 +107,38 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = EUF_legacy_of_1993_war
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 16
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_ideas = Fallout_of_1993
+		}
+	}
+
+	focus = {
+		id = EUF_memoirs_of_2020_accords
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EUF_legacy_of_1993_war
+		prerequisite = {
+			focus = EUF_legacy_of_1993_war
+		}
+		completion_reward = {
+			add_ideas = 2020_accords
+		}
+	}
+
 focus = {
 	id = EUF_foundation_of_democracy
 	icon = GFX_goal_efsf_mobile_headquarters
@@ -112,6 +147,9 @@ focus = {
 	y = 0
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = EUF_legacy_of_1993_war
 	}
 	completion_reward = {
 		
@@ -126,6 +164,9 @@ focus = {
 	y = 0
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = EUF_legacy_of_1993_war
 	}
 	completion_reward = {
 		
@@ -157,6 +198,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_completed_focus = EUF_memoirs_of_2020_accords
+	}
 	completion_reward = {
 		
 	}
@@ -183,7 +227,7 @@ focus = {
 }
 
 focus = {
-	id = EUF_intergration_with_efgf
+	id = EUF_continue_intergration_with_efgf
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
 	x = 0
@@ -205,6 +249,24 @@ focus = {
 }
 
 focus = {
+	id = EUF_joint_development_team
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_cooperation_with_the_efgf
+	prerequisite = { focus = EUF_cooperation_with_the_efgf }
+
+	prerequisite = { focus = EUF_memoirs_of_2020_accords }
+}
+
+focus = {
 	id = EUF_animosity_towards_efgf
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
@@ -212,6 +274,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = EUF_cooperate_with_europa
 	}
 	completion_reward = {
 		
@@ -238,7 +303,7 @@ focus = {
 }
 
 focus = {
-	id = EUF_maintain_our_own_forces
+	id = EUF_secret_rearmament
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
 	x = 0
@@ -966,8 +1031,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_intergration_with_efgf
-	prerequisite = { focus = EUF_intergration_with_efgf }
+	relative_position_id = EUF_continue_intergration_with_efgf
+	prerequisite = { focus = EUF_continue_intergration_with_efgf }
 }
 
 focus = {
@@ -985,8 +1050,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_intergration_with_efgf
-	prerequisite = { focus = EUF_intergration_with_efgf }
+	relative_position_id = EUF_continue_intergration_with_efgf
+	prerequisite = { focus = EUF_continue_intergration_with_efgf }
 }
 
 focus = {
@@ -1020,8 +1085,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_maintain_our_own_forces
-	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_secret_rearmament
+	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
 }
 
 focus = {
@@ -1071,9 +1136,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	mutually_exclusive = {
-		focus = EUF_air_interception
-	}
+	
 	completion_reward = {
 	
 	}
@@ -1090,9 +1153,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	mutually_exclusive = {
-		focus = EUF_air_interception
-	}
+
 	completion_reward = {
 	
 	}
@@ -1115,8 +1176,8 @@ focus = {
 	completion_reward = {
 	add_ideas = austrian_maneuvers
 	}
-	relative_position_id = EUF_maintain_our_own_forces
-	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_secret_rearmament
+	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
 }
 
 focus = {
@@ -1134,8 +1195,8 @@ focus = {
 	completion_reward = {
 	add_ideas = peoples_army
 	}
-	relative_position_id = EUF_maintain_our_own_forces
-	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_secret_rearmament
+	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
 }
 
 focus = {
@@ -1225,8 +1286,8 @@ focus = {
 			}
 		}
 	}
-	relative_position_id = EUF_maintain_our_own_forces
-	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_secret_rearmament
+	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
 }
 
 focus = {
@@ -1279,8 +1340,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_maintain_our_own_forces
-	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_secret_rearmament
+	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
 }
 
 focus = {
@@ -1354,8 +1415,8 @@ focus = {
 	completion_reward = {
 	add_ideas = King_of_Battle
 	}
-	relative_position_id = EUF_maintain_our_own_forces
-	prerequisite = { focus = EUF_maintain_our_own_forces focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_secret_rearmament
+	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
 }
 
 focus = {

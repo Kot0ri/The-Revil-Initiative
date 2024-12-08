@@ -214,7 +214,7 @@ AXS_MS_01 = {
 }
 ZEO_MS_02 = {
   name = "Special Force"
-  for_countries = { ZEO }
+  for_countries = { axs }
   can_use = { always = yes }
   division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
   fallback_name = "%d. Special Force"
@@ -236,7 +236,7 @@ ZEO_MS_02 = {
 }
 ZEO_Arm_01 = {
   name = "Armoured Division"
-  for_countries = { ZEO }
+  for_countries = { axs }
   can_use = { always = yes }
   division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
   fallback_name = "%d. Armoured Division"
@@ -346,7 +346,7 @@ ZEO_Arm_01 = {
 }
 ZEO_Inf_01 = {
   name = "Infantry Division"
-  for_countries = { ZEO }
+  for_countries = { axs }
   can_use = { always = yes }
   division_types = { "infantry" }
   fallback_name = "%d. Infantry Division"
@@ -355,7 +355,7 @@ ZEO_Inf_01 = {
 }
 ZEO_Mot_01 = {
   name = "Motorized Division"
-  for_countries = { ZEO }
+  for_countries = { axs }
   can_use = { always = yes }
   division_types = { "motorized" }
   fallback_name = "%d. Motorized Division"
@@ -628,7 +628,7 @@ ZEO_Mot_01 = {
 }
 ZEO_Mec_01 = {
   name = "Mechanized Division"
-  for_countries = { ZEO }
+  for_countries = { axs }
   can_use = { always = yes }
   division_types = { "mechanized" }
   fallback_name = "%d. Mechanized Division"
@@ -638,7 +638,7 @@ ZEO_Mec_01 = {
 }
 ZEO_Mnt_01 = {
   name = "Mountain Division"
-  for_countries = { ZEO }
+  for_countries = { axs }
   can_use = { always = yes }
   division_types = { "mountaineers" }
   fallback_name = "%d. Mountain Division"
@@ -748,7 +748,7 @@ ZEO_Mnt_01 = {
 }
 ZEO_Mar_01 = {
   name = "Marine Division"
-  for_countries = { ZEO }
+  for_countries = { axs }
   can_use = { always = yes }
   division_types = { "marine" }
   fallback_name = "%d. Marine Combat Brigade"
@@ -758,7 +758,7 @@ ZEO_Mar_01 = {
 }
 ZEO_Par_01 = {
   name = "Paratrooper Division"
-  for_countries = { ZEO }
+  for_countries = { axs }
   can_use = { always = yes }
   division_types = { "paratrooper" }
   fallback_name = "%d. Paratrooper Division"

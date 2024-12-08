@@ -1,0 +1,33 @@
+
+state={
+	id=984
+	name="Dakar"
+	manpower = 1638000
+	resources={
+		steel=3 # was: 4
+	}
+	
+	state_category = large_city
+
+	history={
+		owner = EFG
+		add_core_of = EFG
+		victory_points = {
+			4948 25 
+		}
+		
+		buildings = {
+			infrastructure = 4
+			air_base = 4
+			4948 = {
+				naval_base = 3
+			}
+		}
+	}
+
+	provinces={
+		 4948 
+	}
+
+	local_supplies=1.0 
+}

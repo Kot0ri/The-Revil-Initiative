@@ -76,6 +76,10 @@ EUF_horatio_kitchner={
 }
 
 #field marshals
+
+
+#generals
+
 EUF_michael_colmatta={
 	name=EFS_michael_colmatta
 	portraits={
@@ -105,7 +109,7 @@ EUF_michael_colmatta={
 			}
 		}
 	}
-	field_marshal={
+	corps_commander={
 		traits={ reaper_vampire harsh_leader infantry_officer armor_officer }
 		skill=3
 		attack_skill=3
@@ -114,8 +118,6 @@ EUF_michael_colmatta={
 		logistics_skill=4
 	}
 }
-
-#generals
 
 EUF_ben_barberry={
 	name=EFS_ben_barberry

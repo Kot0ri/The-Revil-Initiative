@@ -94,6 +94,28 @@ EFG_gopp={
 		}
 	}
 
+	##field marshals
+
+	EFG_louis_thomson={
+		name="Gopp"
+		portraits={
+			civilian={
+				large= "gfx/leaders/EFG/louis_thomson.dds"
+			}
+			military={
+				large= "gfx/leaders/EFG/louis_thomson.dds"
+			}
+		}
+		field_marshal = {
+			traits = {	defensive_doctrine engineer_officer skilled_staffer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
 	#Generals
 	EFG_kimberly_hayman={
 		name="Kimberly Hayman"

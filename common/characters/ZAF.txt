@@ -1,0 +1,81 @@
+characters={
+	##Leaders
+
+	ZAF_herrmann_wissmann ={
+		name="Herrmann Wissmann"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZAF/herrmann_wissmann.dds"
+			}
+			army={
+				large="gfx/leaders/ZAF/herrmann_wissmann.dds"
+			}
+		}
+		country_leader={
+			ideology= military_administration
+			traits={  }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits={ organizer desert_fox jungle_rat }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	## field marshals
+
+	ZAF_neuen_bitter ={
+		name="Neuen Bitter"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZAF/neuen_bitter.dds"
+			}
+			army={
+				large="gfx/leaders/ZAF/neuen_bitter.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = neun_bitter
+			traits = { army_chief_maneuver_2 }
+		}
+		field_marshal = {
+			traits={zabi_party organizer offensive_doctrine }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	##generals
+
+	##pilots
+	ZAF_desert_rommel ={
+		name="Deseert Rommel"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZAF/desert_rommel.dds"
+			}
+			army={
+				large="gfx/leaders/ZAF/desert_rommel.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot desert_fox organizer harsh_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+
+
+}

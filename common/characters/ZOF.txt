@@ -1,5 +1,31 @@
 characters={
 	##Leaders
+
+	ZOF_eugen_wolf ={
+		name="Eugen Wolf"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/eugen_wolf.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/eugen_wolf.dds"
+			}
+		}
+		country_leader={
+			ideology= military_administration
+			traits={  }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits={ offensive_doctrine }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
 	ZOF_ginias_sahalin ={
 		name="Ginias Sahalin"
 		portraits={

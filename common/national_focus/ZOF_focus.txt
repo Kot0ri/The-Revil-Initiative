@@ -643,7 +643,11 @@ focus_tree = {
 		
 		}
 		completion_reward = {
-		
+			set_politics = {
+				ruling_party = supremacist
+				elections_allowed = no
+				election_frequency = 48
+			}
 		}
 	}
 

@@ -44,6 +44,37 @@ EUF_jean_moreau={
 		coordination_skill = 5
 	}
 }
+
+EUF_horatio_kitchner={
+	name="Horatio Kitchner"
+	portraits={
+		civilian={
+			large="gfx/leaders/EUF/horatio_kitchner.dds"
+		}
+		army={
+			large="gfx/leaders/EUF/horatio_kitchner.dds"
+		}
+	}
+	country_leader={
+		ideology= earthnoid_supremacist
+		traits={ hawk }
+		expire="1000.1.1.1"
+	}
+	advisor = {
+		slot = high_command
+		idea_token = horatio_kitchner
+		traits = { army_armored_2 }
+	}
+	field_marshal = {
+		traits = {	trickster organizer logistics_wizard politically_connected }
+		skill = 5
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+
 #field marshals
 EUF_michael_colmatta={
 	name=EFS_michael_colmatta

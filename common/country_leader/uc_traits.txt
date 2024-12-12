@@ -1,0 +1,244 @@
+leader_traits = {
+#ginias
+scion_of_the_sahalin_family = {
+	random = no
+	research_speed_factor = 0.02
+}
+hemoptysis = {
+	random = no
+	political_power_gain = -0.02
+}
+
+#aina
+heartfelt_negotiator = {
+	random = no
+	stability_factor = 0.1
+	war_support_factor = -0.05
+	improve_relations_maintain_cost_factor = -0.5
+}
+
+	#Dozle
+	hero_to_the_troops = {
+		random = no
+		war_support_factor = 0.2
+	}
+
+	well_respected = {
+		random = no
+		stability_factor = 0.2
+	}
+
+	mission_focused = {
+		random = no
+		surrender_limit = 0.70
+	}
+
+#Zane Trait
+	industrial_tycoon = {
+	sprite = 10
+	random = no
+	production_speed_infrastructure_factor = 0.1
+	production_speed_rail_way_factor = 0.1
+	production_speed_arms_factory_factor = 0.1
+	}
+
+#EU Trait
+	parlimentary_system = {
+	sprite = 10
+	random = no
+	political_advisor_cost_factor = -0.5
+	political_power_gain = 0.2
+	stability_factor = -0.1
+	}
+
+#Marcenas
+	chairman_of_the_Settlement_Issues_Council = {
+	sprite = 10
+	random = no
+	political_power_gain = 0.15
+	party_popularity_stability_factor = 0.15
+	}
+
+#Oxner
+	head_of_earthnoid_supremacism = {
+		sprite = 10
+		random = no
+		political_power_gain = 0.05
+		supremacist_drift = 0.05
+		recruitable_population_factor = 0.05
+		}
+
+#Gopp
+Chairman_of_the_Earth_Federation_Council  = {
+	sprite = 10
+	random = no
+	political_power_gain = 0.2
+	supremacist_drift = 0.01
+	recruitable_population_factor = 0.02
+	party_popularity_stability_factor = 0.1
+	}
+
+Mole_of_Jaburo  = {
+		sprite = 10
+		random = no
+		research_speed_factor = -0.15
+		}
+
+
+#adenauer paraya
+Vice_Foreign_Minister = {
+	random = no
+	sprite = 13
+	improve_relations_maintain_cost_factor = -0.1
+	enemy_justify_war_goal_time = -0.3
+	trade_opinion_factor = 0.2
+}
+
+#john bauer
+Finance_Minister = {
+	random = no
+	sprite = 13
+	political_power_gain = 0.05
+	consumer_goods_factor = -0.15
+}
+
+#hundley
+Head_of_Federal_Criminal_Police_Organization = {
+	random = no
+	sprite = 13
+	no_compliance_gain = 1
+	required_garrison_factor = -0.5
+	resistance_activity = -0.5
+	resistance_damage_to_garrison_on_our_occupied_states = -0.15
+	resistance_decay_on_our_occupied_states = 0.2
+}
+
+
+#Gihren
+	iq240 = {
+		random = no
+		max_planning = 0.2
+		war_support_factor = 0.1
+		max_command_power = 50
+	}
+	supreme_leader = {
+		random = no
+		political_power_gain = 0.05
+		war_support_factor = 0.15
+		conscription_factor = 0.1
+		army_core_defence_factor = 0.1
+		surrender_limit = 0.1
+	}
+
+#Icelina
+heir_of_the_eschonbach_family = {
+		random = no
+		compliance_gain = 0.2
+		consumer_goods_factor = -0.05
+	}
+
+#Casval
+
+	kings_return = {
+		random = no
+		stability_factor = 0.15
+		war_support_factor = 0.1
+		drift_defence_factor = 0.3
+		opinion_gain_monthly_same_ideology_factor = 0.15
+	}
+
+#engeist
+Vice_President_of_Colony_Public_Corporation = {
+	random = no
+	monthly_population = 0.02
+	civilian_factory_use = -0.05
+	intel_network_gain = -0.2
+}
+#mquve
+zimmand_connections = {
+	random = no
+	equipment_bonus = {
+		archetype_yms15 = {
+			instant = yes
+			armor_value = 0.15
+			reliability = 0.05
+			build_cost_ic = -0.05
+		}
+	}
+}
+
+man_of_culture = {
+	random = no
+	monthly_population = -0.25
+	consumer_goods_factor = -0.05
+}
+
+plunderer_of_earth = {
+	random = no
+	local_resources_factor = 0.2
+}
+#jamitov
+fdic_head = {
+	random = no
+	consumer_goods_factor = -0.15
+}
+
+titans_founder = {
+	random = no
+	war_support_factor = 0.1
+}
+
+scheming_politician = {
+	random = no
+	political_advisor_cost_factor = -0.15
+}
+
+jamitov_hymem_trait = {
+	random = no
+	sprite = 13
+	supremacist_drift = 0.05
+	drift_defence_factor = 0.1
+}
+
+#scirocco
+man_from_jupiter = {
+	random = no
+	naval_speed_factor = 0.05
+	naval_invasion_capacity = 2
+	naval_invasion_planning_bonus_speed = 0.5
+}
+
+observer_of_history = {
+	random = no
+	research_speed_factor = 0.05
+	send_volunteer_divisions_required = -2
+}
+
+#jerid
+defender_of_earth = {
+	random = no
+	army_core_attack_factor = 0.1
+	army_core_defense_factor = 0.1
+}
+guide_of_the_world = {
+	random = no
+	stability_weekly = 0.05
+	political_advisor_cost_factor = -0.1
+	air_advisor_cost_factor =  -0.05
+	army_advisor_cost_factor = -0.05
+	navy_advisor_cost_factor = -0.05
+}
+#jean
+armchair_admiral = {
+	random = no
+	navy_advisor_cost_factor = -0.35
+	experience_gain_navy_factor = 0.12
+}
+
+#other
+military_industrialist = {
+	random = no
+	production_speed_arms_factory_factor = 0.02
+	production_speed_infrastructure_factor = 0.05
+}
+}

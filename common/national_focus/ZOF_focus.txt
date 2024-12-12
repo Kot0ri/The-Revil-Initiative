@@ -352,7 +352,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		air_experience = 50
 		}
 	}
 
@@ -475,16 +475,71 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ZOF_focus_on_defensive_designs
+		icon = GFX_goal_MS_and_ground_forces_collaboration
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_anti_partisan_improvements }
+		prerequisite = {focus = ZOF_multi-use_high-caliber_weapons}
+		relative_position_id = ZOF_multi-use_high-caliber_weapons
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_improvised_ms_doctrine
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_improve_magella_reliability
+		icon = GFX_goal_zeon_new_weapon
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_focus_on_defensive_designs}
+		relative_position_id = ZOF_focus_on_defensive_designs
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_self_propelled_artillery_doctrine
+		icon = GFX_goal_zeon_new_weapon
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = ZOF_improve_magella_reliability}
+		relative_position_id = ZOF_improve_magella_reliability
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = ZOF_improvised_ms_doctrine
 		icon = GFX_goal_MS_and_ground_forces_collaboration
 		cost = 5
-		x = 1
+		x = 0
 		y = 1
 		prerequisite ={ focus = ZOF_anti_partisan_improvements }
 		prerequisite = {focus = ZOF_multi-use_high-caliber_weapons}
 		relative_position_id = ZOF_anti_partisan_improvements
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_focus_on_defensive_designs
 		}
 		completion_reward = {
 		
@@ -562,7 +617,7 @@ focus_tree = {
 		id = ZOF_ginias_team
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		prerequisite ={ focus = ZOF_orders_from_the_supreme_commander }
 		relative_position_id = ZOF_orders_from_the_supreme_commander
@@ -579,9 +634,10 @@ focus_tree = {
 		id = ZOF_Apsaras_Project
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
 		prerequisite ={ focus = ZOF_ginias_team }
+		prerequisite ={ focus = ZOF_Building_Lhasa_Base }
 		relative_position_id = ZOF_ginias_team
 		ai_will_do = {
 			factor = 1
@@ -593,19 +649,19 @@ focus_tree = {
 	}
 
 	focus = {
-		id = ZOF_Shuddering_Mountain
+		id = ZOF_Building_Lhasa_Base
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
-		prerequisite ={ focus = ZOF_Apsaras_Project}
-		relative_position_id = ZOF_Apsaras_Project
+		prerequisite ={ focus = ZOF_orders_from_the_supreme_commander }
+		relative_position_id = ZOF_orders_from_the_supreme_commander
 		ai_will_do = {
 			factor = 1
 		}
 		
 		completion_reward = {
-		975 = {
+		987 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
@@ -621,6 +677,11 @@ focus_tree = {
 				add_building_construction = {
 					type =  anti_air_building
 					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type =  air_facility
+					level = 1
 					instant_build = yes
 				}
 			}

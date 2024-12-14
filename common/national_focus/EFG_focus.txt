@@ -1297,6 +1297,11 @@ focus_tree = {
 			id = EFG_power_balance
 			value = 0.15
 		}
+		retire_ideology_leader = democratic
+		promote_character = {
+			character = EFG_Alexis_de_tocqueville
+			ideology = democratic
+		}
 		}
 	}
 

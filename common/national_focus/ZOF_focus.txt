@@ -762,6 +762,7 @@ focus_tree = {
 		add_offsite_building = {
 			type = arms_factory
 			level = 5
+
 		}
 		add_political_power = -50
 		}
@@ -858,7 +859,13 @@ focus_tree = {
 			focus = ZOF_sahalins_united
 		}
 		completion_reward = {
-		
+		add_popularity = {
+			ideology = contolism
+			popularity = 0.35
+		}
+		set_politics = {
+			ruling_party = contolism
+		}
 		}
 	}
 
@@ -1020,7 +1027,13 @@ focus = {
 			focus = ZOF_eliminate_rivals
 		}
 		completion_reward = {
-		
+			add_popularity = {
+				ideology = aristocracy
+				popularity = 0.35
+			}
+		set_politics = {
+			ruling_party = aristocracy
+		}
 		}
 	}
 }

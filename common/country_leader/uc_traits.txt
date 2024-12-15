@@ -8,6 +8,12 @@ hemoptysis = {
 	random = no
 	political_power_gain = -0.02
 }
+scion_of_the_sahalin_family_2 = {
+	random = no
+	research_speed_factor = 0.05
+	political_advisor_cost_factor = -0.05
+	army_advisor_cost_factor = -0.05
+}
 
 #aina
 heartfelt_negotiator = {
@@ -15,6 +21,16 @@ heartfelt_negotiator = {
 	stability_factor = 0.1
 	war_support_factor = -0.05
 	improve_relations_maintain_cost_factor = -0.5
+}
+
+#sahalin_siblings
+sahalin_united = {
+	random = no
+	stability_factor = 0.15
+	war_support_factor = 0.05
+	research_speed_factor = 0.05
+	army_core_defence_factor = 0.07
+	army_armor_speed_factor = 0.02
 }
 
 	#Dozle

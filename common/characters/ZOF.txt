@@ -82,11 +82,11 @@ characters={
 		}
 		country_leader={
 			ideology= spacenoid_supremacist
-			traits={ scion_of_the_sahalin_family hemoptysis hawk }
+			traits={ scion_of_the_sahalin_family_2 hemoptysis hawk }
 			expire="1000.1.1.1"
 		}
 		field_marshal = {
-			traits={zabi_party defensive_doctrine }
+			traits={zabi_party defensive_doctrine trait_engineer fortress_buster }
 			skill = 3
 			attack_skill = 1
 			defense_skill = 3
@@ -136,6 +136,23 @@ characters={
 			defense_skill = 2
 			planning_skill = 2
 			logistics_skill = 2
+		}
+	}
+
+	ZOF_sahalin_siblings ={
+		name="Sahalin Siblings"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/sahalin_siblings.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/sahalin_siblings.dds"
+			}
+		}
+		country_leader={
+			ideology= contolism
+			traits={ sahalin_united }
+			expire="1000.1.1.1"
 		}
 	}
 

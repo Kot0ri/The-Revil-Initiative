@@ -70,6 +70,50 @@ characters={
 		}
 	}
 
+	ZOF_ginias_sahalin_2 ={
+		name="Ginias Sahalin"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/ginias_sahalin_2.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/ginias_sahalin_2.dds"
+			}
+		}
+		country_leader={
+			ideology= spacenoid_supremacist
+			traits={ scion_of_the_sahalin_family hemoptysis hawk }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits={zabi_party defensive_doctrine }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 10
+			idea_token = ginias
+			allowed = {
+				original_tag = ZOF
+			}
+			traits = {
+				head_of_asparas
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
 	ZOF_aina_sahalin ={
 		name="Aina Sahalin"
 		portraits={

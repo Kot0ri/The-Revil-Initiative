@@ -649,6 +649,46 @@ NAA_Robin_Bradshaw={
 	} 
 }
 
+NAA_remia_lalan={
+	name="Remia Lalan"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/remia_lalan.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/remia_lalan.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_rakken={
+	name="Rakken"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/rakken.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/rakken.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
 #admirals
 NAA_flanagan_boone={
 	name="Flanagan Boone"
@@ -790,6 +830,39 @@ NAA_Irmela_Gruberi={
 				original_tag = NAA
 			}
 			traits = { hc_guerrilla_2 }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
+	NAA_jean_louis_pierre={
+		name="Jean Louis Pierre"
+		portraits={
+			civilian={
+				large="gfx/leaders/NAA/Jean_Louis_Pierre.dds"
+			}
+			army={
+				large="gfx/leaders/NAA/Jean_Louis_Pierre.dds"
+			}
+		}
+		field_marshal = {
+			traits = { armor_officer defensive_doctrine }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		} 
+		advisor={
+			slot = high_command
+			idea_token = Crowley_Hamon
+			allowed = {
+				original_tag = NAA
+			}
+			traits = { army_CombinedArms_2 }
 			modifier = {
 			}
 			ai_will_do = {

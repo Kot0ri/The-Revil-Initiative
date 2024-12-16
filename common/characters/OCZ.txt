@@ -1,0 +1,110 @@
+characters={
+	##Leaders
+	OCZ_charles_yalborough ={
+		name="Charlie Yalborough"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/ginias_sahalin.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/ginias_sahalin.dds"
+			}
+		}
+		country_leader={
+			ideology= spacenoid_supremacist
+			traits={ }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits={zabi_party}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 10
+			idea_token = charles
+			allowed = {
+				original_tag = OCZ
+			}
+			traits = {			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	
+    	OCZ_walter_curtis ={
+		name="Walter Curtis"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/walter_curtis.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/walter_curtis.dds"
+			}
+		}
+		country_leader={
+			ideology= zeonism
+			traits={  }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits={ }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 10
+			idea_token = walter
+			allowed = {
+				original_tag = OCZ
+			}
+			traits = {
+				head_of_asparas
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+    ##Pilots
+    	OCZ_visch_donahue ={
+		name="Visch Donahue"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/yuri.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/visch_donahue.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot thunderclap_in_the_wilderness  }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+}

@@ -1,13 +1,13 @@
 characters={
 	##Leaders
-	OCZ_charles_yalborough ={
+	OCZ_charlie_yalborough ={
 		name="Charlie Yalborough"
 		portraits={
 			civilian={
-				large="gfx/leaders/ZOF/ginias_sahalin.dds"
+				large="gfx/leaders/OCZ/charlie_yalborough.dds"
 			}
 			army={
-				large="gfx/leaders/ZOF/ginias_sahalin.dds"
+				large="gfx/leaders/OCZ/charlie_yalborough.dds"
 			}
 		}
 		country_leader={
@@ -27,8 +27,7 @@ characters={
 			slot = theorist
 			ledger = army
 			cost = 10
-			idea_token = charles
-			allowed = {
+			idea_token = charlie
 				original_tag = OCZ
 			}
 			traits = {			}
@@ -46,10 +45,10 @@ characters={
 		name="Walter Curtis"
 		portraits={
 			civilian={
-				large="gfx/leaders/ZOF/walter_curtis.dds"
+				large="gfx/leaders/OCZ/walter_curtis.dds"
 			}
 			army={
-				large="gfx/leaders/ZOF/walter_curtis.dds"
+				large="gfx/leaders/OCZ/walter_curtis.dds"
 			}
 		}
 		country_leader={
@@ -86,15 +85,56 @@ characters={
 		}
 	}
 
-    ##Pilots
+##field marshals
+
+		OCZ_antony_glock ={
+		name="Antony Glock"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/antony_glock.dds"
+			}
+		}
+		field_marshal = {
+			traits={ zabi_party }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+
+
+##generals
+	OCZ_tina_duvall ={
+		name="Tina Duvall"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/tina_duvall.dds"
+			}
+		}
+		corps_commander = {
+			traits={ armor_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+
+
+##Pilots
     	OCZ_visch_donahue ={
 		name="Visch Donahue"
 		portraits={
 			civilian={
-				large="gfx/leaders/ZOF/yuri.dds"
+				large="gfx/leaders/OCZ/visch_donahue.dds"
 			}
 			army={
-				large="gfx/leaders/ZOF/visch_donahue.dds"
+				large="gfx/leaders/OCZ/visch_donahue.dds"
 			}
 		}
 		corps_commander = {
@@ -104,6 +144,136 @@ characters={
 			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 3
+		}
+	}
+
+	OCZ_yonem_kirks ={
+		name="Yonem Kirks"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCZ/yonem_kirks.dds"
+			}
+			army={
+				large="gfx/leaders/OCZ/yonem_kirks.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	OCZ_poncho_boloz ={
+		name="Poncho Boloz"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCZ/poncho_boloz.dds"
+			}
+			army={
+				large="gfx/leaders/OCZ/poncho_boloz.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+    	OCZ_bob_semple ={
+		name="Bob Semple"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCZ/bob_semple.dds"
+			}
+			army={
+				large="gfx/leaders/OCZ/bob_semple.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+##Admirals
+
+OCZ_atushi_pope={
+	name="Atushi Pope"
+	portraits={
+		army={
+			small="gfx/leaders/OCZ/atushi_pope.dds"
+		}
+		army={
+			large="gfx/leaders/OCZ/atushi_pope.dds"
+		}
+	}
+	navy_leader={
+		traits={old_guard zabi_party}
+		skill=1
+		attack_skill=1
+		defense_skill=2
+		maneuvering_skill=1
+		coordination_skill=1
+
+	}
+}
+
+
+##advisors
+
+	OCZ_Allison_Hannigan = {
+		name="Allison Hannigan"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCZ/allison_hannigan.dds"
+			}
+			army={
+				large="gfx/leaders/OCZ/allison_hannigan.dds"
+			}
+		}
+		advisor={
+			slot = theorist
+			ledger = army
+			cost = 100
+			idea_token = allison_hannigan
+			allowed = {
+				original_tag = OCZ
+			}
+			traits = {
+				rpb_engineer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	OCZ_gioconda_willis ={
+		name="Gioconda Willis"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/gioconda_willis.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/gioconda_willis.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			idea_token = gioconda_willis
+			traits = { mobilearmor_specialist }
 		}
 	}
 

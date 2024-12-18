@@ -161,26 +161,6 @@ characters={
 		}
 	}
 
-	ZOF_yonem_kirks ={
-		name="Yonem Kirks"
-		portraits={
-			civilian={
-				large="gfx/leaders/ZOF/yuri.dds"
-			}
-			army={
-				large="gfx/leaders/ZOF/yonem_kirks.dds"
-			}
-		}
-		corps_commander = {
-			traits={ pilot  }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
-	}
-
 
 	ZOF_leo_brauer ={
 		name="Leo Brauer"

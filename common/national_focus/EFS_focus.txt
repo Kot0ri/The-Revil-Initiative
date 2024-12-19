@@ -2024,7 +2024,7 @@ focus = {
 }
 
 focus = {
-	id = efsf_operation_cemballo
+	id = efsf_look_towards_space
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
 	x = 2
@@ -2045,16 +2045,133 @@ focus = {
 }
 
 focus = {
-	id = efsf_operation_star_one
+	id = efsf_methodical_apporach
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
-	x = 0s
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	prerequisite = {
+		focus = efsf_look_towards_space
+	}
+	available = {
+		has_war = yes
+	}
+	mutually_exclusive = {
+		focus = efsf_quickly_end_the_war
+	}
+	relative_position_id = efsf_look_towards_space
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_quickly_end_the_war
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_look_towards_space
+	}
+	available = {
+		has_war = yes
+	}
+	mutually_exclusive = {
+		focus = efsf_methodical_apporach
+	}
+	relative_position_id = efsf_look_towards_space
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_operation_cemballo
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_methodical_apporach focus = efsf_quickly_end_the_war
+	}
+	available = {
+		has_war = yes
+	}
+	mutually_exclusive = {
+		focus = efsf_granada_push
+	}
+	relative_position_id = efsf_look_towards_space
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_granada_push
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_quickly_end_the_war
+	}
+	available = {
+		has_war = yes
+	}
+	mutually_exclusive = {
 		focus = efsf_operation_cemballo
+	}
+	relative_position_id = efsf_quickly_end_the_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_crush_granada
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_methodical_apporach
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_methodical_apporach
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_operation_star_one
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_operation_cemballo focus = efsf_granada_push focus = efsf_crush_granada
 	}
 	available = {
 		has_war = yes
@@ -2064,6 +2181,74 @@ focus = {
 	
 	}
 }
+
+focus = {
+	id = efsf_seize_pezun
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_crush_granada
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_crush_granada
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_seize_side_3
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_crush_granada
+	}
+	prerequisite = {
+		focus = efsf_operation_star_one
+	}
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_crush_granada
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_side_3_assualt
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_granada_push focus = efsf_operation_star_one
+	}
+	
+	available = {
+		has_war = yes
+	}
+	relative_position_id = efsf_granada_push
+	completion_reward = {
+	
+	}
+}
+
 
 	focus = {
 		id = efsf_begin_post_war_military_reconstruction

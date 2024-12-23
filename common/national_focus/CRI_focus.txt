@@ -1,0 +1,312 @@
+focus_tree = {
+	id = CRI
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = CRI
+		}
+	}
+	default = no
+
+
+focus = {
+	id = CRI_crimea_march
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 5
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = CRI_prepare_trenchworks
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_crimea_march
+	}
+	relative_position_id = CRI_crimea_march
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = CRI_reinforce_hardpoints
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_prepare_trenchworks
+	}
+	relative_position_id = CRI_prepare_trenchworks
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = CRI_refurbish_damaged_equipment
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_crimea_march
+	}
+	relative_position_id = CRI_crimea_march
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = CRI_recover_air_corps.
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_refurbish_damaged_equipment
+	}
+	relative_position_id = CRI_refurbish_damaged_equipment
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = CRI_review_logistics
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_crimea_march
+	}
+	relative_position_id = CRI_crimea_march
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = CRI_prepare_for_urban_combat
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_review_logistics
+	}
+	relative_position_id = CRI_review_logistics
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = CRI_attempt_to_restore_fighting_spirit
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_crimea_march
+	}
+	relative_position_id = CRI_crimea_march
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = CRI_take_in_local_recruits
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_attempt_to_restore_fighting_spirit
+	}
+	relative_position_id = CRI_attempt_to_restore_fighting_spirit
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = CRI_prepare_the_final_stand
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_prepare_for_urban_combat
+	}
+	prerequisite = {
+		focus = CRI_reinforce_hardpoints
+		}
+	prerequisite = {
+		focus = CRI_take_in_local_recruits
+		}
+	prerequisite = {
+		focus = CRI_recover_air_corps.
+		}
+		available = {
+			has_war = yes
+		}
+	relative_position_id = CRI_prepare_for_urban_combat
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = CRI_fortifying_the_penisula
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_prepare_the_final_stand
+		}
+		available = {
+			has_war = no
+		}
+	relative_position_id = CRI_prepare_the_final_stand
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = CRI_build_up_submarine_docks
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_fortifying_the_penisula
+		}
+	relative_position_id = CRI_fortifying_the_penisula
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = CRI_cooperate_with_Zeon_remnants
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_fortifying_the_penisula
+		}
+		mutually_exclusive = {
+			focus = CRI_work_with_local_seperatists
+		}
+	relative_position_id = CRI_fortifying_the_penisula
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = CRI_secure_the_don
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		country_exists = DON
+		country_exists = KUB
+	}
+	prerequisite = {
+	focus = CRI_cooperate_with_Zeon_remnants
+		}
+	relative_position_id = CRI_cooperate_with_Zeon_remnants
+	completion_reward = {
+	create_wargoal = {
+		target = DON
+		type = annex_everything
+	}
+	create_wargoal = {
+		target = KUB
+		type = annex_everything
+	}
+	}
+}
+
+focus = {
+	id = CRI_work_with_local_seperatists
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_fortifying_the_penisula
+		}
+		mutually_exclusive = {
+			focus = CRI_cooperate_with_Zeon_remnants
+		}
+	relative_position_id = CRI_fortifying_the_penisula
+	completion_reward = {
+	
+	}
+}
+}

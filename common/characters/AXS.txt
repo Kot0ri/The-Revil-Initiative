@@ -105,6 +105,34 @@ AXS_serrana_karn={
 	}
 }
 
+AXS_phaeton_rahu={
+	name="Phaeton Rahu Argis"
+	portraits={
+		army={
+			small=GFX_idea_dren
+		}
+		army={
+			large= "gfx/leaders/AXS/Phaeton_Rahu.dds"
+		}
+	}
+	country_leader = {
+		ideology= spacenoid_supremacist
+		traits={ Faeton_of_Virions }
+		expire="1000.1.1.1"
+	}
+	advisor = {
+		slot = high_command
+		traits = { praetorian_of_axis }
+	}
+	navy_leader={
+		skill= 3
+		attack_skill=2
+		defense_skill=2
+		maneuvering_skill=3
+		coordination_skill=2
+	}
+}
+
 AXS_garma_zabi={
 	name="Garma Zabi"
 	portraits={
@@ -308,25 +336,6 @@ AXS_yuri_hasler={
 				factor = 0
 			}
 		}
-	}
-}
-
-AXS_phaeton_rahu={
-	name="Phaeton Rahu Featon (Virions) one billion"
-	portraits={
-		army={
-			small=GFX_idea_dren
-		}
-		army={
-			large= "gfx/leaders/AXS/Phaeton_Rahu.dds"
-		}
-	}
-	navy_leader={
-		skill=2
-		attack_skill=2
-		defense_skill=2
-		maneuvering_skill=3
-		coordination_skill=2
 	}
 }
 

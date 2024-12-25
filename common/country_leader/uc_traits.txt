@@ -161,6 +161,23 @@ axis_vice_minsiter_of_foreign_affairs = {
 	custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
 }
 
+#Phaeton Rahu Argis
+Faeton_of_Virions = {
+	random = no
+	recruitable_population_factor = 0.05
+	non_core_manpower = 0.25
+}
+
+praetorian_of_axis = {
+	random = no
+	naval_invasion_planning_bonus_speed = 0.06
+	planning_speed = 0.07
+	max_planning = 0.15
+	army_org_regain = 0.05
+	army_core_defence_factor = 0.05
+	supremacist_drift = 0.05
+	special_project_speed_factor = 0.05
+}
 
 #Icelina
 heir_of_the_eschonbach_family = {

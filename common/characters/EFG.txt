@@ -102,12 +102,25 @@ EFG_gopp={
 			}
 		}
 		country_leader={
-			ideology= democratic
-			traits={ }
+			ideology= conservatism
+			traits={ conservative_grandee }
 			expire="1000.1.1.1"
 		}
 		}
-	}
+
+		EFG_Johnathan_Harrison {
+			name="Johnathan Harrison"
+			portraits={
+				civilian={
+					large= "gfx/leaders/EFG/Alexis_de_tocqueville.dds"
+				}
+			}
+			country_leader={
+				ideology= milittaristic_democracy
+				traits={ national_populist }
+				expire="1000.1.1.1"
+			}
+			}
 
 	##field marshals
 

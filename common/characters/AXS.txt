@@ -76,6 +76,35 @@ AXS_haman_karn={
 	}
 }
 
+AXS_serrana_karn={
+	name="Serrana Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/serrana_karn.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/serrana_karn.dds"
+		}
+	}
+	country_leader={
+		ideology= milittaristic_democracy
+		traits={ last_of_the_karns }
+		expire="1000.1.1.1"
+	}
+	advisor = {
+		slot = political_advisor
+		traits = { axis_vice_minsiter_of_foreign_affairs }
+	}
+	field_marshal = {
+		traits = { newtype2 pilot karn_party}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
 AXS_garma_zabi={
 	name="Garma Zabi"
 	portraits={

@@ -146,6 +146,22 @@ Head_of_Federal_Criminal_Police_Organization = {
 		surrender_limit = 0.1
 	}
 
+#Serrana Karn
+last_of_the_karns = {
+	random = no
+	army_core_defence_factor = 0.1
+	army_org_factor = 0.1
+}
+
+axis_vice_minsiter_of_foreign_affairs = {
+	random = no
+	war_support_factor = -0.02
+	trade_opinion_factor = 0.05
+	join_faction_tension = -0.1
+	custom_modifier_tooltip = SOV_head_of_the_nkvd_locked_tt
+}
+
+
 #Icelina
 heir_of_the_eschonbach_family = {
 		random = no

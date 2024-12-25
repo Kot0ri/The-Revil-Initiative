@@ -62,8 +62,33 @@ AXS_haman_karn={
 		}
 	}
 	country_leader={
-		ideology= oligarchy
-		traits={ghost_of_zeon }
+		ideology= authoritarian_oligarchy
+		traits={ghost_of_zeon inexperineced_imperialist }
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { newtype2 pilot karn_party}
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 6
+		logistics_skill = 5
+	}
+}
+
+AXS_haman_karn_2={
+	name="Haman Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/haman_karn_2.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/haman_karn_2.dds"
+		}
+	}
+	country_leader={
+		ideology= authoritarian_oligarchy
+		traits={ghost_of_zeon tyrant_of_axis }
 		expire="1000.1.1.1"
 	}
 	field_marshal = {

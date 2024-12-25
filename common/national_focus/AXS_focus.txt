@@ -1110,7 +1110,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		set_politics = {
+			ruling_party = oligarchy
+			elections_allowed = no
+			election_frequency = 48
+		}
 	}
 	relative_position_id = AXS_coronation_of_mineva_zabi
 	mutually_exclusive = { focus = AXS_char_aznables_true_idenity}
@@ -1389,7 +1393,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+		recruit_character = AXS_haman_karn_2
+		retire_character = AXS_haman_karn
 	}
 	relative_position_id = AXS_natalie_incident
 	prerequisite = {focus = AXS_natalie_incident}

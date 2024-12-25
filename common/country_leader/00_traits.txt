@@ -252,6 +252,7 @@ special_service_trait = {
 		zeonism_drift = 0.1
 		improve_relations_maintain_cost_factor = -0.1
 	}
+	#Haman Karn
 	ghost_of_zeon = {
 		random = no
 			surrender_limit = 2
@@ -261,6 +262,18 @@ special_service_trait = {
 			political_power_gain = 0.3
 			political_advisor_cost_factor = -0.2
 		}
+		inexperineced_imperialist = {
+			random = no
+				political_power_factor = -0.3
+				stability_factor = 0.05
+				justify_war_goal_time = -0.25
+			}
+			tyrant_of_axis = {
+				random = no
+					training_time_army_factor = -0.05
+					party_popularity_stability_factor = 0.1
+					improve_relations_maintain_cost_factor = 0.5
+				}	
 		ghost_of_gihren = {
 			random = no
 				surrender_limit = 2

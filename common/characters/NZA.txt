@@ -1,0 +1,118 @@
+characters={
+	#Leaders
+
+	#Field Marshals
+    NZA_orcus_lezary={
+	name="Orcus Lezary"
+	portraits={
+		civilian={
+			large="gfx/leaders/NZA/garma_1.dds"
+		}
+		army={
+			large="gfx/leaders/NZA/garma_1.dds"
+		}
+	}
+	
+	field_marshal = {
+		traits = { inflexible_strategist unyielding_defender}
+		skill = 4
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
+
+NZA_ritchie_clapton={
+	name="Ritchie Clapton"
+	portraits={
+		civilian={
+			large="gfx/leaders/NZA/garma_1.dds"
+		}
+		army={
+			large="gfx/leaders/NZA/garma_1.dds"
+		}
+	}
+	
+	field_marshal = {
+		traits = { inflexible_strategist unyielding_defender }
+		skill = 4
+		attack_skill = 3
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
+
+NZA_carl_johansson={
+	name="Carl Johansson"
+	portraits={
+		civilian={
+			large="gfx/leaders/NZA/garma_1.dds"
+		}
+		army={
+			large="gfx/leaders/NZA/garma_1.dds"
+		}
+	}
+	
+	field_marshal = {
+		traits = { brilliant_strategist aggressive_assaulter }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 1
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+
+	#generals
+	NZA_cars_edward={
+		name="Cars Edward"
+		portraits={
+			civilian={
+				large="gfx/leaders/NZA/garma_1.dds"
+			}
+			army={
+				large="gfx/leaders/NZA/garma_1.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { panzer_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	} 
+
+	#ms pilots
+	NZA_sonia_shester={
+		name="Sonia Shester"
+		portraits={
+			civilian={
+				large="gfx/leaders/NZA/garma_1.dds"
+			}
+			army={
+				large="gfx/leaders/NZA/garma_1.dds"
+			}
+		}
+
+		advisor = {
+			slot = political_advisor
+			traits = {  High_command_conenctions}
+		}
+	
+		corps_commander = {
+			traits = { pilot politically_connected }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	} 
+
+
+}

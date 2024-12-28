@@ -114,5 +114,25 @@ NZA_carl_johansson={
 		}
 	} 
 
+	NZA_gray_cheyenne={
+		name="Gray Cheyenne"
+		portraits={
+			civilian={
+				large="gfx/leaders/NZA/gray_cheyenne.dds"
+			}
+			army={
+				large="gfx/leaders/NZA/gray_cheyenne.dds"
+			}
+		}
+		corps_commander = {
+			traits = { pilot }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	} 
+
 
 }

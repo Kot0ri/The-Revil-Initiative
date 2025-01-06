@@ -106,6 +106,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VBC_monopolize_federal_contracts
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_undermine_granada
+		prerequisite = {focus = VBC_undermine_granada}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = VBC_revitalize_lower_economic_sector
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
@@ -504,6 +523,23 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VBC_absorb_zeon_companies
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 26
+		y = 14
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
 		id = VBC_engage_project
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
@@ -519,6 +555,9 @@ focus_tree = {
 		}
 		relative_position_id = VBC_rx_project
 		prerequisite = {focus = VBC_rx_project}
+		prerequisite = {
+			focus = VBC_absorb_zeon_companies
+		}
 		completion_reward = {
 		
 		}
@@ -560,12 +599,32 @@ focus_tree = {
 		}
 		relative_position_id = VBC_rx_project
 		prerequisite = {focus = VBC_rx_project}
+		prerequisite = {
+			focus = VBC_absorb_zeon_companies
+		}
 		completion_reward = {
 		add_ideas = Gundam_Development_Project
 		}
 	}
 
-	
+	focus = {
+		id = VBC_contact_cima
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		relative_position_id = VBC_gundam_development_project
+		prerequisite = {focus = VBC_gundam_development_project}
+		completion_reward = {
+		
+		}
+	}	
 
 
 	focus = {

@@ -199,6 +199,58 @@ focus_tree = {
 	}
 
 	focus = {
+		id = TIT_secure_east_africa
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TIT_parpicipate_in_operation_clean_sweep
+		prerequisite = {
+			focus = TIT_parpicipate_in_operation_clean_sweep
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			transfer_state = 547
+			transfer_state = 905
+
+			547 = { add_core_of = TIT}
+			905 = { add_core_of = TIT}
+		}
+	}
+
+	focus = {
+		id = TIT_indian_ocean
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_secure_east_africa
+		prerequisite = {
+			focus = TIT_secure_east_africa
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			transfer_state = 543
+			transfer_state = 707
+			transfer_state = 708
+
+			543 = { add_core_of = TIT}
+			707 = { add_core_of = TIT}
+			708 = { add_core_of = TIT}
+		}
+	}
+
+	focus = {
 		id = TIT_build_up_in_Space
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -415,7 +467,7 @@ focus_tree = {
 		id = TIT_Secure_Bases
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = TIT_hunt_down_suviors_of_Delaz_fleet
 		prerequisite = {
@@ -512,7 +564,7 @@ focus_tree = {
 		id = TIT_Quel_development_Project
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 4
+		x = 6
 		y = 4
 		relative_position_id = TIT_introduce_the_Quel
 		prerequisite = {

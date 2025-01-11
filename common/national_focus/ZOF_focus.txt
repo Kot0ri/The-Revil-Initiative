@@ -227,14 +227,14 @@ focus_tree = {
 			focus = ZOF_Büro_der_Asiatischen_vereinigung
 		}
 		completion_reward = {
-		
+		add_manpower = 1000000
 		}
 	}
 
 	focus = {
 		id = ZOF_Büro_der_Asiatischen_vereinigung
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 10
 		x = 2
 		y = 1
 		prerequisite ={ focus = ZOF_Raise_Support_amoungst_locals}
@@ -246,7 +246,18 @@ focus_tree = {
 			focus = ZOF_local_recruitment
 		}
 		completion_reward = {
-		
+		741 = {
+			add_core_of = ZOF
+		}
+		747 = {
+			add_core_of = ZOF
+		}
+		325 = {
+			add_core_of = ZOF
+		}
+		594 = {
+			add_core_of = ZOF
+		}
 		}
 	}
 

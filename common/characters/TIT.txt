@@ -175,17 +175,17 @@ characters={
 		name="Brave Cod"
 		portraits={
 			civilian={
-				large= "gfx/leaders/PEZ/schacht.dds"
+				large= "gfx/leaders/TIT/brave_cod.dds"
 			}
 		}
 
 		field_marshal = {
 			traits = {pilot}
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 	
@@ -418,19 +418,19 @@ characters={
 		name="Tosh Cray"
 		portraits={
 			army={
-				small="GFX_idea_barom"
+				small="gfx/leaders/TIT/tosh_cray.dds"
 			}
 			army={
-				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+				large="gfx/leaders/TIT/tosh_cray.dds"
 			}
 		}
 		corps_commander={
 			traits={pilot}
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=1
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 		}
 	}
 
@@ -441,7 +441,7 @@ characters={
 				small="GFX_idea_barom"
 			}
 			army={
-				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+				large="gfx/leaders/TIT/josh_offshore.dds"
 			}
 		}
 		corps_commander={

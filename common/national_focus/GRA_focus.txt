@@ -608,7 +608,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRA_YT-02
+		id = GRA_next_gen_MS_development
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
 		x = -2
@@ -926,6 +926,21 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus =  GRA_begin_militarization_program
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_further_side_economic_connections
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_compete_with_Von_Braun_economically
+		prerequisite = {focus = GRA_compete_with_Von_Braun_economically}
+		ai_will_do = {
+			factor = 1
 		}
 		completion_reward = {
 		}

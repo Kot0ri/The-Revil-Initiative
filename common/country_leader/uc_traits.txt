@@ -302,4 +302,12 @@ military_industrialist = {
 	production_speed_arms_factory_factor = 0.02
 	production_speed_infrastructure_factor = 0.05
 }
+
+commander_of_the_neo-zeon_earth_forces = {
+	random = no
+	command_power_gain = 0.05
+	army_armor_speed_factor = 0.05
+	dig_in_speed_factor = 0.05
+	naval_invasion_penalty = -0.15
+}
 }

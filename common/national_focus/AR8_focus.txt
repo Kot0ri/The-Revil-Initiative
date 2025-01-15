@@ -218,6 +218,7 @@ focus = {
 	relative_position_id = AR8_prepare_the_final_stand
 	completion_reward = {
 		RUS = { change_tag_from = AR8 }
+		653 = { transfer_state_to = RUS }
 	}
 }
 }

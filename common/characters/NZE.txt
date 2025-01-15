@@ -1,0 +1,76 @@
+characters={
+	#Leaders
+
+	#Field Marshals
+
+
+	#generals
+
+	NZE_markas_holmgren={
+		name="Markas Holmgren"
+		portraits={
+			civilian={
+				large="gfx/leaders/NZE/markas_holmgren.dds"
+			}
+			army={
+				large="gfx/leaders/NZE/markas_holmgren.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	} 
+
+	NZE_donald_ivanauskas={
+		name="Donald Ivanauskas"
+		portraits={
+			civilian={
+				large="gfx/leaders/NZE/jacob_souma.dds"
+			}
+			army={
+				large="gfx/leaders/NZE/jacob_souma.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	} 
+
+	NZE_jacob_souma={
+		name="Jacob Souma"
+		portraits={
+			civilian={
+				large="gfx/leaders/NZE/jacob_souma.dds"
+			}
+			army={
+				large="gfx/leaders/NZE/jacob_souma.dds"
+			}
+		}
+		
+		corps_commander = {
+			traits = { infantry_leader }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	} 
+
+	#ms pilots
+	 
+
+
+}

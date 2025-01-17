@@ -73,7 +73,7 @@ characters={
 				original_tag = OCZ
 			}
 			traits = {
-				head_of_asparas
+				staircase_to_the_moon
 			}
 			ai_will_do = {
 				factor = 2
@@ -94,8 +94,26 @@ characters={
 				large="gfx/leaders/OCZ/antony_glock.dds"
 			}
 		}
+
+		advisor = {
+			slot = army_chief
+			idea_token = antony_glock
+			allowed = {
+				OR = {
+					original_tag = OCZ
+				}
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
 		field_marshal = {
-			traits={ zabi_party }
+			traits={ zabi_party politically_connected organizer  }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 2
@@ -103,7 +121,6 @@ characters={
 			logistics_skill = 1
 		}
 	}
-
 
 
 ##generals
@@ -115,14 +132,49 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={ armor_officer }
+			traits={ trickster }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+		OCZ_warren_nearlight ={
+		name="Warren Nearlight"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/commander_nearlight.dds"
+			}
+		}
+		corps_commander = {
+			traits={ armor_officer }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 1
 			logistics_skill = 1
 		}
 	}
+
+			OCZ_uriah_heep ={
+		name="Uriah Heep"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/uriah_heep.dds"
+			}
+		}
+		corps_commander = {
+			traits={ war_hero mobile_warfare_expert }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+
 
 
 
@@ -138,7 +190,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={pilot thunderclap_in_the_wilderness  }
+			traits={ pilot thunderclap_in_the_wilderness brilliant_strategist career_officer media_personality offensive_doctrine }
 			skill = 4
 			attack_skill = 4
 			defense_skill = 4
@@ -167,6 +219,46 @@ characters={
 		}
 	}
 
+	OCZ_gregory_romanov ={
+		name="Gregory Romanov"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCZ/gregory_romanov.dds"
+			}
+			army={
+				large="gfx/leaders/OCZ/gregory_romanov.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	OCZ_julio_sawadi ={
+		name="Julio Sawadi"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCZ/julio_sawadi.dds"
+			}
+			army={
+				large="gfx/leaders/OCZ/julio_sawadi.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot  }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
 	OCZ_poncho_boloz ={
 		name="Poncho Boloz"
 		portraits={
@@ -183,7 +275,7 @@ characters={
 			attack_skill = 2
 			defense_skill = 2
 			planning_skill = 2
-			logistics_skill = 2
+			logistics_skill = 3
 		}
 	}
 
@@ -198,14 +290,36 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={pilot }
+			traits={ pilot }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
-			logistics_skill = 1
+			logistics_skill = 2
 		}
 	}
+
+    	OCZ_fred_reber ={
+		name="Fred Reber"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCZ/fred_reber.dds"
+			}
+			army={
+				large="gfx/leaders/OCZ/fred_reber.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+
 
 ##Admirals
 
@@ -220,7 +334,7 @@ OCZ_atushi_pope={
 		}
 	}
 	navy_leader={
-		traits={old_guard zabi_party}
+		traits={ old_guard zabi_party }
 		skill=1
 		attack_skill=1
 		defense_skill=2
@@ -230,10 +344,52 @@ OCZ_atushi_pope={
 	}
 }
 
+OCZ_geoffry_oppen={
+	name="Geoffry Oppen"
+	portraits={
+		army={
+			small="gfx/leaders/OCZ/geoffry_oppen.dds"
+		}
+		army={
+			large="gfx/leaders/OCZ/geoffry_oppen.dds"
+		}
+	}
+	navy_leader={
+		traits={ zabi_party }
+		skill=2
+		attack_skill=1
+		defense_skill=1
+		maneuvering_skill=2
+		coordination_skill=2
+
+	}
+}
+
+OCZ_bob_turmay={
+	name="Bob Turmay"
+	portraits={
+		army={
+			small="gfx/leaders/OCZ/bob_turmay.dds"
+		}
+		army={
+			large="gfx/leaders/OCZ/bob_turmay.dds"
+		}
+	}
+	navy_leader={
+		traits={ career_officer }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		maneuvering_skill=1
+		coordination_skill=1
+
+	}
+}
+
 
 ##advisors
 
-	OCZ_Allison_Hannigan = {
+	OCZ_allison_hannigan = {
 		name="Allison Hannigan"
 		portraits={
 			civilian={
@@ -276,5 +432,34 @@ OCZ_atushi_pope={
 			traits = { mobilearmor_specialist }
 		}
 	}
+
+
+	OCZ_koizumi_maya = {
+		name="Koizumi Maya"
+		portraits={
+			civilian={
+				large="gfx/leaders/OCZ/koizumi_maya.dds"
+			}
+			army={
+				large="gfx/leaders/OCZ/koizumi_maya.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			ledger = army
+			cost = 100
+			idea_token = allison_hannigan
+			allowed = {
+				original_tag = OCZ
+			}
+			traits = {
+				rpb_engineer
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
 
 }

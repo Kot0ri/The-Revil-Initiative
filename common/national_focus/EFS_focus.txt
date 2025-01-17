@@ -2062,6 +2062,9 @@ focus = {
 	mutually_exclusive = {
 		focus = efsf_quickly_end_the_war
 	}
+	mutually_exclusive = {
+		focus = efsf_attempt_to_recover_the_initative
+	}
 	relative_position_id = efsf_look_towards_space
 	completion_reward = {
 	
@@ -2086,6 +2089,37 @@ focus = {
 	mutually_exclusive = {
 		focus = efsf_methodical_apporach
 	}
+	mutually_exclusive = {
+		focus = efsf_attempt_to_recover_the_initative
+	}
+	relative_position_id = efsf_look_towards_space
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_attempt_to_recover_the_initative
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_look_towards_space
+	}
+	available = {
+		has_war = yes
+		has_country_leader = EFS_wakkein
+	}
+	mutually_exclusive = {
+		focus = efsf_methodical_apporach
+	}
+	mutually_exclusive = {
+		focus = efsf_quickly_end_the_war
+	}
 	relative_position_id = efsf_look_towards_space
 	completion_reward = {
 	
@@ -2102,7 +2136,7 @@ focus = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = efsf_methodical_apporach focus = efsf_quickly_end_the_war
+		focus = efsf_methodical_apporach focus = efsf_quickly_end_the_war focus = efsf_attempt_to_recover_the_initative
 	}
 	available = {
 		has_war = yes
@@ -2144,6 +2178,28 @@ focus = {
 	id = efsf_crush_granada
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_attempt_to_recover_the_initative
+	}
+	available = {
+		has_war = yes
+		has_completed_focus = efsf_operation_cemballo
+	}
+	relative_position_id = efsf_attempt_to_recover_the_initative
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_invade_granada
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
 	x = -1
 	y = 1
 	ai_will_do = {
@@ -2171,7 +2227,7 @@ focus = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = efsf_operation_cemballo focus = efsf_granada_push focus = efsf_crush_granada
+		focus = efsf_operation_cemballo focus = efsf_granada_push focus = efsf_invade_granada
 	}
 	available = {
 		has_war = yes
@@ -2192,12 +2248,12 @@ focus = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = efsf_crush_granada
+		focus = efsf_invade_granada
 	}
 	available = {
 		has_war = yes
 	}
-	relative_position_id = efsf_crush_granada
+	relative_position_id = efsf_invade_granada
 	completion_reward = {
 	
 	}
@@ -2213,7 +2269,7 @@ focus = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = efsf_crush_granada
+		focus = efsf_invade_granada
 	}
 	prerequisite = {
 		focus = efsf_operation_star_one
@@ -2221,7 +2277,7 @@ focus = {
 	available = {
 		has_war = yes
 	}
-	relative_position_id = efsf_crush_granada
+	relative_position_id = efsf_invade_granada
 	completion_reward = {
 	
 	}
@@ -2674,6 +2730,57 @@ focus = {
 	
 	}
 	relative_position_id = efsf_big_ship_doctrine_revived
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_super-battleship_doctrine
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 2
+	y = 6
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_new_generation_battleships
+	}
+	mutually_exclusive = {
+		focus = efsf_new_multi-role_ship_doctrine
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_new_generation_battleships
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_new_multi-role_ship_doctrine
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 6
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_new_generation_battleships
+	}
+	prerequisite = {
+		focus = efsf_improve_pegasus_design
+	}
+	mutually_exclusive = {
+		focus = efsf_super-battleship_doctrine
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_new_generation_battleships
 	completion_reward = {
 	
 	}

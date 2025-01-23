@@ -907,9 +907,15 @@ available = {
 			factor = 1
 		}
 		completion_reward = {
-			promote_character = {
+			retire_country_leader = yes
+			add_country_leader_role = {
 				character = NAA_Killy_Garret
-				ideology = military_administration
+				promote_leader = yes
+				country_leader = {
+					ideology = military_administration
+					expire = "1000.1.1.1"
+					traits = { noisy_fairy }
+				}
 			}
 		}
 	}

@@ -374,6 +374,56 @@ focus = {
 }
 
 focus = {
+	id = AR9_southern_push
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_prepare_the_final_stand
+		}
+		available = {
+			has_war = yes
+			
+		}
+		mutually_exclusive = {
+			focus = AR9_western_push
+			}
+	relative_position_id = AR9_prepare_the_final_stand
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR9_western_push
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_prepare_the_final_stand
+		}
+		available = {
+			has_war = yes
+			
+		}
+		mutually_exclusive = {
+			focus = AR9_southern_push
+			}
+	relative_position_id = AR9_prepare_the_final_stand
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = AR9_take_in_the_8th
 	icon = GFX_goal_general_meeting
 	cost = 5

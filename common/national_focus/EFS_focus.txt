@@ -2428,7 +2428,15 @@ focus = {
 	}
 	relative_position_id = efsf_begin_post_war_military_reconstruction
 	completion_reward = {
-	
+	declare_war_on = {
+		target = AR9
+	}
+	declare_war_on = {
+		target = AR8
+	}
+	declare_war_on = {
+		target = OCZ
+	}
 	}
 }
 

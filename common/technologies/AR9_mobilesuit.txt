@@ -204,4 +204,87 @@ technologies = {
 				base = 1000
 			}
 		}
+
+		nrx005pg_tech = {
+			enable_equipments = {
+				nrx005pg_equipment
+			}
+		dependencies = {
+		  minovsky_craft = 1
+		  mega_particle1 = 1
+		}
+		on_research_complete_limit = {
+		  NOT = {	has_template_containing_unit = nrx005pg }
+		}
+			on_research_complete = {
+		  hidden_effect = {
+			load_oob = "unlock_ar9_ma"
+		  }
+		  custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+			research_cost = 2.0
+			xp_research_type = army
+			xp_boost_cost = 50
+			xp_research_bonus = 0.3
+			start_year = 79
+			folder = {
+				name = AR9_mobilesuit_folder
+				position = { x = 10 y = 4 }
+			}
+	
+		path = {
+		  leads_to_tech = nrx005g_tech
+		  research_cost_coeff = 1
+		}
+			categories = {
+		  mip_mobilesuit
+		  mobilearmor
+			}
+			ai_will_do = {
+				base = 10
+				modifier = {
+					factor = 10
+					has_completed_focus = AR9_deploy_prototypes_to_the_field
+				}
+				modifier = {
+					factor = 10
+					date > 79.12.12
+				}
+			}
+		}
+
+		nrx005pg_tech = {
+			enable_equipments = {
+				nrx005pg_equipment
+			}
+		dependencies = {
+		  minovsky_craft = 1
+		  mega_particle1 = 1
+		}
+			research_cost = 2.0
+			xp_research_type = army
+			xp_boost_cost = 50
+			xp_research_bonus = 0.3
+			start_year = 80
+			folder = {
+				name = AR9_mobilesuit_folder
+				position = { x = 10 y = 6 }
+			}
+	
+			categories = {
+		  mip_mobilesuit
+		  mobilearmor
+			}
+			ai_will_do = {
+				base = 10
+				modifier = {
+					factor = 10
+					has_completed_focus = AR9_deploy_prototypes_to_the_field
+				}
+				modifier = {
+					factor = 10
+					date > 80.1.1
+				}
+			}
+		}
 }

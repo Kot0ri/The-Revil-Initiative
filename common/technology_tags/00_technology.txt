@@ -250,6 +250,24 @@ technology_folders = {
 	electronics_folder = {
 		ledger = civilian
 	}
+ZEO_infantry_folder = {
+	available = {
+		has_country_flag = zeon_country
+	}
+		ledger = army
+	}
+ZEO_support_folder = {
+	available = {
+		has_country_flag = zeon_country
+	}
+		ledger = army
+	}
+ZEO_artillery_folder = {
+	available = {
+		has_country_flag = zeon_country
+	}
+		ledger = army
+	}
   ZEO_mobilesuit_folder = {
 	available = {
 		has_country_flag = zeon_country
@@ -310,4 +328,10 @@ technology_folders = {
 		available = { NOT = {has_country_flag = zeon_country} } 
 		ledger = navy
 	}
+	AR9_mobilesuit_folder = {
+		available = {
+			has_country_flag = AR9
+		}
+			ledger = army
+		 }
 }

@@ -309,6 +309,86 @@ characters={
 		}
 	}
 
+	TIT_bernard_monsha={
+		name="Bernard Monsha"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/bernard_monsha_titans.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_alpha_a_bait={
+		name="Alpha_A_Bait"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/alpha_a_bait_titans.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_chap_adel={
+		name="Chap Adel"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/chap_adel_titans.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_devos_roa={
+		name="Devos Roa"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/devos_roa.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	TIT_buran_blutarch={
 		name="Buran Blutarch"
 		portraits={
@@ -317,6 +397,26 @@ characters={
 			}
 			army={
 				large="gfx/leaders/TIT/buran_blutarch.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_lila_milla_rira={
+		name="Lila Milla Rira"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/lila_milla_rira_titans.dds"
 			}
 		}
 		corps_commander={
@@ -414,6 +514,23 @@ characters={
 		}
 	}
 
+	TIT_peche_montagne={
+		name="Peche Montagne"
+		portraits={
+			army={
+				large="gfx/leaders/TIT/peche_montagne_titans.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot cyber-newtype}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	TIT_tosh_cray={
 		name="Tosh Cray"
 		portraits={
@@ -446,7 +563,27 @@ characters={
 		}
 		corps_commander={
 			traits={pilot}
-			skill=1
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_dava_balo={
+		name="Dava Balo"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/dava_balo.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=2
 			attack_skill=1
 			defense_skill=1
 			planning_skill=1
@@ -521,7 +658,7 @@ characters={
 				small="GFX_idea_barom"
 			}
 			army={
-				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+				large="gfx/leaders/TIT/kitchman.dds"
 			}
 		}
 		corps_commander={
@@ -541,7 +678,7 @@ characters={
 				small="GFX_idea_barom"
 			}
 			army={
-				large="gfx/leaders/ZEO/Ralph_Angelos.dds"
+				large="gfx/leaders/TIT/masada.dds"
 			}
 		}
 		corps_commander={
@@ -832,6 +969,48 @@ characters={
 			defense_skill = 1
 			maneuvering_skill = 2
 			coordination_skill = 1
+		}
+	}
+
+	TIT_ted_ayachi={
+		name="Ted Ayachi"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/ted_ayachi.dds"
+			}
+		}
+		navy_leader = {
+			traits = {space_expert}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
+		}
+			advisor = {
+			slot = high_command
+			ledger = navy
+			cost = 50
+			idea_token = ted_ayachi
+			allowed = {
+				original_tag = TIT
+			}
+			traits = {
+				navy_chief_old_guard
+			}
+			available = {
+				has_completed_focus = TIT_recruit_the_elite_of_the_EFF
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
 		}
 	}
 

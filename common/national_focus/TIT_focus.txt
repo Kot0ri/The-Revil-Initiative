@@ -270,6 +270,7 @@ focus_tree = {
 			has_completed_focus = TIT_Secure_Bases
 		}
 		completion_reward = {
+			recruit_character = TIT_paptimus_scirocco_1
 		}
 	}
 
@@ -289,6 +290,57 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = TIT_man_from_jupiter
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_Gryps_2_project
+		prerequisite = {
+			focus = TIT_Gryps_2_project
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			
+		}
+		completion_reward = {
+			retire_character = TIT_paptimus_scirocco_1
+			recruit_character = TIT_paptimus_scirocco_2
+			}
+		}
+
+		focus = {
+			id = TIT_jupitris_power_grab
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			relative_position_id = TIT_man_from_jupiter
+			prerequisite = {
+				focus = TIT_man_from_jupiter
+			}
+			available = {
+				
+			}
+			ai_will_do = {
+				factor = 1
+			}
+			mutually_exclusive = {
+				
+			}
+			completion_reward = {
+				retire_character = TIT_jamitov_hymen
+				promote_character = TIT_paptimus_scirocco_2
+				}
+			}
+
 		focus = {
 			id = TIT_Jamitovs_sway
 			icon = GFX_goal_efsf_mobile_headquarters

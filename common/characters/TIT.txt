@@ -82,11 +82,11 @@ characters={
 			}
 		}
 
-		TIT_paptimus_scirocco ={
+		TIT_paptimus_scirocco_2 ={
 			name="Paptimus Scirocco"
 			portraits={
 				civilian={
-					large= "gfx/leaders/TIT/paptimus_scirocco.dds"
+					large= "gfx/leaders/TIT/paptimus_scirocco_leader.dds"
 				}
 			}
 			country_leader={
@@ -231,6 +231,26 @@ characters={
 	}
 
 	#MS Pilots
+
+	TIT_paptimus_scirocco_1={
+		name="Paptimus Scirocco"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/paptimus_scirocco_titans.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot newtype3}
+			skill=6
+			attack_skill=5
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+		}
+	}
 	
 	TIT_jerid_meesa={
 		name="Jerid Meesa"
@@ -269,6 +289,40 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=2
+		}
+	}
+
+	TIT_agar={
+		name="Agar"
+		portraits={
+			army={
+				large="gfx/leaders/TIT/agar_titans.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_ford_romfellow={
+		name="Ford Romfellow"
+		portraits={
+			army={
+				large="gfx/leaders/TIT/ford_romfellow_titans.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 

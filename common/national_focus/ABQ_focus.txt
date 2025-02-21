@@ -96,11 +96,28 @@ focus = {
 }
 
 focus = {
+	id = ABQ_symbol_of_zeon_military_pride
+	icon = GFX_goal_medal_of_cross
+
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ABQ_gihrens_royal_guard
+	prerequisite = { focus = ABQ_gihrens_royal_guard }
+}
+
+focus = {
 	id = ABQ_loyalty_beyond_death
 	icon = GFX_goal_medal_of_cross
 
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1

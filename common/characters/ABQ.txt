@@ -157,6 +157,26 @@ characters = {
 		}
 	}
 
+	ABQ_vrhad_fahran={
+		name="Vrhad Fahran"
+		portraits={
+			army={
+				small=GFX_idea_gadem
+			}
+			army={
+				large= "gfx/leaders/ABQ/vrhad_fahran.dds"
+			}
+		}
+		field_marshal={
+			traits={ defensive_doctrine unyielding_defender }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
 	
 	#generals
 	ABQ_eric_manthfield={

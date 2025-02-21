@@ -315,7 +315,7 @@ focus = {
 	id = AR9_retreat_to_perm
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = -2
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -346,7 +346,7 @@ focus = {
 	id = AR9_retreat_to_orenburg
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = -4
+	x = -5
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -372,7 +372,7 @@ focus = {
 	id = AR9_southern_push
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 2
+	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -397,7 +397,7 @@ focus = {
 	id = AR9_western_push
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 4
+	x = 5
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -422,7 +422,34 @@ focus = {
 	id = AR9_take_in_the_8th
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_prepare_the_final_stand
+		}
+		available = {
+			has_war = no
+			not = {
+				country_exists = AR8 
+			}
+		}
+	mutually_exclusive = {
+		focus = AR9_consolidate_control
+	}
+	relative_position_id = AR9_prepare_the_final_stand
+	completion_reward = {
+		add_manpower = 50000
+	}
+}
+
+focus = {
+	id = AR9_consolidate_control
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -435,21 +462,22 @@ focus = {
 		}
 	relative_position_id = AR9_prepare_the_final_stand
 	completion_reward = {
-		add_manpower = 50000
+		add_political_power = 50
 	}
 }
+
 
 focus = {
 	id = AR9_restructure_command
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	prerequisite = {
-	focus = AR9_take_in_the_8th
+	focus = AR9_take_in_the_8th focus = AR9_consolidate_control
 		}
 		available = {
 			has_war = no

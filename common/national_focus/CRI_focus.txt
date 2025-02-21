@@ -258,6 +258,24 @@ focus = {
 }
 
 focus = {
+	id = CRI_doctrine_of_priracy
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_build_up_submarine_docks
+		}
+	relative_position_id = CRI_build_up_submarine_docks
+	completion_reward = {
+		
+}
+}
+
+focus = {
 	id = CRI_cooperate_with_Zeon_remnants
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -327,4 +345,23 @@ focus = {
 	
 	}
 }
+
+focus = {
+	id = CRI_independant_state_of_crimea
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = CRI_work_with_local_seperatists
+		}
+	relative_position_id = CRI_work_with_local_seperatists
+	completion_reward = {
+	
+	}
+}
+
 }

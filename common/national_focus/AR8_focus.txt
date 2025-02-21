@@ -204,7 +204,7 @@ focus = {
 	id = AR8_changing_of_the_gaurd
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -215,10 +215,59 @@ focus = {
 		available = {
 			has_war = no
 		}
+		mutually_exclusive = {
+			focus = AR8_plans_for_revenge
+		}
 	relative_position_id = AR8_prepare_the_final_stand
 	completion_reward = {
 		RUS = { change_tag_from = AR8 }
 		653 = { transfer_state_to = RUS }
+	}
+}
+
+focus = {
+	id = AR8_plans_for_revenge
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_prepare_the_final_stand
+		}
+		available = {
+			has_war = no
+		}
+		mutually_exclusive = {
+			focus = AR8_changing_of_the_gaurd
+		}
+	relative_position_id = AR8_prepare_the_final_stand
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_reinforce_ties_with_9th_army
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_plans_for_revenge
+		}
+		available = {
+			has_war = no
+		}
+	
+	relative_position_id = AR8_plans_for_revenge
+	completion_reward = {
+		create_faction = "Zeon Earth Command"
 	}
 }
 }

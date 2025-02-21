@@ -440,6 +440,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = {
+			focus = GRA_leave_for_A_Baoa_Qu
+		}
 		available = {
 			
 		}
@@ -457,6 +460,9 @@ focus_tree = {
 		prerequisite = {focus = GRA_true_identity_of_the_red_comet }
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus = GRA_coup_attempt_against_gihren
 		}
 		available = {
 			
@@ -686,7 +692,7 @@ focus_tree = {
 		id = GRA_begin_widescale_deployment_of_newtypes
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GRA_form_the_300th_Autonomous_Corps.
 		prerequisite = {focus = GRA_form_the_300th_Autonomous_Corps.}
@@ -702,7 +708,7 @@ focus_tree = {
 		id = GRA_improve_newtype_use_mobile_weapons
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = GRA_form_the_300th_Autonomous_Corps.
 		prerequisite = {focus = GRA_form_the_300th_Autonomous_Corps.}

@@ -1,0 +1,24 @@
+characters={
+	##Leaders
+	OCZ_walter_curtis ={
+		name="Walter Curtis"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/walter_curtis.dds"
+			}
+		}
+		country_leader = {
+			ideology = spacenoid_supremacist
+		}
+		field_marshal = {
+			traits={ }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+## field marshal
+
+}

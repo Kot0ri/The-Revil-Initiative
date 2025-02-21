@@ -271,6 +271,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			recruit_character = TIT_paptimus_scirocco_1
+			recruit_character = TIT_sarah_zabiarov
 		}
 	}
 
@@ -313,6 +314,7 @@ focus_tree = {
 		completion_reward = {
 			retire_character = TIT_paptimus_scirocco_1
 			recruit_character = TIT_paptimus_scirocco_2
+			recruit_character = TIT_reccoa_londe
 			}
 		}
 
@@ -340,6 +342,58 @@ focus_tree = {
 				promote_character = TIT_paptimus_scirocco_2
 				}
 			}
+
+			focus = {
+				id = TIT_purge_opposition
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = -2
+				y = 1
+				relative_position_id = TIT_jupitris_power_grab
+				prerequisite = {
+					focus = TIT_jupitris_power_grab
+				}
+				available = {
+					
+				}
+				ai_will_do = {
+					factor = 1
+				}
+				mutually_exclusive = {
+					
+				}
+				completion_reward = {
+					retire_character = TIT_bask_om
+					retire_character = TIT_gates_cappa
+					retire_character = TIT_rosamia_badam
+					retire_character = TIT_koji
+					retire_character = TIT_jamaican_daninghan
+					}
+				}
+
+				focus = {
+					id = TIT_secure_power
+					icon = GFX_goal_efsf_mobile_headquarters
+					cost = 5
+					x = 0
+					y = 1
+					relative_position_id = TIT_jupitris_power_grab
+					prerequisite = {
+						focus = TIT_jupitris_power_grab
+					}
+					available = {
+						
+					}
+					ai_will_do = {
+						factor = 1
+					}
+					mutually_exclusive = {
+						
+					}
+					completion_reward = {
+						
+						}
+					}	
 
 		focus = {
 			id = TIT_Jamitovs_sway

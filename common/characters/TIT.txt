@@ -483,6 +483,46 @@ characters={
 		}
 	}
 
+	TIT_sarah_zabiarov={
+		name="Sarah Zabiarov"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/sarah_zabiarov.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	TIT_reccoa_londe={
+		name="Reccoa Londe"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/reccoa_londe_titans.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	TIT_proto-zero={
 		name="Zero Murasame"
 		portraits={

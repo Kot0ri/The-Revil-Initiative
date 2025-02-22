@@ -163,6 +163,47 @@ ZEO_cecilia_irene = {
 }
 
 	##Field Marshalls
+	ZEO_lautrec={
+		name="Lautrec"
+		portraits={
+			army={
+				small=GFX_idea_gadem
+			}
+			army={
+				large= "gfx/leaders/ZEO/lautrec.dds"
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = lautrec
+			allowed = {
+				original_tag = ZEO
+			}
+			available = {
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
 	ZEO_henri_schlesser={
 		name="Henri Schlesser"
 		portraits={
@@ -174,7 +215,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		field_marshal={
-			traits={ deikun_party anti_zabi_party}
+			traits={ deikun_party anti-zabi_party}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -225,6 +266,23 @@ ZEO_cecilia_irene = {
 	}
 
 	##Generals
+
+	ZEO_hans_lawnder={
+		name="Hans Lawnder "
+		portraits={
+			army={
+				large= "gfx/leaders/ZEO/hans_lawnder.dds"
+			}
+		}
+		corps_commander={
+			traits={ anti-zabi_party deikun_party royal_gaurd }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
 
 	ZEO_kline={
 		name="Kyle Kline"
@@ -1010,8 +1068,6 @@ ZEO_mackenson={
 			planning_skill=2
 			logistics_skill=2
 		}
-	}
-
 		advisor={
 			slot = high_command
 			ledger = army
@@ -1031,7 +1087,7 @@ ZEO_mackenson={
 				}
 			}
 		}
-	
+	}
 
 	ZEO_georgiev={
 		name="Boyan Georgiev"
@@ -1051,7 +1107,6 @@ ZEO_mackenson={
 			planning_skill=2
 			logistics_skill=2
 		}
-	}
 		advisor={
 			slot = high_command
 			ledger = army
@@ -1071,7 +1126,7 @@ ZEO_mackenson={
 				}
 			}
 		}
-	
+	}
 
 	ZEO_pierre={
 		name="Jean-Louis Pierre"
@@ -1083,8 +1138,8 @@ ZEO_mackenson={
 				large= "gfx/leaders/ZEO/pierre.dds"
 			}
 		}
-	}
-		corps_commander
+	
+		corps_commander={
 			traits={ garma_loyalist }
 			skill=2
 			attack_skill=1
@@ -1112,6 +1167,7 @@ ZEO_mackenson={
 				}
 			}
 		}
+	
 	
 
 	##advisors
@@ -2769,7 +2825,6 @@ ZEO_mackenson={
 		}
 	}
 
+}
 
 }
-	}
-

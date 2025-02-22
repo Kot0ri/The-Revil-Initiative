@@ -16,7 +16,7 @@ characters={
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-		traits = { pilot }
+		traits = { pilot garma_loyalist }
 		skill = 3
 		attack_skill = 2
 		defense_skill = 2
@@ -37,11 +37,11 @@ NAA_Garma_Zabi_2={
 	}
 	country_leader={
 		ideology= parlimentary_monarchy
-		traits={garma_pa_trait garma_na_trait man_who_pointed}
+		traits={garma_pa_trait garma_na_trait man_who_pointed }
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-		traits = { pilot }
+		traits = { pilot garma_loyalist }
 		skill = 6
 		attack_skill = 3
 		defense_skill = 5
@@ -64,7 +64,7 @@ NAA_Garcia_Romeo={
 		}
 	}
 	field_marshal = {
-		traits = { politically_connected }
+		traits = { politically_connected ghiren_loyalist }
 		skill = 2
 		attack_skill = 1
 		defense_skill = 1
@@ -103,7 +103,7 @@ NAA_Killy_Garret={
 		}
 	}
 	field_marshal = {
-		traits = { pilot noisy_fairy }
+		traits = { pilot noisy_fairy garma_loyalist }
 		skill = 4
 		attack_skill = 3
 		defense_skill = 4
@@ -142,7 +142,7 @@ NAA_otto_kaufman={
 		}
 	}
 	field_marshal = {
-		traits = { politically_connected zabi_party }
+		traits = { politically_connected zabi_party ghiren_loyalist }
 		skill = 2
 		attack_skill = 2
 		defense_skill = 2
@@ -177,7 +177,7 @@ NAA_rudolf_dietrich={
 		}
 	}
 	corps_commander = {
-		traits = { politically_connected engineer_officer panzer_leader  jungle_rat zabi_party }
+		traits = { politically_connected engineer_officer panzer_leader  jungle_rat zabi_party ghiren_loyalist }
 		skill = 4
 		attack_skill = 4
 		defense_skill = 3
@@ -197,7 +197,7 @@ NAA_rousseau_fluerbach={
 		}
 	}
 	corps_commander = {
-		traits = { winter_specialist winter_expert trickster }
+		traits = { winter_specialist winter_expert trickster garma_loyalist }
 		skill = 3
 		attack_skill = 3
 		defense_skill = 3

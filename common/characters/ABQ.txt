@@ -190,7 +190,7 @@ characters = {
 			}
 		}
 		corps_commander={
-			traits={ zabi_party ghiren_loyalist pilot royal_guard}
+			traits={ zabi_party ghiren_loyalist pilot royal_gaurd }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -229,7 +229,7 @@ ABQ_stream={
 		}
 	}
 	corps_commander={
-		traits={ pilot Royalguard zabi_party}
+		traits={ pilot royal_gaurd zabi_party}
 		skill=2
 		attack_skill=2
 		defense_skill=2
@@ -249,7 +249,7 @@ ABQ_zemela={
 		}
 	}
 	corps_commander={
-		traits={ pilot Royalguard zabi_party}
+		traits={ pilot royal_gaurd zabi_party}
 		skill=1
 		attack_skill=1
 		defense_skill=1
@@ -269,7 +269,7 @@ ABQ_vermillion={
 		}
 	}
 	corps_commander={
-		traits={ pilot Royalguard zabi_party}
+		traits={ pilot royal_gaurd zabi_party}
 		skill=1
 		attack_skill=1
 		defense_skill=1
@@ -470,7 +470,7 @@ ABQ_gleisner={
 		}
 	}
 	corps_commander={
-		traits={ pilot }
+		traits={ pilot deikun_party }
 		skill=4
 		attack_skill=5
 		defense_skill=3
@@ -490,7 +490,7 @@ ABQ_killing={
 		}
 	}
 	corps_commander={
-		traits={zabi_party harsh_leader}
+		traits={zabi_party harsh_leader ghiren_loyalist }
 		skill=1
 		attack_skill=2
 		defense_skill=1
@@ -552,7 +552,7 @@ ABQ_delaz={
 		}
 	}
 	navy_leader={
-		traits={zabi_party bold blockade_runner superior_tactician space_expert ironside}  
+		traits={zabi_party ghiren_loyalist bold blockade_runner superior_tactician space_expert ironside}  
 		skill= 6
 		attack_skill=5
 		defense_skill=5
@@ -573,7 +573,7 @@ ABQ_jirom={
 		}
 	}
 	navy_leader={
-		traits={old_guard zabi_party}
+		traits={old_guard zabi_party ghiren_loyalist }
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -594,7 +594,7 @@ ABQ_weigelman={
 		}
 	}
 	navy_leader={
-		traits={old_guard zabi_party}
+		traits={old_guard zabi_party ghiren_loyalist }
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -778,7 +778,7 @@ ABQ_dietroaf={
 		}
 	}
 	navy_leader={
-		traits={pirates anti_zabi_party}  
+		traits={pirates anti-zabi_party}  
 		skill=1
 		attack_skill=2
 		defense_skill=1
@@ -819,7 +819,7 @@ ABQ_kult={
 		}
 	}
 	corps_commander={
-		traits={pirates anti_zabi_party pilot}
+		traits={pirates anti-zabi_party pilot}
 		skill=1
 		attack_skill=1
 		defense_skill=1
@@ -839,7 +839,7 @@ ABQ_cara_lodge={
 		}
 	}
 	corps_commander={
-		traits={pirates anti_zabi_party pilot}
+		traits={pirates anti-zabi_party pilot}
 		skill=1
 		attack_skill=1
 		defense_skill=1
@@ -859,7 +859,7 @@ ABQ_gary_lodge={
 		}
 	}
 	corps_commander={
-		traits={pirates anti_zabi_party pilot}
+		traits={pirates anti-zabi_party pilot}
 		skill=1
 		attack_skill=1
 		defense_skill=1

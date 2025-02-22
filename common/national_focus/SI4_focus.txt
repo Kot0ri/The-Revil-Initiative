@@ -257,6 +257,38 @@ focus = {
 }
 
 focus = {
+	id = SI4_invigorate_flemming_industrial_complex
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI4_Flemming_connections
+	prerequisite = { focus = SI4_Flemming_connections }
+}
+
+focus = {
+	id = SI4_reinforce_ties_with_peer_entertainment_coporation
+	icon =  GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = SI4_invigorate_flemming_industrial_complex
+	prerequisite = { focus = SI4_invigorate_flemming_industrial_complex }
+}
+
+focus = {
 	id = SI4_plan_with_anaheim
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
@@ -495,7 +527,7 @@ focus = {
 	id = SI4_begin_expansion_of_colony_industries
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 34
+	x = 36
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -509,7 +541,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -524,7 +556,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -539,7 +571,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 3
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -554,7 +586,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -569,7 +601,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -584,7 +616,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -599,7 +631,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -614,7 +646,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -629,7 +661,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -644,7 +676,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -659,7 +691,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -674,7 +706,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -689,7 +721,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -699,6 +731,7 @@ focus = {
 	prerequisite = { focus = SI4_reduce_costs_for_immigrants }
 	prerequisite = { focus = SI4_open_up_new_bonds }
 	prerequisite = { focus = SI4_hire_doctors_from_earth }
+	prerequisite = { focus = SI4_reinforce_ties_with_peer_entertainment_coporation }
 }
 
 focus = {
@@ -1195,7 +1228,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1210,7 +1243,7 @@ focus = {
 	icon =  GFX_goal_elenism
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1225,7 +1258,7 @@ focus = {
 	icon =  GFX_goal_augusta_factory
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1240,7 +1273,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1255,7 +1288,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1270,7 +1303,7 @@ focus = {
 	icon =  GFX_goal_colony_alliance
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1298,7 +1331,7 @@ focus = {
 	icon =  GFX_goal_influential_people_of_earth
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1313,7 +1346,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1328,7 +1361,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1343,7 +1376,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1358,7 +1391,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1386,7 +1419,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1401,7 +1434,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1416,7 +1449,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1431,7 +1464,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1446,7 +1479,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1461,7 +1494,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1476,7 +1509,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1491,7 +1524,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1506,7 +1539,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1521,7 +1554,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1536,7 +1569,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1551,7 +1584,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1566,7 +1599,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1582,7 +1615,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1597,7 +1630,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1612,7 +1645,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1627,7 +1660,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1642,7 +1675,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1657,7 +1690,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1672,7 +1705,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1687,7 +1720,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1702,7 +1735,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1717,7 +1750,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1732,7 +1765,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1748,7 +1781,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1763,7 +1796,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1778,7 +1811,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1786,14 +1819,15 @@ focus = {
 	}
 	relative_position_id = SI4_offer_repairs_to_all_sides
 	prerequisite = { focus = SI4_offer_repairs_to_all_sides }
+	prerequisite = { focus = SI4_red_tape_on_weapons }
 }
 
 focus = {
 	id = SI4_spy_stories
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 2
-	y = 2
+	x = 1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1808,7 +1842,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1822,8 +1856,8 @@ focus = {
 	id = SI4_policy_of_noninvolvement
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = -2
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1839,7 +1873,7 @@ focus = {
 	icon =  GFX_goal_enhancement_of_general_purpose_MS
 	cost = 2
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1854,7 +1888,7 @@ focus = {
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 2
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}

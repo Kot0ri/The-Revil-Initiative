@@ -1154,8 +1154,7 @@ focus = {
 		}
 	}
 	relative_position_id = ZEO_shut_down_political_thought_criminal
-	prerequisite = { focus = ZEO_shut_down_political_thought_criminal }
-	prerequisite = { focus = ZEO_send_a_message_to_parliment }
+	prerequisite = { focus = ZEO_shut_down_political_thought_criminal focus = ZEO_send_a_message_to_parliment  }
 }
 
 focus = {

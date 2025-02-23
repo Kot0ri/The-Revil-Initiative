@@ -4284,6 +4284,82 @@ focus = {
 }
 
 focus = {
+	id = ZEO_arrest_ghiren_administration
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_form_provisional_government
+	prerequisite = {
+		focus = ZEO_form_provisional_government
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_disband_elite_gaurd
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_form_provisional_government
+	prerequisite = {
+		focus = ZEO_form_provisional_government
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_negotiate_with_rebels
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_form_provisional_government
+	prerequisite = {
+		focus = ZEO_form_provisional_government
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_restore_democracy
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_form_provisional_government
+	prerequisite = {
+		focus = ZEO_form_provisional_government
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = ZEO_Luna_treaty
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4293,8 +4369,8 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	allow_branch = {
-		has_country_flag = lost_independence_war
+	prerequisite = {
+		focus = ZEO_form_provisional_government
 	}
 	completion_reward = {
 		add_stability = -0.1
@@ -4331,7 +4407,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		promote_character = ZEO_darcia_bakharo
 	}
 }
 

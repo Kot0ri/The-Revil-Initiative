@@ -1,0 +1,49 @@
+focus_tree = {
+	id = HAM
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = HAM
+		}
+	}
+	default = no
+
+	focus = {
+		id = HAM_the_will_of_mallet
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		mutually_exclusive = {
+			focus = HAM_return_of_manthfield
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_return_of_manthfield
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 5
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus =HAM_the_will_of_mallet
+		}
+		completion_reward = {
+		
+		}
+	}
+}

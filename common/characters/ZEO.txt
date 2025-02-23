@@ -36,6 +36,36 @@ characters={
 			}
 		}
 	}
+
+	ZEO_oleg={
+		name="Oleg"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZEO/Portrait_Zeon_darcia_bakharo.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = oleg
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				voice_of_restraint
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			modifier = {
+			}
+			do_effect = {
+			}
+		}
+	}
 	
 	ZEO_degwin_sodo_zabi = {
 		name=ZEO_degwin_sodo_zabi

@@ -4261,6 +4261,30 @@ focus = {
 }
 
 focus = {
+	id = ZEO_form_provisional_government
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 20
+	y = 18
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ZEO_cold_night_in_side_3
+	}
+	allow_branch = {
+		has_completed_focus = ZEO_cold_night_in_side_3
+	}
+	completion_reward = {
+		promote_character = {
+			character = ZEO_oleg
+			ideology = represenitive_democracy
+		}
+	}
+}
+
+focus = {
 	id = ZEO_Luna_treaty
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4362,7 +4386,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		recruit_character = ZEO_douglas_rodin
+		recruit_character = ZEO_ken_berderstadt
+		recruit_character = ZEO_nikki_roberto
+		recruit_character = ZEO_charlotte_hepner
 	}
 }
 

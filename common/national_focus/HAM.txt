@@ -14,7 +14,7 @@ focus_tree = {
 		id = HAM_the_will_of_mallet
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = 4
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -31,10 +31,223 @@ focus_tree = {
 	}
 
 	focus = {
+		id = HAM_fork_in_the_road
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = {focus = HAM_the_will_of_mallet}
+		relative_position_id = HAM_the_will_of_mallet
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_those_who_are_dogs
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {focus = HAM_the_will_of_mallet}
+		relative_position_id = HAM_the_will_of_mallet
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_organize_strikes
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_those_who_are_dogs}
+		relative_position_id = HAM_those_who_are_dogs
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = HAM_organize_lunar_remnants
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {focus = HAM_fork_in_the_road}
+		prerequisite = {focus = HAM_those_who_are_dogs}
+		relative_position_id = HAM_fork_in_the_road
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_reach_out_to_africa
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_fork_in_the_road}
+		relative_position_id = HAM_fork_in_the_road
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_secure_communication_lines
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_reach_out_to_africa}
+		relative_position_id = HAM_reach_out_to_africa
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_equipment_buildup
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_secure_communication_lines}
+		relative_position_id = HAM_secure_communication_lines
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_prepare_aires_assualt
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_organize_strikes }
+		prerequisite = {focus = HAM_organize_lunar_remnants}
+		relative_position_id = HAM_organize_strikes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM__inflitrate_factories
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_prepare_aires_assualt}
+		relative_position_id = HAM_prepare_aires_assualt
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_fortify_rhodes
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_organize_lunar_remnants}
+		relative_position_id = HAM_organize_lunar_remnants
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_execution_unit
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_fortify_rhodes}
+		relative_position_id = HAM_fortify_rhodes
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_the_wolf_roars
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_execution_unit }
+		prerequisite = {focus = HAM__inflitrate_factories }
+		prerequisite = {focus = HAM_equipment_buildup}
+		relative_position_id = HAM_execution_unit
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = HAM_execute_operation_silver_lance
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = {focus = HAM_the_wolf_roars }
+		relative_position_id = HAM_the_wolf_roars
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = HAM_return_of_manthfield
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 5
+		x = 10
 		y = 0
 		ai_will_do = {
 			factor = 1

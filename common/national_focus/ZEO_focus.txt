@@ -1222,6 +1222,14 @@ focus = {
 	}
 	completion_reward = {
 		country_event = { id = ptag_abq }
+		add_popularity = {
+			ideology = military_government
+			popularity = 15
+		}
+		set_politics = {
+			ruling_party = military_government
+		}
+
 		add_country_leader_role = {
 			character = ZEO_cecilia_irene
 			promote_leader = yes

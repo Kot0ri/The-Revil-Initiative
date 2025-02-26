@@ -4295,6 +4295,61 @@ focus = {
 }
 
 focus = {
+	id = ZEO_ghirenists_victorious
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 26
+	y = 18
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ZEO_cold_night_in_side_3
+	}
+	allow_branch = {
+		has_completed_focus = ZEO_cold_night_in_side_3
+	}
+	mutually_exclusive = {
+		focus = ZEO_valkyrie_successful
+	}
+	mutually_exclusive = {
+		focus = ZEO_form_provisional_government
+	}
+	completion_reward = {
+		
+	}
+}
+
+
+focus = {
+	id = ZEO_valkyrie_successful
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 30
+	y = 18
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ZEO_cold_night_in_side_3
+	}
+	allow_branch = {
+		has_completed_focus = ZEO_cold_night_in_side_3
+	}
+	mutually_exclusive = {
+		focus = ZEO_ghirenists_victorious
+	}
+	mutually_exclusive = {
+		focus = ZEO_form_provisional_government
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = ZEO_form_provisional_government
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4309,6 +4364,12 @@ focus = {
 	}
 	allow_branch = {
 		has_completed_focus = ZEO_cold_night_in_side_3
+	}
+	mutually_exclusive = {
+		focus = ZEO_ghirenists_victorious
+	}
+	mutually_exclusive = {
+		focus = ZEO_valkyrie_successful
 	}
 	completion_reward = {
 		promote_character = {

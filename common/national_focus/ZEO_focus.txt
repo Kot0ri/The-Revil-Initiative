@@ -740,7 +740,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		recruit_character = ZEO_otto_ernst_remer
+		recruit_character = ZEO_wilhelm_bodewin
+		recruit_character = ZEO_günther_korten
 	}
 	relative_position_id = ZEO_sequel_theory_of_spacenoid_supremacy
 	prerequisite = { focus = ZEO_sequel_theory_of_spacenoid_supremacy }
@@ -936,7 +938,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		recruit_character = ZEO_heinz_brandt
+		recruit_character = ZEO_adolf_heusinger
+		recruit_character = ZEO_langers
 	}
 	relative_position_id = ZEO_invade_earth
 	prerequisite = { focus = ZEO_invade_earth }
@@ -1241,6 +1245,9 @@ focus = {
 		}
 		add_field_marshal_role = {
 			character = ZEO_cecilia_irene
+			traits = {
+				politically_connected ghiren_loyalist
+			}
 			skill = 2
 			attack_skill = 1
 			defense_skill = 3

@@ -294,6 +294,59 @@ ZEO_cecilia_irene = {
 		}
 	}
 
+	ZEO_otto_ernst_remer={
+		name="Otto Ernst Remer"
+		portraits={
+			army={
+				large= "gfx/leaders/ZEO/otto_ernst_remer.dds"
+			}
+		}
+		field_marshal={
+			traits={ ghiren_loyalist harsh_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	ZEO_heinz_brandt={
+		name="Heinz Brandt"
+		portraits={
+	
+			army={
+				large= "gfx/leaders/ZEO/heinz_brandt.dds"
+			}
+		}
+		field_marshal={
+			traits={ ghiren_loyalist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	ZEO_wilhelm_bodewin={
+		name="Wilhelm Bodewin"
+		portraits={
+	
+			army={
+				large= "gfx/leaders/ZEO/wilhelm_bodewin.dds"
+			}
+		}
+		field_marshal={
+			traits={ ghiren_loyalist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	##Generals
 
 	ZEO_hans_lawnder={
@@ -350,6 +403,61 @@ ZEO_cecilia_irene = {
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=2
+		}
+	}
+
+	ZEO_günther_korten={
+		name="Günther Korten"
+		portraits={
+
+			army={
+				large="gfx/leaders/ZEO/günther_korten.dds"
+			}
+		}
+		corps_commander={
+			traits={ ghiren_loyalist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	ZEO_adolf_heusinger={
+		name="Adolf Heusinger"
+		portraits={
+
+			army={
+				large="gfx/leaders/ZEO/adolf_heusinger.dds"
+			}
+		}
+		corps_commander={
+			traits={ ghiren_loyalist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	##pilots
+
+	ZEO_langers={
+		name="Langers"
+		portraits={
+			army={
+				large="gfx/leaders/ZEO/langers.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
 		}
 	}
 

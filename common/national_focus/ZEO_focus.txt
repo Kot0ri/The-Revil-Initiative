@@ -230,7 +230,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		ZEO_cecilia_irene = {
+			add_country_leader_trait = general_secretary_of_zeon
+		}
 	}
 	relative_position_id = ZEO_supreme_commanders_award_bureau
 	prerequisite = { focus = ZEO_supreme_commanders_award_bureau }
@@ -1220,7 +1222,23 @@ focus = {
 	}
 	completion_reward = {
 		country_event = { id = ptag_abq }
-		promote_character = ZEO_cecilia_irene
+		add_country_leader_role = {
+			character = ZEO_cecilia_irene
+			promote_leader = yes
+			country_leader = {
+				ideology = military_dictatorship
+				expire = "1965.1.1.1"
+				traits = { chief_secretary_of_gihren_zabi }
+			}
+		}
+		add_field_marshal_role = {
+			character = ZEO_cecilia_irene
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		  }
 	}
 	relative_position_id = ZEO_fake_a_conspiracy
 	prerequisite = { focus = ZEO_fake_a_conspiracy }

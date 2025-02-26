@@ -146,6 +146,19 @@ Head_of_Federal_Criminal_Police_Organization = {
 		surrender_limit = 0.1
 	}
 
+#Cecilia Irene
+chief_secretary_of_gihren_zabi = {
+	random = no
+	political_advisor_cost_factor = -0.25
+	political_power_gain = 0.05
+}
+general_secretary_of_zeon = {
+	random = no
+	army_core_defence_factor = 0.05
+	stability_factor = 0.05
+	war_support_factor = 0.1
+}
+
 #Serrana Karn
 last_of_the_karns = {
 	random = no

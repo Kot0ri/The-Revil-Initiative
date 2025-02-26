@@ -347,6 +347,24 @@ ZEO_cecilia_irene = {
 		}
 	}
 
+	ZEO_johann_gustav_keital={
+		name="Johann Gustav Keital"
+		portraits={
+	
+			army={
+				large= "gfx/leaders/ZEO/johann_gustav_keital.dds"
+			}
+		}
+		field_marshal={
+			traits={ ghiren_loyalist }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	##Generals
 
 	ZEO_hans_lawnder={
@@ -442,6 +460,24 @@ ZEO_cecilia_irene = {
 		}
 	}
 
+	ZEO_ernst_freyand={
+		name="Ersnt Freyand"
+		portraits={
+
+			army={
+				large="gfx/leaders/ZEO/ernst_freyand.dds"
+			}
+		}
+		corps_commander={
+			traits={ ghiren_loyalist infantry_expert }
+			skill= 2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	##pilots
 
 	ZEO_langers={
@@ -452,7 +488,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		corps_commander={
-			traits={pilot}
+			traits={pilot ghiren_loyalist }
 			skill=2
 			attack_skill=2
 			defense_skill=2

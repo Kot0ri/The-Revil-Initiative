@@ -256,7 +256,14 @@ focus_tree = {
 			focus =HAM_the_will_of_mallet
 		}
 		completion_reward = {
-		
+		recruit_character = HAM_eric_manthfield
+		add_popularity = {
+			ideology = aristocracy
+			popularity = 25
+		}
+		set_politics = {
+			ruling_party = aristocracy
+		}
 		}
 	}
 }

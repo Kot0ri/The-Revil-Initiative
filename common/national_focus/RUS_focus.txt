@@ -55,10 +55,60 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_the_odd_factor
+		id = RUS_prepare_for_elections
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_reconnect_with_the_underground_government
+		prerequisite = {
+			focus = RUS_reconnect_with_the_underground_government
+		}
+		mutually_exclusive = {
+			focus = RUS_the_oligarchs_sieze_power
+		}
+		
+		available = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_the_oligarchs_sieze_power
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_reconnect_with_the_underground_government
+		prerequisite = {
+			focus = RUS_reconnect_with_the_underground_government
+		}
+		mutually_exclusive = {
+			focus = RUS_prepare_for_elections
+		}
+		
+		available = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_the_odd_factor
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -620,7 +670,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = RUS_advadnced_rocketry
+		id = RUS_advanced_rocketry
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 2
@@ -916,6 +966,60 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_arov_industries
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_industrialization_program
+		}
+		relative_position_id = RUS_industrialization_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_futher_arov_control_of_heavy_industries
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_arov_industries
+		}
+		relative_position_id = RUS_arov_industries
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_give_resources_extraction_rights
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_futher_arov_control_of_heavy_industries
+		}
+		relative_position_id = RUS_futher_arov_control_of_heavy_industries
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = RUS_improve_rural_infrastructre
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -956,7 +1060,7 @@ focus_tree = {
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 1
-		y = 1
+		y = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -966,6 +1070,9 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_year_90_plan
 			}
+			prerequisite = {
+				focus = RUS_give_resources_extraction_rights
+				}
 			available = {
 				is_in_faction_with = RNZ
 			}

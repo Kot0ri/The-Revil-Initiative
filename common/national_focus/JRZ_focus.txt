@@ -1,0 +1,238 @@
+focus_tree = {
+	id = JRZ
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = JRZ
+		}
+	}
+	default = no
+
+
+focus = {
+	id = JRZ_arrvial_in_jupiter_sphere
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 5
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_leadership_conference
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_arrvial_in_jupiter_sphere
+	}
+	relative_position_id = JRZ_arrvial_in_jupiter_sphere
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_begin_pirate_raids
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_crimson_lightning focus = JRZ_pearl_boar
+	}
+	relative_position_id = JRZ_leadership_conference
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_secure_asteroid_base_defence
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_begin_pirate_raids
+	}
+	relative_position_id = JRZ_begin_pirate_raids
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_improve_hit_and_run_tactics
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_begin_pirate_raids
+	}
+	relative_position_id = JRZ_begin_pirate_raids
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_crimson_lightning
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -8
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_leadership_conference
+	}
+	relative_position_id = JRZ_leadership_conference
+	mutually_exclusive = {
+		focus = JRZ_pearl_boar
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_reach_out_to_mars
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_crimson_lightning
+	}
+	available = {
+		country_exists = MAR
+	}
+	relative_position_id = JRZ_crimson_lightning
+	completion_reward = {
+		MAR = { puppet = JRZ }
+		JRZ = { add_offsite_building = {
+			type = industrial_complex
+			level = 3
+		} }
+	}
+}
+
+focus = {
+	id = JRZ_pearl_boar
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 8
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_leadership_conference
+	}
+	relative_position_id = JRZ_leadership_conference
+	mutually_exclusive = {
+		focus = JRZ_crimson_lightning
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_reach_out_to_axis
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_pearl_boar
+	}
+	available = {
+		country_exists = AXS
+	}
+	relative_position_id = JRZ_pearl_boar
+	completion_reward = {
+		AXS = { puppet = JRZ }
+		JRZ = { add_offsite_building = {
+			type = industrial_complex
+			level = 3
+		} }
+	}
+}
+
+focus = {
+	id = JRZ_word_of_a_godlike_being
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_reach_out_to_axis
+	}
+	prerequisite = {
+		focus = JRZ_begin_pirate_raids
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_reach_out_to_axis
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = JRZ_secure_ideon_asteroid
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_word_of_a_godlike_being
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_word_of_a_godlike_being
+	completion_reward = {
+	
+	}
+}
+
+}

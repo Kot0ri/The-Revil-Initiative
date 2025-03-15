@@ -1,0 +1,27 @@
+focus_tree = {
+	id = JUP
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = JUP
+		}
+	}
+	default = no
+
+	focus = {
+		id = JUP_jupiter_energy_fleet_board_meeting
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 5
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+}

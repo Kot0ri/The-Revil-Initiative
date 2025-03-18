@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+
+		artic_navy = {
+			allowed = {
+				always = no
+				original_tag = NAA
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				experience_gain_navy_factor = 0.05
+				acclimatization_cold_climate_gain_factor = 0.05
+			}
+			
+		}
+	}
+}

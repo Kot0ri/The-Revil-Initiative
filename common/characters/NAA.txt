@@ -77,7 +77,7 @@ NAA_Garcia_Romeo={
 		cost = 10
 		idea_token = killy
 		allowed = {
-			original_tag = EAF
+			original_tag = NAA
 		}
 		traits = {
 			army_chief_offensive_1
@@ -89,6 +89,26 @@ NAA_Garcia_Romeo={
 				factor = 0
 			}
 		}
+	}
+}
+
+NAA_amaria={
+	name="Amaria"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/amaria.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/amaria.dds"
+		}
+	}
+	field_marshal = {
+		traits = { naval_invader }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
 	}
 }
 

@@ -1,56 +1,29 @@
-state = {
-
-	id = 664
-
-	name = "STATE_664"
-
+state={
+	id=664
+	name="STATE_664"
 	manpower = 854300
-
-	resources = {
-		steel = 13 # was: 20
+	resources={
+		steel=13 # was: 20
 		chromium = 3 # was: 4
 	}
 	
 	state_category = town
 	
-	history = {
-
-		owner = CZE
-
+	history={
+		owner = EUF
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
 		}
-
 		victory_points = {
-			6573 1 # Kosice
+			6573 1 
 		}
-
-		add_core_of = CZE
-		add_core_of = SLO
-
-		# This should isntead be reclaimable through Hungarian focuses with ww
-		IF = {
-			limit = {
-				NOT = {
-					has_dlc = "Gotterdammerung"
-				}
-			}
-			add_claim_by = HUN
-		}
-		
-
-		1939.3.14 = {
-			owner = HUN
-			controller = HUN
-			remove_claim_by = HUN
-			add_core_of = HUN
-		}
+		add_core_of = EUF
 	}
 	
-	provinces = {
+	provinces={
 		3565 3716 6561 6573 9537 11679 
 	}
 
-	local_supplies = 3.0 
+	local_supplies=3.0 
 }

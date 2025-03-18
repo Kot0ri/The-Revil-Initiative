@@ -6,7 +6,7 @@ state = {
 	state_category = city
 
 	history = {
-		owner = ITA
+		owner = EUF
 		victory_points = { 9904 40 } #Rome
 		victory_points = { 11846 1 } #Anzio (was 5)
 		buildings = {
@@ -20,23 +20,9 @@ state = {
 			11846 = {
 				naval_base = 2
 			}
-            9904 = {
-                landmark_colosseum = {
-                    level = 1
-                    allowed = {
-                        has_dlc = "Gotterdammerung"
-                    }
-                }
-            }
 		}
-		add_core_of = ITA
-		add_core_of = PAP
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 2
-				industrial_complex = 5
-			}
-		}
+		add_core_of = EUF
+		add_core_of = AXS
 	}
 
 	provinces = {

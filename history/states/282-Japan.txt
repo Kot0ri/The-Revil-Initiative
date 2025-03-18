@@ -1,3 +1,4 @@
+
 state = {
 	id = 282
 	name = "STATE_282" # Kanto
@@ -6,13 +7,13 @@ state = {
 	state_category = megalopolis
 	
 	resources = {
-		aluminium = 1 # was: 2
+		aluminium = 2
 	}
 
 	history = {
 
-		owner = JAP
-		add_core_of = JAP
+		owner = EFG
+		add_core_of = EFG
 
 		buildings = {
 			infrastructure = 4 #was: 8
@@ -20,28 +21,19 @@ state = {
 			industrial_complex = 4
 			arms_factory = 2
 			dockyard = 4
-
 			9998 = {
 				naval_base = 6
 			}
-
 		}
 
 		victory_points = {
-			1182 50 # Tokyo
+			1182 50 
 		}
 
 		victory_points = {
-			9998 25 # Yokohama
+			9998 40 
 		}
 
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-				dockyard = 4
-				industrial_complex = 5
-			}
-		}
 
 	}
 

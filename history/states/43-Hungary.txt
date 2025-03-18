@@ -4,14 +4,14 @@ state={
 	name="STATE_43" # Northern Hungary
 	manpower = 3750752
 	resources={
-		steel=6 #was 3 was: 4
-		aluminium=40 # was: 194
+		steel=6
+		aluminium=80
 	}
 	
 	state_category = large_city
 
 	history={
-		owner = HUN
+		owner = EUF
 		buildings = {
 			infrastructure = 3
 			arms_factory = 4
@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			9660 20 
 		}
-		add_core_of = HUN
+		add_core_of = EUF
 	}
 
 	provinces={

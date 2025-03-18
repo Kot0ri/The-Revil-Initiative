@@ -7,18 +7,15 @@ state = {
 
 	history = {
 
-		owner = ARG
-		add_core_of = ARG
+		owner = EFS
+		add_core_of = EFS
 
 		buildings = {
 			infrastructure = 2
-
-			# Minister Pistarini Reservoir
-			5152 = { dam = 1 }
 		}
 		
 		victory_points = {
-			12942 2 # Córdoba
+			12942 2 
 		}
 
 	}

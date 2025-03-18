@@ -5,7 +5,7 @@ state = {
 	manpower = 2642000 
 	state_category = city
 	history = {
-		owner = ITA
+		owner = EUF
 		victory_points = { #Bari
 			9784 3
 		}
@@ -21,7 +21,7 @@ state = {
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			dockyard = 4
+			dockyard = 5
 			air_base = 5
 			11837 = { #Taranto
 				naval_base = 10
@@ -30,14 +30,7 @@ state = {
 				naval_base = 3
 			}
 		}
-		add_core_of = ITA
-		add_core_of = TTS
-
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
-			}
-		}
+		add_core_of = EUF
 	}
 	provinces = {
 		883	6843 6939 6980 6979 9784 11837 11998

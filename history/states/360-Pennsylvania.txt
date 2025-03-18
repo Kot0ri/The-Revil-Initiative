@@ -12,7 +12,7 @@ state={
 
 
 	history={
-		owner = USA
+		owner = EFS
 		buildings = {
 			infrastructure = 4 #was: 8
 			industrial_complex = 5
@@ -23,18 +23,12 @@ state={
 
 			}
 		}
-		add_core_of = USA
+		add_core_of = EFS
 		victory_points = {
 			6845 20
 		}
 		victory_points = {
 			11800 15
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 6
-				dockyard = 8
-			}
 		}
 
 	}

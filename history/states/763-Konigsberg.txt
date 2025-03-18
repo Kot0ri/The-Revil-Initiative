@@ -1,17 +1,16 @@
-state = {
-	id = 763
-	name = "STATE_763"
+
+state={
+	id=763
+	name="STATE_763"
 	manpower = 2140234
 	state_category = city
 
-	history = {
-
-		owner = GER
-		add_core_of = GER
-		add_core_of = PRE
+	history={
+		owner = EUF
+		controller = EUF
 		
 		victory_points = {
-			6332 10 # Königsberg
+			6332 10 
 		}
 
 		buildings = {
@@ -29,16 +28,11 @@ state = {
 			air_base = 6
 		}
 		
-		1939.1.1 = {
-			buildings = {
-				anti_air_building = 5
-			}
-		}
 	}
 
-	provinces = {
+	provinces={
 		281 348 395 3384 6332 11265
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

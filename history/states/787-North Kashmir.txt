@@ -1,7 +1,7 @@
 state={
 	id=787
 	name="STATE_787" # Northern Kashmir
-	manpower = 1672000
+	manpower = 1415800
 	
 	state_category = rural
 
@@ -9,14 +9,12 @@ state={
 		victory_points = {
 			1910 1
 		}
-		owner = RAJ
+		owner = MEZ
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = PAK
-		add_claim_by = RAJ
-		add_core_of = KAS
-		add_core_of = KHL 
+		add_core_of = MEZ
+
 	}
 
 	provinces={

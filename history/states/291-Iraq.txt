@@ -1,42 +1,39 @@
-state = {
-	id = 291
-	name = "STATE_291"
-	manpower = 1044165
+
+state={
+	id=291
+	name="STATE_291"
+	manpower = 2044165
 	
 	state_category = town
 	
-	resources = {
-		oil = 15 # was: 22
+	resources={
+		oil=22
 	}
 
-	history = {
-
-		owner = IRQ
-		add_core_of = IRQ
-		add_claim_by = KUR
-
+	history={
+		owner = MEZ
 		victory_points = {
-			2097 10 # Baghdad
+			2097 10
 		}
 		victory_points = {
-			7994 1 # Karbala 
+			7994 1
 		}
-		victory_points = {
-			3795 2 # Tikrit 
-		}
-
+		
 		buildings = {
 			infrastructure = 3 #was: 5
 			arms_factory = 1
-			industrial_complex = 1 
+			industrial_complex = 2 
 			air_base = 4
+			2089 = {
+				naval_base = 1
+			}
 		}
-		
+		add_core_of = MEZ
 	}
 
-	provinces = {
-		2097 3795 7994 10876 12046 12839 12855 
+	provinces={
+	  2097 3795 7994  10876 12046 12839 12855 
 	}
 
-	local_supplies = 6.0 
+	local_supplies=6.0 
 }

@@ -1,23 +1,14 @@
-state = {
-	id = 85
-	name = "STATE_85"
+state={
+	id=85
+	name="STATE_85"
 	manpower = 366730
 	
 	state_category = city
-
-	history = {
-
-		owner = POL
-		add_core_of = POL
-		add_core_of = DNZ
-		add_core_of = KSH
-		add_claim_by = PRE
-
+	history={
+		owner = EUF
 		victory_points = {
-			362 10 # Danzig
+			362 10
 		}
-		
-		set_demilitarized_zone = yes
 		
 		buildings = {
 			infrastructure = 3
@@ -28,15 +19,12 @@ state = {
 				naval_base = 5
 			}
 		}
-		
-		1938.3.12 = {
-			add_claim_by = GER
-		}
+		add_core_of = EUF
 	}
 
-	provinces = {
+	provinces={
 		362
 	}
 
-	local_supplies = 0.0 
+	local_supplies=0.0 
 }

@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = SIA
+		owner = SSA
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -22,9 +22,15 @@ state={
 		victory_points = {
 			7408 10 
 		}
+		victory_points = {
+			10250 3
+		}
+		victory_points = {
+			7572 3
+		}
 		
 		
-		add_core_of = SIA
+		add_core_of = SSA
 
 	}
 
@@ -33,6 +39,6 @@ state={
 	}
 	manpower=8422400
 	buildings_max_level_factor=1.000
-	state_category=metropolis
-	local_supplies=1
+	state_category=city
+	local_supplies=0.000
 }

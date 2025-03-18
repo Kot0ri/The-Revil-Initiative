@@ -192,6 +192,23 @@ praetorian_of_axis = {
 	special_project_speed_factor = 0.05
 }
 
+#Icelina
+heir_of_the_eschonbach_family = {
+	random = no
+	compliance_gain = 0.2
+	consumer_goods_factor = -0.05
+}
+
+#Amaria
+interim_commander = {
+	random = no
+	political_power_gain = -0.2
+	army_org_factor = -0.15
+	army_core_defence_factor = 0.05
+	naval_invasion_penalty = 0.02
+	naval_speed_factor = 0.12
+}
+
 #NZ other
 #sonia
 High_command_conenctions = {
@@ -203,13 +220,6 @@ High_command_conenctions = {
 	army_attack_factor = 0.05
 	send_volunteer_factor = 0.10
 }
-
-#Icelina
-heir_of_the_eschonbach_family = {
-		random = no
-		compliance_gain = 0.2
-		consumer_goods_factor = -0.05
-	}
 
 #Casval
 

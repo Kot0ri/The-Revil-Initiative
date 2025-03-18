@@ -366,6 +366,26 @@ NAA_zeygan={
 	} 
 }
 
+NAA_alheep={
+	name="Alheep Repizo"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/alheep.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/alheep.dds"
+		}
+	}
+	corps_commander = {
+		traits = {  }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
 #pilots
 
 NAA_elisa_heaven={
@@ -710,6 +730,29 @@ NAA_rakken={
 }
 
 #admirals
+
+NAA_deom={
+	name="Deom"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/deom.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/deom.dds"
+		}
+	}
+	navy_leader = {
+		traits = {
+			caustic_personality
+		}
+		skill = 4
+		attack_skill = 3
+		defense_skill = 3
+		maneuvering_skill = 3
+		coordination_skill = 3
+	}
+}
+
 NAA_flanagan_boone={
 	name="Flanagan Boone"
 	portraits={

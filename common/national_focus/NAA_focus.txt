@@ -1056,8 +1056,7 @@ available = {
 		prerequisite = {focus = NAA_emergency_command}
 		prerequisite = {focus = NAA_Assualt_on_Panama }
 		relative_position_id = NAA_Assualt_on_Panama
-		mutually_exclusive = { focus = NAA_South_America_Focus }
-		mutually_exclusive = { focus = NAA_Artic_focus 	}
+		mutually_exclusive = { focus = NAA_South_America_Focus  focus = NAA_Artic_focus }
 		ai_will_do = {
 			factor = 1
 		}
@@ -1221,8 +1220,7 @@ available = {
 		y = 2
 		prerequisite = {focus = NAA_emergency_command }
 		relative_position_id = NAA_Garmas_Fate
-		mutually_exclusive = { focus = NAA_North_America_Focus }
-		mutually_exclusive = { focus = NAA_Artic_focus }
+		mutually_exclusive = { focus = NAA_North_America_Focus  focus = NAA_Artic_focus  }
 		ai_will_do = {
 			factor = 1
 		}

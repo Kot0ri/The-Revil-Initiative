@@ -6,7 +6,7 @@ state={
 	state_category = town
 	
 	resources={
-		steel=12
+		steel=8 # was: 12
 	}
 
 	history={
@@ -19,11 +19,11 @@ state={
 		#victory_points = {
 		#	562 3
 		#}
-		owner = EUF
+		owner = POL
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = EUF
+		add_core_of = POL
 	}
 
 	provinces={

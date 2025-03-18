@@ -7,8 +7,8 @@ state={
 	state_category = rural
 	
 	resources={
-		chromium=20
-		steel =20
+		chromium=14 # was: 20
+		steel = 14 # was: 20
 	}
 
 	history={
@@ -21,7 +21,7 @@ state={
 		victory_points = {
 			1205 1
 		}
-		owner = EUF
+		owner = GRE
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -30,7 +30,7 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = EUF
+		add_core_of = GRE
 	}
 
 	provinces = {

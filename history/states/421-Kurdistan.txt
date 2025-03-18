@@ -2,24 +2,21 @@
 state={
 	id=421
 	name="STATE_421"
-	manpower = 780278
+	manpower = 390139
 	
 	state_category = rural
 
 	history={
-		owner = MEZ
-		victory_points = {
-			4943 5
-		}
-	
+		owner = PER
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
-		add_core_of = MEZ
+		add_core_of = PER
+		add_core_of = KUR
 	}
 
 	provinces={
-		829 5050  10774
+		829 5050 10774 
 	}
 
 	local_supplies=0.0 

@@ -2,17 +2,17 @@
 state={
 	id=411
 	name="STATE_411" # Isfahan
-	manpower = 885272
+	manpower = 663954
 	resources={
 		oil=12 # was: 14
 	}
-	state_category = rural
+	state_category = town
 	
 
 	history={
-		owner = MEZ
+		owner = PER
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 		}
 		victory_points = {
 			2026 1 
@@ -20,8 +20,7 @@ state={
 		victory_points = {
 			4928 1 
 		}
-	
-		add_core_of = MEZ
+		add_core_of = PER
 	}
 
 	provinces={

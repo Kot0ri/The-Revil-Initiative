@@ -2,12 +2,12 @@ state={
 	id=667
 	name="STATE_667"
 	resources={
-		rubber=16
+		rubber=12 # was: 16
 	}
 
 	history={
-		owner = SSA
-		add_core_of = SSA
+		owner = INS
+		add_core_of = INS
 		buildings = {
 			infrastructure = 2
 			1355 = {

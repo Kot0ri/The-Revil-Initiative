@@ -5,8 +5,15 @@ state = {
 	state_category = pastoral
 	
 	history = {
-		owner = EFS
-		add_core_of = EFS
+
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = QUE
+
+		buildings = {
+			infrastructure = 1
+		}
+
 	}
 	
 	provinces = {

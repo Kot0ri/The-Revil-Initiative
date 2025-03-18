@@ -7,13 +7,16 @@ state={
 	state_category = town
 
 	history={
-		owner = EFG
-		add_core_of = EFG
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
 		buildings = {
 			infrastructure = 2
 		}
 
-		
+		1938.10.25 = {
+			controller = JAP
+		}
 	}
 
 	provinces={

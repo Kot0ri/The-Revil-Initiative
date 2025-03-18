@@ -2,22 +2,15 @@ state={
 	id=286
 	name="STATE_286"
 	resources={
-		rubber= 94
+		rubber=55 # was: 94.000
 	}
 
 	history={
-		add_core_of = SSA
-		owner = SSA
+		add_core_of = VIN
+		owner = FRA
 		victory_points = {
-			4401 5 
+			4401 3 
 		}
-		victory_points = {
-			4341 2 
-		}
-		victory_points = {
-			10162 2 
-		}
-		
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

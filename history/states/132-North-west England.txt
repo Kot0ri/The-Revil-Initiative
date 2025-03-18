@@ -6,12 +6,12 @@ state= {
 	state_category = metropolis
 	
 	resources={
-		steel= 56
-		aluminium= 4
+		steel=31 # was: 56
+		aluminium=2 # was: 4
 	}
 
 	history= {
-		owner = EUF
+		owner = ENG
 		victory_points = {
 			6384 30 
 		}
@@ -20,16 +20,22 @@ state= {
 		}
 		
 		buildings = {
-			infrastructure = 4
+			infrastructure = 4 #was: 8
 			arms_factory = 1
-			industrial_complex = 2
-			dockyard = 4
+			industrial_complex = 1
+			dockyard = 3
 			air_base = 3
 			6384 = {
 				naval_base = 5
 			}
 		}
-		add_core_of = EUF
+		add_core_of = ENG
+		1939.1.1 = {
+			buildings = {
+				dockyard = 4
+				industrial_complex = 2
+			}
+		}
 	}
 	provinces= {
 		3205 6318 6335 6384

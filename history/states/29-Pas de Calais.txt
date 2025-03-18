@@ -6,12 +6,12 @@ state={
 	
 	state_category = large_city
 	resources={
-		steel=30
-		aluminium=22
+		steel=24 #was 42 was: 112
+		aluminium=8 # was: 22
 	}
 
 	history={
-		owner = EUF
+		owner = FRA
 		victory_points = {
 			575 5
 		}
@@ -29,7 +29,12 @@ state={
 				naval_base = 6
 			}
 		}
-		add_core_of = EUF
+		add_core_of = FRA
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 6
+			}
+		}
 	}
 
 	provinces={

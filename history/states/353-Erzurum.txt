@@ -4,7 +4,7 @@ state={
 	name="STATE_353"
 
 	history={
-		owner = MEZ
+		owner = TUR
 		victory_points = {
 			11853 3
 		}
@@ -21,7 +21,19 @@ state={
 			infrastructure = 1
 
 		}
-			add_core_of = MEZ
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+			}
+			add_core_of = KUR
+		}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Battle for the Bosporus" }
+			}
+			add_core_of = TUR
+			add_core_of = KUR
+		}
 	}
 
 	provinces={

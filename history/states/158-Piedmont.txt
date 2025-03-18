@@ -13,7 +13,7 @@ state = {
 	}
 
 	history = {
-		owner = EUF
+		owner = ITA
 		victory_points = {
 			6788 10 
 		}
@@ -22,15 +22,26 @@ state = {
 		}
 		buildings = {
 			infrastructure = 4 #was: 7
-			arms_factory = 10
-			industrial_complex = 2
-			dockyard = 3
+			arms_factory = 7
+			industrial_complex = 1
+			dockyard = 2
 			air_base = 8
 			6788 = {
 				naval_base = 8
 			}
 		}
-		add_core_of = EUF
+		add_core_of = ITA
+		add_core_of = SPM
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 10
+				industrial_complex = 2
+				dockyard = 3
+				6788 = {
+					naval_facility = 1 # Genoa Facilities
+				}
+			}
+		}
 	}
 
 	provinces = {

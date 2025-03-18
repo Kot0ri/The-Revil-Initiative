@@ -6,7 +6,8 @@ state={
 	state_category = rural
 
 	history={
-		owner = EUF
+		owner = YUG
+		controller = YUG
 		victory_points = {
 			3614 1
 		}
@@ -14,7 +15,9 @@ state={
 		buildings = {
 			infrastructure = 3 #was: 6
 		}
-		add_core_of = EUF
+		add_core_of = YUG
+		add_core_of = SER
+		add_core_of = TRA
 	}
 
 	provinces={

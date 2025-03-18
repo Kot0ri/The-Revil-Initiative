@@ -10,8 +10,8 @@ state = {
 
 	history = {
 
-		owner = EUF
-		add_core_of = EUF
+		owner = BEL
+		add_core_of = BEL
 
 		victory_points = {
 			9418 1 # Arlons
@@ -20,7 +20,8 @@ state = {
 		buildings = {
 			infrastructure = 1
 
-	
+			# Gileppe Dam
+			3488 = { dam = 1 }
 		}
 		
 	}

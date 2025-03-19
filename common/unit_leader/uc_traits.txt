@@ -210,4 +210,20 @@ nobility = {
 		}
 	}
 
+	newtype_1 = {
+		type = corps_commander
+		
+		trait_type = assignable_trait
+		
+		modifier = {
+			initiative_factor = 0.04
+			recon_factor = 0.03
+			modifier_army_sub_unit_category_all_mobilesuit_attack_factor = 0.04
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
 }

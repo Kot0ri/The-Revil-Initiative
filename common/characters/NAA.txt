@@ -459,7 +459,7 @@ NAA_Sophie_Fran={
 		}
 	}
 	corps_commander = {
-		traits = { pilot }
+		traits = { pilot ghiren_loyalist }
 		skill = 3
 		attack_skill = 3
 		defense_skill = 3
@@ -560,7 +560,7 @@ NAA_Alma_Stirner={
 		}
 	}
 	corps_commander = {
-		traits = { pilot newtype1 }
+		traits = { pilot newtype_1 }
 		skill = 3
 		attack_skill = 3
 		defense_skill = 3
@@ -717,6 +717,46 @@ NAA_rakken={
 		}
 		army={
 			large="gfx/leaders/NAA/rakken.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_henry_boone={
+	name="Henry Boone"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/henry_boone.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/henry_boone.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot royal_gaurd }
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+NAA_saki_graham={
+	name="Henry Boone"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/saki_graham.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/saki_graham.dds"
 		}
 	}
 	corps_commander = {

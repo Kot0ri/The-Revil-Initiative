@@ -244,7 +244,7 @@ ZEO_cecilia_irene = {
 			}
 		}
 		field_marshal={
-			traits={ deikun_party anti-zabi_party}
+			traits={ deikun_party anti-zabi_party militias_officer}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -365,6 +365,24 @@ ZEO_cecilia_irene = {
 		}
 	}
 
+	ZEO_wessel_freytag_loringhoven={
+		name="Wessel Freytag von Loringhoven"
+		portraits={
+	
+			army={
+				large= "gfx/leaders/ZEO/wessel_freytag_loringhoven.dds"
+			}
+		}
+		field_marshal={
+			traits={ anti-zabi_party organizer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	##Generals
 
 	ZEO_hans_lawnder={
@@ -477,6 +495,58 @@ ZEO_cecilia_irene = {
 			logistics_skill=1
 		}
 	}
+
+	ZEO_otfried_linstow={
+		name="Otfried Linstow"
+		portraits={
+			army={
+				large= "gfx/leaders/ZEO/otfried_linstow.dds"
+			}
+		}
+		corps_commander={
+			traits={ anti-zabi_party deikun_party cavalry_leader combined_arms_expert }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
+	ZEO_paul_hase={
+		name="Paul Hase"
+		portraits={
+			army={
+				large= "gfx/leaders/ZEO/paul_hase.dds"
+			}
+		}
+		corps_commander={
+			traits={ anti-zabi_party deikun_party cavalry_leader combined_arms_expert }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	ZEO_fritz_lindemann={
+		name="Fritz Lindemann "
+		portraits={
+			army={
+				large= "gfx/leaders/ZEO/fritz_lindemann.dds"
+			}
+		}
+		corps_commander={
+			traits={ anti-zabi_party deikun_party infantry_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+	  
 
 	##pilots
 

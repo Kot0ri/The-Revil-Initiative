@@ -3602,11 +3602,15 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = { 
+		has_completed_focus = ZEO_the_zabi_families_vision 
+		has_war = yes 
+	}
 	completion_reward = {
 		add_stability = -0.12
-		hidden_effect = {
-			load_oob = ZEO_Expand_Garrison
-		}
+		 recruit_character = ZEO_otfried_linstow
+		 recruit_character = ZEO_paul_hase
+		 recruit_character = ZEO_wessel_freytag_loringhoven
 	}
 	relative_position_id = ZEO_send_aid_to_the_military_commands
 	prerequisite = { focus = ZEO_send_aid_to_the_military_commands }
@@ -4220,6 +4224,9 @@ focus = {
 	completion_reward = {
 		add_political_power = 150
 		add_stability = -0.05
+		recruit_character = ZEO_otfried_linstow
+		recruit_character = ZEO_paul_hase
+		recruit_character = ZEO_wessel_freytag_loringhoven
 	}
 }
 
@@ -4669,6 +4676,26 @@ focus = {
 	}
 	completion_reward = {
 		
+	}
+}
+
+focus = {
+	id = ZEO_new_generation_of_soldiers
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_mission_from_axis}
+	relative_position_id = ZEO_mission_from_axis
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	recruit_character = ZEO_ellic_hugo
+	recruit_character = ZEO_mellic_hugo
+	recruit_character = ZEO_seak_hugo
+	recruit_character = ZEO_birgitte_knudsen
 	}
 }
 

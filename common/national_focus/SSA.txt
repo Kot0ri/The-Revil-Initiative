@@ -14,7 +14,7 @@ focus_tree = {
 		id = SSA_begin_renovations
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 1
+		x = 4
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -309,14 +309,64 @@ focus_tree = {
 				}
 
 	focus = {
-		id = SSA_jungle_pathing
+		id = SSA_maintain_civil_governance
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 20
+		x = 19
 		y = 0
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_war = yes
+			}
+		mutually_exclusive = {
+			focus = SSA_form_SOPAC_command
+		}
+		completion_reward = {
+		
+			}
+		}
+
+	focus = {
+		id = SSA_form_SOPAC_command
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 21
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = SSA_maintain_civil_governance
+		}
+		available = {
+			has_war = yes
+			}
+		completion_reward = {
+		add_popularity = {
+			ideology = military_government
+			popularity = 25
+		}
+		set_politics = {
+			ruling_party = military_government
+		}
+			}
+		}
+
+	focus = {
+		id = SSA_jungle_pathing
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = SSA_maintain_civil_governance focus = SSA_form_SOPAC_command
+		}
+		relative_position_id = SSA_maintain_civil_governance
 		available = {
 		has_war = yes
 		}
@@ -519,6 +569,9 @@ focus = {
 	add_political_power = 50
 	set_cosmetic_tag = SSA_nanyang_allaince
 	leave_faction = yes
+	set_politics = {
+		ruling_party = oligarchy
+	}
 	set_autonomy = {
 		target = SSA
 		autonomous_state = autonomy_free

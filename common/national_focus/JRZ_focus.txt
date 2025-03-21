@@ -235,4 +235,22 @@ focus = {
 	}
 }
 
+
+focus = {
+	id = JRZ_jupiter_phantom
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 25
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		is_puppet_of = RNZ
+	}
+	completion_reward = {
+		
+	}
+}
+
 }

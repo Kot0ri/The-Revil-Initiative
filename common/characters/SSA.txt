@@ -7,13 +7,42 @@ characters={
 				
 			}
 		}
-		leader={
-			ideology= "military_administration"
-			traits={ man of the nation}
+		country_leader={
+			ideology= "socialism"
+			traits={ man_of_the_nation}
 			expire="100.1.1.1"
 			id=-1
 		}
 	}	
+
+	SSA_stanley_hawkins={
+		name= "Stanley Hawkins"
+		portraits={
+			civilian={
+				large= "gfx/leaders/SSA/stanley_hawkins.dds"
+			}
+			army={
+				large= "gfx/leaders/SSA/stanley_hawkins.dds"
+			}
+		}
+		country_leader={
+			ideology= "military_administration"
+			traits={ SOPAC_Commander }
+			expire="100.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			traits = {
+				defensive_doctrine organizer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}	
+
 	#field marshals
 	SSA_baresto_rosita = {
 		name="Baresto Rosita"

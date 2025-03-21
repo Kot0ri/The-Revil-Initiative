@@ -320,10 +320,17 @@ armchair_admiral = {
 }
 
 #stanleyy_hawkins
-SOPAC_Commander = {
+SWPAC_Commander = {
 	random = no
 	army_advisor_cost_factor = -0.05
 	amphibious_invasion = 0.05
+}
+
+Sumpreme_Commander_of_South_Asia_Forces = {
+	random = no
+	trait_naval_invader_xp_gain_factor = 0.5
+	army_org_regain = 0.05
+	naval_detection = 0.25
 }
 
 #other

@@ -321,7 +321,7 @@ focus_tree = {
 			has_war = yes
 			}
 		mutually_exclusive = {
-			focus = SSA_form_SOPAC_command
+			focus = SSA_form_SWPAC_command
 		}
 		completion_reward = {
 		
@@ -329,7 +329,7 @@ focus_tree = {
 		}
 
 	focus = {
-		id = SSA_form_SOPAC_command
+		id = SSA_form_SWPAC_command
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
 		x = 21
@@ -364,13 +364,81 @@ focus_tree = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = SSA_maintain_civil_governance focus = SSA_form_SOPAC_command
+			focus = SSA_maintain_civil_governance focus = SSA_form_SWPAC_command
 		}
 		relative_position_id = SSA_maintain_civil_governance
 		available = {
 		has_war = yes
 		}
 		completion_reward = {
+				}
+			}
+
+	focus = {
+		id = SSA_supreme_command_of_south_asia
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			 focus = SSA_form_SWPAC_command
+		}
+		relative_position_id = SSA_form_SWPAC_command
+		available = {
+		has_war = yes
+		}
+		completion_reward = {
+			SSA_stanley_hawkins = {
+				add_trait = {
+					trait = Sumpreme_Commander_of_South_Asia_Forces
+				}
+			}
+				}
+			}
+
+
+	focus = {
+		id = SSA_island_defence_initative
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			 focus = SSA_supreme_command_of_south_asia
+		}
+		relative_position_id = SSA_supreme_command_of_south_asia
+		available = {
+		has_war = yes
+		}
+		completion_reward = {
+			
+				}
+			}
+
+	focus = {
+		id = SSA_austrilia_first_doctrine
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			 focus = SSA_island_defence_initative
+		}
+		relative_position_id = SSA_island_defence_initative
+		available = {
+		has_war = yes
+		}
+		completion_reward = {
+			
 				}
 			}
 
@@ -555,6 +623,35 @@ focus = {
 			}
 		}
 
+	focus = {
+		id = SSA_operation_burning_sands
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {	
+		factor = 1
+			}
+		relative_position_id = SSA_expand_pit_traps
+		prerequisite = {	focus = SSA_take_and_bite focus = SSA_improve_communication_lines }
+		completion_reward = {
+			}
+		}
+
+	focus = {
+		id = SSA_begin_joint_lhasa_offensive
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+			}
+		relative_position_id = SSA_operation_burning_sands
+		prerequisite = {	focus = SSA_operation_burning_sands }
+		completion_reward = {
+			}
+		}
 
 focus = {
 	id = SSA_nanyang_takeover

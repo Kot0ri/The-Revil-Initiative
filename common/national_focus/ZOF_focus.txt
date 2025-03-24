@@ -14,8 +14,7 @@ focus_tree = {
 		id = ZOF_Second_Wave_of_Landings
 		icon = GFX_goal_gravity_front_line
 		cost = 5
-		x = 2
-		x = 2
+		x = 4
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -73,6 +72,80 @@ focus_tree = {
 			factor = 1
 		}
 
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_coordinate_defense_with_europe
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite ={ focus = ZOF_defense_in_depth}
+		relative_position_id = ZOF_defense_in_depth
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZOF_silk_road_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite ={ focus = ZOF_coordinate_defense_with_europe}
+		relative_position_id = ZOF_coordinate_defense_with_europe
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_trans-siberia-plan
+		}
+		completion_reward = {
+			ZOF_alexander_lohr = {
+				promote_leader = yes
+				add_trait = {
+					trait = defensive_doctrine
+				}
+			}
+			ZAF = {
+				add_manpower = 5000
+				add_offsite_building = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			EAF = {
+				add_manpower = 5000
+				add_offsite_building = {
+					type = arms_factory
+					level = 2
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = ZOF_trans-siberia-plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite ={ focus = ZOF_coordinate_defense_with_europe}
+		relative_position_id = ZOF_coordinate_defense_with_europe
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZOF_silk_road_plan
+		}
 		completion_reward = {
 		
 		}
@@ -229,6 +302,9 @@ focus_tree = {
 			focus = ZOF_Büro_der_Asiatischen_vereinigung
 		}
 		completion_reward = {
+			ZOF_fritz_neidholdt = {
+				promote_leader = yes
+			}
 		add_manpower = 1000000
 		}
 	}
@@ -336,8 +412,7 @@ focus_tree = {
 		id = ZOF_Begin_research_Efforts
 		icon = GFX_goal_zeon_new_weapon
 		cost = 5
-		x = 14
-		x = 14
+		x = 16
 		y = 0
 		
 		ai_will_do = {
@@ -708,7 +783,7 @@ focus_tree = {
 		id = ZOF_sahalin_family_legacy
 		icon = GFX_goal_zeon_new_weapon
 		cost = 5
-		x = 26
+		x = 28
 		y = 0
 		
 		ai_will_do = {

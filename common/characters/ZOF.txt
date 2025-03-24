@@ -374,10 +374,7 @@ characters={
 		name="Walter Janowitz"
 		portraits={
 			civilian={
-				large="gfx/leaders/ZOF/yuri.dds"
-			}
-			army={
-				large="gfx/leaders/ZOF/visch_donahue.dds"
+				large="gfx/leaders/ZOF/janowitz.dds"
 			}
 		}
 		advisor = {
@@ -386,4 +383,126 @@ characters={
 			traits = { mobilearmor_specialist }
 		}
 	}
+
+	ZOF_hans_jeschonnek ={
+		name="Hans Jeschonnek"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/hans_jeschonnek.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/hans_jeschonnek.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = jeschonnek
+			traits = { air_air_superiority_1 }
+		}
+		corps_commander = {
+			traits = {	politically_connected ghiren_loyalist defensive_doctrine}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	
+	ZOF_alexander_lohr ={
+		name="Alexander Löhr"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/alexander_lohr.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/alexander_lohr.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = lohr
+			traits = { air_bomber_interception_1 }
+		}
+		corps_commander = {
+			traits = {	politically_connected ghiren_loyalist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	ZOF_johann_fortner ={
+		name="Johann Fortner"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/johann_fortner.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/johann_fortner.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = fortner
+			traits = { army_chief_organizational_1 }
+		}
+		corps_commander = {
+			traits = {	politically_connected ghiren_loyalist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}	
+	ZOF_fritz_neidholdt ={
+		name="Fritz Neidholdt"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/fritz_neidholdt.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/fritz_neidholdt.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = neidholdt
+			traits = { army_chief_drill_1 }
+		}
+		corps_commander = {
+			traits = {	politically_connected ghiren_loyalist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}	
+	ZOF_august_schmidhuber ={
+		name="August Schmidhuber"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZOF/august_schmidhuber.dds"
+			}
+			army={
+				large="gfx/leaders/ZOF/august_schmidhuber.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = schmidhuber
+			traits = { army_logistics_1 }
+		}
+		corps_commander = {
+			traits = {	politically_connected ghiren_loyalist }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}	
 }

@@ -76,8 +76,49 @@ characters={
 		}
 	}
 
+	MAR_charles_rochester={
+		name="Charles Rochester"
+		portraits={
+			civilian={
+				large="gfx/leaders/MAR/charles_rochester.dds"
+			}
+			army={
+				large="gfx/leaders/MAR/charles_rochester.dds"
+			}
+		}
+		field_marshal = {
+			traits = { pilot }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
 	#Generals
 	#Pilots
+
+	MAR_bosch_weller={
+		name="Bosch Weller"
+		portraits={
+			civilian={
+				large="gfx/leaders/MAR/bosch_weller.dds"
+			}
+			army={
+				large="gfx/leaders/MAR/bosch_weller.dds"
+			}
+		}
+		corps_commander = {
+			traits = { pilot }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
 	#Admirals
 	#Advisors
 }

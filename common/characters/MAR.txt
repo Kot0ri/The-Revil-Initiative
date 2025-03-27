@@ -1,0 +1,83 @@
+characters={
+	#Leaders
+	MAR_schrichen={
+		name="Schtein H. Schrichen"
+		portraits={
+			civilian={
+				large="gfx/leaders/MAR/schrichen.dds"
+			}
+			army={
+				large="gfx/leaders/MAR/schrichen.dds"
+			}
+		}
+		country_leader={
+			ideology= military_administration
+			traits={ Crimson_Red }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits = { pilot }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	MAR_rhein_dragun={
+		name="Rhein Dragun"
+		portraits={
+			civilian={
+				large="gfx/leaders/MAR/rhein_dragun.dds"
+			}
+			army={
+				large="gfx/leaders/MAR/rhein_dragun.dds"
+			}
+		}
+		country_leader={
+			ideology= spacenoid_supremacist
+			traits={  }
+			expire="1000.1.1.1"
+		}
+		navy_leader = {
+			traits = {
+				
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+	#Field Marshals
+	MAR_nichols={
+		name="Llyod Nichols"
+		portraits={
+			civilian={
+				large="gfx/leaders/MAR/llyod_nichols.dds"
+			}
+			army={
+				large="gfx/leaders/MAR/llyod_nichols.dds"
+			}
+		}
+		field_marshal = {
+			traits = { pilot }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+		advisor = {
+			slot = nichols
+			traits = { The_Crimminal}
+		}
+	}
+
+	#Generals
+	#Pilots
+	#Admirals
+	#Advisors
+}

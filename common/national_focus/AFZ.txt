@@ -288,7 +288,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 51
-	    y = 15
+	    y = 12
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -503,7 +503,7 @@ focus_tree = {
 	    completion_reward = {
 	    }
         relative_position_id = AFZ_Operation_Paper_Cut
-		prerequisite = { focus = AFZ_Operation_Paper_Cut }
+		prerequisite = { focus = AFZ_Operation_Paper_Cut focus = AFZ_Operation_Sandfire }
 
     }
 
@@ -1253,7 +1253,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -6
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1364,8 +1364,8 @@ focus_tree = {
 	    id = AFZ_Restore_The_North
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 7
-	    y = 2
+	    x = 6
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1425,7 +1425,7 @@ focus_tree = {
     }
 
     focus = {
-	    id = AFZ_Move_The_Locals_Underground
+	    id = AFZ_Parks_Initative
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
@@ -1539,7 +1539,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1555,7 +1555,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -1
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1571,7 +1571,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1587,7 +1587,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1620,7 +1620,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1732,7 +1732,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1748,7 +1748,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1781,7 +1781,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1830,7 +1830,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1894,7 +1894,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1910,7 +1910,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -1
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1926,7 +1926,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1942,7 +1942,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1975,7 +1975,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -1991,7 +1991,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -2024,7 +2024,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -2056,7 +2056,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -2073,7 +2073,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -2105,7 +2105,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 2
+	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -2181,7 +2181,7 @@ focus_tree = {
     }
 
     focus = {
-	    id = AFZ_Research_Cruiser_Designs
+	    id = AFZ_Research_Destroyer_Designs
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -2
@@ -2197,7 +2197,7 @@ focus_tree = {
     }
 
     focus = {
-	    id = AFZ_Research_Cruiser_Designs
+	    id = AFZ_Improved_Turbine_Engines
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2207,8 +2207,8 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Research_Cruiser_Designs
-		prerequisite = { focus = AFZ_Research_Cruiser_Designs }
+        relative_position_id = AFZ_Research_Destroyer_Designs
+		prerequisite = { focus = AFZ_Research_Destroyer_Designs }
 
     }
 
@@ -2255,8 +2255,8 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Research_Cruiser_Designs
-		prerequisite = { focus = AFZ_Research_Cruiser_Designs }
+        relative_position_id = AFZ_Improved_Turbine_Engines
+		prerequisite = { focus = AFZ_Improved_Turbine_Engines }
 		prerequisite = { focus = AFZ_Improved_Countermeasures }
 
     }
@@ -2278,7 +2278,7 @@ focus_tree = {
     }
 
     focus = {
-	    id = AFZ_Research_Cruiser_Designs
+	    id = AFZ_Aircraft_Carrier_Development
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 2
@@ -2352,8 +2352,8 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Research_Cruiser_Designs
-		prerequisite = { focus = AFZ_Research_Cruiser_Designs }
+        relative_position_id = AFZ_Aircraft_Carrier_Development
+		prerequisite = { focus = AFZ_Aircraft_Carrier_Development }
 
     }
 
@@ -2395,7 +2395,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 51
-	    y = 35
+	    y = 28
 	    ai_will_do = {
 		    factor = 1
 	    }

@@ -56,6 +56,27 @@ Anaheim-Moore_Plan = {
 	}
 }
 
+federal_backing = {
+			
+	allowed = {
+		original_tag = SI4
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	
+	modifier = {
+		democratic_drift = 0.03
+		oligarchy_drift = 0.02
+		democratic_acceptance = 20
+		oligarchy_acceptance = 20
+		supremacist_acceptance = 15
+	}
+}
+
 Moore_Brotherhood = {
 			
 	allowed = {

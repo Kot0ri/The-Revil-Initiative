@@ -40,7 +40,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.05
 				political_power_gain = 0.02
-				supremacist_drift = 0.05
+				supremacist_drift = 0.03
 			}
 			removal_cost = -1
 		}
@@ -54,7 +54,8 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = 0.05
-				supremacist_drift = 0.05
+				supremacist_drift = 0.02
+				oligarchy_drift = 0.04
 				trade_laws_cost_factor = -0.25
 				trade_opinion_factor = 0.1
 			}
@@ -76,6 +77,21 @@ ideas = {
 			removal_cost = -1
 		}
 
+		reinforced_free_market_principles = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.02
+				political_power_cost = -0.05
+				democratic_drift = 0.02
+			}
+			removal_cost = -1
+		}
+
 		military_blank_cheque = {
 			allowed ={
 				always = no
@@ -86,6 +102,8 @@ ideas = {
 			modifier = {
 				military_government_drift = 0.05
 				democratic_acceptance = -10
+				training_time_army_factor = -0.15
+				recruitable_population_factor = 0.03
 			}
 			removal_cost = -1
 		}

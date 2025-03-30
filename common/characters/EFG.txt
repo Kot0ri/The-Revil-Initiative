@@ -122,6 +122,24 @@ EFG_gopp={
 			}
 			}
 
+			EFG_scharnhorst_buch {
+				name="Scharnhorst Buch"
+				portraits={
+					civilian={
+						large= "gfx/leaders/EFG/scharnhorst_buch.dds"
+					}
+				}
+				country_leader={
+					ideology= noble_rule
+					traits={ head_of_buch }
+					expire="1000.1.1.1"
+				}
+				advisor = {
+					slot = pol
+					traits = { foudner_of_buch}
+				}
+				}
+
 	##field marshals
 
 	EFG_louis_thomson={

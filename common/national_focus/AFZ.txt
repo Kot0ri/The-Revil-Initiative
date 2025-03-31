@@ -1776,6 +1776,13 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			783 = {
+				add_building_construction = {
+					type = naval_facility
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }
         relative_position_id = AFZ_The_Provisional_Government
 		prerequisite = { focus = AFZ_The_Provisional_Government }
@@ -2295,6 +2302,7 @@ focus_tree = {
 			focus = AFZ__Secure_Our_Coastline
 		}
 	    completion_reward = {
+			add_ideas = High_Seas_Fleet
 	    }
         relative_position_id = AFZ_Traditional_Builders
 		prerequisite = { focus = AFZ_Traditional_Builders }
@@ -2314,6 +2322,7 @@ focus_tree = {
 			focus = AFZ_Naval_Power_Projection
 		}
 	    completion_reward = {
+			add_ideas = Coastal_Navy
 	    }
         relative_position_id = AFZ_Build_Up_Casablanca
 		prerequisite = { focus = AFZ_Build_Up_Casablanca }

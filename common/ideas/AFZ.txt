@@ -15,8 +15,8 @@ ideas = {
 			
 			modifier = {
 				mobilization_speed = -0.30
-				dig_in_speed = -0.15
-				org_loss_when_moving = -0.15
+				dig_in_speed = -15
+				org_loss_when_moving = 0.15
 				high_command_cost_factor = -0.25
 			}
 		}
@@ -60,6 +60,45 @@ ideas = {
 				resistance_growth = -0.05
 				training_time_army_factor = -0.05
 				political_power_gain = -0.02
+			}
+		}
+
+		Coastal_Navy = {	
+			allowed = {
+				original_tag = AFZ
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				unit_cruiser_design_cost_factor = -0.10
+				unit_destroyer_design_cost_factor = -0.10
+				coastal_bunker_effectiveness_factor = 0.12
+				production_speed_coastal_bunker_factor = 0.35
+				navy_max_range_factor = -0.35
+			}
+		}
+
+		High_Seas_Fleet = {	
+			allowed = {
+				original_tag = AFZ
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				unit_carrier_design_cost_factor = -0.15
+				navy_max_range_factor = 0.15
+				navy_capital_ship_attack_factor = 0.10
+				navy_capital_ship_defence_factor = 0.05
 			}
 		}
 	}

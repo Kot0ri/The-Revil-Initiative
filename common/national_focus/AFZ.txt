@@ -1092,6 +1092,20 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			461 ={
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			290 ={
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }
         relative_position_id = AFZ_Centralize_Economic_Power
 		prerequisite = { focus = AFZ_Centralize_Economic_Power }
@@ -1108,6 +1122,32 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			461 ={
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			462 ={
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			783 ={
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }
         relative_position_id = AFZ_Urbanize_Between_Casablanca_And_Tangiers
 		prerequisite = { focus = AFZ_Urbanize_Between_Casablanca_And_Tangiers }
@@ -1124,6 +1164,20 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			462 ={
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			459 ={
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
 	    }
         relative_position_id = AFZ_Centralize_Economic_Power
 		prerequisite = { focus = AFZ_Centralize_Economic_Power }
@@ -1460,6 +1514,13 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			551 ={
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+				}
+			}
 	    }
         relative_position_id = AFZ_Restore_The_North
 		prerequisite = { focus = AFZ_Restore_The_North }
@@ -1611,6 +1672,7 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			add_ideas = Militarized_Police
 	    }
         relative_position_id = AFZ_Reinforce_The_Military_Police
 		prerequisite = { focus = AFZ_Reinforce_The_Military_Police }
@@ -1746,6 +1808,27 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			458 ={
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			448 ={
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			447 ={
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 	    }
         relative_position_id = AFZ_Refurbish_The_Navy
 		prerequisite = { focus = AFZ_Refurbish_The_Navy }
@@ -1762,6 +1845,13 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			461 ={
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
 	    }
         relative_position_id = AFZ_Local_Buildiers
 		prerequisite = { focus = AFZ_Local_Buildiers }
@@ -2240,6 +2330,13 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			290 ={
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 	    }
         relative_position_id = AFZ__Secure_Our_Coastline
 		prerequisite = { focus = AFZ__Secure_Our_Coastline }
@@ -2417,6 +2514,10 @@ focus_tree = {
 		    factor = 1
 	    }
 	    completion_reward = {
+			add_offsite_building = {
+				type = dockyard
+				level = 5
+			}
 	    }
         relative_position_id = AFZ_More_Contacts
 		prerequisite = { focus = AFZ_More_Contacts }

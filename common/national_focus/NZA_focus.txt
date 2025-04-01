@@ -1,0 +1,234 @@
+focus_tree = {
+	id = NZA
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = NZA
+		}
+	}
+	default = no
+	
+
+focus = {
+	id = NZA_Western_Campaign
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 2
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = NZA_Incorporate_Zeon_Remnants
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = NZA_Western_Campaign
+	prerequisite = {
+		focus = NZA_Western_Campaign
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = NZA_Reach_out_to_Afria_Seperatists
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = NZA_Western_Campaign
+	prerequisite = {
+		focus = NZA_Western_Campaign
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = NZA_Push_on_Dakar
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = NZA_Western_Campaign
+	prerequisite = {
+		focus = NZA_Western_Campaign
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = NZA_Take_in_collabrators
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = NZA_Push_on_Dakar
+	prerequisite = {
+		focus = NZA_Push_on_Dakar
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+		id = NZA_Eastern_Campaign
+		icon = GFX_goal_harmony_with_deikun
+		cost = 2
+		x = 6
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			
+		}
+		completion_reward = {
+			
+		}
+	
+}
+
+focus = {
+	id = NZA_Push_on_Kilimanjaro
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = NZA_Eastern_Campaign
+	prerequisite = {
+		focus = NZA_Eastern_Campaign
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = NZA_Secure_the_Horn
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = NZA_Push_on_Kilimanjaro
+	prerequisite = {
+		focus = NZA_Push_on_Kilimanjaro
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = NZA_Push_on_Mombassa
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = NZA_Push_on_Kilimanjaro
+	prerequisite = {
+		focus = NZA_Push_on_Kilimanjaro
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = NZA_Northern_Campaign
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 14
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+
+}
+
+focus = {
+	id = NZA_Southern_Campaign
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 10
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = NZA_Push_on_Mombassa
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+
+}
+}

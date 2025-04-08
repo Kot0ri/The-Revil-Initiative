@@ -15,6 +15,32 @@ ideas = {
 			removal_cost = -1
 		}
 
+		distorted_adminstration_structure = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+			}
+			removal_cost = -1
+		}
+
+		structual_recession = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_factor = -0.1
+			}
+			removal_cost = -1
+		}
+
 		UC_Charter = {
 			allowed ={
 				always = no

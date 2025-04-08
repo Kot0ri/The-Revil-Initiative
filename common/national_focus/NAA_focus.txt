@@ -1146,10 +1146,27 @@ available = {
 	}
 
 	focus = {
+		id = NAA_ghost_of_garma_operation
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = {focus = NAA_Shift_to_Rail_for_Supply focus = NAA_form_detroit_defense_line }
+		relative_position_id = NAA_Shift_to_Rail_for_Supply
+	
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_Slow_down_Federation_Forces
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		prerequisite = {focus = NAA_Shift_to_Rail_for_Supply}
 		relative_position_id = NAA_Shift_to_Rail_for_Supply

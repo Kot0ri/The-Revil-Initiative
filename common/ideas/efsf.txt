@@ -1,5 +1,33 @@
 ideas = {
 	country = {
+		corrupt_command_core = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+
+		interservice_rivalry = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				
+			}
+		
+			removal_cost = -1
+		}
+
 		demobilization = {
 			allowed ={
 				always = no

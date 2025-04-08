@@ -706,6 +706,66 @@ EAF_ginias_sahalin ={
 		}
 	}
 
+	EAF_knuckles ={
+		name="Knuckles"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/knuckles.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/knuckles.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_shank ={
+		name="Shank"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/shank.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/shank.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAF_dunn ={
+		name="Dunn"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAF/dunn.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/dunn.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
 	#admirals
 	EAF_dreiser ={
 		name="Dreiser"

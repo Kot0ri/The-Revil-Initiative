@@ -184,6 +184,26 @@ NAA_otto_kaufman={
 	}
 }
 
+NAA_manaratha_aja={
+	name="Manaratha Aja"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/manaratha_aja.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/manaratha_aja.dds"
+		}
+	}
+	field_marshal = {
+		traits = { garma_loyalist pilot }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+}
+
 #generals
 
 NAA_rudolf_dietrich={

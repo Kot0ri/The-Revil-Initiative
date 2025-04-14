@@ -341,7 +341,7 @@ focus_tree = {
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
 		x = 28
-		y = 8
+		y = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -408,13 +408,109 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VBC_meeting_with_luanr_defense_fleet
+		id = VBC_coordinate_with_federal_command
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 20
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_intergrate_engineers_with_military
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		relative_position_id = VBC_coordinate_with_federal_command
+		prerequisite = {focus = VBC_coordinate_with_federal_command}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_ai_development_plan
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 16
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_unmanned_corps_project
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = VBC_ai_development_plan
+		prerequisite = {focus = VBC_ai_development_plan}
+		prerequisite = {focus = VBC_coordinate_with_federal_command }
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_meet_with_discontent_federation_forces
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = VBC_meeting_with_lunar_defense_fleet
+		}
+		relative_position_id = VBC_unmanned_corps_project
+		prerequisite = {focus = VBC_unmanned_corps_project}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_meeting_with_lunar_defense_fleet
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
 		x = 20
 		y = 8
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus = VBC_meet_with_discontent_federation_forces
+		}
+		prerequisite = {
+			focus = VBC_coordinate_with_federal_command
 		}
 		available = {
 		}
@@ -437,8 +533,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VBC_experimental_ms_squadron
 		}
-		relative_position_id = VBC_meeting_with_luanr_defense_fleet
-		prerequisite = {focus = VBC_meeting_with_luanr_defense_fleet}
+		relative_position_id = VBC_meeting_with_lunar_defense_fleet
+		prerequisite = {focus = VBC_meeting_with_lunar_defense_fleet}
 		completion_reward = {
 		
 		}
@@ -517,8 +613,8 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = VBC_privatized_security_fleet
 		}
-		relative_position_id = VBC_meeting_with_luanr_defense_fleet
-		prerequisite = {focus = VBC_meeting_with_luanr_defense_fleet}
+		relative_position_id = VBC_meeting_with_lunar_defense_fleet
+		prerequisite = {focus = VBC_meeting_with_lunar_defense_fleet}
 		completion_reward = {
 		
 		}
@@ -529,11 +625,13 @@ focus_tree = {
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
 		x = 26
-		y = 14
+		y = 8
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			is_in_faction_with = GRA
+			or = {  }
 		}
 		completion_reward = {
 		
@@ -545,7 +643,7 @@ focus_tree = {
 		id = VBC_engage_project
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
-		x = -3
+		x = -1
 		y = 5
 		ai_will_do = {
 			factor = 1
@@ -589,7 +687,7 @@ focus_tree = {
 		id = VBC_gundam_development_project
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
-		x = -1
+		x = -3
 		y = 5
 		ai_will_do = {
 			factor = 1
@@ -601,9 +699,8 @@ focus_tree = {
 		}
 		relative_position_id = VBC_rx_project
 		prerequisite = {focus = VBC_rx_project}
-		prerequisite = {
-			focus = VBC_absorb_zeon_companies
-		}
+		prerequisite = {focus = VBC_absorb_zeon_companies}
+		prerequisite = {focus = VBC_intergrate_engineers_with_military}
 		completion_reward = {
 		add_ideas = Gundam_Development_Project
 		}
@@ -613,7 +710,7 @@ focus_tree = {
 		id = VBC_contact_cima
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
-		x = 2
+		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1

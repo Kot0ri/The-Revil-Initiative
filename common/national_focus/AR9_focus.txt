@@ -364,7 +364,12 @@ focus = {
 		}
 	relative_position_id = AR9_prepare_the_final_stand
 	completion_reward = {
-	
+		652 = {
+			add_core_of = AR9
+		}
+		set_capital = {
+			state = 652
+		}
 	}
 }
 
@@ -714,6 +719,9 @@ focus = {
 	}
 	relative_position_id = AR9_contact_remnant_network
 	completion_reward = {
+		set_politics = {
+			ruling_party = military_government
+		}
 		#becomes zeon army remnants western army
 	}
 }

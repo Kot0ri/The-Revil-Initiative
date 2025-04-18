@@ -15,7 +15,7 @@ focus = {
 	id = AR9_ural_march
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 15
+	x = 10
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -574,6 +574,100 @@ focus = {
 }
 
 focus = {
+	id = AR9_joint_tank_development_program
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_work_with_the_restoriation_army
+		}
+	available = {
+		country_exists = RUS
+	}
+	relative_position_id = AR9_work_with_the_restoriation_army
+	completion_reward = {
+	#allows research of the M1-Arov type for both AR9 and RUS
+	}
+}
+
+focus = {
+	id = AR9_form_a_united_front
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_work_with_the_restoriation_army
+		}
+	available = {
+		country_exists = RUS
+	}
+	relative_position_id = AR9_work_with_the_restoriation_army
+	completion_reward = {
+	create_faction = "Anti-Federation Legion"
+	add_to_faction = RUS
+	}
+}
+
+focus = {
+	id = AR9_invite_the_don
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_form_a_united_front
+		}
+	available = {
+		country_exists = DON
+	}
+	mutually_exclusive = {
+		focus = AR9_invade_the_don
+	}
+	relative_position_id = AR9_form_a_united_front
+	completion_reward = {
+	add_to_faction = DON
+	}
+}
+
+focus = {
+	id = AR9_invade_the_don
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_form_a_united_front
+		}
+	available = {
+		country_exists = DON
+	}
+	mutually_exclusive = {
+		focus = AR9_invite_the_don
+	}
+	relative_position_id = AR9_form_a_united_front
+	completion_reward = {
+	create_wargoal = {
+		target = DON
+		type = annex_everything
+	}
+	}
+}
+
+focus = {
 	id = AR9_contact_remnant_network
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -633,6 +727,72 @@ focus = {
 	relative_position_id = AR9_contact_remnant_network
 	completion_reward = {
 		puppet = CRI
+	}
+}
+
+focus = {
+	id = AR9_push_to_recapture_odessa
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_pressure_crimea_cooperation
+		}
+	available = {
+		has_completed_focus = AR9_southern_push
+	}
+	relative_position_id = AR9_pressure_crimea_cooperation
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR9_dowas_production_initative
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_reach_out_to_the_1st
+		}
+	available = {
+		has_completed_focus = AR9_prioritize_high_performace_general_production_suits
+		DI1 = {
+			has_completed_focus = DI1_bring_in_afrika_stragglers
+		}
+	}
+	relative_position_id = AR9_reach_out_to_the_1st
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR9_hygoog_production_initative
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = AR9_pressure_crimea_cooperation
+			}
+	available = {
+		has_completed_focus = AR9_southern_push
+	}
+	relative_position_id = AR9_pressure_crimea_cooperation
+	completion_reward = {
+		
 	}
 }
 
@@ -727,6 +887,27 @@ focus = {
 }
 
 focus = {
+	id = AR9_bring_in_stranded_navy_personnel
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_push_to_recapture_odessa
+		}
+		prerequisite = {
+			focus = AR9_hold_our_own
+		}
+	relative_position_id = AR9_push_to_recapture_odessa
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = AR9_prioritize_high_performace_ace_suits
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -737,6 +918,9 @@ focus = {
 	}
 	prerequisite = {
 	focus = AR9_begin_preperations_for_the_next_war
+		}
+		available = {
+			has_country_leader = AR9_shili_terare
 		}
 	mutually_exclusive = {
 		focus = AR9_prioritize_high_performace_general_production_suits
@@ -759,6 +943,9 @@ focus = {
 	}
 	prerequisite = {
 	focus = AR9_begin_preperations_for_the_next_war
+		}
+		available = {
+			has_country_leader = AR9_shili_terare
 		}
 	mutually_exclusive = {
 		focus = AR9_prioritize_high_performace_ace_suits
@@ -826,5 +1013,26 @@ focus = {
 	}
 }
 
+focus = {
+	id = AR9_cheap_ms_production
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_country_leader = AR9_dottore
+	}
+	prerequisite = {
+	focus = AR9_expand_local_recruitment
+		}
+
+	relative_position_id = AR9_expand_local_recruitment
+	completion_reward = {
+	
+	}
+}
 
 }

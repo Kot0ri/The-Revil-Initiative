@@ -1,0 +1,220 @@
+focus_tree = {
+	id = DI1
+	continuous_focus_position = { x = 0 y = 8000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = DI1
+		}
+	}
+	default = no
+
+
+focus = {
+	id = DI1_footsteps_of_yuri
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 10
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = DI1_prepare_trenchworks
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_footsteps_of_yuri
+	}
+	relative_position_id = DI1_footsteps_of_yuri
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = DI1_reinforce_hardpoints
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_prepare_trenchworks
+	}
+	relative_position_id = DI1_prepare_trenchworks
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = DI1_refurbish_damaged_equipment
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_footsteps_of_yuri
+	}
+	relative_position_id = DI1_footsteps_of_yuri
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = DI1_recover_air_corps.
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_refurbish_damaged_equipment
+	}
+	relative_position_id = DI1_refurbish_damaged_equipment
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = DI1_bring_in_afrika_stragglers
+	icon = GFX_goal_general_meeting
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_footsteps_of_yuri
+	}
+	relative_position_id = DI1_footsteps_of_yuri
+	completion_reward = {
+	#add Desert Dowas, 2 characters, 2 divsions
+	}
+}
+
+focus = {
+	id = DI1_review_logistics
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_footsteps_of_yuri
+	}
+	relative_position_id = DI1_footsteps_of_yuri
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = DI1_prepare_for_winter_combat
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_review_logistics
+	}
+	relative_position_id = DI1_review_logistics
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = DI1_attempt_to_restore_fighting_spirit
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_footsteps_of_yuri
+	}
+	relative_position_id = DI1_footsteps_of_yuri
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = DI1_take_in_local_recruits
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_attempt_to_restore_fighting_spirit
+	}
+	relative_position_id = DI1_attempt_to_restore_fighting_spirit
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = DI1_prepare_the_final_stand
+	icon = GFX_goal_general_meeting
+	cost = 3
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = DI1_prepare_for_winter_combat
+	}
+	prerequisite = {
+		focus = DI1_reinforce_hardpoints
+		}
+	prerequisite = {
+		focus = DI1_take_in_local_recruits
+		}
+	prerequisite = {
+		focus = DI1_recover_air_corps.
+		}
+		available = {
+			has_war = yes
+		}
+	relative_position_id = DI1_prepare_for_winter_combat
+	completion_reward = {
+
+	}
+}
+}

@@ -361,4 +361,15 @@ commander_of_the_neo-zeon_earth_forces = {
 	dig_in_speed_factor = 0.05
 	naval_invasion_penalty = -0.15
 }
+
+overall_commander_of_zeon_army_western_front = {
+	random = no
+	command_power_gain = 0.05
+	acclimatization_cold_climate_gain_factor = 0.05
+	acclimatization_hot_climate_gain_factor = 0.05
+	weekly_manpower = 150
+	compliance_gain = 0.02
+	military_government_acceptance = 20
+	army_advisor_cost_factor = -0.20
+}
 }

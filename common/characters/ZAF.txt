@@ -57,7 +57,7 @@ characters={
 
 	##pilots
 	ZAF_desert_rommel ={
-		name="Deseert Rommel"
+		name="Desert Rommel"
 		portraits={
 			civilian={
 				large="gfx/leaders/ZAF/desert_rommel.dds"
@@ -76,6 +76,24 @@ characters={
 		}
 	}
 
-
-
+	##admirals
+	ZAF_neuman ={
+		name="Neuman"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZAF/neuman.dds"
+			}
+			army={
+				large="gfx/leaders/ZAF/neuman.dds"
+			}
+		}
+		navy_leader = {
+			traits = { blockade_runner seawolf	green_water_expert	}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
 }

@@ -11,12 +11,37 @@ characters={
 		}
 	}
 	country_leader={
-		ideology=military_administration
+		ideology= spacenoid_supremacist
 		traits={ cornered_fox hawk Zabist_militarist }
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-		traits = { zabi_party defensive_doctrine }
+		traits = { zabi_party brilliant_strategist defensive_doctrine }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
+
+AR9_dottore={
+	name="Dottore"
+	portraits={
+		civilian={
+			large="gfx/leaders/AR9/dottore.dds"
+		}
+		army={
+			large="gfx/leaders/AR9/dottore.dds"
+		}
+	}
+	country_leader={
+		ideology= military_administration
+		traits={ overall_commander_of_zeon_army_western_front }
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { old_guard politically_connected inflexible_strategist defensive_doctrine }
 		skill = 4
 		attack_skill = 4
 		defense_skill = 4

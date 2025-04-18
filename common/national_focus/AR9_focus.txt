@@ -640,11 +640,23 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = AR9_loyalty_to_deikun
+	}
+	mutually_exclusive = {
+		focus = AR9_hold_our_own
+	}
 	prerequisite = {
 	focus = AR9_reach_out_to_the_1st focus = AR9_pressure_crimea_cooperation
 		}
 	available = {
-		
+		has_country_leader = AR9_shili_terare
+		NOT = {
+			has_completed_focus = AR9_retreat_to_orenburg
+			OR = {
+				has_completed_focus = AR9_retreat_to_perm
+			}
+		}
 	}
 	relative_position_id = AR9_contact_remnant_network
 	completion_reward = {
@@ -664,9 +676,40 @@ focus = {
 		factor = 1
 	}
 	prerequisite = {
-	country_exists = RNZ
+	
 	}
 	available = {
+		country_exists = RNZ
+	}
+	relative_position_id = AR9_contact_remnant_network
+	completion_reward = {
+		NZE = { change_tag_from = AR9 }
+		249 = { transfer_state_to = NZE }
+	}
+}
+
+focus = {
+	id = AR9_hold_our_own
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	
+	}
+	available = {
+		AXS = {
+			is_puppet = no
+		}
+		AND = {
+			has_completed_focus = AR9_retreat_to_orenburg
+			OR = {
+				has_completed_focus = AR9_retreat_to_perm
+			}
+		}
 		
 	}
 	relative_position_id = AR9_contact_remnant_network

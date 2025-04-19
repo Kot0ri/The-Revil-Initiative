@@ -668,6 +668,93 @@ focus = {
 }
 
 focus = {
+	id = AR9_steppe_congress
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR9_invade_the_don focus = AR9_invite_the_don
+		}
+	available = {
+		has_completed_focus = AR9_southern_push
+	}
+	
+	relative_position_id = AR9_form_a_united_front
+	completion_reward = {
+	if = {
+		limit = {
+			controls_state = 217
+		}
+		217 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 407
+		}
+		407 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 406
+		}
+		406 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 236
+		}
+		236 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 237
+		}
+		237 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 238
+		}
+		238 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 245
+		}
+		245 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 265
+		}
+		265 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 218
+		}
+		218 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 235
+		}
+		235 = { add_core_of = AR9}
+	}
+	if = {
+		limit = {
+			controls_state = 234
+		}
+		234 = { add_core_of = AR9}
+	}
+	}
+}
+
+focus = {
 	id = AR9_contact_remnant_network
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -747,7 +834,13 @@ focus = {
 	}
 	relative_position_id = AR9_pressure_crimea_cooperation
 	completion_reward = {
-		
+		if = {
+			limit = {
+				controls_state = 137
+			}
+			137 = { add_core_of = AR9}
+		}
+		192 = { add_core_of = AR9}
 	}
 }
 

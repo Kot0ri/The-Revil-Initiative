@@ -63,6 +63,24 @@ focus = {
 }
 
 focus = {
+	id = JRZ_expand_ganymede_mining_operations
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_begin_pirate_raids
+	}
+	relative_position_id = JRZ_begin_pirate_raids
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = JRZ_secure_asteroid_base_defence
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -75,6 +93,24 @@ focus = {
 	focus = JRZ_begin_pirate_raids
 	}
 	relative_position_id = JRZ_begin_pirate_raids
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_security_garuntees
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_secure_asteroid_base_defence focus = JRZ_expand_ganymede_mining_operations
+	}
+	relative_position_id = JRZ_secure_asteroid_base_defence
 	completion_reward = {
 		
 	}
@@ -145,6 +181,75 @@ focus = {
 }
 
 focus = {
+	id = JRZ_joint_MS_improvement_plan
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_reach_out_to_mars
+	}
+	available = {
+		country_exists = MAR
+	}
+	relative_position_id = JRZ_reach_out_to_mars
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_build_up_the_jovian_fleet
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_reach_out_to_mars
+	}
+	prerequisite = {
+		focus = JRZ_begin_pirate_raids
+	}
+	available = {
+		country_exists = MAR
+	}
+	relative_position_id = JRZ_reach_out_to_mars
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_improve_ship_designs
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_build_up_the_jovian_fleet
+	}
+	prerequisite = {
+		focus = JRZ_expand_ganymede_mining_operations
+	}
+	available = {
+		country_exists = MAR
+	}
+	relative_position_id = JRZ_build_up_the_jovian_fleet
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = JRZ_pearl_boar
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -191,7 +296,7 @@ focus = {
 }
 
 focus = {
-	id = JRZ_word_of_a_godlike_being
+	id = JRZ_gaza_development
 	icon = GFX_goal_general_meeting
 	cost = 5
 	x = -2
@@ -205,6 +310,28 @@ focus = {
 	prerequisite = {
 		focus = JRZ_begin_pirate_raids
 		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_reach_out_to_axis
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = JRZ_word_of_a_godlike_being
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_reach_out_to_axis
+	}
+	
 	available = {
 		
 	}

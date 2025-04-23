@@ -62,7 +62,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
+			state_max = 60 #IEF #WAS = 20
 		}
 	}
 
@@ -76,7 +76,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
+			state_max = 72 #IEF #WAS = 20
 		}
 	}
 
@@ -231,7 +231,7 @@ buildings = {
 		infrastructure_construction_effect = yes
 		level_cap = {
 			shares_slots = yes
-			state_max = 20
+			state_max = 60 #IEF #WAS = 20
 		}
 	}
 
@@ -270,8 +270,8 @@ buildings = {
 		}
 
 		level_cap = {
-			shares_slots = yes
-			state_max = 3
+			# shares_slots = yes #IEF
+			state_max = 5 #IEF #WAS = 3
 		}
 	}
 
@@ -291,7 +291,8 @@ buildings = {
 		}
 		
 		level_cap = {
-			shares_slots = yes
+			# shares_slots = yes #IEF
+			state_max = 5 #IEFS
 		}
 	}
 

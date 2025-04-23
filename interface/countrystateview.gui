@@ -13,7 +13,7 @@ guiTypes = {
 	
 	positionType = {
 		name = "countrystateview_weathericons_position"
-		position = { x = 375 y= 25 }
+		position = { x = 600 y= 28 } #IEF #WAS { x = 375 y= 25 }
 	}
 
 	positionType = {
@@ -23,8 +23,8 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "countrystateview"
-		position = { x=-416 y=-549}
-		show_position = { x=-6 y =-655 }
+		position = { x=-416 y=-705} #IEF #WAS { x=-416 y=-549}
+		show_position = { x=-6 y = -705 } #IEF #WAS { x=-6 y =-655 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -33,8 +33,8 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "state_info_window"
-			position = { x = 0 y = 0 }
-			size = { width=780 height=496 }
+			position = { x = 0 y = 0} #IEF #WAS { x = 0 y = 0 }
+			size = { width=780 height= 705 } #IEF #WAS { width=780 height=496 }
 			
 			
 			background = {
@@ -45,7 +45,7 @@ guiTypes = {
 						
 			instantTextboxType = {
 				name = "state_name"
-				position = { x = 80 y = 5 }
+				position = { x = 208 y = 10 } #IEF #WAS { x = 80 y = 5 }
 				textureFile = ""
 				font = "hoi_36header"
 				text = "STATE_NAME_TEST"
@@ -56,7 +56,7 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "state_building_entries"
-				position = { x = 153 y = 45 }
+				position = { x = 153 y = 45 } #IEF #WAS { x = 153 y = 45 }
 				size = { width = 480 height = 105 }
 				format = "UPPER_LEFT"
 				slotsize = { width = 60 height = 52 }
@@ -66,7 +66,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "shared_slot_count"
-				position = { x = 170 y = 132 }
+				position = { x = 360 y = 145 } #IEF #WAS { x = 170 y = 132 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = "SLOTS"
@@ -78,23 +78,23 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "state_shared_slot_building_entries"
-				position = { x = 150 y = 170 }
-				size = { width = 480 height = 90%% }
+				position = { x = 157 y = 176 } #IEF #WAS { x = 150 y = 170 }
+				size = { width = 480 height = 90%% } #IEF #WAS { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
-				slotsize = { width = 61 height = 50 }
-				max_slots_horizontal = 5
-				max_slots_vertical = 5
+				slotsize = { width = 58 height = 46 } #IEF #WAS { width = 61 height = 50 }
+				max_slots_horizontal = 9 #IEF #WAS = 5
+				max_slots_vertical = 8 #IEF #WAS = 5
 			}
 
 			iconType ={
 				name ="victory_points_bg"
 				spriteType = "GFX_victorypoint_stateview_bg"
-				position = { x = 403 y = 461 }
+				position = { x = 630 y = 545 } #IEF #WAS { x = 403 y = 461 }
 			}
 			
 			instantTextboxType = {
 				name = "victory_points"
-				position = { x = 373 y = 465 }
+				position = { x = 600 y = 545 } #IEF #WAS { x = 373 y = 465 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = ""
@@ -105,7 +105,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "claims"
-				position = { x = 15 y = 99 }
+				position = { x = 15 y = 109 } #IEF #WAS { x = 15 y = 99 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = ""
@@ -117,7 +117,7 @@ guiTypes = {
 			
 			OverlappingElementsBoxType = {
 				name = "state_claims"
-				position = { x = 35 y = 118 }
+				position = { x = 35 y = 128 } #IEF #WAS { x = 35 y = 118 }
 				size = { x = 110 y = 40 }
 				format = left
 				spacing = 1.0
@@ -125,7 +125,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "owner"
-				position = { x = 15 y = 42 }
+				position = { x = 15 y = 42 } #IEF #WAS { x = 15 y = 42 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = ""
@@ -137,7 +137,7 @@ guiTypes = {
 			
 			OverlappingElementsBoxType = {
 				name = "state_owners"
-				position = { x = 35 y = 63 }
+				position = { x = 35 y = 70 } #IEF #WAS { x = 35 y = 63 }
 				size = { x = 60 y = 40 }
 				format = left
 				spacing = 1.0
@@ -145,30 +145,30 @@ guiTypes = {
 
 			positionType = {
 				name = "state_owners_size_when_owner_is_controller"
-				position = { x = 110 y = 40 }
+				position = { x = 110 y = 40 } #IEF #WAS { x = 110 y = 40 
 			}
 
 			positionType = {
 				name = "state_owners_size_when_owner_is_not_controller"
-				position = { x = 60 y = 40 }
+				position = { x = 60 y = 40 } #IEF #WAS { x = 60 y = 40 }
 			}
 
 			buttonType = {
 				name = "controller_flag"
 				quadTextureSprite = "GFX_flag_small2"
-				position = { x= 105 y = 63 }
+				position = { x= 105 y = 63 } #IEF #WAS { x= 105 y = 63 }
 			}	
 			
 			iconType ={
 				name ="controller_flag_border"
 				quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
-				position = { x= 100 y = 59 }
+				position = { x= 100 y = 59 } #IEF #WAS { x= 100 y = 59 }
 				alwaystransparent = yes
 			}
 			
 			containerWindowType = {
 				name = "state_resources"
-				position = { x= 26 y=301}
+				position = { x= 26 y=457} #IEF #WAS { x= 26 y=301}
 				size = { width=135 height=99 }
 				
 				
@@ -192,13 +192,13 @@ guiTypes = {
 			iconType ={
 				name ="population_icon"
 				spriteType = "GFX_population_icon"
-				position = { x = 20 y = 159 }
+				position = { x = 24 y = 165 } #IEF #WAS { x = 20 y = 159 }
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextboxType = {
 				name = "manpower"
-				position = { x = 64 y = 169 }
+				position = { x = 65 y = 175 } #IEF #WAS { x = 64 y = 169 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				maxWidth = 80
@@ -208,7 +208,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "resistance_container"
-				position = { x = 20 y = 196}	
+				position = { x = 24 y = 206} #IEF #WAS { x = 20 y = 196}	
 				size = { width = 519 height = 100 }
 				
 				iconType ={
@@ -235,7 +235,7 @@ guiTypes = {
 				
 				containerWindowType = {
 					name = "law_and_template_container"
-					position = { x = 0 y = 0}	
+					position = { x = 0 y = 7} #IEF #WAS { x = 0 y = 0}
 					size = { width = 0 height = 0 }
 
 					buttonType = {
@@ -281,19 +281,19 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "province_info_window"
-			position = { x = 31 y = 488 }
+			position = { x = 31 y = 565 } #IEF #WAS  { x = 31 y = 488 }
 			size = { width=480 height=29%% }
 			
 			iconType = {
 				name = "terrain_picture"
-				position = { x =0 y=0 }
+				position = { x =235 y=0 } #IEF #WAS { x =0 y=0 }
 				spriteType = "GFX_terrain_default"
 				Orientation = "UPPER_LEFT"
 			}
 			
 			instantTextboxType = {
 				name = "province"
-				position = { x = 0 y= -25 }
+				position = { x = 360 y= -30 } #IEF #WAS
 				font = "hoi_20b"
 				maxWidth = 300
 				maxHeight = 30
@@ -320,14 +320,14 @@ guiTypes = {
 			### Positioning of these are controlled by the positionType "countrystateview_weathericons_position" and "countrystateview_weathericons_offset" above
 			iconType = {
 				name = "modifiers_mud_icon"
-				position = { x = 0 y= 0 }
+				position = { x =0 y=0 } #IEF #WAS { x =0 y=0 }
 				spriteType = "GFX_modifiers_mud_icon"
 				Orientation = "UPPER_LEFT"
 			}
 			
 			iconType = {
 				name = "modifiers_snow_icons"
-				position = { x = 0 y= 0 }
+				position = { x =0 y=0 } #IEF #WAS { x =0 y=0 }
 				spriteType = "GFX_modifiers_snow_icons"
 				Orientation = "UPPER_LEFT"
 				frame = 1
@@ -335,7 +335,7 @@ guiTypes = {
 
 			iconType = {
 				name = "modifiers_weather_icons"
-				position = { x = 0 y= 0 }
+				position = { x =0 y=0 } #IEF #WAS { x =0 y=0 }
 				spriteType = "GFX_modifiers_weather_icons"
 				Orientation = "UPPER_LEFT"
 				frame = 1
@@ -343,7 +343,7 @@ guiTypes = {
 
 			iconType = {
 				name = "temperature_icons"
-				position = { x = 0 y= 0 }
+				position = { x =0 y=0 } #IEF #WAS { x =0 y=0 }
 				spriteType = "GFX_temperature_icons"
 				Orientation = "UPPER_LEFT"
 				frame = 1				
@@ -351,7 +351,7 @@ guiTypes = {
 
 			iconType = {
 				name = "impassability_icon"
-				position = { x = 0 y= 0 }
+				position = { x =0 y=0 } #IEF #WAS { x =0 y=0 }
 				spriteType = "GFX_impassable_icon"
 				Orientation = "UPPER_LEFT"
 			}
@@ -359,7 +359,7 @@ guiTypes = {
 			instantTextboxType = {
 				name = "state_modifiers"
 				text = "STATE_MODIFIERS"
-				position = { x = 28 y= -83 }
+				position = { x = 28 y= 0 } #IEF WAS { x = 28 y= -83 }
 				font = "hoi_16mbs"
 				maxWidth = 200
 				maxHeight = 30
@@ -368,7 +368,7 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "dynamic_modifiers_grid"
-				position = { x = -5 y = -32 }
+				position = { x = 78 y = 50 } #IEF #WAS { x = -5 y = -32 }
 				size = { width = 0 height = 0 }
 				format = "LOWER_LEFT"
 				slotsize = { width = 33 height = 33 }
@@ -397,7 +397,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "province_custom_icon_building_entries"
-				position = { x = 10 y = 5}
+				position = { x = 10 y = 3} #IEF #WAS { x = 10 y = 5}
 				size = { width = 480 height = 40 }
 				format = "UPPER_LEFT"
 				slotsize = { width = 61 height = 84}
@@ -406,7 +406,7 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "province_building_entries"
-				position = { x = -9 y = 74 }
+				position = { x = -9 y = 72 } #IEF #WAS { x = -9 y = 74 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
 				slotsize = { width = 61 height = 84 }
@@ -417,7 +417,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "close_button"
-			position = { x = -6 y = 14 }
+			position = { x = 237 y = 17 } #IEF #WAS { x = -6 y = 14 }
 			quadTextureSprite ="GFX_closebutton_small"
 			buttonFont = "Main_14_black"
 			shortcut = "ESCAPE"
@@ -428,7 +428,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "scorched_earth_state_button"
-			position = { x = -17 y = 413 }
+			position = { x = 220 y = 117 } #IEF #WAS { x = -17 y = 413 }
 			quadTextureSprite ="GFX_scorched_earth_state"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"
@@ -554,7 +554,7 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "province_building_entry"
-		position = { x=0 y=0 }
+		position = { x=0 y=-15 } # { x=0 y=0 }
 		size = { width=96 height= 50 }
 		clipping = no
 

@@ -153,6 +153,24 @@ characters={
 	#Advisors
 
 	#Field Marshals
+	TIT_ernesti ={
+		name="Ernesti"
+		portraits={
+			civilian={
+				large= "gfx/leaders/TIT/ernesti.dds"
+			}
+		}
+
+		field_marshal = {
+			traits = { politically_connected defensive_doctrine inflexible_strategist unyielding_defender engineer_officer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
 	TIT_giesele_albert ={
 		name="Giesele Albert"
 		portraits={
@@ -287,8 +305,28 @@ characters={
 			skill=6
 			attack_skill=6
 			defense_skill=3
-			planning_skill=2
+			planning_skill=4
 			logistics_skill=2
+		}
+	}
+
+	TIT_shelly_paige={
+		name="Shelly Paige"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/shelly_paige.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot }
+			skill= 3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
 		}
 	}
 

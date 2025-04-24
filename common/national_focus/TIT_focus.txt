@@ -549,6 +549,28 @@ focus_tree = {
 					}
 				}
 
+focus = {
+				id = TIT_elevate_MS_corps.
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 1
+				y = 1
+				relative_position_id = TIT_increased_radicalism
+				prerequisite = {
+					focus = TIT_increased_radicalism
+				}
+				ai_will_do = {
+					factor = 1
+				}
+				completion_reward = {
+					TIT_shelly_paige = {
+					promote_leader = yes
+					add_unit_leader_trait = newtype_1
+					gain_xp = 1500
+				}
+					}
+				}
+
 			focus = {
 				id = TIT_the_young_gaurd
 				icon = GFX_goal_efsf_mobile_headquarters

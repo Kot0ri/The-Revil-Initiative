@@ -180,7 +180,7 @@ characters={
 		}
 
 		field_marshal = {
-			traits = {}
+			traits = { }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -521,6 +521,26 @@ characters={
 		}
 	}
 
+	TIT_emma_sheen={
+		name="Emma Sheen"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/emma_sheen.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot hidden_sympathies}
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	TIT_sarah_zabiarov={
 		name="Sarah Zabiarov"
 		portraits={
@@ -532,7 +552,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={pilot}
+			traits={pilot newtype_1 }
 			skill=3
 			attack_skill=3
 			defense_skill=3

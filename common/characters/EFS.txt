@@ -348,6 +348,30 @@ EFS_eff_high_command={
 		}
 	}
 
+#Admirals
+
+EFS_gady_kinsey={
+	name=EFS_gady_kinsey
+	portraits={
+		army={
+			small="GFX_idea_gady_kinsey"
+		}
+		army={
+			large="gfx/leaders/EFS/Portrait_efsf_gady_kinsey.dds"
+		}
+	}
+	navy_leader={
+		traits = {
+			hardliner_faction
+		}
+		skill= 4
+		attack_skill=4
+		defense_skill=4
+		maneuvering_skill=4
+		coordination_skill=4
+	}
+}
+
 	EFS_karel = {
 		name = "Karel"
 		portraits={
@@ -367,6 +391,317 @@ EFS_eff_high_command={
 		}
 	}
 	
+	EFS_green_wyatt={
+		name=EFS_green_wyatt
+		portraits={
+			army={
+				small="GFX_idea_green_wyatt"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_green_wyatt.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy politically_connected conservative_faction battleship_adherent gunnery_expert }
+			skill= 4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+		}
+		advisor={
+			slot = space_forces_chief
+			idea_token = green_wyatt
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 80
+			traits = {
+				green_wyatt_trait
+			}
+			modifier = {
+				naval_enemy_retreat_chance = 0.1
+				positioning = 0.1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					has_war = yes
+				}
+			}
+		}
+	}
+	EFS_tianem={
+		name=EFS_tianem
+		portraits={
+			army={
+				small="GFX_idea_tianem"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_tianem.dds"
+			}
+		}
+		navy_leader={
+			traits={ blockade_runner ironside space_expert conservative_faction }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=122
+		}
+		advisor = {
+			slot = space_forces_chief
+			idea_token = tianem
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 150
+			traits = {
+				tianem_trait
+			}
+			modifier = {
+				naval_retreat_chance = 0.2
+				naval_retreat_speed = 0.2
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 15
+					has_war = yes
+				}
+			}
+		}
+	}
+	EFS_wakkein={
+		name=EFS_wakkein
+		portraits={
+			army={
+				small="GFX_idea_watkein"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_watkein.dds"
+			}
+		}
+		navy_leader={
+			traits={ spotter space_expert conservative_faction }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=134
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			idea_token = watkein
+			cost = 100
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_army_leader_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_paolo_cassius={
+		name=EFS_paolo_cassius
+		portraits={
+			army={
+				small="GFX_idea_paolo_cassius"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_paolo_cassius.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy space_expert liberal_faction }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=108
+			visible = {
+				OR = {
+					has_character_flag = enable_navy_leader
+					NOT = {
+						has_character_flag = disable_navy_leader
+					}
+				}
+			}
+		}
+	}
+	EFS_eiphar_synapse={
+		name=EFS_eiphar_synapse
+		portraits={
+			army={
+				small="GFX_idea_eyper_sinapus"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_eyper_sinapus.dds"
+			}
+		}
+		navy_leader={
+			traits = {
+				liberal_faction
+			}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+		advisor={
+			slot = high_command
+			ledger = navy
+			cost = 100
+			idea_token = eyper_sinapus
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_ship_commander_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+	EFS_jamaican_daninghan={
+		name=EFS_jamaican_daninghan
+		portraits={
+			army={
+				small="GFX_idea_jamaican_daningan"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_jamaican_daningan.dds"
+			}
+		}
+		navy_leader={
+			traits={ hardliner_faction politically_connected caustic_personality }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=110
+			visible = {
+				OR = {
+					has_character_flag = enable_navy_leader
+					NOT = {
+						has_character_flag = disable_navy_leader
+					}
+				}
+			}
+		}
+	}
+	EFS_lead={
+		name=EFS_lead
+		portraits={
+			army={
+				small="GFX_idea_reed"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_lead.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy conservative_faction }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=133
+		}
+	}
+
+	EFS_manity_mandana={
+		name= "Manity Mandana"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/manity_madana.dds"
+			}
+		}
+		navy_leader={
+			traits={ refromer_faction }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+		}
+	}
+
+	EFS_ted_ayachi={
+		name= "Ted Ayachi"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/ted_ayachi.dds"
+			}
+		}
+		navy_leader={
+			traits={ hardliner_faction }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+		}
+	}
+
+	EFS_chang_ya={
+		name= "Chang Ya"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/chang_ya.dds"
+			}
+		}
+		navy_leader={
+			traits={ hardliner_faction }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+		}
+	}
+
+	EFS_walker={
+		name= "Walker"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/walker.dds"
+			}
+		}
+		navy_leader={
+			traits={ }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+		}
+	}
+
+#other
+
 	EFS_elran_gfc = {
 		name = EFS_elran_gfc
 		portraits={
@@ -774,7 +1109,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ old_guard fort_commander }
+			traits={ old_guard fort_commander conservative_faction }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -816,7 +1151,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ old_guard trait_cautious fort_commander }
+			traits={ old_guard trait_cautious fort_commander liberal_faction }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -859,7 +1194,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ harsh_leader titans_party }
+			traits={ harsh_leader hardliner_faction }
 			skill=4
 			attack_skill=3
 			defense_skill=3
@@ -911,7 +1246,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ fort_commander }
+			traits={ fort_commander conservative_faction }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -954,7 +1289,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ old_guard harsh_leader }
+			traits={ old_guard harsh_leader conservative_faction }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -1003,7 +1338,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ jungle_rat }
+			traits={ jungle_rat liberal_faction }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -1043,7 +1378,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ trait_engineer }
+			traits={ trait_engineer liberal_faction }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -1089,6 +1424,9 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
+			traits = {
+				hardliner_faction
+			}
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -1108,7 +1446,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ trait_engineer }
+			traits={ trait_engineer liberal_faction }
 			skill=2
 			attack_skill=1
 			defense_skill=1
@@ -1145,264 +1483,9 @@ EFS_eff_high_command={
 	}
 
 
-	EFS_green_wyatt={
-		name=EFS_green_wyatt
-		portraits={
-			army={
-				small="GFX_idea_green_wyatt"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_green_wyatt.dds"
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy politically_connected conservative_faction battleship_adherent gunnery_expert }
-			skill= 4
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=2
-			coordination_skill=3
-		}
-		advisor={
-			slot = space_forces_chief
-			idea_token = green_wyatt
-			allowed = {
-				original_tag = EFS
-			}
-			cost = 80
-			traits = {
-				green_wyatt_trait
-			}
-			modifier = {
-				naval_enemy_retreat_chance = 0.1
-				positioning = 0.1
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 5
-					has_war = yes
-				}
-			}
-		}
-	}
-	EFS_tianem={
-		name=EFS_tianem
-		portraits={
-			army={
-				small="GFX_idea_tianem"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_tianem.dds"
-			}
-		}
-		navy_leader={
-			traits={ blockade_runner ironside space_expert conservative_faction }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=122
-		}
-		advisor = {
-			slot = space_forces_chief
-			idea_token = tianem
-			allowed = {
-				original_tag = EFS
-			}
-			cost = 150
-			traits = {
-				tianem_trait
-			}
-			modifier = {
-				naval_retreat_chance = 0.2
-				naval_retreat_speed = 0.2
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					factor = 15
-					has_war = yes
-				}
-			}
-		}
-	}
-	EFS_wakkein={
-		name=EFS_wakkein
-		portraits={
-			army={
-				small="GFX_idea_watkein"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_watkein.dds"
-			}
-		}
-		navy_leader={
-			traits={ spotter space_expert conservative_faction }
-			skill=4
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=134
-		}
-		advisor={
-			slot = high_command
-			ledger = army
-			idea_token = watkein
-			cost = 100
-			allowed = {
-				original_tag = EFS
-			}
-			traits = {
-				hc_army_leader_1
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_war = no
-					factor = 0
-				}
-			}
-		}
-	}
-	EFS_paolo_cassius={
-		name=EFS_paolo_cassius
-		portraits={
-			army={
-				small="GFX_idea_paolo_cassius"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_paolo_cassius.dds"
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy space_expert liberal_faction }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=108
-			visible = {
-				OR = {
-					has_character_flag = enable_navy_leader
-					NOT = {
-						has_character_flag = disable_navy_leader
-					}
-				}
-			}
-		}
-	}
-	EFS_eiphar_synapse={
-		name=EFS_eiphar_synapse
-		portraits={
-			army={
-				small="GFX_idea_eyper_sinapus"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_eyper_sinapus.dds"
-			}
-		}
-		navy_leader={
-			traits = {
-				liberal_faction
-			}
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=-1
-		}
-		advisor={
-			slot = high_command
-			ledger = navy
-			cost = 100
-			idea_token = eyper_sinapus
-			allowed = {
-				original_tag = EFS
-			}
-			traits = {
-				hc_ship_commander_1
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_war = no
-					factor = 0
-				}
-			}
-		}
-	}
-	EFS_jamaican_daninghan={
-		name=EFS_jamaican_daninghan
-		portraits={
-			army={
-				small="GFX_idea_jamaican_daningan"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_jamaican_daningan.dds"
-			}
-		}
-		navy_leader={
-			traits={ hardliner_faction politically_connected caustic_personality }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=110
-			visible = {
-				OR = {
-					has_character_flag = enable_navy_leader
-					NOT = {
-						has_character_flag = disable_navy_leader
-					}
-				}
-			}
-		}
-	}
-	EFS_lead={
-		name=EFS_lead
-		portraits={
-			army={
-				small="GFX_idea_reed"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_lead.dds"
-			}
-		}
-		navy_leader={
-			traits={ old_guard_navy }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=133
-		}
-	}
-	EFS_gady_kinsey={
-		name=EFS_gady_kinsey
-		portraits={
-			army={
-				small="GFX_idea_gady_kinsey"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_efsf_gady_kinsey.dds"
-			}
-		}
-		navy_leader={
-			skill=2
-			attack_skill=2
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=190
-		}
-	}
+	
+	
+	
 	EFS_yazan_gable={
 		name=EFS_yazan_gable
 		portraits={
@@ -1414,7 +1497,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ titans_party pilot }
+			traits={ hardliner_faction pilot }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1434,7 +1517,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ titans_party pilot }
+			traits={ hardliner_faction pilot }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1457,7 +1540,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ pilot }
+			traits={ pilot liberal_faction }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1503,7 +1586,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ pilot }
+			traits={ pilot liberal_faction }
 			skill=4
 			attack_skill=5
 			defense_skill=2

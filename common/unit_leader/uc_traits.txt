@@ -236,6 +236,27 @@ hardliner_faction = {
 	}
 }
 
+utopian_faction = { 
+	type = all
+	trait_type = personality_trait
+	gain_xp = {
+		always = no # not gainable
+	}
+	allowed = {
+		
+	}
+	modifier = {
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	new_commander_weight = {
+		factor = 0
+	}
+}
+
 ##Titans
 
 

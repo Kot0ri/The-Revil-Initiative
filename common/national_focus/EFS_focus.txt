@@ -884,10 +884,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = efsf_expand_officer_corps.
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_move_command_hq_to_jaburo
+		}
+
+		relative_position_id = efsf_move_command_hq_to_jaburo
+		completion_reward = {
+			recruit_character = EFS_manity_mandana
+			recruit_character = EFS_ted_ayachi
+			recruit_character = EFS_chang_ya
+			recruit_character = EFS_walker
+		}
+	}
+
+	focus = {
 		id = efsf_continue_jaburo_build_up
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = 0
+		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1

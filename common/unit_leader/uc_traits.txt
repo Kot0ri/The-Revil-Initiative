@@ -129,7 +129,7 @@ leader_traits = {
 		}
 	}
 
-	dolze_loyalist = { 
+	dozle_loyalist = { 
 		type = all
 		trait_type = personality_trait
 		gain_xp = {
@@ -151,6 +151,90 @@ leader_traits = {
 	}
 
 ##Federation
+
+conservative_faction = { 
+	type = all
+	trait_type = personality_trait
+	gain_xp = {
+		always = no # not gainable
+	}
+	allowed = {
+		
+	}
+	modifier = {
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	new_commander_weight = {
+		factor = 0
+	}
+}
+
+liberal_faction = { 
+	type = all
+	trait_type = personality_trait
+	gain_xp = {
+		always = no # not gainable
+	}
+	allowed = {
+		
+	}
+	modifier = {
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	new_commander_weight = {
+		factor = 0
+	}
+}
+
+refromer_faction = { 
+	type = all
+	trait_type = personality_trait
+	gain_xp = {
+		always = no # not gainable
+	}
+	allowed = {
+		
+	}
+	modifier = {
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	new_commander_weight = {
+		factor = 0
+	}
+}
+
+hardliner_faction = { 
+	type = all
+	trait_type = personality_trait
+	gain_xp = {
+		always = no # not gainable
+	}
+	allowed = {
+		
+	}
+	modifier = {
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	new_commander_weight = {
+		factor = 0
+	}
+}
 
 ##Titans
 

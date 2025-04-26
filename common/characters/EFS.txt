@@ -38,7 +38,7 @@ EFS_eff_high_command={
 			}
 		}
 		field_marshal={
-			traits={ conservatism_party organizer trait_engineer offensive_doctrine inspirational_leader fortress_buster }
+			traits={ liberal_faction trait_engineer offensive_doctrine inspirational_leader fortress_buster }
 			skill=5
 			attack_skill=4
 			defense_skill=3
@@ -67,7 +67,7 @@ EFS_eff_high_command={
 			}
 		}
 		corps_commander={
-			traits={ aeug_party }
+			traits={ refromer_faction }
 			skill=3
 			attack_skill=2
 			defense_skill=2
@@ -176,7 +176,7 @@ EFS_eff_high_command={
 			}
 		}
 		field_marshal={
-			traits={ old_guard titans_party }
+			traits={ old_guard hardliner_faction }
 			skill=3
 			attack_skill=2
 			defense_skill=1
@@ -193,7 +193,7 @@ EFS_eff_high_command={
 			}
 		}
 		advisor = {
-			slot = space_forces_chief
+			slot = navy_chief
 			idea_token = gene_coliny
 			allowed = {
 				original_tag = EFS
@@ -230,7 +230,7 @@ EFS_eff_high_command={
 			}
 		}
 		field_marshal={
-			traits={ conservatism_party }
+			traits={ liberal_faction }
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -247,7 +247,7 @@ EFS_eff_high_command={
 			}
 		}
 		advisor = {
-			slot = space_forces_chief
+			slot = navy_chief
 			idea_token = john_kowen
 			allowed = {
 				original_tag = EFS
@@ -290,7 +290,7 @@ EFS_eff_high_command={
 			}
 		}
 		field_marshal={
-			traits={ old_guard politically_connected conservatism_party }
+			traits={ old_guard politically_connected conservative_faction  }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -319,7 +319,7 @@ EFS_eff_high_command={
 		}
 		field_marshal = {
 			traits = {
-				media_personality engineer_officer skilled_staffer expert_delegator
+				conservative_faction media_personality engineer_officer skilled_staffer expert_delegator
 			}
 			skill = 4
 			attack_skill = 3
@@ -338,7 +338,7 @@ EFS_eff_high_command={
 		}
 		field_marshal = {
 			traits = {
-				politically_connected
+				politically_connected conservative_faction
 			}
 			skill = 3
 			attack_skill = 3
@@ -357,7 +357,7 @@ EFS_eff_high_command={
 		}
 		navy_leader = {
 			traits = {
-				battleship_adherent naval_lineage fleet_protector
+				battleship_adherent naval_lineage fleet_protector liberal_faction
 			}
 			skill = 3
 			attack_skill = 2
@@ -1156,13 +1156,12 @@ EFS_eff_high_command={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=105
+			traits={ old_guard_navy politically_connected conservative_faction battleship_adherent gunnery_expert }
+			skill= 4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
 		}
 		advisor={
 			slot = space_forces_chief
@@ -1198,7 +1197,7 @@ EFS_eff_high_command={
 			}
 		}
 		navy_leader={
-			traits={ blockade_runner ironside space_expert }
+			traits={ blockade_runner ironside space_expert conservative_faction }
 			skill=5
 			attack_skill=4
 			defense_skill=3
@@ -1240,7 +1239,7 @@ EFS_eff_high_command={
 			}
 		}
 		navy_leader={
-			traits={ spotter space_expert }
+			traits={ spotter space_expert conservative_faction }
 			skill=4
 			attack_skill=3
 			defense_skill=2
@@ -1279,7 +1278,7 @@ EFS_eff_high_command={
 			}
 		}
 		navy_leader={
-			traits={ old_guard_navy space_expert }
+			traits={ old_guard_navy space_expert liberal_faction }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1307,6 +1306,9 @@ EFS_eff_high_command={
 			}
 		}
 		navy_leader={
+			traits = {
+				liberal_faction
+			}
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -1345,7 +1347,7 @@ EFS_eff_high_command={
 			}
 		}
 		navy_leader={
-			traits={ titans_party }
+			traits={ hardliner_faction politically_connected caustic_personality }
 			skill=2
 			attack_skill=1
 			defense_skill=1

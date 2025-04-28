@@ -8,7 +8,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				
+				political_power_gain = -0.05
 			}
 		
 			removal_cost = -1
@@ -22,7 +22,44 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				
+				max_planning = -0.2
+				experience_gain_air_factor = -0.05
+				experience_gain_army_factor = -0.05
+				experience_gain_navy_factor = -0.05
+			}
+		
+			removal_cost = -1
+		}
+
+		harvard_academy = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				promote_cost_factor = -0.5
+				experience_gain_army_factor = 0.05
+				army_leader_start_planning_level = 1
+			}
+		
+			removal_cost = -1
+		}
+
+		super-elite = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_leader_start_level = 1
+				army_leader_start_attack_level = 1
+				weekly_manpower = 100
+				supremacist_drift = 0.02
+				military_government_drift = 0.05
 			}
 		
 			removal_cost = -1

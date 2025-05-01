@@ -1171,7 +1171,67 @@ focus = {
 	available = {
 	}
 	completion_reward = {
-	
+	1018 = {
+		add_building_construction = {
+			type = industrial_complex
+			level = 3
+			instant_build = yes
+		}
+	}
+	}
+}
+
+focus = {
+	id = efsf_new_england_revitalization
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = efsf_new_yark_redevelopment_program
+	}
+	relative_position_id = efsf_new_yark_redevelopment_program
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+	357 = {
+		add_building_construction = {
+			type = industrial_complex
+			level = 3
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = dam
+			level = 1
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = dockyard
+			level = 2
+			instant_build = yes
+		}
+	}
+	358 = {
+		add_building_construction = {
+			type = industrial_complex
+			level = 2
+			instant_build = yes
+		}
+	}
+	465 = {
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = yes
+		}
+	}
+	add_popularity = {
+		ideology = democratic
+		popularity = 0.1
+	}
 	}
 }
 
@@ -1191,7 +1251,44 @@ focus = {
 	available = {
 	}
 	completion_reward = {
-	
+	381 = {
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+		}
+	}
+	382 = {
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+		}
+	}
+	376 = {
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = dam
+			level = 1
+			instant_build =  yes
+		}
+	}
+	377 = {
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+			instant_build = yes
+		}
+		add_building_construction = {
+			type = dam
+			level = 1
+			instant_build =  yes
+		}
+	}
 	}
 }
 
@@ -1450,7 +1547,10 @@ focus = {
 	}
 	relative_position_id = efsf_operation_v
 	completion_reward = {
-		add_ideas = efsf_plan_v
+		add_timed_idea = {
+			idea = efsf_plan_v
+			days = 250
+		}
 	}
 }
 
@@ -1567,7 +1667,10 @@ focus = {
 	}
 	relative_position_id = efsf_RX_program
 	completion_reward = {
-	add_ideas = white_devil
+		add_timed_idea = {
+			idea = white_devil
+			days = 365
+		} 
 	}
 }
 
@@ -2423,7 +2526,6 @@ focus = {
 	}
 }
 
-
 	focus = {
 		id = efsf_begin_post_war_military_reconstruction
 		icon = GFX_goal_parents_of_earth_sphere
@@ -2434,11 +2536,18 @@ focus = {
 			factor = 1
 		}
 		available = {
-			date = 1.1.80
+			date > 01.01.0080
+			has_war = no
 		}
 		completion_reward = {
-		add_ideas = demobilization
-		add_ideas = post_war_reconstruction
+			add_timed_idea = {
+				idea = demobilization
+				days = 750
+			}
+			add_timed_idea = {
+				idea = post_war_reconstruction
+				days = 365
+			}
 		}
 	}
 
@@ -2669,7 +2778,7 @@ focus = {
 focus = {
 	id = efsf_0081_reconstruction_plan
 	icon = GFX_goal_earth_counter_strategy
-	cost = 10
+	cost = 5
 	x = 5
 	y = 1
 	ai_will_do = {
@@ -2686,14 +2795,17 @@ focus = {
 	}
 	relative_position_id = efsf_begin_post_war_military_reconstruction
 	completion_reward = {
-	add_ideas = 0081_reconstruction
+		add_timed_idea = {
+			idea = 0081_reconstruction
+			days = 120
+		}
 	}
 }
 
 focus = {
 	id = efsf_focus_on_retrofitting_oyw_ms
 	icon = GFX_goal_development_of_MS_for_local_warfare
-	cost = 10
+	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -2752,7 +2864,10 @@ focus = {
 	}
 	relative_position_id = efsf_begin_post_war_military_reconstruction
 	completion_reward = {
-	add_ideas = 0083_reconstruction
+		add_timed_idea = {
+			idea = 0083_reconstruction
+			days = 960
+		}
 	}
 }
 

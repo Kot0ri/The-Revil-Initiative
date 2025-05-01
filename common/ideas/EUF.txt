@@ -16,7 +16,7 @@ ideas = {
 			
 			modifier = {
 				war_support_factor = -0.5
-				monthly_population = -200
+				monthly_population = -0.2
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -37,6 +37,45 @@ ideas = {
 			max_command_power = -40
 			experience_gain_army_factor = -0.25
 			training_time_army_factor = 0.25
+		}
+	}
+
+	Paris_Academy = {
+			
+		allowed = {
+			original_tag = EUF
+		}
+	
+		allowed_civil_war = {
+			always = yes
+		}
+	
+		removal_cost = -1
+		
+		modifier = {
+			supremacist_drift = 0.02
+			military_government_drift = 0.01
+			land_doctrine_cost_factor = -0.15
+			air_doctrine_cost_factor = -0.1
+		}
+	}
+
+	Amsterdam_Academy = {
+			
+		allowed = {
+			original_tag = EUF
+		}
+	
+		allowed_civil_war = {
+			always = yes
+		}
+	
+		removal_cost = -1
+		
+		modifier = {
+			experience_gain_army_factor = 0.12
+			land_doctrine_cost_factor = -0.1
+			army_speed_factor = 0.05
 		}
 	}
 

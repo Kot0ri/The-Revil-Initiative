@@ -2367,7 +2367,10 @@ focus = {
 	}
 	relative_position_id = efsf_look_towards_space
 	completion_reward = {
-	
+	add_timed_idea = {
+		idea = operation_cemballo
+		days = 35
+	}
 	}
 }
 
@@ -2455,7 +2458,10 @@ focus = {
 	}
 	relative_position_id = efsf_operation_cemballo
 	completion_reward = {
-	
+		add_timed_idea = {
+			idea = operation_star_one
+			days = 21
+		}
 	}
 }
 

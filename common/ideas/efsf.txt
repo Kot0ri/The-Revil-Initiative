@@ -65,6 +65,43 @@ ideas = {
 			removal_cost = -1
 		}
 
+		operation_cemballo = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				invasion_preparation = -0.5
+				naval_invasion_penalty = -0.5
+			}
+			targeted_modifier = {
+				tag = SOL
+				attack_bonus_against = 0.25
+			}
+			removal_cost = -1
+		}
+
+		operation_star_one = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				invasion_preparation = -0.5
+				naval_invasion_penalty = -0.5
+				naval_invasion_prep_speed = 0.1
+			}
+			targeted_modifier = {
+				tag = ABQ
+				attack_bonus_against = 0.25
+			}
+			removal_cost = -1
+		}
+
 		demobilization = {
 			allowed ={
 				always = no

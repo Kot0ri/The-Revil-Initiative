@@ -1,6 +1,6 @@
 ideas = {
 
-	country = {
+country = {
 
 University_Metis_Colony = {
 			
@@ -16,7 +16,28 @@ University_Metis_Colony = {
 			
 			modifier = {
 				research_speed_factor = 0.02
+				monthly_population = 200
+				stability_factor = -0.05
+			}
+		}
+
+		RNP = {
+			
+			allowed = {
+				original_tag = SI6
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				supremacist_drift = 0.03
+				supremacist_acceptance = 0.2
 			}
 		}
 	}
+
 }

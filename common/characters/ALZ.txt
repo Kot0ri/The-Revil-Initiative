@@ -1,0 +1,69 @@
+characters = {
+	#leaders
+	#Field Marshals
+	#Generals
+	#Pilots
+
+	ALZ_nikolai_rezanov={
+	name="Nikolai Rezanov"
+	portraits={
+		civilian={
+			large="gfx/leaders/ALZ/nikolai_rezanov.dds"
+		}
+		army={
+			large="gfx/leaders/ALZ/nikolai_rezanov.dds"
+		}
+	}
+	corps_commander = {
+		traits = { winter_expert commando pilot jaeger }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	} 
+}
+
+ALZ_mottram_dulaney={
+	name="Mottram Dulaney"
+	portraits={
+		civilian={
+			large="gfx/leaders/ALZ/mottram_dulaney.dds"
+		}
+		army={
+			large="gfx/leaders/ALZ/mottram_dulaney.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+	ALZ_william_seward={
+	name="William Seward"
+	portraits={
+		civilian={
+			large="gfx/leaders/ALZ/william_seward.dds"
+		}
+		army={
+			large="gfx/leaders/ALZ/william_seward.dds"
+		}
+	}
+	corps_commander = {
+		traits = { pilot }
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	} 
+}
+
+	#Admirals
+	#Advisors
+}

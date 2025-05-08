@@ -1,0 +1,69 @@
+capital = 914
+oob = "AR8"
+
+# Starting tech
+set_technology = {
+	
+}
+
+set_research_slots = 2
+set_convoys = 300
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+set_stability = 0.7
+set_war_support = 0.55
+
+set_cosmetic_tag = ZEO_EFS
+add_named_threat = {
+	name = zeon_0075_threat
+	threat = 5
+}
+
+add_ideas = {
+	isolated_remnants
+	
+}
+
+set_variable = { newtype_accepted_status = 0 }
+set_variable = {
+	var = ms_flight_test
+	value = 1
+}
+
+#Diplomacy
+add_to_tech_sharing_group = zeon_research
+
+set_popularities = {
+	democratic = 0
+	supremacist = 0
+	contolism = 0
+	military_government = 100
+	aristocracy = 0
+	corporatism = 0
+	communism = 0
+}
+
+set_politics = {
+	ruling_party = military_government
+	last_election = "68.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+#leader
+
+
+#field marshal
+
+
+#generals
+
+
+#ms pilots
+
+
+#advisor
+
+
+
+

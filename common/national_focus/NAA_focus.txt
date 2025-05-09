@@ -1049,6 +1049,22 @@ available = {
 		}
 	}
 
+		focus = {
+		id = NAA_move_HQ_to_Kodiak
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = {focus = NAA_begin_moving_key_assets_north}
+		relative_position_id = NAA_begin_moving_key_assets_north
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
 	focus = {
 		id = NAA_North_America_Focus
 		icon = GFX_goal_general_meeting

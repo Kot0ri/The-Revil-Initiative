@@ -1,0 +1,46 @@
+focus_tree = {
+	id = ECZ
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ECZ
+		}
+	}
+	default = no
+
+focus = {
+		id = ECZ_test
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 20
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		transfer_state = 359
+		transfer_state = 358
+		transfer_state = 357
+		transfer_state = 360
+		transfer_state = 362
+		transfer_state = 361
+		transfer_state = 363
+		transfer_state = 364
+		transfer_state = 365
+		transfer_state = 366
+		transfer_state = 816
+		transfer_state = 261
+		transfer_state = 396
+		transfer_state = 395
+		transfer_state = 393
+		transfer_state = 394
+		transfer_state = 369
+		transfer_state = 368
+		transfer_state = 367
+		transfer_state = 370
+		}
+	}
+
+}

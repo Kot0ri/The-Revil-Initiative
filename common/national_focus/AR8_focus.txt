@@ -296,6 +296,30 @@ focus = {
 }
 
 focus = {
+	id = AR8_bring_in_additonal_local_recruits
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_plans_for_revenge
+		}
+		available = {
+			has_war = no
+		}
+	
+	relative_position_id = AR8_plans_for_revenge
+	completion_reward = {
+		AR8_wilhelm_hahnke = {
+		promote_leader = yes
+		}
+	}
+}
+
+focus = {
 	id = AR8_lessons_from_the_independence_war
 	icon = GFX_goal_general_meeting
 	cost = 5

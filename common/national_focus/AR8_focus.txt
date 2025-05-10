@@ -294,4 +294,26 @@ focus = {
 		}
 	}
 }
+
+focus = {
+	id = AR8_lessons_from_the_independence_war
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_expand_the_officer_corps.
+		}
+		available = {
+			has_war = no
+		}
+	
+	relative_position_id = AR8_expand_the_officer_corps.
+	completion_reward = {
+		
+	}
+}
 }

@@ -1,7 +1,54 @@
 characters = {
 	#leaders
+APZ_remus_woyrsch={
+	name="Remus Woyrsch"
+	portraits={
+		civilian={
+			large="gfx/leaders/APZ/remus_woyrsch.dds"
+		}
+		army={
+			large="gfx/leaders/APZ/remus_woyrsch.dds"
+		}
+	}
+	country_leader={
+		ideology= military_administration
+		traits={ cornered_fox  }
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { zabi_party trait_mountaineer }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+
 	#Field Marshals
 	#Generals
+
+	APZ_hermann_eichhorn={
+	name="Hermann Eichhorn"
+	portraits={
+		civilian={
+			large="gfx/leaders/APZ/hermann_eichhorn.dds"
+		}
+		army={
+			large="gfx/leaders/APZ/hermann_eichhorn.dds"
+		}
+	}
+	
+	corps_commander = {
+		traits = { zabi_party politically_connected organizer }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
 	#Pilots
 	#Admirals
 	#Advisors

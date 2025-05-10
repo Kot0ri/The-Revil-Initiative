@@ -1,5 +1,29 @@
 characters = {
 	#leaders
+	ATZ_heinrich_steinau={
+	name="Heinrich Steinau"
+	portraits={
+		civilian={
+			large="gfx/leaders/APZ/heinrich_steinau.dds"
+		}
+		army={
+			large="gfx/leaders/APZ/heinrich_steinau.dds"
+		}
+	}
+	country_leader={
+		ideology= military_administration
+		traits={  }
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { zabi_party winter_expert }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
 	#Field Marshals
 	#Generals
 	#Pilots

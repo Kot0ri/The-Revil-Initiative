@@ -1,0 +1,47 @@
+characters={
+	#Leaders
+	AR8_karl_steinmetz={
+	name="Karl Steinmetz"
+	portraits={
+		civilian={
+			large="gfx/leaders/AR8/karl_steinmetz.dds"
+		}
+		army={
+			large="gfx/leaders/AR8/karl_steinmetz.dds"
+		}
+	}
+	country_leader={
+		ideology= military_administration
+		traits={ indomitable_leader war_industrialist ideological_crusader  }
+		expire="1000.1.1.1"
+	}
+	field_marshal = {
+		traits = { zabi_party brilliant_strategist organizer }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
+	#generals
+	AR8_wilhelm_hahnke={
+	name="Wilhelm Hahnke"
+	portraits={
+		civilian={
+			large="gfx/leaders/AR8/wilhelm_hahnke.dds"
+		}
+		army={
+			large="gfx/leaders/AR8/wilhelm_hahnke.dds"
+		}
+	}
+	corps_commander = {
+		traits = { zabi_party brilliant_strategist organizer }
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
+}

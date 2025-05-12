@@ -263,11 +263,43 @@ focus = {
 		}
 		available = {
 			has_war = no
+			country_exists = AR9
 		}
 	
 	relative_position_id = AR8_plans_for_revenge
 	completion_reward = {
 		create_faction = "Zeon Earth Command"
+	}
+}
+
+focus = {
+	id = AR8_shared_industry_program
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_reinforce_ties_with_9th_army
+		}
+		available = {
+			is_in_faction_with = AR9
+		}
+	
+	relative_position_id = AR8_reinforce_ties_with_9th_army
+	completion_reward = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 3
+		}
+		AR9 = {
+			add_offsite_building = {
+			type = industrial_complex
+			level = 3
+		}
+		}
 	}
 }
 
@@ -338,4 +370,252 @@ focus = {
 		
 	}
 }
+
+focus = {
+	id = AR8_war_of_movement
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_lessons_from_the_independence_war
+		}
+	mutually_exclusive = {
+		focus = AR8_war_of_attrition
+	}
+	relative_position_id = AR8_lessons_from_the_independence_war
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_light_vehicle_modernization
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_war_of_movement
+		}
+	
+	relative_position_id = AR8_war_of_movement
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_examine_MS_combat
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_war_of_movement
+		}
+	
+	relative_position_id = AR8_war_of_movement
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_improve_land_warfare_capabilities
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_examine_MS_combat
+		}
+	
+	relative_position_id = AR8_examine_MS_combat
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_war_of_attrition
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_lessons_from_the_independence_war
+		}
+	mutually_exclusive = {
+	focus = AR8_war_of_movement	
+	}
+	relative_position_id = AR8_lessons_from_the_independence_war
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_infantry_primacy
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_war_of_attrition
+		}
+	
+	relative_position_id = AR8_war_of_attrition
+	completion_reward = {
+		add_ideas = infantry_primacy
+	}
+}
+
+focus = {
+	id = AR8_artilley_improvements
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_war_of_attrition
+		}
+	
+	relative_position_id = AR8_war_of_attrition
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_Aufklärung_doctrine_improvements
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_artilley_improvements
+		}
+	
+	relative_position_id = AR8_artilley_improvements
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_mechanized_effort
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_infantry_primacy focus = AR8_light_vehicle_modernization
+		}
+	
+	relative_position_id = AR8_infantry_primacy
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AR8_MS_dominance
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_improve_land_warfare_capabilities
+		}
+	mutually_exclusive = {
+		focus = AR8_elastic_operations
+	}
+	mutually_exclusive = {
+		focus = AR8_fire_from_above
+	}
+	relative_position_id = AR8_improve_land_warfare_capabilities
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR8_elastic_operations
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_mechanized_effort
+		}
+	mutually_exclusive = {
+		focus = AR8_MS_dominance
+	}
+	mutually_exclusive = {
+		focus = AR8_fire_from_above
+	}
+	relative_position_id = AR8_mechanized_effort
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR8_fire_from_above
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = AR8_Aufklärung_doctrine_improvements
+		}
+	mutually_exclusive = {
+		focus = AR8_MS_dominance
+	}
+	mutually_exclusive = {
+		focus = AR8_elastic_operations
+	}
+	relative_position_id = AR8_Aufklärung_doctrine_improvements
+	completion_reward = {
+	
+	}
+}
+
 }

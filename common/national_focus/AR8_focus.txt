@@ -166,7 +166,7 @@ focus = {
 	}
 	relative_position_id = AR8_attempt_to_restore_fighting_spirit
 	completion_reward = {
-	
+	add_manpower = 5000
 	}
 }
 
@@ -313,9 +313,7 @@ focus = {
 	
 	relative_position_id = AR8_plans_for_revenge
 	completion_reward = {
-		AR8_wilhelm_hahnke = {
-		promote_leader = yes
-		}
+		add_manpower = 50000
 	}
 }
 

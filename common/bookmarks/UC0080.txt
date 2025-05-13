@@ -1,0 +1,148 @@
+bookmarks = {
+	bookmark = {
+		name = "UC0080_NAME"
+		desc = "UC0080_DESC"
+		date = 80.1.1.1
+		picture = "GFX_select_date_UC0080"
+		default = yes
+		default_country = "ZEO"
+
+		ZEO = {
+			history = ZEO_UC0080_DESC
+			ideology = contolism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		ABQ = {
+			history = ABQ_UC0080_DESC
+			ideology = supremacist
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+
+		SOL = {
+			history = SOL_UC0080_DESC
+			ideology = military_government
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		AXS = {
+			history = AXS_UC0080_DESC
+			ideology = military_government
+			ideas = {
+			}
+			focuses = {
+			}
+		}
+
+		PEZ= {
+			history = PEZ_UC0080_DESC
+			ideology = corporatism
+			ideas = {
+				
+			}
+			focuses = {
+			}
+		}
+
+		EFS = {
+		  history = EFS_UC0080_DESC
+		  ideology = democratic
+			ideas = {
+				bigship_principle
+				mole_of_jablo
+				hollowing_out_industry
+			}
+			focuses = {
+				
+			}
+		}
+
+		"---"={
+			history = "OTHER_UC0080_DESC"
+		}
+
+		"SI1" = {
+		  minor = yes
+		  history = OTHER_UC0080_DESC
+		  ideology = democratic
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI2" = {
+		  minor = yes
+		  history = OTHER_UC0080_DESC
+		  ideology = democratic
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI4" = {
+		  minor = yes
+		  history = OTHER_UC0080_DESC
+		  ideology = democratic
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI5" = {
+		  minor = yes
+      history = OTHER_UC0080_DESC
+		  ideology = democratic
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"SI6" = {
+		  minor = yes
+      history = OTHER_UC0080_DESC
+		  ideology = democratic
+			ideas = {
+				colony_country
+			}
+		  focuses = {}
+		}
+		"VBC" = {
+		  minor = yes
+      history = OTHER_UC0080_DESC
+		  ideology = corporatism
+			ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {}
+		}
+		"GRA" = {
+		  minor = yes
+      history = OTHER_UC0080_DESC
+		  ideology = corporatism
+			ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+  }
+}

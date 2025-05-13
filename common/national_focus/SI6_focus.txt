@@ -572,6 +572,27 @@ focus_tree = {
 		id = SI6_strengthen_industrial_power
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		relative_position_id = SI6_civil_war_recovery
+		prerequisite = {
+			focus = SI6_civil_war_recovery
+		}
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = SI6_focus_on_shipbuilding_capabilties
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
 		x = 2
 		y = 1
 		ai_will_do = {
@@ -583,6 +604,28 @@ focus_tree = {
 		relative_position_id = SI6_civil_war_recovery
 		prerequisite = {
 			focus = SI6_civil_war_recovery
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	
+		focus = {
+		id = SI6_rise_of_seafaring_culture
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		relative_position_id = SI6_focus_on_shipbuilding_capabilties
+		prerequisite = {
+			focus = SI6_focus_on_shipbuilding_capabilties
 		}
 		completion_reward = {
 			

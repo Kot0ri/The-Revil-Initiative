@@ -179,6 +179,26 @@ characters = {
 
 	
 	#generals
+	ABQ_challia_bull={
+		name="Eric Manthfield"
+		portraits={
+			army={
+				small="GFX_idea_challia_bull"
+			}
+			army={
+				large="gfx/leaders/ABQ/challia_bull_1.dds"
+			}
+		}
+		corps_commander={
+			traits={ hidden_sympathies pilot newtype_1 returnee_from_jupiter }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
 	ABQ_eric_manthfield={
 		name="Eric Manthfield"
 		portraits={

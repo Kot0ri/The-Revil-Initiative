@@ -150,6 +150,30 @@ leader_traits = {
 		}
 	}
 
+		# Challia Bull
+		returnee_from_jupiter = { 
+		type = all
+		trait_type = personality_trait
+		gain_xp = {
+			always = no # not gainable
+		}
+		allowed = {
+			
+		}
+		modifier = {
+			army_attack_factor = 0.05
+			army_speed_factor = 0.05
+			recon_factor = 0.05
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
 ##Federation
 
 conservative_faction = { 

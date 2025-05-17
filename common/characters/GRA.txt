@@ -1,7 +1,7 @@
 characters={
 	#Leaders
 	GRA_smokey_wilson={
-		name=GRA_smokey_wilson
+		name= "Smokey Wilson"
 		portraits={
 			civilian={
 				large="gfx/leaders/GRA/Portrait_GRA_zeonism.dds"
@@ -12,39 +12,15 @@ characters={
 			expire="1000.1.1.1"
 		}
 	}
-	GRA_granadas_spacenoid_supremacist_senator={
-		name=GRA_granadas_spacenoid_supremacist_senator
+	GRA_kycilia_zabi={
+		name= "Kycilia Zabi"
 		portraits={
 			civilian={
-				large="gfx/leaders/Portrait_mob_leader_4.dds"
+				large="gfx/leaders/GRA/kycilia_supreme_leader.dds"
 			}
 		}
 		country_leader={
-			ideology=space_elitism
-			expire="1000.1.1.1"
-		}
-	}
-	GRA_granadas_earth_supremacist_senator={
-		name=GRA_granadas_earth_supremacist_senator
-		portraits={
-			civilian={
-				large="gfx/leaders/Portrait_mob_leader_5.dds"
-			}
-		}
-		country_leader={
-			ideology=earth_elitism
-			expire="1000.1.1.1"
-		}
-	}
-	GRA_granadas_democrats_senator={
-		name=GRA_granadas_democrats_senator
-		portraits={
-			civilian={
-				large="gfx/leaders/Portrait_mob_leader_6.dds"
-			}
-		}
-		country_leader={
-			ideology=conservatism
+			ideology= military_dictatorship
 			expire="1000.1.1.1"
 		}
 	}
@@ -69,7 +45,7 @@ characters={
 			logistics_skill=3
 		}
 	}
-
+	# Zeon Pilots
 	GRA_johnny_ridden={
 		name="Johnny Ridden"
 		portraits={
@@ -151,7 +127,49 @@ characters={
 		}
 	}
 
-	#Generals
+	GRA_simus_al_bakharov={
+		name="Simus Al Bakharov"
+		portraits={
+			army = {
+				small = "gfx/leaders/GRAsimus_al_bakharov.dds"
+			}
+			army={
+				large="gfx/leaders/GRAsimus_al_bakharov.dds"
+			}
+		}
+		advisor = {
+			slot = theorist
+			traits = { mobilearmor_specialist }
+		}
+		corps_commander = {
+			traits={pilot hidden_sympathies }
+			skill= 1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+}
+
+	GRA_xavier_olivette={
+		name="Xavier Olivette"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/xavier_olivette.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot kycilia_loyalist newtype_1 }
+			skill= 3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+}
+
+
+	#Non-Zeon Generals
 	GRA_reccoa={
 		name="Reccoa Londe"
 		portraits={

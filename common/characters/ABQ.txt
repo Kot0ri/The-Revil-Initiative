@@ -141,10 +141,10 @@ characters = {
 		name="Kleiber"
 		portraits={
 			army={
-				small=GFX_idea_gadem
+				small=GFX_idea_kleiber
 			}
 			army={
-				large= "gfx/leaders/ABQ/Twanning.dds"
+				large= "gfx/leaders/ABQ/kleiber.dds"
 			}
 		}
 		field_marshal={
@@ -177,10 +177,11 @@ characters = {
 		}
 	}
 
-	
 	#generals
+	
+	#pilots
 	ABQ_challia_bull={
-		name="Eric Manthfield"
+		name="Challia Bull"
 		portraits={
 			army={
 				small="GFX_idea_challia_bull"
@@ -218,6 +219,27 @@ characters = {
 			logistics_skill=2
 		}
 	}
+
+	ABQ_herbert_von_kuspen={
+		name="Herbert Von Kuspen"
+		portraits={
+			army={
+				small="GFX_idea_herbert_von_kuspen"
+			}
+			army={
+				large="gfx/leaders/ABQ/herbert_von_kuspen.dds"
+			}
+		}
+		corps_commander={
+			traits={ pilot zabi_party ghiren_loyalist }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+}
+
 	ABQ_adamski={
 		name="Adamski"
 		portraits={
@@ -234,7 +256,7 @@ characters = {
 			attack_skill=2
 			defense_skill=1
 			planning_skill=2
-			logistics_skill=3
+			logistics_skill=2
 		}
 }
 

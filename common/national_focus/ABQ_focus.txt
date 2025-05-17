@@ -225,10 +225,32 @@ focus = {
 }
 
 focus = {
+	id = ABQ_kuspen_combat_battalion
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ABQ_form_gihrens_secret_service
+		OR = {
+			has_completed_focus = ABQ_begin_mass_conscription
+		}
+	}
+	completion_reward = {
+		recruit_character = ABQ_herbert_von_kuspen
+	}
+	relative_position_id = ABQ_gihrens_headquaters
+	prerequisite = { focus = ABQ_gihrens_headquaters }
+}
+
+focus = {
 	id = ABQ_form_gihrens_secret_service
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
-	x = 5
+	x = 6
 	y = 1
 	ai_will_do = {
 		factor = 1

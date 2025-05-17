@@ -198,12 +198,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			recruit_character = GRA_kycilia_zabi
-			set_politics = {
-				ruling_party = military_government
-			}
+			promote_character = GRA_kycilia_zabi
 			add_popularity = {
 				ideology = military_government
-				popularity = 35
+				popularity = 0.35
 			}
 		}
 	}
@@ -220,6 +218,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			set_politics = {
+				ruling_party = military_government
+			}
 		}
 	}
 
@@ -455,6 +456,10 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			leave_faction = yes
+			declare_war_on = {
+				target = ABQ
+			}
 		}
 	}
 
@@ -476,6 +481,9 @@ focus_tree = {
 			
 		}
 		completion_reward = {
+			retire_character = GRA_kycilia_zabi
+			#gets event to choose succesor, if Gihren sent Killing he will murder them for operation rubicon
+
 		}
 	}
 
@@ -552,6 +560,27 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GRA_harbor_mineva
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_the_end_draws_near
+		prerequisite = {focus = GRA_the_end_draws_near}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			SOL = {
+				has_capitulated = yes
+			}
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = GRA_send_forces_to_side_3
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -576,13 +605,18 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GRA_the_end_draws_near
-		prerequisite = {focus = GRA_the_end_draws_near}
+
 		prerequisite = {focus = GRA_send_forces_to_side_3 focus = GRA_send_a_fleet_to_axis}
 		ai_will_do = {
 			factor = 1
 		}
+		bypass = {
+			NOT = {
+				has_country_leader = GRA_kycilia_zabi
+			}
+		}
 		available = {
-			
+			has_country_leader = GRA_kycilia_zabi
 		}
 		completion_reward = {
 		}

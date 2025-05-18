@@ -221,6 +221,14 @@ focus_tree = {
 			set_politics = {
 				ruling_party = military_government
 			}
+			recruit_character = GRA_mquve
+			recruit_character = GRA_rugens
+			recruit_character = GRA_von_helsing
+			recruit_character = GRA_barom
+			recruit_character = GRA_holwick
+			recruit_character = GRA_dankle
+			recruit_character = GRA_hardy_steiner
+			
 		}
 	}
 
@@ -296,6 +304,8 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			recruit_character = GRA_johnny_ridden
+			recruit_character = GRA_mallet_sanquine
 		}
 	}
 
@@ -695,6 +705,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			recruit_character = GRA_simus_al_bakharov
 		}
 	}
 

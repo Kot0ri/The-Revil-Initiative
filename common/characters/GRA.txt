@@ -4,7 +4,7 @@ characters={
 		name= "Smokey Wilson"
 		portraits={
 			civilian={
-				large="gfx/leaders/GRA/Portrait_GRA_zeonism.dds"
+				large="gfx/leaders/GRA/Somkey_Wilson.dds"
 			}
 		}
 		country_leader={
@@ -28,7 +28,7 @@ characters={
 		}
 	}
 
-	# Zeon Generals
+	# Zeon Field Marshals
 	GRA_mquve={
 		name="M'quve"
 		portraits={
@@ -40,7 +40,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits={}
+			traits={ politically_connected zabi_party kycilia_loyalist }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -48,6 +48,28 @@ characters={
 			logistics_skill=3
 		}
 	}
+
+	GRA_rugens={
+		name="Rugens"
+		portraits={
+			army={
+				small="gfx/leaders/GRA/rugens.dds"
+			}
+			army={
+				large="gfx/leaders/GRA/rugens.dds"
+			}
+		}
+		field_marshal = {
+			traits={ defensive_doctrine zabi_party kycilia_loyalist }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	# Zeon Generals
 	# Zeon Pilots
 	GRA_johnny_ridden={
 		name="Johnny Ridden"
@@ -171,6 +193,83 @@ characters={
 		}
 }
 
+	#Zeon Admrials
+
+	GRA_von_helsing={
+		name="von Helsing"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/von_helsing.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				aviation_enthusiast 
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+}
+
+GRA_barom={
+		name="Barom"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/barom.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				gentlemanly 
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+}
+
+GRA_dankle={
+		name="Dankle"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/dankle.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				zabi_party kycilia_loyalist
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+}
+
+GRA_holwick={
+		name="Holwick"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/holwick.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				zabi_party kycilia_loyalist
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+}
 
 	#Non-Zeon Generals
 	GRA_reccoa={

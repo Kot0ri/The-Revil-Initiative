@@ -146,6 +146,21 @@ Head_of_Federal_Criminal_Police_Organization = {
 		surrender_limit = 0.1
 	}
 
+#kycilia
+	mobile_assulat_corps._commander = {
+		random = no
+		max_planning = 0.2
+		naval_invasion_penalty = -0.05
+		max_command_power = 20
+	}
+	head_of_kycilia_agency = {
+		random = no
+		agency_upgrade_time = -0.5
+		operation_collaboration_government_cost = -0.05
+		operation_coup_government_cost = -0.05
+		operative_commando_xp_gain_factor = 0.05
+	}
+	
 #Cecilia Irene
 chief_secretary_of_gihren_zabi = {
 	random = no

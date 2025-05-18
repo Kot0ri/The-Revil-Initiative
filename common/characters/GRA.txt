@@ -20,6 +20,9 @@ characters={
 			}
 		}
 		country_leader={
+			traits = {
+				mobile_assulat_corps._commander head_of_kycilia_agency
+			}
 			ideology= military_dictatorship
 			expire="1000.1.1.1"
 		}
@@ -57,7 +60,7 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits={pilot red_rightning}
+			traits={pilot crimson_lightning}
 			skill=5
 			attack_skill=5
 			defense_skill=4

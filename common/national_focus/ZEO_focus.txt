@@ -49,6 +49,21 @@ focus = {
 		set_power_balance = {
 			id = ZEO_power_balance
 		}
+		add_popularity = {
+			ideology = aristocracy
+			popularity = 0.25
+		}
+		add_popularity = {
+			ideology = supremacist
+			popularity = 0.05
+		}
+		promote_character = {
+			character = ZEO_degwin_sodo_zabi
+			ideology = aristocracy
+		}
+		set_politics = {
+			ruling_party = aristocracy
+		}
 	}
 }
 

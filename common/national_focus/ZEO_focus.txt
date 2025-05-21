@@ -586,7 +586,10 @@ focus = {
 	}
 	
 	completion_reward = {
-		custom_effect_tooltip = ttp_zeon_glemy_legitimatized
+		custom_effect_tooltip = {
+			localization_key =  ttp_zeon_glemy_legitimatized
+		}
+
 	}
 	relative_position_id = ZEO_plenipotentiary_of_economics
 	prerequisite = { focus = ZEO_plenipotentiary_of_economics }

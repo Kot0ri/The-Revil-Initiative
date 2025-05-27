@@ -93,7 +93,7 @@ NAA_Garcia_Romeo={
 }
 
 NAA_amaria={
-	name="Amaria"
+	name="Amaria Deom"
 	portraits={
 		civilian={
 			large="gfx/leaders/NAA/amaria.dds"
@@ -103,7 +103,27 @@ NAA_amaria={
 		}
 	}
 	field_marshal = {
-		traits = { naval_invader }
+		traits = { naval_invader zabi_party }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
+NAA_jeffery={
+	name="Jeffery"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/jeffery.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/jeffery.dds"
+		}
+	}
+	field_marshal = {
+		traits = { desert_fox }
 		skill = 2
 		attack_skill = 2
 		defense_skill = 2
@@ -439,7 +459,7 @@ NAA_Garret_Schmitzer={
 		}
 	}
 	corps_commander = {
-		traits = { pilot skilled_staffer }
+		traits = { pilot skilled_staffer organizer }
 		skill = 3
 		attack_skill = 3
 		defense_skill = 3

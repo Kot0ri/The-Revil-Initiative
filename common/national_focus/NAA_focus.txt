@@ -25,7 +25,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = NAA_form_the_midnight_fenrir_corps.
+		id = NAA_elevate_the_midnight_fenrir_corps.
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -4
@@ -38,7 +38,20 @@ focus_tree = {
 		completion_reward = {
 			NAA_Garret_Schmitzer = {
 				promote_leader = yes
+				add_trait = {
+					trait = trickster
+				}
 			}
+			NAA_Charlotte_Hepner = {
+				add_trait = {
+					trait = organizer
+				}
+			} 
+			NAA_Lou_Roher = {
+				add_trait = {
+					trait = trickster
+				}
+			} 
 		}
 	}
 
@@ -457,7 +470,7 @@ focus_tree = {
 		id = NAA_Tour_of_America
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 4
+		x = 5
 		y = 1
 		prerequisite = {focus = NAA_Phase_2_Operations}
 		relative_position_id = NAA_Phase_2_Operations
@@ -638,7 +651,7 @@ focus_tree = {
 		id = NAA_Garmas_Fame
 		icon = GFX_goal_general_meeting
 		cost = 1
-		x = 2
+		x = 4
 		y = 2
 		prerequisite = {focus = NAA_Hunt_Down_the_Trojan_Horse}
 		relative_position_id = NAA_Hunt_Down_the_Trojan_Horse
@@ -942,6 +955,9 @@ available = {
 		relative_position_id = NAA_Garmas_Fate
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus = NAA_Submit_to_Mquve
 		}
 		completion_reward = {
 			add_country_leader_role = {
@@ -1330,19 +1346,27 @@ available = {
 		id = NAA_Submit_to_Mquve
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -1
+		x = 2
 		y = 1
-		prerequisite = {focus = NAA_Aid_Chars_Attack}
-		relative_position_id = NAA_Aid_Chars_Attack
+		prerequisite = {focus = NAA_Garmas_Fate}
+		relative_position_id = NAA_Garmas_Fate
 	
 		ai_will_do = {
 			factor = 1
 		}
 		mutually_exclusive = {
-			focus = NAA_Rudolfs_ascension
+			focus = NAA_emergency_command
 		}
 		completion_reward = {
-			
+			add_country_leader_role = {
+				character = NAA_jeffery
+				promote_leader = yes
+				country_leader = {
+					ideology = military_administration
+					expire = "1965.1.1.1"
+					traits = {  }
+				}
+			}
 		}
 	}
 
@@ -1358,9 +1382,7 @@ available = {
 		ai_will_do = {
 			factor = 1
 		}
-		mutually_exclusive = {
-			focus = NAA_Submit_to_Mquve
-		}
+		
 		completion_reward = {
 			promote_character = {
 				character = NAA_rudolf_dietrich

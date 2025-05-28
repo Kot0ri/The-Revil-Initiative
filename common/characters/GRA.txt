@@ -193,6 +193,40 @@ characters={
 		}
 }
 
+	GRA_nyaan={
+		name="Nyaan"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/nyaan.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot kycilia_loyalist newtype_1 }
+			skill= 3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+}
+
+GRA_miguel_serveto={
+		name="Miguel Serveto"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/miguel_serveto.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot ghiren_loyalist newtype_1 }
+			skill= 2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+}
+
 	#Zeon Admrials
 
 	GRA_von_helsing={

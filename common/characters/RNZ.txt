@@ -47,7 +47,7 @@ RNZ_casval_cca_1={
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-	 traits={ akai_suisei newtype1 war_hero anti_zabi_party trickster naval_invader pilot }
+	 traits={ akai_suisei newtype_1 war_hero anti-zabi_party trickster naval_invader pilot }
 		skill=6
 		attack_skill=8
 		defense_skill=5
@@ -76,7 +76,7 @@ RNZ_casval_srw={
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
-	 traits={ akai_suisei newtype1 war_hero anti_zabi_party trickster naval_invader pilot }
+	 traits={ akai_suisei newtype_1 war_hero anti-zabi_party trickster naval_invader pilot }
 		skill=6
 		attack_skill=8
 		defense_skill=5
@@ -99,7 +99,7 @@ RNZ_haman={
 		}
 	}
 	field_marshal = {
-	 traits={ newtype3 }
+	 traits={ newtype_3 }
 		skill=5
 		attack_skill=4
 		defense_skill=3
@@ -146,7 +146,7 @@ RNZ_gyunei={
 		}
 	}
 	corps_commander= {
-	 traits={ pilot cyber_newtype Royalguard }
+	 traits={ pilot cyber_newtype royal_gaurd }
 		skill=4
 		attack_skill=4
 		defense_skill=3
@@ -167,7 +167,7 @@ RNZ_angelo={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot cyber_newtype Royalguard }
+	 traits={ pilot cyber_newtype royal_gaurd }
 		skill=4
 		attack_skill=4
 		defense_skill=3
@@ -230,7 +230,7 @@ RNZ_sergi={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot Royalguard }
+	 traits={ pilot royal_gaurd }
 		skill=3
 		attack_skill=2
 		defense_skill=3
@@ -251,7 +251,7 @@ RNZ_bato={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot Royalguard }
+	 traits={ pilot royal_gaurd }
 		skill=3
 		attack_skill=2
 		defense_skill=3
@@ -272,7 +272,7 @@ RNZ_cuaron={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot Royalguard }
+	 traits={ pilot royal_gaurd }
 		skill=3
 		attack_skill=2
 		defense_skill=3
@@ -293,7 +293,7 @@ RNZ_zechst={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot Royalguard newtype1}
+	 traits={ pilot royal_gaurd newtype_1}
 		skill=3
 		attack_skill=2
 		defense_skill=3
@@ -314,7 +314,7 @@ RNZ_spotter={
 		}
 	}
 		corps_commander= {
-	 traits={ pilot Royalguard}
+	 traits={ pilot royal_gaurd}
 		skill=2
 		attack_skill=2
 		defense_skill=2
@@ -377,7 +377,7 @@ RNZ_kamille={
 		}
 	}
 	corps_commander= {
- traits={ pilot newtype3}
+ traits={ pilot newtype_3}
 	skill=6
 	attack_skill=5
 	defense_skill=5

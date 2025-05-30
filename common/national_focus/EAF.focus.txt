@@ -1052,6 +1052,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EAF_atlantic_wall
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -5
+		y = 1
+		prerequisite ={ focus = EAF_Phase_4_Operations}
+		relative_position_id = EAF_Phase_4_Operations
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EAF_New_wave_of_reinforcements
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -1119,7 +1135,7 @@ focus_tree = {
 		id = EAF_Heavy_Assualt_MS
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = -1
 		y = 2
 		prerequisite ={ focus = EAF_Specialized_Ground_Combat_MS }
 		prerequisite ={ focus = EAF_Close_Quarters_Combat_MS }
@@ -1155,7 +1171,7 @@ focus_tree = {
 		id = EAF_improve_ms_mobility
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 2
+		x = 1
 		y = 2
 		prerequisite ={ focus = EAF_Specialized_Ground_Combat_MS }
 		prerequisite ={ focus = EAF_Close_Quarters_Combat_MS }
@@ -1191,7 +1207,7 @@ focus_tree = {
 		id = EAF_Next_Gen_Mainline_MS
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 1
+		x = 0
 		y = 3
 		prerequisite ={ focus = EAF_Heavy_Assualt_MS focus = EAF_improve_ms_mobility }
 		relative_position_id = EAF_Begin_research_Efforts
@@ -1258,7 +1274,7 @@ focus_tree = {
 		id = EAF_examine_experimental_ms_theory
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -7
+		x = -6
 		y = 1
 		prerequisite ={ focus = EAF_Begin_research_Efforts }
 		relative_position_id = EAF_Begin_research_Efforts
@@ -1275,7 +1291,7 @@ focus_tree = {
 		id = EAF_begin_development_of_land_use_mobile_armors
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -2
+		x = 2
 		y = 1
 		prerequisite ={ focus = EAF_examine_experimental_ms_theory }
 		relative_position_id = EAF_examine_experimental_ms_theory
@@ -1292,7 +1308,7 @@ focus_tree = {
 		id = EAF_begin_development_of_atmospheric_flight_capabilties
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		prerequisite ={ focus = EAF_examine_experimental_ms_theory }
 		relative_position_id = EAF_examine_experimental_ms_theory
@@ -1322,84 +1338,10 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = EAF_A_way_to_end_the_war
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = -4
-		y = 1
-		prerequisite ={ focus = EAF_Begin_research_Efforts }
-		relative_position_id = EAF_Begin_research_Efforts
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_flag = not_released_asia
-		}
-		completion_reward = {
-		
-		}
-	}
+	
 
 	focus = {
-		id = EAF_Astaroth_Project
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = -1
-		y = 1
-		prerequisite ={ focus = EAF_A_way_to_end_the_war }
-		relative_position_id = EAF_A_way_to_end_the_war
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_flag = not_released_asia
-		}
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = EAF_Apsaras_Project
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 1
-		y = 1
-		prerequisite ={ focus = EAF_A_way_to_end_the_war }
-		relative_position_id = EAF_A_way_to_end_the_war
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_flag = not_released_asia
-		}
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = EAF_Shuddering_Mountain
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		prerequisite ={ focus = EAF_Apsaras_Project}
-		relative_position_id = EAF_Apsaras_Project
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_country_flag = not_released_asia
-		}
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = EAF_Operation_Staircase_to_the_Moon
+		id = EAF_retreat_from_odessa
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -1
@@ -1410,7 +1352,8 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_country_flag = not_released_asia
+			has_completed_focus = EAF_Defense_of_Odessa
+			has_completed_focus = EAF_Outer_Odessa_Line
 		}
 		completion_reward = {
 		

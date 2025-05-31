@@ -461,6 +461,46 @@ characters={
 		}
 	}
 
+	TIT_maria_owens={
+		name="Maria Owens"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/maria_owens.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
+	TIT_setsuko_ohara={
+		name="Setsuko Ohara"
+		portraits={
+			army={
+				small="GFX_idea_barom"
+			}
+			army={
+				large="gfx/leaders/TIT/setsuko_ohara.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
 	TIT_devos_roa={
 		name="Devos Roa"
 		portraits={

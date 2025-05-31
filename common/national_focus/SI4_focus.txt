@@ -37,6 +37,12 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI4_distance_our_officials_from_federation
+	}
+	mutually_exclusive = {
+		focus = SI4_growing_antifederation_sentiment
+	}
 	completion_reward = {
 	}
 }
@@ -361,7 +367,7 @@ focus = {
 
 focus = {
 	id = SI4_ace_of_the_thunderbolt
-	icon =  GFX_goal_zeon_mobile_headquarters
+	icon =  GFX_goal_io_flemming
 	cost = 2
 	x = 1
 	y = 1
@@ -396,7 +402,7 @@ focus = {
 
 focus = {
 	id = SI4_form_the_moore_brotherhood
-	icon =  GFX_goal_zeon_mobile_headquarters
+	icon =  GFX_goal_moore_brotherhood
 	cost = 2
 	x = 0
 	y = 1
@@ -1205,6 +1211,12 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI4_growing_antifederation_sentiment
+	}
+	mutually_exclusive = {
+		focus = SI4_negotiations_with_federation_investors
+	}
 	completion_reward = {
 	}
 }
@@ -1232,6 +1244,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI4_seek_a_middle_ground_stance
 	}
 	completion_reward = {
 	}
@@ -1305,6 +1320,7 @@ focus = {
 	cost = 2
 	x = 0
 	y = 1
+	
 	ai_will_do = {
 		factor = 1
 	}
@@ -1315,13 +1331,17 @@ focus = {
 }
 
 focus = {
-	id = SI4_get_away_from_federationzeon_disagreements
+	id = SI4_get_away_from_federation-zeon_disagreements
 	icon =  GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 13
-	y = 0
+	x = -4
+	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	relative_position_id = SI4_distance_our_officials_from_federation
+	prerequisite = {
+		focus = SI4_distance_our_officials_from_federation
 	}
 	completion_reward = {
 	}
@@ -1336,10 +1356,13 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI4_push_for_spacenoid_rights
+	}
 	completion_reward = {
 	}
-	relative_position_id = SI4_get_away_from_federationzeon_disagreements
-	prerequisite = { focus = SI4_get_away_from_federationzeon_disagreements }
+	relative_position_id = SI4_get_away_from_federation-zeon_disagreements
+	prerequisite = { focus = SI4_get_away_from_federation-zeon_disagreements }
 }
 
 focus = {
@@ -1411,6 +1434,12 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI4_distance_our_officials_from_federation
+	}
+	mutually_exclusive = {
+		focus = SI4_negotiations_with_federation_investors
+	}
 	completion_reward = {
 	}
 }
@@ -1423,6 +1452,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI4_our_own_path
 	}
 	completion_reward = {
 	}
@@ -1438,6 +1470,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI4_align_with_zeon
 	}
 	completion_reward = {
 	}
@@ -1628,7 +1663,7 @@ focus = {
 
 focus = {
 	id = SI4_improve_ms_mobility
-	icon =  GFX_goal_zeon_mobile_headquarters
+	icon =  GFX_goal_berga_giros
 	cost = 2
 	x = 0
 	y = 1
@@ -1636,6 +1671,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		
 	}
 	relative_position_id = SI4_early_ms_testing
 	prerequisite = { focus = SI4_early_ms_testing }

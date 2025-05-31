@@ -169,6 +169,25 @@ focus = {
 	prerequisite = { focus = SOL_Deadlock_Fortress_Plans }
 				}
 
+
+	focus = {
+			id = SOL_improve_mass_production_mS
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = -2
+			y = 5
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_Dolzes_Pride
+			prerequisite = {
+				
+			}
+			completion_reward = {
+			
+				}
+		}
+
 }
 
 

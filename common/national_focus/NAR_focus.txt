@@ -1,0 +1,13 @@
+focus_tree = {
+	id = NAR
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = NAR
+		}
+	}
+	default = no
+	
+}

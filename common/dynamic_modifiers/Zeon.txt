@@ -1,0 +1,14 @@
+#############################
+ ###### INNER CIRCLE ######
+#############################
+# Fake NS to show the modifiers of all ascended advisors in the NS window
+GER_the_inner_circle_dm = {
+	icon = GFX_idea_generic_fascism_drift_2
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { has_government = supremacist }
+	}
+
+	custom_modifier_tooltip = GER_the_inner_circle_dm_tt
+	#custom_modifier_tooltip = idea_desc|GER_todt_reich_engineer
+}

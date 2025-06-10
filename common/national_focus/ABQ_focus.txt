@@ -469,10 +469,68 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = ABQ_the_principality_victorious
+	}
 	completion_reward = {
 	}
 	relative_position_id = ABQ_prepare_for_a_last_stand
 	prerequisite = { focus = ABQ_prepare_for_a_last_stand }
+}
+
+focus = {
+	id = ABQ_the_principality_victorious
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_gihrens_final_speech
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_prepare_for_a_last_stand
+	prerequisite = { focus = ABQ_prepare_for_a_last_stand }
+}
+
+focus = {
+	id = ABQ_form_the_national_defence_forces
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_the_principality_victorious
+	prerequisite = { focus = ABQ_the_principality_victorious }
+}
+
+focus = {
+	id = ABQ_begin_cloning_studies
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ABQ_cyber_newtype_program
+		has_war = no
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_form_the_national_defence_forces
+	prerequisite = { focus = ABQ_form_the_national_defence_forces }
 }
 
 focus = {
@@ -836,7 +894,7 @@ focus = {
 	id = ABQ_widescale_fighter_deployment
 	icon = GFX_goal_generic_build_airforce
 	cost = 5
-	x = 1
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1949,7 +2007,7 @@ focus = {
 	id = ABQ_evacuation_to_axis
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
-	x = -2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1967,7 +2025,7 @@ focus = {
 	id = ABQ_delaz_orders_a_retreat
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1

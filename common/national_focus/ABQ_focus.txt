@@ -1813,6 +1813,13 @@ focus = {
 	recruit_character = ABQ_kult
 	recruit_character = ABQ_cara_lodge
 	recruit_character = ABQ_gary_lodge
+	recruit_character = ABQ_kakegawa
+	recruit_character = ABQ_koyasu
+	recruit_character = ABQ_naka
+	recruit_character = ABQ_sugwara
+	recruit_character = ABQ_takumi
+	recruit_character = ABQ_tarken
+	recruit_character = ABQ_yamazaki
 
 	}
 	relative_position_id = ABQ_gihrens_headquaters
@@ -1848,6 +1855,15 @@ focus = {
 	}
 	completion_reward = {
 		ABQ_cima_garahau = {			
+			limit = {
+				NOT = {
+					has_trait = naval_invader
+				}
+			}
+			add_trait = {trait = naval_invader}
+		}
+
+		ABQ_cima_garahau_2 = {			
 			limit = {
 				NOT = {
 					has_trait = naval_invader
@@ -1983,6 +1999,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		retire_character = ABQ_cima_garahau
+		recruit_character = ABQ_cima_garahau_2
 	}
 	relative_position_id = ABQ_survival_of_conscious
 	prerequisite = { focus = ABQ_survival_of_conscious}

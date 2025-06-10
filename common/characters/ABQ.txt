@@ -178,6 +178,26 @@ characters = {
 	}
 
 	#generals
+
+	ABQ_killing={
+	name="Killing"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large= "gfx/leaders/ABQ/Killing.dds"
+		}
+	}
+	corps_commander={
+		traits={zabi_party harsh_leader ghiren_loyalist }
+		skill=1
+		attack_skill=2
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
 	
 	#pilots
 	ABQ_challia_bull={
@@ -521,25 +541,7 @@ ABQ_gleisner={
 	}
 }
 
-ABQ_killing={
-	name="Killing"
-	portraits={
-		army={
-			small="GFX_idea_char_aznable"
-		}
-		army={
-			large= "gfx/leaders/ABQ/Killing.dds"
-		}
-	}
-	corps_commander={
-		traits={zabi_party harsh_leader ghiren_loyalist }
-		skill=1
-		attack_skill=2
-		defense_skill=1
-		planning_skill=1
-		logistics_skill=1
-	}
-}
+
 
 ABQ_greniss_escot={
 	name= "Greniss Escot"
@@ -569,6 +571,108 @@ ABQ_gaily={
 		}
 		army={
 			large= "gfx/leaders/ABQ/Gaily.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_kakegawa={
+	name= "Kakegawa"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/kakegawa.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_koyasu={
+	name= "Koyasu"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/koyasu.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_naka={
+	name= "Naka"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/kakegawa.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_takumi={
+	name= "Takumi"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/takumi.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_tarken={
+	name= "Tarken"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/tarken.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_yamazaki={
+	name= "Yamazaki"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/yamazaki.dds"
 		}
 	}
 	corps_commander={
@@ -796,16 +900,36 @@ ABQ_cima_garahau={
 			small="GFX_idea_char_aznable"
 		}
 		army={
-			large="gfx/leaders/ABQ/Cima_Garahau.dds"
+			large="gfx/leaders/ABQ/Cima_Garahau_1.dds"
 		}
 	}
 	corps_commander={
-		traits={pirates anti_zabi_party pilot}
+		traits={pilot}
 		skill=3
 		attack_skill=3
 		defense_skill=3
 		planning_skill=2
 		logistics_skill=2
+	}
+}
+
+ABQ_cima_garahau_2={
+	name="Cima Garahau"
+	portraits={
+		army={
+			small="GFX_idea_char_aznable"
+		}
+		army={
+			large="gfx/leaders/ABQ/Cima_Garahau_2.dds"
+		}
+	}
+	corps_commander={
+		traits={pirates anti_zabi_party mayfly_of_space pilot}
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
 	}
 }
 

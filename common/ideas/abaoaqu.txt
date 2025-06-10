@@ -288,7 +288,41 @@ ideas = {
 			modifier = {
             	surrender_limit = 0.1
 				war_support_factor = 0.1
-				political_power_factor 0.1
+				political_power_factor = 0.1
+			}
+			removal_cost = -1
+		}
+		ABQ_special_operations_agency = {
+			picture = GFX_goal_generic_special_forces
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            	planning_speed = 0.12
+				max_command_power = 20
+				max_planning_factor = 0.2
+			}
+			removal_cost = -1
+		}
+		ABQ_supreme_command_office = {
+			picture = GFX_goal_generic_special_forces
+			allowed = {
+				always = no
+				original_tag = ABQ
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+            	political_power_factor = 0.02
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				army_core_defence_factor = 0.05
+				recruitable_population_factor = 0.05
 			}
 			removal_cost = -1
 		}

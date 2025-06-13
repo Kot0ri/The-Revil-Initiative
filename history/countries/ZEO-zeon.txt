@@ -15,6 +15,25 @@ set_variable = { ZEO_organize_the_opposition_dec_cost = 75 }
 set_variable = { ZEO_appeal_to_the_spacenoid_spirit_dec_cost = 75 }
 set_variable = { ZEO_entice_the_masses_dec_cost = 50 }
 
+####################
+### INNER CIRCLE ###
+####################
+set_variable = { GER_inner_circle_days_to_start_focus = 75 }
+set_variable = { GER_inner_circle_random_days = 45 }
+
+
+### UI ###
+set_variable = { GER_ascended_advisor_1 = 0 } #Ascended Advisor Portrait
+set_variable = { GER_ascended_advisor_2 = 0 } #Ascended Advisor Portrait
+set_variable = { GER_ascended_advisor_3 = 0 } #Ascended Advisor Portrait
+
+### SHARED FOCUS CONTROL ###
+set_variable = { GER_wonder_weapons_focus_advisor = 0 } # To know who is completing this focus. Value = Advisor ID in the Inner Circle
+set_variable = { GER_optimize_reich_service_focus_advisor = 0 } # To know who is completing this focus. Value = Advisor ID in the Inner Circle
+set_variable = { GER_total_control_over_domestic_affairs_focus_advisor = 0 } # To know who is completing this focus. Value = Advisor ID in the Inner Circle
+
+set_variable = { GER_industrialist_prevailed = 0 } #For allowing only one Industrialist advisor to work on the ME focus
+
 # Starting tech
 set_technology = {
 }

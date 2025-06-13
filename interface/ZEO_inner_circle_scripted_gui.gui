@@ -85,7 +85,7 @@ guiTypes = {
 				#PORTRAIT
 				iconType = {
 					name ="fuhrer_portrait"
-					spriteType = "GFX_inner_circle_leader_adolf_hitler"
+					spriteType = "GFX_inner_circle_leader_gihren_zabi"
 					orientation = upper_left
 					position = { x=2	 y=18 }
 					alwaystransparent = yes
@@ -432,7 +432,7 @@ guiTypes = {
 			# Delaz
 			iconType = {
 				name ="advisor_delaz_portrait"
-				spriteType = "GFX_aiguille_elaz_available_small"
+				spriteType = "GFX_aiguille_delaz_available_small"
 				orientation = center
 				position = { x=-97	 y=@ADVISOR_POS_Y }
 				scale = 1

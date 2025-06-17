@@ -135,6 +135,13 @@ characters = {
 			planning_skill=2
 			logistics_skill=2
 		}
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_planning_1 }
+			available = {
+				is_country_leader = no
+			}
+		}
 	}
 
 	ABQ_kleiber={
@@ -155,16 +162,23 @@ characters = {
 			planning_skill=3
 			logistics_skill=3
 		}
+		advisor = {
+			slot = army_chief
+			traits = { army_chief_organizational_1 }
+			available = {
+				is_country_leader = no
+			}
+		}
 	}
 
 	ABQ_vrhad_fahran={
-		name="Vrhad Fahran"
+		name="Vrahd Fahran"
 		portraits={
 			army={
 				small=GFX_idea_gadem
 			}
 			army={
-				large= "gfx/leaders/ABQ/vrhad_fahran.dds"
+				large= "gfx/leaders/ABQ/vrahd_fahran.dds"
 			}
 		}
 		field_marshal={
@@ -196,6 +210,10 @@ characters = {
 		defense_skill=1
 		planning_skill=1
 		logistics_skill=1
+	}
+	advisor = {
+		slot = army_chief
+		traits = { army_entrenchment_1  }
 	}
 }
 	
@@ -704,7 +722,13 @@ ABQ_delaz={
 		defense_skill=5
 		maneuvering_skill=5
 		coordination_skill=5
-
+	}
+	advisor = {
+		slot = navy_chief
+		traits = { navy_chief_reform_3 }
+		available = {
+			is_country_leader = no
+		}
 	}
 }
 
@@ -725,7 +749,13 @@ ABQ_jirom={
 		defense_skill=3
 		maneuvering_skill=2
 		coordination_skill=2
-
+	}
+	advisor = {
+		slot = navy_chief
+		traits = { navy_capital_ship_1 }
+		available = {
+			is_country_leader = no
+		}
 	}
 }
 
@@ -746,7 +776,13 @@ ABQ_weigelman={
 		defense_skill=3
 		maneuvering_skill=2
 		coordination_skill=2
-
+	}
+	advisor = {
+		slot = navy_chief
+		traits = { navy_chief_decisive_battle_2 }
+		available = {
+			is_country_leader = no
+		}
 	}
 }
 
@@ -767,7 +803,11 @@ ABQ_tokwan={
 		defense_skill=2
 		maneuvering_skill=1
 		coordination_skill=1
-
+	}
+	advisor = {
+		slot = high_command
+		traits = { air_naval_strike_1 }
+		
 	}
 }
 ##High Command
@@ -950,7 +990,6 @@ ABQ_dietroaf={
 		defense_skill=1
 		maneuvering_skill=1
 		coordination_skill=1
-
 	}
 }
 

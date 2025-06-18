@@ -129,6 +129,11 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		ABQ_gihren_zabi = {
+			is_country_leader = yes
+		} 
+	}
 	completion_reward = {
 	remove_ideas = gihrens_royal_guard
 	add_ideas = gihrens_royal_guard2
@@ -514,6 +519,7 @@ focus = {
 	prerequisite = { focus = ABQ_the_principality_victorious }
 }
 
+
 focus = {
 	id = ABQ_begin_cloning_studies
 	icon = GFX_goal_dominance_of_human_survival_theory2
@@ -531,6 +537,40 @@ focus = {
 	}
 	relative_position_id = ABQ_form_the_national_defence_forces
 	prerequisite = { focus = ABQ_form_the_national_defence_forces }
+}
+
+focus = {
+	id = ABQ_legion_project
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_begin_cloning_studies
+	prerequisite = { focus = ABQ_begin_cloning_studies }
+	prerequisite = { focus = ABQ_cyber_newtype_program }
+}
+
+focus = {
+	id = ABQ_realign_char
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_undermine_granada
+	prerequisite = { focus = ABQ_undermine_granada }
 }
 
 focus = {
@@ -567,14 +607,15 @@ focus = {
 	id = ABQ_move_high_comand_from_side_3
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
-	x = -2
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
+		##returns Gihren as leader if he has left
 	}
-	relative_position_id = ABQ_undermine_granada
+	relative_position_id = ABQ_fund_other_commands
 	prerequisite = { focus = ABQ_undermine_granada }
 	prerequisite = { focus = ABQ_fund_other_commands }
 }
@@ -598,7 +639,7 @@ focus = {
 	id = ABQ_fund_other_commands
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
-	x = 2
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1314,7 +1355,7 @@ focus = {
 	}
 	relative_position_id = ABQ_cyber_newtype_program
 	prerequisite = { focus = ABQ_begin_newtype_ms_minaturization }
-	prerequisite = { focus = ABQ_newtype_battlefield_deployment }
+	prerequisite = { focus = ABQ_cyber_newtype_program }
 }
 
 focus = {
@@ -1520,7 +1561,7 @@ focus = {
 	search_filters = {FOCUS_FILTER_RESEARCH }
 	cost = 5
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}

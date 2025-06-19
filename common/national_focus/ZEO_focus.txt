@@ -2047,6 +2047,7 @@ focus = {
 	}
 	available = {
 		has_war = no
+		democratic > 0.35
 	}
 	mutually_exclusive = { focus = ZEO_serve_corporate_interests }
 	completion_reward = {
@@ -4611,7 +4612,7 @@ focus = {
 	completion_reward = {
 		add_popularity = {
 			ideology = contolism
-			popularity = 5
+			popularity = 0.05
 		}
 	}
 }
@@ -4631,7 +4632,7 @@ focus = {
 	completion_reward = {
 		add_popularity = {
 			ideology = democratic
-			popularity = 5
+			popularity = 0.05
 		}
 	}
 }
@@ -4651,7 +4652,7 @@ focus = {
 	completion_reward = {
 		add_popularity = {
 			ideology = democratic
-			popularity = 5
+			popularity = 0.05
 		}
 	}
 }

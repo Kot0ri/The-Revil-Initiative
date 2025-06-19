@@ -24,6 +24,7 @@ characters={
 				bakharo_trait
 			}
 			available = {
+				is_country_leader = no
 				hidden_trigger = {
 					NOT = {
 						has_global_flag = zeon_great_purge
@@ -54,6 +55,7 @@ characters={
 				voice_of_restraint
 			}
 			available = {
+				is_country_leader = no
 				hidden_trigger = {
 					NOT = {
 						has_global_flag = zeon_great_purge
@@ -92,6 +94,7 @@ characters={
 				degwin_trait
 			}
 			available = {
+				is_country_leader = no
 				NOT = {
 					has_country_flag = sweep_away_zabi_3
 				}
@@ -175,6 +178,7 @@ ZEO_cecilia_irene = {
 			cecilia_trait
 		}
 		available = {
+			is_country_leader = no
 			hidden_trigger = {
 				NOT = {
 					has_country_flag = sweep_away_zabi_2

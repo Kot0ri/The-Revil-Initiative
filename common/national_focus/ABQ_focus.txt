@@ -29,7 +29,7 @@ focus = {
 	icon = GFX_goal_fortify_the_westwall
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 5
-	x = -2
+	x = -6
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -78,11 +78,191 @@ focus = {
 }
 
 focus = {
-	id = ABQ_gihrens_royal_guard
+	id = ABQ_commander_in_absentia
 	icon = GFX_goal_generic_special_forces
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		ZEO = {
+			has_government = supremacist
+		}
+	}
+	completion_reward = {
+		#event to choose country leader
+	}
+	relative_position_id = ABQ_gihrens_headquaters
+	prerequisite = { focus = ABQ_gihrens_headquaters }
+}
+
+focus = {
+	id = ABQ_the_loyalists
+	icon = GFX_goal_generic_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_the_moderates
+	}
+	completion_reward = {
+		#event to choose country leader
+	}
+	relative_position_id = ABQ_commander_in_absentia
+	prerequisite = { focus = ABQ_commander_in_absentia }
+}
+
+focus = {
+	id = ABQ_weigelman
+	icon = GFX_goal_generic_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_jirom
+	}
+	mutually_exclusive = {
+		focus = ABQ_delaz
+	}
+	completion_reward = {
+		add_country_leader_role = {
+    character = ABQ_weigelman
+    promote_leader = yes
+    country_leader = {
+        ideology = spacenoid_supremacist
+        expire = "1965.1.1.1"
+        traits = { a_baoa_qu_defense_forces_commander }
+    }
+}
+	}
+	relative_position_id = ABQ_the_loyalists
+	prerequisite = { focus = ABQ_the_loyalists }
+}
+
+focus = {
+	id = ABQ_jirom
+	icon = GFX_goal_generic_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_weigelman
+	}
+	mutually_exclusive = {
+		focus = ABQ_delaz
+	}
+	completion_reward = {
+		add_country_leader_role = {
+    character = ABQ_jirom
+    promote_leader = yes
+    country_leader = {
+        ideology = spacenoid_supremacist
+        expire = "1965.1.1.1"
+        traits = { commander_of_the_colony_laser }
+    }
+}
+	}
+	relative_position_id = ABQ_the_loyalists
+	prerequisite = { focus = ABQ_the_loyalists }
+}
+
+focus = {
+	id = ABQ_delaz
+	icon = GFX_goal_generic_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_jirom
+	}
+	mutually_exclusive = {
+		focus = ABQ_weigelman
+	}
+	completion_reward = {
+		add_country_leader_role = {
+    character = ABQ_delaz
+    promote_leader = yes
+    country_leader = {
+        ideology = spacenoid_supremacist
+        expire = "1965.1.1.1"
+        traits = {  }
+    }
+}
+	}
+	relative_position_id = ABQ_the_loyalists
+	prerequisite = { focus = ABQ_the_loyalists }
+}
+
+focus = {
+	id = ABQ_the_moderates
+	icon = GFX_goal_generic_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_the_loyalists
+	}
+	completion_reward = {
+		#event to choose country leader
+	}
+	relative_position_id = ABQ_commander_in_absentia
+	prerequisite = { focus = ABQ_commander_in_absentia }
+}
+
+focus = {
+	id = ABQ_twanning
+	icon = GFX_goal_generic_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_country_leader_role = {
+    character = ABQ_twanning
+    promote_leader = yes
+    country_leader = {
+        ideology = military_administration
+        expire = "1965.1.1.1"
+        traits = {  }
+    }
+}
+	}
+	relative_position_id = ABQ_the_moderates
+	prerequisite = { focus = ABQ_the_moderates }
+}
+
+focus = {
+	id = ABQ_gihrens_royal_guard
+	icon = GFX_goal_generic_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -255,7 +435,7 @@ focus = {
 	id = ABQ_form_gihrens_secret_service
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
-	x = 6
+	x = 7
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -771,7 +951,7 @@ focus = {
 	id = ABQ_begin_production_of_the_dolos
 	icon = GFX_goal_generic_navy_carrier
 	cost = 5
-	x = -1
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1447,7 +1627,7 @@ focus = {
 	icon = GFX_goal_generic_construct_infrastructure
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER}
 	cost = 5
-	x = 3
+	x = 0
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -1469,7 +1649,7 @@ focus = {
 	icon = GFX_goal_generic_construction
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 5
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1

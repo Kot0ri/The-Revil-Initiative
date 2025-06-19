@@ -167,11 +167,34 @@ chief_secretary_of_gihren_zabi = {
 	political_advisor_cost_factor = -0.25
 	political_power_gain = 0.05
 }
-general_secretary_of_zeon = {
+
+#Anguille Delaz
+WMD_proponet = {
 	random = no
+	cat_base_strike_cost_factor = -0.1
+	special_project_speed_factor = 0.05
+	production_speed_facility_factor = 0.05
+}
+
+#Chapman Jirom
+commander_of_the_colony_laser = {
+	random = no
+	cat_fleet_in_being_cost_factor = -0.1
+	special_project_speed_factor = 0.05
+	production_speed_facility_factor = 0.05
+}
+
+#Randoplh Weigelman
+a_baoa_qu_defense_forces_commander = {
+	random = no
+	dig_in_speed_factor = 0.05
 	army_core_defence_factor = 0.05
-	stability_factor = 0.05
-	war_support_factor = 0.1
+}
+
+#Twanning
+political_tightrope = {
+	random = no
+	political_power_gain = 0.05
 }
 
 #Serrana Karn

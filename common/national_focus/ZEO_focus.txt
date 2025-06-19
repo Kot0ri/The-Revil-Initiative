@@ -2279,7 +2279,7 @@ focus = {
 	completion_reward = {
 	}
 	relative_position_id = ZEO_new_financing_schemes
-	prerequisite = { focus = ZEO_new_financing_schemes }
+	prerequisite = { focus = ZEO_new_financing_schemes focus = ZEO_break_up_zeonic }
 }
 
 focus = {
@@ -2994,6 +2994,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_government = corporatism
 	}
 	completion_reward = {
 	}

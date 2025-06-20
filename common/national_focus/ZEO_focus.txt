@@ -3446,7 +3446,7 @@ focus = {
 	icon = GFX_goal_miniaturization_of_mega_particle_cannon
 	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 5
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3460,8 +3460,8 @@ focus = {
 			technology = mega_particle2
 		}
 	}
-	relative_position_id = ZEO_improve_ms_weapons
-	prerequisite = { focus = ZEO_improve_ms_weapons }
+	relative_position_id = ZEO_focus_on_new_ms
+	prerequisite = { focus = ZEO_focus_on_new_ms }
 }
 
 focus = {
@@ -3476,8 +3476,8 @@ focus = {
 	}
 	completion_reward = {
 	}
-	relative_position_id = ZEO_beam_weapon_development
-	prerequisite = { focus = ZEO_beam_weapon_development }
+	relative_position_id = ZEO_improve_ms_weapons
+	prerequisite = { focus = ZEO_improve_ms_weapons }
 }
 
 focus = {

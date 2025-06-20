@@ -80,7 +80,7 @@ focus = {
 focus = {
 	id = ABQ_commander_in_absentia
 	icon = GFX_goal_generic_special_forces
-	search_filters = { FOCUS_FILTER_MANPOWER }
+	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
 	x = 1
 	y = 1
@@ -102,7 +102,7 @@ focus = {
 focus = {
 	id = ABQ_the_loyalists
 	icon = GFX_goal_generic_special_forces
-	search_filters = { FOCUS_FILTER_MANPOWER }
+	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
 	x = 2
 	y = 1
@@ -122,7 +122,7 @@ focus = {
 focus = {
 	id = ABQ_weigelman
 	icon = GFX_goal_generic_special_forces
-	search_filters = { FOCUS_FILTER_MANPOWER }
+	search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 	cost = 5
 	x = 0
 	y = 1
@@ -153,7 +153,7 @@ focus = {
 focus = {
 	id = ABQ_jirom
 	icon = GFX_goal_generic_special_forces
-	search_filters = { FOCUS_FILTER_MANPOWER }
+	search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 	cost = 5
 	x = -2
 	y = 1
@@ -184,7 +184,7 @@ focus = {
 focus = {
 	id = ABQ_delaz
 	icon = GFX_goal_generic_special_forces
-	search_filters = { FOCUS_FILTER_MANPOWER }
+	search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 	cost = 5
 	x = 2
 	y = 1
@@ -215,7 +215,7 @@ focus = {
 focus = {
 	id = ABQ_the_moderates
 	icon = GFX_goal_generic_special_forces
-	search_filters = { FOCUS_FILTER_MANPOWER }
+	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
 	x = -1
 	y = 1
@@ -235,7 +235,7 @@ focus = {
 focus = {
 	id = ABQ_twanning
 	icon = GFX_goal_generic_special_forces
-	search_filters = { FOCUS_FILTER_MANPOWER }
+	search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 	cost = 5
 	x = -1
 	y = 1
@@ -331,6 +331,11 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		ABQ_gihren_zabi = {
+			is_country_leader = yes
+		}
 	}
 	completion_reward = {
 		add_ideas = ABQ_cult_of_personality
@@ -699,6 +704,68 @@ focus = {
 	prerequisite = { focus = ABQ_the_principality_victorious }
 }
 
+focus = {
+	id = ABQ_political_commissars
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_the_new_elite
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_form_the_national_defence_forces
+	prerequisite = { focus = ABQ_form_the_national_defence_forces }
+}
+
+focus = {
+	id = ABQ_the_new_elite
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	mutually_exclusive = {
+		focus = ABQ_political_commissars
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_form_the_national_defence_forces
+	prerequisite = { focus = ABQ_form_the_national_defence_forces }
+}
+
+focus = {
+	id = ABQ_abandon_newtype_concept
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	mutually_exclusive = {
+		focus = ABQ_begin_cloning_studies
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_form_the_national_defence_forces
+	prerequisite = { focus = ABQ_form_the_national_defence_forces }
+}
 
 focus = {
 	id = ABQ_begin_cloning_studies
@@ -712,6 +779,9 @@ focus = {
 	available = {
 		has_completed_focus = ABQ_cyber_newtype_program
 		has_war = no
+	}
+	mutually_exclusive = {
+		focus = ABQ_abandon_newtype_concept
 	}
 	completion_reward = {
 	}
@@ -1069,6 +1139,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = ABQ_grand_fleet_proclamation
+	}
 	completion_reward = {
 
 	}
@@ -1138,6 +1211,40 @@ focus = {
 }
 
 focus = {
+	id = ABQ_improve_non-MS_equipment
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_widescale_fighter_deployment
+	prerequisite = { focus = ABQ_widescale_fighter_deployment}
+}
+
+focus = {
+	id = ABQ_refit_ships_for_MS_use
+	icon = GFX_goal_generic_build_airforce
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ABQ_form_the_national_defence_forces
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ABQ_merge_ms_and_ship_doctrines
+	prerequisite = { focus = ABQ_merge_ms_and_ship_doctrines }
+}
+
+focus = {
 	id = ABQ_develop_cheaper_ms
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
@@ -1157,10 +1264,13 @@ focus = {
 	icon  = GFX_goal_generic_navy_cruiser
 	search_filters = {FOCUS_FILTER_NAVY_XP}
 	cost = 5
-	x = -1
+	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ABQ_grand_fleet_proclamation
 	}
 	completion_reward = {
 		add_command_power = 50
@@ -1404,8 +1514,8 @@ focus = {
 	id = ABQ_zeon_gundam
 	icon = GFX_goal_zeon_human_innovation
 	cost = 5
-	x = 1
-	y = 2
+	x = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1443,7 +1553,7 @@ focus = {
 	icon = GFX_goal_MS_special_forces
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
-	x = -1
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1462,7 +1572,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1522,12 +1632,13 @@ focus = {
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = 0
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	available = {
 		is_puppet = no
+		has_completed_focus = ABQ_legion_project
 	}
 	completion_reward = {
 
@@ -1543,7 +1654,7 @@ focus = {
 	icon = GFX_goal_MS_special_forces
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
-	x = 1
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1

@@ -435,7 +435,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OCZ_development_of_jungle_use_ms
+		id = OCZ_development_of_desert_use_ms
 		icon = GFX_goal_focus_on_MS_for_local_battle
 		cost = 5
 		x = 2
@@ -456,8 +456,8 @@ focus_tree = {
 		cost = 5
 		x = -1
 		y = 1
-		prerequisite ={ focus = OCZ_development_of_jungle_use_ms }
-		relative_position_id = OCZ_development_of_jungle_use_ms
+		prerequisite ={ focus = OCZ_development_of_desert_use_ms }
+		relative_position_id = OCZ_development_of_desert_use_ms
 		ai_will_do = {
 			factor = 1
 		}
@@ -472,8 +472,8 @@ focus_tree = {
 		cost = 5
 		x = 1
 		y = 1
-		prerequisite ={ focus = OCZ_development_of_jungle_use_ms }
-		relative_position_id = OCZ_development_of_jungle_use_ms
+		prerequisite ={ focus = OCZ_development_of_desert_use_ms }
+		relative_position_id = OCZ_development_of_desert_use_ms
 		ai_will_do = {
 			factor = 1
 		}
@@ -1094,4 +1094,76 @@ focus = {
 		
 		}
 	}
+
+	focus = {
+		id = OCZ_Our_Own_Empire?
+		icon = GFX_goal_zeon_new_weapon
+		cost = 5
+		x = 36
+		y = 0
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		
+		}
+
+		#Victory A and B paths
+		#Both paths could end in same Focus, similiar outcomes
+
+		#allow_branch = {
+        #    has_country_flag = NAA_Zeon_Civil_War
+        #}
+		#Walter Curtis leader
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_The_Afterglow_of_Zeon
+		icon = GFX_goal_zeon_new_weapon
+		cost = 5
+		x = 44
+		y = 0
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		
+		}
+
+		#allow_branch = {
+        #    has_country_flag = NAA_Zeon_Defeat
+        #}
+
+		#support cambodian remnants
+
+		#Defeat A and B paths
+		#Both paths could end in same Focus, similiar outcomes
+
+
+		#Thunderbolt, Klyburn could lead, his psycho zaku initiative
+		#Klyburn more authoratative
+
+		#Visch Donahue, sides with delaz, aboa qu, operation sdtardust
+
+
+		completion_reward = {
+		
+		}
+	}
+
+	#Add more fouses based on mobile suit specialization
+	#F2 zaku (All versions), dom funf, dom tropen, dwadge, Efreet Nacht, Gelgoog Ground type,
+	# Xamel, Jauggu, Z'gok, Acguy, Zogok, Marine Zaku, sniper zaku 1,
+	# zaku 1 (all versions), Hildofr, Goufs, Zaku tank, gerfangar(captured) GM, Zock (thunderbolt version also)
+
+
+
 }

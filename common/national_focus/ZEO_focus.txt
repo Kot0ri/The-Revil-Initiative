@@ -32,11 +32,11 @@ focus_tree = {
 		position = { x = 1500 y = 1800 }
 	}
 	default = no
-	
+
 
 focus = {
-	id = ZEO_the_zabi_families_vision
-	icon = GFX_goal_repression_of_deikun
+	id = ZEO_legacy_of_zeon_deikun
+	icon = GFX_goal_harmony_with_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
 	x = 14
@@ -44,12 +44,26 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	mutually_exclusive = { focus = ZEO_opposition_to_the_zabi_family	}
+	
 	completion_reward = {
-		add_political_power = 150
-		set_power_balance = {
-			id = ZEO_power_balance
-		}
+	}
+}
+
+focus = {
+	id = ZEO_declaration_of_the_principality
+	icon = GFX_goal_harmony_with_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = ZEO_legacy_of_zeon_deikun
+	}
+	relative_position_id = ZEO_legacy_of_zeon_deikun
+	completion_reward = {
 		add_popularity = {
 			ideology = aristocracy
 			popularity = 0.25
@@ -65,6 +79,66 @@ focus = {
 		set_politics = {
 			ruling_party = aristocracy
 		}
+	}
+}
+
+focus = {
+	id = ZEO_granada_energy_allaince
+	icon = GFX_goal_harmony_with_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = ZEO_legacy_of_zeon_deikun
+	}
+	relative_position_id = ZEO_legacy_of_zeon_deikun
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = ZEO_zeon_jupiter_energy_fleet
+	icon = GFX_goal_harmony_with_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = ZEO_granada_energy_allaince
+	}
+	relative_position_id = ZEO_granada_energy_allaince
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = ZEO_the_zabi_families_vision
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = ZEO_declaration_of_the_principality
+	}
+	relative_position_id = ZEO_declaration_of_the_principality
+	mutually_exclusive = { focus = ZEO_opposition_to_the_zabi_family	}
+	completion_reward = {
+		add_political_power = 150
+		set_power_balance = {
+			id = ZEO_power_balance
+		}
+		
 	}
 }
 
@@ -2992,6 +3066,25 @@ focus = {
 }
 
 focus = {
+	id = ZEO_army_weapon_development_board
+	icon = GFX_goal_generic_army_doctrines
+	cost = 5
+	x = 46
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = ZMF
+		add_ideas = space_attack_force
+		add_command_power = 30
+		army_experience = 50
+		air_experience = 25
+		navy_experience = 25
+	}
+}
+
+focus = {
 	id = ZEO_station_troops_on_luna
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
@@ -3346,7 +3439,7 @@ focus = {
 		}
 	}
 	relative_position_id = ZEO_war_preperations
-	prerequisite = { focus = ZEO_war_preperations }
+	prerequisite = { focus = ZEO_war_preperations focus = ZEO_army_weapon_development_board }
 }
 
 focus = {
@@ -4601,11 +4694,15 @@ focus = {
 	icon = GFX_goal_harmony_with_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
-	x = -14
-	y = 0
+	x = -34
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
+	prerequisite = {
+		focus = ZEO_legacy_of_zeon_deikun
+	}
+	relative_position_id = ZEO_legacy_of_zeon_deikun
 	mutually_exclusive = { focus = ZEO_the_zabi_families_vision	}
 	completion_reward = {
 		add_political_power = 150

@@ -72,10 +72,15 @@ focus = {
 			ideology = supremacist
 			popularity = 0.05
 		}
-		promote_character = {
-			character = ZEO_degwin_sodo_zabi
-			ideology = aristocracy
-		}
+		add_country_leader_role = {
+    character = ZEO_degwin_sodo_zabi
+    promote_leader = yes
+    country_leader = {
+        ideology = parlimentary_monarchy
+        expire = "1965.1.1.1"
+        traits = { sovereign_and_grand_prince }
+    }
+}
 		set_politics = {
 			ruling_party = aristocracy
 		}
@@ -97,6 +102,10 @@ focus = {
 	}
 	relative_position_id = ZEO_legacy_of_zeon_deikun
 	completion_reward = {
+		add_relation_modifier = {
+			target = GRA
+			modifier = zeon_energy_trade
+		}
 	}
 }
 
@@ -115,6 +124,10 @@ focus = {
 	}
 	relative_position_id = ZEO_granada_energy_allaince
 	completion_reward = {
+	# captial state add_resource = {
+	#		type = oil
+	#		amount = 15
+	#	}
 	}
 }
 

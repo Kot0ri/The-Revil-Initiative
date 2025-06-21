@@ -135,6 +135,42 @@ focus_tree = {
 		}
 	}
 
+focus = {
+		id = EFG_colony_council_mission
+		icon = GFX_goal_transfer_of_government_function
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = { focus = EFG_Legacy_of_the_UC_Charter}
+		relative_position_id = EFG_Legacy_of_the_UC_Charter
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_power_balance = {
+			id = EFG_power_balance
+		}
+		}
+	}
+
+	focus = {
+		id = EFG_tax_code_reform
+		icon = GFX_goal_transfer_of_government_function
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = { focus = EFG_Legacy_of_the_UC_Charter}
+		relative_position_id = EFG_Legacy_of_the_UC_Charter
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_power_balance = {
+			id = EFG_power_balance
+		}
+		}
+	}
+
 	focus = {
 		id = EFG_Calls_for_Reform
 		icon = GFX_goal_transfer_of_government_function

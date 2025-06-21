@@ -55,7 +55,22 @@ focus_tree = {
 					prerequisite = { focus = SOL_Dolzes_Pride }
 					prerequisite = { focus = SOL_Space_Attack_Fleet_Buildup }
 				}
-		
+
+	focus = {
+			id = SOL_push_for_increased_MS_budget
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			army_experience = 50
+				}
+				relative_position_id = SOL_Meeting_in_Dark_Colony
+					prerequisite = { focus = SOL_Meeting_in_Dark_Colony}
+			}
 
 focus = {
 	id = SOL_Naval_Buildup
@@ -151,6 +166,8 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	relative_position_id = SOL_Deadlock_Fortress_Plans
+	prerequisite = { focus = SOL_Deadlock_Fortress_Plans }
 	completion_reward = {
 		add_manpower = 15000
 		955 = {
@@ -165,13 +182,11 @@ focus = {
 			}
 		}
 	}
-	relative_position_id = SOL_Deadlock_Fortress_Plans
-	prerequisite = { focus = SOL_Deadlock_Fortress_Plans }
-				}
+	}
 
 
 	focus = {
-			id = SOL_improve_mass_production_mS
+			id = SOL_improve_mass_production_ms
 			icon = GFX_goal_dom_development
 			cost = 5
 			x = -2

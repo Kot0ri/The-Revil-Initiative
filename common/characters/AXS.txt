@@ -310,11 +310,14 @@ AXS_enzo_bernini={
 		}
 	}
 	country_leader={
-		ideology= supremacist
-		traits={gihren_loyalist bitter_loser anti_karn}
+		ideology= spacenoid_supremacist
+		traits={gihren_loyalist bitter_loser }
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
+		traits = {
+			zabi_party ghiren_loyalist
+		}
 		skill = 3
 		attack_skill = 3
 		defense_skill = 2
@@ -323,13 +326,36 @@ AXS_enzo_bernini={
 	}
 }
 
+#Field Marshal
+
+AXS_mihael_einholt={
+	name="Mihael Einholt"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Mihael_Einholt.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Mihael_Einholt.dds"
+		}
+	}
+	field_marshal = {
+		traits = {
+			defensive_doctrine organizer trickster
+		}
+		skill = 4
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
 
 #Admirals
 AXS_yuri_hasler={
 	name="Yuri Hasler"
 	portraits={
 		army={
-			small=GFX_idea_dren
+			small=GFX_idea_hasler
 		}
 		army={
 			large= "gfx/leaders/AXS/Yuri_Hasler.dds"
@@ -347,7 +373,7 @@ AXS_yuri_hasler={
 		slot = high_command
 		ledger = navy
 		cost = 100
-		idea_token = dren
+		idea_token = hasler
 		allowed = {
 			original_tag = AXS
 		}
@@ -364,7 +390,105 @@ AXS_yuri_hasler={
 	}
 }
 
+AXS_clemens={
+	name="Clemens"
+	portraits={
+		army={
+			small=GFX_idea_Clemens
+		}
+		army={
+			large= "gfx/leaders/AXS/Clemens.dds"
+		}
+	}
+	navy_leader={
+		traits={ gentlemanly fleet_protector air_controller ironside }  
+		skill=4
+		attack_skill=4
+		defense_skill=4
+		maneuvering_skill=4
+		coordination_skill=4
+	}
+	advisor = {
+		slot = high_command
+		ledger = navy
+		cost = 100
+		idea_token = clemens
+		allowed = {
+			original_tag = AXS
+		}
+		traits = {
+			navy_chief_reform_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+AXS_jaroslav={
+	name="Jaroslav"
+	portraits={
+		army={
+			small=GFX_idea_jaroslav
+		}
+		army={
+			large= "gfx/leaders/AXS/Jaroslav.dds"
+		}
+	}
+	navy_leader={
+		traits={ air_controller }  
+		skill=4
+		attack_skill=4
+		defense_skill=4
+		maneuvering_skill=4
+		coordination_skill=4
+	}
+	advisor = {
+		slot = high_command
+		ledger = navy
+		cost = 100
+		idea_token = jaroslav
+		allowed = {
+			original_tag = AXS
+		}
+		traits = {
+			navy_chief_commerce_raiding_2
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
 #Pilots
+AXS_felicia={
+	name="Felicia"
+	portraits={
+		army={
+			small="GFX_idea_felicia"
+		}
+		army={
+			large= "gfx/leaders/AXS/Felicia.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot zabi_party }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+	}
+}
+
 AXS_mashymre_cello_1={
 	name="Mashymre Cello"
 	portraits={

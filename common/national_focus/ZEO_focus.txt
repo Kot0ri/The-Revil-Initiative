@@ -4826,6 +4826,23 @@ focus = {
 }
 
 focus = {
+	id = ZEO_recall_deikunists_officers
+	icon = GFX_goal_shield_of_zeon_1
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ZEO_valkyrie_society
+	prerequisite = {	focus = ZEO_valkyrie_society	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = ZEO_revolution_in_side_3
 	icon = GFX_goal_shield_of_zeon_2
 	search_filters = { FOCUS_FILTER_POLITICAL }

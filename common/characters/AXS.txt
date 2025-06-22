@@ -311,7 +311,7 @@ AXS_enzo_bernini={
 	}
 	country_leader={
 		ideology= spacenoid_supremacist
-		traits={gihren_loyalist bitter_loser }
+		traits={ bitter_loser }
 		expire="1000.1.1.1"
 	}
 	field_marshal = {
@@ -468,6 +468,26 @@ AXS_jaroslav={
 	}
 }
 
+AXS_tripper={
+	name="Tripper"
+	portraits={
+		army={
+			small=GFX_idea_tripper
+		}
+		army={
+			large= "gfx/leaders/AXS/tripper.dds"
+		}
+	}
+	navy_leader={
+		traits={ air_controller }  
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		maneuvering_skill=2
+		coordination_skill=2
+	}	
+}
+
 #Pilots
 AXS_felicia={
 	name="Felicia"
@@ -486,6 +506,46 @@ AXS_felicia={
 		defense_skill=3
 		planning_skill=3
 		logistics_skill=3
+	}
+}
+
+AXS_rebecca_fanning={
+	name="Rebecca Fanning"
+	portraits={
+		army={
+			small="GFX_idea_felicia"
+		}
+		army={
+			large= "gfx/leaders/AXS/rebecca_fanning.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot zabi_party newtype_1 }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+	}
+}
+
+AXS_jessica_dias={
+	name="Jessica Dias"
+	portraits={
+		army={
+			small="GFX_idea_felicia"
+		}
+		army={
+			large= "gfx/leaders/AXS/jessica_dias.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=2
 	}
 }
 
@@ -626,6 +686,27 @@ AXS_arius_moma={
 	}
 }
 
+AXS_illia_pazom={
+	name="Illia Pazom"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/illia_pazom.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot newtype_1 }
+		skill=4
+		attack_skill=3
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+
 AXS_rakan_dahkaran={
 	name="Rakan Dahkaran"
 	portraits={
@@ -633,7 +714,7 @@ AXS_rakan_dahkaran={
 			small="GFX_idea_anavel_gato"
 		}
 		army={
-			large= "gfx/leaders/AXS/maharaja_jr.dds"
+			large= "gfx/leaders/AXS/rakan_dahkaran.dds"
 		}
 	}
 	corps_commander={
@@ -731,7 +812,7 @@ AXS_Irina={
 }
 
 AXS_Abraham_Washington={
-	name="Abrham Washington"
+	name="Abraham Washington"
 	portraits={
 		army={
 			small="GFX_idea_anavel_gato"

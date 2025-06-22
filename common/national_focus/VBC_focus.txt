@@ -203,6 +203,25 @@ focus_tree = {
 		}
 	}
 
+		focus = {
+		id = VBC_push_for_federation_intervention
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			MEZ = { has_civil_war = yes }
+		}
+		relative_position_id = VBC_intervene_in_levant
+		prerequisite = {focus = VBC_intervene_in_levant}
+		completion_reward = {
+		
+		}
+	}
+
 	focus = {
 		id = VBC_begin_expansion_of_Anaheim_facilties
 		icon = GFX_goal_zeon_mobile_headquarters
@@ -442,14 +461,91 @@ focus_tree = {
 	}
 
 	focus = {
-		id = VBC_ai_development_plan
+		id = VBC_garden_of_thorns_revitalization_project
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 16
-		y = 6
+		x = 8
+		y = 12
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_development_of_new_mobile_workers
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_garden_of_thorns_revitalization_project
+		}
+		relative_position_id = VBC_garden_of_thorns_revitalization_project
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = VBC_improve_computer_systems
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 16
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_learning_computer
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_improve_computer_systems
+		}
+		relative_position_id = VBC_improve_computer_systems
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_ai_development_plan
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_improve_computer_systems
+		}
+		relative_position_id = VBC_improve_computer_systems
 		available = {
 		}
 		completion_reward = {

@@ -43,6 +43,80 @@ focus_tree = {
 			}
 		}
 
+		focus = {
+		id = GRA_industrial_development_plan
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -5
+		y = 1
+		relative_position_id = GRA_Growing_Zeon_sentiments
+		prerequisite = {focus = GRA_Growing_Zeon_sentiments focus = GRA_Granada_Stands }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+	focus = {
+		id = GRA_light_industry_modernization
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = GRA_industrial_development_plan
+		prerequisite = {focus = GRA_industrial_development_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = GRA_prepare_heavy_industrial_plants
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = GRA_industrial_development_plan
+		prerequisite = {focus = GRA_industrial_development_plan }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = GRA_granada_navy_yards
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_prepare_heavy_industrial_plants
+		prerequisite = {focus = GRA_prepare_heavy_industrial_plants }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = GRA_granada_mobile_suit_development_grounds
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = GRA_prepare_heavy_industrial_plants
+		prerequisite = {focus = GRA_prepare_heavy_industrial_plants }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
 		
 	focus = {
 		id = GRA_Book_a_business_trip
@@ -324,6 +398,50 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = GRA_prepare_anti-newtype_force
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_form_the_chimera_corps.
+		prerequisite = {focus = GRA_form_the_chimera_corps.}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_ingrid_project
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = GRA_form_the_chimera_corps.
+		prerequisite = {focus = GRA_form_the_chimera_corps.}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = GRA_Minaret_class_development
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_prepare_anti-newtype_force
+		prerequisite = {focus = GRA_prepare_anti-newtype_force}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
 
 	focus = {
 		id = GRA_ZEF_recruitment

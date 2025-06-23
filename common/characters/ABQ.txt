@@ -479,6 +479,26 @@ ABQ_stein={
 	}
 }
 
+ABQ_gerrard={
+	name= "Emiko Gerrard"
+	portraits={
+		army={
+			small="GFX_idea_adamski"
+		}
+		army={
+			large= "gfx/leaders/ABQ/gerrard.dds"
+		}
+	}
+	corps_commander={
+		traits={ pilot }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
 ABQ_wedner={
 	name= "Siegfried Wedner"
 	portraits={

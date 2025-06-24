@@ -66,11 +66,27 @@ focus_tree = {
 				factor = 1
 			}
 			completion_reward = {
-			army_experience = 50
+			
 				}
 				relative_position_id = SOL_Meeting_in_Dark_Colony
 					prerequisite = { focus = SOL_Meeting_in_Dark_Colony}
 			}
+
+	focus = {
+			id = SOL_Dolzes_heart
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 2
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			
+				}
+				relative_position_id = SOL_Meeting_in_Dark_Colony
+					prerequisite = { focus = SOL_Meeting_in_Dark_Colony}
+			}			
 
 focus = {
 	id = SOL_Naval_Buildup

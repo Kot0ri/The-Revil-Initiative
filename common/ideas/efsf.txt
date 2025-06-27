@@ -432,7 +432,7 @@ ideas = {
 
 			}
 		}
-		#産業の空洞化
+		
 		hollowing_out_industry = {
 			allowed ={
 				always = no
@@ -446,6 +446,7 @@ ideas = {
 				industrial_capacity_factory = -0.8
 				industrial_capacity_dockyard = -0.6
 				production_factory_max_efficiency_factor = -0.4
+				production_speed_arms_factory_factor = -0.3
 			}
 			targeted_modifier = {
 				tag = ZEO

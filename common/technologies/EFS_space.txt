@@ -1,0 +1,321 @@
+technologies = {
+  vinson_plan_tech = {
+    allow = {
+      always = no
+    }
+  }
+  EFS_space_cruiser1_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+    }
+    enable_equipments = {
+      efsf_space_cruiser1_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_1
+      ship_armor_cruiser_1
+      space_secondaries_1
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 0 }
+    }
+    path = {
+			leads_to_tech = EFS_space_cruiser2_tech
+			research_cost_coeff = 1
+		}
+    categories = {
+      space_equipment
+      space_cruiser
+      space_ship
+    }
+
+    ai_will_do = {
+      base = 10
+    }
+  }
+  EFS_space_cruiser2_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+      vinson_plan_tech = 1
+    }
+    enable_equipments = {
+      efsf_space_cruiser2_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_2
+      ship_armor_cruiser_2
+      space_secondaries_2
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 4 }
+    }
+    path = {
+			leads_to_tech = EFS_space_cruiser3_tech
+			research_cost_coeff = 1
+		}
+    categories = {
+      space_equipment
+      space_cruiser
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        create_equipment_variant = {
+      		name = "Salamis Late Production Class"
+      		type = efsf_space_cruiser2_equipment
+      		name_group = EFS_SC_HISTORICAL
+      		parent_version = 0
+      		modules = {
+            fixed_ship_battery_slot = space_battery_2
+      			fixed_ship_secondaries_slot = space_secondaries_2
+            fixed_ship_engine_slot = light_space_engine_1
+      		}
+      		obsolete = no
+      	}
+      }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_space_cruiser3_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+      vinson_plan_tech = 1
+    }
+    enable_equipments = {
+      efsf_space_cruiser3_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_3
+      ship_armor_cruiser_3
+      space_secondaries_3
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 82
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 8 }
+    }
+    categories = {
+      space_equipment
+      space_cruiser
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        create_equipment_variant = {
+      		name = "Salamis Kai Class"
+      		type = efsf_space_cruiser3_equipment
+      		name_group = EFS_SC_HISTORICAL
+      		parent_version = 0
+      		modules = {
+            fixed_ship_battery_slot = space_battery_3
+      			fixed_ship_secondaries_slot = space_secondaries_3
+            fixed_ship_engine_slot = light_space_engine_1
+      		}
+      		obsolete = no
+      	}
+      }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 82.1.1
+      }
+    }
+  }
+  EFS_space_battleship1_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+    }
+    enable_equipments = {
+      efsf_space_battleship1_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_2
+      ship_armor_bb_1
+      space_secondaries_2
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 75
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 0 }
+    }
+    path = {
+			leads_to_tech = EFS_space_battleship2_tech
+			research_cost_coeff = 1
+		}
+    categories = {
+      space_equipment
+      space_battleship
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        create_equipment_variant = {
+        	name = "Magellan Class"
+        	type = efsf_space_battleship1_equipment
+        	parent_version = 0
+        	modules = {
+        		fixed_ship_battery_slot = space_battery_1
+        		fixed_ship_secondaries_slot = space_secondaries_1
+        		fixed_ship_engine_slot = space_engine_1
+            front_1_custom_slot = space_battery_1
+            mid_1_custom_slot = ship_anti_air_1
+            mid_2_custom_slot = space_secondaries_1
+        	}
+        	obsolete = no
+        }
+      }
+    }
+
+    ai_will_do = {
+      base = 1000
+    }
+  }
+  EFS_space_battleship2_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+      vinson_plan_tech = 1
+    }
+    enable_equipments = {
+      efsf_space_battleship2_equipment
+    }
+    enable_equipment_modules = {
+      ship_armor_bb_2
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 4 }
+    }
+    path = {
+			leads_to_tech = EFS_space_battleship3_tech
+			research_cost_coeff = 1
+		}
+    categories = {
+      space_equipment
+      space_battleship
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        create_equipment_variant = {
+      		name = "Magellan Late Production Class"
+      		type = efsf_space_battleship2_equipment
+      		name_group = EFS_SB_HISTORICAL
+      		parent_version = 0
+      		modules = {
+            fixed_ship_battery_slot = space_battery_2
+      			fixed_ship_secondaries_slot = space_secondaries_2
+      			fixed_ship_engine_slot = space_engine_1
+            front_1_custom_slot = space_battery_2
+            mid_1_custom_slot = ship_anti_air_1
+            mid_2_custom_slot = space_secondaries_2
+      		}
+      		obsolete = no
+      	}
+      }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 79.1.1
+      }
+    }
+  }
+  EFS_space_battleship3_tech = {
+
+    dependencies = {
+      mega_particle1 = 1
+      vinson_plan_tech = 1
+    }
+    enable_equipments = {
+      efsf_space_battleship3_equipment
+    }
+    enable_equipment_modules = {
+      space_battery_3
+      ship_armor_bb_3
+      space_secondaries_3
+    }
+    research_cost = 1.5
+    xp_research_type = navy
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 82
+    folder = {
+      name = EFS_space_folder
+      position = { x = 0 y = 8 }
+    }
+    categories = {
+      space_equipment
+      space_battleship
+      space_ship
+    }
+    on_research_complete = {
+      hidden_effect = {
+        create_equipment_variant = {
+      		name = "Magellan Late Production Class"
+      		type = efsf_space_battleship3_equipment
+      		name_group = EFS_SB_HISTORICAL
+      		parent_version = 0
+      		modules = {
+            fixed_ship_battery_slot = space_battery_3
+      			fixed_ship_secondaries_slot = space_secondaries_3
+      			fixed_ship_engine_slot = space_engine_1
+            front_1_custom_slot = space_battery_3
+            mid_1_custom_slot = ship_anti_air_1
+            mid_2_custom_slot = space_secondaries_3
+      		}
+      		obsolete = no
+      	}
+      }
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 20
+        date > 82.1.1
+      }
+    }
+  }
+}

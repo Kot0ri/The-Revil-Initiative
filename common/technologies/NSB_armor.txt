@@ -1,0 +1,421 @@
+technologies = {
+
+
+	@1918 = 0
+	@1934 = 2
+	@1935 = 3
+	@1936 = 4
+	@1937 = 5
+	@1938 = 5
+	@1939 = 7
+	@1940 = 7
+	@1941 = 8
+	@1942 = 9
+	@1943 = 10
+	@1944 = 11
+	@1945 = 12
+	@1946 = 20
+	
+	
+	armor_tech_1 = {
+		enable_equipment_modules = {
+			tank_welded_armor
+		}
+
+		path = {
+			leads_to_tech = armor_tech_2
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_1_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		start_year = 1936
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	armor_tech_2 = {
+
+		enable_equipment_modules = {
+			armor_skirts
+		}
+		path = {
+			leads_to_tech = armor_tech_3
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_2_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		start_year = 1938
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	armor_tech_3 = {
+
+
+		path = {
+			leads_to_tech = armor_tech_4
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_3_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		start_year = 1941
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	armor_tech_4 = {
+
+		research_cost = 1
+		start_year = 1944
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_4_tt
+		}
+		show_effect_as_desc = yes
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	engine_tech_1 = {
+
+
+		path = {
+			leads_to_tech = engine_tech_2
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_1_tt
+		}
+		show_effect_as_desc = yes
+		research_cost = 1
+		start_year = 1934
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	engine_tech_2 = {
+
+
+		path = {
+			leads_to_tech = engine_tech_3
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_2_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		start_year = 1938
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	engine_tech_3 = {
+
+
+		path = {
+			leads_to_tech = engine_tech_4
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_3_tt
+		}
+		show_effect_as_desc = yes
+		research_cost = 1
+		start_year = 1941
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+
+	engine_tech_4 = {
+
+		research_cost = 1
+		start_year = 1944
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_4_tt
+		}
+		show_effect_as_desc = yes
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_light_armor_and_modules
+			mio_cat_tech_medium_armor_and_modules
+			mio_cat_tech_heavy_armor_and_modules
+		}
+	}
+}

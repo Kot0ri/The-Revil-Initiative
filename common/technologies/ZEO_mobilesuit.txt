@@ -1,5 +1,33 @@
 technologies = {
-
+	ms06_p_tech = {
+		enable_equipments = {
+			ms06_p_equipment
+		}
+		allow = {
+			always = no
+		}
+		categories = {
+			mobilesuit
+			zeonic_mobilesuit
+			custom_mobilesuit
+		}
+    on_research_complete = {
+      hidden_effect = {
+        if = {
+          limit = {
+            NOT = {	has_template_containing_unit = ms06_p }
+            is_ai = yes
+          }
+          load_oob = "unlock_zeon_ms06p"
+        }
+      }
+    }
+		on_research_complete = {
+      hidden_effect = {
+        country_event = { id = zeon.158 }
+      }
+    }
+	}
 	agx04_tech = {
 		enable_equipments = {
 			agx04_equipment
@@ -326,7 +354,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = yms06_z_tech
+			leads_to_tech = ms06_z_tech
 			research_cost_coeff = 1
 		}
 		sub_technologies = {
@@ -386,7 +414,7 @@ technologies = {
 	}
 	ms06_j_tech = {
 		enable_equipments = {
-		  ms06_j_equipmen
+		  ms06_j_equipment
 		}
 		research_cost = 0.5
 		xp_research_type = army
@@ -468,7 +496,7 @@ technologies = {
 			base = 10
 			modifier = {
 				factor = 100
-				has_completed_focus = ZEO_the_gravity_front
+				has_completed_focus = zeon_focus_on_MS_for_local_battle
 			}
 			modifier = {
 				factor = 10
@@ -573,7 +601,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 10
-				has_completed_focus = ZEO_the_gravity_front
+				has_completed_focus = zeon_focus_on_MS_for_local_battle
 			}
 		}
 	}
@@ -988,9 +1016,6 @@ technologies = {
 			name = ZEO_space_folder
 			position = { x = 0 y = 4 }
 		}
-		sub_technologies = {
-			ms06_p_tech
-		}
 		path = {
 			leads_to_tech = ms14_tech
 			research_cost_coeff = 1
@@ -1013,7 +1038,7 @@ technologies = {
 			base = 10
 			modifier = {
 				factor = 100
-				has_completed_focus = ZEO_
+				has_completed_focus = zeon_high_mobility_of_general_purpose_MS
 			}
 			modifier = {
 				factor = 10
@@ -1024,37 +1049,6 @@ technologies = {
 				has_tech = nuclear_reactor2
 			}
 		}
-	}
-	ms06_p_tech = {
-		enable_equipments = {
-			ms06_p_equipment
-		}
-		research_cost = 0.2
-		xp_research_type = army
-		xp_boost_cost = 25
-		xp_research_bonus = 0.3
-		start_year = 79
-		categories = {
-			mobilesuit
-			zeonic_mobilesuit
-			custom_mobilesuit
-		}
-    on_research_complete = {
-      hidden_effect = {
-        if = {
-          limit = {
-            NOT = {	has_template_containing_unit = ms06_p }
-            is_ai = yes
-          }
-          load_oob = "unlock_zeon_ms06p"
-        }
-      }
-    }
-		on_research_complete = {
-      hidden_effect = {
-        country_event = { id = zeon.158 }
-      }
-    }
 	}
 	ms14_tech = {
 		enable_equipments = {
@@ -1702,7 +1696,7 @@ technologies = {
 			base = 10
 		}
 	}
-	yms06_z_tech = {
+	ms06_z_tech = {
 		research_cost = 2.0
 		xp_research_type = army
 		xp_boost_cost = 100
@@ -1710,14 +1704,14 @@ technologies = {
 		start_year = 79
 		folder = {
 			name = ZEO_mobilesuit_folder
-			position = { x = -5 y = 14 }
+			position = { x = -4 y = 14 }
 		}
 		dependencies = {
 			psyco_com = 1
 			bishop_plan = 1
     }
 		path = {
-			leads_to_tech = ms06_z_tech
+			leads_to_tech = msn02_tech
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1740,86 +1734,7 @@ technologies = {
 			}
 		}
 	}
-	ms06_z_tech = {
-		enable_equipments = {
-			msn06_z_equipment
-		}
-		research_cost = 2.0
-		xp_research_type = army
-		xp_boost_cost = 100
-		xp_research_bonus = 0.3
-		start_year = 79
-		folder = {
-			name = ZEO_mobilesuit_folder
-			position = { x = -5 y = 16 }
-		}
-		dependencies = {
-			psyco_com = 1
-			bishop_plan = 1
-    }
-		path = {
-			leads_to_tech = msn01_tech
-			research_cost_coeff = 1
-		}
-		categories = {
-			zeonic_mobilesuit
-			nt_mobilesuit
-			mobilesuit
-			custom_mobilesuit
-			space_mobilesuit
-		}
-		on_research_complete = {
-    }
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				date > 79.1.1
-			}
-		}
-	}
-	msn01_tech = {
-		enable_equipments = {
-			msn01_equipment
-		}
-		research_cost = 2.0
-		xp_research_type = army
-		xp_boost_cost = 100
-		xp_research_bonus = 0.3
-		start_year = 79
-		folder = {
-			name = ZEO_mobilesuit_folder
-			position = { x = -5 y = 18 }
-		}
-		dependencies = {
-			psyco_com = 1
-			bishop_plan = 1
-    }
-		path = {
-			leads_to_tech = msn02_tech
-			research_cost_coeff = 1
-		}
-		categories = {
-			zeonic_mobilesuit
-			nt_mobilesuit
-			mobilesuit
-			custom_mobilesuit
-			space_mobilesuit
-		}
-		on_research_complete = {
-    }
-		ai_will_do = {
-			base = 10
-			modifier = {
-				factor = 5
-				date > 79.1.1
-			}
-		}
-	}
 	msn02_tech = {
-		enable_equipments = {
-			msn02_equipment
-		}
 		research_cost = 2.0
 		xp_research_type = army
 		xp_boost_cost = 100
@@ -1827,7 +1742,7 @@ technologies = {
 		start_year = 79
 		folder = {
 			name = ZEO_mobilesuit_folder
-			position = { x = -5 y = 20 }
+			position = { x = -4 y = 20 }
 		}
 		categories = {
 			nt_mobilesuit
@@ -1844,7 +1759,7 @@ technologies = {
 	}
 	msn02_p_tech = {
 		enable_equipments = {
-			msn02p_equipment
+			msn02_equipment
 		}
 		research_cost = 1.0
 		xp_research_type = army

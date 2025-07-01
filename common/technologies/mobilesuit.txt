@@ -1,0 +1,13 @@
+technologies = {
+	acclimatization_tech = {
+		allow = {
+			always = no
+		}
+		category_hot_mobilesuit = {
+			acclimatization_hot_climate_gain_factor = 10
+		}
+		category_cold_mobilesuit = {
+			acclimatization_cold_climate_gain_factor = 10
+		}
+	}
+}

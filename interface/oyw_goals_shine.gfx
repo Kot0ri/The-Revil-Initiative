@@ -34,7 +34,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_casval_and_altesia_old_shine"
-		texturefile = "gfx/interface/goals/goal_casval_and_altesia.dds"
+		texturefile = "gfx/interface/goals/goal_casval_and_altesia_old.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_casval_and_altesia_old.dds"
@@ -418,7 +418,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_medal_of_cross_shine_old"
-		texturefile = "gfx/interface/goals/goal_medal_of_cross.dds"
+		texturefile = "gfx/interface/goals/goal_medal_of_cross_old.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_medal_of_cross_old.dds"
@@ -1538,7 +1538,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_munzo_univercity_old_shine"
-		texturefile = "gfx/interface/goals/goal_munzo_univercity.dds"
+		texturefile = "gfx/interface/goals/goal_munzo_univercity_old.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_munzo_univercity_old.dds"
@@ -2082,7 +2082,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_revival_of_ral_family_old_shine"
-		texturefile = "gfx/interface/goals/goal_revival_of_ral_family.dds"
+		texturefile = "gfx/interface/goals/goal_revival_of_ral_family_old.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_revival_of_ral_family_old.dds"
@@ -2146,7 +2146,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_kings_return_old_shine"
-		texturefile = "gfx/interface/goals/goal_kings_return.dds"
+		texturefile = "gfx/interface/goals/goal_kings_return_old.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_kings_return_old.dds"
@@ -2306,7 +2306,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_capitalizing_on_the_fame_of_parent_old_shine"
-		texturefile = "gfx/interface/goals/goal_capitalizing_on_the_fame_of_parent.dds"
+		texturefile = "gfx/interface/goals/goal_capitalizing_on_the_fame_of_parent_old.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_capitalizing_on_the_fame_of_parent_old.dds"
@@ -2434,7 +2434,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_dominance_of_human_survival_theory_old_shine"
-		texturefile = "gfx/interface/goals/goal_dominance_of_human_survival_theory.dds"
+		texturefile = "gfx/interface/goals/goal_dominance_of_human_survival_theory_old.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_dominance_of_human_survival_theory_old.dds"
@@ -2498,7 +2498,7 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_dominance_of_human_survival_theory2_old_shine"
-		texturefile = "gfx/interface/goals/goal_dominance_of_human_survival_theory2.dds"
+		texturefile = "gfx/interface/goals/goal_dominance_of_human_survival_theory2_old.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_dominance_of_human_survival_theory2_old.dds"
@@ -3630,6 +3630,68 @@ SpriteType = {
 
 		animation = {
 			animationmaskfile = "gfx/interface/goals/goal_zaku_R3S.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_shield_of_zeon_1_shine"
+		texturefile = "gfx/interface/goals/goal_shield_of_zeon_1.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_shield_of_zeon_1.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_shield_of_zeon_1.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_goal_shield_of_zeon_2_shine"
+		texturefile = "gfx/interface/goals/goal_shield_of_zeon_2.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_shield_of_zeon_2.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_shield_of_zeon_2.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

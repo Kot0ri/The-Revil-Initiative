@@ -573,7 +573,7 @@ focus = {
 	}
 	
 	completion_reward = {
-		
+		add_ideas = uranprojekt
 	}
 	relative_position_id = ZEO_acension_of_delaz
 	prerequisite = { focus = ZEO_acension_of_delaz }
@@ -670,7 +670,7 @@ focus = {
 }
 
 focus = {
-	id = ZEO_ministry_of_argiculture
+	id = ZEO_ministry_of_agriculture
 	icon = GFX_goal_dominance_of_human_survival_theory
 	cost = 3
 	x = 0
@@ -679,7 +679,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		add_ideas = ministry_of_agriculture
 	}
 	relative_position_id = ZEO_acension_of_the_amato_family
 	prerequisite = { focus = ZEO_acension_of_the_amato_family }
@@ -697,8 +697,8 @@ focus = {
 	completion_reward = {
 		
 	}
-	relative_position_id = ZEO_ministry_of_argiculture
-	prerequisite = { focus = ZEO_ministry_of_argiculture }
+	relative_position_id = ZEO_ministry_of_agriculture
+	prerequisite = { focus = ZEO_ministry_of_agriculture }
 }
 
 focus = {
@@ -727,7 +727,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		add_ideas = ministry_of_public_will
 	}
 	relative_position_id = ZEO_acension_of_bernini
 	prerequisite = { focus = ZEO_acension_of_bernini }
@@ -780,6 +780,7 @@ focus = {
 	
 	completion_reward = {
 		army_experience = 50
+		add_ideas = army_primacy
 	}
 	relative_position_id = ZEO_acension_of_takiguchi
 	prerequisite = { focus = ZEO_acension_of_takiguchi }
@@ -796,7 +797,7 @@ focus = {
 	}
 	
 	completion_reward = {
-		add_ideas = performance_enahncers
+		add_ideas = performance_enhancers
 	}
 	relative_position_id = ZEO_army_primacy
 	prerequisite = { focus = ZEO_army_primacy }
@@ -3860,6 +3861,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		army_experience = 20
+		air_experience = 20
 	}
 	relative_position_id = ZEO_send_aid_to_the_military_commands
 	prerequisite = { focus = ZEO_send_aid_to_the_military_commands }
@@ -3876,7 +3879,7 @@ focus = {
 	}
 	completion_reward = {
 		add_timed_idea = {
-			idea = gravity_front_line
+			idea = gravity_front_drop
 			days = 365
 		}
 		country_event = { id = zeon.40 }
@@ -3944,7 +3947,7 @@ focus = {
 
 focus = {
 	id = ZEO_found_the_ZEF
-	icon = GFX_focus_prc_infiltration
+	icon = GFX_focus_generic_little_entente
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = -2
@@ -4013,7 +4016,7 @@ focus = {
 
 focus = {
 	id = ZEO_call_up_reserves
-	icon = GFX_focus_generic_little_entente
+	icon = GFX_goal_revival_of_ral_family
 	cost = 5
 	x = 1
 	y = 1
@@ -4843,7 +4846,7 @@ focus = {
 
 focus = {
 	id = ZEO_recall_deikunists_officers
-	icon = GFX_goal_shield_of_zeon_1
+	icon = GFX_goal_revival_of_ral_family_old
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
 	x = -1

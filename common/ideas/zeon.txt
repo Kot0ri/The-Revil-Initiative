@@ -93,6 +93,7 @@ ideas = {
 				army_org_factor = 0.05
 				army_speed_factor = 0.05
 				army_attack_factor = 0.05
+				supply_factor = -0.05
 			}
 		}
 	
@@ -162,10 +163,48 @@ ideas = {
 		removal_cost = -1
 	}
 
-	performance_enahncers = {
+	performance_enhancers = {
 		modifier = {
 			army_speed_factor = 0.05
+			breakthrough_factor = 0.12
 			attrition = 0.05
+		}
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+	}
+
+	uranprojekt = {
+		modifier = {
+			sp_nuclear_bomb_speed_factor = 0.12
+			production_speed_nuclear_facility_factor = 0.4
+		}
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+	}
+
+	ministry_of_agriculture = {
+		modifier = {
+			political_power_cost = 0.01
+			monthly_population = 0.2
+		}
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+	}
+
+	ministry_of_public_will = {
+		modifier = {
+			political_power_cost = 0.05
+			weekly_bombing_war_support = 0.05
+			weekly_casualties_war_support = 0.02
 		}
 		allowed = {
 			original_tag = ZEO
@@ -227,6 +266,33 @@ ideas = {
 			max_planning = 0.1
 			planning_speed = 0.25
 			special_project_speed_factor = 0.15
+		}
+	}
+
+	army_primacy = {
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+		modifier = {
+			max_command_power = 50
+			training_time_army_factor = -0.15
+		}
+	}
+
+	gravity_front_drop = {
+		allowed = {
+			original_tag = ZEO
+			always = no
+		}
+		removal_cost = -1
+		modifier = {
+			supply_consumption_factor = 0.05
+			out_of_supply_factor = -0.1
+			para_tank_equipment_design_cost_factor = -0.8
+			paradrop_organization_factor = 0.25
+			paratrooper_aa_defense = 0.05
 		}
 	}
 

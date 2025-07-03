@@ -459,7 +459,7 @@ focus = {
 	id = RNZ_take_down_the_zabis
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = -1
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -486,10 +486,62 @@ focus = {
 }
 
 focus = {
+	id = RNZ_seize_control_of_zeon_forces
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id = RNZ_form_a_royal_guard
+	prerequisite = { focus = RNZ_form_a_royal_guard }
+}
+
+focus = {
+	id = RNZ_reignite_the_war_on_earth
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id = RNZ_seize_control_of_zeon_forces
+	prerequisite = { focus = RNZ_seize_control_of_zeon_forces }
+	prerequisite = { focus = RNZ_prioritize_the_federation  }
+}
+
+focus = {
+	id = RNZ_development_of_cost_effective_land_use_MS
+	icon = GFX_goal_kings_return
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id = RNZ_reignite_the_war_on_earth
+	prerequisite = { focus = RNZ_reignite_the_war_on_earth  }
+}
+
+focus = {
 	id = RNZ_prioritize_the_federation
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = 1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -684,10 +736,10 @@ focus = {
 }
 
 focus = {
-	id = RNZ_ms_development
+	id = RNZ_joint_anaheim_ms_development
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = 8
+	x = 9
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -711,8 +763,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = RNZ_ms_development
-	prerequisite = { focus = RNZ_ms_development }
+	relative_position_id = RNZ_joint_anaheim_ms_development
+	prerequisite = { focus = RNZ_joint_anaheim_ms_development }
 }
 
 focus = {
@@ -735,7 +787,7 @@ focus = {
 	id = RNZ_build_up_a_starfleet
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = 5
+	x = 6
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -799,7 +851,7 @@ focus = {
 	id = RNZ_garner_loyalty_in_the_colonies
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = 3
+	x = 4
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -849,7 +901,7 @@ focus = {
 	id = RNZ_negotiations_with_the_other_sides
 	icon = GFX_goal_kings_return
 	cost = 2
-	x = -3
+	x = -4
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -882,7 +934,7 @@ focus = {
 	id = RNZ_reach_out_to_axis
 	icon = GFX_goal_maharaja_khan
 	cost = 2
-	x = -5
+	x = -6
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -1001,7 +1053,7 @@ focus = {
 
 focus = {
 	id = RNZ_vessel_for_mankind
-	icon = GFX_goal_kings_return
+	icon = GFX_goal_kings_return_old
 	cost = 2
 	x = -1
 	y = 1
@@ -1102,10 +1154,13 @@ focus = {
 	id = RNZ_build_up_forces_on_earth
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 10
+	x = 11
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = RNZ_seize_control_of_zeon_forces
 	}
 	completion_reward = {
 	

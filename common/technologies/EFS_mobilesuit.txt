@@ -1,4 +1,15 @@
 technologies = {
+
+	@70 = 0
+	@75 = 4
+	@77 = 8
+	@78 = 12
+	@79 = 16
+	@80 = 20
+	@81 = 24
+	@82 = 28
+	@83 = 32
+
   plan_rx_tech = {
     allow = {
       always = no
@@ -171,7 +182,9 @@ technologies = {
     folder = {
       name = EFS_mobilesuit_folder
       position = { x = 0 y = 2 }
-    }    categories = {
+    }    
+    categories = {
+      plan_rx
       mobilesuit
       artillery_mobilesuit
     }
@@ -179,7 +192,6 @@ technologies = {
      
     }
     on_research_complete = {
-    
       custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
     }
     ai_will_do = {

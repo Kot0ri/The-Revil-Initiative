@@ -11,9 +11,9 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = ZOF_gather_our_forces
+		id = ZPR_gather_our_forces
 		icon = GFX_focus_GER_japan_friend
-		cost = 5
+		cost = 10
 		x = 4
 		y = 0
 		ai_will_do = {
@@ -23,6 +23,71 @@ focus_tree = {
 	
 		completion_reward = {
 		
+		}
+	}
+
+	focus = {
+		id = ZPR_work_with_oceania
+		icon = GFX_focus_GER_japan_friend
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZPR_naval_command_primacy
+		}
+		relative_position_id = ZPR_gather_our_forces
+		prerequisite = {
+		focus = ZPR_gather_our_forces
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = ZPR_amphibious_training_program
+		icon = GFX_focus_GER_japan_friend
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		
+		relative_position_id = ZPR_gather_our_forces
+		prerequisite = {
+		focus = ZPR_work_with_oceania focus = ZPR_naval_command_primacy
+		}
+		completion_reward = {
+		set_politics = {
+			ruling_party = supremacist
+		}
+		}
+	}
+
+	focus = {
+		id = ZPR_naval_command_primacy
+		icon = GFX_focus_GER_japan_friend
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = ZPR_work_with_oceania
+		}
+		relative_position_id = ZPR_gather_our_forces
+		prerequisite = {
+		focus = ZPR_gather_our_forces
+		}
+		completion_reward = {
+		set_politics = {
+			ruling_party = supremacist
+		}
 		}
 	}
 

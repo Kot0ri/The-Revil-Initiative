@@ -1,0 +1,29 @@
+focus_tree = {
+	id = ZPR
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ZPR
+		}
+	}
+	default = no
+
+	focus = {
+		id = ZOF_gather_our_forces
+		icon = GFX_focus_GER_japan_friend
+		cost = 5
+		x = 4
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+	
+		completion_reward = {
+		
+		}
+	}
+
+}

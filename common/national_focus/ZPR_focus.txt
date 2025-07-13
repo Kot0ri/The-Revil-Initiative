@@ -48,6 +48,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ZPR_targert_indonesian_federal_bases
+		icon = GFX_focus_jap_strike_south
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		
+		relative_position_id = ZPR_work_with_oceania
+		prerequisite = {
+		focus = ZPR_work_with_oceania 
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = ZPR_amphibious_training_program
 		icon = GFX_focus_GER_japan_friend
 		cost = 10

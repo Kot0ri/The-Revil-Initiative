@@ -11,7 +11,7 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = SI6_uc_0075
+		id = SI6_new_era_of_mankind
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
 		x = 4
@@ -19,6 +19,69 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+focus = {
+		id = SI6_meeting_with_the_syndicate
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = SI6_new_era_of_mankind
+		}
+		relative_position_id = SI6_new_era_of_mankind
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_rank_kiprodon_rise_to_fame
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = SI6_new_era_of_mankind
+		}
+		relative_position_id = SI6_new_era_of_mankind
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_uc_0075
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = SI6_new_era_of_mankind
+		}
+		relative_position_id = SI6_new_era_of_mankind
 		available = {
 			
 		}
@@ -148,6 +211,44 @@ focus_tree = {
 		relative_position_id = SI6_uc_0075
 		prerequisite = {
 			focus = SI6_uc_0075
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_civil_industry_development
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		relative_position_id = SI6_industrial_expansion_plan
+		prerequisite = {
+			focus = SI6_industrial_expansion_plan
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_shipping_industry_development
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		relative_position_id = SI6_industrial_expansion_plan
+		prerequisite = {
+			focus = SI6_industrial_expansion_plan
 		}
 		completion_reward = {
 			

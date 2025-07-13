@@ -357,6 +357,7 @@ focus = {
 	available = {
 		has_war = yes
 		is_in_faction_with = EFS
+		has_completed_focus = SI4_first_ms_prototypes
 	}
 	completion_reward = {
 	}
@@ -428,6 +429,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = SI4_first_ms_prototypes
 	}
 	completion_reward = {
 	}

@@ -1,0 +1,44 @@
+focus_tree = {
+	id = ALF
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ALF
+		}
+	}
+	default = no
+
+	focus = {
+	id = ALF_a_historic_opportunity
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 11
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_the_cairo_address
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_a_historic_opportunity
+	prerequisite = {
+		focus = ALF_a_historic_opportunity
+	}
+	completion_reward = {
+	
+	}
+}
+}

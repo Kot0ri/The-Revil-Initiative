@@ -288,7 +288,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 51
-	    y = 12
+	    y = 8
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -2587,7 +2587,7 @@ focus_tree = {
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 51
-	    y = 22
+	    y = 18
 	    ai_will_do = {
 		    factor = 1
 	    }
@@ -3415,5 +3415,23 @@ focus_tree = {
         relative_position_id = AFZ_The_Situation_Deteriorates
 		prerequisite = { focus = AFZ_The_Situation_Deteriorates }
 
+    }
+
+
+	 focus = {
+	    id = AFZ_Traitors_and_invaders
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 51
+	    y = 26
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			has_war = yes
+		}
+	    completion_reward = {
+	    }
+        
     }
 }

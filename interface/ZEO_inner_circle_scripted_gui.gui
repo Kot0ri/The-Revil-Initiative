@@ -73,7 +73,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "fuhrer_container"
 			orientation = center_up
-			position = { x = -80 y = 60 }
+			position = { x = -180 y = 60 }
 			size = { width = 200 height = 161 }
 			clipping = no
 
@@ -87,7 +87,7 @@ guiTypes = {
 				#PORTRAIT
 				iconType = {
 					name ="fuhrer_portrait"
-					spriteType = "GFX_inner_circle_leader_gihren_zabi"
+					spriteType = "GFX_inner_circle_leader_adolf_hitler"
 					orientation = upper_left
 					position = { x=2	 y=18 }
 					alwaystransparent = yes
@@ -100,7 +100,7 @@ guiTypes = {
 					orientation = center
 					position = { x=0	 y=0 }
 					centerposition = yes
-					context_aware_tooltip = ZEO_fuhrer_tooltip
+					context_aware_tooltip = GER_fuhrer_tooltip
 				}
 			}
 
@@ -111,7 +111,7 @@ guiTypes = {
 				orientation = center
 				position = { x=0	 y=95 }
 				centerposition = yes
-				context_aware_tooltip = ZEO_fuhrer_tooltip
+				context_aware_tooltip = GER_fuhrer_tooltip
 			}
 
 			#FUHRER NAME
@@ -120,7 +120,7 @@ guiTypes = {
 				orientation = center_down
 				position = { x = -100 y = 0 }
 				font = "hoi_20b" #"hoi_18mbs"
-				context_aware_text = "ZEO_fuhrer_name_text"
+				context_aware_text = "GER_fuhrer_name_text"
 				format = center
 				maxWidth = 200
 				alwaystransparent = yes
@@ -133,7 +133,7 @@ guiTypes = {
 				orientation = center
 				position = { x=0	 y=111 }
 				centerposition = yes
-				context_aware_tooltip = ZEO_fuhrer_tooltip
+				context_aware_tooltip = GER_fuhrer_tooltip
 			}
 
 			#FUHRER TITLE
@@ -158,7 +158,8 @@ guiTypes = {
 		containerWindowType = {
 			name = "ascended_advisor_1_container"
 			orientation = center_up
-			position = { x = -210 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			#position = { x = -355 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			position = { x = -600 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
 			size = { width = @ASCENDED_ADVISOR_CONTAINER_WIDTH height = @ASCENDED_ADVISOR_CONTAINER_HEIGHT }
 			clipping = no
 			
@@ -206,7 +207,7 @@ guiTypes = {
 				orientation = center_down
 				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = 0 }
 				font = "hoi_20b"
-				context_aware_text = "ZEO_ascended_advisor_1_name_text"
+				context_aware_text = "GER_ascended_advisor_1_name_text"
 				format = center
 				maxWidth = 150
 				alwaystransparent = yes
@@ -239,7 +240,8 @@ guiTypes = {
 		containerWindowType = {
 			name = "ascended_advisor_2_container"
 			orientation = center_up
-			position = { x = -55 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			#position = { x = -255 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			position = { x = -450 y =  @ASCENDED_ADVISOR_CONTAINER_POS_Y }
 			size = { width = @ASCENDED_ADVISOR_CONTAINER_WIDTH height = @ASCENDED_ADVISOR_CONTAINER_HEIGHT }
 			clipping = no
 			
@@ -287,7 +289,7 @@ guiTypes = {
 				orientation = center_down
 				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = 0 }
 				font = "hoi_20b"
-				context_aware_text = "ZEO_ascended_advisor_2_name_text"
+				context_aware_text = "GER_ascended_advisor_2_name_text"
 				format = center
 				maxWidth = @ASCENDED_ADVISOR_CONTAINER_WIDTH
 				alwaystransparent = yes
@@ -319,7 +321,8 @@ guiTypes = {
 		containerWindowType = {
 			name = "ascended_advisor_3_container"
 			orientation = center_up
-			position = { x = 100 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			#position = { x = -155 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			position = { x = -300 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
 			size = { width = @ASCENDED_ADVISOR_CONTAINER_WIDTH height = @ASCENDED_ADVISOR_CONTAINER_HEIGHT }
 			clipping = no
 			
@@ -367,7 +370,7 @@ guiTypes = {
 				orientation = center_down
 				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = 0 }
 				font = "hoi_20b"
-				context_aware_text = "ZEO_ascended_advisor_3_name_text"
+				context_aware_text = "GER_ascended_advisor_3_name_text"
 				format = center
 				maxWidth = 150
 				alwaystransparent = yes
@@ -375,7 +378,7 @@ guiTypes = {
 
 			#ASCENDED ADVISOR TRAIT BOX
 			iconType = {
-				name ="ascended_advisor_2_trait_box"
+				name ="ascended_advisor_3_trait_box"
 				spriteType = "GFX_ascended_advisor_trait_box"
 				orientation = center
 				position = { x=0	 y=102 }
@@ -396,7 +399,7 @@ guiTypes = {
 			}
 		}
 
-			containerWindowType = {
+		containerWindowType = {
 			name = "ascended_advisor_4_container"
 			orientation = center_up
 			position = { x = -155 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
@@ -715,8 +718,6 @@ guiTypes = {
 				alwaystransparent = yes
 			}
 		}
-
-
 		#########################
 		### ADVISOR PORTRAITS ###
 		#########################
@@ -724,8 +725,8 @@ guiTypes = {
 		containerWindowType = {
 			name = "advisors_container"
 			orientation = center_up
-			position = { x = -220 y = @ADVISOR_CONTAINER_POS_Y }
-			size = { width = 480 height = 70 }
+			position = { x = -450 y = @ADVISOR_CONTAINER_POS_Y }
+			size = { width = 700 height = 70 }
 			clipping = no
 
 			background = {
@@ -733,64 +734,64 @@ guiTypes = {
 				quadTextureSprite ="GFX_tiled_plain_bg2"
 			}
 
-			# Toto
+			# TODT
 			iconType = {
-				name ="advisor_toto_portrait"
-				spriteType = "GFX_toto_available_small"
+				name ="advisor_todt_portrait"
+				spriteType = "GFX_fritz_todt_available_small"
 				orientation = center
 				position = { x=-227	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
-			# Fieseler
+			# SPEER
 			iconType = {
-				name ="advisor_fieseler_portrait"
-				spriteType = "GFX_hoth_fieseler_available_small"
+				name ="advisor_speer_portrait"
+				spriteType = "GFX_albert_speer_available_small"
 				orientation = center
 				position = { x=-162	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
-			# Delaz
+			# GÖRING
 			iconType = {
-				name ="advisor_delaz_portrait"
-				spriteType = "GFX_aiguille_delaz_available_small"
+				name ="advisor_goring_portrait"
+				spriteType = "GFX_hermann_goring_available_small"
 				orientation = center
 				position = { x=-97	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
-			# Amato
+			#HIMMLER
 			iconType = {
-				name ="advisor_amato_portrait"
-				spriteType = "GFX_juzo_di_amato_available_small"
+				name ="advisor_himmler_portrait"
+				spriteType = "GFX_heinrich_himmler_available_small"
 				orientation = center
 				position = { x=-32	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
-			# Bernini
+			#GOEBBELS
 			iconType = {
-				name ="advisor_bernini_portrait"
-				spriteType = "GFX_enzo_bernini_available_small"
+				name ="advisor_goebbels_portrait"
+				spriteType = "GFX_joseph_goebbels_available_small"
 				orientation = center
 				position = { x=33	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
-			# Takiguchi
+			# HESS
 			iconType = {
-				name ="advisor_takiguchi_portrait"
-				spriteType = "GFX_kei_takiguchi_available_small"
+				name ="advisor_hess_portrait"
+				spriteType = "GFX_rudolf_hess_available_small"
 				orientation = center
 				position = { x=98	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
-			# Irene
+			# BORMANN
 			iconType = {
-				name ="advisor_irene_portrait"
-				spriteType = "GFX_cecilia_irene_available_small"
+				name ="advisor_bormann_portrait"
+				spriteType = "GFX_martin_bormann_available_small"
 				orientation = center
 				position = { x=163	 y=@ADVISOR_POS_Y }
 				scale = 1

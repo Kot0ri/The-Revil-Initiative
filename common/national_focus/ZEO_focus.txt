@@ -544,10 +544,27 @@ focus = {
 }
 
 focus = {
-	id = ZEO_acension_of_delaz
+	id = ZEO_acension_jirom
 	icon = GFX_goal_delaz_ascend
 	cost = 3
 	x = -6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_acension_of_delaz
+	icon = GFX_goal_delaz_ascend
+	cost = 3
+	x = -8
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -657,7 +674,7 @@ focus = {
 	id = ZEO_acension_of_the_amato_family
 	icon = GFX_focus_jap_spiritual_mobilization
 	cost = 3
-	x = -10
+	x = -12
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -705,7 +722,7 @@ focus = {
 	id = ZEO_acension_of_bernini
 	icon = GFX_goal_dominance_of_human_survival_theory
 	cost = 3
-	x = -12
+	x = -14
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -753,7 +770,7 @@ focus = {
 	id = ZEO_acension_of_takiguchi
 	icon = GFX_goal_dominance_of_human_survival_theory
 	cost = 3
-	x = -8
+	x = -10
 	y = 1
 	ai_will_do = {
 		factor = 1

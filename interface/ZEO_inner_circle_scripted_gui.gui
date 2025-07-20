@@ -394,6 +394,326 @@ guiTypes = {
 			}
 		}
 
+			containerWindowType = {
+			name = "ascended_advisor_4_container"
+			orientation = center_up
+			position = { x = -155 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			size = { width = @ASCENDED_ADVISOR_CONTAINER_WIDTH height = @ASCENDED_ADVISOR_CONTAINER_HEIGHT }
+			clipping = no
+			
+			containerWindowType = {
+				name = "ascended_advisor_4_portrait_container"
+				orientation = center_up
+				position = { x = -46 y = 0}
+				size = { width = 91 height = 119 }
+				clipping = no
+
+				#FRAME
+				iconType = {
+					name ="ascended_advisor_4_frame"
+					spriteType = "GFX_ascended_advisors_unappointed_frame"
+					orientation = center
+					position = { x=0	 y=@ASCENDED_ADVISOR_FRAME_POS_Y }
+					centerPosition = yes
+					context_aware_tooltip = [GetAscendedAdvisorTrait4]
+				}
+
+				#PORTRAIT
+				iconType = {
+					name ="ascended_advisor_4_portrait"
+					spriteType = ""
+					orientation = upper_left
+					position = { x=7	 y=6 }
+					scale = 0.5
+					alwaystransparent = yes
+				}
+
+			}
+
+			#ASCENDED ADVISOR NAME BOX
+			iconType = {
+				name ="ascended_advisor_4_name_box"
+				spriteType = "GFX_ascended_advisor_name_box"
+				orientation = center
+				position = { x=0	 y=71 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait4]
+			}
+
+			#NAME
+			instantTextBoxType = {
+				name ="ascended_advisor_4_name"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = 0 }
+				font = "hoi_20b"
+				context_aware_text = "GER_ascended_advisor_4_name_text"
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+
+			#ASCENDED ADVISOR TRAIT BOX
+			iconType = {
+				name ="ascended_advisor_4_trait_box"
+				spriteType = "GFX_ascended_advisor_trait_box"
+				orientation = center
+				position = { x=0	 y=102 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait4]
+			}
+
+			#TRAIT
+			instantTextBoxType = {
+				name ="ascended_advisor_4_trait"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = @ASCENDED_ADVISOR_TEXT_POS_Y }
+				font = "hoi_18mbs"
+				context_aware_text = [GetAscendedAdvisorTraitName4]
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+		}
+        	containerWindowType = {
+			name = "ascended_advisor_5_container"
+			orientation = center_up
+			position = { x = -10 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			size = { width = @ASCENDED_ADVISOR_CONTAINER_WIDTH height = @ASCENDED_ADVISOR_CONTAINER_HEIGHT }
+			clipping = no
+			
+			containerWindowType = {
+				name = "ascended_advisor_5_portrait_container"
+				orientation = center_up
+				position = { x = -46 y = 0}
+				size = { width = 91 height = 119 }
+				clipping = no
+
+				#FRAME
+				iconType = {
+					name ="ascended_advisor_5_frame"
+					spriteType = "GFX_ascended_advisors_unappointed_frame"
+					orientation = center
+					position = { x=0	 y=@ASCENDED_ADVISOR_FRAME_POS_Y }
+					centerPosition = yes
+					context_aware_tooltip = [GetAscendedAdvisorTrait5]
+				}
+
+				#PORTRAIT
+				iconType = {
+					name ="ascended_advisor_5_portrait"
+					spriteType = ""
+					orientation = upper_left
+					position = { x=7	 y=6 }
+					scale = 0.5
+					alwaystransparent = yes
+				}
+			}
+
+			#ASCENDED ADVISOR NAME BOX
+			iconType = {
+				name ="ascended_advisor_5_name_box"
+				spriteType = "GFX_ascended_advisor_name_box"
+				orientation = center
+				position = { x=0	 y=71 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait5]
+			}
+
+			#NAME
+			instantTextBoxType = {
+				name ="ascended_advisor_5_name"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = 0 }
+				font = "hoi_20b"
+				context_aware_text = "GER_ascended_advisor_5_name_text"
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+
+			#ASCENDED ADVISOR TRAIT BOX
+			iconType = {
+				name ="ascended_advisor_5_trait_box"
+				spriteType = "GFX_ascended_advisor_trait_box"
+				orientation = center
+				position = { x=0	 y=102 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait5]
+			}
+
+			#TRAIT
+			instantTextBoxType = {
+				name ="ascended_advisor_5_trait"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = @ASCENDED_ADVISOR_TEXT_POS_Y }
+				font = "hoi_18mbs"
+				context_aware_text = [GetAscendedAdvisorTraitName5]
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "ascended_advisor_6_container"
+			orientation = center_up
+			position = { x = 135 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			size = { width = @ASCENDED_ADVISOR_CONTAINER_WIDTH height = @ASCENDED_ADVISOR_CONTAINER_HEIGHT }
+			clipping = no
+			
+			containerWindowType = {
+				name = "ascended_advisor_6_portrait_container"
+				orientation = center_up
+				position = { x = -46 y = 0}
+				size = { width = 91 height = 119 }
+				clipping = no
+
+				#FRAME
+				iconType = {
+					name ="ascended_advisor_6_frame"
+					spriteType = "GFX_ascended_advisors_unappointed_frame"
+					orientation = center
+					position = { x=0	 y=@ASCENDED_ADVISOR_FRAME_POS_Y }
+					centerPosition = yes
+					context_aware_tooltip = [GetAscendedAdvisorTrait6]
+				}
+
+				#PORTRAIT
+				iconType = {
+					name ="ascended_advisor_6_portrait"
+					spriteType = ""
+					orientation = upper_left
+					position = { x=7	 y=6 }
+					scale = 0.5
+					alwaystransparent = yes
+				}
+			}
+
+			#ASCENDED ADVISOR NAME BOX
+			iconType = {
+				name ="ascended_advisor_6_name_box"
+				spriteType = "GFX_ascended_advisor_name_box"
+				orientation = center
+				position = { x=0	 y=71 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait6]
+			}
+
+			#NAME
+			instantTextBoxType = {
+				name ="ascended_advisor_6_name"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = 0 }
+				font = "hoi_20b"
+				context_aware_text = "GER_ascended_advisor_6_name_text"
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+
+			#ASCENDED ADVISOR TRAIT BOX
+			iconType = {
+				name ="ascended_advisor_6_trait_box"
+				spriteType = "GFX_ascended_advisor_trait_box"
+				orientation = center
+				position = { x=0	 y=102 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait6]
+			}
+
+			#TRAIT
+			instantTextBoxType = {
+				name ="ascended_advisor_6_trait"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = @ASCENDED_ADVISOR_TEXT_POS_Y }
+				font = "hoi_18mbs"
+				context_aware_text = [GetAscendedAdvisorTraitName6]
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "ascended_advisor_7_container"
+			orientation = center_up
+			position = { x = 280 y = @ASCENDED_ADVISOR_CONTAINER_POS_Y }
+			size = { width = @ASCENDED_ADVISOR_CONTAINER_WIDTH height = @ASCENDED_ADVISOR_CONTAINER_HEIGHT }
+			clipping = no
+			
+			containerWindowType = {
+				name = "ascended_advisor_7_portrait_container"
+				orientation = center_up
+				position = { x = -46 y = 0}
+				size = { width = 91 height = 119 }
+				clipping = no
+
+				#FRAME
+				iconType = {
+					name ="ascended_advisor_7_frame"
+					spriteType = "GFX_ascended_advisors_unappointed_frame"
+					orientation = center
+					position = { x=0	 y=@ASCENDED_ADVISOR_FRAME_POS_Y }
+					centerPosition = yes
+					context_aware_tooltip = [GetAscendedAdvisorTrait7]
+				}
+
+				#PORTRAIT
+				iconType = {
+					name ="ascended_advisor_7_portrait"
+					spriteType = ""
+					orientation = upper_left
+					position = { x=7	 y=6 }
+					scale = 0.5
+					alwaystransparent = yes
+				}
+			}
+
+			#ASCENDED ADVISOR NAME BOX
+			iconType = {
+				name ="ascended_advisor_7_name_box"
+				spriteType = "GFX_ascended_advisor_name_box"
+				orientation = center
+				position = { x=0	 y=71 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait7]
+			}
+
+			#NAME
+			instantTextBoxType = {
+				name ="ascended_advisor_7_name"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = 0 }
+				font = "hoi_20b"
+				context_aware_text = "GER_ascended_advisor_7_name_text"
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+
+			#ASCENDED ADVISOR TRAIT BOX
+			iconType = {
+				name ="ascended_advisor_7_trait_box"
+				spriteType = "GFX_ascended_advisor_trait_box"
+				orientation = center
+				position = { x=0	 y=102 }
+				centerposition = yes
+				context_aware_tooltip = [GetAscendedAdvisorTrait7]
+			}
+
+			#TRAIT
+			instantTextBoxType = {
+				name ="ascended_advisor_7_trait"
+				orientation = center_down
+				position = { x = @ASCENDED_ADVISOR_TEXT_POS_X y = @ASCENDED_ADVISOR_TEXT_POS_Y }
+				font = "hoi_18mbs"
+				context_aware_text = [GetAscendedAdvisorTraitName7]
+				format = center
+				maxWidth = 150
+				alwaystransparent = yes
+			}
+		}
+
 
 		#########################
 		### ADVISOR PORTRAITS ###

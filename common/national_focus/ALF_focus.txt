@@ -41,4 +41,353 @@ focus = {
 	
 	}
 }
+
+focus = {
+	id = ALF_brotherhood_of_liberation
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_the_cairo_address
+	prerequisite = {
+		focus = ALF_the_cairo_address
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_dominance_of_the_cairo_wing
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_brotherhood_of_liberation
+	prerequisite = {
+		focus = ALF_brotherhood_of_liberation
+	}
+	mutually_exclusive = {
+		focus = ALF_a_coalition_of_all_peoples
+	}
+	mutually_exclusive = {
+		focus = ALF_dominance_of_the_cleric_wing
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_a_coalition_of_all_peoples
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_brotherhood_of_liberation
+	prerequisite = {
+		focus = ALF_brotherhood_of_liberation
+	}
+	mutually_exclusive = {
+		focus = ALF_dominance_of_the_cleric_wing
+	}
+	mutually_exclusive = {
+		focus = ALF_dominance_of_the_cairo_wing
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_dominance_of_the_cleric_wing
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_brotherhood_of_liberation
+	prerequisite = {
+		focus = ALF_brotherhood_of_liberation
+	}
+	mutually_exclusive = {
+		focus = ALF_a_coalition_of_all_peoples
+	}
+	mutually_exclusive = {
+		focus = ALF_dominance_of_the_cairo_wing
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_preach_confederalism
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_a_coalition_of_all_peoples
+	prerequisite = {
+		focus = ALF_a_coalition_of_all_peoples
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_a_coalition_of_the_oppressed
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_preach_confederalism
+	prerequisite = {
+		focus = ALF_preach_confederalism
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_disregarding_secularism
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_dominance_of_the_cleric_wing
+	prerequisite = {
+		focus = ALF_dominance_of_the_cleric_wing
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_a_hand_to_the_fundamentalists
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_disregarding_secularism
+	prerequisite = {
+		focus = ALF_disregarding_secularism
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_modernization_drive
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_dominance_of_the_cairo_wing
+	prerequisite = {
+		focus = ALF_dominance_of_the_cairo_wing
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_push_liberalization_policies
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_modernization_drive
+	prerequisite = {
+		focus = ALF_modernization_drive
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_urban_autonomy
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_dominance_of_the_cairo_wing
+	prerequisite = {
+		focus = ALF_a_coalition_of_all_peoples focus = ALF_dominance_of_the_cairo_wing
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_working_with_the_metropolis
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_urban_autonomy
+	prerequisite = {
+		focus = ALF_urban_autonomy
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_tribal_autonomy
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_a_coalition_of_all_peoples
+	prerequisite = {
+		focus = ALF_a_coalition_of_all_peoples focus = ALF_dominance_of_the_cleric_wing
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_align_isolated_communites
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_tribal_autonomy
+	prerequisite = {
+		focus = ALF_tribal_autonomy
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_the_sword_of_islam
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_a_hand_to_the_fundamentalists
+	prerequisite = {
+		focus = ALF_a_hand_to_the_fundamentalists
+	}
+	prerequisite = {
+		focus = ALF_align_isolated_communites
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_the_enlightened_one
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_push_liberalization_policies
+	prerequisite = {
+		focus = ALF_push_liberalization_policies
+	}
+	prerequisite = {
+		focus = ALF_working_with_the_metropolis
+	}
+	
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_the_great_unifier
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_a_coalition_of_the_oppressed
+	prerequisite = {
+		focus = ALF_align_isolated_communites
+	}
+	prerequisite = {
+		focus = ALF_working_with_the_metropolis
+	}
+	prerequisite = {
+		focus = ALF_a_coalition_of_the_oppressed
+	}
+	completion_reward = {
+	
+	}
+}
+
 }

@@ -14,10 +14,10 @@ ZEO_inner_circle_inlay_window = {
         #FUHRER
         fuhrer_portrait = {
           
-            GFX_inner_circle_leader_irene = {
+            GFX_inner_circle_leader_gihren_zabi = {
                 has_country_leader = {
                     ruling_only = yes
-                    character = ZEO_cecillia_irene
+                    character = ZEO_gihren
                 }
             }
             GFX_inner_circle_leader_gihren_zabi = yes
@@ -102,6 +102,111 @@ ZEO_inner_circle_inlay_window = {
                 check_variable = { ZEO_ascended_advisor_3 = 7 }
             }
         }
+          ascended_advisor_4_portrait = {
+            GFX_blank_leader_portrait = {
+                check_variable = { GER_ascended_advisor_4 = 0 }
+            }
+            GFX_portrait_GER_fritz_todt = {
+       			check_variable = { GER_ascended_advisor_4 = 1 }
+		    }
+            GFX_portrait_GER_albert_speer = {
+                check_variable = { GER_ascended_advisor_4 = 2 }
+            }
+            GFX_portrait_GER_hermann_goring = {
+                check_variable = { GER_ascended_advisor_4 = 3 }
+            }
+            GFX_portrait_GER_heinrich_himmler = {
+                check_variable = { GER_ascended_advisor_4 = 4 }
+            }
+            GFX_portrait_GER_joseph_goebbels = {
+                check_variable = { GER_ascended_advisor_4 = 5 }
+            }
+            GFX_portrait_GER_rudolf_hess = {
+                check_variable = { GER_ascended_advisor_4 = 6 }
+            }
+            GFX_portrait_GER_martin_bormann = {
+                check_variable = { GER_ascended_advisor_4 = 7 }
+            }
+        }
+        ascended_advisor_5_portrait = {
+            GFX_blank_leader_portrait = {
+                check_variable = { GER_ascended_advisor_5 = 0 }
+            }
+            GFX_portrait_GER_fritz_todt = {
+       			check_variable = { GER_ascended_advisor_5 = 1 }
+		    }
+            GFX_portrait_GER_albert_speer = {
+                check_variable = { GER_ascended_advisor_5 = 2 }
+            }
+            GFX_portrait_GER_hermann_goring = {
+                check_variable = { GER_ascended_advisor_5 = 3 }
+            }
+            GFX_portrait_GER_heinrich_himmler = {
+                check_variable = { GER_ascended_advisor_5 = 4 }
+            }
+            GFX_portrait_GER_joseph_goebbels = {
+                check_variable = { GER_ascended_advisor_5 = 5 }
+            }
+            GFX_portrait_GER_rudolf_hess = {
+                check_variable = { GER_ascended_advisor_5 = 6 }
+            }
+            GFX_portrait_GER_martin_bormann = {
+                check_variable = { GER_ascended_advisor_5 = 7 }
+            }
+        }
+        ascended_advisor_6_portrait = {
+            GFX_blank_leader_portrait = {
+                check_variable = { GER_ascended_advisor_6 = 0 }
+            }
+            GFX_portrait_GER_fritz_todt = {
+       			check_variable = { GER_ascended_advisor_6 = 1 }
+		    }
+            GFX_portrait_GER_albert_speer = {
+                check_variable = { GER_ascended_advisor_6 = 2 }
+            }
+            GFX_portrait_GER_hermann_goring = {
+                check_variable = { GER_ascended_advisor_6 = 3 }
+            }
+            GFX_portrait_GER_heinrich_himmler = {
+                check_variable = { GER_ascended_advisor_6 = 4 }
+            }
+            GFX_portrait_GER_joseph_goebbels = {
+                check_variable = { GER_ascended_advisor_6 = 5 }
+            }
+            GFX_portrait_GER_rudolf_hess = {
+                check_variable = { GER_ascended_advisor_6 = 6 }
+            }
+            GFX_portrait_GER_martin_bormann = {
+                check_variable = { GER_ascended_advisor_6 = 7 }
+            }
+        }
+        ascended_advisor_7_portrait = {
+            GFX_blank_leader_portrait = {
+                check_variable = { GER_ascended_advisor_7 = 0 }
+            }
+            GFX_portrait_GER_fritz_todt = {
+       			check_variable = { GER_ascended_advisor_7 = 1 }
+		    }
+            GFX_portrait_GER_albert_speer = {
+                check_variable = { GER_ascended_advisor_7 = 2 }
+            }
+            GFX_portrait_GER_hermann_goring = {
+                check_variable = { GER_ascended_advisor_7 = 3 }
+            }
+            GFX_portrait_GER_heinrich_himmler = {
+                check_variable = { GER_ascended_advisor_7 = 4 }
+            }
+            GFX_portrait_GER_joseph_goebbels = {
+                check_variable = { GER_ascended_advisor_7 = 5 }
+            }
+            GFX_portrait_GER_rudolf_hess = {
+                check_variable = { GER_ascended_advisor_7 = 6 }
+            }
+            GFX_portrait_GER_martin_bormann = {
+                check_variable = { GER_ascended_advisor_7 = 7 }
+            }
+        }
+
 
         ascended_advisor_1_frame = {
             GFX_ascended_advisors_frame = {
@@ -118,6 +223,30 @@ ZEO_inner_circle_inlay_window = {
         ascended_advisor_3_frame = {
             GFX_ascended_advisors_frame = {
                 check_variable = { ZEO_ascended_advisor_3 = 0 compare = not_equals }	
+            }
+            GFX_ascended_advisors_unappointed_frame = yes
+        }
+             ascended_advisor_4_frame = {
+            GFX_ascended_advisors_frame = {
+                check_variable = { GER_ascended_advisor_4 = 0 compare = not_equals }	
+            }
+            GFX_ascended_advisors_unappointed_frame = yes
+        }
+                ascended_advisor_5_frame = {
+            GFX_ascended_advisors_frame = {
+                check_variable = { GER_ascended_advisor_5 = 0 compare = not_equals }	
+            }
+            GFX_ascended_advisors_unappointed_frame = yes
+        }
+        ascended_advisor_6_frame = {
+            GFX_ascended_advisors_frame = {
+                check_variable = { GER_ascended_advisor_6 = 0 compare = not_equals }	
+            }
+            GFX_ascended_advisors_unappointed_frame = yes
+        }
+        ascended_advisor_7_frame = {
+            GFX_ascended_advisors_frame = {
+                check_variable = { GER_ascended_advisor_7 = 0 compare = not_equals }	
             }
             GFX_ascended_advisors_unappointed_frame = yes
         }

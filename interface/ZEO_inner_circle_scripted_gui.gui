@@ -21,14 +21,15 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "ZEO_inner_circle_ui_window"
-		orientation = lower_left
-		position = { x = 0 y = 0 }
-		size = { width = 600 height = 550 }
+		#orientation = lower_left
+		position = {x=-100 y=0}
+		size = { width = 50 height = 550 }	
 		clipping = no
 
 		#BACKGROUND
 		background = {
 			name = "background"
+			position = { x=-700 y=0 }
 			quadTextureSprite="GFX_inner_circle_decor_bg"
 			alwaystransparent = yes
 		}
@@ -36,7 +37,8 @@ guiTypes = {
 		#BACKGROUND SPOTLIGHT
 		background = {
 			name = "background_spotlight"
-			position = { x=23 y=24 }
+			###position = { x=23 y=24 }
+			position = { x=-350 y=0 }
 			quadTextureSprite="GFX_spotlight_overlay"
 			alwaystransparent = yes
 		}

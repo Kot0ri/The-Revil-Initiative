@@ -21,6 +21,12 @@ focus_tree = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI2_distance_our_officials_from_federation
+	}
+	mutually_exclusive = {
+		focus = SI2_growing_antifederation_sentiment
+	}
 	completion_reward = {
 	
 	}
@@ -35,6 +41,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	
 	completion_reward = {
 	
 	}
@@ -160,6 +167,32 @@ focus = {
 	prerequisite = { focus = SI2_cooperate_with_Zeon }
 }
 
+focus = {
+	id = SI2_work_with_granada
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		GRA = {
+			has_completed_focus = GRA_Invite_Zeon_officals
+		}
+	}
+	
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_cooperate_with_Zeon
+	prerequisite = { focus = SI2_cooperate_with_Zeon }
+	prerequisite = {
+		focus = SI2_invest_in_the_lunar_companies
+	}
+}
+
+
 
 focus = {
 	id = SI2_federation_contracts
@@ -206,6 +239,73 @@ focus = {
 	}
 	relative_position_id = SI2_federation_contracts
 	prerequisite = { focus = SI2_federation_contracts }
+}
+
+focus = {
+	id = SI2_armour_tests
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_work_directly_with_EFF
+	prerequisite = { focus = SI2_work_directly_with_EFF focus = SI2_joint_development_with_anaheim }
+}
+
+focus = {
+	id = SI2_ms_armament_development
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_armour_tests
+	prerequisite = { focus = SI2_armour_tests focus = SI2_joint_development_with_anaheim }
+}
+
+
+focus = {
+	id = SI2_navy_expansion_contract
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_work_directly_with_EFF
+	prerequisite = { focus = SI2_work_directly_with_EFF }
 }
 
 focus = {
@@ -275,8 +375,7 @@ focus = {
 	
 	}
 	relative_position_id = SI2_building_contracts
-	prerequisite = { focus = SI2_building_contracts }
-	prerequisite = { focus = SI2_seek_closer_side_relations }
+	prerequisite = { focus = SI2_building_contracts focus = SI2_seek_closer_side_relations  }
 }
 
 focus = {
@@ -1202,6 +1301,12 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI2_negotiations_with_federation_investors
+	}
+	mutually_exclusive = {
+		focus = SI2_growing_antifederation_sentiment
+	}
 	completion_reward = {
 	
 	}
@@ -1215,6 +1320,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI2_get_away_from_federationzeon_disagreements
 	}
 	completion_reward = {
 	
@@ -1324,9 +1432,15 @@ focus = {
 	icon = GFX_generic_suspend_constitution
 	cost = 2
 	x = 18
-	y = 0
+	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	prerequisite = {
+		focus = SI2_distance_our_officials_from_federation
+	}
+		mutually_exclusive = {
+		focus = SI2_seek_closer_side_relations
 	}
 	completion_reward = {
 		
@@ -1353,7 +1467,7 @@ focus = {
 	id = SI2_build_up_a_small_garrison
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = -2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1421,6 +1535,12 @@ focus = {
 	y = 0
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI2_distance_our_officials_from_federation
+	}
+	mutually_exclusive = {
+		focus = SI2_negotiations_with_federation_investors
 	}
 	completion_reward = {
 	
@@ -1549,7 +1669,7 @@ focus = {
 	id = SI2_backchannel_central
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = -2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1559,13 +1679,16 @@ focus = {
 	}
 	relative_position_id = SI2_offer_repairs_to_all_sides
 	prerequisite = { focus = SI2_offer_repairs_to_all_sides }
+	prerequisite = {
+		focus = SI2_red_tape_on_weapons
+	}
 }
 
 focus = {
 	id = SI2_spy_stories
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1597,7 +1720,7 @@ focus = {
 	id = SI2_policy_of_noninvolvement
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = -2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1

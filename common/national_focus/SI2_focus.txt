@@ -965,7 +965,7 @@ focus = {
 	id = SI2_minovsky_physics
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = -2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1115,6 +1115,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		is_in_faction_with = EFS
+	}
 	completion_reward = {
 		add_command_power = 50
 		army_experience = 50
@@ -1134,6 +1137,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		is_in_faction_with = EFS
+	}
 	completion_reward = {
 		every_army_leader = {
 			add_planning = 1
@@ -1152,6 +1158,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		is_in_faction_with = EFS
 	}
 	completion_reward = {
 

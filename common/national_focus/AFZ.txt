@@ -3434,4 +3434,25 @@ focus_tree = {
 	    }
         
     }
+
+	focus = {
+	    id = AFZ_Wartime_state_of_emergency
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = AFZ_Traitors_and_invaders
+		}
+		relative_position_id = AFZ_Traitors_and_invaders
+	    completion_reward = {
+	    }
+        
+    }
 }

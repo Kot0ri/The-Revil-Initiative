@@ -1,0 +1,29 @@
+ideas = {
+
+	country = {
+
+		Yashima_Group = {
+			
+			allowed = {
+				original_tag = SI2
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.10
+				cic_construction_boost = 0.2
+				line_change_production_efficiency_factor = 0.2
+				refit_ic_cost = -0.2
+				consumer_goods_factor = -0.1
+				research_speed_factor = 0.2
+			}
+		}
+
+			
+	}
+}

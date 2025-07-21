@@ -43,6 +43,194 @@ focus = {
 }
 
 focus = {
+	id = SI2_Yashima_investments
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	add_ideas = Yashima_Group
+	}
+	relative_position_id = SI2_building_contracts
+	prerequisite = { focus = SI2_building_contracts focus = SI2_colony_industrial_improvements }
+}
+
+focus = {
+	id = SI2_Yashima_company
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_Yashima_investments
+	prerequisite = { focus = SI2_Yashima_investments }
+}
+
+focus = {
+	id = SI2_Yashima_heavy_industrial
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_Yashima_investments
+	prerequisite = { focus = SI2_Yashima_investments }
+}
+
+focus = {
+	id = SI2_invest_in_ms_development
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = SI2_begin_development_of_ms
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_Yashima_heavy_industrial
+	prerequisite = { focus = SI2_Yashima_heavy_industrial }
+}
+
+focus = {
+	id = SI2_cooperate_with_Zeon
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = SI2_arms_deal_with_zeon
+		ZEO = {
+			has_completed_focus = ZEO_ms_project
+			NOT = {
+				has_completed_focus = ZEO_zaku_versus_zudah_competition
+			}
+		}
+	}
+	mutually_exclusive = {
+		focus = SI2_federation_contracts
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_invest_in_ms_development
+	prerequisite = { focus = SI2_invest_in_ms_development }
+	prerequisite = { focus = SI2_renegotiate_trade_deals }
+}
+
+focus = {
+	id = SI2_offsite_ms_testing
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		ABQ = {
+			has_completed_focus = ABQ_mobile_suit_development_grounds
+		}
+	}
+	
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_cooperate_with_Zeon
+	prerequisite = { focus = SI2_cooperate_with_Zeon }
+}
+
+
+focus = {
+	id = SI2_federation_contracts
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = SI2_seek_accommodation_with_earths_government
+	}
+	mutually_exclusive = {
+		focus = SI2_cooperate_with_Zeon
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_invest_in_ms_development
+	prerequisite = { focus = SI2_invest_in_ms_development }
+
+}
+
+focus = {
+	id = SI2_work_directly_with_EFF
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		EFS = {
+			has_completed_focus = efsf_v_project
+		}
+	}
+	mutually_exclusive = {
+		focus = SI2_joint_development_with_anaheim
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_federation_contracts
+	prerequisite = { focus = SI2_federation_contracts }
+}
+
+focus = {
+	id = SI2_joint_development_with_anaheim
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = SI2_invest_in_the_lunar_companies
+	}
+	mutually_exclusive = {
+		focus = SI2_work_directly_with_EFF
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_federation_contracts
+	prerequisite = { focus = SI2_federation_contracts }
+}
+
+focus = {
 	id = SI2_full_federation_support
 	icon = GFX_generic_suspend_constitution
 	cost = 2
@@ -300,6 +488,22 @@ focus = {
 }
 
 focus = {
+	id = SI2_colony_industrial_improvements
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_begin_expansion_of_colony_industries
+	prerequisite = { focus = SI2_begin_expansion_of_colony_industries }
+}
+
+focus = {
 	id = SI2_expand_colony_shipping
 	icon = GFX_generic_suspend_constitution
 	cost = 2
@@ -319,7 +523,7 @@ focus = {
 	id = SI2_fundraise_new_building_projects
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 3
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -862,7 +1066,7 @@ focus = {
 	id = SI2_expand_the_service
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 5
+	x = 4
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -894,7 +1098,7 @@ focus = {
 	id = SI2_draw_up_a_new_draft_system
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 8
+	x = 6
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -942,7 +1146,7 @@ focus = {
 	id = SI2_study_ms_designs
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -952,6 +1156,9 @@ focus = {
 	}
 	relative_position_id = SI2_organizational_restructure
 	prerequisite = { focus = SI2_organizational_restructure }
+	prerequisite = {
+		focus = SI2_antims_warfare
+	}
 }
 
 focus = {

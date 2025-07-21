@@ -989,13 +989,19 @@ focus = {
 }
 
 focus = {
-	id = SI5_texas_colony_investments
+	id = SI5_texas_colony_plan
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		is_in_faction_with = SI2
+		SI2 = {
+			has_completed_focus = SI2_Yashima_company
+		}
 	}
 	completion_reward = {
 	
@@ -1005,7 +1011,7 @@ focus = {
 }
 
 focus = {
-	id = SI5_inivte_the_mass_family
+	id = SI5_invite_the_mass_family
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
@@ -1016,8 +1022,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = SI5_texas_colony_investments
-	prerequisite = { focus = SI5_texas_colony_investments }
+	relative_position_id = SI5_texas_colony_plan
+	prerequisite = { focus = SI5_texas_colony_plan }
 }
 
 focus = {

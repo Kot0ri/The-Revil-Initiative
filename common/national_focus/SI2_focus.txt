@@ -1171,6 +1171,44 @@ focus = {
 }
 
 focus = {
+	id = SI2_Hatte_Special_Assualt_Force
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		is_in_faction_with = EFS
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = SI2_designated_army_roles
+	prerequisite = { focus = SI2_designated_army_roles focus = SI2_defense_force_intergration_with_efsf_stratcomm }
+}
+
+focus = {
+	id = SI2_space_assualt_battalion
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		is_in_faction_with = EFS
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = SI2_Hatte_Special_Assualt_Force
+	prerequisite = { focus = SI2_Hatte_Special_Assualt_Force }
+}
+
+focus = {
 	id = SI2_expand_the_service
 	icon = GFX_generic_suspend_constitution
 	cost = 2

@@ -701,7 +701,7 @@ focus = {
 	id = AXS_build_up_a_defense_fleet
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = 2
+	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -718,7 +718,7 @@ focus = {
 	id = AXS_axis_advance_fleet
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -887,17 +887,20 @@ focus = {
 	id = AXS_mobile_armour_project
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = -0.7
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_new_ms_development
 	}
 	completion_reward = {
 	
 	}
 	relative_position_id = AXS_military_preperations_to_fight_again
 	prerequisite = {focus = AXS_military_preperations_to_fight_again}
-	prerequisite = {focus = AXS_new_ms_development}
+	
 }
 
 focus = {
@@ -973,7 +976,7 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 10
 	x = 1
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -984,11 +987,12 @@ focus = {
 	prerequisite = {focus = AXS_axis_ms_project}
 }
 
+
 focus = {
 	id = AXS_transformable_ms_theory
 	icon = GFX_goal_general_meeting
 	cost = 1
-	x = 1
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1017,7 +1021,7 @@ focus = {
 }
 
 focus = {
-id = AXS_Gundamium_Upsilon_Alloy_Project
+id = AXS_Gundarium_Epsilon_Alloy_Project
 icon = GFX_goal_general_meeting
 cost = 3
 x = 0
@@ -1030,6 +1034,7 @@ completion_reward = {
 }
 relative_position_id = AXS_GAZA_line
 prerequisite = {focus = AXS_GAZA_line}
+prerequisite = {focus = AXS_gundarium_gamma_research }
 }
 
 focus = {
@@ -1052,7 +1057,23 @@ focus = {
 	id = AXS_newtype_use_ms
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = 0
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_technological_improvements
+	prerequisite = {focus = AXS_technological_improvements}
+}
+
+focus = {
+	id = AXS_gundarium_gamma_research
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1094,7 +1115,7 @@ focus = {
 	}
 	relative_position_id = AXS_next_generation_newtype_use_ms_systems
 	prerequisite = {focus = AXS_next_generation_newtype_use_ms_systems}
-	prerequisite = {focus = AXS_Gundamium_Upsilon_Alloy_Project}
+	prerequisite = {focus = AXS_Gundarium_Epsilon_Alloy_Project}
 }
 
 focus = {
@@ -1102,6 +1123,22 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 5
 	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_next_generation_ms
+	prerequisite = {focus = AXS_next_generation_ms}
+}
+
+focus = {
+	id = AXS_gundarium_gamma_implementation
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1

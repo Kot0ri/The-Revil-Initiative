@@ -717,6 +717,175 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VBC_ramp_up_development_efforts
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		relative_position_id = VBC_experimental_ms_squadron
+		prerequisite = { focus = VBC_experimental_ms_squadron }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_cooperate_with_axis
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = AXS
+		}
+		mutually_exclusive = {
+			focus = VBC_focus_on_cutting_edge_designs
+		}
+		relative_position_id = VBC_ramp_up_development_efforts
+		prerequisite = { focus = VBC_ramp_up_development_efforts }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_joint_development_team
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = AXS
+		}
+		
+		relative_position_id = VBC_cooperate_with_axis
+		prerequisite = { focus = VBC_cooperate_with_axis }
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = VBC_armour_improvement_project
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = AXS
+		}
+		
+		relative_position_id = VBC_cooperate_with_axis
+		prerequisite = { focus = VBC_cooperate_with_axis focus = VBC_focus_on_cutting_edge_designs }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_gundarium_gamma_application
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = AXS
+			AXS = {
+				has_completed_focus = AXS_gundarium_gamma_research
+			}
+		}
+		
+		relative_position_id = VBC_joint_development_team
+		prerequisite = { focus = VBC_joint_development_team  }
+		prerequisite = { focus = VBC_armour_improvement_project }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_steal_epsilon_data
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			country_exists = AXS
+			AXS = {
+				has_completed_focus = AXS_Gundarium_Epsilon_Alloy_Project
+			}
+		}
+		
+		relative_position_id = VBC_gundarium_gamma_application
+		prerequisite = { focus = VBC_gundarium_gamma_application  }
+		prerequisite = { focus = VBC_gundarium_gamma_application }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_focus_on_cutting_edge_designs
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = VBC_cooperate_with_axis
+		}
+		relative_position_id = VBC_ramp_up_development_efforts
+		prerequisite = { focus = VBC_ramp_up_development_efforts }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_showcase_next_gen_designs
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		
+		relative_position_id = VBC_experimental_ms_squadron
+		prerequisite = {focus = VBC_privatized_security_fleet focus = VBC_experimental_ms_squadron }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = VBC_absorb_zeon_companies
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
@@ -821,17 +990,46 @@ focus_tree = {
 		}
 	}	
 
+	focus = {
+		id = VBC_cooperation_with_jupiter
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 28
+		y = 16
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			TIT = {
+				exists = no
+			}
+			country_exists = JUP
+			has_completed_focus = VBC_privatized_security_fleet
+		}
+		mutually_exclusive = {
+			focus = VBC_rise_of_the_AEUG
+		}
+		completion_reward = {
+		
+		}
+	}
+
 
 	focus = {
 		id = VBC_rise_of_the_AEUG
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
 		x = 20
-		y = 20
+		y = 16
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+			country_exists = TIT
+			has_country_leader = VBC_melanie_hue_carbine
+		}
+		mutually_exclusive = {
+			focus = VBC_cooperation_with_jupiter
 		}
 		completion_reward = {
 		
@@ -1050,6 +1248,7 @@ focus = {
 		}
 		available = {
 			has_completed_focus = VBC_arrivals_from_Axis
+			has_completed_focus = VBC_focus_on_cutting_edge_designs
 		}
 		completion_reward = {
 		
@@ -1066,7 +1265,9 @@ focus = {
 			factor = 1
 		}
 		available = {
-			has_completed_focus = VBC_arrivals_from_Axis
+			NOT = {
+				has_completed_focus = VBC_gundarium_gamma_application
+			}
 		}
 		relative_position_id = VBC_begin_development_in_secret
 		prerequisite = {focus = VBC_begin_development_in_secret}

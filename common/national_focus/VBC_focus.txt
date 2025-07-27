@@ -1235,6 +1235,26 @@ focus = {
 	}
 }
 
+focus = {
+		id = VBC_utilize_axis_conenction
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 3
+		x = -6
+		y = 1
+		relative_position_id = VBC_rise_of_the_AEUG
+		prerequisite = {focus = VBC_rise_of_the_AEUG}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = VBC_arrivals_from_Axis
+			has_completed_focus = VBC_joint_development_team
+		}
+		completion_reward = {
+		
+		}
+	}
+
 	focus = {
 		id = VBC_begin_development_in_secret
 		icon = GFX_goal_zeon_mobile_headquarters
@@ -1265,9 +1285,7 @@ focus = {
 			factor = 1
 		}
 		available = {
-			NOT = {
-				has_completed_focus = VBC_gundarium_gamma_application
-			}
+			
 		}
 		relative_position_id = VBC_begin_development_in_secret
 		prerequisite = {focus = VBC_begin_development_in_secret}
@@ -1280,13 +1298,13 @@ focus = {
 		id = VBC_Zeta_project
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
-		x = 0
+		x = -2
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
 		relative_position_id = VBC_acquire_new_armor_data
-		prerequisite = {focus = VBC_acquire_new_armor_data}
+		prerequisite = {focus = VBC_acquire_new_armor_data focus = VBC_utilize_axis_conenction }
 		completion_reward = {
 		
 		}

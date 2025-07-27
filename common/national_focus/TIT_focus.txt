@@ -948,6 +948,47 @@ focus = {
 					}
 				}
 	
+		focus = {
+				id = TIT_PMX_series
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 4
+				y = 1
+				relative_position_id = TIT_Marasai_Development
+				prerequisite = {
+				focus = TIT_Marasai_Development
+				}
+				available = {
+					has_completed_focus = TIT_man_from_jupiter
+				}
+				ai_will_do = {
+				factor = 1
+				}
+				completion_reward = {
+					}
+				}
+
+		focus = {
+				id = TIT_variable_TMS/TMA_taskforce
+				icon = GFX_goal_efsf_mobile_headquarters
+				cost = 5
+				x = 0
+				y = 1
+				relative_position_id = TIT_PMX_series
+				prerequisite = {
+				focus = TIT_PMX_series
+				}
+				available = {
+					has_completed_focus = TIT_in-house_development
+				}
+				ai_will_do = {
+				factor = 1
+				}
+				mutually_exclusive = { focus = TIT_Barzam_Development}
+				mutually_exclusive = { focus = TIT_Griffon_Development}
+				completion_reward = {
+					}
+				}
 
 		focus = {
 			id = TIT_Barzam_Development
@@ -966,6 +1007,7 @@ focus = {
 			factor = 1
 			}
 			mutually_exclusive = { focus = TIT_Griffon_Development}
+			mutually_exclusive = { focus = TIT_variable_TMS/TMA_taskforce }
 			completion_reward = {
 				}
 			}
@@ -987,6 +1029,7 @@ focus = {
 				factor = 1
 				}
 				mutually_exclusive = { focus = TIT_Barzam_Development}
+				mutually_exclusive = { focus = TIT_variable_TMS/TMA_taskforce }
 				completion_reward = {
 					}
 				}

@@ -614,6 +614,30 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GRA_overthrow_kycilia_loyalists
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = GRA_leave_for_A_Baoa_Qu
+		prerequisite = {focus = GRA_leave_for_A_Baoa_Qu }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_character = GRA_killing
+		}
+		allow_branch = {
+			has_completed_focus = GRA_loyalty_to_the_supreme_commander
+		}
+		mutually_exclusive = {
+			focus = GRA_Battle_of_Gel_Dorva
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = GRA_Battle_of_Gel_Dorva
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -626,6 +650,9 @@ focus_tree = {
 		}
 		available = {
 			
+		}
+		mutually_exclusive = {
+			focus = GRA_overthrow_kycilia_loyalists
 		}
 		completion_reward = {
 		}
@@ -1185,6 +1212,197 @@ focus_tree = {
 			focus = GRA_pro-Zabi_government
 		}
 		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = GRA_kycilias_court
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 20
+		y = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+		allow_branch = {
+			has_completed_focus = GRA_kycilias_dominion
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = GRA_mquves_acension
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_kycilias_court
+		prerequisite = {focus = GRA_kycilias_court}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_character = GRA_mquve
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GRA_increase_industrial_control
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_mquves_acension
+		prerequisite = {focus = GRA_mquves_acension}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GRA_augment_united_maintaince_plan
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_increase_industrial_control
+		prerequisite = {focus = GRA_increase_industrial_control}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GRA_rugens_acension
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = GRA_kycilias_court
+		prerequisite = {focus = GRA_kycilias_court}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+
+	focus = {
+		id = GRA_reinforce_city_defense_plan
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_rugens_acension
+		prerequisite = {focus = GRA_rugens_acension}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_character = GRA_mquve
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GRA_form_supplementary_defense_units
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_reinforce_city_defense_plan
+		prerequisite = {focus = GRA_reinforce_city_defense_plan}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_character = GRA_mquve
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GRA_killings_acension
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = GRA_kycilias_court
+		prerequisite = {focus = GRA_kycilias_court}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_character = GRA_killing
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GRA_improve_special_forces_operations
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_killings_acension
+		prerequisite = {focus = GRA_killings_acension}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GRA_loyalty_to_the_supreme_commander
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_improve_special_forces_operations
+		prerequisite = {focus = GRA_improve_special_forces_operations}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			
 		}
 	}
 }

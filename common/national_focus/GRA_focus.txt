@@ -492,6 +492,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GRA_form_kycilia_youth_forces
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = GRA_loyalty_to_kycilia
+		prerequisite = {focus = GRA_loyalty_to_kycilia}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = GRA_Plot_against_Gihren
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -950,7 +968,7 @@ focus_tree = {
 		id = GRA_expansion_of_kycilia_agency
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = -6
+		x = -7
 		y = 1
 		relative_position_id = GRA_kycilias_dominion
 		prerequisite = {focus = GRA_kycilias_dominion}
@@ -980,12 +998,15 @@ focus_tree = {
 		id = GRA_keep_tabs_on_unruly_citizens
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GRA_New_Headquaters
 		prerequisite = {focus = GRA_New_Headquaters}
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus = GRA_special_forces_prioritization
 		}
 		completion_reward = {
 		}
@@ -1006,12 +1027,45 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = GRA_special_forces_prioritization
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = GRA_New_Headquaters
+		prerequisite = {focus = GRA_New_Headquaters}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = GRA_keep_tabs_on_unruly_citizens
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = GRA_send_cyclops_to_earth
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = GRA_special_forces_prioritization
+		prerequisite = {focus = GRA_special_forces_prioritization}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
 	
 	focus = {
 		id = GRA_Operation_Rubicon
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = GRA_spy_on_Von_Braun
 		prerequisite = {focus = GRA_spy_on_Von_Braun}

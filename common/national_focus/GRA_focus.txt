@@ -1016,7 +1016,7 @@ focus_tree = {
 		id = GRA_spy_on_Von_Braun
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GRA_keep_tabs_on_unruly_citizens
 		prerequisite = {focus = GRA_keep_tabs_on_unruly_citizens}
@@ -1045,6 +1045,22 @@ focus_tree = {
 		}
 	}
 
+focus = {
+		id = GRA_cyclops_expansion
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = GRA_special_forces_prioritization
+		prerequisite = {focus = GRA_special_forces_prioritization}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		}
+	}
+
 	focus = {
 		id = GRA_send_cyclops_to_earth
 		icon = GFX_goal_efsf_mobile_headquarters
@@ -1068,7 +1084,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GRA_spy_on_Von_Braun
-		prerequisite = {focus = GRA_spy_on_Von_Braun}
+		prerequisite = {focus = GRA_spy_on_Von_Braun focus = GRA_cyclops_expansion }
 		ai_will_do = {
 			factor = 1
 		}

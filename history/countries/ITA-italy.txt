@@ -1,0 +1,59 @@
+capital = 935
+oob = "BBQ_0075"
+
+75.1.1 = {
+	set_global_flag = start_is_uc0075
+}
+
+set_country_flag = zeon_country
+# Starting tech
+set_technology = {
+}
+
+set_research_slots = 3
+set_convoys = 300
+starting_train_buffer = 2
+set_fuel_ratio = 0.8
+set_stability = 0.7
+set_war_support = 0.55
+
+set_cosmetic_tag = ZEO_EFS
+
+add_ideas = {
+	limited_exports
+	limited_conscription
+	partial_economic_mobilisation
+	customs_duty_6
+	oversea_army_6
+}
+
+set_variable = { newtype_accepted_status = 2 }
+set_variable = {
+	var = ms_flight_test
+	value = 1
+}
+
+#Diplomacy
+add_to_tech_sharing_group = zeon_research
+
+
+set_popularities = {
+	supremacist = 55
+	contolism = 0
+	democratic = 0
+	military_government = 45
+	aristocracy = 0
+	corporatism = 0
+	communism = 0
+}
+set_politics = {
+	ruling_party = supremacist
+	last_election = "68.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+#Leaders
+#Major Killing
+#Ruling Council
+#Elected post-war leader

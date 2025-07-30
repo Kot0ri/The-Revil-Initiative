@@ -1,0 +1,331 @@
+search_filter_prios = {
+	FOCUS_FILTER_POLITICAL = 1010
+	
+	FOCUS_FILTER_RESEARCH = 522
+	
+	FOCUS_FILTER_INDUSTRY = 509
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+	FOCUS_FILTER_BALANCE_OF_POWER = 200
+	FOCUS_FILTER_SOV_POLITICAL_PARANOIA = 111
+	FOCUS_FILTER_PROPAGANDA = 110
+	FOCUS_FILTER_MISSIOLINI = 110
+	FOCUS_FILTER_ARMY_XP = 103
+	FOCUS_FILTER_NAVY_XP = 102
+	FOCUS_FILTER_AIR_XP = 101
+}
+
+focus_tree = {
+    id = ITA
+            
+	country = {
+		factor = 0
+		modifier = {
+		    add = 10
+			tag = ITA
+		}
+	}
+            
+	continuous_focus_position = { 
+		x = 0
+		y = 1000
+    }
+
+	focus = {
+	    id = ITA_revitalize_the_economy
+	    icon = GFX_focus_ITA_northern_industry
+	    cost = 1
+	    x = 6
+	    y = 0
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }    
+    }
+
+    focus = {
+	    id = ITA_rise_up_against_the_federation
+	    icon = GFX_focus_ITA_italian_irredentism
+	    cost = 1
+	    x = 20
+	    y = 0
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }
+        
+    }
+
+    focus = {
+	    id = ITA_accept_zeon_leadership
+	    icon = GFX_focus_befriend_italy
+	    cost = 5
+	    x = -2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = ITA_allies_not_servants
+		}
+		search_filters = {FOCUS_FILTER_POLITICAl}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_rise_up_against_the_federation
+		prerequisite = { focus = ITA_rise_up_against_the_federation }
+
+    }
+
+	   focus = {
+	    id = ITA_cyclops_reinforcements
+	    icon = GFX_goal_MS_special_forces
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			GRA = {
+				has_completed_focus = GRA_send_cyclops_to_earth
+			}
+		}
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_accept_zeon_leadership
+		prerequisite = { focus = ITA_accept_zeon_leadership }
+    }
+
+	focus = {
+	    id = ITA_special_MS_assualt_battalions
+	    icon = GFX_goal_MS_special_forces
+	    cost = 5
+	    x = 1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = ITA_infantry_assualt_divisions
+		}
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_cyclops_reinforcements
+		prerequisite = { focus = ITA_cyclops_reinforcements }
+
+    }
+
+	focus = {
+	    id = ITA_zeon_training_program
+	    icon = GFX_goal_zeon_mobile_headquarters
+	    cost = 5
+	    x = -2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			
+		}
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_accept_zeon_leadership
+		prerequisite = { focus = ITA_accept_zeon_leadership }
+    }
+
+	focus = {
+	    id = ITA_infantry_assualt_divisions
+	    icon = GFX_goal_zeon_mobile_headquarters
+	    cost = 5
+	    x = -1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			
+		}
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+		mutually_exclusive = {
+			focus = ITA_special_MS_assualt_battalions
+		}
+        relative_position_id = ITA_cyclops_reinforcements
+		prerequisite = { focus = ITA_zeon_training_program }
+		prerequisite = { focus = ITA_cyclops_reinforcements }
+    }
+
+		focus = {
+	    id = ITA_zeon_resource_deal
+	    icon = GFX_goal_generic_trade
+	    cost = 5
+	    x = -4
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			
+		}
+		search_filters = {FOCUS_FILTER_RESOURCE}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_accept_zeon_leadership
+		prerequisite = { focus = ITA_accept_zeon_leadership }
+
+    }
+
+	focus = {
+	    id = ITA_allies_not_servants
+	    icon = GFX_focus_generic_italy_first
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = ITA_accept_zeon_leadership
+		}
+		search_filters = {FOCUS_FILTER_POLITICAl}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_rise_up_against_the_federation
+		prerequisite = { focus = ITA_rise_up_against_the_federation }
+
+    }
+
+	focus = {
+	    id = ITA_call_up_addtional_forces
+	    icon = GFX_focus_ITA_peasants_rise
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = ITA_formalize_military_units
+		}
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_allies_not_servants
+		prerequisite = { focus = ITA_allies_not_servants }
+
+    }
+
+	focus = {
+	    id = ITA_formalize_military_units
+	    icon = GFX_focus_ITA_strengthen_ascari_corps
+	    cost = 5
+	    x = 4
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+		}
+		mutually_exclusive = {
+			focus = ITA_call_up_addtional_forces
+		}
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_allies_not_servants
+		prerequisite = { focus = ITA_allies_not_servants }
+    }
+
+	focus = {
+	    id = ITA_encourage_bold_leadership
+	    icon = GFX_focus_ITA_cavalry_charge
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+		}
+		
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_call_up_addtional_forces
+		prerequisite = { focus = ITA_call_up_addtional_forces }
+
+    }
+
+	focus = {
+	    id = ITA_form_policical_militia
+	    icon = GFX_focus_ITA_blackshirts
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+		}
+		
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_call_up_addtional_forces
+		prerequisite = { focus = ITA_call_up_addtional_forces focus = ITA_formalize_military_units }
+
+    }
+
+	focus = {
+	    id = ITA_standardize_equipment
+	    icon = GFX_focus_ITA_bersaglieri
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+		}
+		
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_formalize_military_units
+		prerequisite = {  focus = ITA_formalize_military_units }
+
+    }
+
+	focus = {
+	    id = ITA_operation_corsican_bandit
+	    icon = GFX_focus_ITA_alpine_division
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+		}
+		
+		search_filters = {FOCUS_FILTER_MIlITARY}
+	    completion_reward = {
+	    }
+        relative_position_id = ITA_special_MS_assualt_battalions
+		prerequisite = {  focus = ITA_special_MS_assualt_battalions focus = ITA_encourage_bold_leadership }
+
+    }
+}

@@ -460,6 +460,42 @@ focus_tree = {
 		}
 	}
 
+focus = {
+		id = VBC_seize_control_of_granada
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 4
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = VBC_naval_development_plan
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		prerequisite = {
+			focus = VBC_seize_control_of_granada
+		}
+		relative_position_id = VBC_seize_control_of_granada
+		completion_reward = {
+		
+		}
+	}	
+
 	focus = {
 		id = VBC_garden_of_thorns_revitalization_project
 		icon = GFX_goal_zeon_mobile_headquarters
@@ -553,6 +589,58 @@ focus_tree = {
 		}
 	}
 
+focus = {
+		id = VBC_autonomous_ai
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_learning_computer
+		}
+		prerequisite = {
+			focus = VBC_ai_development_plan
+		}
+		relative_position_id = VBC_learning_computer
+		mutually_exclusive = {
+			focus = VBC_assistive_ai
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_assistive_ai
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_learning_computer
+		}
+		prerequisite = {
+			focus = VBC_ai_development_plan
+		}
+		mutually_exclusive = {
+			focus = VBC_autonomous_ai
+		}
+		relative_position_id = VBC_learning_computer
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
 	focus = {
 		id = VBC_unmanned_corps_project
 		icon = GFX_goal_zeon_mobile_headquarters
@@ -566,6 +654,7 @@ focus_tree = {
 		prerequisite = {focus = VBC_ai_development_plan}
 		prerequisite = {focus = VBC_coordinate_with_federal_command }
 		available = {
+			
 		}
 		completion_reward = {
 		

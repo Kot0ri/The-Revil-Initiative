@@ -391,10 +391,70 @@ focus = {
 	}
 
 	focus = {
-		id = EFG_seek_to_undermine_local_rulers
+		id = EFG_navigate_consortium_influence
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 2
+		y = 1
+		prerequisite = { focus = EFG_combat_the_rise_of_anti-federation_partisans }
+		relative_position_id = EFG_combat_the_rise_of_anti-federation_partisans
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = EFG_anaheim_leads_the_way
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = o
+		y = 1
+		prerequisite = { focus = EFG_navigate_consortium_influence }
+		relative_position_id = EFG_navigate_consortium_influence
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		mutually_exclusive = {
+			focus = EFG_allow_free_market_principle
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = EFG_allow_free_market_principle
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = { focus = EFG_navigate_consortium_influence }
+		relative_position_id = EFG_navigate_consortium_influence
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_anaheim_leads_the_way
+		}
+		search_filters = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_seek_to_undermine_local_rulers
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 6
 		y = 1
 		prerequisite = { focus = EFG_combat_the_rise_of_anti-federation_partisans }
 		relative_position_id = EFG_combat_the_rise_of_anti-federation_partisans
@@ -429,7 +489,7 @@ focus = {
 		id = EFG_reinforce_key_locations
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 4
+		x = 8
 		y = 1
 		prerequisite = { focus = EFG_combat_the_rise_of_anti-federation_partisans }
 		relative_position_id = EFG_combat_the_rise_of_anti-federation_partisans
@@ -445,7 +505,7 @@ focus = {
 		id = EFG_detangling_intelligence_and_policing
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 8
+		x = 10
 		y = 1
 		prerequisite = { focus = EFG_combat_the_rise_of_anti-federation_partisans }
 		relative_position_id = EFG_combat_the_rise_of_anti-federation_partisans

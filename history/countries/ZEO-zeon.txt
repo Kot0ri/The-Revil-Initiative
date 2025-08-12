@@ -1,5 +1,5 @@
 ﻿capital = 1056
-oob = "ZEO_UC0075"
+oob = "ZEO_0074"
 
 set_country_flag = zeon_country
 75.1.1 = {
@@ -168,100 +168,6 @@ add_opinion_modifier = {
 	modifier = efsf_zeon_rival
 }
 
-78.1.1 = {
-	add_named_threat = {
-		name = zeon_0078_threat
-		threat = 15
-	}
-	clr_global_flag = start_is_uc0075
-	set_global_flag = start_is_uc0078
-	set_global_flag = zeon_granada_mayer_death
-	set_global_flag = zeon_side6_non_aggression
-	set_global_flag = dozle_marriage
-	set_global_flag = zeon_discuss
-	set_global_flag = minovsky_discuss
-	set_global_flag = ms_discuss
-	set_global_flag = ms_discuss2
-	set_global_flag = computing_discuss
-	set_country_flag = operation_drop_earth_is_yes
-	set_country_flag = operation_british_is_yes
-	set_country_flag = jupiter_fleet_on
-  set_country_flag = jupiter_fleet_is_back
-	set_variable = { var = how_many_drop_earth value = 1 }
-	set_variable = { var = how_many_exercise value = 2 }
-	oob = "ZEO_UC0078"
-	set_stability = 0.8
-	set_war_support = 0.9
-	set_research_slots = 4
-	set_convoys = 300
-
-	set_technology = {
-		infantry_weapons2 = 1
-		support_weapons1 = 1
-		infantry_at = 1
-		ZEO_mbt2_tech = 1
-		ymt05_tech = 1
-		ZEO_fighter_tech = 1
-		ZEO_assault_ship1_tech = 1
-		ZEO_space_hv_battleship1_tech = 1
-		ZEO_space_cruiser1_tech = 1
-		ZEO_space_cruiser2_tech = 1
-		ZEO_space_fv_cruiser1_tech = 1
-		ZEO_space_fv_cruiser2_tech = 1
-		ZEO_ms_weapon_machinegun_02_tech = 1
-		ZEO_ms_weapon_bazooka_01_tech = 1
-		ms06_tech = 1
-		ms06_f_tech = 1
-		ms06_s_tech = 1
-		ms06_e_tech = 1
-		ms06_j_tech = 1
-		ms06_d_tech = 1
-		bounded_battle = 1
-		transfer_of_command = 1
-		ms_intensive_operation = 1
-		ms06_m_tech = 1
-		msm03_tech = 1
-		ZEO_mobilesuit_torpedo_1 = 1
-		visible_light_communication2 = 1
-		minovsky_dissemination2 = 1
-		mpiws1 = 1
-		nuclear_reactor2 = 1
-		ambac2 = 1
-		simulator1 = 1
-		improved_machine_tools = 1
-		improved_equipment_conversion = 1
-		advanced_machine_tools = 1
-		concentrated_industry = 1
-		concentrated_industry2 = 1
-		construction1 = 1
-		construction2 = 1
-		construction3 = 1
-		excavation1 = 1
-		excavation2 = 1
-	}
-	remove_ideas = {
-		economic_sanctions
-		colony_country
-	}
-	add_ideas = {
-		brothers_quarrel
-		economic_sanctions2
-		colony_country4
-		zeon_medal_of_cross
-		defense_military_academy2
-		zeon_puneemunde_institution
-		closed_economy
-		extensive_conscription
-		war_economy
-		cecilia_irene
-		kycilia_zabi
-		albert_schacht
-		zeonic
-		mmp
-		kia
-		jupiter_fleet_get_resource
-	}
-	clr_country_flag = minovsky_is_ours
 
 
 79.4.1 = {

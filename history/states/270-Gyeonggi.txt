@@ -1,0 +1,29 @@
+state=
+{
+	id=270
+	name="Gyeonggi"
+	manpower = 40
+	state_category = large_city
+	
+	history=
+	{
+		owner = EFG
+		add_core_of = EFG
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			 11992 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			7125 10
+		}
+	}
+	provinces={
+		7175 11992 7204 10115 1100 7221 7125 
+	}
+
+	local_supplies=0.0 
+}

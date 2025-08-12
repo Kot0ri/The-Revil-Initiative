@@ -1,24 +1,27 @@
+
 state={
-	id=726
-	name="STATE_726"
-	manpower=123214
-	state_category = small_island
+	id=641
+	name="Hwanghae"
+	manpower=105786
+	state_category = city
 
 	history={
-		owner = EFS
-		add_core_of = EFS
+		owner = EFG
+		add_core_of = EFG
 		buildings = {
 			infrastructure = 2
-			7290 = {
+			air_base = 1
+			12148 = {
 				naval_base = 1
 			}
 		}
 		victory_points = {
-			7290 1
+			4052 5
 		}
 	}
+
 	provinces={
-		7290 13080 
+		 4052
 	}
 
 	local_supplies=0.0 

@@ -1,0 +1,76 @@
+
+state={
+	id=1040
+	name="STATE_1040"
+  resources={
+		aluminium=20.000
+		tungsten=15.000
+		chromium=15.000
+		steel=70.000
+		titanium=5.000
+	}
+
+	history={
+		owner = ZEO
+		controller = ZEO
+		buildings = {
+			infrastructure = 2
+			arms_factory = 15
+			industrial_complex = 6
+			synthetic_refinery = 2
+			dockyard = 7
+			fuel_silo = 1
+			13508 = {
+				naval_base = 5
+				coastal_bunker = 1
+
+			}
+			13518 = {
+				coastal_bunker = 1
+
+			}
+			13521 = {
+				bunker = 1
+
+			}
+			13516 = {
+				bunker = 1
+
+			}
+			13493 = {
+				coastal_bunker = 1
+
+			}
+			anti_air_building = 1
+
+		}
+		add_core_of = ZEO
+		78.1.1 = {
+			buildings = {
+				arms_factory = 23
+				industrial_complex = 7
+				fuel_silo = 2
+
+			}
+
+		}
+		79.1.1 = {
+			buildings = {
+				arms_factory = 26
+				industrial_complex = 8
+				fuel_silo = 3
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		13493 13497 13500 13508 13516 13518 13521
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=asteroid
+	local_supplies=15.0
+}

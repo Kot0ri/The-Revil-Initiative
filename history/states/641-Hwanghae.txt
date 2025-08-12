@@ -9,9 +9,11 @@ state={
 		owner = EFG
 		add_core_of = EFG
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 2
 			air_base = 1
-			12148 = {
+			7155 = {
 				naval_base = 1
 			}
 		}
@@ -21,7 +23,7 @@ state={
 	}
 
 	provinces={
-		 4052
+		 4052 10065 4107 1003 7155 11915 
 	}
 
 	local_supplies=0.0 

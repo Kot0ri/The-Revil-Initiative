@@ -2719,6 +2719,53 @@ focus = {
 }
 
 focus = {
+	id = efsf_reinforce_earth_command
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_deal_with_warlordism
+	}
+	mutually_exclusive = {
+		focus = efsf_reorganize_fleet_command
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_deal_with_warlordism
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_buildup_north_america_defenses
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reinforce_earth_command
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_reinforce_earth_command
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_1st_battle_of_axis
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
@@ -2778,7 +2825,33 @@ focus = {
 	available = {
 	
 	}
+	mutually_exclusive = {
+		focus = efsf_reinforce_earth_command
+	}
 	relative_position_id = efsf_make_underground_contacts
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_intergrate_zeon_asteroids
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reorganize_fleet_command
+	}
+	mutually_exclusive = {
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_reorganize_fleet_command
 	completion_reward = {
 	
 	}
@@ -2903,6 +2976,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
 	}
 	prerequisite = {
 		focus = efsf_begin_post_war_military_reconstruction
@@ -3286,8 +3362,8 @@ focus = {
 	id = efsf_move_hq_to_cheyenne_base
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 10
-	x = 0
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3296,6 +3372,9 @@ focus = {
 	}
 	available = {
 	country_exists = TIT
+	}
+	mutually_exclusive = {
+		focus = efsf_move_hq_to_new_guinea
 	}
 	relative_position_id = efsf_high_command_machinations
 	completion_reward = {
@@ -3306,10 +3385,10 @@ focus = {
 }
 
 focus = {
-	id = efsf_march_of_the_reformists
-	icon = GFX_goal_elenism
+	id = efsf_move_hq_to_new_guinea
+	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 10
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3318,7 +3397,166 @@ focus = {
 		focus = efsf_high_command_machinations
 	}
 	available = {
+	country_exists = TIT
+	}
+	mutually_exclusive = {
+		focus = efsf_move_hq_to_cheyenne_base
+	}
+	relative_position_id = efsf_high_command_machinations
+	completion_reward = {
+	set_capital = {
+		state = 381
+	}
+	}
+}
+
+focus = {
+	id = efsf_reorganize_remnants_of_revils_faction
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_high_command_machinations
+	}
+	available = {
+	EFS = {
+		NOT = {
+				has_character = EFS_johann_a_revil
+		}
+	}
+	}
+	relative_position_id = efsf_high_command_machinations
+	completion_reward = {
 	
+	}
+}
+
+focus = {
+	id = efsf_kowen_takes_lead
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reorganize_remnants_of_revils_faction
+	}
+	available = {
+	}
+	bypass = {
+		EFG = {
+			has_character = EFG_johann_a_revil
+		}
+	}
+	mutually_exclusive = {
+		focus = efsf_oxner_takes_lead
+	}
+	relative_position_id = efsf_reorganize_remnants_of_revils_faction
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_reinforce_ties_with_anaheim
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_kowen_takes_lead
+	}
+	available = {
+		has_completed_focus = efsf_0083_reconstruction_plan
+	}
+	relative_position_id = efsf_kowen_takes_lead
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_oxner_takes_lead
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reorganize_remnants_of_revils_faction
+	}
+	available = {
+	}
+	bypass = {
+		EFG = {
+			has_character = EFG_gopp
+		}
+	}
+	mutually_exclusive = {
+		focus = efsf_kowen_takes_lead
+	}
+	relative_position_id = efsf_reorganize_remnants_of_revils_faction
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_unite_anti-reformers
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_oxner_takes_lead
+	}
+	bypass = {
+		EFG = {
+			has_character = EFG_oxner_cliff
+		}
+	}
+	available = {
+	}
+	relative_position_id = efsf_oxner_takes_lead
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_march_of_the_reformists
+	icon = GFX_goal_elenism
+	cost = 10
+	x = 4
+	y = 5
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_high_command_machinations
+	}
+	prerequisite = {
+		focus = efsf_reinforce_ties_with_anaheim
+	}
+	available = {
+	
+	}
+	bypass = {
+		country_exists = TIT
 	}
 	mutually_exclusive = {
 		focus = efsf_rise_of_radicals
@@ -3343,6 +3581,9 @@ focus = {
 	}
 	available = {
 	
+	}
+	bypass = {
+		country_exists = TIT
 	}
 	mutually_exclusive = {
 	
@@ -3381,16 +3622,22 @@ focus = {
 	id = efsf_rise_of_radicals
 	icon = GFX_goal_earths_supremacy
 	cost = 10
-	x = -2
-	y = 1
+	x = -3
+	y = 5
 	ai_will_do = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = efsf_high_command_machinations
+		focus = efsf_high_command_machinations 
+	}
+	prerequisite = {
+		focus = efsf_unite_anti-reformers
 	}
 	available = {
 	
+	}
+	bypass = {
+		country_exists = TIT
 	}
 	mutually_exclusive = {
 		focus = efsf_march_of_the_reformists
@@ -3417,7 +3664,9 @@ focus = {
 	has_completed_focus = efsf_0083_reconstruction_plan
 
 	}
-	
+	bypass = {
+		country_exists = TIT
+	}
 	mutually_exclusive = {
 	
 	}
@@ -3442,6 +3691,9 @@ focus = {
 	}
 	available = {
 	
+	}
+	bypass = {
+		country_exists = TIT
 	}
 	mutually_exclusive = {
 	
@@ -3498,7 +3750,7 @@ focus = {
 		id = efsf_deal_with_collaborators
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 10
-		x = 19
+		x = 20
 		y = 1
 		ai_will_do = {
 			factor = 1

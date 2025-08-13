@@ -2103,7 +2103,7 @@ focus = {
 		icon = GFX_goal_general_meeting
 		cost = 10
 		x = 0
-		y = 1
+		y = 2
 		available = {
 			has_war = no
 		}
@@ -2148,13 +2148,34 @@ focus = {
 		icon = GFX_goal_general_meeting
 		cost = 10
 		x = 0
-		y = 1
+		y = 2
 		available = {
 			has_war = no
 		}
 		relative_position_id = EFG_colony_restoration_plan
 		prerequisite = {
 			focus = EFG_colony_restoration_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_provisional_restoration_plan
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+			has_war = no
+		}
+		relative_position_id = EFG_colony_restoration_plan
+		prerequisite = {
+			focus = EFG_colony_restoration_plan focus = EFG_federal_new_deal_plan
 		}
 		ai_will_do = {
 			factor = 1

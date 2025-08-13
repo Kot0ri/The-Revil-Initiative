@@ -2674,10 +2674,55 @@ focus = {
 }
 
 focus = {
-	id = efsf_1st_battle_of_axis
+	id = efsf_reinforce_african_intervention_forces
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_operation_clean_sweep
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_operation_clean_sweep
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_deal_with_warlordism
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
 	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reinforce_african_intervention_forces
+	}
+	prerequisite = {
+		focus = efsf_make_underground_contacts
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_reinforce_african_intervention_forces
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_1st_battle_of_axis
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2902,7 +2947,7 @@ focus = {
 	id = efsf_development_of_nuclear_capable_ms
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2944,7 +2989,7 @@ focus = {
 	id = efsf_improve_pegasus_design
 	icon = GFX_goal_focus_on_amphibious_assault_ship
 	cost = 10
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2965,7 +3010,7 @@ focus = {
 	id = efsf_new_generation_battleships
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3133,6 +3178,59 @@ focus = {
 
 	}
 	relative_position_id = efsf_begin_introduction_of_new_prototypes
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_wisconsin_provisonal_restoration_center
+	icon = GFX_goal_augusta_factory
+	cost = 10
+	x = 11
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_post_war_military_reconstruction
+	}
+	available = {
+	EFG = {
+		has_completed_focus = EFG_provisional_restoration_plan
+	}
+	}
+
+	relative_position_id = efsf_begin_post_war_military_reconstruction
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_allow_reintergration_of_collaborators
+	icon = GFX_goal_augusta_factory
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_wisconsin_provisonal_restoration_center
+	}
+	available = {
+	EFG = {
+		has_completed_focus = EFG_left_coalition
+	}
+	NOT = {
+		EFS = {
+		has_completed_focus = efsf_deal_with_collaborators
+	}
+	}
+	}
+
+	relative_position_id = efsf_wisconsin_provisonal_restoration_center
 	completion_reward = {
 	
 	}
@@ -3409,8 +3507,34 @@ focus = {
 			focus = efsf_begin_post_war_military_reconstruction
 		}
 		available = {
+		NOT = {
+		EFS = {
+		has_completed_focus = efsf_allow_reintergration_of_collaborators
+		}
+		}
 		}
 		relative_position_id = efsf_begin_post_war_military_reconstruction
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = efsf_eliminate_war_crimminals
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = efsf_deal_with_collaborators
+		}
+		available = {
+
+		}
+		relative_position_id = efsf_deal_with_collaborators
 		completion_reward = {
 		
 		}

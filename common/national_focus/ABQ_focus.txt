@@ -951,11 +951,11 @@ focus = {
 		factor = 1
 	}
 	available = {
-		has_full_control_of_state = 935
-		has_full_control_of_state = 934
+		has_full_control_of_state = 1042
+		has_full_control_of_state = 1043
 	}
 completion_reward = {
-	934 = {
+	1042 = {
 		if = {
 			limit = { is_controlled_by = ROOT }
 			add_building_construction = {
@@ -965,7 +965,7 @@ completion_reward = {
 			}
 		}
 	}
-	934 = {
+	1043 = {
 		if = {
 			limit = { is_controlled_by = ROOT }
 			add_building_construction = {
@@ -975,10 +975,10 @@ completion_reward = {
 			}
 		}
 	}
-	935 = {	add_extra_state_shared_building_slots = 2
+	1042 = {	add_extra_state_shared_building_slots = 2
 	instant_build = yes
 	}
-	934 = {	add_extra_state_shared_building_slots = 2
+	1043 = {	add_extra_state_shared_building_slots = 2
 	instant_build = yes
 }
 
@@ -998,11 +998,11 @@ focus = {
 		factor = 1
 	}
 	available = {
-			has_full_control_of_state = 935
-			has_full_control_of_state = 934
+			has_full_control_of_state = 1042
+			has_full_control_of_state = 1043
 		}
 	completion_reward = {
-		934 = {
+		1042 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
@@ -1012,7 +1012,7 @@ focus = {
 				}
 			}
 		}
-		934 = {
+		1043 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
@@ -1022,10 +1022,10 @@ focus = {
 				}
 			}
 		}
-		935 = {	add_extra_state_shared_building_slots = 2
+		1042 = {	add_extra_state_shared_building_slots = 2
 		instant_build = yes
 		}
-		934 = {	add_extra_state_shared_building_slots = 2
+		1043 = {	add_extra_state_shared_building_slots = 2
 		instant_build = yes
 	}
 
@@ -1083,11 +1083,11 @@ focus = {
 		factor = 1
 	}
 	available = {
-		has_full_control_of_state = 935
-		has_full_control_of_state = 934
+		has_full_control_of_state = 1042
+		has_full_control_of_state = 1043
 	}
 completion_reward = {
-	934 = {
+	1042 = {
 		if = {
 			limit = { is_controlled_by = ROOT }
 			add_building_construction = {
@@ -1097,7 +1097,7 @@ completion_reward = {
 			}
 		}
 	}
-	934 = {
+	1043 = {
 		if = {
 			limit = { is_controlled_by = ROOT }
 			add_building_construction = {
@@ -1107,9 +1107,9 @@ completion_reward = {
 			}
 		}
 	}
-	935 = {	add_extra_state_shared_building_slots = 4
+	1042 = {	add_extra_state_shared_building_slots = 4
 	}
-	934 = {	add_extra_state_shared_building_slots = 4
+	1043 = {	add_extra_state_shared_building_slots = 4
 }
 add_ideas = cornerstone_of_the_supreme_commanders_power
 }
@@ -1762,13 +1762,13 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		934 = {	add_extra_state_shared_building_slots = 2
+		1042 = {	add_extra_state_shared_building_slots = 2
 		instant_build = yes
 	}
 
-	935 = {	add_extra_state_shared_building_slots = 2
+	1043 = {	add_extra_state_shared_building_slots = 2
 	instant_build = yes
-}
+	}
 
 	}
 }
@@ -1784,9 +1784,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	935 = {	add_extra_state_shared_building_slots = 2
+	1043 = {	add_extra_state_shared_building_slots = 2
 	instant_build = yes
-}
+	}
 	}
 	relative_position_id = ABQ_expand_living_space_for_soldiers_families
 	prerequisite = { focus = ABQ_expand_living_space_for_soldiers_families }
@@ -1802,25 +1802,25 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		935 = {
+		1043 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = bunker
 					level = 3
-					province = 13335
+					province = 13454
 					instant_build = yes
 				}
 			}
 		}
 
-		934 = {
+		1042 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = bunker
 					level = 3
-					province = 13312
+					province = 13431
 					instant_build = yes
 				}
 			}
@@ -1935,11 +1935,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		934 = {	add_extra_state_shared_building_slots = 2
+		1042 = {	add_extra_state_shared_building_slots = 2
 		instant_build = yes
 	}
 
-934 = {
+	1042 = {
 	if = {
 		limit = { is_controlled_by = ABQ }
 		add_building_construction = {
@@ -2000,11 +2000,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		934 = {	add_extra_state_shared_building_slots = 2
+		1042 = {	add_extra_state_shared_building_slots = 2
 		instant_build = yes
 	}
 	
-		934 = {
+		1042 = {
 			if = {
 				limit = { is_controlled_by = ABQ }
 				add_building_construction = {
@@ -2046,8 +2046,11 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_government = supremacist
+	}
 	completion_reward = {
-		909 = {
+		1017 = {
 			if = {
 				limit = { is_controlled_by = ZEO }
 			add_resource = {
@@ -2077,11 +2080,11 @@ focus = {
 		factor = 1
 	}
 	available = {
-		has_full_control_of_state = 935
-		has_full_control_of_state = 934
+		has_full_control_of_state = 1042
+		has_full_control_of_state = 1043
 	}
 completion_reward = {
-	934 = {
+	1042 = {
 		if = {
 			limit = { is_controlled_by = ROOT }
 			add_building_construction = {
@@ -2091,7 +2094,7 @@ completion_reward = {
 			}
 		}
 	}
-	934 = {
+	1043 = {
 		if = {
 			limit = { is_controlled_by = ROOT }
 			add_building_construction = {
@@ -2101,10 +2104,10 @@ completion_reward = {
 			}
 		}
 	}
-	935 = {	add_extra_state_shared_building_slots = 6
+	1042 = {	add_extra_state_shared_building_slots = 6
 	instant_build = yes
 	}
-	934 = {	add_extra_state_shared_building_slots = 6
+	1043 = {	add_extra_state_shared_building_slots = 6
 	instant_build = yes
 }
 

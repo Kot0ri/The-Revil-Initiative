@@ -2662,11 +2662,11 @@ focus = {
 	}
 	available = {
 		OR = {
-			has_full_control_of_state = 909}
+			has_full_control_of_state = 1056}
 }
 	mutually_exclusive = { focus = ZEO_use_dark_and_ocean_colonies_for_civilian_use }
 	completion_reward = {
-		909 = {
+		1056 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
@@ -2676,7 +2676,7 @@ focus = {
 				}
 			}
 		}
-		909 = {
+		1056 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
@@ -2686,7 +2686,7 @@ focus = {
 				}
 			}
 		}
-		909 = {
+		1056 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
@@ -2697,7 +2697,7 @@ focus = {
 			}
 		}
 
-	 909 = {	add_extra_state_shared_building_slots = 2
+	 1056 = {	add_extra_state_shared_building_slots = 2
 		instant_build = yes
 	}
 
@@ -2756,14 +2756,14 @@ focus = {
 	}
 	available = {
 		OR = {
-			has_full_control_of_state = 909
-			has_full_control_of_state = 910
-			has_full_control_of_state = 911
+			has_full_control_of_state = 1056
+			has_full_control_of_state = 1057
+			has_full_control_of_state = 1058
 		}
 		
 }
 	completion_reward = {
-	909 = {
+	1056 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = arms_factory
@@ -2772,7 +2772,7 @@ focus = {
 			}
 		}
 
-		910 = {
+		1057 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = arms_factory
@@ -2781,7 +2781,7 @@ focus = {
 			}
 		}
 
-		911 = {
+		1058 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = arms_factory
@@ -2825,14 +2825,14 @@ focus = {
 	}
 	available = {
 		OR = {
-			has_full_control_of_state = 909
-			has_full_control_of_state = 910
-			has_full_control_of_state = 911
+			has_full_control_of_state = 1056
+			has_full_control_of_state = 1057
+			has_full_control_of_state = 1058
 		}	
 }
 
 	completion_reward = {
-		909 = {
+		1056 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = industrial_complex
@@ -2841,7 +2841,7 @@ focus = {
 			}
 		}
 
-		910 = {
+		1057 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = industrial_complex
@@ -2850,7 +2850,7 @@ focus = {
 			}
 		}
 
-		911 = {
+		1058 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = industrial_complex
@@ -3324,14 +3324,14 @@ focus = {
 	}
 	available = {
 		OR = {
-			has_full_control_of_state = 909}
+			has_full_control_of_state = 1056}
 		}
 	mutually_exclusive = { focus = ZEO_use_dark_and_ocean_colonies_for_military_use }
 	completion_reward = {
-		909 = {	add_extra_state_shared_building_slots = 4
+		1056 = {	add_extra_state_shared_building_slots = 4
 		instant_build = yes
 	}
-	909 = {
+	1056 = {
 		if = {
 			limit = { is_controlled_by = ROOT }
 			add_building_construction = {
@@ -4436,15 +4436,15 @@ focus = {
 		ABQ = { is_subject_of = ROOT }
 	}
 	completion_reward = {
-		934 = {	add_extra_state_shared_building_slots = 4
+		1042 = {	add_extra_state_shared_building_slots = 4
 		instant_build = yes
 	}
 
-	935 = {	add_extra_state_shared_building_slots = 2
+	1043 = {	add_extra_state_shared_building_slots = 2
 	instant_build = yes
 }
 
-	934 = {
+	1042 = {
 		if = {
 			limit = { is_controlled_by = ABQ }
 			add_building_construction = {
@@ -4454,7 +4454,7 @@ focus = {
 			}
 		}
 	}
-	935 = {
+	1043 = {
 		if = {
 			limit = { is_controlled_by = ABQ }
 			add_building_construction = {
@@ -4603,15 +4603,15 @@ focus = {
 		SOL = { is_subject_of = ROOT }
 	}
 	completion_reward = {
-		933 = {	add_extra_state_shared_building_slots = 4
+		1040 = {	add_extra_state_shared_building_slots = 4
 		instant_build = yes
 	}
 
-	932 = {	add_extra_state_shared_building_slots = 2
+	1041 = {	add_extra_state_shared_building_slots = 2
 	instant_build = yes
 }
 
-	933 = {
+	1040 = {
 		if = {
 			limit = { is_controlled_by = SOL }
 			add_building_construction = {
@@ -4621,7 +4621,7 @@ focus = {
 			}
 		}
 	}
-	932 = {
+	1041 = {
 		if = {
 			limit = { is_controlled_by = SOL }
 			add_building_construction = {

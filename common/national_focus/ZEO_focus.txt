@@ -216,6 +216,9 @@ focus = {
 		factor = 1
 	}
 	mutually_exclusive = { focus = ZEO_designating_an_heir}
+	available = {
+		date > 76.1.1
+	}
 	completion_reward = {
 	
 	}
@@ -2144,12 +2147,9 @@ focus = {
 		factor = 1
 	}
 	available = {
-		ZEO_degwin_sodo_zabi = {
+	ZEO_degwin_sodo_zabi = {
 			is_country_leader = yes
 		}
-		OR = { ZEO_darcia_bakharo = {
-			is_country_leader = yes
-		} }
 	}
 	completion_reward = {
 	}
@@ -3234,16 +3234,20 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		add_building_construction = {
+		1057 = { 
+			add_building_construction = {
 			type = land_facility
 			level = 1
 			instant_build = yes
 		}
-		add_building_construction = {
+	}
+	1058 = {	
+	add_building_construction = {
 			type = nuclear_facility
 			level = 1
 			instant_build = yes
 		}
+	}
 	}
 }
 
@@ -3863,14 +3867,14 @@ focus = {
 	}
 	available = {
 		OR = {
-			has_full_control_of_state = 909
-			has_full_control_of_state = 910
-			has_full_control_of_state = 911
+			has_full_control_of_state = 1056
+			has_full_control_of_state = 1057
+			has_full_control_of_state = 1058
 		}
 		
 }
 	completion_reward = {
-	909 = {
+	1056 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
@@ -3879,7 +3883,7 @@ focus = {
 			}
 		}
 
-		910 = {
+		1057 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
@@ -3888,7 +3892,7 @@ focus = {
 			}
 		}
 
-		911 = {
+		1058 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
@@ -3941,14 +3945,14 @@ focus = {
 	}
 	available = {
 		OR = {
-			has_full_control_of_state = 909
-			has_full_control_of_state = 910
-			has_full_control_of_state = 911
+			has_full_control_of_state = 1056
+			has_full_control_of_state = 1057
+			has_full_control_of_state = 1058
 		}
 		
 }
 	completion_reward = {
-	909 = {
+	1056 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
@@ -3957,7 +3961,7 @@ focus = {
 			}
 		}
 
-		910 = {
+		1057 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
@@ -3966,7 +3970,7 @@ focus = {
 			}
 		}
 
-		911 = {
+		1058 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = dockyard
@@ -4906,6 +4910,9 @@ focus = {
 	}
 	prerequisite = {
 		focus = ZEO_legacy_of_zeon_deikun
+	}
+	available = {
+		date < 75.1.1
 	}
 	relative_position_id = ZEO_legacy_of_zeon_deikun
 	mutually_exclusive = { focus = ZEO_the_zabi_families_vision	}

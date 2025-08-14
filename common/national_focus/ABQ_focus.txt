@@ -786,10 +786,112 @@ focus = {
 }
 
 focus = {
-	id = ABQ_form_the_national_defence_forces
+	id = ABQ_elevate_gihren_loyalists
 	icon = GFX_goal_dominance_of_human_survival_theory2
 	cost = 5
 	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_the_principality_victorious
+	prerequisite = { focus = ABQ_the_principality_victorious }
+}
+
+focus = {
+	id = ABQ_manthfield_clan
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+	}
+	relative_position_id = ABQ_elevate_gihren_loyalists
+	prerequisite = { focus = ABQ_elevate_gihren_loyalists }
+}
+
+focus = {
+	id = ABQ_military_genius
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	mutually_exclusive = {
+		focus = ABQ_political_savant
+	}
+	completion_reward = {
+		add_advisor_role = {
+    	character = ABQ_eric_manthfield
+   		activate = no
+    advisor = {
+        slot = high_command
+        cost = 50
+        idea_token = ABQ_eric_manthfield
+        traits = {
+            army_chief_defensive_3
+        }
+    }
+}
+	}
+	relative_position_id = ABQ_manthfield_clan
+	prerequisite = { focus = ABQ_manthfield_clan }
+}
+
+focus = {
+	id = ABQ_political_savant
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	mutually_exclusive = {
+		focus = ABQ_military_genius
+	}
+	completion_reward = {
+		add_advisor_role = {
+    	character = ABQ_eric_manthfield
+   		activate = no
+    advisor = {
+        slot = political_advisor
+        cost = 50
+        idea_token = ABQ_eric_manthfield
+        traits = {
+            example_of_nobility
+        }
+    }
+}
+	}
+	relative_position_id = ABQ_manthfield_clan
+	prerequisite = { focus = ABQ_manthfield_clan }
+}
+
+focus = {
+	id = ABQ_form_the_national_defence_forces
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
 	y = 3
 	ai_will_do = {
 		factor = 1
@@ -2443,7 +2545,7 @@ focus = {
 	id = ABQ_gihren_is_dead
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1

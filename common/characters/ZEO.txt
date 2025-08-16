@@ -852,6 +852,57 @@ ZEO_cecilia_irene = {
 	}
 
 	##Admirals
+ZEO_yuri_hasler={
+		name=ZEO_yuri_hasler
+		portraits={
+			army={
+				small="GFX_idea_urey_husrer"
+			}
+			army={
+				large="gfx/leaders/ZEO/Portrait_Zeon_urey_husrer.dds"
+			}
+		}
+		navy_leader={
+			traits={ space_expert politically_connected ghiren_loyalist }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=32
+		}
+		advisor = {
+			slot = space_forces_chief
+			idea_token = urey_husrer
+			allowed = {
+				original_tag = ZEO
+			}
+			cost = 80
+			traits = {
+				urey_husrer_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = zeon_great_purge
+					}
+				}
+			}
+			modifier = {
+				navy_intel_factor = 0.1
+				navy_max_range_factor	= 0.1
+				navy_casualty_on_sink	= -0.1
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					factor = 5
+					has_war = yes
+				}
+			}
+		}
+	}
+
 	ZEO_asakura = {
 	name="Asakura"
 	portraits={
@@ -1846,56 +1897,7 @@ ZEO_mackenson={
 			legacy_id=29
 		}
 	}
-	ZEO_yuri_hasler={
-		name=ZEO_yuri_hasler
-		portraits={
-			army={
-				small="GFX_idea_urey_husrer"
-			}
-			army={
-				large="gfx/leaders/ZEO/Portrait_Zeon_urey_husrer.dds"
-			}
-		}
-		navy_leader={
-			traits={ space_expert }
-			skill=3
-			attack_skill=3
-			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=32
-		}
-		advisor = {
-			slot = space_forces_chief
-			idea_token = urey_husrer
-			allowed = {
-				original_tag = ZEO
-			}
-			cost = 80
-			traits = {
-				urey_husrer_trait
-			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						has_global_flag = zeon_great_purge
-					}
-				}
-			}
-			modifier = {
-				navy_intel_factor = 0.1
-				navy_max_range_factor	= 0.1
-				navy_casualty_on_sink	= -0.1
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 5
-					has_war = yes
-				}
-			}
-		}
-	}
+	
 	ZEO_draize={
 		name=ZEO_draize
 		portraits={

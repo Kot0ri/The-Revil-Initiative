@@ -186,17 +186,7 @@ focus = {
 	prerequisite = { focus = SOL_Deadlock_Fortress_Plans }
 	completion_reward = {
 		add_manpower = 15000
-		955 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-				add_building_construction = {
-					province = 13616
-					type = fort
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
+		
 	}
 	}
 

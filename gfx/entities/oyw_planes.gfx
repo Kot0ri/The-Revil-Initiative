@@ -6,4 +6,368 @@ objectTypes = {
     animation = { id = "idle" type = "bomber_default_idle_animation" }
 		scale = 1.0
 	}
+
+	# Small Plane
+	pdxmesh = {
+		name = "tin_cod_mesh"
+		file = "gfx/models/units/planes/tin_cod.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "tin_cod_2_mesh"
+		file = "gfx/models/units/planes/tin_cod.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+			texture_diffuse = "tin_cod_pdxmaterial_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "tin_cod_3_mesh"
+		file = "gfx/models/units/planes/tin_cod.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+			texture_diffuse = "tin_cod_pdxmaterial_3_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "tin_cod_4_mesh"
+		file = "gfx/models/units/planes/tin_cod.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+			texture_diffuse = "tin_cod_pdxmaterial_4_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "fly_manta_mesh"
+		file = "gfx/models/units/planes/fly_manta.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "fly_manta_2_mesh"
+		file = "gfx/models/units/planes/fly_manta.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+			texture_diffuse = "fly_manta_pdxmaterial_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "fly_manta_3_mesh"
+		file = "gfx/models/units/planes/fly_manta.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+			texture_diffuse = "fly_manta_pdxmaterial_3_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "fly_manta_4_mesh"
+		file = "gfx/models/units/planes/fly_manta.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+			texture_diffuse = "fly_manta_pdxmaterial_4_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "don_escargot_mesh"
+		file = "gfx/models/units/planes/don_escargot.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "don_escargot_2_mesh"
+		file = "gfx/models/units/planes/don_escargot.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "don_escargo_pdxmaterial_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "don_escargot_3_mesh"
+		file = "gfx/models/units/planes/don_escargot.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "don_escargo_pdxmaterial_3_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "don_escargot_4_mesh"
+		file = "gfx/models/units/planes/don_escargot.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "don_escargo_pdxmaterial_4_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "saber_fish_mesh"
+		file = "gfx/models/units/planes/saber_fish.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "saber_fish_2_mesh"
+		file = "gfx/models/units/planes/saber_fish.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+		texture_diffuse = "saber_fish_DefaultMaterial_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "saber_fish_3_mesh"
+		file = "gfx/models/units/planes/saber_fish.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+		texture_diffuse = "saber_fish_DefaultMaterial_3_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "saber_fish_4_mesh"
+		file = "gfx/models/units/planes/saber_fish.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+		texture_diffuse = "saber_fish_DefaultMaterial_4_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+
+	# Medium Plane
+	pdxmesh = {
+		name = "dodai_kai_mesh"
+		file = "gfx/models/units/planes/dodai_kai.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		animation = { id = "sfs_idle" type = "dodai_kai_sfs_idle_animation" }
+		animation = { id = "sfs_move" type = "dodai_kai_sfs_move_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "dodai_kai_2_mesh"
+		file = "gfx/models/units/planes/dodai_kai.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		animation = { id = "sfs_idle" type = "dodai_kai_sfs_idle_animation" }
+		animation = { id = "sfs_move" type = "dodai_kai_sfs_move_animation" }
+    meshsettings = {
+		texture_diffuse = "dodai_kai_pdxmaterial_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "dodai_kai_3_mesh"
+		file = "gfx/models/units/planes/dodai_kai.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		animation = { id = "sfs_idle" type = "dodai_kai_sfs_idle_animation" }
+		animation = { id = "sfs_move" type = "dodai_kai_sfs_move_animation" }
+    meshsettings = {
+		texture_diffuse = "dodai_kai_pdxmaterial_3_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "dodai_kai_4_mesh"
+		file = "gfx/models/units/planes/dodai_kai.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+		animation = { id = "sfs_idle" type = "dodai_kai_sfs_idle_animation" }
+		animation = { id = "sfs_move" type = "dodai_kai_sfs_move_animation" }
+    meshsettings = {
+		texture_diffuse = "dodai_kai_pdxmaterial_4_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "core_booster_mesh"
+		file = "gfx/models/units/planes/core_booster.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "core_booster_2_mesh"
+		file = "gfx/models/units/planes/core_booster.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+			name = "pdxmesh"
+			texture_diffuse = "core_booster_pdxmaterial_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+    meshsettings = {
+			name = "Mesh.004"
+			texture_diffuse = "EFS_corefighter_RealColour_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "core_booster_3_mesh"
+		file = "gfx/models/units/planes/core_booster.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		animation = { id = "aileron_roll" type = "aileron_roll_animation" }
+		animation = { id = "jet_acceleration" type = "jet_acceleration_animation" }
+    meshsettings = {
+			name = "pdxmesh"
+			texture_diffuse = "core_booster_pdxmaterial_3_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+    meshsettings = {
+			name = "Mesh.004"
+			texture_diffuse = "EFS_corefighter_VF_AM.dds"
+			texture_normal = "EFS_corefighter_VF_NM.dds"
+			texture_specular = "EFS_corefighter_VF_SP.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "luggun_mesh"
+		file = "gfx/models/units/planes/luggun.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "luggun_2_mesh"
+		file = "gfx/models/units/planes/luggun.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "luggun_DefaultMaterial_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "luggun_3_mesh"
+		file = "gfx/models/units/planes/luggun.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "luggun_DefaultMaterial_3_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+
+	# Large Plane
+	pdxmesh = {
+		name = "depp_rog_mesh"
+		file = "gfx/models/units/planes/depp_rog.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "depp_rog_2_mesh"
+		file = "gfx/models/units/planes/depp_rog.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "depp_rog_DefaultMaterial_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "depp_rog_3_mesh"
+		file = "gfx/models/units/planes/depp_rog.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "depp_rog_DefaultMaterial_3_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "depp_rog_4_mesh"
+		file = "gfx/models/units/planes/depp_rog.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "depp_rog_DefaultMaterial_4_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "dish_mesh"
+		file = "gfx/models/units/planes/dish.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "dish_2_mesh"
+		file = "gfx/models/units/planes/dish.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "dish_pdxmaterial_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "dish_3_mesh"
+		file = "gfx/models/units/planes/dish.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+			texture_diffuse = "dish_pdxmaterial_3_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "gaw_mesh"
+		file = "gfx/models/units/planes/gaw.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "medea_mesh"
+		file = "gfx/models/units/planes/medea.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+
+
 }

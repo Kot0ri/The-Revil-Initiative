@@ -31,6 +31,58 @@ animation = {
 	file = "ms05_defeat_sr.anim"
 }
 animation = {
+	name = "ms05_idle_stand_mg_animation"
+	file = "ms05_idle_stand_mg_anim.anim"
+}
+animation = {
+	name = "ms05_idle_stand_2_mg_animation"
+	file = "ms05_idle_stand_2_mg_anim.anim"
+}
+animation = {
+  name = "ms05_idle_sit_mg_animation"
+  file = "ms05_idle_sit_mg_anim.anim"
+}
+animation = {
+	name = "ms05_idle_stand_rpg_animation"
+	file = "ms05_idle_stand_rpg_anim.anim"
+}
+animation = {
+  name = "ms05_idle_sit_rpg_animation"
+  file = "ms05_idle_sit_rpg_anim.anim"
+}
+animation = {
+	name = "ms05_move_mg_animation"
+	file = "ms05_walk_mg_anim.anim"
+}
+animation = {
+	name = "ms05_move_rpg_animation"
+	file = "ms05_walk_rpg_anim.anim"
+}
+animation = {
+	name = "ms05_attack_heathawk_animation"
+	file = "ms05_attack_heathawk_anim.anim"
+}
+animation = {
+	name = "ms05_attack_mg_animation"
+	file = "ms05_attack_mg_anim.anim"
+}
+animation = {
+	name = "ms05_attack_rpg_animation"
+	file = "ms05_attack_rpg_anim.anim"
+}
+animation = {
+	name = "ms05_defend_mg_animation"
+	file = "ms05_defend_mg_anim.anim"
+}
+animation = {
+	name = "ms05_defend_rpg_animation"
+	file = "ms05_defend_rpg_anim.anim"
+}
+animation = {
+	name = "ms05_defeat_animation"
+	file = "ms05_defeat_anim.anim"
+}
+animation = {
 	name = "ms14_attack_saber_animation"
 	file = "ms14_attack_saber.anim"
 }
@@ -59,6 +111,18 @@ animation = {
 	file = "ms14_attack_mg.anim"
 }
 animation = {
+	name = "ms14_attack_cannon_animation"
+	file = "ms14_attack_cannon.anim"
+}
+animation = {
+	name = "ms14_attack_stand_sr_animation"
+	file = "ms14_attack_stand_sr.anim"
+}
+animation = {
+	name = "ms14_attack_sit_sr_animation"
+	file = "ms14_attack_sit_sr.anim"
+}
+animation = {
 	name = "ms14_defend_mg_animation"
 	file = "ms14_defend_mg.anim"
 }
@@ -75,12 +139,36 @@ animation = {
 	file = "ms14_idle_stand.anim"
 }
 animation = {
+	name = "ms14_idle_stand_bp_animation"
+	file = "ms14_idle_stand_bp.anim"
+}
+animation = {
 	name = "ms14_idle_stand_2_animation"
 	file = "ms14_idle_stand_2.anim"
 }
 animation = {
+	name = "ms14_idle_stand_sr_animation"
+	file = "ms14_idle_stand_sr.anim"
+}
+animation = {
+	name = "ms14_idle_stand_2_sr_animation"
+	file = "ms14_idle_stand_2_sr.anim"
+}
+animation = {
 	name = "ms14_idle_sit_animation"
 	file = "ms14_idle_sit.anim"
+}
+animation = {
+	name = "ms14_idle_sit_bp_animation"
+	file = "ms14_idle_sit_bp.anim"
+}
+animation = {
+	name = "ms14_idle_sit_2_bp_animation"
+	file = "ms14_idle_sit_2_bp.anim"
+}
+animation = {
+	name = "ms14_idle_sit_sr_animation"
+	file = "ms14_idle_sit_sr.anim"
 }
 animation = {
 	name = "ms14_idle_saber_animation"
@@ -90,6 +178,15 @@ animation = {
 	name = "ms14_walk_animation"
 	file = "ms14_walk.anim"
 }
+animation = {
+	name = "ms14_walk_sr_animation"
+	file = "ms14_walk_sr.anim"
+}
+animation = {
+	name = "ms14_walk_bp_animation"
+	file = "ms14_walk_bp.anim"
+}
+
 animation = {
 	name = "ZEO_beamsord_01_idle_animation"
 	file = "ZEO_beamsord_01_idle.anim"
@@ -223,64 +320,16 @@ animation = {
 	file = "ma08_defeat_anim.anim"
 }
 animation = {
-	name = "ms05_idle_stand_mg_animation"
-	file = "ms05_idle_stand_mg_anim.anim"
-}
-animation = {
-	name = "ms05_idle_stand_2_mg_animation"
-	file = "ms05_idle_stand_2_mg_anim.anim"
-}
-animation = {
-  name = "ms05_idle_sit_mg_animation"
-  file = "ms05_idle_sit_mg_anim.anim"
-}
-animation = {
-	name = "ms05_idle_stand_rpg_animation"
-	file = "ms05_idle_stand_rpg_anim.anim"
-}
-animation = {
-  name = "ms05_idle_sit_rpg_animation"
-  file = "ms05_idle_sit_rpg_anim.anim"
-}
-animation = {
-	name = "ms05_move_mg_animation"
-	file = "ms05_walk_mg_anim.anim"
-}
-animation = {
-	name = "ms05_move_rpg_animation"
-	file = "ms05_walk_rpg_anim.anim"
-}
-animation = {
-	name = "ms05_attack_heathawk_animation"
-	file = "ms05_attack_heathawk_anim.anim"
-}
-animation = {
-	name = "ms05_attack_mg_animation"
-	file = "ms05_attack_mg_anim.anim"
-}
-animation = {
-	name = "ms05_attack_rpg_animation"
-	file = "ms05_attack_rpg_anim.anim"
-}
-animation = {
-	name = "ms05_defend_mg_animation"
-	file = "ms05_defend_mg_anim.anim"
-}
-animation = {
-	name = "ms05_defend_rpg_animation"
-	file = "ms05_defend_rpg_anim.anim"
-}
-animation = {
-	name = "ms05_defeat_animation"
-	file = "ms05_defeat_anim.anim"
-}
-animation = {
 	name = "ms09_move_mg_animation"
 	file = "ms09_walk_mg_anim.anim"
 }
 animation = {
 	name = "ms09_move_rpg_animation"
 	file = "ms09_walk_rpg_anim.anim"
+}
+animation = {
+	name = "ms09_move_cannon_animation"
+	file = "ms09_walk_cannon_anim.anim"
 }
 animation = {
 	name = "ms09_idle_stand_rpg_animation"
@@ -293,6 +342,18 @@ animation = {
 animation = {
 	name = "ms09_idle_sit_rpg_animation"
 	file = "ms09_idle_sit_rpg_anim.anim"
+}
+animation = {
+	name = "ms09_idle_stand_cannon_animation"
+	file = "ms09_idle_stand_cannon_anim.anim"
+}
+animation = {
+	name = "ms09_idle_stand_2_cannon_animation"
+	file = "ms09_idle_stand_2_cannon_anim.anim"
+}
+animation = {
+	name = "ms09_idle_sit_cannon_animation"
+	file = "ms09_idle_sit_cannon_anim.anim"
 }
 animation = {
 	name = "ms09_attack_heatsarver_rpg_animation"
@@ -311,6 +372,10 @@ animation = {
 	file = "ms09_attack_mg_anim.anim"
 }
 animation = {
+	name = "ms09_attack_cannon_animation"
+	file = "ms09_attack_cannon_anim.anim"
+}
+animation = {
 	name = "ms09_defend_rpg_animation"
 	file = "ms09_defend_rpg_anim.anim"
 }
@@ -321,6 +386,18 @@ animation = {
 animation = {
 	name = "ms09_defeat_animation"
 	file = "ms09_defeat_anim.anim"
+}
+animation = {
+	name = "ms06_attack_cannon_animation"
+	file = "ms06_attack_cannon_anim.anim"
+}
+animation = {
+	name = "cannon_idle_animation"
+	file = "cannon_idle_anim.anim"
+}
+animation = {
+	name = "cannon_attack_animation"
+	file = "cannon_attack_anim.anim"
 }
 animation = {
 	name = "ms06_attack_assault_animation"
@@ -341,6 +418,10 @@ animation = {
 animation = {
 	name = "ms06_defend_rpg_animation"
 	file = "ms06_defend_rpg_anim.anim"
+}
+animation = {
+	name = "ms06_sfs_move_mg_animation"
+	file = "ms06_sfs_move_mg.anim"
 }
 animation = {
 	name = "rgm79_idle_stand_animation"
@@ -807,6 +888,118 @@ animation = {
   file = "ms07_attack_sword.anim"
 }
 animation = {
+  name = "ms08_attack_assault_animation"
+  file = "ms08_attack_assault.anim"
+}
+animation = {
+  name = "ms08_attack_mg_animation"
+  file = "ms08_attack_mg.anim"
+}
+animation = {
+  name = "ms08_attack_ex_animation"
+  file = "ms08_attack_ex.anim"
+}
+animation = {
+  name = "ms08_attack_stand_sr_animation"
+  file = "ms08_attack_stand_sr.anim"
+}
+animation = {
+  name = "ms08_attack_sit_sr_animation"
+  file = "ms08_attack_sit_sr.anim"
+}
+animation = {
+  name = "ms08_idle_stand_mg_animation"
+  file = "ms08_idle_stand_mg.anim"
+}
+animation = {
+  name = "ms08_idle_stand_ex_animation"
+  file = "ms08_idle_stand_ex.anim"
+}
+animation = {
+  name = "ms08_idle_stand_sr_animation"
+  file = "ms08_idle_stand_sr.anim"
+}
+animation = {
+  name = "ms08_idle_stand_2_sr_animation"
+  file = "ms08_idle_stand_2_sr.anim"
+}
+animation = {
+  name = "ms08_idle_sit_mg_animation"
+  file = "ms08_idle_sit_mg.anim"
+}
+animation = {
+  name = "ms08_idle_sit_sr_animation"
+  file = "ms08_idle_sit_sr.anim"
+}
+animation = {
+  name = "ms08_idle_sit_ex_animation"
+  file = "ms08_idle_sit_ex.anim"
+}
+animation = {
+  name = "ms08_move_mg_animation"
+  file = "ms08_move_mg.anim"
+}
+animation = {
+  name = "ms08_move_ex_animation"
+  file = "ms08_move_ex.anim"
+}
+animation = {
+  name = "ms08_move_sr_animation"
+  file = "ms08_move_sr.anim"
+}
+animation = {
+  name = "ms08_defend_mg_animation"
+  file = "ms08_defend_mg.anim"
+}
+animation = {
+  name = "ms08_defeat_animation"
+  file = "ms08_defeat.anim"
+}
+animation = {
+  name = "ms18_idle_stand_animation"
+  file = "ms18_idle_stand.anim"
+}
+animation = {
+  name = "ms18_idle_sit_animation"
+  file = "ms18_idle_sit.anim"
+}
+animation = {
+  name = "ms18_idle_sit_2_animation"
+  file = "ms18_idle_sit_2.anim"
+}
+animation = {
+  name = "ms18_defeat_animation"
+  file = "ms18_defeat.anim"
+}
+animation = {
+  name = "ms18_move_animation"
+  file = "ms18_move.anim"
+}
+animation = {
+  name = "ms18_move_2_animation"
+  file = "ms18_move_2.anim"
+}
+animation = {
+  name = "ms18_attack_heathawk_animation"
+  file = "ms18_attack_heathawk.anim"
+}
+animation = {
+  name = "ms18_attack_mg_animation"
+  file = "ms18_attack_mg.anim"
+}
+animation = {
+  name = "ms18_attack_assault_mg_animation"
+  file = "ms18_attack_assault_mg.anim"
+}
+animation = {
+  name = "ms18_defend_mg_animation"
+  file = "ms18_defend_mg.anim"
+}
+animation = {
+  name = "ZEO_heatmelee_02_normal_animation"
+  file = "ZEO_heatmelee_02_normal.anim"
+}
+animation = {
   name = "ZEO_heatmelee_02_idle_animation"
   file = "ZEO_heatmelee_02_idle.anim"
 }
@@ -815,10 +1008,202 @@ animation = {
   file = "ZEO_heatmelee_02_attack.anim"
 }
 animation = {
-	name = "msm03_idle_animation"
-	file = "msm03_idle_anim.anim"
+	name = "amx003_idle_transform_001_animation"
+	file = "amx003_idle_transform_001.anim"
 }
 animation = {
-	name = "msm03_move_animation"
-	file = "msm03_move_anim.anim"
+	name = "amx003_idle_transform_002_animation"
+	file = "amx003_idle_transform_002.anim"
+}
+animation = {
+	name = "amx003_idle_stand_animation"
+	file = "amx003_idle_stand.anim"
+}
+animation = {
+	name = "amx003_idle_sit_animation"
+	file = "amx003_idle_sit.anim"
+}
+animation = {
+	name = "amx003_move_animation"
+	file = "amx003_move.anim"
+}
+animation = {
+	name = "amx003_attack_001_animation"
+	file = "amx003_attack_001.anim"
+}
+animation = {
+	name = "amx003_attack_002_animation"
+	file = "amx003_attack_002.anim"
+}
+animation = {
+	name = "amx003_defend_animation"
+	file = "amx003_defend.anim"
+}
+animation = {
+	name = "amx003_defeat_animation"
+	file = "amx003_defeat.anim"
+}
+animation = {
+	name = "rms108_move_animation"
+	file = "rms108_walk.anim"
+}
+animation = {
+	name = "rms108_idle_sit_animation"
+	file = "rms108_idle_sit.anim"
+}
+animation = {
+	name = "rms108_idle_stand_animation"
+	file = "rms108_idle_stand.anim"
+}
+animation = {
+	name = "rms108_attack_brf_animation"
+	file = "rms108_attack_brf.anim"
+}
+animation = {
+	name = "rms108_defend_brf_animation"
+	file = "rms108_defend_brf.anim"
+}
+animation = {
+	name = "rms108_attack_mg_animation"
+	file = "rms108_attack_mg.anim"
+}
+animation = {
+	name = "rms108_defend_mg_animation"
+	file = "rms108_defend_mg.anim"
+}
+animation = {
+	name = "rms108_defeat_animation"
+	file = "rms108_defeat.anim"
+}
+animation = {
+	name = "ZEO_beamsord_yms15_idle_animation"
+	file = "ZEO_beamsord_yms15_idle.anim"
+}
+animation = {
+	name = "ZEO_beamsord_yms15_2_idle_animation"
+	file = "ZEO_beamsord_yms15_2_idle.anim"
+}
+animation = {
+	name = "max03_idle_animation"
+	file = "max03_idle.anim"
+}
+animation = {
+	name = "max03_idle_2_animation"
+	file = "max03_idle_2.anim"
+}
+animation = {
+	name = "max03_attack_animation"
+	file = "max03_attack.anim"
+}
+animation = {
+	name = "max03_move_animation"
+	file = "max03_move.anim"
+}
+animation = {
+	name = "msn02_idle_animation"
+	file = "msn02_idle.anim"
+}
+animation = {
+	name = "msn02_idle_2_animation"
+	file = "msn02_idle_2.anim"
+}
+animation = {
+	name = "msn02_attack_1_animation"
+	file = "msn02_attack_1.anim"
+}
+animation = {
+	name = "msn02_attack_2_animation"
+	file = "msn02_attack_2.anim"
+}
+animation = {
+	name = "msn02_defend_animation"
+	file = "msn02_defend.anim"
+}
+animation = {
+	name = "msn02_defeat_animation"
+	file = "msn02_defeat.anim"
+}
+animation = {
+	name = "msn02_move_animation"
+	file = "msn02_move.anim"
+}
+animation = {
+	name = "msn02_p_idle_animation"
+	file = "msn02_p_idle.anim"
+}
+animation = {
+	name = "msn02_p_attack_animation"
+	file = "msn02_p_attack.anim"
+}
+animation = {
+	name = "msn02_p_move_animation"
+	file = "msn02_p_move.anim"
+}
+animation = {
+	name = "msn02_p_leg_idle_animation"
+	file = "msn02_p_leg_idle.anim"
+}
+animation = {
+	name = "msn02_p_leg_attack_animation"
+	file = "msn02_p_leg_attack.anim"
+}
+animation = {
+	name = "msn02_p_leg_move_animation"
+	file = "msn02_p_leg_move.anim"
+}
+animation = {
+	name = "ms15_idle_animation"
+	file = "ms15_idle.anim"
+}
+animation = {
+	name = "ms15_idle_2_animation"
+	file = "ms15_idle_2.anim"
+}
+animation = {
+	name = "ms15_idle_3_animation"
+	file = "ms15_idle_3.anim"
+}
+animation = {
+	name = "ms15_idle_sit_animation"
+	file = "ms15_idle_sit.anim"
+}
+animation = {
+	name = "ms15_walk_animation"
+	file = "ms15_walk.anim"
+}
+animation = {
+	name = "ms15_defeat_animation"
+	file = "ms15_defeat.anim"
+}
+animation = {
+	name = "ms15_attack_assault_shield_animation"
+	file = "ms15_attack_assault_shield.anim"
+}
+animation = {
+	name = "ms15_attack_assault_sword_animation"
+	file = "ms15_attack_assault_sword.anim"
+}
+animation = {
+	name = "rx77_move_animation"
+	file = "rx77_walk.anim"
+}
+animation = {
+	name = "rx77_idle_stand_animation"
+	file = "rx77_idle_stand.anim"
+}
+animation = {
+	name = "rx77_idle_sit_animation"
+	file = "rx77_idle_sit.anim"
+}
+animation = {
+	name = "rx77_attack_sit_animation"
+	file = "rx77_attack_sit.anim"
+}
+animation = {
+	name = "rx77_attack_stand_animation"
+	file = "rx77_attack_stand.anim"
+}
+animation = {
+	name = "rx77_defeat_animation"
+	file = "rx77_defeat.anim"
 }

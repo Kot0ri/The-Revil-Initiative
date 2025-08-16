@@ -13,11 +13,19 @@ objectTypes = {
     animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
     animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
     animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms14_attack_cannon_animation" }
     animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
     animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
     animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
     animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
     animation = { id = "retreat" type = "ms14_defeat_animation" }
+		animation = { id = "idle_stand_bp" type = "ms14_idle_stand_bp_animation" }
+		animation = { id = "idle_sit_bp" type = "ms14_idle_sit_bp_animation" }
+		animation = { id = "idle_sit_2_bp" type = "ms14_idle_sit_2_bp_animation" }
+		animation = { id = "move_bp" type = "ms14_walk_bp_animation" }
+		animation = { id = "idle_stand_sr" type = "ms14_idle_stand_sr_animation" }
+		animation = { id = "idle_sit_sr" type = "ms14_idle_sit_sr_animation" }
+		animation = { id = "move_sr" type = "ms14_walk_sr_animation" }
     meshsettings = {
       shader = PdxMeshAdvancedCustom
     }
@@ -36,11 +44,19 @@ objectTypes = {
     animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
     animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
     animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms14_attack_cannon_animation" }
     animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
     animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
     animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
     animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
     animation = { id = "retreat" type = "ms14_defeat_animation" }
+		animation = { id = "idle_stand_bp" type = "ms14_idle_stand_bp_animation" }
+		animation = { id = "idle_sit_bp" type = "ms14_idle_sit_bp_animation" }
+		animation = { id = "idle_sit_2_bp" type = "ms14_idle_sit_2_bp_animation" }
+		animation = { id = "move_bp" type = "ms14_walk_bp_animation" }
+		animation = { id = "idle_stand_sr" type = "ms14_idle_stand_sr_animation" }
+		animation = { id = "idle_sit_sr" type = "ms14_idle_sit_sr_animation" }
+		animation = { id = "move_sr" type = "ms14_walk_sr_animation" }
     meshsettings = {
       shader = PdxMeshAdvancedCustom
       texture_diffuse = "MS_14_S_AM.dds"
@@ -62,11 +78,19 @@ objectTypes = {
     animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
     animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
     animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms14_attack_cannon_animation" }
     animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
     animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
     animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
     animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
     animation = { id = "retreat" type = "ms14_defeat_animation" }
+		animation = { id = "idle_stand_bp" type = "ms14_idle_stand_bp_animation" }
+		animation = { id = "idle_sit_bp" type = "ms14_idle_sit_bp_animation" }
+		animation = { id = "idle_sit_2_bp" type = "ms14_idle_sit_2_bp_animation" }
+		animation = { id = "move_bp" type = "ms14_walk_bp_animation" }
+		animation = { id = "idle_stand_sr" type = "ms14_idle_stand_sr_animation" }
+		animation = { id = "idle_sit_sr" type = "ms14_idle_sit_sr_animation" }
+		animation = { id = "move_sr" type = "ms14_walk_sr_animation" }
     meshsettings = {
       shader = PdxMeshAdvancedCustom
       texture_diffuse = "MS_14_GATO_AM.dds"
@@ -88,11 +112,19 @@ objectTypes = {
     animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
     animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
     animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms14_attack_cannon_animation" }
     animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
     animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
     animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
     animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
     animation = { id = "retreat" type = "ms14_defeat_animation" }
+		animation = { id = "idle_stand_bp" type = "ms14_idle_stand_bp_animation" }
+		animation = { id = "idle_sit_bp" type = "ms14_idle_sit_bp_animation" }
+		animation = { id = "idle_sit_2_bp" type = "ms14_idle_sit_2_bp_animation" }
+		animation = { id = "move_bp" type = "ms14_walk_bp_animation" }
+		animation = { id = "idle_stand_sr" type = "ms14_idle_stand_sr_animation" }
+		animation = { id = "idle_sit_sr" type = "ms14_idle_sit_sr_animation" }
+		animation = { id = "move_sr" type = "ms14_walk_sr_animation" }
     meshsettings = {
       shader = PdxMeshAdvancedCustom
       texture_diffuse = "MS_14_IGLOOHerbert_AM.dds"
@@ -114,11 +146,19 @@ objectTypes = {
     animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
     animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
     animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms14_attack_cannon_animation" }
     animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
     animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
     animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
     animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
     animation = { id = "retreat" type = "ms14_defeat_animation" }
+		animation = { id = "idle_stand_bp" type = "ms14_idle_stand_bp_animation" }
+		animation = { id = "idle_sit_bp" type = "ms14_idle_sit_bp_animation" }
+		animation = { id = "idle_sit_2_bp" type = "ms14_idle_sit_2_bp_animation" }
+		animation = { id = "move_bp" type = "ms14_walk_bp_animation" }
+		animation = { id = "idle_stand_sr" type = "ms14_idle_stand_sr_animation" }
+		animation = { id = "idle_sit_sr" type = "ms14_idle_sit_sr_animation" }
+		animation = { id = "move_sr" type = "ms14_walk_sr_animation" }
     meshsettings = {
       shader = PdxMeshAdvancedCustom
       texture_diffuse = "MS_14_EFF_AM.dds"
@@ -140,11 +180,19 @@ objectTypes = {
     animation = { id = "attack_assault_brf" type = "ms14_attack_assault_brf_animation" }
     animation = { id = "defend_brf" type = "ms14_defend_brf_animation" }
     animation = { id = "attack_mg" type = "ms14_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms14_attack_cannon_animation" }
     animation = { id = "attack_assault_mg" type = "ms14_attack_assault_mg_animation" }
     animation = { id = "defend_mg" type = "ms14_defend_mg_animation" }
     animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
     animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
     animation = { id = "retreat" type = "ms14_defeat_animation" }
+		animation = { id = "idle_stand_bp" type = "ms14_idle_stand_bp_animation" }
+		animation = { id = "idle_sit_bp" type = "ms14_idle_sit_bp_animation" }
+		animation = { id = "idle_sit_2_bp" type = "ms14_idle_sit_2_bp_animation" }
+		animation = { id = "move_bp" type = "ms14_walk_bp_animation" }
+		animation = { id = "idle_stand_sr" type = "ms14_idle_stand_sr_animation" }
+		animation = { id = "idle_sit_sr" type = "ms14_idle_sit_sr_animation" }
+		animation = { id = "move_sr" type = "ms14_walk_sr_animation" }
     meshsettings = {
       shader = PdxMeshAdvancedCustom
       texture_diffuse = "MS_14_AEUG_AM.dds"
@@ -171,6 +219,13 @@ objectTypes = {
     animation = { id = "attack_saber" type = "ms14_attack_saber_animation" }
     animation = { id = "attack_saber_2" type = "ms14_attack_saber_2_animation" }
     animation = { id = "retreat" type = "ms14_defeat_animation" }
+		animation = { id = "idle_stand_bp" type = "ms14_idle_stand_bp_animation" }
+		animation = { id = "idle_sit_bp" type = "ms14_idle_sit_bp_animation" }
+		animation = { id = "idle_sit_2_bp" type = "ms14_idle_sit_2_bp_animation" }
+		animation = { id = "move_bp" type = "ms14_walk_bp_animation" }
+		animation = { id = "idle_stand_sr" type = "ms14_idle_stand_sr_animation" }
+		animation = { id = "idle_sit_sr" type = "ms14_idle_sit_sr_animation" }
+		animation = { id = "move_sr" type = "ms14_walk_sr_animation" }
     meshsettings = {
       texture_diffuse = "MS_14_F_AM.dds"
       shader = PdxMeshAdvancedCustom
@@ -504,6 +559,50 @@ objectTypes = {
       shader = PdxMeshAdvancedCustom
     }
 	}
+  # MS-06 K
+  pdxmesh = {
+		name = "ms06k_mesh"
+		file = "gfx/models/units/mobilesuits/ms06k.mesh"
+		scale = 2
+		animation = { id = "idle_stand_mg" type = "ms05_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ms05_idle_stand_2_mg_animation" }
+    animation = { id = "idle_sit_mg" type = "ms05_idle_sit_mg_animation" }
+		animation = { id = "move_mg"	type = "ms05_move_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms06_attack_cannon_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      name = "head"
+      shader = PdxMeshAdvancedCustom
+    }
+    meshsettings = {
+      name = "body"
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  # EFS MS-06 K
+  pdxmesh = {
+		name = "EFS_ms06k_mesh"
+		file = "gfx/models/units/mobilesuits/ms06k.mesh"
+		scale = 2
+		animation = { id = "idle_stand_mg" type = "ms05_idle_stand_mg_animation" }
+    animation = { id = "idle_stand_2_mg" type = "ms05_idle_stand_2_mg_animation" }
+    animation = { id = "idle_sit_mg" type = "ms05_idle_sit_mg_animation" }
+		animation = { id = "move_mg"	type = "ms05_move_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms06_attack_cannon_animation" }
+    animation = { id = "retreat" type = "ms05_defeat_animation" }
+    meshsettings = {
+      name = "head"
+      texture_diffuse = "ms05EFF_AM.dds"
+      texture_specular = "ms05EFF_Spec.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+    meshsettings = {
+      name = "body"
+      texture_diffuse = "ms06_EFF_AM.dds"
+      texture_specular = "ms06_EFF_Spec.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
   # MS-06 S
   pdxmesh = {
 		name = "ms06_s_mesh"
@@ -669,6 +768,110 @@ objectTypes = {
       shader = PdxMeshAdvancedCustom
     }
   }
+  # MS-08
+  pdxmesh = {
+		name = "ms08_mesh"
+		file = "gfx/models/units/mobilesuits/ms08.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms08_idle_stand_mg_animation" }
+    animation = { id = "idle_sit" type = "ms08_idle_sit_mg_animation" }
+		animation = { id = "move"	type = "ms08_move_mg_animation" }
+    animation = { id = "attack_assault" type = "ms08_attack_assault_animation" }
+    animation = { id = "attack" type = "ms08_attack_mg_animation" }
+    animation = { id = "defend" type = "ms08_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms08_defeat_animation" }
+    meshsettings = {
+      name = "ms08"
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms08tx_pdxmaterial_AM_1.dds"
+    }
+    meshsettings = {
+      name = "ms08parts"
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms08parts_pdxmaterial_ms08_AM_1.dds"
+    }
+  }
+  pdxmesh = {
+		name = "ms08_n_mesh"
+		file = "gfx/models/units/mobilesuits/ms08.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms08_idle_stand_mg_animation" }
+    animation = { id = "idle_sit" type = "ms08_idle_sit_mg_animation" }
+		animation = { id = "move"	type = "ms08_move_mg_animation" }
+    animation = { id = "attack_assault" type = "ms08_attack_assault_animation" }
+    animation = { id = "attack" type = "ms08_attack_mg_animation" }
+    animation = { id = "defend" type = "ms08_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms08_defeat_animation" }
+    meshsettings = {
+      name = "ms08"
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms08tx_pdxmaterial_AM_n.dds"
+    }
+    meshsettings = {
+      name = "ms08parts"
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms08parts_pdxmaterial_ms08_AM_n.dds"
+    }
+  }
+  pdxmesh = {
+		name = "ms08_s_mesh"
+		file = "gfx/models/units/mobilesuits/ms08.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms08_idle_stand_mg_animation" }
+    animation = { id = "idle_sit" type = "ms08_idle_sit_mg_animation" }
+		animation = { id = "move"	type = "ms08_move_mg_animation" }
+    animation = { id = "attack_assault" type = "ms08_attack_assault_animation" }
+    animation = { id = "attack" type = "ms08_attack_mg_animation" }
+    animation = { id = "defend" type = "ms08_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms08_defeat_animation" }
+    meshsettings = {
+      name = "ms08"
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms08tx_pdxmaterial_AM_s.dds"
+    }
+    meshsettings = {
+      name = "ms08parts"
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms08parts_pdxmaterial_ms08_AM_s.dds"
+    }
+  }
+  pdxmesh = {
+		name = "ms08_j_mesh"
+		file = "gfx/models/units/mobilesuits/ms08.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms08_idle_stand_sr_animation" }
+		animation = { id = "idle_stand_2" type = "ms08_idle_stand_2_sr_animation" }
+    animation = { id = "idle_sit" type = "ms08_idle_sit_sr_animation" }
+		animation = { id = "move"	type = "ms08_move_sr_animation" }
+    animation = { id = "attack_stand" type = "ms08_attack_stand_sr_animation" }
+    animation = { id = "attack_sit" type = "ms08_attack_sit_sr_animation" }
+    animation = { id = "defend" type = "ms08_attack_sit_sr_animation" }
+    animation = { id = "retreat" type = "ms08_defeat_animation" }
+    meshsettings = {
+      name = "ms08"
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms08tx_pdxmaterial_AM_j.dds"
+    }
+    meshsettings = {
+      name = "ms08parts"
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms08parts_pdxmaterial_ms08_AM_j.dds"
+    }
+  }
+  # MS-08 EX
+  pdxmesh = {
+		name = "ms08ex_mesh"
+		file = "gfx/models/units/mobilesuits/ms08tx.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms08_idle_stand_ex_animation" }
+		animation = { id = "idle_sit" type = "ms08_idle_sit_ex_animation" }
+		animation = { id = "attack"	type = "ms08_attack_ex_animation" }
+		animation = { id = "move"	type = "ms08_move_ex_animation" }
+    animation = { id = "retreat" type = "ms08_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
   # MS-09
   pdxmesh = {
 		name = "ms09_mesh"
@@ -676,6 +879,10 @@ objectTypes = {
 		scale = 2
     animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
     animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "move_cannon" type = "ms09_move_cannon_animation" }
+    animation = { id = "idle_stand_cannon" type = "ms09_idle_stand_cannon_animation" }
+    animation = { id = "idle_stand_2_cannon" type = "ms09_idle_stand_2_cannon_animation" }
+    animation = { id = "idle_sit_cannon" type = "ms09_idle_sit_cannon_animation" }
     animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
     animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
     animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
@@ -683,6 +890,7 @@ objectTypes = {
     animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
     animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
     animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms09_attack_cannon_animation" }
     animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
     animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
     animation = { id = "retreat" type = "ms09_defeat_animation" }
@@ -697,6 +905,10 @@ objectTypes = {
 		scale = 2
     animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
     animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "move_cannon" type = "ms09_move_cannon_animation" }
+    animation = { id = "idle_stand_cannon" type = "ms09_idle_stand_cannon_animation" }
+    animation = { id = "idle_stand_2_cannon" type = "ms09_idle_stand_2_cannon_animation" }
+    animation = { id = "idle_sit_cannon" type = "ms09_idle_sit_cannon_animation" }
     animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
     animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
     animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
@@ -704,6 +916,7 @@ objectTypes = {
     animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
     animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
     animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms09_attack_cannon_animation" }
     animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
     animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
     animation = { id = "retreat" type = "ms09_defeat_animation" }
@@ -719,6 +932,10 @@ objectTypes = {
 		scale = 2
     animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
     animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "move_cannon" type = "ms09_move_cannon_animation" }
+    animation = { id = "idle_stand_cannon" type = "ms09_idle_stand_cannon_animation" }
+    animation = { id = "idle_stand_2_cannon" type = "ms09_idle_stand_2_cannon_animation" }
+    animation = { id = "idle_sit_cannon" type = "ms09_idle_sit_cannon_animation" }
     animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
     animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
     animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
@@ -726,6 +943,7 @@ objectTypes = {
     animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
     animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
     animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms09_attack_cannon_animation" }
     animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
     animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
     animation = { id = "retreat" type = "ms09_defeat_animation" }
@@ -741,6 +959,10 @@ objectTypes = {
 		scale = 2
     animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
     animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "move_cannon" type = "ms09_move_cannon_animation" }
+    animation = { id = "idle_stand_cannon" type = "ms09_idle_stand_cannon_animation" }
+    animation = { id = "idle_stand_2_cannon" type = "ms09_idle_stand_2_cannon_animation" }
+    animation = { id = "idle_sit_cannon" type = "ms09_idle_sit_cannon_animation" }
     animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
     animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
     animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
@@ -748,6 +970,7 @@ objectTypes = {
     animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
     animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
     animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms09_attack_cannon_animation" }
     animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
     animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
     animation = { id = "retreat" type = "ms09_defeat_animation" }
@@ -756,6 +979,167 @@ objectTypes = {
       texture_diffuse = "ms09_Ram_diffuse.dds"
     }
 	}
+  # MS-15
+	pdxmesh = {
+		name = "ms15_mesh"
+		file = "gfx/models/units/mobilesuits/ms15.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms15_idle_animation" }
+    animation = { id = "idle_stand_2" type = "ms15_idle_2_animation" }
+    animation = { id = "idle_stand_3" type = "ms15_idle_3_animation" }
+    animation = { id = "idle_sit" type = "ms15_idle_sit_animation" }
+		animation = { id = "move"	type = "ms15_walk_animation" }
+    animation = { id = "attack_assault_sword" type = "ms15_attack_assault_sword_animation" }
+    animation = { id = "attack_assault_shield" type = "ms15_attack_assault_shield_animation" }
+    animation = { id = "retreat" type = "ms15_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ms15_k1_mesh"
+		file = "gfx/models/units/mobilesuits/ms15k.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms15_idle_animation" }
+    animation = { id = "idle_stand_2" type = "ms15_idle_2_animation" }
+    animation = { id = "idle_stand_3" type = "ms15_idle_3_animation" }
+    animation = { id = "idle_sit" type = "ms15_idle_sit_animation" }
+		animation = { id = "move"	type = "ms15_walk_animation" }
+    animation = { id = "attack_assault_sword" type = "ms15_attack_assault_sword_animation" }
+    animation = { id = "attack_assault_shield" type = "ms15_attack_assault_shield_animation" }
+    animation = { id = "retreat" type = "ms15_defeat_animation" }
+    meshsettings = {
+      name = "yms-15-5Auto_uved"
+      texture_diffuse = "yms-15-6_pdxmsh_AM_k1.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+    meshsettings = {
+      name = "pdxmeshms15k"
+      texture_diffuse = "yms-15k_pdxmaterialms15k_1_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ms15_k2_mesh"
+		file = "gfx/models/units/mobilesuits/ms15k.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms15_idle_animation" }
+    animation = { id = "idle_stand_2" type = "ms15_idle_2_animation" }
+    animation = { id = "idle_stand_3" type = "ms15_idle_3_animation" }
+    animation = { id = "idle_sit" type = "ms15_idle_sit_animation" }
+		animation = { id = "move"	type = "ms15_walk_animation" }
+    animation = { id = "attack_assault_sword" type = "ms15_attack_assault_sword_animation" }
+    animation = { id = "attack_assault_shield" type = "ms15_attack_assault_shield_animation" }
+    animation = { id = "retreat" type = "ms15_defeat_animation" }
+    meshsettings = {
+      name = "yms-15-5Auto_uved"
+      texture_diffuse = "yms-15-6_pdxmsh_AM_k2.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+    meshsettings = {
+      name = "pdxmeshms15k"
+      texture_diffuse = "yms-15k_pdxmaterialms15k_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ms15_m1_mesh"
+		file = "gfx/models/units/mobilesuits/ms15m.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms15_idle_animation" }
+    animation = { id = "idle_stand_2" type = "ms15_idle_2_animation" }
+    animation = { id = "idle_stand_3" type = "ms15_idle_3_animation" }
+    animation = { id = "idle_sit" type = "ms15_idle_sit_animation" }
+		animation = { id = "move"	type = "ms15_walk_animation" }
+    animation = { id = "attack_assault_sword" type = "ms15_attack_assault_sword_animation" }
+    animation = { id = "attack_assault_shield" type = "ms15_attack_assault_shield_animation" }
+    animation = { id = "retreat" type = "ms15_defeat_animation" }
+    meshsettings = {
+      name = "yms-15-5Auto_uved"
+      texture_diffuse = "yms-15-6_pdxmsh_AM_m1.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+    meshsettings = {
+      name = "pdxmeshms15m"
+      texture_diffuse = "yms-15m_pdxmaterialms15m_1_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ms15_m2_mesh"
+		file = "gfx/models/units/mobilesuits/ms15m.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms15_idle_animation" }
+    animation = { id = "idle_stand_2" type = "ms15_idle_2_animation" }
+    animation = { id = "idle_stand_3" type = "ms15_idle_3_animation" }
+    animation = { id = "idle_sit" type = "ms15_idle_sit_animation" }
+		animation = { id = "move"	type = "ms15_walk_animation" }
+    animation = { id = "attack_assault_sword" type = "ms15_attack_assault_sword_animation" }
+    animation = { id = "attack_assault_shield" type = "ms15_attack_assault_shield_animation" }
+    animation = { id = "retreat" type = "ms15_defeat_animation" }
+    meshsettings = {
+      name = "yms-15-5Auto_uved"
+      texture_diffuse = "yms-15-6_pdxmsh_AM_m2.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+    meshsettings = {
+      name = "pdxmeshms15m"
+      texture_diffuse = "yms-15m_pdxmaterialms15m_2_AM.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ms15_c1_mesh"
+		file = "gfx/models/units/mobilesuits/ms15.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms15_idle_animation" }
+    animation = { id = "idle_stand_2" type = "ms15_idle_2_animation" }
+    animation = { id = "idle_stand_3" type = "ms15_idle_3_animation" }
+    animation = { id = "idle_sit" type = "ms15_idle_sit_animation" }
+		animation = { id = "move"	type = "ms15_walk_animation" }
+    animation = { id = "attack_assault_sword" type = "ms15_attack_assault_sword_animation" }
+    animation = { id = "attack_assault_shield" type = "ms15_attack_assault_shield_animation" }
+    animation = { id = "retreat" type = "ms15_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "yms-15-6_pdxmsh_AM_c1.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ms15_c2_mesh"
+		file = "gfx/models/units/mobilesuits/ms15.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms15_idle_animation" }
+    animation = { id = "idle_stand_2" type = "ms15_idle_2_animation" }
+    animation = { id = "idle_stand_3" type = "ms15_idle_3_animation" }
+    animation = { id = "idle_sit" type = "ms15_idle_sit_animation" }
+		animation = { id = "move"	type = "ms15_walk_animation" }
+    animation = { id = "attack_assault_sword" type = "ms15_attack_assault_sword_animation" }
+    animation = { id = "attack_assault_shield" type = "ms15_attack_assault_shield_animation" }
+    animation = { id = "retreat" type = "ms15_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "yms-15-6_pdxmsh_AM_c2.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ms15_c3_mesh"
+		file = "gfx/models/units/mobilesuits/ms15.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms15_idle_animation" }
+    animation = { id = "idle_stand_2" type = "ms15_idle_2_animation" }
+    animation = { id = "idle_stand_3" type = "ms15_idle_3_animation" }
+    animation = { id = "idle_sit" type = "ms15_idle_sit_animation" }
+		animation = { id = "move"	type = "ms15_walk_animation" }
+    animation = { id = "attack_assault_sword" type = "ms15_attack_assault_sword_animation" }
+    animation = { id = "attack_assault_shield" type = "ms15_attack_assault_shield_animation" }
+    animation = { id = "retreat" type = "ms15_defeat_animation" }
+    meshsettings = {
+      texture_diffuse = "yms-15-6_pdxmsh_AM_c3.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+
   # EFS MS-09
   pdxmesh = {
 		name = "efs_ms09_mesh"
@@ -763,6 +1147,10 @@ objectTypes = {
 		scale = 2
     animation = { id = "move_rpg" type = "ms09_move_rpg_animation" }
     animation = { id = "move_mg" type = "ms09_move_mg_animation" }
+    animation = { id = "move_cannon" type = "ms09_move_cannon_animation" }
+    animation = { id = "idle_stand_cannon" type = "ms09_idle_stand_cannon_animation" }
+    animation = { id = "idle_stand_2_cannon" type = "ms09_idle_stand_2_cannon_animation" }
+    animation = { id = "idle_sit_cannon" type = "ms09_idle_sit_cannon_animation" }
     animation = { id = "idle_stand_rpg" type = "ms09_idle_stand_rpg_animation" }
     animation = { id = "idle_stand_2_rpg" type = "ms09_idle_stand_2_rpg_animation" }
     animation = { id = "idle_sit_rpg" type = "ms09_idle_sit_rpg_animation" }
@@ -770,6 +1158,7 @@ objectTypes = {
     animation = { id = "attack_heatsarver_mg" type = "ms09_attack_heatsarver_mg_animation" }
     animation = { id = "attack_rpg" type = "ms09_attack_rpg_animation" }
     animation = { id = "attack_mg" type = "ms09_attack_mg_animation" }
+    animation = { id = "attack_cannon" type = "ms09_attack_cannon_animation" }
     animation = { id = "defend_rpg" type = "ms09_defend_rpg_animation" }
     animation = { id = "defend_mg" type = "ms09_defend_mg_animation" }
     animation = { id = "retreat" type = "ms09_defeat_animation" }
@@ -1354,4 +1743,294 @@ objectTypes = {
       texture_diffuse = "NT1_Amuro_AM.dds"
     }
 	}
+  # MSN-02
+	pdxmesh = {
+		name = "msn02_mesh"
+		file = "gfx/models/units/mobilesuits/msn02.mesh"
+		scale = 2.5
+    animation = { id = "idle" type = "msn02_idle_animation" }
+    animation = { id = "idle_2" type = "msn02_idle_2_animation" }
+		animation = { id = "move"	type = "msn02_move_animation" }
+    animation = { id = "attack" type = "msn02_attack_1_animation" }
+    animation = { id = "attack_2" type = "msn02_attack_2_animation" }
+    animation = { id = "defend" type = "msn02_defend_animation" }
+    animation = { id = "retreat" type = "msn02_defeat_animation" }
+    animation = { id = "idle_p" type = "msn02_p_idle_animation" }
+		animation = { id = "move_p"	type = "msn02_p_move_animation" }
+    animation = { id = "attack_p" type = "msn02_p_attack_animation" }
+    animation = { id = "defend_p" type = "msn02_p_attack_animation" }
+    animation = { id = "retreat_p" type = "msn02_p_move_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # MSN-02 Leg
+	pdxmesh = {
+		name = "msn02_leg_mesh"
+		file = "gfx/models/units/mobilesuits/msn02-leg.mesh"
+		scale = 2.5
+    animation = { id = "idle_p" type = "msn02_p_leg_idle_animation" }
+		animation = { id = "move_p"	type = "msn02_p_leg_move_animation" }
+    animation = { id = "attack_p" type = "msn02_p_leg_attack_animation" }
+    animation = { id = "defend_p" type = "msn02_p_leg_attack_animation" }
+    animation = { id = "retreat_p" type = "msn02_p_leg_move_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "msn02_2_mesh"
+		file = "gfx/models/units/mobilesuits/msn02.mesh"
+		scale = 1.8
+    animation = { id = "idle" type = "msn02_idle_animation" }
+    animation = { id = "idle_2" type = "msn02_idle_2_animation" }
+		animation = { id = "move"	type = "msn02_move_animation" }
+    animation = { id = "attack" type = "msn02_attack_1_animation" }
+    animation = { id = "attack_2" type = "msn02_attack_2_animation" }
+    animation = { id = "defend" type = "msn02_defend_animation" }
+    animation = { id = "retreat" type = "msn02_defeat_animation" }
+    animation = { id = "idle_p" type = "msn02_p_idle_animation" }
+		animation = { id = "move_p"	type = "msn02_p_move_animation" }
+    animation = { id = "attack_p" type = "msn02_p_attack_animation" }
+    animation = { id = "defend_p" type = "msn02_p_attack_animation" }
+    animation = { id = "retreat_p" type = "msn02_p_move_animation" }
+    meshsettings = {
+      texture_diffuse = "msn02_2_PDXMESH_AM_2.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "msn02_leg_2_mesh"
+		file = "gfx/models/units/mobilesuits/msn02-leg.mesh"
+		scale = 1.8
+    animation = { id = "idle_p" type = "msn02_p_leg_idle_animation" }
+		animation = { id = "move_p"	type = "msn02_p_leg_move_animation" }
+    animation = { id = "attack_p" type = "msn02_p_leg_attack_animation" }
+    animation = { id = "defend_p" type = "msn02_p_leg_attack_animation" }
+    animation = { id = "retreat_p" type = "msn02_p_leg_move_animation" }
+    meshsettings = {
+      texture_diffuse = "msn02_2_leg_pdxmaterialleg_AM_2.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "msn02_3_mesh"
+		file = "gfx/models/units/mobilesuits/msn02.mesh"
+		scale = 1.8
+    animation = { id = "idle" type = "msn02_idle_animation" }
+    animation = { id = "idle_2" type = "msn02_idle_2_animation" }
+		animation = { id = "move"	type = "msn02_move_animation" }
+    animation = { id = "attack" type = "msn02_attack_1_animation" }
+    animation = { id = "attack_2" type = "msn02_attack_2_animation" }
+    animation = { id = "defend" type = "msn02_defend_animation" }
+    animation = { id = "retreat" type = "msn02_defeat_animation" }
+    animation = { id = "idle_p" type = "msn02_p_idle_animation" }
+		animation = { id = "move_p"	type = "msn02_p_move_animation" }
+    animation = { id = "attack_p" type = "msn02_p_attack_animation" }
+    animation = { id = "defend_p" type = "msn02_p_attack_animation" }
+    animation = { id = "retreat_p" type = "msn02_p_move_animation" }
+    meshsettings = {
+      texture_diffuse = "msn02_2_PDXMESH_AM_3.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "msn02_leg_3_mesh"
+		file = "gfx/models/units/mobilesuits/msn02-leg.mesh"
+		scale = 1.8
+    animation = { id = "idle_p" type = "msn02_p_leg_idle_animation" }
+		animation = { id = "move_p"	type = "msn02_p_leg_move_animation" }
+    animation = { id = "attack_p" type = "msn02_p_leg_attack_animation" }
+    animation = { id = "defend_p" type = "msn02_p_leg_attack_animation" }
+    animation = { id = "retreat_p" type = "msn02_p_leg_move_animation" }
+    meshsettings = {
+      texture_diffuse = "msn02_2_leg_pdxmaterialleg_AM_3.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "msn02_4_mesh"
+		file = "gfx/models/units/mobilesuits/msn02.mesh"
+		scale = 1.8
+    animation = { id = "idle" type = "msn02_idle_animation" }
+    animation = { id = "idle_2" type = "msn02_idle_2_animation" }
+		animation = { id = "move"	type = "msn02_move_animation" }
+    animation = { id = "attack" type = "msn02_attack_1_animation" }
+    animation = { id = "attack_2" type = "msn02_attack_2_animation" }
+    animation = { id = "defend" type = "msn02_defend_animation" }
+    animation = { id = "retreat" type = "msn02_defeat_animation" }
+    animation = { id = "idle_p" type = "msn02_p_idle_animation" }
+		animation = { id = "move_p"	type = "msn02_p_move_animation" }
+    animation = { id = "attack_p" type = "msn02_p_attack_animation" }
+    animation = { id = "defend_p" type = "msn02_p_attack_animation" }
+    animation = { id = "retreat_p" type = "msn02_p_move_animation" }
+    meshsettings = {
+      texture_diffuse = "msn02_2_PDXMESH_AM_4.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "msn02_leg_4_mesh"
+		file = "gfx/models/units/mobilesuits/msn02-leg.mesh"
+		scale = 1.8
+    animation = { id = "idle_p" type = "msn02_p_leg_idle_animation" }
+		animation = { id = "move_p"	type = "msn02_p_leg_move_animation" }
+    animation = { id = "attack_p" type = "msn02_p_leg_attack_animation" }
+    animation = { id = "defend_p" type = "msn02_p_leg_attack_animation" }
+    animation = { id = "retreat_p" type = "msn02_p_leg_move_animation" }
+    meshsettings = {
+      texture_diffuse = "msn02_2_leg_pdxmaterialleg_AM_4.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  # MS-18
+	pdxmesh = {
+		name = "ms18_mesh"
+		file = "gfx/models/units/mobilesuits/ms18.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms18_idle_stand_animation" }
+		animation = { id = "idle_sit" type = "ms18_idle_sit_animation" }
+		animation = { id = "idle_sit_2" type = "ms18_idle_sit_2_animation" }
+		animation = { id = "move"	type = "ms18_move_animation" }
+		animation = { id = "move_2"	type = "ms18_move_2_animation" }
+		animation = { id = "attack_heathawk" type = "ms18_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms18_attack_mg_animation" }
+    animation = { id = "attack_assault" type = "ms18_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms18_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms18_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "ms18_2_mesh"
+		file = "gfx/models/units/mobilesuits/ms18.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms18_idle_stand_animation" }
+		animation = { id = "idle_sit" type = "ms18_idle_sit_animation" }
+		animation = { id = "idle_sit_2" type = "ms18_idle_sit_2_animation" }
+		animation = { id = "move"	type = "ms18_move_animation" }
+		animation = { id = "move_2"	type = "ms18_move_2_animation" }
+		animation = { id = "attack_heathawk" type = "ms18_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms18_attack_mg_animation" }
+    animation = { id = "attack_assault" type = "ms18_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms18_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms18_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms18_pdxmaterial_AM_2.dds"
+    }
+	}
+	pdxmesh = {
+		name = "ms18_3_mesh"
+		file = "gfx/models/units/mobilesuits/ms18.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms18_idle_stand_animation" }
+		animation = { id = "idle_sit" type = "ms18_idle_sit_animation" }
+		animation = { id = "idle_sit_2" type = "ms18_idle_sit_2_animation" }
+		animation = { id = "move"	type = "ms18_move_animation" }
+		animation = { id = "move_2"	type = "ms18_move_2_animation" }
+		animation = { id = "attack_heathawk" type = "ms18_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms18_attack_mg_animation" }
+    animation = { id = "attack_assault" type = "ms18_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms18_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms18_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms18_pdxmaterial_AM_3.dds"
+    }
+	}
+	pdxmesh = {
+		name = "ms18_4_mesh"
+		file = "gfx/models/units/mobilesuits/ms18.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "ms18_idle_stand_animation" }
+		animation = { id = "idle_sit" type = "ms18_idle_sit_animation" }
+		animation = { id = "idle_sit_2" type = "ms18_idle_sit_2_animation" }
+		animation = { id = "move"	type = "ms18_move_animation" }
+		animation = { id = "move_2"	type = "ms18_move_2_animation" }
+		animation = { id = "attack_heathawk" type = "ms18_attack_heathawk_animation" }
+    animation = { id = "attack_mg" type = "ms18_attack_mg_animation" }
+    animation = { id = "attack_assault" type = "ms18_attack_assault_mg_animation" }
+    animation = { id = "defend_mg" type = "ms18_defend_mg_animation" }
+    animation = { id = "retreat" type = "ms18_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ms18_pdxmaterial_AM_4.dds"
+    }
+	}
+  # RX-77
+  pdxmesh = {
+		name = "rx77_mesh"
+		file = "gfx/models/units/mobilesuits/rx77.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rx77_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "rx77_idle_sit_animation" }
+		animation = { id = "move"	type = "rx77_move_animation" }
+    animation = { id = "attack_stand" type = "rx77_attack_stand_animation" }
+    animation = { id = "attack_sit" type = "rx77_attack_sit_animation" }
+    animation = { id = "retreat" type = "rx77_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "rx77_2_mesh"
+		file = "gfx/models/units/mobilesuits/rx77.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rx77_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "rx77_idle_sit_animation" }
+		animation = { id = "move"	type = "rx77_move_animation" }
+    animation = { id = "attack_stand" type = "rx77_attack_stand_animation" }
+    animation = { id = "attack_sit" type = "rx77_attack_sit_animation" }
+    animation = { id = "retreat" type = "rx77_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "rx77_pdxmaterial_2_AM.dds"
+    }
+  }
+  pdxmesh = {
+		name = "rx77_3_mesh"
+		file = "gfx/models/units/mobilesuits/rx77.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rx77_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "rx77_idle_sit_animation" }
+		animation = { id = "move"	type = "rx77_move_animation" }
+    animation = { id = "attack_stand" type = "rx77_attack_stand_animation" }
+    animation = { id = "attack_sit" type = "rx77_attack_sit_animation" }
+    animation = { id = "retreat" type = "rx77_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "rx77_pdxmaterial_3_AM.dds"
+    }
+  }
+  pdxmesh = {
+		name = "rx77_4_mesh"
+		file = "gfx/models/units/mobilesuits/rx77.mesh"
+		scale = 2
+		animation = { id = "idle_stand" type = "rx77_idle_stand_animation" }
+    animation = { id = "idle_sit" type = "rx77_idle_sit_animation" }
+		animation = { id = "move"	type = "rx77_move_animation" }
+    animation = { id = "attack_stand" type = "rx77_attack_stand_animation" }
+    animation = { id = "attack_sit" type = "rx77_attack_sit_animation" }
+    animation = { id = "retreat" type = "rx77_defeat_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "rx77_pdxmaterial_4_AM.dds"
+    }
+  }
+  # MAX-03
+  pdxmesh = {
+    name = "max03_mesh"
+    file = "gfx/models/units/mobilesuits/max03.mesh"
+    scale = 0.4
+    animation = { id = "idle" type = "max03_idle_animation" }
+    animation = { id = "idle_2" type = "max03_idle_2_animation" }
+    animation = { id = "move" type = "max03_move_animation" }
+    animation = { id = "attack" type = "max03_attack_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+
 }

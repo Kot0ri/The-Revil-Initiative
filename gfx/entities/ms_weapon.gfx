@@ -73,6 +73,16 @@ objectTypes = {
     }
 	}
   pdxmesh = {
+		name = "ZEO_ms_weapon_cannon_1_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_ms_weapon_cannon_1.mesh"
+		scale = 2
+    animation = { id = "idle" type = "cannon_idle_animation" }
+    animation = { id = "attack" type = "cannon_attack_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
 		name = "ZEO_ms_weapon_heatmelee_1_mesh"
 		file = "gfx/models/units/mobilesuits/ZEO_heatmelee_01.mesh"
 		scale = 1.65
@@ -84,6 +94,7 @@ objectTypes = {
 		name = "ZEO_ms_weapon_heatmelee_2_mesh"
 		file = "gfx/models/units/mobilesuits/ZEO_heatmelee_02.mesh"
 		scale = 1.8
+    animation = { id = "normal" type = "ZEO_heatmelee_02_normal_animation" }
     animation = { id = "idle_stand_2" type = "ZEO_heatmelee_02_idle_animation" }
     animation = { id = "attack_sword" type = "ZEO_heatmelee_02_attack_animation" }
     meshsettings = {
@@ -123,9 +134,95 @@ objectTypes = {
     }
 	}
   pdxmesh = {
+		name = "ZEO_ms_weapon_beamsord_yms15_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_beamsord_yms15.mesh"
+		scale = 0.2
+    animation = { id = "idle" type = "ZEO_beamsord_yms15_idle_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_weapon_beamsord_yms15_2_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_beamsord_yms15_2.mesh"
+		scale = 0.2
+    animation = { id = "idle" type = "ZEO_beamsord_yms15_2_idle_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_yms15_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_yms15.mesh"
+		scale = 1.8
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_yms15_c1_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_yms15.mesh"
+		scale = 1.5
+    meshsettings = {
+      texture_diffuse = "ZEO_shield_yms15_1_pdxmsh_AM_c1.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_yms15_c2_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_yms15.mesh"
+		scale = 1.5
+    meshsettings = {
+      texture_diffuse = "ZEO_shield_yms15_1_pdxmsh_AM_c2.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_yms15_c3_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_yms15.mesh"
+		scale = 1.5
+    meshsettings = {
+      texture_diffuse = "ZEO_shield_yms15_1_pdxmsh_AM_c3.dds"
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_yms15_2_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_yms15_2.mesh"
+		scale = 1.8
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_yms15_3_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_yms15_3.mesh"
+		scale = 1.8
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_yms15_3_2_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_yms15_3.mesh"
+		scale = 1.8
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ZEO_shield_yms15_3_pdxmaterial_AM_2.dds"
+    }
+	}
+  pdxmesh = {
 		name = "ZEO_ms_weapon_strumfaust_mesh"
 		file = "gfx/models/units/mobilesuits/ems10_strumfaust.mesh"
 		scale = 0.85
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+		name = "ZEO_ms_weapon_strumfaust_big_mesh"
+		file = "gfx/models/units/mobilesuits/ems10_strumfaust.mesh"
+		scale = 1.2
     meshsettings = {
       shader = PdxMeshAdvancedCustom
     }
@@ -180,6 +277,14 @@ objectTypes = {
   pdxmesh = {
 		name = "ZEO_ms_shield_2_mesh"
 		file = "gfx/models/units/mobilesuits/ZEO_shield_02.mesh"
+		scale = 2.2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_2_ms07c_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_shield_02_ms07c.mesh"
 		scale = 2.2
     meshsettings = {
       shader = PdxMeshAdvancedCustom
@@ -248,6 +353,23 @@ objectTypes = {
       texture_diffuse = "ZEO_shield_03_Herbert_AM.dds"
       texture_specular = "ZEO_shield_03_Herbert_SP.dds"
       shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_ms06k_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_ms_shield_ms06k.mesh"
+		scale = 2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+  pdxmesh = {
+		name = "ZEO_ms_shield_ms06k_2_mesh"
+		file = "gfx/models/units/mobilesuits/ZEO_ms_shield_ms06k.mesh"
+		scale = 2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+      texture_diffuse = "ZEO_ms_weapon_shield_ms06k_pdxmaterial_2_AM.dds"
     }
 	}
   pdxmesh = {
@@ -664,6 +786,22 @@ objectTypes = {
     name = "EFS_rx79_backpack_mesh"
     file = "gfx/models/units/mobilesuits/rx79_bp.mesh"
     scale = 3.4
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "ms14_backpack_mesh"
+    file = "gfx/models/units/mobilesuits/ms14backpack.mesh"
+		scale = 2
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+  }
+  pdxmesh = {
+    name = "ms14f_backpack_mesh"
+    file = "gfx/models/units/mobilesuits/ms14fbackpack.mesh"
+		scale = 2
     meshsettings = {
       shader = PdxMeshAdvancedCustom
     }

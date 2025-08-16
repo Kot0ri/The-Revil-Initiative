@@ -1,0 +1,64 @@
+objectTypes = {
+	pdxmesh = {
+		name = "msm03_mesh"
+		file = "gfx/models/units/ships/msm03_ship.mesh"
+		
+		animation = { id = "idle"			type = "generic_submarine_idle_animation" }
+		animation = { id = "move"			type = "msm03_ship_move_animation" }
+		animation = { id = "attack"			type = "generic_submarine_attack_animation" }
+		animation = { id = "defend"			type = "generic_submarine_defend_animation" }
+		animation = { id = "damaged_attack"	type = "generic_submarine_attack_animation" }
+		animation = { id = "damaged_defend"	type = "generic_submarine_defend_animation" }
+		animation = { id = "death"			type = "generic_submarine_death_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "msm03c_mesh"
+		file = "gfx/models/units/ships/msm03_ship.mesh"
+		
+		animation = { id = "idle"			type = "generic_submarine_idle_animation" }
+		animation = { id = "move"			type = "msm03_ship_move_animation" }
+		animation = { id = "attack"			type = "generic_submarine_attack_animation" }
+		animation = { id = "defend"			type = "generic_submarine_defend_animation" }
+		animation = { id = "damaged_attack"	type = "generic_submarine_attack_animation" }
+		animation = { id = "damaged_defend"	type = "generic_submarine_defend_animation" }
+		animation = { id = "death"			type = "generic_submarine_death_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+			texture_diffuse = "msm03_pdxmsh_3_AM.dds"
+    }
+	}
+	pdxmesh = {
+		name = "msm07_mesh"
+		file = "gfx/models/units/ships/msm07_ship.mesh"
+		
+		animation = { id = "idle"			type = "generic_submarine_idle_animation" }
+		animation = { id = "move"			type = "msm07_ship_move_animation" }
+		animation = { id = "attack"			type = "generic_submarine_attack_animation" }
+		animation = { id = "defend"			type = "generic_submarine_defend_animation" }
+		animation = { id = "damaged_attack"	type = "generic_submarine_attack_animation" }
+		animation = { id = "damaged_defend"	type = "generic_submarine_defend_animation" }
+		animation = { id = "death"			type = "generic_submarine_death_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+    }
+	}
+	pdxmesh = {
+		name = "msm07e_mesh"
+		file = "gfx/models/units/ships/msm07_ship.mesh"
+		
+		animation = { id = "idle"			type = "generic_submarine_idle_animation" }
+		animation = { id = "move"			type = "msm07_ship_move_animation" }
+		animation = { id = "attack"			type = "generic_submarine_attack_animation" }
+		animation = { id = "defend"			type = "generic_submarine_defend_animation" }
+		animation = { id = "damaged_attack"	type = "generic_submarine_attack_animation" }
+		animation = { id = "damaged_defend"	type = "generic_submarine_defend_animation" }
+		animation = { id = "death"			type = "generic_submarine_death_animation" }
+    meshsettings = {
+      shader = PdxMeshAdvancedCustom
+			texture_diffuse = "msm07_pdxmaterial_AM_c2.dds"
+    }
+	}
+}

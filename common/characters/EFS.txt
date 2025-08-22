@@ -56,68 +56,7 @@ EFS_eff_high_command={
 		}
 	}
 
-	EFS_blex_forer={
-		name=EFS_blex_forer
-		portraits={
-			army = {
-				small = GFX_idea_blex_forer
-			}
-			civilian={
-				large="gfx/leaders/EFS/Portrait_Efsf_blex_forer.dds"
-			}
-		}
-		navy_leader = {
-			traits = {
-				refromer_faction
-			}
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			maneuvering_skill = 3
-			coordination_skill = 3
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = blex_forer
-			allowed = {
-				original_tag = EFS
-			}
-			traits = {
-				blex_forer_trait
-			}
-			available = {
-				NOT = {
-					has_country_flag = purge_reformers
-				}
-			}
-			do_effect = {
-				NOT = {
-					has_government = contolism
-				}
-			}
-			modifier = {
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					factor = 0
-					is_historical_focus_on = yes
-				}
-				modifier = {
-					factor = 5
-					has_completed_focus = efsf_earth_revitalization_plan
-				}
-				modifier = {
-					factor = 10
-					has_completed_focus = efsf_transfer_of_government_function
-				}
-				modifier = {
-					factor = 0
-					has_completed_focus = efsf_oppression_of_anti-earth_federation
-				}
-			}
-		}
-	}
+	
 	EFS_jamitov_hymen={
 		name=EFS_jamitov_hymen
 		portraits={
@@ -341,7 +280,467 @@ EFS_eff_high_command={
 		}
 	}
 
+# generals
+
+EFS_elran_gfc = {
+		name = EFS_elran_gfc
+		portraits={
+			army={
+				small="GFX_idea_elran_gfc"
+			}
+		}
+		corps_commander = {
+			traits = {
+				hidden_sympathies politically_connected
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = ground_forces_chief
+			idea_token = elran_gfc
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				elran_gfc_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = elran_is_capture
+					}
+				}
+			}
+			on_add = {
+				EFS = {
+					country_event = { id = efsf.2001 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+
+		EFS_stephan_hepbum={
+		name=EFS_stephan_hepbum
+		portraits={
+			army={
+				small="GFX_idea_stephan_hepbum"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_stephan_hepbum.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard onservative_faction }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=121
+		}
+		advisor={
+			
+		}
+	}
+	EFS_hawkins_marnery={
+		name=EFS_hawkins_marnery
+		portraits={
+			army={
+				small="GFX_idea_hawkins_marnery"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_hawkins_marnery.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_cautious  iberal_faction }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=126
+		}
+		advisor={
+			slot = ground_forces_chief
+			idea_token = hawkins_marnery
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 100
+			traits = {
+				hawkings_marnery_trait
+			}
+			on_add = {
+				EFS = {
+					country_event = { id = efsf.2002 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+
+		
+	EFS_antonio_callas={
+		name=EFS_antonio_callas
+		portraits={
+			army={
+				small="GFX_idea_antonio_callas"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_antonio_callas.dds"
+			}
+		}
+		corps_commander={
+			traits={ fort_commander conservative_faction }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=115
+		}
+		advisor={
+			slot = ground_forces_chief
+			idea_token = antonio_callas
+			allowed = {
+				original_tag = EFS
+			}
+			cost = 100
+			traits = {
+				antonio_callas_trait
+			}
+			on_add = {
+				EFS = {
+					country_event = { id = efsf.2000 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	EFS_isan_ryer={
+		name=EFS_isan_ryer
+		portraits={
+			army={
+				small="GFX_idea_ethan_liar"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_ethan_liar.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard harsh_leader conservative_faction }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=109
+		}
+		advisor={
+			slot = ground_forces_chief
+			idea_token = ethan_liar
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				ethan_liar_trait
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = eathan_is_dead
+					}
+				}
+			}
+			on_add = {
+				EFS = {
+					country_event = { id = efsf.2003 }
+				}
+			}
+			ai_will_do = {
+				factor = 1
+				modifier = {
+					has_war = yes
+					factor = 5
+				}
+			}
+		}
+	}
+	EFS_kojima={
+		name=EFS_kojima
+		portraits={
+			army={
+				small="GFX_idea_kojima"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_kojima.dds"
+			}
+		}
+		corps_commander={
+			traits={ jungle_rat liberal_faction }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=119
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = kojima
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				hc_jungle_commander_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	
+	EFS_woody_malden={
+		name=EFS_woody_malden
+		portraits={
+			army={
+				small="GFX_idea_woody_malden"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_Woody_Malden.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer liberal_faction }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=154
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = woody_malden
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = woody_is_dead
+					}
+				}
+			}
+			traits = {
+				hc_mechanic_specialist_3
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+	EFS_nakohha_nakato={
+		name=EFS_nakohha_nakato
+		portraits={
+			army={
+				small="GFX_idea_nakohha_nakato"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_Nakohha_Nakato.dds"
+			}
+		}
+		corps_commander={
+			traits = {
+				hardliner_faction
+			}
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=178
+		}
+	}
+	EFS_matilda_ajan={
+		name=EFS_matilda_ajan
+		portraits={
+			army={
+				small="GFX_idea_matild_ajan"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_efsf_Matilda_Ajan.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_engineer liberal_faction }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=181
+		}
+		advisor={
+			slot = high_command
+			ledger = army
+			cost = 100
+			idea_token = matild_ajan
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_country_flag = matild_is_dead
+					}
+				}
+			}
+			traits = {
+				hc_logistics_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
 #Admirals
+
+EFS_bask_om={
+		name=EFS_bask_om
+		portraits={
+			army={
+				small="GFX_idea_bask_om"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_bask_om.dds"
+			}
+		}
+		navy_leader = {
+			traits={ caustic_personality hardliner_faction }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill = 4
+			coordination_skill = 5
+		}
+		advisor={
+			slot = high_command
+			ledger = air
+			cost = 100
+			idea_token = bask_om
+			allowed = {
+				original_tag = EFS
+			}
+			available = {
+				NOT = {
+					has_country_flag = eliminate_radical_right
+				}
+			}
+			traits = {
+				hc_air_bomb_1
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = no
+					factor = 0
+				}
+			}
+		}
+	}
+
+EFS_blex_forer={
+		name=EFS_blex_forer
+		portraits={
+			army = {
+				small = GFX_idea_blex_forer
+			}
+			civilian={
+				large="gfx/leaders/EFS/Portrait_Efsf_blex_forer.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				refromer_faction
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = blex_forer
+			allowed = {
+				original_tag = EFS
+			}
+			traits = {
+				blex_forer_trait
+			}
+			available = {
+				NOT = {
+					has_country_flag = purge_reformers
+				}
+			}
+			do_effect = {
+				NOT = {
+					has_government = contolism
+				}
+			}
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					factor = 0
+					is_historical_focus_on = yes
+				}
+			}
+		}
+	}
 
 EFS_gady_kinsey={
 	name=EFS_gady_kinsey
@@ -782,43 +1181,7 @@ EFS_gady_kinsey={
 
 #other
 
-	EFS_elran_gfc = {
-		name = EFS_elran_gfc
-		portraits={
-			army={
-				small="GFX_idea_elran_gfc"
-			}
-		}
-		advisor = {
-			slot = ground_forces_chief
-			idea_token = elran_gfc
-			allowed = {
-				original_tag = EFS
-			}
-			traits = {
-				elran_gfc_trait
-			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = elran_is_capture
-					}
-				}
-			}
-			on_add = {
-				EFS = {
-					country_event = { id = efsf.2001 }
-				}
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					has_war = yes
-					factor = 5
-				}
-			}
-		}
-	}
+	
 
 	EFS_josef_eschonbach = {
 		name=josef_eschonbach
@@ -1178,380 +1541,8 @@ EFS_gady_kinsey={
 		}
 	}
 	
-	EFS_stephan_hepbum={
-		name=EFS_stephan_hepbum
-		portraits={
-			army={
-				small="GFX_idea_stephan_hepbum"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_stephan_hepbum.dds"
-			}
-		}
-		corps_commander={
-			traits={ old_guard fort_commander conservative_faction }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=121
-		}
-		advisor={
-			slot = space_forces_chief
-			idea_token = stephan_hepbum
-			allowed = {
-				original_tag = EFS
-			}
-			cost = 50
-			traits = {
-				stephan_hepbum_trait
-			}
-			modifier = {
-				naval_defense_factor = 0.1
-				navy_fuel_consumption_factor = -0.05
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					factor = 5
-					has_war = yes
-				}
-			}
-		}
-	}
-	EFS_hawkins_marnery={
-		name=EFS_hawkins_marnery
-		portraits={
-			army={
-				small="GFX_idea_hawkins_marnery"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_hawkins_marnery.dds"
-			}
-		}
-		corps_commander={
-			traits={ old_guard trait_cautious fort_commander liberal_faction }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=126
-		}
-		advisor={
-			slot = ground_forces_chief
-			idea_token = hawkins_marnery
-			allowed = {
-				original_tag = EFS
-			}
-			cost = 100
-			traits = {
-				hawkings_marnery_trait
-			}
-			on_add = {
-				EFS = {
-					country_event = { id = efsf.2002 }
-				}
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					has_war = yes
-					factor = 5
-				}
-			}
-		}
-	}
-	EFS_bask_om={
-		name=EFS_bask_om
-		portraits={
-			army={
-				small="GFX_idea_bask_om"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_bask_om.dds"
-			}
-		}
-		navy_leader = {
-			traits={ caustic_personality hardliner_faction }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			maneuvering_skill = 4
-			coordination_skill = 5
-		}
-		advisor={
-			slot = high_command
-			ledger = air
-			cost = 100
-			idea_token = bask_om
-			allowed = {
-				original_tag = EFS
-			}
-			available = {
-				NOT = {
-					has_country_flag = eliminate_radical_right
-				}
-			}
-			traits = {
-				hc_air_bomb_1
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_war = no
-					factor = 0
-				}
-			}
-		}
-	}
-	EFS_antonio_callas={
-		name=EFS_antonio_callas
-		portraits={
-			army={
-				small="GFX_idea_antonio_callas"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_antonio_callas.dds"
-			}
-		}
-		corps_commander={
-			traits={ fort_commander conservative_faction }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=115
-		}
-		advisor={
-			slot = ground_forces_chief
-			idea_token = antonio_callas
-			allowed = {
-				original_tag = EFS
-			}
-			cost = 100
-			traits = {
-				antonio_callas_trait
-			}
-			on_add = {
-				EFS = {
-					country_event = { id = efsf.2000 }
-				}
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					has_war = yes
-					factor = 5
-				}
-			}
-		}
-	}
-	EFS_isan_ryer={
-		name=EFS_isan_ryer
-		portraits={
-			army={
-				small="GFX_idea_ethan_liar"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_ethan_liar.dds"
-			}
-		}
-		corps_commander={
-			traits={ old_guard harsh_leader conservative_faction }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=109
-		}
-		advisor={
-			slot = ground_forces_chief
-			idea_token = ethan_liar
-			allowed = {
-				original_tag = EFS
-			}
-			traits = {
-				ethan_liar_trait
-			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = eathan_is_dead
-					}
-				}
-			}
-			on_add = {
-				EFS = {
-					country_event = { id = efsf.2003 }
-				}
-			}
-			ai_will_do = {
-				factor = 1
-				modifier = {
-					has_war = yes
-					factor = 5
-				}
-			}
-		}
-	}
-	EFS_kojima={
-		name=EFS_kojima
-		portraits={
-			army={
-				small="GFX_idea_kojima"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_Efsf_kojima.dds"
-			}
-		}
-		corps_commander={
-			traits={ jungle_rat liberal_faction }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=119
-		}
-		advisor={
-			slot = high_command
-			ledger = army
-			cost = 100
-			idea_token = kojima
-			allowed = {
-				original_tag = EFS
-			}
-			traits = {
-				hc_jungle_commander_1
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_war = no
-					factor = 0
-				}
-			}
-		}
-	}
-	
-	EFS_woody_malden={
-		name=EFS_woody_malden
-		portraits={
-			army={
-				small="GFX_idea_woody_malden"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_efsf_Woody_Malden.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer liberal_faction }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=3
-			logistics_skill=2
-			legacy_id=154
-		}
-		advisor={
-			slot = high_command
-			ledger = army
-			cost = 100
-			idea_token = woody_malden
-			allowed = {
-				original_tag = EFS
-			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = woody_is_dead
-					}
-				}
-			}
-			traits = {
-				hc_mechanic_specialist_3
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_war = no
-					factor = 0
-				}
-			}
-		}
-	}
-	EFS_nakohha_nakato={
-		name=EFS_nakohha_nakato
-		portraits={
-			army={
-				small="GFX_idea_nakohha_nakato"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_efsf_Nakohha_Nakato.dds"
-			}
-		}
-		corps_commander={
-			traits = {
-				hardliner_faction
-			}
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=2
-			legacy_id=178
-		}
-	}
-	EFS_matilda_ajan={
-		name=EFS_matilda_ajan
-		portraits={
-			army={
-				small="GFX_idea_matild_ajan"
-			}
-			army={
-				large="gfx/leaders/EFS/Portrait_efsf_Matilda_Ajan.dds"
-			}
-		}
-		corps_commander={
-			traits={ trait_engineer liberal_faction }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=4
-			legacy_id=181
-		}
-		advisor={
-			slot = high_command
-			ledger = army
-			cost = 100
-			idea_token = matild_ajan
-			allowed = {
-				original_tag = EFS
-			}
-			available = {
-				hidden_trigger = {
-					NOT = {
-						has_country_flag = matild_is_dead
-					}
-				}
-			}
-			traits = {
-				hc_logistics_1
-			}
-			ai_will_do = {
-				factor = 2
-				modifier = {
-					has_war = no
-					factor = 0
-				}
-			}
-		}
-	}
+
+
 
 
 	

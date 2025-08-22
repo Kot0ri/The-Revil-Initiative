@@ -20,7 +20,9 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		set_power_balance = {
+			id = EFS_power_balance
+		}
 		}
 	}
 
@@ -996,6 +998,25 @@ focus_tree = {
 }
 
 focus = {
+	id = efsf_zanny_project
+	icon = GFX_goal_jablo_factory
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_new_production_facilities
+	}
+
+	relative_position_id = efsf_new_production_facilities
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = efsf_improve_atmospherhic_combat_systems
 	icon = GFX_goal_general_meeting
 	cost = 10
@@ -1622,6 +1643,10 @@ focus = {
 	}
 	available = {
 		has_war = yes
+		controls_state = 1039
+		NOT = {
+			has_completed_focus = efsf_zanny_project
+		}
 	}
 	mutually_exclusive = {
 		focus = efsf_jaburo_MS_development_program
@@ -1644,6 +1669,7 @@ focus = {
 	prerequisite = {
 		focus = efsf_RX_program
 	}
+	
 	available = {
 		has_war = yes
 	}

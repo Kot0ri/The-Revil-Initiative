@@ -1,0 +1,177 @@
+EFS_power_balance = {
+	initial_value = 0.1
+	left_side = EFS_earth_side
+	right_side = EFS_space_side
+	decision_category = EFS_balance_of_power_category
+	
+
+	### Neutral status
+	range = {
+		id = EFS_balance_range
+		min = -0.10
+		max = 0.10
+		modifier = {
+			research_speed_factor = -0.05
+			land_doctrine_cost_factor = 0.35
+			naval_doctrine_cost_factor = 0.35
+		}
+		on_activate = {
+
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	### Ground Forces
+	side = {
+		id = EFS_earth_side	
+		icon = GFX_goal_earth_counter_strategy
+
+		range = {
+			id = EFS_earth_low_control_range
+			min = -0.3
+			max = -0.1
+			modifier = {
+				political_power_gain = 0.02
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = EFS_earth_medium_control_range
+			min = -0.6
+			max = -0.3
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = -0.02
+				stability_factor = -0.05
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = EFS_earth_high_control_range
+			min = -0.9
+			max = -0.6
+			modifier = {
+				political_power_gain = 0.07
+				war_support_factor = -0.05
+				stability_factor = -0.1
+				research_speed_factor = 0.05
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}
+
+		range = {
+			id = EFS_earth_total_control_range
+			min = -1
+			max = -0.9
+			modifier = {
+				political_power_gain = 0.07
+				war_support_factor = -0.05
+				stability_factor = -0.1
+				research_speed_factor = 0.05
+				improve_relations_maintain_cost_factor = -0.5
+			}
+			on_activate = {
+			
+			}
+			on_deactivate = {
+				
+			}
+		}
+	}
+
+	### Space
+	side = {
+		id = EFS_space_side
+		icon = GFX_goal_scvx_plan
+
+		range = {
+			id = EFS_space_low_control_range
+			min = 0.1
+			max = 0.3
+			modifier = {
+				political_power_factor = 0.05
+				war_support_factor = -0.02
+				opinion_gain_monthly_factor = 0.02
+			}
+			on_activate = {
+				
+			}
+			on_deactivate = {
+				
+			}
+		}	
+	}
+
+	range = {
+		id = EFS_space_medium_control_range
+		min = 0.3
+		max = 0.6
+		modifier = {
+			political_power_factor = 0.02
+			war_support_factor = 0.05
+			stability_factor = 0.02
+		}
+		on_activate = {
+			
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	range = {
+		id = EFS_space_high_control_range
+		min = 0.6
+		max = 0.9
+		modifier = {
+			political_power_factor = -0.02
+			war_support_factor = 0.15
+			stability_factor = 0.07
+			recruitable_population_factor = 0.02
+		}
+		on_activate = {
+			
+		}
+		on_deactivate = {
+			
+		}
+	}
+
+	range = {
+		id = EFS_space_total_control_range
+		min = 0.9
+		max = 1
+		modifier = {
+			political_power_factor = -0.05
+			war_support_factor = 0.20
+			stability_factor = 0.07
+			recruitable_population_factor = 0.05
+		}
+		on_activate = {
+			
+		}
+		on_deactivate = {
+		
+		}
+	}
+
+}

@@ -41,7 +41,10 @@ focus_tree = {
 			focus =  efsf_EFSF_prioritization
 		}
 		completion_reward = {
-		
+		add_power_balance_value = {
+			id = EFS_power_balance
+			value = -0.1
+		}
 		}
 	}
 
@@ -62,7 +65,10 @@ focus_tree = {
 			focus =  efsf_EFGF_prioritization
 		}
 		completion_reward = {
-		
+		add_power_balance_value = {
+			id = EFS_power_balance
+			value = 0.1
+		}
 		}
 	}
 

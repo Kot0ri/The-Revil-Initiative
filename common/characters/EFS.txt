@@ -574,7 +574,27 @@ EFS_gady_kinsey={
 			}
 		}
 	}
-
+	EFS_henken_bekkener = {
+		name = EFS_henken_bekkener
+		portraits={
+			army={
+				small="GFX_idea_henken_bekkener"
+			}
+			army={
+				large = "gfx/leaders/EFS/Portrait_Efsf_henken_bekkener.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				refromer_faction bold blockade_runner
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
 	EFS_jamaican_daninghan={
 		name=EFS_jamaican_daninghan
 		portraits={
@@ -1937,27 +1957,7 @@ EFS_gady_kinsey={
 			}
 		}
 	}
-	EFS_henken_bekkener = {
-		name = EFS_henken_bekkener
-		portraits={
-			army={
-				small="GFX_idea_henken_bekkener"
-			}
-			army={
-				large = "gfx/leaders/EFS/Portrait_Efsf_henken_bekkener.dds"
-			}
-		}
-		navy_leader = {
-			traits = {
-				refromer_faction bold blockade_runner
-			}
-			skill = 4
-			attack_skill = 3
-			defense_skill = 3
-			maneuvering_skill = 3
-			coordination_skill = 3
-		}
-	}
+	
 	EFS_christina_mackenzie = {
 		name = "Christina Mackenzie"
 		portraits={

@@ -712,6 +712,74 @@ EFS_gady_kinsey={
 		}
 	}
 
+	EFS_terrance={
+		name= "Terrance"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/terrance.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy liberal_faction }
+			skill= 2
+			attack_skill=1
+			defense_skill= 2
+			maneuvering_skill= 2
+			coordination_skill= 2
+		}
+	}
+
+	EFS_adrian={
+		name= "Adrian"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/adrian.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy liberal_faction }
+			skill= 2
+			attack_skill=1
+			defense_skill= 2
+			maneuvering_skill= 2
+			coordination_skill= 2
+		}
+	}
+
+	EFS_yannick={
+		name= "Yannick"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/yannick.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy liberal_faction }
+			skill= 1
+			attack_skill=1
+			defense_skill= 1
+			maneuvering_skill= 1
+			coordination_skill= 1
+		}
+	}
+
+	EFS_colm={
+		name= "Colm"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/colm.dds"
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy }
+			skill= 2
+			attack_skill=1
+			defense_skill= 2
+			maneuvering_skill= 2
+			coordination_skill= 2
+		}
+	}
+
 #other
 
 	EFS_elran_gfc = {
@@ -2101,11 +2169,11 @@ EFS_gady_kinsey={
 			traits = {
 				pilot
 			}
-			skill = 4
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 5
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 	EFS_terry_sanders = {

@@ -222,7 +222,7 @@ EFS_eff_high_command={
 			}
 		}
 		field_marshal={
-			traits={ old_guard politically_connected conservative_faction  }
+			traits={ old_guard politically_connected conservative_faction general_of_the_armed_forces }
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -287,6 +287,9 @@ EFS_elran_gfc = {
 		portraits={
 			army={
 				small="GFX_idea_elran_gfc"
+			}
+			army={
+				large="gfx/leaders/EFS/Portrait_Efsf_elran.dds"
 			}
 		}
 		corps_commander = {

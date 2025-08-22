@@ -956,7 +956,11 @@ focus = {
 
 		relative_position_id = efsf_expand_officer_corps.
 		completion_reward = {
-			
+			random_unit_leader = {
+				add_trait = {
+					trait = colony_warfare_expert
+				}
+			}
 		}
 	}
 

@@ -303,6 +303,28 @@ utopian_faction = {
 	}
 }
 
+general_of_the_armed_forces = { 
+	type = all
+	trait_type = personality_trait
+	gain_xp = {
+		always = no # not gainable
+	}
+	allowed = {
+		
+	}
+	modifier = {
+		max_army_group_size = 4
+		max_commander_army_size = 8
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	new_commander_weight = {
+		factor = 0
+	}
+}
+
 ##Titans
 
 
@@ -344,6 +366,24 @@ nobility = {
 		}
 	}
 
+	pilot = {
+		type = colony_warfare_expert
+		
+		trait_type = assignable_terrain_trait
+		
+		modifier = {
+			colony = {
+				movement = 0.1
+				attack = 0.1
+				defense = 0.1
+				recon = 0.1
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 
 	pilot = {
 		type = corps_commander

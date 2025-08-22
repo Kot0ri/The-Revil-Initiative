@@ -1193,13 +1193,13 @@ EFS_gady_kinsey={
 				large="gfx/leaders/EFS/Portrait_Efsf_bask_om.dds"
 			}
 		}
-		corps_commander={
-			traits={ harsh_leader hardliner_faction }
+		navy_leader = {
+			traits={ caustic_personality hardliner_faction }
 			skill=4
 			attack_skill=3
 			defense_skill=3
-			planning_skill=4
-			logistics_skill=5
+			maneuvering_skill = 4
+			coordination_skill = 5
 			legacy_id=102
 			visible = {
 				OR = {

@@ -891,6 +891,31 @@ focus_tree = {
 		}
 	}
 
+focus = {
+		id = efsf_colonial_officer_recuritment_plan
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 7
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = efsf_expand_officer_corps.
+			EFG = {
+				has_completed_focus = EFG_reassess_the_EFF
+			}
+		}
+		prerequisite = {
+			focus = efsf_move_command_hq_to_jaburo
+		}
+
+		relative_position_id = efsf_move_command_hq_to_jaburo
+		completion_reward = {
+		
+		}
+	}
+
 	focus = {
 		id = efsf_expand_officer_corps.
 		icon = GFX_goal_general_meeting
@@ -910,6 +935,28 @@ focus_tree = {
 			recruit_character = EFS_ted_ayachi
 			recruit_character = EFS_chang_ya
 			recruit_character = EFS_walker
+		}
+	}
+
+	focus = {
+		id = efsf_prepare_for_war_with_zeon
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = efsf_encourage_super-elite
+		}
+		prerequisite = {
+			focus = efsf_expand_officer_corps.
+		}
+
+		relative_position_id = efsf_expand_officer_corps.
+		completion_reward = {
+			
 		}
 	}
 
@@ -1001,7 +1048,7 @@ focus = {
 	id = efsf_zanny_project
 	icon = GFX_goal_jablo_factory
 	cost = 10
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1009,7 +1056,9 @@ focus = {
 	prerequisite = {
 		focus = efsf_new_production_facilities
 	}
-
+	prerequisite = {
+	focus =  efsf_prepare_for_war_with_zeon
+	}
 	relative_position_id = efsf_new_production_facilities
 	completion_reward = {
 		
@@ -1076,6 +1125,30 @@ focus = {
 	
 	}
 }
+
+focus = {
+		id = efsf_colony_combat_training
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			EFG = {
+				has_completed_focus = EFG_repress_the_colonies
+			}
+		}
+		prerequisite = {
+			focus = efsf_Luna_2_fortification
+		}
+
+		relative_position_id = efsf_Luna_2_fortification
+		completion_reward = {
+			
+		}
+	}
 
 focus = {
 	id = efsf_set_up_research_labs_in_Side_7
@@ -1811,6 +1884,9 @@ focus = {
 	y = 3
 	ai_will_do = {
 		factor = 1
+	}
+	bypass = {
+		has_completed_focus = efsf_zanny_project
 	}
 	prerequisite = {
 		focus = efsf_white_devil

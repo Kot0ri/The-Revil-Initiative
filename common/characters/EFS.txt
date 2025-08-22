@@ -66,22 +66,15 @@ EFS_eff_high_command={
 				large="gfx/leaders/EFS/Portrait_Efsf_blex_forer.dds"
 			}
 		}
-		corps_commander={
-			traits={ refromer_faction }
-			skill=3
-			attack_skill=2
-			defense_skill=2
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=103
-			visible = {
-				OR = {
-					has_character_flag = enable_corps_commander
-					NOT = {
-						has_character_flag = disable_corps_commander
-					}
-				}
+		navy_leader = {
+			traits = {
+				refromer_faction
 			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
 		}
 		advisor = {
 			slot = political_advisor
@@ -444,12 +437,11 @@ EFS_gady_kinsey={
 		}
 		navy_leader={
 			traits={ blockade_runner ironside space_expert conservative_faction }
-			skill=5
-			attack_skill=4
-			defense_skill=3
-			maneuvering_skill=1
-			coordination_skill=1
-			legacy_id=122
+			skill=3
+			attack_skill= 3
+			defense_skill= 3
+			maneuvering_skill= 2
+			coordination_skill= 2
 		}
 		advisor = {
 			slot = space_forces_chief
@@ -1200,15 +1192,6 @@ EFS_gady_kinsey={
 			defense_skill=3
 			maneuvering_skill = 4
 			coordination_skill = 5
-			legacy_id=102
-			visible = {
-				OR = {
-					has_character_flag = enable_corps_commander
-					NOT = {
-						has_character_flag = disable_corps_commander
-					}
-				}
-			}
 		}
 		advisor={
 			slot = high_command
@@ -1966,16 +1949,13 @@ EFS_gady_kinsey={
 		}
 		navy_leader = {
 			traits = {
-				aeug_party
+				refromer_faction
 			}
 			skill = 4
 			attack_skill = 3
 			defense_skill = 3
-			maneuvering_skill = 5
-			coordination_skill = 4
-			visible = {
-				has_character_flag = enable_navy_leader
-			}
+			maneuvering_skill = 3
+			coordination_skill = 3
 		}
 	}
 	EFS_christina_mackenzie = {
@@ -1988,17 +1968,14 @@ EFS_gady_kinsey={
 		}
 		corps_commander = {
 			traits = {
-				pilot
+				pilot 
 			}
-			legacy_id = 114
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
 			logistics_skill = 1
-			visible = {
-				has_character_flag = enable_corps_commander
-			}
+			
 		}
 	}
 	EFS_sleggar_law = {
@@ -2010,19 +1987,15 @@ EFS_gady_kinsey={
 			}
 		}
 		corps_commander = {
-			legacy_id = 167
 			traits = {
-				pilot
-				aeug_party
+				pilot 
 			}
-			skill = 4
-			attack_skill = 4
+			skill = 3
+			attack_skill = 3
 			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 4
-			visible = {
-				has_character_flag = enable_corps_commander
-			}
+			planning_skill = 3
+			logistics_skill = 3
+			
 		}
 	}
 	EFS_ryu_jose = {
@@ -2034,19 +2007,14 @@ EFS_gady_kinsey={
 			}
 		}
 		corps_commander = {
-			legacy_id = 185
 			traits = {
 				pilot
-				aeug_party
 			}
-			skill = 4
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 5
-			visible = {
-				has_character_flag = enable_corps_commander
-			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 	EFS_kai_shiden = {

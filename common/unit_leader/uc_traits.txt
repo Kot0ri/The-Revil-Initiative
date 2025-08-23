@@ -375,8 +375,22 @@ nobility = {
 			colony = {
 				movement = 0.1
 				attack = 0.1
-				defense = 0.1
-				recon = 0.1
+			}
+		}
+		
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+		space_warfare_expert = {
+		type = navy
+		
+		trait_type = assignable_terrain_trait
+		
+		modifier = {
+			space = {
+				fuel_consumption_factor = -0.05
 			}
 		}
 		

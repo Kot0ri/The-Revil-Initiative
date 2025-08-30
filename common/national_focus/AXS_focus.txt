@@ -108,7 +108,7 @@ focus = {
 	id = AXS_expansion_of_mousa
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = -1
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -225,7 +225,7 @@ focus = {
 	id = AXS_karn_family
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -484,7 +484,7 @@ focus = {
 	id = AXS_bring_in_survivors
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
+	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -567,7 +567,7 @@ focus = {
 	id = AXS_gather_partially_complete_warships
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 5
+	x = 8
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -928,6 +928,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+	date > 83.1.1
+	}
 	completion_reward = {
 	
 	}
@@ -1186,16 +1189,19 @@ focus = {
 	id = AXS_coronation_of_mineva_zabi
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = -8
+	x = -5
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_completed_focus = AXS_1st_battle_of_axis
+	}
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_1st_battle_of_axis
-	prerequisite = {focus = AXS_1st_battle_of_axis}
+	relative_position_id = AXS_end_of_the_war
+	prerequisite = {focus = AXS_end_of_the_war}
 }
 
 focus = {
@@ -1206,6 +1212,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_death_of_maharaja_karn
 	}
 	completion_reward = {
 	recruit_character = AXS_Irina
@@ -1221,7 +1230,7 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 3
-	y = 2
+	y = 3
 	ai_will_do = {
 		factor = 1
 	}
@@ -1231,7 +1240,7 @@ focus = {
 	relative_position_id = AXS_coronation_of_mineva_zabi
 	mutually_exclusive = { focus = AXS_hamans_regency}
 	mutually_exclusive = { focus = AXS_char_aznables_true_idenity}
-	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+	prerequisite = {focus = AXS_Axis_civil_war}
 }
 
 focus = {
@@ -1239,9 +1248,12 @@ focus = {
 	icon = GFX_goal_haman_regency
 	cost = 2
 	x = 0
-	y = 2
+	y = 3
 	ai_will_do = {
 		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
 	}
 	completion_reward = {
 		set_politics = {
@@ -1253,7 +1265,7 @@ focus = {
 	relative_position_id = AXS_coronation_of_mineva_zabi
 	mutually_exclusive = { focus = AXS_char_aznables_true_idenity}
 	mutually_exclusive = { focus = AXS_gihren_loyalists}
-	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+	prerequisite = {focus = AXS_Axis_civil_war }
 }
 
 focus = {
@@ -1268,10 +1280,10 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_coronation_of_mineva_zabi
+	relative_position_id = AXS_death_of_maharaja_karn
 	mutually_exclusive = { focus = AXS_hamans_regency}
 	mutually_exclusive = { focus = AXS_gihren_loyalists}
-	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+	prerequisite = {focus = AXS_Axis_civil_war }
 }
 
 focus = {
@@ -1294,7 +1306,7 @@ focus = {
 	id = AXS_prepare_for_another_war_of_independence
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1304,6 +1316,7 @@ focus = {
 	}
 	relative_position_id = AXS_purge_the_moderates
 	prerequisite = {focus = AXS_purge_the_moderates}
+	
 }
 
 focus = {
@@ -1319,23 +1332,26 @@ focus = {
 	
 	}
 	relative_position_id = AXS_prepare_for_another_war_of_independence
-	prerequisite = {focus = AXS_prepare_for_another_war_of_independence}
+	prerequisite = {focus = AXS_prepare_for_another_war_of_independence focus = AXS_natalie_incident focus = AXS_Purge_the_hardliners  }
 }
 
 focus = {
 id = AXS_2nd_war_for_Zeon_independence
 icon = GFX_goal_general_meeting
 cost = 2
-x = 1.5
+x = -2
 y = 1
 ai_will_do = {
 	factor = 1
+}
+available = {
+	date > 83.1.1
 }
 completion_reward = {
 
 }
 relative_position_id = AXS_prepare_for_another_war_of_independence
-prerequisite = {focus = AXS_prepare_for_another_war_of_independence}
+prerequisite = {focus = AXS_prepare_for_another_war_of_independence focus = AXS_Purge_the_hardliners }
 }
 
 focus = {
@@ -1358,15 +1374,19 @@ focus = {
 	id = AXS_recoginze_the_claiment
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = -1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_government = supremacist
 	}
 	completion_reward = {
 	
 	}
 	relative_position_id = AXS_gihrens_heir
+	mutually_exclusive = {focus = AXS_cajole_glemy}
 	mutually_exclusive = {focus = AXS_nothing_more_than_rumors}
 	prerequisite = {focus = AXS_gihrens_heir}
 }
@@ -1424,17 +1444,23 @@ focus = {
 	id = AXS_nothing_more_than_rumors
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 1
-	y = 1
+	x = 0
+	y = 2
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_rumors_from_within
+		has_government = supremacist
 	}
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_gihrens_heir
+	relative_position_id = AXS_2nd_war_for_Zeon_independence
 	mutually_exclusive = {focus = AXS_recoginze_the_claiment}
-	prerequisite = {focus = AXS_gihrens_heir}
+	mutually_exclusive = {focus = AXS_cajole_glemy}
+	prerequisite = { focus = AXS_gihrens_heir }
+	
 }
 
 focus = {
@@ -1466,11 +1492,27 @@ focus = {
 	
 	}
 	relative_position_id = AXS_hamans_regency
-	prerequisite = {focus = AXS_hamans_regency}
+	prerequisite = {focus = AXS_hamans_regency focus = AXS_char_aznables_true_idenity }
 }
 
 focus = {
 	id = AXS_emissary_from_zeon
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_coronation_of_mineva_zabi
+	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+}
+
+focus = {
+	id = AXS_death_of_maharaja_karn
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 0
@@ -1481,8 +1523,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_discover_the_reactionary_plot
-	prerequisite = {focus = AXS_discover_the_reactionary_plot}
+	relative_position_id = AXS_coronation_of_mineva_zabi
+	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
 }
 
 focus = {
@@ -1497,31 +1539,42 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_emissary_from_zeon
-	prerequisite = {focus = AXS_emissary_from_zeon}
+	relative_position_id = AXS_death_of_maharaja_karn
+	prerequisite = {focus = AXS_death_of_maharaja_karn }
+	prerequisite = {focus = AXS_emissary_from_zeon }
+	prerequisite = {focus = AXS_form_a_royal_guard }
 }
 
 focus = {
 	id = AXS_natalie_incident
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	mutually_exclusive = {
+		focus = AXS_Purge_the_hardliners
+	}
+	available = {
+		has_completed_focus = AXS_hamans_regency
+	}
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_Axis_civil_war
-	prerequisite = {focus = AXS_Axis_civil_war}
+	relative_position_id = AXS_discover_the_reactionary_plot
+	prerequisite = {focus = AXS_discover_the_reactionary_plot}
 }
 
 focus = {
 	id = AXS_Purge_the_hardliners
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1530,12 +1583,39 @@ focus = {
 		recruit_character = AXS_haman_karn_2
 		retire_character = AXS_haman_karn
 	}
-	relative_position_id = AXS_natalie_incident
-	prerequisite = {focus = AXS_natalie_incident}
+	available = {
+		has_completed_focus = AXS_hamans_regency
+	}
+	mutually_exclusive = {
+		focus = AXS_natalie_incident
+	}
+	relative_position_id = AXS_discover_the_reactionary_plot
+	prerequisite = {focus = AXS_discover_the_reactionary_plot}
 }
 
 focus = {
 	id = AXS_Mission_to_the_Earthsphere
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	date > 83.1.1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_natalie_incident
+	prerequisite = {focus = AXS_natalie_incident }
+}
+focus = {
+	id = AXS_Formation_of_the_AEUG
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 0
@@ -1543,20 +1623,13 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	completion_reward = {
-	
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
 	}
-	relative_position_id = AXS_Purge_the_hardliners
-	prerequisite = {focus = AXS_Purge_the_hardliners}
-}
-focus = {
-	id = AXS_Formation_of_the_AEUG
-	icon = GFX_goal_general_meeting
-	cost = 2
-	x = -1
-	y = 1
-	ai_will_do = {
-		factor = 1
+	available = {
+		VBC = {
+			has_completed_focus = VBC_rise_of_the_AEUG
+		}
 	}
 	completion_reward = {
 	
@@ -1568,16 +1641,157 @@ focus = {
 	id = AXS_Secure_Authority
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 0
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_Mission_to_the_Earthsphere
-	prerequisite = {focus = AXS_Mission_to_the_Earthsphere}
+	relative_position_id = AXS_Purge_the_hardliners
+	prerequisite = {focus = AXS_Purge_the_hardliners  }
+}
+focus = {
+	id = AXS_reorganize_military_nexus
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_natalie_incident
+	prerequisite = {focus = AXS_natalie_incident }
+}
+focus = {
+	id = AXS_navigate_unstable_politics
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_reorganize_military_nexus
+	prerequisite = {focus = AXS_reorganize_military_nexus }
+}
+focus = {
+	id = AXS_remodel_zeon_nobility
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_Secure_Authority
+	prerequisite = {focus = AXS_Secure_Authority focus = AXS_reorganize_military_nexus }
+}
+focus = {
+	id = AXS_knighthood_of_axis
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_remodel_zeon_nobility
+	prerequisite = {focus = AXS_remodel_zeon_nobility }
+}
+focus = {
+	id = AXS_cajole_glemy
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	mutually_exclusive = {
+		focus = AXS_recoginze_the_claiment
+	}
+	available = {
+		has_completed_focus = AXS_rumors_from_within
+		date > 85.1.1
+	}
+	mutually_exclusive = {focus = AXS_nothing_more_than_rumors}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_remodel_zeon_nobility
+	prerequisite = {focus = AXS_remodel_zeon_nobility }
+}
+focus = {
+	id = AXS_increase_reliance_on_old_guard
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_crackdown_on_dissdents
+	}
+	available = {
+		has_completed_focus = AXS_navigate_unstable_politics
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_cajole_glemy
+	prerequisite = {focus = AXS_cajole_glemy }
+}
+focus = {
+	id = AXS_crackdown_on_dissdents
+	icon = GFX_goal_haman_regency
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	mutually_exclusive = {
+		focus = AXS_increase_reliance_on_old_guard
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_cajole_glemy
+	prerequisite = {focus = AXS_cajole_glemy }
+	prerequisite = {focus = AXS_knighthood_of_axis }
 }
 
 

@@ -1,0 +1,61 @@
+ideas = {
+
+	country = {
+		Glorious_army_of_Neo-Zeon = {
+			
+			allowed = {
+				original_tag = AXS
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.15
+				army_attack_speed_factor = 0.15
+				naval_invasion_penalty = -0.15
+				supply_consumption_factor = -0.20
+				non_core_manpower = 0.20
+				experience_gain_army_factor = 0.10
+			}
+		}
+		Neo-Zabi_family = {
+			
+			allowed = {
+				original_tag = AXS
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.05
+				non_core_manpower = 0.25
+				recruitable_population_factor = 0.05
+			}
+		}
+		Restoration_of_the_Zabis = {
+			
+			allowed = {
+				original_tag = AXS
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly_factor = 0.05
+				war_support_weekly_factor = 0.05
+			}
+		}
+	}
+}

@@ -959,7 +959,8 @@ focus = {
 		FOCUS_FILTER_HISTORICAL
 	}
 	completion_reward = {
-	
+	780 = { transfer_state_to = NZA }
+	903 = { transfer_state_to = NZA }
 	}
 	relative_position_id = AXS_Declare_Neo-Zeon
 	prerequisite = {focus = AXS_Declare_Neo-Zeon}
@@ -1983,7 +1984,7 @@ focus = {
 		date > 0087.1.1
 	}
 	completion_reward = {
-	
+	add_ideas = Neo-Zabi_family
 	}
 	relative_position_id = AXS_isolate_mineva
 	prerequisite = {focus = AXS_isolate_mineva }
@@ -2003,7 +2004,7 @@ focus = {
 	}
 	
 	completion_reward = {
-	
+	add_ideas = Restoration_of_the_Zabis
 	}
 	relative_position_id = AXS_crackdown_on_dissdents
 	prerequisite = {focus = AXS_crackdown_on_dissdents }
@@ -2105,7 +2106,7 @@ focus = {
 		has_completed_focus = AXS_Declare_Neo-Zeon
 	}
 	completion_reward = {
-	
+	add_ideas = Glorious_army_of_Neo-Zeon
 	}
 	relative_position_id = AXS_prioritize_the_titans
 	prerequisite = {focus = AXS_deal_with_the_traitors focus = AXS_prioritize_the_titans }

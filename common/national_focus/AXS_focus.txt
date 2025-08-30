@@ -615,6 +615,38 @@ focus = {
 }
 
 focus = {
+	id = AXS_hit_and_run_tactics
+	icon = GFX_goal_general_meeting
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_high_speed_prioritization
+	prerequisite = {focus = AXS_high_speed_prioritization}
+}
+
+focus = {
+	id = AXS_autonomous_missions
+	icon = GFX_goal_general_meeting
+	cost = 3
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_hit_and_run_tactics
+	prerequisite = {focus = AXS_hit_and_run_tactics}
+}
+
+focus = {
 	id = AXS_deep_space_capabilty
 	icon = GFX_goal_general_meeting
 	cost = 3
@@ -647,6 +679,25 @@ focus = {
 	}
 	relative_position_id = AXS_deep_space_capabilty
 	prerequisite = {focus = AXS_deep_space_capabilty}
+}
+
+focus = {
+	id = AXS_imperial_navy_of_neo-zeon
+	icon = GFX_goal_general_meeting
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_Declare_Neo-Zeon
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_heavy_ship_doctrine
+	prerequisite = {focus = AXS_heavy_ship_doctrine}
 }
 
 focus = {
@@ -865,6 +916,9 @@ focus = {
 	}
 	search_filters = {
 		FOCUS_FILTER_HISTORICAL
+	}
+	available = {
+		date > 0088.1.1
 	}
 	completion_reward = {
 	create_faction = Neo-Zeon

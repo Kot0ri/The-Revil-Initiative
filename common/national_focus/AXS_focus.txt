@@ -682,7 +682,7 @@ focus = {
 }
 
 focus = {
-	id = AXS_imperial_navy_of_neo-zeon
+	id = AXS_standard_of_the_navy_of_neo-zeon
 	icon = GFX_goal_general_meeting
 	cost = 4
 	x = 0
@@ -1909,6 +1909,22 @@ focus = {
 	prerequisite = {focus = AXS_increase_reliance_on_old_guard }
 }
 focus = {
+	id = AXS_military_triumvirate
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_form_supreme_command_council
+	prerequisite = {focus = AXS_form_supreme_command_council }
+	prerequisite = {focus = AXS_return_to_the_earthsphere }
+}
+focus = {
 	id = AXS_crackdown_on_dissdents
 	icon = GFX_goal_haman_regency
 	cost = 2
@@ -2011,6 +2027,88 @@ focus = {
 	}
 	relative_position_id = AXS_revival_of_the_zabi_family
 	prerequisite = {focus = AXS_revival_of_the_zabi_family focus = AXS_form_supreme_command_council }
+}
+
+focus = {
+	id = AXS_emissary_from_axis
+	icon = GFX_goal_return_to_earth
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_return_to_the_earthsphere
+	prerequisite = {focus = AXS_return_to_the_earthsphere }
+}
+
+focus = {
+	id = AXS_prioritize_the_titans
+	icon = GFX_goal_earths_supremacy
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_emissary_from_axis
+	prerequisite = {focus = AXS_emissary_from_axis }
+}
+
+focus = {
+	id = AXS_deal_with_the_traitors
+	icon = GFX_goal_elenism
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_emissary_from_axis
+	prerequisite = {focus = AXS_emissary_from_axis }
+}
+
+focus = {
+	id = AXS_glorious_army_of_neo-zeon
+	icon = GFX_goal_elenism
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	available = {
+		has_completed_focus = AXS_Declare_Neo-Zeon
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_prioritize_the_titans
+	prerequisite = {focus = AXS_deal_with_the_traitors focus = AXS_prioritize_the_titans }
 }
 
 focus = {

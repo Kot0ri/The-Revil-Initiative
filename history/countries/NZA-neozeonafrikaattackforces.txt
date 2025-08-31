@@ -34,16 +34,16 @@ add_to_tech_sharing_group = zeon_research
 
 set_popularities = {
 	democratic = 0
-	supremacist = 10
+	supremacist = 30
 	contolism = 20
-	military_government = 60
+	military_government = 40
 	aristocracy = 10
 	corporatism = 0
 	communism = 0
 }
 
 set_politics = {
-	ruling_party = military_government
+	ruling_party = supremacist
 	last_election = "68.1.1"
 	election_frequency = 48
 	elections_allowed = no

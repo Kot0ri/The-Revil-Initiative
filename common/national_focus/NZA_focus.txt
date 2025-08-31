@@ -50,7 +50,7 @@ focus = {
 }
 
 focus = {
-	id = NZA_Reach_out_to_Afria_Seperatists
+	id = NZA_Reach_out_to_Africa_Seperatists
 	icon = GFX_goal_harmony_with_deikun
 	cost = 2
 	x = 2
@@ -103,6 +103,37 @@ focus = {
 	relative_position_id = NZA_Push_on_Dakar
 	prerequisite = {
 		focus = NZA_Push_on_Dakar
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = NZA_solidfy_control_of_west_afrika
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = NZA_Incorporate_Zeon_Remnants
+	prerequisite = {
+		focus = NZA_Take_in_collabrators
+	}
+	prerequisite = {
+		focus = NZA_Incorporate_Zeon_Remnants
+	}
+	prerequisite = {
+		focus = NZA_Reach_out_to_Africa_Seperatists
+	}
+	available = {
+		controls_state = 1019
+		controls_state = 461
 	}
 	mutually_exclusive = {
 		
@@ -194,6 +225,36 @@ focus = {
 }
 
 focus = {
+	id = NZA_solidfy_control_of_east_afrika
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = NZA_Push_on_Kilimanjaro
+	prerequisite = {
+		focus = NZA_Secure_the_Horn
+	}
+	prerequisite = {
+		focus = NZA_Push_on_Mombassa
+	}
+	available = {
+		controls_state = 1020
+		controls_state = 905
+		controls_state = 1021
+		controls_state = 268
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = NZA_Northern_Campaign
 	icon = GFX_goal_harmony_with_deikun
 	cost = 2
@@ -204,6 +265,9 @@ focus = {
 	}
 	mutually_exclusive = {
 		
+	}
+	available = {
+		has_completed_focus = NZA_Secure_the_Horn
 	}
 	completion_reward = {
 		
@@ -222,6 +286,34 @@ focus = {
 	}
 	available = {
 		has_completed_focus = NZA_Push_on_Mombassa
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+		
+	}
+
+}
+
+
+focus = {
+	id = NZA_a_zeon_afrika
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 8
+	y = 4
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	prerequisite = {
+		focus = NZA_solidfy_control_of_east_afrika
+	}
+	prerequisite = {
+		focus = NZA_solidfy_control_of_west_afrika
 	}
 	mutually_exclusive = {
 		

@@ -2247,6 +2247,114 @@ focus = {
 }
 
 focus = {
+	id = AXS_deploy_newtype_forces
+	icon = GFX_goal_glemy_1
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_visions_of_blood
+	prerequisite = {
+		focus = AXS_visions_of_blood
+	}
+	available = {
+		has_government = supremacist
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_gather_allies
+	icon = GFX_goal_glemy_1
+	cost = 5
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_visions_of_blood
+	prerequisite = {
+		focus = AXS_visions_of_blood
+	}
+	available = {
+		has_government = supremacist
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_to_wage_war_across_the_cosmos
+	icon = GFX_goal_glemy_1
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_deploy_newtype_forces
+	prerequisite = {
+		focus = AXS_gather_allies
+	}
+	prerequisite = {
+		focus = AXS_deploy_newtype_forces
+	}
+	available = {
+		has_government = supremacist
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_fufilling_fathers_dream
+	icon = GFX_goal_glemy_1
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_to_wage_war_across_the_cosmos
+	prerequisite = {
+		focus = AXS_to_wage_war_across_the_cosmos
+	}
+	available = {
+		has_government = supremacist
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_hero_of_space
+	icon = GFX_goal_glemy_1
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_to_wage_war_across_the_cosmos
+	prerequisite = {
+		focus = AXS_to_wage_war_across_the_cosmos
+	}
+	available = {
+		has_government = supremacist
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = AXS_Götterdämmerung
 	icon = GFX_goal_general_meeting
 	cost = 5

@@ -2207,6 +2207,46 @@ focus = {
 }
 
 focus = {
+	id = AXS_imperial_visions
+	icon = GFX_goal_haman_neo_zabi
+	cost = 5
+	x = 40
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_visions_of_blood
+	}
+	available = {
+		has_completed_focus = AXS_Declare_Neo-Zeon
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_visions_of_blood
+	icon = GFX_goal_glemy_1
+	cost = 5
+	x = 42
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_imperial_visions
+	}
+	available = {
+		has_completed_focus = AXS_Declare_Neo-Zeon
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = AXS_Götterdämmerung
 	icon = GFX_goal_general_meeting
 	cost = 5

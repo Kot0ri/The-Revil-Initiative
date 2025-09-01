@@ -41,6 +41,38 @@ focus = {
 }
 
 focus = {
+	id = AXS_limit_lunar_industrial_federation_influence
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_life_on_Axis
+	prerequisite = {focus = AXS_life_on_Axis }
+}
+
+focus = {
+	id = AXS_keep_tabs_on_jupiter
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_limit_lunar_industrial_federation_influence
+	prerequisite = {focus = AXS_limit_lunar_industrial_federation_influence }
+}
+
+focus = {
 	id = AXS_spirit_of_the_asteroid_belt
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -242,10 +274,13 @@ focus = {
 	id = AXS_marlene_incindent
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		date > 79.10.1
 	}
 	completion_reward = {
 	
@@ -260,15 +295,15 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 5
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_marlene_incindent
-	prerequisite = {focus = AXS_marlene_incindent}
+	relative_position_id = AXS_karn_family
+	prerequisite = {focus = AXS_karn_family}
 
 }
 
@@ -532,7 +567,58 @@ focus = {
 }
 
 focus = {
-	id = AXS_remannts_of_the_fleet
+	id = AXS_gihrens_personnal_treasury
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_supplies_from_side_3
+	prerequisite = {focus = AXS_supplies_from_side_3}
+}
+
+focus = {
+	id = AXS_axis_newtype_institute
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_newtype_development
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_gihrens_personnal_treasury
+	prerequisite = {focus = AXS_gihrens_personnal_treasury}
+}
+
+focus = {
+	id = AXS_cloning_program
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_axis_newtype_institute
+	prerequisite = {focus = AXS_axis_newtype_institute}
+}
+
+focus = {
+	id = AXS_remnants_of_the_fleet
 	icon = GFX_goal_general_meeting
 	cost = 5
 	x = -1
@@ -559,8 +645,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_remannts_of_the_fleet
-	prerequisite = {focus = AXS_remannts_of_the_fleet}
+	relative_position_id = AXS_remnants_of_the_fleet
+	prerequisite = {focus = AXS_remnants_of_the_fleet}
 }
 
 focus = {
@@ -1190,6 +1276,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_completed_focus = AXS_axis_newtype_institute
+	}
 	completion_reward = {
 	
 	}
@@ -1661,6 +1750,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_completed_focus = AXS_gihrens_personnal_treasury
+	}
 	completion_reward = {
 	
 	}
@@ -2118,7 +2210,7 @@ focus = {
 	id = AXS_Götterdämmerung
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 40
+	x = 50
 	y = 0
 	ai_will_do = {
 		factor = 1

@@ -1190,7 +1190,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 5
+	y = 3
 	ai_will_do = {
 		factor = 1
 	}
@@ -1227,7 +1227,7 @@ focus = {
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 1
-	y = 3
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1252,7 +1252,6 @@ focus = {
 	}
 	relative_position_id = RNZ_build_up_forces_on_earth
 	prerequisite = { focus = RNZ_build_up_forces_on_earth }
-	prerequisite = { focus = RNZ_technological_supremacy }
 }
 
 focus = {

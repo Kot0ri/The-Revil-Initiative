@@ -511,7 +511,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	
+	available = {
+		has_completed_focus = RNZ_attempt_to_crush_federation_forces
+	}
 	completion_reward = {
 		
 	}
@@ -1154,7 +1156,7 @@ focus = {
 	id = RNZ_build_up_forces_on_earth
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 11
+	x = 12
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1239,10 +1241,43 @@ focus = {
 }
 
 focus = {
+	id = RNZ_elite_forces_developments
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_build_up_forces_on_earth
+	prerequisite = { focus = RNZ_build_up_forces_on_earth }
+}
+
+focus = {
+	id = RNZ_prioritize_commander_use_MS
+	icon = GFX_goal_geara_doga_kai
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_elite_forces_developments
+	prerequisite = { focus = RNZ_elite_forces_developments }
+	prerequisite = { focus = RNZ_joint_anaheim_ms_development }
+}
+
+focus = {
 	id = RNZ_attempt_to_crush_federation_forces
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1

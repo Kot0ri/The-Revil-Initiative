@@ -184,16 +184,8 @@ add_opinion_modifier = {
 	set_global_flag = ms_discuss
 	set_global_flag = ms_discuss2
 	set_global_flag = computing_discuss
-	set_country_flag = operation_drop_earth_is_yes
-	set_country_flag = operation_british_is_yes
-	set_country_flag = operation_british_is_start
-	set_country_flag = force_is_divided
-	set_country_flag = droped_point_1
-	set_country_flag = droped_point_6
-	set_country_flag = droped_point_7
 	set_variable = { var = how_many_drop_earth value = 4 }
 	set_variable = { var = how_many_exercise value = 3 }
-	capital = 358
 	oob = "ZEO_UC0079"
 	set_war_support = 1.0
 	set_research_slots = 4

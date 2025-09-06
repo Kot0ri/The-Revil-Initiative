@@ -505,9 +505,13 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		is_in_faction_with = GRA
+	}
 	completion_reward = {
 		recruit_character = ABQ_challia_bull
 		#event can determine where challia bull goes, ABQ or GRA
+		#event can determine where killing goes, ABQ or GRA
 	}
 	relative_position_id = ABQ_competition_for_headquaters
 	prerequisite = { focus = ABQ_competition_for_headquaters }

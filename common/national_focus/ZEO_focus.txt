@@ -183,6 +183,9 @@ focus = {
 	ai_will_do = {
 		factor = 15
 	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
 	prerequisite = {
 		focus = ZEO_declaration_of_the_principality
 	}
@@ -254,6 +257,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 15
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
 	}
 	mutually_exclusive = { focus = ZEO_hoping_for_more_time }
 	available = {
@@ -373,6 +379,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 15
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
 	}
 	mutually_exclusive = { focus = ZEO_kycilias_plotting }
 	completion_reward = {
@@ -1881,7 +1890,7 @@ focus = {
 	id = ZEO_set_up_ties_with_granada
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 10
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2151,7 +2160,7 @@ focus = {
 	id = ZEO_undermine_federation_authority_in_the_colonies
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 5
-	x = 5
+	x = 4
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2513,7 +2522,7 @@ focus = {
 	id = ZEO_side_3_colony_evaluation
 	icon = GFX_goal_generic_construct_infrastructure
 	cost = 4
-	x = 36
+	x = 35
 	y = 0
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	ai_will_do = {
@@ -3682,11 +3691,31 @@ focus = {
 }
 
 focus = {
+	id = ZEO_form_technical_evaluation_units
+	icon = GFX_goal_enhancement_of_general_purpose_MS
+	search_filters = { FOCUS_FILTER_MILITARY } 
+	cost = 4
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ZEO_begin_widescale_production_efforts
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_expand_high_command
+	prerequisite = { focus = ZEO_expand_high_command }
+}
+
+focus = {
 	id = ZEO_noble_officer_corps.
 	icon = GFX_focus_GER_japan_freind
 	search_filters = { FOCUS_FILTER_MILITARY } 
 	cost = 4
-	x = 0
+	x = -1
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -3707,15 +3736,15 @@ focus = {
 	search_filters = { FOCUS_FILTER_MILITARY } 
 	cost = 4
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 		
 	}
-	relative_position_id = ZEO_noble_officer_corps.
-	prerequisite = { focus = ZEO_noble_officer_corps. }
+	relative_position_id = ZEO_form_technical_evaluation_units
+	prerequisite = { focus = ZEO_form_technical_evaluation_units }
 	prerequisite = { focus = ZEO_stormtrooper_corps. }
 }
 
@@ -3724,7 +3753,7 @@ focus = {
 	icon = GFX_goal_enhancement_of_general_purpose_MS
 	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 4
-	x = -4
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 10
@@ -3737,7 +3766,7 @@ focus = {
 			category = mass_mobilesuit
 		}
 	}
-	relative_position_id = ZEO_war_preperations
+	relative_position_id = ZEO_army_weapon_development_board
 	prerequisite = { focus = ZEO_war_preperations focus = ZEO_army_weapon_development_board }
 }
 
@@ -3950,9 +3979,9 @@ focus = {
 	}
 	available = {
 		OR = {
-			has_full_control_of_state = 909
-			has_full_control_of_state = 910
-			has_full_control_of_state = 911
+			has_full_control_of_state = 1056
+			has_full_control_of_state = 1057
+			has_full_control_of_state = 1058
 		}
 	}
 	completion_reward = {

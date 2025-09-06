@@ -196,9 +196,9 @@ characters = {
 	ABQ_killing={
 	name="Killing"
 	portraits={
-		army={
-			small="GFX_idea_char_aznable"
-		}
+		army = {
+				small=GFX_idea_killing
+			}
 		army={
 			large= "gfx/leaders/ABQ/Killing.dds"
 		}
@@ -212,8 +212,8 @@ characters = {
 		logistics_skill=1
 	}
 	advisor = {
-		slot = army_chief
-		traits = { army_entrenchment_1  }
+		slot = political_advisor
+		traits = { special_forces_chief  }
 	}
 }
 	

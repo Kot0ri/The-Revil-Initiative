@@ -30,8 +30,16 @@ leader_traits = {
 	egineering_headquaters_commander = {
 		random = no
 		sprite = 13
-		political_power_gain_factor = -0.02
+		political_power_gain = -0.02
 		research_speed_factor = 0.02
+	}
+
+	special_forces_chief = {
+		random = no
+		sprite = 13
+		supremacist_drift = 0.02
+		special_forces_attack_factor = 0.15
+		special_forces_defence_factor = 0.10
 	}
 
 #special Service

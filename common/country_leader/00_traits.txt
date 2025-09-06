@@ -56,7 +56,7 @@ leader_traits = {
 		sprite = 13
 		political_power_gain = 0.02
 		stability_factor = 0.1
-		autonomy_gain = 0.05
+		autonomy_gain = 5
 	}
 
 	captain_general = {
@@ -65,8 +65,8 @@ leader_traits = {
 		planning_speed = 0.05
 		max_planning_factor = 0.1
 		special_project_speed_factor = 0.02
-		training_time_army_factor = 0.1
-		trade_opinion_factor = 25
+		training_time_army_factor = -0.1
+		trade_opinion_factor = 0.25
 	}
 
 #special Service

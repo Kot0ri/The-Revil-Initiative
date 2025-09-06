@@ -80,6 +80,22 @@ ideas = {
 			}
 		}
 
+		ZEO_towards_the_evolution_of_mankind = {
+			allowed = {
+				always = no
+				original_tag = ZEO
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				monthly_population = 0.05
+				war_support_factor = 0.02
+				democratic_acceptance = -25
+			}
+		}
+
+
 		ZMF = {
 			allowed = {
 				always = no

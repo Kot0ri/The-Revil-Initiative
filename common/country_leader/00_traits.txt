@@ -15,7 +15,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		supremacist_drift = 0.05
-		supremacist_acceptance = 0.05
+		supremacist_acceptance = 0.5
 		stability_factor = 0.1
 	}
 
@@ -25,6 +25,13 @@ leader_traits = {
 		supremacist_drift = 0.05
 		war_support_factor = 0.02
 		recruitable_population_factor = 0.02
+	}
+
+	egineering_headquaters_commander = {
+		random = no
+		sprite = 13
+		political_power_gain_factor = -0.02
+		research_speed_factor = 0.02
 	}
 
 #special Service

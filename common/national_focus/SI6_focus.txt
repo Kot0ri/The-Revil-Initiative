@@ -79,7 +79,10 @@ focus = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = SI6_new_era_of_mankind
+			focus = SI6_meeting_with_the_syndicate
+		}
+		prerequisite = {
+			focus = SI6_rank_kiprodon_rise_to_fame
 		}
 		relative_position_id = SI6_new_era_of_mankind
 		available = {
@@ -472,6 +475,7 @@ focus = {
 		available = {
 			has_civil_war = yes
 			has_government = supremacist
+			has_completed_focus = SI6_apporoach_zeon
 		}
 		completion_reward = {
 			

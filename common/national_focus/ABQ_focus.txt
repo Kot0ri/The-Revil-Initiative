@@ -1615,7 +1615,7 @@ focus = {
 
 focus = {
 	id = ABQ_miniaturize_beam_weaponry
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	icon = GFX_goal_miniaturization_of_mega_particle_cannon
 	search_filters = {  FOCUS_FILTER_RESEARCH }
 	cost = 5
 	x = 1
@@ -1855,6 +1855,24 @@ focus = {
 	}
 	relative_position_id = ABQ_begin_looking_into_newtype_capabilities
 	prerequisite = { focus = ABQ_begin_looking_into_newtype_capabilities focus = ABQ_prioritize_loyalty }
+}
+
+focus = {
+	id = ABQ_ms_developed_for_the_decisive_battle
+	icon = GFX_goal_MS_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+
+
+	}
+	relative_position_id = ABQ_prepare_to_counter_newtype_forces
+	prerequisite = { focus = ABQ_prepare_to_counter_newtype_forces }
 }
 
 focus = {

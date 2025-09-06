@@ -32,7 +32,7 @@ focus = {
 	x = -6
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}
 	completion_reward = {
 		add_ideas = space_fortress_a_baoa_qu1
@@ -364,7 +364,7 @@ focus = {
 	x = -3
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}
 	completion_reward = {
 		recruit_character = ABQ_eric_manthfield
@@ -406,7 +406,7 @@ focus = {
 	x = -1
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 15
 	}
 	available = {
 		ABQ_gihren_zabi = {
@@ -429,7 +429,7 @@ focus = {
 	x = 0
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 15
 	}
 	available = {
 		ABQ_gihren_zabi = {
@@ -1088,7 +1088,7 @@ focus = {
 	x = 9
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 15
 	}
 	completion_reward = {
 		add_tech_bonus = {
@@ -1447,7 +1447,7 @@ focus = {
 	x = 3
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 5
 	}
 	mutually_exclusive = {
 		focus = ABQ_grand_fleet_proclamation
@@ -1467,7 +1467,7 @@ focus = {
 	x = 4
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 20
 	}
 	completion_reward = {
 		1043 = {
@@ -1489,7 +1489,7 @@ focus = {
 	x = 0
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 20
 	}
 	completion_reward = {
 	}
@@ -1504,7 +1504,7 @@ focus = {
 	x = 0
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 15
 	}
 	completion_reward = {
 	}
@@ -1723,7 +1723,7 @@ focus = {
 	x = -1
 	y = 2
 	ai_will_do = {
-		factor = 1
+		factor = 5
 	}
 	search_filters = {
 		FOCUS_FILTER_HISTORICAL

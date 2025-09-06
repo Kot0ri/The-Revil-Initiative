@@ -440,6 +440,44 @@ focus = {
 			}
 	}
 }
+focus = {
+		id = SI6_revolution_in_side_6
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SI6_students_independence_movements
+		prerequisite = {
+			focus = SI6_students_independence_movements
+		}
+		completion_reward = {
+			start_civil_war = {
+				ideology = supremacist
+			}
+	}
+}
+
+focus = {
+		id = SI6_request_zeon_aid
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 16
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_civil_war = yes
+			has_government = supremacist
+		}
+		completion_reward = {
+			
+		}
+	}
+
 	focus = {
 		id = SI6_declaration_of_the_riah_republic
 		icon =  GFX_goal_zeon_mobile_headquarters

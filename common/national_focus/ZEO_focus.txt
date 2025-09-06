@@ -58,9 +58,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	available = {
-		date > 76.1.1
-	}
+	
 	prerequisite = {
 		focus = ZEO_legacy_of_zeon_deikun
 	}
@@ -183,7 +181,7 @@ focus = {
 	x = 0
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 15
 	}
 	prerequisite = {
 		focus = ZEO_declaration_of_the_principality
@@ -255,10 +253,12 @@ focus = {
 	x = 2
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 15
 	}
 	mutually_exclusive = { focus = ZEO_hoping_for_more_time }
-
+	available = {
+		date > 76.1.1
+	}
 	completion_reward = {
 	}
 	relative_position_id = ZEO_degwins_age
@@ -277,7 +277,7 @@ focus = {
 	}
 	mutually_exclusive = { focus = ZEO_designating_an_heir}
 	available = {
-		date > 76.1.1
+		date < 76.1.1
 	}
 	completion_reward = {
 	
@@ -372,7 +372,7 @@ focus = {
 	x = -2
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 15
 	}
 	mutually_exclusive = { focus = ZEO_kycilias_plotting }
 	completion_reward = {
@@ -400,6 +400,11 @@ focus = {
 		factor = 1
 	}
 	mutually_exclusive = { focus = ZEO_gihrens_speeches }
+	available = {
+		NOT = {
+			GRA = { has_completed_focus = GRA_Growing_Zeon_sentiments }
+		}
+	}
 	completion_reward = {
 		set_politics = {
 			ruling_party = oligarchy
@@ -1408,6 +1413,11 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	bypass = {
+		GRA = {
+			has_country_leader = GRA_kycilia_zabi
+		}
 	}
 	completion_reward = {
 		add_threat = 5
@@ -3353,7 +3363,7 @@ focus = {
 	x = 46
 	y = 0
 	ai_will_do = {
-		factor = 1
+		factor = 20
 	}
 	completion_reward = {
 		1057 = { 
@@ -3717,7 +3727,7 @@ focus = {
 	x = -4
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}
 	completion_reward = {
 		add_tech_bonus = {
@@ -3739,7 +3749,7 @@ focus = {
 	x = 0
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}
 	completion_reward = {
 	}

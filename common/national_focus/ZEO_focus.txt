@@ -344,6 +344,18 @@ focus = {
 			ideology = supremacist
 			popularity = 0.05
 		}
+	add_field_marshal_role = {
+  		character = ZEO_horst_harness
+		traits = {
+			politically_connected 
+		}
+  		skill = 4
+ 		attack_skill = 2
+  		defense_skill = 2
+  		planning_skill = 4
+  		logistics_skill = 4
+	}
+		
 	}
 	relative_position_id = ZEO_purge_radical_faction
 	prerequisite = { focus = ZEO_purge_radical_faction  }

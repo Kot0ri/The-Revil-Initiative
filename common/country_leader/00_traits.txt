@@ -11,6 +11,21 @@ leader_traits = {
 		stability_factor = 0.1
 	}
 
+	national_leader = {
+		random = no
+		sprite = 13
+		supremacist_drift = 0.05
+		supremacist_acceptance = 0.05
+		stability_factor = 0.1
+	}
+
+	gifted_revolutionary = {
+		random = no
+		sprite = 13
+		supremacist_drift = 0.05
+		war_support_factor = 0.02
+		recruitable_population_factor = 0.02
+	}
 
 #special Service
 special_service_trait = {

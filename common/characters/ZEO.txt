@@ -1610,7 +1610,7 @@ ZEO_mackenson={
 		}
 	}
 	ZEO_albert_schacht = {
-		name=" Albert Schacht "
+		name="Albert Schacht"
 		portraits={
 			army = {
 				small=GFX_idea_albert_schacht
@@ -1631,4 +1631,49 @@ ZEO_mackenson={
 		}
 	}
 }
-	
+ZEO_kaises_buyer = {
+		name="Kaises M. Buyer"
+		portraits={
+			army = {
+				small=GFX_idea_albert_schacht
+			}
+		}
+		advisor={
+			slot = political_advisor
+			cost = 100
+			idea_token = kaises_buyer
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				minister_of_the_interior
+			}
+			ai_will_do = {
+				factor = 1
+		}
+	}
+}
+
+ZEO_horst_harness = {
+		name="Horst Harness"
+		portraits={
+			army = {
+				small=GFX_idea_albert_schacht
+			}
+		}
+		advisor={
+			slot = political_advisor
+			cost = 100
+			idea_token = horst_harness
+			allowed = {
+				original_tag = ZEO
+			}
+			traits = {
+				captain_general
+			}
+			ai_will_do = {
+				factor = 1
+		}
+	}
+}
+}

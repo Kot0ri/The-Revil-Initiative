@@ -51,6 +51,24 @@ leader_traits = {
 		planning_speed = 0.02
 	}
 
+	minister_of_the_interior = {
+		random = no
+		sprite = 13
+		political_power_gain = 0.02
+		stability_factor = 0.1
+		autonomy_gain = 0.05
+	}
+
+	captain_general = {
+		random = no
+		sprite = 13
+		planning_speed = 0.05
+		max_planning_factor = 0.1
+		special_project_speed_factor = 0.02
+		training_time_army_factor = 0.1
+		trade_opinion_factor = 25
+	}
+
 #special Service
 special_service_trait = {
 	random = no

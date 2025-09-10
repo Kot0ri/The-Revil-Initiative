@@ -1210,6 +1210,25 @@ focus = {
 }
 
 focus = {
+	id = ZEO_form_the_supreme_war_council
+	icon = GFX_goal_dominance_of_human_survival_theory_old
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		supremacist > 0.35
+	}
+	completion_reward = {
+		add_ideas = supreme_war_council
+	}
+	relative_position_id = ZEO_increase_funding_to_the_military
+	prerequisite = { focus = ZEO_increase_funding_to_the_military }
+}
+
+focus = {
 	id = ZEO_theory_of_spacenoid_supremacy
 	icon = GFX_goal_dominance_of_human_survival_theory_old
 	cost = 5
@@ -3679,7 +3698,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		
+		add_ideas = Zeon_panzergrenadiers
 	}
 	relative_position_id = ZEO_stormtrooper_corps.
 	prerequisite = { focus = ZEO_stormtrooper_corps. }

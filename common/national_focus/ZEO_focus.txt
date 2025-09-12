@@ -975,6 +975,53 @@ focus = {
 }
 
 focus = {
+	id = ZEO_acension_of_harness
+	icon = GFX_goal_dominance_of_human_survival_theory
+	cost = 3
+	x = -18
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_ghirens_inner_circle
+	prerequisite = { focus = ZEO_ghirens_inner_circle }
+}
+
+focus = {
+	id = ZEO_form_the_supreme_war_council
+	icon = GFX_goal_dominance_of_human_survival_theory_old
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_ideas = supreme_war_council
+	}
+	relative_position_id = ZEO_acension_of_harness
+	prerequisite = { focus = ZEO_acension_of_harness }
+}
+
+focus = {
+	id = ZEO_escalate_war_effort
+	icon = GFX_goal_dominance_of_human_survival_theory_old
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_form_the_supreme_war_council
+	prerequisite = { focus = ZEO_form_the_supreme_war_council }
+}
+
+focus = {
 	id = ZEO_acension_of_bernini
 	icon = GFX_goal_dominance_of_human_survival_theory
 	cost = 3
@@ -1096,7 +1143,7 @@ focus = {
 		}
 	}
 	relative_position_id = ZEO_AI_research_program
-	prerequisite = { focus = ZEO_defence_of_the_homeland focus = ZEO_Side_3_colony_fortification  focus = ZEO_ensure_ideological_military }
+	prerequisite = { focus = ZEO_defence_of_the_homeland focus = ZEO_Side_3_colony_fortification  focus = ZEO_escalate_war_effort focus = ZEO_ensure_ideological_military }
 	prerequisite = { focus = ZEO_AI_research_program focus = ZEO_Supersoldat_program focus = ZEO_Artemis-Akkad_development_program focus = ZEO_gunboat_diplomacy  }
 }
 
@@ -1209,24 +1256,7 @@ focus = {
 	prerequisite = { focus = ZEO_expand_the_powers_of_the_secret_service }
 }
 
-focus = {
-	id = ZEO_form_the_supreme_war_council
-	icon = GFX_goal_dominance_of_human_survival_theory_old
-	cost = 10
-	x = 1
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	available = {
-		supremacist > 0.35
-	}
-	completion_reward = {
-		add_ideas = supreme_war_council
-	}
-	relative_position_id = ZEO_increase_funding_to_the_military
-	prerequisite = { focus = ZEO_increase_funding_to_the_military }
-}
+
 
 focus = {
 	id = ZEO_theory_of_spacenoid_supremacy

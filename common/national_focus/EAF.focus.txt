@@ -595,6 +595,12 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			78 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+				add_core_of = EAF
+				}
+			}
 			196 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -602,12 +608,6 @@ focus_tree = {
 				}
 			}
 			197 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-				add_core_of = EAF
-				}
-			}
-			766 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 				add_core_of = EAF

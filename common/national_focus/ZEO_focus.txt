@@ -4238,6 +4238,28 @@ focus = {
 			days = 365
 		}
 		country_event = { id = zeon.40 }
+		transfer_state = 1022
+		transfer_state = 744
+		transfer_state = 432
+		1022 = {
+		add_core_of = ZOF
+		}
+		744 = {
+		add_core_of = ZOF
+		}
+		432 = {
+		add_core_of = ZOF
+		}
+		release = ZOF
+		transfer_state = 192
+		transfer_state = 766
+		192 = {
+		add_core_of = EAF
+		}
+		766 = {
+		add_core_of = EAF
+		}
+		release = EAF
 	}
 	relative_position_id = ZEO_draw_up_plans_for_earth_invansion
 	prerequisite = { focus = ZEO_draw_up_plans_for_earth_invansion }

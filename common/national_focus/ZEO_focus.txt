@@ -4260,6 +4260,19 @@ focus = {
 		add_core_of = EAF
 		}
 		release = EAF
+		transfer_state = 359
+		transfer_state = 1017
+		transfer_state = 1018
+		1017 = {
+		add_core_of = NAA
+		}
+		1018 = {
+		add_core_of = NAA
+		}
+		359 = {
+		add_core_of = NAA
+		}
+		release = NAA
 	}
 	relative_position_id = ZEO_draw_up_plans_for_earth_invansion
 	prerequisite = { focus = ZEO_draw_up_plans_for_earth_invansion }

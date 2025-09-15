@@ -2475,6 +2475,32 @@ focus = {
 	icon = GFX_goal_casval_and_altesia_old
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		NOT = {
+			has_completed_focus = ZEO_serve_corporate_interests
+		}
+		NOT = {
+			has_completed_focus = ZEO_serve_the_people
+		}
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_revolution_in_side_3
+	prerequisite = { focus = ZEO_revolution_in_side_3 }
+	prerequisite = { focus = ZEO_recall_deikunists_officers }
+}
+
+focus = {
+	id = ZEO_the_shining_daughter
+	icon = GFX_goal_casval_and_altesia_old
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -2482,11 +2508,36 @@ focus = {
 	}
 	available = {
 	}
+	mutually_exclusive = {
+		focus = ZEO_prince_of_space
+	}
 	completion_reward = {
 		
 	}
-	relative_position_id = ZEO_revolution_in_side_3
-	prerequisite = { focus = ZEO_revolution_in_side_3 }
+	relative_position_id = ZEO_seek_out_deikuns_heirs
+	prerequisite = { focus = ZEO_seek_out_deikuns_heirs }
+}
+
+focus = {
+	id = ZEO_prince_of_space
+	icon = GFX_goal_casval_and_altesia_old
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = -6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	mutually_exclusive = {
+		focus = ZEO_the_shining_daughter
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_seek_out_deikuns_heirs
+	prerequisite = { focus = ZEO_seek_out_deikuns_heirs }
 }
 
 focus = {
@@ -2494,7 +2545,7 @@ focus = {
 	icon = GFX_focus_usa_reestablish_the_gold_standard
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
-	x = 0
+	x = 1
 	y = 3
 	ai_will_do = {
 		factor = 1
@@ -2502,8 +2553,13 @@ focus = {
 	available = {
 		has_war = no
 		democratic > 0.35
+		NOT = {
+			has_completed_focus = ZEO_seek_out_deikuns_heirs
+		}
 	}
 	mutually_exclusive = { focus = ZEO_serve_corporate_interests }
+	mutually_exclusive = { focus = ZEO_secure_the_nation }
+
 	completion_reward = {
 		set_politics = {
 			ruling_party = democratic
@@ -2514,10 +2570,36 @@ focus = {
 }
 
 focus = {
+	id = ZEO_secure_the_nation
+	icon = GFX_focus_usa_reestablish_the_gold_standard
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = -1
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+		democratic > 0.35
+		NOT = {
+			has_completed_focus = ZEO_seek_out_deikuns_heirs
+		}
+	}
+	mutually_exclusive = { focus = ZEO_serve_corporate_interests }
+	mutually_exclusive = { focus = ZEO_serve_the_people }
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_increase_public_dissent_in_parliment
+	prerequisite = { focus = ZEO_revolution_in_side_3 }
+}
+
+focus = {
 	id = ZEO_reach_out_to_the_federation
 	icon = GFX_focus_mex_privatisation
 	cost = 10
-	x = 0
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2532,7 +2614,7 @@ focus = {
 	id = ZEO_break_up_zeonic
 	icon = GFX_focus_mex_privatisation
 	cost = 10
-	x = -2
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2547,7 +2629,7 @@ focus = {
 	id = ZEO_root_out_zabists
 	icon = GFX_focus_mex_privatisation
 	cost = 10
-	x = -4
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2555,7 +2637,282 @@ focus = {
 	completion_reward = {
 	}
 	relative_position_id = ZEO_serve_the_people
-	prerequisite = { focus = ZEO_serve_the_people }
+	prerequisite = { focus = ZEO_serve_the_people focus = ZEO_the_shining_daughter focus = ZEO_secure_the_nation }
+}
+
+focus = {
+	id = ZEO_princess_of_the_people
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_country_leader = ZEO_artesia_deikun
+	}
+	mutually_exclusive = {
+		focus = ZEO_lady_of_the_people
+	}
+	completion_reward = {
+		#aristocracy route
+	}
+	relative_position_id = ZEO_the_shining_daughter
+	prerequisite = { focus = ZEO_the_shining_daughter }
+}
+
+focus = {
+	id = ZEO_lady_of_the_people
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_country_leader = ZEO_artesia_deikun
+	}
+	mutually_exclusive = {
+		focus = ZEO_princess_of_the_people
+	}
+	completion_reward = {
+		#democratic route
+	}
+	relative_position_id = ZEO_the_shining_daughter
+	prerequisite = { focus = ZEO_the_shining_daughter }
+}
+
+focus = {
+	id = ZEO_there_are_no_liars_in_zeon
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+	focus = ZEO_two_worlds_two_tomorrows
+	}
+	completion_reward = {
+	#this will set down the route to invade earth and align seperatists 
+	}
+	relative_position_id = ZEO_prince_of_space
+	prerequisite = { focus = ZEO_prince_of_space }
+}
+
+focus = {
+	id = ZEO_two_worlds_two_tomorrows
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+	focus = ZEO_there_are_no_liars_in_zeon
+	}
+	completion_reward = {
+	#this will set down the route to isolate and/or destroy the earth
+	}
+	relative_position_id = ZEO_prince_of_space
+	prerequisite = { focus = ZEO_prince_of_space }
+}
+
+focus = {
+	id = ZEO_replace_darcia
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_the_shining_daughter
+	prerequisite = { focus = ZEO_the_shining_daughter focus = ZEO_prince_of_space }
+}
+
+focus = {
+	id = ZEO_deikuns_closest_allies
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+	#option to choose either Ral or Maharaja as PM
+	}
+	relative_position_id = ZEO_replace_darcia
+	prerequisite = { focus = ZEO_replace_darcia }
+	prerequisite = {	focus = ZEO_lady_of_the_people focus = ZEO_princess_of_the_people }
+}
+
+focus = {
+	id = ZEO_heirs_to_the_stars
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+	#option to choose either Buyer or Maharaja as PM
+	}
+	relative_position_id = ZEO_replace_darcia
+	prerequisite = { focus = ZEO_replace_darcia }
+	prerequisite = {	focus = ZEO_there_are_no_liars_in_zeon focus = ZEO_two_worlds_two_tomorrows }
+}
+
+focus = {
+	id = ZEO_social_welfare_program
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_the_shining_daughter
+	prerequisite = { focus = ZEO_lady_of_the_people focus = ZEO_princess_of_the_people }
+}
+
+focus = {
+	id = ZEO_ral_family_returns
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_country_leader = ZEO_ramba_ral
+	}
+	completion_reward = {
+		#military government route ral takes over
+	}
+	relative_position_id = ZEO_root_out_zabists
+	prerequisite = { focus = ZEO_root_out_zabists }
+}
+
+focus = {
+	id = ZEO_guiding_hand_of_darcia
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_country_leader = ZEO_darcia_bakharo
+		has_completed_focus = ZEO_serve_the_people
+	}
+	completion_reward = {
+		#democratic route
+	}
+	relative_position_id = ZEO_root_out_zabists
+	prerequisite = { focus = ZEO_root_out_zabists }
+}
+
+focus = {
+	id = ZEO_stabilze_the_nation
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_root_out_zabists
+	prerequisite = { focus = ZEO_guiding_hand_of_darcia focus = ZEO_ral_family_returns }
+}
+
+focus = {
+	id = ZEO_refound_the_republic
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	mutually_exclusive = {
+		focus = ZEO_a_strong_hand
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_stabilze_the_nation
+	prerequisite = { focus = ZEO_stabilze_the_nation }
+}
+
+focus = {
+	id = ZEO_a_strong_hand
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	mutually_exclusive = {
+		focus = ZEO_refound_the_republic
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_stabilze_the_nation
+	prerequisite = { focus = ZEO_stabilze_the_nation }
 }
 
 focus = {
@@ -2568,8 +2925,14 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		NOT = {
+			has_completed_focus = ZEO_seek_out_deikuns_heirs
+		}
+	}
 	mutually_exclusive = { focus = ZEO_a_new_aristocracy }
 	mutually_exclusive = { focus = ZEO_serve_the_people }
+	mutually_exclusive = { focus = ZEO_secure_the_nation }
 	completion_reward = {
 		set_politics = {
 			ruling_party = corporatism

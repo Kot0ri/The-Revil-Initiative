@@ -50,10 +50,10 @@ AXS_char_aznable_axis_1={
 	name="Char Aznable"
 	portraits={
 		civilian={
-			large="gfx/leaders/AXS/Char_Aznable_Axis_1.dds"
+			large="gfx/leaders/AXS/Char_Aznable_Axis.dds"
 		}
 		army={
-			large="gfx/leaders/AXS/Char_AznableAxis_1.dds"
+			large="gfx/leaders/AXS/Char_Aznable_Axis.dds"
 		}
 	}
 	
@@ -96,11 +96,6 @@ AXS_haman_karn={
 		army={
 			large="gfx/leaders/AXS/Haman_Karn.dds"
 		}
-	}
-	country_leader={
-		ideology= authoritarian_oligarchy
-		traits={ghost_of_zeon inexperineced_imperialist }
-		expire="1000.1.1.1"
 	}
 	field_marshal = {
 		traits = { newtype2 pilot karn_party}

@@ -1471,6 +1471,15 @@ focus = {
 	completion_reward = {
 		retire_character = AXS_haman_karn_young
 		recruit_character = AXS_haman_karn
+		add_country_leader_role = {
+    	character = AXS_haman_karn
+    	promote_leader = yes
+   	 country_leader = {
+        ideology = authoritarian_oligarchy
+        expire = "1965.1.1.1"
+        traits = { ghost_of_zeon inexperineced_imperialistt }
+    }
+}
 		set_politics = {
 			ruling_party = oligarchy
 			elections_allowed = no

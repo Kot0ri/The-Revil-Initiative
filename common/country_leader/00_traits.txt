@@ -3169,6 +3169,24 @@ special_service_trait = {
 		}
 	}
 
+	intelligence_coordinator = { 
+		random = no
+		sprite = 15
+
+		operative_slot = 1
+		agency_upgrade_time = -0.2
+	}
+
+	secretary_of_state_security = {
+		random = no
+		sprite = 15
+
+		operative_slot = 1
+		agency_upgrade_time = -0.2
+		resistance_damage_to_garrison = -0.2
+		foreign_subversive_activites = -0.3
+		subversive_activites_upkeep = -0.3
+	}
 
 }
 

@@ -527,6 +527,7 @@ focus = {
 	completion_reward = {
 	recruit_character = AXS_char_aznable_axis_1
 	recruit_character = AXS_haman_karn_young
+	recruit_character = AXS_natalie_bianchi
 	add_manpower = 50000
 	}
 	relative_position_id = AXS_end_of_the_war
@@ -1793,7 +1794,7 @@ focus = {
 		has_completed_focus = AXS_hamans_regency
 	}
 	completion_reward = {
-	
+	retire_character = AXS_natalie_bianchi
 	}
 	relative_position_id = AXS_discover_the_reactionary_plot
 	prerequisite = {focus = AXS_discover_the_reactionary_plot}

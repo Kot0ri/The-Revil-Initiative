@@ -4,10 +4,10 @@ characters={
 	name="Maharaja Karn"
 	portraits={
 		civilian={
-			large="gfx/leaders/AXS/MaharajaKarn.dds"
+			large="gfx/leaders/AXS/Axis_MaharajaKarn.dds"
 		}
 		army={
-			large="gfx/leaders/AXS/MaharajaKarn.dds"
+			large="gfx/leaders/AXS/Axis_MaharajaKarn.dds"
 		}
 	}
 	country_leader={
@@ -25,21 +25,17 @@ characters={
 	}
 }
 
-AXS_char_aznable={
+AXS_char_aznable_leader={
 	name="Char Aznable"
 	portraits={
 		civilian={
-			large="gfx/leaders/AXS/Char_Aznable.dds"
+			large="gfx/leaders/AXS/Axis_Char.dds"
 		}
 		army={
-			large="gfx/leaders/AXS/Char_Aznable.dds"
+			large="gfx/leaders/AXS/Axis_Char.dds"
 		}
 	}
-	country_leader={
-		ideology= social_democracy
-		traits={well_respected }
-		expire="1000.1.1.1"
-	}
+	
 	field_marshal = {
 		traits = { akai_suisei pilot newtype1 hero_of_the_independence_war popular_icon vanguishier_of_the_white_devil deikun_party}
 		skill = 6
@@ -50,6 +46,46 @@ AXS_char_aznable={
 	}
 }
 
+AXS_char_aznable_axis_1={
+	name="Char Aznable"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Char_Aznable_Axis_1.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Char_AznableAxis_1.dds"
+		}
+	}
+	
+	field_marshal = {
+		traits = { akai_suisei pilot newtype1 hero_of_the_independence_war popular_icon vanguishier_of_the_white_devil deikun_party}
+		skill = 6
+		attack_skill = 8
+		defense_skill = 5
+		planning_skill = 5
+		logistics_skill = 5
+	}
+}
+
+AXS_haman_karn_young={
+	name="Haman Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Haman_Karn_Early.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Haman_Karn_Early.dds"
+		}
+	}
+	corps_commander =  {
+		traits = { newtype2 pilot karn_party}
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 6
+		logistics_skill = 5
+	}
+}
 
 AXS_haman_karn={
 	name="Haman Karn"

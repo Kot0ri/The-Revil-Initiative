@@ -525,9 +525,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	recruit_character = AXS_enzo_bernini
-	recruit_character = AXS_fabian_frischknecht
-	recruit_character = AXS_rakan_dahkaran
+	recruit_character = AXS_char_aznable_axis_1
+	recruit_character = AXS_haman_karn_young
 	add_manpower = 50000
 	}
 	relative_position_id = AXS_end_of_the_war
@@ -1470,11 +1469,14 @@ focus = {
 		FOCUS_FILTER_HISTORICAL
 	}
 	completion_reward = {
+		retire_character = AXS_haman_karn_young
+		recruit_character = AXS_haman_karn
 		set_politics = {
 			ruling_party = oligarchy
 			elections_allowed = no
 			election_frequency = 48
 		}
+		
 	}
 	relative_position_id = AXS_coronation_of_mineva_zabi
 	mutually_exclusive = { focus = AXS_char_aznables_true_idenity}
@@ -1492,7 +1494,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	retire_character = AXS_char_aznable_axis_1
+	recruit_character = AXS_char_aznable_leader
 	}
 	relative_position_id = AXS_death_of_maharaja_karn
 	mutually_exclusive = { focus = AXS_hamans_regency}

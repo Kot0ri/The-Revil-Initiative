@@ -854,6 +854,41 @@ AXS_Alfred_von_Scharenberg={
 	}
 }
 
+##Newtype Corps
+
+AXS_puru_two_1={
+	name="Puru Two"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Ple_Two.dds"
+		}
+	}
+	corps_commander={
+		traits={ cyber_newtype }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+AXS_puru_two_2={
+	name="Puru Two"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Ple_Two2.dds"
+		}
+	}
+	corps_commander={
+		traits={ cyber_newtype }
+		skill= 4
+		attack_skill=4
+		defense_skill=4
+		planning_skill=2
+		logistics_skill=2
+	}
+}
 
 ##High Command
 AXS_fernandez={

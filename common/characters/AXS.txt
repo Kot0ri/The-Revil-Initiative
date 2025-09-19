@@ -761,7 +761,7 @@ AXS_fabian_frischknecht={
 		}
 	}
 	corps_commander={
-		traits={pilot cyber_newtype}
+		traits={pilot }
 		skill=2
 		attack_skill=3
 		defense_skill=2
@@ -864,7 +864,7 @@ AXS_puru_two_1={
 		}
 	}
 	corps_commander={
-		traits={ cyber_newtype }
+		traits={ cyber_newtype pilot }
 		skill=2
 		attack_skill=2
 		defense_skill=2
@@ -881,12 +881,63 @@ AXS_puru_two_2={
 		}
 	}
 	corps_commander={
-		traits={ cyber_newtype toto_party }
+		traits={ cyber_newtype toto_party pilot }
 		skill= 4
 		attack_skill=4
 		defense_skill=4
 		planning_skill=2
 		logistics_skill=2
+	}
+}
+
+AXS_non={
+	name="Non"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Non.dds"
+		}
+	}
+	corps_commander={
+		traits={ cyber_newtype pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_rei={
+	name="Rei"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Rei.dds"
+		}
+	}
+	corps_commander={
+		traits={ cyber_newtype pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_rin={
+	name="Rin"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Rin.dds"
+		}
+	}
+	corps_commander={
+		traits={ cyber_newtype pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
 	}
 }
 

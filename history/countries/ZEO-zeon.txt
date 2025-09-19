@@ -2,10 +2,8 @@
 oob = "ZEO_0074"
 
 set_country_flag = zeon_country
-75.1.1 = {
-	set_global_flag = start_is_uc0075
-	set_variable = { var = how_many_drop_earth value = 1 }
-	set_variable = { var = how_many_exercise value = 0 }
+74.1.1 = {
+	
 }
 
 ### BOP ###
@@ -168,6 +166,10 @@ add_ideas = {
 	customs_duty_6
 	oversea_army_6
 	newtype_division_2
+}
+add_timed_idea = {
+	idea = ZEO_aftermatch_of_ral_purge
+	time = 365
 }
 
 add_opinion_modifier = {

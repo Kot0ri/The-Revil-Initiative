@@ -1196,4 +1196,21 @@ AXS_natalie_bianchi={
 	}
 }
 
+AXS_jurgen_schneider={
+	name="Jurgen Schneider"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/natalie_bianchi.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/natalie_bianchi.dds"
+		}
+	}
+	
+	advisor = {
+		slot = theorist
+		traits = { head_of_mobile_suit_development }
+	}
+}
+
 }

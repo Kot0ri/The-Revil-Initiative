@@ -537,7 +537,6 @@ focus = {
 	completion_reward = {
 	recruit_character = AXS_char_aznable_axis_1
 	recruit_character = AXS_haman_karn_young
-	recruit_character = AXS_natalie_bianchi
 	add_manpower = 50000
 	}
 	relative_position_id = AXS_end_of_the_war
@@ -1454,16 +1453,15 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 3
-	y = 3
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 	
 	}
-	relative_position_id = AXS_coronation_of_mineva_zabi
+	relative_position_id = AXS_Axis_civil_war
 	mutually_exclusive = { focus = AXS_hamans_regency}
-	mutually_exclusive = { focus = AXS_char_aznables_true_idenity}
 	prerequisite = {focus = AXS_Axis_civil_war}
 }
 
@@ -1472,7 +1470,7 @@ focus = {
 	icon = GFX_goal_haman_regency
 	cost = 2
 	x = 0
-	y = 3
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1498,8 +1496,7 @@ focus = {
 		}
 		
 	}
-	relative_position_id = AXS_coronation_of_mineva_zabi
-	mutually_exclusive = { focus = AXS_char_aznables_true_idenity}
+	relative_position_id = AXS_Axis_civil_war
 	mutually_exclusive = { focus = AXS_gihren_loyalists}
 	prerequisite = {focus = AXS_Axis_civil_war }
 }
@@ -1509,7 +1506,7 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = -3
-	y = 2
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -1518,9 +1515,8 @@ focus = {
 	recruit_character = AXS_char_aznable_leader
 	}
 	relative_position_id = AXS_death_of_maharaja_karn
-	mutually_exclusive = { focus = AXS_hamans_regency}
-	mutually_exclusive = { focus = AXS_gihren_loyalists}
-	prerequisite = {focus = AXS_Axis_civil_war }
+	mutually_exclusive = { focus = AXS_Axis_civil_war}
+	prerequisite = {focus = AXS_death_of_maharaja_karn }
 }
 
 focus = {
@@ -1733,6 +1729,22 @@ focus = {
 }
 
 focus = {
+	id = AXS_keep_balance_betwen_factions
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_coronation_of_mineva_zabi
+	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+}
+
+focus = {
 	id = AXS_emissary_from_zeon
 	icon = GFX_goal_general_meeting
 	cost = 2
@@ -1753,7 +1765,7 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -1764,7 +1776,9 @@ focus = {
 	
 	}
 	relative_position_id = AXS_coronation_of_mineva_zabi
-	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
+	prerequisite = {focus = AXS_emissary_from_zeon }
+	prerequisite = {focus = AXS_form_a_royal_guard }
+	prerequisite = { focus = AXS_keep_balance_betwen_factions}
 }
 
 focus = {
@@ -1784,8 +1798,6 @@ focus = {
 	}
 	relative_position_id = AXS_death_of_maharaja_karn
 	prerequisite = {focus = AXS_death_of_maharaja_karn }
-	prerequisite = {focus = AXS_emissary_from_zeon }
-	prerequisite = {focus = AXS_form_a_royal_guard }
 }
 
 focus = {

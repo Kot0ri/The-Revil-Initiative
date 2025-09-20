@@ -25,6 +25,31 @@ characters={
 	}
 }
 
+AXS_maharaja_karn_2={
+	name="Maharaja Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/maharaja_karn_2.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/maharaja_karn_2.dds"
+		}
+	}
+	country_leader={
+		ideology= authoritarian_oligarchy
+		traits={maharaja_trait}
+		expire="1000.1.1.1"
+	}
+	navy_leader={
+		traits={anti_zabi_party}
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		maneuvering_skill=2
+		coordination_skill=2
+	}
+}
+
 AXS_char_aznable_leader={
 	name="Char Aznable"
 	portraits={

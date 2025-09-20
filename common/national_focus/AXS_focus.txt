@@ -511,7 +511,17 @@ focus = {
 		has_war = no
 	}
 	completion_reward = {
-	
+		retire_character = AXS_maharaja_karn
+		recruit_character = AXS_maharaja_karn_2
+		add_country_leader_role = {
+    	character = AXS_maharaja_karn_2
+    	promote_leader = yes
+   		country_leader = {
+        ideology = military_administration
+        expire = "1965.1.1.1"
+        traits = { maharaja_trait }
+    }
+}
 	}
 }
 
@@ -1475,7 +1485,7 @@ focus = {
 		add_country_leader_role = {
     	character = AXS_haman_karn
     	promote_leader = yes
-   	 country_leader = {
+   		country_leader = {
         ideology = authoritarian_oligarchy
         expire = "1965.1.1.1"
         traits = { ghost_of_zeon inexperineced_imperialistt }
@@ -1746,6 +1756,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		date > 82.6.1
 	}
 	completion_reward = {
 	

@@ -1479,6 +1479,7 @@ focus = {
 	}
 	completion_reward = {
 		retire_character = AXS_enzo_bernini
+		retire_character = AXS_fabian_frischknecht
 		retire_character = AXS_haman_karn_young
 		recruit_character = AXS_haman_karn
 		add_country_leader_role = {
@@ -1487,9 +1488,18 @@ focus = {
    		country_leader = {
         ideology = authoritarian_oligarchy
         expire = "1965.1.1.1"
-        traits = { ghost_of_zeon inexperineced_imperialistt }
+        traits = { ghost_of_zeon inexperineced_imperialist }
     }
-}
+	}
+	add_country_leader_role = {
+    	character = AXS_felicia
+    	promote_leader = yes
+   		country_leader = {
+        ideology = spacenoid_supremacist
+        expire = "1965.1.1.1"
+        traits = {  }
+    }
+	}
 		set_politics = {
 			ruling_party = oligarchy
 			elections_allowed = no
@@ -2001,7 +2011,7 @@ focus = {
 	}
 	mutually_exclusive = {focus = AXS_nothing_more_than_rumors}
 	completion_reward = {
-	
+	recruit_character = AXS_glemy_toto
 	}
 	relative_position_id = AXS_remodel_zeon_nobility
 	prerequisite = {focus = AXS_remodel_zeon_nobility }
@@ -2074,7 +2084,16 @@ focus = {
 		focus = AXS_increase_reliance_on_old_guard
 	}
 	completion_reward = {
-	
+	retire_character = AXS_felicia
+	add_country_leader_role = {
+    	character = AXS_glemy_toto
+    	promote_leader = yes
+   		country_leader = {
+        ideology = spacenoid_supremacist
+        expire = "1965.1.1.1"
+        traits = { illegtimate_heir anti_karn }
+    }
+	}
 	}
 	relative_position_id = AXS_cajole_glemy
 	prerequisite = {focus = AXS_cajole_glemy }
@@ -2323,16 +2342,6 @@ focus = {
 		has_completed_focus = AXS_Declare_Neo-Zeon
 	}
 	completion_reward = {
-		recruit_character = AXS_glemy_toto
-		add_country_leader_role = {
-    	character = AXS_glemy_toto
-    	promote_leader = yes
-   		country_leader = {
-        ideology = supremacist
-        expire = "1965.1.1.1"
-        traits={illegtimate_heir anti_karn}
-    }
-}
 		set_politics = {
 			ruling_party = supremacist
 		}
@@ -2363,6 +2372,7 @@ focus = {
 	recruit_character = AXS_non
 	recruit_character = AXS_rei
 	recruit_character = AXS_rin
+	#if leine is captured turns her into cyber newtype
 	}
 }
 

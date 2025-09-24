@@ -2265,6 +2265,48 @@ focus = {
 }
 
 focus = {
+	id = AXS_elavate_cyber_newtypes
+	icon = GFX_goal_glemy_1
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_imperial_visions
+	prerequisite = {
+		focus = AXS_imperial_visions
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_cooperate_with_the_Aueg
+	icon = GFX_goal_glemy_1
+	cost = 5
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_imperial_visions
+	prerequisite = {
+		focus = AXS_imperial_visions
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = AXS_visions_of_blood
 	icon = GFX_goal_glemy_1
 	cost = 5

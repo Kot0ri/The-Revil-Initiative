@@ -1478,6 +1478,7 @@ focus = {
 		FOCUS_FILTER_HISTORICAL
 	}
 	completion_reward = {
+		retire_character = AXS_enzo_bernini
 		retire_character = AXS_haman_karn_young
 		recruit_character = AXS_haman_karn
 		add_country_leader_role = {
@@ -2331,6 +2332,7 @@ focus = {
         expire = "1965.1.1.1"
         traits={illegtimate_heir anti_karn}
     }
+}
 		set_politics = {
 			ruling_party = supremacist
 		}
@@ -2338,7 +2340,7 @@ focus = {
 	retire_character = AXS_puru_two_1
 	recruit_character = AXS_puru_two_2
 	}
-}
+
 }
 
 focus = {

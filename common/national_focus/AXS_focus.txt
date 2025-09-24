@@ -2322,6 +2322,18 @@ focus = {
 		has_completed_focus = AXS_Declare_Neo-Zeon
 	}
 	completion_reward = {
+		add_country_leader_role = {
+    	character = AXS_glemy_toto
+    	promote_leader = yes
+   		country_leader = {
+        ideology = supremacist
+        expire = "1965.1.1.1"
+        traits={illegtimate_heir anti_karn}
+    }
+		set_politics = {
+			ruling_party = supremacist
+		}
+		
 	retire_character = AXS_puru_two_1
 	recruit_character = AXS_puru_two_2
 	}

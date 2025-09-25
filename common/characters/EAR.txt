@@ -1,3 +1,56 @@
 characters={
 	#Leaders
+	EAR_neuen_bitter ={
+		name="Neuen Bitter"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAR/neuen_bitter.dds"
+			}
+			army={
+				large="gfx/leaders/EAF/neuen_bitter.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = neun_bitter
+			traits = { army_chief_maneuver_2 }
+		}
+		country_leader = {
+			ideology = spacenoid_supremacist
+		}
+		country_leader = {
+			ideology = military_administration
+		}
+		field_marshal = {
+			traits={zabi_party ghiren_loyalist organizer offensive_doctrine }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+
+	EAR_wolfgang_wall ={
+		name="Wolfgang Wall"
+		portraits={
+			
+			army={
+				large="gfx/leaders/EAF/wolfgang_wall.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = wolfgang_wall
+			traits = { army_chief_defensive_1 }
+		}
+		corps_commander = {
+			traits={ defensive_doctrine }
+			skill = 3
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
 }

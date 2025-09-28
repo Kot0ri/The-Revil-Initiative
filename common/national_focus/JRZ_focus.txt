@@ -386,4 +386,24 @@ focus = {
 	}
 }
 
+focus = {
+	id = JRZ_space_of_ageta
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_jupiter_phantom
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_jupiter_phantom
+	completion_reward = {
+	
+}
+
 }

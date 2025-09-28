@@ -390,6 +390,64 @@ focus = {
 		}
 	}
 
+focus = {
+		id = EFG_address_coplaints_of_government_corruption
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = { focus = EFG_combat_the_rise_of_anti-federation_partisans }
+		relative_position_id = EFG_medeate_between_regional_adminstrations
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = EFG_combat_the_rise_of_anti-federation_partisans
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_maintain_amakuradi_policy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_address_coplaints_of_government_corruption }
+		relative_position_id = EFG_address_coplaints_of_government_corruption
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_repeal_amakuradi_policy
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = EFG_repeal_amakuradi_policy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = { focus = EFG_address_coplaints_of_government_corruption }
+		relative_position_id = EFG_address_coplaints_of_government_corruption
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_maintain_amakuradi_policy
+		}
+		completion_reward = {
+		
+		}
+	}
+
 	focus = {
 		id = EFG_navigate_consortium_influence
 		icon = GFX_goal_general_meeting
@@ -727,7 +785,7 @@ focus = {
 		id = EFG_address_the_africa_situation
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -2
+		x = -6
 		y = 1
 		prerequisite = { focus = EFG_medeate_between_regional_adminstrations }
 		relative_position_id = EFG_medeate_between_regional_adminstrations
@@ -759,7 +817,7 @@ focus = {
 		id = EFG_rumors_from_the_middle_east
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -4
+		x = -8
 		y = 1
 		prerequisite = { focus = EFG_medeate_between_regional_adminstrations }
 		relative_position_id = EFG_medeate_between_regional_adminstrations
@@ -2176,6 +2234,77 @@ focus = {
 		relative_position_id = EFG_colony_restoration_plan
 		prerequisite = {
 			focus = EFG_colony_restoration_plan focus = EFG_federal_new_deal_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = EFG_shakai_fukushi
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		available = {
+			has_war = no
+			has_completed_focus = EFG_provisional_restoration_plan
+		}
+		relative_position_id = EFG_provisional_restoration_plan
+		prerequisite = {
+			focus = EFG_start_new_deal_year_1 focus = EFG_start_colony_restoration_plan_year_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = EFG_houjin_zei
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+			NOT = {
+				has_government = supremacist
+			}
+			NOT = {
+				has_completed_focus = EFG_maintain_amakuradi_policy
+			}
+		}
+		relative_position_id = EFG_shakai_fukushi
+		prerequisite = {
+			focus = EFG_shakai_fukushi
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = EFG_houjin_zei
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+			NOT = {
+				has_government = supremacist
+			}
+		}
+		relative_position_id = EFG_shakai_fukushi
+		prerequisite = {
+			focus = EFG_shakai_fukushi
 		}
 		ai_will_do = {
 			factor = 1

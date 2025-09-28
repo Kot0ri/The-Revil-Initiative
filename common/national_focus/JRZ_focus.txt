@@ -151,7 +151,9 @@ focus = {
 		focus = JRZ_pearl_boar
 	}
 	completion_reward = {
-		
+		set_politics = {
+			ruling_party = military_government
+		}
 	}
 }
 
@@ -266,7 +268,9 @@ focus = {
 		focus = JRZ_crimson_lightning
 	}
 	completion_reward = {
-		
+		set_politics = {
+			ruling_party = oligarchy
+		}
 	}
 }
 
@@ -367,16 +371,18 @@ focus = {
 	id = JRZ_jupiter_phantom
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 25
-	y = 0
+	x = 5
+	y = 10
 	ai_will_do = {
 		factor = 1
 	}
 	available = {
-		is_puppet_of = RNZ
+	country_exists = RNZ
 	}
 	completion_reward = {
-		
+		set_politics = {
+			ruling_party = contolism
+		}
 	}
 }
 

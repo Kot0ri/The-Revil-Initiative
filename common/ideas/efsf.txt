@@ -75,6 +75,41 @@ ideas = {
 			removal_cost = -1
 		}
 
+		war_time_production = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				line_change_production_efficiency_factor = 0.20
+				production_oil_factor = 0.20
+				production_lack_of_resource_penalty_factor = -0.20
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+			}
+		
+			removal_cost = -1
+		}
+
+		defense_of_earth = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_core_defence_factor = 0.10
+				air_attack_factor = 0.10
+				recruitable_population_factor = 0.12
+				war_support_factor = 0.20
+			}
+		
+			removal_cost = -1
+		}
+
 		operation_cemballo = {
 			allowed ={
 				always = no

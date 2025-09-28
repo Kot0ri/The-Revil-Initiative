@@ -657,24 +657,58 @@ focus = {
 	id = SSA_nanyang_takeover
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 5
-	x = 10
+	x = 14
 	y = 20
 	ai_will_do = {
 	factor = 1
 	}
+	mutually_exclusive = {
+		focus = SSA_military_takeover
+	}
+	available = {
+		date > 80.1.1
+	}
 	completion_reward = {
 	add_political_power = 50
 	set_cosmetic_tag = SSA_nanyang_allaince
-	leave_faction = yes
-	set_politics = {
-		ruling_party = oligarchy
-	}
 	set_autonomy = {
 		target = SSA
 		autonomous_state = autonomy_free
 		end_wars = no
 		end_civil_wars = no
 	}
+	leave_faction = yes
+	set_politics = {
+		ruling_party = oligarchy
+	}
+	
+		}
+	}
+
+focus = {
+	id = SSA_military_takeover
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 12
+	y = 20
+	ai_will_do = {
+	factor = 1
+	}
+	available = {
+		has_government = military_government
+	}
+	mutually_exclusive = {
+		focus = SSA_nanyang_takeover
+	}
+	completion_reward = {
+	add_political_power = 50
+	set_autonomy = {
+		target = SSA
+		autonomous_state = autonomy_free
+		end_wars = no
+		end_civil_wars = no
+	}
+	leave_faction = yes
 		}
 	}
 
@@ -682,13 +716,13 @@ focus = {
 		id = SSA_work_with_side_6
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		ai_will_do = {	
 		factor = 1
 		}
 		relative_position_id = SSA_nanyang_takeover
-			prerequisite = {focus = SSA_nanyang_takeover}
+		prerequisite = {focus = SSA_nanyang_takeover  focus = SSA_military_takeover}
 		completion_reward = {
 	
 			}
@@ -698,13 +732,13 @@ focus = {
 		id = SSA_bring_in_disenfranchised_eff
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
 		ai_will_do = {	
 		factor = 1
 		}
 		relative_position_id = SSA_nanyang_takeover
-			prerequisite = {focus = SSA_nanyang_takeover}
+		prerequisite = {focus = SSA_nanyang_takeover }
 		completion_reward = {
 	
 			}
@@ -730,7 +764,7 @@ focus = {
 		id = SSA_bring_in_disenfranchised_zeons
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 2
+		x = 3
 		y = 1
 		ai_will_do = {	
 		factor = 1

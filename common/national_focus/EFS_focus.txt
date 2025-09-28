@@ -2077,7 +2077,7 @@ focus = {
 
 focus = {
 	id = efsf_defense_of_the_earth
-	icon = GFX_goal_earth_counter_strategy
+	icon = GFX_goal_revil
 	cost = 5
 	x = 40
 	y = 0
@@ -2088,7 +2088,14 @@ focus = {
 		has_war = yes
 	}
 	completion_reward = {
-	
+	add_timed_idea = {
+		idea = war_time_production
+		days = 365
+	}
+	add_timed_idea = {
+		idea = defense_of_earth
+		days = 365
+	}
 	}
 }
 

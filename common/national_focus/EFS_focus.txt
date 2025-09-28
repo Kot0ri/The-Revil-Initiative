@@ -2688,7 +2688,7 @@ focus = {
 		id = efsf_incoporate_battle_data
 		icon = GFX_goal_earth_counter_strategy
 		cost = 10
-		x = -3
+		x = -4
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -2775,7 +2775,7 @@ focus = {
 	id = efsf_operation_clean_sweep
 	icon = GFX_goal_zeon_must_burn
 	cost = 10
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3282,6 +3282,90 @@ focus = {
 }
 
 focus = {
+	id = efsf_improve_mass_production_capabilities
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_focus_on_retrofitting_oyw_ms
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_focus_on_retrofitting_oyw_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_fufill_operation_v_objectives
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_improve_mass_production_capabilities
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_improve_mass_production_capabilities
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_simplify_maintenance_process
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_fufill_operation_v_objectives
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_fufill_operation_v_objectives
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_terrorist_supression_use_MS
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_simplify_maintenance_process
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_simplify_maintenance_process
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_contract_anaheim
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
@@ -3297,6 +3381,52 @@ focus = {
 	
 	}
 	relative_position_id = efsf_development_of_nuclear_capable_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_prepare_axis_attack_plan
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		 focus = efsf_development_of_nuclear_capable_ms
+	}
+	prerequisite = {
+		focus = efsf_new_generation_battleships
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_development_of_nuclear_capable_ms
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_range_improvements
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		 focus = efsf_prepare_axis_attack_plan
+	}
+
+	available = {
+	
+	}
+	relative_position_id = efsf_prepare_axis_attack_plan
 	completion_reward = {
 	
 	}
@@ -3327,13 +3457,16 @@ focus = {
 	id = efsf_begin_introduction_of_new_prototypes
 	icon = GFX_goal_next_generation_ms
 	cost = 10
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	prerequisite = {
 		focus = efsf_gpo_series_proposal
+	}
+	prerequisite = {
+		focus = efsf_range_improvements
 	}
 	available = {
 	has_completed_focus = efsf_development_of_next_gen_ms
@@ -3345,7 +3478,7 @@ focus = {
 }
 
 focus = {
-	id = efsf_reverse_engineer_zeon_psycommu_tech
+	id = efsf_0083_armed_forces_development_plan
 	icon = GFX_goal_next_generation_ms
 	cost = 10
 	x = 1
@@ -3357,9 +3490,51 @@ focus = {
 		focus = efsf_begin_introduction_of_new_prototypes
 	}
 	available = {
-
+		date > 83.1.1
 	}
 	relative_position_id = efsf_begin_introduction_of_new_prototypes
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_variable_suit_prototyping
+	icon = GFX_goal_next_generation_ms
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_0083_armed_forces_development_plan
+	}
+	available = {
+		date = 83.3.1
+	}
+	relative_position_id = efsf_0083_armed_forces_development_plan
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_reverse_engineer_zeon_psycommu_tech
+	icon = GFX_goal_next_generation_ms
+	cost = 10
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_begin_introduction_of_new_prototypes focus = efsf_terrorist_supression_use_MS
+	}
+	available = {
+		date > 85.1.1
+	}
+	relative_position_id = efsf_begin_introduction_of_new_prototypes 
 	completion_reward = {
 	
 	}
@@ -3375,10 +3550,10 @@ focus = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = efsf_begin_introduction_of_new_prototypes
+		focus = efsf_begin_introduction_of_new_prototypes focus = efsf_terrorist_supression_use_MS
 	}
 	available = {
-
+		date > 85.1.1
 	}
 	relative_position_id = efsf_begin_introduction_of_new_prototypes
 	completion_reward = {

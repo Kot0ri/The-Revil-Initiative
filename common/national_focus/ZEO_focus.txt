@@ -2967,7 +2967,7 @@ focus = {
 focus = {
 	id = ZEO_side_3_colony_evaluation
 	icon = GFX_goal_generic_construct_infrastructure
-	cost = 4
+	cost = 3
 	x = 35
 	y = 0
 	search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2986,7 +2986,7 @@ focus = {
 	focus = {
 		id = ZEO_synthetic_resource_refining
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 4
+		cost = 5
 		x = 0
 		y = 2
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -3004,7 +3004,7 @@ focus = {
 	id = ZEO_further_military_research
 	icon = GFX_goal_generic_army_artillery
 	search_filters = {  FOCUS_FILTER_RESEARCH }
-	cost = 6
+	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -3211,7 +3211,7 @@ focus = {
 	id = ZEO_side_3_weapons_development
 	icon = GFX_goal_generic_small_arms
 	search_filters = {  FOCUS_FILTER_RESEARCH }
-	cost = 10
+	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -3241,7 +3241,7 @@ focus = {
 	id = ZEO_use_dark_and_ocean_colonies_for_military_use
 	icon = GFX_goal_generic_construct_mil_factory
 	search_filters = { FOCUS_FILTER_INDUSTRY }
-	cost = 10
+	cost = 1
 	x = -3
 	y = 1
 	ai_will_do = {
@@ -3311,7 +3311,7 @@ focus = {
 	id = ZEO_expansion_of_side_3_garrison
 	icon = GFX_focus_SOV_mobilization_plan
 	search_filters = { FOCUS_FILTER_MANPOWER }
-	cost = 10
+	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -3391,6 +3391,10 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
+		is_in_faction_with = GRA
 	}
 	completion_reward = {
 	add_ideas =	united_maintenance_plan_idea
@@ -3565,7 +3569,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 10
 	x = 0
-	y = 1
+	y = 15
 	ai_will_do = {
 		factor = 1
 	}
@@ -3577,7 +3581,7 @@ focus = {
 	
 	}
 	relative_position_id = ZEO_united_maintenance
-	prerequisite = { focus = ZEO_united_maintenance }
+	
 }
 
 focus = {
@@ -3585,26 +3589,187 @@ focus = {
 	icon = GFX_goal_generic_consumer_goods
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 10
-	x = 0
-	y = 3
+	x = -3
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	available = {
-	has_war = no
 	is_subject = no
+	has_completed_focus = ZEO_ensure_control_over_everday_livelihood
 }
-allow_branch = {
-	has_country_flag = won_independence_war
-}
+
 	completion_reward = {
 	
 	}
 	mutually_exclusive = { focus = ZEO_road_to_technocarcy }
-	mutually_exclusive = { focus = ZEO_reparations_to_the_federation }
-	relative_position_id = ZEO_fix_the_economy
-	prerequisite = { focus = ZEO_fix_the_economy focus = ZEO_ensure_control_over_everday_livelihood }
-	prerequisite = { focus = ZEO_post_war_economy }
+	relative_position_id = ZEO_united_maintenance
+	prerequisite = { focus = ZEO_ramp_up_miltary_armarment }
+
+}
+
+focus = {
+	id = ZEO_institute_price_controls
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	is_subject = no
+	has_war = yes
+	}
+
+	completion_reward = {
+	
+	}
+
+	relative_position_id = ZEO_road_to_autarky
+	prerequisite = { focus = ZEO_road_to_autarky  }
+
+}
+
+focus = {
+	id = ZEO_further_accelerate_armamnent_program
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	date > 0078.1.1
+	}
+
+	completion_reward = {
+	
+	}
+
+	relative_position_id = ZEO_road_to_autarky
+	prerequisite = { focus = ZEO_road_to_autarky  }
+}
+
+focus = {
+	id = ZEO_establish_production_quotas
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = yes
+	}
+
+	completion_reward = {
+	
+	}
+
+	relative_position_id = ZEO_further_accelerate_armamnent_program
+	prerequisite = { focus = ZEO_further_accelerate_armamnent_program  }
+
+}
+
+focus = {
+	id = ZEO_form_war_procurement_board
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 2
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = yes
+	}
+
+	completion_reward = {
+	
+	}
+
+	relative_position_id = ZEO_road_to_autarky
+	prerequisite = { focus = ZEO_road_to_autarky focus = ZEO_road_to_technocarcy  }
+}
+
+focus = {
+	id = ZEO_all_for_the_supreme_commanders_vision
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = yes
+	}
+	mutually_exclusive = {
+		focus = ZEO_rationalize_war_efforts
+	}
+	completion_reward = {
+	
+	}
+
+	relative_position_id = ZEO_form_war_procurement_board
+	prerequisite = { focus = ZEO_form_war_procurement_board  }
+}
+
+focus = {
+	id = ZEO_total_war
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = yes
+	has_completed_focus = ZEO_ensure_control_over_everday_livelihood
+	}
+	
+	completion_reward = {
+	
+	}
+
+	relative_position_id = ZEO_establish_production_quotas
+	prerequisite = { focus = ZEO_establish_production_quotas }
+	prerequisite = { focus = ZEO_all_for_the_supreme_commanders_vision	}
+}
+
+
+focus = {
+	id = ZEO_rationalize_war_efforts
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = yes
+	}
+	mutually_exclusive = {
+		focus = ZEO_all_for_the_supreme_commanders_vision
+	}
+	completion_reward = {
+	
+	}
+
+	relative_position_id = ZEO_form_war_procurement_board
+	prerequisite = { focus = ZEO_form_war_procurement_board  }
 }
 
 focus = {
@@ -3612,26 +3777,24 @@ focus = {
 	icon = GFX_goal_generic_consumer_goods
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 10
-	x = 5
-	y = 1
+	x = 0
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
 	available = {
 	has_war = no
 	is_subject = no
-}
-allow_branch = {
-	has_country_flag = won_independence_war
+	has_completed_focus = ZEO_ensure_control_over_everday_livelihood
 }
 	completion_reward = {
 
 	}
 	mutually_exclusive = { focus = ZEO_road_to_autarky }
-	mutually_exclusive = { focus = ZEO_reparations_to_the_federation }
-	relative_position_id = ZEO_post_war_economy
-	prerequisite = { focus = ZEO_fix_the_economy focus = ZEO_ensure_control_over_everday_livelihood }
-	prerequisite = { focus = ZEO_post_war_economy }
+
+	relative_position_id = ZEO_ensure_control_over_everday_livelihood
+	prerequisite = { focus = ZEO_ensure_control_over_everday_livelihood }
+
 }
 
 focus = {
@@ -3651,11 +3814,12 @@ focus = {
 allow_branch = {
 	has_country_flag = lost_independence_war
 }
+mutually_exclusive = {	
+		focus = ZEO_extract_the_fruits_of_the_earth
+	}
 	completion_reward = {
 
 	}
-	mutually_exclusive = { focus = ZEO_road_to_autarky }
-	mutually_exclusive = { focus = ZEO_road_to_technocarcy }
 	relative_position_id = ZEO_post_war_economy
 	prerequisite = { focus = ZEO_post_war_economy }
 }
@@ -3665,8 +3829,8 @@ focus = {
 	icon = GFX_focus_GER_integration_of_puppet_economies
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 10
-	x = 0
-	y = 3
+	x = 4
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3680,10 +3844,10 @@ allow_branch = {
 	completion_reward = {
 
 	}
-	mutually_exclusive = { focus = ZEO_road_to_autarky }
-	mutually_exclusive = { focus = ZEO_road_to_technocarcy }
-	relative_position_id = ZEO_ramp_up_miltary_armarment
-	prerequisite = { focus = ZEO_ramp_up_miltary_armarment }
+	mutually_exclusive = {
+		focus = ZEO_reparations_to_the_federation
+	}
+	relative_position_id = ZEO_post_war_economy
 	prerequisite = { focus = ZEO_post_war_economy }
 }
 
@@ -3700,7 +3864,7 @@ focus = {
 	available = {
 	has_war = no
 	is_subject = no
-}
+	}
 
 	completion_reward = {
 
@@ -3907,7 +4071,7 @@ focus = {
 	id = ZEO_use_dark_and_ocean_colonies_for_civilian_use
 	icon = GFX_goal_generic_construct_civ_factory
 	search_filters = { FOCUS_FILTER_INDUSTRY }
-	cost = 10
+	cost = 1
 	x = 3
 	y = 1
 	ai_will_do = {
@@ -4429,6 +4593,10 @@ focus = {
 			has_full_control_of_state = 1057
 			has_full_control_of_state = 1058
 		}
+		has_completed_focus = ZEO_ramp_up_miltary_armarment
+	}
+	bypass = {
+		has_completed_focus = ZEO_fix_the_economy
 	}
 	completion_reward = {
 		909 = {
@@ -5480,7 +5648,7 @@ focus = {
 	icon = GFX_goal_generic_forceful_treaty
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 10
-	x = -1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1

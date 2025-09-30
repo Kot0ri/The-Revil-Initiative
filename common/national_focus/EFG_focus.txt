@@ -2292,15 +2292,13 @@ focus = {
 	}
 
 focus = {
-		id = EFG_houjin_zei
+		id = EFG_shokumin_chi_idou
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = -1
+		x = 1
 		y = 1
 		available = {
-			NOT = {
-				has_government = supremacist
-			}
+			
 		}
 		relative_position_id = EFG_shakai_fukushi
 		prerequisite = {

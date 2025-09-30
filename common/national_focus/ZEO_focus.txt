@@ -3212,7 +3212,7 @@ focus = {
 	icon = GFX_goal_generic_small_arms
 	search_filters = {  FOCUS_FILTER_RESEARCH }
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3312,10 +3312,13 @@ focus = {
 	icon = GFX_focus_SOV_mobilization_plan
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
 	}
 	completion_reward = {
 		add_ideas = zeon_national_mobilization_act
@@ -3327,8 +3330,8 @@ focus = {
 		load_oob = ZEO_Expand_Garrison
 	}
 }
-	relative_position_id = ZEO_side_3_weapons_development
-	prerequisite = { focus = ZEO_side_3_weapons_development }
+	relative_position_id = ZEO_ramp_up_miltary_armarment
+	prerequisite = { focus = ZEO_ramp_up_miltary_armarment }
 }
 
 focus = {	
@@ -3337,7 +3340,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 10
 	x = 0
-	y = 1
+	y = 3
 	ai_will_do = {
 		factor = 1
 	}
@@ -3378,8 +3381,8 @@ focus = {
 		}
 
 }
-	relative_position_id = ZEO_expansion_of_side_3_garrison
-	prerequisite = { focus = ZEO_expansion_of_side_3_garrison  }
+	relative_position_id = ZEO_further_military_research
+	prerequisite = { focus = ZEO_further_military_research  }
 }
 
 focus = {	
@@ -3459,7 +3462,7 @@ focus = {
 	icon = GFX_goal_generic_consumer_goods
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 5
-	x = -2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -4401,7 +4404,7 @@ focus = {
 	id = ZEO_attract_immigration
 	icon =  GFX_goal_generic_national_unity
 	cost = 10
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -4986,7 +4989,7 @@ focus = {
 	icon = GFX_focus_generic_industry_1
 	cost = 20
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -4995,8 +4998,8 @@ focus = {
 	mutually_exclusive = {
 		focus = ZEO_ensure_control_over_everday_livelihood 
 	}
-	relative_position_id = ZEO_attract_immigration
-	prerequisite = { focus = ZEO_attract_immigration }
+	relative_position_id = ZEO_expand_consumer_market
+	prerequisite = { focus = ZEO_expand_consumer_market }
 }
 
 focus = {

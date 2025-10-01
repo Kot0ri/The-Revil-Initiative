@@ -3714,6 +3714,7 @@ focus = {
 	}
 	available = {
 	has_war = yes
+	has_completed_focus = ZEO_escalate_war_effort
 	}
 	mutually_exclusive = {
 		focus = ZEO_rationalize_war_efforts
@@ -3798,6 +3799,32 @@ focus = {
 	relative_position_id = ZEO_ensure_control_over_everday_livelihood
 	prerequisite = { focus = ZEO_ensure_control_over_everday_livelihood }
 
+}
+
+focus = {
+	id = ZEO_fieseler_comission
+	icon = GFX_goal_generic_consumer_goods
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	has_war = yes
+	has_completed_focus = ZEO_feed_the_Zeonic_corporation
+	}
+
+	completion_reward = {
+	add_power_balance_value = {
+			id = ZEO_power_balance
+			value = 0.10
+		}
+	}
+
+	relative_position_id = ZEO_road_to_technocarcy
+	prerequisite = { focus = ZEO_road_to_technocarcy  }
 }
 
 focus = {

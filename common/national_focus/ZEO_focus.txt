@@ -1125,7 +1125,7 @@ focus = {
 
 focus = {
 	id = ZEO_cult_of_the_supreme_commander
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_cult_of_the_supreme_commander
 	cost = 3
 	x = 0
 	y = 1
@@ -1138,7 +1138,7 @@ focus = {
 	completion_reward = {
 		ZEO_gihren_zabi = {
 			add_trait = {
-				trait = supreme_leader
+				trait = supreme_leader_of_zeon
 			}
 		}
 	}
@@ -1729,7 +1729,7 @@ focus = {
 
 focus = {
 	id = ZEO_operation_british_2
-	icon = GFX_goal_colony_alliance
+	icon = GFX_goal_delaz_gato
 	search_filters = { FOCUS_FILTER_MILITARY }
 	cost = 10
 	x = 1

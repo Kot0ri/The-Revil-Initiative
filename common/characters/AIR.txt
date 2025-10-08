@@ -1,0 +1,19 @@
+characters = {
+	#Leaders
+	AIR_kaiser_pinefield={
+	name="Kaiser Pinefield"
+	portraits={
+		civilian={
+			large="gfx/leaders/AIR/kaiser_pinefield.dds"
+		}
+		army={
+			large="gfx/leaders/AIR/kaiser_pinefield.dds"
+		}
+	}
+	country_leader={
+		ideology= conservatism
+		traits={}
+		expire="1000.1.1.1"
+	}
+}
+}

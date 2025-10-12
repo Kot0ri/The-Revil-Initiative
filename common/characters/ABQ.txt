@@ -41,6 +41,9 @@ characters = {
 			army = {
 				small=GFX_idea_karla_mitchum
 			}
+			army = {
+				large = GFX_idea_karla_mitchum
+			}
 		}
 		advisor={
 			slot = theorist
@@ -56,6 +59,33 @@ characters = {
 			ai_will_do = {
 				factor = 1
 			}
+		}
+		scientist = {
+			skills = { specialization_air = 1 }
+		}
+	}
+
+	ABQ_leo_lionni = {
+		name="Leo Lionni"
+		portraits={
+			army = {
+				large = "gfx/leaders/ABQ/leo_lionni.dds"
+			}
+		}
+		scientist = {
+			skills = { specialization_nuclear = 2 }
+		}
+	}
+
+	ABQ_tirza_lionni = {
+		name="Tirza Lionni"
+		portraits={
+			army = {
+				large = "gfx/leaders/ABQ/tirza_lionni.dds"
+			}
+		}
+		scientist = {
+			skills = { specialization_nuclear = 1 }
 		}
 	}
 

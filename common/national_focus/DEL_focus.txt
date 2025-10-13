@@ -1,0 +1,611 @@
+focus_tree = {
+	id = ABQ
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = DEL
+		}
+	}
+	default = no
+
+	focus = {
+	id = DEL_karama_point_meeting
+	icon = GFX_goal_karama_point
+	cost = 5
+	x = 10
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+
+}
+
+focus = {
+	id = ABQ_retreat_to_the_garden_of_thornes
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_karama_point_meeting
+	prerequisite = { focus =  DEL_karama_point_meeting }
+}
+
+focus = {
+	id = DEL_retreat_to_the_side_5_shoal_zone
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_karama_point_meeting
+	prerequisite = { focus =  DEL_karama_point_meeting }
+}
+
+focus = {
+	id = DEL_begin_reogranization_of_the_delaz_fleet
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_retreat_to_the_side_5_shoal_zone
+	prerequisite = { focus =  DEL_retreat_to_the_side_5_shoal_zone }
+}
+
+focus = {
+	id = DEL_ghost_of_gihren_zabi
+	icon = GFX_goal_delaz_ascend
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_begin_reogranization_of_the_delaz_fleet
+	prerequisite = { focus =  DEL_begin_reogranization_of_the_delaz_fleet }
+}
+
+focus = {
+	id = DEL_garden_of_thornes_plan
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_begin_reogranization_of_the_delaz_fleet
+	prerequisite = { focus =  DEL_begin_reogranization_of_the_delaz_fleet }
+}
+
+focus = {
+	id = DEL_cultivate_the_garden
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_garden_of_thornes_plan
+	prerequisite = { focus =  DEL_garden_of_thornes_plan }
+}
+
+focus = {
+	id = DEL_expand_docking_structures
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_cultivate_the_garden
+	prerequisite = { focus =  DEL_cultivate_the_garden }
+}
+
+focus = {
+	id = DEL_improve_defenses
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_cultivate_the_garden
+	prerequisite = { focus =  DEL_cultivate_the_garden }
+}
+
+focus = {
+	id = DEL_build_up_production_capabilites
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_expand_docking_structures
+	prerequisite = { focus =  DEL_expand_docking_structures }
+}
+
+focus = {
+	id = DEL_build_development_facilites
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_improve_defenses
+	prerequisite = { focus =  DEL_improve_defenses }
+}
+
+focus = {
+	id = DEL_begin_mobile_suit_production
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_build_development_facilites
+	prerequisite = { focus =  DEL_build_development_facilites }
+	prerequisite = { focus = DEL_build_up_production_capabilites }
+}
+
+focus = {
+	id = DEL_build_remnant_network
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_begin_reogranization_of_the_delaz_fleet
+	prerequisite = { focus =  DEL_begin_reogranization_of_the_delaz_fleet }
+}
+
+focus = {
+	id = DEL_ties_within_side_3
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_build_remnant_network
+	prerequisite = { focus =  DEL_build_remnant_network }
+}
+
+focus = {
+	id = DEL_utilize_ambrosia
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_ties_within_side_3
+	prerequisite = { focus =  DEL_ties_within_side_3 }
+}
+
+focus = {
+	id = DEL_reach_out_to_cima
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_build_remnant_network
+	prerequisite = { focus =  DEL_build_remnant_network }
+}
+
+focus = {
+	id = DEL_contact_earth_remnants
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_reach_out_to_cima
+	prerequisite = { focus =  DEL_reach_out_to_cima }
+}
+
+
+focus = {
+	id = DEL_axis_contact
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_utilize_ambrosia
+	prerequisite = { focus =  DEL_utilize_ambrosia focus = DEL_contact_earth_remnants }
+}
+
+focus = {
+	id = DEL_prepare_for_another_war
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_axis_contact
+	prerequisite = { focus =  DEL_axis_contact }
+}
+
+focus = {
+	id = DEL_finish_delaz_fleet_reorganization
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 6
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_begin_reogranization_of_the_delaz_fleet
+	prerequisite = { focus =  DEL_prepare_for_another_war focus = DEL_begin_mobile_suit_production }
+}
+
+focus = {
+	id = DEL_begin_guerilla_conflict
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_finish_delaz_fleet_reorganization
+	prerequisite = { focus =  DEL_finish_delaz_fleet_reorganization }
+}
+
+focus = {
+	id = DEL_to_the_rebirth_of_the_ideals_of_zeon
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_begin_guerilla_conflict
+	prerequisite = { focus =  DEL_begin_guerilla_conflict }
+}
+
+focus = {
+	id = DEL_prepare_operation_stardust
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_to_the_rebirth_of_the_ideals_of_zeon
+	prerequisite = { focus =  DEL_to_the_rebirth_of_the_ideals_of_zeon }
+}
+
+
+focus = {
+	id = DEL_resurrection_of_zeon
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = DEL_return_to_space
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_prepare_operation_stardust
+	prerequisite = { focus =  DEL_prepare_operation_stardust }
+}
+
+focus = {
+	id = DEL_souls_charge_with_righteousness
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_resurrection_of_zeon
+	prerequisite = { focus =  DEL_resurrection_of_zeon }
+}
+
+focus = {
+	id = DEL_nightmare_of_solomon_unleashed
+	icon = GFX_goal_delaz_gato
+	cost = 1
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_souls_charge_with_righteousness
+	prerequisite = { focus =  DEL_souls_charge_with_righteousness }
+}
+
+focus = {
+	id = DEL_begin_operation_stardust
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 1
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_nightmare_of_solomon_unleashed
+	prerequisite = { focus =  DEL_nightmare_of_solomon_unleashed }
+}
+
+focus = {
+	id = DEL_colonyjack
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 1
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_nightmare_of_solomon_unleashed
+	prerequisite = { focus =  DEL_nightmare_of_solomon_unleashed }
+}
+
+focus = {
+	id = DEL_drop_the_second_spear
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 1
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_colonyjack
+	prerequisite = { focus =  DEL_colonyjack }
+}
+
+
+focus = {
+	id = DEL_confirm_exsitance_of_GPO_project
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_begin_guerilla_conflict
+	prerequisite = { focus =  DEL_begin_guerilla_conflict }
+}
+
+focus = {
+	id = DEL_gundamjack
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = DEL_prepare_operation_stardust
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_confirm_exsitance_of_GPO_project
+	prerequisite = { focus =  DEL_confirm_exsitance_of_GPO_project }
+}
+
+focus = {
+	id = DEL_return_to_space
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = DEL_plan_b
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_gundamjack
+	prerequisite = { focus =  DEL_gundamjack }
+}
+
+focus = {
+	id = DEL_plan_b
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = DEL_return_to_space
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_gundamjack
+	prerequisite = { focus =  DEL_gundamjack }
+}
+
+focus = {
+	id = DEL_form_ties_with_anti-federation_movements
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_begin_guerilla_conflict
+	prerequisite = { focus =  DEL_begin_guerilla_conflict }
+}
+
+}

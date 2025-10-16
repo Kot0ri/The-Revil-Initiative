@@ -136,6 +136,30 @@ EFG_gopp={
 			}
 			}
 
+		EFG_philip_pershing {
+			name="Philip Pershing"
+			portraits={
+				civilian={
+					large= "gfx/leaders/EFG/fed1.dds"
+				}
+			}
+			country_leader={
+				ideology= military_administration
+				traits={ under_democratic_guise authoritarian top_down_heavy_policies }
+				expire="1000.1.1.1"
+			}
+			field_marshal = {
+				traits = {
+				 politically_connected trait_reckless	organizer skilled_staffer expert_delegator thorough_planner
+				}
+				skill = 5
+				attack_skill = 5
+				defense_skill = 3
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			}
+
 			EFG_scharnhorst_buch {
 				name="Scharnhorst Buch"
 				portraits={
@@ -149,12 +173,33 @@ EFG_gopp={
 					expire="1000.1.1.1"
 				}
 				advisor = {
-					slot = pol
+					slot = political_advisor
 					traits = { foudner_of_buch}
 				}
 				}
 
 	##field marshals
+
+	EFG_malin_decker={
+		name="Malin Decker"
+		portraits={
+			civilian={
+				large= "gfx/leaders/EFG/fed2.dds"
+			}
+			army={
+				large= "gfx/leaders/EFG/fed2.dds"
+			}
+		}
+		field_marshal = {
+			traits = {	politically_connected trait_cautious }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
 
 	EFG_louis_thomson={
 		name="Louis Thomson"
@@ -162,7 +207,7 @@ EFG_gopp={
 			civilian={
 				large= "gfx/leaders/EFG/louis_thomson.dds"
 			}
-			military={
+			army={
 				large= "gfx/leaders/EFG/louis_thomson.dds"
 			}
 		}
@@ -182,7 +227,7 @@ EFG_gopp={
 			civilian={
 				large= "gfx/leaders/EFG/federick_pile.dds"
 			}
-			military={
+			army={
 				large= "gfx/leaders/EFG/federick_pile.dds"
 			}
 		}

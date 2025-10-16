@@ -11,6 +11,16 @@ leader_traits = {
 		stability_factor = 0.1
 	}
 
+	liberal_politician = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.1
+		party_popularity_stability_factor = 0.05
+		trade_laws_cost_factor = -0.15
+		economy_cost_factor = 0.15
+		political_advisor_cost_factor = -0.15
+	}
+
 	national_leader = {
 		random = no
 		sprite = 13

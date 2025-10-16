@@ -98,12 +98,26 @@ EFG_gopp={
 		name="Alexis de Tocqueville"
 		portraits={
 			civilian={
-				large= "gfx/leaders/EFG/Alexis_tocqueville.dds"
+				large= "gfx/leaders/EFG/fed5.dds"
 			}
 		}
 		country_leader={
 			ideology= conservatism
-			traits={ conservative_grandee }
+			traits={ conservative_grandee flexible_industrialist }
+			expire="1000.1.1.1"
+		}
+		}
+
+		EFG_john_bull{
+		name="John Bull"
+		portraits={
+			civilian={
+				large= "gfx/leaders/EFG/fed4.dds"
+			}
+		}
+		country_leader={
+			ideology= corporate_state
+			traits={ shareholder_democracy }
 			expire="1000.1.1.1"
 		}
 		}
@@ -112,12 +126,12 @@ EFG_gopp={
 			name="Johnathan Harrison"
 			portraits={
 				civilian={
-					large= "gfx/leaders/EFG/Alexis_de_tocqueville.dds"
+					large= "gfx/leaders/EFG/fed3.dds"
 				}
 			}
 			country_leader={
-				ideology= milittaristic_democracy
-				traits={ national_populist }
+				ideology= liberalism
+				traits={ frugal_pennypincher }
 				expire="1000.1.1.1"
 			}
 			}

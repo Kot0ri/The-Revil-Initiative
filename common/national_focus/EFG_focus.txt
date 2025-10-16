@@ -147,9 +147,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		set_power_balance = {
-			id = EFG_power_balance
-		}
+		
 		}
 	}
 
@@ -165,9 +163,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		set_power_balance = {
-			id = EFG_power_balance
-		}
+		
 		}
 	}
 
@@ -206,6 +202,10 @@ focus = {
 				id = EFG_power_balance
 				value = -0.15
 			}
+			promote_character = {
+			character = EFG_Johnathan_Harrison
+			ideology = democratic
+		}
 		}
 	}
 

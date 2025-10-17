@@ -1,0 +1,26 @@
+ideas = {
+
+	country = {
+		Rebirth_of_Zeons_Ideals = {
+			
+			allowed = {
+				original_tag = DEL
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			rule = {
+				can_use_kamikaze_pilots = yes
+			}
+			modifier = {
+				naval_invasion_penalty = -0.25
+				breakthrough_factor = 0.25
+				army_attack_speed_factor = 0.05
+			}
+			
+		}
+	}
+}

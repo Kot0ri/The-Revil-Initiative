@@ -1314,6 +1314,9 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = {
+			focus = EFG_trade_negotiations_with_the_moon
+		}
 		completion_reward = {
 		
 		}
@@ -1365,6 +1368,79 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = {
+			focus = EFG_funnel_money_into_colony_public_coporation
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_address_the_economic_stagnation
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		prerequisite = { focus = EFG_Rise_of_the_Liberal_Coalition}
+		relative_position_id = EFG_Rise_of_the_Liberal_Coalition
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_reduce_space_migration
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_address_the_economic_stagnation}
+		relative_position_id = EFG_address_the_economic_stagnation
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_increase_welfare_spending
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_reduce_space_migration}
+		relative_position_id = EFG_reduce_space_migration
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_restrict_welfare_spending
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_restrict_welfare_spending
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_reduce_space_migration}
+		relative_position_id = EFG_reduce_space_migration
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_increase_welfare_spending
+		}
 		completion_reward = {
 		
 		}
@@ -1406,9 +1482,9 @@ focus = {
 		id = EFG_give_preferential_treatment_to_Anaheim
 		icon = GFX_goal_tyrant_of_moon
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
-		prerequisite = { focus = EFG_meeting_with_the_Vist_foundation}
+		prerequisite = { focus = EFG_meeting_with_the_Vist_foundation focus = EFG_syndicate_backchannels }
 		relative_position_id = EFG_meeting_with_the_Vist_foundation
 		ai_will_do = {
 			factor = 1
@@ -1422,7 +1498,7 @@ focus = {
 		id = EFG_empower_the_internal_affairs_board
 		icon = GFX_goal_resumption_of_immigration_plan
 		cost = 5
-		x = -3
+		x = -7
 		y = 1
 		prerequisite = { focus = EFG_Rise_of_the_Liberal_Coalition}
 		relative_position_id = EFG_Rise_of_the_Liberal_Coalition
@@ -1628,15 +1704,37 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_reinforce_civil_values
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_empower_earthnoid_enterprises focus = EFG_reinforce_free_market_principles }
+		relative_position_id = EFG_reinforce_free_market_principles
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_strengthen_banking_connections
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_strengthen_banking_connections
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = { focus = EFG_empower_earthnoid_enterprises focus = EFG_reinforce_free_market_principles }
 		relative_position_id = EFG_empower_earthnoid_enterprises
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_strengthen_banking_connections
 		}
 		completion_reward = {
 		add_ideas = empowered_banks
@@ -1649,10 +1747,32 @@ focus = {
 		cost = 5
 		x = 0
 		y = 1
-		prerequisite = { focus = EFG_strengthen_banking_connections}
+		prerequisite = { focus = EFG_strengthen_banking_connections focus = EFG_reinforce_civil_values }
+		relative_position_id = EFG_reinforce_civil_values
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+		 focus = EFG_reduce_colonial_efforts
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_reduce_colonial_efforts
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_strengthen_banking_connections focus = EFG_reinforce_civil_values }
 		relative_position_id = EFG_strengthen_banking_connections
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+		 focus = EFG_renew_trade_treaties
 		}
 		completion_reward = {
 		
@@ -1663,9 +1783,9 @@ focus = {
 		id = EFG_encourage_private_businesses
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
-		prerequisite = { focus = EFG_renew_trade_treaties}
+		prerequisite = { focus = EFG_renew_trade_treaties focus = EFG_reduce_colonial_efforts }
 		relative_position_id = EFG_renew_trade_treaties
 		ai_will_do = {
 			factor = 1
@@ -1680,16 +1800,32 @@ focus = {
 		id = EFG_moore_family_connections
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 2
+		x = 0
 		y = 1
-		prerequisite = { focus = EFG_encourage_private_businesses}
 		prerequisite = {focus = EFG_ensure_colony_loyalty }
-		relative_position_id = EFG_encourage_private_businesses
+		relative_position_id = EFG_ensure_colony_loyalty
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
 			SI4 = { add_ideas = federal_backing }
+		}
+	}
+
+	focus = {
+		id = EFG_outsource_to_anaheim
+		icon = GFX_goal_tyrant_of_moon
+		cost = 5
+		x = 3
+		y = 1
+		prerequisite = { focus = EFG_encourage_private_businesses}
+		prerequisite = {focus = EFG_moore_family_connections }
+		relative_position_id = EFG_encourage_private_businesses
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
 		}
 	}
 

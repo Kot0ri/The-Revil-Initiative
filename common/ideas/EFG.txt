@@ -56,6 +56,34 @@ ideas = {
 			removal_cost = -1
 		}
 
+		BGST = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				military_government_drift = -0.01
+				resistance_damage_to_garrison = -0.05
+			}
+			removal_cost = -1
+		}
+
+		Expanded_BGST = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				military_government_drift = -0.05
+				resistance_damage_to_garrison = -0.10
+			}
+			removal_cost = -1
+		}
+
 		empowered_earthnoid_enterprises = {
 			allowed ={
 				always = no

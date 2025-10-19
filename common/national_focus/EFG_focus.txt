@@ -190,7 +190,7 @@ focus = {
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -4
-		y = 1
+		y = 2
 		prerequisite = { focus = EFG_Calls_for_Reform}
 		relative_position_id = EFG_Calls_for_Reform
 		mutually_exclusive = {focus = EFG_Rise_of_the_Conservative_Coalition}
@@ -694,7 +694,8 @@ focus = {
 			focus = EFG_expand_the_titans_overreach
 		}
 		completion_reward = {
-		
+		remove_ideas = BGST
+		add_ideas = Expanded_BGST
 		}
 	}
 
@@ -716,25 +717,17 @@ focus = {
 	}
 
 	focus = {
-		id = EFG_found_the_BGST
+		id = EFG_empower_the_BGST
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = -1
+		x = 0
 		y = 1
-		prerequisite = { focus = EFG_primacy_of_policing_conference }
-		relative_position_id = EFG_primacy_of_policing_conference
+		prerequisite = { focus = EFG_Calls_for_Reform }
+		relative_position_id = EFG_Calls_for_Reform
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			military_government > .20
-		}
-		mutually_exclusive = {
-			focus = EFG_found_the_manhunters
-		}
-		mutually_exclusive = {
-			focus = EFG_expand_the_titans_overreach
-		}
+		
 		completion_reward = {
 		
 		}
@@ -1572,7 +1565,7 @@ focus = {
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 4
-		y = 1
+		y = 2
 		prerequisite = { focus = EFG_Calls_for_Reform}
 		relative_position_id = EFG_Calls_for_Reform
 		mutually_exclusive = {focus = EFG_Rise_of_the_Liberal_Coalition	}
@@ -1626,6 +1619,27 @@ focus = {
 			add_ideas = military_blank_cheque
 		}
 	}
+
+	focus = {
+		id = EFG_reduce_military_oversights
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_blank_cheque_the_military}
+		relative_position_id = EFG_blank_cheque_the_military
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			 
+		}
+		completion_reward = {
+			
+		}
+	}
+
+
 
 	focus = {
 		id = EFG_intervene_in_colonial_affairs

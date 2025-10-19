@@ -544,6 +544,25 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_dagger_of_the_federation
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_increase_federal_policing_mandates }
+		relative_position_id = EFG_increase_federal_policing_mandates
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = EFG_empower_the_BGST
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = EFG_reinforce_key_locations
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -563,7 +582,7 @@ focus = {
 		id = EFG_detangling_intelligence_and_policing
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 10
+		x = 11
 		y = 1
 		prerequisite = { focus = EFG_combat_the_rise_of_anti-federation_partisans }
 		relative_position_id = EFG_combat_the_rise_of_anti-federation_partisans
@@ -677,7 +696,7 @@ focus = {
 		id = EFG_found_the_manhunters
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 2
+		x = 0
 		y = 1
 		prerequisite = { focus = EFG_primacy_of_policing_conference }
 		relative_position_id = EFG_primacy_of_policing_conference
@@ -686,9 +705,6 @@ focus = {
 		}
 		available = {
 			supremacist > .60
-		}
-		mutually_exclusive = {
-			focus = EFG_found_the_BGST
 		}
 		mutually_exclusive = {
 			focus = EFG_expand_the_titans_overreach
@@ -703,7 +719,7 @@ focus = {
 		id = EFG_space_immagration_reform
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 1
+		x = 0
 		y = 1
 		prerequisite = { focus = EFG_found_the_manhunters }
 		relative_position_id = EFG_found_the_manhunters
@@ -737,7 +753,7 @@ focus = {
 	id = EFG_expand_the_titans_overreach
 	icon = GFX_goal_earths_supremacy
 	cost = 5
-	x = 5
+	x = 3
 	y = 1
 	prerequisite = { focus = EFG_primacy_of_policing_conference }
 	relative_position_id = EFG_primacy_of_policing_conference
@@ -752,6 +768,26 @@ focus = {
 	}
 	available = {
 		country_exists = TIT
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = EFG_sideline_the_BGST
+	icon = GFX_goal_earths_supremacy
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = { focus = EFG_expand_the_titans_overreach }
+	relative_position_id = EFG_expand_the_titans_overreach
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+	
 	}
 	completion_reward = {
 	
@@ -2397,7 +2433,7 @@ focus = {
 		id = EFG_shakai_fukushi
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = 0
+		x = 2
 		y = 2
 		available = {
 			has_war = no
@@ -2409,6 +2445,9 @@ focus = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_allow_corporate_expansion
 		}
 		completion_reward = {
 		
@@ -2457,6 +2496,119 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = EFG_allow_corporate_expansion
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -2
+		y = 2
+		available = {
+
+			has_completed_focus = EFG_provisional_restoration_plan
+		}
+		relative_position_id = EFG_provisional_restoration_plan
+		prerequisite = {
+			focus = EFG_start_new_deal_year_1 focus = EFG_start_colony_restoration_plan_year_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_shakai_fukushi
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_downsize_military_expenditures
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+		
+		}
+		relative_position_id = EFG_allow_corporate_expansion
+		prerequisite = {
+			focus = EFG_allow_corporate_expansion
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_loyalty_over_discipline
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+		
+		}
+		relative_position_id = EFG_downsize_military_expenditures
+		prerequisite = {
+			focus = EFG_downsize_military_expenditures
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_reinforce_ties_with_big_business
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+			has_completed_focus = EFG_maintain_amakuradi_policy
+		}
+		relative_position_id = EFG_allow_corporate_expansion
+		prerequisite = {
+			focus = EFG_allow_corporate_expansion
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_prioritize_corporate_growth
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		relative_position_id = EFG_reinforce_ties_with_big_business
+		prerequisite = {
+			focus = EFG_reinforce_ties_with_big_business
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
 		completion_reward = {
 		
 		}

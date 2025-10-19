@@ -119,10 +119,25 @@ focus_tree = {
 		}
 		
 	focus = {
+		id = GRA_build_upon_relations_with_zeon
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = GRA_Growing_Zeon_sentiments
+		prerequisite = {focus = GRA_Growing_Zeon_sentiments}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		}
+
+	focus = {
 		id = GRA_Book_a_business_trip
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GRA_Growing_Zeon_sentiments
 		prerequisite = {focus = GRA_Growing_Zeon_sentiments}
@@ -137,10 +152,10 @@ focus_tree = {
 			id = GRA_Secret_Backroom_deals
 			icon = GFX_goal_efsf_mobile_headquarters
 			cost = 10
-			x = 0
+			x = 1
 			y = 1
 			relative_position_id = GRA_Book_a_business_trip
-			prerequisite = {focus = GRA_Book_a_business_trip}
+			prerequisite = {focus = GRA_Book_a_business_trip focus = GRA_build_upon_relations_with_zeon } 
 			ai_will_do = {
 				factor = 1
 			}
@@ -148,6 +163,20 @@ focus_tree = {
 				}
 			}
 
+		focus = {
+			id = GRA_industrial_cooperation
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 10
+			x = 1
+			y = 1
+			relative_position_id = GRA_build_upon_relations_with_zeon
+			prerequisite = {focus = GRA_build_upon_relations_with_zeon } 
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+				}
+			}
 	
 	focus = {
 		id = GRA_Zeon_military_bases
@@ -156,7 +185,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = GRA_Secret_Backroom_deals
-		prerequisite = {focus = GRA_Secret_Backroom_deals}
+		prerequisite = {focus = GRA_Secret_Backroom_deals focus = GRA_industrial_cooperation }
 		ai_will_do = {
 			factor = 1
 		}
@@ -165,7 +194,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = GRA_Zeon_Luanr_MS_Battalion
+		id = GRA_Zeon_Lunar_MS_Battalion
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
 		x = 0

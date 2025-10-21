@@ -733,6 +733,92 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_implement_earth_housing_tax
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_space_immagration_reform }
+		relative_position_id = EFG_space_immagration_reform
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_ramp_up_deportations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_implement_earth_housing_tax }
+		relative_position_id = EFG_implement_earth_housing_tax
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_elevate_police_powers
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_space_immagration_reform }
+		relative_position_id = EFG_space_immagration_reform
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_cut_down_the_power_of_the_military
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_elevate_police_powers }
+		relative_position_id = EFG_elevate_police_powers
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_creation_of_a_police_state
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_cut_down_the_power_of_the_military }
+				prerequisite = { focus = EFG_ramp_up_deportations }
+		relative_position_id = EFG_ramp_up_deportations
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_empower_the_BGST
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -2550,8 +2636,10 @@ focus = {
 		cost = 10
 		x = -2
 		y = 2
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 		available = {
-
 			has_completed_focus = EFG_provisional_restoration_plan
 		}
 		relative_position_id = EFG_provisional_restoration_plan

@@ -710,8 +710,7 @@ focus = {
 			focus = EFG_expand_the_titans_overreach
 		}
 		completion_reward = {
-		remove_ideas = BGST
-		add_ideas = Expanded_BGST
+		
 		}
 	}
 
@@ -835,7 +834,8 @@ focus = {
 			 }
 		}
 		completion_reward = {
-		
+		remove_ideas = BGST
+		add_ideas = Expanded_BGST
 		}
 	}
 
@@ -2719,6 +2719,9 @@ focus = {
 		}
 		available = {
 			has_completed_focus = EFG_allow_generals_to_privatize_service
+		}
+		mutually_exclusive = {
+			focus = EFG_restrict_the_federal_forces
 		}
 		completion_reward = {
 		

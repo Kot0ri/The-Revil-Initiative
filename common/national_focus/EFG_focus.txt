@@ -743,7 +743,11 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+		available = {
+			NOT = {
+				has_completed_focus = EFG_reduce_military_oversights
+			 }
+		}
 		completion_reward = {
 		
 		}
@@ -1668,13 +1672,51 @@ focus = {
 			factor = 1
 		}
 		available = {
-			 
+			 NOT = {
+				has_completed_focus = EFG_empower_the_BGST
+			 }
 		}
 		completion_reward = {
 			
 		}
 	}
 
+focus = {
+		id = EFG_recruit_PMCS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = { focus = EFG_blank_cheque_the_military}
+		relative_position_id = EFG_blank_cheque_the_military
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EFG_allow_generals_to_privatize_service
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_recruit_PMCS}
+		prerequisite = { focus = EFG_reduce_military_oversights }
+		relative_position_id = EFG_reduce_military_oversights
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
 
 
 	focus = {

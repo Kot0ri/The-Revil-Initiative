@@ -760,6 +760,7 @@ focus = {
 	x = 3
 	y = 1
 	prerequisite = { focus = EFG_primacy_of_policing_conference }
+		prerequisite = { focus = EFG_formation_of_elite_forces }
 	relative_position_id = EFG_primacy_of_policing_conference
 	ai_will_do = {
 		factor = 1
@@ -2602,6 +2603,76 @@ focus = {
 		relative_position_id = EFG_downsize_military_expenditures
 		prerequisite = {
 			focus = EFG_downsize_military_expenditures
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_grant_military_additional_civil_authority
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+		
+		}
+		relative_position_id = EFG_loyalty_over_discipline
+		prerequisite = {
+			focus = EFG_loyalty_over_discipline
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = EFG_allow_generals_to_privatize_service
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_restrict_the_federal_forces
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+		
+		}
+		relative_position_id = EFG_loyalty_over_discipline
+		prerequisite = {
+			focus = EFG_loyalty_over_discipline
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_grant_military_additional_civil_authority
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_formation_of_elite_forces
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+		
+		}
+		relative_position_id = EFG_grant_military_additional_civil_authority
+		prerequisite = {
+			focus = EFG_restrict_the_federal_forces focus = EFG_grant_military_additional_civil_authority
 		}
 		ai_will_do = {
 			factor = 1

@@ -322,6 +322,43 @@ EFG_gopp={
 			}
 		}
 	}
+
+	EFG_paul_goget={
+		name="Paul Goget"
+		portraits={
+
+			army={
+				large="gfx/leaders/EFG/FED8.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
+	EFG_eugene_garchey={
+		name="Eugene Garchey"
+		portraits={
+
+			army={
+				large="gfx/leaders/EFG/FED9.dds"
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
 	#Pilots
 
 	EFG_tsurugi={

@@ -108,6 +108,20 @@ EFG_gopp={
 		}
 		}
 
+		EFG_Spencer_Robinson{
+		name="Spencer Robinson"
+		portraits={
+			civilian={
+				large= "gfx/leaders/EFG/FED7.dds"
+			}
+		}
+		country_leader={
+			ideology= conservatism
+			traits={ skeptical_towards_industrialization aloof_authority }
+			expire="1000.1.1.1"
+		}
+		}
+
 		EFG_john_bull{
 		name="John Bull"
 		portraits={

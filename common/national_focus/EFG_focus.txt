@@ -202,6 +202,7 @@ focus = {
 				id = EFG_power_balance
 				value = -0.15
 			}
+			retire_ideology_leader = democratic
 			promote_character = {
 			character = EFG_Johnathan_Harrison
 			ideology = democratic
@@ -2815,6 +2816,29 @@ focus = {
 		
 		completion_reward = {
 		
+		}
+	}
+
+	focus = {
+		id = EFG_aftermath_of_stardust
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 3
+		y = 0
+		available = {
+		has_country_flag = stardust
+		}
+		relative_position_id = EFG_expand_the_titans_overreach
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		retire_ideology_leader = democratic
+			promote_character = {
+			character = EFG_Spencer_Robinson
+			ideology = democratic
+		}
 		}
 	}
 

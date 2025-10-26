@@ -2846,7 +2846,7 @@ focus = {
 		id = EFG_reshuffle_the_cabinet
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = 3
+		x = 6
 		y = 1
 		available = {
 		}
@@ -2871,6 +2871,28 @@ focus = {
         }
     	}
 	}
+		}
+	}
+
+	focus = {
+		id = EFG_crackdown_on_the_colonies
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			has_completed_focus = EFG_expand_the_titans_overreach
+		}
+		prerequisite = {
+			focus = EFG_aftermath_of_stardust
+		}
+		relative_position_id = EFG_aftermath_of_stardust
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
 		}
 	}
 

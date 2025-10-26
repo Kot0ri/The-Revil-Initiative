@@ -110,12 +110,34 @@ Vice_Foreign_Minister = {
 	trade_opinion_factor = 0.2
 }
 
+War_Minister = {
+	random = no
+	sprite = 13
+	war_support_factor = 0.1
+	justify_war_goal_time = -0.35
+	war_stability_factor = 0.1
+}
+
 #john bauer
 Finance_Minister = {
 	random = no
 	sprite = 13
 	political_power_gain = 0.05
 	consumer_goods_factor = -0.15
+}
+
+#richard
+Chairman_of_the_Ministry_of_Commerce_and_Industry = {
+	random = no
+	sprite = 13
+	production_speed_industrial_complex_factor = 0.1
+	production_speed_infrastructure_factor = 0.1
+	production_speed_rail_way_factor = 0.1
+	production_speed_synthetic_refinery_factor = 0.1
+	production_factory_max_efficiency_factor = 0.05
+	consumer_goods_factor = -0.05
+	political_power_gain = -0.02
+	oligarchy_drift = 0.02
 }
 
 #hundley
@@ -421,6 +443,9 @@ supreme_commander_of_the_jovian_fleet = {
 }
 
 #other
+
+
+
 military_industrialist = {
 	random = no
 	production_speed_arms_factory_factor = 0.02

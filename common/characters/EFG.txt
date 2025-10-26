@@ -484,6 +484,27 @@ EFG_gopp={
 		}
 	}
 
+	EFG_richard = {
+		name = "Richard"
+		portraits={
+			army={
+				small="GFX_idea_adenauer_paraya"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = richard
+			allowed = {
+				original_tag = EFG
+			traits = { Chairman_of_the_Ministry_of_Commerce_and_Industry }
+			modifier = {
+			}
+			ai_will_do = {
+				factor = 2
+			}
+		}
+	}
+
 	EFG_john_bauer = {
 		name = "John Bauer"
 		portraits={

@@ -2842,4 +2842,36 @@ focus = {
 		}
 	}
 
+		focus = {
+		id = EFG_reshuffle_the_cabinet
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 3
+		y = 1
+		available = {
+		}
+		prerequisite = {
+			focus = EFG_aftermath_of_stardust
+		}
+		relative_position_id = EFG_aftermath_of_stardust
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		add_advisor_role = {
+    	character = EFG_adenauer_paraya
+    	activate = no
+    	advisor = {
+        slot = political_advisor
+        cost = 50
+        idea_token = EFG_adenauer_paraya
+        traits = {
+            War_Minister
+        }
+    	}
+	}
+		}
+	}
+
 }

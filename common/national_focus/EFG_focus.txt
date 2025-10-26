@@ -647,9 +647,26 @@ focus = {
 		completion_reward = {
 			add_power_balance_value = {
 				id = EFG_power_balance
-				value = -0.1
+				value = 0.1
 			}
 			create_intelligence_agency = FSS
+		}
+	}
+
+	focus = {
+		id = EFG_expand_FSS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_FSS }
+		relative_position_id = EFG_FSS
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
 		}
 	}
 
@@ -795,6 +812,27 @@ focus = {
 			factor = 1
 		}
 	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_sublimate_ECOAS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		prerequisite = { focus = EFG_elevate_police_powers }
+		relative_position_id = EFG_elevate_police_powers
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = EFG_creation_of_a_police_state
+			}
+		}
 		completion_reward = {
 		
 		}

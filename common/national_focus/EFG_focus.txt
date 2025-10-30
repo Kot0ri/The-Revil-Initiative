@@ -1532,6 +1532,10 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
+		add_political_power = 50
+		JUP = {
+			add_ideas = increased_autonomy
+		}
 		
 		}
 	}
@@ -1586,7 +1590,10 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = structual_recession
+			add_idea = recovery_from_economic_slump
+		}
 		}
 	}
 
@@ -1621,7 +1628,10 @@ focus = {
 			focus = EFG_restrict_welfare_spending
 		}
 		completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = recovery_from_economic_slump
+			add_idea = welfare_prioritized
+		}
 		}
 	}
 
@@ -1640,7 +1650,10 @@ focus = {
 			focus = EFG_increase_welfare_spending
 		}
 		completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = recovery_from_economic_slump
+			add_idea = welfare_gutted
+		}
 		}
 	}
 
@@ -2049,6 +2062,7 @@ focus = {
 		}
 		completion_reward = {
 		add_ideas = encouraged_private_owners
+		remove_ideas = structual_recession
 		}
 	}
 

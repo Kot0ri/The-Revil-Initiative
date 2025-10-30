@@ -41,6 +41,51 @@ ideas = {
 			removal_cost = -1
 		}
 
+		recovery_from_economic_slump = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.10
+				stability_factor = -0.05
+			}
+			removal_cost = -1
+		}
+
+		welfare_gutted = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.10
+				stability_factor = -0.2
+				war_support_factor = -0.2
+			}
+			removal_cost = -1
+		}
+
+			welfare_prioritized = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.30
+				stability_factor = 0.2
+				recruitable_population_factor = -0.1
+				political_power_gain = -0.1
+			}
+			removal_cost = -1
+		}
+
 		UC_Charter = {
 			allowed ={
 				always = no

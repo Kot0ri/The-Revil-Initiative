@@ -24,4 +24,46 @@ focus_tree = {
 			
 		}
 	}
+
+	focus = {
+		id = JUP_increase_the_powers_of_the_directorate
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_jupiter_energy_fleet_board_meeting
+		}
+		mutually_exclusive = {
+			focus = JUP_empower_the_inspector_generals
+		}
+		relative_position_id = JUP_jupiter_energy_fleet_board_meeting
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_empower_the_inspector_general
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_jupiter_energy_fleet_board_meeting
+		}
+		mutually_exclusive = {
+			focus = JUP_increase_the_powers_of_the_directorate
+		}
+		relative_position_id = JUP_jupiter_energy_fleet_board_meeting
+		completion_reward = {
+			
+		}
+	}
 }

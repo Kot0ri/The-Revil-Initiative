@@ -2702,6 +2702,30 @@ focus = {
 	}
 
 focus = {
+		id = EFG_gunshuku
+		icon = GFX_focus_AUS_disregard_the_treaties
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+
+			NOT = {
+				has_completed_focus = EFG_blank_cheque_the_military
+			}
+		}
+		relative_position_id = EFG_houjin_zei
+		prerequisite = {
+			focus = EFG_houjin_zei
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}	
+
+focus = {
 		id = EFG_shokumin_chi_idou
 		icon = GFX_focus_GER_proletarian_dictatorship
 		cost = 10
@@ -2714,6 +2738,98 @@ focus = {
 		prerequisite = {
 			focus = EFG_shakai_fukushi
 		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_spread_utopian_ideals
+		icon = GFX_focus_GER_proletarian_dictatorship
+		cost = 10
+		x = 2
+		y = 1
+		available = {
+			has_completed_focus = EFG_left_coalition
+		}
+		relative_position_id = EFG_shokumin_chi_idou
+		prerequisite = {
+			focus = EFG_shokumin_chi_idou
+		}
+		mutually_exclusive = {
+			focus = EFG_maintain_liberal_agenda
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_maintain_liberal_agenda
+		icon = GFX_focus_GER_proletarian_dictatorship
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			has_completed_focus = EFG_liberal_victory
+		}
+		relative_position_id = EFG_shokumin_chi_idou
+		prerequisite = {
+			focus = EFG_shokumin_chi_idou
+		}
+		mutually_exclusive = {
+			focus = EFG_spread_utopian_ideals
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_increase_taxes_of_fossil_fuels
+		icon = GFX_focus_GER_proletarian_dictatorship
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+			
+		}
+		relative_position_id = EFG_maintain_liberal_agenda
+		prerequisite = {
+			focus = EFG_maintain_liberal_agenda
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_introduce_new_tax_credits
+		icon = GFX_focus_GER_proletarian_dictatorship
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+			
+		}
+		relative_position_id = EFG_maintain_liberal_agenda
+		prerequisite = {
+			focus = EFG_maintain_liberal_agenda focus = EFG_spread_utopian_ideals
+		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -2978,6 +3094,230 @@ focus = {
 			focus = EFG_aftermath_of_stardust
 		}
 		relative_position_id = EFG_aftermath_of_stardust
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_deregulate_banks
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_crackdown_on_the_colonies
+		}
+		relative_position_id = EFG_crackdown_on_the_colonies
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_increase_industrial_outsourcing
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_deregulate_banks
+		}
+		relative_position_id = EFG_deregulate_banks
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_crackdown_on_unions
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_increase_industrial_outsourcing
+		}
+		relative_position_id = EFG_increase_industrial_outsourcing
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_crackdown_on_drug_trade
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 2
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_crackdown_on_the_colonies
+		}
+		relative_position_id = EFG_crackdown_on_the_colonies
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_trianglulation_policy_on_welfare
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 4
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_crackdown_on_the_colonies
+		}
+		relative_position_id = EFG_crackdown_on_the_colonies
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_put_an_end_to_utopianism
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_trianglulation_policy_on_welfare
+		}
+		relative_position_id = EFG_trianglulation_policy_on_welfare
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_clean_hands_policy
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_put_an_end_to_utopianism
+		}
+		relative_position_id = EFG_put_an_end_to_utopianism
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_indiscriminate_supression
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = EFG_indiscriminate_supression
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_put_an_end_to_utopianism
+		}
+		relative_position_id = EFG_put_an_end_to_utopianism
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_clean_hands_policy
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_increase_voting_restrictions
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 2
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_trianglulation_policy_on_welfare
+		}
+		relative_position_id = EFG_trianglulation_policy_on_welfare
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_create_eviromental_protection_zones
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 4
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_trianglulation_policy_on_welfare
+		}
+		relative_position_id = EFG_trianglulation_policy_on_welfare
 		ai_will_do = {
 			factor = 1
 		}

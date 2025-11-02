@@ -251,7 +251,7 @@ focus = {
 		add_research_slot = 1
 	}
 	relative_position_id = RNZ_legacy_of_the_father
-	prerequisite = { focus = RNZ_legacy_of_the_father  focus = RNZ_tears_of_time }
+	prerequisite = { focus = RNZ_legacy_of_the_father  focus = RNZ_tears_of_time focus = RNZ_deikuns_vision }
 }
 
 focus = {
@@ -270,10 +270,50 @@ focus = {
 		
 	}
 	completion_reward = {
-	
+	1029 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		1030 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+
+		1031 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 	relative_position_id = RNZ_acquire_arctic_bases
-	prerequisite = { focus = RNZ_acquire_arctic_bases  }
+	prerequisite = { focus = RNZ_acquire_arctic_bases focus = RNZ_acquire_arctic_bases  }
 }
 
 focus = {
@@ -318,7 +358,7 @@ focus = {
 		focus = RNZ_militarization_of_side_5
 	}
 	completion_reward = {
-		912 = {
+		1059 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = arms_factory
@@ -332,7 +372,7 @@ focus = {
 			}
 		}
 
-		913 = {
+		1060 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = arms_factory
@@ -346,7 +386,7 @@ focus = {
 			}
 		}
 
-		914 = {
+		1061 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 				type = arms_factory
@@ -361,7 +401,7 @@ focus = {
 		}
 	}
 	relative_position_id = RNZ_savior_of_sweetwater
-	prerequisite = { focus = RNZ_savior_of_sweetwater }
+	prerequisite = { focus = RNZ_savior_of_sweetwater focus = RNZ_acquire_arctic_bases }
 }
 
 focus = {

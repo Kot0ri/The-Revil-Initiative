@@ -5,6 +5,8 @@ state={
 
 	history={
 		owner = SI5
+		add_core_of = SI5
+		add_core_of = RNZ
 		buildings = {
 			infrastructure = 3
 			arms_factory = 7
@@ -33,13 +35,7 @@ state={
 			}
 
 		}
-		79.1.1 = {
-			buildings = {
-				arms_factory = 11
-
-			}
-
-		}
+		
 		79.1.15 = {
 			controller = ZEO
 

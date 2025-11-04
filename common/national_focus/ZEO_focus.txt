@@ -2816,7 +2816,7 @@ focus = {
 
 focus = {
 	id = ZEO_the_chosen_few
-	icon = GFX_goal_tyrant_of_moon
+	icon = GFX_goal_char_newtype_corps
 	cost = 10
 	x = -1
 	y = 1
@@ -2875,6 +2875,29 @@ focus = {
 	}
 	relative_position_id = ZEO_two_worlds_two_tomorrows
 	prerequisite = { focus = ZEO_two_worlds_two_tomorrows }
+}
+
+focus = {
+	id = ZEO_increase_research_into_newtypes
+	icon = GFX_goal_newtype_canidates
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ZEO_approach_the_colonies
+	prerequisite = { focus = ZEO_approach_the_colonies }
+	prerequisite = { focus = ZEO_approach_the_moon }
 }
 
 focus = {

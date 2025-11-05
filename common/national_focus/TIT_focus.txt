@@ -116,7 +116,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = TIT_build_up_up_earth_bases
+		id = TIT_build_up_earth_bases
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
 		x = -2
@@ -146,9 +146,9 @@ focus_tree = {
 		cost = 5
 		x = 0
 		y = 1
-		relative_position_id = TIT_build_up_up_earth_bases
+		relative_position_id = TIT_build_up_earth_bases
 		prerequisite = {
-			focus = TIT_build_up_up_earth_bases
+			focus = TIT_build_up_earth_bases
 		}
 		available = {
 			has_completed_focus = TIT_Secure_Bases
@@ -167,9 +167,9 @@ focus_tree = {
 		cost = 5
 		x = -2
 		y = 1
-		relative_position_id = TIT_build_up_up_earth_bases
+		relative_position_id = TIT_build_up_earth_bases
 		prerequisite = {
-			focus = TIT_build_up_up_earth_bases
+			focus = TIT_build_up_earth_bases
 		}
 		available = {
 			has_completed_focus = TIT_Secure_Bases
@@ -276,6 +276,16 @@ focus_tree = {
 			TIT_ted_ayachi = {
 				add_unit_leader_trait = hidden_sympathies
 			}
+			transfer_state = 1035
+			transfer_state = 1036
+			transfer_state = 1037
+			transfer_state = 1038
+			transfer_state = 1039
+			1035 = { add_core_of = TIT }
+			1036 = { add_core_of = TIT }
+			1037 = { add_core_of = TIT }
+			1038 = { add_core_of = TIT }
+			1039 = { add_core_of = TIT }
 		}
 	}
 
@@ -298,7 +308,7 @@ focus_tree = {
 
 	focus = {
 		id = TIT_man_from_jupiter
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_man_from_jupiter
 		cost = 5
 		x = 0
 		y = 1
@@ -555,7 +565,7 @@ focus_tree = {
 
 focus = {
 				id = TIT_elevate_MS_corps.
-				icon = GFX_goal_efsf_mobile_headquarters
+				icon = GFX_goal_elavate_MS_titans
 				cost = 5
 				x = 1
 				y = 1
@@ -1141,6 +1151,25 @@ focus = {
 				mutually_exclusive = {
 					focus = TIT_adopt_the_biosensor
 				}
+				completion_reward = {
+					
+					}
+				}
+
+				focus = {
+				id = TIT_psycho-control_system
+				icon = GFX_goal_pyscho_control
+				cost = 5
+				x = 0
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_focus_on_psycommu
+				prerequisite = {
+					focus = TIT_focus_on_psycommu
+				}
+
 				completion_reward = {
 					
 					}

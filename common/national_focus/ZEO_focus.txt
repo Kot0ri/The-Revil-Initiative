@@ -3742,7 +3742,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 10
 	x = 0
-	y = 15
+	y = 13
 	ai_will_do = {
 		factor = 1
 	}
@@ -4002,7 +4002,7 @@ focus = {
 	icon = GFX_goal_generic_consumer_goods
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 10
-	x = 0
+	x = 4
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -4029,7 +4029,7 @@ focus = {
 	icon = GFX_focus_GER_integration_of_puppet_economies
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 10
-	x = 4
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -5804,9 +5804,7 @@ focus = {
 	}
 	completion_reward = {
 	}
-	mutually_exclusive = {
-		focus = ZEO_declare_imperium
-	}
+	
 	relative_position_id = ZEO_axis_development
 	prerequisite = { focus = ZEO_axis_development }
 	prerequisite = { focus = ZEO_begin_development_of_newtype_corps }
@@ -5863,11 +5861,9 @@ focus = {
 		has_country_flag = won_independence_war
 	}
 	
-	relative_position_id = ZEO_axis_development
-	mutually_exclusive = {
-		focus = ZEO_prepare_for_an_evacuation
-	}
-	prerequisite = { focus = ZEO_axis_development }
+	relative_position_id = ZEO_triumph_of_zeon
+	
+	prerequisite = { focus = ZEO_triumph_of_zeon }
 }
 
 focus = {
@@ -5875,8 +5871,8 @@ focus = {
 	icon = GFX_goal_generic_forceful_treaty
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 10
-	x = 0
-	y = 2
+	x = -1
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -5894,7 +5890,7 @@ focus = {
 	icon = GFX_goal_generic_forceful_treaty
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 10
-	x = -1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -6097,10 +6093,35 @@ focus = {
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
-	x = -1
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	relative_position_id = ZEO_ghirenists_victorious
+	prerequisite = {
+		focus = ZEO_ghirenists_victorious
+	}
+	mutually_exclusive = {
+		focus = ZEO_triumph_of_zeon
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_triumph_of_zeon
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_prepare_for_federation_assualt
 	}
 	relative_position_id = ZEO_ghirenists_victorious
 	prerequisite = {
@@ -6110,6 +6131,7 @@ focus = {
 		
 	}
 }
+
 
 
 focus = {

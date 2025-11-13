@@ -196,8 +196,19 @@ focus = {
 		set_power_balance = {
 			id = ZEO_power_balance
 		}
-		
+		add_advisor_role = {
+    	character = ZEO_gihren_zabi
+    	activate = no
+    	advisor = {
+        slot = political_advisor
+        cost = 50
+        idea_token = ZEO_gihren_zabi
+        traits = {
+            national_political_and_campaign_director
+        }
+    	}
 	}
+}
 }
 
 focus = {

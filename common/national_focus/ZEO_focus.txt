@@ -5856,10 +5856,11 @@ focus = {
 	}
 	completion_reward = {
 		create_faction = Imperium_of_Zeon
+		recruit_character = ZEO_gihren_zabi_emperor
+		retire_character = ZEO_gihren_zabi
+		promote_character = ZEO_gihren_zabi_emperor
 	}
-	allow_branch = {
-		has_country_flag = won_independence_war
-	}
+	
 	
 	relative_position_id = ZEO_triumph_of_zeon
 	

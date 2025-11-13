@@ -157,6 +157,27 @@ characters={
 		}
 }
 
+ZEO_gihren_zabi_emperor = {
+		name= "Gihren Zabi"
+		portraits={
+			civilian={
+				large= "gfx/leaders/ZEO/Gihren_Sovereign.dds"
+			}
+
+			army={
+				large= "gfx/leaders/ZEO/Gihren_Sovereign.dds"
+			}
+			army = {
+				small=GFX_idea_gihren_zabi
+			}
+		}
+		country_leader={
+			ideology=spacenoid_supremacist 
+			expire="100.1.1.1"
+			traits={  dictator iq240 supreme_leader_of_zeon pergamino_trait war_industrialist }
+		}
+}
+
 ZEO_kycilia_zabi = {
 	name=ZEO_kycilia_zabi
 	portraits={

@@ -319,6 +319,11 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		NOT = {
+			has_completed_focus = ZEO_encourage_radical_thought
+		}
+	}
 	completion_reward = {
 	add_popularity = {
 			ideology = contolism
@@ -360,6 +365,124 @@ focus = {
 	relative_position_id = ZEO_purge_radical_faction
 	prerequisite = { focus = ZEO_purge_radical_faction  }
 	prerequisite = { focus = ZEO_towards_the_evolution_of_mankind }
+}
+
+focus = {
+	id = ZEO_sideline_degewin_loyalists
+	icon = GFX_goal_end_of_brotherhood_fighting
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_align_degewin_loyalists
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_designating_an_heir
+	prerequisite = { focus = ZEO_designating_an_heir }
+}
+
+focus = {
+	id = ZEO_align_degewin_loyalists
+	icon = GFX_goal_end_of_brotherhood_fighting
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_sideline_degewin_loyalists
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_designating_an_heir
+	prerequisite = { focus = ZEO_designating_an_heir }
+}
+
+focus = {
+	id = ZEO_align_degewin_loyalists
+	icon = GFX_goal_end_of_brotherhood_fighting
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_sideline_degewin_loyalists
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_designating_an_heir
+	prerequisite = { focus = ZEO_designating_an_heir }
+}
+
+focus = {
+	id = ZEO_new_culture_of_zeon
+	icon = GFX_goal_end_of_brotherhood_fighting
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 2
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_designating_an_heir
+	prerequisite = { focus = ZEO_designating_an_heir }
+}
+
+focus = {
+	id = ZEO_encourage_radical_thought
+	icon = GFX_goal_end_of_brotherhood_fighting
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		NOT = {
+			has_completed_focus = ZEO_purge_radical_faction
+		}
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_new_culture_of_zeon
+	prerequisite = { focus = ZEO_new_culture_of_zeon }
+}
+
+focus = {
+	id = ZEO_increase_immagration_from_other_sides
+	icon = GFX_goal_end_of_brotherhood_fighting
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_new_culture_of_zeon
+	prerequisite = { focus = ZEO_new_culture_of_zeon }
 }
 
 focus = {
@@ -433,6 +556,8 @@ focus = {
 	}
 	relative_position_id = ZEO_sibling_rivalry
 	prerequisite = { focus = ZEO_sibling_rivalry }
+	prerequisite = { focus = ZEO_encourage_radical_thought }
+	prerequisite = { focus = ZEO_increase_immagration_from_other_sides }
 }
 
 focus = {

@@ -2321,6 +2321,23 @@ focus = {
 }
 
 focus = {
+	id = ZEO_prepare_for_a_war_of_attrition
+	icon = GFX_focus_eng_global_defense
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ZEO_Kycilias_plan
+	prerequisite = { focus = ZEO_Kycilias_plan}
+}
+
+focus = {
 	id = ZEO_new_space_plan
 	icon = GFX_focus_eng_global_defense
 	search_filters = { FOCUS_FILTER_POLITICAL }

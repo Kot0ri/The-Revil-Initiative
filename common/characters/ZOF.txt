@@ -33,7 +33,7 @@ characters={
 				large="gfx/leaders/ZOF/ginias_sahalin.dds"
 			}
 			army={
-				large="gfx/leaders/ZOF/ginias_sahalin.dds"
+				large="gfx/leaders/ZOF/ginias.dds"
 			}
 		}
 		country_leader={
@@ -77,7 +77,7 @@ characters={
 				large="gfx/leaders/ZOF/ginias_sahalin_2.dds"
 			}
 			army={
-				large="gfx/leaders/ZOF/ginias_sahalin_2.dds"
+				large="gfx/leaders/ZOF/ginias.dds"
 			}
 		}
 		country_leader={
@@ -174,22 +174,6 @@ characters={
 		}
 	}
 
-	ZOF_walter_curtis ={
-		name="Walter Curtis"
-		portraits={
-			army={
-				large="gfx/leaders/ZOF/walter_curtis.dds"
-			}
-		}
-		field_marshal = {
-			traits={ }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 2
-			logistics_skill = 2
-		}
-	}
 
 	##generals
 	ZOF_bone_abust ={
@@ -244,25 +228,6 @@ characters={
 	}
 
 	##pilots
-	ZOF_visch_donahue ={
-		name="Visch Donahue"
-		portraits={
-			civilian={
-				large="gfx/leaders/ZOF/yuri.dds"
-			}
-			army={
-				large="gfx/leaders/ZOF/visch_donahue.dds"
-			}
-		}
-		corps_commander = {
-			traits={pilot thunderclap_in_the_wilderness  }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 3
-		}
-	}
 
 	ZOF_norris_packard ={
 		name="Norris Packard"
@@ -369,6 +334,42 @@ characters={
 			logistics_skill = 2
 		}
 	}
+
+	ZOF_renchef ={
+		name="Renchef"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/renchef.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot trait_reckless desert_fox }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	ZOF_manning ={
+		name="Manning"
+		portraits={
+			army={
+				large="gfx/leaders/ZOF/manning.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot trait_reckless desert_fox }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+
 	##advsors
 	ZOF_walter_janowitz ={
 		name="Walter Janowitz"

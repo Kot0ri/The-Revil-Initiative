@@ -8,10 +8,13 @@ characters={
 			}
 		}
 		country_leader = {
+			ideology = military_administration
+		}
+		country_leader = {
 			ideology = spacenoid_supremacist
 		}
 		field_marshal = {
-			traits={ }
+			traits={ defensive_doctrine }
 			skill = 2
 			attack_skill = 1
 			defense_skill = 1
@@ -20,5 +23,126 @@ characters={
 		}
 	}
 ## field marshal
+
+## pilots
+
+OCZ_vische_donahue ={
+		name="Norris Packard"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/vische_donahue.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot desert_fox brilliant_strategist trickster }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	OCZ_uriah_heep ={
+		name="Uriah Heep"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/uriah_heep.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	OCZ_yonem_kirk ={
+		name="Yonem Kirk"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/yonem_kirk .dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot desert_fox trickster guerilla_fighter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	OCZ_loni_garvey ={
+		name="Loni Garvey"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/loni_garvey.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot trickster guerilla_fighter }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+	OCZ_nearlight ={
+		name="Nearlight"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/nearlight.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	OCZ_maya_koizumi ={
+		name="Maya Koizumi"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/maya_koizumi.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	OCZ_adrian ={
+		name="Adrian"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/adrian.dds"
+			}
+		}
+		corps_commander = {
+			traits={ pilot }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 
 }

@@ -72,10 +72,30 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits={ defensive_doctrine zabi_party kycilia_loyalist }
+			traits={ defensive_doctrine zabi_party kycilia_loyalist politically_connected }
 			skill=2
 			attack_skill=2
 			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	GRA_nord_wrangell={
+		name="Nord Wrangell"
+		portraits={
+			army={
+				small="gfx/leaders/GRA/nord_wrangell.dds"
+			}
+			army={
+				large="gfx/leaders/GRA/nord_wrangell.dds"
+			}
+		}
+		field_marshal = {
+			traits={ defensive_doctrine }
+			skill= 3
+			attack_skill=2
+			defense_skill=3
 			planning_skill=2
 			logistics_skill=2
 		}
@@ -107,9 +127,6 @@ characters={
 		name="Mall Sanquine"
 		portraits={
 			army={
-				small="GFX_idea_kelley_layzner"
-			}
-			army={
 				large="gfx/leaders/GRA/mallet_sanquine.dds"
 			}
 		}
@@ -120,6 +137,40 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
+		}
+	}
+
+	GRA_lila_flaubert={
+		name="Lila Flaubert"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/lila_flaubert.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	GRA_huyman_carlyle={
+		name="Huyman Carlyle"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/huyman_carlyle.dds"
+			}
+		}
+		corps_commander = {
+			traits={pilot}
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
 		}
 	}
 
@@ -314,6 +365,25 @@ GRA_holwick={
 			defense_skill = 2
 			maneuvering_skill = 2
 			coordination_skill = 2
+		}
+}
+
+GRA_mallygan={
+		name="Mallygan"
+		portraits={
+			army={
+				large="gfx/leaders/GRA/Zeon_Mallygan.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				zabi_party kycilia_loyalist
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			maneuvering_skill = 1
+			coordination_skill = 1
 		}
 }
 

@@ -331,7 +331,8 @@ focus_tree = {
 			recruit_character = GRA_holwick
 			recruit_character = GRA_dankle
 			recruit_character = GRA_hardy_steiner
-			
+			recruit_character = GRA_nord_wrangell
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -347,6 +348,11 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			recruit_character = GRA_johnny_ridden
+			recruit_character = GRA_mallet_sanquine
+			recruit_character = GRA_lila_flaubert
+			recruit_character = GRA_huyman_carlyle
+			recruit_character = GRA_mallygan
 		}
 	}
 

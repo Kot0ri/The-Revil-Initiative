@@ -2333,7 +2333,7 @@ focus = {
 	id = ABQ_special_operations_agency
 	icon = GFX_goal_generic_special_forces
 	cost = 5
-	x = 18
+	x = 16
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2350,7 +2350,7 @@ focus = {
 	id = ABQ_form_supreme_command_office
 	icon = GFX_goal_generic_special_forces
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2361,6 +2361,56 @@ focus = {
 	relative_position_id = ABQ_special_operations_agency
 	prerequisite = { focus = ABQ_special_operations_agency }
 }
+
+focus = {
+	id = ABQ_implant_agents_into_armed_forces
+	icon = GFX_goal_generic_special_forces
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ABQ_special_operations_agency
+	prerequisite = { focus = ABQ_special_operations_agency }
+}
+
+focus = {
+	id = ABQ_form_special_brain_trust
+	icon = GFX_goal_generic_special_forces
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ABQ_form_supreme_command_office
+	prerequisite = { focus = ABQ_implant_agents_into_armed_forces }
+	prerequisite = { focus = ABQ_form_supreme_command_office }
+}
+
+focus = {
+	id = ABQ_elite_of_the_elite
+	icon = GFX_goal_generic_special_forces
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = ABQ_form_special_brain_trust
+	prerequisite = { focus = ABQ_form_special_brain_trust }
+}
+
 
 focus = {
 	id = ABQ_form_mau_corps

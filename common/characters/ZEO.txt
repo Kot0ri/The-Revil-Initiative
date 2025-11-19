@@ -500,6 +500,24 @@ ZEO_cecilia_irene = {
 		}
 	}
 
+	ZEO_shera_greymar={
+		name="Shera Greymar"
+		portraits={
+
+			army={
+				large="gfx/leaders/ZEO/Shera_Greymar.dds"
+			}
+		}
+		corps_commander={
+			traits={ ghiren_loyalist politically_connected }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
 	ZEO_günther_korten={
 		name="Günther Korten"
 		portraits={

@@ -37,4 +37,25 @@ focus_tree = {
 			relative_position_id = PEZ_Zudah_development
 			prerequisite = { focus = PEZ_Zudah_development }
 		}
+
+		focus = {
+		id = PEZ_pkw_plan
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -2
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			ABQ ={
+				has_completed_focus = ABQ_pkw_plan
+			}
+		}
+		completion_reward = {
+			}
+			relative_position_id = PEZ_Zudah_development
+			prerequisite = { focus = PEZ_Zudah_development }
+		}
+		
 }

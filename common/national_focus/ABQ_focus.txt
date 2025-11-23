@@ -1899,6 +1899,28 @@ focus = {
 }
 
 focus = {
+	id = ABQ_pkw_plan
+	icon = GFX_goal_MS_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		ZEO = {
+			has_completed_focus = ZEO_total_war
+		}
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = ABQ_prepare_to_counter_newtype_forces
+	prerequisite = { focus = ABQ_prepare_to_counter_newtype_forces }
+}
+
+focus = {
 	id = ABQ_experimental_mechanical_technoloy
 	icon = GFX_goal_generic_production
 	search_filters = { FOCUS_FILTER_RESEARCH }

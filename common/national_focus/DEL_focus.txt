@@ -573,6 +573,25 @@ focus = {
 }
 
 focus = {
+	id = DEL_kimberly_launch
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_return_to_space
+	prerequisite = { focus =  DEL_return_to_space }
+}
+
+focus = {
 	id = DEL_plan_b
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
@@ -592,6 +611,25 @@ focus = {
 }
 
 focus = {
+	id = DEL_glow_in_the_amazon
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_plan_b
+	prerequisite = { focus =  DEL_plan_b }
+}
+
+focus = {
 	id = DEL_form_ties_with_anti-federation_movements
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
@@ -606,6 +644,101 @@ focus = {
 	}
 	relative_position_id =  DEL_begin_guerilla_conflict
 	prerequisite = { focus =  DEL_begin_guerilla_conflict }
+}
+
+focus = {
+	id = DEL_call_up_remnant_forces
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_form_ties_with_anti-federation_movements
+	prerequisite = { focus =  DEL_form_ties_with_anti-federation_movements }
+}
+
+focus = {
+	id = DEL_send_cima_to_von_braun
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	mutually_exclusive = {
+		focus = DEL_send_gato_to_von_braun
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_call_up_remnant_forces
+	prerequisite = { focus =  DEL_call_up_remnant_forces }
+}
+
+focus = {
+	id = DEL_maintaining_the_balance_of_power
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_send_cima_to_von_braun
+	prerequisite = { focus =  DEL_send_cima_to_von_braun }
+}
+
+focus = {
+	id = DEL_send_gato_to_von_braun
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = DEL_send_cima_to_von_braun
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_call_up_remnant_forces
+	prerequisite = { focus =  DEL_call_up_remnant_forces }
+}
+
+focus = {
+	id = DEL_revivial_of_the_302nd
+	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		
+	}
+	relative_position_id =  DEL_send_gato_to_von_braun
+	prerequisite = { focus =  DEL_send_gato_to_von_braun }
 }
 
 }

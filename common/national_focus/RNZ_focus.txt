@@ -1317,6 +1317,23 @@ focus = {
 }
 
 focus = {
+	id = RNZ_hauer_project
+	icon = GFX_goal_geara_doga_kai
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = RNZ_prioritize_commander_use_MS
+	prerequisite = { focus = RNZ_prioritize_commander_use_MS }
+	prerequisite = { focus = RNZ_focus_on_crippling_the_government }
+}
+
+focus = {
 	id = RNZ_attempt_to_crush_federation_forces
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2

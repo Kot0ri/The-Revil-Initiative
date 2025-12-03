@@ -360,13 +360,29 @@ focus = {
 	}
 
 	focus = {
-		id = EFG_priortize_earth_issues
+		id = EFG_increase_colonial_traiffs
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -1
 		y = 1
 		prerequisite = { focus = EFG_invest_in_the_Arcadia_project focus = EFG_increase_the_EFF_budget }
 		relative_position_id = EFG_invest_in_the_Arcadia_project
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_priortize_earth_issues
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_increase_colonial_traiffs }
+		relative_position_id = EFG_increase_colonial_traiffs
 		ai_will_do = {
 			factor = 1
 		}
@@ -1497,6 +1513,32 @@ focus = {
 						instant_build = yes
 					}
 				}
+			}
+		}
+	}
+
+	focus = {
+		id = EFG_gambit_of_tyrants
+		icon = GFX_goal_zeon_must_burn
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+			has_completed_focus = EFG_isolate_Zeon
+			date > 0079.01.1
+			NOT = {
+				ZEO = {	has_government = democratic  }
+			}
+		}
+		prerequisite = { focus = EFG_anaheim_leads_the_way focus = EFG_increase_federal_policing_mandates }
+		relative_position_id = EFG_anaheim_leads_the_way
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = ZEO
+				type = annex_everything
 			}
 		}
 	}

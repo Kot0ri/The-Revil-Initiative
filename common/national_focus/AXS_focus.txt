@@ -2327,6 +2327,72 @@ focus = {
 }
 
 focus = {
+	id = AXS_hamans_scorn
+	icon = GFX_goal_hamans_scorn
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_elavate_cyber_newtypes
+	prerequisite = {
+		focus = AXS_elavate_cyber_newtypes
+	}
+	prerequisite = {
+		focus = AXS_cooperate_with_the_Aueg
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_coming_from_the_heavens
+	icon = GFX_goal_hamans_scorn
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_hamans_scorn
+	prerequisite = {
+		focus = AXS_hamans_scorn
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_human_destiny
+	icon = GFX_goal_hamans_scorn
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_hamans_scorn
+	prerequisite = {
+		focus = AXS_hamans_scorn
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = AXS_visions_of_blood
 	icon = GFX_goal_glemy_1
 	cost = 5

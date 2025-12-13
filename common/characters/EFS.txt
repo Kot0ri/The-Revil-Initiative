@@ -805,18 +805,14 @@ EFS_gady_kinsey={
 			coordination_skill=3
 		}
 		advisor={
-			slot = space_forces_chief
+			slot = political_advisor
 			idea_token = green_wyatt
 			allowed = {
 				original_tag = EFS
 			}
 			cost = 80
 			traits = {
-				green_wyatt_trait
-			}
-			modifier = {
-				naval_enemy_retreat_chance = 0.1
-				positioning = 0.1
+				inspector-admiral
 			}
 			ai_will_do = {
 				factor = 1
@@ -896,7 +892,7 @@ EFS_gady_kinsey={
 				original_tag = EFS
 			}
 			traits = {
-				hc_army_leader_1
+				green_wyatt_trait
 			}
 			ai_will_do = {
 				factor = 2

@@ -465,7 +465,19 @@ supreme_commander_of_the_jovian_fleet = {
 
 #other
 
+inspector-admiral = {
+	random = no
+	command_power_gain = 0.05
+	navy_advisor_cost_factor = -0.1
+	experience_gain_navy_factor = 0.05
+}
 
+green_wyatt_trait = {
+	random = no
+	supremacist_drift = 0.01
+	naval_detection = 0.05
+	naval_invasion_penalty = -0.07
+	}
 
 military_industrialist = {
 	random = no

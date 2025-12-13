@@ -112,7 +112,8 @@ technologies = {
       }
     }
   }
-  ZEO_fighter_tech = {
+  
+ZEO_fighter_tech = {
 
     enable_equipments = {
       core_fighter1_equipment
@@ -138,7 +139,41 @@ technologies = {
       base = 10
       modifier = {
         factor = 0.1
-        has_idea = colony_country
+        
+      }
+      modifier = {
+        factor = 50
+        date > 79.1.1
+      }
+    }
+  }
+
+  ZEO_fighter01_tech = {
+
+    enable_equipments = {
+      core_fighter2_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 6 }
+    }
+
+    categories = {
+      light_air
+      light_fighter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
       }
       modifier = {
         factor = 50
@@ -150,6 +185,84 @@ technologies = {
       }
     }
   }
+
+  ZEO_fighter02_tech = {
+
+    enable_equipments = {
+      core_fighter2_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 0 y = 8 }
+    }
+
+    categories = {
+      light_air
+      light_fighter
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 50
+        date > 79.1.1
+      }
+    }
+  }
+
+  ZEO_fighter03_tech = {
+
+    enable_equipments = {
+      core_fighter2_equipment
+    }
+
+    research_cost = 1
+    xp_research_type = air
+    xp_boost_cost = 50
+		xp_research_bonus = 0.3
+    start_year = 79
+    folder = {
+      name = ZEO_air_techs_folder
+      position = { x = 2 y = 8 }
+    }
+
+    categories = {
+      light_air
+      light_fighter
+      cas_bomber
+      air_equipment
+    }
+
+    ai_will_do = {
+      base = 10
+      modifier = {
+        factor = 0.1
+      }
+      modifier = {
+        factor = 50
+        date > 78.1.1
+      }
+      modifier = {
+        factor = 50
+        date > 79.1.1
+      }
+    }
+  }
+
   ZEO_attacker_tech = {
 
     enable_equipments = {

@@ -756,6 +756,23 @@ ABQ_kienast={
 	}
 }
 
+ABQ_karlgeorge={
+	name= "Karlgeorge"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/karlgeorge.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
 ABQ_bachmann={
 	name= "Bachmann"
 	portraits={

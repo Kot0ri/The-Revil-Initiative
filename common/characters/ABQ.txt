@@ -235,16 +235,52 @@ characters = {
 	}
 	corps_commander={
 		traits={zabi_party harsh_leader ghiren_loyalist }
-		skill=1
+		skill=2
 		attack_skill=2
 		defense_skill=1
-		planning_skill=1
-		logistics_skill=1
+		planning_skill=2
+		logistics_skill=2
 	}
 	advisor = {
 		slot = political_advisor
 		traits = { special_forces_chief  }
 	}
+}
+
+	ABQ_lindenau={
+	name="Werner Lindenau"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/werner_lindenau.dds"
+		}
+	}
+	corps_commander={
+		traits={zabi_party ghiren_loyalist naval_invader }
+		skill=1
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+	
+}
+
+ABQ_kleikamp={
+	name="Kleikamp"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/kleikamp.dds"
+		}
+	}
+	corps_commander={
+		traits={zabi_party ghiren_loyalist naval_invader }
+		skill=1
+		attack_skill=2
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=2
+	}
+	
 }
 	
 	#pilots
@@ -461,7 +497,7 @@ ABQ_gilliam={
 		}
 	}
 	corps_commander={
-		traits={ pilot }
+		traits={ pilot royal_gaurd }
 		skill=4
 		attack_skill=4
 		defense_skill=3
@@ -657,6 +693,91 @@ ABQ_kakegawa={
 	portraits={
 		army={
 			large= "gfx/leaders/ABQ/kakegawa.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_rieve={
+	name= "Rieve"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/rieve.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_scheurlen={
+	name= "Scheurlen"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/scheurlen.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_kienast={
+	name= "Kienast"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/kienast.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_bachmann={
+	name= "Bachmann"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/bachmann.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+ABQ_sugwara={
+	name= "Sugwara"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/sugwara.dds"
 		}
 	}
 	corps_commander={

@@ -658,7 +658,7 @@ focus = {
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 5
 	x = 14
-	y = 20
+	y = 16
 	ai_will_do = {
 	factor = 1
 	}
@@ -690,7 +690,7 @@ focus = {
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 5
 	x = 12
-	y = 20
+	y = 16
 	ai_will_do = {
 	factor = 1
 	}
@@ -713,6 +713,24 @@ focus = {
 	}
 
 	focus = {
+		id = SSA_annex_hindustan
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_military_takeover
+		prerequisite = {focus = SSA_nanyang_takeover  focus = SSA_military_takeover}
+		completion_reward = {
+		annex_country = {
+		target = HIN
+		}
+			}
+		}
+
+	focus = {
 		id = SSA_work_with_side_6
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -728,6 +746,96 @@ focus = {
 			}
 		}
 
+		focus = {
+		id = SSA_work_with_anaheim
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		available = {
+			has_completed_focus = SSA_military_takeover
+		}
+		relative_position_id = SSA_work_with_side_6
+		prerequisite = {focus = SSA_work_with_side_6  focus = SSA_annex_hindustan }
+		completion_reward = {
+	
+			}
+		}
+
+		focus = {
+		id = SSA_accept_unmanned_prototypes
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		available = {
+			VBC =
+			{
+				has_completed_focus = VBC_unmanned_corps_project
+			}
+		}
+		relative_position_id = SSA_work_with_anaheim
+		prerequisite = {focus = SSA_work_with_anaheim }
+		completion_reward = {
+	
+			}
+		}
+
+	focus = {
+		id = SSA_rally_demobilized_troops
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -3
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_military_takeover
+		prerequisite = { focus = SSA_military_takeover}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = SSA_reach_out_to_federal_warlords
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_rally_demobilized_troops
+		prerequisite = { focus = SSA_rally_demobilized_troops}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = SSA_war_for_the_spirit_of_the_federation
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_reach_out_to_federal_warlords
+		prerequisite = { focus = SSA_reach_out_to_federal_warlords}
+		completion_reward = {
+			declare_war_on = {
+				target = EFG
+				type = annex_everything
+			}
+			}
+		}
+
 	focus = {
 		id = SSA_bring_in_disenfranchised_eff
 		icon = GFX_goal_efsf_mobile_headquarters
@@ -738,7 +846,7 @@ focus = {
 		factor = 1
 		}
 		relative_position_id = SSA_nanyang_takeover
-		prerequisite = {focus = SSA_nanyang_takeover }
+		prerequisite = {focus = SSA_nanyang_takeover focus = SSA_military_takeover }
 		completion_reward = {
 	
 			}
@@ -754,7 +862,7 @@ focus = {
 			factor = 1
 			}
 			relative_position_id = SSA_bring_in_disenfranchised_eff
-				prerequisite = {focus = SSA_bring_in_disenfranchised_eff}
+			prerequisite = {focus = SSA_bring_in_disenfranchised_eff}
 			completion_reward = {
 		
 				}
@@ -802,7 +910,7 @@ focus = {
 		factor = 1
 		}
 		relative_position_id = SSA_nanyang_takeover
-			prerequisite = {focus = SSA_nanyang_takeover}
+		prerequisite = {focus = SSA_nanyang_takeover}
 		completion_reward = {
 			transfer_state = 594
 			transfer_state = 591
@@ -810,9 +918,26 @@ focus = {
 			transfer_state = 592
 			transfer_state = 729
 			transfer_state = 747
-			declare_war_on = {
-				target = EFG
 			}
+		}
+
+		focus = {
+		id = SSA_war_against_the_puppet_of_anaheim
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		relative_position_id = SSA_great_march_north
+		prerequisite = {focus = SSA_great_march_north}
+		completion_reward = {
+		declare_war_on = {
+    	target = EFG
+    	type = annex_everything
+			}
+			
 			}
 		}
 	

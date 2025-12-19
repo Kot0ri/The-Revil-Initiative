@@ -469,6 +469,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_war = yes
+	}
 	completion_reward = {
 		add_ideas = the_living_dead
 		recruit_character = ABQ_burroughs
@@ -658,6 +661,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
 	}
 	completion_reward = {
 		add_manpower = 5000
@@ -1526,6 +1532,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		date > 0078.01.1
+	}
 	completion_reward = {
 		add_tech_bonus = {
 			name = zeon_focus_on_MA
@@ -1605,6 +1614,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		date > 0079.01.1
+	}
 	completion_reward = {
 		add_tech_bonus = {
 			name = zeon_high_mobility_of_general_purpose_MS
@@ -1628,6 +1640,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_tech = mega_particle1
+	}
 	completion_reward = {
 	
 	}
@@ -1648,6 +1663,9 @@ focus = {
 	}
 	mutually_exclusive = {
 		focus = ABQ_mass_production_of_the_p_reuse_device
+	}
+	available = {
+		has_tech = mega_particle2
 	}
 	completion_reward = {
 		add_tech_bonus = {
@@ -1954,6 +1972,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = ABQ_found_the_living_dead_division
 	}
 	completion_reward = {
 		add_tech_bonus = {

@@ -204,7 +204,7 @@ focus = {
 			}
 			retire_ideology_leader = democratic
 			promote_character = {
-			character = EFG_Johnathan_Harrison
+			character = EFG_laurent_raffarin
 			ideology = democratic
 		}
 		}
@@ -369,6 +369,47 @@ focus = {
 		relative_position_id = EFG_invest_in_the_Arcadia_project
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = EFG_revivial_of_FSTB_and_STEP
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x =2
+		y = 1
+		prerequisite = { focus = EFG_increase_colonial_traiffs }
+		relative_position_id = EFG_increase_colonial_traiffs
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = EFG_reduce_space_migration
+			}
+			has_completed_focus = EFG_ensure_colony_loyalty
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_comission_for_newtype_research
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		prerequisite = { focus = EFG_increase_colonial_traiffs }
+		relative_position_id = EFG_increase_colonial_traiffs
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date > 0078.01.1
 		}
 		completion_reward = {
 		
@@ -2546,6 +2587,30 @@ focus = {
 		}
 		completion_reward = {
 		add_ideas = youth_democracy_program
+		}
+	}
+
+		focus = {
+		id = EFG_increase_corporate_control
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		available = {
+		}
+		relative_position_id = EFG_youth_democray_program
+		prerequisite = {
+			focus = EFG_earth_defence_procedures focus = EFG_colony_restoration_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		retire_ideology_leader = democratic
+		promote_character = {
+			character = EFG_john_bull
+			ideology = democratic
+		}
 		}
 	}
 

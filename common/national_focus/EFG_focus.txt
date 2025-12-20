@@ -2606,13 +2606,35 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		retire_ideology_leader = democratic
-		promote_character = {
-			character = EFG_john_bull
-			ideology = democratic
-		}
+		set_politics = {
+   		 ruling_party = corporatism
+   		 elections_allowed = no
 		}
 	}
+		}
+
+focus = {
+		id = EFG_military_takeover
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		available = {
+		}
+		relative_position_id = EFG_earth_defence_procedures
+		prerequisite = {
+			focus = EFG_earth_defence_procedures focus = EFG_new_gaurd_of_earth
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		set_politics = {
+   		 ruling_party = military_government
+   		 elections_allowed = no
+		}
+	}
+		}
 
 	focus = {
 		id = EFG_earth_defence_procedures

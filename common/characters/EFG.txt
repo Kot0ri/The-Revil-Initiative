@@ -108,6 +108,20 @@ EFG_gopp={
 		}
 		}
 
+		EFG_Otto_Gessler{
+		name="Otto Gessler"
+		portraits={
+			civilian={
+				large= "gfx/leaders/EFG/Otto_Gessler.dds"
+			}
+		}
+		country_leader={
+			ideology= conservatism
+			traits={ hawk }
+			expire="1000.1.1.1"
+		}
+		}
+
 		EFG_Spencer_Robinson{
 		name="Spencer Robinson"
 		portraits={
@@ -135,6 +149,20 @@ EFG_gopp={
 			expire="1000.1.1.1"
 		}
 		}
+
+		EFG_laurent_raffarin {
+			name="Laurent Raffarin"
+			portraits={
+				civilian={
+					large= "gfx/leaders/EFG/laurent_raffarin.dds"
+				}
+			}
+			country_leader={
+				ideology= liberalism
+				traits={ socialist_modernizer }
+				expire="1000.1.1.1"
+			}
+			}
 
 		EFG_Johnathan_Harrison {
 			name="Johnathan Harrison"

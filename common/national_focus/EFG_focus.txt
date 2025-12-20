@@ -2268,7 +2268,11 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		retire_ideology_leader = democratic
+			promote_character = {
+			character = EFG_Johnathan_Harrison
+			ideology = democratic
+		}
 		}
 	}
 
@@ -2328,7 +2332,11 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
-		
+		retire_ideology_leader = democratic
+		promote_character = {
+			character = EFG_Otto_Gessler
+			ideology = democratic
+		}
 		}
 	}
 

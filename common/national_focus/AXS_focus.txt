@@ -1784,8 +1784,19 @@ focus = {
 		date > 82.6.1
 	}
 	completion_reward = {
-	
+		set_politics = {
+			ruling_party = oligarchy
+		}
+	add_country_leader_role = {
+    	character = AXS_haman_karn_young
+    	promote_leader = yes
+   		country_leader = {
+        ideology = authoritarian_oligarchy
+        expire = "1965.1.1.1"
+        traits = { ghost_of_zeon inexperineced_imperialist }
+    }
 	}
+}
 	relative_position_id = AXS_coronation_of_mineva_zabi
 	prerequisite = {focus = AXS_emissary_from_zeon }
 	prerequisite = {focus = AXS_form_a_royal_guard }
@@ -1854,7 +1865,7 @@ focus = {
    		country_leader = {
         ideology = authoritarian_oligarchy
         expire = "1965.1.1.1"
-        traits = { ghost_of_zeon inexperineced_imperialist }
+        traits = { ghost_of_zeon tyrant_of_axis }
 	}
 }
 	}

@@ -1846,8 +1846,17 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		recruit_character = AXS_haman_karn_2
 		retire_character = AXS_haman_karn
+		recruit_character = AXS_haman_karn_2
+		add_country_leader_role = {
+    	character = AXS_haman_karn_2
+    	promote_leader = yes
+   		country_leader = {
+        ideology = authoritarian_oligarchy
+        expire = "1965.1.1.1"
+        traits = { ghost_of_zeon inexperineced_imperialist }
+	}
+}
 	}
 	available = {
 		has_completed_focus = AXS_hamans_regency

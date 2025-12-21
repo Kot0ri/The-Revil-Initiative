@@ -246,10 +246,30 @@ AXS_serrana_karn_2={
 	field_marshal = {
 		traits = { newtype2 pilot karn_party}
 		skill = 4
-		attack_skill = 2
-		defense_skill = 2
+		attack_skill = 3
+		defense_skill = 3
 		planning_skill = 4
 		logistics_skill = 4
+	}
+}
+
+AXS_reagan_rhogan={
+	name="Reagan Rhogan"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/reagan_rhogan.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/reagan_rhogan.dds"
+		}
+	}
+	field_marshal = {
+		traits = { newtype1 pilot karn_party}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 2
+		logistics_skill = 2
 	}
 }
 

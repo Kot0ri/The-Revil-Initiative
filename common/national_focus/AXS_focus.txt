@@ -560,6 +560,22 @@ focus = {
 }
 
 focus = {
+	id = AXS_form_leadership_contingencies
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	recruit_character = AXS_reagan_rhogan
+	}
+	relative_position_id = AXS_experince_from_a_baoa_qu
+	prerequisite = {focus = AXS_experince_from_a_baoa_qu}
+}
+
+focus = {
 	id = AXS_supplies_from_side_3
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -2505,8 +2521,17 @@ focus = {
 		
 	}
 	completion_reward = {
-		
+		retire_character = AXS_serrana_karn
+		add_country_leader_role = {
+    	character = AXS_reagan_rhogan
+    	promote_leader = yes
+   		country_leader = {
+        ideology = military_administration
+        expire = "1965.1.1.1"
+        traits = { }
 	}
+	}
+}
 }
 
 focus = {
@@ -2529,7 +2554,17 @@ focus = {
 		
 	}
 	completion_reward = {
-		
+		retire_character = AXS_serrana_karn
+		recruit_character = AXS_serrana_karn_2
+		add_country_leader_role = {
+    	character = AXS_serrana_karn_2
+    	promote_leader = yes
+   		country_leader = {
+        ideology = military_administration
+        expire = "1965.1.1.1"
+        traits = { last_of_the_karns }
+	}
+	}
 	}
 }
 

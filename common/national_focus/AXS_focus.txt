@@ -2552,6 +2552,37 @@ focus = {
 }
 
 focus = {
+	id = AXS_junior_rises
+	icon = GFX_goal_hamans_scorn
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	relative_position_id = AXS_crisis_of_conscious
+	prerequisite = {
+		focus = AXS_crisis_of_conscious
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		retire_character = AXS_reagan_rhogan
+		add_country_leader_role = {
+    	character = AXS_maharaja_jr
+    	promote_leader = yes
+   		country_leader = {
+        ideology = military_administration
+        expire = "1965.1.1.1"
+        traits = { }
+	}
+	}
+}
+}
+
+focus = {
 	id = AXS_accept_the_mantle
 	icon = GFX_goal_hamans_scorn
 	cost = 5

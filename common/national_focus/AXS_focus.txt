@@ -568,6 +568,11 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		NOT = {
+			has_completed_focus = AXS_death_of_maharaja_karn
+		}
+	}
 	completion_reward = {
 	recruit_character = AXS_reagan_rhogan
 	}
@@ -2110,7 +2115,19 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	set_politics = {
+		ruling_party = military_government
+	}
+		recruit_character = AXS_mil_control
+		add_country_leader_role = {
+    	character = AXS_mil_control
+    	promote_leader = yes
+   		country_leader = {
+        ideology = military_administration
+        expire = "1965.1.1.1"
+        traits = { }
+	}
+	}
 	}
 	relative_position_id = AXS_form_supreme_command_council
 	prerequisite = {focus = AXS_form_supreme_command_council }

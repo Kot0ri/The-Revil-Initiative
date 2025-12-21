@@ -263,13 +263,25 @@ AXS_reagan_rhogan={
 			large="gfx/leaders/AXS/reagan_rhogan.dds"
 		}
 	}
-	field_marshal = {
+	corps_commander = {
 		traits = { newtype1 pilot karn_party}
 		skill = 2
 		attack_skill = 2
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 2
+	}
+}
+
+AXS_mil_control={
+	name="Axis Military Triumvirate"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/karn_triumvirate.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/karn_triumvirate.dds"
+		}
 	}
 }
 

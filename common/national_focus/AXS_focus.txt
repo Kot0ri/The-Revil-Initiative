@@ -2052,7 +2052,17 @@ focus = {
 		has_completed_focus = AXS_navigate_unstable_politics
 	}
 	completion_reward = {
-	
+		retire_character = AXS_haman_karn_2
+		recruit_character = AXS_haman_karn_alt
+		add_country_leader_role = {
+    	character = AXS_haman_karn_alt
+    	promote_leader = yes
+   		country_leader = {
+        ideology = authoritarian_oligarchy
+        expire = "1965.1.1.1"
+        traits = { ghost_of_zeon tyrant_of_axis non_aligned_council_trait }
+	}
+}
 	}
 	relative_position_id = AXS_cajole_glemy
 	prerequisite = {focus = AXS_cajole_glemy }
@@ -2157,6 +2167,17 @@ focus = {
 	}
 	completion_reward = {
 	add_ideas = Neo-Zabi_family
+		retire_character = AXS_haman_karn_2
+		recruit_character = AXS_haman_karn_nz_1
+		add_country_leader_role = {
+    	character = AXS_haman_karn_nz_1
+    	promote_leader = yes
+   		country_leader = {
+        ideology = authoritarian_oligarchy
+        expire = "1965.1.1.1"
+        traits = { ghost_of_zeon tyrant_of_axis JUNO_cult_of_personality }
+	}
+	}
 	}
 	relative_position_id = AXS_isolate_mineva
 	prerequisite = {focus = AXS_isolate_mineva }

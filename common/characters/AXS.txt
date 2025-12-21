@@ -193,6 +193,46 @@ AXS_haman_karn_nz_1={
 	}
 }
 
+AXS_haman_karn_nz_2={
+	name="Haman Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Haman_Karn_NZ2.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Haman_Karn_NZ2.dds"
+		}
+	}
+	field_marshal = {
+		traits = { newtype3 pilot karn_party}
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 6
+		logistics_skill = 5
+	}
+}
+
+AXS_haman_karn_nz_3={
+	name="Haman Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/Haman_Karn_NZ3.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/Haman_Karn_NZ3.dds"
+		}
+	}
+	field_marshal = {
+		traits = { newtype3 pilot karn_party}
+		skill = 6
+		attack_skill = 6
+		defense_skill = 5
+		planning_skill = 6
+		logistics_skill = 5
+	}
+}
+
 AXS_phaeton_rahu={
 	name="Phaeton Rahu Argis"
 	portraits={

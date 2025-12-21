@@ -2077,7 +2077,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	set_politics = {
+		ruling_party = military_government
+	}
 	}
 	relative_position_id = AXS_increase_reliance_on_old_guard
 	prerequisite = {focus = AXS_increase_reliance_on_old_guard }
@@ -2321,7 +2323,17 @@ focus = {
 		has_completed_focus = AXS_Declare_Neo-Zeon
 	}
 	completion_reward = {
-	
+	retire_character = AXS_haman_karn_nz_1
+		recruit_character = AXS_haman_karn_nz_2
+		add_country_leader_role = {
+    	character = AXS_haman_karn_nz_2
+    	promote_leader = yes
+   		country_leader = {
+        ideology = authoritarian_oligarchy
+        expire = "1965.1.1.1"
+        traits = { ghost_of_zeon tyrant_of_axis JUNO_cult_of_personality }
+	}
+	}
 	}
 }
 
@@ -2429,7 +2441,17 @@ focus = {
 		
 	}
 	completion_reward = {
-	
+	retire_character = AXS_haman_karn_nz_2
+		recruit_character = AXS_haman_karn_nz_3
+		add_country_leader_role = {
+    	character = AXS_haman_karn_nz_3
+    	promote_leader = yes
+   		country_leader = {
+        ideology = authoritarian_oligarchy
+        expire = "1965.1.1.1"
+        traits = { ghost_of_zeon tyrant_of_axis JUNO_cult_of_personality }
+	}
+	}
 	}
 }
 

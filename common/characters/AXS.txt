@@ -233,6 +233,26 @@ AXS_haman_karn_nz_3={
 	}
 }
 
+AXS_serrana_karn_2={
+	name="Serrana Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/AXS/serrana_karn_2.dds"
+		}
+		army={
+			large="gfx/leaders/AXS/serrana_karn_2.dds"
+		}
+	}
+	field_marshal = {
+		traits = { newtype2 pilot karn_party}
+		skill = 4
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 4
+		logistics_skill = 4
+	}
+}
+
 AXS_phaeton_rahu={
 	name="Phaeton Rahu Argis"
 	portraits={
@@ -1394,16 +1414,11 @@ AXS_serrana_karn={
 	name="Serrana Karn"
 	portraits={
 		civilian={
-			large="gfx/leaders/AXS/serrana_karn.dds"
+			large="gfx/leaders/AXS/Serenna_Karn.dds"
 		}
 		army={
-			large="gfx/leaders/AXS/serrana_karn.dds"
+			large="gfx/leaders/AXS/Serenna_Karn.dds"
 		}
-	}
-	country_leader={
-		ideology= milittaristic_democracy
-		traits={ last_of_the_karns }
-		expire="1000.1.1.1"
 	}
 	advisor = {
 		slot = political_advisor

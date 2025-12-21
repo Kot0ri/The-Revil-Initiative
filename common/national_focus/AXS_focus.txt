@@ -2470,13 +2470,16 @@ focus = {
 		
 	}
 	completion_reward = {
+		set_politics = {
+			ruling_party = military_government
+		}
 		add_country_leader_role = {
     	character = AXS_serrana_karn
     	promote_leader = yes
    		country_leader = {
-        ideology = authoritarian_oligarchy
+        ideology = military_administration
         expire = "1965.1.1.1"
-        traits = { }
+        traits = { last_of_the_karns }
 	}
 	}
 	}

@@ -2456,6 +2456,81 @@ focus = {
 }
 
 focus = {
+	id = AXS_reorganize_haman_loyalists
+	icon = GFX_goal_hamans_scorn
+	cost = 5
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_hamans_scorn
+	
+	available = {
+		
+	}
+	completion_reward = {
+		add_country_leader_role = {
+    	character = AXS_serrana_karn
+    	promote_leader = yes
+   		country_leader = {
+        ideology = authoritarian_oligarchy
+        expire = "1965.1.1.1"
+        traits = { }
+	}
+	}
+	}
+}
+
+focus = {
+	id = AXS_crisis_of_conscious
+	icon = GFX_goal_hamans_scorn
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_accept_the_mantle
+	}
+	relative_position_id = AXS_reorganize_haman_loyalists
+	prerequisite = {
+		focus = AXS_reorganize_haman_loyalists
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = AXS_accept_the_mantle
+	icon = GFX_goal_hamans_scorn
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_crisis_of_conscious
+	}
+	relative_position_id = AXS_reorganize_haman_loyalists
+	prerequisite = {
+		focus = AXS_reorganize_haman_loyalists
+	}
+	available = {
+		
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = AXS_visions_of_blood
 	icon = GFX_goal_glemy_1
 	cost = 5

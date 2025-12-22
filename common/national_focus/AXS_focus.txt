@@ -2026,7 +2026,9 @@ focus = {
 		FOCUS_FILTER_HISTORICAL
 	}
 	completion_reward = {
-	
+	recruit_character = AXS_illia_pazom
+	recruit_character = AXS_chara_soon
+	recruit_character = AXS_mashymre_cello_1
 	}
 	relative_position_id = AXS_remodel_zeon_nobility
 	prerequisite = {focus = AXS_remodel_zeon_nobility }
@@ -2335,6 +2337,8 @@ focus = {
 	}
 	completion_reward = {
 	add_ideas = Glorious_army_of_Neo-Zeon
+	retire_character = AXS_illia_pazom
+	recruit_character = AXS_illia_pazom_2
 	}
 	relative_position_id = AXS_prioritize_the_titans
 	prerequisite = {focus = AXS_deal_with_the_traitors focus = AXS_prioritize_the_titans }

@@ -706,7 +706,7 @@ AXS_mashymre_cello_1={
 			small="GFX_idea_anavel_gato"
 		}
 		army={
-			large= "gfx/leaders/AXS/mashymre_cello_1.dds"
+			large= "gfx/leaders/AXS/Mashymre.dds"
 		}
 	}
 	corps_commander={
@@ -843,12 +843,12 @@ AXS_illia_pazom={
 			small="GFX_idea_anavel_gato"
 		}
 		army={
-			large= "gfx/leaders/AXS/illia_pazom.dds"
+			large= "gfx/leaders/AXS/Axis_Illia1.dds"
 		}
 	}
 	corps_commander={
 		traits={pilot newtype_1 }
-		skill=4
+		skill=3
 		attack_skill=3
 		defense_skill=3
 		planning_skill=2
@@ -856,6 +856,45 @@ AXS_illia_pazom={
 	}
 }
 
+AXS_illia_pazom_2={
+	name="Illia Pazom"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/Axis_IlliaLate.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot newtype_1 }
+		skill=4
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=2
+	}
+}
+
+AXS_chara_soon={
+	name="Chara Soon"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/Chara_Soon.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot newtype_1 }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+}
 
 AXS_rakan_dahkaran={
 	name="Rakan Dahkaran"

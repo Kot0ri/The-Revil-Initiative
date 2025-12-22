@@ -6022,6 +6022,25 @@ focus = {
 }
 
 focus = {
+	id = ZEO_review_upper_echelons
+	icon = GFX_goal_generic_forceful_treaty
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 10
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_declare_imperium
+	prerequisite = { focus = ZEO_declare_imperium}
+}
+
+focus = {
 	id = ZEO_pax_Zeon
 	icon = GFX_goal_generic_forceful_treaty
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -6283,10 +6302,19 @@ focus = {
 		focus = ZEO_ghirenists_victorious
 	}
 	completion_reward = {
-		
+		retire_character = ZEO_cecilia_irene
+		recruit_character = ZEO_cecilia_irene_2
+		add_country_leader_role = {
+    	character = ZEO_cecilia_irene_2
+    	promote_leader = yes
+   		country_leader = {
+        ideology = military_administration
+        expire = "1965.1.1.1"
+        traits = { }
+	}
 	}
 }
-
+}
 
 
 focus = {

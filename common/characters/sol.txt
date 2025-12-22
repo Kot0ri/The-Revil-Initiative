@@ -26,6 +26,23 @@ characters={
 	}
 }
 
+SOL_zenna_zabi={
+	name="Zenna Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/SOL/Zenna_leader.dds"
+		}
+		army={
+			large="gfx/leaders/SOL/Zenna_leader.dds"
+		}
+	}
+	country_leader={
+		ideology= noble_rule
+		traits={}
+		expire="1000.1.1.1"
+	}
+}
+
 #Field Marshalls
 SOL_Lackoc={
 	name="Lackoc"

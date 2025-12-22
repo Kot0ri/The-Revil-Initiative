@@ -229,6 +229,26 @@ focus = {
 				}
 		}
 
+		focus = {
+			id = SOL_marlene_leadership
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 7
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_Dolzes_Pride
+			prerequisite = {
+				
+			}
+			completion_reward = {
+			set_politics = {
+				ruling_party = oligarchy
+			}
+				}
+		}
+
 }
 
 

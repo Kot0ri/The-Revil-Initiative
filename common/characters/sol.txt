@@ -43,6 +43,33 @@ SOL_zenna_zabi={
 	}
 }
 
+SOL_marlene_karn={
+	name="Marlene Karn"
+	portraits={
+		civilian={
+			large="gfx/leaders/SOL//Marlene_leader.dds"
+		}
+		army={
+			large="gfx/leaders/SOL/Marlene_leader.dds"
+		}
+	}
+	country_leader={
+		ideology= authoritarian_oligarchy
+		traits={}
+		expire="1000.1.1.1"
+	}
+	corps_commander = {
+		traits = {
+			pilot politically_connected newtype_1
+		}
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
+}
+
 #Field Marshalls
 SOL_Lackoc={
 	name="Lackoc"

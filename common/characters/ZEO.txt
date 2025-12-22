@@ -201,7 +201,44 @@ ZEO_cecilia_irene = {
 			small=GFX_idea_cecilia_irene
 		}
 		army = {
-			large = "gfx/leaders/ZEO/cecilia_irene_alt.dds"
+			large = "gfx/leaders/ZEO/cecilia_irene_1.dds"
+		}
+	}
+	advisor={
+		slot = political_advisor
+		idea_token = cecilia_irene
+		allowed = {
+			original_tag = ZEO
+		}
+		traits = {
+			cecilia_trait
+		}
+		available = {
+			is_country_leader = no
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = sweep_away_zabi_2
+					has_global_flag = zeon_great_purge
+				}
+			}
+		}
+		modifier = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}
+
+ZEO_cecilia_irene_2 = {
+	name=ZEO_cecilia_irene
+	portraits={
+		army = {
+			small=GFX_idea_cecilia_irene
+		}
+		army = {
+			large = "gfx/leaders/ZEO/cecilia_irene.dds"
 		}
 	}
 	advisor={

@@ -1,0 +1,47 @@
+buildings = {
+
+		####	came from
+		####	https://steamcommunity.com/sharedfiles/filedetails/?id=3610818471
+		####	Energy Rework (Coal/Nuclear/Dam to Energy)
+
+	hydroeletric_dam = {
+		show_on_map = 6
+		base_cost = 14000
+		local_resources_coal = 15
+		refinery = yes
+		icon_frame = 26
+		value = 8
+		affects_energy = yes
+		detecting_intel_type = civilian 
+		level_cap = {
+			state_max = 1
+		}
+		state_modifiers = {
+			state_production_speed_buildings_factor = 0.15
+			local_building_slots_factor = 0.15
+			state_resources_factor = 0.1
+			local_factory_energy_consumption = -0.65
+		}
+	}
+	
+	bighydroeletric_dam = {
+		show_on_map = 6
+		base_cost = 50000
+		local_resources_coal = 110
+		refinery = yes
+		only_costal = yes
+		icon_frame = 25
+		value = 8
+		affects_energy = yes
+		detecting_intel_type = civilian 
+		level_cap = {
+			state_max = 1
+		}
+		state_modifiers = {
+			state_production_speed_buildings_factor = 0.15
+			local_building_slots_factor = 0.15
+			state_resources_factor = 0.1
+			local_factory_energy_consumption = -0.65
+		}
+	}
+}

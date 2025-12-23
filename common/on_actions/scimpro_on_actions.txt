@@ -2,7 +2,47 @@ on_actions = {
 	on_startup = {
 		effect = {
 			every_country = {
-				if = {
+				if = {			####	enable_nuclear_reactor_heavy_water_2
+					limit = {
+						has_tech = nuclear_reactor_heavy_water
+						NOT = { has_country_flag = scimpro_heavy_water_flag }
+					}
+					set_technology = { enable_nuclear_reactor_heavy_water_2 = 1 }
+					set_country_flag = scimpro_heavy_water_flag
+				}
+				if = {			####	enable_nuclear_reactor_2
+					limit = {
+						has_tech = nuclear_reactor
+						NOT = { has_country_flag = scimpro_reactor_flag }
+					}
+					set_technology = { enable_nuclear_reactor_2 = 1 }
+					set_country_flag = scimpro_reactor_flag
+				}
+				if = {			####	enable_commercial_nuclear_reactor_2
+					limit = {
+						has_tech = commercial_nuclear_reactor_tech
+						NOT = { has_country_flag = scimpro_commercial_reactor_flag }
+					}
+					set_technology = { enable_commercial_nuclear_reactor_2 = 1 }
+					set_country_flag = scimpro_commercial_reactor_flag
+				}
+				if = {			####	enable_rocket_site_5
+					limit = {
+						has_tech = experimental_rockets
+						NOT = { has_country_flag = scimpro_rocket_flag }
+					}
+					set_technology = { enable_rocket_site_5 = 1 }
+					set_country_flag = scimpro_rocket_flag
+				}
+				if = {			####	enable_mega_gun_emplacement_5
+					limit = {
+						has_tech = land_multi_charge_large_caliber_gun_tech
+						NOT = { has_country_flag = scimpro_large_gun_flag }
+					}
+					set_technology = { enable_mega_gun_emplacement_5 = 1 }
+					set_country_flag = scimpro_large_gun_flag
+				}
+				if = {			####	enable_fuel_silo_5
 					limit = {
 						has_tech = fuel_silos
 						NOT = { has_country_flag = scimpro_silo_flag }
@@ -10,7 +50,7 @@ on_actions = {
 					set_technology = { enable_fuel_silo_5 = 1 }
 					set_country_flag = scimpro_silo_flag
 				}
-				if = {
+				if = {			####	enable_synthetic_refinery_5
 					limit = {
 						has_tech = synth_oil_experiments
 						NOT = { has_country_flag = scimpro_refinery_flag }
@@ -24,7 +64,47 @@ on_actions = {
 	on_monthly = {
 		effect = {
 			every_country = {
-				if = {
+				if = {			####	enable_nuclear_reactor_heavy_water_2
+					limit = {
+						has_tech = nuclear_reactor_heavy_water
+						NOT = { has_country_flag = scimpro_heavy_water_flag }
+					}
+					set_technology = { enable_nuclear_reactor_heavy_water_2 = 1 }
+					set_country_flag = scimpro_heavy_water_flag
+				}
+				if = {			####	enable_nuclear_reactor_2
+					limit = {
+						has_tech = nuclear_reactor
+						NOT = { has_country_flag = scimpro_reactor_flag }
+					}
+					set_technology = { enable_nuclear_reactor_2 = 1 }
+					set_country_flag = scimpro_reactor_flag
+				}
+				if = {			####	enable_commercial_nuclear_reactor_2
+					limit = {
+						has_tech = commercial_nuclear_reactor_tech
+						NOT = { has_country_flag = scimpro_commercial_reactor_flag }
+					}
+					set_technology = { enable_commercial_nuclear_reactor_2 = 1 }
+					set_country_flag = scimpro_commercial_reactor_flag
+				}
+				if = {			####	enable_rocket_site_5
+					limit = {
+						has_tech = experimental_rockets
+						NOT = { has_country_flag = scimpro_rocket_flag }
+					}
+					set_technology = { enable_rocket_site_5 = 1 }
+					set_country_flag = scimpro_rocket_flag
+				}
+				if = {			####	enable_mega_gun_emplacement_5
+					limit = {
+						has_tech = land_multi_charge_large_caliber_gun_tech
+						NOT = { has_country_flag = scimpro_large_gun_flag }
+					}
+					set_technology = { enable_mega_gun_emplacement_5 = 1 }
+					set_country_flag = scimpro_large_gun_flag
+				}
+				if = {			####	enable_fuel_silo_5
 					limit = {
 						has_tech = fuel_silos
 						NOT = { has_country_flag = scimpro_silo_flag }
@@ -32,7 +112,7 @@ on_actions = {
 					set_technology = { enable_fuel_silo_5 = 1 }
 					set_country_flag = scimpro_silo_flag
 				}
-				if = {
+				if = {			####	enable_synthetic_refinery_5
 					limit = {
 						has_tech = synth_oil_experiments
 						NOT = { has_country_flag = scimpro_refinery_flag }
@@ -46,7 +126,47 @@ on_actions = {
 	on_weekly = {
 		effect = {
 			every_country = {
-				if = {
+				if = {			####	enable_nuclear_reactor_heavy_water_2
+					limit = {
+						has_tech = nuclear_reactor_heavy_water
+						NOT = { has_country_flag = scimpro_heavy_water_flag }
+					}
+					set_technology = { enable_nuclear_reactor_heavy_water_2 = 1 }
+					set_country_flag = scimpro_heavy_water_flag
+				}
+				if = {			####	enable_nuclear_reactor_2
+					limit = {
+						has_tech = nuclear_reactor
+						NOT = { has_country_flag = scimpro_reactor_flag }
+					}
+					set_technology = { enable_nuclear_reactor_2 = 1 }
+					set_country_flag = scimpro_reactor_flag
+				}
+				if = {			####	enable_commercial_nuclear_reactor_2
+					limit = {
+						has_tech = commercial_nuclear_reactor_tech
+						NOT = { has_country_flag = scimpro_commercial_reactor_flag }
+					}
+					set_technology = { enable_commercial_nuclear_reactor_2 = 1 }
+					set_country_flag = scimpro_commercial_reactor_flag
+				}
+				if = {			####	enable_rocket_site_5
+					limit = {
+						has_tech = experimental_rockets
+						NOT = { has_country_flag = scimpro_rocket_flag }
+					}
+					set_technology = { enable_rocket_site_5 = 1 }
+					set_country_flag = scimpro_rocket_flag
+				}
+				if = {			####	enable_mega_gun_emplacement_5
+					limit = {
+						has_tech = land_multi_charge_large_caliber_gun_tech
+						NOT = { has_country_flag = scimpro_large_gun_flag }
+					}
+					set_technology = { enable_mega_gun_emplacement_5 = 1 }
+					set_country_flag = scimpro_large_gun_flag
+				}
+				if = {			####	enable_fuel_silo_5
 					limit = {
 						has_tech = fuel_silos
 						NOT = { has_country_flag = scimpro_silo_flag }
@@ -54,7 +174,7 @@ on_actions = {
 					set_technology = { enable_fuel_silo_5 = 1 }
 					set_country_flag = scimpro_silo_flag
 				}
-				if = {
+				if = {			####	enable_synthetic_refinery_5
 					limit = {
 						has_tech = synth_oil_experiments
 						NOT = { has_country_flag = scimpro_refinery_flag }

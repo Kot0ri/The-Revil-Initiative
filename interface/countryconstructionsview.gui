@@ -43,7 +43,7 @@ guiTypes = {
 			maxHeight = 20
 			format = left
 		}
-		
+
 		containerWindowType = {
 			name = "count_container"
 			position = { x=-220 y=12 }
@@ -219,24 +219,47 @@ guiTypes = {
 				hide = yes # Remove this line to show CIC bank info in the Constructions view.
 			}
 
-			iconType = {
-				name = "construction_speed_icon"
-				position = { x = 264 y = 45 }
-				spriteType = "GFX_construction_speed_icon"
-			}
+			containerWindowType = {
+				name = "speed_container"
+				position = { x = 260 y = -10  }
+				size = { width = 100 height = 30 }
+				clipping = no
 
-			instantTextboxType = {
-				name = "construction_speed_value"
-				position = { x = 315 y = 44 }
-				textureFile = ""
-				font = "hoi_18mbs"
-				borderSize = { x = 0 y = 0 }
-				text = "99"
-				maxWidth = 70
-				maxHeight = 20
-				format = right
-			}
+				iconType = {
+					name = "construction_speed_icon"
+					position = { x = 264 y = 45 }
+					spriteType = "GFX_construction_speed_icon"
+				}
 
+				instantTextboxType = {
+					name = "construction_speed_value"
+					position = { x = -10 y = 44 }
+					textureFile = ""
+					font = "hoi_18mbs"
+					borderSize = { x = 0 y = 0 }
+					text = "99"
+					maxWidth = 70
+					maxHeight = 20
+					format = right
+				}
+
+				containerWindowType = {
+					name = "resource_strip_container"
+					position = { x=30 y=36 }
+					size = { width = 70 height = 30 }
+
+					gridBoxType = {
+						orientation = "CENTER_UP"
+						name = "resources_grid"
+						position = { x = 0 y = 4 }
+						size = { width = 100% height = 100% }
+						slotsize = { width = 70 height = 31 }
+						max_slots = { x = 7 y = 1 }
+						add_horizontal = no
+						format = "UPPER_LEFT"
+					}
+				}
+			}
 		}
 
 		instantTextboxType = {
@@ -315,6 +338,11 @@ guiTypes = {
 			name = "possible_constructions"
 			position = { x = 433 y = 40 }
 			size = { width = 267 height = 100%% }
+
+			positionType = {
+				name = "minimized_offset"
+				position = { x = 420 y = 0 }
+			}			####	?
 			
 			background = {
 				position = { x=0 y=0 }
@@ -361,13 +389,13 @@ guiTypes = {
 					name = "non_shared_item_grid"
 					position = { x = 28 y = 52 }
 					size = { width = 100% height = 100% }
-					slotsize = { width = 46 height = 44 }
+					slotsize = { width = 46 height = 44 }		####	height = 44
 					max_slots_horizontal = 4
 					format = "UPPER_LEFT"
 				}
 			}
-			
-			
+
+
 			containerWindowType = {
 				name = "possible_shared_constructions"
 				position = { x = 0 y = 50 }
@@ -402,7 +430,7 @@ guiTypes = {
 					name = "shared_item_grid"
 					position = { x = 28 y = 52 }
 					size = { width = 100% height = 100% }
-					slotsize = { width = 46 height = 44 }
+					slotsize = { width = 46 height = 44 }	####	 height = 44
 					max_slots_horizontal = 4
 					format = "UPPER_LEFT"
 				}
@@ -423,7 +451,7 @@ guiTypes = {
 
 				iconType = {
 					name = "province_constructions"
-					position = { x = 5 y = 9 }
+					position = { x = 5 y = 19 }		####	y = 9
 					quadTextureSprite = "GFX_province_constructions"
 				}
 				
@@ -442,7 +470,7 @@ guiTypes = {
 					name = "province_item_grid"
 					position = { x = 28 y = 52 }
 					size = { width = 100% height = 100% }
-					slotsize = { width = 46 height = 44 }
+					slotsize = { width = 46 height = 44 }		####	height = 44
 					max_slots_horizontal = 4
 					format = "UPPER_LEFT"
 				}
@@ -482,7 +510,7 @@ guiTypes = {
 					name = "facility_item_grid"
 					position = { x = 28 y = 52 }
 					size = { width = 100% height = 100% }
-					slotsize = { width = 46 height = 44 }
+					slotsize = { width = 46 height = 44 }		####	height = 44
 					max_slots_horizontal = 4
 					format = "UPPER_LEFT"
 				}
@@ -525,9 +553,9 @@ guiTypes = {
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_LEFT"
 		}
-		
+
 		iconType ={
-			name = "tutorial_glow"
+			name ="tutorial_glow"
 			spriteType = "GFX_tutorial_building_icon_glow"
 			position = { x= 0 y = 0 } # Set in code
 			Orientation = "UPPER_LEFT"
@@ -539,7 +567,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "start_construction_entry"
 		position = { x=0 y=4 }
-		size = { width = 45 height = 45 }
+		size = { width = 46 height = 62 }		####	width = 45 height = 45
 		clipping = no
 
 		buttonType = {
@@ -555,11 +583,11 @@ guiTypes = {
 			quadTextureSprite = "GFX_construction_glow_overlay"
 		}
 	}
-	
+
 	containerWindowType = {
 		name = "convert_ic_entry"
 		position = { x=0 y= 4 }
-		size = { width = 45 height = 45 }
+		size = { width = 46 height = 62 }		####	width = 45 height = 45
 		clipping = no
 		
 		buttonType = {

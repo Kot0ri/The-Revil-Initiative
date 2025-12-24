@@ -11,14 +11,59 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = PEZ_Zudah_development
+		id = PEZ_mirror_of_solomon
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 13
+		x = 10
 		y = 0
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = PEZ_develop_shipbuilding_capabilties
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = PEZ_mirror_of_solomon
+		prerequisite = { focus = PEZ_mirror_of_solomon }
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = PEZ_rennovate_the_interior
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = PEZ_develop_shipbuilding_capabilties
+		prerequisite = { focus = PEZ_develop_shipbuilding_capabilties }
+		completion_reward = {
+			}
+		}
+
+	focus = {
+		id = PEZ_Zudah_development
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = PEZ_mirror_of_solomon
+		prerequisite = { focus = PEZ_mirror_of_solomon }
 		completion_reward = {
 			}
 		}
@@ -28,7 +73,7 @@ focus_tree = {
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
 		x = 0
-		y = 2
+		y = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -38,12 +83,104 @@ focus_tree = {
 			prerequisite = { focus = PEZ_Zudah_development }
 		}
 
+	focus = {
+		id = PEZ_showcase_superior_engines
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_MS_Competition 
+		prerequisite = { focus = PEZ_MS_Competition  }
+	}
+
+		focus = {
+		id = PEZ_pezun_project
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+		}
+		mutually_exclusive = {
+			focus = PEZ_pkw_plan
+		}
+		completion_reward = {
+			}
+			relative_position_id = PEZ_improve_manafacturing_output
+			prerequisite = { focus = PEZ_improve_manafacturing_output focus = PEZ_ghost_fighter }
+		}
+
+		focus = {
+		id = PEZ_mobile_assault_unit
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = PEZ_compete_for_next-generation_space-use_ms
+		}
+	
+		completion_reward = {
+			}
+		relative_position_id = PEZ_pezun_project
+		prerequisite = { focus = PEZ_pezun_project }
+		}
+
+		focus = {
+		id = PEZ_a_new_generation_of_ms
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = PEZ_second_phase_of_mainstay_ms_project
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_pezun_project
+		prerequisite = { focus = PEZ_pezun_project }
+		}
+
+		focus = {
+		id = PEZ_further_improve_beam_weapons
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = PEZ_adopt_the_zaku
+		}
+	
+		completion_reward = {
+			}
+		relative_position_id = PEZ_pezun_project
+		prerequisite = { focus = PEZ_pezun_project }
+		}
+
 		focus = {
 		id = PEZ_pkw_plan
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = -2
-		y = 8
+		x = 1
+		y = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -51,11 +188,460 @@ focus_tree = {
 			ABQ ={
 				has_completed_focus = ABQ_pkw_plan
 			}
+			has_completed_focus = PEZ_adopt_armour_skirts
+		}
+		mutually_exclusive = {
+			focus = PEZ_pezun_project
 		}
 		completion_reward = {
 			}
-			relative_position_id = PEZ_Zudah_development
-			prerequisite = { focus = PEZ_Zudah_development }
+			relative_position_id = PEZ_improve_manafacturing_output
+			prerequisite = { focus = PEZ_improve_manafacturing_output }
 		}
 		
+
+		focus = {
+		id = PEZ_shadow_of_machine_politics
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = PEZ_zimmand_reigns_supreme
+			}
+		}
+		completion_reward = {
+			}
+			relative_position_id = PEZ_MS_Competition
+			prerequisite = { focus = PEZ_MS_Competition }
+		}
+
+		focus = {
+		id = PEZ_adopt_the_zaku
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_shadow_of_machine_politics
+		prerequisite = { focus = PEZ_shadow_of_machine_politics }
+		}
+
+		focus = {
+		id = PEZ_increase_production_capacity
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_adopt_the_zaku
+		prerequisite = { focus = PEZ_adopt_the_zaku }
+		}
+
+		focus = {
+		id = PEZ_improve_manafacturing_output
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_increase_production_capacity
+		prerequisite = { focus = PEZ_increase_production_capacity }
+		}
+
+		
+		focus = {
+		id = PEZ_begin_work_on_heavy_MS
+		icon = GFX_goal_dom_development
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_increase_production_capacity
+		prerequisite = { focus = PEZ_increase_production_capacity }
+		}
+
+		focus = {
+		id = PEZ_adopt_armour_skirts
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_begin_work_on_heavy_MS
+		prerequisite = { focus = PEZ_begin_work_on_heavy_MS }
+		}
+
+		focus = {
+		id = PEZ_compete_for_next-generation_space-use_ms
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_adopt_armour_skirts
+		prerequisite = { focus = PEZ_adopt_armour_skirts }
+		}
+
+		focus = {
+		id = PEZ_priortize_production
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = PEZ_priortize_beam_equipment
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_begin_work_on_heavy_MS
+		prerequisite = { focus = PEZ_begin_work_on_heavy_MS }
+		}
+
+		focus = {
+		id = PEZ_improve_deployment_speeds
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+	
+		completion_reward = {
+			}
+		relative_position_id = PEZ_priortize_production
+		prerequisite = { focus = PEZ_priortize_production }
+		}
+
+		focus = {
+		id = PEZ_priortize_beam_equipment
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_tech = mega_particle2
+		}
+		mutually_exclusive = {
+			focus = PEZ_priortize_production
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_begin_work_on_heavy_MS
+		prerequisite = { focus = PEZ_begin_work_on_heavy_MS }
+		}
+
+		focus = {
+		id = PEZ_improve_ace_capabilites
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+	
+		completion_reward = {
+			}
+		relative_position_id = PEZ_priortize_beam_equipment
+		prerequisite = { focus = PEZ_priortize_beam_equipment }
+		}
+
+		focus = {
+		id = PEZ_address_major_design_flaws
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_continue_zudah_development
+		prerequisite = { focus = PEZ_continue_zudah_development }
+		}
+
+		focus = {
+		id = PEZ_bring_in_industrialists
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_address_major_design_flaws
+		prerequisite = { focus = PEZ_address_major_design_flaws focus = PEZ_zimmand_requests_more_authority }
+		}
+
+		focus = {
+		id = PEZ_begin_gyan_development
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_bring_in_industrialists
+		prerequisite = { focus = PEZ_bring_in_industrialists }
+		}
+
+		focus = {
+		id = PEZ_second_phase_of_mainstay_ms_project
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_begin_gyan_development
+		prerequisite = { focus = PEZ_begin_gyan_development }
+		}
+
+		focus = {
+		id = PEZ_reduce_gyan_production_costs
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_second_phase_of_mainstay_ms_project
+		prerequisite = { focus = PEZ_second_phase_of_mainstay_ms_project }
+		}
+
+		focus = {
+		id = PEZ_collaborate_with_zeon_propaganda
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_increase_research_capacity
+		prerequisite = { focus = PEZ_increase_research_capacity focus = PEZ_address_major_design_flaws }
+		}
+
+		focus = {
+		id = PEZ_ghost_fighter
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_collaborate_with_zeon_propaganda
+		prerequisite = { focus = PEZ_collaborate_with_zeon_propaganda }
+		}
+
+		focus = {
+		id = PEZ_increase_research_capacity
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_shadow_of_machine_politics
+		prerequisite = { focus = PEZ_shadow_of_machine_politics focus = PEZ_continue_zudah_development }
+		}
+
+		focus = {
+		id = PEZ_begin_study_on_beam_weapons
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_increase_research_capacity
+		prerequisite = { focus = PEZ_increase_research_capacity }
+		}
+
+		focus = {
+		id = PEZ_zimmand_reigns_supreme
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			ZEO = {
+				has_completed_focus = ZEO_choose_a_baoa_qu_as_testing_grounds
+			}
+		}
+		available = {
+			NOT = {
+				has_completed_focus = PEZ_shadow_of_machine_politics
+			}
+		}
+		completion_reward = {
+			}
+			relative_position_id = PEZ_MS_Competition
+			prerequisite = { focus = PEZ_MS_Competition }
+		}
+
+		focus = {
+		id = PEZ_continue_zudah_development
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_zimmand_reigns_supreme
+		prerequisite = { focus = PEZ_zimmand_reigns_supreme }
+		}
+
+		focus = {
+		id = PEZ_zimmand_requests_more_authority
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		bypass = {
+			
+		}
+		available = {
+			NOT = {
+				ZEO = {
+					has_completed_focus = ZEO_choose_a_baoa_qu_as_testing_grounds
+				}	
+			}
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = corporatism
+			}
+			}
+			relative_position_id = PEZ_zimmand_reigns_supreme
+			prerequisite = { focus = PEZ_zimmand_reigns_supreme }
+		}
 }

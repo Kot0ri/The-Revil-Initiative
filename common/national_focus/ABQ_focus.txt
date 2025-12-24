@@ -1803,7 +1803,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -1837,6 +1837,27 @@ focus = {
 }
 
 focus = {
+	id = ABQ_begin_unmanned_suit_development
+	icon = GFX_goal_MS_special_forces
+	search_filters = { FOCUS_FILTER_MANPOWER }
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		is_puppet = no
+	}
+	completion_reward = {
+
+
+	}
+	relative_position_id = ABQ_begin_newtype_ms_minaturization
+	prerequisite = { focus = ABQ_begin_newtype_ms_minaturization focus = ABQ_ms_developed_for_the_decisive_battle }
+}
+
+focus = {
 	id = ABQ_cyber_newtype_program
 	icon = GFX_goal_MS_special_forces
 	search_filters = { FOCUS_FILTER_MANPOWER }
@@ -1864,7 +1885,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_MANPOWER }
 	cost = 5
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}

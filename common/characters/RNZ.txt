@@ -1,12 +1,10 @@
 characters={
+	#leaders
 RNZ_casval={
 	name="Casval Rem Deikun"
 	portraits={
 		civilian={
 			large="gfx/leaders/RNZ/CZ_Casval2.dds"
-		}
-		army={
-			large= "gfx/leaders/RNZ/CZ_Casval2.dds"
 		}
 			
 	}
@@ -15,15 +13,6 @@ RNZ_casval={
 		traits={}
 		expire="1000.1.1.1"
 	}
-	field_marshal = {
-	 traits={ akai_suisei newtype_1 war_hero anti-zabi_party trickster naval_invader pilot }
-		skill=6
-		attack_skill=8
-		defense_skill=5
-		planning_skill=5
-		logistics_skill=5
-	}
-
 }
 
 RNZ_casval_cca_1={
@@ -32,25 +21,14 @@ RNZ_casval_cca_1={
 		civilian={
 			large="gfx/leaders/RNZ/RNZ_CCAChar1.dds"
 		}
-		army={
-			large= "gfx/leaders/RNZ/RNZ_CCAChar1.dds"
-		}
 	}
 	country_leader={
 		ideology= zeonism
 		traits={}
 		expire="1000.1.1.1"
 	}
-	field_marshal = {
-	 traits={ akai_suisei newtype_1 war_hero anti-zabi_party trickster naval_invader pilot }
-		skill=6
-		attack_skill=8
-		defense_skill=5
-		planning_skill=5
-		logistics_skill=5
-	}
-
 }
+
 
 RNZ_casval_srw={
 	name="Casval Rem Deikun"
@@ -58,27 +36,61 @@ RNZ_casval_srw={
 		civilian={
 			large="gfx/leaders/RNZ/RNZ_CCACHar3.dds"
 		}
-		army={
-			large= "gfx/leaders/RNZ/RNZ_CCACHar3.dds"
-		}
-			army={
-			small="GFX_idea_char_aznable"
-		}
 	}
 	country_leader={
 		ideology= progressivism
 		traits={}
 		expire="1000.1.1.1"
 	}
+}	
+
+RNZ_kaises={
+	name="Kaises M. Buyer"
+	portraits={
+		civilian={
+			large="gfx/leaders/RNZ/RNZ_KaisesBuyer.dds"
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		traits = { minister_of_the_interior }
+	}
+}
+
+RNZ_horst={
+	name="Horst Harness"
+	portraits={
+		civilian={
+			large="gfx/leaders/RNZ/RNZ_HornstHarness.dds"
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		traits = { national_marshal }
+	}
+}
+
+RNZ_char_dummy={
+	name="Char Aznable"
+	portraits={
+		civilian={
+			large="gfx/leaders/RNZ/RNZ_CCACHar4.dds"
+		}
+		army={
+			large= "gfx/leaders/RNZ/RNZ_CCACHar4.dds"
+		}
+			army={
+			small="GFX_idea_char_aznable"
+		}
+	}
 	field_marshal = {
 	 traits={ akai_suisei newtype_1 war_hero anti-zabi_party trickster naval_invader pilot }
 		skill=6
 		attack_skill=8
-		defense_skill=5
+		defense_skill=6
 		planning_skill=5
 		logistics_skill=5
 	}
-
 }
 
 ## NZ Field Marshals
@@ -87,7 +99,7 @@ RNZ_haman={
 	name="Haman Karn"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
+			large= "gfx/leaders/RNZ/RNZ_Haman.dds"
 		}
 			army={
 			small="GFX_idea_char_aznable"
@@ -108,7 +120,7 @@ RNZ_garma={
 	name="Garma Zabi"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
+			large= "gfx/leaders/RNZ/RNZ_Garma.dds"
 		}
 			army={
 			small="GFX_idea_char_aznable"
@@ -134,7 +146,7 @@ RNZ_gyunei={
 	name="Gyunei Guss"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
+			large= "gfx/leaders/RNZ/RNZ_Gyunei.dds"
 		}
 			army={
 			small="GFX_idea_char_aznable"
@@ -155,7 +167,7 @@ RNZ_angelo={
 	name="Angelo Sauper"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
+			large= "gfx/leaders/RNZ/RNZ_Angelo.dds"
 		}
 			army={
 			small="GFX_idea_char_aznable"
@@ -176,10 +188,7 @@ RNZ_marida={
 	name="Marida Cruz"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
-		}
-			army={
-			small="GFX_idea_char_aznable"
+			large= "gfx/leaders/RNZ/RNZ_MaridaCruz.dds"
 		}
 	}
 		corps_commander= {
@@ -197,11 +206,8 @@ RNZ_rezin={
 	name="Rezin Schneider"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
-		}
-			army={
-			small="GFX_idea_char_aznable"
-		}
+			large= "gfx/leaders/RNZ/RNZ_Rezin.dds"
+		}	
 	}
 		corps_commander= {
 	 traits={ pilot }
@@ -218,7 +224,7 @@ RNZ_sergi={
 	name="Sergi Helfer"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
+			large= "gfx/leaders/RNZ/RNZ_SergiHelfer.dds"
 		}
 			army={
 			small="GFX_idea_char_aznable"
@@ -239,7 +245,7 @@ RNZ_bato={
 	name="Bato Paserinos"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
+			large= "gfx/leaders/RNZ/RNZ_Bate_Paserinos.dds"
 		}
 			army={
 			small="GFX_idea_char_aznable"
@@ -323,7 +329,7 @@ RNZ_chole={
 	name="Chole Croce"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
+			large= "gfx/leaders/RNZ/RNZ_CholoeCroce.dds"
 		}
 			army={
 			small="GFX_idea_char_aznable"
@@ -344,7 +350,7 @@ RNZ_vincent={
 	name="Vincent Gleissner"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
+			large= "gfx/leaders/RNZ/RNZ_VincentGleissner.dds"
 		}
 			army={
 			small="GFX_idea_char_aznable"
@@ -491,7 +497,7 @@ RNZ_zimmerman={
 	name="Suberoa Zimmerman"
 	portraits={
 		army={
-			large= "gfx/leaders/RNZ/Casval_Rem_Deikun.dds"
+			large= "gfx/leaders/RNZ/RNZ_Zinnerman.dds"
 		}
 			army={
 			small="GFX_idea_char_aznable"

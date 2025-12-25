@@ -2202,6 +2202,44 @@ focus = {
 }
 
 focus = {
+	id = ABQ_expand_MS_factories
+	icon = GFX_focus_SWI_issue_war_bonds
+	search_filters = { FOCUS_FILTER_INDUSTRY}
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ABQ_build_up_propaganda_network
+	prerequisite = { focus = ABQ_civilian_use_labs }
+	prerequisite = { focus = ABQ_reduce_need_for_supply_shipments }
+}
+
+focus = {
+	id = ABQ_build_flanagan_institute
+	icon = GFX_focus_SWI_issue_war_bonds
+	search_filters = { FOCUS_FILTER_INDUSTRY}
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ABQ_begin_looking_into_newtype_capabilities
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = ABQ_expand_MS_factories
+	prerequisite = { focus = ABQ_expand_MS_factories }
+}
+
+focus = {
 	id = ABQ_expansion_of_civil_facilities
 	icon = GFX_goal_generic_construct_civ_factory
 	search_filters = { FOCUS_FILTER_INDUSTRY }

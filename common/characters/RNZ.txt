@@ -70,6 +70,39 @@ RNZ_horst={
 	}
 }
 
+RNZ_nanai={
+	name="Nanai Miquel"
+	portraits={
+		civilian={
+			large="gfx/leaders/RNZ/RNZ_Nanai.dds"
+		}
+		army={
+			small=GFX_idea_ramba_ral_pa
+		}
+	}
+	advisor={
+		slot = theorist
+		ledger = army
+		cost = 100
+		idea_token = nanai
+		allowed = {
+			original_tag = RNZ
+		}
+		traits = {
+			cyber-newtype_researcher
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
+
+
+
 RNZ_char_dummy={
 	name="Char Aznable"
 	portraits={
@@ -543,31 +576,5 @@ RNZ_nakamura={
 		}
 	}
 }
-RNZ_nanai={
-	name="Nanai Miquel"
-	portraits={
-		army={
-			small=GFX_idea_ramba_ral_pa
-		}
-	}
-	advisor={
-		slot = theorist
-		ledger = army
-		cost = 100
-		idea_token = nanai
-		allowed = {
-			original_tag = RNZ
-		}
-		traits = {
-			cyber-newtype_researcher
-		}
-		ai_will_do = {
-			factor = 2
-			modifier = {
-				has_war = no
-				factor = 0
-			}
-		}
-	}
-}
+
 }

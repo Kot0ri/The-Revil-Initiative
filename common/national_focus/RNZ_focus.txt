@@ -1364,4 +1364,120 @@ focus = {
 	relative_position_id = RNZ_attempt_to_crush_federation_forces
 	prerequisite = { focus = RNZ_attempt_to_crush_federation_forces }
 }
+
+focus = {
+	id = RNZ_republic_of_space
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 14
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = democratic
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.25
+		}
+	}
+}
+
+focus = {
+	id = RNZ_deikunists_win
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = RNZ_republic_of_space
+	prerequisite = { focus = RNZ_republic_of_space }
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+		retire_character = RNZ_casval_srw
+	add_country_leader_role = {
+ 	   character = RNZ_kaises
+  	  	promote_leader = yes
+    	country_leader = {
+        ideology = represenitive_democracy
+        expire = "1965.1.1.1"
+        traits = {  }
+    }
+}
+	}
+}
+
+focus = {
+	id = RNZ_hardliner_victory
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = RNZ_republic_of_space
+	prerequisite = { focus = RNZ_republic_of_space }
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+		retire_character = RNZ_casval_srw
+	add_country_leader_role = {
+ 	 	  character = RNZ_horst
+  	  	promote_leader = yes
+    	country_leader = {
+        ideology = republicanism
+        expire = "1965.1.1.1"
+        traits = {  }
+    }
+}
+	}
+}
+
+focus = {
+	id = RNZ_beyond_the_time
+	icon = GFX_goal_harmony_with_deikun
+	cost = 2
+	x = 18
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+		set_politics = {
+			ruling_party = military_government
+		}
+		add_popularity = {
+			ideology = military_government
+			popularity = 0.25
+		}
+		retire_character = RNZ_casval_cca_1
+		recruit_character = RNZ_casval
+		retire_character = RNZ_casval_srw
+		retire_character = RNZ_char_dummy
+		add_country_leader_role = {
+ 	 	character = RNZ_nanai
+  	  	promote_leader = yes
+    	country_leader = {
+        ideology = military_administration
+        expire = "1965.1.1.1"
+        traits = {  }
+    }
+}
+	}
+}
+
 }

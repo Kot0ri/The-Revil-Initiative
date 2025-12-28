@@ -1382,6 +1382,22 @@ focus = {
 }
 
 focus = {
+	id = AXS_intergrate_naval_and_newtype_technology
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_improve_particle_technology
+	prerequisite = {focus = AXS_improve_particle_technology}
+}
+
+focus = {
 	id = AXS_gundarium_gamma_implementation
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -1395,6 +1411,7 @@ focus = {
 	}
 	relative_position_id = AXS_next_generation_ms
 	prerequisite = {focus = AXS_next_generation_ms}
+	prerequisite = {focus = AXS_develop_the_neue_ziel}
 }
 
 focus = {

@@ -1123,6 +1123,24 @@ focus = {
 	}
 }
 
+focus = {
+	id = efsf_reinforce_elite_forces
+	icon = GFX_goal_general_meeting
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reorganize_ecoas
+	}
+	relative_position_id = efsf_reorganize_ecoas
+	completion_reward = {
+	
+	}
+}
+
 
 focus = {
 	id = efsf_Luna_2_fortification

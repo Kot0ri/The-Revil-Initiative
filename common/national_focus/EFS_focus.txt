@@ -1067,10 +1067,40 @@ focus = {
 	id = efsf_zanny_project
 	icon = GFX_goal_jablo_factory
 	cost = 10
-	x = 1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = efsf_further_improve_guncannon_prototypes
+	}
+	prerequisite = {
+		focus = efsf_new_production_facilities
+	}
+	prerequisite = {
+	focus =  efsf_prepare_for_war_with_zeon
+	}
+	relative_position_id = efsf_new_production_facilities
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = efsf_further_improve_guncannon_prototypes
+	icon = GFX_goal_jablo_factory
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = efsf_operation_v
+	}
+	mutually_exclusive = {
+		focus = efsf_zanny_project
 	}
 	prerequisite = {
 		focus = efsf_new_production_facilities

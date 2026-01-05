@@ -12,10 +12,10 @@ ideas = {
 
 			removal_cost = -1
 
-			picture ="GFX_idea_astaroth_idea"
+			picture = GFX_idea_astaroth_idea
 
 			modifier = {
-				monthly_population = 500
+				monthly_population = 0.05
 				local_building_slots_factor = 0.02
 			}
 		}

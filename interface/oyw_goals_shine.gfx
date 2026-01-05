@@ -5038,11 +5038,11 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_prototype_quebeley_shine"
-		texturefile = "gfx/interface/goals/focus_prototype_quebeley.dds"
+		name = "GFX_goal_prototype_quebeley_shine"
+		texturefile = "gfx/interface/goals/goal_prototype_quebeley.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_prototype_quebeley.dds"
+			animationmaskfile = "gfx/interface/goals/goal_prototype_quebeley.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -5055,7 +5055,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_prototype_quebeley.dds"
+			animationmaskfile = "gfx/interface/goals/goal_prototype_quebeley.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -5069,11 +5069,11 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_focus_hamans_scorn_shine"
-		texturefile = "gfx/interface/goals/focus_hamans_scorn.dds"
+		name = "GFX_goal_hamans_scorn_shine"
+		texturefile = "gfx/interface/goals/goal_hamans_scorn.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/focus_hamans_scorn.dds"
+			animationmaskfile = "gfx/interface/goals/goal_hamans_scorn.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -5163,10 +5163,10 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_goal_psycho_frame_development_shine"
-		texturefile = "gfx/interface/goals/goal_psycho_frame_development.dds"
+		texturefile = "gfx/interface/goals/goal_psychoframe_development.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_psycho_frame_development.dds"
+			animationmaskfile = "gfx/interface/goals/goal_psychoframe_development.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -5179,7 +5179,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_psycho_frame_development.dds"
+			animationmaskfile = "gfx/interface/goals/goal_psychoframe_development.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

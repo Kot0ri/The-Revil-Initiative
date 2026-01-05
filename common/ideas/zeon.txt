@@ -1,6 +1,26 @@
 ideas = {
 	country = {
 
+		ZEO_Astaroth = {
+			allowed = {
+				original_tag = ZEO
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture ="GFX_idea_astaroth_idea"
+
+			modifier = {
+				monthly_population = 500
+				local_building_slots_factor = 0.02
+			}
+		}
+
+
 		ZEO_aftermatch_of_ral_purge = {
 			allowed = {
 				original_tag = ZEO

@@ -264,6 +264,62 @@ focus_tree = {
 						}
 				}
 
+focus = {
+		id = SSA_crackdown_on_religion
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		mutually_exclusive = {
+			focus = SSA_side_with_religious_communitees
+		}
+		relative_position_id = SSA_resolve_religious_tensions
+		prerequisite = {	focus = SSA_resolve_religious_tensions	}
+		completion_reward = {
+				}
+		}
+
+		focus = {
+		id = SSA_bring_in_godkiller
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+		}
+		available = {
+			EFG = {
+				has_completed_focus = EFG_Godkiller
+			}
+		}
+		relative_position_id = SSA_crackdown_on_religion
+		prerequisite = {	focus = SSA_crackdown_on_religion	}
+		completion_reward = {
+				}
+		}
+
+focus = {
+			id = SSA_side_with_religious_communitees
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 1
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			mutually_exclusive = {
+			focus = SSA_crackdown_on_religion
+		}
+			relative_position_id = SSA_resolve_religious_tensions
+			prerequisite = {	focus = SSA_resolve_religious_tensions	}
+			completion_reward = {
+						}
+				}
+
 	focus = {
 			id = SSA_unity_together
 			icon = GFX_goal_efsf_mobile_headquarters
@@ -273,11 +329,130 @@ focus_tree = {
 			ai_will_do = {	
 			factor = 1
 						}
-			relative_position_id = SSA_resolve_religious_tensions
-			prerequisite = {	focus = SSA_resolve_religious_tensions	}
+			mutually_exclusive = {
+				focus = SSA_restore_buddhist_resolve
+			}
+			relative_position_id = SSA_side_with_religious_communitees
+			prerequisite = {	focus = SSA_side_with_religious_communitees	}
 			completion_reward = {
 						}
 				}
+
+focus = {
+	id = SSA_restoration_of_historic_sites
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {	
+	factor = 1
+			}
+			
+	relative_position_id = SSA_unity_together
+	prerequisite = {	focus = SSA_unity_together	}
+	completion_reward = {
+		}
+	}
+
+focus = {
+		id = SSA_rally_all_faiths
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {	
+		factor = 1
+				}
+			
+		relative_position_id = SSA_unity_together
+		prerequisite = {	focus = SSA_unity_together	}
+		completion_reward = {
+					}
+		}
+
+focus = {
+		id = SSA_defend_south_asian_traditions
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {	
+		factor = 1
+				}
+			
+		relative_position_id = SSA_rally_all_faiths
+		prerequisite = {	focus = SSA_rally_all_faiths	}
+		completion_reward = {
+					}
+		}
+
+focus = {
+			id = SSA_restore_buddhist_resolve
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 2
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			mutually_exclusive = {
+				focus = SSA_unity_together	
+			}
+			relative_position_id = SSA_side_with_religious_communitees
+			prerequisite = {	focus = SSA_side_with_religious_communitees	}
+			completion_reward = {
+						}
+				}
+
+	focus = {
+			id = SSA_encourage_zen_practice
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 1
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			
+			relative_position_id = SSA_restore_buddhist_resolve
+			prerequisite = {	focus = SSA_restore_buddhist_resolve	}
+			completion_reward = {
+						}
+				}
+
+		focus = {
+			id = SSA_expand_buddhist_teaching_in_hindustan
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = -1
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			
+			relative_position_id = SSA_restore_buddhist_resolve
+			prerequisite = {	focus = SSA_restore_buddhist_resolve	}
+			completion_reward = {
+						}
+			}
+
+	focus = {
+			id = SSA_acknowledge_newtype_theory
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 1
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			
+			relative_position_id = SSA_expand_buddhist_teaching_in_hindustan
+			prerequisite = {	focus = SSA_expand_buddhist_teaching_in_hindustan	}
+			prerequisite = {	focus = SSA_encourage_zen_practice	}
+			completion_reward = {
+						}
+			}
+	
 	focus = {
 			id = SSA_bangkok_proposal
 			icon = GFX_goal_efsf_mobile_headquarters
@@ -297,7 +472,7 @@ focus_tree = {
 			id = SSA_manilia_conference
 			icon = GFX_goal_efsf_mobile_headquarters
 			cost = 5
-			x = 0
+			x = -1
 			y = 1
 			ai_will_do = {	
 			factor = 1
@@ -469,6 +644,22 @@ focus = {
 					}
 		relative_position_id = SSA_singapore_convention
 		prerequisite = {	focus = SSA_singapore_convention	}
+		completion_reward = {
+				}
+		}
+
+	focus = {
+		id = SSA_handle_internal_security
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {	
+		factor = 1
+					}
+		relative_position_id = SSA_singapore_convention
+		prerequisite = {	focus = SSA_singapore_convention	}
+		prerequisite = {	focus = SSA_bring_in_godkiller	}
 		completion_reward = {
 				}
 		}

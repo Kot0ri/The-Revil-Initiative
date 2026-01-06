@@ -936,6 +936,26 @@ AXS_luce_krangel={
 	}
 }
 
+AXS_zbyszek={
+	name="Zbyszek"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/zbyszek.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=2
+		attack_skill=3
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
 AXS_fabian_frischknecht={
 	name="Fabian Frischknecht"
 	portraits={
@@ -956,6 +976,143 @@ AXS_fabian_frischknecht={
 	}
 }
 
+AXS_pampa_lida={
+	name="Pampa Lida"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Pampa_Lida.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_wyne_dee={
+	name="Wyne Dee"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Wyne_Dee.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_beanne={
+	name="Beanne"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Beanne.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_nell_marsen={
+	name="Nell Marsen"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Nell_Marsen.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_yular_jamico={
+	name="Yular Jamico"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Yular_Jamico.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_dale={
+	name="Dale"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Dale.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+
+AXS_danny={
+	name="Danny"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Danny.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+
+AXS_deune={
+	name="Deune"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Deune.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
 
 #General
 AXS_gottn_goh={
@@ -965,7 +1122,7 @@ AXS_gottn_goh={
 			small="GFX_idea_anavel_gato"
 		}
 		army={
-			large= "gfx/leaders/AXS/gottem.dds"
+			large= "gfx/leaders/AXS/Gottn_Goh.dds"
 		}
 	}
 	corps_commander={
@@ -974,6 +1131,77 @@ AXS_gottn_goh={
 		attack_skill=1
 		defense_skill=1
 		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+AXS_ferdinand={
+	name="Ferdinand"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/ferdinand.dds"
+		}
+	}
+	corps_commander={
+		traits={}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_bruno={
+	name="Bruno"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/bruno.dds"
+		}
+	}
+	corps_commander={
+		traits={}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_jorg={
+	name="Jorg Zeiss"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/jorg_zeiss.dds"
+		}
+	}
+	corps_commander={
+		traits={}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_signe={
+	name="Signe"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/signe.dds"
+		}
+	}
+	corps_commander={
+		traits={}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
 		logistics_skill=1
 	}
 }
@@ -1304,9 +1532,10 @@ AXS_fernandez={
 		army={
 			small=GFX_idea_ramba_ral_pa
 		}
+		army={
+			large= "gfx/leaders/AXS/Hugo_Fernandez.dds"
+		}
 	}
-
-
 	advisor={
 		slot = high_command
 		ledger = army
@@ -1326,6 +1555,13 @@ AXS_fernandez={
 			}
 		}
 	}
+	field_marshal = {
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
 }	
 
 AXS_agawa={
@@ -1334,9 +1570,10 @@ AXS_agawa={
 		army={
 			small=GFX_idea_ramba_ral_pa
 		}
+		army={
+			large= "gfx/leaders/AXS/Istuki_Agawa.dds"
+		}
 	}
-
-
 	advisor={
 		slot = high_command
 		ledger = army
@@ -1356,6 +1593,13 @@ AXS_agawa={
 			}
 		}
 	}
+	field_marshal = {
+		skill = 1
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 1
+		logistics_skill = 1
+	}
 }	
 
 AXS_williams={
@@ -1365,8 +1609,6 @@ AXS_williams={
 			small=GFX_idea_ramba_ral_pa
 		}
 	}
-
-
 	advisor={
 		slot = high_command
 		ledger = army

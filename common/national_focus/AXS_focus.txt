@@ -1212,7 +1212,6 @@ focus = {
 	}
 	relative_position_id = AXS_axis_ms_project
 	prerequisite = {focus = AXS_axis_ms_project}
-	prerequisite = {focus = AXS_prepare_for_another_war_of_independence}
 }
 
 focus = {
@@ -1584,6 +1583,24 @@ focus = {
 	prerequisite = {focus = AXS_gihren_loyalists}
 }
 
+
+focus = {
+	id = AXS_prioritize_mobile_armours
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_gihren_loyalists
+	prerequisite = {focus = AXS_gihren_loyalists}
+	
+}
+
 focus = {
 	id = AXS_prepare_for_another_war_of_independence
 	icon = GFX_goal_general_meeting
@@ -1627,7 +1644,9 @@ ai_will_do = {
 	factor = 1
 }
 available = {
-	date > 83.1.1
+	DEL = {
+		has_war_with_major = yes
+	}
 }
 completion_reward = {
 
@@ -1821,6 +1840,10 @@ focus = {
 	available = {
 		date > 82.6.1
 	}
+	bypass = {
+		date > 83.7.1
+	}
+	enable_automatic_bypass = yes
 	completion_reward = {
 		set_politics = {
 			ruling_party = oligarchy
@@ -1854,7 +1877,7 @@ focus = {
 		has_completed_focus = AXS_gihrens_personnal_treasury
 	}
 	completion_reward = {
-	
+	#auto completes a week after Mahraja dies, event fires to choose side
 	}
 	relative_position_id = AXS_death_of_maharaja_karn
 	prerequisite = {focus = AXS_death_of_maharaja_karn }

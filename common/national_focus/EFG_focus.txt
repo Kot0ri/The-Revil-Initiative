@@ -1558,6 +1558,7 @@ focus = {
 		}
 	}
 
+
 	focus = {
 		id = EFG_gambit_of_tyrants
 		icon = GFX_goal_zeon_must_burn
@@ -2647,6 +2648,46 @@ focus = {
 		relative_position_id = EFG_hardliner_victory
 		prerequisite = {
 			focus = EFG_hardliner_victory focus = EFG_right_coalition
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_focus_on_agriculture
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		available = {
+		}
+		relative_position_id = EFG_earth_defence_procedures
+		prerequisite = {
+			focus = EFG_earth_defence_procedures
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+		focus = {
+		id = EFG_new_industry
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		available = {
+		}
+		relative_position_id = EFG_earth_defence_procedures
+		prerequisite = {
+			focus = EFG_earth_defence_procedures
 		}
 		ai_will_do = {
 			factor = 1

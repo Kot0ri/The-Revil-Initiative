@@ -757,7 +757,7 @@ focus_tree = {
 		id = efsf_queen_of_battle
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = -5
+		x = -6
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -776,7 +776,7 @@ focus_tree = {
 		id = efsf_improve_ground_vehicles
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = -3
+		x = -4
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -855,7 +855,7 @@ focus_tree = {
 		id = efsf_space_modernization_program
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = 3
+		x = 4
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -895,7 +895,7 @@ focus = {
 		id = efsf_colonial_officer_recuritment_plan
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = 7
+		x = 8
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -920,7 +920,7 @@ focus = {
 		id = efsf_expand_officer_corps.
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = 1
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -938,6 +938,48 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = efsf_special_economic_zone
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		prerequisite = {
+			focus = efsf_move_command_hq_to_jaburo
+		}
+
+		relative_position_id = efsf_move_command_hq_to_jaburo
+		completion_reward = {
+			326 =	{
+			if = {
+					limit = { is_controlled_by = ROOT }
+	
+					add_building_construction = {
+						type =  arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type =  industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+		EFG = { add_offsite_building = {
+			type = industrial_complex
+			level = 4
+		} }
+		}
+	}
+
+	
 	focus = {
 		id = efsf_prepare_for_war_with_zeon
 		icon = GFX_goal_general_meeting
@@ -983,7 +1025,7 @@ focus = {
 		id = efsf_continue_jaburo_build_up
 		icon = GFX_goal_general_meeting
 		cost = 10
-		x = -1
+		x = -2
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -1091,7 +1133,7 @@ focus = {
 	id = efsf_further_improve_guncannon_prototypes
 	icon = GFX_goal_jablo_factory
 	cost = 10
-	x = 2
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1108,7 +1150,7 @@ focus = {
 	prerequisite = {
 	focus =  efsf_prepare_for_war_with_zeon
 	}
-	relative_position_id = efsf_new_production_facilities
+	relative_position_id = efsf_prepare_for_war_with_zeon
 	completion_reward = {
 		
 	}
@@ -1118,7 +1160,7 @@ focus = {
 	id = efsf_improve_atmospherhic_combat_systems
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = -9
+	x = -10
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1139,7 +1181,7 @@ focus = {
 	id = efsf_reorganize_ecoas
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = -7
+	x = -8
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1176,7 +1218,7 @@ focus = {
 	id = efsf_Luna_2_fortification
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = 9
+	x = 10
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1221,7 +1263,7 @@ focus = {
 	id = efsf_set_up_research_labs_in_Side_7
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = 5
+	x = 6
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1620,7 +1662,7 @@ focus = {
 }
 
 focus = {
-	id = efsf_work_with_anaheim
+	id = efsf_military-industrial_complex
 	icon = GFX_goal_tyrant_of_moon
 	cost = 10
 	x = 3
@@ -1648,10 +1690,10 @@ focus = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = efsf_work_with_anaheim
+		focus = efsf_military-industrial_complex
 	}
 
-	relative_position_id = efsf_work_with_anaheim
+	relative_position_id = efsf_military-industrial_complex
 	completion_reward = {
 	
 	}

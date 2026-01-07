@@ -1558,12 +1558,30 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = EFG_high_tech_leader
+		icon = GFX_goal_zeon_must_burn
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		prerequisite = { focus = EFG_anaheim_leads_the_way  }
+		relative_position_id = EFG_anaheim_leads_the_way
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
 
 	focus = {
 		id = EFG_gambit_of_tyrants
 		icon = GFX_goal_zeon_must_burn
 		cost = 10
-		x = 1
+		x = 2
 		y = 1
 		available = {
 			has_completed_focus = EFG_isolate_Zeon
@@ -2595,7 +2613,7 @@ focus = {
 		id = EFG_increase_corporate_control
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 1
+		x = 0
 		y = 2
 		available = {
 		}
@@ -2618,7 +2636,7 @@ focus = {
 		id = EFG_military_takeover
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 1
+		x = 2
 		y = 2
 		available = {
 		}
@@ -2685,9 +2703,9 @@ focus = {
 		y = 1
 		available = {
 		}
-		relative_position_id = EFG_earth_defence_procedures
+		relative_position_id = EFG_focus_on_agriculture
 		prerequisite = {
-			focus = EFG_earth_defence_procedures
+			focus = EFG_focus_on_agriculture
 		}
 		ai_will_do = {
 			factor = 1

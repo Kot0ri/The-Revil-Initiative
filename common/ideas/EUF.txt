@@ -194,6 +194,24 @@ ideas = {
 			}
 		}
 
+		research_prioritized = {
+			
+			allowed = {
+				original_tag = EUF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+				scientist_research_bonus_factor = 0.05
+			}
+		}
+
 		devotion_to_science = {
 			
 			allowed = {

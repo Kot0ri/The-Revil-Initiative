@@ -5442,10 +5442,10 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_goal_memoirs_of_2020_accords_shine"
-		texturefile = "gfx/interface/goals/EUF_memoirs_of_2020_accords_school.dds"
+		texturefile = "gfx/interface/goals/EUF_memoirs_of_2020_accords.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/EUF_memoirs_of_2020_accords_school.dds"
+			animationmaskfile = "gfx/interface/goals/EUF_memoirs_of_2020_accords.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -5458,7 +5458,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/EUF_memoirs_of_2020_accords_school.dds"
+			animationmaskfile = "gfx/interface/goals/EUF_memoirs_of_2020_accords.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -5473,10 +5473,10 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_goal_legacy_of_1993_war_shine"
-		texturefile = "gfx/interface/goals/EUF_legacy_of_1993_war_school.dds"
+		texturefile = "gfx/interface/goals/EUF_legacy_of_1993_war.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/EUF_legacy_of_1993_war_school.dds"
+			animationmaskfile = "gfx/interface/goals/EUF_legacy_of_1993_war.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -5489,7 +5489,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/EUF_legacy_of_1993_war_school.dds"
+			animationmaskfile = "gfx/interface/goals/EUF_legacy_of_1993_war.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

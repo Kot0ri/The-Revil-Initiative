@@ -193,7 +193,7 @@ focus = {
 	id = EUF_policy_towards_the_eff
 	icon = GFX_goal_policy_towards_the_eff
 	cost = 2
-	x = 20
+	x = 21
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -210,7 +210,7 @@ focus = {
 	id = EUF_cooperation_with_the_efgf
 	icon = GFX_goal_cooperation_with_efgf
 	cost = 2
-	x = -1
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -289,7 +289,7 @@ focus = {
 	id = EUF_animosity_towards_efgf
 	icon = GFX_goal_animosity_towards_efgf
 	cost = 10
-	x = 1
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1131,6 +1131,38 @@ focus = {
 }
 
 focus = {
+	id = EUF_improve_multi-role_fighter_performance
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_air_interception
+	prerequisite = { focus = EUF_air_interception }
+}
+
+focus = {
+	id = EUF_aces_of_the_skies
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_improve_multi-role_fighter_performance
+	prerequisite = { focus = EUF_improve_multi-role_fighter_performance }
+}
+
+focus = {
 	id = EUF_air_domination
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
@@ -1181,6 +1213,23 @@ focus = {
 	}
 	relative_position_id = EUF_new_generation_aircraft
 	prerequisite = { focus = EUF_new_generation_aircraft }
+}
+
+focus = {
+	id = EUF_coordinate_air_to_ground_operations
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_improve_air-to-ground_capabilities
+	prerequisite = { focus = EUF_improve_air-to-ground_capabilities }
 }
 
 focus = {
@@ -1429,7 +1478,7 @@ focus = {
 	id = EUF_the_king_of_battle
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -1
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1437,8 +1486,24 @@ focus = {
 	completion_reward = {
 	add_ideas = King_of_Battle
 	}
-	relative_position_id = EUF_secret_rearmament
+	relative_position_id = EUF_formation_of_the_44th_mechanized_composite_regiment
 	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+}
+
+focus = {
+	id = EUF_earthshakers
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_the_king_of_battle
+	prerequisite = { focus = EUF_the_king_of_battle }
 }
 
 focus = {
@@ -1449,6 +1514,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		date > 76.1.1
 	}
 	completion_reward = {
 	
@@ -1486,7 +1554,8 @@ focus = {
 	
 	}
 	relative_position_id = EUF_antiair_capabilities
-	prerequisite = { focus = EUF_antiair_capabilities }
+	prerequisite = { focus = EUF_antiair_capabilities}
+	prerequisite = { focus = EUF_improve_multi-role_fighter_performance}
 }
 
 focus = {
@@ -1532,6 +1601,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
 	}
 	completion_reward = {
 	

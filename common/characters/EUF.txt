@@ -6,14 +6,20 @@ characters={
 		civilian={
 			large="gfx/leaders/EUF/EU_Parliment.dds"
 		}
-		army={
-			large="gfx/leaders/EUF/EU_Parliment.dds"
-		}
+
 	}
 	country_leader={
 		ideology=conservatism
 		traits={parlimentary_system}
 		expire="1000.1.1.1"
+	}
+}
+  EUF_cobenzl={
+	name="Theodor Cobenzl"
+	portraits={
+		civilian={
+			large="gfx/leaders/EUF/theodor_cobenzl.dds"
+		}
 	}
 }
 EUF_jean_moreau={

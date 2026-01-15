@@ -2421,7 +2421,9 @@ focus = {
 		}
 	}
 	completion_reward = {
-	
+		set_politics = {
+			ruling_party = contolism
+		}
 	}
 	relative_position_id = EUF_form_a_new_government
 	prerequisite = { focus = EUF_form_a_new_government}

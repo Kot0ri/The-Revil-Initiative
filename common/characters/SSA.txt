@@ -1,5 +1,30 @@
 characters={
 	#leaders
+
+	SSA_pramoj={
+		name= "Prote Pramoj"
+		portraits={
+			civilian={
+				large= "gfx/leaders/SSA/prote_pramoj.dds"
+			}
+		}
+		country_leader={
+			ideology= liberalism
+			traits={ financial_expert }
+			expire="100.1.1.1"
+			id=-1
+		}
+	}
+	
+	SSA_sarasin={
+		name= "Sagnad Sarasin"
+		portraits={
+			civilian={
+				large= "gfx/leaders/SSA/sagnad_sarasin.dds"
+			}
+		}
+	}
+
 	SSA_levan_fuu={
 		name=SSA_levan_fuu
 		portraits={
@@ -43,7 +68,58 @@ characters={
 		}
 	}	
 
+	SSA_jospeh_arthur={
+		name= "Joseph Arthur"
+		portraits={
+			civilian={
+				large= "gfx/leaders/SSA/jospeh_arthur.dds"
+			}
+			army={
+				large= "gfx/leaders/SSA/jospeh_arthur.dds"
+			}
+		}
+		country_leader={
+			ideology= earthnoid_supremacist
+			traits={  }
+			expire="100.1.1.1"
+			id=-1
+		}
+		corps_commander  = {
+			traits = {
+				inspirational_leader naval_invader
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	SSA_wilson_mountbatten={
+		name= "Wilson Mountbatten"
+		portraits={
+			civilian={
+				large= "gfx/leaders/SSA/wilson_mountbatten.dds"
+			}
+			army={
+				large= "gfx/leaders/SSA/wilson_mountbatten.dds"
+			}
+		}
+		navy_leader = {
+			traits = {
+				old_guard_navy navy_media_personality
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 3
+			coordination_skill = 3
+		}
+	}
+
 	#field marshals
+
 	SSA_baresto_rosita = {
 		name="Baresto Rosita"
 		portraits={

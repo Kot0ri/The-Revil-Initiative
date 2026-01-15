@@ -661,6 +661,33 @@ focus = {
 		prerequisite = {	focus = SSA_singapore_convention	}
 		prerequisite = {	focus = SSA_bring_in_godkiller	}
 		completion_reward = {
+			
+				}
+		}
+
+		focus = {
+		id = SSA_push_for_stronger_leadership
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {	
+		factor = 1
+					}
+		relative_position_id = SSA_handle_internal_security
+		prerequisite = {	focus = SSA_handle_internal_security	}
+		completion_reward = {
+		retire_character = SSA_pramoj
+		recruit_character = SSA_sarasin
+		add_country_leader_role = {
+    	character = SSA_sarasin
+    	promote_leader = yes
+   		country_leader = {
+        ideology = conservatism
+        expire = "1965.1.1.1"
+        traits = { RAJ_GOE_anti_socialist authoritarian top_down_heavy_policies }
+    }
+	}
 				}
 		}
 

@@ -756,7 +756,17 @@ focus = {
 		focus = EUF_the_italian_canidate
 	}
 	completion_reward = {
-	
+	retire_character = EUF_parliment
+	recruit_character = EUF_gouin
+	add_country_leader_role = {
+    	character = EUF_gouin
+    	promote_leader = yes
+   		country_leader = {
+        ideology = progressivism
+        expire = "1965.1.1.1"
+        traits = { RAJ_GOE_costly_reformer RAJ_trade_union_leader }
+    }
+	}
 	}
 	relative_position_id = EUF_new_election_cycle
 	prerequisite = { focus = EUF_new_election_cycle }

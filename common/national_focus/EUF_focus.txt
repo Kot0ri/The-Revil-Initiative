@@ -820,7 +820,17 @@ focus = {
 		focus = EUF_the_austrian_canidate
 	}
 	completion_reward = {
-	
+	retire_character = EUF_parliment
+	recruit_character = EUF_gasperi
+	add_country_leader_role = {
+    	character = EUF_gasperi
+    	promote_leader = yes
+   		country_leader = {
+        ideology = republicanism
+        expire = "1965.1.1.1"
+        traits = { RAJ_GOE_financial_strategist RAJ_GOE_anti_socialist RAJ_GOE_cautious_investor }
+    }
+	}
 	}
 	relative_position_id = EUF_new_election_cycle
 	prerequisite = { focus = EUF_new_election_cycle }

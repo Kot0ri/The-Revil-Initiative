@@ -1577,6 +1577,96 @@ ZEO_mackenson={
 
 	##advisors
 
+	ZEO_mark_fry = {
+		name = "Mark Fry"
+		portraits={
+			army={
+				small=GFX_idea_mark_fry
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			ledger = civilian
+			idea_token = mark_fry
+			cost = 100
+			available = {
+				has_ideology = contolism
+			}
+			allowed = {
+			
+			}
+			research_bonus = {
+				minovsky = 0.2
+			}
+			traits = {
+				financial_expert
+			}
+			ai_will_do = {
+				factor = 500
+			}
+			}
+	}
+
+	ZEO_morrison = {
+		name = "Morrison"
+		portraits={
+			army={
+				small=GFX_idea_morrison
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			ledger = civilian
+			idea_token = mark_fry
+			cost = 100
+			available = {
+				has_ideology = contolism
+			}
+			allowed = {
+			
+			}
+			research_bonus = {
+				minovsky = 0.2
+			}
+			traits = {
+				JUNO_minister_of_public_health
+			}
+			ai_will_do = {
+				factor = 500
+			}
+			}
+	}
+
+	ZEO_jikan = {
+		name = "Jikan"
+		portraits={
+			army={
+				small=GFX_idea_jikan
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			ledger = civilian
+			idea_token = mark_fry
+			cost = 100
+			available = {
+				has_ideology = contolism
+			}
+			allowed = {
+			
+			}
+			research_bonus = {
+				minovsky = 0.2
+			}
+			traits = {
+				JUNO_educational_reformer
+			}
+			ai_will_do = {
+				factor = 500
+			}
+			}
+	}
+
 	ZEO_torenov_y_minovsky = {
 		name = "Torenov Y Minovsky"
 		portraits={

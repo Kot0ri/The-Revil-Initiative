@@ -1667,6 +1667,36 @@ ZEO_mackenson={
 			}
 	}
 
+	ZEO_plunkett = {
+		name = "plunkett"
+		portraits={
+			army={
+				small=GFX_idea_plunkett
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			ledger = civilian
+			idea_token = mark_fry
+			cost = 100
+			available = {
+				has_ideology = contolism
+			}
+			allowed = {
+			
+			}
+			research_bonus = {
+				minovsky = 0.2
+			}
+			traits = {
+				JUNO_minister_of_defense
+			}
+			ai_will_do = {
+				factor = 500
+			}
+			}
+	}
+
 	ZEO_torenov_y_minovsky = {
 		name = "Torenov Y Minovsky"
 		portraits={

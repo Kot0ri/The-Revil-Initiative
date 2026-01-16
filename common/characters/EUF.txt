@@ -113,6 +113,25 @@ EUF_horatio_kitchner={
 
 #field marshals
 
+EUF_yves_beynet={
+	name= "Yves Beynet"
+	portraits={
+		army={
+			large="gfx/leaders/EUF/yves_beynet.dds"
+		}
+	}
+	field_marshal = {
+		traits = {
+		organizer	
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+
 
 #generals
 

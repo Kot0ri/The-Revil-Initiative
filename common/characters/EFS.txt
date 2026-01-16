@@ -280,6 +280,25 @@ EFS_eff_high_command={
 		}
 	}
 
+	EFS_jean_puaux = {
+		name = "Jean Puaux"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/jean_puaux.dds"
+			}
+		}
+		field_marshal = {
+			traits = {
+				politically_connected liberal_faction
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
 # generals
 
 EFS_elran_gfc = {
@@ -1038,7 +1057,23 @@ EFS_gady_kinsey={
 			defense_skill=1
 			maneuvering_skill=1
 			coordination_skill=1
-			legacy_id=133
+		}
+	}
+
+	EFS_roy_herrick={
+		name= "Roy Herrick"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/roy_herrick.dds"
+			}
+		}
+		navy_leader={
+			traits={ liberal_faction }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
 		}
 	}
 

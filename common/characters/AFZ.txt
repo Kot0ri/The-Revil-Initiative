@@ -41,4 +41,21 @@ AFZ_mostafa_denali={
 		expire="1000.1.1.1"
 	}
 }
+
+AFZ_lance_smith={
+	name="Lance Smith"
+	portraits={
+		civilian={
+			large="gfx/leaders/AFZ/lance_smith.dds"
+		}
+		army={
+			large="gfx/leaders/AFZ/lance_smith.dds"
+		}
+	}
+	country_leader={
+		ideology= earthnoid_supremacist
+		traits={}
+		expire="1000.1.1.1"
+	}
+}
 }

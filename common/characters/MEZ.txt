@@ -1,0 +1,72 @@
+characters={
+	#Leaders
+	Mez_damien_de_caix={
+		name="Damein De Caix"
+		portraits={
+			civilian={
+				large="gfx/leaders/MEZ/damien_de_caix.dds"
+			}
+			army={
+				large="gfx/leaders/MEZ/damien_de_caix.dds"
+			}
+		}
+		country_leader={
+			ideology= military_administration
+			traits={ top_down_heavy_policies }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits = { politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	Mez_leon_solomiac={
+		name="Leon Solomiac"
+		portraits={
+			civilian={
+				large="gfx/leaders/MEZ/leon_solomiac.dds"
+			}
+			army={
+				large="gfx/leaders/MEZ/leon_solomiac.dds"
+			}
+		}
+		country_leader={
+			ideology= earthnoid_supremacist
+			traits={ top_down_heavy_policies }
+			expire="1000.1.1.1"
+		}
+		navy_leader = {
+			traits = {
+				battleship_adherent
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			maneuvering_skill = 2
+			coordination_skill = 2
+		}
+	}
+
+	#Generals
+	Mez_frey_allyron={
+		name="Frey Allyron"
+		portraits={
+			army={
+				large="gfx/leaders/MEZ/frey_allyron.dds"
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	
+}

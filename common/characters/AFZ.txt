@@ -66,4 +66,65 @@ AFZ_lance_smith={
 		logistics_skill = 2
 	}
 }
+
+AFZ_charles_de_chevins={
+	name="Charles De Chevins"
+	portraits={
+		civilian={
+			large="gfx/leaders/AFZ/charles_de_chevins.dds"
+		}
+		army={
+			large="gfx/leaders/AFZ/charles_de_chevins.dds"
+		}
+	}
+	country_leader={
+		ideology= liberal_oligarchy
+		traits={}
+		expire="1000.1.1.1"
+	}
+	navy_leader = {
+		traits = {
+			battleship_adherent
+		}
+		skill = 4
+		attack_skill = 3
+		defense_skill = 3
+		maneuvering_skill = 4
+		coordination_skill = 4
+	}
+}
+
+#generals
+AFZ_neil_cunningham={
+	name="Neil Cunningham"
+	portraits={
+		army={
+			large="gfx/leaders/AFZ/neil_cunningham.dds"
+		}
+	}
+	corps_commander = {
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
+AFZ_richard_leese={
+	name="Richard Leese"
+	portraits={
+		army={
+			large="gfx/leaders/AFZ/richard_leese.dds"
+		}
+	}
+	corps_commander = {
+		skill = 2
+		attack_skill = 1
+		defense_skill = 1
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
+
 }

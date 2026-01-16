@@ -1160,10 +1160,14 @@ focus = {
 			has_war = no
 		}
 		available = {
-			has_completed_focus = EFG_CIA
+			MEZ = { has_completed_focus = MEZ_purge_the_officer_corps. }
 		}
 		completion_reward = {
-		
+		MEZ = {
+			set_politics = {
+				ruling_party = military_government
+			}
+		}
 		}
 	}
 

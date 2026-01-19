@@ -1422,7 +1422,7 @@ focus = {
 
 	focus = {
 		id = GRA_kycilias_court
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_kycilia_court
 		cost = 5
 		x = 20
 		y = 0
@@ -1442,7 +1442,7 @@ focus = {
 		id = GRA_mquves_acension
 		icon = GFX_goal_mquve_acension
 		cost = 5
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = GRA_kycilias_court
 		prerequisite = {focus = GRA_kycilias_court}
@@ -1478,7 +1478,7 @@ focus = {
 
 	focus = {
 		id = GRA_augment_united_maintaince_plan
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_augment_UMP
 		cost = 5
 		x = 0
 		y = 1
@@ -1499,7 +1499,7 @@ focus = {
 		id = GRA_rugens_acension
 		icon = GFX_goal_rugen_acension
 		cost = 5
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = GRA_kycilias_court
 		prerequisite = {focus = GRA_kycilias_court}
@@ -1536,7 +1536,7 @@ focus = {
 
 	focus = {
 		id = GRA_form_supplementary_defense_units
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_supplimentary_defense
 		cost = 5
 		x = 0
 		y = 1

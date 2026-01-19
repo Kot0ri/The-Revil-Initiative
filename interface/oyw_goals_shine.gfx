@@ -5783,10 +5783,10 @@ SpriteType = {
 	}
 	SpriteType = {
 		name = "GFX_goal_supplimentary_defense_shine"
-		texturefile = "gfx/interface/goals/gra_supplimentary_defense.dds"
+		texturefile = "gfx/interface/goals/gra_defense_units.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/gra_supplimentary_defense.dds"
+			animationmaskfile = "gfx/interface/goals/gra_defense_units.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -5799,7 +5799,7 @@ SpriteType = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/gra_supplimentary_defense.dds"
+			animationmaskfile = "gfx/interface/goals/gra_defense_units.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -5845,7 +5845,7 @@ SpriteType = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_kycilia_court_shine"
+		name = "GFX_goal_augment_UMP_shine"
 		texturefile = "gfx/interface/goals/gra_augment_UMP.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {

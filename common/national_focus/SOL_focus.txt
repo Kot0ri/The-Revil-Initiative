@@ -72,6 +72,38 @@ focus_tree = {
 					prerequisite = { focus = SOL_Meeting_in_Dark_Colony}
 			}
 
+		focus = {
+			id = SOL_prepare_for_war
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			
+				}
+				relative_position_id = SOL_push_for_increased_MS_budget
+					prerequisite = { focus = SOL_push_for_increased_MS_budget}
+			}
+
+	focus = {
+			id = SOL_reorganize_stronghold_forces
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			
+				}
+				relative_position_id = SOL_prepare_for_war
+					prerequisite = { focus = SOL_prepare_for_war}
+			}
+
 	focus = {
 			id = SOL_Dolzes_heart
 			icon = GFX_goal_efsf_mobile_headquarters
@@ -190,12 +222,49 @@ focus = {
 	}
 	}
 
+focus = {
+	id = SOL_combat_nepotism_in_the_military
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SOL_promote_Shin_matsunaga_to_defence_force_commander
+	}
+	relative_position_id = SOL_reorganize_stronghold_forces
+	prerequisite = { focus = SOL_reorganize_stronghold_forces }
+	completion_reward = {
+		
+	}
+	}
+
+	focus = {
+	id = SOL_promote_Shin_matsunaga_to_defence_force_commander
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SOL_combat_nepotism_in_the_military
+	}
+	relative_position_id = SOL_reorganize_stronghold_forces
+	prerequisite = { focus = SOL_reorganize_stronghold_forces }
+	completion_reward = {
+	}
+	}
+
 
 	focus = {
 			id = SOL_improve_mass_production_ms
 			icon = GFX_goal_dom_development
 			cost = 5
-			x = -2
+			x = -4
 			y = 5
 			ai_will_do = {
 				factor = 1

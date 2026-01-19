@@ -1783,4 +1783,24 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = GRA_
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_augment_united_maintaince_plan
+		prerequisite = {focus = GRA_tactical_use_newtype_formations focus = GRA_strategic_level_newtype_use_weapons }
+		prerequisite = {focus = GRA_augment_united_maintaince_plan}
+		prerequisite = {focus = GRA_form_supplementary_defense_units }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+			
+		}
+	}
+
 }

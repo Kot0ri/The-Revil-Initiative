@@ -223,6 +223,92 @@ focus = {
 	}
 
 focus = {
+	id = SOL_form_outer_defence_perimeter
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = SOL_Deadlock_Fortress_Buildup
+	prerequisite = { focus = SOL_Deadlock_Fortress_Buildup }
+	completion_reward = {
+		
+	}
+	}
+
+focus = {
+	id = SOL_focus_on_defence_perimeter
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SOL_focus_on_first_strike_capabilties
+	}
+	relative_position_id = SOL_form_outer_defence_perimeter
+	prerequisite = { focus = SOL_form_outer_defence_perimeter }
+	completion_reward = {
+		
+	}
+	}
+
+	focus = {
+	id = SOL_reinforce_gun_batteries
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = SOL_focus_on_defence_perimeter
+	prerequisite = { focus = SOL_focus_on_defence_perimeter }
+	completion_reward = {
+		
+	}
+	}
+
+	focus = {
+	id = SOL_focus_on_first_strike_capabilties
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SOL_focus_on_defence_perimeter
+	}
+	relative_position_id = SOL_form_outer_defence_perimeter
+	prerequisite = { focus = SOL_form_outer_defence_perimeter }
+	completion_reward = {
+		
+	}
+	}
+
+	focus = {
+	id = SOL_expand_ms_launches
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = SOL_focus_on_first_strike_capabilties
+	prerequisite = { focus = SOL_focus_on_first_strike_capabilties }
+	completion_reward = {
+		
+	}
+	}
+
+focus = {
 	id = SOL_combat_nepotism_in_the_military
 	icon = GFX_goal_lacock_ascend
 	cost = 5
@@ -237,7 +323,7 @@ focus = {
 	relative_position_id = SOL_reorganize_stronghold_forces
 	prerequisite = { focus = SOL_reorganize_stronghold_forces }
 	completion_reward = {
-		
+		add_ideas = reinforced_militay_hierarchy
 	}
 	}
 
@@ -250,28 +336,31 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_completed_focus = SOL_form_royal_guard_unit
+	}
 	mutually_exclusive = {
 		focus = SOL_combat_nepotism_in_the_military
 	}
 	relative_position_id = SOL_reorganize_stronghold_forces
 	prerequisite = { focus = SOL_reorganize_stronghold_forces }
 	completion_reward = {
+		add_ideas = elavated_aristocratic_officers
 	}
 	}
-
 
 	focus = {
-			id = SOL_improve_mass_production_ms
+			id = SOL_form_royal_guard_unit
 			icon = GFX_goal_dom_development
 			cost = 5
-			x = -4
-			y = 5
+			x = -2
+			y = 1
 			ai_will_do = {
 				factor = 1
 			}
-			relative_position_id = SOL_Dolzes_Pride
+			relative_position_id = SOL_push_for_increased_MS_budget
 			prerequisite = {
-				
+				focus = SOL_push_for_increased_MS_budget
 			}
 			completion_reward = {
 			
@@ -279,11 +368,209 @@ focus = {
 		}
 
 	focus = {
+			id = SOL_improve_mass_production_ms
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 2
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_reorganize_stronghold_forces
+			prerequisite = {
+				focus = SOL_combat_nepotism_in_the_military focus = SOL_promote_Shin_matsunaga_to_defence_force_commander
+			}
+			completion_reward = {
+			
+				}
+		}
+
+	focus = {
+			id = SOL_modernize_cruiser_fleet
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = -1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_combat_nepotism_in_the_military
+			prerequisite = {
+				focus = SOL_combat_nepotism_in_the_military
+			}
+			completion_reward = {
+			
+				}
+		}
+		
+		focus = {
+			id = SOL_cooperate_with_a_baoa_qu
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = -2
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_modernize_cruiser_fleet
+			prerequisite = {
+				focus = SOL_modernize_cruiser_fleet
+			}
+			completion_reward = {
+			
+				}
+		}	
+
+		focus = {
+			id = SOL_dolos_deployment
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_cooperate_with_a_baoa_qu
+			prerequisite = {
+				focus = SOL_cooperate_with_a_baoa_qu
+			}
+			completion_reward = {
+			
+				}
+		}	
+
+		focus = {
+			id = SOL_priortize_base_defence
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_modernize_cruiser_fleet
+			prerequisite = {
+				focus = SOL_modernize_cruiser_fleet
+			}
+			completion_reward = {
+			
+				}
+		}	
+
+		focus = {
+			id = SOL_begin_development_of_mobile_armours
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_priortize_base_defence
+			prerequisite = {
+				focus = SOL_priortize_base_defence
+			}
+			completion_reward = {
+			
+				}
+		}	
+
+		focus = {
+			id = SOL_priortize_elite_combat_formations
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_promote_Shin_matsunaga_to_defence_force_commander
+			prerequisite = {
+				focus = SOL_promote_Shin_matsunaga_to_defence_force_commander
+			}
+			completion_reward = {
+			
+				}
+		}	
+
+		focus = {
+			id = SOL_utilize_aces_in_training_programs
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_priortize_elite_combat_formations
+			prerequisite = {
+				focus = SOL_priortize_elite_combat_formations
+			}
+			completion_reward = {
+			
+				}
+		}
+
+		focus = {
+			id = SOL_specialize_zaku_units
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_utilize_aces_in_training_programs
+			prerequisite = {
+				focus = SOL_utilize_aces_in_training_programs
+			}
+			completion_reward = {
+			
+				}
+		}
+
+		focus = {
+			id = SOL_patrol_hunting_teams
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 2
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_priortize_elite_combat_formations
+			prerequisite = {
+				focus = SOL_priortize_elite_combat_formations
+			}
+			completion_reward = {
+			
+				}
+		}	
+
+		focus = {
+			id = SOL_improve_anti_ship_weapons
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_patrol_hunting_teams
+			prerequisite = {
+				focus = SOL_patrol_hunting_teams
+			}
+			completion_reward = {
+			
+				}
+		}	
+
+	focus = {
 			id = SOL_zenna_leadership
 			icon = GFX_goal_dom_development
 			cost = 5
 			x = -2
-			y = 7
+			y = 12
 			ai_will_do = {
 				factor = 1
 			}
@@ -303,7 +590,7 @@ focus = {
 			icon = GFX_goal_dom_development
 			cost = 5
 			x = 0
-			y = 7
+			y = 12
 			ai_will_do = {
 				factor = 1
 			}

@@ -1,0 +1,43 @@
+ideas = {
+
+country = {
+
+reinforced_militay_hierarchy = {
+			
+			allowed = {
+				original_tag = SOL
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_air = 0.05
+				experience_gain_army = 0.05
+				experience_gain_navy = 0.05
+			}
+		}
+
+elavated_aristocratic_officers = {
+			
+			allowed = {
+				original_tag = SOL
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				promote_cost_factor = -0.5
+				army_leader_start_level = 1
+			}
+		}
+
+	}
+}

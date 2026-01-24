@@ -565,18 +565,36 @@ focus = {
 				}
 		}	
 
-	focus = {
-			id = SOL_zenna_leadership
-			icon = GFX_goal_dom_development
+		focus = {
+			id = SOL_dozle_stand
+			icon = GFX_goal_zenna_leader
 			cost = 5
-			x = -2
-			y = 12
+			x = 0
+			y = 10
 			ai_will_do = {
 				factor = 1
 			}
 			relative_position_id = SOL_Dolzes_Pride
 			prerequisite = {
 				
+			}
+			completion_reward = {
+	
+				}
+		}
+
+	focus = {
+			id = SOL_zenna_leadership
+			icon = GFX_goal_zenna_leader
+			cost = 5
+			x = -1
+			y = 2
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_dozle_stand
+			prerequisite = {
+				focus = SOL_dozle_stand
 			}
 			completion_reward = {
 			set_politics = {
@@ -589,14 +607,14 @@ focus = {
 			id = SOL_marlene_leadership
 			icon = GFX_goal_dom_development
 			cost = 5
-			x = 0
-			y = 12
+			x = 1
+			y = 2
 			ai_will_do = {
 				factor = 1
 			}
-			relative_position_id = SOL_Dolzes_Pride
+			relative_position_id = SOL_dozle_stand
 			prerequisite = {
-				
+				focus = SOL_dozle_stand
 			}
 			completion_reward = {
 			set_politics = {

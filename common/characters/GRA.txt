@@ -13,7 +13,7 @@ characters={
 		}
 	}
 	GRA_Ben_Jeffry={
-		name= "Ben Jeffrt"
+		name= "Ben Jeffry"
 		portraits={
 			civilian={
 				large="gfx/leaders/GRA/Ben_Jeffry.dds"
@@ -34,6 +34,9 @@ characters={
 		country_leader={
 			ideology= lunarian_supremacist
 			expire="1000.1.1.1"
+			traits = {
+				war_industrialist
+			}
 		}
 	}
 	GRA_kycilia_zabi={

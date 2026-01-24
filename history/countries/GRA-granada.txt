@@ -46,83 +46,12 @@ add_opinion_modifier = {
 	modifier = moon_commerce_rival
 }
 
-78.1.1 = {
-	set_technology = {
-		visible_light_communication1 = 1
-		nuclear_reactor1 = 1
-		nuclear_reactor2 = 1
-		minovsky_dissemination1 = 1
-		minovsky_dissemination2 = 1
-		mpiws1 = 1
-		ambac1 = 1
-		ambac2 = 1
-		amc1 = 1
-		amc2 = 1
-		simulator1 = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		infantry_at = 1
-		support_weapons = 1
-		support_weapons1 = 1
-		EFS_mbt1_tech = 1
-		EFS_mbt2_tech = 1
-		EFS_mbt3_tech = 1
-		advanced_machine_tools = 1
-		concentrated_industry3 = 1
-		improved_oil_processing = 1
-		advanced_oil_processing = 1
-		improved_rubber_processing = 1
-		trench_warfare = 1
-		grand_battle_plan = 1
-		prepared_defense = 1
-		grand_assault = 1
-	}
-	add_ideas = {
-		jupiter_fleet_get_resource
-		banger
-	}
-	set_convoys = 200
-	set_country_flag = jupiter_fleet_on
-  set_country_flag = jupiter_fleet_is_back
-}
-
-79.4.1 = {
-	set_technology = {
-		visible_light_communication2 = 1
-		minovsky_craft = 1
-		simulator2 = 1
-		ambac3 = 1
-		modern_oil_processing = 1
-		assembly_line_production = 1
-		concentrated_industry4 = 1
-		mechanised_infantry = 1
-		infantry_at1 = 1
-		improved_infantry_weapons = 1
-		improved_infantry_weapons_2 = 1
-		infantry_offensive = 1
-		armored_operations = 1
-		EFS_lbs1_tech = 1
-	}
-	set_convoys = 100
-	set_variable = { newtype_accepted_status = 3 }
-}
-
-create_equipment_variant = {
-	name = "Salamis Class"
-	type = efsf_space_cruiser1_equipment
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = space_battery_1
-		fixed_ship_secondaries_slot = space_secondaries_1
-		fixed_ship_engine_slot = light_space_engine_1
-	}
-	obsolete = no
-}
 
 
 #Leaders
 recruit_character = GRA_smokey_wilson
 recruit_character = GRA_Ben_Jeffry
+recruit_character = GRA_kurt_ford
 
 #Field Marshalls
 

@@ -282,6 +282,42 @@ ABQ_kleikamp={
 	}
 	
 }
+
+ABQ_kleist={
+	name="Kleist"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/kleist.dds"
+		}
+	}
+	corps_commander={
+		traits={zabi_party ghiren_loyalist panzer_leader  }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
+
+ABQ_rundstedt={
+	name="Rundstedt"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/rundstedt.dds"
+		}
+	}
+	corps_commander={
+		traits={zabi_party ghiren_loyalist defensive_doctrine }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
 	
 	#pilots
 	ABQ_challia_bull={

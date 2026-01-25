@@ -478,6 +478,23 @@ ZEO_cecilia_irene_2 = {
 
 	##Generals
 
+	ZEO_leeb={
+		name="Leeb"
+		portraits={
+			army={
+				large= "gfx/leaders/ZEO/leeb.dds"
+			}
+		}
+		corps_commander={
+			traits={ zabi_party politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
 	ZEO_hans_lawnder={
 		name="Hans Lawnder "
 		portraits={

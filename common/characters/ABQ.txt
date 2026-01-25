@@ -221,6 +221,26 @@ characters = {
 		}
 	}
 
+		ABQ_dietrich={
+		name="Dietrich"
+		portraits={
+			army={
+				small=GFX_idea_gadem
+			}
+			army={
+				large= "gfx/leaders/ABQ/dietrich.dds"
+			}
+		}
+		field_marshal={
+			traits={ zabi_party ghiren_loyalist }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
 	#generals
 
 	ABQ_killing={
@@ -310,6 +330,42 @@ ABQ_rundstedt={
 	}
 	corps_commander={
 		traits={zabi_party ghiren_loyalist defensive_doctrine }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
+
+ABQ_brauchitsch={
+	name="Brauchitsch"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/brauchitsch.dds"
+		}
+	}
+	corps_commander={
+		traits={zabi_party ghiren_loyalist }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+	
+}
+
+ABQ_matsui={
+	name="Matsui"
+	portraits={
+		army={
+			large= "gfx/leaders/ABQ/matsui.dds"
+		}
+	}
+	corps_commander={
+		traits={zabi_party ghiren_loyalist }
 		skill=1
 		attack_skill=1
 		defense_skill=1

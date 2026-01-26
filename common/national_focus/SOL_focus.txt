@@ -88,6 +88,42 @@ focus_tree = {
 					prerequisite = { focus = SOL_push_for_increased_MS_budget}
 			}
 
+
+	focus = {
+			id = SOL_hunt_for_operation_V
+			icon = GFX_goal_vinson_plan
+			cost = 5
+			x = 2
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				has_war_with = EFS
+			}
+			completion_reward = {
+			
+				}
+			relative_position_id = SOL_prepare_for_war
+			prerequisite = { focus = SOL_prepare_for_war}
+			}
+
+	focus = {
+			id = SOL_launch_side_2_attack
+			icon = GFX_goal_vinson_plan
+			cost = 5
+			x = -2
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			
+			}
+			relative_position_id = SOL_prepare_for_war
+			prerequisite = { focus = SOL_prepare_for_war}
+			}
+
 	focus = {
 			id = SOL_reorganize_stronghold_forces
 			icon = GFX_goal_reorganize_stronghold_forces
@@ -181,6 +217,60 @@ focus = {
 	prerequisite = { focus = SOL_Naval_Buildup }
 				}
 
+focus = {
+	id = SOL_expand_crusier_fleet
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SOL_Space_Attack_Fleet_Buildup
+	prerequisite = { focus = SOL_Space_Attack_Fleet_Buildup }
+	}
+
+	focus = {
+	id = SOL_heavy_crusier_focus
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SOL_ms_carrier_focus
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SOL_expand_crusier_fleet
+	prerequisite = { focus = SOL_expand_crusier_fleet }
+	}
+
+	focus = {
+	id = SOL_ms_carrier_focus
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SOL_heavy_crusier_focus
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SOL_expand_crusier_fleet
+	prerequisite = { focus = SOL_expand_crusier_fleet }
+	}
+
 
 focus = {
 	id = SOL_Deadlock_Fortress_Plans
@@ -273,6 +363,75 @@ focus = {
 	}
 	}
 
+focus = {
+	id = SOL_early_warning_system
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = SOL_reinforce_gun_batteries
+	prerequisite = { focus = SOL_reinforce_gun_batteries }
+	completion_reward = {
+		
+	}
+	}
+
+	focus = {
+	id = SOL_target_set_on_luna_2
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = SOL_launch_side_2_attack
+		has_completed_focus = SOL_send_char_to_side_7
+	}
+	relative_position_id = SOL_early_warning_system
+	prerequisite = { focus = SOL_early_warning_system focus = SOL_tripwire_force_formations }
+	completion_reward = {
+		
+	}
+	}
+
+	focus = {
+	id = SOL_set_up_surveillance_network
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = SOL_reinforce_gun_batteries
+	prerequisite = { focus = SOL_reinforce_gun_batteries }
+	completion_reward = {
+		
+	}
+	}
+
+	focus = {
+	id = SOL_send_char_to_side_7
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = SOL_hunt_for_operation_V
+	prerequisite = { focus = SOL_hunt_for_operation_V }
+	prerequisite = { focus = SOL_set_up_surveillance_network }
+	completion_reward = {
+		
+	}
+	}
+
 	focus = {
 	id = SOL_focus_on_first_strike_capabilties
 	icon = GFX_goal_efsf_mobile_headquarters
@@ -303,6 +462,38 @@ focus = {
 	}
 	relative_position_id = SOL_focus_on_first_strike_capabilties
 	prerequisite = { focus = SOL_focus_on_first_strike_capabilties }
+	completion_reward = {
+		
+	}
+	}
+
+focus = {
+	id = SOL_tripwire_force_formations
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = SOL_expand_ms_launches
+	prerequisite = { focus = SOL_expand_ms_launches }
+	completion_reward = {
+		
+	}
+	}
+
+focus = {
+	id = SOL_layered_elastic_defense
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = SOL_expand_ms_launches
+	prerequisite = { focus = SOL_expand_ms_launches }
 	completion_reward = {
 		
 	}
@@ -385,6 +576,24 @@ focus = {
 				}
 		}
 
+		focus = {
+			id = SOL_expand_production_capabilities
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_improve_mass_production_ms
+			prerequisite = {
+				focus = SOL_improve_mass_production_ms
+			}
+			completion_reward = {
+			
+				}
+		}
+
 	focus = {
 			id = SOL_modernize_cruiser_fleet
 			icon = GFX_goal_dom_development
@@ -411,6 +620,9 @@ focus = {
 			y = 1
 			ai_will_do = {
 				factor = 1
+			}
+			available = {
+				is_ally_with = ABQ
 			}
 			relative_position_id = SOL_modernize_cruiser_fleet
 			prerequisite = {
@@ -469,6 +681,30 @@ focus = {
 			relative_position_id = SOL_priortize_base_defence
 			prerequisite = {
 				focus = SOL_priortize_base_defence
+			}
+			completion_reward = {
+			
+				}
+		}
+		
+		focus = {
+			id = SOL_mobile_fortress_production
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = -1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_begin_development_of_mobile_armours
+			prerequisite = {
+				focus = SOL_begin_development_of_mobile_armours
+			}
+			prerequisite = {
+				focus = SOL_dolos_deployment
+			}
+			available = {
+				is_ally_with = AXS
 			}
 			completion_reward = {
 			
@@ -559,6 +795,27 @@ focus = {
 			relative_position_id = SOL_patrol_hunting_teams
 			prerequisite = {
 				focus = SOL_patrol_hunting_teams
+			}
+			completion_reward = {
+			
+				}
+		}	
+
+		focus = {
+			id = SOL_white_wolf_howls
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_specialize_zaku_units
+			prerequisite = {
+				focus = SOL_improve_anti_ship_weapons
+			}
+			prerequisite = {
+				focus = SOL_specialize_zaku_units
 			}
 			completion_reward = {
 			

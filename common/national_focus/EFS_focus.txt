@@ -3142,6 +3142,72 @@ focus = {
 }
 
 focus = {
+	id = efsf_prepare_for_another_war
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_buildup_north_america_defenses focus = efsf_intergrate_zeon_asteroids
+	}
+	available = {
+	date > 0083.12.1
+	}
+	relative_position_id = efsf_buildup_north_america_defenses
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_development_of_psycho-control_system
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_reverse_engineer_zeon_psycommu_tech
+	}
+	prerequisite = {
+		focus = efsf_prepare_for_another_war
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_prepare_for_another_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_modernize_gm_units
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_prepare_for_another_war
+	}
+	available = {
+	
+	}
+	relative_position_id = efsf_prepare_for_another_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_0081_reconstruction_plan
 	icon = GFX_goal_earth_counter_strategy
 	cost = 5
@@ -3349,8 +3415,8 @@ focus = {
 	id = efsf_super-battleship_doctrine
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
-	x = 2
-	y = 6
+	x = 0
+	y = 3
 	ai_will_do = {
 		factor = 1
 	}
@@ -3373,8 +3439,8 @@ focus = {
 	id = efsf_new_multi-role_ship_doctrine
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
-	x = 0
-	y = 6
+	x = 2
+	y = 3
 	ai_will_do = {
 		factor = 1
 	}
@@ -3472,7 +3538,7 @@ focus = {
 		focus = efsf_simplify_maintenance_process
 	}
 	available = {
-	
+	date > 0083.01.1
 	}
 	relative_position_id = efsf_simplify_maintenance_process
 	completion_reward = {
@@ -3482,7 +3548,7 @@ focus = {
 
 focus = {
 	id = efsf_contract_anaheim
-	icon = GFX_goal_earth_counter_strategy
+	icon = GFX_goal_tyrant_of_moon
 	cost = 10
 	x = -1
 	y = 1
@@ -3549,7 +3615,7 @@ focus = {
 
 focus = {
 	id = efsf_gpo_series_proposal
-	icon = GFX_goal_tyrant_of_moon
+	icon = GFX_goal_gpo_series
 	cost = 10
 	x = 0
 	y = 1
@@ -3671,6 +3737,24 @@ focus = {
 		date > 0085.001.1
 	}
 	relative_position_id = efsf_begin_introduction_of_new_prototypes
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_begin_development_of_new_testbed_units
+	icon = GFX_goal_franklin
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_moveable_frame_introduction
+	}
+	relative_position_id = efsf_moveable_frame_introduction
 	completion_reward = {
 	
 	}

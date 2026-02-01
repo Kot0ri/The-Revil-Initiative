@@ -387,6 +387,42 @@ EFG_gopp={
 		}
 	}
 
+	EFG_jose={
+		name="Jose"
+		portraits={
+
+			army={
+				large="gfx/leaders/EFG/jose.dds"
+			}
+		}
+		corps_commander={
+			traits={ militias_officer politically_connected }
+			skill= 2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+		}
+	}
+
+	EFG_alejandro={
+		name="Alejandro"
+		portraits={
+
+			army={
+				large="gfx/leaders/EFG/alejandro.dds"
+			}
+		}
+		corps_commander={
+			traits={ militias_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+		}
+	}
+
 	#Pilots
 
 	EFG_tsurugi={
@@ -469,23 +505,23 @@ EFG_gopp={
 		}
 	}
 
-	EFG_mauri={
-		name="Mauri"
+	EFG_meran={
+		name="Meran"
 		portraits={
 			army={
 				small="GFX_idea_conscon"
 			}
 			army={
-				large= "gfx/leaders/EFG/Mauri.dds"
+				large= "gfx/leaders/EFG/meran.dds"
 			}
 		}
 		navy_leader={
-			traits={MaHa_party}
-			skill=3
-			attack_skill=3
+			traits={}
+			skill=2
+			attack_skill=2
 			defense_skill=2
-			maneuvering_skill=3
-			coordination_skill=3
+			maneuvering_skill=2
+			coordination_skill=2
 		}
 	}
 

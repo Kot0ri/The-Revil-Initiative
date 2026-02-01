@@ -799,13 +799,14 @@ focus = {
 			factor = 1
 		}
 		available = {
-			supremacist > .60
+		
 		}
 		mutually_exclusive = {
 			focus = EFG_expand_the_titans_overreach
 		}
 		completion_reward = {
-		
+		recruit_character = EFG_jose
+		recruit_character = EFG_alejandro
 		}
 	}
 

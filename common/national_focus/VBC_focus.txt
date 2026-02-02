@@ -37,7 +37,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			has_country_leader = VBC_andy_williams
 		}
 		relative_position_id = VBC_tyrant_of_the_moon
 		prerequisite = {focus = VBC_tyrant_of_the_moon}
@@ -49,6 +49,161 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VBC_expand_federal_back_channels
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_leader = VBC_andy_williams
+		}
+		relative_position_id = VBC_rig_elections
+		prerequisite = {focus = VBC_rig_elections}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_combat_vist_influence
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_expand_federal_back_channels
+		prerequisite = {focus = VBC_expand_federal_back_channels focus = VBC_promise_reforms }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_priortize_the_terrarium_project
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = VBC_arcadia_project
+		}
+		relative_position_id = VBC_expand_federal_back_channels
+		prerequisite = {focus = VBC_expand_federal_back_channels }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_acquire_the_big_zam
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = VBC_absorb_zeon_companies
+		}
+		relative_position_id = VBC_priortize_the_terrarium_project
+		prerequisite = {focus = VBC_priortize_the_terrarium_project }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_mass_produce_the_big_zam
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_acquire_the_big_zam
+		prerequisite = {focus = VBC_acquire_the_big_zam }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_formation_of_the_titans
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = VBC_privatized_security_fleet
+		}
+		relative_position_id = VBC_mass_produce_the_big_zam
+		prerequisite = {focus = VBC_mass_produce_the_big_zam }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_declare_independence
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = VBC_privatized_security_fleet
+		}
+		relative_position_id = VBC_mass_produce_the_big_zam
+		prerequisite = {focus = VBC_mass_produce_the_big_zam }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_usurp_earths_hegemony
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = VBC_deal_with_the_SSA
+		}
+		relative_position_id = VBC_formation_of_the_titans
+		prerequisite = {focus = VBC_declare_independence }
+		prerequisite = {focus = VBC_formation_of_the_titans }
+		completion_reward = {
+		add_ideas = Absolute_power_of_giants
+		}
+	}
+
+
+
+	focus = {
 		id = VBC_maintain_social_status_qou
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
@@ -56,6 +211,9 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		mutually_exclusive = {
 			focus = VBC_revitalize_lower_economic_sector
@@ -149,6 +307,25 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = VBC_promise_reforms
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_revitalize_lower_economic_sector
+		prerequisite = {focus = VBC_revitalize_lower_economic_sector}
+		completion_reward = {
+		
+		}
+	}
 
 	focus = {
 		id = VBC_merchant_of_death
@@ -485,7 +662,7 @@ focus = {
 		id = VBC_seize_control_of_granada
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 4
+		x = 8
 		y = 8
 		ai_will_do = {
 			factor = 1
@@ -521,12 +698,16 @@ focus = {
 		id = VBC_garden_of_thorns_revitalization_project
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 8
-		y = 12
+		x = 0
+		y = 2
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
+		}
+		relative_position_id = VBC_seize_control_of_granada
+		prerequisite = {
+			focus = VBC_seize_control_of_granada
 		}
 		completion_reward = {
 		

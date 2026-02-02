@@ -61,6 +61,25 @@ Arcadia_Project = {
 	}
 }
 
+Absolute_power_of_giants = {
+			
+	allowed = {
+		original_tag = VBC
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	
+	modifier = {
+	army_attack_factor = 0.15
+	army_speed_factor = 0.15
+	navy_anti_air_attack_factor = 0.15
+	}
+}
+
 RX_Project = {
 			
 	allowed = {

@@ -42,7 +42,9 @@ focus_tree = {
 		relative_position_id = VBC_tyrant_of_the_moon
 		prerequisite = {focus = VBC_tyrant_of_the_moon}
 		completion_reward = {
-		
+		set_politics = {
+			ruling_party = corporatism
+		}
 		}
 	}
 

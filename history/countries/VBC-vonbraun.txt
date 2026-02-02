@@ -15,15 +15,15 @@ set_variable = { newtype_accepted_status = 1 }
 
 set_popularities = {
 	supremacist = 0
-	contolism = 0
-	democratic = 0
+	contolism = 10
+	democratic = 40
 	military_government = 0
 	aristocracy = 0
-	corporatism = 100
+	corporatism = 50
 	communism = 0
 }
 set_politics = {
-	ruling_party = corporatism
+	ruling_party = democratic
 	last_election = "74.12.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -45,72 +45,10 @@ add_opinion_modifier = {
 	modifier = moon_commerce_rival
 }
 
-78.1.1 = {
-	set_technology = {
-		visible_light_communication1 = 1
-		nuclear_reactor1 = 1
-		nuclear_reactor2 = 1
-		minovsky_dissemination1 = 1
-		minovsky_dissemination2 = 1
-		mpiws1 = 1
-		ambac1 = 1
-		ambac2 = 1
-		amc1 = 1
-		amc2 = 1
-		simulator1 = 1
-		infantry_weapons1 = 1
-		infantry_weapons2 = 1
-		infantry_at = 1
-		support_weapons = 1
-		support_weapons1 = 1
-		EFS_mbt1_tech = 1
-		EFS_mbt2_tech = 1
-		EFS_mbt3_tech = 1
-		advanced_machine_tools = 1
-		concentrated_industry3 = 1
-		improved_oil_processing = 1
-		advanced_oil_processing = 1
-		improved_rubber_processing = 1
-		mass_assault = 1
-		pocket_defence = 1
-		defence_in_depth = 1
-		peoples_army = 1
-	}
-	add_ideas = {
-		jupiter_fleet_get_resource
-		banger
-	}
-	set_convoys = 200
-	set_country_flag = jupiter_fleet_on
-  set_country_flag = jupiter_fleet_is_back
-}
 
-79.4.1 = {
-	set_technology = {
-		visible_light_communication2 = 1
-		minovsky_craft = 1
-		simulator2 = 1
-		ambac3 = 1
-		modern_oil_processing = 1
-		assembly_line_production = 1
-		concentrated_industry4 = 1
-		mechanised_infantry = 1
-		infantry_at1 = 1
-		improved_infantry_weapons = 1
-		improved_infantry_weapons_2 = 1
-		human_infantry_offensive = 1
-		large_front_offensive = 1
-		EFS_lbs1_tech = 1
-	}
-	set_convoys = 100
-	set_variable = { newtype_accepted_status = 3 }
-}
 
 #Leaders
-recruit_character = VBC_von_brauns_zeonist_senator
-recruit_character = VBC_von_brauns_spacenoid_supremacist_senator
-recruit_character = VBC_von_brauns_earth_supremacist_senator
-recruit_character = VBC_von_brauns_democrats_senator
+recruit_character = VBC_andy_williams
 recruit_character = VBC_sullivan
 
 #Advisors

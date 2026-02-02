@@ -247,6 +247,66 @@ focus_tree = {
 		}
 	}
 
+		focus = {
+		id = VBC_increase_credit_debt_scheme
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_institute_fraudulent_welfare_systems
+		prerequisite = {focus = VBC_institute_fraudulent_welfare_systems}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_maintain_the_balance_of_power
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_increase_credit_debt_scheme
+		prerequisite = {focus = VBC_increase_credit_debt_scheme focus = VBC_monopolize_federal_contracts }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_let_andy_rest
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 20
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = VBC_rig_elections
+			}
+		}
+		relative_position_id = VBC_maintain_the_balance_of_power
+		prerequisite = {focus = VBC_maintain_the_balance_of_power }
+		completion_reward = {
+		
+		}
+	}
+
+
 	focus = {
 		id = VBC_undermine_granada
 		icon = GFX_goal_zeon_mobile_headquarters
@@ -668,6 +728,9 @@ focus = {
 			factor = 1
 		}
 		available = {
+			GRA = {
+				exists = no
+			}
 		}
 		completion_reward = {
 		

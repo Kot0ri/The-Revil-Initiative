@@ -38,9 +38,68 @@ focus_tree = {
 			focus = JUP_jupiter_energy_fleet_board_meeting
 		}
 		mutually_exclusive = {
-			focus = JUP_empower_the_inspector_generals
+			focus = JUP_empower_the_inspector_general
 		}
 		relative_position_id = JUP_jupiter_energy_fleet_board_meeting
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_prioritize_realtions_with_outer_sphere_development_comission_members
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_increase_the_powers_of_the_directorate
+		}
+		
+		relative_position_id = JUP_increase_the_powers_of_the_directorate
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_set_up_mineral_mining
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_increase_the_powers_of_the_directorate
+		}
+		
+		relative_position_id = JUP_increase_the_powers_of_the_directorate
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_ferry_through_the_axis_waypoint
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_set_up_mineral_mining
+		}
+		prerequisite = {
+			focus = JUP_prioritize_realtions_with_outer_sphere_development_comission_members
+		}
+		relative_position_id = JUP_set_up_mineral_mining
 		completion_reward = {
 			
 		}
@@ -62,6 +121,344 @@ focus_tree = {
 			focus = JUP_increase_the_powers_of_the_directorate
 		}
 		relative_position_id = JUP_jupiter_energy_fleet_board_meeting
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_reassure_ties_with_earth
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_empower_the_inspector_general
+		}
+		
+		relative_position_id = JUP_empower_the_inspector_general
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = JUP_increase_shipment_schedule
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_empower_the_inspector_general
+		}
+		
+		relative_position_id = JUP_empower_the_inspector_general
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_request_additional_supplies
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_reassure_ties_with_earth
+		}
+		prerequisite = {
+			focus = JUP_increase_shipment_schedule
+		}
+		relative_position_id = JUP_increase_shipment_schedule
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_phaethon_the_blazing_star
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_ferry_through_the_axis_waypoint
+		}
+		prerequisite = {
+			focus = JUP_request_additional_supplies
+		}
+		relative_position_id = JUP_ferry_through_the_axis_waypoint
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_sky-god
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_phaethon_the_blazing_star
+		}
+		mutually_exclusive = {
+			focus = JUP_shining_one
+		}
+		relative_position_id = JUP_phaethon_the_blazing_star
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_shining_one
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_phaethon_the_blazing_star
+		}
+		mutually_exclusive = {
+			focus = JUP_sky-god
+		}
+		relative_position_id = JUP_phaethon_the_blazing_star
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_the_mystic_island
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_phaethon_the_blazing_star
+		}
+		relative_position_id = JUP_phaethon_the_blazing_star
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_meeting_with_medusa
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_the_mystic_island
+		}
+		relative_position_id = JUP_the_mystic_island
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_study_the_seedlings_of_the_stars
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_meeting_with_medusa
+		}
+		relative_position_id = JUP_meeting_with_medusa
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_adapt_to_heavy_gravity
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_the_mystic_island
+		}
+		relative_position_id = JUP_the_mystic_island
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_surfing_the_grat_red_spot
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_adapt_to_heavy_gravity
+		}
+		relative_position_id = JUP_adapt_to_heavy_gravity
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_combat_skeletonism
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_surfing_the_grat_red_spot
+		}
+		relative_position_id = JUP_surfing_the_grat_red_spot
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_romance_of_two_worlds
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_phaethon_the_blazing_star
+		}
+		relative_position_id = JUP_phaethon_the_blazing_star
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_best-in-class_helium
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_romance_of_two_worlds
+		}
+		relative_position_id = JUP_romance_of_two_worlds
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_lobby_for_more_jupiter_fleet_funding
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_best-in-class_helium
+		}
+		relative_position_id = JUP_best-in-class_helium
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_begin_experimental_medical_research
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_romance_of_two_worlds
+		}
+		relative_position_id = JUP_romance_of_two_worlds
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_magnetism_and_mesmerism
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_begin_experimental_medical_research
+		}
+		relative_position_id = JUP_begin_experimental_medical_research
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = JUP_cultivate_telepaths
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_magnetism_and_mesmerism
+		}
+		relative_position_id = JUP_magnetism_and_mesmerism
 		completion_reward = {
 			
 		}

@@ -387,6 +387,43 @@ EFG_gopp={
 		}
 	}
 
+	EFG_kenneth_sleg={
+		name="Kenneth Sleg"
+		portraits={
+
+			army={
+				large="gfx/leaders/EFG/Kenneth.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+
+	EFG_kimberly={
+		name="Kimberly Heyman"
+		portraits={
+
+			army={
+				large="gfx/leaders/EFG/kimberly_heyman.dds"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader  }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+
 	EFG_jose={
 		name="Jose"
 		portraits={
@@ -446,20 +483,20 @@ EFG_gopp={
 	}
 
 	EFG_ul_urian={
-		name="Ul Urian "
+		name="Ul Urian"
 		portraits={
 			army={
 				small="GFX_idea_anavel_gato"
 			}
 			army={
-				large="gfx/leaders/EFG/Ittou_Tsurugi.dds"
+				large="gfx/leaders/EFG/ul_urian.dds"
 			}
 		}
 		corps_commander={
 			traits={pilot MaHa_party}
-			skill=4
-			attack_skill=4
-			defense_skill=3
+			skill=5
+			attack_skill=5
+			defense_skill=4
 			planning_skill=4
 			logistics_skill=4
 		}
@@ -471,11 +508,28 @@ EFG_gopp={
 					small="GFX_idea_anavel_gato"
 				}
 				army={
-					large="gfx/leaders/EFG/Ittou_Tsurugi.dds"
+					large="gfx/leaders/EFG/jean_wen_fu.dds"
 				}
 			}
 			corps_commander={
 				traits={pilot MaHa_party}
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=1
+			}
+	}
+
+		EFG_lane_aim={
+			name="Lane Aim"
+			portraits={
+				army={
+					large="gfx/leaders/EFG/LaneAim.dds"
+				}
+			}
+			corps_commander={
+				traits={pilot }
 				skill=2
 				attack_skill=2
 				defense_skill=2
@@ -522,6 +576,26 @@ EFG_gopp={
 			defense_skill=2
 			maneuvering_skill=2
 			coordination_skill=2
+		}
+	}
+
+	EFG_harry_suemuzu={
+		name="Harry Suemuzu"
+		portraits={
+			army={
+				small="GFX_idea_conscon"
+			}
+			army={
+				large= "gfx/leaders/EFG/harry_suemuzu.dds"
+			}
+		}
+		navy_leader={
+			traits={ MaHa_party }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=3
 		}
 	}
 

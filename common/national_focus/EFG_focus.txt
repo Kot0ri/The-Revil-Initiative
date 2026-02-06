@@ -122,6 +122,29 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EFG_form_south_pacfic_unit
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EFG_crackdown_the_ssa
+		prerequisite = {
+			focus = EFG_crackdown_the_ssa
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+		recruit_character = EFG_kenneth_sleg
+		recruit_character = EFG_kimberly
+		recruit_character = EFG_lane_aim
+		}
+	}
+
+	focus = {
 		id = EFG_Legacy_of_the_UC_Charter
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -807,6 +830,9 @@ focus = {
 		completion_reward = {
 		recruit_character = EFG_jose
 		recruit_character = EFG_alejandro
+		recruit_character = EFG_jean_wen_fu
+		recruit_character = EFG_ul_urian
+		recruit_character = EFG_harry_suemuzu
 		}
 	}
 

@@ -46,7 +46,7 @@ characters={
 				factor = 20
 			}
 		}
-	}
+	
 
 	VBC_sullivan={
 		name="O'Sullivan"
@@ -81,6 +81,93 @@ characters={
 				andy_wellington_trait
 			}
 	}
+
+	#pilots
+	VBC_linnet_york = {
+		name="Linnet York"
+		portraits={
+			army={
+				large="gfx/leaders/VBC/linnet_york.dds"
+			}
+		}
+		corps_commander={
+				traits={pilot }
+				skill=3
+				attack_skill=3
+				defense_skill=3
+				planning_skill=1
+				logistics_skill=1
+			}
+	}
+
+	VBC_yuto_aldiss = {
+		name="Yuto Aldiss"
+		portraits={
+			army={
+				large="gfx/leaders/VBC/yuto_aldiss.dds"
+			}
+		}
+		corps_commander={
+				traits={pilot }
+				skill=3
+				attack_skill=3
+				defense_skill=3
+				planning_skill=1
+				logistics_skill=1
+			}
+	}
+
+	VBC_oban_adcock = {
+		name="Oban Adcock"
+		portraits={
+			army={
+				large="gfx/leaders/VBC/oban_adcock.dds"
+			}
+		}
+		corps_commander={
+				traits={pilot }
+				skill=3
+				attack_skill=3
+				defense_skill=3
+				planning_skill=1
+				logistics_skill=1
+			}
+	}
+
+	VBC_bass_cowell = {
+		name="Bass Cowell"
+		portraits={
+			army={
+				large="gfx/leaders/VBC/bass_cowell.dds"
+			}
+		}
+		corps_commander={
+				traits={pilot }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=1
+			}
+	}
+
+	VBC_mizan = {
+		name="Mizan"
+		portraits={
+			army={
+				large="gfx/leaders/VBC/mizan.dds"
+			}
+		}
+		corps_commander={
+				traits={pilot }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=1
+			}
+	}
+
 
 	#Advisors
 	VBC_won_lee = {

@@ -711,6 +711,43 @@ focus = {
 				}
 		}	
 
+
+		focus = {
+			id = SOL_progranda_for_the_home_front
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = -5
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_combat_nepotism_in_the_military
+			prerequisite = {
+				focus = SOL_combat_nepotism_in_the_military
+			}
+			completion_reward = {
+			
+				}
+		}
+
+		focus = {
+			id = SOL_improve_frontline_morale
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_progranda_for_the_home_front
+			prerequisite = {
+				focus = SOL_progranda_for_the_home_front
+			}
+			completion_reward = {
+			
+				}
+		}
+
 		focus = {
 			id = SOL_priortize_elite_combat_formations
 			icon = GFX_goal_dom_development
@@ -823,6 +860,42 @@ focus = {
 		}	
 
 		focus = {
+			id = SOL_protect_ramba_ral
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 5
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_promote_Shin_matsunaga_to_defence_force_commander
+			prerequisite = {
+				focus = SOL_promote_Shin_matsunaga_to_defence_force_commander
+			}
+			completion_reward = {
+			
+				}
+		}
+
+	focus = {
+			id = SOL_intergrate_pilot_feedback
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_protect_ramba_ral
+			prerequisite = {
+				focus = SOL_protect_ramba_ral
+			}
+			completion_reward = {
+			
+				}
+		}
+
+		focus = {
 			id = SOL_dozle_stand
 			icon = GFX_goal_dozle_honor
 			cost = 5
@@ -840,11 +913,32 @@ focus = {
 				}
 		}
 
+		focus = {
+			id = SOL_wolfs_rage
+			icon = GFX_goal_dozle_honor
+			cost = 5
+			x = 2
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				has_completed_focus = SOL_white_wolf_howls
+			}
+			relative_position_id = SOL_dozle_stand
+			prerequisite = {
+				focus = SOL_dozle_stand
+			}
+			completion_reward = {
+	
+				}
+		}
+
 	focus = {
 			id = SOL_zenna_leadership
 			icon = GFX_goal_zenna_leader
 			cost = 5
-			x = -1
+			x = 1
 			y = 2
 			ai_will_do = {
 				factor = 1
@@ -852,6 +946,9 @@ focus = {
 			relative_position_id = SOL_dozle_stand
 			prerequisite = {
 				focus = SOL_dozle_stand
+			}
+			mutually_exclusive = {
+				focus = SOL_marlene_leadership
 			}
 			completion_reward = {
 			set_politics = {
@@ -864,7 +961,7 @@ focus = {
 			id = SOL_marlene_leadership
 			icon = GFX_goal_dom_development
 			cost = 5
-			x = 1
+			x = 3
 			y = 2
 			ai_will_do = {
 				factor = 1
@@ -873,10 +970,31 @@ focus = {
 			prerequisite = {
 				focus = SOL_dozle_stand
 			}
+			mutually_exclusive = {
+				focus = SOL_zenna_leadership
+			}
 			completion_reward = {
 			set_politics = {
 				ruling_party = oligarchy
 			}
+				}
+		}
+
+	focus = {
+			id = SOL_retain_military_control
+			icon = GFX_goal_dom_development
+			cost = 5
+			x = -1
+			y = 2
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_dozle_stand
+			prerequisite = {
+				focus = SOL_dozle_stand
+			}
+		
+			completion_reward = {
 				}
 		}
 

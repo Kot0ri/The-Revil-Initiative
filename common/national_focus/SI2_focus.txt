@@ -16,7 +16,7 @@ focus_tree = {
 	id = SI2_negotiations_with_federation_investors
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 29
+	x = 22
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -533,6 +533,11 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		EFG = {
+			has_completed_focus = EFG_address_coplaints_of_government_corruption
+		}
+	}
 	completion_reward = {
 	
 	}
@@ -549,6 +554,11 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		EFG = {
+			has_completed_focus = EFG_allow_colonial_elections
+		}
+	}
 	completion_reward = {
 	
 	}
@@ -560,7 +570,7 @@ focus = {
 	id = SI2_begin_expansion_of_colony_industries
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 40
+	x = 34
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -800,7 +810,7 @@ focus = {
 	id = SI2_question_of_colony_defence
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 51
+	x = 45
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -1343,7 +1353,7 @@ focus = {
 	id = SI2_distance_our_officials_from_federation
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 23
+	x = 16
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -1368,9 +1378,7 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	mutually_exclusive = {
-		focus = SI2_get_away_from_federationzeon_disagreements
-	}
+	
 	completion_reward = {
 	
 	}
@@ -1382,10 +1390,13 @@ focus = {
 	id = SI2_push_for_spacenoid_rights
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI2_get_away_from_federationzeon_disagreements
 	}
 	completion_reward = {
 	
@@ -1394,101 +1405,24 @@ focus = {
 	prerequisite = { focus = SI2_seek_closer_side_relations }
 }
 
-focus = {
-	id = SI2_joint_colony_defense_treaties
-	icon = GFX_generic_suspend_constitution
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI2_push_for_spacenoid_rights
-	prerequisite = { focus = SI2_push_for_spacenoid_rights }
-}
 
-focus = {
-	id = SI2_expansion_of_colony_garrison
-	icon = GFX_generic_suspend_constitution
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI2_joint_colony_defense_treaties
-	prerequisite = { focus = SI2_joint_colony_defense_treaties }
-}
-
-focus = {
-	id = SI2_build_up_our_forces_in_secret
-	icon = GFX_generic_suspend_constitution
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = SI2_expansion_of_colony_garrison
-	prerequisite = { focus = SI2_expansion_of_colony_garrison }
-}
-
-focus = {
-	id = SI2_dealings_with_the_lunar_companies
-	icon = GFX_generic_suspend_constitution
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = SI2_build_up_our_forces_in_secret
-	prerequisite = { focus = SI2_build_up_our_forces_in_secret }
-}
-
-focus = {
-	id = SI2_colony_research_initiative
-	icon = GFX_generic_suspend_constitution
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = SI2_dealings_with_the_lunar_companies
-	prerequisite = { focus = SI2_dealings_with_the_lunar_companies }
-}
 
 focus = {
 	id = SI2_get_away_from_federationzeon_disagreements
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 18
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	prerequisite = {
-		focus = SI2_distance_our_officials_from_federation
-	}
-		mutually_exclusive = {
 		focus = SI2_seek_closer_side_relations
 	}
+	mutually_exclusive = {
+		focus = SI2_push_for_spacenoid_rights
+	}
+	relative_position_id = SI2_seek_closer_side_relations
 	completion_reward = {
 		
 	}
@@ -1842,7 +1776,7 @@ focus = {
 	
 	}
 	relative_position_id = SI2_loyalty_to_the_ideals_of_deikun
-	prerequisite = { focus = SI2_loyalty_to_the_ideals_of_deikun }
+	prerequisite = { focus = SI2_loyalty_to_the_ideals_of_deikun focus = SI2_push_for_spacenoid_rights }
 }
 
 focus = {
@@ -1950,6 +1884,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_war = yes
 	}
 	completion_reward = {
 	

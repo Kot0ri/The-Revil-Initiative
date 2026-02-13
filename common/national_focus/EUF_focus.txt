@@ -16,7 +16,7 @@ focus_tree = {
 		id = EUF_europa_council
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 2
-		x = 36
+		x = 38
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -111,7 +111,7 @@ focus_tree = {
 		id = EUF_legacy_of_1993_war
 		icon = GFX_goal_legacy_of_1993_war
 		cost = 2
-		x = 16
+		x = 18
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -177,7 +177,7 @@ focus = {
 	id = EUF_hold_the_torch
 	icon = GFX_goal_hold_the_torch
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -193,7 +193,7 @@ focus = {
 	id = EUF_policy_towards_the_eff
 	icon = GFX_goal_policy_towards_the_eff
 	cost = 2
-	x = 21
+	x = 23
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -344,7 +344,23 @@ focus = {
 	id = EUF_continued_self_determination
 	icon = GFX_goal_continued_self_determination
 	cost = 2
-	x = 0
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EUF_foundation_of_democracy
+	prerequisite = { focus = EUF_foundation_of_democracy }
+}
+
+focus = {
+	id = EUF_guarantees_of_autonomy
+	icon = GFX_goal_peace_on_earth
+	cost = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -353,23 +369,8 @@ focus = {
 		
 	}
 	relative_position_id = EUF_hold_the_torch
-	prerequisite = { focus = EUF_hold_the_torch }
-}
-
-focus = {
-	id = EUF_guarantees_of_autonomy
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_continued_self_determination
 	prerequisite = { focus = EUF_continued_self_determination }
+	prerequisite = { focus = EUF_hold_the_torch }
 }
 
 focus = {
@@ -726,7 +727,7 @@ focus = {
 
 focus = {
 	id = EUF_new_election_cycle
-	icon = GFX_goal_efsf_mobile_headquarters
+	icon = GFX_goal_vote_democracy
 	cost = 2
 	x = 0
 	y = 1
@@ -744,7 +745,7 @@ focus = {
 	id = EUF_the_french_canidate
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -2
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -808,7 +809,7 @@ focus = {
 	id = EUF_the_italian_canidate
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 2
+	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -904,10 +905,27 @@ focus = {
 }
 
 focus = {
+	id = EUF_the_cult_of_reason
+	icon = GFX_goal_cult_of_reason
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_liberty_forever
+	prerequisite = { focus = EUF_liberty_forever }
+	prerequisite = { focus = EUF_pension_expansion }
+}
+
+focus = {
 	id = EUF_expand_arts_programs
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -923,10 +941,48 @@ focus = {
 }
 
 focus = {
-	id = EUF_the_new_renaissance
+	id = EUF_instill_democratic_values
 	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_the_austrian_canidate
+	prerequisite = { focus = EUF_the_austrian_canidate }
+}
+
+focus = {
+	id = EUF_punishment_to_tyrants
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_instill_democratic_values
+	prerequisite = { focus = EUF_instill_democratic_values }
+}
+
+focus = {
+	id = EUF_the_new_renaissance
+	icon = GFX_goal_venice
 	cost = 10
-	x = 2
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -934,8 +990,9 @@ focus = {
 	completion_reward = {
 	add_ideas = new_renaissance
 	}
-	relative_position_id = EUF_expand_arts_programs
-	prerequisite = { focus = EUF_expand_arts_programs focus =  EUF_devotion_to_the_sciences }
+	relative_position_id = EUF_devotion_to_the_sciences
+	prerequisite = { focus =  EUF_devotion_to_the_sciences }
+	prerequisite = { focus =  EUF_form_cordinilli_group }
 }
 
 focus = {
@@ -958,6 +1015,22 @@ focus = {
 }
 
 focus = {
+	id = EUF_reallocate_welfare_funding
+	icon = GFX_goal_pull_the_plug
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_the_italian_canidate
+	prerequisite = { focus = EUF_the_italian_canidate }
+}
+
+focus = {
 	id = EUF_devotion_to_the_sciences
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 5
@@ -969,12 +1042,12 @@ focus = {
 	completion_reward = {
 	add_ideas = devotion_to_science
 	}
-	relative_position_id = EUF_the_italian_canidate
-	prerequisite = { focus = EUF_the_italian_canidate }
+	relative_position_id = EUF_reallocate_welfare_funding
+	prerequisite = { focus = EUF_reallocate_welfare_funding }
 }
 
 focus = {
-	id = EUF_reopen_closed_labs
+	id = EUF_review_expenditures
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 10
 	x = 2
@@ -983,7 +1056,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	add_research_slot = 1
+	
 	}
 	relative_position_id = EUF_the_italian_canidate
 	prerequisite = { focus = EUF_the_italian_canidate }
@@ -1001,15 +1074,15 @@ focus = {
 	completion_reward = {
 
 	}
-	relative_position_id = EUF_reopen_closed_labs
-	prerequisite = { focus = EUF_reopen_closed_labs }
+	relative_position_id = EUF_review_expenditures
+	prerequisite = { focus = EUF_review_expenditures }
 }
 
 focus = {
-	id = EUF_review_our_role
-	icon = GFX_goal_efsf_mobile_headquarters
+	id = EUF_truth_justice_modesty
+	icon = GFX_goal_cult_of_supreme_being
 	cost = 2
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1017,8 +1090,25 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_pension_expansion
-	prerequisite = { focus = EUF_pension_expansion focus = EUF_the_new_renaissance  focus = EUF_rebuild_old_infrastructure}
+	relative_position_id = EUF_rebuild_old_infrastructure
+	prerequisite = {focus = EUF_rebuild_old_infrastructure}
+	prerequisite = {focus = EUF_punishment_to_tyrants }
+}
+
+focus = {
+	id = EUF_review_our_role
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_truth_justice_modesty
+	prerequisite = { focus = EUF_truth_justice_modesty focus = EUF_the_new_renaissance focus = EUF_the_cult_of_reason }
 
 }
 
@@ -1040,7 +1130,7 @@ focus = {
 
 focus = {
 	id = EUF_burial_of_industry
-	icon = GFX_goal_efsf_mobile_headquarters
+	icon = GFX_goal_industry
 	cost = 2
 	x = 2
 	y = 1
@@ -1266,45 +1356,51 @@ focus = {
 	id = EUF_austrian_maneuvers
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 4
+	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	available = {
-		has_completed_focus = EUF_the_austrian_canidate
+		has_war = yes
+	}
+	mutually_exclusive = {
+		focus = EUF_peoples_army
 	}
 	completion_reward = {
 	add_ideas = austrian_maneuvers
 	}
-	relative_position_id = EUF_secret_rearmament
-	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_war_never_changes
+	prerequisite = { focus = EUF_war_never_changes }
 }
 
 focus = {
 	id = EUF_peoples_army
-	icon = GFX_goal_efsf_mobile_headquarters
+	icon = GFX_goal_euf_year_zero
 	cost = 2
-	x = 6
+	x = 5
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	available = {
-		has_completed_focus = EUF_the_french_canidate
+		has_war = yes
+	}
+	mutually_exclusive = {
+		focus = EUF_austrian_maneuvers
 	}
 	completion_reward = {
 	add_ideas = peoples_army
 	}
-	relative_position_id = EUF_secret_rearmament
-	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_war_never_changes
+	prerequisite = { focus = EUF_war_never_changes }
 }
 
 focus = {
 	id = EUF_restoration_of_naval_yards
 	icon = GFX_goal_generic_construct_naval_dockyard
 	cost = 10
-	x = 10
+	x = 8
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1427,7 +1523,7 @@ focus = {
 	id = EUF_pride_of_the_mediterranean
 	icon = GFX_goal_generic_navy_battleship
 	cost = 2
-	x = 8
+	x = 6
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1625,7 +1721,7 @@ focus = {
 
 focus = {
 	id = EUF_war_never_changes
-	icon = GFX_goal_efsf_mobile_headquarters
+	icon = GFX_goal_democratic_military
 	cost = 2
 	x = 0
 	y = 1
@@ -2063,7 +2159,7 @@ focus = {
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
 	x = -5
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}

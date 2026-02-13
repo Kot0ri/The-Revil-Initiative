@@ -1955,7 +1955,7 @@ focus = {
 
 	focus = {
 		id = EFG_pressure_the_colony_governments
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_control_democracy
 		cost = 5
 		x = 3
 		y = 1
@@ -2144,7 +2144,7 @@ focus = {
 
 	focus = {
 		id = EFG_strengthen_banking_connections
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_big_money
 		cost = 5
 		x = 0
 		y = 1
@@ -2171,6 +2171,9 @@ focus = {
 		relative_position_id = EFG_reinforce_civil_values
 		ai_will_do = {
 			factor = 1
+		}
+		bypass = {
+			has_completed_focus = EFG_increase_colonial_traiffs
 		}
 		mutually_exclusive = {
 		 focus = EFG_reduce_colonial_efforts
@@ -2201,7 +2204,7 @@ focus = {
 
 	focus = {
 		id = EFG_encourage_private_businesses
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_drink_server
 		cost = 5
 		x = 1
 		y = 1

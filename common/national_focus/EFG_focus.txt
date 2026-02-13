@@ -812,7 +812,7 @@ focus = {
 
 	focus = {
 		id = EFG_Godkiller
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_sniper
 		cost = 5
 		x = 0
 		y = 1
@@ -906,7 +906,7 @@ focus = {
 
 	focus = {
 		id = EFG_elevate_police_powers
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_secret_police
 		cost = 5
 		x = 1
 		y = 1
@@ -1809,7 +1809,7 @@ focus = {
 
 	focus = {
 		id = EFG_mission_to_Von_Braun
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_secret_meeting
 		cost = 5
 		x = 0
 		y = 1
@@ -2154,7 +2154,7 @@ focus = {
 			factor = 1
 		}
 		mutually_exclusive = {
-			focus = EFG_strengthen_banking_connections
+			focus = EFG_reinforce_civil_values
 		}
 		completion_reward = {
 		add_ideas = empowered_banks
@@ -3298,7 +3298,7 @@ focus = {
 
 		focus = {
 		id = EFG_reshuffle_the_cabinet
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_politician
 		cost = 10
 		x = 6
 		y = 1

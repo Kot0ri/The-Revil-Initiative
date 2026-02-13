@@ -1103,7 +1103,7 @@ focus = {
 		has_completed_focus = SI5_invest_in_the_lunar_companies
 	}
 	mutually_exclusive = {
-		focus = SI5_loyalty_to_earth_the_federation_and_republican_principles
+		focus = SI5_loyalty_to_earth_the_federation_and_republican_principles focus = SI5_power_of_the_ukenta
 	}
 	completion_reward = {
 	
@@ -1214,6 +1214,178 @@ focus = {
 	prerequisite = { focus = SI5_cooperate_with_zeon_planning }
 	prerequisite = { focus = SI5_undermine_federal_garrison_forces focus = SI5_message_of_liberation }
 }
+
+focus = {
+	id = SI5_buy_zeonic_products
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_accept_newtype_thought
+	prerequisite = { focus = SI5_downplay_newtype_thought focus = SI5_accept_newtype_thought }
+}
+
+focus = {
+	id = SI5_invite_zeon_academics
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_accept_newtype_thought
+	prerequisite = {  focus = SI5_accept_newtype_thought }
+}
+
+focus = {
+	id = SI5_bring_in_military_advisors
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+	
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_accept_newtype_thought
+	prerequisite = {  focus = SI5_accept_newtype_thought }
+}
+
+focus = {
+	id = SI5_begin_preperations_for_revolution
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		date >0077.01.1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_bring_in_military_advisors
+	prerequisite = {  focus = SI5_bring_in_military_advisors focus = SI5_invite_zeon_academics }
+}
+
+focus = {
+	id = SI5_form_chupacabra_units
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_begin_preperations_for_revolution
+	prerequisite = {  focus = SI5_begin_preperations_for_revolution }
+}
+
+focus = {
+	id = SI5_found_the_witch-owls
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_form_chupacabra_units
+	prerequisite = {  focus = SI5_form_chupacabra_units }
+}
+
+focus = {
+	id = SI5_the_new_wild
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_begin_preperations_for_revolution
+	prerequisite = {  focus = SI5_begin_preperations_for_revolution }
+}
+
+focus = {
+	id = SI5_space_cowboys
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_the_new_wild
+	prerequisite = {  focus = SI5_the_new_wild }
+}
+
+focus = {
+	id = SI5_power_of_the_ukenta
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI5_treaty_of_autonomy
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_begin_preperations_for_revolution
+	prerequisite = {  focus = SI5_found_the_witch-owls focus = SI5_space_cowboys }
+}
+
 
 focus = {
 	id = SI5_downplay_newtype_thought

@@ -914,7 +914,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_ideas = cult_of_reason
 	}
 	relative_position_id = EUF_liberty_forever
 	prerequisite = { focus = EUF_liberty_forever }
@@ -942,7 +942,7 @@ focus = {
 
 focus = {
 	id = EUF_instill_democratic_values
-	icon = GFX_goal_efsf_mobile_headquarters
+	icon = GFX_goal_liberty
 	cost = 2
 	x = 1
 	y = 1
@@ -953,7 +953,7 @@ focus = {
 		has_war = no
 	}
 	completion_reward = {
-	
+	add_ideas = democratic_values
 	}
 	relative_position_id = EUF_the_austrian_canidate
 	prerequisite = { focus = EUF_the_austrian_canidate }
@@ -1088,7 +1088,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_ideas = truth_justice_modesty
 	}
 	relative_position_id = EUF_rebuild_old_infrastructure
 	prerequisite = {focus = EUF_rebuild_old_infrastructure}
@@ -1356,7 +1356,7 @@ focus = {
 	id = EUF_austrian_maneuvers
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 3
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1378,7 +1378,7 @@ focus = {
 	id = EUF_peoples_army
 	icon = GFX_goal_euf_year_zero
 	cost = 2
-	x = 5
+	x = 3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1751,13 +1751,13 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_war_never_changes
-	prerequisite = { focus = EUF_war_never_changes }
+	relative_position_id = EUF_austrian_maneuvers
+	prerequisite = { focus = EUF_austrian_maneuvers }
 }
 
 focus = {
 	id = EUF_fortress_britain
-	icon = GFX_goal_efsf_mobile_headquarters
+	icon = GFX_goal_britain
 	cost = 2
 	x = 0
 	y = 1
@@ -1775,7 +1775,7 @@ focus = {
 	id = EUF_fall_back_from_odessa
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -1
+	x = -2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1794,7 +1794,7 @@ focus = {
 	id = EUF_retreat_from_the_danube
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 0
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1806,7 +1806,7 @@ focus = {
 	
 	}
 	relative_position_id = EUF_fall_back_from_odessa
-	prerequisite = { focus = EUF_fall_back_from_odessa }
+	prerequisite = { focus = EUF_austrian_maneuvers }
 }
 
 focus = {
@@ -1844,7 +1844,7 @@ focus = {
 	
 	}
 	relative_position_id = EUF_across_the_rhine
-	prerequisite = { focus = EUF_across_the_rhine }
+	prerequisite = { focus = EUF_across_the_rhine focus = EUF_keep_a_foothold_in_northern_europe }
 }
 
 focus = {
@@ -1870,7 +1870,7 @@ focus = {
 	id = EUF_hold_the_north
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -2
+	x = -0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1998,7 +1998,7 @@ focus = {
 	id = EUF_sweep_across_europe
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 0
+	x = 5
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2010,7 +2010,7 @@ focus = {
 	
 	}
 	relative_position_id = EUF_gibraltar_campaign
-	prerequisite = { focus = EUF_gibraltar_campaign }
+	prerequisite = { focus = EUF_gibraltar_campaign focus = EUF_peoples_army }
 }
 
 focus = {
@@ -2018,7 +2018,7 @@ focus = {
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 3
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -2085,7 +2085,7 @@ focus = {
 	id = EUF_crush_Zeon_remnants
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -2
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1

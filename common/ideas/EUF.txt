@@ -285,5 +285,63 @@ ideas = {
 			}
 		}
 
+		cult_of_reason = {
+			
+			allowed = {
+				original_tag = EUF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.02
+				democratic_drift = 0.05
+				democratic_acceptance = 50
+			}
+		}
+
+			democratic_values = {
+			
+			allowed = {
+				original_tag = EUF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.02
+				monthly_population = 0.07
+			}
+		}
+
+
+		truth_justice_modesty = {
+			
+			allowed = {
+				original_tag = EUF
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.02
+				stability_factor = 0.05
+				defensive_war_stability_factor = 0.15
+				war_support_factor = 0.05
+			}
+		}
+
 	}
 }

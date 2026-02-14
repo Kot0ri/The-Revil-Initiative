@@ -352,7 +352,7 @@ focus = {
 
 	focus = {
 		id = EFG_repress_the_colonies
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_caged_democracy
 		cost = 5
 		x = 0
 		y = 1
@@ -412,6 +412,9 @@ focus = {
 		available = {
 			NOT = {
 				has_completed_focus = EFG_reduce_space_migration
+			}
+			NOT = {
+				has_completed_focus = EFG_reduce_colonial_efforts
 			}
 			has_completed_focus = EFG_ensure_colony_loyalty
 		}
@@ -598,8 +601,8 @@ focus = {
 		mutually_exclusive = {
 			focus = EFG_anaheim_leads_the_way
 		}
-		search_filters = {
-			
+		available = {
+			has_completed_focus = EFG_reinforce_free_market_principles
 		}
 		completion_reward = {
 		
@@ -1217,7 +1220,7 @@ focus = {
 
 	focus = {
 		id = EFG_new_himalaya_project
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_industry
 		cost = 15
 		x = 1
 		y = 1
@@ -1608,7 +1611,7 @@ focus = {
 
 	focus = {
 		id = EFG_high_tech_leader
-		icon = GFX_goal_zeon_must_burn
+		icon = GFX_goal_particles
 		cost = 10
 		x = 0
 		y = 1
@@ -1692,7 +1695,7 @@ focus = {
 
 	focus = {
 		id = EFG_syndicate_backchannels
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_secret_meeting
 		cost = 5
 		x = 0
 		y = 1
@@ -2068,7 +2071,7 @@ focus = {
 
 	focus = {
 		id = EFG_ensure_colony_loyalty
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_black_market
 		cost = 5
 		x = 0
 		y = 1
@@ -2924,7 +2927,7 @@ focus = {
 
 focus = {
 		id = EFG_houjin_zei
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_red_wealth
 		cost = 10
 		x = -1
 		y = 1

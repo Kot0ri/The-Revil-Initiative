@@ -282,7 +282,7 @@ focus = {
 
 focus = {
 	id = ABQ_delaz
-	icon = GFX_goal_generic_special_forces
+	icon = GFX_goal_delaz_shield
 	search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 	cost = 5
 	x = 2
@@ -333,7 +333,7 @@ focus = {
 
 focus = {
 	id = ABQ_twanning
-	icon = GFX_goal_generic_special_forces
+	icon = GFX_goal_twanning
 	search_filters = { FOCUS_FILTER_POLITICAL_CHARACTER }
 	cost = 5
 	x = -1
@@ -424,7 +424,7 @@ focus = {
 
 focus = {
 	id = ABQ_cult_of_personality
-	icon = GFX_focus_generic_military_dictatorship
+	icon = GFX_goal_gihren_superior
 	search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY}
 	cost = 5
 	x = 0
@@ -735,7 +735,7 @@ focus = {
 
 focus = {
 	id = ABQ_prepare_for_a_last_stand
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_cult_of_the_supreme_commander
 	cost = 20
 	x = 0
 	y = 1
@@ -816,7 +816,7 @@ focus = {
 
 focus = {
 	id = ABQ_manthfield_clan
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_manthfield_eagle
 	cost = 5
 	x = 2
 	y = 1

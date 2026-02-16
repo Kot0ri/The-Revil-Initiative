@@ -74,17 +74,15 @@ focus = {
 			popularity = 0.05
 		}
 		add_country_leader_role = {
-    character = ZEO_degwin_sodo_zabi
-    promote_leader = yes
+   	 character = ZEO_degwin_sodo_zabi
+     promote_leader = yes
     country_leader = {
         ideology = parlimentary_monarchy
         expire = "1965.1.1.1"
         traits = { sovereign_and_grand_prince }
     }
 }
-		set_politics = {
-			ruling_party = aristocracy
-		}
+		
 	}
 }
 
@@ -193,6 +191,9 @@ focus = {
 	relative_position_id = ZEO_declaration_of_the_principality
 	mutually_exclusive = { focus = ZEO_opposition_to_the_zabi_family	}
 	completion_reward = {
+		set_politics = {
+			ruling_party = aristocracy
+		}
 		add_political_power = 150
 		set_power_balance = {
 			id = ZEO_power_balance

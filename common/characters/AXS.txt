@@ -16,7 +16,7 @@ characters={
 		expire="1000.1.1.1"
 	}
 	navy_leader={
-		traits={anti_zabi_party}
+		traits={anti_zabi_party maharaja_trait}
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -41,7 +41,7 @@ AXS_maharaja_karn_2={
 		expire="1000.1.1.1"
 	}
 	navy_leader={
-		traits={anti_zabi_party}
+		traits={anti_zabi_party maharaja_trait regent_of_axis}
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -1219,7 +1219,7 @@ AXS_Irina={
 		}
 	}
 	corps_commander={
-		traits={Royalguard}
+		traits={ royal_gaurd }
 		skill=2
 		attack_skill=2
 		defense_skill=2
@@ -1228,18 +1228,109 @@ AXS_Irina={
 	}
 }
 
-AXS_Abraham_Washington={
-	name="Abraham Washington"
+AXS_misch_krause={
+	name="Misch Krause"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/misch_krause.dds"
+		}
+	}
+	corps_commander={
+		traits={ royal_gaurd pilot }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+	}
+}
+
+AXS_wunsche_gunsche={
+	name="Wunsche Gunsche"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/wunsche_gunsche.dds"
+		}
+	}
+	corps_commander={
+		traits={ royal_gaurd pilot }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=3
+		logistics_skill=3
+	}
+}
+
+AXS_Abraham={
+	name="Abraham"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Abraham.dds"
+		}
+	}
+	corps_commander={
+		traits={royal_gaurd}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_Abraham={
+	name="Abraham"
 	portraits={
 		army={
 			small="GFX_idea_anavel_gato"
 		}
 		army={
-			large= "gfx/leaders/AXS/Abraham_Washington.dds"
+			large= "gfx/leaders/AXS/Abraham.dds"
 		}
 	}
 	corps_commander={
-		traits={Royalguard}
+		traits={royal_gaurd}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
+AXS_Carl={
+	name="Carl"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/Carl.dds"
+		}
+	}
+	corps_commander={
+		traits={royal_gaurd}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+AXS_Dwight_Washington={
+	name="Dwight Washington"
+	portraits={
+		army={
+			small="GFX_idea_anavel_gato"
+		}
+		army={
+			large= "gfx/leaders/AXS/Dwight_Washington.dds"
+		}
+	}
+	corps_commander={
+		traits={royal_gaurd}
 		skill=2
 		attack_skill=2
 		defense_skill=2
@@ -1259,7 +1350,7 @@ AXS_Alfred_von_Scharenberg={
 		}
 	}
 	corps_commander={
-		traits={Royalguard}
+		traits={royal_gaurd}
 		skill=2
 		attack_skill=2
 		defense_skill=2

@@ -621,7 +621,7 @@ focus = {
 
 
 	focus = {
-		id = SI6_allaince_with_zeon
+		id = SI6_carve_up_spheres_of_influence
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
 		x = 0
@@ -640,6 +640,27 @@ focus = {
 			ZEO = {
 				add_to_faction = SI6
 			}
+		}
+	}
+
+	focus = {
+		id = SI6_allaince_with_zeon
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet = no
+		}
+		relative_position_id = SI6_carve_up_spheres_of_influence
+		prerequisite = {
+			focus = SI6_carve_up_spheres_of_influence
+		}
+		completion_reward = {
+	
 		}
 	}
 
@@ -736,7 +757,7 @@ focus = {
 		id = SI6_our_own_military
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
-		x = 0
+		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -751,6 +772,9 @@ focus = {
 		prerequisite = {
 			focus = SI6_increase_military_police_recuitment
 		}
+		prerequisite = {
+			focus = SI6_fleet_development_plan
+		}
 		completion_reward = {
 			
 		}
@@ -760,7 +784,7 @@ focus = {
 		id = SI6_purchase_zeon_equipment
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
-		x = -1
+		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -972,7 +996,7 @@ focus = {
 			factor = 1
 		}
 		mutually_exclusive = {
-			focus = SI6_work_with_gihren
+			focus = SI6_work_with_the_federation
 		}
 		relative_position_id = SI6_reinforce_ranks_position
 		prerequisite = {

@@ -112,4 +112,35 @@ characters={
 			}
 		}
 	}
+	SI6_david_schiller = {
+		name= "David Schiller"
+		portraits={
+			army={
+				small=GFX_idea_cameron_bloom
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = cameron_bloom
+			traits = {
+				gihrens_chessmate
+			}
+			modifier = {
+			}
+			available = {
+				hidden_trigger = {
+					NOT = {
+						has_global_flag = side6_is_destroy
+					}
+				}
+			}
+			ai_will_do = {
+				factor = 2
+				modifier = {
+					has_war = yes
+					factor = 0.5
+				}
+			}
+		}
+	}
 }

@@ -707,7 +707,7 @@ focus = {
 			focus = SI6_declaration_of_the_riah_princepality focus = SI6_declaration_of_the_riah_republic
 		}
 		completion_reward = {
-			
+			recruit_character = SI6_david_schiller
 		}
 	}
 
@@ -860,10 +860,31 @@ focus = {
 	}
 
 	focus = {
-		id = SI6_strengthen_industrial_power
+		id = SI6_form_womens_association
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
 		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		relative_position_id = SI6_civil_war_recovery
+		prerequisite = {
+			focus = SI6_civil_war_recovery
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_strengthen_industrial_power
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 5
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -1131,6 +1152,138 @@ focus = {
 		prerequisite = {
 			focus = SI6_pergamino_camp
 		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_a_new_era
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+	
+		available = {
+			has_completed_focus = SI6_remove_rank
+		}
+		relative_position_id = SI6_undermine_rank_government
+		prerequisite = {
+			focus = SI6_undermine_rank_government
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_increase_corporate_influence
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SI6_a_new_era
+		prerequisite = {
+			focus = SI6_a_new_era
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_bring_in_refugees
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SI6_increase_corporate_influence
+		prerequisite = {
+			focus = SI6_increase_corporate_influence
+		}
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = SI6_profit_from_underground_fights
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SI6_bring_in_refugees
+		prerequisite = {
+			focus = SI6_bring_in_refugees
+		}
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = SI6_begin_competition_with_the_moon
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SI6_increase_corporate_influence
+		prerequisite = {
+			focus = SI6_increase_corporate_influence
+		}
+		completion_reward = {
+			
+		}
+	}
+
+focus = {
+		id = SI6_cooperate_with_anti_anaheim_forces
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SI6_begin_competition_with_the_moon
+		prerequisite = {
+			focus = SI6_begin_competition_with_the_moon focus = SI6_renegotiate_trade_deals
+		}
+	
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_support_the_nanyang_allaince
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SI6_cooperate_with_anti_anaheim_forces
+		prerequisite = {
+			focus = SI6_cooperate_with_anti_anaheim_forces
+		}
+	
 		completion_reward = {
 			
 		}

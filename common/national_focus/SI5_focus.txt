@@ -1383,7 +1383,7 @@ focus = {
 	
 	}
 	relative_position_id = SI5_begin_preperations_for_revolution
-	prerequisite = {  focus = SI5_found_the_witch-owls focus = SI5_space_cowboys }
+	prerequisite = {  focus = SI5_found_the_witch-owls focus = SI5_space_cowboys focus = SI5_form_the_texas_rangers }
 }
 
 
@@ -1480,6 +1480,25 @@ focus = {
 	}
 	relative_position_id = SI5_sign_contracts_with_anaheim
 	prerequisite = { focus = SI5_sign_contracts_with_anaheim }
+}
+
+focus = {
+	id = SI5_form_the_texas_rangers
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = SI5_push_for_new_military_legislation
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI5_arms_buildup
+	prerequisite = { focus = SI5_arms_buildup }
 }
 
 focus = {

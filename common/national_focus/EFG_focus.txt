@@ -551,7 +551,7 @@ focus = {
 
 	focus = {
 		id = EFG_navigate_consortium_influence
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_big_corps
 		cost = 5
 		x = 2
 		y = 1
@@ -964,7 +964,7 @@ focus = {
 
 	focus = {
 		id = EFG_creation_of_a_police_state
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_federation_police_state
 		cost = 5
 		x = 1
 		y = 1
@@ -1640,6 +1640,7 @@ focus = {
 			NOT = {
 				ZEO = {	has_government = democratic  }
 			}
+			has_war = no
 		}
 		prerequisite = { focus = EFG_anaheim_leads_the_way focus = EFG_increase_federal_policing_mandates }
 		relative_position_id = EFG_anaheim_leads_the_way
@@ -1651,6 +1652,25 @@ focus = {
 				target = ZEO
 				type = annex_everything
 			}
+		}
+	}
+
+	focus = {
+		id = EFG_heir_of_the_dream_of_space
+		icon = GFX_goal_heir_of_the_dream_of_space
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+		has_war_with = ZEO
+		}
+		prerequisite = { focus = EFG_gambit_of_tyrants }
+		relative_position_id = EFG_gambit_of_tyrants
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
 		}
 	}
 

@@ -1711,6 +1711,9 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 		available = {
 			has_completed_focus = SI6_strengthen_industrial_power
 		}

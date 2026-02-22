@@ -966,6 +966,30 @@ focus = {
 	}
 
 	focus = {
+		id = SI6_one_naval_initiative
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = no
+		}
+		relative_position_id = SI6_build_up_palau
+		prerequisite = {
+			focus = SI6_rise_of_seafaring_culture
+		}
+		prerequisite = {
+			focus = SI6_build_up_palau
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = SI6_pergamino_camp
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2

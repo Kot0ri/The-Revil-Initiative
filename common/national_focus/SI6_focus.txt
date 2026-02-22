@@ -263,6 +263,47 @@ focus = {
 	}
 
 	focus = {
+		id = SI6_begin_developmnet_of_the_draken
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		relative_position_id = SI6_civil_industry_development
+		prerequisite = {
+			focus = SI6_shipping_industry_development
+		}
+		prerequisite = {
+			focus = SI6_civil_industry_development
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_export_drakens_to_the_moon
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		relative_position_id = SI6_begin_developmnet_of_the_draken
+		prerequisite = {
+			focus = SI6_begin_developmnet_of_the_draken
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = SI6_shipping_industry_development
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
@@ -534,7 +575,7 @@ focus = {
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
 		x = 16
-		y = 0
+		y = 6
 		ai_will_do = {
 			factor = 1
 		}
@@ -542,6 +583,47 @@ focus = {
 			has_civil_war = yes
 			has_government = supremacist
 			has_completed_focus = SI6_approach_zeon
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = SI6_military_use_draken_model
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		relative_position_id = SI6_request_zeon_aid
+		prerequisite = {
+			focus = SI6_request_zeon_aid
+		}
+		prerequisite = {
+			focus = SI6_export_drakens_to_the_moon
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_adopt_petite_ms_centric_military
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		
+		relative_position_id = SI6_military_use_draken_model
+		prerequisite = {
+			focus = SI6_military_use_draken_model
 		}
 		completion_reward = {
 			
@@ -658,6 +740,96 @@ focus = {
 		relative_position_id = SI6_carve_up_spheres_of_influence
 		prerequisite = {
 			focus = SI6_carve_up_spheres_of_influence
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = SI6_invite_zeon_companies
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet = no
+		}
+		relative_position_id = SI6_allaince_with_zeon
+		prerequisite = {
+			focus = SI6_allaince_with_zeon
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = SI6_interate_zeon_industrial_technolgy
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet = no
+		}
+		relative_position_id = SI6_invite_zeon_companies
+		prerequisite = {
+			focus = SI6_invite_zeon_companies
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = SI6_maintain_domestic_production
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_puppet = no
+		}
+		mutually_exclusive = {
+			focus = SI6_fully_adopt_zeon_designs
+		}
+		relative_position_id = SI6_interate_zeon_industrial_technolgy
+		prerequisite = {
+			focus = SI6_interate_zeon_industrial_technolgy
+		}
+		completion_reward = {
+	
+		}
+	}
+
+		focus = {
+		id = SI6_fully_adopt_zeon_designs
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = SI6_purchase_zeon_equipment
+		}
+		mutually_exclusive = {
+			focus = SI6_maintain_domestic_production
+		}
+		relative_position_id = SI6_interate_zeon_industrial_technolgy
+		prerequisite = {
+			focus = SI6_interate_zeon_industrial_technolgy
 		}
 		completion_reward = {
 	
@@ -810,7 +982,7 @@ focus = {
 	}
 
 	focus = {
-		id = SI6_crackdown_immagration
+		id = SI6_crackdown_on_immigration
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
 		x = 0
@@ -1083,11 +1255,11 @@ focus = {
 			factor = 1
 		}
 		available = {
-			has_war = no
+			has_war = yes
 		}
 		relative_position_id = SI6_work_with_gihren 
 		prerequisite = {
-			focus = SI6_work_with_gihren focus = SI6_allaince_with_zeon 
+			focus = SI6_work_with_gihren focus = SI6_fully_adopt_zeon_designs focus = SI6_maintain_domestic_production
 		}
 		completion_reward = {
 			
@@ -1239,11 +1411,29 @@ focus = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = SI6_profit_from_underground_fights
 		icon =  GFX_goal_zeon_mobile_headquarters
 		cost = 2
 		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SI6_bring_in_refugees
+		prerequisite = {
+			focus = SI6_bring_in_refugees
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = SI6_increase_police_funding
+		icon =  GFX_goal_zeon_mobile_headquarters
+		cost = 2
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 1

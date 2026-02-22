@@ -136,6 +136,19 @@ ideas = {
       }
       traits = {}
     }
+    colony_country = {
+      allowed = {
+        always = no
+      }
+      removal_cost = -1
+      allowed_civil_war = {
+        always = yes
+      }
+      modifier = {
+        
+      }
+      traits = {}
+    }
     #船団護衛
 		fleet_escort = {
 			allowed = {

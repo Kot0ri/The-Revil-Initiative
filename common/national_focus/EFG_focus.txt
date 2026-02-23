@@ -3512,7 +3512,7 @@ focus = {
 		x = -1
 		y = 1
 		available = {
-			
+			has_completed_focus = EFG_expand_the_titans_overreach
 		}
 		prerequisite = {
 			focus = EFG_put_an_end_to_utopianism
@@ -3524,6 +3524,28 @@ focus = {
 		mutually_exclusive = {
 			focus = EFG_indiscriminate_supression
 		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_let_bask_deal_with_it
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_clean_hands_policy
+		}
+		relative_position_id = EFG_clean_hands_policy
+		ai_will_do = {
+			factor = 1
+		}
+		
 		completion_reward = {
 		
 		}
@@ -3548,6 +3570,94 @@ focus = {
 		mutually_exclusive = {
 			focus = EFG_clean_hands_policy
 		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_pass_new_colonial_legislation
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_indiscriminate_supression
+		}
+		relative_position_id = EFG_indiscriminate_supression
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_anti_protest_order
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_pass_new_colonial_legislation focus = EFG_let_bask_deal_with_it
+		}
+		relative_position_id = EFG_let_bask_deal_with_it
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_bunch_30_coverup
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_anti_protest_order
+		}
+		relative_position_id = EFG_anti_protest_order
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_clear_out_block_by_block
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 2
+		y = 1
+		available = {
+			has_completed_focus = EFG_elevate_police_powers
+		}
+		prerequisite = {
+			focus = EFG_indiscriminate_supression
+		}
+		relative_position_id = EFG_indiscriminate_supression
+		ai_will_do = {
+			factor = 1
+		}
+		
 		completion_reward = {
 		
 		}
@@ -3597,4 +3707,60 @@ focus = {
 		}
 	}
 
+focus = {
+		id = EFG_a_new_conflict
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+			TIT = { country_exists = yes }
+			VBC = {has_completed_focus = VBC_rise_of_the_AEUG}
+		}
+		prerequisite = {
+			focus = EFG_bunch_30_coverup
+		}
+		relative_position_id = EFG_bunch_30_coverup
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_the_house_always_wins
+		}
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
+		id = EFG_the_house_always_wins
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+			NOT = {
+				AXS = {
+					country_exists = yes
+				}
+				VBC = {
+					country_exists = yes
+				}
+			}
+		}
+		prerequisite = {
+			focus = EFG_bunch_30_coverup
+		}
+		relative_position_id = EFG_bunch_30_coverup
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_a_new_conflict
+		}
+		completion_reward = {
+		
+		}
+	}
 }

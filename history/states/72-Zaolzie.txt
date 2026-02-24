@@ -4,14 +4,17 @@ state={
 	manpower = 152000
 	
 	state_category = rural
-	
+	resources = {
+		coal = 6
+	}
+
 	history={
-		owner = EUF
+		owner = EEF
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		add_core_of = EUF
+		add_core_of = EEF
 	}
 
 	provinces={

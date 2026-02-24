@@ -2,6 +2,9 @@ state={
 	id=89
 	name="STATE_89"
 
+	resources = {
+		coal = 12
+	}
 	history={
 		victory_points = {
 			11411 1
@@ -9,13 +12,13 @@ state={
 		#victory_points = {
 		#	6483 1
 		#}
-		owner = EUF
+		owner = EEF
 		buildings = {
 			infrastructure = 3
 			air_base = 3
 
 		}
-		add_core_of = EUF
+		add_core_of = EEF
 	}
 
 	provinces={

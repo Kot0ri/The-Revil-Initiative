@@ -81,6 +81,100 @@ focus = {
 }
 
 focus = {
+	id = EUF_maintain_central_europe_claims
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
+		64 = {
+			add_core_of = EUF
+		}
+		61 = {
+			add_core_of = EUF
+		}
+		62 = {
+			add_core_of = EUF
+		}
+		63 = {
+			add_core_of = EUF
+		}
+		69 = {
+			add_core_of = EUF
+		}
+		9 = {
+			add_core_of = EUF
+		}
+		972 = {
+			add_core_of = EUF
+		}
+		75 = {
+			add_core_of = EUF
+		}
+		74 = {
+			add_core_of = EUF
+		}
+	}
+	relative_position_id = EUF_plays_in_the_earth_federation_parliament
+	prerequisite = { focus = EUF_plays_in_the_earth_federation_parliament  }
+
+}
+
+focus = {
+	id = EUF_opportunity_strikes
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+		EEF = { has_completed_focus = EEF_motion_of_no_confindence }
+	}
+	completion_reward = {
+		64 = {
+			transfer_state_to = EUF
+		}
+		61 = {
+			transfer_state_to = EUF
+		}
+		62 = {
+			transfer_state_to = EUF
+		}
+		65 = {
+			transfer_state_to = EUF
+		}
+		69 = {
+			transfer_state_to = EUF
+		}
+		9 = {
+			transfer_state_to = EUF
+		}
+		972 = {
+			transfer_state_to = EUF
+		}
+		75 = {
+			transfer_state_to = EUF
+		}
+		74 = {
+			transfer_state_to = EUF
+		}
+	}
+	relative_position_id = EUF_maintain_central_europe_claims
+	prerequisite = { focus = EUF_maintain_central_europe_claims  }
+
+}
+
+
+focus = {
 	id = EUF_hold_the_torch
 	icon = GFX_goal_hold_the_torch
 	cost = 2
@@ -227,228 +321,7 @@ focus = {
 	prerequisite = { focus = EUF_hold_the_torch }
 }
 
-focus = {
-	id = EUF_push_for_oil_rights
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 3
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	mutually_exclusive = {
-		focus = EUF_play_ball_with_the_middle_east
-	}
-	prerequisite = { focus = EUF_plays_in_the_earth_federation_parliament }
-	completion_reward = {
-		
-	}
-}
 
-focus = {
-	id = EUF_play_ball_with_the_middle_east
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 1
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	mutually_exclusive = {
-		focus = EUF_push_for_oil_rights
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_plays_in_the_earth_federation_parliament
-	prerequisite = { focus = EUF_plays_in_the_earth_federation_parliament }
-}
-
-focus = {
-	id = EUF_exert_influence_in_africa
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_push_for_oil_rights
-	prerequisite = { focus = EUF_push_for_oil_rights }
-}
-
-focus = {
-	id = EUF_dominate_trade_in_the_west
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_exert_influence_in_africa
-	prerequisite = { focus = EUF_exert_influence_in_africa }
-}
-
-focus = {
-	id = EUF_reapproach_africa
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_play_ball_with_the_middle_east
-	prerequisite = { focus = EUF_play_ball_with_the_middle_east }
-}
-
-focus = {
-	id = EUF_slacken_trade_regulations
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_reapproach_africa
-	prerequisite = { focus = EUF_reapproach_africa }
-}
-
-focus = {
-	id = EUF_no_more_mercantilism
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_slacken_trade_regulations
-	prerequisite = { focus = EUF_slacken_trade_regulations }
-}
-
-focus = {
-	id = EUF_push_for_ownership_of_greenland_and_iceland
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_dominate_trade_in_the_west
-	prerequisite = { focus = EUF_dominate_trade_in_the_west }
-}
-
-focus = {
-	id = EUF_tangiers_crisis
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = -3
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	available = {
-		has_war = no
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_exert_influence_in_africa
-	prerequisite = { focus = EUF_exert_influence_in_africa }
-}
-
-focus = {
-	id = EUF_demand_the_suez
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	available = {
-		has_war = no
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_tangiers_crisis
-	prerequisite = { focus = EUF_tangiers_crisis }
-}
-
-focus = {
-	id = EUF_demand_2nd_rome
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = -1
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	available = {
-		has_war = no
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_push_for_ownership_of_greenland_and_iceland
-	prerequisite = { focus = EUF_push_for_ownership_of_greenland_and_iceland }
-	prerequisite = { focus = EUF_demand_the_suez }
-}
-
-focus = {
-	id = EUF_improve_relations_with_the_south_seas
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_no_more_mercantilism
-	prerequisite = { focus = EUF_no_more_mercantilism }
-}
-
-focus = {
-	id = EUF_keep_trade_open
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_improve_relations_with_the_south_seas
-	prerequisite = { focus = EUF_improve_relations_with_the_south_seas }
-}
 
 focus = {
 	id = EUF_fight_the_global_crisis
@@ -465,32 +338,18 @@ focus = {
 	completion_reward = {
 		
 	}
-	relative_position_id = EUF_keep_trade_open
-	prerequisite = { focus = EUF_keep_trade_open focus = EUF_shift_policy_focus }
+	relative_position_id = EUF_plays_in_the_earth_federation_parliament
+	prerequisite = { focus = EUF_plays_in_the_earth_federation_parliament  }
 
 }
 
-focus = {
-	id = EUF_shift_policy_focus
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_demand_2nd_rome
-	prerequisite = { focus = EUF_demand_2nd_rome }
-}
+
 
 focus = {
 	id = EUF_lobby_for_increased_humanitarian_aid
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -528,7 +387,7 @@ focus = {
 	id = EUF_adress_desertification
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -566,7 +425,7 @@ focus = {
 	id = EUF_the_looming_crisis
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 2
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1918,7 +1777,7 @@ focus = {
 	id = EUF_a_new_era
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -5
+	x = 0
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -1931,7 +1790,6 @@ focus = {
 	}
 	relative_position_id = EUF_accept_the_status_quo
 	prerequisite = { focus = EUF_accept_the_status_quo  }
-	prerequisite = { focus = EUF_the_looming_crisis}
 }
 
 focus = {

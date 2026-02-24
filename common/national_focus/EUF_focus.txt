@@ -12,100 +12,7 @@ focus_tree = {
 	default = no
 
 
-	focus = {
-		id = EUF_europa_council
-		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 2
-		x = 38
-		y = 0
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			has_completed_focus = EUF_legacy_of_1993_war
-		}
-		completion_reward = {
-			
-		}
-	}
 
-	focus = {
-		id = EUF_UC_0077_meeting
-		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 2
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		relative_position_id = EUF_europa_council
-		prerequisite = {
-			focus = EUF_europa_council
-		}
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = EUF_combat_europa_influence
-		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 2
-		x = -1
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		relative_position_id = EUF_UC_0077_meeting
-		prerequisite = {
-			focus = EUF_UC_0077_meeting
-		}
-		mutually_exclusive = {
-			focus = EUF_cooperate_with_europa
-		}
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = EUF_purge_europa_members
-		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 2
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		relative_position_id = EUF_combat_europa_influence
-		prerequisite = {
-			focus = EUF_combat_europa_influence
-		}
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = EUF_cooperate_with_europa
-		icon = GFX_goal_efsf_mobile_headquarters
-		cost = 2
-		x = 1
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		relative_position_id = EUF_UC_0077_meeting
-		prerequisite = {
-			focus = EUF_UC_0077_meeting
-		}
-		mutually_exclusive = {
-			focus = EUF_combat_europa_influence
-		}
-		completion_reward = {
-			
-		}
-	}
 
 	focus = {
 		id = EUF_legacy_of_1993_war
@@ -210,7 +117,7 @@ focus = {
 	id = EUF_cooperation_with_the_efgf
 	icon = GFX_goal_cooperation_with_efgf
 	cost = 2
-	x = -2
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -285,60 +192,7 @@ focus = {
 	prerequisite = { focus = EUF_memoirs_of_2020_accords }
 }
 
-focus = {
-	id = EUF_animosity_towards_efgf
-	icon = GFX_goal_animosity_towards_efgf
-	cost = 10
-	x = 2
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	available = {
-		has_completed_focus = EUF_cooperate_with_europa
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_policy_towards_the_eff
-	mutually_exclusive = {focus = EUF_cooperation_with_the_efgf}
-	prerequisite = { focus = EUF_policy_towards_the_eff }
-}
 
-focus = {
-	id = EUF_refuse_centralization
-	icon = GFX_goal_refuse_centralization
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		
-	}
-	relative_position_id = EUF_animosity_towards_efgf
-	prerequisite = { focus = EUF_animosity_towards_efgf }
-}
-
-focus = {
-	id = EUF_secret_rearmament
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		add_offsite_building = {
-			type = arms_factory
-			level = 4
-		}
-	}
-	relative_position_id = EUF_refuse_centralization
-	prerequisite = { focus = EUF_refuse_centralization }
-}
 
 focus = {
 	id = EUF_continued_self_determination
@@ -1181,7 +1035,7 @@ focus = {
 	id = EUF_found_the_amsterdam_military_academy
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -1
+	x = -2
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -1219,7 +1073,7 @@ focus = {
 	id = EUF_air_doctrine
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 2
+	x = 5
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1227,8 +1081,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_secret_rearmament
-	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_formation_of_the_44th_mechanized_composite_regiment
+	prerequisite = { focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
 }
 
 focus = {
@@ -1396,102 +1250,13 @@ focus = {
 	prerequisite = { focus = EUF_war_never_changes }
 }
 
-focus = {
-	id = EUF_restoration_of_naval_yards
-	icon = GFX_goal_generic_construct_naval_dockyard
-	cost = 10
-	x = 8
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	mutually_exclusive = {
-		focus = EUF_pride_of_the_mediterranean
-	}
-	available = {
-		threat > 0.20
-	}
-	completion_reward = {
-		192 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-				add_building_construction = {
-					type =  dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-		196 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-				add_building_construction = {
-					type =  dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		137 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-				add_building_construction = {
-					type =  dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		218 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-				add_building_construction = {
-					type =  dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		234 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-				add_building_construction = {
-					type =  dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		813 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-				add_building_construction = {
-					type =  dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-		85 = {
-			if = {
-				limit = { is_controlled_by = ROOT }
-				add_building_construction = {
-					type =  dockyard
-					level = 4
-					instant_build = yes
-				}
-			}
-		}
-	}
-	relative_position_id = EUF_secret_rearmament
-	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
-}
+
 
 focus = {
 	id = EUF_belfast_yards
 	icon = GFX_goal_generic_construct_naval_dockyard
 	cost = 5
-	x = 0
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1515,30 +1280,25 @@ focus = {
 		}
 
 	}
-	relative_position_id = EUF_restoration_of_naval_yards
-	prerequisite = { focus = EUF_restoration_of_naval_yards }
+	relative_position_id = EUF_pride_of_the_mediterranean
+	prerequisite = { focus = EUF_pride_of_the_mediterranean }
 }
 
 focus = {
 	id = EUF_pride_of_the_mediterranean
 	icon = GFX_goal_generic_navy_battleship
 	cost = 2
-	x = 6
+	x = 8
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
-	mutually_exclusive = {
-		focus = EUF_restoration_of_naval_yards
-	}
-	available = {
-		has_completed_focus = EUF_the_italian_canidate
-	}
+
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_secret_rearmament
-	prerequisite = { focus = EUF_secret_rearmament focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
+	relative_position_id = EUF_formation_of_the_44th_mechanized_composite_regiment
+	prerequisite = {  focus = EUF_formation_of_the_44th_mechanized_composite_regiment }
 }
 
 focus = {
@@ -1604,7 +1364,7 @@ focus = {
 	id = EUF_the_king_of_battle
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1

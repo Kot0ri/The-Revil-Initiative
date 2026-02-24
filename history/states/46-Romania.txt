@@ -4,13 +4,14 @@ state={
 	name="STATE_46" # Muntenia
 	manpower = 4461400
 	resources={
-		oil=44 # was: 70
+		oil=44 
+		coal = 16
 	}
 
 	state_category = city
 
 	history={
-		owner = EUF
+		owner = EEF
 		victory_points = { 9617 20 }
 		victory_points = { 3663 5 }
 		victory_points = { 657 3 }
@@ -21,7 +22,7 @@ state={
 			air_base = 3
 			
 		}
-		add_core_of = EUF
+		add_core_of = EEF
 	}
 
 	provinces={

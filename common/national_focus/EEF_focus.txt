@@ -84,6 +84,26 @@ focus_tree = {
 		}
 	}
 
+		focus = {
+		id = EEF_move_capital_to_danzig
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EEF_purge_europa_members
+		prerequisite = {
+			focus = EEF_purge_europa_members
+		}
+		completion_reward = {
+			set_capital = {
+				state = 85
+			}
+		}
+	}
+
 	focus = {
 		id = EEF_cooperate_with_europa
 		icon = GFX_goal_efsf_mobile_headquarters

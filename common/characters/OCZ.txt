@@ -24,6 +24,23 @@ characters={
 	}
 ## field marshal
 
+	OCZ_phillippe_kaufmann ={
+		name="Phillippe Kaufmann"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/phillippe_kaufmann.dds"
+			}
+		}
+		field_marshal = {
+			traits={ pilot naval_invader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
 ## pilots
 
 OCZ_vische_donahue ={
@@ -144,5 +161,7 @@ OCZ_vische_donahue ={
 			logistics_skill = 2
 		}
 	}
+
+
 
 }

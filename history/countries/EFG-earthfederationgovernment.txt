@@ -44,6 +44,14 @@ set_fuel_ratio = 0.8
 		target = SSA
 		autonomous_state = autonomy_dominion
 	}
+	set_autonomy = {
+		target = EEF
+		autonomous_state = autonomy_dominion
+	}
+	set_autonomy = {
+		target = HIN
+		autonomous_state = autonomy_dominion
+	}
 	add_to_tech_sharing_group = federation_research
 
 create_faction = Federation

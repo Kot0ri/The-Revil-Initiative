@@ -10,6 +10,94 @@ focus_tree = {
 	}
 	default = no
 
+	focus = {
+		id = EEF_abram_adminsitration
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 1
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EEF_continue_spending_cuts
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EEF_abram_adminsitration
+		prerequisite = {
+			focus = EEF_abram_adminsitration
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EEF_reallocate_funding_to_private_accounts
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EEF_continue_spending_cuts
+		prerequisite = {
+			focus = EEF_continue_spending_cuts
+		}
+		completion_reward = {
+			
+		}
+	}
+
+
+	focus = {
+		id = EEF_embezzlement_scandal
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EEF_reallocate_funding_to_private_accounts
+		prerequisite = {
+			focus = EEF_reallocate_funding_to_private_accounts
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EEF_motion_of_no_confindence
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EEF_embezzlement_scandal
+		prerequisite = {
+			focus = EEF_embezzlement_scandal
+		}
+		completion_reward = {
+			
+		}
+		}
+
 		focus = {
 		id = EEF_europa_council
 		icon = GFX_goal_efsf_mobile_headquarters
@@ -20,7 +108,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_completed_focus = EEF_legacy_of_1993_war
+			
 		}
 		completion_reward = {
 			
@@ -39,6 +127,9 @@ focus_tree = {
 		relative_position_id = EEF_europa_council
 		prerequisite = {
 			focus = EEF_europa_council
+		}
+		available = {
+			date > 0077.01.01
 		}
 		completion_reward = {
 			

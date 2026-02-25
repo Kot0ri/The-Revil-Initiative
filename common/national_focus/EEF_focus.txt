@@ -359,4 +359,23 @@ focus = {
 	prerequisite = { focus = EEF_combat_europa_influence focus = EEF_cooperate_with_europa }
 }
 
+focus = {
+	id = EEF_fall_back_from_odessa
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 18
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+	}
+	completion_reward = {
+	
+	}
+
+}
+
+
 }

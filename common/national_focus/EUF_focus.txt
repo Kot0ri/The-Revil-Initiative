@@ -1390,30 +1390,12 @@ focus = {
 	prerequisite = { focus = EUF_fortify_the_alps }
 }
 
-focus = {
-	id = EUF_fall_back_from_odessa
-	icon = GFX_goal_efsf_mobile_headquarters
-	cost = 2
-	x = -2
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	available = {
-		has_war = yes
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = EUF_war_never_changes
-	prerequisite = { focus = EUF_war_never_changes }
-}
 
 focus = {
 	id = EUF_retreat_from_the_danube
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1424,7 +1406,7 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_fall_back_from_odessa
+	relative_position_id = EUF_austrian_maneuvers
 	prerequisite = { focus = EUF_austrian_maneuvers }
 }
 
@@ -1489,7 +1471,7 @@ focus = {
 	id = EUF_hold_the_north
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = -0
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1500,8 +1482,8 @@ focus = {
 	completion_reward = {
 	
 	}
-	relative_position_id = EUF_fall_back_from_odessa
-	prerequisite = { focus = EUF_fall_back_from_odessa }
+	relative_position_id = EUF_austrian_maneuvers
+	prerequisite = { focus = EUF_austrian_maneuvers }
 }
 
 focus = {

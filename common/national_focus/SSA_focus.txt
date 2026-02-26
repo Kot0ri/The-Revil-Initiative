@@ -1118,6 +1118,22 @@ focus = {
 				}
 			}
 
+		focus = {
+			id = SSA_spread_the_cult_of_levan
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 1
+			y = 1
+			ai_will_do = {	
+			factor = 1
+			}
+			relative_position_id = SSA_sabotage_federation_intel
+			prerequisite = {focus = SSA_sabotage_federation_intel focus = SSA_begin_widespread_production_of_p-reuse_system }
+			completion_reward = {
+		
+				}
+			}
+
 	focus = {
 		id = SSA_great_march_north
 		icon = GFX_goal_efsf_mobile_headquarters

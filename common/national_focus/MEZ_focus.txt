@@ -236,6 +236,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MEZ_increase_crackdowns
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+
+		prerequisite = {
+			focus = MEZ_Fist_of_Solomiac
+		}
+		relative_position_id = MEZ_Fist_of_Solomiac
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
 		id = MEZ_Damein_the_deal_broker
 		icon = GFX_goal_generic_alliance
 		cost = 5
@@ -259,6 +278,31 @@ focus_tree = {
 		relative_position_id = MEZ_allow_greater_eff_access
 		completion_reward = {
 	
+		}
+	}
+
+	focus = {
+		id = MEZ_utilzie_local_officers
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+			NOT = {
+				has_completed_focus = MEZ_address_the_troops
+			}
+		}
+		prerequisite = {
+			focus = MEZ_Damein_the_deal_broker
+		}
+		relative_position_id = MEZ_Damein_the_deal_broker
+		completion_reward = {
+			recruit_character = Mez_qusay
+			recruit_character = Mez_riad
 		}
 	}
 
@@ -683,6 +727,11 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = MEZ_utilzie_local_officers
+			}
 		}
 		prerequisite = {
 			focus = MEZ_purge_the_officer_corps.

@@ -68,5 +68,43 @@ characters={
 			logistics_skill = 3
 		}
 	}
+
+	Mez_qusay={
+		name="Qusay"
+		portraits={
+			army={
+				large="gfx/leaders/MEZ/qusay.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				militias_officer desert_fox
+			}
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	Mez_riad={
+		name="Riad"
+		portraits={
+			army={
+				large="gfx/leaders/MEZ/riad.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				militias_officer desert_fox
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 	
 }

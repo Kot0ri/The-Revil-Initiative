@@ -9,5 +9,283 @@ focus_tree = {
 		}
 	}
 	default = no
+
+	focus = {
+		id = NAR_those_that_stay
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 0
+		
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = NAR_those_that_fight
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NAR_those_that_fight
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 8
+		y = 0
+		
+		available = {
+			
+		}
+		mutually_exclusive = {
+			focus = NAR_those_that_stay
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NAR_support_lunar_remnants
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_those_that_fight
+		}
+		relative_position_id = NAR_those_that_fight
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
 	
+	focus = {
+		id = NAR_eichmann_directive
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 4
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_those_that_fight
+		}
+		relative_position_id = NAR_those_that_fight
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NAR_rally_around_the_invisible_knights
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_eichmann_directive
+		}
+		relative_position_id = NAR_eichmann_directive
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = NAR_varunas_tears
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_rally_around_the_invisible_knights
+		}
+		relative_position_id = NAR_rally_around_the_invisible_knights
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NAR_unite_the_global_remnants
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_varunas_tears
+		}
+		relative_position_id = NAR_varunas_tears
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NAR_intergrate_with_indochina_bases
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_unite_the_global_remnants
+		}
+		relative_position_id = NAR_unite_the_global_remnants
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NAR_retake_new_yark
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_unite_the_global_remnants
+		}
+		relative_position_id = NAR_unite_the_global_remnants
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = NAR_wrath_of_varuna
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_unite_the_global_remnants
+		}
+		relative_position_id = NAR_unite_the_global_remnants
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NAR_glory_be_to_zeon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_wrath_of_varuna
+		}
+		relative_position_id = NAR_wrath_of_varuna
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = NAR_a_second_attempt
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = NAR_a_second_attempt
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_wrath_of_varuna
+		}
+		mutually_exclusive = {
+			focus = NAR_glory_be_to_zeon
+		}
+		relative_position_id = NAR_wrath_of_varuna
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = NAR_rally_at_aden
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_a_second_attempt
+		}
+	
+		relative_position_id = NAR_a_second_attempt
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
 }

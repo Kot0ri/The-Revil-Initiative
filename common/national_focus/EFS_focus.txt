@@ -1542,6 +1542,29 @@ focus = {
 }
 
 focus = {
+	id = efsf_ryanto_heavy_industries
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = efsf_encourage_super-elite
+	}
+	prerequisite = {
+		focus = efsf_new_england_revitalization
+	}
+	relative_position_id = efsf_renew_infrastructre
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+	add_ideas = super-elite
+	}
+}
+
+focus = {
 	id = efsf_v_project
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -1736,6 +1759,29 @@ focus = {
 	relative_position_id = efsf_v_project
 	completion_reward = {
 	
+	}
+}
+
+focus = {
+	id = efsf_zepher_phantom
+	icon = GFX_goal_plan_rx
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_operation_v
+	}
+	available = {
+		has_war = yes
+		has_completed_focus = efsf_ryanto_heavy_industries
+		has_completed_focus = efsf_RX_program
+	}
+	relative_position_id = efsf_operation_v
+	completion_reward = {
+
 	}
 }
 
@@ -2888,7 +2934,7 @@ focus = {
 
 focus = {
 	id = efsf_operation_clean_sweep
-	icon = GFX_goal_zeon_must_burn
+	icon = GFX_goal_operation_clean_sweep
 	cost = 10
 	x = -1
 	y = 1
@@ -3009,7 +3055,7 @@ focus = {
 
 focus = {
 	id = efsf_1st_battle_of_axis
-	icon = GFX_goal_earth_counter_strategy
+	icon = GFX_goal_zeon_must_burn
 	cost = 10
 	x = 1
 	y = 1

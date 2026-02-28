@@ -1219,6 +1219,22 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_bring_them_under_direct_control
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_appoint_overseers_to_kuwait }
+		relative_position_id = EFG_appoint_overseers_to_kuwait
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_new_himalaya_project
 		icon = GFX_goal_industry
 		cost = 15
@@ -1606,6 +1622,76 @@ focus = {
 					}
 				}
 			}
+		}
+	}
+
+	focus = {
+		id = EFG_look_towards_space
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_korea_development_project }
+		relative_position_id = EFG_korea_development_project
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_look_towards_earth
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EFG_expand_satillite_coverage
+		icon = GFX_goal_internet
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_look_towards_space }
+		relative_position_id = EFG_look_towards_space
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = EFG_look_towards_earth
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_korea_development_project }
+		relative_position_id = EFG_korea_development_project
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_look_towards_space
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EFG_revitalize_earth_infrastructre
+		icon = GFX_goal_message
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_look_towards_earth }
+		relative_position_id = EFG_look_towards_earth
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
 		}
 	}
 

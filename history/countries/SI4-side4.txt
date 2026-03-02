@@ -43,31 +43,12 @@ add_ideas = {
 	newtype_division_2
 }
 
-79.4.1 = {
-	oob = "generic"
-	set_technology = {
-		improved_rubber_processing = 1
-		concentrated_industry4 = 1
-		nuclear_reactor2 = 1
-		minovsky_dissemination2 = 1
-		ambac2 = 1
-		amc2 = 1
-		simulator2 = 1
-		mechanised_infantry = 1
-		support_weapons1 = 1
-		improved_infantry_weapons = 1
-	}
-	set_convoys = 50
-	set_variable = { newtype_accepted_status = 3 }
-}
+
 
 
 #Leaders
 recruit_character = SI4_flemming
-recruit_character = SI4_moores_democrats_senator
-recruit_character = SI4_moores_earth_supremacist_senator
-recruit_character = SI4_moores_spacenoid_supremacist_senator
-recruit_character = SI4_moores_zeonist_senator
+recruit_character = SI4_meitzer_ronah
 
 #Field Marshalls
 

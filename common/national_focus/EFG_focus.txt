@@ -3616,6 +3616,28 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_remove_titans_oversight
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -2
+		y = 1
+		available = {
+			
+		}
+		prerequisite = {
+			focus = EFG_clean_hands_policy
+		}
+		relative_position_id = EFG_clean_hands_policy
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_let_bask_deal_with_it
 		icon = GFX_goal_general_meeting
 		cost = 10
@@ -3657,7 +3679,12 @@ focus = {
 			focus = EFG_clean_hands_policy
 		}
 		completion_reward = {
-		
+		retire_ideology_leader = democratic
+		recruit_character = EFG_william_follette
+			promote_character = {
+			character = EFG_william_follette
+			ideology = democratic
+		}
 		}
 	}
 
@@ -3740,6 +3767,31 @@ focus = {
 			focus = EFG_indiscriminate_supression
 		}
 		relative_position_id = EFG_indiscriminate_supression
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_reassert_earths_positon
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+			has_completed_focus = EFG_elevate_police_powers
+		}
+		prerequisite = {
+			focus = EFG_clear_out_block_by_block
+		}
+		prerequisite = {
+			focus = EFG_pass_new_colonial_legislation
+		}
+		relative_position_id = EFG_clear_out_block_by_block
 		ai_will_do = {
 			factor = 1
 		}

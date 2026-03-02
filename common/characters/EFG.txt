@@ -116,7 +116,7 @@ EFG_gopp={
 			}
 		}
 		country_leader={
-			ideology= conservatism
+			ideology= fusionism
 			traits={ hawk }
 			expire="1000.1.1.1"
 		}
@@ -130,7 +130,7 @@ EFG_gopp={
 			}
 		}
 		country_leader={
-			ideology= conservatism
+			ideology= third-way
 			traits={ skeptical_towards_industrialization aloof_authority }
 			expire="1000.1.1.1"
 		}
@@ -199,6 +199,48 @@ EFG_gopp={
 				defense_skill = 3
 				planning_skill = 5
 				logistics_skill = 5
+			}
+			}
+
+			EFG_william_follette {
+			name="William Follette"
+			portraits={
+				civilian={
+					large= "gfx/leaders/EFG/william_follette.dds"
+				}
+			}
+			country_leader={
+				ideology= national_conservatism
+				traits={  }
+				expire="1000.1.1.1"
+			}
+			}
+
+			EFG_hauzeri_ronah {
+			name="Hauzeri Ronah"
+			portraits={
+				civilian={
+					large= "gfx/leaders/EFG/hauzeri_ronah.dds"
+				}
+			}
+			country_leader={
+				ideology= neo-reactionarism
+				traits={  }
+				expire="1000.1.1.1"
+			}
+			}
+
+			EFG_bright_noa {
+			name="Bright Noa"
+			portraits={
+				civilian={
+					large= "gfx/leaders/EFG/bright_noa_politician.dds"
+				}
+			}
+			country_leader={
+				ideology= progressivism
+				traits={  }
+				expire="1000.1.1.1"
 			}
 			}
 

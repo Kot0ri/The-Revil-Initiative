@@ -2211,22 +2211,6 @@ focus = {
 	}
 }
 
-focus = {
-	id = efsf_rally_at_luna_2
-	icon = GFX_goal_revil
-	cost = 5
-	x = 45
-	y = 0
-	ai_will_do = {
-		factor = 1
-	}
-	available = {
-		has_war = yes
-	}
-	completion_reward = {
-
-	}
-}
 
 focus = {
 	id = efsf_defense_of_the_earth
@@ -2239,7 +2223,6 @@ focus = {
 	}
 	available = {
 		has_war = yes
-		has_completed_focus = efsf_rally_at_luna_2
 	}
 	completion_reward = {
 	add_timed_idea = {
@@ -2957,6 +2940,33 @@ focus = {
 	}
 	declare_war_on = {
 		target = OCZ
+	}
+	declare_war_on = {
+		target = NAR
+	}
+	declare_war_on = {
+		target = EAR
+	}
+	declare_war_on = {
+		target = ZPR
+	}
+	declare_war_on = {
+		target = BEN
+	}
+	declare_war_on = {
+		target = CAZ
+	}
+	declare_war_on = {
+		target = ECZ
+	}
+	declare_war_on = {
+		target = APZ
+	}
+	declare_war_on = {
+		target = ATZ
+	}
+	declare_war_on = {
+		target = ALZ
 	}
 	}
 }

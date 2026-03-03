@@ -1468,8 +1468,8 @@ focus = {
 
 focus = {
 	id = SI4_our_own_path
-	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	icon =  GFX_goal_ronah_family
+	cost = 10
 	x = -3
 	y = 1
 	ai_will_do = {
@@ -1487,7 +1487,7 @@ focus = {
 focus = {
 	id = SI4_begin_armament_efforts
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 10
 	x = 1
 	y = 1
 	ai_will_do = {
@@ -1502,7 +1502,7 @@ focus = {
 focus = {
 	id = SI4_birnam_contracts
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 10
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -1517,7 +1517,7 @@ focus = {
 focus = {
 	id = SI4_found_dunsinane
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 10
 	x = 2
 	y = 1
 	ai_will_do = {
@@ -1532,7 +1532,7 @@ focus = {
 focus = {
 	id = SI4_form_the_crossbone_vangaurd
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 10
 	x = 2
 	y = 1
 	ai_will_do = {
@@ -1547,7 +1547,7 @@ focus = {
 focus = {
 	id = SI4_begin_work_on_the_space_fleet
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 10
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -1562,7 +1562,7 @@ focus = {
 focus = {
 	id = SI4_buch_concern_investments
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 5
 	x = -1
 	y = 1
 	ai_will_do = {
@@ -1577,7 +1577,7 @@ focus = {
 focus = {
 	id = SI4_scharnhorst_buch_gains_political_sway
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -1592,7 +1592,7 @@ focus = {
 focus = {
 	id = SI4_purchase_the_ronah_title
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 1
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -1622,7 +1622,7 @@ focus = {
 focus = {
 	id = SI4_remove_federation_influence
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -1637,7 +1637,7 @@ focus = {
 focus = {
 	id = SI4_seize_power
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 3
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -1671,7 +1671,7 @@ focus = {
 focus = {
 	id = SI4_early_ms_testing
 	icon =  GFX_goal_zeon_mobile_headquarters
-	cost = 2
+	cost = 10
 	x = 1
 	y = 1
 	ai_will_do = {
@@ -1687,7 +1687,7 @@ focus = {
 focus = {
 	id = SI4_improve_ms_mobility
 	icon =  GFX_goal_berga_giros
-	cost = 2
+	cost = 10
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -1702,8 +1702,8 @@ focus = {
 
 focus = {
 	id = SI4_emblems_of_nobility
-	icon =  GFX_goal_berga_giros
-	cost = 2
+	icon =  GFX_goal_emblems_of_nobility
+	cost = 10
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -1838,7 +1838,7 @@ focus = {
 
 focus = {
 	id = SI4_declare_war_on_earth
-	icon =  GFX_goal_zeon_mobile_headquarters
+	icon =  GFX_goal_vigna
 	cost = 2
 	x = 0
 	y = 1
@@ -1850,6 +1850,37 @@ focus = {
 	relative_position_id = SI4_build_new_palaces
 	prerequisite = { focus = SI4_build_new_palaces }
 	prerequisite = { focus = SI4_beam_weapon_development }
+}
+
+focus = {
+	id = SI4_secure_the_moon
+	icon =  GFX_goal_vigna
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_declare_war_on_earth
+	prerequisite = { focus = SI4_build_new_palaces }
+	prerequisite = { focus = SI4_beam_weapon_development }
+}
+
+focus = {
+	id = SI4_prepare_for_jupiter_conflict
+	icon =  GFX_goal_vigna_juipiter
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = SI4_secure_the_moon
+	prerequisite = { focus = SI4_secure_the_moon }
 }
 
 focus = {

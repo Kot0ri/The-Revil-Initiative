@@ -3870,6 +3870,55 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = EFG_a_world_born_anew
+		icon = GFX_goal_gryps_conflict
+		cost = 10
+		x = 5
+		y = 1
+		available = {
+			has_completed_focus = EFG_a_new_conflict
+			TIT = {
+				exists = no
+			}
+			AXS = {
+				exists = no
+			}
+		}
+		
+		relative_position_id = EFG_bunch_30_coverup
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_gopp_takes_lead
+		icon = GFX_goal_gryps_conflict
+		cost = 10
+		x = 0
+		y = 1
+		available = {
+		
+		}
+		prerequisite = {
+			focus = EFG_a_world_born_anew
+		}
+		relative_position_id = EFG_a_world_born_anew
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+
 
 	focus = {
 		id = EFG_the_house_always_wins

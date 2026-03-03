@@ -4,26 +4,7 @@ set_research_slots = 4
 
 set_stability = 0.70
 set_war_support = 0.15
-	set_autonomy = {
-		target = SI1
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = SI2
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = SI4
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = SI5
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = SI6
-		autonomous_state = autonomy_colony
-	}
+	
 
 ### BOP ###
 
@@ -54,19 +35,19 @@ set_fuel_ratio = 0.8
 add_to_tech_sharing_group = federation_research
 
 set_popularities = {
-	democratic = 50
+	democratic = 30
 	supremacist = 20
 	contolism = 0
-	military_government = 30
+	military_government = 50
 	aristocracy = 0
 	corporatism = 0
 	communism = 0
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = military_government
 	last_election = "74.12.1"
 	election_frequency = 48
-	elections_allowed = yes ##suspended through duration of war, which is handled via event
+	elections_allowed = no
 }
 
 set_country_flag = tem_is_ours

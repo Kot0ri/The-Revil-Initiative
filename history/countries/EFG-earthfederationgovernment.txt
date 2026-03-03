@@ -52,6 +52,26 @@ set_fuel_ratio = 0.8
 		target = HIN
 		autonomous_state = autonomy_dominion
 	}
+	set_autonomy = {
+		target = SI1
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = SI2
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = SI4
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = SI5
+		autonomous_state = autonomy_colony
+	}
+	set_autonomy = {
+		target = SI6
+		autonomous_state = autonomy_colony
+	}
 	add_to_tech_sharing_group = federation_research
 
 create_faction = Federation

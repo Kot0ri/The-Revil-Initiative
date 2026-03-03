@@ -57,6 +57,39 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MAR_to_steal_a_gundam
+		icon = GFX_goal_mars_gundam_steal
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus =  MAR_prepare_infiltration_program }
+		relative_position_id = MAR_prepare_infiltration_program
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_our_own_gundam
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus =  MAR_to_steal_a_gundam }
+		relative_position_id = MAR_to_steal_a_gundam
+		completion_reward = {
+	
+		}
+	}
+
+
+	focus = {
 		id = MAR_form_the_independence_army
 		icon = GFX_goal_generic_alliance
 		cost = 10
@@ -67,6 +100,22 @@ focus_tree = {
 		}
 		prerequisite = {	focus =  MAR_secure_tharsis }
 		relative_position_id = MAR_secure_tharsis
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_oldsmobile_army
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {focus =  MAR_form_the_independence_army }
+		relative_position_id = MAR_form_the_independence_army
 		completion_reward = {
 	
 		}
@@ -97,6 +146,9 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_completed_focus = MAR_secure_tharsis
 		}
 		prerequisite = {	focus =  MAR_landing_on_olympus }
 		relative_position_id = MAR_landing_on_olympus 

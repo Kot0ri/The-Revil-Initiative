@@ -26,15 +26,253 @@ focus_tree = {
 			}
 		}
 	
+		focus = {
+		id = GRA_plan_for_energy_independece
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_Granada_Stands
+		}
+		relative_position_id = GRA_Granada_Stands
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = GRA_cut_deals_with_von_braun
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_plan_for_energy_independece
+		}
+		mutually_exclusive = {
+			focus = GRA_double_down_on_moon_dynamics
+		}
+		relative_position_id = GRA_plan_for_energy_independece
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = GRA_double_down_on_moon_dynamics
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_plan_for_energy_independece
+		}
+		mutually_exclusive = {
+			focus = GRA_cut_deals_with_von_braun
+		}
+		relative_position_id = GRA_plan_for_energy_independece
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = GRA_strive_for_increased_democractization
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_double_down_on_moon_dynamics focus = GRA_cut_deals_with_von_braun
+		}
+
+		relative_position_id = GRA_double_down_on_moon_dynamics
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = GRA_maintain_corporate_power
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_strive_for_increased_democractization
+		}
+		mutually_exclusive = {
+			focus = GRA_a_new_granada
+		}
+		relative_position_id = GRA_strive_for_increased_democractization
+		completion_reward = {
+			}
+		}
+
+		focus = {
+		id = GRA_a_new_granada
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_strive_for_increased_democractization
+		}
+		mutually_exclusive = {
+			focus = GRA_maintain_corporate_power
+		}
+		relative_position_id = GRA_strive_for_increased_democractization
+		completion_reward = {
+			set_politics = {
+				ruling_party = democratic
+			}
+			}
+		}
+
+		focus = {
+		id = GRA_renew_lunar_treaties
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_a_new_granada focus = GRA_maintain_corporate_power
+		}
+		available = {
+			has_completed_focus = GRA_cut_deals_with_von_braun
+		}
+		relative_position_id = GRA_a_new_granada
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = GRA_revitalize_lunar_federation
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_renew_lunar_treaties
+		}
+		available = {
+			has_government = democratic
+		}
+		relative_position_id = GRA_renew_lunar_treaties
+		completion_reward = {
+			
+			}
+		}
+
+	focus = {
+		id = GRA_support_spacenoid_cause
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_a_new_granada 
+		}
+		
+		relative_position_id = GRA_a_new_granada
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = GRA_allaince_of_the_willing
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_support_spacenoid_cause
+		}
+		mutually_exclusive = {
+			focus = GRA_the_heir_of_zeon
+		}
+		available = {
+			has_government = democratic
+			has_completed_focus = GRA_revitalize_lunar_federation
+		}
+		relative_position_id = GRA_support_spacenoid_cause
+		completion_reward = {
+			create_faction = "Lunar Federation"
+			}
+		}
+
+		focus = {
+		id = GRA_the_heir_of_zeon
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_support_spacenoid_cause
+		}
+		mutually_exclusive = {
+			focus = GRA_allaince_of_the_willing
+		}
+		relative_position_id = GRA_support_spacenoid_cause
+		completion_reward = {
+			
+			}
+		}
 
 	focus = {
 		id = GRA_Growing_Zeon_sentiments
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 10
+		x = 12
 		y = 0
 		mutually_exclusive = {
 			focus = GRA_Granada_Stands
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		ai_will_do = {
 			factor = 10
@@ -47,7 +285,7 @@ focus_tree = {
 		id = GRA_industrial_development_plan
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = -5
+		x = -6
 		y = 1
 		relative_position_id = GRA_Growing_Zeon_sentiments
 		prerequisite = {focus = GRA_Growing_Zeon_sentiments focus = GRA_Granada_Stands }
@@ -241,7 +479,7 @@ focus_tree = {
 			id = GRA_Secret_Backroom_deals
 			icon = GFX_goal_efsf_mobile_headquarters
 			cost = 10
-			x = 1
+			x = 0
 			y = 1
 			relative_position_id = GRA_Book_a_business_trip
 			prerequisite = {focus = GRA_Book_a_business_trip focus = GRA_build_upon_relations_with_zeon } 
@@ -256,7 +494,7 @@ focus_tree = {
 			id = GRA_industrial_cooperation
 			icon = GFX_goal_efsf_mobile_headquarters
 			cost = 10
-			x = 1
+			x = 0
 			y = 1
 			relative_position_id = GRA_build_upon_relations_with_zeon
 			prerequisite = {focus = GRA_build_upon_relations_with_zeon } 
@@ -737,8 +975,33 @@ focus_tree = {
 		}
 		completion_reward = {
 			leave_faction = yes
+			set_politics = {
+				ruling_party = oligarchy
+			}
 			declare_war_on = {
 				target = ABQ
+			}
+		}
+	}
+
+	focus = {
+		id = GRA_deal_with_the_upstarts
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_coup_attempt_against_gihren
+		prerequisite = {focus = GRA_coup_attempt_against_gihren }
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = aristocracy
 			}
 		}
 	}

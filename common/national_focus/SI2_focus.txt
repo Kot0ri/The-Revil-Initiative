@@ -1908,7 +1908,12 @@ focus = {
 		focus = SI2_kagaties_mission
 	}
 	completion_reward = {
-	
+	recruit_character = SI2_maria
+	SI2_maria = {
+		promote_character = {
+		ideology = contolism
+	}
+	}
 	}
 	relative_position_id = SI2_political_moves
 	prerequisite = { focus = SI2_political_moves }

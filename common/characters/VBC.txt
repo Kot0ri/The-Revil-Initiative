@@ -1,16 +1,23 @@
 characters={
 	#Leaders
-	VBC_andy_williams={
-		name= "Andy Williams"
+	VBC_andy_wellington={
+		name= "Andy Wellington"
 		portraits={
 			civilian={
-				large="gfx/leaders/andy_williams.dds"
+				large="gfx/leaders/andy_wellington.dds"
 			}
 		}
 		country_leader={
 			ideology= corporate_state
 			traits = {
 				lord_of_von_braun ruler_of_the_moon
+			}
+			expire="100.1.1.1"
+		}
+		country_leader={
+			ideology= lunarian_supremacist
+			traits = {
+				lord_of_von_braun ruler_of_the_moon titans_founder
 			}
 			expire="100.1.1.1"
 		}
@@ -34,9 +41,9 @@ characters={
 				original_tag = VBC
 			}
 			available = {
-					has_global_flag = o'sullivan_is_dead
+					
 				}
-			}
+			
 			traits = {
 				melanie_hue_carbine_trait
 			}
@@ -46,7 +53,7 @@ characters={
 				factor = 20
 			}
 		}
-	
+	}
 
 	VBC_sullivan={
 		name="O'Sullivan"
@@ -66,21 +73,7 @@ characters={
 			melanie_hue_carbine_trait
 		}
 	}
-		VBC_andy_wellington={
-			name="Andy Wellington"
-			portraits={
-				civilian={
-					large= "gfx/leaders/VBC/O'sullivan.dds"
-				}
-			}
-			country_leader={
-				ideology=corporate_state
-				expire="1000.1.1.1"
-			}
-			traits = {
-				andy_wellington_trait
-			}
-	}
+		
 
 	#pilots
 	VBC_linnet_york = {
@@ -345,3 +338,4 @@ characters={
 		}
 	}
 
+}

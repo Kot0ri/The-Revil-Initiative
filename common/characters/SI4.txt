@@ -20,11 +20,69 @@ characters={
 			}
 		}
 			country_leader={
-			ideology= noble_rule
+				traits = {
+					head_of_the_ronah_family
+				}
+			ideology= cosmo_aristocracy
 			expire="120.1.1.1"
 		}
 	}
-	
+	SI4_carozzo_ronah={
+		name="Meitzer Ronah"
+		portraits={
+			army={
+				large="gfx/leaders/SI4/Corazzo_Ronah(Iron Mask).dds"
+			}
+			civilian={
+				large="gfx/leaders/SI4/Corazzo_Ronah.dds"
+			}
+		}
+		country_leader={
+				traits = {
+					iron_mask
+				}
+			ideology= radical_cosmo_aristocracy
+			expire="120.1.1.1"
+		}
+		field_marshal = {
+			traits = {
+				Cyber_newtype pilot
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	SI4_berah_ronah={
+		name="Berah Ronah"
+		portraits={
+			army={
+				large="gfx/leaders/SI4/Berah_Ronah2.dds"
+			}
+			civilian={
+				large="gfx/leaders/SI4/Berah_Ronah.dds"
+			}
+		}
+		country_leader={
+				traits = {
+					
+				}
+			ideology= radical_cosmo_aristocracy
+			expire="120.1.1.1"
+		}
+		field_marshal = {
+			traits = {
+				newtype_1 pilot media_personality
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
 
 	##Generals
 

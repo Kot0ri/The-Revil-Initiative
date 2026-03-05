@@ -449,7 +449,7 @@ chief_of_naval_research = {
 	experience_gain_navy_factor = 0.05
 }
 
-#andy wllington
+#andy wellington
 lord_of_von_braun = {
 	random = no
 	political_power_gain = 0.05
@@ -459,6 +459,35 @@ ruler_of_the_moon = {
 	random = no
 	stability_factor = 0.15
 	war_support_factor = 0.05
+}
+
+#cosmo bablyon
+head_of_the_ronah_family = {
+	random = no
+	political_advisor_cost_factor = -0.15
+	aristocracy_drift = 0.02
+}
+
+iron_mask = {
+	random = no
+	army_attack_factor = 0.15
+	stability_factor = -0.05
+	recruitable_population_factor = -0.10
+}
+
+#zanscare
+queen_of_amelia = {
+	random = no
+	political_power_gain = 0.05
+	contolism_drift = 0.02
+	aristocracy_drift = 0.02
+}
+
+gachi_party_leader = {
+	random = no
+	supremacist_drift = 0.02
+	supremacist_acceptance = 50
+	war_support_factor = 0.10
 }
 
 #mars

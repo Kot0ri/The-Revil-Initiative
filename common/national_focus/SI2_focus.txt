@@ -1557,7 +1557,14 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	retire_character = SI2_Lichtenstein_Barbarossa
+	retire_ideology_leader = aristocracy
+	retire_ideology_leader = supremacist
+	recruit_character = SI2_fonse_kagatie
+	recruit_character = SI2_maria
+	SI2_maria = {
+		promote_character = aristocracy
+	}
 	}
 	mutually_exclusive = {
 		focus = SI2_align_with_zeon
@@ -1908,8 +1915,7 @@ focus = {
 		focus = SI2_kagaties_mission
 	}
 	completion_reward = {
-	retire_character = SI2_Lichtenstein_Barbarossa
-	recruit_character = SI2_maria
+	
 	set_politics = {
 		ruling_party = aristocracy
 	}

@@ -4743,7 +4743,7 @@ focus = {
 	id = ZEO_zaku_versus_zudah_competition
 	icon =  GFX_goal_zaku_vs_zudah
 	search_filters = { FOCUS_FILTER_RESEARCH } 
-	cost = 1
+	cost = 3
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -4779,7 +4779,7 @@ focus = {
 	x = -1
 	y = 1
 	ai_will_do = {
-		factor = 1
+		factor = 10
 	}
 	mutually_exclusive = { focus = ZEO_choose_pezun_as_testing_grounds }
 	completion_reward = {
@@ -4799,6 +4799,11 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		NOT = {
+			ABQ = { has_completed_focus = ABQ_use_the_supreme_commanders_sway }
+		}
 	}
 	mutually_exclusive = { focus = ZEO_choose_a_baoa_qu_as_testing_grounds }
 	completion_reward = {

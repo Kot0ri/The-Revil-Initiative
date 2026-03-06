@@ -1426,8 +1426,15 @@ focus = {
 			factor = 1
 		}
 		available = {
-			is_in_faction_with = GRA
-			or = {  }
+			ZEO = {
+				is_puppet = yes
+			}
+			or = 
+			{ 
+				is_in_faction_with = GRA
+				GRA = {
+				exists = no
+			} }
 		}
 		completion_reward = {
 		

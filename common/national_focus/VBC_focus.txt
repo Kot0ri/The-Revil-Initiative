@@ -37,7 +37,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			has_country_leader = VBC_andy_wellington
+			NOT = {
+				has_completed_focus = VBC_let_andy_rest
+			}
 		}
 		relative_position_id = VBC_tyrant_of_the_moon
 		prerequisite = {focus = VBC_tyrant_of_the_moon}

@@ -1,0 +1,38 @@
+characters={
+	#Leaders
+
+	HIN_edwin_chelmsford={
+		name="Edwin Chelmsford"
+		portraits={
+			civilian={
+				large="gfx/leaders/HIN/edwin_chelmsford.dds"
+			}
+		}
+		country_leader={
+			ideology= conservatism
+			traits={  }
+			expire="1000.1.1.1"
+		}
+	}
+
+		HIN_nathaniel_curzon={
+		name="Nathaniel Curzon"
+		portraits={
+			civilian={
+				large="gfx/leaders/HIN/nathaniel_curzon.dds"
+			}
+		}
+		country_leader={
+			ideology= military_administration
+			traits={  }
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

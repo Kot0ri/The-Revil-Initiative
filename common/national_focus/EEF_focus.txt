@@ -232,6 +232,24 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EEF_cool_relations_with_the_atlantic
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EEF_move_capital_to_danzig
+		prerequisite = {
+			focus = EEF_move_capital_to_danzig
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = EEF_cooperate_with_europa
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 2
@@ -289,7 +307,7 @@ focus = {
 
 focus = {
 	id = EEF_secret_rearmament
-	icon = GFX_goal_efsf_mobile_headquarters
+	icon = GFX_goal_red_liberation
 	cost = 2
 	x = 0
 	y = 1
@@ -304,6 +322,25 @@ focus = {
 	}
 	relative_position_id = EEF_refuse_centralization
 	prerequisite = { focus = EEF_refuse_centralization }
+}
+
+focus = {
+	id = EEF_concentrate_resources
+	icon = GFX_goal_red_wealth
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+	}
+	relative_position_id = EEF_secret_rearmament
+	prerequisite = { focus = EEF_secret_rearmament }
 }
 
 focus = {
@@ -374,6 +411,82 @@ focus = {
 	}
 	relative_position_id = EEF_revive_the_soviet_ideal
 	prerequisite = { focus = EEF_revive_the_soviet_ideal }
+}
+
+focus = {
+	id = EEF_revitalize_traditional_values
+	icon = GFX_goal_eastern_europe_kolchak
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EEF_an_empire_once_and_again
+	prerequisite = { focus = EEF_an_empire_once_and_again }
+}
+
+focus = {
+	id = EEF_reinforce_industrial_oligarchs
+	icon = GFX_goal_eastern_europe_kolchak
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EEF_revitalize_traditional_values
+	prerequisite = { focus = EEF_revitalize_traditional_values }
+}
+
+
+focus = {
+	id = EEF_align_with_zeon
+	icon = GFX_goal_eastern_europe_remeber_august
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		ZEO = {
+			exists = yes
+			has_added_tension_amount = 34
+		}
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EEF_lessons_from_the_past
+	prerequisite = { focus = EEF_lessons_from_the_past focus = EEF_reinforce_industrial_oligarchs }
+}
+
+focus = {
+	id = EEF_declare_independence
+	icon = GFX_goal_red_revolution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		ZEO = {
+			has_war_with = EFS
+		}
+	}
+	completion_reward = {
+		RUS = {change_tag_from = EEF}
+	}
+	relative_position_id = EEF_align_with_zeon
+	prerequisite = { focus = EEF_align_with_zeon }
 }
 
 focus = {
@@ -483,5 +596,71 @@ focus = {
 
 }
 
+focus = {
+	id = EEF_fortify_danzig
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+		has_completed_focus = EEF_move_capital_to_danzig
+	}
+	prerequisite = {
+		focus = EEF_fall_back_from_odessa
+	}
+	relative_position_id = EEF_fall_back_from_odessa
+	completion_reward = {
+	
+	}
+
+}
+
+focus = {
+	id = EEF_hold_the_north
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+	}
+	prerequisite = {
+		focus = EEF_fall_back_from_odessa
+	}
+	relative_position_id = EEF_fall_back_from_odessa
+	completion_reward = {
+	
+	}
+
+}
+
+focus = {
+	id = EEF_utilize_old_lessons
+	icon = GFX_goal_fighter_jet
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+	}
+	prerequisite = {
+		focus = EEF_hold_the_north
+	}
+	relative_position_id = EEF_hold_the_north
+	completion_reward = {
+	
+	}
+
+}
 
 }

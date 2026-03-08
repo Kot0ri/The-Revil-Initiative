@@ -102,7 +102,7 @@ focus_tree = {
 		id = EEF_europa_council
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 2
-		x = 12
+		x = 16
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -175,6 +175,42 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = EEF_combat_old_ideological_enemies
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EEF_purge_europa_members
+		prerequisite = {
+			focus = EEF_purge_europa_members
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EEF_honor_the_liberators
+		icon = GFX_goal_eastern_europe_read_my_lips
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = EEF_combat_old_ideological_enemies
+		prerequisite = {
+			focus = EEF_combat_old_ideological_enemies
+		}
+		completion_reward = {
+			
+		}
+	}
+
 		focus = {
 		id = EEF_move_capital_to_danzig
 		icon = GFX_goal_efsf_mobile_headquarters
@@ -239,7 +275,7 @@ focus = {
 	id = EEF_refuse_centralization
 	icon = GFX_goal_refuse_centralization
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -268,6 +304,76 @@ focus = {
 	}
 	relative_position_id = EEF_refuse_centralization
 	prerequisite = { focus = EEF_refuse_centralization }
+}
+
+focus = {
+	id = EEF_memorialize_the_old_bloc
+	icon = GFX_goal_eastern_europe_yanayev
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EEF_an_empire_once_and_again
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EEF_animosity_towards_efgf
+	prerequisite = { focus = EEF_animosity_towards_efgf }
+}
+
+focus = {
+	id = EEF_an_empire_once_and_again
+	icon = GFX_goal_eastern_europe_kolchak
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = EEF_memorialize_the_old_bloc
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EEF_animosity_towards_efgf
+	prerequisite = { focus = EEF_animosity_towards_efgf }
+}
+
+focus = {
+	id = EEF_revive_the_soviet_ideal
+	icon = GFX_goal_eastern_europe_family
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EEF_memorialize_the_old_bloc
+	prerequisite = { focus = EEF_memorialize_the_old_bloc }
+}
+
+focus = {
+	id = EEF_lessons_from_the_past
+	icon = GFX_goal_eastern_europe_remeber_august
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EEF_revive_the_soviet_ideal
+	prerequisite = { focus = EEF_revive_the_soviet_ideal }
 }
 
 focus = {
@@ -363,7 +469,7 @@ focus = {
 	id = EEF_fall_back_from_odessa
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2
-	x = 18
+	x = 24
 	y = 0
 	ai_will_do = {
 		factor = 1

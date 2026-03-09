@@ -538,6 +538,46 @@ EFG_gopp={
 		}
 	}
 
+	EFG_daguza_mackle={
+		name="Daguza Mackle"
+		portraits={
+			army={
+				small="GFX_idea_anavel_gato"
+			}
+			army={
+				large="gfx/leaders/EFG/daguza_mackle.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+	}
+
+	EFG_conroy_haagensen={
+		name="Conroy Haagensen"
+		portraits={
+			army={
+				small="GFX_idea_anavel_gato"
+			}
+			army={
+				large="gfx/leaders/EFG/conroy_haagensen.dds"
+			}
+		}
+		corps_commander={
+			traits={pilot }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
 	EFG_ul_urian={
 		name="Ul Urian"
 		portraits={

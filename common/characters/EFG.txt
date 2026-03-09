@@ -216,6 +216,20 @@ EFG_gopp={
 			}
 			}
 
+			EFG_franklin_underwood {
+			name="Franklin Underwood"
+			portraits={
+				civilian={
+					large= "gfx/leaders/EFG/franklin_underwood.dds"
+				}
+			}
+			country_leader={
+				ideology= third-way
+				traits={ top_down_heavy_policies }
+				expire="1000.1.1.1"
+			}
+			}
+
 			EFG_hauzeri_ronah {
 			name="Hauzeri Ronah"
 			portraits={

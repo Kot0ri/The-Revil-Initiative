@@ -209,6 +209,31 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_center_coalition_forms
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = { focus = EFG_Calls_for_Reform}
+		relative_position_id = EFG_Calls_for_Reform
+		mutually_exclusive = {focus = EFG_Rise_of_the_Conservative_Coalition focus = EFG_Rise_of_the_Liberal_Coalition}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = 0.0
+			}
+			retire_ideology_leader = democratic
+			promote_character = {
+			character = EFG_franklin_underwood
+			ideology = democratic
+		}
+		}
+	}
+
+	focus = {
 		id = EFG_Rise_of_the_Liberal_Coalition
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -216,7 +241,7 @@ focus = {
 		y = 2
 		prerequisite = { focus = EFG_Calls_for_Reform}
 		relative_position_id = EFG_Calls_for_Reform
-		mutually_exclusive = {focus = EFG_Rise_of_the_Conservative_Coalition}
+		mutually_exclusive = {focus = EFG_Rise_of_the_Conservative_Coalition focus = EFG_center_coalition_forms}
 		ai_will_do = {
 			factor = 1
 		}
@@ -239,7 +264,7 @@ focus = {
 		cost = 5
 		x = 3
 		y = 1
-		prerequisite = { focus = EFG_Rise_of_the_Liberal_Coalition focus = EFG_Rise_of_the_Conservative_Coalition}
+		prerequisite = { focus = EFG_Rise_of_the_Liberal_Coalition focus = EFG_Rise_of_the_Conservative_Coalition focus = EFG_center_coalition_forms }
 		relative_position_id = EFG_Rise_of_the_Liberal_Coalition
 		mutually_exclusive = {	focus = EFG_ignore_Zeon }
 		ai_will_do = {
@@ -316,7 +341,7 @@ focus = {
 		cost = 5
 		x = 5
 		y = 1
-		prerequisite = { focus = EFG_Rise_of_the_Liberal_Coalition focus = EFG_Rise_of_the_Conservative_Coalition}
+		prerequisite = { focus = EFG_Rise_of_the_Liberal_Coalition focus = EFG_Rise_of_the_Conservative_Coalition focus = EFG_center_coalition_forms }
 		relative_position_id = EFG_Rise_of_the_Liberal_Coalition
 		mutually_exclusive = {	focus = EFG_isolate_Zeon }
 		ai_will_do = {
@@ -417,6 +442,44 @@ focus = {
 				has_completed_focus = EFG_reduce_colonial_efforts
 			}
 			has_completed_focus = EFG_ensure_colony_loyalty
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_take_direct_control_over_ECOAS
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x =4
+		y = 1
+		prerequisite = { focus = EFG_increase_colonial_traiffs }
+		relative_position_id = EFG_increase_colonial_traiffs
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = EFG_center_coalition_forms
+		}
+		completion_reward = {
+		
+		}
+	}
+
+focus = {
+		id = EFG_refurbish_the_old_capital
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		prerequisite = { focus = EFG_increase_colonial_traiffs }
+		relative_position_id = EFG_increase_colonial_traiffs
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = EFG_center_coalition_forms
 		}
 		completion_reward = {
 		
@@ -2045,7 +2108,7 @@ focus = {
 		y = 2
 		prerequisite = { focus = EFG_Calls_for_Reform}
 		relative_position_id = EFG_Calls_for_Reform
-		mutually_exclusive = {focus = EFG_Rise_of_the_Liberal_Coalition	}
+		mutually_exclusive = {focus = EFG_Rise_of_the_Liberal_Coalition focus = EFG_center_coalition_forms}
 		ai_will_do = {
 			factor = 1
 		}

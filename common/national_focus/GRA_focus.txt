@@ -265,6 +265,49 @@ focus_tree = {
 		}
 
 	focus = {
+		id = GRA_gather_newtypes
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_the_heir_of_zeon
+		}
+		
+		relative_position_id = GRA_the_heir_of_zeon
+		completion_reward = {
+			
+			}
+		}
+
+		focus = {
+		id = GRA_reclaim_the_homeland
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = GRA_the_heir_of_zeon
+		}
+		
+		relative_position_id = GRA_the_heir_of_zeon
+		completion_reward = {
+			create_wargoal = {
+				target = ZEO
+				type = annex_everything
+			}
+			}
+		}
+
+	focus = {
 		id = GRA_Growing_Zeon_sentiments
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -629,6 +672,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			add_threat = 5
 			recruit_character = GRA_kycilia_zabi
 			promote_character = GRA_kycilia_zabi
 			add_popularity = {
@@ -1521,6 +1565,10 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
+			add_popularity = {
+				ideology = supremacist
+				popularity = 15
+			}
 			set_politics = {
 				ruling_party = supremacist
 			}
@@ -1557,6 +1605,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
+			navy_experience = 50
 		}
 	}
 
@@ -1572,6 +1621,10 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
+			add_offsite_building = {
+				type = dockyard
+				level = 4
+			}
 		}
 	}
 
@@ -1605,6 +1658,7 @@ focus = {
 			focus =  GRA_begin_militarization_program
 		}
 		completion_reward = {
+			
 		}
 	}
 
@@ -1624,6 +1678,45 @@ focus = {
 	}
 
 	focus = {
+		id = GRA_subvert_anaheim
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_further_side_economic_connections
+		prerequisite = {focus = GRA_further_side_economic_connections}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_threat = 5
+		}
+	}
+
+	focus = {
+		id = GRA_unite_the_moon
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_subvert_anaheim
+		prerequisite = {focus = GRA_subvert_anaheim}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = VBC
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = AIR
+				type = annex_everything
+			}
+		}
+	}
+
+	focus = {
 		id = GRA_ms_development_program
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -1631,6 +1724,36 @@ focus = {
 		y = 1
 		relative_position_id = GRA_sign_an_offical_treaty
 		prerequisite = {focus = GRA_sign_an_offical_treaty}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = GRA_joint_development_with_zeon
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_ms_development_program
+		prerequisite = {focus = GRA_ms_development_program}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = GRA_focus_on_high_performance_suits
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = GRA_joint_development_with_zeon
+		prerequisite = {focus = GRA_joint_development_with_zeon}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1650,6 +1773,7 @@ focus = {
 			factor = 1
 		}
 		completion_reward = {
+			add_political_power = 50
 		}
 	}
 
@@ -1668,6 +1792,11 @@ focus = {
 			focus = GRA_pro-Deikun_government
 		}
 		completion_reward = {
+			add_political_power = 50
+			add_popularity = {
+				ideology = supremacist
+				popularity = 15
+			}
 		}
 	}
 
@@ -1685,7 +1814,16 @@ focus = {
 		mutually_exclusive = {
 			focus = GRA_pro-Zabi_government
 		}
+		available = {
+			ZEO = {
+				has_completed_focus = ZEO_opposition_to_the_zabi_family
+			}
+		}
 		completion_reward = {
+			add_popularity = {
+				ideology = contolism
+				popularity = 15
+			}
 		}
 	}
 

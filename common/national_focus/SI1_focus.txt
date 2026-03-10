@@ -1550,6 +1550,13 @@ focus = {
 	}
 	completion_reward = {
 		add_manpower = 100000
+		add_popularity = {
+			ideology = aristocracy
+			popularity = 5
+		}
+		set_politics = {
+			ruling_party = aristocracy
+		}
 	}
 	relative_position_id = SI1_spreading_influence_of_moon_moon
 	prerequisite = { focus = SI1_spreading_influence_of_moon_moon }

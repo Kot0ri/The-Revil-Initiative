@@ -176,7 +176,7 @@ focus = {
 
 	focus = {
 		id = EFG_tax_code_reform
-		icon = GFX_goal_transfer_of_government_function
+		icon = GFX_goal_tax_reform
 		cost = 5
 		x = 2
 		y = 1
@@ -260,7 +260,7 @@ focus = {
 
 	focus = {
 		id = EFG_isolate_Zeon
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_isolate_zeon
 		cost = 5
 		x = 3
 		y = 1
@@ -337,7 +337,7 @@ focus = {
 
 	focus = {
 		id = EFG_ignore_Zeon
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_ignore_zeon
 		cost = 5
 		x = 5
 		y = 1
@@ -740,6 +740,25 @@ focus = {
 		}
 		available = {
 			has_completed_focus = EFG_empower_the_BGST
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EFG_crush_dissenting_colonies
+		icon = GFX_goal_crush_colonies
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_dagger_of_the_federation }
+		relative_position_id = EFG_dagger_of_the_federation
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = EFG_repress_the_colonies
 		}
 		completion_reward = {
 			

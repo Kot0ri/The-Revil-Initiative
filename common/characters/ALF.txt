@@ -1,0 +1,27 @@
+characters = {
+##leaders
+ALF_gadeb_jasin={
+	name="Gadeb Jasin"
+	portraits={
+		civilian={
+			large="gfx/leaders/ALF/gadeb_jasin.dds"
+		}
+		army={
+			large="gfx/leaders/ALF/gadeb_jasin.dds"
+		}
+	}
+	country_leader = {
+		ideology = earthnoid_supremacist
+	}
+	field_marshal = {
+		traits = {
+			desert_fox harsh_leader
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 3
+		logistics_skill = 3
+	}
+}
+}

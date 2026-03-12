@@ -1616,6 +1616,25 @@ AXS_rin={
 	}
 }
 
+##aquired characters
+
+AXS_roux={
+	name="Roux Louka"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Axis_Roux.dds"
+		}
+	}
+	corps_commander={
+		traits={ newtype_1 pilot }
+		skill=3
+		attack_skill=3
+		defense_skill=2
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
 ##High Command
 AXS_fernandez={
 	name="Hugo Fernandez"

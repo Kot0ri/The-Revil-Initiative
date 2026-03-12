@@ -1832,7 +1832,7 @@ focus = {
 	id = AXS_depose_mineva
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1860,6 +1860,54 @@ focus = {
 	prerequisite = {focus = AXS_depose_mineva}
 }
 
+focus = {
+	id = AXS_goodbye_days_of_youth
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_crown_glemy
+	prerequisite = {focus = AXS_crown_glemy}
+}
+
+focus = {
+	id = AXS_attracted_by_flowers_scent
+	icon = GFX_goal_scent_of_a_flower
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	recruit_character = AXS_roux
+	}
+	relative_position_id = AXS_crown_glemy
+	prerequisite = {focus = AXS_crown_glemy}
+}
+
+focus = {
+	id = AXS_goddess_of_luck
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	add_ideas = Shining_Luck
+	}
+	relative_position_id = AXS_goodbye_days_of_youth
+	prerequisite = {focus = AXS_attracted_by_flowers_scent}
+	prerequisite = {focus = AXS_goodbye_days_of_youth}
+}
 
 focus = {
 	id = AXS_nothing_more_than_rumors
@@ -2883,7 +2931,7 @@ focus = {
 		has_government = supremacist
 	}
 	completion_reward = {
-	
+	add_ideas = War_Across_the_Cosmos
 	}
 }
 
@@ -2920,6 +2968,48 @@ focus = {
 	relative_position_id = AXS_to_wage_war_across_the_cosmos
 	prerequisite = {
 		focus = AXS_to_wage_war_across_the_cosmos
+	}
+	available = {
+		has_government = supremacist
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_calling_upon_venus
+	icon = GFX_goal_venus
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_hero_of_space
+	prerequisite = {
+		focus = AXS_hero_of_space focus = AXS_fufilling_fathers_dream
+	}
+	available = {
+		has_government = supremacist
+	}
+	completion_reward = {
+	add_ideas = Blessing_of_Venus
+	}
+}
+
+focus = {
+	id = AXS_bring_mars_along
+	icon = GFX_goal_glemy_1
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = AXS_calling_upon_venus
+	prerequisite = {
+		focus = AXS_calling_upon_venus
 	}
 	available = {
 		has_government = supremacist

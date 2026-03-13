@@ -1,0 +1,171 @@
+focus_tree = {
+	id = APZ
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = APZ
+		}
+	}
+	default = no
+
+	focus = {
+	    id = APZ_gather_up_forces
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 10
+	    y = 0
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }
+        
+    }
+
+	focus = {
+	    id = APZ_fortify_hq
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = APZ_gather_up_forces
+		prerequisite = {
+			focus = APZ_gather_up_forces
+		}
+	    completion_reward = {
+	    }  
+    }
+
+	focus = {
+	    id = APZ_mountain_expertise
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = -2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = APZ_gather_up_forces
+		prerequisite = {
+			focus = APZ_gather_up_forces
+		}
+	    completion_reward = {
+	    }
+        
+    }
+
+	focus = {
+	    id = APZ_snow_equipment
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = APZ_gather_up_forces
+		prerequisite = {
+			focus = APZ_gather_up_forces
+		}
+	    completion_reward = {
+	    }
+        
+    }
+
+	focus = {
+	    id = APZ_rally_for_battle
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = APZ_fortify_hq
+		prerequisite = {	focus = APZ_snow_equipment }
+		prerequisite = {	focus = APZ_fortify_hq }
+		prerequisite = {	focus = APZ_mountain_expertise }
+	    completion_reward = {
+	    }
+        
+    }
+
+	focus = {
+	    id = APZ_priortize_survival
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = APZ_priortize_vengeance
+		}
+		relative_position_id = APZ_rally_for_battle
+		prerequisite = {	focus = APZ_rally_for_battle }
+	    completion_reward = {
+	    }
+        
+    }
+
+		focus = {
+	    id = APZ_priortize_vengeance
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = -1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = APZ_priortize_survival
+		}
+		relative_position_id = APZ_rally_for_battle
+		prerequisite = {	focus = APZ_rally_for_battle }
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = APZ_push_south
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = APZ_priortize_vengeance
+		prerequisite = {	focus = APZ_priortize_vengeance }
+	    completion_reward = {
+				EUF = {
+					transfer_state = 151
+				}
+				EUF = {
+				transfer_state = 846
+			}
+	    }
+    }
+
+	focus = {
+	    id = APZ_regroup_with_scattered_italian_forces
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = APZ_push_south
+		prerequisite = {	focus = APZ_push_south }
+	    completion_reward = {
+				
+	    }
+    }
+}

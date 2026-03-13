@@ -102,6 +102,9 @@ AXS_haman_karn_young={
 			large="gfx/leaders/AXS/Haman_Karn_Early.dds"
 		}
 	}
+	country_leader = {
+		ideology = authoritarian_oligarchy
+	}
 	corps_commander =  {
 		traits = { newtype2 pilot karn_party}
 		skill = 6
@@ -416,7 +419,7 @@ AXS_glemy_zabi={
 		}
 	}
 	country_leader={
-		ideology= aristocracy
+		ideology= spacenoid_supremacist
 		traits={heir_zabi_family zabi_party}
 		expire="1000.1.1.1"
 	}

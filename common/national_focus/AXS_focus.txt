@@ -1615,7 +1615,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	set_politics = {
+		ruling_party = supremacist
+	}
 	}
 	relative_position_id = AXS_Axis_civil_war
 	mutually_exclusive = { focus = AXS_hamans_regency}
@@ -1854,6 +1856,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+	retire_country_leader = yes
+	recruit_character = AXS_glemy_zabi
 	
 	}
 	relative_position_id = AXS_depose_mineva

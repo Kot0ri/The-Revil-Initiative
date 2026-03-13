@@ -1766,12 +1766,15 @@ ai_will_do = {
 	factor = 1
 }
 available = {
-	DEL = {
-		has_war_with_major = yes
+	EFS = {
+		has_war = yes
 	}
 }
 completion_reward = {
-
+declare_war_on = {
+	target = EFS
+	type = annex_everything
+}
 }
 relative_position_id = AXS_prepare_for_another_war_of_independence
 prerequisite = {focus = AXS_prepare_for_another_war_of_independence focus = AXS_Purge_the_hardliners }
@@ -1946,6 +1949,11 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+	AXS_enzo_bernini = {
+		add_trait = {
+		trait = leader_of_true_zeon
+	}
+	}
 	
 	}
 	relative_position_id = AXS_nothing_more_than_rumors
@@ -2017,6 +2025,7 @@ focus = {
 	}
 	enable_automatic_bypass = yes
 	completion_reward = {
+		retire_ideology_leader = oligarchy
 		set_politics = {
 			ruling_party = oligarchy
 		}

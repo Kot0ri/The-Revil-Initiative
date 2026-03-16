@@ -1,0 +1,35 @@
+
+state={
+	id=1096
+	name="Augusta Base"
+	manpower = 1468210
+	
+	state_category = city
+
+	history={
+		owner = EFS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+			air_base = 8
+			1572 = {
+				naval_base = 2
+			}
+		
+		}
+		add_core_of = EFS
+		add_core_of = NAA
+		add_core_of = ECZ
+		victory_points = {
+			1572 5 
+		}
+
+	}
+
+	provinces={
+		 1572
+	}
+	
+
+	local_supplies=10.0 
+}

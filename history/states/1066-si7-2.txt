@@ -1,0 +1,37 @@
+
+state={
+	id=1066
+	name="STATE_1066"
+
+  resources={
+		coal=5
+	}
+
+	history={
+		owner = EFS
+		add_core_of = EFS
+		add_core_of = SI7
+		78.5.1 = {
+			owner = SI7
+			buildings = {
+				infrastructure = 1
+				arms_factory = 7
+				industrial_complex = 3
+				dockyard = 1
+        13495 = {
+					naval_base = 2
+				}
+			}
+
+		}
+
+	}
+
+	provinces={
+		13495 13494 13496
+	}
+	manpower=100
+	buildings_max_level_factor=1.000
+	state_category=colony
+	local_supplies=0.0
+}

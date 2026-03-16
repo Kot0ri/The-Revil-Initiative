@@ -1,0 +1,30 @@
+state = {
+	id = 1039
+	name = "STATE_1039" # South Chahar
+	manpower = 367500
+	
+	state_category = pastoral
+
+	history = {
+
+		owner = EFG
+		add_core_of = EFG
+
+		
+		victory_points = {
+			6904 3 # Kalgan #was 4
+		}
+
+		1938.10.25 = {
+			owner = CHI
+			controller = MEN
+		}
+
+	}
+
+	provinces = {
+		1137 1590 6904 9776
+	}
+
+	local_supplies = 0.0 
+}

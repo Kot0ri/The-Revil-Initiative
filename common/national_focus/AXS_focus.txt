@@ -1143,7 +1143,7 @@ focus = {
 
 focus = {
 	id = AXS_seize_the_colonies
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_axis_seize_colony
 	cost = 3
 	x = -1
 	y = 1
@@ -1281,7 +1281,7 @@ focus = {
 	id = AXS_join_the_2nd_independence_war
 	icon = GFX_goal_general_meeting
 	cost = 10
-	x = -1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1513,7 +1513,7 @@ focus = {
 
 focus = {
 	id = AXS_expand_quebeley_production
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_quebeley_mk2
 	cost = 5
 	x = 0
 	y = 1
@@ -2718,7 +2718,7 @@ focus = {
 
 focus = {
 	id = AXS_human_destiny
-	icon = GFX_goal_hamans_scorn
+	icon = GFX_goal_quebeley_final
 	cost = 5
 	x = 1
 	y = 1
@@ -2903,7 +2903,7 @@ focus = {
 
 focus = {
 	id = AXS_deploy_newtype_forces
-	icon = GFX_goal_glemy_1
+	icon = GFX_goal_quebeley_2
 	cost = 5
 	x = 2
 	y = 1

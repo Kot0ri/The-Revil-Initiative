@@ -6643,7 +6643,7 @@ focus = {
 	cost = 5
 	prerequisite = { focus = ZEO_form_a_new_high_command}
 	relative_position_id = ZEO_form_a_new_high_command
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -6660,13 +6660,64 @@ focus = {
 }
 
 focus = {
+	id = ZEO_begin_secret_rearmament
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_form_a_new_high_command}
+	relative_position_id = ZEO_form_a_new_high_command
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_rally_the_earth_remnants
+	icon = GFX_goal_lacock_ascend
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_begin_secret_rearmament}
+	relative_position_id = ZEO_begin_secret_rearmament
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = ZEO_funnel_equipment_to_earth
+	icon = GFX_goal_lacock_ascend
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_rally_the_earth_remnants}
+	relative_position_id = ZEO_rally_the_earth_remnants
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = ZEO_shutdown_investigations
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
 	prerequisite = { focus = ZEO_maintain_autonomy}
 	relative_position_id = ZEO_maintain_autonomy
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -6699,6 +6750,7 @@ focus = {
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
 	prerequisite = { focus = ZEO_support_peaceful_Contolist_movements}
+	prerequisite = { focus = ZEO_begin_secret_rearmament }
 	relative_position_id = ZEO_support_peaceful_Contolist_movements
 	x = 0
 	y = 1
@@ -6825,7 +6877,7 @@ focus = {
 	cost = 5
 	prerequisite = { focus = ZEO_Federation_aligned_policies}
 	relative_position_id = ZEO_Federation_aligned_policies
-	x = -2
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -6876,7 +6928,7 @@ focus = {
 	cost = 5
 	prerequisite = { focus = ZEO_Federation_aligned_policies}
 	relative_position_id = ZEO_Federation_aligned_policies
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1

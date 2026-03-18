@@ -1512,6 +1512,38 @@ focus = {
 }
 
 focus = {
+	id = AXS_expand_quebeley_production
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_gundarium_gamma_implementation
+	prerequisite = {focus = AXS_gundarium_gamma_implementation}
+}
+
+focus = {
+	id = AXS_perfect_psycommu_system
+	icon = GFX_goal_perfected_psycommu
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_expand_quebeley_production
+	prerequisite = {focus = AXS_expand_quebeley_production}
+}
+
+focus = {
 	id = AXS_improve_ms_transformation_mechanisms
 	icon = GFX_goal_general_meeting
 	cost = 5

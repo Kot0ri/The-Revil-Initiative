@@ -73,6 +73,22 @@ focus_tree = {
 			}
 
 		focus = {
+			id = SOL_commander_unit_deployment
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 2
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			completion_reward = {
+			
+				}
+				relative_position_id = SOL_push_for_increased_MS_budget
+					prerequisite = { focus = SOL_push_for_increased_MS_budget}
+			}
+
+		focus = {
 			id = SOL_prepare_for_war
 			icon = GFX_goal_efsf_mobile_headquarters
 			cost = 5
@@ -713,8 +729,8 @@ focus = {
 
 
 		focus = {
-			id = SOL_progranda_for_the_home_front
-			icon = GFX_goal_dom_development
+			id = SOL_propaganda_for_the_home_front
+			icon = GFX_goal_red_comet
 			cost = 5
 			x = -5
 			y = 1
@@ -739,9 +755,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-			relative_position_id = SOL_progranda_for_the_home_front
+			relative_position_id = SOL_propaganda_for_the_home_front
 			prerequisite = {
-				focus = SOL_progranda_for_the_home_front
+				focus = SOL_propaganda_for_the_home_front
 			}
 			completion_reward = {
 			
@@ -749,7 +765,7 @@ focus = {
 		}
 
 		focus = {
-			id = SOL_priortize_elite_combat_formations
+			id = SOL_prioritize_elite_combat_formations
 			icon = GFX_goal_dom_development
 			cost = 5
 			x = 1
@@ -775,9 +791,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-			relative_position_id = SOL_priortize_elite_combat_formations
+			relative_position_id = SOL_prioritize_elite_combat_formations
 			prerequisite = {
-				focus = SOL_priortize_elite_combat_formations
+				focus = SOL_prioritize_elite_combat_formations
 			}
 			completion_reward = {
 			
@@ -811,9 +827,9 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
-			relative_position_id = SOL_priortize_elite_combat_formations
+			relative_position_id = SOL_prioritize_elite_combat_formations
 			prerequisite = {
-				focus = SOL_priortize_elite_combat_formations
+				focus = SOL_prioritize_elite_combat_formations
 			}
 			completion_reward = {
 			

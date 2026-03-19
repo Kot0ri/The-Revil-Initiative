@@ -1,28 +1,32 @@
 state=
 {
 	id=270
-	name="Gyeonggi"
+	name="Lower New England"
 	manpower = 40
 	state_category = large_city
 	
 	history=
 	{
-		owner = EFG
-		add_core_of = EFG
+		owner = EFS
+		add_core_of = EFS
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
 			arms_factory = 1
-			 11992 = {
-				naval_base = 1
-			}
+			 
 		}
 		victory_points = {
-			7125 10
+			9847 1
+		}
+		victory_points = {
+			6909 5
+		}
+		victory_points = {
+			9832 1 
 		}
 	}
 	provinces={
-		11992  1100 7221 7125 
+		  9847 6909  9850 9832  11830
 	}
 
 	local_supplies=0.0 

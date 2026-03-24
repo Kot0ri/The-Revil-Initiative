@@ -332,7 +332,12 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	recruit_character = SI1_bright_noa_cca
+	retire_ideology_leader = military_government
+	promote_character = SI1_bright_noa_cca
+	set_politics = {
+		ruling_party = military_government
+	}
 	}
 	relative_position_id = SI1_colony_protection_taskforce_proposal
 	prerequisite = { focus = SI1_colony_protection_taskforce_proposal }
@@ -1474,6 +1479,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = SI1_dreams_of_moon_moon
+	}
 	completion_reward = {
 	
 	}
@@ -1483,8 +1491,8 @@ focus = {
 }
 
 focus = {
-	id = SI1_seek_out_deikuns_heirs
-	icon = GFX_goal_casval_and_altesia
+	id = SI1_reach_out_to_zeon
+	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
 	y = 1
@@ -1499,7 +1507,7 @@ focus = {
 }
 
 focus = {
-	id = SI1_the_identity_of_char_aznable
+	id = SI1_invite_zeon_aristocrats
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = -1
@@ -1507,18 +1515,15 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	mutually_exclusive = {
-		focus = SI1_the_mass_daughter
-	}
 	completion_reward = {
-		RNZ = { change_tag_from = SI1 }
+	
 	}
-	relative_position_id = SI1_seek_out_deikuns_heirs
-	prerequisite = { focus = SI1_seek_out_deikuns_heirs }
+	relative_position_id = SI1_reach_out_to_zeon
+	prerequisite = { focus = SI1_reach_out_to_zeon }
 }
 
 focus = {
-	id = SI1_the_mass_daughter
+	id = SI1_bring_in_zeon_miltiary_personnel
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 1
@@ -1526,17 +1531,47 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	mutually_exclusive = {
-		focus = SI1_the_identity_of_char_aznable
-	}
 	completion_reward = {
-		
+	recruit_character = SI1_albrecht_lans
+	retire_ideology_leader = supremacist
+	promote_character = SI1_albrecht_lans
 	}
-	relative_position_id = SI1_seek_out_deikuns_heirs
-	prerequisite = { focus = SI1_seek_out_deikuns_heirs }
+	relative_position_id = SI1_reach_out_to_zeon
+	prerequisite = { focus = SI1_reach_out_to_zeon }
 }
 
+focus = {
+	id = SI1_take_up_the_banner_of_zeon
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI1_reach_out_to_zeon
+	prerequisite = { focus = SI1_bring_in_zeon_miltiary_personnel }
+	prerequisite = { focus = SI1_invite_zeon_aristocrats }
+}
 
+focus = {
+	id = SI1_to_the_rebrith_of_mankind
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI1_take_up_the_banner_of_zeon
+	prerequisite = { focus = SI1_take_up_the_banner_of_zeon }
+}
 
 focus = {
 	id = SI1_dreams_of_moon_moon
@@ -1674,13 +1709,50 @@ focus = {
 	prerequisite = { focus = SI1_steal_mobile_suits }
 }
 
+focus = {
+	id = SI1_completely_reject_technology
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI1_limit_and_hide_technology
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI1_embrace_moon_moon
+	prerequisite = { focus = SI1_embrace_moon_moon }
+}
+
+focus = {
+	id = SI1_limit_and_hide_technology
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = SI1_completely_reject_technology
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI1_embrace_moon_moon
+	prerequisite = { focus = SI1_embrace_moon_moon }
+}
 
 focus = {
 	id = SI1_spread_the_word_to_other_clusters
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}

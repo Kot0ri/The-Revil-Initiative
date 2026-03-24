@@ -49,18 +49,58 @@ characters={
 		}
 	}
 
+	SI1_sasara_moon={
+	name="Sasara Moon"
+	portraits={
+		civilian={
+			large="gfx/leaders/SI1/sasara_moon.dds"
+		}
+	}
+	country_leader = {
+		ideology = moon-moonism
+	}
+}
+
+SI1_rasara_moon={
+	name="Rasara Moon"
+	portraits={
+		civilian={
+			large="gfx/leaders/SI1/rasara_moon.dds"
+		}
+	}
+}
+
+SI1_kaguya_shiratori={
+	name="Kaguya Shiratori"
+	portraits={
+		civilian={
+			large="gfx/leaders/SI1/kaguya_shiratori.dds"
+		}
+	}
+}
+
+SI1_role={
+	name="Role"
+	portraits={
+		civilian={
+			large="gfx/leaders/SI1/role.dds"
+		}
+	}
+}
 	
 
 SI1_bright_noa_cca={
 	name="Bright Noa"
 	portraits={
 		civilian={
-			large="gfx/leaders/Portrait_mob_leader_2.dds"
+			large="gfx/leaders/SI1/bright_noa.dds"
+		}
+		army={
+			large="gfx/leaders/SI1/bright_noa.dds"
 		}
 	}
-	country_leader={
-		ideology=military_government
-		expire="100.1.1.1"
+	country_leader = {
+		ideology = military_administration
 	}
 	navy_leader = {
 		traits = { media_personality bold blockade_runner superior_tactician air_controller }
@@ -69,6 +109,31 @@ SI1_bright_noa_cca={
 		defense_skill = 5
 		maneuvering_skill = 6
 		coordination_skill = 6
+	}
+}
+
+SI1_albrecht_lans={
+	name="Albrecht Lans"
+	portraits={
+		civilian={
+			large="gfx/leaders/SI1/albrecht_lans.dds"
+		}
+		army={
+			large="gfx/leaders/SI1/albrecht_lans.dds"
+		}
+	}
+	country_leader = {
+		ideology = spacenoid_supremacist
+	}
+	field_marshal = {
+		traits = {
+			politically_connected
+		}
+		skill = 4
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 4
 	}
 }
 

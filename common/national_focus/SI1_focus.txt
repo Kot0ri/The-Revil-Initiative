@@ -324,7 +324,7 @@ focus = {
 
 focus = {
 	id = SI1_form_londo_bell
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_londo_bell_1
 	cost = 2
 	x = 0
 	y = 1
@@ -336,6 +336,22 @@ focus = {
 	}
 	relative_position_id = SI1_colony_protection_taskforce_proposal
 	prerequisite = { focus = SI1_colony_protection_taskforce_proposal }
+}
+
+focus = {
+	id = SI1_form_autonomous_combat_units
+	icon = GFX_goal_londo_bell_2
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI1_form_londo_bell
+	prerequisite = { focus = SI1_form_londo_bell }
 }
 
 focus = {
@@ -1173,7 +1189,23 @@ focus = {
 	id = SI1_colony_research_initiative
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
-	x = 0
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI1_dealings_with_the_lunar_companies
+	prerequisite = { focus = SI1_dealings_with_the_lunar_companies }
+}
+
+focus = {
+	id = SI1_backroom_agreement_with_anaheim
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1

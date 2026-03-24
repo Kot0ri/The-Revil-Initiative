@@ -4020,6 +4020,28 @@ focus = {
 		}
 	}
 
+		focus = {
+		id = EFG_the_man_who_could_not_ride_the_rainbow
+		icon = GFX_goal_gryps_conflict
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+		
+		}
+		prerequisite = {
+			focus = EFG_gopp_takes_lead
+		}
+		relative_position_id = EFG_gopp_takes_lead
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
 
 
 	focus = {

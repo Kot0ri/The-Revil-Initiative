@@ -3428,7 +3428,7 @@ focus = {
 	id = efsf_improve_pegasus_design
 	icon = GFX_goal_focus_on_amphibious_assault_ship
 	cost = 10
-	x = 1
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3449,7 +3449,7 @@ focus = {
 	id = efsf_new_generation_battleships
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
-	x = -1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3471,7 +3471,7 @@ focus = {
 	icon = GFX_goal_earth_counter_strategy
 	cost = 10
 	x = 0
-	y = 3
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3495,7 +3495,7 @@ focus = {
 	icon = GFX_goal_focus_on_amphibious_assault_ship
 	cost = 10
 	x = 2
-	y = 3
+	y = 1
 	ai_will_do = {
 		factor = 1
 	}
@@ -3512,6 +3512,27 @@ focus = {
 	
 	}
 	relative_position_id = efsf_new_generation_battleships
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_improve_power_projection
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		 focus = efsf_super-battleship_doctrine focus = efsf_new_multi-role_ship_doctrine
+	}
+
+	available = {
+	}
+	relative_position_id = efsf_new_multi-role_ship_doctrine
 	completion_reward = {
 	
 	}
@@ -3613,6 +3634,11 @@ focus = {
 	prerequisite = {
 		focus = efsf_focus_on_retrofitting_oyw_ms focus = efsf_development_of_nuclear_capable_ms
 	}
+	bypass = {
+		VBC = {
+			exists = no
+		}
+	}
 	available = {
 	
 	}
@@ -3669,6 +3695,78 @@ focus = {
 }
 
 focus = {
+	id = efsf_form_special_duties_group_storm
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		 focus = efsf_prepare_axis_attack_plan
+	}
+
+	available = {
+	has_government = supremacist
+	}
+	relative_position_id = efsf_prepare_axis_attack_plan
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_independent_development_project
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		 focus = efsf_form_special_duties_group_storm
+	}
+	bypass = {
+		VBC = {
+			exists = no
+		}
+	}
+	available = {
+	}
+	relative_position_id = efsf_form_special_duties_group_storm
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_keep_anaheim_in_the_dark
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		 focus = efsf_independent_development_project
+	}
+	bypass = {
+		VBC = {
+			exists = no
+		}
+	}
+	available = {
+	}
+	relative_position_id = efsf_independent_development_project
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_gpo_series_proposal
 	icon = GFX_goal_gpo_series
 	cost = 10
@@ -3679,6 +3777,11 @@ focus = {
 	}
 	prerequisite = {
 		focus = efsf_contract_anaheim
+	}
+	bypass = {
+		VBC = {
+			exists = no
+		}
 	}
 	available = {
 	
@@ -3881,7 +3984,12 @@ focus = {
 		focus = efsf_begin_post_war_military_reconstruction
 	}
 	available = {
-	has_completed_focus = efsf_seek_insights_into_zeonic
+	OR = {
+		date > 0087.01.1
+		VBC = {
+			exists = no
+		}
+	}
 	}
 
 	relative_position_id = efsf_begin_post_war_military_reconstruction

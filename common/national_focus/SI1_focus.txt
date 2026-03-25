@@ -315,6 +315,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		date > 0080.01.1
+	}
 	completion_reward = {
 	
 	}
@@ -1516,7 +1519,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_popularity = {
+		ideology = supremacist
+		popularity = 15
+	}
 	}
 	relative_position_id = SI1_reach_out_to_zeon
 	prerequisite = { focus = SI1_reach_out_to_zeon }
@@ -1550,7 +1556,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	set_politics = {
+		ruling_party = supremacist
+	}
 	}
 	relative_position_id = SI1_reach_out_to_zeon
 	prerequisite = { focus = SI1_bring_in_zeon_miltiary_personnel }

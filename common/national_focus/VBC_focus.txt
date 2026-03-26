@@ -1622,6 +1622,10 @@ focus = {
 			factor = 1
 		}
 		available = {
+			GRA =
+			{ 
+				exists = yes
+			}
 		}
 		mutually_exclusive = {
 			focus = VBC_Blexs_plan
@@ -1768,6 +1772,25 @@ focus = {
 }
 
 focus = {
+	id = VBC_crisis_at_side_2
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = VBC_dark_side_of_the_moon
+	prerequisite = {focus = VBC_dark_side_of_the_moon }
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = VBC_winds_of_jaburo
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 10
@@ -1775,6 +1798,104 @@ focus = {
 	y = 1
 	relative_position_id = VBC_corporate_controlled_military
 	prerequisite = {focus = VBC_corporate_controlled_military focus = VBC_joint_karaba_aeug_military_commission }
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = VBC_siege_of_kilimanjaro
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = VBC_winds_of_jaburo
+	prerequisite = {focus = VBC_winds_of_jaburo focus = VBC_prepare_africa_campaign }
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = VBC_day_of_dakar
+	icon = GFX_goal_day_of_dakar
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = VBC_siege_of_kilimanjaro
+	prerequisite = {focus = VBC_siege_of_kilimanjaro }
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = VBC_push_the_titans_from_space
+	icon = GFX_goal_gryps_conflict_aeug
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = VBC_winds_of_jaburo
+	prerequisite = {focus = VBC_winds_of_jaburo }
+	prerequisite = {focus = VBC_dark_side_of_the_moon }
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = VBC_attack_the_gate_of_zedan
+	icon = GFX_goal_gryps_conflict_aeug
+	cost = 10
+	x = 0
+	y = 2
+	relative_position_id = VBC_dark_side_of_the_moon
+	prerequisite = {focus = VBC_push_the_titans_from_space }
+	prerequisite = {focus = VBC_crisis_at_side_2 }
+	ai_will_do = {
+		factor = 1
+	}
+	
+	available = {
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = VBC_operation_maelstrom
+	icon = GFX_goal_maelstrom
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = VBC_attack_the_gate_of_zedan
+	prerequisite = {focus = VBC_attack_the_gate_of_zedan }
+	prerequisite = {focus = VBC_day_of_dakar }
 	ai_will_do = {
 		factor = 1
 	}
@@ -1805,6 +1926,24 @@ focus = {
 		ideology = supremacist
 		popularity = 15
 	}
+	}
+}
+
+focus = {
+	id = VBC_prepare_africa_campaign
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = VBC_recruit_zeon_remnants
+	prerequisite = {focus = VBC_recruit_zeon_remnants }
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+	
 	}
 }
 

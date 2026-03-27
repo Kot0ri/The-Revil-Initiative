@@ -99,6 +99,97 @@ focus_tree = {
 		}
 
 		focus = {
+		id = EEF_reform_the_administration
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 5
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = EEF_motion_of_no_confindence
+		}
+		completion_reward = {
+			recruit_character = EEF_boris_stanislov
+			retire_character = EEF_anton_abram
+			promote_character = EEF_boris_stanislov
+		}
+	}
+
+	focus = {
+		id = EEF_attempt_to_rebuild_public_trust
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = EEF_reform_the_administration
+		}
+		relative_position_id = EEF_reform_the_administration
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EEF_form_wide_coalition
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = EEF_attempt_to_rebuild_public_trust
+		}
+		relative_position_id = EEF_attempt_to_rebuild_public_trust
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EEF_reach_out_to_private_firms
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = EEF_attempt_to_rebuild_public_trust
+		}
+		relative_position_id = EEF_attempt_to_rebuild_public_trust
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = EEF_bring_in_more_federal_oversight
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 2
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = EEF_reach_out_to_private_firms
+		}
+		relative_position_id = EEF_reach_out_to_private_firms
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
 		id = EEF_europa_council
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 2
@@ -108,7 +199,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			
+			has_completed_focus = EEF_reform_the_administration
 		}
 		completion_reward = {
 			
@@ -287,6 +378,22 @@ focus_tree = {
 	}
 	relative_position_id = EEF_cooperate_with_europa
 	prerequisite = { focus = EEF_cooperate_with_europa}
+}
+
+focus = {
+	id = EEF_increase_ties_with_zeon
+	icon = GFX_goal_refuse_centralization
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		
+	}
+	relative_position_id = EEF_refuse_centralization
+	prerequisite = { focus = EEF_refuse_centralization }
 }
 
 focus = {

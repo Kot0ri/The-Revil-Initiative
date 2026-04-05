@@ -1771,7 +1771,7 @@ focus = {
 
 focus = {
 	id = VBC_dark_side_of_the_moon
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_gundam_mk_2
 	cost = 10
 	x = -1
 	y = 1
@@ -1946,7 +1946,7 @@ focus = {
 
 focus = {
 	id = VBC_recruit_zeon_remnants
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_zeon_remnants_divide
 	cost = 10
 	x = 1
 	y = 1
@@ -1968,7 +1968,7 @@ focus = {
 
 focus = {
 	id = VBC_prepare_africa_campaign
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_africa_rebel
 	cost = 10
 	x = 0
 	y = 1
@@ -1986,7 +1986,7 @@ focus = {
 
 focus = {
 	id = VBC_joint_axis_aeug_military_commission
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_axis_aeug_joint
 	cost = 10
 	x = 3
 	y = 1
@@ -1997,6 +1997,67 @@ focus = {
 	}
 	available = {
 		has_country_leader = VBC_quattro_bajeena
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = VBC_secure_key_resource_zones
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = VBC_joint_axis_aeug_military_commission
+	prerequisite = {focus = VBC_joint_axis_aeug_military_commission }
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = VBC_new_zion
+	icon = GFX_goal_neo_zion
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = VBC_prepare_africa_campaign
+	prerequisite = {focus = VBC_secure_key_resource_zones }
+	prerequisite = {focus = VBC_prepare_africa_campaign }
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = VBC_arcadia_project
+	}
+	completion_reward = {
+	set_politics = {
+		ruling_party = supremacist
+	}
+	}
+}
+
+
+focus = {
+	id = VBC_pax_anaheim_electonica
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = VBC_new_zion
+	prerequisite = {focus = VBC_new_zion }
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
 	}
 	completion_reward = {
 	

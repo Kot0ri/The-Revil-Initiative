@@ -483,6 +483,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NAA_win_hearts_and_minds
+		icon = GFX_goal_uncle_sam
+		cost = 5
+		x = 2
+		y = 1
+		prerequisite = {focus = NAA_Tour_of_America}
+		relative_position_id = NAA_Tour_of_America
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = NAA_Develop_Oakland_Labatories
 		icon = GFX_goal_general_meeting
 		cost = 10

@@ -25,22 +25,6 @@ focus_tree = {
 
 }
 
-focus = {
-	id = ABQ_retreat_to_the_garden_of_thornes
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
-	cost = 5
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	
-	completion_reward = {
-		
-	}
-	relative_position_id =  DEL_karama_point_meeting
-	prerequisite = { focus =  DEL_karama_point_meeting }
-}
 
 focus = {
 	id = DEL_retreat_to_the_side_5_shoal_zone
@@ -78,7 +62,7 @@ focus = {
 
 focus = {
 	id = DEL_ghost_of_gihren_zabi
-	icon = GFX_goal_delaz_ascend
+	icon = GFX_goal_ghost_of_gihren_zabi
 	cost = 5
 	x = 0
 	y = 1
@@ -163,7 +147,7 @@ focus = {
 
 focus = {
 	id = DEL_build_up_production_capabilites
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	icon = GFX_goal_industry
 	cost = 5
 	x = 0
 	y = 1
@@ -180,7 +164,7 @@ focus = {
 
 focus = {
 	id = DEL_build_development_facilites
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	icon = GFX_goal_lasers
 	cost = 5
 	x = 0
 	y = 1
@@ -335,7 +319,7 @@ focus = {
 
 focus = {
 	id = DEL_finish_delaz_fleet_reorganization
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	icon = GFX_goal_delaz_ascend
 	cost = 5
 	x = 0
 	y = 6
@@ -386,14 +370,16 @@ focus = {
 
 focus = {
 	id = DEL_prepare_operation_stardust
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	icon = GFX_goal_delaz_eagle
 	cost = 5
 	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
-	
+	available = {
+		has_completed_focus = DEL_kimberly_launch
+	}
 	completion_reward = {
 		
 	}
@@ -463,7 +449,7 @@ focus = {
 	id = DEL_begin_operation_stardust
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 1
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -482,7 +468,7 @@ focus = {
 	id = DEL_colonyjack
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 1
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -499,9 +485,9 @@ focus = {
 
 focus = {
 	id = DEL_drop_the_second_spear
-	icon = GFX_goal_high_mobility_of_general_purpose_MS
+	icon = GFX_goal_second_spear
 	cost = 1
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -514,6 +500,7 @@ focus = {
 	}
 	relative_position_id =  DEL_colonyjack
 	prerequisite = { focus =  DEL_colonyjack }
+	prerequisite = { focus =  DEL_begin_operation_stardust }
 }
 
 
@@ -650,7 +637,7 @@ focus = {
 	id = DEL_call_up_remnant_forces
 	icon = GFX_goal_high_mobility_of_general_purpose_MS
 	cost = 5
-	x = -2
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -716,6 +703,9 @@ focus = {
 	}
 	mutually_exclusive = {
 		focus = DEL_send_cima_to_von_braun
+	}
+	available = {
+		has_completed_focus = DEL_kimberly_launch
 	}
 	completion_reward = {
 		

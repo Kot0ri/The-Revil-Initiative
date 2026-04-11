@@ -1213,6 +1213,26 @@ EFS_gady_kinsey={
 		}
 	}
 
+#pilots
+EFS_augusta_one={
+		name= "Augusta One"
+		portraits={
+			army={
+				large="gfx/leaders/EFS/augusta_one.dds"
+			}
+		}
+		corps_commander = {
+			traits = {
+				pilot Cyber_newtype
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
 #other
 
 	

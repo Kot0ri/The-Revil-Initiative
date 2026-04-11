@@ -1622,6 +1622,7 @@ focus = {
 			factor = 1
 		}
 		available = {
+			has_completed_focus = VBC_arrivals_from_Axis
 			GRA =
 			{ 
 				exists = yes
@@ -1631,7 +1632,10 @@ focus = {
 			focus = VBC_Blexs_plan
 		}
 		completion_reward = {
-		
+		declare_war_on = {
+		target = TIT
+		type = annex_all
+	}
 		}
 	}
 
@@ -1706,7 +1710,10 @@ focus = {
 		focus = VBC_work_with_granada
 	}
 	completion_reward = {
-	
+	declare_war_on = {
+		target = TIT
+		type = annex_all
+	}
 	}
 }
 
@@ -1731,7 +1738,7 @@ focus = {
 
 focus = {
 	id = VBC_arrivals_from_Axis
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_arrivals_from_axis
 	cost = 10
 	x = 0
 	y = 1
@@ -1919,6 +1926,7 @@ focus = {
 	}
 	
 	available = {
+		has_war_with = AXS
 	}
 	completion_reward = {
 	
@@ -2005,7 +2013,7 @@ focus = {
 
 focus = {
 	id = VBC_secure_key_resource_zones
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_industry
 	cost = 10
 	x = 0
 	y = 1

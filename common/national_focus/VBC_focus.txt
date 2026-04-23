@@ -11,16 +11,291 @@ focus_tree = {
 	default = no
 	
 	focus = {
-		id = VBC_tyrant_of_the_moon
+		id = VBC_one_step_for_man
 		icon = GFX_goal_box_of_laplace
 		cost = 10
-		x = 5
+		x = 15
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_anaheim_for_all_your_needs
+		icon = GFX_goal_box_of_laplace
+		cost = 10
 		x = 5
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {
+			focus = VBC_one_step_for_man
+		}
+		relative_position_id = VBC_one_step_for_man
 		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_address_growing_economic_disparity
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 5
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_anaheim_for_all_your_needs
+		}
+		relative_position_id = VBC_anaheim_for_all_your_needs
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_support_lower_level_job_market
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_address_growing_economic_disparity
+		}
+		relative_position_id = VBC_address_growing_economic_disparity
+		available = {
+			has_completed_focus = VBC_revitalize_lower_economic_sector
+		}
+		mutually_exclusive = {
+			focus = VBC_support_lower_level_job_market
+		}
+		completion_reward = {
+		
+		}
+	}
+
+		focus = {
+		id = VBC_low_skill_industrial_growth
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_support_lower_level_job_market
+		}
+		relative_position_id = VBC_support_lower_level_job_market
+		available = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_expanded_scraping_capacity
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_support_lower_level_job_market
+		}
+		relative_position_id = VBC_support_lower_level_job_market
+		available = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_recycle_economy
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_expanded_scraping_capacity
+		}
+		prerequisite = {
+			focus = VBC_low_skill_industrial_growth
+		}
+		relative_position_id = VBC_expanded_scraping_capacity
+		available = {
+			
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_build_anaheim_monoply
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_address_growing_economic_disparity
+		}
+		relative_position_id = VBC_address_growing_economic_disparity
+		available = {
+		}
+		mutually_exclusive = {
+			focus = VBC_support_lower_level_job_market
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_consolidate_economic_output
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_build_anaheim_monoply
+		}
+		relative_position_id = VBC_build_anaheim_monoply
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_get_the_suits_on
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_consolidate_economic_output
+		}
+		relative_position_id = VBC_consolidate_economic_output
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_grow_luxury_consumer_market
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_build_anaheim_monoply
+		}
+		relative_position_id = VBC_build_anaheim_monoply
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_tech_economy
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_grow_luxury_consumer_market
+		}
+		prerequisite = {
+			focus = VBC_get_the_suits_on
+		}
+		relative_position_id = VBC_grow_luxury_consumer_market
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_one_giant_leap_for_mankind
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_anaheim_for_all_your_needs
+		}
+		relative_position_id = VBC_anaheim_for_all_your_needs
+		available = {
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_tyrant_of_the_moon
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 5
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_one_step_for_man
+		}
+		available = {
+		has_completed_focus = VBC_anaheim_for_all_your_needs
 		}
 		completion_reward = {
 		add_ideas = Tyrant_of_the_Moon
@@ -509,12 +784,15 @@ focus_tree = {
 		icon = GFX_goal_tyrant_of_moon
 		cost = 10
 		x = 13
-		x = 13
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {
+			focus = VBC_one_step_for_man
+		}
 		available = {
+			has_completed_focus = VBC_anaheim_for_all_your_needs
 		}
 		completion_reward = {
 		add_ideas = Merchant_of_death
@@ -642,11 +920,15 @@ focus_tree = {
 		id = VBC_arcadia_project
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 20
+		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {
+			focus = VBC_one_giant_leap_for_mankind
+		}
+		relative_position_id = VBC_one_giant_leap_for_mankind
 		available = {
 		}
 		completion_reward = {
@@ -739,8 +1021,30 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		prerequisite = {
+			focus = VBC_anaheim_for_all_your_needs
+		}
 		available = {
 		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_poach_minovsky
+		icon = GFX_goal_organization_of_mobilized_mobile_battalion
+		cost = 20
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date > 0077.06.1
+		}
+		relative_position_id = VBC_lobby_for_increased_funding
+		prerequisite = {focus = VBC_lobby_for_increased_funding}
 		completion_reward = {
 		
 		}
@@ -751,15 +1055,15 @@ focus_tree = {
 		icon = GFX_goal_organization_of_mobilized_mobile_battalion
 		cost = 20
 		x = 0
-		y = 1
+		y = 2
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
 			
 		}
-		relative_position_id = VBC_lobby_for_increased_funding
-		prerequisite = {focus = VBC_lobby_for_increased_funding}
+		relative_position_id = VBC_poach_minovsky
+		prerequisite = {focus = VBC_poach_minovsky}
 		completion_reward = {
 		
 		}
@@ -770,14 +1074,14 @@ focus_tree = {
 		icon = GFX_goal_plan_rx
 		cost = 10
 		x = 0
-		y = 1
+		y = 6
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
 		}
-		relative_position_id = VBC_mare_smythii_incident
-		prerequisite = {focus = VBC_mare_smythii_incident}
+		relative_position_id = VBC_lobby_for_increased_funding
+		prerequisite = {focus = VBC_lobby_for_increased_funding }
 		completion_reward = {
 		add_ideas = RX_Project
 		}
@@ -811,6 +1115,9 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			EFS = {
+				has_war = yes
+			}
 		}
 		completion_reward = {
 		
@@ -822,7 +1129,7 @@ focus_tree = {
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
 		x = 4
-		y = 1
+		y = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -839,8 +1146,8 @@ focus = {
 		id = VBC_seize_control_of_granada
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 8
-		y = 8
+		x = 0
+		y = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -849,6 +1156,10 @@ focus = {
 				exists = no
 			}
 		}
+		prerequisite = {
+			focus = VBC_absorb_zeon_companies
+		}
+		relative_position_id = VBC_absorb_zeon_companies
 		completion_reward = {
 		
 		}
@@ -858,7 +1169,7 @@ focus = {
 		id = VBC_naval_development_plan
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 1
+		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -878,8 +1189,8 @@ focus = {
 		id = VBC_garden_of_thorns_revitalization_project
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 0
-		y = 2
+		x = -2
+		y = 1
 		ai_will_do = {
 			factor = 1
 		}
@@ -898,15 +1209,15 @@ focus = {
 		id = VBC_development_of_new_mobile_workers
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
-		x = 0
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = VBC_garden_of_thorns_revitalization_project
+			focus = VBC_seize_control_of_granada
 		}
-		relative_position_id = VBC_garden_of_thorns_revitalization_project
+		relative_position_id = VBC_seize_control_of_granada
 		available = {
 		}
 		completion_reward = {
@@ -1053,6 +1364,9 @@ focus = {
 			factor = 1
 		}
 		available = {
+			SSA = {
+				has_completed_focus = SSA_military_takeover
+			}
 		}
 		mutually_exclusive = {
 			focus = VBC_meeting_with_lunar_defense_fleet
@@ -1447,7 +1761,7 @@ focus = {
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
 		x = -1
-		y = 5
+		y = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1458,9 +1772,7 @@ focus = {
 		}
 		relative_position_id = VBC_rx_project
 		prerequisite = {focus = VBC_rx_project}
-		prerequisite = {
-			focus = VBC_absorb_zeon_companies
-		}
+		prerequisite = {focus = VBC_absorb_zeon_companies}
 		completion_reward = {
 		
 		}
@@ -1491,7 +1803,7 @@ focus = {
 		icon = GFX_goal_gpo_series
 		cost = 20
 		x = -3
-		y = 5
+		y = 3
 		ai_will_do = {
 			factor = 1
 		}

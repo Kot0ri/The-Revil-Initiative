@@ -12,7 +12,7 @@ focus_tree = {
 	
 	focus = {
 		id = VBC_one_step_for_man
-		icon = GFX_goal_box_of_laplace
+		icon = GFX_goal_one_step_for_man
 		cost = 10
 		x = 15
 		y = 0
@@ -28,7 +28,7 @@ focus_tree = {
 
 	focus = {
 		id = VBC_anaheim_for_all_your_needs
-		icon = GFX_goal_box_of_laplace
+		icon = GFX_goal_anaheim_origin
 		cost = 10
 		x = 5
 		y = 1
@@ -164,6 +164,9 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		prerequisite = {
 			focus = VBC_address_growing_economic_disparity
@@ -404,7 +407,7 @@ focus_tree = {
 
 		focus = {
 		id = VBC_strengthen_loyalty_to_the_corporation
-		icon = GFX_goal_zeon_mobile_headquarters
+		icon = GFX_goal_anaheim_tb
 		cost = 20
 		x = 0
 		y = 1
@@ -542,7 +545,7 @@ focus_tree = {
 	focus = {
 		id = VBC_maintain_social_status_qou
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 2
 		y = 1
 		ai_will_do = {
@@ -567,11 +570,14 @@ focus_tree = {
 	focus = {
 		id = VBC_institute_fraudulent_welfare_systems
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 			
@@ -585,12 +591,15 @@ focus_tree = {
 
 		focus = {
 		id = VBC_increase_credit_debt_scheme
-		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		icon = GFX_goal_anaheim_credit_scheme
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 			
@@ -604,12 +613,15 @@ focus_tree = {
 
 	focus = {
 		id = VBC_maintain_the_balance_of_power
-		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		icon = GFX_goal_anaheim_late
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 			
@@ -624,11 +636,14 @@ focus_tree = {
 	focus = {
 		id = VBC_let_andy_rest
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 			NOT = {
@@ -638,18 +653,22 @@ focus_tree = {
 		relative_position_id = VBC_maintain_the_balance_of_power
 		prerequisite = {focus = VBC_maintain_the_balance_of_power }
 		completion_reward = {
-		
+		retire_character = VBC_andy_wellington
+		promote_character = VBC_melanie_hue_carbine
 		}
 	}
 
 		focus = {
 		id = VBC_increase_lobbying_in_the_federation
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 
@@ -664,11 +683,14 @@ focus_tree = {
 		focus = {
 		id = VBC_buyout_arms_companies
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 
@@ -683,11 +705,14 @@ focus_tree = {
 	focus = {
 		id = VBC_empower_the_vist_foundation
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 			
@@ -699,14 +724,131 @@ focus_tree = {
 		}
 	}
 
+	
 	focus = {
-		id = VBC_undermine_granada
+		id = VBC_signs_of_change
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		available = {
+			NOT = {
+				has_completed_focus = VBC_work_with_granada
+			}
+		}
+		relative_position_id = VBC_empower_the_vist_foundation
+		prerequisite = {focus = VBC_empower_the_vist_foundation }
+		prerequisite = {focus = VBC_buyout_arms_companies }
+		prerequisite = {focus = VBC_assistive_ai }
+		completion_reward = {
+		retire_character = VBC_melanie_hue_carbine
+		promote_character = VBC_cornwall_j_governan
+		}
+	}
+
+	focus = {
+		id = VBC_expand_AE_credits
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_signs_of_change
+		prerequisite = {focus = VBC_signs_of_change }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_STSABD_program
+		icon = GFX_goal_STSABD
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_signs_of_change
+		prerequisite = {focus = VBC_signs_of_change }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_creation_of_a_universal_economy
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_expand_AE_credits
+		prerequisite = {focus = VBC_expand_AE_credits }
+		prerequisite = {focus = VBC_STSABD_program }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_bridge_over_the_universe_and_earth
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_creation_of_a_universal_economy
+		prerequisite = {focus = VBC_creation_of_a_universal_economy }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = VBC_undermine_granada
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 			
@@ -721,7 +863,7 @@ focus_tree = {
 	focus = {
 		id = VBC_monopolize_federal_contracts
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -878,7 +1020,7 @@ focus_tree = {
 	focus = {
 		id = VBC_begin_expansion_of_Anaheim_facilties
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -900,7 +1042,7 @@ focus_tree = {
 	focus = {
 		id = VBC_research_lab_renovations
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -939,7 +1081,7 @@ focus_tree = {
 	focus = {
 		id = VBC_incentivise_immigration
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = -2
 		y = 1
 		ai_will_do = {
@@ -958,7 +1100,7 @@ focus_tree = {
 	focus = {
 		id = VBC_begin_terra_seeding
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 2
 		y = 1
 		ai_will_do = {
@@ -977,7 +1119,7 @@ focus_tree = {
 	focus = {
 		id = VBC_investment_plans_with_Moore
 		icon = GFX_goal_colony_alliance
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -996,7 +1138,7 @@ focus_tree = {
 	focus = {
 		id = VBC_meeting_with_the_jupiter_fleet
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1014,7 +1156,7 @@ focus_tree = {
 
 	focus = {
 		id = VBC_lobby_for_increased_funding
-		icon = GFX_goal_zeon_mobile_headquarters
+		icon = GFX_goal_anaheim_main
 		cost = 10
 		x = 28
 		y = 2
@@ -1053,7 +1195,7 @@ focus_tree = {
 	focus = {
 		id = VBC_mare_smythii_incident
 		icon = GFX_goal_organization_of_mobilized_mobile_battalion
-		cost = 20
+		cost = 1
 		x = 0
 		y = 2
 		ai_will_do = {
@@ -1090,7 +1232,7 @@ focus_tree = {
 	focus = {
 		id = VBC_side_7_labs
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1127,7 +1269,7 @@ focus_tree = {
 	focus = {
 		id = VBC_intergrate_engineers_with_military
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 4
 		y = 2
 		ai_will_do = {
@@ -1358,7 +1500,7 @@ focus = {
 	focus = {
 		id = VBC_meet_with_discontent_federation_forces
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 5
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1404,7 +1546,7 @@ focus = {
 	focus = {
 		id = VBC_privatized_security_fleet
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -1425,7 +1567,7 @@ focus = {
 	focus = {
 		id = VBC_recruit_the_moore_brotherhood
 		icon = GFX_goal_moore_brotherhood
-		cost = 20
+		cost = 5
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -1444,7 +1586,7 @@ focus = {
 	focus = {
 		id = VBC_deploy_experimental_ms
 		icon = GFX_goal_anaheim_thunderbolt
-		cost = 20
+		cost = 5
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1463,7 +1605,7 @@ focus = {
 	focus = {
 		id = VBC_deal_with_the_SSA
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 5
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1484,7 +1626,7 @@ focus = {
 	focus = {
 		id = VBC_experimental_ms_squadron
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = {
@@ -1505,7 +1647,7 @@ focus = {
 	focus = {
 		id = VBC_ramp_up_development_efforts
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = {
@@ -1524,11 +1666,14 @@ focus = {
 	focus = {
 		id = VBC_cooperate_with_axis
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 			country_exists = AXS
@@ -1546,7 +1691,7 @@ focus = {
 	focus = {
 		id = VBC_joint_development_team
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 5
 		x = -1
 		y = 1
 		ai_will_do = {
@@ -1566,7 +1711,7 @@ focus = {
 focus = {
 		id = VBC_armour_improvement_project
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 5
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -1586,7 +1731,7 @@ focus = {
 	focus = {
 		id = VBC_beam_resistant_coating
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -1606,7 +1751,7 @@ focus = {
 	focus = {
 		id = VBC_perfect_core_block_system
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = {
@@ -1626,7 +1771,7 @@ focus = {
 	focus = {
 		id = VBC_transformable_frame_prototype
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 5
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -1646,7 +1791,7 @@ focus = {
 	focus = {
 		id = VBC_gundarium_gamma_application
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -1670,7 +1815,7 @@ focus = {
 	focus = {
 		id = VBC_steal_epsilon_data
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1694,7 +1839,7 @@ focus = {
 	focus = {
 		id = VBC_focus_on_cutting_edge_designs
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -1715,7 +1860,7 @@ focus = {
 	focus = {
 		id = VBC_showcase_next_gen_designs
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -1760,7 +1905,7 @@ focus = {
 	focus = {
 		id = VBC_engage_project
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = -1
 		y = 3
 		ai_will_do = {
@@ -1783,7 +1928,7 @@ focus = {
 	focus = {
 		id = VBC_a_bouquet_for_stardust
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1802,7 +1947,7 @@ focus = {
 	focus = {
 		id = VBC_gundam_development_project
 		icon = GFX_goal_gpo_series
-		cost = 20
+		cost = 10
 		x = -3
 		y = 3
 		ai_will_do = {
@@ -1825,7 +1970,7 @@ focus = {
 	focus = {
 		id = VBC_contact_cima
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1843,8 +1988,8 @@ focus = {
 
 	focus = {
 		id = VBC_maintaining_the_balance_of_power
-		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		icon = GFX_goal_cima_moon
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1864,7 +2009,7 @@ focus = {
 	focus = {
 		id = VBC_revive_the_bishop_plan
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -1883,7 +2028,7 @@ focus = {
 	focus = {
 		id = VBC_make_contact_with_axis
 		icon = GFX_goal_zeon_mobile_headquarters
-		cost = 20
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
@@ -2017,6 +2162,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	available = {
 	}
 	mutually_exclusive = {
@@ -2079,6 +2227,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 	mutually_exclusive = {
 		focus = VBC_joint_karaba_aeug_military_commission
 	}

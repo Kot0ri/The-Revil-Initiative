@@ -61,6 +61,51 @@ Arcadia_Project = {
 	}
 }
 
+recycle_economy = {
+			
+	allowed = {
+		original_tag = VBC
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	
+	modifier = {
+	production_lack_of_resource_penalty_factor = -0.35
+	local_resource_gain_efficiency_per_infrastructure = 0.1
+	consumer_goods_factor = -0.05
+	production_speed_buildings_factor = 0.15
+	research_speed_factor = -0.05
+	production_factory_efficiency_gain_factor = 0.15
+	}
+}
+
+tech_economy = {
+			
+	allowed = {
+		original_tag = VBC
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	
+	modifier = {
+	recruitable_population_factor = -0.05
+	consumer_goods_factor = 0.15
+	production_speed_buildings_factor = -0.15
+	research_speed_factor = 0.05
+	equipment_conversion_speed = 0.5
+	production_factory_start_efficiency_factor = 0.15
+	production_factory_max_efficiency_factor = 0.15
+	}
+}
+
 Absolute_power_of_giants = {
 			
 	allowed = {
@@ -120,5 +165,80 @@ Gundam_Development_Project = {
 	rx78_gp4_equipment_design_cost_factor = -0.05
 	}
 }
+
+STSABD_Project = {
+			
+	allowed = {
+		original_tag = VBC
+		original_tag = EFS
 	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	
+	modifier = {
+	equipment_conversion_speed = 0.15
+	equipment_upgrade_xp_cost = -0.15
+	production_lack_of_resource_penalty_factor = -0.15
+	production_factory_max_efficiency_factor = 0.20
+	air_mission_xp_gain_factor = 0.5
+	air_training_xp_gain_factor = 0.5
+	air_accidents_factor = -0.15
+	air_agility_factor = 0.05
+	air_home_defence_factor = 0.15
+	air_weather_penalty = -0.5
+	}
+}
+
+
+operation_maelstrom = {	
+	allowed = {
+		original_tag = VBC
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	targeted_modifier = {
+    tag = AXS
+    attack_bonus_against = 0.15
+   }
+   modifier = {
+	naval_invasion_prep_speed = 0.15
+   }
+}
+
+riders_in_the_skies = {	
+	allowed = {
+		original_tag = VBC
+	}
+
+	allowed_civil_war = {
+		always = yes
+	}
+
+	removal_cost = -1
+	targeted_modifier = {
+    tag = AXS
+    attack_bonus_against = 0.05
+   }
+   targeted_modifier = {
+    tag = TIT
+    attack_bonus_against = 0.05
+   }
+   modifier = {
+	army_speed_factor = 0.15
+	army_breakthrough_against_major_factor = 0.3
+	navy_capital_ship_attack_factor = 0.15
+	navy_carrier_air_agility_factor = 0.15
+	navy_carrier_air_attack_factor = 0.15
+   }
+}
+
+}
 }

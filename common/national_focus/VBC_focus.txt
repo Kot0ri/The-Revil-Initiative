@@ -128,7 +128,11 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-		
+			add_resource = {
+				type = titanium
+				amount = 3
+				state = 1077
+			}
 		}
 	}
 
@@ -152,7 +156,7 @@ focus_tree = {
 			
 		}
 		completion_reward = {
-		
+		add_ideas = recycle_economy
 		}
 	}
 
@@ -261,7 +265,7 @@ focus_tree = {
 		available = {
 		}
 		completion_reward = {
-		
+		add_ideas = tech_economy
 		}
 	}
 
@@ -485,7 +489,7 @@ focus_tree = {
 		id = VBC_formation_of_the_titans
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
-		x = -1
+		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -504,7 +508,7 @@ focus_tree = {
 		id = VBC_declare_independence
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 20
-		x = 1
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -753,6 +757,28 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VBC_secure_earth_factories
+		icon = GFX_goal_zeon_mobile_headquarters
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		available = {
+			
+		}
+		relative_position_id = VBC_signs_of_change
+		prerequisite = {focus = VBC_signs_of_change }
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = VBC_expand_AE_credits
 		icon = GFX_goal_zeon_mobile_headquarters
 		cost = 10
@@ -792,7 +818,10 @@ focus_tree = {
 		relative_position_id = VBC_signs_of_change
 		prerequisite = {focus = VBC_signs_of_change }
 		completion_reward = {
-		
+		add_ideas = STSABD_Project
+		EFS = {
+			add_ideas = STSABD_Project
+		}
 		}
 	}
 
@@ -2393,7 +2422,10 @@ focus = {
 		has_war_with = AXS
 	}
 	completion_reward = {
-	
+	add_timed_idea = {
+		idea = operation_maelstrom
+		days = 60
+	}
 	}
 }
 
@@ -2412,7 +2444,7 @@ focus = {
 	available = {
 	}
 	completion_reward = {
-	
+	add_ideas = riders_in_the_skies
 	}
 }
 

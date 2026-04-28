@@ -264,7 +264,7 @@ focus = {
 focus = {
 	id = ZEO_designating_an_heir
 	icon = GFX_goal_end_of_brotherhood_fighting
-	search_filters = { FOCUS_FILTER_POLITICAL }
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	cost = 5
 	x = 2
 	y = 1
@@ -424,25 +424,6 @@ focus = {
 	prerequisite = { focus = ZEO_designating_an_heir }
 }
 
-focus = {
-	id = ZEO_align_degewin_loyalists
-	icon = GFX_goal_end_of_brotherhood_fighting
-	search_filters = { FOCUS_FILTER_POLITICAL }
-	cost = 2
-	x = 3
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	mutually_exclusive = {
-		focus = ZEO_sideline_degewin_loyalists
-	}
-	completion_reward = {
-	
-	}
-	relative_position_id = ZEO_designating_an_heir
-	prerequisite = { focus = ZEO_designating_an_heir }
-}
 
 focus = {
 	id = ZEO_new_culture_of_zeon
@@ -524,8 +505,8 @@ focus = {
 
 focus = {
 	id = ZEO_gihrens_speeches
-	icon = GFX_goal_zeon_mobile_headquarters
-	search_filters = { FOCUS_FILTER_POLITICAL }
+	icon = GFX_goal_gihren_speech
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL }
 	cost = 4
 	x = -2
 	y = 1
@@ -552,7 +533,7 @@ focus = {
 
 focus = {
 	id = ZEO_kycilias_plotting
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_kycilia_plot
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 4
 	x = 8
@@ -1453,7 +1434,7 @@ focus = {
 
 focus = {
 	id = ZEO_ensure_loyalty_in_officer_corps.
-	icon = GFX_goal_generic_improve_relations
+	icon = GFX_goal_ensure_loyalty
 	cost = 5
 	x = 1
 	y = 1
@@ -2319,7 +2300,7 @@ focus = {
 
 focus = {
 	id = ZEO_Kycilias_plan
-	icon = GFX_focus_eng_global_defense
+	icon = GFX_goal_kycilia_plan
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 2
 	x = 2
@@ -3900,7 +3881,7 @@ focus = {
 	icon = GFX_goal_generic_consumer_goods
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 	cost = 10
-	x = 0
+	x = 2
 	y = 13
 	ai_will_do = {
 		factor = 1
@@ -4559,7 +4540,7 @@ focus = {
 
 focus = {
 	id = ZEO_focus_on_conventional_warfare
-	icon = GFX_goal_enhancement_of_general_purpose_MS
+	icon = GFX_goal_focus_on_conventional_warfare
 	search_filters = { FOCUS_FILTER_RESEARCH } 
 	cost = 4
 	x = 0
@@ -6006,6 +5987,54 @@ focus = {
 }
 
 focus = {
+	id = ZEO_seize_the_advantage
+	icon = GFX_goal_generic_forceful_treaty
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 10
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ZEO_declare_imperium
+	}
+	available = {
+	
+	}
+	completion_reward = {
+		
+	}
+	
+	
+	relative_position_id = ZEO_triumph_of_zeon
+	prerequisite = { focus = ZEO_triumph_of_zeon }
+}
+
+focus = {
+	id = ZEO_war_once_again
+	icon = GFX_goal_war_again
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	
+	}
+	completion_reward = {
+		declare_war_on = {
+			target = EFG
+			type = annex_everything
+		}
+	}
+	relative_position_id = ZEO_seize_the_advantage
+	prerequisite = { focus = ZEO_seize_the_advantage }
+}
+
+focus = {
 	id = ZEO_declare_imperium
 	icon = GFX_goal_generic_forceful_treaty
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -6017,6 +6046,9 @@ focus = {
 	}
 	available = {
 	
+	}
+	mutually_exclusive = {
+		focus = ZEO_seize_the_advantage
 	}
 	completion_reward = {
 		create_faction = Imperium_of_Zeon
@@ -6036,7 +6068,7 @@ focus = {
 	icon = GFX_goal_generic_forceful_treaty
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 10
-	x = -1
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -6047,7 +6079,30 @@ focus = {
 	completion_reward = {
 	}
 	relative_position_id = ZEO_declare_imperium
-	prerequisite = { focus = ZEO_declare_imperium}
+	prerequisite = { focus = ZEO_declare_imperium focus = ZEO_seize_the_advantage }
+}
+
+focus = {
+	id = ZEO_revive_the_republic
+	icon = GFX_goal_generic_forceful_treaty
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	NOT = {
+		has_completed_focus = ZEO_declare_imperium
+	}
+	has_war = no
+	}
+	completion_reward = {
+	}
+	relative_position_id = ZEO_review_upper_echelons
+	prerequisite = { focus = ZEO_review_upper_echelons  }
+	prerequisite = { focus = ZEO_war_once_again  }
 }
 
 focus = {
@@ -6550,7 +6605,7 @@ focus = {
 	icon = GFX_goal_repression_of_deikun
 	search_filters = { FOCUS_FILTER_POLITICAL }
 	cost = 5
-	prerequisite = { focus = ZEO_Luna_treaty}
+	prerequisite = { focus = ZEO_Luna_treaty focus = ZEO_extraction_of_key_assets }
 	relative_position_id = ZEO_Luna_treaty
 	x = 0
 	y = 1
@@ -6813,6 +6868,26 @@ focus = {
 	recruit_character = ZEO_mellic_hugo
 	recruit_character = ZEO_seak_hugo
 	recruit_character = ZEO_birgitte_knudsen
+	}
+}
+
+focus = {
+	id = ZEO_reach_out_to_hardliners
+	icon = GFX_goal_repression_of_deikun
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	cost = 5
+	prerequisite = { focus = ZEO_mission_from_axis}
+	relative_position_id = ZEO_mission_from_axis
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ZEO_extraction_of_key_assets
+	}
+	completion_reward = {
+
 	}
 }
 

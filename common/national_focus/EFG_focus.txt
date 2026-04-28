@@ -1045,7 +1045,7 @@ focus = {
 
 	focus = {
 		id = EFG_sublimate_ECOAS
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_ecoas
 		cost = 5
 		x = 1
 		y = 2
@@ -1078,7 +1078,29 @@ focus = {
 		}
 	
 		completion_reward = {
-		
+		set_politics = {
+			ruling_party = oligarchy
+		}
+		}
+	}
+
+	focus = {
+		id = EFG_the_paper_castle
+		icon = GFX_goal_the_paper_castle
+		cost = 5
+		x = 1
+		y = 1
+		prerequisite = { focus = EFG_creation_of_a_police_state }
+		prerequisite = { focus = EFG_sublimate_ECOAS }
+		relative_position_id = EFG_creation_of_a_police_state
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		set_politics = {
+			ruling_party = supremacist
+		}
 		}
 	}
 
@@ -1844,6 +1866,28 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_ensure_the_dream_dies
+		icon = GFX_goal_zeon_parliment_deikun
+		cost = 10
+		x = -2
+		y = 1
+		available = {
+		has_war_with = ZEO
+		}
+		prerequisite = { focus = EFG_gambit_of_tyrants }
+		relative_position_id = EFG_gambit_of_tyrants
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_heir_of_the_dream_of_space
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_heir_of_the_dream_of_space
 		icon = GFX_goal_heir_of_the_dream_of_space
 		cost = 10
@@ -1856,6 +1900,9 @@ focus = {
 		relative_position_id = EFG_gambit_of_tyrants
 		ai_will_do = {
 			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_ensure_the_dream_dies
 		}
 		completion_reward = {
 		
@@ -2182,7 +2229,7 @@ focus = {
 
 	focus = {
 		id = EFG_blank_cheque_the_military
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_blank_check
 		cost = 5
 		x = 2
 		y = 1
@@ -2201,7 +2248,7 @@ focus = {
 
 	focus = {
 		id = EFG_reduce_military_oversights
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_reduce_oversight
 		cost = 5
 		x = 0
 		y = 1

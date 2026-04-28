@@ -3202,7 +3202,7 @@ focus = {
 		
 	}
 	relative_position_id = ZEO_root_out_zabists
-	prerequisite = { focus = ZEO_guiding_hand_of_darcia focus = ZEO_ral_family_returns }
+	prerequisite = { focus = ZEO_guiding_hand_of_darcia focus = ZEO_ral_family_returns focus = ZEO_social_welfare_program }
 }
 
 focus = {
@@ -3245,6 +3245,44 @@ focus = {
 	}
 	relative_position_id = ZEO_stabilze_the_nation
 	prerequisite = { focus = ZEO_stabilze_the_nation }
+}
+
+focus = {
+	id = ZEO_protect_colonial_freedom
+	icon = GFX_focus_mex_privatisation
+	cost = 10
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	
+	completion_reward = {
+		diplomatic_relation = {
+			country = SI6
+			relation = guarantee
+		}
+		diplomatic_relation = {
+			country = SI5
+			relation = guarantee
+		}
+		diplomatic_relation = {
+			country = SI4
+			relation = guarantee
+		}
+		diplomatic_relation = {
+			country = SI2
+			relation = guarantee
+		}
+		diplomatic_relation = {
+			country = SI1
+			relation = guarantee
+		}
+	}
+	relative_position_id = ZEO_a_strong_hand
+	prerequisite = { focus = ZEO_a_strong_hand focus = ZEO_refound_the_republic }
 }
 
 focus = {

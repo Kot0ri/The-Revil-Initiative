@@ -3155,6 +3155,82 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = EFG_gathering_of_cybersyn_committee
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 6
+		y = 2
+		available = {
+			has_war = no
+			has_completed_focus = EFG_provisional_restoration_plan
+		}
+		relative_position_id = EFG_provisional_restoration_plan
+		prerequisite = {
+			focus = EFG_start_new_deal_year_1 focus = EFG_start_colony_restoration_plan_year_1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_allow_corporate_expansion
+		}
+		mutually_exclusive = {
+			focus = EFG_shakai_fukushi
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_on_board_the_futurians
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		available = {
+	
+		}
+		relative_position_id = EFG_gathering_of_cybersyn_committee
+		prerequisite = {
+			focus = EFG_gathering_of_cybersyn_committee
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = EFG_align_with_anaheim
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EFG_align_with_anaheim
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		available = {
+	
+		}
+		relative_position_id = EFG_gathering_of_cybersyn_committee
+		prerequisite = {
+			focus = EFG_gathering_of_cybersyn_committee
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+		focus = EFG_on_board_the_futurians	
+		}
+		completion_reward = {
+		
+		}
+	}
+
 focus = {
 		id = EFG_shakai_fukushi
 		icon = GFX_goal_general_meeting
@@ -3174,6 +3250,9 @@ focus = {
 		}
 		mutually_exclusive = {
 			focus = EFG_allow_corporate_expansion
+		}
+		mutually_exclusive = {
+			focus = EFG_gathering_of_cybersyn_committee
 		}
 		completion_reward = {
 		
@@ -3263,6 +3342,7 @@ focus = {
 		relative_position_id = EFG_shokumin_chi_idou
 		prerequisite = {
 			focus = EFG_shokumin_chi_idou
+			focus = EFG_on_board_the_futurians
 		}
 		mutually_exclusive = {
 			focus = EFG_maintain_liberal_agenda
@@ -3328,7 +3408,7 @@ focus = {
 		x = 1
 		y = 1
 		available = {
-			
+			has_completed_focus = EFG_shokumin_chi_idou
 		}
 		relative_position_id = EFG_maintain_liberal_agenda
 		prerequisite = {
@@ -3364,6 +3444,9 @@ focus = {
 		}
 		mutually_exclusive = {
 			focus = EFG_shakai_fukushi
+		}
+		mutually_exclusive = {
+			focus = EFG_gathering_of_cybersyn_committee
 		}
 		completion_reward = {
 		

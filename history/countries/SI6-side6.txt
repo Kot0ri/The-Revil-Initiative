@@ -23,7 +23,7 @@ set_popularities = {
 	military_government = 0
 	aristocracy = 0
 	corporatism = 0
-	communism = 0
+	utopianism = 0
 }
 set_politics = {
 	ruling_party = democratic
@@ -44,22 +44,7 @@ add_ideas = {
 
 
 
-79.4.1 = {
-	set_technology = {
-		improved_rubber_processing = 1
-		concentrated_industry4 = 1
-		nuclear_reactor2 = 1
-		minovsky_dissemination2 = 1
-		ambac2 = 1
-		amc2 = 1
-		simulator2 = 1
-		mechanised_infantry = 1
-		support_weapons1 = 1
-		improved_infantry_weapons = 1
-	}
-	set_convoys = 50
-	set_variable = { newtype_accepted_status = 3 }
-}
+
 
 recruit_character = SI6_rank_kiprodon
 recruit_character = SI6_riahs_zeonist_senator
@@ -69,14 +54,3 @@ recruit_character = SI6_riahs_democrats_senator
 recruit_character = SI6_pergamino
 recruit_character = SI6_cameron_bloom
 
-create_equipment_variant = {
-	name = "Salamis Class"
-	type = efsf_space_cruiser1_equipment
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = space_battery_1
-		fixed_ship_secondaries_slot = space_secondaries_1
-		fixed_ship_engine_slot = light_space_engine_1
-	}
-	obsolete = no
-}

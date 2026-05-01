@@ -23,7 +23,7 @@ set_popularities = {
 	military_government = 0
 	aristocracy = 0
 	corporatism = 0
-	communism = 0
+	utopianism = 0
 }
 
 set_politics = {
@@ -61,14 +61,4 @@ recruit_character = SI4_alicia
 recruit_character = SI4_graham
 recruit_character = SI4_claudia
 
-create_equipment_variant = {
-	name = "Salamis Class"
-	type = efsf_space_cruiser1_equipment
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = space_battery_1
-		fixed_ship_secondaries_slot = space_secondaries_1
-		fixed_ship_engine_slot = light_space_engine_1
-	}
-	obsolete = no
-}
+

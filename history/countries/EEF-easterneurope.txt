@@ -31,7 +31,7 @@ set_popularities = {
 	military_government =0
 	aristocracy =0
 	corporatism =10
-	communism =0
+	utopianism =0
 }
 set_politics = {
 	ruling_party = democratic
@@ -46,6 +46,8 @@ set_variable = { newtype_accepted_status = 0 }
 
 #Leaders
 recruit_character = EEF_anton_abram
+recruit_character = EEF_boris_stanislov
+recruit_character = EEF_maxim_arov
 
 
 #Field Marshalls
@@ -53,6 +55,8 @@ recruit_character = EEF_anton_abram
 
 #Generals
 
+#pilots
+recruit_character = EEF_ekaterina_arov
 
 #Admirals
 

@@ -230,6 +230,20 @@ EFG_gopp={
 			}
 			}
 
+			EFG_douglas_pepper {
+			name="Douglas Pepper"
+			portraits={
+				civilian={
+					large= "gfx/leaders/EFG/douglas_pepper.dds"
+				}
+			}
+			country_leader={
+				ideology= third-way
+				traits={ top_down_heavy_policies }
+				expire="1000.1.1.1"
+			}
+			}
+
 			EFG_hauzeri_ronah {
 			name="Hauzeri Ronah"
 			portraits={

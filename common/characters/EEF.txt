@@ -29,4 +29,41 @@ EEF_boris_stanislov={
 		expire="1000.1.1.1"
 	}
 }
+
+
+EEF_maxim_arov{
+	name="Maxim Arov"
+	portraits={
+		civilian={
+			large="gfx/leaders/EEF/maxim_arov.dds"
+		}
+
+	}
+	country_leader={
+		ideology= fusionism
+		traits={  }
+		expire="1000.1.1.1"
+	}
+}
+	#pilots
+
+	EEF_ekaterina_arov{
+	name="Ekaterina Arov"
+	portraits={
+		army={
+			large="gfx/leaders/EEF/ekaterina_arov.dds"
+		}
+
+	}
+	corps_commander = {
+		traits = {
+			hidden_sympathies newtype_1 pilot
+		}
+		skill = 3
+		attack_skill = 3
+		defense_skill = 3
+		planning_skill = 2
+		logistics_skill = 2
+	}
+}
 }

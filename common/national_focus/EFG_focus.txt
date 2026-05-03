@@ -1010,6 +1010,23 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_deal_with_the_riff_raff
+		icon = GFX_goal_riff_raff
+		cost = 5
+		x = -1
+		y = 1
+		prerequisite = { focus = EFG_ramp_up_deportations }
+		relative_position_id = EFG_ramp_up_deportations
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_elevate_police_powers
 		icon = GFX_goal_secret_police
 		cost = 5
@@ -1085,6 +1102,30 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_replace_the_EFFF
+		icon = GFX_goal_manhunter_military
+		cost = 5
+		x = 1
+		y = 1
+		available = {
+			has_completed_focus = EFG_sublimate_ECOAS
+		}
+		prerequisite = { focus = EFG_creation_of_a_police_state }
+		prerequisite = { focus = EFG_deal_with_the_riff_raff }
+		relative_position_id = EFG_deal_with_the_riff_raff
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		set_politics = {
+			ruling_party = oligarchy
+		}
+		}
+	}
+
+
+	focus = {
 		id = EFG_the_paper_castle
 		icon = GFX_goal_the_paper_castle
 		cost = 5
@@ -1093,6 +1134,25 @@ focus = {
 		prerequisite = { focus = EFG_creation_of_a_police_state }
 		prerequisite = { focus = EFG_sublimate_ECOAS }
 		relative_position_id = EFG_creation_of_a_police_state
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		set_politics = {
+			ruling_party = supremacist
+		}
+		}
+	}
+
+		focus = {
+		id = EFG_gaia_empire
+		icon = GFX_goal_gaia_empire
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_the_paper_castle }
+		relative_position_id = EFG_the_paper_castle
 		ai_will_do = {
 			factor = 1
 		}

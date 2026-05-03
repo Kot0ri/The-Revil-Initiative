@@ -1102,7 +1102,7 @@ focus = {
 	}
 
 	focus = {
-		id = EFG_replace_the_EFFF
+		id = EFG_replace_the_EFF
 		icon = GFX_goal_manhunter_military
 		cost = 5
 		x = 1
@@ -1118,8 +1118,8 @@ focus = {
 		}
 	
 		completion_reward = {
-		set_politics = {
-			ruling_party = oligarchy
+		annex_country = {
+			target = EFS
 		}
 		}
 	}
@@ -1141,6 +1141,12 @@ focus = {
 		completion_reward = {
 		set_politics = {
 			ruling_party = supremacist
+		}
+		annex_country = {
+			target = EUF
+		}
+		set_capital = {
+			state = 54
 		}
 		}
 	}

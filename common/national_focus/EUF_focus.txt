@@ -173,6 +173,77 @@ focus = {
 
 }
 
+focus = {
+	id = EUF_push_for_european_unification
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+		EEF = { has_completed_focus = EEF_combat_europa_influence }
+	}
+	mutually_exclusive = {
+		focus = EUF_we_have_always_been_at_war_with_eurasia
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_opportunity_strikes
+	prerequisite = { focus = EUF_opportunity_strikes }
+
+}
+
+focus = {
+	id = EUF_we_have_always_been_at_war_with_eurasia
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+		RUS =
+		{ exists = yes }
+	}
+	mutually_exclusive = {
+		focus = EUF_push_for_european_unification
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_opportunity_strikes
+	prerequisite = { focus = EUF_opportunity_strikes }
+
+}
+
+focus = {
+	id = EUF_kill_the_bear_for_once_and_all
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+		RUS =
+		{ exists = yes }
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = EUF_we_have_always_been_at_war_with_eurasia
+	prerequisite = { focus = EUF_we_have_always_been_at_war_with_eurasia }
+
+}
+
 
 focus = {
 	id = EUF_hold_the_torch
@@ -1842,6 +1913,9 @@ focus = {
 	}
 	mutually_exclusive = {
 		focus = EUF_reconstruction_effort
+	}
+	available = {
+		has_completed_focus = EUF_the_looming_crisis
 	}
 	completion_reward = {
 	

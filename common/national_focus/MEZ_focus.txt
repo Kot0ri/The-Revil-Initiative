@@ -10,13 +10,26 @@ focus_tree = {
 	}
 	default = no
 	
+	focus = {
+		id = MEZ_legacy_of_the_federation
+		icon = GFX_goal_middle_east
+		cost = 5
+		x = 0
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
 	
+		}
+	}
 
 	focus = {
 		id = MEZ_assembly_address
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = 1
+		x = 3
 		y = 0
 		ai_will_do = {
 			factor = 1

@@ -748,6 +748,28 @@ focus = {
 }
 
 focus = {
+	id = EEF_anti_ms_warfare
+	icon = GFX_goal_anti_ms_warfare
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+	}
+	prerequisite = {
+		focus = EEF_fortify_danzig
+	}
+	relative_position_id = EEF_fortify_danzig
+	completion_reward = {
+	
+	}
+
+}
+
+focus = {
 	id = EEF_hold_the_north
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 2

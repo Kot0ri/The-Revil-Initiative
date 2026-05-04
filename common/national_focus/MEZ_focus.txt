@@ -34,7 +34,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		
+		available = {
+			has_completed_focus = MEZ_legacy_of_the_federation
+		}
 		completion_reward = {
 	
 		}
@@ -257,11 +259,49 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = {
+			has_completed_focus = MEZ_launch_crackdowns
+		}
 		prerequisite = {
 			focus = MEZ_Fist_of_Solomiac
 		}
 		relative_position_id = MEZ_Fist_of_Solomiac
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_setup_security_convoys
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_increase_crackdowns
+		}
+		relative_position_id = MEZ_increase_crackdowns
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_tswg_input
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_setup_security_convoys
+		}
+		relative_position_id = MEZ_setup_security_convoys
 		completion_reward = {
 	
 		}
@@ -295,6 +335,129 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MEZ_closed_door_meetings
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = MEZ_investigate_local_officals
+			}
+		}
+		prerequisite = {
+			focus = MEZ_Damein_the_deal_broker
+		}
+		relative_position_id = MEZ_Damein_the_deal_broker
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MEZ_public_relations_campaign
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		prerequisite = {
+			focus = MEZ_Damein_the_deal_broker
+		}
+		relative_position_id = MEZ_Damein_the_deal_broker
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MEZ_isolated_region_outreach
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		prerequisite = {
+			focus = MEZ_public_relations_campaign
+		}
+		relative_position_id = MEZ_public_relations_campaign
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = MEZ_secure_water_transport
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		prerequisite = {
+			focus = MEZ_public_relations_campaign
+		}
+		relative_position_id = MEZ_public_relations_campaign
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = MEZ_road_security_policy
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		prerequisite = {
+			focus = MEZ_secure_water_transport focus = MEZ_setup_security_convoys
+		}
+		relative_position_id = MEZ_secure_water_transport
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = MEZ_rebuild_abandond_infrastructure
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		prerequisite = {
+			focus = MEZ_public_relations_campaign
+		}
+		relative_position_id = MEZ_public_relations_campaign
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = MEZ_utilzie_local_officers
 		icon = GFX_goal_generic_alliance
 		cost = 5
@@ -306,7 +469,10 @@ focus_tree = {
 		available = {
 			has_war = yes
 			NOT = {
-				has_completed_focus = MEZ_address_the_troops
+				has_completed_focus = MEZ_purge_corrupt_officers
+			}
+			NOT = {
+				has_completed_focus = MEZ_purge_local_officers
 			}
 		}
 		prerequisite = {
@@ -352,6 +518,9 @@ focus_tree = {
 		available = {
 			NOT = {
 				has_completed_focus = MEZ_ask_for_aid_agaisnt_radicals
+			}
+			NOT = {
+				is_ai = yes
 			}
 		}
 		prerequisite = {
@@ -439,6 +608,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_completed_focus = MEZ_legacy_of_the_federation
+		}
 		completion_reward = {
 	
 		}
@@ -465,6 +637,28 @@ focus_tree = {
 		}
 	}
 
+		focus = {
+		id = MEZ_strategic_reserve_plan
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date > 0077.01.01
+			has_completed_focus = MEZ_full_merge_into_centcom
+		}
+		prerequisite = {
+			focus = MEZ_year_75_FOCA_meeting
+		}
+		relative_position_id = MEZ_year_75_FOCA_meeting
+		completion_reward = {
+	
+		}
+	}
+
 	focus = {
 		id = MEZ_the_promethean_god
 		icon = GFX_goal_generic_alliance
@@ -483,6 +677,48 @@ focus_tree = {
 		}
 	}
 
+		focus = {
+		id = MEZ_centralize_extraction_control
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_the_promethean_god
+		}
+		relative_position_id = MEZ_the_promethean_god
+		completion_reward = {
+	
+		}
+	}
+
+		focus = {
+		id = MEZ_resource_denile_plan
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+		}
+		prerequisite = {
+			focus = MEZ_centralize_extraction_control
+		}
+		prerequisite = {
+			focus = MEZ_strategic_reserve_plan
+		}
+		relative_position_id = MEZ_strategic_reserve_plan
+		completion_reward = {
+	
+		}
+	}
+
 	focus = {
 		id = MEZ_address_the_military_crisis
 		icon = GFX_goal_generic_alliance
@@ -491,6 +727,12 @@ focus_tree = {
 		y = 0
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_completed_focus = MEZ_the_batman_incident
+		}
+		mutually_exclusive = {
+			focus = MEZ_federal_oversight_committe
 		}
 		completion_reward = {
 	
@@ -519,7 +761,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MEZ_old_gaurd_supremacy
+		id = MEZ_old_guard_supremacy
 		icon = GFX_goal_generic_alliance
 		cost = 5
 		x = 0
@@ -569,9 +811,9 @@ focus_tree = {
 		}
 		
 		prerequisite = {
-			focus = MEZ_old_gaurd_supremacy
+			focus = MEZ_old_guard_supremacy
 		}
-		relative_position_id = MEZ_old_gaurd_supremacy
+		relative_position_id = MEZ_old_guard_supremacy
 		completion_reward = {
 	
 		}
@@ -634,6 +876,27 @@ focus_tree = {
 		}
 	}
 
+		focus = {
+		id = MEZ_mesocom_stands
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = MEZ_address_the_troops
+		}
+		prerequisite = {
+			focus = MEZ_the_new_officer_school
+		}
+		relative_position_id = MEZ_the_new_officer_school
+		completion_reward = {
+	
+		}
+	}
+
 	focus = {
 		id = MEZ_rapid_movement
 		icon = GFX_goal_generic_alliance
@@ -647,7 +910,7 @@ focus_tree = {
 			focus = MEZ_army_doctrine_reform
 		}
 		mutually_exclusive = {
-			focus = MEZ_old_gaurd_supremacy
+			focus = MEZ_old_guard_supremacy
 		}
 		relative_position_id = MEZ_army_doctrine_reform
 		completion_reward = {
@@ -668,8 +931,8 @@ focus_tree = {
 			has_idea = rehabilitated_military
 		}
 		prerequisite = {
-			focus = MEZ_address_the_military_crisis
-		}
+			focus = MEZ_address_the_military_crisis focus = MEZ_federal_oversight_committe
+		} 
 		relative_position_id = MEZ_address_the_military_crisis
 		completion_reward = {
 	
@@ -688,9 +951,33 @@ focus_tree = {
 			has_idea = rehabilitated_military
 		}
 		prerequisite = {
-			focus = MEZ_address_the_military_crisis
+			focus = MEZ_address_the_military_crisis focus = MEZ_federal_oversight_committe
 		}
 		relative_position_id = MEZ_address_the_military_crisis
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_secure_the_straits
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+	
+		}
+		prerequisite = {
+			focus = MEZ_navy_modernization_plan
+		}
+		prerequisite = {
+			focus = MEZ_air_reform_plan
+		}
+		relative_position_id = MEZ_air_reform_plan
 		completion_reward = {
 	
 		}
@@ -715,7 +1002,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MEZ_purge_the_officer_corps.
+		id = MEZ_purge_corrupt_officers
 		icon = GFX_goal_generic_alliance
 		cost = 5
 		x = 0
@@ -725,6 +1012,11 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = MEZ_the_afyon_reform_plan
+		}
+		available = {
+			NOT = {
+				has_completed_focus = MEZ_utilzie_local_officers
+			}
 		}
 		relative_position_id = MEZ_the_afyon_reform_plan
 		completion_reward = {
@@ -741,17 +1033,151 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		
+		prerequisite = {
+			focus = MEZ_purge_corrupt_officers
+		}
+		relative_position_id = MEZ_purge_corrupt_officers
+		completion_reward = {
+		add_ideas = rehabilitated_military
+		}
+	}
+
+	focus = {
+		id = MEZ_federal_oversight_committe
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 30
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = MEZ_allow_greater_eff_access
+		}
+		mutually_exclusive = {
+			focus = MEZ_address_the_military_crisis
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_end_local_recruitment
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_federal_oversight_committe
+		}
+		relative_position_id = MEZ_federal_oversight_committe
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_purge_local_officers
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
 		available = {
 			NOT = {
 				has_completed_focus = MEZ_utilzie_local_officers
 			}
 		}
 		prerequisite = {
-			focus = MEZ_purge_the_officer_corps.
+			focus = MEZ_federal_oversight_committe
 		}
-		relative_position_id = MEZ_purge_the_officer_corps.
+		relative_position_id = MEZ_federal_oversight_committe
 		completion_reward = {
-		add_ideas = rehabilitated_military
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_launch_crackdowns
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_purge_local_officers
+		}
+		relative_position_id = MEZ_purge_local_officers
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MEZ_investigate_local_officals
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = MEZ_closed_door_meetings
+			}
+		}
+		prerequisite = {
+			focus = MEZ_purge_local_officers
+		}
+		relative_position_id = MEZ_purge_local_officers
+		completion_reward = {
+	
+		}
+	}
+
+		focus = {
+		id = MEZ_increase_eff_presence
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_purge_local_officers
+		}
+		relative_position_id = MEZ_purge_local_officers
+		completion_reward = {
+			add_ideas = rehabilitated_military
+		}
+	}
+
+	focus = {
+		id = MEZ_full_merge_into_centcom
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = MEZ_increase_eff_presence
+		}
+		relative_position_id = MEZ_increase_eff_presence
+		completion_reward = {
+			
 		}
 	}
 }

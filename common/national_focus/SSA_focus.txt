@@ -648,6 +648,24 @@ focus = {
 				}
 		}
 
+		focus = {
+		id = SSA_increase_delta_security
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {	
+		factor = 1
+					}
+		available = {
+				has_completed_focus = SSA_handle_internal_security
+			}
+		relative_position_id = SSA_mission_to_saigon
+		prerequisite = {	focus = SSA_mission_to_saigon	}
+		completion_reward = {
+				}
+		}
+
 	focus = {
 		id = SSA_handle_internal_security
 		icon = GFX_goal_efsf_mobile_headquarters
@@ -662,6 +680,23 @@ focus = {
 		prerequisite = {	focus = SSA_bring_in_godkiller	}
 		completion_reward = {
 			
+				}
+		}
+
+		focus = {
+		id = SSA_setup_air_patrols
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {	
+		factor = 1
+					}
+		
+		relative_position_id = SSA_handle_internal_security
+		prerequisite = {	focus = SSA_mission_to_saigon	}
+		prerequisite = {	focus = SSA_handle_internal_security	}
+		completion_reward = {
 				}
 		}
 
@@ -876,7 +911,7 @@ focus = {
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 5
 	x = 14
-	y = 16
+	y = 12
 	ai_will_do = {
 	factor = 1
 	}
@@ -908,7 +943,7 @@ focus = {
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 5
 	x = 12
-	y = 16
+	y = 12
 	ai_will_do = {
 	factor = 1
 	}

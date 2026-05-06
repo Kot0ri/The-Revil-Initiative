@@ -268,6 +268,56 @@ ZEO_cecilia_irene_2 = {
 	
 }
 
+ZEO_casval_deikun = {
+	name= "Casval Rem Deikun"
+	portraits={
+		army = {
+			large = "gfx/leaders/ZEO/CZ_Casval2.dds"
+		}
+	}
+	country_leader = {
+		ideology = zeonism
+		traits = {
+			
+		}
+	}
+	field_marshal = {
+		traits = {
+			newtype_1 pilot 
+		}
+		skill = 6
+		attack_skill = 6
+		defense_skill = 6
+		planning_skill = 5
+		logistics_skill = 5
+	}
+	
+}
+
+ZEO_artesia_deikun = {
+	name= "Artesia Deikun"
+	portraits={
+		army = {
+			large = "gfx/leaders/ZEO/CZ_Artesia.dds"
+		}
+		civilian = {
+			large = "gfx/leaders/ZEO/aretesia_princess.dds"
+		}
+	}
+	
+	field_marshal = {
+		traits = {
+			newtype_1 pilot 
+		}
+		skill = 4
+		attack_skill = 4
+		defense_skill = 4
+		planning_skill = 4
+		logistics_skill = 4
+	}
+	
+}
+
 	##Field Marshals
 	ZEO_lautrec={
 		name="Lautrec Hamilton"

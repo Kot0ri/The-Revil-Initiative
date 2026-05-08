@@ -2444,13 +2444,16 @@ focus = {
 	id = AXS_plan_to_create_the_neo-zabi_family
 	icon = GFX_goal_haman_neo_zabi
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	search_filters = {
 		FOCUS_FILTER_HISTORICAL
+	}
+	mutually_exclusive = {
+		focus = AXS_establish_zabi_family_rule
 	}
 	available = {
 		date > 0087.1.1
@@ -2473,6 +2476,37 @@ focus = {
 	}
 	relative_position_id = AXS_isolate_mineva
 	prerequisite = {focus = AXS_isolate_mineva }
+}
+
+focus = {
+	id = AXS_establish_zabi_family_rule
+	icon = GFX_goal_axis_rule
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_plan_to_create_the_neo-zabi_family
+	}
+	available = {
+		date > 0087.1.1
+		NOT = {
+			country_exists = VBC
+		}
+		NOT = {
+			country_exists = TIT
+		}
+		EFG = {
+			is_puppet_of = AXS
+		}
+	}
+	completion_reward = {
+
+	}
+	relative_position_id = AXS_isolate_mineva
+	prerequisite = {focus = AXS_isolate_mineva focus = AXS_revival_of_the_zabi_family }
 }
 
 focus = {

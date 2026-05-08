@@ -112,6 +112,10 @@ focus_tree = {
 		factor = 1
 		}
 		completion_reward = {
+			declare_war_on = {
+				target = ALZ
+				type = annex_all
+			}
 		}
 	}
 	
@@ -127,6 +131,9 @@ focus_tree = {
 		}
 		available = {
 			has_completed_focus = TIT_Secure_Bases
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		ai_will_do = {
 		factor = 1
@@ -205,7 +212,7 @@ focus_tree = {
 		id = TIT_secure_east_africa
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 2
+		x = -6
 		y = 1
 		relative_position_id = TIT_parpicipate_in_operation_clean_sweep
 		prerequisite = {
@@ -213,6 +220,9 @@ focus_tree = {
 		}
 		ai_will_do = {
 		factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
 		}
 		available = {
 			
@@ -255,7 +265,7 @@ focus_tree = {
 
 	focus = {
 		id = TIT_build_up_in_Space
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_hizack_2
 		cost = 5
 		x = 0
 		y = 1
@@ -265,6 +275,12 @@ focus_tree = {
 		}
 		ai_will_do = {
 		factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		mutually_exclusive = {
+			focus = TIT_maintain_force_purity
 		}
 		available = {
 			has_completed_focus = TIT_Secure_Bases
@@ -290,6 +306,66 @@ focus_tree = {
 	}
 
 	focus = {
+		id = TIT_maintain_force_purity
+		icon = GFX_goal_hizack_2
+		cost = 5
+		x = 2
+		y = 1
+		relative_position_id = TIT_parpicipate_in_operation_clean_sweep
+		prerequisite = {
+			focus = TIT_parpicipate_in_operation_clean_sweep
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		mutually_exclusive = {
+			focus = TIT_build_up_in_Space
+		}
+		available = {
+			has_completed_focus = TIT_Secure_Bases
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_secure_logistics
+		icon = GFX_goal_hizack_3
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_maintain_force_purity
+		prerequisite = {
+			focus = TIT_build_up_in_Space focus = TIT_maintain_force_purity
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_blockade_the_moon
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_secure_logistics
+		prerequisite = {
+			focus = TIT_secure_logistics
+		}
+		available = {
+			has_completed_focus = TIT_in-house_development
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = TIT_Gryps_2_project
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
@@ -297,7 +373,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = TIT_build_up_in_Space
 		prerequisite = {
-			focus = TIT_build_up_in_Space
+			focus = TIT_build_up_in_Space focus = TIT_maintain_force_purity
 		}
 		ai_will_do = {
 		factor = 1
@@ -308,7 +384,7 @@ focus_tree = {
 
 	focus = {
 		id = TIT_man_from_jupiter
-		icon = GFX_goal_man_from_jupiter
+		icon = GFX_goal_jupitiris
 		cost = 5
 		x = 0
 		y = 1
@@ -317,7 +393,7 @@ focus_tree = {
 			focus = TIT_Gryps_2_project
 		}
 		available = {
-			
+			has_completed_focus = TIT_build_up_in_Space
 		}
 		ai_will_do = {
 			factor = 1
@@ -359,7 +435,7 @@ focus_tree = {
 
 			focus = {
 				id = TIT_purge_opposition
-				icon = GFX_goal_efsf_mobile_headquarters
+				icon = GFX_goal_man_from_jupiter
 				cost = 5
 				x = -2
 				y = 1
@@ -387,7 +463,7 @@ focus_tree = {
 
 				focus = {
 					id = TIT_secure_power
-					icon = GFX_goal_efsf_mobile_headquarters
+					icon = GFX_goal_gryps_conflict_titans
 					cost = 5
 					x = 0
 					y = 1
@@ -396,7 +472,7 @@ focus_tree = {
 						focus = TIT_jupitris_power_grab
 					}
 					available = {
-						
+						has_completed_focus = TIT_purge_opposition
 					}
 					ai_will_do = {
 						factor = 1
@@ -408,6 +484,28 @@ focus_tree = {
 						
 						}
 					}	
+	focus = {
+			id = TIT_call_of_jupiter
+			icon = GFX_goal_jupiter_call
+			cost = 5
+			x = 0
+			y = 1
+			relative_position_id = TIT_secure_power
+			prerequisite = {
+				focus = TIT_secure_power
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+			mutually_exclusive = {
+				
+			}
+			completion_reward = {
+						
+			}
+		}
+					
 
 		focus = {
 			id = TIT_Jamitovs_sway
@@ -421,6 +519,11 @@ focus_tree = {
 			}
 			ai_will_do = {
 				factor = 1
+			}
+			available = {
+				NOT = {
+					has_completed_focus = TIT_jupitris_power_grab
+				}
 			}
 			mutually_exclusive = {
 				focus = TIT_contest_jamitovs_command
@@ -510,6 +613,9 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TIT_Jamitovs_sway
 		}
+		available = {
+			has_completed_focus = TIT_maintain_force_purity
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -560,6 +666,9 @@ focus_tree = {
 					factor = 1
 				}
 				completion_reward = {
+					set_politics = {
+						ruling_party = supremacist
+					}
 					}
 				}
 
@@ -567,7 +676,7 @@ focus = {
 				id = TIT_elevate_MS_corps.
 				icon = GFX_goal_elavate_MS_titans
 				cost = 5
-				x = 1
+				x = 0
 				y = 1
 				relative_position_id = TIT_increased_radicalism
 				prerequisite = {
@@ -587,7 +696,7 @@ focus = {
 
 			focus = {
 				id = TIT_the_young_gaurd
-				icon = GFX_goal_efsf_mobile_headquarters
+				icon = GFX_goal_young_guard
 				cost = 5
 				x = 0
 				y = 1
@@ -607,6 +716,75 @@ focus = {
 				completion_reward = {
 					}
 				}
+
+
+focus = {
+		id = TIT_rally_the_soldiers
+		icon = GFX_goal_jerid_rally
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_the_young_gaurd
+		prerequisite = {
+			focus = TIT_the_young_gaurd
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+	
+			}
+	}
+
+	focus = {
+		id = TIT_earth_cradle_of_humanity
+		icon = GFX_goal_cradle_earth
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = TIT_rally_the_soldiers
+		prerequisite = {
+			focus = TIT_rally_the_soldiers
+		}
+		available = {
+			has_war_with = AXS
+			has_war_with = JUP
+			country_exists = VBC
+		}
+		mutually_exclusive = {
+			focus = TIT_grasp_with_ones_own_hands
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+	
+			}
+	}
+	focus = {
+		id = TIT_grasp_with_ones_own_hands
+		icon = GFX_goal_grasp_hands
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TIT_rally_the_soldiers
+		prerequisite = {
+			focus = TIT_rally_the_soldiers
+		}
+		available = {
+			has_war_with = VBC
+			has_war_with = AXS
+		}
+		mutually_exclusive = {
+			focus = TIT_earth_cradle_of_humanity
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+	
+			}
+	}
 
 	focus = {
 		id = TIT_Secure_Bases
@@ -726,7 +904,7 @@ focus = {
 		id = TIT_cooperate_with_anaheim
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 19
+		x = 20
 		y = 6
 		
 		ai_will_do = {
@@ -761,7 +939,7 @@ focus = {
 
 	focus = {
 		id = TIT_Hazel_Project
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_hazel
 		cost = 5
 		x = -2
 		y = 1
@@ -777,7 +955,7 @@ focus = {
 
 	focus = {
 		id = TIT_Next_generation_gundams
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_titans_mk2
 		cost = 5
 		x = 0
 		y = 1
@@ -793,7 +971,7 @@ focus = {
 
 	focus = {
 		id = TIT_Mass_Production_Gundams
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_titans_mk2_2
 		cost = 5
 		x = 2
 		y = 1
@@ -829,7 +1007,7 @@ focus = {
 	id = TIT_Hizack_Deal
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 5
-	x = 1
+	x = 0
 	y = 1
 	relative_position_id = TIT_cooperate_with_anaheim
 	prerequisite = {
@@ -902,7 +1080,7 @@ focus = {
 
 	focus = {
 		id = TIT_Marasai_Development
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_marasai
 		cost = 5
 		x = 0
 		y = 1
@@ -1170,6 +1348,27 @@ focus = {
 					focus = TIT_focus_on_psycommu
 				}
 
+				completion_reward = {
+					
+					}
+				}
+
+				focus = {
+				id = TIT_march_over_the_earth
+				icon = GFX_goal_earth_march
+				cost = 5
+				x = 0
+				y = 1
+				ai_will_do = {
+					factor = 1
+				}
+				relative_position_id = TIT_psycho-control_system
+				prerequisite = {
+					focus = TIT_psycho-control_system
+				}
+				available = {
+					has_completed_focus = TIT_increased_radicalism
+				}
 				completion_reward = {
 					
 					}

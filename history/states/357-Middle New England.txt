@@ -1,6 +1,6 @@
 state={
 	id=357
-	name="STATE_357"
+	name="Middle New England"
 	resources={
 		steel=12 # was: 20.000
 	}
@@ -20,23 +20,26 @@ state={
 				naval_base = 8
 
 			}
-			9832 = {
-				naval_base = 3
-
-			}
 
 		}
 		add_core_of = EFS
 		victory_points = {
 			6732 20 
 		}
-		
-		
+		victory_points = {
+			3710 2 
+		}
+		victory_points = {
+			718 2 
+		}
+		victory_points = {
+			7629 5 
+		}
 
 	}
 
 	provinces={
-		715 718  905 908   3710 3906  4445  6732  7629 9675    13158 
+		715 718  905 908  3710 3906  4445  6732  7629 9675   13158 
 	}
 	manpower=8404713
 	buildings_max_level_factor=1.000

@@ -1368,7 +1368,7 @@ focus = {
 	id = efsf_new_yark_redevelopment_program
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 2
+	x = 3
 	y = 1
 	prerequisite = {
 		focus = efsf_north_america_administration
@@ -1376,6 +1376,9 @@ focus = {
 	relative_position_id = efsf_north_america_administration
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = efsf_renew_infrastructre_plan
 	}
 	available = {
 	}
@@ -1445,10 +1448,30 @@ focus = {
 }
 
 focus = {
-	id = efsf_renew_infrastructre
+	id = efsf_secure_artic_route
+	icon = GFX_goal_energy_industry
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = efsf_new_england_revitalization focus = efsf_california_dreaming
+	}
+	relative_position_id = efsf_california_dreaming
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_renew_infrastructre_plan
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
+	x = 1
 	y = 1
 	prerequisite = {
 		focus = efsf_north_america_administration
@@ -1456,6 +1479,9 @@ focus = {
 	relative_position_id = efsf_north_america_administration
 	ai_will_do = {
 		factor = 1
+	}
+	mutually_exclusive = {
+		focus = efsf_new_yark_redevelopment_program
 	}
 	available = {
 	}
@@ -1502,10 +1528,30 @@ focus = {
 }
 
 focus = {
-	id = efsf_havard_military_academy
+	id = efsf_california_dreaming
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = -2
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = efsf_renew_infrastructre_plan
+	}
+	relative_position_id = efsf_renew_infrastructre_plan
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+
+	}
+}
+
+focus = {
+	id = efsf_havard_military_academy
+	icon = GFX_goal_harvard
+	cost = 5
+	x = -3
 	y = 1
 	prerequisite = {
 		focus = efsf_north_america_administration
@@ -1513,6 +1559,12 @@ focus = {
 	relative_position_id = efsf_north_america_administration
 	ai_will_do = {
 		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	mutually_exclusive = {
+		focus = efsf_west_point_military_academy
 	}
 	available = {
 	}
@@ -1522,8 +1574,31 @@ focus = {
 }
 
 focus = {
-	id = efsf_encourage_super-elite
-	icon = GFX_goal_gene_oyw
+	id = efsf_west_point_military_academy
+	icon = GFX_goal_west_point
+	cost = 5
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = efsf_north_america_administration
+	}
+	relative_position_id = efsf_north_america_administration
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = efsf_havard_military_academy
+	}
+	available = {
+	}
+	completion_reward = {
+	add_ideas = west_point_academy
+	}
+}
+
+focus = {
+	id = efsf_expand_groton_submarine_base
+	icon = GFX_goal_groton
 	cost = 5
 	x = 0
 	y = 1
@@ -1531,6 +1606,46 @@ focus = {
 		focus = efsf_havard_military_academy
 	}
 	relative_position_id = efsf_havard_military_academy
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+		add_ideas = submarine_primacy
+	}
+}
+
+focus = {
+	id = efsf_expand_saratoga_springs_support_base
+	icon = GFX_goal_saratoga_springs
+	cost = 5
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = efsf_west_point_military_academy
+	}
+	relative_position_id = efsf_west_point_military_academy
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	completion_reward = {
+		add_ideas = naval_coordination_focus
+	}
+}
+
+focus = {
+	id = efsf_encourage_super-elite
+	icon = GFX_goal_gene_oyw
+	cost = 5
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = efsf_expand_groton_submarine_base focus = efsf_expand_saratoga_springs_support_base
+	}
+	relative_position_id = efsf_expand_groton_submarine_base
 	ai_will_do = {
 		factor = 1
 	}
@@ -1546,14 +1661,14 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 5
 	x = 0
-	y = 2
+	y = 4
 	prerequisite = {
 		focus = efsf_encourage_super-elite
 	}
 	prerequisite = {
-		focus = efsf_new_england_revitalization
+		focus = efsf_secure_artic_route
 	}
-	relative_position_id = efsf_renew_infrastructre
+	relative_position_id = efsf_north_america_administration
 	ai_will_do = {
 		factor = 1
 	}

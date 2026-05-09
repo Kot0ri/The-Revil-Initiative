@@ -57,6 +57,63 @@ ideas = {
 			removal_cost = -1
 		}
 
+		west_point_academy = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				land_mastery_gain_factor = 0.15
+				unit_mbt_design_cost_factor = -0.5
+				army_leader_start_planning_level = 1
+			}
+			on_add = {
+				random_army_leader = {
+					add_skill_level = 1
+				}
+				random_army_leader = {
+					add_skill_level = 1
+				}
+				random_army_leader = {
+					add_skill_level = 1
+				}
+			}
+			removal_cost = -1
+		}
+
+	submarine_primacy = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				submarine_attack = 0.15
+				submarine_carrier1_equipment_design_cost_factor = -0.5
+				submarine_carrier2_equipment_design_cost_factor = -0.5
+				submarine_carrier3_equipment_design_cost_factor = -0.5
+			}
+			removal_cost = -1
+		}
+
+		naval_coordination_focus = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				fleet_protector_xp_gain_factor = 0.05
+				navy_leader_start_coordination_level = 1
+				naval_coordination = 0.15
+			}
+			removal_cost = -1
+		}
+
 		super-elite = {
 			allowed ={
 				always = no

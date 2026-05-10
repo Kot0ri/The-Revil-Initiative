@@ -12,7 +12,7 @@ focus_tree = {
 
 	focus = {
 		id = efsf_strength_improvement_plan
-		icon = GFX_goal_general_meeting
+		icon = GFX_goal_strength_improvement
 		cost = 5
 		x = 10
 		y = 0
@@ -1107,7 +1107,7 @@ focus = {
 
 focus = {
 	id = efsf_zanny_project
-	icon = GFX_goal_jablo_factory
+	icon = GFX_goal_zanny
 	cost = 10
 	x = 0
 	y = 1
@@ -1350,7 +1350,7 @@ focus = {
 
 focus = {
 	id = efsf_north_america_administration
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_north_america
 	cost = 5
 	x = 20
 	y = 0
@@ -1675,6 +1675,11 @@ focus = {
 	available = {
 	}
 	completion_reward = {
+		add_ideas = rs_development
+		add_timed_idea = {
+			idea = preface_of_gaints
+			days = 365
+		}
 	}
 }
 
@@ -1838,7 +1843,7 @@ focus = {
 
 focus = {
 	id = efsf_examine_zaku_blueprints
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_enhancement_of_general_purpose_MS
 	cost = 10
 	x = 0
 	y = 1
@@ -3107,7 +3112,9 @@ focus = {
 		focus = efsf_operation_clean_sweep
 	}
 	available = {
-	
+	AFZ = {
+		has_government = military_government
+	}
 	}
 	relative_position_id = efsf_operation_clean_sweep
 	completion_reward = {
@@ -3336,6 +3343,27 @@ focus = {
 	date > 0083.12.1
 	}
 	relative_position_id = efsf_buildup_north_america_defenses
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_forest_of_kavkaz
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = efsf_prepare_for_another_war
+	}
+	available = {
+	date > 0087.12.1
+	}
+	relative_position_id = efsf_prepare_for_another_war
 	completion_reward = {
 	
 	}

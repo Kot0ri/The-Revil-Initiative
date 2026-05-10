@@ -2234,7 +2234,7 @@ focus = {
 	}
 
 	focus = {
-		id = EFG_defference_to_the_settlement_issue_council
+		id = EFG_elevate_the_central_council
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = -2
@@ -2243,6 +2243,32 @@ focus = {
 		relative_position_id = EFG_empower_the_internal_affairs_board
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			
+		}
+		completion_reward = {
+			add_power_balance_value = {
+				id = EFG_power_balance
+				value = -0.05
+			}
+		}
+	}
+
+
+	focus = {
+		id = EFG_defference_to_the_settlement_issue_council
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_elevate_the_central_council}
+		relative_position_id = EFG_elevate_the_central_council
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
 		}
 		completion_reward = {
 			add_power_balance_value = {

@@ -132,6 +132,35 @@ ideas = {
 			removal_cost = -1
 		}
 
+		preface_of_gaints = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		
+			removal_cost = -1
+		}
+
+		rs_development = {
+			allowed ={
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				research_speed_factor = 0.01
+				navy_max_range_factor = 0.15
+			}
+		
+			removal_cost = -1
+		}
+
 		war_time_production = {
 			allowed ={
 				always = no

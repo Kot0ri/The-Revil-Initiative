@@ -27,7 +27,7 @@ focus_tree = {
 
 	focus = {
 		id = TIT_Titans_Taskforce
-		icon = GFX_goal_efsf_mobile_headquarters
+		icon = GFX_goal_titans_rise
 		cost = 5
 		x = 0
 		y = 1
@@ -86,7 +86,7 @@ focus_tree = {
 		id = TIT_hunt_down_suviors_of_Delaz_fleet
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = TIT_introduce_the_Quel
 		prerequisite = {
@@ -102,7 +102,7 @@ focus_tree = {
 		id = TIT_parpicipate_in_operation_clean_sweep
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = TIT_hunt_down_suviors_of_Delaz_fleet
 		prerequisite = {
@@ -415,11 +415,16 @@ focus_tree = {
 			x = 0
 			y = 1
 			relative_position_id = TIT_man_from_jupiter
+			search_filters = {
+				FOCUS_FILTER_HISTORICAL
+			}
 			prerequisite = {
 				focus = TIT_man_from_jupiter
 			}
 			available = {
-				
+				NOT = {
+				has_completed_focus = TIT_crush_scirocco
+			}
 			}
 			ai_will_do = {
 				factor = 1
@@ -565,6 +570,82 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	focus = {
+		id = TIT_a_war_on_two_fronts
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = TIT_FDIC_funding
+		prerequisite = {
+			focus = TIT_FDIC_funding
+		}
+		prerequisite = {
+			focus = TIT_Hunt_down_rivals
+		}
+		available = {
+			has_war_with = VBC
+			has_war_with = AXS
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_assume_presidental_powers
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_a_war_on_two_fronts
+		prerequisite = {
+			focus = TIT_a_war_on_two_fronts
+		}
+		available = {
+			is_in_faction = no
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = TIT_crush_scirocco
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = TIT_assume_presidental_powers
+		prerequisite = {
+			focus = TIT_assume_presidental_powers
+		}
+		available = {
+			has_completed_focus = TIT_man_from_jupiter
+			NOT = {
+				has_completed_focus = TIT_jupitris_power_grab
+			}
+		}
+		ai_will_do = {
+		factor = 1
+		}
+		completion_reward = {
+			JUP = {
+				declare_war_on = {
+				target = TIT
+				type = puppet
+			}
+			}
+			
+		}
+	}
+
+
 
 	focus = {
 		id = TIT_EFF_HQ_connections
@@ -790,7 +871,7 @@ focus = {
 		id = TIT_Secure_Bases
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 4
+		x = 2
 		y = 1
 		relative_position_id = TIT_hunt_down_suviors_of_Delaz_fleet
 		prerequisite = {
@@ -887,7 +968,7 @@ focus = {
 		id = TIT_in-house_development
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 17
+		x = 14
 		y = 6
 		
 		ai_will_do = {
@@ -904,7 +985,7 @@ focus = {
 		id = TIT_cooperate_with_anaheim
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 20
+		x = 17
 		y = 6
 		
 		ai_will_do = {
@@ -921,7 +1002,7 @@ focus = {
 		id = TIT_Quel_development_Project
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 6
+		x = 2
 		y = 4
 		relative_position_id = TIT_introduce_the_Quel
 		prerequisite = {

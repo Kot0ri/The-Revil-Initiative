@@ -283,7 +283,7 @@ focus = {
 
 focus = {
 	id = AR9_prepare_the_final_stand
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_final_stand
 	cost = 3
 	x = 2
 	y = 1
@@ -892,7 +892,7 @@ focus = {
 focus = {
 	id = AR9_supreme_commander_of_earth_forces
 	icon = GFX_goal_general_meeting
-	cost = 5
+	cost = 10
 	x = 0
 	y = 3
 	ai_will_do = {
@@ -955,13 +955,14 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
 	prerequisite = {
 	
 	}
 	available = {
-		AXS = {
-			is_puppet = no
-		}
+		has_completed_focus = AR9_begin_preperations_for_the_next_war
 		AND = {
 			has_completed_focus = AR9_retreat_to_orenburg
 			OR = {
@@ -995,6 +996,26 @@ focus = {
 			focus = AR9_hold_our_own
 		}
 	relative_position_id = AR9_push_to_recapture_odessa
+	completion_reward = {
+		annex_country = {
+			target = CRI
+		}
+	}
+}
+
+focus = {
+	id = AR9_reach_out_to_neo_zeon
+	icon = GFX_goal_neo_zeon_earth
+	cost = 5
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+ prerequisite = {
+		focus = AR9_hold_our_own focus = AR9_loyalty_to_deikun
+	}
+	relative_position_id = AR9_hold_our_own
 	completion_reward = {
 		
 	}
@@ -1116,13 +1137,34 @@ focus = {
 		factor = 1
 	}
 	available = {
-		has_country_leader = AR9_dottore
+		has_completed_focus = AR9_hold_our_own
 	}
 	prerequisite = {
 	focus = AR9_expand_local_recruitment
 		}
 
 	relative_position_id = AR9_expand_local_recruitment
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AR9_YONN_factory
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+	}
+	prerequisite = {
+	focus = AR9_cheap_ms_production
+		}
+
+	relative_position_id = AR9_cheap_ms_production
 	completion_reward = {
 	
 	}

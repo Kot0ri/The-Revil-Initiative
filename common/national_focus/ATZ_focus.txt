@@ -1,0 +1,232 @@
+focus_tree = {
+	id = ATZ
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = ATZ
+		}
+	}
+	default = no
+
+	focus = {
+	id = ATZ_a_cold_war
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = 5
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_gather_winter_equipment
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = ATZ_a_cold_war
+	}
+	relative_position_id = ATZ_a_cold_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_gather_aquatic_equipment
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = ATZ_a_cold_war
+	}
+	relative_position_id = ATZ_a_cold_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_fortify_artic_bases
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = ATZ_gather_winter_equipment
+	}
+	prerequisite = {
+		focus = ATZ_gather_aquatic_equipment
+	}
+	relative_position_id = ATZ_a_cold_war
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_cooperate_with_luio_and_company
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = ATZ_fortify_artic_bases
+	}
+	mutually_exclusive = {
+		focus = ATZ_accept_nanyang_influence
+	}
+	mutually_exclusive = {
+		focus = ATZ_maintain_zeon_loyalty
+	}
+	relative_position_id = ATZ_fortify_artic_bases
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_accept_nanyang_influence
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = ATZ_fortify_artic_bases
+	}
+	mutually_exclusive = {
+		focus = ATZ_maintain_zeon_loyalty
+	}
+	mutually_exclusive = {
+		focus = ATZ_cooperate_with_luio_and_company
+	}
+	relative_position_id = ATZ_fortify_artic_bases
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_intercept_moore_brotherhood
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	prerequisite = {
+		focus = ATZ_accept_nanyang_influence
+	}
+	relative_position_id = ATZ_accept_nanyang_influence
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_maintain_zeon_loyalty
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = ATZ_accept_nanyang_influence
+	}
+	mutually_exclusive = {
+		focus = ATZ_cooperate_with_luio_and_company
+	}
+	prerequisite = {
+		focus = ATZ_fortify_artic_bases
+	}
+	relative_position_id = ATZ_fortify_artic_bases
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_begin_raiding_efforts
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	prerequisite = {
+		focus = ATZ_maintain_zeon_loyalty
+	}
+	relative_position_id = ATZ_maintain_zeon_loyalty
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_improve_long_range_sensors
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+
+	prerequisite = {
+		focus = ATZ_maintain_zeon_loyalty
+	}
+	relative_position_id = ATZ_maintain_zeon_loyalty
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ATZ_ski_troop_formation
+	icon = GFX_goal_artic_war
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+
+	prerequisite = {
+		focus = ATZ_maintain_zeon_loyalty
+	}
+	relative_position_id = ATZ_maintain_zeon_loyalty
+	completion_reward = {
+	
+	}
+}
+
+}

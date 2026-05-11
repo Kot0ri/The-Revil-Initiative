@@ -775,6 +775,25 @@ focus = {
 					}
 				}
 
+
+	focus = {
+		id = TIT_maximize_firepower_doctrine
+		icon = GFX_goal_bask_om
+		cost = 5
+		x = 1
+		y = 2
+		relative_position_id = TIT_increased_radicalism
+		prerequisite = {
+			focus = TIT_increased_radicalism
+				}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+			}
+	}
+
 			focus = {
 				id = TIT_the_young_gaurd
 				icon = GFX_goal_young_guard
@@ -798,6 +817,9 @@ focus = {
 					}
 				}
 
+
+
+			
 
 focus = {
 		id = TIT_rally_the_soldiers

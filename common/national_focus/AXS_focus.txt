@@ -260,6 +260,41 @@ focus = {
 }
 
 focus = {
+	id = AXS_discover_AX-103
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_industrialization_of_axis
+	prerequisite = {focus = AXS_private_mining_contracts focus = AXS_state_mining_contracts}
+}
+
+focus = {
+	id = AXS_LTI-814_vs_AX-103_trials
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_newtype_development
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_discover_AX-103
+	prerequisite = {focus = AXS_discover_AX-103}
+}
+
+focus = {
 	id = AXS_guardian_of_the_asteroid_belt
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -2992,7 +3027,7 @@ focus = {
 
 focus = {
 	id = AXS_to_wage_war_across_the_cosmos
-	icon = GFX_goal_glemy_1
+	icon = GFX_goal_to_wage_war
 	cost = 5
 	x = 1
 	y = 1
@@ -3016,7 +3051,7 @@ focus = {
 
 focus = {
 	id = AXS_fufilling_fathers_dream
-	icon = GFX_goal_glemy_1
+	icon = GFX_goal_fathers_dream
 	cost = 5
 	x = 1
 	y = 1

@@ -1028,7 +1028,7 @@ focus = {
 
 	focus = {
 		id = EFG_elevate_police_powers
-		icon = GFX_goal_secret_police
+		icon = GFX_goal_maha_police
 		cost = 5
 		x = 1
 		y = 1
@@ -1121,6 +1121,26 @@ focus = {
 		annex_country = {
 			target = EFS
 		}
+		}
+	}
+
+		focus = {
+		id = EFG_metatron_suppression_unit
+		icon = GFX_goal_manha_pilot
+		cost = 5
+		x = 0
+		y = 1
+		available = {
+			has_completed_focus = EFG_the_paper_castle
+		}
+		prerequisite = { focus = EFG_replace_the_EFF }
+		relative_position_id = EFG_replace_the_EFF
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+		
 		}
 	}
 

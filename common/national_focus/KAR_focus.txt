@@ -1,0 +1,529 @@
+focus_tree = {
+	id = KAR
+	continuous_focus_position = { x = 0 y = 2400}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = KAR
+		}
+	}
+	default = no
+	
+focus = {
+	id = KAR_opposition_to_the_titans
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 10
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+}
+
+
+focus = {
+	id = KAR_bring_in_one_year_war_veterans
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_opposition_to_the_titans
+	prerequisite = {
+		focus = KAR_opposition_to_the_titans
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_reach_out_to_anaheim
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_bring_in_one_year_war_veterans
+	prerequisite = {
+		focus = KAR_bring_in_one_year_war_veterans
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_cooperate_with_the_AEUG
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_reach_out_to_anaheim
+	prerequisite = {
+		focus = KAR_reach_out_to_anaheim
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_north_america_forces
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = KAR_europe_forces
+	}
+	relative_position_id = KAR_opposition_to_the_titans
+	prerequisite = {
+		focus = KAR_opposition_to_the_titans
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_gather_at_kennedy_spaceport
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_north_america_forces
+	prerequisite = {
+		focus = KAR_north_america_forces
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_form_an_air_branch
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_gather_at_kennedy_spaceport
+	prerequisite = {
+		focus = KAR_gather_at_kennedy_spaceport
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_utilize_old_american_equipment
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_form_an_air_branch
+	prerequisite = {
+		focus = KAR_form_an_air_branch
+	}
+	completion_reward = {
+	}
+}
+
+
+
+focus = {
+	id = KAR_build_up_in_alaska
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_north_america_forces
+	prerequisite = {
+		focus = KAR_north_america_forces
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_reach_out_to_luio_and_co
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_build_up_in_alaska
+	prerequisite = {
+		focus = KAR_build_up_in_alaska
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_prepare_for_a_ground_campaign
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_reach_out_to_luio_and_co
+	prerequisite = {
+		focus = KAR_reach_out_to_luio_and_co
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_deployment_of_american_forces
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_prepare_for_a_ground_campaign
+	prerequisite = {
+		focus = KAR_prepare_for_a_ground_campaign
+	}
+	prerequisite = {
+		focus = KAR_utilize_old_american_equipment
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_europe_forces
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = KAR_north_america_forces
+	}
+	relative_position_id = KAR_opposition_to_the_titans
+	prerequisite = {
+		focus = KAR_opposition_to_the_titans
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_gather_old_nato_equipment
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_europe_forces
+	prerequisite = {
+		focus = KAR_europe_forces
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_prepare_lightning_Strikes
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_gather_old_nato_equipment
+	prerequisite = {
+		focus = KAR_gather_old_nato_equipment
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_reach_out_to_politicians
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_prepare_lightning_Strikes
+	prerequisite = {
+		focus = KAR_prepare_lightning_Strikes
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_infiltrate_federal_forces
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_europe_forces
+	prerequisite = {
+		focus = KAR_europe_forces
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_issue_non_compliance_orders
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_infiltrate_federal_forces
+	prerequisite = {
+		focus = KAR_infiltrate_federal_forces
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_sabotage_titans_operations
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_issue_non_compliance_orders
+	prerequisite = {
+		focus = KAR_issue_non_compliance_orders
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_deployment_of_european_forces
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_reach_out_to_politicians
+	prerequisite = {
+		focus = KAR_sabotage_titans_operations
+	}
+	prerequisite = {
+		focus = KAR_reach_out_to_politicians
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_acquire_mobile_suits
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_cooperate_with_the_AEUG
+	prerequisite = {
+		focus = KAR_cooperate_with_the_AEUG
+	}
+	prerequisite = {
+		focus = KAR_deployment_of_american_forces
+		focus = KAR_deployment_of_european_forces
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_air_contention
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_acquire_mobile_suits
+	prerequisite = {
+		focus = KAR_acquire_mobile_suits
+	}
+
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_airforce_dominance
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = KAR_atmospheric_ms
+	}
+	relative_position_id = KAR_air_contention
+	prerequisite = {
+		focus = KAR_air_contention
+	}
+	available = {
+		has_completed_focus = KAR_deployment_of_american_forces
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_atmospheric_ms
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = KAR_airforce_dominance
+	}
+	relative_position_id = KAR_air_contention
+	prerequisite = {
+		focus = KAR_air_contention
+	}
+	available = {
+		has_completed_focus = KAR_deployment_of_european_forces
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_prepare_for_multi-continental_warfare
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_acquire_mobile_suits
+	prerequisite = {
+		focus = KAR_acquire_mobile_suits
+	}
+
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_asia_division
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_prepare_for_multi-continental_warfare
+	prerequisite = {
+		focus = KAR_prepare_for_multi-continental_warfare
+	}
+	mutually_exclusive = {
+		focus = KAR_africa_division
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_africa_division
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_prepare_for_multi-continental_warfare
+	prerequisite = {
+		focus = KAR_prepare_for_multi-continental_warfare
+	}
+	mutually_exclusive = {
+		focus = KAR_asia_division
+	}
+	completion_reward = {
+	}
+}
+
+focus = {
+	id = KAR_overthow_the_titans
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_acquire_mobile_suits
+	prerequisite = {
+		focus = KAR_acquire_mobile_suits
+	}
+
+	completion_reward = {
+		declare_war_on = {
+			target = TIT
+			type = annex_all
+		}
+	}
+}
+
+}

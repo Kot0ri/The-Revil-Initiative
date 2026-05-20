@@ -25,17 +25,17 @@ set_fuel_ratio = 0.8
 # DIPLOMACY
 
 set_popularities = {
-	democratic = 80
+	democratic = 0
 	supremacist = 0
-	contolism = 3
-	military_government = 0
+	contolism = 40
+	military_government = 50
 	aristocracy = 0
-	corporatism = 10
-	utopianism = 2
-	oligarchy = 5
+	corporatism = 0
+	utopianism = 10
+	oligarchy = 0 
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = military_government
 	last_election = "74.12.1"
 	election_frequency = 48
 	elections_allowed = yes ##suspended through duration of war, which is handled via event

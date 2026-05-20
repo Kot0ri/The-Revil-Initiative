@@ -12,7 +12,7 @@ focus_tree = {
 	
 focus = {
 	id = KAR_opposition_to_the_titans
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_attack_titans
 	cost = 5
 	x = 10
 	y = 0
@@ -26,7 +26,7 @@ focus = {
 
 focus = {
 	id = KAR_bring_in_one_year_war_veterans
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_attack_titans
 	cost = 5
 	x = 0
 	y = 2
@@ -38,12 +38,15 @@ focus = {
 		focus = KAR_opposition_to_the_titans
 	}
 	completion_reward = {
+		set_politics = {
+			ruling_party = contolism
+		}
 	}
 }
 
 focus = {
 	id = KAR_reach_out_to_anaheim
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_anaheim_main
 	cost = 5
 	x = 0
 	y = 1
@@ -167,7 +170,7 @@ focus = {
 
 focus = {
 	id = KAR_reach_out_to_luio_and_co
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_dijeh
 	cost = 5
 	x = 0
 	y = 1
@@ -363,7 +366,7 @@ focus = {
 
 focus = {
 	id = KAR_acquire_mobile_suits
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_aeug_ms
 	cost = 5
 	x = 0
 	y = 2
@@ -384,7 +387,7 @@ focus = {
 
 focus = {
 	id = KAR_air_contention
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_fighter_jet
 	cost = 5
 	x = -2
 	y = 1
@@ -425,7 +428,7 @@ focus = {
 
 focus = {
 	id = KAR_atmospheric_ms
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_zeta_plus
 	cost = 5
 	x = 1
 	y = 1
@@ -506,7 +509,7 @@ focus = {
 
 focus = {
 	id = KAR_overthow_the_titans
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_kilimanjaro
 	cost = 5
 	x = 0
 	y = 3

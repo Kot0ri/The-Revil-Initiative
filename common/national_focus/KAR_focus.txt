@@ -26,7 +26,7 @@ focus = {
 
 focus = {
 	id = KAR_bring_in_one_year_war_veterans
-	icon = GFX_goal_attack_titans
+	icon = GFX_goal_karaba_vet
 	cost = 5
 	x = 0
 	y = 2
@@ -63,7 +63,7 @@ focus = {
 
 focus = {
 	id = KAR_cooperate_with_the_AEUG
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_elenism
 	cost = 5
 	x = 0
 	y = 1
@@ -489,7 +489,7 @@ focus = {
 
 focus = {
 	id = KAR_africa_division
-	icon = GFX_goal_dominance_of_human_survival_theory2
+	icon = GFX_goal_africa_rebel
 	cost = 5
 	x = -1
 	y = 1
@@ -529,4 +529,25 @@ focus = {
 	}
 }
 
+focus = {
+	id = KAR_stand_against_axis
+	icon = GFX_goal_amuro_zeta
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = KAR_overthow_the_titans
+	prerequisite = {
+		focus = KAR_overthow_the_titans
+	}
+
+	completion_reward = {
+		declare_war_on = {
+			target = AXS
+			type = annex_all
+		}
+	}
+}
 }

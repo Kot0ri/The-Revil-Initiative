@@ -1634,7 +1634,7 @@ focus = {
 	id = AXS_coronation_of_mineva_zabi
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = -5
+	x = -6
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1674,9 +1674,9 @@ focus = {
 
 focus = {
 	id = AXS_gihren_loyalists
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_enzo_bernini
 	cost = 2
-	x = 3
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1695,7 +1695,7 @@ focus = {
 	id = AXS_hamans_regency
 	icon = GFX_goal_haman_regency
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1811,7 +1811,7 @@ focus = {
 	id = AXS_rumors_from_within
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1888,7 +1888,7 @@ focus = {
 	id = AXS_pronounce_glemy_as_heir_of_gihren
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1904,7 +1904,7 @@ focus = {
 	id = AXS_depose_mineva
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = -1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1925,13 +1925,16 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	mutually_exclusive = {
+		focus = AXS_a_new_regency
+	}
 	completion_reward = {
 	retire_country_leader = yes
 	recruit_character = AXS_glemy_zabi
 	
 	}
 	relative_position_id = AXS_depose_mineva
-	prerequisite = {focus = AXS_depose_mineva}
+	prerequisite = {focus = AXS_depose_mineva focus = AXS_to_seek_wise_leadership }
 }
 
 focus = {
@@ -1993,8 +1996,7 @@ focus = {
 		factor = 1
 	}
 	available = {
-		has_completed_focus = AXS_rumors_from_within
-		has_government = supremacist
+		
 	}
 	completion_reward = {
 	
@@ -2002,7 +2004,7 @@ focus = {
 	relative_position_id = AXS_2nd_war_for_Zeon_independence
 	mutually_exclusive = {focus = AXS_recoginze_the_claiment}
 	mutually_exclusive = {focus = AXS_cajole_glemy}
-	prerequisite = { focus = AXS_gihrens_heir }
+	prerequisite = { focus = AXS_gihrens_heir focus = AXS_remodel_zeon_nobility }
 	
 }
 
@@ -2010,10 +2012,13 @@ focus = {
 	id = AXS_enzo_seizes_more_power
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 0
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_purge_the_moderates
 	}
 	completion_reward = {
 	AXS_enzo_bernini = {
@@ -2028,10 +2033,125 @@ focus = {
 }
 
 focus = {
-	id = AXS_discover_the_reactionary_plot
+	id = AXS_investigate_ANI
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_Purge_the_hardliners
+		has_completed_focus = AXS_cloning_program
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_nothing_more_than_rumors
+	prerequisite = {focus = AXS_nothing_more_than_rumors}
+}
+
+focus = {
+	id = AXS_to_seek_wise_leadership
+	icon = GFX_goal_wise_leadership
+	cost = 2
+	x = 1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_natalie_incident
+		
+	}
+	completion_reward = {
+	set_politics = {
+		ruling_party = supremacist
+	}
+	}
+	relative_position_id = AXS_nothing_more_than_rumors
+	prerequisite = {focus = AXS_nothing_more_than_rumors}
+}
+
+focus = {
+	id = AXS_a_new_regency
+	icon = GFX_goal_a_new_regency
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_crown_glemy
+	}
+	completion_reward = {
+		AXS_felicia = {
+		add_trait = {
+		trait = militant_regent
+	}
+	}
+	}
+	relative_position_id = AXS_to_seek_wise_leadership
+	prerequisite = {focus = AXS_to_seek_wise_leadership}
+}
+
+focus = {
+	id = AXS_to_wait_for_the_right_moment
+	icon = GFX_goal_prepare_for_war
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		add_timed_idea = {
+			idea = war_mobilization
+			days = 365
+		}
+	}
+	relative_position_id = AXS_a_new_regency
+	prerequisite = {focus = AXS_a_new_regency}
+}
+
+focus = {
+	id = AXS_restore_gihrens_honor
+	icon = GFX_goal_felecia
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	
+	completion_reward = {
+		recruit_character = AXS_puru_three
+		recruit_character = AXS_puru_four
+		recruit_character = AXS_puru_five
+		recruit_character = AXS_puru_six
+		recruit_character = AXS_puru_seven
+		recruit_character = AXS_puru_eight
+		recruit_character = AXS_puru_nine
+		recruit_character = AXS_puru_ten
+		recruit_character = AXS_puru_eleven
+		recruit_character = AXS_puru_twelve
+		declare_war_on = {
+			target = EFG
+			type = annex_all
+		}
+	}
+	relative_position_id = AXS_to_wait_for_the_right_moment
+	prerequisite = {focus = AXS_to_wait_for_the_right_moment}
+}
+
+focus = {
+	id = AXS_discover_the_reactionary_plot
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2040,7 +2160,7 @@ focus = {
 	
 	}
 	relative_position_id = AXS_hamans_regency
-	prerequisite = {focus = AXS_hamans_regency focus = AXS_char_aznables_true_idenity }
+	prerequisite = {focus = AXS_hamans_regency }
 }
 
 focus = {
@@ -2136,7 +2256,7 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = -1
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -2152,15 +2272,15 @@ focus = {
 	completion_reward = {
 	retire_character = AXS_natalie_bianchi
 	}
-	relative_position_id = AXS_discover_the_reactionary_plot
-	prerequisite = {focus = AXS_discover_the_reactionary_plot}
+	relative_position_id = AXS_hamans_regency
+	prerequisite = {focus = AXS_hamans_regency}
 }
 
 focus = {
 	id = AXS_Purge_the_hardliners
 	icon = GFX_goal_axis_purge
 	cost = 2
-	x = 1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2352,7 +2472,7 @@ focus = {
 	icon = GFX_goal_general_meeting
 	cost = 2
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -2376,7 +2496,7 @@ focus = {
 }
 	}
 	relative_position_id = AXS_cajole_glemy
-	prerequisite = {focus = AXS_cajole_glemy }
+	prerequisite = {focus = AXS_cajole_glemy focus = AXS_investigate_ANI }
 }
 focus = {
 	id = AXS_form_supreme_command_council
@@ -2428,7 +2548,7 @@ focus = {
 	icon = GFX_goal_haman_regency
 	cost = 2
 	x = -2
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}

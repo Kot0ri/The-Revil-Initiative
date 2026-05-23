@@ -257,10 +257,24 @@ regent_of_axis = {
 }
 
 #Enzo Bernini
+zabi_in-law = {
+	random = no
+	stability_factor = 0.2
+	war_support_factor = 0.2
+}
+
 leader_of_true_zeon = {
 	random = no
 	army_core_defence_factor = 0.1
 	weekly_manpower = 100
+}
+
+#Felicia Laine
+militant_regent = {
+	random = no
+	army_attack_factor = 0.02
+	army_org_factor = 0.02
+	weekly_manpower = 50
 }
 
 #Serrana Karn

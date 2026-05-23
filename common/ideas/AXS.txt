@@ -57,6 +57,25 @@ ideas = {
 				war_support_weekly_factor = 0.05
 			}
 		}
+		war_mobilization = {
+			
+			allowed = {
+				original_tag = AXS
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				recruitable_population_factor = 0.35
+				production_speed_arms_factory_factor = 0.5
+				production_cost_arms_factory_factor = -0.15
+				production_factory_efficiency_gain_factor = 0.5
+			}
+		}
 		Shining_Luck = {
 			
 			allowed = {

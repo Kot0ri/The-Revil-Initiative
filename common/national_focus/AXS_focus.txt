@@ -1791,10 +1791,27 @@ focus = {
 }
 
 focus = {
+	id = AXS_mobile_fortress_doctrine
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_prioritize_mobile_armours
+	prerequisite = {focus = AXS_prioritize_mobile_armours}
+	
+}
+
+focus = {
 	id = AXS_prepare_for_another_war_of_independence
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1808,10 +1825,27 @@ focus = {
 }
 
 focus = {
+	id = AXS_rally_the_youth
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_prepare_for_another_war_of_independence
+	prerequisite = {focus = AXS_prepare_for_another_war_of_independence  }
+}
+
+
+focus = {
 	id = AXS_rumors_from_within
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 1
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1825,9 +1859,9 @@ focus = {
 
 focus = {
 id = AXS_2nd_war_for_Zeon_independence
-icon = GFX_goal_general_meeting
+icon = GFX_goal_federation_vs_zeon
 cost = 2
-x = -2
+x = -1
 y = 1
 ai_will_do = {
 	factor = 1
@@ -2126,7 +2160,10 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	
+	available = {
+		has_completed_focus = AXS_cloning_program
+		has_war = no
+	}
 	completion_reward = {
 		recruit_character = AXS_puru_three
 		recruit_character = AXS_puru_four
@@ -2319,6 +2356,11 @@ focus = {
 	}
 	available = {
 	date > 83.1.1
+	}
+	bypass_effect = {
+		VBC = {
+			has_completed_focus = VBC_rise_of_the_AEUG
+		}
 	}
 	search_filters = {
 		FOCUS_FILTER_HISTORICAL

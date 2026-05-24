@@ -1962,7 +1962,7 @@ focus = {
 
 focus = {
 	id = SI2_secure_power
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_zanscare_police
 	cost = 2
 	x = 0
 	y = 1
@@ -2098,7 +2098,10 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	declare_war_on = {
+		target = EFG
+		type = annex_all
+	}
 	}
 	relative_position_id = SI2_joint_ms_development
 	prerequisite = { focus = SI2_joint_ms_development focus = SI2_a_new_harmony }

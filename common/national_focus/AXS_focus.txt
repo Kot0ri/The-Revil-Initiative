@@ -593,7 +593,7 @@ focus = {
 	id = AXS_newtype_development
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -1168,6 +1168,7 @@ focus = {
 	}
 	available = {
 		date > 0088.1.1
+		has_completed_focus = AXS_emissary_from_axis
 	}
 	completion_reward = {
 	create_faction = Neo-Zeon
@@ -1693,7 +1694,7 @@ focus = {
 
 focus = {
 	id = AXS_hamans_regency
-	icon = GFX_goal_haman_regency
+	icon = GFX_goal_haman_regency_real
 	cost = 2
 	x = -1
 	y = 1
@@ -2185,6 +2186,25 @@ focus = {
 }
 
 focus = {
+	id = AXS_fufill_the_sacred_duty
+	icon = GFX_goal_sacred_duty
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = yes
+	}
+	completion_reward = {
+	add_ideas = sacred_duty
+	}
+	relative_position_id = AXS_restore_gihrens_honor
+	prerequisite = {focus = AXS_restore_gihrens_honor}
+}
+
+focus = {
 	id = AXS_discover_the_reactionary_plot
 	icon = GFX_goal_general_meeting
 	cost = 2
@@ -2349,7 +2369,7 @@ focus = {
 	id = AXS_Mission_to_the_Earthsphere
 	icon = GFX_goal_mission_to_earth
 	cost = 2
-	x = -3
+	x = -4
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2373,10 +2393,10 @@ focus = {
 }
 focus = {
 	id = AXS_Formation_of_the_AEUG
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_elenism
 	cost = 2
 	x = 0
-	y = 1
+	y = 2
 	ai_will_do = {
 		factor = 1
 	}
@@ -2396,7 +2416,7 @@ focus = {
 }
 focus = {
 	id = AXS_Secure_Authority
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_haman_dominate
 	cost = 2
 	x = -1
 	y = 1
@@ -2411,7 +2431,7 @@ focus = {
 }
 focus = {
 	id = AXS_reorganize_military_nexus
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_military_nexus
 	cost = 2
 	x = -1
 	y = 1
@@ -2429,7 +2449,7 @@ focus = {
 }
 focus = {
 	id = AXS_navigate_unstable_politics
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_haman_regency
 	cost = 2
 	x = 0
 	y = 1
@@ -2441,6 +2461,26 @@ focus = {
 	}
 	completion_reward = {
 	
+	}
+	relative_position_id = AXS_reorganize_military_nexus
+	prerequisite = {focus = AXS_reorganize_military_nexus }
+}
+focus = {
+	id = AXS_form_special_forces
+	icon = GFX_goal_axis_commando
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+		FOCUS_FILTER_MILITARY
+	}
+	completion_reward = {
+	add_ideas = Axis_Commandos
+	recruit_character = AXS_illia_pazom
 	}
 	relative_position_id = AXS_reorganize_military_nexus
 	prerequisite = {focus = AXS_reorganize_military_nexus }
@@ -2476,16 +2516,16 @@ focus = {
 		FOCUS_FILTER_HISTORICAL
 	}
 	completion_reward = {
-	recruit_character = AXS_illia_pazom
 	recruit_character = AXS_chara_soon
 	recruit_character = AXS_mashymre_cello_1
 	}
 	relative_position_id = AXS_remodel_zeon_nobility
 	prerequisite = {focus = AXS_remodel_zeon_nobility }
+	prerequisite = {focus = AXS_form_special_forces }
 }
 focus = {
 	id = AXS_cajole_glemy
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_cajole_glemy
 	cost = 2
 	x = 0
 	y = 1
@@ -2567,12 +2607,37 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	set_politics = {
-		ruling_party = military_government
-	}
 		recruit_character = AXS_mil_control
 		add_country_leader_role = {
     	character = AXS_mil_control
+   		country_leader = {
+        ideology = military_administration
+        expire = "1965.1.1.1"
+        traits = { }
+	}
+	}
+	promote_character = AXS_mil_control
+	set_politics = {
+		ruling_party = military_government
+	}
+	}
+	relative_position_id = AXS_form_supreme_command_council
+	prerequisite = {focus = AXS_form_supreme_command_council }
+	prerequisite = {focus = AXS_return_to_the_earthsphere }
+}
+focus = {
+	id = AXS_sword_and_shield_of_zeon
+	icon = GFX_goal_clemens_ship
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		retire_character = AXS_mil_control
+		add_country_leader_role = {
+    	character = AXS_clemens
     	promote_leader = yes
    		country_leader = {
         ideology = military_administration
@@ -2580,10 +2645,10 @@ focus = {
         traits = { }
 	}
 	}
+	promote_character = AXS_clemens
 	}
-	relative_position_id = AXS_form_supreme_command_council
-	prerequisite = {focus = AXS_form_supreme_command_council }
-	prerequisite = {focus = AXS_return_to_the_earthsphere }
+	relative_position_id = AXS_military_triumvirate
+	prerequisite = {focus = AXS_military_triumvirate }
 }
 focus = {
 	id = AXS_crackdown_on_dissdents

@@ -1,6 +1,24 @@
 ideas = {
 
 	country = {
+		Axis_Commandos = {
+			
+			allowed = {
+				original_tag = AXS
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_attack_factor = 0.15
+				special_forces_marines_cost_factor = -0.5
+				special_forces_out_of_supply_factor = -0.5
+			}
+		}
 		Glorious_army_of_Neo-Zeon = {
 			
 			allowed = {
@@ -74,6 +92,27 @@ ideas = {
 				production_speed_arms_factory_factor = 0.5
 				production_cost_arms_factory_factor = -0.15
 				production_factory_efficiency_gain_factor = 0.5
+			}
+		}
+		sacred_duty = {
+			
+			allowed = {
+				original_tag = AXS
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+			 recruitable_population_factor = 0.05
+			 political_power_gain = -0.5
+			 army_attack_factor = 0.15
+			 army_attack_speed_factor = 0.15
+			 army_strength_factor = 0.05
+			 air_attack_factor = 0.05
 			}
 		}
 		Shining_Luck = {

@@ -1146,7 +1146,7 @@ focus = {
 
 focus = {
 	id = ZEO_acension_of_bernini
-	icon = GFX_goal_dominance_of_human_survival_theory
+	icon = GFX_goal_enzo_bernini
 	cost = 3
 	x = -16
 	y = 1
@@ -1162,7 +1162,7 @@ focus = {
 
 focus = {
 	id = ZEO_ministry_of_public_will
-	icon = GFX_goal_dominance_of_human_survival_theory
+	icon = GFX_goal_true_zeon
 	cost = 3
 	x = 0
 	y = 1
@@ -1178,7 +1178,7 @@ focus = {
 
 focus = {
 	id = ZEO_defence_of_the_homeland
-	icon = GFX_goal_dominance_of_human_survival_theory
+	icon = GFX_goal_enzo_rally
 	cost = 3
 	x = 0
 	y = 1
@@ -1689,6 +1689,7 @@ focus = {
 	}
 	available = {
 		has_completed_focus = ZEO_ensure_ideological_military
+		has_completed_focus = ZEO_ensure_loyalty_in_officer_corps.
 	}
 	completion_reward = {
 		recruit_character = ZEO_heinz_brandt
@@ -1737,7 +1738,7 @@ focus = {
 
 focus = {
 	id = ZEO_propaganda_domination
-	icon = GFX_goal_generic_political_pressure
+	icon = GFX_goal_gihren_propaganda
 	search_filters = { FOCUS_FILTER_PROPAGANDA }
 	cost = 2
 	x = -3
@@ -2560,7 +2561,7 @@ focus = {
 
 focus = {
 	id = ZEO_noblis_oblige 
-	icon = GFX_goal_zeon_mobile_headquarters
+	icon = GFX_goal_degewin_noble
 	cost = 5
 	x = 0
 	y = 1

@@ -855,6 +855,28 @@ NAA_flanagan_boone={
 	}
 }
 
+NAA_paschwitz={
+	name="Hubert Paschwitz"
+	portraits={
+		civilian={
+			large="gfx/leaders/NAA/hugo_paschwitz.dds"
+		}
+		army={
+			large="gfx/leaders/NAA/hugo_paschwitz.dds"
+		}
+	}
+	navy_leader = {
+		traits = {
+			career_officer aviation_enthusiast blockade_runner blue_water_expert
+		}
+		skill = 2
+		attack_skill = 2
+		defense_skill = 2
+		maneuvering_skill = 2
+		coordination_skill = 2
+	}
+}
+
 #Advisors
 NAA_Barbara_Hahari={
 	name="Barbara Hahari"

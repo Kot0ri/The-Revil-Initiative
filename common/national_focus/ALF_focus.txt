@@ -390,4 +390,379 @@ focus = {
 	}
 }
 
+focus = {
+	id = ALF_negotiations_with_Zeon_representatives
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 10
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_the_cairo_address
+	prerequisite = {
+		focus = ALF_the_cairo_address
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_study_mobile_suit_tactics
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_negotiations_with_Zeon_representatives
+	prerequisite = {
+		focus = ALF_negotiations_with_Zeon_representatives
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_intergrate_ms_with_tradtional_warfare
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_study_mobile_suit_tactics
+	prerequisite = {
+		focus = ALF_study_mobile_suit_tactics
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_purchase_combat_vehicles
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_negotiations_with_Zeon_representatives
+	prerequisite = {
+		focus = ALF_negotiations_with_Zeon_representatives
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_intergrate_local_command_structures
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_purchase_combat_vehicles
+	prerequisite = {
+		focus = ALF_purchase_combat_vehicles
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_purchase_zeon_support_equipment
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_negotiations_with_Zeon_representatives
+	prerequisite = {
+		focus = ALF_negotiations_with_Zeon_representatives
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_air_supply_doctrine
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_purchase_zeon_support_equipment
+	prerequisite = {
+		focus = ALF_purchase_zeon_support_equipment
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_adopt_mobile_suit_forces
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_intergrate_local_command_structures
+	prerequisite = {
+		focus = ALF_intergrate_local_command_structures
+	}
+	prerequisite = {
+		focus = ALF_intergrate_ms_with_tradtional_warfare
+	}
+	prerequisite = {
+		focus = ALF_air_supply_doctrine
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_modify_ms_to_desert_specifications
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_adopt_mobile_suit_forces
+	prerequisite = {
+		focus = ALF_adopt_mobile_suit_forces
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_improve_ms_mobility_in_soft_terrain
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_modify_ms_to_desert_specifications
+	prerequisite = {
+		focus = ALF_modify_ms_to_desert_specifications
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_operation_blue_nile
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_improve_ms_mobility_in_soft_terrain
+	prerequisite = {
+		focus = ALF_improve_ms_mobility_in_soft_terrain
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_ms_pilot_training_program
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_adopt_mobile_suit_forces
+	prerequisite = {
+		focus = ALF_adopt_mobile_suit_forces
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_ms_rapid_assualt_divisions
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_ms_pilot_training_program
+	prerequisite = {
+		focus = ALF_ms_pilot_training_program
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_concentrated_breakthrough_doctrine
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_ms_rapid_assualt_divisions
+	prerequisite = {
+		focus = ALF_ms_rapid_assualt_divisions
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_odessa_conference
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_adopt_mobile_suit_forces
+	prerequisite = {
+		focus = ALF_adopt_mobile_suit_forces
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_cooperate_with_zeon_units
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_odessa_conference
+	prerequisite = {
+		focus = ALF_odessa_conference
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_zeon_supply_prioritization
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_cooperate_with_zeon_units
+	prerequisite = {
+		focus = ALF_cooperate_with_zeon_units
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_addis_ababa_campaign
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_operation_blue_nile
+	prerequisite = {
+		focus = ALF_operation_blue_nile
+	}
+	prerequisite = {
+		focus = ALF_concentrated_breakthrough_doctrine
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_casablanca_assualt
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_zeon_supply_prioritization
+	prerequisite = {
+		focus = ALF_zeon_supply_prioritization
+	}
+	prerequisite = {
+		focus = ALF_concentrated_breakthrough_doctrine
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_dakar_siege
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_concentrated_breakthrough_doctrine
+	prerequisite = {
+		focus = ALF_addis_ababa_campaign
+	}
+	prerequisite = {
+		focus = ALF_casablanca_assualt
+	}
+	completion_reward = {
+	
+	}
+}
+
 }

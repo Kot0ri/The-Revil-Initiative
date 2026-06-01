@@ -708,7 +708,7 @@ focus_tree = {
 
 	focus = {
 		id = VBC_empower_the_vist_foundation
-		icon = GFX_goal_zeon_mobile_headquarters
+		icon = GFX_goal_box_of_laplace
 		cost = 10
 		x = 0
 		y = 1
@@ -728,6 +728,27 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = VBC_NTD_project
+		icon = GFX_goal_beast_of_possibility
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		available = {
+			date > 0093.12.1
+		}
+		relative_position_id = VBC_empower_the_vist_foundation
+		prerequisite = {focus = VBC_empower_the_vist_foundation }
+		completion_reward = {
+		
+		}
+	}
 	
 	focus = {
 		id = VBC_signs_of_change

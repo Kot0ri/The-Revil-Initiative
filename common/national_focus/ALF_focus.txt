@@ -394,7 +394,7 @@ focus = {
 	id = ALF_negotiations_with_Zeon_representatives
 	icon = GFX_goal_dominance_of_human_survival_theory2
 	cost = 5
-	x = 10
+	x = 14
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -765,4 +765,520 @@ focus = {
 	}
 }
 
+focus = {
+	id = ALF_actiavte_the_caches
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -14
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_the_cairo_address
+	prerequisite = {
+		focus = ALF_the_cairo_address
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_support_pan-africanism
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ALF_working_with_the_metropolis
+	}
+	mutually_exclusive = {
+		focus = ALF_the_cause_of_allah
+	}
+	relative_position_id = ALF_actiavte_the_caches
+	prerequisite = {
+		focus = ALF_actiavte_the_caches
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_reach_out_to_the_people
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_support_pan-africanism
+	prerequisite = {
+		focus = ALF_support_pan-africanism
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_infilitrate_the_cities
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_reach_out_to_the_people
+	prerequisite = {
+		focus = ALF_reach_out_to_the_people
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_spread_the_word
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_infilitrate_the_cities
+	prerequisite = {
+		focus = ALF_infilitrate_the_cities
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_support_the_countryside
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_reach_out_to_the_people
+	prerequisite = {
+		focus = ALF_reach_out_to_the_people
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_form_communal_ties
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_support_the_countryside
+	prerequisite = {
+		focus = ALF_support_the_countryside
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_remove_the_old_guard
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_support_pan-africanism
+	prerequisite = {
+		focus = ALF_support_pan-africanism
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_adopt_liberal_arguements
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_remove_the_old_guard
+	prerequisite = {
+		focus = ALF_remove_the_old_guard
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_reach_out_to_federal_garrisons
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_adopt_liberal_arguements
+	prerequisite = {
+		focus = ALF_adopt_liberal_arguements
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_two_causes_one_enemy
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_remove_the_old_guard
+	prerequisite = {
+		focus = ALF_remove_the_old_guard
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_intergrate_with_zeon_forces
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_two_causes_one_enemy
+	prerequisite = {
+		focus = ALF_two_causes_one_enemy
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_negotiate_with_the_franks
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_support_pan-africanism
+	prerequisite = {
+		focus = ALF_support_pan-africanism
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_pan_african_liberation_army
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_negotiate_with_the_franks
+	prerequisite = {
+		focus = ALF_form_communal_ties
+	}
+	prerequisite = {
+		focus = ALF_spread_the_word
+	}
+	prerequisite = {
+		focus = ALF_intergrate_with_zeon_forces
+	}
+	prerequisite = {
+		focus = ALF_reach_out_to_federal_garrisons
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_the_cause_of_allah
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = ALF_align_isolated_communites
+	}
+	mutually_exclusive = {
+		focus = ALF_support_pan-africanism
+	}
+	relative_position_id = ALF_actiavte_the_caches
+	prerequisite = {
+		focus = ALF_actiavte_the_caches
+	}
+	completion_reward = {
+	
+	}
+}
+
+
+focus = {
+	id = ALF_turn_the_police
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_the_cause_of_allah
+	prerequisite = {
+		focus = ALF_the_cause_of_allah
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_muster_the_abid
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_turn_the_police
+	prerequisite = {
+		focus = ALF_turn_the_police
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_cross_the_barzakh
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_muster_the_abid
+	prerequisite = {
+		focus = ALF_muster_the_abid
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_reach_out_to_near_east_fighters
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_turn_the_police
+	prerequisite = {
+		focus = ALF_turn_the_police
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_form_a_united_command
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_reach_out_to_near_east_fighters
+	prerequisite = {
+		focus = ALF_reach_out_to_near_east_fighters
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_remove_the_franks
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_the_cause_of_allah
+	prerequisite = {
+		focus = ALF_the_cause_of_allah
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_unify_sepratist_cells
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_the_cause_of_allah
+	prerequisite = {
+		focus = ALF_the_cause_of_allah
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_tunisia_cell
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_unify_sepratist_cells
+	prerequisite = {
+		focus = ALF_unify_sepratist_cells
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_algerian_cell
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_tunisia_cell
+	prerequisite = {
+		focus = ALF_tunisia_cell
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_libya_cell
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_unify_sepratist_cells
+	prerequisite = {
+		focus = ALF_unify_sepratist_cells
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_egyptian_cell
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_libya_cell
+	prerequisite = {
+		focus = ALF_libya_cell
+	}
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = ALF_peoples_holy_liberation_army
+	icon = GFX_goal_dominance_of_human_survival_theory2
+	cost = 5
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = ALF_remove_the_franks
+	prerequisite = {
+		focus = ALF_egyptian_cell
+	}
+	prerequisite = {
+		focus = ALF_algerian_cell
+	}
+	prerequisite = {
+		focus = ALF_cross_the_barzakh
+	}
+	prerequisite = {
+		focus = ALF_form_a_united_command
+	}
+	completion_reward = {
+	
+	}
+}
 }

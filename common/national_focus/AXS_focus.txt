@@ -655,6 +655,7 @@ focus = {
         traits = { maharaja_trait regent_of_axis }
     }
 }
+	add_ideas = Military_asteroid_state
 	}
 }
 
@@ -804,6 +805,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	bypass_effect = {
+		EFS = { has_completed_focus = efsf_1st_battle_of_axis }
 	}
 	completion_reward = {
 	
@@ -973,6 +977,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_emissary_from_zeon
 	}
 	completion_reward = {
 	
@@ -1323,7 +1330,7 @@ focus = {
 		factor = 1
 	}
 	available = {
-		EFG = { has_war = yes }
+		EFG = { has_war_with = DEL }
 	}
 	completion_reward = {
 	
@@ -1686,6 +1693,7 @@ focus = {
 	set_politics = {
 		ruling_party = supremacist
 	}
+	retire_character = AXS_haman_karn_young
 	}
 	relative_position_id = AXS_Axis_civil_war
 	mutually_exclusive = { focus = AXS_hamans_regency}
@@ -1792,6 +1800,24 @@ focus = {
 }
 
 focus = {
+	id = AXS_rehabilitate_special_service
+	icon = GFX_goal_enzo_special_service
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	add_ideas = police_asteroid_state
+	remove_ideas = Military_asteroid_state
+	}
+	relative_position_id = AXS_gihren_loyalists
+	prerequisite = {focus = AXS_gihren_loyalists}
+	
+}
+
+focus = {
 	id = AXS_mobile_fortress_doctrine
 	icon = GFX_goal_general_meeting
 	cost = 2
@@ -1835,7 +1861,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	add_ideas = youth_mobilization
 	}
 	relative_position_id = AXS_prepare_for_another_war_of_independence
 	prerequisite = {focus = AXS_prepare_for_another_war_of_independence  }
@@ -2068,10 +2094,30 @@ focus = {
 }
 
 focus = {
+	id = AXS_executor_of_axis
+	icon = GFX_goal_executor_of_axis
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_purge_the_moderates
+	}
+	completion_reward = {
+	
+	
+	}
+	relative_position_id = AXS_enzo_seizes_more_power
+	prerequisite = {focus = AXS_enzo_seizes_more_power}
+}
+
+focus = {
 	id = AXS_investigate_ANI
 	icon = GFX_goal_general_meeting
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2091,7 +2137,7 @@ focus = {
 	id = AXS_to_seek_wise_leadership
 	icon = GFX_goal_wise_leadership
 	cost = 2
-	x = 1
+	x = 0
 	y = 2
 	ai_will_do = {
 		factor = 1
@@ -2153,17 +2199,17 @@ focus = {
 }
 
 focus = {
-	id = AXS_restore_gihrens_honor
-	icon = GFX_goal_felecia
+	id = AXS_a_new_imperial_guard
+	icon = GFX_goal_imperial_guard
 	cost = 2
-	x = 0
+	x = 2
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	available = {
 		has_completed_focus = AXS_cloning_program
-		has_war = no
+		date > 0088.01.1
 	}
 	completion_reward = {
 		recruit_character = AXS_puru_three
@@ -2176,6 +2222,24 @@ focus = {
 		recruit_character = AXS_puru_ten
 		recruit_character = AXS_puru_eleven
 		recruit_character = AXS_puru_twelve
+	}
+	relative_position_id = AXS_a_new_regency
+	prerequisite = {focus = AXS_a_new_regency focus = AXS_crown_glemy }
+}
+
+focus = {
+	id = AXS_restore_gihrens_honor
+	icon = GFX_goal_felecia
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_war = no
+	}
+	completion_reward = {
 		declare_war_on = {
 			target = EFG
 			type = annex_all

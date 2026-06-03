@@ -3202,6 +3202,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	bypass_effect = {
+		AXS = { has_completed_focus = AXS_1st_battle_of_axis }
+	}
 	prerequisite = {
 		focus = efsf_operation_clean_sweep
 	}

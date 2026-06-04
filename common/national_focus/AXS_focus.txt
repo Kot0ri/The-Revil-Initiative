@@ -671,6 +671,14 @@ focus = {
 	completion_reward = {
 	recruit_character = AXS_char_aznable_axis_1
 	recruit_character = AXS_haman_karn_young
+	recruit_character = AXS_jeremy
+	recruit_character = AXS_ferdinand
+	recruit_character = AXS_bruno
+	recruit_character = AXS_zbyszek
+	recruit_character = AXS_signe
+	recruit_character = AXS_yuri_hasler
+	recruit_character = AXS_jaroslav
+	recruit_character = AXS_felicia
 	add_manpower = 50000
 	}
 	relative_position_id = AXS_end_of_the_war
@@ -738,6 +746,9 @@ focus = {
 	y = 1
 	ai_will_do = {
 		factor = 1
+	}
+	available = {
+		has_completed_focus = AXS_keep_balance_betwen_factions
 	}
 	completion_reward = {
 	
@@ -1014,7 +1025,8 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	recruit_character = AXS_phaeton_rahu
+	recruit_character = AXS_tripper
 	}
 	relative_position_id = AXS_fortification_of_axis
 	prerequisite = {focus = AXS_fortification_of_axis}
@@ -1671,6 +1683,7 @@ focus = {
 	}
 	completion_reward = {
 	recruit_character = AXS_Irina
+	recruit_character = AXS_kamila
 	recruit_character = AXS_Alfred_von_Scharenberg
 	recruit_character = AXS_Abraham
 	recruit_character = AXS_Dwight_Washington
@@ -2310,7 +2323,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-	
+	recruit_character = AXS_clemens
 	}
 	relative_position_id = AXS_coronation_of_mineva_zabi
 	prerequisite = {focus = AXS_coronation_of_mineva_zabi}
@@ -2545,6 +2558,13 @@ focus = {
 	completion_reward = {
 	add_ideas = Axis_Commandos
 	recruit_character = AXS_illia_pazom
+	recruit_character = AXS_gerald_sinclair
+	recall_attache = AXS_nell_marsen
+	recall_attache = AXS_wyne_dee
+	recruit_character = AXS_beanne
+	recruit_character = AXS_danny
+	recruit_character = AXS_dale
+	recruit_character = AXS_deune
 	}
 	relative_position_id = AXS_reorganize_military_nexus
 	prerequisite = {focus = AXS_reorganize_military_nexus }
@@ -2713,6 +2733,20 @@ focus = {
 	}
 	relative_position_id = AXS_military_triumvirate
 	prerequisite = {focus = AXS_military_triumvirate }
+}
+focus = {
+	id = AXS_a_war_of_minds_and_words_not_guns
+	icon = GFX_goal_clemens_ship
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = AXS_sword_and_shield_of_zeon
+	prerequisite = {focus = AXS_sword_and_shield_of_zeon }
 }
 focus = {
 	id = AXS_crackdown_on_dissdents
@@ -2954,6 +2988,8 @@ focus = {
 	add_ideas = Glorious_army_of_Neo-Zeon
 	retire_character = AXS_illia_pazom
 	recruit_character = AXS_illia_pazom_2
+	recruit_character = AXS_nee_gylen
+	recruit_character = AXS_lance_gylen
 	}
 	relative_position_id = AXS_prioritize_the_titans
 	prerequisite = {focus = AXS_deal_with_the_traitors focus = AXS_prioritize_the_titans }
@@ -3297,7 +3333,7 @@ focus = {
 
 focus = {
 	id = AXS_gather_allies
-	icon = GFX_goal_glemy_1
+	icon = GFX_goal_quin
 	cost = 5
 	x = 4
 	y = 1

@@ -787,7 +787,7 @@ AXS_maharaja_jr={
 		}
 	}
 	corps_commander={
-		traits={pilot}
+		traits={pilot karn_party }
 		skill=2
 		attack_skill=3
 		defense_skill=2
@@ -807,7 +807,7 @@ AXS_august_guidan={
 		}
 	}
 	corps_commander={
-		traits={pilot}
+		traits={pilot toto_party }
 		skill=2
 		attack_skill=2
 		defense_skill=2
@@ -827,7 +827,7 @@ AXS_arius_moma={
 		}
 	}
 	corps_commander={
-		traits={pilot}
+		traits={pilot toto_party }
 		skill=2
 		attack_skill=2
 		defense_skill=2
@@ -847,7 +847,7 @@ AXS_illia_pazom={
 		}
 	}
 	corps_commander={
-		traits={pilot newtype_1 }
+		traits={pilot newtype_1 karn_party deikun_party }
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -867,7 +867,7 @@ AXS_illia_pazom_2={
 		}
 	}
 	corps_commander={
-		traits={pilot newtype_1 }
+		traits={pilot newtype_1 karn_party deikun_party }
 		skill=4
 		attack_skill=3
 		defense_skill=3
@@ -887,7 +887,24 @@ AXS_chara_soon={
 		}
 	}
 	corps_commander={
-		traits={pilot newtype_1 }
+		traits={pilot newtype_1 karn_party }
+		skill=3
+		attack_skill=3
+		defense_skill=3
+		planning_skill=2
+		logistics_skill=2
+	}
+}
+
+AXS_gerald_sinclair={
+	name="Gerald Sinclair"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/gerald_sinclair.dds"
+		}
+	}
+	corps_commander={
+		traits={pilot karn_party deikun_party }
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -1172,6 +1189,23 @@ AXS_ferdinand={
 	}
 }
 
+AXS_jeremy={
+	name="Jeremy"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Jeremy.dds"
+		}
+	}
+	corps_commander={
+		traits={}
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
+	}
+}
+
 
 
 AXS_jorg={
@@ -1221,12 +1255,29 @@ AXS_Irina={
 		}
 	}
 	corps_commander={
-		traits={ royal_gaurd }
+		traits={ royal_gaurd karn_party }
 		skill=2
 		attack_skill=2
 		defense_skill=2
 		planning_skill=2
 		logistics_skill=2
+	}
+}
+
+AXS_kamila={
+	name="Kamila"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/kamila.dds"
+		}
+	}
+	corps_commander={
+		traits={ royal_gaurd karn_party }
+		skill=1
+		attack_skill=1
+		defense_skill=1
+		planning_skill=1
+		logistics_skill=1
 	}
 }
 
@@ -1238,7 +1289,7 @@ AXS_misch_krause={
 		}
 	}
 	corps_commander={
-		traits={ royal_gaurd pilot }
+		traits={ royal_gaurd pilot karn_party }
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -1255,7 +1306,7 @@ AXS_wunsche_gunsche={
 		}
 	}
 	corps_commander={
-		traits={ royal_gaurd pilot }
+		traits={ royal_gaurd pilot karn_party}
 		skill=3
 		attack_skill=3
 		defense_skill=3
@@ -1335,6 +1386,40 @@ AXS_Alfred_von_Scharenberg={
 	}
 	corps_commander={
 		traits={royal_gaurd}
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+AXS_nee_gylen={
+	name="Nee Gylen"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Nee_Gylen.dds"
+		}
+	}
+	corps_commander={
+		traits={royal_gaurd karn_party }
+		skill=2
+		attack_skill=2
+		defense_skill=2
+		planning_skill=2
+		logistics_skill=1
+	}
+}
+
+AXS_lance_gylen={
+	name="Lance Gylen"
+	portraits={
+		army={
+			large= "gfx/leaders/AXS/Lance_Gylen.dds"
+		}
+	}
+	corps_commander={
+		traits={royal_gaurd karn_party }
 		skill=2
 		attack_skill=2
 		defense_skill=2

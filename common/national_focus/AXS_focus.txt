@@ -267,6 +267,11 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		ZEO = {
+			has_completed_focus = ZEO_expand_civillian_contracting
+		}
+	}
 	completion_reward = {
 	
 	}
@@ -577,7 +582,7 @@ focus = {
 	id = AXS_new_mobile_suit_factories
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3073,7 +3078,7 @@ focus = {
 	id = AXS_imperial_visions
 	icon = GFX_goal_quebeley_haman_nz
 	cost = 5
-	x = 40
+	x = 36
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3349,7 +3354,7 @@ focus = {
 	id = AXS_visions_of_blood
 	icon = GFX_goal_glemy_1
 	cost = 5
-	x = 42
+	x = 38
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -3538,7 +3543,7 @@ focus = {
 	id = AXS_Götterdämmerung
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 50
+	x = 46
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -3572,6 +3577,52 @@ focus = {
 		focus = AXS_Götterdämmerung
 	}
 	relative_position_id = AXS_Götterdämmerung
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_maharaja_stronghold
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_enzo_front
+	}
+	available = {
+	}
+	prerequisite = {
+		focus = AXS_the_burning_flower
+	}
+	relative_position_id = AXS_the_burning_flower
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = AXS_enzo_front
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	mutually_exclusive = {
+		focus = AXS_maharaja_stronghold
+	}
+	available = {
+	}
+	prerequisite = {
+		focus = AXS_the_burning_flower
+	}
+	relative_position_id = AXS_the_burning_flower
 	completion_reward = {
 	
 	}

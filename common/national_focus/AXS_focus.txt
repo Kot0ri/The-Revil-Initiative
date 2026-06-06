@@ -145,6 +145,22 @@ focus = {
 }
 
 focus = {
+	id = AXS_create_welfare_division
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_found_axis_news_deliverly
+	prerequisite = {focus = AXS_found_axis_news_deliverly}
+}
+
+focus = {
 	id = AXS_set_up_exterior_docking_facilities
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -179,7 +195,7 @@ focus = {
 
 focus = {
 	id = AXS_maharajas_wisdom
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_maharaja_wisdom
 	cost = 5
 	x = 2
 	y = 1
@@ -344,10 +360,26 @@ focus = {
 	prerequisite = {focus = AXS_guardian_of_the_asteroid_belt}
 }
 
+focus = {
+	id = AXS_reorganize_axis_as_a_mobile_force
+	icon = GFX_goal_mobile_force
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	mutually_exclusive = { }
+	relative_position_id = AXS_deals_with_jupiter
+	prerequisite = {focus = AXS_antagonism_towards_jupiter  focus = AXS_deals_with_jupiter }
+}
 
 focus = {
 	id = AXS_karn_family
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_maharaja_khan
 	cost = 5
 	x = 1
 	y = 1
@@ -555,6 +587,7 @@ focus = {
 	}
 	relative_position_id = AXS_expand_navy_capacity
 	prerequisite = {focus = AXS_expand_navy_capacity}
+	prerequisite = {focus = AXS_reorganize_axis_as_a_mobile_force }
 }
 
 focus = {
@@ -1651,6 +1684,46 @@ focus = {
 }
 
 focus = {
+	id = AXS_expand_civil_administration
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+			has_government =  democractic
+	}
+	completion_reward = {
+	remove_ideas = Military_asteroid_state
+	}
+	relative_position_id = AXS_found_axis_general_assembly
+	prerequisite = {focus = AXS_found_axis_general_assembly}
+}
+
+focus = {
+	id = AXS_military_reinforcement_plan
+	icon = GFX_goal_general_meeting
+	cost = 2
+	x = -2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_found_axis_general_assembly
+	prerequisite = {focus = AXS_found_axis_general_assembly}
+	prerequisite = {focus = AXS_keep_balance_betwen_factions }
+	prerequisite = {focus = AXS_supplies_from_side_3 }
+}
+
+focus = {
 	id = AXS_coronation_of_mineva_zabi
 	icon = GFX_goal_general_meeting
 	cost = 2
@@ -1711,6 +1784,7 @@ focus = {
 	relative_position_id = AXS_Axis_civil_war
 	mutually_exclusive = { focus = AXS_hamans_regency}
 	prerequisite = {focus = AXS_Axis_civil_war}
+	prerequisite = {focus = AXS_military_reinforcement_plan }
 }
 
 focus = {

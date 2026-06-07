@@ -129,9 +129,9 @@ focus = {
 }
 
 focus = {
-	id = AXS_found_axis_news_deliverly
+	id = AXS_begin_construction_of_civil_sector
 	icon = GFX_goal_general_meeting
-	cost = 5
+	cost = 10
 	x = -2
 	y = 1
 	ai_will_do = {
@@ -142,6 +142,22 @@ focus = {
 	}
 	relative_position_id = AXS_build_up_long_range_communication_relays
 	prerequisite = {focus = AXS_build_up_long_range_communication_relays}
+}
+
+focus = {
+	id = AXS_found_axis_news_deliverly
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_begin_construction_of_civil_sector
+	prerequisite = {focus = AXS_begin_construction_of_civil_sector}
 }
 
 focus = {
@@ -368,7 +384,7 @@ focus = {
 focus = {
 	id = AXS_reorganize_axis_as_a_mobile_force
 	icon = GFX_goal_mobile_force
-	cost = 5
+	cost = 10
 	x = -1
 	y = 1
 	ai_will_do = {
@@ -565,7 +581,7 @@ focus = {
 focus = {
 	id = AXS_expand_navy_capacity
 	icon = GFX_goal_general_meeting
-	cost = 5
+	cost = 10
 	x = -1
 	y = 1
 	ai_will_do = {
@@ -581,7 +597,7 @@ focus = {
 focus = {
 	id = AXS_new_mobile_suit_factories
 	icon = GFX_goal_general_meeting
-	cost = 5
+	cost = 10
 	x = -1
 	y = 1
 	ai_will_do = {
@@ -598,7 +614,7 @@ focus = {
 focus = {
 	id = AXS_mobile_armor_bay
 	icon = GFX_goal_general_meeting
-	cost = 5
+	cost = 10
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -614,7 +630,7 @@ focus = {
 focus = {
 	id = AXS_asteroid_defense_initiative
 	icon = GFX_goal_general_meeting
-	cost = 5
+	cost = 10
 	x = 0
 	y = 1
 	ai_will_do = {
@@ -1858,6 +1874,87 @@ focus = {
 }
 
 focus = {
+	id = AXS_taking_up_the_mantle
+	icon = GFX_goal_char_idenity
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = AXS_char_aznables_true_idenity
+	prerequisite = {focus = AXS_char_aznables_true_idenity }
+}
+
+focus = {
+	id = AXS_reach_out_to_aligned_forces
+	icon = GFX_goal_char_idenity
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = AXS_taking_up_the_mantle
+	prerequisite = {focus = AXS_taking_up_the_mantle }
+}
+
+focus = {
+	id = AXS_cooperate_with_anaheim
+	icon = GFX_goal_axis_char_anaheim
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	}
+	relative_position_id = AXS_taking_up_the_mantle
+	prerequisite = {focus = AXS_taking_up_the_mantle }
+}
+
+focus = {
+	id = AXS_war_with_earth
+	icon = GFX_goal_char_idenity
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		declare_war_on = {
+			target = EFG
+			type = annex_everything
+		}
+	}
+	relative_position_id = AXS_cooperate_with_anaheim
+	prerequisite = {focus = AXS_cooperate_with_anaheim }
+	prerequisite = {focus = AXS_reach_out_to_aligned_forces }
+}
+
+focus = {
+	id = AXS_falling_moon
+	icon = GFX_goal_char_idenity
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = AXS_war_with_earth
+	prerequisite = {focus = AXS_war_with_earth }
+}
+
+focus = {
 	id = AXS_purge_the_moderates
 	icon = GFX_goal_general_meeting
 	cost = 2
@@ -2525,7 +2622,7 @@ focus = {
 	id = AXS_Mission_to_the_Earthsphere
 	icon = GFX_goal_mission_to_earth
 	cost = 2
-	x = -4
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2542,7 +2639,7 @@ focus = {
 		FOCUS_FILTER_HISTORICAL
 	}
 	completion_reward = {
-	
+	retire_character = AXS_char_aznable_axis_1
 	}
 	relative_position_id = AXS_natalie_incident
 	prerequisite = {focus = AXS_natalie_incident }
@@ -2607,7 +2704,7 @@ focus = {
 	id = AXS_navigate_unstable_politics
 	icon = GFX_goal_haman_regency
 	cost = 2
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2625,7 +2722,7 @@ focus = {
 	id = AXS_form_special_forces
 	icon = GFX_goal_axis_commando
 	cost = 2
-	x = -2
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2652,7 +2749,7 @@ focus = {
 	id = AXS_remodel_zeon_nobility
 	icon = GFX_goal_remodel_zeon_nobility
 	cost = 2
-	x = 0
+	x = 1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2670,7 +2767,7 @@ focus = {
 	id = AXS_knighthood_of_axis
 	icon = GFX_goal_knights_of_axis
 	cost = 2
-	x = -2
+	x = -3
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -2690,7 +2787,7 @@ focus = {
 	id = AXS_cajole_glemy
 	icon = GFX_goal_cajole_glemy
 	cost = 2
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1

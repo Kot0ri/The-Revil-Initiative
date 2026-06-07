@@ -27,6 +27,9 @@ bookmarks = {
 				
 			}
 			focuses = {
+				ABQ_cult_of_personality
+				ABQ_prepare_for_a_last_stand
+				ABQ_zeong_project
 			}
 		}
 
@@ -36,6 +39,8 @@ bookmarks = {
 			ideas = {
 			}
 			focuses = {
+				SOL_combat_nepotism_in_the_military
+				SOL_promote_Shin_matsunaga_to_defence_force_commander
 			}
 		}
 
@@ -45,22 +50,28 @@ bookmarks = {
 			ideas = {
 			}
 			focuses = {
+				AXS_maharajas_wisdom
+				AXS_reorganize_axis_as_a_mobile_force
 			}
 		}
 
-		PEZ= {
-			history = PEZ_UC0074_DESC
-			ideology = corporatism
+
+		EFG = {
+		  history = EFG_UC0074_DESC
+		  ideology = democratic
 			ideas = {
-				
+				hollowing_out_industry
 			}
 			focuses = {
+				EFG_Legacy_of_the_UC_Charter
+				EFG_isolate_Zeon
+				EFG_navigate_consortium_influence
 			}
 		}
 
 		EFS = {
 		  history = EFS_UC0074_DESC
-		  ideology = democratic
+		  ideology = military_government
 			ideas = {
 				bigship_principle
 				mole_of_jablo
@@ -68,12 +79,50 @@ bookmarks = {
 			}
 			focuses = {
 				efsf_strength_improvement_plan
-				
+				efsf_v_project
+				efsf_north_america_administration
 			}
 		}
 
+			"VBC" = {
+      history = OTHER_UC0074_DESC
+		  ideology = corporatism
+			ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {
+			VBC_one_step_for_man
+			VBC_tyrant_of_the_moon
+			VBC_increase_credit_debt_scheme
+		  }
+		}
+		"GRA" = {
+      history = OTHER_UC0074_DESC
+		  ideology = corporatism
+			ideas = {
+				colony_country
+				lunarian
+			}
+		  focuses = {
+		  }
+		}
+
+
 		"---"={
 			history = "OTHER_UC0074_DESC"
+		}
+
+		
+		PEZ= {
+			minor = yes
+			history = PEZ_UC0074_DESC
+			ideology = military_government
+			ideas = {
+				
+			}
+			focuses = {
+			}
 		}
 
 		"SI1" = {
@@ -121,23 +170,53 @@ bookmarks = {
 			}
 		  focuses = {}
 		}
-		"VBC" = {
+	
+		SSA = {
 		  minor = yes
       history = OTHER_UC0074_DESC
-		  ideology = corporatism
+		  ideology = democratic
 			ideas = {
-				colony_country
-				lunarian
+				
 			}
 		  focuses = {}
 		}
-		"GRA" = {
+	
+		EUF = {
 		  minor = yes
       history = OTHER_UC0074_DESC
-		  ideology = corporatism
+		  ideology = democratic
 			ideas = {
-				colony_country
-				lunarian
+				
+			}
+		  focuses = {}
+		}
+
+		EEF = {
+		  minor = yes
+      history = OTHER_UC0074_DESC
+		  ideology = democratic
+			ideas = {
+				
+			}
+		  focuses = {}
+		}
+
+		AFZ = {
+		  minor = yes
+      history = OTHER_UC0074_DESC
+		  ideology = democratic
+			ideas = {
+				
+			}
+		  focuses = {}
+		}
+
+		MEZ = {
+		  minor = yes
+      history = OTHER_UC0074_DESC
+		  ideology = democratic
+			ideas = {
+				
 			}
 		  focuses = {}
 		}

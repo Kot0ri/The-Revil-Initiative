@@ -749,6 +749,28 @@ focus_tree = {
 		
 		}
 	}
+
+	focus = {
+		id = VBC_secure_colonial_elite
+		icon = GFX_goal_vist_elite
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		available = {
+			date > 0093.12.1
+		}
+		relative_position_id = VBC_empower_the_vist_foundation
+		prerequisite = {focus = VBC_empower_the_vist_foundation }
+		completion_reward = {
+		
+		}
+	}
 	
 	focus = {
 		id = VBC_signs_of_change

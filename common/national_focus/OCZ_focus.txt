@@ -352,7 +352,7 @@ focus_tree = {
 		id = OCZ_Thunderclap_in_the_Wilderness
 		icon = GFX_goal_focus_on_MS_for_local_battle
 		cost = 5
-		x = 6
+		x = 8
 		y = 1
 		prerequisite ={ focus = OCZ_Raison_Detre }
 		relative_position_id = OCZ_Raison_Detre
@@ -442,6 +442,38 @@ focus_tree = {
 		y = 1
 		prerequisite ={ focus = OCZ_Raison_Detre }
 		relative_position_id = OCZ_Raison_Detre
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_development_of_amphibious_ms
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 5
+		y = 1
+		prerequisite ={ focus = OCZ_Raison_Detre }
+		relative_position_id = OCZ_Raison_Detre
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OCZ_secure_indonesia
+		icon = GFX_goal_focus_on_MS_for_local_battle
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite ={ focus = OCZ_development_of_amphibious_ms }
+		relative_position_id = OCZ_development_of_amphibious_ms
 		ai_will_do = {
 			factor = 1
 		}
@@ -770,7 +802,7 @@ focus_tree = {
 		id = OCZ_The_Administration_of_Oceania
 		icon = GFX_goal_zeon_new_weapon
 		cost = 5
-		x = 26
+		x = 28
 		y = 0
 		
 		ai_will_do = {
@@ -873,7 +905,10 @@ focus_tree = {
 			focus = OCZ_Naval_Operations_Command
 		}
 		completion_reward = {
-		
+		add_popularity = {
+			ideology = supremacist
+			popularity = 0.15
+		}
 		}
 	}
 

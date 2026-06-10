@@ -10,9 +10,6 @@ characters={
 		country_leader = {
 			ideology = military_administration
 		}
-		country_leader = {
-			ideology = spacenoid_supremacist
-		}
 		field_marshal = {
 			traits={ defensive_doctrine }
 			skill = 2
@@ -22,7 +19,19 @@ characters={
 			logistics_skill = 2
 		}
 	}
-## field marshal
+
+	OCZ_akari ={
+		name="Akari"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/akari.dds"
+			}
+		}
+		country_leader = {
+			ideology = spacenoid_supremacist
+		}
+	}
+## field marshals
 
 	OCZ_phillippe_kaufmann ={
 		name="Phillippe Kaufmann"
@@ -33,6 +42,42 @@ characters={
 		}
 		field_marshal = {
 			traits={ pilot naval_invader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	## generals
+
+	OCZ_lulu_bell_cameron ={
+		name="Lulu Bell Cameron"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/lulu_bell_cameron.dds"
+			}
+		}
+		corps_commander = {
+			traits={  anti-zabi_party trait_reckless trickster }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
+	OCZ_johan_galle ={
+		name="Johan Galle"
+		portraits={
+			army={
+				large="gfx/leaders/OCZ/johan_galle.dds"
+			}
+		}
+		corps_commander = {
+			traits={  anti-zabi_party trait_reckless trickster }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2

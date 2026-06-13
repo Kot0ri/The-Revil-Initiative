@@ -906,6 +906,9 @@ focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_completed_focus = AXS_military_preperations_to_fight_again
+	}
 	completion_reward = {
 	
 	}
@@ -934,7 +937,7 @@ focus = {
 
 focus = {
 	id = AXS_hit_and_run_tactics
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_endra_zssa
 	cost = 3
 	x = 0
 	y = 1
@@ -950,7 +953,7 @@ focus = {
 
 focus = {
 	id = AXS_autonomous_missions
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_endra_colors
 	cost = 3
 	x = 0
 	y = 1
@@ -1001,7 +1004,7 @@ focus = {
 
 focus = {
 	id = AXS_standard_of_the_navy_of_neo-zeon
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_gwadan
 	cost = 4
 	x = 0
 	y = 1
@@ -1020,7 +1023,7 @@ focus = {
 
 focus = {
 	id = AXS_improve_the_musai
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_improve_musai
 	cost = 5
 	x = 0
 	y = 1
@@ -1456,7 +1459,7 @@ focus = {
 
 focus = {
 	id = AXS_GAZA_line
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_gaza
 	cost = 3
 	x = 0
 	y = 1
@@ -1746,7 +1749,7 @@ focus = {
 
 focus = {
 	id = AXS_coronation_of_mineva_zabi
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_mineva_crown
 	cost = 2
 	x = -6
 	y = 1
@@ -1765,7 +1768,7 @@ focus = {
 
 focus = {
 	id = AXS_form_a_royal_guard
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_axis_royal_guard
 	cost = 2
 	x = 2
 	y = 1
@@ -1805,7 +1808,6 @@ focus = {
 	relative_position_id = AXS_Axis_civil_war
 	mutually_exclusive = { focus = AXS_hamans_regency}
 	prerequisite = {focus = AXS_Axis_civil_war}
-	prerequisite = {focus = AXS_military_reinforcement_plan }
 }
 
 focus = {
@@ -1890,7 +1892,7 @@ focus = {
 
 focus = {
 	id = AXS_reach_out_to_aligned_forces
-	icon = GFX_goal_char_idenity
+	icon = GFX_goal_char_axis_allies
 	cost = 2
 	x = 0
 	y = 1
@@ -2459,7 +2461,7 @@ focus = {
 
 focus = {
 	id = AXS_discover_the_reactionary_plot
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_axis_discover_plot
 	cost = 2
 	x = 1
 	y = 1
@@ -2475,7 +2477,7 @@ focus = {
 
 focus = {
 	id = AXS_keep_balance_betwen_factions
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_axis_divide
 	cost = 2
 	x = 0
 	y = 1

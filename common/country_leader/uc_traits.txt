@@ -228,6 +228,23 @@ political_tightrope = {
 	political_power_gain = 0.05
 }
 
+#kei Takiguchi
+honored_staff_adviser = {
+	random = no
+	army_org_factor = 0.05
+	army_org_regain = 0.05
+	experience_gain_army_factor = 0.15
+}
+
+#elise
+command_hq_staff = {
+	random = no
+	supremacist_drift = 0.01
+	experience_gain_air_factor = 0.02
+	experience_gain_army_factor = 0.02
+	experience_gain_navy_factor = 0.02
+}
+
 #Harness
 	national_marshal = {
 		random = no

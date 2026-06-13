@@ -1206,7 +1206,7 @@ ZEO_yeltsin = {
 			original_tag = ZEO
 		}
 		traits = {
-			army_regrouping_2
+			honored_staff_adviser
 		}
 		ai_will_do = {
 			factor = 2
@@ -1269,14 +1269,14 @@ ZEO_mackenson={
 			}
 		}
 		corps_commander={
-			traits={anti_Zabi_party deikun_party }
+			traits={ anti-zabi_party deikun_party }
 			skill=2
 			attack_skill=1
 			defense_skill=1
 			planning_skill=2
 			logistics_skill=2
 		}
-	}
+	
 		advisor={
 			slot = high_command
 			ledger = army
@@ -1296,7 +1296,7 @@ ZEO_mackenson={
 				}
 			}
 		}
-	
+	}
 
 	ZEO_oberstein={
 		name="Hanz Oberstein"
@@ -1316,7 +1316,6 @@ ZEO_mackenson={
 			planning_skill=1
 			logistics_skill=2
 		}
-	}
 		advisor={
 			slot = high_command
 			ledger = army
@@ -1336,6 +1335,7 @@ ZEO_mackenson={
 				}
 			}
 		}
+	}
 
 	ZEO_tripitz={
 		name="Wilhelm Von Tripitz"
@@ -1461,6 +1461,9 @@ ZEO_mackenson={
 			army={
 				small=GFX_idea_ramba_ral_pa
 			}
+			army={
+				large= "gfx/leaders/ZEO/elise_ann_finnegan.dds"
+			}
 		}
 		advisor={
 			slot = high_command
@@ -1471,7 +1474,7 @@ ZEO_mackenson={
 				original_tag = ZEO
 			}
 			traits = {
-				air_chief_reform_2
+				command_hq_staff
 			}
 			ai_will_do = {
 				factor = 2

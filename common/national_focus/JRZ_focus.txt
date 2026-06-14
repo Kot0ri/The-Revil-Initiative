@@ -99,7 +99,7 @@ focus = {
 }
 
 focus = {
-	id = JRZ_security_garuntees
+	id = JRZ_security_guarantees
 	icon = GFX_goal_general_meeting
 	cost = 5
 	x = -1
@@ -108,9 +108,57 @@ focus = {
 		factor = 1
 	}
 	prerequisite = {
-	focus = JRZ_secure_asteroid_base_defence focus = JRZ_expand_ganymede_mining_operations
+		focus = JRZ_secure_asteroid_base_defence focus = JRZ_expand_ganymede_mining_operations
 	}
 	relative_position_id = JRZ_secure_asteroid_base_defence
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_escalate_the_conflcit
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_security_guarantees
+	}
+	relative_position_id = JRZ_security_guarantees
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_call_for_aid
+	icon = GFX_goal_call_for_aid
+	cost = 30
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	search_filters = {
+		FOCUS_FILTER_HISTORICAL
+	}
+	mutually_exclusive = {
+		focus = JRZ_first_stage_of_excavation
+	}
+	mutually_exclusive = {
+		focus = JRZ_operation_red_blitz
+	}
+	prerequisite = {
+	focus = JRZ_escalate_the_conflcit
+	}
+	prerequisite = {
+	focus = JRZ_directive_from_side_3
+	}
+	relative_position_id = JRZ_escalate_the_conflcit
 	completion_reward = {
 		
 	}
@@ -129,6 +177,64 @@ focus = {
 	focus = JRZ_begin_pirate_raids
 	}
 	relative_position_id = JRZ_begin_pirate_raids
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_coordinate_trade_interdiction
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_begin_pirate_raids 
+	}
+	prerequisite = {
+		focus = JRZ_reach_out_to_axis
+	}
+	relative_position_id = JRZ_begin_pirate_raids
+	completion_reward = {
+		
+	}
+}
+
+
+focus = {
+	id = JRZ_experience_from_the_war
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_improve_hit_and_run_tactics focus = JRZ_coordinate_trade_interdiction
+	}
+	relative_position_id = JRZ_improve_hit_and_run_tactics
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_directive_from_side_3
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_experience_from_the_war
+	}
+	relative_position_id = JRZ_experience_from_the_war
 	completion_reward = {
 		
 	}
@@ -204,6 +310,24 @@ focus = {
 }
 
 focus = {
+	id = JRZ_priotitize_high_performance_suits
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_joint_MS_improvement_plan
+	}
+	relative_position_id = JRZ_joint_MS_improvement_plan
+	completion_reward = {
+		
+	}
+}
+
+focus = {
 	id = JRZ_build_up_the_jovian_fleet
 	icon = GFX_goal_general_meeting
 	cost = 5
@@ -231,7 +355,7 @@ focus = {
 	id = JRZ_improve_ship_designs
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 1
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -246,6 +370,51 @@ focus = {
 		country_exists = MAR
 	}
 	relative_position_id = JRZ_build_up_the_jovian_fleet
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_legacy_of_the_chimera
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_improve_ship_designs
+	}
+	prerequisite = {
+		focus = JRZ_priotitize_high_performance_suits
+	}
+	available = {
+		country_exists = MAR
+	}
+	relative_position_id = JRZ_improve_ship_designs
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_operation_red_blitz
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_legacy_of_the_chimera
+	}
+	mutually_exclusive = {
+		focus = JRZ_call_for_aid
+	}
+	relative_position_id = JRZ_legacy_of_the_chimera
 	completion_reward = {
 		
 	}
@@ -301,7 +470,7 @@ focus = {
 
 focus = {
 	id = JRZ_gaza_development
-	icon = GFX_goal_general_meeting
+	icon = GFX_goal_gaza
 	cost = 5
 	x = -2
 	y = 1
@@ -318,6 +487,51 @@ focus = {
 		
 	}
 	relative_position_id = JRZ_reach_out_to_axis
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = JRZ_form_mineva_contingency
+	icon = GFX_goal_gaza
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = JRZ_gaza_development
+	}
+	prerequisite = {
+		focus = JRZ_coordinate_trade_interdiction
+	}
+	available = {
+		
+	}
+	relative_position_id = JRZ_gaza_development
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = JRZ_begin_to_plot_for_power
+	icon = GFX_goal_gaza
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = JRZ_form_mineva_contingency
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_form_mineva_contingency
 	completion_reward = {
 	
 	}
@@ -366,18 +580,135 @@ focus = {
 	}
 }
 
+focus = {
+	id = JRZ_prepare_archaeological_teams
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_secure_ideon_asteroid
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_secure_ideon_asteroid
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = JRZ_first_stage_of_excavation
+	icon = GFX_goal_gaza
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		focus = JRZ_begin_to_plot_for_power
+	}
+	prerequisite = {
+		focus = JRZ_prepare_archaeological_teams
+	}
+	mutually_exclusive = {
+		focus = JRZ_call_for_aid
+	}
+	available = {
+		
+	}
+	relative_position_id = JRZ_begin_to_plot_for_power
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = JRZ_undermine_axis_authority
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_first_stage_of_excavation
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_first_stage_of_excavation
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = JRZ_begin_study_of_the_giant
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_first_stage_of_excavation
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_first_stage_of_excavation
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = JRZ_second_stage_of_excavation
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_begin_study_of_the_giant
+	}
+	prerequisite = {
+	focus = JRZ_undermine_axis_authority
+	}
+	available = {
+		
+	}
+	relative_position_id = JRZ_begin_study_of_the_giant
+	completion_reward = {
+	
+	}
+}
+
 
 focus = {
 	id = JRZ_jupiter_phantom
 	icon = GFX_goal_general_meeting
-	cost = 5
+	cost = 30
 	x = 5
-	y = 10
+	y = 8
 	ai_will_do = {
 		factor = 1
 	}
 	available = {
-	country_exists = RNZ
+	
+	}
+	prerequisite = {
+		focus = JRZ_call_for_aid
 	}
 	completion_reward = {
 		set_politics = {
@@ -387,10 +718,10 @@ focus = {
 }
 
 focus = {
-	id = JRZ_space_of_ageta
+	id = JRZ_hamans_dream
 	icon = GFX_goal_general_meeting
 	cost = 5
-	x = 0
+	x = -1
 	y = 1
 	ai_will_do = {
 		factor = 1
@@ -405,5 +736,26 @@ focus = {
 	completion_reward = {
 	
 }
+}
 
+focus = {
+	id = JRZ_space_of_ageta
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_jupiter_phantom
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_jupiter_phantom
+	completion_reward = {
+	
+}
+}
 }

@@ -3804,6 +3804,25 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_create_housing_registry
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = EFG_aftermath_of_stardust
+		}
+		relative_position_id = EFG_aftermath_of_stardust
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = EFG_deregulate_banks
 		icon = GFX_goal_general_meeting
 		cost = 10

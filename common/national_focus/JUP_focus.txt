@@ -321,7 +321,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = JUP_surfing_the_grat_red_spot
+		id = JUP_surfing_the_great_red_spot
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 0
@@ -348,9 +348,9 @@ focus_tree = {
 			factor = 1
 		}
 		prerequisite = {
-			focus = JUP_surfing_the_grat_red_spot
+			focus = JUP_surfing_the_great_red_spot
 		}
-		relative_position_id = JUP_surfing_the_grat_red_spot
+		relative_position_id = JUP_surfing_the_great_red_spot
 		completion_reward = {
 			
 		}
@@ -446,7 +446,7 @@ focus_tree = {
 		}
 	}
 
-		focus = {
+	focus = {
 		id = JUP_cultivate_telepaths
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -459,6 +459,566 @@ focus_tree = {
 			focus = JUP_magnetism_and_mesmerism
 		}
 		relative_position_id = JUP_magnetism_and_mesmerism
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_examine_the_new_world
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = JUP_study_the_seedlings_of_the_stars
+			has_completed_focus = JUP_combat_skeletonism
+			has_completed_focus = JUP_cultivate_telepaths
+			has_completed_focus = JUP_lobby_for_more_jupiter_fleet_funding
+		}
+		relative_position_id = JUP_phaethon_the_blazing_star
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_exploration_even_deeper
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_examine_the_new_world
+		}
+		relative_position_id = JUP_examine_the_new_world
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_saturn_project
+		icon = GFX_goal_general_meeting
+		cost = 15
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_exploration_even_deeper
+		}
+		relative_position_id = JUP_exploration_even_deeper
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_ceres_team
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_exploration_even_deeper
+		}
+		relative_position_id = JUP_exploration_even_deeper
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_pressure_axis
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_ceres_team
+		}
+		mutually_exclusive = {
+			focus = JUP_work_with_axis
+		}
+		relative_position_id = JUP_ceres_team
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_iapetus_mining
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_saturn_project
+		}
+		
+		relative_position_id = JUP_saturn_project
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_rhae_base
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_saturn_project
+		}
+		
+		relative_position_id = JUP_saturn_project
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_enceladus_expedition
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_rhae_base
+		}
+		prerequisite = {
+			focus = JUP_iapetus_mining
+		}
+		relative_position_id = JUP_saturn_project
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_titan_and_hyperion
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_enceladus_expedition
+		}
+		relative_position_id = JUP_enceladus_expedition
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_to_chiron
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_titan_and_hyperion
+		}
+		relative_position_id = JUP_titan_and_hyperion
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_TNO_possibilties
+		icon = GFX_goal_general_meeting
+		cost = 30
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_titan_and_hyperion
+		}
+		relative_position_id = JUP_titan_and_hyperion
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_salacia
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_TNO_possibilties
+		}
+		relative_position_id = JUP_TNO_possibilties
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_gonggong
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_salacia
+		}
+		relative_position_id = JUP_salacia
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_eris
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_TNO_possibilties
+		}
+		relative_position_id = JUP_TNO_possibilties
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = JUP_haumea
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_eris
+		}
+		relative_position_id = JUP_eris
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_orcus
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_TNO_possibilties
+		}
+		prerequisite = {
+			focus = JUP_to_the_kuiper_belt
+		}
+		relative_position_id = JUP_TNO_possibilties
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_makemake
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_to_the_kuiper_belt
+		}
+		relative_position_id = JUP_TNO_possibilties
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_probe_pluto
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 5
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_exploration_even_deeper
+		}
+		relative_position_id = JUP_exploration_even_deeper
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_tombaugh_expedition
+		icon = GFX_goal_general_meeting
+		cost = 30
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_probe_pluto
+		}
+		relative_position_id = JUP_probe_pluto
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_charon_base
+		icon = GFX_goal_general_meeting
+		cost = 30
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_tombaugh_expedition
+		}
+		relative_position_id = JUP_tombaugh_expedition
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_to_the_kuiper_belt
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_charon_base
+		}
+		relative_position_id = JUP_charon_base
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_solar_empire
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = JUP_solar_empire
+		}
+		prerequisite = {
+			focus = JUP_orcus
+		}
+		prerequisite = {
+			focus = JUP_makemake
+		}
+		relative_position_id = JUP_orcus
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_journey_to_alpha_centauri
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = JUP_solar_empire
+		}
+		prerequisite = {
+			focus = JUP_orcus
+		}
+		prerequisite = {
+			focus = JUP_makemake
+		}
+		relative_position_id = JUP_makemake
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_begin_cloning_developments
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_examine_the_new_world
+		}
+		relative_position_id = JUP_examine_the_new_world
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_setup_labs
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_begin_cloning_developments
+		}
+		relative_position_id = JUP_begin_cloning_developments
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_work_with_axis
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_setup_labs
+		}
+		prerequisite = {
+			focus = JUP_cut_deals
+		}
+		mutually_exclusive = {
+			focus = JUP_pressure_axis
+		}
+		relative_position_id = JUP_setup_labs
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_the_pirate_threat
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_examine_the_new_world
+		}
+		relative_position_id = JUP_examine_the_new_world
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = JUP_cut_deals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_the_pirate_threat
+		}
+		mutually_exclusive = {
+			focus = JUP_request_federal_reinforcements
+		}
+		relative_position_id = JUP_the_pirate_threat
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_request_federal_reinforcements
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_the_pirate_threat
+		}
+		mutually_exclusive = {
+			focus = JUP_cut_deals
+		}
+		relative_position_id = JUP_the_pirate_threat
 		completion_reward = {
 			
 		}

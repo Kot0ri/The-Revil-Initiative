@@ -11,10 +11,58 @@ characters={
 			}
 		}
 		country_leader={
-			ideology="zeonism"
+			ideology=zeonism
 			traits = {	supreme_commander_of_the_jovian_fleet }
 			expire="100.1.1.1"
 		}
-		
+	}
+	JRZ_johnny_ridden={
+		name= "Johnny Ridden"
+		portraits={
+			civilian={
+				large="gfx/leaders/JRZ/johhny_ridden.dds"
+			}
+			army = {
+				large="gfx/leaders/JRZ/johhny_ridden.dds"
+			}
+		}
+		country_leader={
+			ideology= military_administration
+			traits = {	}
+			expire="100.1.1.1"
+		}
+		corps_commander = {
+			traits = {
+				pilot
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	JRZ_hitorin={
+		name= "Hitorin"
+		portraits={
+			civilian={
+				large="gfx/leaders/JRZ/hitorin.dds"
+			}
+			army = {
+				large="gfx/leaders/JRZ/hitorin.dds"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_oligarchy
+			traits = { }
+			expire="100.1.1.1"
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
 	}
 }

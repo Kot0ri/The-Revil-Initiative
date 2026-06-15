@@ -16,14 +16,15 @@ set_variable = { newtype_accepted_status = 1 }
 set_popularities = {
 	supremacist = 0
 	contolism = 10
-	democratic = 40
+	democratic = 10
 	military_government = 0
 	aristocracy = 0
 	corporatism = 50
 	utopianism = 0
+	oligarchy = 30
 }
 set_politics = {
-	ruling_party = democratic
+	ruling_party = oligarchy
 	last_election = "74.12.1"
 	election_frequency = 48
 	elections_allowed = yes

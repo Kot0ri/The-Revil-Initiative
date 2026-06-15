@@ -497,6 +497,11 @@ focus_tree = {
 		prerequisite = {
 			focus = JUP_examine_the_new_world
 		}
+		available = {
+			NOT = {
+				has_completed_focus = JUP_continue_jupiter_sphere_development
+			}
+		}
 		relative_position_id = JUP_examine_the_new_world
 		completion_reward = {
 			
@@ -889,6 +894,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 		mutually_exclusive = {
 			focus = JUP_solar_empire
 		}
@@ -965,6 +973,71 @@ focus_tree = {
 	}
 
 	focus = {
+		id = JUP_continue_jupiter_sphere_development
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 8
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_examine_the_new_world
+		}
+		available = {
+			NOT = {
+				has_completed_focus = JUP_exploration_even_deeper
+			}
+		}
+		relative_position_id = JUP_examine_the_new_world
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_prioritize_colony_stations
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_continue_jupiter_sphere_development
+		}
+		mutually_exclusive = {
+			focus = JUP_the_moons_of_jupiter
+		}
+		relative_position_id = JUP_continue_jupiter_sphere_development
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = JUP_the_moons_of_jupiter
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_continue_jupiter_sphere_development
+		}
+		mutually_exclusive = {
+			focus = JUP_prioritize_colony_stations
+		}
+		relative_position_id = JUP_continue_jupiter_sphere_development
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
 		id = JUP_the_pirate_threat
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -1012,6 +1085,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
 		prerequisite = {
 			focus = JUP_the_pirate_threat
 		}
@@ -1019,6 +1095,24 @@ focus_tree = {
 			focus = JUP_cut_deals
 		}
 		relative_position_id = JUP_the_pirate_threat
+		completion_reward = {
+			
+		}
+	}
+
+		focus = {
+		id = JUP_special_force_unit
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = JUP_request_federal_reinforcements
+		}
+		relative_position_id = JUP_request_federal_reinforcements
 		completion_reward = {
 			
 		}

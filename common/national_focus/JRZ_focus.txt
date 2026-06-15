@@ -419,6 +419,166 @@ focus = {
 		
 	}
 }
+focus = {
+	id = JRZ_prepare_for_the_return
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_operation_red_blitz
+	}
+	
+	relative_position_id = JRZ_operation_red_blitz
+	completion_reward = {
+		
+	}
+}
+focus = {
+	id = JRZ_take_over_jupiter_fleet
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_operation_red_blitz
+	}
+	
+	relative_position_id = JRZ_operation_red_blitz
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_setup_MS_manafacturing
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_take_over_jupiter_fleet
+	}
+	
+	relative_position_id = JRZ_take_over_jupiter_fleet
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_a_new_jupitris
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_take_over_jupiter_fleet
+	}
+	prerequisite = {
+	focus = JRZ_prepare_for_the_return
+	}
+	relative_position_id = JRZ_take_over_jupiter_fleet
+	completion_reward = {
+		
+	}
+}
+
+
+
+focus = {
+	id = JRZ_a_beacon_of_zeon
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_prepare_for_the_return
+	}
+	
+	relative_position_id = JRZ_prepare_for_the_return
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_rally_with_outer_froces
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_a_beacon_of_zeon
+	}
+	prerequisite = {
+	focus = JRZ_a_new_jupitris
+	}
+	relative_position_id = JRZ_a_new_jupitris
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_mobile_fleet
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_setup_MS_manafacturing
+	}
+	prerequisite = {
+	focus = JRZ_a_new_jupitris
+	}
+	relative_position_id = JRZ_a_new_jupitris
+	completion_reward = {
+		
+	}
+}
+
+focus = {
+	id = JRZ_the_chimera_roars
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_rally_with_outer_froces
+	}
+	prerequisite = {
+	focus = JRZ_mobile_fleet
+	}
+	relative_position_id = JRZ_mobile_fleet
+	completion_reward = {
+		
+	}
+}
 
 focus = {
 	id = JRZ_pearl_boar
@@ -721,6 +881,30 @@ focus = {
 	id = JRZ_hamans_dream
 	icon = GFX_goal_general_meeting
 	cost = 5
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_jupiter_phantom
+		}
+		mutually_exclusive = {
+		focus = JRZ_chars_dream
+	}
+	available = {
+		
+	}
+	relative_position_id = JRZ_jupiter_phantom
+	completion_reward = {
+	
+}
+}
+
+focus = {
+	id = JRZ_chars_dream
+	icon = GFX_goal_general_meeting
+	cost = 5
 	x = -1
 	y = 1
 	ai_will_do = {
@@ -732,7 +916,32 @@ focus = {
 	available = {
 		
 	}
+	mutually_exclusive = {
+		focus = JRZ_hamans_dream
+	}
 	relative_position_id = JRZ_jupiter_phantom
+	completion_reward = {
+	
+}
+}
+
+focus = {
+	id = JRZ_the_dream_of_neo_zeon
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_chars_dream focus = JRZ_hamans_dream
+		}
+	available = {
+		
+	}
+
+	relative_position_id = JRZ_hamans_dream
 	completion_reward = {
 	
 }
@@ -754,6 +963,75 @@ focus = {
 		
 	}
 	relative_position_id = JRZ_jupiter_phantom
+	completion_reward = {
+	
+}
+}
+
+focus = {
+	id = JRZ_adopt_suits_of_power
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_space_of_ageta
+		}
+	available = {
+		
+	}
+	mutually_exclusive = {
+		focus = JRZ_adopt_suits_of_honor
+	}
+	relative_position_id = JRZ_space_of_ageta
+	completion_reward = {
+	
+}
+}
+
+focus = {
+	id = JRZ_adopt_suits_of_honor
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_space_of_ageta
+		}
+	available = {
+		
+	}
+	mutually_exclusive = {
+		focus = JRZ_adopt_suits_of_power
+	}
+	relative_position_id = JRZ_space_of_ageta
+	completion_reward = {
+	
+}
+}
+
+focus = {
+	id = JRZ_a_new_fleet
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_space_of_ageta
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_space_of_ageta
 	completion_reward = {
 	
 }

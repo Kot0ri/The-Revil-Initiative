@@ -25,7 +25,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = MAR_secure_tharsis
+		id = MAR_the_old_guard_reign
 		icon = GFX_goal_generic_alliance
 		cost = 10
 		x = 0
@@ -34,7 +34,56 @@ focus_tree = {
 			factor = 1
 		}
 		prerequisite = {	focus =  MAR_landing_on_olympus }
-		relative_position_id = MAR_landing_on_olympus 
+		relative_position_id = MAR_landing_on_olympus
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_rally_the_survivors
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_the_old_guard_reign }
+		relative_position_id = MAR_the_old_guard_reign
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_seize_control_over_the_colonists
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_the_old_guard_reign }
+		relative_position_id = MAR_the_old_guard_reign
+		completion_reward = {
+	
+		}
+	}
+
+
+	focus = {
+		id = MAR_secure_tharsis
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_the_old_guard_reign }
+		relative_position_id = MAR_the_old_guard_reign
 		completion_reward = {
 	
 		}
@@ -150,8 +199,8 @@ focus_tree = {
 		available = {
 			has_completed_focus = MAR_secure_tharsis
 		}
-		prerequisite = {	focus =  MAR_landing_on_olympus }
-		relative_position_id = MAR_landing_on_olympus 
+		prerequisite = {	focus =  MAR_the_old_guard_reign }
+		relative_position_id = MAR_the_old_guard_reign
 		completion_reward = {
 	
 		}

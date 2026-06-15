@@ -1,5 +1,31 @@
 characters={
 	#Leaders
+
+	MAR_johnny_ridden={
+		name="Johnny Ridden"
+		portraits={
+			civilian={
+				large="gfx/leaders/MAR/johnny_ridden.dds"
+			}
+			army={
+				large="gfx/leaders/MAR/johnny_ridden.dds"
+			}
+		}
+		country_leader={
+			ideology= military_administration
+			traits={}
+			expire="1000.1.1.1"
+		}
+		field_marshal = {
+			traits = { pilot }
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+
 	MAR_schrichen={
 		name="Schtein H. Schrichen"
 		portraits={
@@ -11,7 +37,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= military_administration
+			ideology= authoritarian_oligarchy
 			traits={ Crimson_Red }
 			expire="1000.1.1.1"
 		}

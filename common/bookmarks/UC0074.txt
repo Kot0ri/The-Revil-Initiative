@@ -44,16 +44,7 @@ bookmarks = {
 			}
 		}
 
-		AXS = {
-			history = AXS_UC0074_DESC
-			ideology = military_government
-			ideas = {
-			}
-			focuses = {
-				AXS_maharajas_wisdom
-				AXS_reorganize_axis_as_a_mobile_force
-			}
-		}
+	
 
 
 		EFG = {
@@ -224,6 +215,18 @@ bookmarks = {
 		effect = {
 			randomize_weather = 12345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
+		}
+
+		AXS = {
+			 minor = yes
+			history = AXS_UC0074_DESC
+			ideology = military_government
+			ideas = {
+			}
+			focuses = {
+				AXS_maharajas_wisdom
+				AXS_reorganize_axis_as_a_mobile_force
+			}
 		}
 
   }

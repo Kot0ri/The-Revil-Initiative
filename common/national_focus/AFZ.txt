@@ -37,7 +37,7 @@ focus_tree = {
 	    id = AFZ_The_Casablanca_Bombings
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 51
+	    x = 14
 	    y = 0
 	    ai_will_do = {
 		    factor = 1
@@ -45,22 +45,6 @@ focus_tree = {
 	    completion_reward = {
 	    }
         
-    }
-
-    focus = {
-	    id = AFZ_The_Replacement_From_Dakar
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_The_Casablanca_Bombings
-		prerequisite = { focus = AFZ_The_Casablanca_Bombings }
-
     }
 
     focus = {
@@ -74,14 +58,14 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_The_Replacement_From_Dakar
-		prerequisite = { focus = AFZ_The_Replacement_From_Dakar }
-		prerequisite = { focus = AFZ_The_Replacement_From_Dakar }
+        relative_position_id = AFZ_The_Casablanca_Bombings
+		prerequisite = { focus = AFZ_The_Casablanca_Bombings }
 
     }
 
-    focus = {
-	    id = AFZ_Shipping_In_Intervention_Forces
+
+   focus = {
+	    id = AFZ_aftermath_of_the_bombing
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
@@ -91,13 +75,13 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_The_Replacement_From_Dakar
-		prerequisite = { focus = AFZ_The_Replacement_From_Dakar }
+        relative_position_id = AFZ_The_Casablanca_Bombings
+		prerequisite = { focus = AFZ_The_Casablanca_Bombings }
 
     }
 
-    focus = {
-	    id = AFZ_The_Provisional_Government
+	  focus = {
+	    id = AFZ_resolution_74-228
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
@@ -109,12 +93,12 @@ focus_tree = {
 	    }
         relative_position_id = AFZ_Declaring_State_Of_Emergency
 		prerequisite = { focus = AFZ_Declaring_State_Of_Emergency }
-		prerequisite = { focus = AFZ_Shipping_In_Intervention_Forces }
+		prerequisite = { focus = AFZ_aftermath_of_the_bombing }
 
     }
 
-    focus = {
-	    id = AFZ_Salvaging_The_Union
+	 focus = {
+	    id = AFZ_EFFA_emergency_government
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -124,1423 +108,128 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_The_Provisional_Government
-		prerequisite = { focus = AFZ_The_Provisional_Government }
+        relative_position_id = AFZ_resolution_74-228
+		prerequisite = { focus = AFZ_resolution_74-228 }
 
     }
 
-    focus = {
-	    id = AFZ_Open_A_Full_Investigation
+
+	focus = {
+	    id = AFZ_federal_forces_africa_command
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Salvaging_The_Union
-		prerequisite = { focus = AFZ_Salvaging_The_Union }
-
-    }
-
-    focus = {
-	    id = AFZ_Hitting_The_Usual_Suspects
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_An_Inside_Job
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Open_A_Full_Investigation
-		prerequisite = { focus = AFZ_Open_A_Full_Investigation }
-
-    }
-
-    focus = {
-	    id = AFZ_An_Inside_Job
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Hitting_The_Usual_Suspects
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Open_A_Full_Investigation
-		prerequisite = { focus = AFZ_Open_A_Full_Investigation }
-
-    }
-
-    focus = {
-	    id = AFZ_Following_The_Paper_Trail
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_An_Inside_Job
-		prerequisite = { focus = AFZ_An_Inside_Job }
-
-    }
-
-    focus = {
-	    id = AFZ_Emergency_Counter_Terrorist_Powers
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Hitting_The_Usual_Suspects
-		prerequisite = { focus = AFZ_Hitting_The_Usual_Suspects }
-
-    }
-
-    focus = {
-	    id = AFZ_Operation_Paper_Cut
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Following_The_Paper_Trail
-		prerequisite = { focus = AFZ_Following_The_Paper_Trail }
-
-    }
-
-    focus = {
-	    id = AFZ_Operation_Sandfire
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Emergency_Counter_Terrorist_Powers
-		prerequisite = { focus = AFZ_Emergency_Counter_Terrorist_Powers }
-
-    }
-
-    focus = {
-	    id = AFZ_Case_Closed
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Operation_Paper_Cut
-		prerequisite = { focus = AFZ_Operation_Paper_Cut focus = AFZ_Operation_Sandfire }
-
-    }
-
-    focus = {
-	    id = AFZ_A_New_Low_In_EU_Relations
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -7
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		available = {
-			EUF = {
-				has_completed_focus = EUF_push_for_oil_rights
-			}
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Salvaging_The_Union
-		prerequisite = { focus = AFZ_Salvaging_The_Union }
-
-    }
-
-    focus = {
-	    id = AFZ_Issue_A_Formal_Protest
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Africa_Alone
-		}
-		mutually_exclusive = {
-			focus = AFZ_Aligning_With_The_Middle_East
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_A_New_Low_In_EU_Relations
-		prerequisite = { focus = AFZ_A_New_Low_In_EU_Relations }
-
-    }
-
-    focus = {
-	    id = AFZ_Counter_Motion_The_Earth_Federation_Parliment
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Issue_A_Formal_Protest
-		prerequisite = { focus = AFZ_Issue_A_Formal_Protest }
-
-    }
-
-    focus = {
-	    id = AFZ_Africa_Alone
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Issue_A_Formal_Protest
-		}
-		mutually_exclusive = {
-			focus = AFZ_Aligning_With_The_Middle_East
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_A_New_Low_In_EU_Relations
-		prerequisite = { focus = AFZ_A_New_Low_In_EU_Relations }
-
-    }
-
-    focus = {
-	    id = AFZ_Escalate_Tarrifs_On_European_Goods
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Africa_Alone
-		prerequisite = { focus = AFZ_Africa_Alone }
-
-    }
-
-    focus = {
-	    id = AFZ_Contest_Control_Of_The_Mediterranean
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Escalate_Tarrifs_On_European_Goods
-		prerequisite = { focus = AFZ_Escalate_Tarrifs_On_European_Goods }
-		prerequisite = { focus = AFZ_Counter_European_Neo_Imperialism }
-
-    }
-
-    focus = {
-	    id = AFZ_Substitute_Lost_European_Trade
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Contest_Control_Of_The_Mediterranean
-		prerequisite = { focus = AFZ_Contest_Control_Of_The_Mediterranean }
-
-    }
-
-    focus = {
-	    id = AFZ_Aligning_With_The_Middle_East
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Africa_Alone
-		}
-		mutually_exclusive = {
-			focus = AFZ_Issue_A_Formal_Protest
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_A_New_Low_In_EU_Relations
-		prerequisite = { focus = AFZ_A_New_Low_In_EU_Relations }
-
-    }
-
-    focus = {
-	    id = AFZ_Counter_European_Neo_Imperialism
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Aligning_With_The_Middle_East
-		prerequisite = { focus = AFZ_Aligning_With_The_Middle_East }
-
-    }
-
-    focus = {
-	    id = AFZ_Cairo_Trade_Agreement
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Counter_European_Neo_Imperialism
-		prerequisite = { focus = AFZ_Counter_European_Neo_Imperialism }
-
-    }
-
-    focus = {
-	    id = AFZ_Achieve_Resourse_Autarky
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Cairo_Trade_Agreement
-		prerequisite = { focus = AFZ_Cairo_Trade_Agreement }
-
-    }
-
-    focus = {
-	    id = AFZ_Break_European_Economic_Folly
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Substitute_Lost_European_Trade
-		prerequisite = { focus = AFZ_Substitute_Lost_European_Trade }
-		prerequisite = { focus = AFZ_Achieve_Resourse_Autarky }
-
-    }
-
-    focus = {
-	    id = AFZ_European_Detente
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 7
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		available = {
-			EUF = {
-				has_completed_focus = EUF_play_ball_with_the_middle_east
-			}
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Salvaging_The_Union
-		prerequisite = { focus = AFZ_Salvaging_The_Union }
-
-    }
-
-    focus = {
-	    id = AFZ_Bring_The_Middle_East_In
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_New_EuroAfrican_Relations
-		}
-		mutually_exclusive = {
-			focus = AFZ_Keep_it_Cool
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_European_Detente
-		prerequisite = { focus = AFZ_European_Detente }
-
-    }
-
-    focus = {
-	    id = AFZ_Propose_PanContinental_Relations
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-
-		relative_position_id = AFZ_Bring_The_Middle_East_In
-		prerequisite = { focus = AFZ_Bring_The_Middle_East_In }
-        
-    }
-
-    focus = {
-	    id = AFZ_New_EuroAfrican_Relations
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Bring_The_Middle_East_In
-		}
-		mutually_exclusive = {
-			focus = AFZ_Keep_it_Cool
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_European_Detente
-		prerequisite = { focus = AFZ_European_Detente }
-
-    }
-
-    focus = {
-	    id = AFZ_Propose_Deeper_Trade_Relations
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_New_EuroAfrican_Relations
-		prerequisite = { focus = AFZ_New_EuroAfrican_Relations }
-
-    }
-
-    focus = {
-	    id = AFZ_Tripartite_Oil_Quotas
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Propose_PanContinental_Relations
-		prerequisite = { focus = AFZ_Propose_PanContinental_Relations }
-		prerequisite = { focus = AFZ_Propose_Deeper_Trade_Relations }
-
-    }
-
-    focus = {
-	    id = AFZ_Energy_and_Resource_Commission
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Tripartite_Oil_Quotas
-		prerequisite = { focus = AFZ_Tripartite_Oil_Quotas }
-
-    }
-
-    focus = {
-	    id = AFZ_Keep_it_Cool
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_New_EuroAfrican_Relations
-		}
-		mutually_exclusive = {
-			focus = AFZ_Bring_The_Middle_East_In
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_European_Detente
-		prerequisite = { focus = AFZ_European_Detente }
-
-    }
-
-    focus = {
-	    id = AFZ_Maintain_Self_Reliance
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Keep_it_Cool
-		prerequisite = { focus = AFZ_Keep_it_Cool }
-
-    }
-
-    focus = {
-	    id = AFZ_Tangiers_Trade_Zone
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Propose_Deeper_Trade_Relations
-		prerequisite = { focus = AFZ_Propose_Deeper_Trade_Relations }
-
-    }
-
-    focus = {
-	    id = AFZ_Expanding_Mediteranean_Trade_Infastructure
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Tangiers_Trade_Zone
-		prerequisite = { focus = AFZ_Tangiers_Trade_Zone }
-
-    }
-
-    focus = {
-	    id = AFZ_Propose_AEME_Treaty_Orginization
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Energy_and_Resource_Commission
-		prerequisite = { focus = AFZ_Energy_and_Resource_Commission }
-		prerequisite = { focus = AFZ_Expanding_Mediteranean_Trade_Infastructure }
-
-    }
-
-    focus = {
-	    id = AFZ_Matters_Of_The_Economy
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 20
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_The_Provisional_Government
-		prerequisite = { focus = AFZ_The_Provisional_Government }
-
-    }
-
-    focus = {
-	    id = AFZ_Continuing_The_Green_Project
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Matters_Of_The_Economy
-		prerequisite = { focus = AFZ_Matters_Of_The_Economy }
-
-    }
-
-    focus = {
-	    id = AFZ_Enviromental_Support
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Continuing_The_Green_Project
-		prerequisite = { focus = AFZ_Continuing_The_Green_Project }
-
-    }
-
-    focus = {
-	    id = AFZ_Flexing_The_Ayunkili_Fortune
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
+	    x = 26
 	    y = 2
 	    ai_will_do = {
 		    factor = 1
 	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Matters_Of_The_Economy
-		prerequisite = { focus = AFZ_Matters_Of_The_Economy }
-
-    }
-
-    focus = {
-	    id = AFZ_Solving_The_Logistical_Issues
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Matters_Of_The_Economy
-		prerequisite = { focus = AFZ_Matters_Of_The_Economy }
-
-    }
-
-    focus = {
-	    id = AFZ_Nationalize_The_Pan_African_Railway
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Solving_The_Logistical_Issues
-		prerequisite = { focus = AFZ_Solving_The_Logistical_Issues }
-
-    }
-
-    focus = {
-	    id = AFZ_Decentalized_Development
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Centralize_Economic_Power
+		available = {
+			has_completed_focus = AFZ_The_Casablanca_Bombings
 		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Enviromental_Support
-		prerequisite = { focus = AFZ_Enviromental_Support }
-
     }
 
-    focus = {
-	    id = AFZ_Centralize_Economic_Power
+	focus = {
+	    id = AFZ_Shipping_In_Intervention_Forces
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 0
+	    x = -1
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
-		mutually_exclusive = {
-			focus = AFZ_Decentalized_Development
+		relative_position_id = AFZ_federal_forces_africa_command
+		prerequisite = {
+			focus = AFZ_federal_forces_africa_command
+		}
+		available = {
+			has_completed_focus = AFZ_resolution_74-228
 		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Nationalize_The_Pan_African_Railway
-		prerequisite = { focus = AFZ_Nationalize_The_Pan_African_Railway }
-
     }
 
-    focus = {
-	    id = AFZ_Urbanize_Between_Casablanca_And_Tangiers
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-			461 ={
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			290 ={
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-	    }
-        relative_position_id = AFZ_Centralize_Economic_Power
-		prerequisite = { focus = AFZ_Centralize_Economic_Power }
-
-    }
-
-    focus = {
-	    id = AFZ_Industrialize_Morocco
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-			461 ={
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			462 ={
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			783 ={
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-	    }
-        relative_position_id = AFZ_Urbanize_Between_Casablanca_And_Tangiers
-		prerequisite = { focus = AFZ_Urbanize_Between_Casablanca_And_Tangiers }
-
-    }
-
-    focus = {
-	    id = AFZ_Kickstart_The_Defense_Industry
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-			462 ={
-				add_building_construction = {
-					type = arms_factory
-					level = 4
-					instant_build = yes
-				}
-			}
-			459 ={
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-	    }
-        relative_position_id = AFZ_Centralize_Economic_Power
-		prerequisite = { focus = AFZ_Centralize_Economic_Power }
-
-    }
-
-    focus = {
-	    id = AFZ_Atlas_Mountain_Defense_Complex
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Kickstart_The_Defense_Industry
-		prerequisite = { focus = AFZ_Kickstart_The_Defense_Industry }
-
-    }
-
-    focus = {
-	    id = AFZ_Reinforce_Links_With_Dakar
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 5
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Centralize_Economic_Power
-		prerequisite = { focus = AFZ_Centralize_Economic_Power }
-
-    }
-
-    focus = {
-	    id = AFZ_Connections_With_International_Corporations
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Reinforce_Links_With_Dakar
-		prerequisite = { focus = AFZ_Reinforce_Links_With_Dakar }
-
-    }
-
-    focus = {
-	    id = AFZ_Protecting_The_Sub_Sahara
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -5
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Decentalized_Development
-		prerequisite = { focus = AFZ_Decentalized_Development }
-
-    }
-
-    focus = {
-	    id = AFZ_Oasis_Agricultural_Holdings
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Protecting_The_Sub_Sahara
-		prerequisite = { focus = AFZ_Protecting_The_Sub_Sahara }
-
-    }
-
-    focus = {
-	    id = AFZ_Restart_South_African_Mining
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -3
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Decentalized_Development
-		prerequisite = { focus = AFZ_Decentalized_Development }
-
-    }
-
-    focus = {
-	    id = AFZ_Steytler_Conglomerate
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Restart_South_African_Mining
-		prerequisite = { focus = AFZ_Restart_South_African_Mining }
-
-    }
-
-    focus = {
-	    id = AFZ_Invesments_Into_Kampala
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Decentalized_Development
-		prerequisite = { focus = AFZ_Decentalized_Development }
-
-    }
-
-    focus = {
-	    id = AFZ_Kome_Technologies
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Invesments_Into_Kampala
-		prerequisite = { focus = AFZ_Invesments_Into_Kampala }
-
-    }
-
-    focus = {
-	    id = AFZ_Green_Project_Expansion
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 2
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Flexing_The_Ayunkili_Fortune
-		prerequisite = { focus = AFZ_Flexing_The_Ayunkili_Fortune }
-
-    }
-
-    focus = {
-	    id = AFZ_Push_Back_The_Desert
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Green_Project_Expansion
-		prerequisite = { focus = AFZ_Green_Project_Expansion }
-
-    }
-
-    focus = {
-	    id = AFZ_Restore_The_Center
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -6
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Push_Back_The_Desert
-		prerequisite = { focus = AFZ_Push_Back_The_Desert }
-
-    }
-
-    focus = {
-	    id = AFZ_Lake_Initiative
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Restore_The_Center
-		prerequisite = { focus = AFZ_Restore_The_Center }
-
-    }
-
-    focus = {
-	    id = AFZ_Wild_Life_Restoration
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Restore_The_Center
-		prerequisite = { focus = AFZ_Restore_The_Center }
-
-    }
-
-    focus = {
-	    id = AFZ_Seed_The_Rivers_With_Life
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Lake_Initiative
-		prerequisite = { focus = AFZ_Lake_Initiative }
-
-    }
-
-    focus = {
-	    id = AFZ_Move_The_Locals_Underground
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Lake_Initiative
-		prerequisite = { focus = AFZ_Lake_Initiative }
-
-    }
-
-    focus = {
-	    id = AFZ_Animal_Cloning_Initiative
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Wild_Life_Restoration
-		prerequisite = { focus = AFZ_Wild_Life_Restoration }
-
-    }
-
-    focus = {
-	    id = AFZ_The_Kampala_Wildlife_Center
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Wild_Life_Restoration
-		prerequisite = { focus = AFZ_Wild_Life_Restoration }
-
-    }
-
-    focus = {
-	    id = AFZ_Restore_The_North
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 6
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Push_Back_The_Desert
-		prerequisite = { focus = AFZ_Push_Back_The_Desert }
-
-    }
-
-    focus = {
-	    id = AFZ_Casablanca_Restoration_Center
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Restore_The_North
-		prerequisite = { focus = AFZ_Restore_The_North }
-
-    }
-
-    focus = {
-	    id = AFZ_The_Nile_Project
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-			551 ={
-				add_building_construction = {
-					type = dam
-					level = 1
-					instant_build = yes
-				}
-			}
-	    }
-        relative_position_id = AFZ_Restore_The_North
-		prerequisite = { focus = AFZ_Restore_The_North }
-
-    }
-
-    focus = {
-	    id = AFZ_Restore_The_Areas_Around_Dakar_And_West_Africa
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Casablanca_Restoration_Center
-		prerequisite = { focus = AFZ_Casablanca_Restoration_Center }
-
-    }
-
-    focus = {
-	    id = AFZ_Parks_Initative
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Casablanca_Restoration_Center
-		prerequisite = { focus = AFZ_Casablanca_Restoration_Center }
-
-    }
-
-    focus = {
-	    id = AFZ_New_Rivers
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_The_Nile_Project
-		prerequisite = { focus = AFZ_The_Nile_Project }
-
-    }
-
-    focus = {
-	    id = AFZ_The_Cairo_Restoration_Center
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {}
-        relative_position_id = AFZ_The_Nile_Project
-		prerequisite = { focus = AFZ_The_Nile_Project }
-
-    }
-
-    focus = {
+	focus = {
 	    id = AFZ_Affirming_The_Intervention_Forces_Control
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 45
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_The_Provisional_Government
-		prerequisite = { focus = AFZ_The_Provisional_Government }
-
-    }
-
-    focus = {
-	    id = AFZ_Reinforce_The_Military_Police
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -7
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Escalate_The_Crisis
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Affirming_The_Intervention_Forces_Control
-		prerequisite = { focus = AFZ_Affirming_The_Intervention_Forces_Control }
-
-    }
-
-    focus = {
-	    id = AFZ_Bring_In_Federal_Forces
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Recruit_Locals
-		}
-	    completion_reward = {}
-        relative_position_id = AFZ_Reinforce_The_Military_Police
-		prerequisite = { focus = AFZ_Reinforce_The_Military_Police }
-
-    }
-
-    focus = {
-	    id = AFZ_Recruit_Locals
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Bring_In_Federal_Forces
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Reinforce_The_Military_Police
-		prerequisite = { focus = AFZ_Reinforce_The_Military_Police }
-
-    }
-
-    focus = {
-	    id = AFZ_New_Mombasa_Police_Training_Center
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 2
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-			add_ideas = Militarized_Police
-	    }
-        relative_position_id = AFZ_Reinforce_The_Military_Police
-		prerequisite = { focus = AFZ_Reinforce_The_Military_Police }
-
-    }
-
-    focus = {
-	    id = AFZ_Urban_Training
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Rural_Training
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_New_Mombasa_Police_Training_Center
-		prerequisite = { focus = AFZ_New_Mombasa_Police_Training_Center }
-
-    }
-
-    focus = {
-	    id = AFZ_Rural_Training
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Urban_Training
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_New_Mombasa_Police_Training_Center
-		prerequisite = { focus = AFZ_New_Mombasa_Police_Training_Center }
-
-    }
-
-    focus = {
-	    id = AFZ_Recruit_Police_Commanders
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Urban_Training
-		prerequisite = { focus = AFZ_Urban_Training }
-		prerequisite = { focus = AFZ_Rural_Training }
-
-    }
-
-    focus = {
-	    id = AFZ_Integrate_Tribal_Militias
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Recruit_Locals
-		prerequisite = { focus = AFZ_Recruit_Locals }
-
-    }
-
-    focus = {
-	    id = AFZ_Organize_The_Troops
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
 	    x = 0
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		relative_position_id = AFZ_Shipping_In_Intervention_Forces
+		prerequisite = {
+			focus = AFZ_Shipping_In_Intervention_Forces
+		}
+		available = {
+			has_completed_focus = AFZ_declare_martial_law
+			has_completed_focus = AFZ_cooperate_with_kilimanjaro_base
+		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Integrate_Tribal_Militias
-		prerequisite = { focus = AFZ_Integrate_Tribal_Militias }
-
     }
 
-    focus = {
-	    id = AFZ_Refurbish_The_Navy
+	focus = {
+	    id = AFZ_militarization_of_senegal
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = -18
+	    x = 12
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		mutually_exclusive = {
+			focus = AFZ_reinforce_dakar_garrison
+		}
+		relative_position_id = AFZ_federal_forces_africa_command
+		prerequisite = {
+			focus = AFZ_federal_forces_africa_command
+		}
 	    completion_reward = {
-			783 = {
-				add_building_construction = {
-					type = naval_facility
-					level = 1
-					instant_build = yes
-				}
-			}
 	    }
-        relative_position_id = AFZ_The_Provisional_Government
-		prerequisite = { focus = AFZ_The_Provisional_Government }
-
     }
 
-    focus = {
-	    id = AFZ_Local_Buildiers
+	focus = {
+	    id = AFZ_reinforce_dakar_garrison
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 14
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_militarization_of_senegal
+		}
+		relative_position_id = AFZ_federal_forces_africa_command
+		prerequisite = {
+			focus = AFZ_federal_forces_africa_command
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_review_naval_office
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 18
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_federal_forces_africa_command
+		prerequisite = {
+			focus = AFZ_federal_forces_africa_command
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_war_on_piracy
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -4
@@ -1548,75 +237,53 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		relative_position_id = AFZ_review_naval_office
+		prerequisite = {
+			focus = AFZ_review_naval_office
+		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Refurbish_The_Navy
-		prerequisite = { focus = AFZ_Refurbish_The_Navy }
-
     }
 
-    focus = {
-	    id = AFZ_ReOpen_The_Docks
+	focus = {
+	    id = AFZ_renovate_naval_bases
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 4
+	    x = -2
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		relative_position_id = AFZ_review_naval_office
+		prerequisite = {
+			focus = AFZ_review_naval_office
+		}
 	    completion_reward = {
-			458 ={
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-			448 ={
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			447 ={
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
 	    }
-        relative_position_id = AFZ_Refurbish_The_Navy
-		prerequisite = { focus = AFZ_Refurbish_The_Navy }
-
     }
 
-    focus = {
-	    id = AFZ_Build_Up_Casablanca
+	focus = {
+	    id = AFZ_green_water_supremacy
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 0
+	    x = 1
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		mutually_exclusive = {
+			focus = AFZ_two_oceans_concept
+		}
+		relative_position_id = AFZ_war_on_piracy
+		prerequisite = {
+			focus = AFZ_war_on_piracy focus = AFZ_renovate_naval_bases
+		}
 	    completion_reward = {
-			461 ={
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
 	    }
-        relative_position_id = AFZ_Local_Buildiers
-		prerequisite = { focus = AFZ_Local_Buildiers }
-
     }
 
-    focus = {
-	    id = AFZ_Traditional_Builders
+	focus = {
+	    id = AFZ_naval_aviation_command
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -1624,15 +291,181 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		relative_position_id = AFZ_green_water_supremacy
+		prerequisite = {
+			focus = AFZ_two_oceans_concept focus = AFZ_green_water_supremacy
+		}
+		prerequisite = {
+			focus = AFZ_expand_regional_training_facilities
+		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_ReOpen_The_Docks
-		prerequisite = { focus = AFZ_ReOpen_The_Docks }
-
     }
 
-    focus = {
-	    id = AFZ_Mobilize_New_Mombasan_Units
+	focus = {
+	    id = AFZ_littoral_combat_ships
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 2
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_green_water_supremacy
+		prerequisite = {
+		 focus = AFZ_green_water_supremacy
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_unify_coastguard_command
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_littoral_combat_ships
+		prerequisite = {
+		 focus = AFZ_littoral_combat_ships
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_two_oceans_concept
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 2
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_green_water_supremacy
+		}
+		relative_position_id = AFZ_review_naval_office
+		prerequisite = {
+			focus = AFZ_review_naval_office
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_expand_support_fleet
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+
+		relative_position_id = AFZ_two_oceans_concept
+		prerequisite = {
+			focus = AFZ_two_oceans_concept
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_escort_modernization
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+
+		relative_position_id = AFZ_two_oceans_concept
+		prerequisite = {
+			focus = AFZ_two_oceans_concept
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_atlas_batch_carriers
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+
+		relative_position_id = AFZ_escort_modernization
+		prerequisite = {
+			focus = AFZ_escort_modernization
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_kampala_institue_of_defence_studies
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 6
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_federal_forces_africa_command
+		prerequisite = {
+			focus = AFZ_federal_forces_africa_command
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_department_for_acclimatized_warfare
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = -1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_kampala_institue_of_defence_studies
+		prerequisite = {
+			focus = AFZ_kampala_institue_of_defence_studies
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_cooperate_with_kilimanjaro_base
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			has_completed_focus = AFZ_war_on_terror
+		}
+		relative_position_id = AFZ_kampala_institue_of_defence_studies
+		prerequisite = {
+			focus = AFZ_kampala_institue_of_defence_studies
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_zanzibar_airbase_renovations
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 3
@@ -1640,15 +473,449 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		relative_position_id = AFZ_kampala_institue_of_defence_studies
+		prerequisite = {
+			focus = AFZ_kampala_institue_of_defence_studies
+		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Recruit_Locals
-		prerequisite = { focus = AFZ_Recruit_Locals }
-
     }
 
-    focus = {
-	    id = AFZ_Experts_In_Urban_Policing
+	focus = {
+	    id = AFZ_expand_lift_capacity
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_zanzibar_airbase_renovations
+		prerequisite = {
+			focus = AFZ_zanzibar_airbase_renovations
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_expand_the_airfleet
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 5
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_kampala_institue_of_defence_studies
+		prerequisite = {
+			focus = AFZ_kampala_institue_of_defence_studies
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_expand_regional_training_facilities
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_expand_the_airfleet
+		prerequisite = {
+			focus = AFZ_expand_the_airfleet
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_air_transport_corps.
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = -2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_expand_regional_training_facilities
+		prerequisite = {
+			focus = AFZ_expand_regional_training_facilities
+		}
+		prerequisite = {
+			focus = AFZ_expand_lift_capacity
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_atmosphereic_interception_force
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_expand_regional_training_facilities
+		prerequisite = {
+			focus = AFZ_expand_regional_training_facilities
+		}
+		mutually_exclusive = {
+			focus = AFZ_combat_air_support_prerogative
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_increase_saberfish_orders
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_atmosphereic_interception_force
+		prerequisite = {
+			focus = AFZ_atmosphereic_interception_force
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_assist_in_FF-6_successors
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = -2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_atmosphereic_interception_force
+		prerequisite = {
+			focus = AFZ_atmosphereic_interception_force
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_combat_air_support_prerogative
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_expand_regional_training_facilities
+		prerequisite = {
+			focus = AFZ_expand_regional_training_facilities
+		}
+		mutually_exclusive = {
+			focus = AFZ_atmosphereic_interception_force
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_fly_manta_supremacy
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_combat_air_support_prerogative
+		prerequisite = {
+			focus = AFZ_combat_air_support_prerogative
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_mighty_mongoose
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_combat_air_support_prerogative
+		prerequisite = {
+			focus = AFZ_combat_air_support_prerogative
+		}
+	    completion_reward = {
+	    }
+    }
+
+
+	focus = {
+	    id = AFZ_implement_minovsky_warfare_adaptaiton_review
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 2
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			has_war = yes
+		}
+		relative_position_id = AFZ_kampala_institue_of_defence_studies
+		prerequisite = {
+			focus = AFZ_kampala_institue_of_defence_studies
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_equipment_adaptaion_programme
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 2
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_department_for_acclimatized_warfare
+		prerequisite = {
+			focus = AFZ_department_for_acclimatized_warfare
+		}
+		prerequisite = {
+			focus = AFZ_reach_out_to_defence_contractors
+		}
+		mutually_exclusive = {
+			focus = AFZ_backroom_defence_procurement
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_fund_logistics_corps.
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_equipment_adaptaion_programme
+		prerequisite = {
+			focus = AFZ_equipment_adaptaion_programme
+		}
+	    completion_reward = {
+	    }
+    }
+
+		focus = {
+	    id = AFZ_expand_local_production_capacity
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_equipment_adaptaion_programme
+		prerequisite = {
+			focus = AFZ_equipment_adaptaion_programme
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_general_force_review
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_Shipping_In_Intervention_Forces
+		prerequisite = {
+			focus = AFZ_federal_forces_africa_command
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_expansion_of_armoured_forces
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_general_force_review
+		prerequisite = {
+			focus = AFZ_general_force_review
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_hammer_and_anvil
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = o
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_special_operations_units
+		}
+		relative_position_id = AFZ_expansion_of_armoured_forces
+		prerequisite = {
+			focus = AFZ_expansion_of_armoured_forces
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_manoeuvre_exercises
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = o
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_hammer_and_anvil
+		prerequisite = {
+			focus = AFZ_hammer_and_anvil
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_reach_out_to_defence_contractors
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_general_force_review
+		prerequisite = {
+			focus = AFZ_general_force_review
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_backroom_defence_procurement
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_reach_out_to_defence_contractors
+		prerequisite = {
+			focus = AFZ_reach_out_to_defence_contractors
+		}
+		mutually_exclusive = {
+			focus = AFZ_equipment_adaptaion_programme
+		}
+	    completion_reward = {
+	    }
+    }
+
+		focus = {
+	    id = AFZ_contracts_for_favors
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_backroom_defence_procurement
+		prerequisite = {
+			focus = AFZ_backroom_defence_procurement
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_deploy_M61A5_rollout_batch
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		relative_position_id = AFZ_manoeuvre_exercises
+		prerequisite = {
+			focus = AFZ_manoeuvre_exercises
+		}
+		prerequisite = {
+			focus = AFZ_contracts_for_favors
+		}
+	    completion_reward = {
+	    }
+    }
+
+	focus = {
+	    id = AFZ_war_on_terror
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 8
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_EFFA_emergency_government
+		prerequisite = { focus = AFZ_EFFA_emergency_government }
+		prerequisite = { focus = AFZ_Shipping_In_Intervention_Forces }
+    }
+
+	focus = {
+	    id = AFZ_unreset_in_the_sahara
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = -2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_war_on_terror
+		prerequisite = { focus = AFZ_war_on_terror }
+    }
+
+	focus = {
+	    id = AFZ_fight_fire_with_fire
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -1658,13 +925,111 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Mobilize_New_Mombasan_Units
-		prerequisite = { focus = AFZ_Mobilize_New_Mombasan_Units }
-
+        relative_position_id = AFZ_unreset_in_the_sahara
+		prerequisite = { focus = AFZ_unreset_in_the_sahara }
     }
 
-    focus = {
-	    id = AFZ_Local_Leaders
+	focus = {
+	    id = AFZ_joker_up_our_sleeve
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_fight_fire_with_fire
+		prerequisite = { focus = AFZ_fight_fire_with_fire }
+    }
+
+	focus = {
+	    id = AFZ_comprehenesive_base_reorganization
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_war_on_terror
+		prerequisite = { focus = AFZ_war_on_terror }
+    }
+
+	focus = {
+	    id = AFZ_pivot_to_asymmetrical_conflict
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_war_on_terror
+		prerequisite = { focus = AFZ_war_on_terror }
+    }
+
+	focus = {
+	    id = AFZ_special_operations_units
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_hammer_and_anvil
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_pivot_to_asymmetrical_conflict
+		prerequisite = { focus = AFZ_pivot_to_asymmetrical_conflict }
+    }
+
+	focus = {
+	    id = AFZ_lessons_from_the_LRDG
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 2
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_modernized_airborne_contingent
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_special_operations_units
+		prerequisite = { focus = AFZ_special_operations_units }
+    }
+
+	focus = {
+	    id = AFZ_modernized_airborne_contingent
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 2
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_lessons_from_the_LRDG
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_special_operations_units
+		prerequisite = { focus = AFZ_special_operations_units }
+    }
+
+	focus = {
+	    id = AFZ_africas_speartip
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
@@ -1674,46 +1039,63 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Organize_The_Troops
-		prerequisite = { focus = AFZ_Organize_The_Troops }
-		prerequisite = { focus = AFZ_Experts_In_Urban_Policing }
-
+        relative_position_id = AFZ_lessons_from_the_LRDG
+		prerequisite = { focus = AFZ_modernized_airborne_contingent focus = AFZ_lessons_from_the_LRDG }
     }
 
-    focus = {
-	    id = AFZ_Call_In_The_45th_Reserves
+		focus = {
+	    id = AFZ_increase_security_in_morocco
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = -1
+	    x = 1
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Bring_In_Federal_Forces
-		prerequisite = { focus = AFZ_Bring_In_Federal_Forces }
-
+        relative_position_id = AFZ_saharan_FOBs
+		prerequisite = { focus = AFZ_special_operations_units }
+		prerequisite = { focus = AFZ_saharan_FOBs }
     }
 
-    focus = {
-	    id = AFZ_Integrated_Logistics
+
+	focus = {
+	    id = AFZ_saharan_FOBs
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_unreset_in_the_sahara
+		prerequisite = { focus = AFZ_unreset_in_the_sahara }
+		prerequisite = { focus = AFZ_comprehenesive_base_reorganization }
+    }
+
+	focus = {
+	    id = AFZ_declare_martial_law
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
-	    y = 1
+	    y = 2
 	    ai_will_do = {
 		    factor = 1
 	    }
+		mutually_exclusive = {
+			focus = AFZ_timbuktu_accords
+		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Call_In_The_45th_Reserves
-		prerequisite = { focus = AFZ_Call_In_The_45th_Reserves }
-
+        relative_position_id = AFZ_saharan_FOBs
+		prerequisite = { focus = AFZ_saharan_FOBs }
     }
 
-    focus = {
-	    id = AFZ_Call_In_The_78th
+	focus = {
+	    id = AFZ_remove_treasonous_local_leadership
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -3
@@ -1723,13 +1105,12 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Bring_In_Federal_Forces
-		prerequisite = { focus = AFZ_Bring_In_Federal_Forces }
-
+        relative_position_id = AFZ_declare_martial_law
+		prerequisite = { focus = AFZ_declare_martial_law }
     }
 
-    focus = {
-	    id = AFZ_Foreign_Talent
+	focus = {
+	    id = AFZ_strategic_village_plan
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -1
@@ -1739,113 +1120,12 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Integrated_Logistics
-		prerequisite = { focus = AFZ_Integrated_Logistics }
-		prerequisite = { focus = AFZ_Maintenance_Training }
-
+        relative_position_id = AFZ_declare_martial_law
+		prerequisite = { focus = AFZ_declare_martial_law }
     }
 
-    focus = {
-	    id = AFZ_Maintenance_Training
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Call_In_The_78th
-		prerequisite = { focus = AFZ_Call_In_The_78th }
-
-    }
-
-    focus = {
-	    id = AFZ_Escalate_The_Crisis
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 7
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Reinforce_The_Military_Police
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Affirming_The_Intervention_Forces_Control
-		prerequisite = { focus = AFZ_Affirming_The_Intervention_Forces_Control }
-
-    }
-
-    focus = {
-	    id = AFZ_Contact_EOCAS
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Escalate_The_Crisis
-		prerequisite = { focus = AFZ_Escalate_The_Crisis }
-
-    }
-
-    focus = {
-	    id = AFZ_Create_Local_Regiments
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Escalate_The_Crisis
-		prerequisite = { focus = AFZ_Escalate_The_Crisis }
-
-    }
-
-    focus = {
-	    id = AFZ_Casablanca_Military_Academy
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Escalate_The_Crisis
-		prerequisite = { focus = AFZ_Escalate_The_Crisis }
-
-    }
-
-    focus = {
-	    id = AFZ_Defense_Training
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Casablanca_Military_Academy
-		prerequisite = { focus = AFZ_Casablanca_Military_Academy }
-
-    }
-
-    focus = {
-	    id = AFZ_Assault_Training
+	focus = {
+	    id = AFZ_contact_the_CIA
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 1
@@ -1855,46 +1135,12 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Casablanca_Military_Academy
-		prerequisite = { focus = AFZ_Casablanca_Military_Academy }
-
+        relative_position_id = AFZ_declare_martial_law
+		prerequisite = { focus = AFZ_declare_martial_law }
     }
 
-    focus = {
-	    id = AFZ_Higher_Academy_Standards
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Defense_Training
-		prerequisite = { focus = AFZ_Defense_Training }
-		prerequisite = { focus = AFZ_Assault_Training }
-
-    }
-
-    focus = {
-	    id = AFZ_Praetorian_Recruits
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Create_Local_Regiments
-		prerequisite = { focus = AFZ_Create_Local_Regiments }
-
-    }
-
-    focus = {
-	    id = AFZ_Open_Old_Stockpiles
+	focus = {
+	    id = AFZ_godkillers_finest_work
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -1904,507 +1150,12 @@ focus_tree = {
 	    }
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Praetorian_Recruits
-		prerequisite = { focus = AFZ_Praetorian_Recruits }
-
+        relative_position_id = AFZ_contact_the_CIA
+		prerequisite = { focus = AFZ_contact_the_CIA }
     }
 
     focus = {
-	    id = AFZ_Promote_Talented_Officers
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Open_Old_Stockpiles
-		prerequisite = { focus = AFZ_Open_Old_Stockpiles }
-		prerequisite = { focus = AFZ_Expand_Local_Production }
-
-    }
-
-    focus = {
-	    id = AFZ_Task_Force_Omega
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -3
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Contact_EOCAS
-		prerequisite = { focus = AFZ_Contact_EOCAS }
-
-    }
-
-    focus = {
-	    id = AFZ_Combat_Engineers
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Task_Force_Omega
-		prerequisite = { focus = AFZ_Task_Force_Omega }
-
-    }
-
-    focus = {
-	    id = AFZ_Spearhead_Division
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Contact_EOCAS
-		prerequisite = { focus = AFZ_Contact_EOCAS }
-
-    }
-
-    focus = {
-	    id = AFZ_Friends_From_The_Academy
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 1
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Combat_Engineers
-		prerequisite = { focus = AFZ_Combat_Engineers }
-		prerequisite = { focus = AFZ_New_Defense_Contracts }
-
-    }
-
-    focus = {
-	    id = AFZ_New_Defense_Contracts
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Spearhead_Division
-		prerequisite = { focus = AFZ_Spearhead_Division }
-
-    }
-
-    focus = {
-	    id = AFZ_Create_The_90th_Reserve_Tanks_Division
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 3
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Create_Local_Regiments
-		prerequisite = { focus = AFZ_Create_Local_Regiments }
-
-    }
-
-    focus = {
-	    id = AFZ_Expand_Local_Production
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Create_The_90th_Reserve_Tanks_Division
-		prerequisite = { focus = AFZ_Create_The_90th_Reserve_Tanks_Division }
-
-    }
-
-    focus = {
-	    id = AFZ_Naval_Power_Projection
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ__Secure_Our_Coastline
-		}
-	    completion_reward = {
-			add_ideas = High_Seas_Fleet
-	    }
-        relative_position_id = AFZ_Traditional_Builders
-		prerequisite = { focus = AFZ_Traditional_Builders }
-
-    }
-
-    focus = {
-	    id = AFZ__Secure_Our_Coastline
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Naval_Power_Projection
-		}
-	    completion_reward = {
-			add_ideas = Coastal_Navy
-	    }
-        relative_position_id = AFZ_Build_Up_Casablanca
-		prerequisite = { focus = AFZ_Build_Up_Casablanca }
-
-    }
-
-    focus = {
-	    id = AFZ_Build_Up_Tangiers_Drydocks
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-			290 ={
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-	    }
-        relative_position_id = AFZ__Secure_Our_Coastline
-		prerequisite = { focus = AFZ__Secure_Our_Coastline }
-
-    }
-
-    focus = {
-	    id = AFZ_Research_Cruiser_Designs
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ__Secure_Our_Coastline
-		prerequisite = { focus = AFZ__Secure_Our_Coastline }
-
-    }
-
-    focus = {
-	    id = AFZ_Research_Destroyer_Designs
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ__Secure_Our_Coastline
-		prerequisite = { focus = AFZ__Secure_Our_Coastline }
-
-    }
-
-    focus = {
-	    id = AFZ_Improved_Turbine_Engines
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Research_Destroyer_Designs
-		prerequisite = { focus = AFZ_Research_Destroyer_Designs }
-
-    }
-
-    focus = {
-	    id = AFZ_Casablanca_Naval_Academy
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Build_Up_Tangiers_Drydocks
-		prerequisite = { focus = AFZ_Build_Up_Tangiers_Drydocks }
-
-    }
-
-    focus = {
-	    id = AFZ_Improved_Countermeasures
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Research_Cruiser_Designs
-		prerequisite = { focus = AFZ_Research_Cruiser_Designs }
-
-    }
-
-    focus = {
-	    id = AFZ_Deploy_The_First_Ships
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Improved_Turbine_Engines
-		prerequisite = { focus = AFZ_Improved_Turbine_Engines }
-		prerequisite = { focus = AFZ_Improved_Countermeasures }
-
-    }
-
-    focus = {
-	    id = AFZ_More_Contacts
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Naval_Power_Projection
-		prerequisite = { focus = AFZ_Naval_Power_Projection }
-
-    }
-
-    focus = {
-	    id = AFZ_Aircraft_Carrier_Development
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Naval_Power_Projection
-		prerequisite = { focus = AFZ_Naval_Power_Projection }
-
-    }
-
-    focus = {
-	    id = AFZ_Modernized_Battleships
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Naval_Power_Projection
-		prerequisite = { focus = AFZ_Naval_Power_Projection }
-
-    }
-
-    focus = {
-	    id = AFZ_Nuclear_Engines
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Modernized_Battleships
-		prerequisite = { focus = AFZ_Modernized_Battleships }
-
-    }
-
-    focus = {
-	    id = AFZ_Outsource_Drydock_Production
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-			add_offsite_building = {
-				type = dockyard
-				level = 5
-			}
-	    }
-        relative_position_id = AFZ_More_Contacts
-		prerequisite = { focus = AFZ_More_Contacts }
-
-    }
-
-    focus = {
-	    id = AFZ_Aviation_Cruiser_Concept
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Aircraft_Carrier_Development
-		prerequisite = { focus = AFZ_Aircraft_Carrier_Development }
-
-    }
-
-    focus = {
-	    id = AFZ_New_Flagship_of_the_Fleet
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Nuclear_Engines
-		prerequisite = { focus = AFZ_Nuclear_Engines }
-		prerequisite = { focus = AFZ_Aviation_Cruiser_Concept }
-
-    }
-
-    focus = {
-	    id = AFZ_Modernize_The_Airforce
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -34
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_The_Provisional_Government
-		prerequisite = { focus = AFZ_The_Provisional_Government }
-
-    }
-
-    focus = {
-	    id = AFZ_The_Rise_Of_Bandit_Country
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 51
-	    y = 18
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        
-    }
-
-    focus = {
-	    id = AFZ_Kampala_Design_Bureau
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Nairobi_Aerospace_Group
-		}
-		mutually_exclusive = {
-			focus = AFZ_Pretoria_Avionics_Corporation
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Modernize_The_Airforce
-		prerequisite = { focus = AFZ_Modernize_The_Airforce }
-
-    }
-
-    focus = {
-	    id = AFZ_Olive_Branches_And_Rifles
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_The_Rise_Of_Bandit_Country
-		prerequisite = { focus = AFZ_The_Rise_Of_Bandit_Country }
-
-    }
-
-    focus = {
-	    id = AFZ_Extending_an_Olive_Branch
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-		mutually_exclusive = {
-			focus = AFZ_Banditry_is_Not_Tolerable
-		}
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Olive_Branches_And_Rifles
-		prerequisite = { focus = AFZ_Olive_Branches_And_Rifles }
-
-    }
-
-    focus = {
-	    id = AFZ_Fayyads_Divide_And_Negotiate
+	    id = AFZ_civil_provisions
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2415,13 +1166,29 @@ focus_tree = {
 		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Extending_an_Olive_Branch
-		prerequisite = { focus = AFZ_Extending_an_Olive_Branch }
+        relative_position_id = AFZ_EFFA_emergency_government
+		prerequisite = { focus = AFZ_EFFA_emergency_government }
 
     }
 
-    focus = {
-	    id = AFZ_Cutting_Costs
+	 focus = {
+	    id = AFZ_calm_coastal_elites
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 4
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_civil_provisions
+		prerequisite = { focus = AFZ_civil_provisions }
+    }
+
+	 focus = {
+	    id = AFZ_find_moderate_leaders
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2429,15 +1196,16 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Kampala_Design_Bureau
-		prerequisite = { focus = AFZ_Kampala_Design_Bureau }
-
+        relative_position_id = AFZ_calm_coastal_elites
+		prerequisite = { focus = AFZ_calm_coastal_elites }
+		prerequisite = { focus = AFZ_unreset_in_the_sahara }
     }
 
-    focus = {
-	    id = AFZ_The_Enemy_Of_My_Enemy
+	 focus = {
+	    id = AFZ_sahel_reconciliation_talks
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2445,15 +1213,33 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Fayyads_Divide_And_Negotiate
-		prerequisite = { focus = AFZ_Fayyads_Divide_And_Negotiate }
-
+        relative_position_id = AFZ_find_moderate_leaders
+		prerequisite = { focus = AFZ_find_moderate_leaders }
     }
 
-    focus = {
-	    id = AFZ_Tamu_Komans_Sitdown
+	focus = {
+	    id = AFZ_timbuktu_accords
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_declare_martial_law
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_sahel_reconciliation_talks
+		prerequisite = { focus = AFZ_sahel_reconciliation_talks }
+    }
+
+	 focus = {
+	    id = AFZ_preperations_to_restore_civil_governance
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -2
@@ -2461,15 +1247,16 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Extending_an_Olive_Branch
-		prerequisite = { focus = AFZ_Extending_an_Olive_Branch }
-
+        relative_position_id = AFZ_civil_provisions
+		prerequisite = { focus = AFZ_civil_provisions }
+		prerequisite = { focus = AFZ_never_cave_to_terror }
     }
 
-    focus = {
-	    id = AFZ_Non_Strategic_Material_Use
+	 focus = {
+	    id = AFZ_re-energise_liberal_faction
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2477,15 +1264,120 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Cutting_Costs
-		prerequisite = { focus = AFZ_Cutting_Costs }
+        relative_position_id = AFZ_preperations_to_restore_civil_governance
+		prerequisite = { focus = AFZ_preperations_to_restore_civil_governance }
+    }
 
+	focus = {
+	    id = AFZ_negotiate_with_conservatives
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_re-energise_liberal_faction
+		prerequisite = { focus = AFZ_re-energise_liberal_faction }
+    }
+
+	focus = {
+	    id = AFZ_temper_radicals
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_negotiate_with_conservatives
+		prerequisite = { focus = AFZ_negotiate_with_conservatives }
+		prerequisite = { focus = AFZ_crackdown_on_local_cliques }
+    }
+
+	focus = {
+	    id = AFZ_restore_civil_governance
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			has_war = no
+			date > 0080.01.1
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_temper_radicals
+		prerequisite = { focus = AFZ_temper_radicals }
+		prerequisite = { focus = AFZ_timbuktu_accords }
     }
 
     focus = {
-	    id = AFZ_Helicopter_Development
+	    id = AFZ_anti-corruption_measures
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_align_the_oligarchs
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_civil_provisions
+		prerequisite = { focus = AFZ_civil_provisions }
+    }
+
+	 focus = {
+	    id = AFZ_cooperate_with_the_FCPO
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_anti-corruption_measures
+		prerequisite = { focus = AFZ_anti-corruption_measures focus = AFZ_align_the_oligarchs }
+    }
+
+	focus = {
+	    id = AFZ_crackdown_on_local_cliques
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			has_completed_focus = AFZ_anti-corruption_measures
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_cooperate_with_the_FCPO
+		prerequisite = { focus = AFZ_cooperate_with_the_FCPO }
+    }
+
+	  focus = {
+	    id = AFZ_align_the_oligarchs
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 2
@@ -2493,200 +1385,49 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Kampala_Design_Bureau
-		prerequisite = { focus = AFZ_Kampala_Design_Bureau }
-
-    }
-
-    focus = {
-	    id = AFZ_Reliance_On_DumbFire_Rockets
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Helicopter_Development
-		prerequisite = { focus = AFZ_Helicopter_Development }
-
-    }
-
-    focus = {
-	    id = AFZ_Light_Defense_Fighters
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Kampala_Design_Bureau
-		prerequisite = { focus = AFZ_Kampala_Design_Bureau }
-
-    }
-
-    focus = {
-	    id = AFZ_The_Wiseman_Chats
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Tamu_Komans_Sitdown
-		prerequisite = { focus = AFZ_Tamu_Komans_Sitdown }
-
-    }
-
-    focus = {
-	    id = AFZ_Fastest_Off_The_Production_line
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Light_Defense_Fighters
-		prerequisite = { focus = AFZ_Light_Defense_Fighters }
-
-    }
-
-    focus = {
-	    id = AFZ_Dwomohs_Deal
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -5
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Extending_an_Olive_Branch
-		prerequisite = { focus = AFZ_Extending_an_Olive_Branch }
-
-    }
-
-    focus = {
-	    id = AFZ_To_Block_The_Sky
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Non_Strategic_Material_Use
-		prerequisite = { focus = AFZ_Non_Strategic_Material_Use }
-		prerequisite = { focus = AFZ_Reliance_On_DumbFire_Rockets }
-		prerequisite = { focus = AFZ_Fastest_Off_The_Production_line }
-
-    }
-
-    focus = {
-	    id = AFZ_Tea_And_Materialist_Theory
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Dwomohs_Deal
-		prerequisite = { focus = AFZ_Dwomohs_Deal }
-
-    }
-
-    focus = {
-	    id = AFZ_Partial_Negotiation_Success
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_The_Enemy_Of_My_Enemy
-		prerequisite = { focus = AFZ_The_Enemy_Of_My_Enemy }
-		prerequisite = { focus = AFZ_The_Wiseman_Chats }
-
-    }
-
-    focus = {
-	    id = AFZ_Bandit_Amnestys
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Partial_Negotiation_Success
-		prerequisite = { focus = AFZ_Partial_Negotiation_Success }
-
-    }
-
-    focus = {
-	    id = AFZ_Provide_Alternative_Livelyhood
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Partial_Negotiation_Success
-		prerequisite = { focus = AFZ_Partial_Negotiation_Success }
-
-    }
-
-    focus = {
-	    id = AFZ_Pretoria_Avionics_Corporation
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 6
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
 		mutually_exclusive = {
-			focus = AFZ_Kampala_Design_Bureau
-		}
-		mutually_exclusive = {
-			focus = AFZ_Nairobi_Aerospace_Group
+			focus = AFZ_anti-corruption_measures
 		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Modernize_The_Airforce
-		prerequisite = { focus = AFZ_Modernize_The_Airforce }
-
+        relative_position_id = AFZ_civil_provisions
+		prerequisite = { focus = AFZ_civil_provisions }
     }
 
-    focus = {
-	    id = AFZ_Nairobi_Aerospace_Group
+	 focus = {
+	    id = AFZ_pmc_support
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_align_the_oligarchs
+		prerequisite = { focus = AFZ_align_the_oligarchs }
+    }
+
+	focus = {
+	    id = AFZ_talks_with_anaheim
+	    icon = GFX_goal_anaheim_main
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_pmc_support
+		prerequisite = { focus = AFZ_pmc_support }
+	}
+	
+	focus = {
+	    id = AFZ_never_cave_to_terror
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -6
@@ -2694,21 +1435,31 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
-		mutually_exclusive = {
-			focus = AFZ_Kampala_Design_Bureau
-		}
-		mutually_exclusive = {
-			focus = AFZ_Pretoria_Avionics_Corporation
-		}
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Modernize_The_Airforce
-		prerequisite = { focus = AFZ_Modernize_The_Airforce }
-
+        relative_position_id = AFZ_EFFA_emergency_government
+		prerequisite = { focus = AFZ_EFFA_emergency_government }
     }
 
-    focus = {
-	    id = AFZ_Fuel_Efficient_Engines
+	focus = {
+	    id = AFZ_nile_redevelopment_plan
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = -4
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_never_cave_to_terror
+		prerequisite = { focus = AFZ_never_cave_to_terror }
+    }
+
+	focus = {
+	    id = AFZ_land_of_the_pharoahs
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2716,15 +1467,15 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Pretoria_Avionics_Corporation
-		prerequisite = { focus = AFZ_Pretoria_Avionics_Corporation }
-
+        relative_position_id = AFZ_nile_redevelopment_plan
+		prerequisite = { focus = AFZ_nile_redevelopment_plan }
     }
 
-    focus = {
-	    id = AFZ__Invest_In_Pilot_Training_
+	focus = {
+	    id = AFZ_appropriate_rhodes_dream
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2732,15 +1483,16 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Nairobi_Aerospace_Group
-		prerequisite = { focus = AFZ_Nairobi_Aerospace_Group }
-
+        relative_position_id = AFZ_land_of_the_pharoahs
+		prerequisite = { focus = AFZ_land_of_the_pharoahs }
+		prerequisite = { focus = AFZ_rail_nodernization }
     }
 
-    focus = {
-	    id = AFZ_Within_Budget
+	focus = {
+	    id = AFZ_continue_green_belt_project
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2748,31 +1500,15 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Fuel_Efficient_Engines
-		prerequisite = { focus = AFZ_Fuel_Efficient_Engines }
-
+        relative_position_id = AFZ_never_cave_to_terror
+		prerequisite = { focus = AFZ_never_cave_to_terror }
     }
 
-    focus = {
-	    id = AFZ__Warriors_Of_The_Sky_
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ__Invest_In_Pilot_Training_
-		prerequisite = { focus = AFZ__Invest_In_Pilot_Training_ }
-
-    }
-
-    focus = {
-	    id = AFZ_PreCentury_Air_Doctrine_
+	focus = {
+	    id = AFZ_agricultural_modernization
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 2
@@ -2780,31 +1516,31 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Pretoria_Avionics_Corporation
-		prerequisite = { focus = AFZ_Pretoria_Avionics_Corporation }
-
+        relative_position_id = AFZ_continue_green_belt_project
+		prerequisite = { focus = AFZ_continue_green_belt_project }
     }
 
-    focus = {
-	    id = AFZ_Interceptor_Aircraft
+	focus = {
+	    id = AFZ_irrigation_projects
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 2
-	    y = 1
+	    x = 0
+	    y = 2
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Nairobi_Aerospace_Group
-		prerequisite = { focus = AFZ_Nairobi_Aerospace_Group }
-
+        relative_position_id = AFZ_agricultural_modernization
+		prerequisite = { focus = AFZ_agricultural_modernization }
     }
 
-    focus = {
-	    id = AFZ_Strategic_Bombing_Plans
+	focus = {
+	    id = AFZ_yield_to_agribussiness
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2812,31 +1548,17 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		mutually_exclusive = {
+			focus = AFZ_protect_traditional_organization
+		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_PreCentury_Air_Doctrine_
-		prerequisite = { focus = AFZ_PreCentury_Air_Doctrine_ }
-
+        relative_position_id = AFZ_irrigation_projects
+		prerequisite = { focus = AFZ_irrigation_projects }
     }
 
-    focus = {
-	    id = AFZ__Cutting_Edge_Fighter_Developments_
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Interceptor_Aircraft
-		prerequisite = { focus = AFZ_Interceptor_Aircraft }
-
-    }
-
-    focus = {
-	    id = AFZ_High_Yield_Warheads
+	focus = {
+	    id = AFZ_protect_traditional_organization
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -2
@@ -2844,15 +1566,17 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		mutually_exclusive = {
+			focus = AFZ_yield_to_agribussiness
+		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Pretoria_Avionics_Corporation
-		prerequisite = { focus = AFZ_Pretoria_Avionics_Corporation }
-
+        relative_position_id = AFZ_irrigation_projects
+		prerequisite = { focus = AFZ_irrigation_projects }
     }
 
-    focus = {
-	    id = AFZ_Guided_Strike_Munitions
+	focus = {
+	    id = AFZ_revive_wildlife_reserves
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -2
@@ -2860,15 +1584,15 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Nairobi_Aerospace_Group
-		prerequisite = { focus = AFZ_Nairobi_Aerospace_Group }
-
+        relative_position_id = AFZ_continue_green_belt_project
+		prerequisite = { focus = AFZ_continue_green_belt_project }
     }
 
-    focus = {
-	    id = AFZ_PanContinental_Range
+	focus = {
+	    id = AFZ_war_on_poachers
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2876,15 +1600,48 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_High_Yield_Warheads
-		prerequisite = { focus = AFZ_High_Yield_Warheads }
-
+        relative_position_id = AFZ_revive_wildlife_reserves
+		prerequisite = { focus = AFZ_revive_wildlife_reserves }
     }
 
-    focus = {
-	    id = AFZ_Tank_Buster_Aircraft
+	focus = {
+	    id = AFZ_expand_hub_airports
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_appropriate_rhodes_dream
+		prerequisite = { focus = AFZ_revive_wildlife_reserves }
+		prerequisite = { focus = AFZ_land_of_the_pharoahs }
+    }
+
+	focus = {
+	    id = AFZ_a_tourism_superpower
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_expand_hub_airports
+		prerequisite = { focus = AFZ_expand_hub_airports}
+    }
+
+	focus = {
+	    id = AFZ_the_scope_of_our_ambition
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2892,15 +1649,15 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Guided_Strike_Munitions
-		prerequisite = { focus = AFZ_Guided_Strike_Munitions }
-
+        relative_position_id = AFZ_continue_green_belt_project
+		prerequisite = { focus = AFZ_continue_green_belt_project }
     }
 
-    focus = {
-	    id = AFZ_Rolling_Thunder
+	focus = {
+	    id = AFZ_supercharge_investments
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2908,17 +1665,15 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Within_Budget
-		prerequisite = { focus = AFZ_Within_Budget }
-		prerequisite = { focus = AFZ_Strategic_Bombing_Plans }
-		prerequisite = { focus = AFZ_PanContinental_Range }
-
+        relative_position_id = AFZ_the_scope_of_our_ambition
+		prerequisite = { focus = AFZ_the_scope_of_our_ambition }
     }
 
-    focus = {
-	    id = AFZ__Our_Finest_
+	focus = {
+	    id = AFZ_bless_the_rains_in_africa
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -2926,215 +1681,94 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ__Warriors_Of_The_Sky_
-		prerequisite = { focus = AFZ__Warriors_Of_The_Sky_ }
-		prerequisite = { focus = AFZ__Cutting_Edge_Fighter_Developments_ }
-		prerequisite = { focus = AFZ_Tank_Buster_Aircraft }
-
+        relative_position_id = AFZ_supercharge_investments
+		prerequisite = { focus = AFZ_supercharge_investments }
     }
 
-    focus = {
-	    id = AFZ_Negotiations_Fail
+	focus = {
+	    id = AFZ_handle_the_people
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 0
+	    x = -8
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_The_Enemy_Of_My_Enemy
-		prerequisite = { focus = AFZ_The_Enemy_Of_My_Enemy }
-		prerequisite = { focus = AFZ_The_Wiseman_Chats }
-
+        relative_position_id = AFZ_never_cave_to_terror
+		prerequisite = { focus = AFZ_never_cave_to_terror }
     }
 
-    focus = {
-	    id = AFZ_Desperately_Increase_Armed_Preassure
+	focus = {
+	    id = AFZ_control_humanitarian_organizations
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 0
+	    x = -3
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		available = {
+			has_completed_focus = AFZ_cooperate_with_the_FCPO
+		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Negotiations_Fail
-		prerequisite = { focus = AFZ_Negotiations_Fail }
-
+        relative_position_id = AFZ_handle_the_people
+		prerequisite = { focus = AFZ_handle_the_people }
     }
 
-    focus = {
-	    id = AFZ_Banditry_is_Not_Tolerable
+	focus = {
+	    id = AFZ_push_for_disease_eradication
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 2
+	    x = -1
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
 		mutually_exclusive = {
-			focus = AFZ_Extending_an_Olive_Branch
+			focus = AFZ_revitalized_school_infrastructure
+		}
+		mutually_exclusive = {
+			focus = AFZ_away_from_absoulte_poverty
 		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Olive_Branches_And_Rifles
-		prerequisite = { focus = AFZ_Olive_Branches_And_Rifles }
-
+        relative_position_id = AFZ_control_humanitarian_organizations
+		prerequisite = { focus = AFZ_control_humanitarian_organizations }
+		prerequisite = { focus = AFZ_universities_old_and_new }
     }
 
-    focus = {
-	    id = AFZ_Randals_Plan
+	focus = {
+	    id = AFZ_revitalized_school_infrastructure
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
-	    x = 5
+	    x = -3
 	    y = 1
 	    ai_will_do = {
 		    factor = 1
 	    }
+		mutually_exclusive = {
+			focus = AFZ_push_for_disease_eradication
+		}
+		mutually_exclusive = {
+			focus = AFZ_away_from_absoulte_poverty
+		}
 	    completion_reward = {
 	    }
-        relative_position_id = AFZ_Banditry_is_Not_Tolerable
-		prerequisite = { focus = AFZ_Banditry_is_Not_Tolerable }
-
+        relative_position_id = AFZ_control_humanitarian_organizations
+		prerequisite = { focus = AFZ_control_humanitarian_organizations }
+		prerequisite = { focus = AFZ_universities_old_and_new }
     }
 
-    focus = {
-	    id = AFZ_Crush_Them_Without_Mercy
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Randals_Plan
-		prerequisite = { focus = AFZ_Randals_Plan }
 
-    }
-
-    focus = {
-	    id = AFZ_Roberts_Plan
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Banditry_is_Not_Tolerable
-		prerequisite = { focus = AFZ_Banditry_is_Not_Tolerable }
-
-    }
-
-    focus = {
-	    id = AFZ_Buying_Them_Out
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Roberts_Plan
-		prerequisite = { focus = AFZ_Roberts_Plan }
-
-    }
-
-    focus = {
-	    id = AFZ_Ayunkilis_Security_Plan
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Banditry_is_Not_Tolerable
-		prerequisite = { focus = AFZ_Banditry_is_Not_Tolerable }
-
-    }
-
-    focus = {
-	    id = AFZ_Containing_The_Situation
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Ayunkilis_Security_Plan
-		prerequisite = { focus = AFZ_Ayunkilis_Security_Plan }
-
-    }
-
-    focus = {
-	    id = AFZ_Rollback_Traction
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = -2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Crush_Them_Without_Mercy
-		prerequisite = { focus = AFZ_Crush_Them_Without_Mercy }
-		prerequisite = { focus = AFZ_Buying_Them_Out }
-		prerequisite = { focus = AFZ_Containing_The_Situation }
-
-    }
-
-    focus = {
-	    id = AFZ_Recovering_Trade
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 2
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Rollback_Traction
-		prerequisite = { focus = AFZ_Rollback_Traction }
-
-    }
-
-    focus = {
-	    id = AFZ_Deciding_Front_Priorities
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Rollback_Traction
-		prerequisite = { focus = AFZ_Rollback_Traction }
-
-    }
-
-    focus = {
-	    id = AFZ_The_Situation_Deteriorates
+	focus = {
+	    id = AFZ_universities_old_and_new
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = -5
@@ -3142,51 +1776,36 @@ focus_tree = {
 	    ai_will_do = {
 		    factor = 1
 	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_Crush_Them_Without_Mercy
-		prerequisite = { focus = AFZ_Crush_Them_Without_Mercy }
-		prerequisite = { focus = AFZ_Buying_Them_Out }
-		prerequisite = { focus = AFZ_Containing_The_Situation }
-
-    }
-
-    focus = {
-	    id = AFZ_Gradual_Pullback
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 0
-	    y = 1
-	    ai_will_do = {
-		    factor = 1
-	    }
-	    completion_reward = {
-	    }
-        relative_position_id = AFZ_The_Situation_Deteriorates
-		prerequisite = { focus = AFZ_The_Situation_Deteriorates }
-
-    }
-
-
-	 focus = {
-	    id = AFZ_Traitors_and_invaders
-	    icon = GFX_generic_suspend_constitution
-	    cost = 5
-	    x = 51
-	    y = 26
-	    ai_will_do = {
-		    factor = 1
-	    }
 		available = {
-			has_war = yes
+			has_completed_focus = AFZ_cooperate_with_the_FCPO
 		}
 	    completion_reward = {
 	    }
-        
+        relative_position_id = AFZ_handle_the_people
+		prerequisite = { focus = AFZ_handle_the_people }
     }
 
 	focus = {
-	    id = AFZ_Wartime_state_of_emergency
+	    id = AFZ_leverage_the_akunyili_fortune
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = -7
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		available = {
+			has_completed_focus = AFZ_cooperate_with_the_FCPO
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_handle_the_people
+		prerequisite = { focus = AFZ_handle_the_people }
+    }
+
+
+	focus = {
+	    id = AFZ_slum_displacement
 	    icon = GFX_generic_suspend_constitution
 	    cost = 5
 	    x = 0
@@ -3195,14 +1814,117 @@ focus_tree = {
 		    factor = 1
 	    }
 		available = {
-			has_war = yes
+			has_completed_focus = AFZ_cooperate_with_the_FCPO
 		}
-		prerequisite = {
-			focus = AFZ_Traitors_and_invaders
-		}
-		relative_position_id = AFZ_Traitors_and_invaders
 	    completion_reward = {
 	    }
-        
+        relative_position_id = AFZ_handle_the_people
+		prerequisite = { focus = AFZ_handle_the_people }
     }
+
+	focus = {
+	    id = AFZ_away_from_absoulte_poverty
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_push_for_disease_eradication
+		}
+		mutually_exclusive = {
+			focus = AFZ_revitalized_school_infrastructure
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_control_humanitarian_organizations
+		prerequisite = { focus = AFZ_control_humanitarian_organizations }
+		prerequisite = { focus = AFZ_slum_displacement }
+    }
+
+	focus = {
+	    id = AFZ_subterrean_settlements
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_slum_displacement
+		prerequisite = { focus = AFZ_slum_displacement }
+    }
+
+	focus = {
+	    id = AFZ_start_a_new_life_in_africa
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = -1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_discourage_european_settlement
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_subterrean_settlements
+		prerequisite = { focus = AFZ_subterrean_settlements }
+    }
+
+	focus = {
+	    id = AFZ_discourage_european_settlement
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 1
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		mutually_exclusive = {
+			focus = AFZ_start_a_new_life_in_africa
+		}
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_subterrean_settlements
+		prerequisite = { focus = AFZ_subterrean_settlements }
+    }
+
+	focus = {
+	    id = AFZ_rail_nodernization
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 2
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_handle_the_people
+		prerequisite = { focus = AFZ_handle_the_people }
+    }
+
+	focus = {
+	    id = AFZ_expand_urban_infastructure
+	    icon = GFX_generic_suspend_constitution
+	    cost = 5
+	    x = 0
+	    y = 1
+	    ai_will_do = {
+		    factor = 1
+	    }
+		
+	    completion_reward = {
+	    }
+        relative_position_id = AFZ_rail_nodernization
+		prerequisite = { focus = AFZ_rail_nodernization }
+    }
+
 }

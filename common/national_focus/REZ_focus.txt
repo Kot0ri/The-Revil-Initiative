@@ -1,0 +1,632 @@
+focus_tree = {
+	id = REZ
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = REZ
+		}
+	}
+	default = no
+
+	focus = {
+		id = REZ_rally_delaz_survivors
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 20
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_omega_leadership
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_rally_delaz_survivors
+		}
+		relative_position_id = REZ_rally_delaz_survivors
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_zabi_legacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -10
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_omega_leadership
+		}
+		relative_position_id = REZ_omega_leadership
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_the_five_castles
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_zabi_legacy
+		}
+		relative_position_id = REZ_zabi_legacy
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_the_third_castle
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_the_five_castles
+		}
+		relative_position_id = REZ_the_five_castles
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_port_to_the_heavens
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_the_third_castle
+		}
+		relative_position_id = REZ_the_third_castle
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_prepare_a_wedding
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -5
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_zabi_legacy
+		}
+		relative_position_id = REZ_zabi_legacy
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_omega_falters
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_prepare_a_wedding
+		}
+		relative_position_id = REZ_prepare_a_wedding
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_alicia_takes_command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_omega_falters
+		}
+		relative_position_id = REZ_omega_falters
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_supreme_leader_of_rezeon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_alicia_takes_command
+		}
+		relative_position_id = REZ_alicia_takes_command
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_form_the_wings_of_inle
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_supreme_leader_of_rezeon
+		}
+		relative_position_id = REZ_supreme_leader_of_rezeon
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_adopt_the_black_and_red
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_form_the_wings_of_inle
+		}
+		relative_position_id = REZ_form_the_wings_of_inle
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_to_be_born_anew_on_mars
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_adopt_the_black_and_red
+		}
+		relative_position_id = REZ_adopt_the_black_and_red
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_the_ring_of_alicia
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_to_be_born_anew_on_mars
+		}
+		relative_position_id = REZ_to_be_born_anew_on_mars
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_take_in_the_eagle_knights
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_the_ring_of_alicia
+		}
+		relative_position_id = REZ_the_ring_of_alicia
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_utilize_cloning_abilities
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_form_the_wings_of_inle
+		}
+		relative_position_id = REZ_form_the_wings_of_inle
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_the_alicia_guard
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_utilize_cloning_abilities
+		}
+		relative_position_id = REZ_utilize_cloning_abilities
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_towards_a_true_zeon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_alicia_takes_command
+		}
+		relative_position_id = REZ_alicia_takes_command
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_no_fly_policy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_towards_a_true_zeon
+		}
+		relative_position_id = REZ_towards_a_true_zeon
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_a_sanctuary
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_no_fly_policy
+		}
+		relative_position_id = REZ_no_fly_policy
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_create_a_womens_paradise
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_no_fly_policy
+		}
+		relative_position_id = REZ_no_fly_policy
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_protect_mars
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_a_sanctuary
+		}
+		relative_position_id = REZ_a_sanctuary
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_ignore_the_calls_for_war
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_protect_mars
+		}
+		relative_position_id = REZ_protect_mars
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_mars_industrial_energy_plan
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 8
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = REZ_form_the_wings_of_inle
+		}
+		prerequisite = {
+			focus = REZ_alicia_takes_command
+		}
+		relative_position_id = REZ_alicia_takes_command
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_utilize_earth_labor
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = REZ_a_sanctuary
+		}
+		prerequisite = {
+			focus = REZ_mars_industrial_energy_plan
+		}
+		relative_position_id = REZ_mars_industrial_energy_plan
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_the_rightful_successor_to_zeon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_alicia_takes_command
+		}
+		relative_position_id = REZ_alicia_takes_command
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_queen_of_mars
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_the_rightful_successor_to_zeon
+		}
+		available = {
+			MAR = { exists = no }
+		}
+		relative_position_id = REZ_the_rightful_successor_to_zeon
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_empress_of_the_ideal_of_zeon
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 4
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_queen_of_mars
+		}
+		prerequisite = {
+			focus = REZ_the_ring_of_alicia
+		}
+		relative_position_id = REZ_queen_of_mars
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_holy_mother_of_mars
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_empress_of_the_ideal_of_zeon
+		}
+		relative_position_id = REZ_empress_of_the_ideal_of_zeon
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_gihrenism_our_driving_cause
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_omega_leadership
+		}
+		relative_position_id = REZ_omega_leadership
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_militarism_in_our_blood
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_gihrenism_our_driving_cause
+		}
+		relative_position_id = REZ_gihrenism_our_driving_cause
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_the_path_of_the_newtype
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_militarism_in_our_blood
+		}
+		relative_position_id = REZ_militarism_in_our_blood
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_contest_the_traitors_leadership
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_gihrenism_our_driving_cause
+		}
+		relative_position_id = REZ_gihrenism_our_driving_cause
+		completion_reward = {
+		
+		}
+	}
+
+		focus = {
+		id = REZ_begin_an_underground_war
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_contest_the_traitors_leadership
+		}
+		relative_position_id = REZ_contest_the_traitors_leadership
+		completion_reward = {
+		
+		}
+	}
+}

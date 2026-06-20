@@ -11,13 +11,94 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = MAR_landing_on_olympus
+		id = MAR_side_a
 		icon = GFX_goal_generic_alliance
-		cost = 5
+		cost = 10
 		x = 1
 		y = 0
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_arcadia_city_of_water
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_side_a }
+		relative_position_id = MAR_side_a
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_space_haven
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_arcadia_city_of_water }
+		relative_position_id = MAR_arcadia_city_of_water
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_expand_phobos_airport
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_arcadia_city_of_water }
+		relative_position_id = MAR_arcadia_city_of_water
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_deimos_mine
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_expand_phobos_airport }
+		relative_position_id = MAR_expand_phobos_airport
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_landing_on_olympus
+		icon = GFX_goal_generic_alliance
+		cost = 5
+		x = 10
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date > 0080.01.1
 		}
 		completion_reward = {
 	
@@ -51,6 +132,814 @@ focus_tree = {
 		}
 		prerequisite = {	focus =  MAR_the_old_guard_reign }
 		relative_position_id = MAR_the_old_guard_reign
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_reach_out_to_axis
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_the_old_guard_reign }
+		relative_position_id = MAR_the_old_guard_reign
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_jupiter_contact
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_reach_out_to_axis }
+		relative_position_id = MAR_reach_out_to_axis
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_the_imperial_contingency
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_reach_out_to_axis }
+		relative_position_id = MAR_reach_out_to_axis
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_combine_cloning_efforts
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_the_imperial_contingency }
+		relative_position_id = MAR_the_imperial_contingency
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_newcomers_from_stardust
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			DEL = {
+				exists = no
+			}
+		}
+		prerequisite = {	focus =  MAR_combine_cloning_efforts }
+		relative_position_id = MAR_combine_cloning_efforts
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_rise_of_rezeon
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_newcomers_from_stardust }
+		relative_position_id = MAR_newcomers_from_stardust
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_maintain_the_administration
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = MAR_failure_of_the_old_guard
+		}
+		mutually_exclusive = {
+			focus = MAR_enact_the_contingecy
+		}
+		prerequisite = {	focus =  MAR_rise_of_rezeon }
+		relative_position_id = MAR_rise_of_rezeon
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_sooth_naysayers
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_maintain_the_administration }
+		relative_position_id = MAR_maintain_the_administration
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_follow_the_image_of_kycilia
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_maintain_balance_with_rezeon }
+		prerequisite = {	focus =  MAR_sooth_naysayers }
+		relative_position_id = MAR_maintain_balance_with_rezeon
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_5_year_plan
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = MAR_develop_new_metals
+		}
+		prerequisite = {	focus =  MAR_follow_the_image_of_kycilia }
+		relative_position_id = MAR_follow_the_image_of_kycilia
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_bring_in_industrialists
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_5_year_plan }
+		relative_position_id = MAR_5_year_plan
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_planned_economy
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_bring_in_industrialists }
+		relative_position_id = MAR_bring_in_industrialists
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_austerity_program
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_5_year_plan }
+		relative_position_id = MAR_5_year_plan
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_complete_military_oversight
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_austerity_program }
+		relative_position_id = MAR_austerity_program
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_prepare_armaments_program
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_5_year_plan }
+		relative_position_id = MAR_5_year_plan
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_the_march_of_industry
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_prepare_armaments_program }
+		prerequisite = {	focus =  MAR_complete_military_oversight }
+		prerequisite = {	focus =  MAR_planned_economy }
+		relative_position_id = MAR_prepare_armaments_program
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_form_supreme_war_council
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_the_march_of_industry focus = MAR_the_power_of_destruction }
+		relative_position_id = MAR_the_march_of_industry
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_the_bringer_of_war
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		prerequisite = {	focus =  MAR_form_supreme_war_council }
+		relative_position_id = MAR_form_supreme_war_council
+		completion_reward = {
+	
+		}
+	}
+
+		focus = {
+		id = MAR_mars_attacks
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			EFG = {
+				exists = yes
+			}
+		}
+		prerequisite = {	focus =  MAR_the_bringer_of_war }
+		relative_position_id = MAR_the_bringer_of_war
+		completion_reward = {
+			declare_war_on = {
+				target = EFG
+				type = annex_all
+			}
+		}
+	}
+
+	focus = {
+		id = MAR_deal_with_the_traitors
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			REZ = { exists = yes }
+		}
+		prerequisite = {	focus =  MAR_the_bringer_of_war }
+		relative_position_id = MAR_the_bringer_of_war
+		completion_reward = {
+			declare_war_on = {
+				target = REZ
+				type = annex_all
+			}
+		}
+	}
+
+	focus = {
+		id = MAR_operation_brightstar
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = REZ
+		}
+		prerequisite = {	focus =  MAR_deal_with_the_traitors}
+		relative_position_id = MAR_deal_with_the_traitors
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MAR_drum_beat_of_war
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = MAR_the_power_of_destruction
+		}
+		prerequisite = {	focus =  MAR_form_supreme_war_council }
+		relative_position_id = MAR_form_supreme_war_council
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_spirit_of_ares
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		prerequisite = {	focus =  MAR_drum_beat_of_war }
+		relative_position_id = MAR_drum_beat_of_war
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_herculean_feats
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		prerequisite = {	focus =  MAR_spirit_of_ares }
+		relative_position_id = MAR_spirit_of_ares
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_command_of_the_economy_and_military
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = MAR_the_march_of_industry
+		}
+		prerequisite = {	focus =  MAR_form_supreme_war_council }
+		relative_position_id = MAR_form_supreme_war_council
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_institute_of_economics
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_command_of_the_economy_and_military }
+		relative_position_id = MAR_command_of_the_economy_and_military
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_declare_war_economy
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+		}
+		prerequisite = {	focus =  MAR_institute_of_economics }
+		relative_position_id = MAR_institute_of_economics
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_failure_of_the_old_guard
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		mutually_exclusive = {
+			focus = MAR_maintain_the_administration
+		}
+		mutually_exclusive = {
+			focus = MAR_enact_the_contingecy
+		}
+		prerequisite = {	focus =  MAR_rise_of_rezeon }
+		relative_position_id = MAR_rise_of_rezeon
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_chester_administration
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_failure_of_the_old_guard }
+		relative_position_id = MAR_failure_of_the_old_guard
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_maintain_balance_with_rezeon
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_chester_administration focus = MAR_sooth_naysayers }
+		relative_position_id = MAR_chester_administration
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_solve_the_manpower_issue
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_maintain_balance_with_rezeon }
+		prerequisite = {	focus =  MAR_increase_radicalism }
+		relative_position_id = MAR_maintain_balance_with_rezeon
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_encourage_martian_families
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_solve_the_manpower_issue }
+		relative_position_id = MAR_solve_the_manpower_issue
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_increase_radicalism
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_chester_administration }
+		relative_position_id = MAR_chester_administration
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_infiltrate_the_earthsphere
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_increase_radicalism }
+		relative_position_id = MAR_increase_radicalism
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_legacy_of_the_principality
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_increase_radicalism }
+		relative_position_id = MAR_increase_radicalism
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_revitalize_our_spirit
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_legacy_of_the_principality }
+		relative_position_id = MAR_legacy_of_the_principality
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_study_our_enemy
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_revitalize_our_spirit }
+		relative_position_id = MAR_revitalize_our_spirit
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_a_martian_fleet
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_study_our_enemy }
+		relative_position_id = MAR_study_our_enemy
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_work_with_allies
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_revitalize_our_spirit }
+		relative_position_id = MAR_revitalize_our_spirit
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_innate_power_of_godlike_beings
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_work_with_allies }
+		relative_position_id = MAR_work_with_allies
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_adapt_axis_technology
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_innate_power_of_godlike_beings }
+		prerequisite = {	focus =  MAR_a_martian_fleet }
+		relative_position_id = MAR_innate_power_of_godlike_beings
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_the_power_of_destruction
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_adapt_axis_technology }
+		relative_position_id = MAR_adapt_axis_technology
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_enact_the_contingecy
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			is_ai = no
+		}
+		mutually_exclusive = {
+			focus = MAR_maintain_the_administration
+		}
+		mutually_exclusive = {
+			focus = MAR_failure_of_the_old_guard
+		}
+		prerequisite = {	focus =  MAR_rise_of_rezeon }
+		relative_position_id = MAR_rise_of_rezeon
+		completion_reward = {
+			REZ = {change_tag_from = MAR }
+		}
+	}
+
+	focus = {
+		id = MAR_asteroid_belt_resource_initiative
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_reach_out_to_axis }
+		relative_position_id = MAR_reach_out_to_axis
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_develop_new_mining_facilities
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_asteroid_belt_resource_initiative }
+		relative_position_id = MAR_asteroid_belt_resource_initiative
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_develop_new_metals
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_develop_new_mining_facilities }
+		relative_position_id = MAR_develop_new_mining_facilities
 		completion_reward = {
 	
 		}
@@ -98,6 +987,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_completed_focus = MAR_infiltrate_the_earthsphere
+		}
 		prerequisite = {	focus =  MAR_secure_tharsis }
 		relative_position_id = MAR_secure_tharsis
 		completion_reward = {
@@ -130,6 +1022,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_completed_focus = MAR_study_our_enemy
+		}
 		prerequisite = {focus =  MAR_to_steal_a_gundam }
 		relative_position_id = MAR_to_steal_a_gundam
 		completion_reward = {
@@ -155,6 +1050,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MAR_new_principality_army
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+		prerequisite = {focus =  MAR_form_the_independence_army }
+		relative_position_id = MAR_form_the_independence_army
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
 		id = MAR_oldsmobile_army
 		icon = GFX_goal_generic_alliance
 		cost = 10
@@ -162,6 +1076,9 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_completed_focus = MAR_legacy_of_the_principality
 		}
 		prerequisite = {focus =  MAR_form_the_independence_army }
 		relative_position_id = MAR_form_the_independence_army
@@ -210,7 +1127,7 @@ focus_tree = {
 		id = MAR_prepare_solomon_fortress
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = -2
+		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -226,7 +1143,7 @@ focus_tree = {
 		id = MAR_plans_for_olympus_cannon
 		icon = GFX_goal_generic_alliance
 		cost = 5
-		x = 2
+		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 1

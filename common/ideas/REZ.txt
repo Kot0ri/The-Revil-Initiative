@@ -1,0 +1,80 @@
+ideas = {
+
+country = {
+
+	wings_of_inle = {
+			
+			allowed = {
+				original_tag = REZ
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.05
+			}
+		}
+
+
+	matriarchy = {
+			
+			allowed = {
+				original_tag = REZ
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_advisor_cost_factor = -0.25
+				consumer_goods_expected_value = 0.05
+			}
+		}
+
+	sanctuary_colony = {
+			
+			allowed = {
+				original_tag = REZ
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 500
+			}
+		}
+
+		ring_of_alicia = {
+			
+			allowed = {
+				original_tag = REZ
+			}
+		
+			allowed_civil_war = {
+				always = yes
+			}
+		
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.02
+			}
+		}
+
+	}
+}

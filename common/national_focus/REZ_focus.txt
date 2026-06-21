@@ -97,6 +97,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REZ_the_first_castle
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_the_five_castles
+		}
+		relative_position_id = REZ_the_five_castles
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_the_second_castle
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_the_five_castles
+		}
+		relative_position_id = REZ_the_five_castles
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = REZ_port_to_the_heavens
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -182,7 +218,11 @@ focus_tree = {
 		}
 		relative_position_id = REZ_alicia_takes_command
 		completion_reward = {
-		
+		REZ_alicia = {
+			add_trait = {
+				trait = supreme_leader_of_rezeon
+			}
+		}
 		}
 	}
 
@@ -200,7 +240,7 @@ focus_tree = {
 		}
 		relative_position_id = REZ_supreme_leader_of_rezeon
 		completion_reward = {
-		
+		add_ideas = wings_of_inle
 		}
 	}
 
@@ -254,7 +294,7 @@ focus_tree = {
 		}
 		relative_position_id = REZ_to_be_born_anew_on_mars
 		completion_reward = {
-		
+		add_ideas = ring_of_alicia
 		}
 	}
 
@@ -362,7 +402,7 @@ focus_tree = {
 		}
 		relative_position_id = REZ_no_fly_policy
 		completion_reward = {
-		
+		add_ideas = sanctuary_colony
 		}
 	}
 
@@ -380,7 +420,7 @@ focus_tree = {
 		}
 		relative_position_id = REZ_no_fly_policy
 		completion_reward = {
-		
+		add_ideas = matriarchy
 		}
 	}
 
@@ -476,7 +516,11 @@ focus_tree = {
 		}
 		relative_position_id = REZ_alicia_takes_command
 		completion_reward = {
-		
+		REZ_alicia = {
+			add_trait = {
+				trait = the_rightful_successor_to_zeon
+			}
+		}
 		}
 	}
 
@@ -497,7 +541,11 @@ focus_tree = {
 		}
 		relative_position_id = REZ_the_rightful_successor_to_zeon
 		completion_reward = {
-		
+		REZ_alicia = {
+			add_trait = {
+				trait = queen_of_mars
+			}
+		}
 		}
 	}
 
@@ -518,7 +566,11 @@ focus_tree = {
 		}
 		relative_position_id = REZ_queen_of_mars
 		completion_reward = {
-		
+		REZ_alicia = {
+			add_trait = {
+				trait = empress_of_the_ideal_of_zeon
+			}
+		}
 		}
 	}
 
@@ -535,6 +587,28 @@ focus_tree = {
 			focus = REZ_empress_of_the_ideal_of_zeon
 		}
 		relative_position_id = REZ_empress_of_the_ideal_of_zeon
+		completion_reward = {
+		REZ_alicia = {
+			add_trait = {
+				trait = holy_mother_of_mars
+			}
+		}
+		}
+	}
+
+		focus = {
+		id = REZ_lady_of_the_five_castles
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_holy_mother_of_mars
+		}
+		relative_position_id = REZ_holy_mother_of_mars
 		completion_reward = {
 		
 		}

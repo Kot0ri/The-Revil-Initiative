@@ -610,7 +610,11 @@ focus_tree = {
 		}
 		relative_position_id = REZ_holy_mother_of_mars
 		completion_reward = {
-		
+		REZ_alicia = {
+			add_trait = {
+				trait = lady_of_the_five_castles
+			}
+		}
 		}
 	}
 
@@ -627,6 +631,42 @@ focus_tree = {
 			focus = REZ_omega_leadership
 		}
 		relative_position_id = REZ_omega_leadership
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_priortize_aquatic_warfare
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_omega_leadership
+		}
+		relative_position_id = REZ_omega_leadership
+		completion_reward = {
+		
+		}
+	}
+
+		focus = {
+		id = REZ_seize_the_water_ways
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_priortize_aquatic_warfare
+		}
+		relative_position_id = REZ_priortize_aquatic_warfare
 		completion_reward = {
 		
 		}

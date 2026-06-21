@@ -507,6 +507,24 @@ focus = {
 	}
 
 	focus = {
+		id = EFG_elevate_the_state_department
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		prerequisite = { focus = EFG_refurbish_the_old_capital }
+		relative_position_id = EFG_refurbish_the_old_capital
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+		
+		}
+	}
+
+
+	focus = {
 		id = EFG_comission_for_newtype_research
 		icon = GFX_goal_general_meeting
 		cost = 5

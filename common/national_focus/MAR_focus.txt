@@ -57,6 +57,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MAR_sands_of_mars
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_space_haven }
+		relative_position_id = MAR_space_haven
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
 		id = MAR_expand_phobos_airport
 		icon = GFX_goal_generic_alliance
 		cost = 10
@@ -511,6 +527,45 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MAR_becoming_the_law_of_mars
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war_with = REZ
+		}
+		prerequisite = {	focus =  MAR_operation_brightstar}
+		prerequisite = {	focus =  MAR_prepare_for_succession }
+		relative_position_id = MAR_operation_brightstar
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = MAR_to_be_king_of_mars
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			REZ = { exists = no }
+		}
+		prerequisite = {	focus =  MAR_becoming_the_law_of_mars }
+		relative_position_id = MAR_becoming_the_law_of_mars
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
 		id = MAR_drum_beat_of_war
 		icon = GFX_goal_generic_alliance
 		cost = 10
@@ -776,6 +831,22 @@ focus_tree = {
 	}
 
 	focus = {
+		id = MAR_sons_of_chester
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_revitalize_our_spirit }
+		relative_position_id = MAR_revitalize_our_spirit
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
 		id = MAR_study_our_enemy
 		icon = GFX_goal_generic_alliance
 		cost = 10
@@ -867,6 +938,22 @@ focus_tree = {
 		}
 		prerequisite = {	focus =  MAR_adapt_axis_technology }
 		relative_position_id = MAR_adapt_axis_technology
+		completion_reward = {
+	
+		}
+	}
+
+	focus = {
+		id = MAR_prepare_for_succession
+		icon = GFX_goal_generic_alliance
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {	focus =  MAR_the_power_of_destruction }
+		relative_position_id = MAR_the_power_of_destruction
 		completion_reward = {
 	
 		}

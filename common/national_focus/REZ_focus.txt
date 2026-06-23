@@ -61,10 +61,52 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REZ_capitalize_on_the_legacy
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 7
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus = REZ_follow_omega
+		}
+		prerequisite = {
+			focus = REZ_zabi_legacy
+		}
+		mutually_exclusive = {
+			focus = REZ_gihrenism_our_driving_cause
+		}
+		relative_position_id = REZ_zabi_legacy
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_negotiations_with_martian_forces
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_capitalize_on_the_legacy
+		}
+		relative_position_id = REZ_capitalize_on_the_legacy
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = REZ_the_five_castles
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 3
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -169,6 +211,45 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REZ_follow_omega
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -4
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		mutually_exclusive = {
+			focus = REZ_omega_falters
+		}
+		prerequisite = {
+			focus = REZ_prepare_a_wedding
+		}
+		relative_position_id = REZ_prepare_a_wedding
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_aid_char
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_follow_omega
+		}
+		relative_position_id = REZ_follow_omega
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = REZ_omega_falters
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -176,6 +257,12 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		mutually_exclusive = {
+			focus = REZ_follow_omega
 		}
 		prerequisite = {
 			focus = REZ_prepare_a_wedding
@@ -371,6 +458,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = REZ_legion_of_peoples_will
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 5
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_alicia_takes_command
+		}
+		relative_position_id = REZ_alicia_takes_command
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_over_the_mind
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_legion_of_peoples_will
+		}
+		relative_position_id = REZ_legion_of_peoples_will
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = REZ_no_fly_policy
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -405,6 +528,23 @@ focus_tree = {
 		add_ideas = sanctuary_colony
 		}
 	}
+	focus = {
+		id = REZ_eleanor
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_no_fly_policy
+		}
+		relative_position_id = REZ_no_fly_policy
+		completion_reward = {
+		add_ideas = sanctuary_colony
+		}
+	}
 
 	focus = {
 		id = REZ_create_a_womens_paradise
@@ -428,13 +568,16 @@ focus_tree = {
 		id = REZ_protect_mars
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
 		prerequisite = {
 			focus = REZ_a_sanctuary
+		}
+		prerequisite = {
+			focus = REZ_create_a_womens_paradise
 		}
 		relative_position_id = REZ_a_sanctuary
 		completion_reward = {
@@ -623,9 +766,15 @@ focus_tree = {
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 0
-		y = 1
+		y = 2
 		ai_will_do = {
 			factor = 1
+		}
+		search_filters = {
+			FOCUS_FILTER_HISTORICAL
+		}
+		mutually_exclusive = {
+			focus = REZ_gihrenism_our_driving_cause
 		}
 		prerequisite = {
 			focus = REZ_omega_leadership
@@ -739,6 +888,27 @@ focus_tree = {
 			focus = REZ_contest_the_traitors_leadership
 		}
 		relative_position_id = REZ_contest_the_traitors_leadership
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_contest_martian_leadership
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_begin_an_underground_war
+		}
+		prerequisite = {
+			focus = REZ_the_path_of_the_newtype
+		}
+		relative_position_id = REZ_begin_an_underground_war
 		completion_reward = {
 		
 		}

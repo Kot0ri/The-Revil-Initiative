@@ -1,5 +1,22 @@
 characters={
 	#leaders
+
+REZ_omega={
+	name="Omega Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/REZ/Alicia_Zabi.dds"
+		}
+			
+	}
+	country_leader={
+		ideology= spacenoid_supremacist
+		traits={}
+		expire="1000.1.1.1"
+	}
+}
+
+
 REZ_alicia={
 	name="Alicia Zabi"
 	portraits={
@@ -12,6 +29,50 @@ REZ_alicia={
 		ideology= absolute_monarchy
 		traits={}
 		expire="1000.1.1.1"
+	}
+}
+
+REZ_diana={
+	name="Diana Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/REZ/Diana_Zabi.dds"
+		}
+			
+	}
+	country_leader={
+		ideology= authoritarian_oligarchy
+		traits={ impersonater_of_the_queen }
+		expire="1000.1.1.1"
+	}
+}
+
+#advisors
+REZ_gloria={
+	name="Gloria Zabi"
+	portraits={
+		civilian={
+			large="gfx/leaders/REZ/Gloria_Zabi.dds"
+		}
+			
+	}
+	advisor = {
+		slot = political_advisor
+		traits = { vice_president_of_rezeon  }
+	}
+}
+
+REZ_keppard={
+	name="Keppard"
+	portraits={
+		civilian={
+			large="gfx/leaders/REZ/keppard.dds"
+		}
+			
+	}
+	advisor = {
+		slot = political_advisor
+		traits = { disdainful_enviromentalist  }
 	}
 }
 }

@@ -592,6 +592,28 @@ lady_of_the_five_castles = {
 	production_speed_bunker_factor = 0.15
 }
 
+#gloria
+vice_president_of_rezeon = {
+	random = no
+	political_power_gain = 0.02
+	political_advisor_cost_factor = -0.33
+}
+
+#diana
+impersonater_of_the_queen = {
+	random = no
+	stability_factor = -0.15
+}
+
+#keppard
+disdainful_enviromentalist = {
+	random = no
+	monthly_population = -200
+	stability_factor = 0.15
+	repair_speed_factor = 0.35
+}
+
+
 #jupiter + jupiter zeon
 
 supreme_commander_of_the_jovian_fleet = {

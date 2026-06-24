@@ -948,6 +948,80 @@ focus = {
 }
 
 focus = {
+	id = JRZ_high_hopes_and_noble_endevours
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_the_dream_of_neo_zeon
+		}
+	available = {
+		has_completed_focus = JRZ_chars_dream 
+	}
+	mutually_exclusive = {
+		focus = JRZ_a_new_summer
+	}
+	relative_position_id = JRZ_the_dream_of_neo_zeon
+	completion_reward = {
+	set_politics = {
+		ruling_party = contolism
+	}
+}
+}
+
+
+focus = {
+	id = JRZ_a_new_summer
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_the_dream_of_neo_zeon
+		}
+	available = {
+		has_completed_focus = JRZ_chars_dream 
+	}
+	mutually_exclusive = {
+		focus = JRZ_high_hopes_and_noble_endevours
+	}
+	relative_position_id = JRZ_the_dream_of_neo_zeon
+	completion_reward = {
+	set_politics = {
+		ruling_party = utopianism
+	}
+}
+}
+
+focus = {
+	id = JRZ_return_to_earth
+	icon = GFX_goal_general_meeting
+	cost = 5
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+	focus = JRZ_high_hopes_and_noble_endevours focus = JRZ_a_new_summer
+		}
+	available = {
+		
+	}
+	relative_position_id = JRZ_high_hopes_and_noble_endevours
+	completion_reward = {
+	
+}
+}
+
+focus = {
 	id = JRZ_space_of_ageta
 	icon = GFX_goal_general_meeting
 	cost = 5

@@ -106,7 +106,7 @@ focus_tree = {
 		id = REZ_the_five_castles
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 2
+		x = 3
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -120,24 +120,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = REZ_the_third_castle
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 2
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-			focus = REZ_the_five_castles
-		}
-		relative_position_id = REZ_the_five_castles
-		completion_reward = {
-		
-		}
-	}
-
+	
 	focus = {
 		id = REZ_the_first_castle
 		icon = GFX_goal_general_meeting
@@ -160,6 +143,24 @@ focus_tree = {
 		id = REZ_the_second_castle
 		icon = GFX_goal_general_meeting
 		cost = 5
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_the_five_castles
+		}
+		relative_position_id = REZ_the_five_castles
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_the_third_castle
+		icon = GFX_goal_general_meeting
+		cost = 5
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -174,12 +175,51 @@ focus_tree = {
 		}
 	}
 
+
+	focus = {
+		id = REZ_the_forth_castle
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_the_five_castles
+		}
+		relative_position_id = REZ_the_five_castles
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = REZ_the_fifth_castle
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = REZ_the_five_castles
+		}
+		relative_position_id = REZ_the_five_castles
+		completion_reward = {
+		
+		}
+	}
+
+
+
 	focus = {
 		id = REZ_port_to_the_heavens
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 0
-		y = 1
+		y = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -607,8 +647,8 @@ focus_tree = {
 		id = REZ_mars_industrial_energy_plan
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 8
-		y = 1
+		x = 0
+		y = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -616,9 +656,9 @@ focus_tree = {
 			has_completed_focus = REZ_form_the_wings_of_inle
 		}
 		prerequisite = {
-			focus = REZ_alicia_takes_command
+			focus = REZ_port_to_the_heavens
 		}
-		relative_position_id = REZ_alicia_takes_command
+		relative_position_id = REZ_port_to_the_heavens
 		completion_reward = {
 		
 		}

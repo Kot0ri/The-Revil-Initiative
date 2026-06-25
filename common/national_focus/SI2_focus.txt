@@ -285,6 +285,30 @@ focus = {
 	prerequisite = { focus = SI2_armour_tests focus = SI2_joint_development_with_anaheim }
 }
 
+focus = {
+	id = SI2_join_project_MUSHA
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		EFS = { 
+			has_completed_focus = efsf_MUSHA_project
+		}
+	}
+	mutually_exclusive = {
+		
+	}
+	completion_reward = {
+	
+	}
+	relative_position_id = SI2_ms_armament_development
+	prerequisite = { focus = SI2_ms_armament_development }
+}
+
 
 focus = {
 	id = SI2_navy_expansion_contract

@@ -3922,6 +3922,49 @@ focus = {
 }
 
 focus = {
+	id = efsf_turn_attention_to_jupiter
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		 focus = efsf_keep_anaheim_in_the_dark
+	}
+	
+	available = {
+	}
+	relative_position_id = efsf_keep_anaheim_in_the_dark
+	completion_reward = {
+	
+	}
+}
+
+focus = {
+	id = efsf_MUSHA_project
+	icon = GFX_goal_earth_counter_strategy
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	prerequisite = {
+		 focus = efsf_turn_attention_to_jupiter
+	}
+	
+	available = {
+		SI2 = { exists = yes }
+	}
+	relative_position_id = efsf_turn_attention_to_jupiter
+	completion_reward = {
+	
+	}
+}
+
+focus = {
 	id = efsf_gpo_series_proposal
 	icon = GFX_goal_gpo_series
 	cost = 10

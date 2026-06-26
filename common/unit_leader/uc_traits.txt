@@ -311,6 +311,48 @@ utopian_faction = {
 	}
 }
 
+militarist_faction = { 
+	type = all
+	trait_type = personality_trait
+	gain_xp = {
+		always = no # not gainable
+	}
+	allowed = {
+		
+	}
+	modifier = {
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	new_commander_weight = {
+		factor = 0
+	}
+}
+
+federalist_faction = { 
+	type = all
+	trait_type = personality_trait
+	gain_xp = {
+		always = no # not gainable
+	}
+	allowed = {
+		
+	}
+	modifier = {
+		
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+	new_commander_weight = {
+		factor = 0
+	}
+}
+
 general_of_the_armed_forces = { 
 	type = all
 	trait_type = personality_trait

@@ -99,6 +99,23 @@ focus_tree = {
 			}
 		}
 
+		focus = {
+		id = SSA_a_land_of_history_and_industry
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = SSA_centralize_development
+		prerequisite = {
+			focus = SSA_centralize_development
+		}
+		completion_reward = {
+		}
+		}
+
 	focus = {
 		id = SSA_improve_sea_lane_traffic
 		icon = GFX_goal_efsf_mobile_headquarters
@@ -107,6 +124,9 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_completed_focus = SSA_south_seas_priacy_sweep
 		}
 		relative_position_id = SSA_begin_renovations
 		prerequisite = {
@@ -235,6 +255,122 @@ focus_tree = {
 				}
 			}
 
+
+		focus = {
+			id = SSA_begin_armament_efforts
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			available = {
+				date > 0078.01.1
+			}
+			relative_position_id = SSA_philippines_development_project
+			prerequisite = {
+				focus = SSA_philippines_development_project
+			}
+			prerequisite = {
+				focus = SSA_a_land_of_history_and_industry
+			}
+			completion_reward = {
+				}
+			}
+
+	focus = {
+			id = SSA_river_navigation
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = -1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SSA_begin_armament_efforts
+			prerequisite = {
+				focus = SSA_begin_armament_efforts
+			}
+			completion_reward = {
+				}
+			}
+
+		focus = {
+			id = SSA_swiftboats_and_hovercraft
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SSA_river_navigation
+			prerequisite = {
+				focus = SSA_river_navigation
+			}
+			prerequisite = {
+				focus = SSA_increase_delta_security
+			}
+			completion_reward = {
+				}
+			}
+
+
+	focus = {
+			id = SSA_jungle_navigation
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SSA_begin_armament_efforts
+			prerequisite = {
+				focus = SSA_begin_armament_efforts
+			}
+			completion_reward = {
+				}
+			}
+
+	focus = {
+			id = SSA_cavalry_of_the_skies
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SSA_jungle_navigation
+			prerequisite = {
+				focus = SSA_jungle_navigation
+			}
+			prerequisite = {
+				focus = SSA_setup_air_patrols
+			}
+			completion_reward = {
+				}
+			}
+
+		focus = {
+			id = SSA_expand_air_coverage
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = 0
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SSA_cavalry_of_the_skies
+			prerequisite = {
+				focus = SSA_cavalry_of_the_skies
+			}
+			completion_reward = {
+				}
+			}
+	
 	focus = {
 		id = SSA_government_appoinments
 		icon = GFX_goal_efsf_mobile_headquarters
@@ -347,7 +483,9 @@ focus = {
 	ai_will_do = {	
 	factor = 1
 			}
-			
+	available = {
+			has_completed_focus = SSA_a_land_of_history_and_industry
+		}
 	relative_position_id = SSA_unity_together
 	prerequisite = {	focus = SSA_unity_together	}
 	completion_reward = {
@@ -379,7 +517,9 @@ focus = {
 		ai_will_do = {	
 		factor = 1
 				}
-			
+		available = {
+			has_completed_focus = SSA_a_land_of_history_and_industry
+		}
 		relative_position_id = SSA_rally_all_faiths
 		prerequisite = {	focus = SSA_rally_all_faiths	}
 		completion_reward = {
@@ -452,7 +592,23 @@ focus = {
 			completion_reward = {
 						}
 			}
-	
+		
+		focus = {
+			id = SSA_south_seas_priacy_sweep
+			icon = GFX_goal_efsf_mobile_headquarters
+			cost = 5
+			x = -2
+			y = 1
+			ai_will_do = {	
+			factor = 1
+						}
+			relative_position_id = SSA_government_appoinments
+			prerequisite = {	focus = SSA_government_appoinments	}
+			completion_reward = {
+						}
+		}
+
+
 	focus = {
 			id = SSA_bangkok_proposal
 			icon = GFX_goal_efsf_mobile_headquarters
@@ -477,6 +633,9 @@ focus = {
 			ai_will_do = {	
 			factor = 1
 						}
+			available = {
+				date > 0075.01.1
+			}
 			relative_position_id = SSA_bangkok_proposal
 			prerequisite = {	focus = SSA_bangkok_proposal	}
 			completion_reward = {
@@ -553,7 +712,7 @@ focus = {
 		id = SSA_supreme_command_of_south_asia
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 1
+		x = 3
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -597,7 +756,7 @@ focus = {
 			}
 
 	focus = {
-		id = SSA_austrilia_first_doctrine
+		id = SSA_austrailia_first_doctrine
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
 		x = 0
@@ -615,7 +774,120 @@ focus = {
 		completion_reward = {
 			
 				}
+		}
+
+		focus = {
+		id = SSA_prepare_offensive_action
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			 focus = SSA_austrailia_first_doctrine
+		}
+		prerequisite = {
+			 focus = SSA_crush_guerilla_movements
+		}
+		relative_position_id = SSA_austrailia_first_doctrine
+		available = {
+		has_war = yes
+		}
+		completion_reward = {
+			
+				}
+		}
+
+		focus = {
+		id = SSA_to_fight_for_ur_survival
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			 focus = SSA_prepare_offensive_action
+		}
+		relative_position_id = SSA_prepare_offensive_action
+		available = {
+		has_war = yes
+		}
+		completion_reward = {
+			SSA_vien = {
+				promote_leader = yes
 			}
+		}
+		}
+
+focus = {
+		id = SSA_airborne_operations
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			 focus = SSA_to_fight_for_ur_survival
+		}
+		relative_position_id = SSA_to_fight_for_ur_survival
+		available = {
+		has_war = yes
+		}
+		completion_reward = {
+			
+		}
+		}
+
+focus = {
+		id = SSA_psywar
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			 focus = SSA_to_fight_for_ur_survival
+		}
+		relative_position_id = SSA_to_fight_for_ur_survival
+		available = {
+		has_war = yes
+		}
+		completion_reward = {
+			
+		}
+	}
+
+focus = {
+		id = SSA_disrupt_zeon_fortifications
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			 focus = SSA_psywar
+		}
+		prerequisite = {
+			 focus = SSA_airborne_operations
+		}
+		relative_position_id = SSA_airborne_operations
+		available = {
+		has_war = yes
+		}
+		completion_reward = {
+			
+		}
+		}
 
 focus = {
 	id = SSA_singapore_convention
@@ -727,6 +999,39 @@ focus = {
 		}
 
 	focus = {
+	id = SSA_maintain_military_cohesion
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 2
+	y = 1
+	ai_will_do = {	
+	factor = 1
+				}
+	relative_position_id = SSA_jungle_pathing
+	prerequisite = {	focus = SSA_jungle_pathing	}
+	mutually_exclusive = {
+		focus = SSA_recruiting_locals
+	}
+	completion_reward = {
+				}
+	}
+
+	focus = {
+	id = SSA_crush_guerilla_movements
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {	
+	factor = 1
+				}
+	relative_position_id = SSA_maintain_military_cohesion
+	prerequisite = {	focus = SSA_maintain_military_cohesion	}
+	completion_reward = {
+				}
+	}
+
+	focus = {
 	id = SSA_recruiting_locals
 	icon = GFX_goal_efsf_mobile_headquarters
 	cost = 5
@@ -735,6 +1040,12 @@ focus = {
 	ai_will_do = {	
 	factor = 1
 				}
+	available = {
+		has_completed_focus = SSA_handle_internal_security
+	}
+	mutually_exclusive = {
+		focus = SSA_maintain_military_cohesion
+	}
 	relative_position_id = SSA_jungle_pathing
 	prerequisite = {	focus = SSA_jungle_pathing	}
 	completion_reward = {
@@ -753,6 +1064,10 @@ focus = {
 			relative_position_id = SSA_recruiting_locals
 			prerequisite = {	focus = SSA_recruiting_locals}
 			completion_reward = {
+				recruit_character = SSA_baresto_rosita
+				recruit_character = SSA_kiki_rosita
+				recruit_character = SSA_chibi
+				recruit_character = SSA_hige
 						}
 				}
 
@@ -886,7 +1201,7 @@ focus = {
 		factor = 1
 			}
 		relative_position_id = SSA_expand_pit_traps
-		prerequisite = {	focus = SSA_take_and_bite focus = SSA_improve_communication_lines }
+		prerequisite = {	focus = SSA_take_and_bite focus = SSA_improve_communication_lines focus = SSA_airborne_operations  }
 		completion_reward = {
 			}
 		}
@@ -962,6 +1277,15 @@ focus = {
 		end_civil_wars = no
 	}
 	leave_faction = yes
+	add_country_leader_role = {
+    character = SSA_tran_minh
+    promote_leader = yes
+    country_leader = {
+        ideology = military_junta
+        expire = "1965.1.1.1"
+        traits = { war_industrialist }
+    }
+	}
 		}
 	}
 

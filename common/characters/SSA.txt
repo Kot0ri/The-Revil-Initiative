@@ -58,7 +58,7 @@ characters={
 		}
 		field_marshal = {
 			traits = {
-				defensive_doctrine organizer
+			federalist_faction	defensive_doctrine organizer
 			}
 			skill = 3
 			attack_skill = 3
@@ -67,34 +67,6 @@ characters={
 			logistics_skill = 3
 		}
 	}	
-
-	SSA_jospeh_arthur={
-		name= "Nguyen Bao Hai"
-		portraits={
-			civilian={
-				large= "gfx/leaders/SSA/jospeh_arthur.dds"
-			}
-			army={
-				large= "gfx/leaders/SSA/jospeh_arthur.dds"
-			}
-		}
-		country_leader={
-			ideology= earthnoid_supremacist
-			traits={  }
-			expire="100.1.1.1"
-			id=-1
-		}
-		corps_commander  = {
-			traits = {
-				inspirational_leader naval_invader
-			}
-			skill = 2
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 2
-		}
-	}
 
 	SSA_wilson_mountbatten={
 		name= "Wilson Mountbatten"
@@ -106,9 +78,15 @@ characters={
 				large= "gfx/leaders/SSA/wilson_mountbatten.dds"
 			}
 		}
+		country_leader={
+			ideology= earthnoid_supremacist
+			traits={  }
+			expire="100.1.1.1"
+			id=-1
+		}
 		navy_leader = {
 			traits = {
-				old_guard_navy navy_media_personality
+				federalist_faction old_guard_navy navy_media_personality
 			}
 			skill = 4
 			attack_skill = 3
@@ -119,6 +97,46 @@ characters={
 	}
 
 	#field marshals
+
+	SSA_tran_minh = {
+		name="Tran Minh"
+		portraits={
+		army={
+				large= "gfx/leaders/SSA/tran_minh.dds"
+			}
+	}
+	field_marshal = {
+		traits = {
+			militarist_faction organizer skilled_staffer logistics_wizard
+		}
+		skill = 3
+		attack_skill = 2
+		defense_skill = 2
+		planning_skill = 3
+		logistics_skill = 3
+	}
+		advisor={
+		slot = high_command
+		ledger = air
+		cost = 100
+		idea_token = tran_minh
+		traits = {
+			air_chief_ground_support_2
+		}
+		allowed = {
+			OR = {
+				original_tag = SSA
+			}
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+}
 
 	SSA_baresto_rosita = {
 		name="Baresto Rosita"
@@ -161,6 +179,140 @@ characters={
 }
 
 #generals
+
+	SSA_vien={
+		name= "Cao Van Vien"
+		portraits={
+			civilian={
+				large= "gfx/leaders/SSA/Vien.dds"
+			}
+			army={
+				large= "gfx/leaders/SSAVien.dds"
+			}
+		}
+		
+		corps_commander  = {
+			traits = {
+				militarist_faction media_personality trickster engineer_officer commando jungle_rat urban_assault_specialist
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+		advisor={
+		slot = political_advisor
+		cost = 100
+		idea_token = cao_vien
+		traits = {
+			gifted_strategic_commander
+		}
+		allowed = {
+			OR = {
+				original_tag = SSA
+			}
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+		advisor={
+		slot = high_command
+		ledger = air
+		cost = 100
+		idea_token = cao_vien
+		traits = {
+			air_airborne_3
+		}
+		allowed = {
+			OR = {
+				original_tag = SSA
+			}
+			
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				has_war = no
+				factor = 0
+			}
+		}
+	}
+	}
+
+	SSA_nguyen={
+		name= "Nguyen Bao Hai"
+		portraits={
+			civilian={
+				large= "gfx/leaders/SSA/nguyen.dds"
+			}
+			army={
+				large= "gfx/leaders/SSA/nguyen.dds"
+			}
+		}
+		
+		corps_commander  = {
+			traits = {
+				militarist_faction inspirational_leader naval_invader
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+
+	SSA_lam={
+		name= "Hoang Lam"
+		portraits={
+			civilian={
+				large= "gfx/leaders/SSA/nguyen.dds"
+			}
+			army={
+				large= "gfx/leaders/SSA/nguyen.dds"
+			}
+		}
+		
+		corps_commander  = {
+			traits = {
+				militarist_faction politically_connected
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	SSA_weyland={
+		name= "Heuy Weyland"
+		portraits={
+			civilian={
+				large= "gfx/leaders/SSA/weyland.dds"
+			}
+			army={
+				large= "gfx/leaders/SSA/weyland.dds"
+			}
+		}
+		
+		corps_commander  = {
+			traits = {
+			 federalist_faction	career_officer
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 
 	SSA_kiki_rosita = {
 		name="Kiki Rosita"

@@ -454,6 +454,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		mutually_exclusive = {
+			focus = PEZ_adopt_the_gelgoog
+		}
 		available = {
 			
 		}
@@ -461,6 +464,48 @@ focus_tree = {
 			}
 		relative_position_id = PEZ_bring_in_industrialists
 		prerequisite = { focus = PEZ_bring_in_industrialists }
+		}
+
+		focus = {
+		id = PEZ_adopt_the_gelgoog
+		icon = GFX_goal_rem_gelgoog
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			NOT = {
+				has_completed_focus = PEZ_zimmand_reigns_supreme
+			}
+		}
+		mutually_exclusive = {
+			focus = PEZ_begin_gyan_development
+		}
+		completion_reward = {
+			}
+		relative_position_id = PEZ_bring_in_industrialists
+		prerequisite = { focus = PEZ_bring_in_industrialists }
+		}
+
+		focus = {
+		id = PEZ_expand_zeonics_influence
+		icon = GFX_goal_rem_zeonic
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		has_completed_focus = PEZ_shadow_of_machine_politics
+		}
+
+		completion_reward = {
+			}
+		relative_position_id = PEZ_adopt_the_gelgoog
+		prerequisite = { focus = PEZ_adopt_the_gelgoog }
 		}
 
 		focus = {

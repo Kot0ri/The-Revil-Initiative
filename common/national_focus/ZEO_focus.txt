@@ -2935,7 +2935,7 @@ focus = {
 
 focus = {
 	id = ZEO_those_that_survive
-	icon = GFX_goal_tyrant_of_moon
+	icon = GFX_goal_char_gelgoog
 	cost = 10
 	x = 0
 	y = 1
@@ -2949,6 +2949,10 @@ focus = {
 	
 	}
 	completion_reward = {
+		declare_war_on = {
+			target = EFS
+			type = annex_all
+		}
 	}
 	relative_position_id = ZEO_the_reckoning
 	prerequisite = { focus = ZEO_the_reckoning }
@@ -3229,7 +3233,7 @@ focus = {
 
 focus = {
 	id = ZEO_a_strong_hand
-	icon = GFX_focus_ral_iron_fist
+	icon = GFX_goal_ral_iron_fist
 	cost = 10
 	x = -1
 	y = 1
@@ -3250,7 +3254,7 @@ focus = {
 
 focus = {
 	id = ZEO_protect_colonial_freedom
-	icon = GFX_focus_mex_privatisation
+	icon = GFX_goal_ral_gelgoog
 	cost = 10
 	x = 1
 	y = 1

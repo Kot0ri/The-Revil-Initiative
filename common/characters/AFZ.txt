@@ -127,4 +127,20 @@ AFZ_richard_leese={
 	}
 }
 
+#advisors
+AFZ_moaza={
+	name="Moaza M'ba"
+	portraits={
+		civilian = {
+			small = "gfx/leaders/AFZ/moaza.dds"
+		}
+	}
+	advisor = {
+		slot = political_advisor
+		cost = 100
+		can_be_fired = no
+		traits = { president_of_the_africa_economic_union }
+	}
+}
+
 }

@@ -14,7 +14,7 @@ focus_tree = {
 		id = RUS_work_on_a_new_regime
 		icon = GFX_goal_general_meeting
 		cost = 5
-		x = 0
+		x = 4
 		y = 0
 		ai_will_do = {
 			factor = 1
@@ -30,7 +30,28 @@ focus_tree = {
 	focus = {
 		id = RUS_reconnect_with_the_underground_government
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 10
+		x = 5
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_work_on_a_new_regime
+		prerequisite = {
+			focus = RUS_work_on_a_new_regime
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = RUS_moscow_memorandum
+		icon = GFX_goal_general_meeting
+		cost = 10
 		x = 0
 		y = 1
 		ai_will_do = {
@@ -40,377 +61,812 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_work_on_a_new_regime
 		}
-		mutually_exclusive = {
-			focus = RUS_the_odd_factor
-		}
-		mutually_exclusive = {
-			focus = RUS_wisdom_of_age
-		}
 		available = {
 			
 		}
 		completion_reward = {
-		
 		}
 	}
-
-	focus = {
-		id = RUS_prepare_for_elections
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		relative_position_id = RUS_reconnect_with_the_underground_government
-		prerequisite = {
-			focus = RUS_reconnect_with_the_underground_government
-		}
-		mutually_exclusive = {
-			focus = RUS_the_oligarchs_sieze_power
-		}
-		
-		available = {
-			
-		}
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = RUS_the_oligarchs_sieze_power
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 2
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		relative_position_id = RUS_reconnect_with_the_underground_government
-		prerequisite = {
-			focus = RUS_reconnect_with_the_underground_government
-		}
-		mutually_exclusive = {
-			focus = RUS_prepare_for_elections
-		}
-		
-		available = {
-			
-		}
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = RUS_the_odd_factor
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 3
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		relative_position_id = RUS_work_on_a_new_regime
-		prerequisite = {
-			focus = RUS_work_on_a_new_regime
-		}
-		mutually_exclusive = {
-			focus = RUS_reconnect_with_the_underground_government
-		}
-		mutually_exclusive = {
-			focus = RUS_wisdom_of_age
-		}
-		available = {
-			
-		}
-		completion_reward = {
-		add_popularity = {
-			ideology = supremacist
-			popularity = 0.35
-		}
-		retire_character = RUS_valdimir_admiral
-		recruit_character = RUS_valdimir_leader
-		set_politics = {
-			ruling_party = supremacist
-			elections_allowed = no
-			last_election = "0080.12.17"
-			election_frequency = 48
-			long_name = RUS_new_russia_leauge
-			name = RUS_new_russia_league
-		}
-		}
-	}
-
-	focus = {
-		id = RUS_wisdom_of_age
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 6
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		relative_position_id = RUS_work_on_a_new_regime
-		prerequisite = {
-			focus = RUS_work_on_a_new_regime
-		}
-		mutually_exclusive = {
-			focus = RUS_reconnect_with_the_underground_government
-		}
-		mutually_exclusive = {
-			focus = RUS_the_odd_factor
-		}
-		available = {
-			
-		}
-		completion_reward = {
-		retire_country_leader = yes
-		retire_character = RUS_nikolai_alexander_admiral
-		recruit_character = RUS_nikolai_alexander_leader
-		add_country_leader_role = {
-			character = RUS_nikolai_alexander_leader
-			promote_leader = yes
-			country_leader = {
-				ideology = military_administration
-				expire = "0086.1.1.1"
-				traits = { staunch_monarchist supreme_ruler_of_russia }
-			}
-		}
-		set_cosmetic_tag = RUS_supreme_commander
-		}
-	}
-
-	focus = {
-		id = RUS_restore_the_crown
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 2
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		relative_position_id = RUS_wisdom_of_age
-		prerequisite = {
-			focus = RUS_wisdom_of_age
-		}
-		available = {
-			aristocracy > 0.35
-		}
-		completion_reward = {
-			recruit_character = RUS_agustus_romanov
-		set_politics = {
-			ruling_party = aristocracy
-			elections_allowed = no
-		}
-		}
-	}
-
-	focus = {
-		id = RUS_our_own_fight
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 25
-		y = 0
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-			is_in_faction = no
-		}
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = RUS_trials_of_survival
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_our_own_fight
-		}
-		relative_position_id = RUS_our_own_fight
-		completion_reward = {
-		
-		}
-	}
-
-	focus = {
-		id = RUS_restoration_plan
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_trials_of_survival
-		}
-		relative_position_id = RUS_trials_of_survival
-		completion_reward = {
-		
-		}
-	}
-
 	
 	focus = {
-		id = RUS_kornilov_proposal
+		id = RUS_russian_national_people_party
 		icon = GFX_goal_general_meeting
-		cost = 5
-		x = -1
+		cost = 10
+		x = 2
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
+		relative_position_id = RUS_moscow_memorandum
 		prerequisite = {
-		focus = RUS_restoration_plan
+			focus = RUS_moscow_memorandum
 		}
 		mutually_exclusive = {
-			focus = RUS_krasnov_proposal
+			focus = RUS_soviet_russian_people_party
 		}
-		relative_position_id = RUS_restoration_plan
+		available = {
+			
+		}
 		completion_reward = {
-		
+		}
+	}
+	
+	focus = {
+		id = RUS_expand_defense_apparatus_capabilities
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_russian_national_people_party
+		prerequisite = {
+			focus = RUS_russian_national_people_party
+		}
+		available = {
+			
+		}
+		completion_reward = {
 		}
 	}
 
 	focus = {
-		id = RUS_krasnov_proposal
+		id = RUS_promote_civil_society
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 10
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_expand_defense_apparatus_capabilities
+		prerequisite = {
+			focus = RUS_expand_defense_apparatus_capabilities focus = RUS_muscovite_chauvinism
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_a_new_quality_of_life
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_promote_civil_society
+		prerequisite = {
+			focus = RUS_promote_civil_society
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_muscovite_chauvinism
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_russian_national_people_party
+		prerequisite = {
+			focus = RUS_russian_national_people_party
+		}
+		available = {
+			has_government = supremacist
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_strengthen_military_authority
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_muscovite_chauvinism
+		prerequisite = {
+			focus = RUS_muscovite_chauvinism focus = RUS_expand_defense_apparatus_capabilities
+		}
+		available = {
+			has_government = supremacist
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_supress_cosmopolitism
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_strengthen_military_authority
+		prerequisite = {
+			focus = RUS_strengthen_military_authority focus = RUS_promote_civil_society
+		}
+		available = {
+			has_government = supremacist
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_the_two_headed_eagle
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_supress_cosmopolitism
+		prerequisite = {
+			focus = RUS_supress_cosmopolitism
+		}
+		prerequisite = {
+			focus = RUS_a_new_quality_of_life
+		}
+		mutually_exclusive = {
+			focus = RUS_the_red_flag_flies
+		}
+		mutually_exclusive = {
+			focus = RUS_form_the_supreme_council
+		}
+		available = {
+			has_government = supremacist
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_march_of_liberation
+		icon = GFX_goal_general_meeting
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
+		relative_position_id = RUS_the_two_headed_eagle
 		prerequisite = {
-		focus = RUS_restoration_plan
+			focus = RUS_the_two_headed_eagle
 		}
-		mutually_exclusive = {
-			focus = RUS_kornilov_proposal
+		available = {
+			has_government = supremacist
 		}
-		relative_position_id = RUS_restoration_plan
 		completion_reward = {
-		
 		}
 	}
 
 	focus = {
-		id = RUS_prepare_to_take_the_urals
+		id = RUS_remove_immoral_acts
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
+		relative_position_id = RUS_the_two_headed_eagle
 		prerequisite = {
-		focus = RUS_kornilov_proposal
+			focus = RUS_the_two_headed_eagle
 		}
-		
-		relative_position_id = RUS_kornilov_proposal
-		completion_reward = {
-			573 = {
-				add_core_of = RUS
-			}
+		available = {
+			has_government = supremacist
 		}
 		completion_reward = {
-			398 = {
-				add_core_of = RUS
-			}
-		}
-		completion_reward = {
-			581 = {
-				add_core_of = RUS
-			}
 		}
 	}
 
 	focus = {
-		id = RUS_prepare_to_retake_the_east
+		id = RUS_orthodoxy_and_the_russian_state
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_the_two_headed_eagle
+		prerequisite = {
+			focus = RUS_the_two_headed_eagle
+		}
+		available = {
+			has_government = supremacist
+		}
+		completion_reward = {
+		}
+	}
+
+		focus = {
+		id = RUS_yekaterinburg_duma
+		icon = GFX_goal_general_meeting
+		cost = 10
 		x = 1
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
+		relative_position_id = RUS_orthodoxy_and_the_russian_state
 		prerequisite = {
-		focus = RUS_krasnov_proposal
+			focus = RUS_orthodoxy_and_the_russian_state
 		}
-		
-		relative_position_id = RUS_krasnov_proposal
+		mutually_exclusive = {
+			focus = RUS_a_unitary_state
+		}
+		available = {
+			has_government = supremacist
+		}
 		completion_reward = {
-			560 = {
-				add_core_of = RUS
-			}
-			562 = {
-				add_core_of = RUS
-			}
-			874 = {
-				add_core_of = RUS
-			}
-			637 = {
-				add_core_of = RUS
-			}
-			822 = {
-				add_core_of = RUS
-			}
-			644 = {
-				add_core_of = RUS
-			}
-			877 = {
-				add_core_of = RUS
-			}
-			876 = {
-				add_core_of = RUS
-			}
-			878 = {
-				add_core_of = RUS
-			}
-			516 = {
-				add_core_of = RUS
-			}
-			824 = {
-				add_core_of = RUS
-			}
-			579 = {
-				add_core_of = RUS
-			}
-			409 = {
-				add_core_of = RUS
-			}
-			408 = {
-				add_core_of = RUS
-			}
 		}
 	}
 
 	focus = {
-		id = RUS_60_divison_plan
+		id = RUS_a_unitary_state
 		icon = GFX_goal_general_meeting
-		cost = 5
+		cost = 10
 		x = -1
 		y = 1
 		ai_will_do = {
 			factor = 1
 		}
+		relative_position_id = RUS_orthodoxy_and_the_russian_state
 		prerequisite = {
-		focus = RUS_krasnov_proposal focus = RUS_kornilov_proposal
+			focus = RUS_orthodoxy_and_the_russian_state
+		}
+		mutually_exclusive = {
+			focus = RUS_yekaterinburg_duma
+		}
+		available = {
+			has_government = supremacist
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_soviet_russian_people_party
+		icon = GFX_goal_soviet_republic
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_moscow_memorandum
+		prerequisite = {
+			focus = RUS_moscow_memorandum
+		}
+		mutually_exclusive = {
+			focus = RUS_russian_national_people_party
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_nationalize_industry
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_soviet_russian_people_party
+		prerequisite = {
+			focus = RUS_soviet_russian_people_party
 		}
 		
-		relative_position_id = RUS_krasnov_proposal
+		available = {
+			has_government = utopianism
+		}
 		completion_reward = {
-		add_ideas = 60_division_plan
+		}
+	}
+
+	focus = {
+		id = RUS_public_education
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_soviet_russian_people_party
+		prerequisite = {
+			focus = RUS_soviet_russian_people_party 
+		}
+		
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_war_on_poverty
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_public_education
+		prerequisite = {
+			focus = RUS_public_education focus = RUS_nationalize_industry
+		}
+		
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_investigate_industrial_corruption
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_public_education
+		prerequisite = {
+			focus = RUS_public_education focus = RUS_nationalize_industry
+		}
+		
+		available = {
+			has_government = utopianism
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_government_control_of_housing
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_investigate_industrial_corruption
+		prerequisite = {
+			focus = RUS_war_on_poverty focus = RUS_investigate_industrial_corruption
+		}
+		
+		available = {
+			has_government = utopianism
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_progressive_taxation_policy
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_war_on_poverty 
+		prerequisite = {
+			focus = RUS_war_on_poverty 
+		}
+		
+		available = {
+		
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_the_red_flag_flies
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_government_control_of_housing
+		prerequisite = {
+			focus = RUS_progressive_taxation_policy 
+		}
+		prerequisite = {
+			focus = RUS_government_control_of_housing
+		}
+		mutually_exclusive = {
+			focus = RUS_the_two_headed_eagle
+		}
+		mutually_exclusive = {
+			focus = RUS_form_the_supreme_council
+		}
+		available = {
+		has_government = utopianism
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_develop_high_tech_manufacturing
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_the_red_flag_flies 
+		prerequisite = {
+			focus = RUS_the_red_flag_flies
+		}
+		
+		available = {
+		has_completed_focus = RUS_year_90_plan
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_high_education_standards
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_the_red_flag_flies 
+		prerequisite = {
+			focus = RUS_the_red_flag_flies
+		}
+		
+		available = {
+		has_completed_focus = RUS_year_90_plan
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_combat_commercialisation
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_the_red_flag_flies 
+		prerequisite = {
+			focus = RUS_the_red_flag_flies
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_national_culture
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_combat_commercialisation
+		prerequisite = {
+			focus = RUS_combat_commercialisation
+		}
+		mutually_exclusive = {
+			focus = RUS_spiritual_culture
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_spiritual_culture
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_combat_commercialisation
+		prerequisite = {
+			focus = RUS_combat_commercialisation
+		}
+		mutually_exclusive = {
+			focus = RUS_national_culture
+		}
+		available = {
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_reclaimation_of_saint_peter
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_moscow_memorandum
+		prerequisite = {
+			focus = RUS_moscow_memorandum
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_the_third_capital
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_reclaimation_of_saint_peter
+		prerequisite = {
+			focus = RUS_reclaimation_of_saint_peter
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_the_old_fortress
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_reclaimation_of_saint_peter
+		prerequisite = {
+			focus = RUS_reclaimation_of_saint_peter
+		}
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_plan_for_victory
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_the_third_capital
+		prerequisite = {
+			focus = RUS_the_old_fortress
+		}
+		prerequisite = {
+			focus = RUS_the_third_capital
+		}
+		available = {
+			has_government = oligarchy
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_national_projects
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_plan_for_victory
+		prerequisite = {
+			focus = RUS_plan_for_victory
+		}
+		available = {
+			has_government = oligarchy
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_master_of_ideology
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_plan_for_victory
+		prerequisite = {
+			focus = RUS_plan_for_victory
+		}
+		prerequisite = {
+			focus = RUS_promote_civil_society
+		}
+		available = {
+			has_government = oligarchy
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_innovative_development
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_plan_for_victory
+		prerequisite = {
+			focus = RUS_plan_for_victory
+		}
+		prerequisite = {
+			focus = RUS_war_on_poverty
+		}
+		available = {
+			has_government = oligarchy
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_revivial_as_a_great_power
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_national_projects
+		prerequisite = {
+			focus = RUS_master_of_ideology
+		}
+		prerequisite = {
+			focus = RUS_national_projects
+		}
+		available = {
+			has_government = oligarchy
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_locomotive_of_economic_growth
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_innovative_development
+		prerequisite = {
+			focus = RUS_innovative_development
+		}
+		prerequisite = {
+			focus = RUS_national_projects
+		}
+		available = {
+			has_government = oligarchy
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_form_the_supreme_council
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_locomotive_of_economic_growth
+		prerequisite = {
+			focus = RUS_locomotive_of_economic_growth focus = RUS_revivial_as_a_great_power
+		}
+		mutually_exclusive = {
+			focus = RUS_the_red_flag_flies
+		}
+		mutually_exclusive = {
+			focus = RUS_the_two_headed_eagle
+		}
+		available = {
+			has_government = oligarchy
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_supreme_ruler_of_all_russians
+		icon = GFX_goal_general_meeting
+		cost = 10
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = RUS_form_the_supreme_council
+		prerequisite = {
+			focus = RUS_form_the_supreme_council
+		}
+		available = {
+			has_government = oligarchy
+		}
+		completion_reward = {
 		}
 	}
 
@@ -709,28 +1165,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RUS_revenge_against_the_federation
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_60_divison_plan
-		}
-		prerequisite = {
-			focus = RUS_prepare_to_retake_the_east focus = RUS_prepare_to_take_the_urals
-		}
-		relative_position_id = RUS_60_divison_plan
-		completion_reward = {
-		declare_war_on = {
-			target = EFG
-		}
-		}
-	}
+	
 
 	focus = {
 		id = RUS_focus_on_landships
@@ -862,6 +1297,166 @@ focus_tree = {
 	}
 
 	focus = {
+		id = RUS_war_of_material
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_modern_tank_initiative
+		}
+		prerequisite = {
+		focus = RUS_modernize_ifvs
+		}
+		relative_position_id = RUS_modern_tank_initiative
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_air_assualt_doctrine
+		icon = GFX_goal_air_assualt
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+		focus = RUS_war_of_material
+		}
+		prerequisite = {
+		focus = RUS_guards_paratrooper
+		}
+		relative_position_id = RUS_war_of_material
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_adopt_newtype_theory
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 12
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_military_modernization_program
+			}
+			mutually_exclusive = {
+				focus = RUS_counter_minovsky_warfare
+			}
+			relative_position_id = RUS_military_modernization_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_study_federation_battle_tactics
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_adopt_newtype_theory focus = RUS_counter_minovsky_warfare
+			}
+
+			relative_position_id = RUS_adopt_newtype_theory
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_reach_out_to_zeon_egineers
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_adopt_newtype_theory
+			}
+
+			relative_position_id = RUS_adopt_newtype_theory
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_bring_in_zeon_industries
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_reach_out_to_zeon_egineers
+			}
+
+			relative_position_id = RUS_reach_out_to_zeon_egineers
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_joint_ms_manufacturing
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_bring_in_zeon_industries
+			}
+
+			relative_position_id = RUS_bring_in_zeon_industries
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = RUS_counter_minovsky_warfare
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 8
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = RUS_military_modernization_program
+			}
+			mutually_exclusive = {
+				focus = RUS_adopt_newtype_theory
+			}
+			relative_position_id = RUS_military_modernization_program
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = RUS_industrialization_program
 		icon = GFX_goal_general_meeting
 		cost = 5
@@ -974,6 +1569,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_government = oligarchy
+		}
 		prerequisite = {
 		focus = RUS_industrialization_program
 		}
@@ -992,6 +1590,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			has_government = oligarchy
+		}
 		prerequisite = {
 		focus = RUS_arov_industries
 		}
@@ -1009,6 +1610,9 @@ focus_tree = {
 		y = 1
 		ai_will_do = {
 			factor = 1
+		}
+		available = {
+			has_government = oligarchy
 		}
 		prerequisite = {
 		focus = RUS_futher_arov_control_of_heavy_industries
@@ -1060,7 +1664,7 @@ focus_tree = {
 		icon = GFX_goal_general_meeting
 		cost = 5
 		x = 1
-		y = 2
+		y = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -1073,9 +1677,9 @@ focus_tree = {
 			prerequisite = {
 				focus = RUS_give_resources_extraction_rights
 				}
-			available = {
-				is_in_faction_with = RNZ
-			}
+			prerequisite = {
+				focus = RUS_joint_ms_manufacturing
+				}
 		relative_position_id = RUS_increase_cooperation_with_enthic_groups
 		completion_reward = {
 		add_research_slot = 1
@@ -1095,7 +1699,7 @@ focus_tree = {
 			focus = RUS_next_generation_designs
 			}
 			available = {
-				country_exists = AR9
+				has_completed_focus = RUS_reach_out_to_zeon_egineers
 			}
 			mutually_exclusive = {
 				focus = RUS_reduce_tank_costs
@@ -1119,9 +1723,6 @@ focus_tree = {
 			focus = RUS_purchase_prototype_units
 			}
 			available = {
-				is_in_faction_with = RNZ
-			}
-			available = {
 				has_completed_focus = RUS_yakut_newtype_lab
 			}
 		relative_position_id = RUS_purchase_prototype_units
@@ -1143,9 +1744,6 @@ focus_tree = {
 		focus = RUS_yakut_development_project
 		}
 			available = {
-				is_in_faction_with = RNZ
-			}
-			available = {
 				has_completed_focus = RUS_yakut_newtype_lab
 			}
 		relative_position_id = RUS_yakut_development_project
@@ -1154,151 +1752,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = RUS_restock_winter_equipment
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = -2
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_revenge_against_the_federation
-		}
-		available = {
-			has_war = yes
-		}
-		relative_position_id = RUS_revenge_against_the_federation
-		completion_reward = {
-	
-		}
-	}
 
-	focus = {
-		id = RUS_lessons_of_war
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_restock_winter_equipment
-		}
-		available = {
-			has_war = yes
-		}
-		relative_position_id = RUS_restock_winter_equipment
-		completion_reward = {
-	
-		}
-	}
 
-	focus = {
-		id = RUS_purchase_gear_from_anaheim
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 2
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_revenge_against_the_federation
-		}
-		available = {
-			has_war = yes
-		}
-		relative_position_id = RUS_revenge_against_the_federation
-		completion_reward = {
-	
-		}
-	}
 
-	
-	focus = {
-		id = RUS_buy_mobile_suits
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_purchase_gear_from_anaheim
-		}
-		available = {
-			has_war = yes
-		}
-		relative_position_id = RUS_purchase_gear_from_anaheim
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = RUS_reassess_war_goals
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_revenge_against_the_federation
-		}
-		available = {
-			has_war = yes
-		}
-		relative_position_id = RUS_revenge_against_the_federation
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = RUS_a_new_empire
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_reassess_war_goals
-		}
-		available = {
-			has_war = yes
-		}
-		relative_position_id = RUS_reassess_war_goals
-		completion_reward = {
-	
-		}
-	}
-
-	focus = {
-		id = RUS_break_the_hegenmony
-		icon = GFX_goal_general_meeting
-		cost = 5
-		x = 0
-		y = 1
-		ai_will_do = {
-			factor = 1
-		}
-		prerequisite = {
-		focus = RUS_a_new_empire
-		}
-		available = {
-			has_war = yes
-		}
-		relative_position_id = RUS_a_new_empire
-		completion_reward = {
-	
-		}
-	}
 }

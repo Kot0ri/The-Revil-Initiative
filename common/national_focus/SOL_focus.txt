@@ -76,7 +76,7 @@ focus_tree = {
 			id = SOL_commander_unit_deployment
 			icon = GFX_goal_red_comet_2
 			cost = 5
-			x = 2
+			x = 3
 			y = 1
 			ai_will_do = {
 				factor = 1
@@ -93,7 +93,7 @@ focus_tree = {
 			icon = GFX_goal_efsf_mobile_headquarters
 			cost = 5
 			x = 0
-			y = 1
+			y = 2
 			ai_will_do = {
 				factor = 1
 			}
@@ -344,6 +344,22 @@ focus = {
 	}
 	}
 
+	focus = {
+	id = SOL_space_fortress_doctrine
+	icon = GFX_goal_efsf_mobile_headquarters
+	cost = 5
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	relative_position_id = SOL_form_outer_defence_perimeter
+	prerequisite = { focus = SOL_form_outer_defence_perimeter }
+	completion_reward = {
+		
+	}
+	}
+
 focus = {
 	id = SOL_focus_on_defence_perimeter
 	icon = GFX_goal_efsf_mobile_headquarters
@@ -356,8 +372,8 @@ focus = {
 	mutually_exclusive = {
 		focus = SOL_focus_on_first_strike_capabilties
 	}
-	relative_position_id = SOL_form_outer_defence_perimeter
-	prerequisite = { focus = SOL_form_outer_defence_perimeter }
+	relative_position_id = SOL_space_fortress_doctrine
+	prerequisite = { focus = SOL_space_fortress_doctrine }
 	completion_reward = {
 		
 	}
@@ -460,8 +476,8 @@ focus = {
 	mutually_exclusive = {
 		focus = SOL_focus_on_defence_perimeter
 	}
-	relative_position_id = SOL_form_outer_defence_perimeter
-	prerequisite = { focus = SOL_form_outer_defence_perimeter }
+	relative_position_id = SOL_space_fortress_doctrine
+	prerequisite = { focus = SOL_space_fortress_doctrine }
 	completion_reward = {
 		
 	}
@@ -557,10 +573,55 @@ focus = {
 	}
 
 	focus = {
+			id = SOL_zaku_versatility
+			icon = GFX_goal_zaku_ones
+			cost = 10
+			x = 1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_push_for_increased_MS_budget
+			prerequisite = {
+				focus = SOL_push_for_increased_MS_budget
+			}
+			mutually_exclusive = {
+				focus = SOL_bugu_primacy
+			}
+			completion_reward = {
+			
+				}
+		}
+	
+	focus = {
+			id = SOL_bugu_primacy
+			icon = GFX_goal_zeon_bugu
+			cost = 10
+			x = -1
+			y = 1
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_push_for_increased_MS_budget
+			prerequisite = {
+				focus = SOL_push_for_increased_MS_budget
+			}
+			available = {
+				SI2 = {has_completed_focus = SI2_align_with_zeon }
+			}
+			mutually_exclusive = {
+				focus = SOL_zaku_versatility
+			}
+			completion_reward = {
+			
+				}
+		}
+
+	focus = {
 			id = SOL_form_royal_guard_unit
-			icon = GFX_goal_dom_development
+			icon = GFX_goal_zaku_royal_guard
 			cost = 5
-			x = -2
+			x = -3
 			y = 1
 			ai_will_do = {
 				factor = 1
@@ -594,7 +655,7 @@ focus = {
 
 		focus = {
 			id = SOL_expand_production_capabilities
-			icon = GFX_goal_dom_development
+			icon = GFX_goal_industry
 			cost = 5
 			x = 0
 			y = 1
@@ -705,7 +766,7 @@ focus = {
 		
 		focus = {
 			id = SOL_mobile_fortress_production
-			icon = GFX_goal_dom_development
+			icon = GFX_goal_zero_gr
 			cost = 5
 			x = -1
 			y = 1
@@ -720,7 +781,7 @@ focus = {
 				focus = SOL_dolos_deployment
 			}
 			available = {
-				is_ally_with = AXS
+				is_in_faction_with = AXS
 			}
 			completion_reward = {
 			
@@ -912,11 +973,32 @@ focus = {
 		}
 
 		focus = {
+			id = SOL_the_nightmare
+			icon = GFX_goal_gelgoog_gato
+			cost = 5
+			x = 0
+			y = 11
+			ai_will_do = {
+				factor = 1
+			}
+			relative_position_id = SOL_Dolzes_Pride
+			prerequisite = {
+				focus = SOL_expand_production_capabilities
+			}
+			prerequisite = {
+				focus = SOL_mobile_fortress_production focus = SOL_white_wolf_howls
+			}
+			completion_reward = {
+	
+				}
+		}
+
+		focus = {
 			id = SOL_dozle_stand
 			icon = GFX_goal_dozle_honor
 			cost = 5
 			x = 0
-			y = 10
+			y = 12
 			ai_will_do = {
 				factor = 1
 			}
@@ -1005,12 +1087,39 @@ focus = {
 			ai_will_do = {
 				factor = 1
 			}
+			mutually_exclusive = {
+				focus = SOL_honor_of_the_warrior
+			}
 			relative_position_id = SOL_dozle_stand
 			prerequisite = {
 				focus = SOL_dozle_stand
 			}
 		
 			completion_reward = {
+				}
+		}
+
+		focus = {
+			id = SOL_honor_of_the_warrior
+			icon = GFX_goal_gelgoog_gato_2
+			cost = 5
+			x = -3
+			y = 2
+			ai_will_do = {
+				factor = 1
+			}
+			mutually_exclusive = {
+				focus = SOL_retain_military_control
+			}
+			relative_position_id = SOL_dozle_stand
+			prerequisite = {
+				focus = SOL_dozle_stand
+			}
+		
+			completion_reward = {
+				set_politics = {
+					ruling_party = supremacist
+				}
 				}
 		}
 

@@ -532,8 +532,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OCZ_ms_flight_development
-		icon = GFX_goal_zeon_new_weapon
+		id = OCZ_bring_in_suits_from_space
+		icon = GFX_goal_gelgoog_desert
 		cost = 5
 		x = 0
 		y = 1
@@ -547,21 +547,7 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = OCZ_improved_ms_flight
-		icon = GFX_goal_focus_on_MS_for_local_battle
-		cost = 5
-		x = 0
-		y = 1
-		prerequisite ={ focus = OCZ_ms_flight_development}
-		relative_position_id = OCZ_ms_flight_development
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-		
-		}
-	}
+	
 
 	focus = {
 		id = OCZ_A_way_to_end_the_war

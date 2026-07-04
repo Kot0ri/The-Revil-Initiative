@@ -1,0 +1,557 @@
+focus_tree = {
+	id = OZR
+	continuous_focus_position = { x = 0 y = 2000}
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = OZR
+		}
+	}
+	default = no
+
+	focus = {
+		id = OZR_Beaten_but_not_Defeated
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 5
+		y = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_hide_in_the_countryside
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_Beaten_but_not_Defeated
+		prerequisite = {
+			focus =  OZR_Beaten_but_not_Defeated
+		}
+		mutually_exclusive = {
+			focus = OZR_fortify_the_cities
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_hit_and_run
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_hide_in_the_countryside
+		prerequisite = {
+			focus =  OZR_hide_in_the_countryside
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_strike_from_distance
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_hit_and_run
+		prerequisite = {
+			focus =  OZR_hit_and_run
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_cooperate_with_disnefranchised
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_hide_in_the_countryside
+		prerequisite = {
+			focus =  OZR_hide_in_the_countryside
+		}
+		available = {
+			has_completed_focus = OZR_follow_up_on_promises_made
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_a_war_of_logistics
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_cooperate_with_disnefranchised
+		prerequisite = {
+			focus =  OZR_cooperate_with_disnefranchised
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_heed_delaz
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_a_war_of_logistics
+		prerequisite = {
+			focus =  OZR_a_war_of_logistics
+		}
+		prerequisite = {
+			focus =  OZR_strike_from_distance
+		}
+		available = {
+			has_completed_focus = OZR_two_causes_one_struggle
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_fortify_the_cities
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_Beaten_but_not_Defeated
+		prerequisite = {
+			focus =  OZR_Beaten_but_not_Defeated
+		}
+		mutually_exclusive = {
+			focus = OZR_hide_in_the_countryside
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_recruit_bright_minds
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_fortify_the_cities
+		prerequisite = {
+			focus =  OZR_fortify_the_cities
+		}
+		available = {
+			has_completed_focus = OZR_follow_up_on_promises_made
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_a_war_of_technology
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_recruit_bright_minds
+		prerequisite = {
+			focus =  OZR_recruit_bright_minds
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_tasks_from_high_command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_a_war_of_technology
+		prerequisite = {
+			focus =  OZR_a_war_of_technology
+		}
+		prerequisite = {
+			focus =  OZR_improved_cqb_equipment
+		}
+		available = {
+			has_completed_focus = OZR_two_causes_one_struggle
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_south_asia_theater
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_tasks_from_high_command
+		prerequisite = {
+			focus =  OZR_tasks_from_high_command
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_aid_india_forces
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_south_asia_theater
+		prerequisite = {
+			focus =  OZR_south_asia_theater
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_aid_cambodia_holdouts
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_south_asia_theater
+		prerequisite = {
+			focus =  OZR_south_asia_theater
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_aid_oceania_command
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_south_asia_theater
+		prerequisite = {
+			focus =  OZR_south_asia_theater
+		}
+		mutually_exclusive = {
+			focus = OZR_support_nanyang
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_aid_pacific_remnants
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_tasks_from_high_command
+		prerequisite = {
+			focus =  OZR_tasks_from_high_command
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_lessons_in_urban_fighting
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_fortify_the_cities
+		prerequisite = {
+			focus =  OZR_fortify_the_cities
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_improved_cqb_equipment
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_lessons_in_urban_fighting
+		prerequisite = {
+			focus =  OZR_lessons_in_urban_fighting
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_meet_with_underground_contacts
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 8
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_Beaten_but_not_Defeated
+		prerequisite = {
+			focus =  OZR_Beaten_but_not_Defeated
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_partake_in_arms_trade
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_meet_with_underground_contacts
+		prerequisite = {
+			focus =  OZR_meet_with_underground_contacts
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_find_ways_to_pay_the_troops
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_meet_with_underground_contacts
+		prerequisite = {
+			focus =  OZR_meet_with_underground_contacts
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_follow_up_on_promises_made
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_partake_in_arms_trade
+		prerequisite = {
+			focus =  OZR_find_ways_to_pay_the_troops
+		}
+		prerequisite = {
+			focus =  OZR_partake_in_arms_trade
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_two_causes_one_struggle
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_follow_up_on_promises_made
+		prerequisite = {
+			focus =  OZR_follow_up_on_promises_made
+		}
+		mutually_exclusive = {
+			focus = OZR_reject_commands_from_space
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_elavate_locals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_two_causes_one_struggle
+		prerequisite = {
+			focus =  OZR_two_causes_one_struggle
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_weaken_federation_influence
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_elavate_locals
+		prerequisite = {
+			focus =  OZR_elavate_locals focus = OZR_the_generalissimo
+		}
+
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_support_nanyang
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_weaken_federation_influence
+		prerequisite = {
+			focus =  OZR_weaken_federation_influence
+		}
+		mutually_exclusive = {
+			focus = OZR_aid_oceania_command
+		}
+		available = {
+			SSA = { has_completed_focus = SSA_nanyang_takeover }
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_reject_commands_from_space
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_follow_up_on_promises_made
+		prerequisite = {
+			focus =  OZR_follow_up_on_promises_made
+		}
+		mutually_exclusive = {
+			focus = OZR_two_causes_one_struggle
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = OZR_the_generalissimo
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		relative_position_id = OZR_reject_commands_from_space
+		prerequisite = {
+			focus =  OZR_reject_commands_from_space
+		}
+		completion_reward = {
+		
+		}
+	}
+
+}

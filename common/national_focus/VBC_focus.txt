@@ -47,6 +47,26 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VBC_mizusa_college
+		icon = GFX_goal_box_of_laplace
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_anaheim_for_all_your_needs
+		}
+		relative_position_id = VBC_anaheim_for_all_your_needs
+		available = {
+		}
+		completion_reward = {
+		add_research_slot = 1
+		}
+	}
+
+	focus = {
 		id = VBC_address_growing_economic_disparity
 		icon = GFX_goal_box_of_laplace
 		cost = 10
@@ -112,8 +132,29 @@ focus_tree = {
 	}
 
 	focus = {
+		id = VBC_expand_middle_managment
+		icon = GFX_goal_middle_management
+		cost = 10
+		x = 1
+		y = 1
+		ai_will_do = {
+			factor = 1
+		}
+		prerequisite = {
+			focus = VBC_support_lower_level_job_market
+		}
+		relative_position_id = VBC_support_lower_level_job_market
+		available = {
+			has_completed_focus = VBC_begin_expansion_of_Anaheim_facilties
+		}
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
 		id = VBC_expanded_scraping_capacity
-		icon = GFX_goal_box_of_laplace
+		icon = GFX_goal_scrap
 		cost = 10
 		x = 0
 		y = 2
@@ -208,7 +249,7 @@ focus_tree = {
 
 	focus = {
 		id = VBC_get_the_suits_on
-		icon = GFX_goal_box_of_laplace
+		icon = GFX_goal_suits
 		cost = 10
 		x = 0
 		y = 1

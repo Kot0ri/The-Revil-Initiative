@@ -179,7 +179,7 @@ focus_tree = {
 		id = PEZ_pkw_plan
 		icon = GFX_goal_efsf_mobile_headquarters
 		cost = 5
-		x = 1
+		x = 0
 		y = 1
 		ai_will_do = {
 			factor = 1
@@ -189,6 +189,7 @@ focus_tree = {
 				has_completed_focus = ABQ_pkw_plan
 			}
 			has_completed_focus = PEZ_adopt_armour_skirts
+			has_government = supremacist
 		}
 		mutually_exclusive = {
 			focus = PEZ_pezun_project
@@ -197,6 +198,46 @@ focus_tree = {
 			}
 			relative_position_id = PEZ_improve_manafacturing_output
 			prerequisite = { focus = PEZ_improve_manafacturing_output }
+		}
+
+		focus = {
+		id = PEZ_focus_on_cost_efficiency
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = 1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = PEZ_focus_on_cutting_edge_technology
+		}
+		completion_reward = {
+			}
+			relative_position_id = PEZ_pkw_plan
+			prerequisite = { focus = PEZ_pkw_plan }
+		}
+
+		focus = {
+		id = PEZ_focus_on_cutting_edge_technology
+		icon = GFX_goal_efsf_mobile_headquarters
+		cost = 5
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		mutually_exclusive = {
+			focus = PEZ_focus_on_cost_efficiency
+		}
+		completion_reward = {
+			}
+			relative_position_id = PEZ_pkw_plan
+			prerequisite = { focus = PEZ_pkw_plan }
 		}
 		
 
@@ -279,7 +320,7 @@ focus_tree = {
 		id = PEZ_begin_work_on_heavy_MS
 		icon = GFX_goal_dom_development
 		cost = 10
-		x = -2
+		x = -4
 		y = 1
 		ai_will_do = {
 			factor = 1

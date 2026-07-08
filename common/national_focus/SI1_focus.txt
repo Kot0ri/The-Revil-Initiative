@@ -1491,6 +1491,7 @@ focus = {
 	relative_position_id = SI1_align_with_zeon
 	prerequisite = { focus = SI1_align_with_zeon }
 	mutually_exclusive = { focus = SI1_dreams_of_moon_moon }
+	mutually_exclusive = { focus = SI1_support_harmony}
 }
 
 focus = {
@@ -1582,6 +1583,29 @@ focus = {
 }
 
 focus = {
+	id = SI1_support_harmony
+	icon = GFX_goal_zeon_mobile_headquarters
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		SI2 = {
+			has_completed_focus = SI2_political_moves
+		}
+	}
+	completion_reward = {
+		add_manpower = 20000
+	}
+	relative_position_id = SI1_our_own_path
+	prerequisite = { focus = SI1_our_own_path }
+	mutually_exclusive = { focus = SI1_dissatifaction_with_the_earth }
+	mutually_exclusive = { focus = SI1_dreams_of_moon_moon }
+}
+
+focus = {
 	id = SI1_dreams_of_moon_moon
 	icon = GFX_goal_zeon_mobile_headquarters
 	cost = 2
@@ -1596,6 +1620,7 @@ focus = {
 	relative_position_id = SI1_our_own_path
 	prerequisite = { focus = SI1_our_own_path }
 	mutually_exclusive = { focus = SI1_dissatifaction_with_the_earth }
+	mutually_exclusive = { focus = SI1_support_harmony}
 }
 
 focus = {

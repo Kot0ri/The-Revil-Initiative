@@ -31,6 +31,69 @@ focus_tree = {
 	}
 
 	focus = {
+		id = NAR_reach_out_the_the_locals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = -2
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_those_that_stay
+		}
+		relative_position_id = NAR_those_that_stay
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NAR_acclimate_to_local_customs
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_reach_out_the_the_locals
+		}
+		relative_position_id = NAR_reach_out_the_the_locals
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NAR_recruit_from_locals
+		icon = GFX_goal_general_meeting
+		cost = 5
+		x = 0
+		y = 1
+		
+		available = {
+			
+		}
+		prerequisite = {
+			focus = NAR_acclimate_to_local_customs
+		}
+		relative_position_id = NAR_acclimate_to_local_customs
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = NAR_prepare_for_desert_warfare
 		icon = GFX_goal_general_meeting
 		cost = 5
